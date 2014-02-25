@@ -1,4 +1,3 @@
-
 module BikeBook
   class ModelList < Sinatra::Base
 
