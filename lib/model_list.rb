@@ -8,14 +8,13 @@ module BikeBook
       response.headers['access-control-request-method'] = "*"
     end
     
-    get '/:manufacturer' do 
+    get '/' do 
       content_type :json
       f = "./bike_data/"
-      if params[:manufacturer].present?
-        f += "#{Slugify.input(params[:manufacturer])}/"
-        if params[:year].present?
-          f += "#{params[:year]}/"
-        end
+      pass unless params[:manufacturer].present?
+      f += "#{Slugify.input(params[:manufacturer])}/"
+      if params[:year].present?
+        f += "#{params[:year]}/"
       end
       f += "/model_list.json" 
       pass unless File.exists?(f)
