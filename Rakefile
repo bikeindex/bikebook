@@ -8,7 +8,7 @@ end
 desc "create BikeBook directories"
 task :refresh do 
   require File.expand_path(File.dirname(__FILE__) + "/boot.rb")
-  BikeBook::BookGenerator.new.refresh
+  BikeBook::BookGenerator.new.write_indices
 end
 
 

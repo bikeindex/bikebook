@@ -5,10 +5,6 @@ module BikeBook
       @m_hash = model_hash
     end
 
-    def refresh
-      write_indices
-    end
-
     def write_indices
       File.open("#{@base_dir}index.json", "w") do |f|
         f.write(@m_hash.to_json)
