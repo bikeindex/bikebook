@@ -36,7 +36,7 @@ module BikeBook
         bike = {
           manufacturer: bf["bike"]["manufacturer"],
           year: bf["bike"]["year"],
-          model_name: bf["bike"]["frame_model"]
+          frame_model: bf["bike"]["frame_model"]
         }
 
         models[bike[:manufacturer]] ||= {}
@@ -52,7 +52,7 @@ module BikeBook
       years.each do |year|
         puts @m_hash[manufacturer][year]
         @m_hash[manufacturer][year].each do |bike|
-          model_list << bike[:model_name]
+          model_list << bike[:frame_model]
         end
       end
       model_list.uniq

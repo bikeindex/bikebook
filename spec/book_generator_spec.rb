@@ -6,7 +6,7 @@ describe BikeBook::BookGenerator do
       m_list = BikeBook::BookGenerator.new.model_hash
 
       m_list["Surly"][2014].count.should eq(21)
-      m_list["Surly"][2014].include?({:manufacturer=>"Surly", :year=>2014, :model_name=>"Pugsley"}).should be_true
+      m_list["Surly"][2014].include?({:manufacturer=>"Surly", :year=>2014, :frame_model=>"Pugsley"}).should be_true
     end
   end
 
