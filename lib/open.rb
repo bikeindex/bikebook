@@ -19,8 +19,8 @@ module BikeBook
           f += "#{params[:year]}/"
         end
       end
-      if params[:model].present?
-        f += "#{Slugify.input(params[:model])}.json"
+      if params[:frame_model].present?
+        f += "#{Slugify.input(params[:frame_model])}.json"
       else
         f += "index.json"
         puts f
