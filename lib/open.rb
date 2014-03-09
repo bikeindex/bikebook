@@ -8,26 +8,32 @@ module BikeBook
       response.headers['access-control-allow-methods'] = "GET, OPTIONS"
       response.headers['access-control-request-method'] = "*"
     end
-    
-    get '/' do 
-      content_type :json
+
+    get '/' do
+      erb File.read('./public/index.erb')
+      # content_type :json
         
-      f = "./bike_data/"
-      if params[:manufacturer].present?
-        f += "#{Slugify.input(params[:manufacturer])}/"
-        if params[:year].present?
-          f += "#{params[:year]}/"
-        end
-      end
-      if params[:frame_model].present?
-        f += "#{Slugify.input(params[:frame_model])}.json"
-      else
-        f += "index.json"
-        puts f
-      end
-      pass unless File.exists?(f)
-      File.read(f)
+      # f = "./bike_data/"
+      # if params[:manufacturer].present?
+      #   f += "#{Slugify.input(params[:manufacturer])}/"
+      #   if params[:year].present?
+      #     f += "#{params[:year]}/"
+      #   end
+      # end
+      # if params[:frame_model].present?
+      #   f += "#{Slugify.input(params[:frame_model])}.json"
+      # else
+      #   f += "index.json"
+      #   puts f
+      # end
+      # pass unless File.exists?(f)
+      # File.read(f)
     end
+
+    get '/site.css' do
+      erb File.read('./public/site.css')
+    end
+    
 
     get '/documentation' do
       content_type :json
