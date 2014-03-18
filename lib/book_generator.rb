@@ -18,7 +18,7 @@ module BikeBook
           f.write(model_list(mnfg).to_json)
         end
         
-        @m_hash[mnfg].keys.each do |year|
+        @m_hash[mnfg].keys.reverse_each do |year|
           File.open("#{@base_dir}#{mnfg_slug}/#{year}/index.json", "w") do |f|
             f.write(@m_hash[mnfg][year].to_json)
           end
@@ -41,7 +41,7 @@ module BikeBook
 
         models[bike[:manufacturer]] ||= {}
         models[bike[:manufacturer]][bike[:year]] ||= []
-        models[bike[:manufacturer]][bike[:year]] << bike
+        models[bike[:manufacturer]][bike[:year]] << bike[:frame_model]
       end
       models
     end
@@ -51,9 +51,7 @@ module BikeBook
       model_list = []      
       years.each do |year|
         puts @m_hash[manufacturer][year]
-        @m_hash[manufacturer][year].each do |bike|
-          model_list << bike[:frame_model]
-        end
+        @m_hash[manufacturer][year].each { |bike| model_list << bike }
       end
       model_list.uniq
     end

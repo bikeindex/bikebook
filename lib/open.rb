@@ -10,30 +10,28 @@ module BikeBook
     end
 
     get '/' do
-      erb File.read('./public/index.erb')
-      # content_type :json
-        
-      # f = "./bike_data/"
-      # if params[:manufacturer].present?
-      #   f += "#{Slugify.input(params[:manufacturer])}/"
-      #   if params[:year].present?
-      #     f += "#{params[:year]}/"
-      #   end
-      # end
-      # if params[:frame_model].present?
-      #   f += "#{Slugify.input(params[:frame_model])}.json"
-      # else
-      #   f += "index.json"
-      #   puts f
-      # end
-      # pass unless File.exists?(f)
-      # File.read(f)
-    end
-
-    get '/site.css' do
-      erb File.read('./public/site.css')
+      f = "./public/index.html"
+      if params[:manufacturer].present?
+        content_type :json
+        f = "./bike_data/"
+        f += "#{Slugify.input(params[:manufacturer])}/"
+        f += "#{params[:year]}/" if params[:year].present?
+        if params[:frame_model].present?
+          f += "#{Slugify.input(params[:frame_model])}.json"
+        else
+          f += "index.json"
+          puts f
+        end
+      end
+      pass unless File.exists?(f)
+      File.read(f)
     end
     
+    get '/assets/:asset' do
+      f = "./public/#{params[:asset]}"
+      content_type params[:asset][/\.\w*$/]
+      File.read(f)
+    end
 
     get '/documentation' do
       content_type :json
