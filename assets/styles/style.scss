@@ -105,11 +105,11 @@ section {
   float: left;
 }
 
-.holds_1_bike section { 
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
-}
+// .holds_1_bike section { 
+//   margin-left: auto;
+//   margin-right: auto;
+//   float: none;
+// }
 
 .selectors {
   @include clearfix;
@@ -216,15 +216,19 @@ section {
 .model-details {
   @include clearfix;
   p { margin-top: 2em; color: $grayText; }
+  a.mnfg-link { color: $grayText; text-decoration: underline; }
   a { 
     color: $linkColor;
     cursor: pointer;
+    text-decoration: none;
+    @include transition(color linear .1s);
     &:visited { color: $linkColor; }
     &:hover {
-      text-decoration: underline;
-      color: darken($linkColor, 5%);
+      // text-decoration: underline;
+      // color: lighten($linkColor, 5%);
+      color: #4471b4;
     }
-    &.mnfg-link { color: $linkColor ; }
+    
   }
   // & > div { display: none; }
 }

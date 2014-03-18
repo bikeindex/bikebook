@@ -1088,11 +1088,6 @@ section {
   border: 1px solid #ccc;
   float: left; }
 
-.holds_1_bike section {
-  margin-left: auto;
-  margin-right: auto;
-  float: none; }
-
 .selectors {
   width: 100%;
   position: relative;
@@ -1200,16 +1195,20 @@ section {
 .model-details p {
   margin-top: 2em;
   color: #999999; }
+.model-details a.mnfg-link {
+  color: #999999;
+  text-decoration: underline; }
 .model-details a {
   color: #85a4b0;
-  cursor: pointer; }
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: color linear 0.1s;
+  -o-transition: color linear 0.1s;
+  transition: color linear 0.1s; }
   .model-details a:visited {
     color: #85a4b0; }
   .model-details a:hover {
-    text-decoration: underline;
-    color: #7698a6; }
-  .model-details a.mnfg-link {
-    color: #85a4b0; }
+    color: #4471b4; }
 
 .mustached {
   display: none; }
