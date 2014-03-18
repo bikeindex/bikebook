@@ -1033,7 +1033,7 @@ html {
   margin: 0;
   padding: 0; }
 
-.new-compare {
+#new-compare {
   box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.2);
   width: 100%;
   display: block;
@@ -1048,10 +1048,10 @@ html {
   border-bottom: 1px solid #fff;
   border-top: 1px solid #2980b9;
   font-size: 18px; }
-  .new-compare:hover {
+  #new-compare:hover {
     border: none;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
-  .new-compare:active {
+  #new-compare:active {
     border-bottom: 1px solid #fff;
     border-top: 1px solid #2980b9;
     box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.2); }
@@ -1071,6 +1071,12 @@ h2, h3 {
 h3 {
   font-size: 1.15em; }
 
+#bikes-container:before, #bikes-container:after {
+  content: " ";
+  display: table; }
+#bikes-container:after {
+  clear: both; }
+
 section {
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
@@ -1081,6 +1087,11 @@ section {
   background: white;
   border: 1px solid #ccc;
   float: left; }
+
+.holds_1_bike section {
+  margin-left: auto;
+  margin-right: auto;
+  float: none; }
 
 .selectors {
   width: 100%;
@@ -1205,9 +1216,3 @@ section {
 
 .bike {
   display: none; }
-
-.bikes-container:before, .bikes-container:after {
-  content: " ";
-  display: table; }
-.bikes-container:after {
-  clear: both; }

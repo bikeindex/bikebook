@@ -51,7 +51,7 @@ html {
   margin: 0; padding: 0;
 }
 
-.new-compare {
+#new-compare {
   box-shadow: inset 0 -1px 3px rgba(black,.2);
   width: 100%;
   display: block;
@@ -91,6 +91,8 @@ h2, h3 {
 
 h3 { font-size: 1.15em; }
 
+#bikes-container { @include clearfix; }
+
 section {
   box-shadow: inset 0 0 3px rgba(black,.2);
   border-radius: 3px;
@@ -101,6 +103,12 @@ section {
   background: $sectionBackground;
   border: 1px solid #ccc;
   float: left;
+}
+
+.holds_1_bike section { 
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
 }
 
 .selectors {
@@ -223,4 +231,3 @@ section {
 
 .mustached { display: none; }
 .bike { display: none; }
-.bikes-container { @include clearfix; }

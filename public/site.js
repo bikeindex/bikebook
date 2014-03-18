@@ -122,7 +122,7 @@
       success: function(data, textStatus, jqXHR) {
         var html;
         html = $(Mustache.to_html($('#base_tmpl').html(), data));
-        $(".bikes-container").append(html);
+        $("#bikes-container").append(html);
         html.find('.manufacturer-select').select2({
           placeholder: "Choose manufacturer",
           allow_clear: true
@@ -137,25 +137,25 @@
 
   initialize = function() {
     addBike();
-    $('.new-compare').on('click', function(e) {
+    $('new-compare').on('click', function(e) {
       e.preventDefault();
       return addBike();
     });
-    $('.bikes-container').on('click', '.close', function(e) {
+    $('#bikes-container').on('click', '.close', function(e) {
       e.preventDefault();
       return $(e.target).parents('.bike').fadeOut();
     });
-    $('.bikes-container').on('click', '.comp_cat_link', function(e) {
+    $('#bikes-container').on('click', '.comp_cat_link', function(e) {
       e.preventDefault();
       return $(e.target).parents('.comp_cat_wrap').find('dl').slideToggle(300);
     });
-    $('.bikes-container').on('change', 'select.model-select', function(e) {
+    $('#bikes-container').on('change', 'select.model-select', function(e) {
       return getBike(e);
     });
-    $('.bikes-container').on('change', 'select.manufacturer-select', function(e) {
+    $('#bikes-container').on('change', 'select.manufacturer-select', function(e) {
       return updateManufacturer(e);
     });
-    return $('.bikes-container').on('change', 'select.year-select', function(e) {
+    return $('#bikes-container').on('change', 'select.year-select', function(e) {
       return getModelList(e);
     });
   };

@@ -97,7 +97,7 @@ addBike = ->
     url: "/assets/select_list.json"
     success: (data, textStatus, jqXHR) ->
       html = $(Mustache.to_html($('#base_tmpl').html(), data))
-      $(".bikes-container").append html
+      $("#bikes-container").append html
       html.find('.manufacturer-select').select2
         placeholder: "Choose manufacturer"
         allow_clear: true
@@ -107,25 +107,25 @@ addBike = ->
  
 initialize = ->
   addBike()
-  $('.new-compare').on 'click', (e) ->
+  $('new-compare').on 'click', (e) ->
     e.preventDefault()
     addBike()
   
-  $('.bikes-container').on 'click', '.close', (e) ->
+  $('#bikes-container').on 'click', '.close', (e) ->
     e.preventDefault()
     $(e.target).parents('.bike').fadeOut()
 
-  $('.bikes-container').on 'click', '.comp_cat_link', (e) ->
+  $('#bikes-container').on 'click', '.comp_cat_link', (e) ->
     e.preventDefault()
     $(e.target).parents('.comp_cat_wrap').find('dl').slideToggle 300
 
-  $('.bikes-container').on 'change', 'select.model-select', (e) ->
+  $('#bikes-container').on 'change', 'select.model-select', (e) ->
     getBike(e)
 
-  $('.bikes-container').on 'change', 'select.manufacturer-select', (e) ->
+  $('#bikes-container').on 'change', 'select.manufacturer-select', (e) ->
     updateManufacturer(e)
 
-  $('.bikes-container').on 'change', 'select.year-select', (e) ->
+  $('#bikes-container').on 'change', 'select.year-select', (e) ->
     getModelList(e)
 
 
