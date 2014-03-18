@@ -59,7 +59,7 @@
   };
 
   updateModelDisplay = function(target, data) {
-    var bike, c, comp, desc, dlgroup, field, fields, name, _i, _j, _len, _len1, _ref, _results;
+    var bike, c, comp, desc, dlgroup, field, fields, name, tires, wheel_sizes, _i, _j, _len, _len1, _ref, _results;
     if (data == null) {
       data = [];
     }
@@ -68,15 +68,14 @@
     fields = ['.bikebase', '.frameandfork', '.drivetrainandbrakes', '.wheels', '.additionalparts'];
     bike = data["bike"];
     if (bike['rear_wheel_bsd'] !== void 0) {
-      desc = '';
+      tires = '';
+      wheel_sizes = JSON.parse($('#wheel_sizes').attr('data-sizes'));
+      desc = wheel_sizes[bike['rear_wheel_bsd']];
       if (bike['rear_tire_narrow'] !== void 0) {
-        desc = "Fat ";
-        if (bike['rear_tire_narrow']) {
-          desc = "Narrow ";
-        }
+        tires = bike['rear_tire_narrow'] ? 'skinny' : 'fat';
+        tires = "(" + tires + " tires)";
       }
-      desc += bike['rear_wheel_bsd'];
-      target.find(".bikebase dl").append("<dt>tires</dt><dd>" + desc + "</dd>");
+      target.find(".w-size").html("" + desc + " " + tires);
     }
     _ref = data["components"];
     for (_i = 0, _len = _ref.length; _i < _len; _i++) {
@@ -96,10 +95,10 @@
     _results = [];
     for (_j = 0, _len1 = fields.length; _j < _len1; _j++) {
       field = fields[_j];
-      if (target.find("" + field + " dd").length > 0) {
-        _results.push(target.find("" + field + ", " + field + " dl").fadeIn());
-      } else {
+      if (target.find("" + field + " dd").length === 0) {
         _results.push(target.find("" + field).fadeOut());
+      } else {
+        _results.push(void 0);
       }
     }
     return _results;
@@ -145,6 +144,10 @@
     $('.bikes-container').on('click', '.close', function(e) {
       e.preventDefault();
       return $(e.target).parents('.bike').fadeOut();
+    });
+    $('.bikes-container').on('click', '.comp_cat_link', function(e) {
+      e.preventDefault();
+      return $(e.target).parents('.comp_cat_wrap').find('dl').slideToggle(300);
     });
     $('.bikes-container').on('change', 'select.model-select', function(e) {
       return getBike(e);

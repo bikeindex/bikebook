@@ -26,13 +26,19 @@ body {
   background: $bodyBackground;
   margin: 0; padding: 3em 0 4em 0;
   color: $textColor;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+select, .select2-container, .select2-results {
   font-family: 'Rambla', sans-serif;
-  font-weight: normal;
+  size: 14px;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Rambla', sans-serif;;
-  font-weight: normal;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
   line-height: 1.2em;
   strong {
     font-weight: bold;
@@ -58,6 +64,7 @@ html {
   padding: .5em;
   border-bottom: 1px solid #fff;
   border-top: 1px solid $blueDark;
+  font-size: 18px;
   &:hover {
     border: none;
     box-shadow: 1px 1px 2px rgba(black,.2);
@@ -174,6 +181,7 @@ section {
     text-transform: capitalize;
   }
   dd { color: $grayText; }  
+  .comp_cat { display: none; }
 }
 
 
@@ -202,11 +210,17 @@ section {
   p { margin-top: 2em; color: $grayText; }
   a { 
     color: $linkColor;
+    cursor: pointer;
     &:visited { color: $linkColor; }
-    &:hover { text-decoration: underline; }
+    &:hover {
+      text-decoration: underline;
+      color: darken($linkColor, 5%);
+    }
+    &.mnfg-link { color: $linkColor ; }
   }
-  & > div { display: none; }
+  // & > div { display: none; }
 }
 
 .mustached { display: none; }
 .bike { display: none; }
+.bikes-container { @include clearfix; }

@@ -1007,17 +1007,22 @@ body {
   margin: 0;
   padding: 3em 0 4em 0;
   color: #111111;
-  font-family: 'Rambla', sans-serif;
-  font-weight: normal; }
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  font-size: 17px; }
   body:before, body:after {
     content: " ";
     display: table; }
   body:after {
     clear: both; }
 
-h1, h2, h3, h4 {
+select, .select2-container, .select2-results {
   font-family: 'Rambla', sans-serif;
-  font-weight: normal;
+  size: 14px; }
+
+h1, h2, h3, h4 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
   line-height: 1.2em; }
   h1 strong, h2 strong, h3 strong, h4 strong {
     font-weight: bold; }
@@ -1041,7 +1046,8 @@ html {
   text-decoration: none;
   padding: .5em;
   border-bottom: 1px solid #fff;
-  border-top: 1px solid #2980b9; }
+  border-top: 1px solid #2980b9;
+  font-size: 18px; }
   .new-compare:hover {
     border: none;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
@@ -1149,6 +1155,8 @@ section {
   text-transform: capitalize; }
 .model-details dd {
   color: #999999; }
+.model-details .comp_cat {
+  display: none; }
 
 .close {
   -webkit-transition: all linear 0.1s;
@@ -1182,16 +1190,24 @@ section {
   margin-top: 2em;
   color: #999999; }
 .model-details a {
-  color: #85a4b0; }
+  color: #85a4b0;
+  cursor: pointer; }
   .model-details a:visited {
     color: #85a4b0; }
   .model-details a:hover {
-    text-decoration: underline; }
-.model-details > div {
-  display: none; }
+    text-decoration: underline;
+    color: #7698a6; }
+  .model-details a.mnfg-link {
+    color: #85a4b0; }
 
 .mustached {
   display: none; }
 
 .bike {
   display: none; }
+
+.bikes-container:before, .bikes-container:after {
+  content: " ";
+  display: table; }
+.bikes-container:after {
+  clear: both; }

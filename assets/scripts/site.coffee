@@ -52,12 +52,15 @@ updateModelDisplay = (target, data=[]) ->
   bike = data["bike"]
  
   if bike['rear_wheel_bsd'] != undefined
-    desc = ''
+    tires = ''
+    wheel_sizes = JSON.parse($('#wheel_sizes').attr('data-sizes'))
+    desc = wheel_sizes[bike['rear_wheel_bsd']]
+
     if bike['rear_tire_narrow'] != undefined
-      desc = "Fat "
-      desc = "Narrow " if bike['rear_tire_narrow']
-    desc += bike['rear_wheel_bsd']
-    target.find(".bikebase dl").append("<dt>tires</dt><dd>#{desc}</dd>")
+      tires = if bike['rear_tire_narrow'] then 'skinny' else 'fat'
+      tires = "(#{tires} tires)"
+
+    target.find(".w-size").html("#{desc} #{tires}")
   
   for comp in data["components"]
     name = comp["component_type"].replace(/_/g, ' ')
@@ -71,10 +74,12 @@ updateModelDisplay = (target, data=[]) ->
     c = "<dt>#{name}</dt><dd>#{comp["description"]}</dd>"
     target.find(".#{dlgroup} dl").append(c)
   for field in fields
-    if target.find("#{field} dd").length > 0
-      target.find("#{field}, #{field} dl").fadeIn()
-    else
+    if target.find("#{field} dd").length == 0
       target.find("#{field}").fadeOut()
+    # if target.find("#{field} dd").length > 0
+    #   target.find("#{field}, #{field} dl").fadeIn()
+    # else
+    #   target.find("#{field}").fadeOut()
 
 
 setModelList = (target, data=[]) ->
@@ -98,7 +103,6 @@ addBike = ->
         allow_clear: true
       html.find('.year-select').select2
         placeholder: "Year"
-      # html.find('.year-select').select2 'enable', false
       html.fadeIn()
  
 initialize = ->
@@ -110,6 +114,10 @@ initialize = ->
   $('.bikes-container').on 'click', '.close', (e) ->
     e.preventDefault()
     $(e.target).parents('.bike').fadeOut()
+
+  $('.bikes-container').on 'click', '.comp_cat_link', (e) ->
+    e.preventDefault()
+    $(e.target).parents('.comp_cat_wrap').find('dl').slideToggle 300
 
   $('.bikes-container').on 'change', 'select.model-select', (e) ->
     getBike(e)
