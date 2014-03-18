@@ -3,9 +3,14 @@
 @import "bootstrap_type";
 @import "reset";
 @import "select2";
-$blueDark: rgb(41,128,185);
+
+$textColor: #111;
 $grayText: #999;
 $linkColor: #85a4b0;
+
+$blueDark: rgb(41,128,185);
+$bodyBackground: #f0f0f0;
+$sectionBackground: #fff;
 
 * {
   -moz-box-sizing: border-box;
@@ -18,10 +23,9 @@ body {
   @include clearfix;
   width: 100%;
   position: relative;
-  background: #f0f0f0;
+  background: $bodyBackground;
   margin: 0; padding: 3em 0 4em 0;
-  color: #111;
-  // font-size: 1.2em;
+  color: $textColor;
   font-family: 'Rambla', sans-serif;
   font-weight: normal;
 }
@@ -87,7 +91,7 @@ section {
   width: 32%;
   margin: 20px 0 0 1%;
   padding: .5em;
-  background: #fff;
+  background: $sectionBackground;
   border: 1px solid #ccc;
   float: left;
 }
@@ -99,15 +103,17 @@ section {
   min-height: 4.25em;
   padding: 0 2em .5em 0;
   z-index: 50;
-  .year-select {
-    width: 28%; 
-    float: left;
-  }
   .manufacturer-select {
     margin-right: 2%;
     width: 70%;
-    width: 100%;
+    // width: 100%;
     float: left;
+    @include transition(all linear .1s);
+    .select2-default { color: $textColor !important; }
+  }
+  .year-select {
+    float: left;
+    width: 28%;
   }
   .model-select-contain { 
     display: none;
@@ -121,6 +127,8 @@ section {
   }
 }
 
+
+
 .image-holder {
   height: 333px;
   width: 100%;
@@ -130,12 +138,19 @@ section {
     width: 100%;
     height: auto;
   }
+  .realz-photo {
+    display: block;
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 9;
+  }
   .model-photo {
     position: absolute;
     left: 0; bottom: 0;
     z-index: 10;
-    display: none;
-    // @include transition(all linear 1s);
   }
   .placeholder {
     position: absolute;
@@ -144,26 +159,36 @@ section {
     z-index: 0;
     span { display: none;}
     img {
-      height: 100%;
-      width: auto;
+      // height: 100%;
+      // width: auto;
       margin: 0 auto;
     }
   }
 }
 
-dd { color: $grayText; }
+.model-details {
+  h3 { color: #666; }
+  dt {
+    float: left;
+    padding-right: .4em;
+    text-transform: capitalize;
+  }
+  dd { color: $grayText; }  
+}
+
 
 .close { 
+  @include transition(all linear .1s);
   border-radius: .25em;
   display: block;
   position: absolute;
   top: .5em; right: .5em;
   padding: .23em .5em;
   background: rgba(#ccc,.3);
+  z-index: 100;
+  cursor: pointer;
   color: $grayText;
   text-decoration: none;
-  @include transition(all linear .1s);
-  cursor: pointer;
   &:hover {
     color: #000;
     background: #ccc;
@@ -173,6 +198,7 @@ dd { color: $grayText; }
 }
 
 .model-details {
+  @include clearfix;
   p { margin-top: 2em; color: $grayText; }
   a { 
     color: $linkColor;
@@ -181,3 +207,6 @@ dd { color: $grayText; }
   }
   & > div { display: none; }
 }
+
+.mustached { display: none; }
+.bike { display: none; }

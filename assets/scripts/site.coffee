@@ -1,60 +1,56 @@
+updateManufacturer = (e) ->
+  target = $(e.target)
+  mnfg = target.parents('.selectors').find('select.manufacturer-select option:selected')
+  year = target.parents('.selectors').find('select.year-select')
+  if mnfg.val().length != 0
+    data = JSON.parse("[#{mnfg.attr('data-years')}]")
+    year.html(Mustache.to_html($('#years_tmpl').html(), data))
+    year.select2 "enable", true
+    year.select2 "val", data[0]
+    getModelList(e)
+    
+  else
+    year.select2 "enable", false
+    model_list.fadeOut 'fast', ->
+      model_list.empty()
+
 getModelList = (e) ->
   target = $(e.target)
   year = target.parents('.selectors').find('select.year-select').val()
   model_list = target.parents('.selectors').find('.model-select-contain')
   mnfg = target.parents('.selectors').find('select.manufacturer-select').val()  
-  
   # if (mnfg.length * year.length) != 0
-  #   url = "/?manufacturer=#{mnfg}&year=#{year}"
-  #   $.ajax
-  #     type: "GET"
-  #     url: url
-  #     success: (data, textStatus, jqXHR) ->
-  #       setModelList(model_list, data)
-  if mnfg.length != 0
-    url = "/?manufacturer=#{mnfg}"
-    $.ajax
-      type: "GET"
-      url: url
-      success: (data, textStatus, jqXHR) ->
-        setModelList(model_list, data)
-  else
-    model_list.fadeOut 'fast', ->
-      model_list.empty()
-
-getBike = (e) ->
-  target = $(e.target)
-  model = target.parents('.selectors').find('select.model-select').val()
-  return true unless model.length > 0
-  # year = target.parents('.selectors').find('select.year-select').val()
-  mnfg = target.parents('.selectors').find('select.manufacturer-select').val()
-  year = model.substring(0,4)
-  url = "/?manufacturer=#{mnfg}&year=#{year}&frame_model=#{model.slice(5)}"
+  url = "/?manufacturer=#{mnfg}&year=#{year}"
   $.ajax
     type: "GET"
     url: url
     success: (data, textStatus, jqXHR) ->
-      updateModelDisplay(target.parents('section'),data)
+      setModelList(model_list, data)
+  # else
+  #   model_list.fadeOut 'fast', ->
+  #     model_list.empty()
+
+getBike = (e) ->
+  target = $(e.target)
+  year = target.parents('.selectors').find('select.year-select').val()
+  model = target.parents('.selectors').find('select.model-select').val()
+  mnfg = target.parents('.selectors').find('select.manufacturer-select').val()  
+  return true unless model.length > 0
+  url = "/?manufacturer=#{mnfg}&year=#{year}&frame_model=#{model}"
+  $.ajax
+    type: "GET"
+    url: url
+    success: (data, textStatus, jqXHR) ->
+      target.parents('section').find('.model-display').fadeOut 200, ->
+        updateModelDisplay(target.parents('section'),data)
     
 updateModelDisplay = (target, data=[]) ->
-  fields = ['.bikebase','.frameandfork','.drivetrainandbrakes','.wheels','.additionalparts']
-  for field in fields
-    target.find("#{field} dl").fadeOut 'fast'
-    target.find("#{field} dl").empty()
-  bike = data["bike"]
-  target.find('h2').html("#{bike["frame_model"]} <small>by #{bike["manufacturer"]} (#{bike["year"]})</small>")
-  photo = target.find('.image-holder')
+  target.find('.model-display').html(Mustache.to_html($('#details_tmpl').html(), data))
+  target.find('.model-display').fadeIn()
 
-  photo.find('img').fadeOut 'fast', ->
-    photo.find('.model-photo').remove()
-    if bike["stock_photo_small"] != undefined
-      photo.append("<a class='model-photo' href='#{bike["stock_photo_url"]}'><img src='#{bike["stock_photo_small"]}'></a>")
-      photo.find('.model-photo').fadeIn("medium")
-      # setTimeout(photo.find('.model-photo').fadeIn("fast"),500)
-    else
-      photo.find('img').fadeIn()
-  
-  target.find(".bikebase p").html("#{bike['description']} (<a href='#{bike["manufacturers_url"]}'>manufacturer's page</a>)")
+  fields = ['.bikebase','.frameandfork','.drivetrainandbrakes','.wheels','.additionalparts']
+  bike = data["bike"]
+ 
   if bike['rear_wheel_bsd'] != undefined
     desc = ''
     if bike['rear_tire_narrow'] != undefined
@@ -63,11 +59,6 @@ updateModelDisplay = (target, data=[]) ->
     desc += bike['rear_wheel_bsd']
     target.find(".bikebase dl").append("<dt>tires</dt><dd>#{desc}</dd>")
   
-  for key in ['paint_description', 'original_msrp', 'cycle_type']
-    if bike[key] != undefined
-      c = "<dt>#{key.replace(/_/g, ' ')}</dt><dd>#{bike[key]}</dd>" 
-      target.find(".bikebase dl").append(c)
-
   for comp in data["components"]
     name = comp["component_type"].replace(/_/g, ' ')
     if comp["front_or_rear"] == "both"
@@ -79,37 +70,58 @@ updateModelDisplay = (target, data=[]) ->
     dlgroup = comp["cgroup"].replace(/\s+/g,'').toLowerCase()
     c = "<dt>#{name}</dt><dd>#{comp["description"]}</dd>"
     target.find(".#{dlgroup} dl").append(c)
-
   for field in fields
     if target.find("#{field} dd").length > 0
       target.find("#{field}, #{field} dl").fadeIn()
     else
       target.find("#{field}").fadeOut()
 
+
 setModelList = (target, data=[]) ->
-  selects = "<select class='model-select'><option value=''>Select a model</option>"
-  # for year in years
-  #   models = "<optgroup label='#{year}'>"
-  for year in Object.keys(data)
-    selects += "<optgroup label='#{year}'>"
-    for model in data[year]
-      selects += "<option value='#{year} #{model}'>#{year} #{model}</option>"
-    selects += "</optgroup>"
-  # for model in year
-  #   selects += "<option value='#{model}'>#{model}</option>"
-  # models.push({text: name, id: name})
-  # selects.push({ title: year, children: models })
-  target.html(selects + "</select>")
+  target.html(Mustache.to_html($('#models_tmpl').html(), data))
   target.find('select')
-    .select2()
-    .on "change", (e) ->
-      getBike(e)
+    .select2
+      placeholder: "Select model"
   target.fadeIn('fast')
+
+
     
+addBike = ->
+  $.ajax
+    type: "GET"
+    url: "/assets/select_list.json"
+    success: (data, textStatus, jqXHR) ->
+      html = $(Mustache.to_html($('#base_tmpl').html(), data))
+      $(".bikes-container").append html
+      html.find('.manufacturer-select').select2
+        placeholder: "Choose manufacturer"
+        allow_clear: true
+      html.find('.year-select').select2
+        placeholder: "Year"
+      # html.find('.year-select').select2 'enable', false
+      html.fadeIn()
+ 
+initialize = ->
+  addBike()
+  $('.new-compare').on 'click', (e) ->
+    e.preventDefault()
+    addBike()
+  
+  $('.bikes-container').on 'click', '.close', (e) ->
+    e.preventDefault()
+    $(e.target).parents('.bike').fadeOut()
+
+  $('.bikes-container').on 'change', 'select.model-select', (e) ->
+    getBike(e)
+
+  $('.bikes-container').on 'change', 'select.manufacturer-select', (e) ->
+    updateManufacturer(e)
+
+  $('.bikes-container').on 'change', 'select.year-select', (e) ->
+    getModelList(e)
 
 
 $(document).ready ->
-  $('.manufacturer-select, .year-select').on "change", (e) ->
-    getModelList(e)
-
-  $('select').select2()
+  initialize()
+  
+  
