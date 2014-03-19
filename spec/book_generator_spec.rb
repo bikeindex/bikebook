@@ -13,7 +13,7 @@ describe BikeBook::BookGenerator do
   describe :select_list do 
     it "should write the things we need" do 
       select_list = BikeBook::BookGenerator.new.select_list
-      select_list["manufacturers"].include? ({"Globe"=>[2014]}).should be_true
+      select_list.include? ({:name=>"All City", :years=>[2013]}).should be_true
     end
   end
 
