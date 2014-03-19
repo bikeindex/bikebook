@@ -19,16 +19,12 @@ getModelList = (e) ->
   year = target.parents('.selectors').find('select.year-select').val()
   model_list = target.parents('.selectors').find('.model-select-contain')
   mnfg = target.parents('.selectors').find('select.manufacturer-select').val()  
-  # if (mnfg.length * year.length) != 0
   url = "/?manufacturer=#{mnfg}&year=#{year}"
   $.ajax
     type: "GET"
     url: url
     success: (data, textStatus, jqXHR) ->
       setModelList(model_list, data)
-  # else
-  #   model_list.fadeOut 'fast', ->
-  #     model_list.empty()
 
 getBike = (e) ->
   target = $(e.target)
@@ -75,12 +71,7 @@ updateModelDisplay = (target, data=[]) ->
     target.find(".#{dlgroup} dl").append(c)
   for field in fields
     if target.find("#{field} dd").length == 0
-      target.find("#{field}").fadeOut()
-    # if target.find("#{field} dd").length > 0
-    #   target.find("#{field}, #{field} dl").fadeIn()
-    # else
-    #   target.find("#{field}").fadeOut()
-
+      target.find("#{field}").fadeOut('fast')
 
 setModelList = (target, data=[]) ->
   target.html(Mustache.to_html($('#models_tmpl').html(), data))
@@ -88,8 +79,6 @@ setModelList = (target, data=[]) ->
     .select2
       placeholder: "Select model"
   target.fadeIn('fast')
-
-
     
 addBike = ->
   $.ajax
@@ -107,7 +96,7 @@ addBike = ->
  
 initialize = ->
   addBike()
-  $('new-compare').on 'click', (e) ->
+  $('#new-compare').on 'click', (e) ->
     e.preventDefault()
     addBike()
   
@@ -130,6 +119,12 @@ initialize = ->
 
 
 $(document).ready ->
-  initialize()
+  setTimeout ( ->
+    $('#initial').addClass('off-screen')
+    setTimeout ( ->
+      initialize()
+      $('#initial').addClass('removed')
+      ), 500
+    ), 700
   
   

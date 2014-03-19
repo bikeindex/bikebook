@@ -96,7 +96,7 @@
     for (_j = 0, _len1 = fields.length; _j < _len1; _j++) {
       field = fields[_j];
       if (target.find("" + field + " dd").length === 0) {
-        _results.push(target.find("" + field).fadeOut());
+        _results.push(target.find("" + field).fadeOut('fast'));
       } else {
         _results.push(void 0);
       }
@@ -137,7 +137,7 @@
 
   initialize = function() {
     addBike();
-    $('new-compare').on('click', function(e) {
+    $('#new-compare').on('click', function(e) {
       e.preventDefault();
       return addBike();
     });
@@ -161,7 +161,13 @@
   };
 
   $(document).ready(function() {
-    return initialize();
+    return setTimeout((function() {
+      $('#initial').addClass('off-screen');
+      return setTimeout((function() {
+        initialize();
+        return $('#initial').addClass('removed');
+      }), 500);
+    }), 700);
   });
 
 }).call(this);

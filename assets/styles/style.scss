@@ -19,9 +19,12 @@ $sectionBackground: #fff;
   text-rendering: optimizeLegibility;
 }
 
+html { height: 100%; }
+
 body {
   @include clearfix;
   width: 100%;
+  height: 100%;
   position: relative;
   background: $bodyBackground;
   margin: 0; padding: 3em 0 4em 0;
@@ -29,6 +32,44 @@ body {
   font-family: 'EB Garamond', serif;
   font-weight: 400;
   font-size: 17px;
+}
+
+#initial {
+  span {
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background: $blueDark;
+    box-shadow: 0 0 3px rgba(black,.2);
+    @include transition(opacity ease-in .5s);
+  }
+  p {
+    @include transition(opacity ease-in 3s);
+    text-shadow: 1px 1px 2px rgba(black,.2);
+    z-index: 1001;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    top: 50%; left: 0;
+    margin-top: -.5em;
+    margin-bottom: 0;
+    display: block;
+    width: 100%;
+  }
+  &.off-screen span { opacity: 0; }
+  &.removed {
+    span {
+      z-index: 0;
+      height: 0; width: 0;
+    }
+    p {
+      z-index: -1;
+      opacity: 0;
+    }
+  }
 }
 
 select, .select2-container, .select2-results {
