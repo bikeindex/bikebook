@@ -103,7 +103,7 @@
       _results = [];
       for (_k = 0, _len2 = groups.length; _k < _len2; _k++) {
         closed = groups[_k];
-        _results.push(collapseToggle(target.find("" + closed + " a")));
+        _results.push(target.find(closed).toggleClass('closed').find('dl').hide());
       }
       return _results;
     }

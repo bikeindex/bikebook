@@ -76,7 +76,7 @@ updateModelDisplay = (target, data=[]) ->
   groups = $("#collapsed-cats").data('collapsed')
   if groups.length > 0
     for closed in groups
-      collapseToggle(target.find("#{closed} a"))
+      target.find(closed).toggleClass('closed').find('dl').hide()
 
 setModelList = (target, data=[]) ->
   target.html(Mustache.to_html($('#models_tmpl').html(), data))

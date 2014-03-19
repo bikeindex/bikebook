@@ -33,7 +33,7 @@ module BikeBook
     def select_list
       list = {manufacturers: []}
       @m_hash.keys.each do |mnfg|
-        list[:manufacturers] << {name: mnfg, years: @m_hash[mnfg].keys.sort.reverse }
+        list[:manufacturers] << {name: mnfg, years: @m_hash[mnfg].keys.sort }
       end
       list
     end
