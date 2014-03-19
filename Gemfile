@@ -7,7 +7,6 @@ gem "activesupport", :require => "active_support"
 
 gem 'sinatra'
 
-
 group :test do
   gem 'rspec'
   gem 'rack-test', :require => "rack/test"
@@ -16,4 +15,5 @@ end
 
 group :development do 
   gem 'rerun'
+  gem 'sass'
 end

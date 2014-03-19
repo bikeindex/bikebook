@@ -1,0 +1,237 @@
+@import "_variables";
+@import "_bootstrap_mixins";
+@import "bootstrap_type";
+@import "reset";
+@import "select2";
+
+$textColor: #111;
+$grayText: #999;
+$linkColor: #85a4b0;
+
+$blueDark: rgb(41,128,185);
+$bodyBackground: #f0f0f0;
+$sectionBackground: #fff;
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  @include clearfix;
+  width: 100%;
+  position: relative;
+  background: $bodyBackground;
+  margin: 0; padding: 3em 0 4em 0;
+  color: $textColor;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+select, .select2-container, .select2-results {
+  font-family: 'Rambla', sans-serif;
+  size: 14px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  line-height: 1.2em;
+  strong {
+    font-weight: bold;
+  }
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  margin: 0; padding: 0;
+}
+
+#new-compare {
+  box-shadow: inset 0 -1px 3px rgba(black,.2);
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0; left: 0;
+  background: $blueDark;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: .5em;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid $blueDark;
+  font-size: 18px;
+  &:hover {
+    border: none;
+    box-shadow: 1px 1px 2px rgba(black,.2);
+  }
+  &:active {
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid $blueDark;
+    box-shadow: inset 0 -1px 3px rgba(black,.2);
+  }
+}
+
+h2 { 
+  // text-align: center;
+  position: absolute;
+  z-index: 20;
+}
+
+h2, h3 {
+  margin: 0 0 .3em;
+  font-size: 1.25em;
+  span, small { color: $grayText; }
+  small { font-size: 85%; }
+}
+
+h3 { font-size: 1.15em; }
+
+#bikes-container { @include clearfix; }
+
+section {
+  box-shadow: inset 0 0 3px rgba(black,.2);
+  border-radius: 3px;
+  position: relative;
+  width: 32%;
+  margin: 20px 0 0 1%;
+  padding: .5em;
+  background: $sectionBackground;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+// .holds_1_bike section { 
+//   margin-left: auto;
+//   margin-right: auto;
+//   float: none;
+// }
+
+.selectors {
+  @include clearfix;
+  width: 100%;
+  position: relative;
+  min-height: 4.25em;
+  padding: 0 2em .5em 0;
+  z-index: 50;
+  .manufacturer-select {
+    margin-right: 2%;
+    width: 70%;
+    // width: 100%;
+    float: left;
+    @include transition(all linear .1s);
+    .select2-default { color: $textColor !important; }
+  }
+  .year-select {
+    float: left;
+    width: 28%;
+  }
+  .model-select-contain { 
+    display: none;
+    width: 100%;
+    .select2-container {
+      display: none;
+      display: block;
+      padding-top: 7px;
+      clear: both;
+    }
+  }
+}
+
+
+
+.image-holder {
+  height: 333px;
+  width: 100%;
+  position: relative;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .realz-photo {
+    display: block;
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 9;
+  }
+  .model-photo {
+    position: absolute;
+    left: 0; bottom: 0;
+    z-index: 10;
+  }
+  .placeholder {
+    position: absolute;
+    left: 0; top: 0;
+    height: 100%;
+    z-index: 0;
+    span { display: none;}
+    img {
+      // height: 100%;
+      // width: auto;
+      margin: 0 auto;
+    }
+  }
+}
+
+.model-details {
+  h3 { color: #666; }
+  dt {
+    float: left;
+    padding-right: .4em;
+    text-transform: capitalize;
+  }
+  dd { color: $grayText; }  
+  .comp_cat { display: none; }
+}
+
+
+.close { 
+  @include transition(all linear .1s);
+  border-radius: .25em;
+  display: block;
+  position: absolute;
+  top: .5em; right: .5em;
+  padding: .23em .5em;
+  background: rgba(#ccc,.3);
+  z-index: 100;
+  cursor: pointer;
+  color: $grayText;
+  text-decoration: none;
+  &:hover {
+    color: #000;
+    background: #ccc;
+    box-shadow: 1px 1px solid rgba(black,.2);
+  }
+  &:active { top: .56em; right: .44em; }
+}
+
+.model-details {
+  @include clearfix;
+  p { margin-top: 2em; color: $grayText; }
+  a.mnfg-link { color: $grayText; text-decoration: underline; }
+  a { 
+    color: $linkColor;
+    cursor: pointer;
+    text-decoration: none;
+    @include transition(color linear .1s);
+    &:visited { color: $linkColor; }
+    &:hover {
+      // text-decoration: underline;
+      // color: lighten($linkColor, 5%);
+      color: #4471b4;
+    }
+    
+  }
+  // & > div { display: none; }
+}
+
+.mustached { display: none; }
+.bike { display: none; }

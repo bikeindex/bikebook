@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title lang='en'>Bike Book</title>
+  <meta name="charset" content="utf-8"/>
+  <meta name="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <meta name="description" content="The Bike Book comparison tool"/>
+  <link href="/assets/site.css" media="all" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Rambla:400' rel='stylesheet' type='text/css'>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script src="/assets/select2.js" type="text/javascript"></script>
+  <script src="/assets/mustache.js" type="text/javascript"></script>
+  <script src="/assets/site.js" type="text/javascript"></script>
+  <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div id="bikes-container" class="holds_1_bike"></div>
+  <a id="new-compare" href="#">Compare another bike</a>
+
+  <div class="mustached">
+    <div id="base_tmpl">
+      <section class="bike">
+        <a class="close">x</a>
+        <div class="selectors">
+          <select class="manufacturer-select">
+            <option></option>
+            {{#manufacturers}}
+              <option value="{{name}}" data-years="{{years}}">{{name}}</option>
+            {{/manufacturers}}
+          </select>
+          <select class="year-select" disabled="true">
+            <option></option>
+          </select>
+          <div class="model-select-contain"></div>
+        </div>
+        <div class="model-display"></div>
+      </section>
+    </div>
+
+    <div id="years_tmpl">
+      {{#.}}<option value="{{.}}">{{.}}</option>{{/.}}      
+    </div>
+
+    <div id="models_tmpl">
+      <select class='model-select'>
+        <option></option>
+        {{#.}}<option value="{{.}}">{{.}}</option>{{/.}}      
+      </select>
+    </div>
+
+    <div id="details_tmpl">
+      <h2>{{bike.frame_model}} <small>by {{bike.manufacturer}} ({{bike.year}})</small></h2>
+      <div class="image-holder">
+        <div class="placeholder"><span>No image</span><img src="/assets/bike_photo_placeholder.png"></div>
+        {{#bike.stock_photo_url}}
+          <span class="realz-photo"></span>
+          <a class='model-photo' href='{{bike.stock_photo_url}}'><img src='{{bike.stock_photo_small}}'></a>
+        {{/bike.stock_photo_url}}
+      </div>
+      <div class="model-details">
+        <div class="bikebase">
+          <p>{{bike.description}} (<a class="mnfg-link" href='{{bike.manufacturers_url}}' target="_blank">manufacturer's page</a>)</p>
+
+          <dl class="dl-horizontal">
+            <dt>Wheel size</dt><dd class="w-size"></dd>
+            {{#bike.original_msrp}}
+              <dt>Original msrp</dt><dd>{{bike.original_msrp}}</dd>
+            {{/bike.original_msrp}}
+
+            {{#bike.cycle_type}}
+              <dt>Cycle type</dt><dd>{{bike.cycle_type}}</dd>
+            {{/bike.cycle_type}}
+          </dl>
+        </div>
+        <div class="frameandfork comp_cat_wrap">
+          <h3><a class="comp_cat_link">Frame and Fork</a></h3>
+          <dl class="comp_cat">
+            <dt>Colors and paint</dt><dd>{{bike.paint_description}}</dd>
+          </dl>
+        </div>
+        <div class="drivetrainandbrakes comp_cat_wrap">
+          <h3><a class="comp_cat_link">Drivetrain and brakes</a></h3>
+          <dl class="comp_cat"></dl>
+        </div>
+        <div class="wheels comp_cat_wrap">
+          <h3><a class="comp_cat_link">Wheels</a></h3>
+          <dl class="comp_cat"></dl>
+        </div>
+        <div class="additionalparts comp_cat_wrap">
+          <h3><a class="comp_cat_link">Additional parts</a></h3>
+          <dl class="comp_cat"></dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span id="wheel_sizes" data-sizes='{"137": "8 x 1 1/4", "152": "10 x 2", "203": "12in", "305": "16in", "317": "16 x 1 3/4", "335": "16 x 1 3/8", "337": "16 x 1 3/8", "340": "400 A", "349": "16 x 1 3/8", "355": "18in", "369": "17 x 1 1/4", "390": "450 A", "406": "20in", "419": "20 x 1 3/4", "440": "500 A", "451": "20 x 1 1/8; x 1 1/4; x 1 3/8", "457": "22 x 1.75; x 2.125", "490": "550 A", "507": "24in", "520": "24 x 1", "540": "24 x 1 1/8, 24 x 1 3/8 (E.5), 600 A", "547": "24 x 1 1/4, 24 x 1 3/8 (S-5)", "559": "26in", "571": "650 C", "584": "650 B", "587": "700 D", "590": "26 x 1 3/8", "597": "26 x 1 3/8", "599": "26 x 1.25, x 1.375", "622": "700 C", "630": "27in", "635": "28 x 1 1/2, 700 B"}'></span>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-38316708-2', 'bikebook.io');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>

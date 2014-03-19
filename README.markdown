@@ -16,3 +16,5 @@ Every time you change the filesystem you have to refresh the indexes with `rake 
 ### Development
 
 We're using [rerun](https://github.com/alexch/rerun) to restart the app on changes. We're also using it for testing. To launch the app in development mode, run `rerun 'rackup'` and to run the tests run `rerun 'rake spec'`.
+
+For assets: `sass --watch assets/styles/style.scss:public/site.css` and `coffee -cw -o public/  assets/scripts/site.coffee`
