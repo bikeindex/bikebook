@@ -73,6 +73,11 @@ updateModelDisplay = (target, data=[]) ->
     if target.find("#{field} dd").length == 0
       target.find("#{field}").fadeOut('fast')
 
+  groups = $("#collapsed-cats").data('collapsed')
+  if groups.length > 0
+    for closed in groups
+      collapseToggle(target.find("#{closed} a"))
+
 setModelList = (target, data=[]) ->
   target.html(Mustache.to_html($('#models_tmpl').html(), data))
   target.find('select')
@@ -93,7 +98,17 @@ addBike = ->
       html.find('.year-select').select2
         placeholder: "Year"
       html.fadeIn()
- 
+
+collapseToggle = (target) ->
+  target.parents('.comp_cat_wrap').find('dl').slideToggle 300
+  target.parents('.comp_cat_wrap').toggleClass('closed')
+  closed = []
+  section = target.parents('.model-details')
+  for cat in section.find('.comp_cat_wrap')
+    if section.find(cat).hasClass('closed')
+      closed.push(section.find(cat).attr('data-cat'))  
+  $("#collapsed-cats").data('collapsed', closed)
+
 initialize = ->
   addBike()
   $('#new-compare').on 'click', (e) ->
@@ -106,11 +121,7 @@ initialize = ->
 
   $('#bikes-container').on 'click', '.comp_cat_link', (e) ->
     e.preventDefault()
-    t = $(e.target)
-    t.parents('.comp_cat_wrap').find('dl').slideToggle 300
-    t.toggleClass('closed')
-      
-
+    collapseToggle($(e.target))
 
   $('#bikes-container').on 'change', 'select.model-select', (e) ->
     getBike(e)

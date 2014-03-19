@@ -74,28 +74,29 @@
             {{/bike.cycle_type}}
           </dl>
         </div>
-        <div class="frameandfork comp_cat_wrap">
+        <div class="frameandfork comp_cat_wrap" data-cat=".frameandfork">
           <h3><a class="comp_cat_link">Frame and Fork</a></h3>
           <dl class="comp_cat">
             <dt>Colors and paint</dt><dd>{{bike.paint_description}}</dd>
           </dl>
         </div>
-        <div class="drivetrainandbrakes comp_cat_wrap">
+        <div class="drivetrainandbrakes comp_cat_wrap" data-cat=".drivetrainandbrakes">
           <h3><a class="comp_cat_link">Drivetrain and brakes</a></h3>
           <dl class="comp_cat"></dl>
         </div>
-        <div class="wheels comp_cat_wrap">
+        <div class="wheels comp_cat_wrap" data-cat=".wheels">
           <h3><a class="comp_cat_link">Wheels</a></h3>
           <dl class="comp_cat"></dl>
         </div>
-        <div class="additionalparts comp_cat_wrap">
+        <div class="additionalparts comp_cat_wrap" data-cat=".additionalparts">
           <h3><a class="comp_cat_link">Additional parts</a></h3>
           <dl class="comp_cat"></dl>
         </div>
       </div>
     </div>
   </div>
-  <span id="wheel_sizes" data-sizes='{"137": "8 x 1 1/4", "152": "10 x 2", "203": "12in", "305": "16in", "317": "16 x 1 3/4", "335": "16 x 1 3/8", "337": "16 x 1 3/8", "340": "400a", "349": "16 x 1 3/8", "355": "18in", "369": "17 x 1 1/4", "390": "450a", "406": "20in", "419": "20 x 1 3/4", "440": "500a", "451": "20 x 1 1/8; x 1 1/4; x 1 3/8", "457": "22 x 1.75; x 2.125", "490": "550a", "507": "24in", "520": "24 x 1", "540": "24 x 1 1/8, 24 x 1 3/8 (E.5), 600a", "547": "24 x 1 1/4, 24 x 1 3/8 (S-5)", "559": "26in", "571": "650c", "584": "650b", "587": "700d", "590": "26 x 1 3/8", "597": "26 x 1 3/8", "599": "26 x 1.25, x 1.375", "622": "700c", "630": "27in", "635": "28 x 1 1/2, 700b"}'></span>
+  <span id="collapsed-cats" class="data-span" data-collapsed=""></span>
+  <span id="wheel_sizes" class="data-span" data-sizes='{"137": "8 x 1 1/4", "152": "10 x 2", "203": "12in", "305": "16in", "317": "16 x 1 3/4", "335": "16 x 1 3/8", "337": "16 x 1 3/8", "340": "400a", "349": "16 x 1 3/8", "355": "18in", "369": "17 x 1 1/4", "390": "450a", "406": "20in", "419": "20 x 1 3/4", "440": "500a", "451": "20 x 1 1/8; x 1 1/4; x 1 3/8", "457": "22 x 1.75; x 2.125", "490": "550a", "507": "24in", "520": "24 x 1", "540": "24 x 1 1/8, 24 x 1 3/8 (E.5), 600a", "547": "24 x 1 1/4, 24 x 1 3/8 (S-5)", "559": "26in", "571": "650c", "584": "650b", "587": "700d", "590": "26 x 1 3/8", "597": "26 x 1 3/8", "599": "26 x 1.25, x 1.375", "622": "700c", "630": "27in", "635": "28 x 1 1/2, 700b"}'></span>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

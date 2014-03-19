@@ -268,11 +268,10 @@ section {
       @include rotate(90deg);
       @include transition(all linear .1s);
     }
-    &.closed:before {
-      @include rotate(0deg);
-    }
   }
+  .closed .comp_cat_link:before { @include rotate(0deg); }
 }
 
 .mustached { display: none; }
 .bike { display: none; }
+.data-span { display: none; }
