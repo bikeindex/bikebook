@@ -106,7 +106,11 @@ initialize = ->
 
   $('#bikes-container').on 'click', '.comp_cat_link', (e) ->
     e.preventDefault()
-    $(e.target).parents('.comp_cat_wrap').find('dl').slideToggle 300
+    t = $(e.target)
+    t.parents('.comp_cat_wrap').find('dl').slideToggle 300
+    t.toggleClass('closed')
+      
+
 
   $('#bikes-container').on 'change', 'select.model-select', (e) ->
     getBike(e)
@@ -121,8 +125,9 @@ initialize = ->
 $(document).ready ->
   setTimeout ( ->
     $('#initial').addClass('off-screen')
+    initialize()
     setTimeout ( ->
-      initialize()
+      
       $('#initial').addClass('removed')
       ), 500
     ), 700

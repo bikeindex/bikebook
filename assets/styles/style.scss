@@ -118,7 +118,6 @@ html {
 }
 
 h2 { 
-  // text-align: center;
   position: absolute;
   z-index: 20;
 }
@@ -132,7 +131,10 @@ h2, h3 {
 
 h3 { font-size: 1.15em; }
 
-#bikes-container { @include clearfix; }
+#bikes-container {
+  @include clearfix;
+  padding-bottom: 20px;
+}
 
 section {
   box-shadow: inset 0 0 3px rgba(black,.2);
@@ -145,12 +147,6 @@ section {
   border: 1px solid #ccc;
   float: left;
 }
-
-// .holds_1_bike section { 
-//   margin-left: auto;
-//   margin-right: auto;
-//   float: none;
-// }
 
 .selectors {
   @include clearfix;
@@ -215,24 +211,10 @@ section {
     z-index: 0;
     span { display: none;}
     img {
-      // height: 100%;
-      // width: auto;
       margin: 0 auto;
     }
   }
 }
-
-.model-details {
-  h3 { color: #666; }
-  dt {
-    float: left;
-    padding-right: .4em;
-    text-transform: capitalize;
-  }
-  dd { color: $grayText; }  
-  .comp_cat { display: none; }
-}
-
 
 .close { 
   @include transition(all linear .1s);
@@ -256,6 +238,15 @@ section {
 
 .model-details {
   @include clearfix;
+  h3 { color: #666; }
+  // .comp_cat { padding-left: .5em; }
+  dt {
+    float: left;
+    padding-right: .4em;
+    text-transform: capitalize;
+  }
+  dd { color: $grayText; }  
+  
   p { margin-top: 2em; color: $grayText; }
   a.mnfg-link { color: $grayText; text-decoration: underline; }
   a { 
@@ -264,14 +255,23 @@ section {
     text-decoration: none;
     @include transition(color linear .1s);
     &:visited { color: $linkColor; }
-    &:hover {
-      // text-decoration: underline;
-      // color: lighten($linkColor, 5%);
-      color: #4471b4;
-    }
+    &:hover { color: #4471b4; }
     
   }
-  // & > div { display: none; }
+  .comp_cat_link {
+    padding-left: .4em;
+    &:before {
+      content: "►";
+      float: left;
+      font-size: .6em;
+      margin-left: -.2em;
+      @include rotate(90deg);
+      @include transition(all linear .1s);
+    }
+    &.closed:before {
+      @include rotate(0deg);
+    }
+  }
 }
 
 .mustached { display: none; }

@@ -146,8 +146,11 @@
       return $(e.target).parents('.bike').fadeOut();
     });
     $('#bikes-container').on('click', '.comp_cat_link', function(e) {
+      var t;
       e.preventDefault();
-      return $(e.target).parents('.comp_cat_wrap').find('dl').slideToggle(300);
+      t = $(e.target);
+      t.parents('.comp_cat_wrap').find('dl').slideToggle(300);
+      return t.toggleClass('closed');
     });
     $('#bikes-container').on('change', 'select.model-select', function(e) {
       return getBike(e);
@@ -163,8 +166,8 @@
   $(document).ready(function() {
     return setTimeout((function() {
       $('#initial').addClass('off-screen');
+      initialize();
       return setTimeout((function() {
-        initialize();
         return $('#initial').addClass('removed');
       }), 500);
     }), 700);

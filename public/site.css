@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
@@ -1113,11 +1114,13 @@ h2, h3 {
 h3 {
   font-size: 1.15em; }
 
-#bikes-container:before, #bikes-container:after {
-  content: " ";
-  display: table; }
-#bikes-container:after {
-  clear: both; }
+#bikes-container {
+  padding-bottom: 20px; }
+  #bikes-container:before, #bikes-container:after {
+    content: " ";
+    display: table; }
+  #bikes-container:after {
+    clear: both; }
 
 section {
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
@@ -1195,17 +1198,6 @@ section {
     .image-holder .placeholder img {
       margin: 0 auto; }
 
-.model-details h3 {
-  color: #666; }
-.model-details dt {
-  float: left;
-  padding-right: .4em;
-  text-transform: capitalize; }
-.model-details dd {
-  color: #999999; }
-.model-details .comp_cat {
-  display: none; }
-
 .close {
   -webkit-transition: all linear 0.1s;
   -o-transition: all linear 0.1s;
@@ -1234,6 +1226,14 @@ section {
   display: table; }
 .model-details:after {
   clear: both; }
+.model-details h3 {
+  color: #666; }
+.model-details dt {
+  float: left;
+  padding-right: .4em;
+  text-transform: capitalize; }
+.model-details dd {
+  color: #999999; }
 .model-details p {
   margin-top: 2em;
   color: #999999; }
@@ -1251,6 +1251,25 @@ section {
     color: #85a4b0; }
   .model-details a:hover {
     color: #4471b4; }
+.model-details .comp_cat_link {
+  padding-left: .4em; }
+  .model-details .comp_cat_link:before {
+    content: "►";
+    float: left;
+    font-size: .6em;
+    margin-left: -.2em;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: all linear 0.1s;
+    -o-transition: all linear 0.1s;
+    transition: all linear 0.1s; }
+  .model-details .comp_cat_link.closed:before {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
 
 .mustached {
   display: none; }
