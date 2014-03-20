@@ -72,10 +72,12 @@
       wheel_sizes = JSON.parse($('#wheel_sizes').attr('data-sizes'));
       desc = wheel_sizes[bike['rear_wheel_bsd']];
       if (bike['rear_tire_narrow'] !== void 0) {
-        tires = bike['rear_tire_narrow'] ? 'skinny' : 'fat';
+        tires = bike['rear_tire_narrow'] === 'true' ? 'skinny' : 'fat';
         tires = "(" + tires + " tires)";
       }
       target.find(".w-size").html("" + desc + " " + tires);
+    } else {
+      target.find(".dt-w-size, .w-size").hide();
     }
     _ref = data["components"];
     for (_i = 0, _len = _ref.length; _i < _len; _i++) {

@@ -53,10 +53,11 @@ updateModelDisplay = (target, data=[]) ->
     desc = wheel_sizes[bike['rear_wheel_bsd']]
 
     if bike['rear_tire_narrow'] != undefined
-      tires = if bike['rear_tire_narrow'] then 'skinny' else 'fat'
+      tires = if bike['rear_tire_narrow'] == 'true' then 'skinny' else 'fat'
       tires = "(#{tires} tires)"
-
     target.find(".w-size").html("#{desc} #{tires}")
+  else
+    target.find(".dt-w-size, .w-size").hide()
   
   for comp in data["components"]
     name = comp["component_type"].replace(/_/g, ' ')
