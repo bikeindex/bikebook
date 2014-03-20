@@ -16,8 +16,8 @@
 </head>
 <body>
   <div id="initial"><span></span><p>BikeBook.io</p></div>
-  <div id="bikes-container"></div>
-  <a id="new-compare" href="#">Compare another bike</a>
+  <div id="bikes-container" class="showing-1bikes"></div>
+  <a id="new-compare" href="#">Compare with another bike</a>
 
   <div class="mustached">
     <div id="base_tmpl">
@@ -55,50 +55,47 @@
       <div class="image-holder">
         <div class="placeholder"><span>No image</span><img src="/assets/photo_placeholder.png"></div>
         {{#bike.stock_photo_url}}
-          <img src='/assets/photo_bg.png'>
+          <img class="photo-bg" src='/assets/photo_bg.png'>
           <a class='model-photo' href='{{bike.stock_photo_url}}'><img src='{{bike.stock_photo_small}}'></a>
         {{/bike.stock_photo_url}}
       </div>
-      <div class="model-details">
-        <div class="bikebase">
-          <p>
-            {{bike.description}}
-            {{#bike.manufacturers_url}}
-              (<a class="mnfg-link" href='{{bike.manufacturers_url}}' target="_blank">manufacturer's page</a>)
-            {{/bike.manufacturers_url}}
-          </p>
+      <div class="bike-base">
+        <dl class="dl-horizontal">
+          <dt class="dt-w-size">Wheel size</dt><dd class="w-size"></dd>
+          {{#bike.original_msrp}}
+            <dt>Original msrp</dt><dd>{{bike.original_msrp}}</dd>
+          {{/bike.original_msrp}}
 
-          <dl class="dl-horizontal">
-            <dt class="dt-w-size">Wheel size</dt><dd class="w-size"></dd>
-            {{#bike.original_msrp}}
-              <dt>Original msrp</dt><dd>{{bike.original_msrp}}</dd>
-            {{/bike.original_msrp}}
-
-            {{#bike.cycle_type}}
-              <dt>Cycle type</dt><dd>{{bike.cycle_type}}</dd>
-            {{/bike.cycle_type}}
-          </dl>
-        </div>
-        <div class="frameandfork comp_cat_wrap" data-cat=".frameandfork">
-          <h3><a class="comp_cat_link">Frame and Fork</a></h3>
-          <dl class="comp_cat">
-            {{#bike.paint_description}}
-              <dt>Colors and paint</dt><dd>{{bike.paint_description}}</dd>
-            {{/bike.paint_description}}
-          </dl>
-        </div>
-        <div class="drivetrainandbrakes comp_cat_wrap" data-cat=".drivetrainandbrakes">
-          <h3><a class="comp_cat_link">Drivetrain and brakes</a></h3>
-          <dl class="comp_cat"></dl>
-        </div>
-        <div class="wheels comp_cat_wrap" data-cat=".wheels">
-          <h3><a class="comp_cat_link">Wheels</a></h3>
-          <dl class="comp_cat"></dl>
-        </div>
-        <div class="additionalparts comp_cat_wrap" data-cat=".additionalparts">
-          <h3><a class="comp_cat_link">Additional parts</a></h3>
-          <dl class="comp_cat"></dl>
-        </div>
+          {{#bike.cycle_type}}
+            <dt>Cycle type</dt><dd>{{bike.cycle_type}}</dd>
+          {{/bike.cycle_type}}
+        </dl>
+      </div>
+      <p class="bike-description">
+        {{bike.description}}
+        {{#bike.manufacturers_url}}
+          (<a class="mnfg-link" href='{{bike.manufacturers_url}}' target="_blank">manufacturer's page</a>)
+        {{/bike.manufacturers_url}}
+      </p>
+      <div class="frameandfork comp_cat_wrap" data-cat=".frameandfork">
+        <h3><a class="comp_cat_link">Frame and Fork</a></h3>
+        <dl class="comp_cat">
+          {{#bike.paint_description}}
+            <dt>Colors and paint</dt><dd>{{bike.paint_description}}</dd>
+          {{/bike.paint_description}}
+        </dl>
+      </div>
+      <div class="drivetrainandbrakes comp_cat_wrap" data-cat=".drivetrainandbrakes">
+        <h3><a class="comp_cat_link">Drivetrain and brakes</a></h3>
+        <dl class="comp_cat"></dl>
+      </div>
+      <div class="wheels comp_cat_wrap" data-cat=".wheels">
+        <h3><a class="comp_cat_link">Wheels</a></h3>
+        <dl class="comp_cat"></dl>
+      </div>
+      <div class="additionalparts comp_cat_wrap" data-cat=".additionalparts">
+        <h3><a class="comp_cat_link">Additional parts</a></h3>
+        <dl class="comp_cat"></dl>
       </div>
     </div>
   </div>

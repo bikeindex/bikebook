@@ -44,7 +44,7 @@ updateModelDisplay = (target, data=[]) ->
   target.find('.model-display').html(Mustache.to_html($('#details_tmpl').html(), data))
   target.find('.model-display').fadeIn()
 
-  fields = ['.bikebase','.frameandfork','.drivetrainandbrakes','.wheels','.additionalparts']
+  fields = ['.bike-base','.frameandfork','.drivetrainandbrakes','.wheels','.additionalparts']
   bike = data["bike"]
  
   if bike['rear_wheel_bsd'] != undefined
@@ -104,7 +104,7 @@ collapseToggle = (target) ->
   target.parents('.comp_cat_wrap').find('dl').slideToggle 300
   target.parents('.comp_cat_wrap').toggleClass('closed')
   closed = []
-  section = target.parents('.model-details')
+  section = target.parents('.model-display')
   for cat in section.find('.comp_cat_wrap')
     if section.find(cat).hasClass('closed')
       closed.push(section.find(cat).attr('data-cat'))  
@@ -136,13 +136,14 @@ initialize = ->
 
 
 $(document).ready ->
-  setTimeout ( ->
-    $('#initial').addClass('off-screen')
-    initialize()
-    setTimeout ( ->
+  initialize()
+  $('#initial').addClass('removed')
+
+  # setTimeout ( ->
+  #   $('#initial').addClass('off-screen')
+  #   initialize()
+  #   setTimeout ( ->
       
-      $('#initial').addClass('removed')
-      ), 500
-    ), 700
-  
-  
+  #     $('#initial').addClass('removed')
+  #     ), 500
+  #   ), 700

@@ -65,7 +65,7 @@
     }
     target.find('.model-display').html(Mustache.to_html($('#details_tmpl').html(), data));
     target.find('.model-display').fadeIn();
-    fields = ['.bikebase', '.frameandfork', '.drivetrainandbrakes', '.wheels', '.additionalparts'];
+    fields = ['.bike-base', '.frameandfork', '.drivetrainandbrakes', '.wheels', '.additionalparts'];
     bike = data["bike"];
     if (bike['rear_wheel_bsd'] !== void 0) {
       tires = '';
@@ -147,7 +147,7 @@
     target.parents('.comp_cat_wrap').find('dl').slideToggle(300);
     target.parents('.comp_cat_wrap').toggleClass('closed');
     closed = [];
-    section = target.parents('.model-details');
+    section = target.parents('.model-display');
     _ref = section.find('.comp_cat_wrap');
     for (_i = 0, _len = _ref.length; _i < _len; _i++) {
       cat = _ref[_i];
@@ -186,13 +186,8 @@
   };
 
   $(document).ready(function() {
-    return setTimeout((function() {
-      $('#initial').addClass('off-screen');
-      initialize();
-      return setTimeout((function() {
-        return $('#initial').addClass('removed');
-      }), 500);
-    }), 700);
+    initialize();
+    return $('#initial').addClass('removed');
   });
 
 }).call(this);

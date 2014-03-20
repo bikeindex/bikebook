@@ -4,6 +4,9 @@
 @import "reset";
 @import "select2";
 
+$headerText: 'Rambla', sans-serif;
+$bodyText: 'EB Garamond', serif;
+
 $textColor: #111;
 $grayText: #999;
 $linkColor: #85a4b0;
@@ -19,7 +22,11 @@ $sectionBackground: #fff;
   text-rendering: optimizeLegibility;
 }
 
-html { height: 100%; }
+html { 
+  height: 100%;  width: 100%;
+  max-width: 100%;
+  margin: 0; padding: 0;
+}
 
 body {
   @include clearfix;
@@ -27,15 +34,41 @@ body {
   height: 100%;
   position: relative;
   background: $bodyBackground;
-  margin: 0; padding: 3em 0 4em 0;
+  margin: 0;
+  padding: 3em 0 1.55em 0;
   color: $textColor;
-  font-family: 'EB Garamond', serif;
+  font-family: $bodyText;
   font-weight: 400;
   font-size: 17px;
 }
 
+.bike, .data-span, .mustached { display: none; }
+
+select, .select2-container, .select2-results {
+  font-family: $headerText;
+  size: 14px;
+}
+
+h1, h2, h3, h4 {
+  font-family: $bodyText;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin: 0 0 .3em;
+  font-size: 1.25em;
+  
+  span, small { color: $grayText; }
+  small { font-size: 85%; }
+  strong { font-weight: bold; }
+}
+
+h3 {
+  font-size: 1.15em;
+  color: #666;
+}
+
 #initial {
   span {
+    @include transition(opacity ease-in .5s);
     z-index: 1000;
     width: 100%;
     height: 100%;
@@ -43,7 +76,6 @@ body {
     top: 0; left: 0;
     background: $blueDark;
     box-shadow: 0 0 3px rgba(black,.2);
-    @include transition(opacity ease-in .5s);
   }
   p {
     @include transition(opacity ease-in 3s);
@@ -72,76 +104,41 @@ body {
   }
 }
 
-select, .select2-container, .select2-results {
-  font-family: 'Rambla', sans-serif;
-  size: 14px;
-}
-
-h1, h2, h3, h4 {
-  font-family: 'EB Garamond', serif;
-  font-weight: 400;
-  line-height: 1.2em;
-  strong {
-    font-weight: bold;
-  }
-}
-
-html {
-  width: 100%;
-  max-width: 100%;
-  margin: 0; padding: 0;
-}
-
 #new-compare {
-  box-shadow: inset 0 -1px 3px rgba(black,.2);
-  width: 100%;
-  display: block;
-  position: absolute;
-  top: 0; left: 0;
-  background: $blueDark;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  padding: .5em;
-  border-bottom: 1px solid #fff;
-  border-top: 1px solid $blueDark;
-  font-size: 18px;
-  &:hover {
-    border: none;
-    box-shadow: 1px 1px 2px rgba(black,.2);
-  }
-  &:active {
-    border-bottom: 1px solid #fff;
-    border-top: 1px solid $blueDark;
-    box-shadow: inset 0 -1px 3px rgba(black,.2);
-  }
+  display: none;
+  // box-shadow: inset 0 -1px 3px rgba(black,.2);
+  // width: 100%;
+  // display: block;
+  // position: absolute;
+  // top: 0; left: 0;
+  // background: $blueDark;
+  // color: white;
+  // text-align: center;
+  // text-decoration: none;
+  // padding: .5em;
+  // border-bottom: 1px solid #fff;
+  // border-top: 1px solid $blueDark;
+  // font-size: 18px;
+  // &:hover {
+  //   border: none;
+  //   box-shadow: 1px 1px 2px rgba(black,.2);
+  // }
+  // &:active {
+  //   border-bottom: 1px solid #fff;
+  //   border-top: 1px solid $blueDark;
+  //   box-shadow: inset 0 -1px 3px rgba(black,.2);
+  // }
 }
-
-h2 { 
-  position: absolute;
-  z-index: 20;
-}
-
-h2, h3 {
-  margin: 0 0 .3em;
-  font-size: 1.25em;
-  span, small { color: $grayText; }
-  small { font-size: 85%; }
-}
-
-h3 { font-size: 1.15em; }
 
 #bikes-container {
   @include clearfix;
-  padding-bottom: 20px;
 }
 
 section {
+  @include clearfix;
   box-shadow: inset 0 0 3px rgba(black,.2);
   border-radius: 3px;
   position: relative;
-  // width: 32%;
-  width: 460px; // Response soon to come
   margin: 20px 0 0 1%;
   padding: .5em;
   background: $sectionBackground;
@@ -149,86 +146,21 @@ section {
   float: left;
 }
 
-.selectors {
-  @include clearfix;
-  width: 100%;
-  position: relative;
-  min-height: 4.25em;
-  padding: 0 2em .5em 0;
-  z-index: 50;
-  .manufacturer-select {
-    margin-right: 2%;
-    width: 70%;
-    // width: 100%;
-    float: left;
-    @include transition(all linear .1s);
-    .select2-default { color: $textColor !important; }
-  }
-  .year-select {
-    float: left;
-    width: 28%;
-  }
-  .model-select-contain { 
-    display: none;
-    width: 100%;
-    .select2-container {
-      display: none;
-      display: block;
-      padding-top: 7px;
-      clear: both;
-    }
-  }
-}
-
-
-
-.image-holder {
-  height: 333px;
-  width: 100%;
-  position: relative;
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .realz-photo {
-    display: block;
-    position: absolute;
-    left: 0; top: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    z-index: 9;
-  }
-  .model-photo {
-    position: absolute;
-    left: 0; bottom: 0;
-    z-index: 10;
-  }
-  .placeholder {
-    position: absolute;
-    left: 0; top: 0;
-    height: 100%;
-    z-index: 0;
-    span { display: none;}
-    img {
-      margin: 0 auto;
-    }
-  }
-}
-
 .close { 
   @include transition(all linear .1s);
   border-radius: .25em;
   display: block;
+  display: none;
   position: absolute;
   top: .5em; right: .5em;
-  padding: .23em .5em;
+  border: 1px solid #ddd;
+  padding: .05em .5em .15em;
   background: rgba(#ccc,.3);
   z-index: 100;
   cursor: pointer;
   color: $grayText;
   text-decoration: none;
+  font-family: $headerText;
   &:hover {
     color: #000;
     background: #ccc;
@@ -237,42 +169,235 @@ section {
   &:active { top: .56em; right: .44em; }
 }
 
-.model-details {
-  @include clearfix;
-  h3 { color: #666; }
-  // .comp_cat { padding-left: .5em; }
-  dt {
-    float: left;
-    padding-right: .4em;
-    text-transform: capitalize;
-  }
-  dd { color: $grayText; }  
-  
-  p { margin-top: 2em; color: $grayText; }
-  a.mnfg-link { color: $grayText; text-decoration: underline; }
-  a { 
-    color: $linkColor;
-    cursor: pointer;
-    text-decoration: none;
+// .comp_cat { padding-left: .5em; }
+dl.comp_cat dt {
+  float: left;
+  padding-right: .4em;
+  text-transform: capitalize;
+}
+dd { color: $grayText; }  
+
+
+.bike-description {
+  margin-top: 2em;
+  color: $grayText;
+
+  .mnfg-link {
     @include transition(color linear .1s);
-    &:visited { color: $linkColor; }
+    color: $grayText;
+    text-decoration: underline;
+    &:visited { color: $grayText; }
     &:hover { color: #4471b4; }
-    
   }
-  .comp_cat_link {
-    padding-left: .4em;
-    &:before {
-      content: "►";
-      float: left;
-      font-size: .6em;
-      margin-left: -.2em;
-      @include rotate(90deg);
-      @include transition(all linear .1s);
-    }
-  }
-  .closed .comp_cat_link:before { @include rotate(0deg); }
 }
 
-.mustached { display: none; }
-.bike { display: none; }
-.data-span { display: none; }
+.comp_cat_link {
+  @include transition(color linear .1s);
+  color: $linkColor;
+  cursor: pointer;
+  text-decoration: none;
+  padding-left: .4em;
+  &:before {
+    @include rotate(90deg);
+    @include transition(all linear .1s);
+    content: "►";
+    float: left;
+    font-size: .6em;
+    margin-left: -.2em;
+  }
+}
+.closed .comp_cat_link:before { @include rotate(0deg); }
+
+.selectors {
+  @include clearfix;
+  width: 100%;
+  position: relative;
+  padding: 0 2em .5em 0;
+  z-index: 50;
+}
+
+.manufacturer-select {
+  @include transition(all linear .1s);
+  width: 39%;
+  float: left;
+  margin-right: 1%;
+  
+  .select2-default { color: $textColor !important; }
+}
+.year-select {
+  width: 19%;
+  margin-right: 1%;
+  float: left;
+}
+
+.model-select-contain { 
+  display: none;
+  clear: none;
+  width: 39.5%;
+  float: left;
+  .select2-container {
+    display: block;
+    // padding-top: 7px;
+    // clear: both;
+  }
+}
+
+.image-holder {
+  // width: 100%;
+  position: relative;
+  // border: 1px solid rgba(#ddd,.5);
+  border-radius: 2px;
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .photo-bg, .model-photo {
+      position: absolute;
+      left: 0; top: 0;
+    }
+    .model-photo { width: 100%; z-index: 10; }
+  .placeholder {
+    z-index: 0;
+    span {
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 50%; left: -10%;
+      margin-top: -.5em;
+      font-family: $headerText;
+      font-size: 2em;
+      text-align: center;
+      text-shadow: 0 0 4px rgba(white,.5);
+    }
+  }
+}
+
+h2 { 
+  margin-bottom: 1em;
+  // position: absolute;
+  // z-index: 20;
+}
+
+
+
+.showing-1bikes {
+  padding-bottom: 20px;
+
+  section {  width: 98%; }
+
+  .image-holder {
+    width: 48%;
+    margin-left: 2%;
+    float: right;
+  }
+  
+  .model-display {
+    @include clearfix;
+    padding: 20px .5em .5em;
+  }
+
+  h2 {
+    float: left;
+  }
+
+  .bike-base .dl-horizontal {
+    float: left;
+    clear: left;
+  }
+  .bike-description { 
+    clear: left;
+    padding-bottom: 60px;
+  }
+
+  dl.comp_cat { padding-left: .9em; }
+
+  .comp_cat_wrap {
+    float: left; 
+    margin-left: 2%;
+    width: 48%;
+    margin-top: 1.5em;
+  }
+  .frameandfork {
+    margin-left: 0;
+    clear: both; 
+  }
+  
+}
+
+@media (min-width: 1000px) {
+  .showing-1bikes {
+
+    .image-holder { max-width: 700px; }
+
+    h2 {
+      font-size: 1.5em; 
+      margin: 60px 0 1em;
+    }
+
+    .comp_cat_wrap {
+      width: 32%;
+      margin-top: 0;
+      margin-top: .5em;
+    }
+    .frameandfork {
+      float: none;
+      clear: none;
+      width: 100%;
+    }
+    .drivetrainandbrakes {
+      clear: left; clear: right;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  body { padding: 0; }
+  #new-compare { display: none; }
+  .manufacturer-select {
+    @include transition(all linear .1s);
+    float: left;    
+    .select2-default { color: $textColor !important; }
+  }
+
+  .year-select {
+    width: 28%; 
+    margin-right: 0;
+  }
+  .model-select-contain { 
+    width: 100%;
+    .select2-container {
+      padding-top: 7px;
+      clear: both;
+    }
+  }
+  .manufacturer-select {
+    margin-right: 2%;
+    width: 70%;
+  }
+  .selectors { padding: 0 0 .5em 0; }
+  .close { display: none; }
+  .showing-1bikes {
+    padding: 0;
+    min-height: 100%;
+    height: 100%;
+    section {
+      @include box-shadow(0 0 0);
+      margin: 0;
+      border-radius: 0;
+      padding-top: 1em;
+      width: 100%;
+      // height: 100%;
+      min-height: 100%;
+    }
+    .comp_cat_wrap {
+      clear: both;
+      float: none;
+      margin-left: 0;
+      width: 100%;
+      margin-top: .5em;
+    }
+  }
+}
