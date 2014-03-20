@@ -53,9 +53,9 @@
     <div id="details_tmpl">
       <h2>{{bike.frame_model}} <small>by {{bike.manufacturer}} ({{bike.year}})</small></h2>
       <div class="image-holder">
-        <div class="placeholder"><span>No image</span><img src="/assets/bike_photo_placeholder.png"></div>
+        <div class="placeholder"><span>No image</span><img src="/assets/photo_placeholder.png"></div>
         {{#bike.stock_photo_url}}
-          <span class="realz-photo"></span>
+          <img src='/assets/photo_bg.png'>
           <a class='model-photo' href='{{bike.stock_photo_url}}'><img src='{{bike.stock_photo_small}}'></a>
         {{/bike.stock_photo_url}}
       </div>

@@ -118,7 +118,8 @@ initialize = ->
   
   $('#bikes-container').on 'click', '.close', (e) ->
     e.preventDefault()
-    $(e.target).parents('.bike').fadeOut()
+    $(e.target).parents('.bike').fadeOut 300, ->
+      $(e.target).parents('.bike').remove()
 
   $('#bikes-container').on 'click', '.comp_cat_link', (e) ->
     e.preventDefault()

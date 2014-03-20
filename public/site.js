@@ -166,7 +166,9 @@
     });
     $('#bikes-container').on('click', '.close', function(e) {
       e.preventDefault();
-      return $(e.target).parents('.bike').fadeOut();
+      return $(e.target).parents('.bike').fadeOut(300, function() {
+        return $(e.target).parents('.bike').remove();
+      });
     });
     $('#bikes-container').on('click', '.comp_cat_link', function(e) {
       e.preventDefault();
