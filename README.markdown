@@ -2,9 +2,7 @@
 
 Compare bikes! Review bikes!
 
-Figure out what a bicycle originally came with!
-
-Open source everything!
+**Open source everything!**
 
 ## Technical
 
