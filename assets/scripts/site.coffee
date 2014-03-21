@@ -93,12 +93,23 @@ addBike = ->
     success: (data, textStatus, jqXHR) ->
       html = $(Mustache.to_html($('#base_tmpl').html(), data))
       $("#bikes-container").append html
+      resetContainerCount()
       html.find('.manufacturer-select').select2
         placeholder: "Choose manufacturer"
         allow_clear: true
       html.find('.year-select').select2
         placeholder: "Year"
       html.fadeIn()
+
+resetContainerCount = ->
+  bc = $('#bikes-container .bike').length
+  if bc == 0
+    addBike()
+  if bc < 3 
+    $("#bikes-container").removeClass().addClass("showing-#{bc}-bikes")
+  if bc > 2
+    $("#bikes-container").removeClass().addClass('showing-many-bikes')
+
 
 collapseToggle = (target) ->
   target.parents('.comp_cat_wrap').find('dl').slideToggle 300
@@ -120,6 +131,7 @@ initialize = ->
     e.preventDefault()
     $(e.target).parents('.bike').fadeOut 300, ->
       $(e.target).parents('.bike').remove()
+      resetContainerCount()
 
   $('#bikes-container').on 'click', '.comp_cat_link', (e) ->
     e.preventDefault()
@@ -136,14 +148,10 @@ initialize = ->
 
 
 $(document).ready ->
-  initialize()
-  $('#initial').addClass('removed')
-
-  # setTimeout ( ->
-  #   $('#initial').addClass('off-screen')
-  #   initialize()
-  #   setTimeout ( ->
-      
-  #     $('#initial').addClass('removed')
-  #     ), 500
-  #   ), 700
+  setTimeout ( ->
+    $('#initial').addClass('off-screen')
+    initialize()
+    setTimeout ( ->
+      $('#initial').addClass('removed')
+      ), 500
+    ), 700
