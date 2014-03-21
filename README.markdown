@@ -1,8 +1,6 @@
 #[BikeBook.io](http://bikebook.io)
 
-**Compare bikes!**
-
-**Review bikes!**
+**Compare bikes! Review bikes!**
 
 **Figure out what a bicycle originally came with!**
 
@@ -12,7 +10,7 @@
 
 BikeBook.io is a single page web application that accesses default bike information through it's own RESTfull JSON API.
 
-This repository contains the web application and also all of the of bike data. All the data is stored in flat files - the application just reads the file you requested.
+This repository contains the web application and also all of the of bike data. All the data is stored in flat files, BikeBook just reads the file you requested.
 
 ## How?
 
@@ -24,13 +22,13 @@ There are three main requests you can make:
 - Get a list of models from a manufacturer by year
 - Get information about a bike
 
-#### List of unique models
+#### Get unique models
 
 Send a query with a `manufacturer` to BikeBook.io/model_list
 
 So for Heritage cycles, [BikeBook.io/model_list?manufacturer=Heritage cycles](http://bikebook.io/model_list?manufacturer=Heritage%20cycles)
 
-#### List of models by year
+#### Get models by year
 
 Send a query with `manufacturer` to BikeBook.io
 
@@ -40,11 +38,13 @@ If you submit a year in the request, the response is an array of the model names
 
 For all the manufacturers and all the years, [BikeBook.io/assets/index.json](http://bikebook.io/assets/index.json)
 
-#### Information about a bike
+#### Get Information about a bike
 
 You need to submit three things to get information about a bike: `manufacturer`, `year` and `frame_model`.
 
-So for a Fuji Outland 29 1.1 from 2014, [BikeBook.io?manufacturer=fuji&year=2014&frame_model=Outland 29 1.1](http://bikebook.io/?manufacturer=fuji&year=2014&frame_model=Outland%2029%201.1)
+So for a Fuji Outland 29 1.1 from 2014,
+
+[BikeBook.io?manufacturer=fuji&year=2014&frame_model=Outland 29 1.1](http://bikebook.io/?manufacturer=fuji&year=2014&frame_model=Outland%2029%201.1)
 
 Also, since it's a query string, position of the  doesn't matter, i.e. `frame_model` can come first or last.
 
@@ -56,7 +56,7 @@ If we can't find what you've asked for, we return a 404 status error.
 
 ## Requests
 
-Feel free to make GET requests to BikeBook. We'll send you JSON back, regardless of domain.
+Feel free to make GET requests to BikeBook from your application. We'll send you JSON back, regardless of domain.
 
 BikeBook.io uses Cross-Origin Resource Sharing (CORS), which allows web applications to make cross domain AJAX calls without using workarounds such as JSONP. For more information about read [this post about CORS](http://www.nczonline.net/blog/2010/05/25/cross-domain-ajax-with-cross-origin-resource-sharing/) (or [the spec](http://www.w3.org/TR/access-control/#simple-cross-origin-request-and-actual-r) if you're hardcore).
 
