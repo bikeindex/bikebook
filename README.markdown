@@ -1,10 +1,10 @@
 #![BikeBook.io](https://github.com/bikeindex/bikebook/blob/master/public/icon.svg?raw=true) [BikeBook.io](http://bikebook.io)
 
-**Compare bikes! Review bikes!**
+Compare bikes! Review bikes!
 
-**Figure out what a bicycle originally came with!**
+Figure out what a bicycle originally came with!
 
-**Open source everything!**
+Open source everything!
 
 ## Technical
 
