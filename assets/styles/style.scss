@@ -42,7 +42,12 @@ body {
   font-size: 17px;
 }
 
-.bike, .data-span, .mustached { display: none; }
+.data-span, .mustached { display: none; }
+
+.bike {
+  @include clearfix;
+  display: none;
+}
 
 select, .select2-container, .select2-results {
   font-family: $headerText;
@@ -61,7 +66,9 @@ h1, h2, h3, h4 {
   strong { font-weight: bold; }
 }
 
-h3 {
+h3 { margin-bottom: 1em; }
+
+h4 {
   font-size: 1.15em;
   color: #666;
 }
@@ -135,6 +142,28 @@ h3 {
   }
 }
 
+footer {
+  @include clearfix;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 1% 10px;
+  p, h2 {
+    font-family: $bodyText;
+    color: $grayText;
+    font-size: 18px;
+  }
+  p { float: left; }
+  h2 { float: right; }
+  a {
+    @include transition(color linear .1s);
+    color: $linkColor;
+    text-decoration: none;
+    &:visited { color: $linkColor; }
+    &:hover { color: #4471b4; }
+  }
+}
+
 #bikes-container {
   @include clearfix;
 }
@@ -182,6 +211,7 @@ dd { color: $grayText; }
 
 
 .bike-description {
+  position: relative;
   margin-top: 2em;
   color: $grayText;
 
@@ -208,6 +238,7 @@ dd { color: $grayText; }
     font-size: .6em;
     margin-left: -.2em;
   }
+  &:hover { color: #4471b4; }
 }
 .closed .comp_cat_link:before { @include rotate(0deg); }
 
@@ -246,17 +277,19 @@ dd { color: $grayText; }
 .image-holder {
   position: relative;
   border-radius: 2px;
-  
+  z-index: 0;
   img {
     display: block;
     width: 100%;
     height: auto;
+    max-height: 525px;
   }
   .photo-bg, .model-photo {
       position: absolute;
       left: 0; top: 0;
     }
-    .model-photo { width: 100%; z-index: 10; }
+
+  // .model-photo { width: 100%; z-index: 10; }
   .placeholder {
     z-index: 0;
     span {
@@ -273,12 +306,17 @@ dd { color: $grayText; }
   }
 }
 
-h2 { 
-  margin-bottom: 1em;
-  // position: absolute;
-  // z-index: 20;
+.model-display {
+  @include clearfix;
+  display: none; 
+  min-height: 525px;
+  padding: 20px .5em .5em;
 }
 
+
+@media (max-width: 760px) {
+  .image-holder .placeholder span { font-size: 1.3em; }
+}
 
 
 .showing-1-bikes, .showing-2-bikes, .showing-many-bikes {
@@ -291,13 +329,8 @@ h2 {
     margin-left: 2%;
     float: right;
   }
-  
-  .model-display {
-    @include clearfix;
-    padding: 20px .5em .5em;
-  }
 
-  h2 {
+  h3 {
     float: left;
   }
 
@@ -318,10 +351,12 @@ h2 {
     width: 48%;
     margin-top: 1.5em;
   }
+
   .frameandfork {
     margin-left: 0;
     clear: both; 
   }
+  .wheels { margin-left: 0; }
   
 }
 
@@ -344,10 +379,11 @@ h2 {
 
     .image-holder { max-width: 700px; }
 
-    h2 {
+    h3 {
       font-size: 1.5em; 
       margin: 60px 0 1em;
     }
+    .model-display { min-height: 575px; }
 
     .comp_cat_wrap {
       width: 32%;
@@ -363,6 +399,7 @@ h2 {
       clear: left; clear: right;
       margin-left: 0;
     }
+    .wheels { margin-left: 2%; }
   }
 }
 

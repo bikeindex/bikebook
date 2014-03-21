@@ -1025,8 +1025,16 @@ body {
   body:after {
     clear: both; }
 
-.bike, .data-span, .mustached {
+.data-span, .mustached {
   display: none; }
+
+.bike {
+  display: none; }
+  .bike:before, .bike:after {
+    content: " ";
+    display: table; }
+  .bike:after {
+    clear: both; }
 
 select, .select2-container, .select2-results {
   font-family: "Rambla", sans-serif;
@@ -1046,6 +1054,9 @@ h1, h2, h3, h4 {
     font-weight: bold; }
 
 h3 {
+  margin-bottom: 1em; }
+
+h4 {
   font-size: 1.15em;
   color: #666; }
 
@@ -1113,6 +1124,35 @@ h3 {
     border-top: 1px solid #2980b9;
     box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.2); }
 
+footer {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 1% 10px; }
+  footer:before, footer:after {
+    content: " ";
+    display: table; }
+  footer:after {
+    clear: both; }
+  footer p, footer h2 {
+    font-family: "EB Garamond", serif;
+    color: #999999;
+    font-size: 18px; }
+  footer p {
+    float: left; }
+  footer h2 {
+    float: right; }
+  footer a {
+    -webkit-transition: color linear 0.1s;
+    -o-transition: color linear 0.1s;
+    transition: color linear 0.1s;
+    color: #85a4b0;
+    text-decoration: none; }
+    footer a:visited {
+      color: #85a4b0; }
+    footer a:hover {
+      color: #4471b4; }
+
 #bikes-container:before, #bikes-container:after {
   content: " ";
   display: table; }
@@ -1168,6 +1208,7 @@ dd {
   color: #999999; }
 
 .bike-description {
+  position: relative;
   margin-top: 2em;
   color: #999999; }
   .bike-description .mnfg-link {
@@ -1201,6 +1242,8 @@ dd {
     float: left;
     font-size: .6em;
     margin-left: -.2em; }
+  .comp_cat_link:hover {
+    color: #4471b4; }
 
 .closed .comp_cat_link:before {
   -webkit-transform: rotate(0deg);
@@ -1244,18 +1287,17 @@ dd {
 
 .image-holder {
   position: relative;
-  border-radius: 2px; }
+  border-radius: 2px;
+  z-index: 0; }
   .image-holder img {
     display: block;
     width: 100%;
-    height: auto; }
+    height: auto;
+    max-height: 525px; }
   .image-holder .photo-bg, .image-holder .model-photo {
     position: absolute;
     left: 0;
     top: 0; }
-  .image-holder .model-photo {
-    width: 100%;
-    z-index: 10; }
   .image-holder .placeholder {
     z-index: 0; }
     .image-holder .placeholder span {
@@ -1270,9 +1312,19 @@ dd {
       text-align: center;
       text-shadow: 0 0 4px rgba(255, 255, 255, 0.5); }
 
-h2 {
-  margin-bottom: 1em; }
+.model-display {
+  display: none;
+  min-height: 525px;
+  padding: 20px .5em .5em; }
+  .model-display:before, .model-display:after {
+    content: " ";
+    display: table; }
+  .model-display:after {
+    clear: both; }
 
+@media (max-width: 760px) {
+  .image-holder .placeholder span {
+    font-size: 1.3em; } }
 .showing-1-bikes, .showing-2-bikes, .showing-many-bikes {
   padding-bottom: 20px; }
   .showing-1-bikes section, .showing-2-bikes section, .showing-many-bikes section {
@@ -1281,14 +1333,7 @@ h2 {
     width: 48%;
     margin-left: 2%;
     float: right; }
-  .showing-1-bikes .model-display, .showing-2-bikes .model-display, .showing-many-bikes .model-display {
-    padding: 20px .5em .5em; }
-    .showing-1-bikes .model-display:before, .showing-1-bikes .model-display:after, .showing-2-bikes .model-display:before, .showing-2-bikes .model-display:after, .showing-many-bikes .model-display:before, .showing-many-bikes .model-display:after {
-      content: " ";
-      display: table; }
-    .showing-1-bikes .model-display:after, .showing-2-bikes .model-display:after, .showing-many-bikes .model-display:after {
-      clear: both; }
-  .showing-1-bikes h2, .showing-2-bikes h2, .showing-many-bikes h2 {
+  .showing-1-bikes h3, .showing-2-bikes h3, .showing-many-bikes h3 {
     float: left; }
   .showing-1-bikes .bike-base .dl-horizontal, .showing-2-bikes .bike-base .dl-horizontal, .showing-many-bikes .bike-base .dl-horizontal {
     float: left;
@@ -1306,6 +1351,8 @@ h2 {
   .showing-1-bikes .frameandfork, .showing-2-bikes .frameandfork, .showing-many-bikes .frameandfork {
     margin-left: 0;
     clear: both; }
+  .showing-1-bikes .wheels, .showing-2-bikes .wheels, .showing-many-bikes .wheels {
+    margin-left: 0; }
 
 .showing-2-bikes section {
   width: 48.5%;
@@ -1318,9 +1365,11 @@ h2 {
 @media (min-width: 1000px) {
   .showing-1-bikes .image-holder {
     max-width: 700px; }
-  .showing-1-bikes h2 {
+  .showing-1-bikes h3 {
     font-size: 1.5em;
     margin: 60px 0 1em; }
+  .showing-1-bikes .model-display {
+    min-height: 575px; }
   .showing-1-bikes .comp_cat_wrap {
     width: 32%;
     margin-top: 0;
@@ -1332,7 +1381,9 @@ h2 {
   .showing-1-bikes .drivetrainandbrakes {
     clear: left;
     clear: right;
-    margin-left: 0; } }
+    margin-left: 0; }
+  .showing-1-bikes .wheels {
+    margin-left: 2%; } }
 @media (max-width: 760px) {
   .showing-2-bikes section, .showing-many-bikes section {
     width: 98%;

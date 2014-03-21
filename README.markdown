@@ -60,7 +60,7 @@ Feel free to make GET requests to BikeBook. We'll send you JSON back, regardless
 
 BikeBook.io uses Cross-Origin Resource Sharing (CORS), which allows web applications to make cross domain AJAX calls without using workarounds such as JSONP. For more information about read [this post about CORS](http://www.nczonline.net/blog/2010/05/25/cross-domain-ajax-with-cross-origin-resource-sharing/) (or [the spec](http://www.w3.org/TR/access-control/#simple-cross-origin-request-and-actual-r) if you're hardcore).
 
-## Development, localness, love
+## Development, localness, party
 
 #### Contributing
 
@@ -74,6 +74,7 @@ For asset compilation: `sass --watch assets/styles/style.scss:public/site.css` a
 
 Every time you change the filesystem you have to refresh the indexes with `rake refresh` because, flat files.
 
----
 
-p.s. Built with all the love by the [Bike Index](https://bikeindex.org).
+#### p.s.
+
+Built with all the love by the [Bike Index](https://bikeindex.org).

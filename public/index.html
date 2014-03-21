@@ -5,7 +5,7 @@
   <meta name="charset" content="utf-8"/>
   <meta name="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-  <meta name="description" content="The Bike Book comparison tool"/>
+  <meta name="description" content="Open source bicycle comparison and review"/>
   <link href="/assets/site.css" media="all" rel="stylesheet" type="text/css" />
   <link href='https://fonts.googleapis.com/css?family=Rambla:400' rel='stylesheet' type='text/css'>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
@@ -22,6 +22,10 @@
   </div>
   <div id="bikes-container"></div>
   <a id="new-compare" href="#">Compare with another bike</a>
+  <footer class="no-bikes">
+    <p>BikeBook.io</p>
+    <h2><a href="https://github.com/bikeindex/bikebook">open source</a> bicycle comparison and review</h2>
+  </footer>
 
   <div class="mustached">
     <div id="base_tmpl">
@@ -55,7 +59,7 @@
     </div>
 
     <div id="details_tmpl">
-      <h2>{{bike.frame_model}} <small>by {{bike.manufacturer}} ({{bike.year}})</small></h2>
+      <h3>{{bike.frame_model}} <small>by {{bike.manufacturer}} ({{bike.year}})</small></h3>
       <div class="image-holder">
         <div class="placeholder"><span>No image</span><img src="/assets/photo_placeholder.png"></div>
         {{#bike.stock_photo_url}}
@@ -82,7 +86,7 @@
         {{/bike.manufacturers_url}}
       </p>
       <div class="frameandfork comp_cat_wrap" data-cat=".frameandfork">
-        <h3><a class="comp_cat_link">Frame and Fork</a></h3>
+        <h4><a class="comp_cat_link">Frame and Fork</a></h4>
         <dl class="comp_cat">
           {{#bike.paint_description}}
             <dt>Colors and paint</dt><dd>{{bike.paint_description}}</dd>
@@ -90,15 +94,15 @@
         </dl>
       </div>
       <div class="drivetrainandbrakes comp_cat_wrap" data-cat=".drivetrainandbrakes">
-        <h3><a class="comp_cat_link">Drivetrain and brakes</a></h3>
+        <h4><a class="comp_cat_link">Drivetrain and brakes</a></h4>
         <dl class="comp_cat"></dl>
       </div>
       <div class="wheels comp_cat_wrap" data-cat=".wheels">
-        <h3><a class="comp_cat_link">Wheels</a></h3>
+        <h4><a class="comp_cat_link">Wheels</a></h4>
         <dl class="comp_cat"></dl>
       </div>
       <div class="additionalparts comp_cat_wrap" data-cat=".additionalparts">
-        <h3><a class="comp_cat_link">Additional parts</a></h3>
+        <h4><a class="comp_cat_link">Additional parts</a></h4>
         <dl class="comp_cat"></dl>
       </div>
     </div>
