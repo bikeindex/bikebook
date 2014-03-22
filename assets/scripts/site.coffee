@@ -182,6 +182,7 @@ initialize = ->
 
 
 $(document).ready ->
+  $('#bikes-container').css('min-height',"#{$(window).height()*.75}px")
   setTimeout ( ->
     $('#initial').addClass('off-screen')
     initialize()

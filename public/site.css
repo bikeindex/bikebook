@@ -1163,11 +1163,13 @@ footer {
     footer a:hover {
       color: #4471b4; }
 
-#bikes-container:before, #bikes-container:after {
-  content: " ";
-  display: table; }
-#bikes-container:after {
-  clear: both; }
+#bikes-container {
+  min-height: 200px; }
+  #bikes-container:before, #bikes-container:after {
+    content: " ";
+    display: table; }
+  #bikes-container:after {
+    clear: both; }
 
 section {
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);

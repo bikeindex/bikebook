@@ -259,6 +259,7 @@
   };
 
   $(document).ready(function() {
+    $('#bikes-container').css('min-height', "" + ($(window).height() * .75) + "px");
     return setTimeout((function() {
       $('#initial').addClass('off-screen');
       initialize();
