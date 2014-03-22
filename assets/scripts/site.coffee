@@ -7,8 +7,7 @@ updateManufacturer = (e) ->
     year.html(Mustache.to_html($('#years_tmpl').html(), data))
     year.select2 "enable", true
     year.select2 "val", data[0]
-    getModelList(e)
-    
+    getModelList(e)    
   else
     year.select2 "enable", false
     model_list.fadeOut 'fast', ->
@@ -84,6 +83,7 @@ setModelList = (target, data=[]) ->
   target.find('select')
     .select2
       placeholder: "Select model"
+      allow_clear: true
   target.fadeIn('fast')
     
 addBike = ->
@@ -100,6 +100,25 @@ addBike = ->
       html.find('.year-select').select2
         placeholder: "Year"
       html.fadeIn()
+
+copyBike = ->
+  prev_bike = $('#bikes-container .bike').last()
+  new_bike = $('#bikes-container .bike').last().clone()
+  new_bike.find('.select2-container').remove()
+  new_bike.find('.manufacturer-select').val(prev_bike.find('select.manufacturer-select').val())
+  new_bike.find('.year-select').val(prev_bike.find('select.year-select').val())
+  new_bike.find('.model-select').val(prev_bike.find('select.model-select').val())
+  new_bike.find('select').prop('tabindex', "1")
+  new_bike.find('.manufacturer-select').select2
+    placeholder: "Choose manufacturer"
+    allow_clear: true
+  new_bike.find('.year-select').select2
+    placeholder: "Year"
+  new_bike.find('.model-select').select2
+    placeholder: "Select model"
+    allow_clear: true
+  new_bike.hide().appendTo('#bikes-container').fadeIn()
+  resetContainerCount()
 
 resetContainerCount = ->
   bc = $('#bikes-container .bike').length
@@ -125,7 +144,10 @@ initialize = ->
   addBike()
   $('#new-compare').on 'click', (e) ->
     e.preventDefault()
-    addBike()
+    if $('#bikes-container .bike').length > 0
+      copyBike()
+    else
+      addBike()
   
   $('#bikes-container').on 'click', '.close', (e) ->
     e.preventDefault()
