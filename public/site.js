@@ -96,7 +96,7 @@
   };
 
   updateModelDisplay = function(target, data) {
-    var bike, c, closed, comp, desc, dlgroup, field, fields, groups, name, tires, wheel_sizes, _i, _j, _k, _len, _len1, _len2, _ref, _results;
+    var bike, c, closed, comp, desc, dlgroup, field, fields, groups, link, name, tires, url, wheel_sizes, _i, _j, _k, _len, _len1, _len2, _ref, _results;
     if (data == null) {
       data = [];
     }
@@ -137,6 +137,9 @@
         target.find("" + field).fadeOut('fast');
       }
     }
+    bike = targetBike(target);
+    url = "http://bikebook.io/?s_manufacturer=" + bike.manufacturer + "&s_year=" + bike.year + "&s_frame_model=" + bike.frame_model;
+    link = target.find('.share-bike').attr('href', url);
     groups = $("#collapsed-cats").data('collapsed');
     if (groups.length > 0) {
       _results = [];
@@ -155,7 +158,10 @@
     target.empty().html(Mustache.to_html($('#models_tmpl').html(), data));
     target.find('select').select2({
       placeholder: "Select model",
-      allow_clear: true
+      allow_clear: true,
+      escapeMarkup: function(m) {
+        return m;
+      }
     });
     return target.fadeIn('fast');
   };

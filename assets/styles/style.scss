@@ -10,6 +10,7 @@ $bodyText: 'EB Garamond', serif;
 $textColor: #111;
 $grayText: #999;
 $linkColor: #85a4b0;
+$linkDarker: #4471b4;
 
 $blueDark: rgb(41,128,185);
 $bodyBackground: #f0f0f0;
@@ -171,7 +172,7 @@ footer {
     color: $linkColor;
     text-decoration: none;
     &:visited { color: $linkColor; }
-    &:hover { color: #4471b4; }
+    &:hover { color: $linkDarker; }
   }
 }
 
@@ -203,11 +204,11 @@ section {
   background: rgba(#ccc,.3);
   z-index: 100;
   cursor: pointer;
-  color: $grayText;
+  color: $blueDark;
   text-decoration: none;
   font-family: $headerText;
   &:hover {
-    color: #000;
+    color: darken($blueDark, 7%);
     background: #ccc;
     box-shadow: 1px 1px solid rgba(black,.2);
   }
@@ -232,7 +233,7 @@ dd { color: $grayText; }
     color: $grayText;
     text-decoration: underline;
     &:visited { color: $grayText; }
-    &:hover { color: #4471b4; }
+    &:hover { color: $linkDarker; }
   }
 }
 
@@ -250,7 +251,7 @@ dd { color: $grayText; }
     font-size: .6em;
     margin-left: -.2em;
   }
-  &:hover { color: #4471b4; }
+  &:hover { color: $linkDarker; }
 }
 .closed .comp_cat_link:before { @include rotate(0deg); }
 
@@ -258,32 +259,44 @@ dd { color: $grayText; }
   @include clearfix;
   width: 100%;
   position: relative;
-  padding: 0 2em .5em 0;
+  padding: 0 0 .5em 0;
   z-index: 50;
 }
 
 .manufacturer-select {
   @include transition(all linear .1s);
-  width: 39%;
   float: left;
-  margin-right: 1%;
-  
+  margin-right: 2%;
+  width: 70%;  
   .select2-default { color: $textColor !important; }
 }
-.year-select {
-  width: 19%;
-  margin-right: 1%;
+
+.year-select-contain {
   float: left;
+  width: 28%; 
+  margin-right: 0;
+  margin-top: -1px;
+  padding-right: 2em;
 }
+
+.year-select { width: 100%; }
 
 .model-select-contain { 
   display: none;
   clear: none;
-  width: 39.5%;
   float: left;
+  padding-right: 0;
+  width: 100%;
   .select2-container {
     display: block;
+    padding-top: 7px;
+    clear: both;
   }
+}
+
+span.f_msrp {
+  float: right;
+  color: $grayText;
 }
 
 .image-holder {
@@ -300,8 +313,6 @@ dd { color: $grayText; }
       position: absolute;
       left: 0; top: 0;
     }
-
-  // .model-photo { width: 100%; z-index: 10; }
   .placeholder {
     z-index: 0;
     span {
@@ -323,6 +334,18 @@ dd { color: $grayText; }
   display: none; 
   min-height: 525px;
   padding: 20px .5em .5em;
+}
+
+.share-bike {
+  clear: both;
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  text-align: right;
+  color: $linkColor;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover { color: $linkDarker; }
 }
 
 
@@ -350,6 +373,7 @@ dd { color: $grayText; }
     float: left;
     clear: left;
   }
+
   .bike-description { 
     clear: left;
     padding-bottom: 60px;
@@ -385,6 +409,7 @@ dd { color: $grayText; }
     margin-left: 1%;
   }
 }
+
 
 @media (min-width: 1000px) {
   .showing-1-bikes {
@@ -424,22 +449,25 @@ dd { color: $grayText; }
   }
 }
 
-@media (max-width: 1660px) {
-  .showing-many-bikes {
-    .year-select {
-      width: 28%; 
-      margin-right: 0;
+@media (min-width: 1120px) {
+  .showing-1-bikes {
+    .year-select-contain {
+      width: 19%;
+      margin-right: 1%;
+      padding-right: 0;
     }
     .model-select-contain { 
-      width: 100%;
+      clear: none;
+      width: 39.5%;
+      padding-right: 2em;
       .select2-container {
-        padding-top: 7px;
-        clear: both;
+        padding-top: 0px;
+        clear: none;
       }
     }
     .manufacturer-select {
-      margin-right: 2%;
-      width: 70%;
+      width: 39%;
+      margin-right: 1%;
     }
   }
 }
@@ -449,23 +477,6 @@ dd { color: $grayText; }
     section {
       width: 48.5%;
       margin-left: 1%;
-    }
-  }
-  .showing-2-bikes {
-    .year-select {
-      width: 28%; 
-      margin-right: 0;
-    }
-    .model-select-contain { 
-      width: 100%;
-      .select2-container {
-        padding-top: 7px;
-        clear: both;
-      }
-    }
-    .manufacturer-select {
-      margin-right: 2%;
-      width: 70%;
     }
   }
 }
@@ -499,23 +510,6 @@ dd { color: $grayText; }
       height: 50px;
     }
   }
-
-  .year-select {
-    width: 28%; 
-    margin-right: 0;
-  }
-  .model-select-contain { 
-    width: 100%;
-    .select2-container {
-      padding-top: 7px;
-      clear: both;
-    }
-  }
-  .manufacturer-select {
-    margin-right: 2%;
-    width: 70%;
-  }
-  .selectors { padding: 0 0 .5em 0; }
   .close { display: none; }
   .showing-1-bikes {
     padding: 0;

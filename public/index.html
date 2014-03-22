@@ -37,12 +37,14 @@
           <select class="manufacturer-select">
             <option></option>
             {{#manufacturers}}
-              <option value="{{name}}" data-years="{{years}}">{{name}}</option>
+              <option value="{{id}}" data-years="{{years}}">{{name}}</option>
             {{/manufacturers}}
           </select>
-          <select class="year-select" disabled="true">
-            <option></option>
-          </select>
+          <div class="year-select-contain">
+            <select class="year-select" disabled="true">
+              <option></option>
+            </select>
+          </div>
           <div class="model-select-contain"></div>
         </div>
         <div class="model-display"></div>
@@ -56,7 +58,7 @@
     <div id="models_tmpl">
       <select class='model-select'>
         <option></option>
-        {{#.}}<option value="{{.}}">{{.}}</option>{{/.}}      
+        {{#.}}<option value="{{id}}">{{text}}</option>{{/.}}      
       </select>
     </div>
 
@@ -107,6 +109,7 @@
         <h4><a class="comp_cat_link">Additional parts</a></h4>
         <dl class="comp_cat"></dl>
       </div>
+      <a class="share-bike">Share bike link</a>
     </div>
   </div>
   <span id="collapsed-cats" class="data-span" data-collapsed=""></span>

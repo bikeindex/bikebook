@@ -1,9 +1,3 @@
-# slugify = (input) ->
-#   success
-
-# slugify_mnfg = (input) ->
-#   success 
-
 resetContainerCount = ->
   bc = $('#bikes-container .bike').length
   if bc == 0
@@ -94,6 +88,11 @@ updateModelDisplay = (target, data=[]) ->
     if target.find("#{field} dd").length == 0
       target.find("#{field}").fadeOut('fast')
 
+  bike = targetBike(target)
+  url = "http://bikebook.io/?s_manufacturer=#{bike.manufacturer}&s_year=#{bike.year}&s_frame_model=#{bike.frame_model}"
+  link = target.find('.share-bike').attr('href',url)
+  
+
   groups = $("#collapsed-cats").data('collapsed')
   if groups.length > 0
     for closed in groups
@@ -101,10 +100,11 @@ updateModelDisplay = (target, data=[]) ->
 
 setModelList = (target, data=[]) ->
   target.empty().html(Mustache.to_html($('#models_tmpl').html(), data))
-  target.find('select')
-    .select2
+  target.find('select').select2
       placeholder: "Select model"
       allow_clear: true
+      escapeMarkup: (m) ->
+        m
   target.fadeIn('fast')
     
 addBike = (bike) ->
@@ -148,9 +148,6 @@ fillInBike = (target,bike={}) ->
   if bike.manufacturer?
     target.find('select.manufacturer-select').val(bike.manufacturer).trigger('change')
     updateManufacturer(target,bike)
-    # if bike.year?
-    # target.find('select.manufacturer-select').val(bike.manufacturer).trigger('change')
-    # getModelList(target,bike)
     if bike.frame_model?
       getBike(target,bike)
 

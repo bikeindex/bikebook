@@ -33,7 +33,7 @@ module BikeBook
     def select_list
       list = {manufacturers: []}
       @m_hash.keys.each do |mnfg|
-        list[:manufacturers] << {name: mnfg, years: @m_hash[mnfg].keys.sort.reverse, slug: Slugify.manufacturer(mnfg) }
+        list[:manufacturers] << {id: Slugify.manufacturer(mnfg), name: mnfg, years: @m_hash[mnfg].keys.sort.reverse }
       end
       list
     end
@@ -45,12 +45,16 @@ module BikeBook
         bike = {
           manufacturer: bf["bike"]["manufacturer"],
           year: bf["bike"]["year"],
-          frame_model: bf["bike"]["frame_model"]
+          frame_model: bf["bike"]["frame_model"],
+          slug: Slugify.input(bf["bike"]["frame_model"]),
+          msrp: bf["bike"]["original_msrp"]
         }
+        text = bike[:frame_model]
+        text += "<span class='f_msrp'>#{bike[:msrp]}</span>" if bike[:msrp]
 
         models[bike[:manufacturer]] ||= {}
         models[bike[:manufacturer]][bike[:year]] ||= []
-        models[bike[:manufacturer]][bike[:year]] << bike[:frame_model]
+        models[bike[:manufacturer]][bike[:year]] << {id: bike[:slug], text: text, name: bike[:frame_model] }
       end
       models
     end
