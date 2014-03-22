@@ -108,7 +108,6 @@ h4 {
     margin-top: 70px;
     font-size: 40px;
   }
-
   &.off-screen span { opacity: 0; }
   &.removed {
     span {
@@ -149,6 +148,7 @@ h4 {
 
 footer {
   @include clearfix;
+  position: relative;
   display: block;
   width: 100%;
   margin-top: 20px;
@@ -162,6 +162,7 @@ footer {
     font-family: $bodyText;
     color: $grayText;
     font-size: 18px;
+    margin: 0 0 .5em;
   }
   p { float: left; }
   h2 { float: right; }
@@ -473,14 +474,28 @@ dd { color: $grayText; }
   
   #new-compare { display: none; }
 
+  #initial {
+    h1 { font-size: 60px; }
+    h2 { font-size: 30px; }
+  }
+
   footer {
+    margin-top: 30px;
+
     p, h2 {
       text-align: center;
       float: none;
     }
+    span {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
     img {
-      float: right;
-      margin-top: .5em;
+      position: absolute;
+      display: block;
+      left: 5px; top: -14px;
+      height: 50px;
     }
   }
 

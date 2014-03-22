@@ -1129,6 +1129,7 @@ h4 {
     box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.2); }
 
 footer {
+  position: relative;
   display: block;
   width: 100%;
   margin-top: 20px;
@@ -1145,7 +1146,8 @@ footer {
   footer p, footer h2 {
     font-family: "EB Garamond", serif;
     color: #999999;
-    font-size: 18px; }
+    font-size: 18px;
+    margin: 0 0 .5em; }
   footer p {
     float: left; }
   footer h2 {
@@ -1431,12 +1433,26 @@ dd {
   #new-compare {
     display: none; }
 
-  footer p, footer h2 {
-    text-align: center;
-    float: none; }
-  footer img {
-    float: right;
-    margin-top: .5em; }
+  #initial h1 {
+    font-size: 60px; }
+  #initial h2 {
+    font-size: 30px; }
+
+  footer {
+    margin-top: 30px; }
+    footer p, footer h2 {
+      text-align: center;
+      float: none; }
+    footer span {
+      display: block;
+      width: 100%;
+      text-align: center; }
+    footer img {
+      position: absolute;
+      display: block;
+      left: 5px;
+      top: -14px;
+      height: 50px; }
 
   .year-select {
     width: 28%;

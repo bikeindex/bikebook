@@ -140,7 +140,16 @@ collapseToggle = (target) ->
       closed.push(section.find(cat).attr('data-cat'))  
   $("#collapsed-cats").data('collapsed', closed)
 
+urlParam = (name) ->
+  url = window.location.href
+  results = new RegExp("[\\?&]" + name + "=([^&#]*)").exec(url)
+  return 0  unless results
+  results[1] or 0
+  
+
 initialize = ->
+  console.log(urlParam("s_manufacturer"))
+
   addBike()
   $('#new-compare').on 'click', (e) ->
     e.preventDefault()
@@ -170,10 +179,10 @@ initialize = ->
 
 
 $(document).ready ->
-  setTimeout ( ->
-    $('#initial').addClass('off-screen')
-    initialize()
-    setTimeout ( ->
-      $('#initial').addClass('removed')
-      ), 500
-    ), 700
+  # setTimeout ( ->
+  #   $('#initial').addClass('off-screen')
+  #   initialize()
+  #   setTimeout ( ->
+  #     $('#initial').addClass('removed')
+  #     ), 500
+  #   ), 700
