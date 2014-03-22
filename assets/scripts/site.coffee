@@ -1,7 +1,9 @@
 resetContainerCount = ->
+  # This is so that we know how many bikes are on the screen. It only matters if there are 1, 2 or 3
+  # for styling (and on smaller screens, it may not matter how many there are)
   bc = $('#bikes-container .bike').length
   if bc == 0
-    addBike()
+    addBikeContainer()
   if bc < 3 
     $("#bikes-container").removeClass().addClass("showing-#{bc}-bikes")
   if bc > 2
@@ -18,10 +20,11 @@ collapseToggle = (target) ->
       closed.push(section.find(cat).attr('data-cat'))  
   $("#collapsed-cats").data('collapsed', closed)
 
-updateManufacturer = (target,bike={}) ->
-  mnfg = target.find('select.manufacturer-select option:selected')
+updateManufacturer = (target) ->
+  bike = targetBike(target)
   year = target.find('select.year-select')
-  if mnfg.val()? && mnfg.val().length != 0
+  if bike.manufacturer? && bike.manufacturer.length > 0
+    mnfg = target.find('select.manufacturer-select option:selected')
     data = JSON.parse("[#{mnfg.attr('data-years')}]")
     year.html(Mustache.to_html($('#years_tmpl').html(), data))
     year.select2 "enable", true
@@ -29,22 +32,23 @@ updateManufacturer = (target,bike={}) ->
       year.select2 "val", bike.year 
     else
       year.select2 "val", data[0]
-    getModelList(target,bike)
+    getModelList(target)
   else
     year.select2 "enable", false
     target.find('.model-select-contain').fadeOut 'fast', ->
       target.find('.model-select-contain').empty()
 
-getModelList = (target,bike={}) ->
-  bike = targetBike(target) unless bike.year? && bike.manufacturer?
+getModelList = (target) ->
+  bike = targetBike(target)
   url = "/?manufacturer=#{bike.manufacturer}&year=#{bike.year}"
   $.ajax
     type: "GET"
     url: url
     success: (data, textStatus, jqXHR) ->
-      setModelList(target.find('.model-select-contain'), data)
+      setModelList(target, data)
 
-getBike = (target,bike={}) ->
+getFrameModel = (target) ->
+  bike = targetBike(target)
   return null unless bike.frame_model? && bike.frame_model.length > 0
   url = "/?manufacturer=#{bike.manufacturer}&year=#{bike.year}&frame_model=#{bike.frame_model}"
   $.ajax
@@ -53,6 +57,7 @@ getBike = (target,bike={}) ->
     success: (data, textStatus, jqXHR) ->
       target.find('.model-display').fadeOut 200, ->
         updateModelDisplay(target,data)
+        target.data('bike','') # Erase bike data, since we don't need it anymore.
     
 updateModelDisplay = (target, data=[]) ->
   target.find('.model-display').html(Mustache.to_html($('#details_tmpl').html(), data))
@@ -99,15 +104,20 @@ updateModelDisplay = (target, data=[]) ->
       target.find(closed).toggleClass('closed').find('dl').hide()
 
 setModelList = (target, data=[]) ->
-  target.empty().html(Mustache.to_html($('#models_tmpl').html(), data))
-  target.find('select').select2
+  model_select = target.find('.model-select-contain')
+  model_select.empty().html(Mustache.to_html($('#models_tmpl').html(), data))
+  model_select.find('select').select2
       placeholder: "Select model"
       allow_clear: true
       escapeMarkup: (m) ->
-        m
-  target.fadeIn('fast')
+        m  # We're escaping markup because we're using HTML to display msrp
+  model_select.fadeIn('fast')
+  bike = targetBike(target)
+  if bike.frame_model?
+    target.find('select.model-select').val(bike.frame_model).trigger('change')
     
-addBike = (bike) ->
+addBikeContainer = (bike={}) ->
+  # Call with bike for initializations: initial bike or copying bike
   $.ajax
     type: "GET"
     url: "/assets/select_list.json"
@@ -121,7 +131,7 @@ addBike = (bike) ->
       html.find('.year-select').select2
         placeholder: "Year"
       html.fadeIn()
-      fillInBike(html,bike) if bike.manufacturer?
+      fillInBike(html,bike) if bike?
        
 
 urlParam = (name) ->
@@ -130,32 +140,36 @@ urlParam = (name) ->
   return 0  unless results
   results[1] or 0
   
-initial_bike = ->
+intitialBike = ->
   bike =
     manufacturer: urlParam('s_manufacturer')
     year: urlParam('s_year')
     frame_model: urlParam('s_frame_model')
 
 targetBike = (target) ->
-  return "" unless target? && target.length > 0
-  bike = 
-    manufacturer: target.find('select.manufacturer-select').val()  
-    year: target.find('select.year-select').val()
-    frame_model: target.find('select.model-select').val()
+  bike = target.data('bike')
+  unless bike? && bike.frame_model?
+    # If we don't have a complete bike we're not going to load it. Because right 
+    # now we're only deleting the bike attributes when a complete bike is created 
+    # and so we want to ensure that we're actually going to manage to get there, so 
+    # we don't have random bike info sticking around.
+    bike = 
+      manufacturer: target.find('select.manufacturer-select').val()
+      year: target.find('select.year-select').val()
+      frame_model: target.find('select.model-select').val()
+  bike 
 
-
-fillInBike = (target,bike={}) ->
-  if bike.manufacturer?
-    target.find('select.manufacturer-select').val(bike.manufacturer).trigger('change')
-    updateManufacturer(target,bike)
-    if bike.frame_model?
-      getBike(target,bike)
-
+fillInBike = (target,bike) ->
+  # Here, if a bike container is added and bike attributes are passed, we put them on the 
+  # data attribute of the bike container, so that we can continue to access them.
+  target.data('bike',bike)
+  target.find('select.manufacturer-select').val(bike.manufacturer).trigger('change')
+  
 initialize = ->
-  addBike(initial_bike())
+  addBikeContainer(intitialBike())
   $('#new-compare').on 'click', (e) ->
     e.preventDefault()
-    addBike(targetBike($('#bikes-container .bike').last()))
+    addBikeContainer(targetBike($('#bikes-container .bike').last()))
   
   $('#bikes-container').on 'click', '.close', (e) ->
     e.preventDefault()
@@ -169,13 +183,14 @@ initialize = ->
 
   $('#bikes-container').on 'change', 'select.model-select', (e) ->
     target = $(e.target).parents('.bike')
-    getBike(target, targetBike(target))
+    getFrameModel(target)
 
   $('#bikes-container').on 'change', 'select.manufacturer-select', (e) ->
     updateManufacturer($(e.target).parents('.bike'))
 
   $('#bikes-container').on 'change', 'select.year-select', (e) ->
-    getModelList($(e.target).parents('.bike'),{})
+
+    getModelList($(e.target).parents('.bike'))
 
 
 $(document).ready ->
