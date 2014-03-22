@@ -2,6 +2,18 @@
 class Slugify
   def self.input(string)
     slug = I18n.transliterate(string.downcase)
-    slug.gsub(/(bi)?cycles?|bikes?|co(\.|mpany)/i,'').gsub('+', 'plus').gsub(/([^A-Za-z0-9])/,' ').strip.gsub(/\s+/, '_')
+    key_hash = {
+      '\s(bi)?cycles?|bikes?' => ' ',
+      '\+'                   => 'plus',
+      '([^A-Za-z0-9])'      => ' '
+    }
+    key_hash.keys.each do |k|
+      slug.gsub!(/#{k}/i, key_hash[k])
+    end
+    slug.strip.gsub(/\s+/,'_') # strip and then turn any length of spaces into underscores
+  end
+
+  def self.manufacturer(string)
+    input(string.gsub(/\sco(\.|mpany)/i,' ').gsub(/\s(frame)?works/i,' '))
   end
 end

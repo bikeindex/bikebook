@@ -10,7 +10,7 @@ module BikeBook
       File.open("./public/select_list.json", "w") { |f| f.write(select_list.to_json) }
       
       @m_hash.keys.each do |mnfg|
-        mnfg_slug = Slugify.input(mnfg)
+        mnfg_slug = Slugify.manufacturer(mnfg)
         File.open("#{@base_dir}#{mnfg_slug}/index.json", "w") do |f|
           f.write(@m_hash[mnfg].to_json)
         end
@@ -33,7 +33,7 @@ module BikeBook
     def select_list
       list = {manufacturers: []}
       @m_hash.keys.each do |mnfg|
-        list[:manufacturers] << {name: mnfg, years: @m_hash[mnfg].keys.sort.reverse }
+        list[:manufacturers] << {name: mnfg, years: @m_hash[mnfg].keys.sort.reverse, slug: Slugify.manufacturer(mnfg) }
       end
       list
     end
