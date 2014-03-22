@@ -179,10 +179,10 @@ initialize = ->
 
 
 $(document).ready ->
-  # setTimeout ( ->
-  #   $('#initial').addClass('off-screen')
-  #   initialize()
-  #   setTimeout ( ->
-  #     $('#initial').addClass('removed')
-  #     ), 500
-  #   ), 700
+  setTimeout ( ->
+    $('#initial').addClass('off-screen')
+    initialize()
+    setTimeout ( ->
+      $('#initial').addClass('removed')
+      ), 500
+    ), 700

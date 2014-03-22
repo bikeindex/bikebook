@@ -241,6 +241,14 @@
     });
   };
 
-  $(document).ready(function() {});
+  $(document).ready(function() {
+    return setTimeout((function() {
+      $('#initial').addClass('off-screen');
+      initialize();
+      return setTimeout((function() {
+        return $('#initial').addClass('removed');
+      }), 500);
+    }), 700);
+  });
 
 }).call(this);
