@@ -115,9 +115,10 @@
         target.find('.model-display').fadeOut(200, function() {
           return updateModelDisplay(target, data);
         });
-        url = "" + window.location.protocol + "//" + window.location.host + "?s_manufacturer=" + bike.manufacturer + "&s_year=" + bike.year + "&s_frame_model=" + bike.frame_model;
+        url = "" + window.location.protocol + "//" + window.location.host + "/?s_manufacturer=" + bike.manufacturer + "&s_year=" + bike.year + "&s_frame_model=" + bike.frame_model;
         target.find('.share-bike a').attr('href', url);
-        target.find('.share-bike span').text(url);
+        target.find('.share-bike input').val(url);
+        target.find('.share-bike').fadeIn();
         return target.data('bike', bike);
       },
       error: function(data) {
@@ -302,7 +303,10 @@
       return collapseToggle(e);
     });
     $('#bikes-container').on('change', 'select.manufacturer-select', function(e) {
-      return updateYear($(e.target).parents('.bike'));
+      var target;
+      target = $(e.target).parents('.bike');
+      target.find('select.model-select').val("");
+      return updateYear(target);
     });
     $('#bikes-container').on('change', 'select.year-select', function(e) {
       return getModelList($(e.target).parents('.bike'));

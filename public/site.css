@@ -1028,14 +1028,6 @@ body {
 .data-span, #mustached {
   display: none; }
 
-.bike {
-  display: none; }
-  .bike:before, .bike:after {
-    content: " ";
-    display: table; }
-  .bike:after {
-    clear: both; }
-
 select, .select2-container, .select2-results {
   font-family: "Rambla", sans-serif;
   size: 14px; }
@@ -1069,7 +1061,7 @@ h4 {
   z-index: 1000;
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background: #2980b9;
@@ -1083,7 +1075,7 @@ h4 {
   text-align: center;
   font-size: 80px;
   color: white;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 0;
   margin-top: -.5em;
@@ -1195,6 +1187,8 @@ footer {
     clear: both; }
 
 section {
+  overflow: hidden;
+  display: none;
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   position: relative;
@@ -1362,7 +1356,7 @@ span.f_msrp {
 .model-display {
   display: none;
   min-height: 525px;
-  padding: 20px .5em .5em; }
+  padding: 20px 0 0; }
   .model-display:before, .model-display:after {
     content: " ";
     display: table; }
@@ -1371,27 +1365,25 @@ span.f_msrp {
 
 .share-bike {
   clear: both;
-  display: block;
+  display: none;
+  position: relative;
   margin-top: 10px;
   width: 100%;
   text-align: right;
-  padding: .5em 0; }
+  padding: .5em 0 0 110px; }
   .share-bike a {
-    color: #85a4b0;
+    position: absolute;
+    left: 0;
+    color: #b3c7ce;
     cursor: pointer;
-    text-decoration: none; }
+    text-decoration: none;
+    margin-top: 1px; }
     .share-bike a:hover {
       color: #4471b4; }
-  .share-bike span {
-    -webkit-transition: opacity ease-in 0.5s;
-    -o-transition: opacity ease-in 0.5s;
-    transition: opacity ease-in 0.5s;
-    opacity: 0;
-    display: inline-block;
-    margin-right: 2em;
-    color: #999999; }
-  .share-bike:hover span {
-    opacity: 1; }
+  .share-bike input {
+    width: 100%;
+    border: 0;
+    color: #bfbfbf; }
 
 @media (max-width: 760px) {
   .image-holder .placeholder span {
@@ -1514,16 +1506,15 @@ span.f_msrp {
 
   .showing-1-bikes {
     padding: 0;
-    min-height: 100%;
-    height: 100%; }
+    min-height: 100%; }
     .showing-1-bikes section {
       -webkit-box-shadow: 0 0 0;
       box-shadow: 0 0 0;
+      float: none;
       margin: 0;
       border-radius: 0;
       padding-top: 1em;
-      width: 100%;
-      min-height: 100%; }
+      width: 100%; }
     .showing-1-bikes .comp_cat_wrap {
       clear: both;
       float: none;

@@ -45,11 +45,6 @@ body {
 
 .data-span, #mustached { display: none; }
 
-.bike {
-  @include clearfix;
-  display: none;
-}
-
 select, .select2-container, .select2-results {
   font-family: $headerText;
   size: 14px;
@@ -83,7 +78,7 @@ h4 {
     z-index: 1000;
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0; left: 0;
     background: $blueDark;
     box-shadow: 0 0 3px rgba(black,.2);
@@ -95,7 +90,7 @@ h4 {
     text-align: center;
     font-size: 80px;
     color: white;
-    position: absolute;
+    position: fixed;
     top: 50%; left: 0;
     margin-top: -.5em;
     margin-bottom: 0;
@@ -208,6 +203,8 @@ footer {
 
 section {
   @include clearfix;
+  overflow: hidden;
+  display: none;
   box-shadow: inset 0 0 3px rgba(black,.2);
   border-radius: 3px;
   position: relative;
@@ -358,32 +355,30 @@ span.f_msrp {
   @include clearfix;
   display: none; 
   min-height: 525px;
-  padding: 20px .5em .5em;
+  padding: 20px 0 0;
 }
 
 .share-bike {
   clear: both;
-  display: block;
+  display: none;
+  position: relative;
   margin-top: 10px;
   width: 100%;
   text-align: right;
-  padding: .5em 0;
+  padding: .5em 0 0 110px;
   a {
-    color: $linkColor;
+    position:absolute; left: 0;
+    color: lighten($linkColor, 15%);
     cursor: pointer;
     text-decoration: none;
+    margin-top: 1px;
     &:hover { color: $linkDarker; }
   }
-  span {
-    @include transition(opacity ease-in .5s);
-    opacity: 0;
-    display: inline-block;
-    margin-right: 2em;
-    color: $grayText;
+  input {
+    width: 100%;
+    border: 0;
+    color: lighten($grayText, 15%);
   }
-  &:hover {
-    span { opacity: 1; }
- }
 }
 
 
@@ -550,19 +545,21 @@ span.f_msrp {
       height: 50px;
     }
   }
+
   .close { display: none; }
   .showing-1-bikes {
     padding: 0;
     min-height: 100%;
-    height: 100%;
+    // height: 100%;
     section {
       @include box-shadow(0 0 0);
+      float: none;
       margin: 0;
       border-radius: 0;
       padding-top: 1em;
       width: 100%;
       // height: 100%;
-      min-height: 100%;
+      // min-height: 100%;
     }
     .comp_cat_wrap {
       clear: both;

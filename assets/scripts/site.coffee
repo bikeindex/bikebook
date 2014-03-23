@@ -45,11 +45,6 @@ showNotFound = (target, bike) ->
     error.fadeOut()
     ), 4000
 
-# 
-# Requests
-# 
-
-
 getAndSetManufacturerList = ->
   $.ajax
     type: "GET"
@@ -80,9 +75,10 @@ getFrameModel = (target,bike={}) ->
       target.find('.model-display').fadeOut 200, ->
         updateModelDisplay(target,data)
       # Set the share link
-      url = "#{window.location.protocol}//#{window.location.host}?s_manufacturer=#{bike.manufacturer}&s_year=#{bike.year}&s_frame_model=#{bike.frame_model}"
+      url = "#{window.location.protocol}//#{window.location.host}/?s_manufacturer=#{bike.manufacturer}&s_year=#{bike.year}&s_frame_model=#{bike.frame_model}"
       target.find('.share-bike a').attr('href',url)
-      target.find('.share-bike span').text(url)
+      target.find('.share-bike input').val(url)
+      target.find('.share-bike').fadeIn()
       # Set the data attributes on the target, so that when copying to a new bike, 
       # it pulls the current displayed bike rather than selection.
 
@@ -112,7 +108,6 @@ updateYear = (target,bike={}) ->
     data = JSON.parse("[#{mnfg.attr('data-years')}]")
     year.html(Mustache.to_html($('#years_tmpl').html(), data))
     year.select2 "enable", true
-    
     if bike.year? && bike.year.length > 3
       s_year = bike.year 
     else
@@ -231,7 +226,9 @@ initialize = ->
     collapseToggle(e)
 
   $('#bikes-container').on 'change', 'select.manufacturer-select', (e) ->
-    updateYear($(e.target).parents('.bike'))
+    target = $(e.target).parents('.bike')
+    target.find('select.model-select').val("")
+    updateYear(target)
 
   $('#bikes-container').on 'change', 'select.year-select', (e) ->
     getModelList($(e.target).parents('.bike'))
