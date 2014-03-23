@@ -43,7 +43,7 @@ body {
   font-size: 17px;
 }
 
-.data-span, .mustached { display: none; }
+.data-span, #mustached { display: none; }
 
 .bike {
   @include clearfix;
@@ -67,7 +67,10 @@ h1, h2, h3, h4 {
   strong { font-weight: bold; }
 }
 
-h3 { margin-bottom: 1em; }
+h3 {
+  margin-bottom: 1em;
+  strong { font-weight: normal; }
+}
 
 h4 {
   font-size: 1.15em;
@@ -119,6 +122,28 @@ h4 {
       z-index: -1;
       opacity: 0;
     }
+  }
+}
+
+$red: rgb(231,76,60);
+$redDark: rgb(192,57,43);
+
+.bike-error {
+  @include box-shadow(1px 1px 3px rgba(black,.2));
+  border-radius: 3px;
+  width: 95%;
+  max-width: 400px;
+  position: absolute;
+  right: 5%; bottom: -7em;
+  background: rgba($redDark,.8);
+  border: 1px solid $redDark;
+  padding: .5em;
+  z-index: 1000;
+  display: none;
+  h4 { color: $textColor; text-align: center; }
+  p {
+    text-align: center;
+    margin: 0;
   }
 }
 
@@ -342,10 +367,23 @@ span.f_msrp {
   margin-top: 10px;
   width: 100%;
   text-align: right;
-  color: $linkColor;
-  cursor: pointer;
-  text-decoration: none;
-  &:hover { color: $linkDarker; }
+  padding: .5em 0;
+  a {
+    color: $linkColor;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover { color: $linkDarker; }
+  }
+  span {
+    @include transition(opacity ease-in .5s);
+    opacity: 0;
+    display: inline-block;
+    margin-right: 2em;
+    color: $grayText;
+  }
+  &:hover {
+    span { opacity: 1; }
+ }
 }
 
 

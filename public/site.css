@@ -1025,7 +1025,7 @@ body {
   body:after {
     clear: both; }
 
-.data-span, .mustached {
+.data-span, #mustached {
   display: none; }
 
 .bike {
@@ -1055,6 +1055,8 @@ h1, h2, h3, h4 {
 
 h3 {
   margin-bottom: 1em; }
+  h3 strong {
+    font-weight: normal; }
 
 h4 {
   font-size: 1.15em;
@@ -1104,6 +1106,27 @@ h4 {
 #initial.removed h1, #initial.removed h2 {
   z-index: -1;
   opacity: 0; }
+
+.bike-error {
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  width: 95%;
+  max-width: 400px;
+  position: absolute;
+  right: 5%;
+  bottom: -7em;
+  background: rgba(192, 57, 43, 0.8);
+  border: 1px solid #c0392b;
+  padding: .5em;
+  z-index: 1000;
+  display: none; }
+  .bike-error h4 {
+    color: #111111;
+    text-align: center; }
+  .bike-error p {
+    text-align: center;
+    margin: 0; }
 
 #new-compare {
   box-shadow: inset 0 -1px 3px rgba(0, 0, 0, 0.2);
@@ -1352,11 +1375,23 @@ span.f_msrp {
   margin-top: 10px;
   width: 100%;
   text-align: right;
-  color: #85a4b0;
-  cursor: pointer;
-  text-decoration: none; }
-  .share-bike:hover {
-    color: #4471b4; }
+  padding: .5em 0; }
+  .share-bike a {
+    color: #85a4b0;
+    cursor: pointer;
+    text-decoration: none; }
+    .share-bike a:hover {
+      color: #4471b4; }
+  .share-bike span {
+    -webkit-transition: opacity ease-in 0.5s;
+    -o-transition: opacity ease-in 0.5s;
+    transition: opacity ease-in 0.5s;
+    opacity: 0;
+    display: inline-block;
+    margin-right: 2em;
+    color: #999999; }
+  .share-bike:hover span {
+    opacity: 1; }
 
 @media (max-width: 760px) {
   .image-holder .placeholder span {

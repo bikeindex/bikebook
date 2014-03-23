@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title lang='en'>Bike Book</title>
+  <title lang='en'>BikeBook</title>
   <meta name="charset" content="utf-8"/>
   <meta name="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -28,8 +28,8 @@
     <p>BikeBook.io</p>
     <h2><a href="https://github.com/bikeindex/bikebook">open source</a> bicycle comparison and research <span>by the <a href="https://bikeindex.org">Bike Index</a></span></h2>
   </footer>
-
-  <div class="mustached">
+  <div id="mustached">
+    <div id="staging"></div>
     <div id="base_tmpl">
       <section class="bike">
         <a class="close">x</a>
@@ -50,7 +50,13 @@
         <div class="model-display"></div>
       </section>
     </div>
-
+    <div id="errors_tmpl">
+      <div class="bike-error">
+        <h4>Sorry!</h4>
+        <p>We couldn't find a
+          <em>{{frame_model}}</em> for {{manufacturer}} in {{year}}.</p>
+      </div>
+    </div>
     <div id="years_tmpl">
       {{#.}}<option value="{{.}}">{{.}}</option>{{/.}}      
     </div>
@@ -63,7 +69,7 @@
     </div>
 
     <div id="details_tmpl">
-      <h3>{{bike.frame_model}} <small>by {{bike.manufacturer}} ({{bike.year}})</small></h3>
+      <h3><strong>{{bike.frame_model}}</strong> <small>by {{bike.manufacturer}} ({{bike.year}})</small></h3>
       <div class="image-holder">
         <div class="placeholder"><span>No image</span><img src="/assets/photo_placeholder.png"></div>
         {{#bike.stock_photo_url}}
@@ -109,7 +115,7 @@
         <h4><a class="comp_cat_link">Additional parts</a></h4>
         <dl class="comp_cat"></dl>
       </div>
-      <a class="share-bike">Share bike link</a>
+      <div class="share-bike"><span></span><a>Share bike link</a></div>
     </div>
   </div>
   <span id="collapsed-cats" class="data-span" data-collapsed=""></span>
