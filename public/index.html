@@ -16,7 +16,7 @@
   <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <a id="new-compare" href="#">Compare with another bike</a>
+  <button id="new-compare" tabindex="0">Compare with another bike</button>
   <div id="initial">
     <span></span>
     <h1><img src="/assets/white-icon.svg">BikeBook.io</h1>
@@ -26,29 +26,29 @@
   <footer class="no-bikes">
     <img src="/assets/icon.svg">
     <p>BikeBook.io</p>
-    <h2><a href="https://github.com/bikeindex/bikebook">open source</a> bike comparison, research and love <span>by <a href="https://bikeindex.org">Bike Index</a></span></h2>
+    <h2><a href="https://github.com/bikeindex/bikebook" tabindex="-1">open source</a> bike comparison, research and love <span>by <a href="https://bikeindex.org" tabindex="-1">Bike Index</a></span></h2>
   </footer>
   <div id="mustached">
     <div id="staging"></div>
     <div id="base_tmpl">
       <section class="bike">
-        <a class="close">x</a>
+        <button class="close" tabindex="0">x</button>
         <div class="selectors">
-          <select class="manufacturer-select">
+          <select class="manufacturer-select" tabindex="1">
             <option></option>
             {{#manufacturers}}
               <option value="{{id}}" data-years="{{years}}">{{name}}</option>
             {{/manufacturers}}
           </select>
           <div class="year-select-contain">
-            <select class="year-select" disabled="true">
+            <select class="year-select" disabled="true" tabindex="1">
               <option></option>
             </select>
           </div>
           <div class="model-select-contain"></div>
         </div>
         <div class="model-display"></div>
-        <div class="share-bike"><a href="">Share bike link</a><input type="text"></div>
+        <div class="share-bike"><a href="" tabindex="-1">Share bike link</a><input type="text" tabindex="-1"></div>
       </section>
     </div>
     <div id="errors_tmpl">
@@ -64,7 +64,7 @@
     </div>
 
     <div id="models_tmpl">
-      <select class='model-select'>
+      <select class='model-select' tabindex="1">
         <option></option>
         {{#.}}<option value="{{id}}">{{text}}</option>{{/.}}      
       </select>
@@ -76,7 +76,7 @@
         <div class="placeholder"><span>No image</span><img src="/assets/photo_placeholder.png"></div>
         {{#bike.stock_photo_url}}
           <img class="photo-bg" src='/assets/photo_bg.png'>
-          <a class='model-photo' href='{{bike.stock_photo_url}}'><img src='{{bike.stock_photo_small}}'></a>
+          <a class='model-photo' href='{{bike.stock_photo_url}}' tabindex="-1"><img src='{{bike.stock_photo_small}}'></a>
         {{/bike.stock_photo_url}}
       </div>
       <div class="bike-base">
@@ -94,7 +94,7 @@
       <p class="bike-description">
         {{bike.description}}
         {{#bike.manufacturers_url}}
-          (<a class="mnfg-link" href='{{bike.manufacturers_url}}' target="_blank">manufacturer's page</a>)
+          (<a class="mnfg-link" href='{{bike.manufacturers_url}}' target="_blank" tabindex="-1">manufacturer's page</a>)
         {{/bike.manufacturers_url}}
       </p>
       <div class="frameandfork comp_cat_wrap" data-cat=".frameandfork">

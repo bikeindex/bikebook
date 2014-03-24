@@ -7,13 +7,14 @@
     bc = $('#bikes-container .bike').length;
     if (bc === 0) {
       addBikeContainer();
-      $("#bikes-container").removeClass().addClass("showing-1-bikes");
-    }
-    if (bc < 3) {
-      $("#bikes-container").removeClass().addClass("showing-" + bc + "-bikes");
-    }
-    if (bc > 2) {
-      return $("#bikes-container").removeClass().addClass('showing-many-bikes');
+      return $("#bikes-container").removeClass().addClass("showing-1-bikes");
+    } else {
+      if (bc < 3) {
+        $("#bikes-container").removeClass().addClass("showing-" + bc + "-bikes");
+      }
+      if (bc > 2) {
+        return $("#bikes-container").removeClass().addClass('showing-many-bikes');
+      }
     }
   };
 
