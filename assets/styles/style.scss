@@ -127,18 +127,20 @@ $redDark: rgb(192,57,43);
   @include box-shadow(1px 1px 3px rgba(black,.2));
   border-radius: 3px;
   width: 95%;
-  max-width: 400px;
+  max-width: 600px;
   position: absolute;
   right: 5%; bottom: -7em;
-  background: rgba($redDark,.8);
+  background: rgba($redDark,.9);
   border: 1px solid $redDark;
-  padding: .5em;
+  padding: 1em .5em;
   z-index: 1000;
   display: none;
-  h4 { color: $textColor; text-align: center; }
+  // h4 { color: $textColor; text-align: center; }
+  font-size: 20px;
   p {
     text-align: center;
     margin: 0;
+
   }
 }
 
@@ -520,6 +522,7 @@ span.f_msrp {
   #new-compare { display: none; }
 
   #initial {
+    h1, h2 { top: 25%; }
     h1 { font-size: 50px; }
     h2 { font-size: 30px; }
   }

@@ -1,6 +1,8 @@
 #![BikeBook.io](https://github.com/bikeindex/bikebook/blob/master/public/icon.svg?raw=true) [BikeBook.io](http://bikebook.io)
 
-Compare bikes! Research bikes!
+Compare bikes!
+
+Research bikes!
 
 **Open source everything!**
 
@@ -12,7 +14,9 @@ This repository contains the web application and also all of the of bike data. A
 
 ## How?
 
-Simple. Send a [query](https://en.wikipedia.org/wiki/Query_string) with field value pairs, get shit back.
+Simple.
+
+Send a [query](https://en.wikipedia.org/wiki/Query_string) with field value pairs, get shit back.
 
 There are three main requests you can make:
 
@@ -44,7 +48,7 @@ So for a Fuji Outland 29 1.1 from 2014,
 
 [BikeBook.io?manufacturer=fuji&year=2014&frame_model=Outland 29 1.1](http://bikebook.io/?manufacturer=fuji&year=2014&frame_model=Outland%2029%201.1)
 
-Also, since it's a query string, position of the  doesn't matter, i.e. `frame_model` can come first or last.
+Also, since it's a query string, position of the key doesn't matter, i.e. `frame_model` can come first or last.
 
 
 
@@ -68,7 +72,7 @@ All the bikes data is stored this repository in JSON files. So if you see a mist
 
 Locally we use [rerun](https://github.com/alexch/rerun) to restart the app on changes. Launch the app in development mode with `rerun 'rackup'`. You can run the tests with `rerun 'rake spec'`.
 
-For asset compilation: `sass --watch assets/styles/style.scss:public/site.css` and `coffee -cw -o public/  assets/scripts/site.coffee`, because, lazy for now.
+Asset compilation with `sass --watch assets/styles/style.scss:public/site.css` and `coffee -cw -o public/  assets/scripts/site.coffee`, lazy for now.
 
 Every time you change the filesystem you have to refresh the indexes with `rake refresh` because, flat files.
 

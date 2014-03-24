@@ -75,7 +75,7 @@ getFrameModel = (target,bike={}) ->
       target.find('.model-display').fadeOut 200, ->
         updateModelDisplay(target,data)
       # Set the share link
-      url = "#{window.location.protocol}//#{window.location.host}/?s_manufacturer=#{bike.manufacturer}&s_year=#{bike.year}&s_frame_model=#{bike.frame_model}"
+      url = "#{window.location.protocol}//#{window.location.host}?s_manufacturer=#{bike.manufacturer}&s_year=#{bike.year}&s_frame_model=#{bike.frame_model}"
       target.find('.share-bike a').attr('href',url)
       target.find('.share-bike input').val(url)
       target.find('.share-bike').fadeIn()
