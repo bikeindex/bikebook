@@ -1,10 +1,10 @@
-#![BikeBook.io](https://github.com/bikeindex/bikebook/blob/master/public/icon.png?raw=true) [BikeBook.io](http://bikebook.io)
+<h1><img style="width: 150px;" src="https://github.com/bikeindex/bikebook/blob/master/public/icon.png?raw=true" alt="BikeBook.io logo"><a href="http://bikebook.io">BikeBook.io</a></h1>  
 
 Compare bikes!
 
 Research bikes!
 
-**Open source everything!**
+Open source everything!
 
 ## Technical
 
