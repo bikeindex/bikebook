@@ -54,15 +54,15 @@ Also, since it's a query string, position of the key doesn't matter, i.e. `frame
 
 #### Errors
 
-If we can't find what you've asked for, we return a 404 status error.
+If we can't find what you've asked for, we return a 404 status error. We might put something fun in the body, we might not, deal with it.
 
 ## Requests
 
-Feel free to make GET requests to BikeBook from your application. We'll send you JSON back, regardless of domain.
+Feel free to make GET requests to BikeBook from your application. We'll send you JSON back, regardless of your domain.
 
-BikeBook.io uses Cross-Origin Resource Sharing (CORS), which allows web applications to make cross domain AJAX calls without using workarounds such as JSONP. For more information about read [this post about CORS](http://www.nczonline.net/blog/2010/05/25/cross-domain-ajax-with-cross-origin-resource-sharing/) (or [the spec](http://www.w3.org/TR/access-control/#simple-cross-origin-request-and-actual-r) if you're hardcore).
+BikeBook.io uses Cross-Origin Resource Sharing (CORS), which allows web applications to make cross domain AJAX calls without using bullshit like JSONP. For more information read [this post about CORS](http://www.nczonline.net/blog/2010/05/25/cross-domain-ajax-with-cross-origin-resource-sharing/) (or [the spec](http://www.w3.org/TR/access-control/#simple-cross-origin-request-and-actual-r) if you're hardcore).
 
-## Development, localness, party
+## Dev, local, party
 
 #### Contributing
 
@@ -70,7 +70,7 @@ All the bikes data is stored this repository in JSON files. So if you see a mist
 
 #### Running it
 
-Locally we use [rerun](https://github.com/alexch/rerun) to restart the app on changes. Launch the app in development mode with `rerun 'rackup'`. You can run the tests with `rerun 'rake spec'`.
+Locally we use [rerun](https://github.com/alexch/rerun) to restart the app on changes. Launch the app in development mode with `rerun 'rackup'`. You can run the tests with `rerun 'rake spec'` (sometimes this breaks and infinitely reloops. Srys.)
 
 Asset compilation with `sass --watch assets/styles/style.scss:public/site.css` and `coffee -cw -o public/  assets/scripts/site.coffee`, lazy for now.
 
