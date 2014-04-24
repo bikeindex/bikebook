@@ -66,7 +66,7 @@ BikeBook.io uses Cross-Origin Resource Sharing (CORS), which allows web applicat
 
 #### Contributing
 
-All the bikes data is stored this repository in JSON files. So if you see a mistake or want to update something, do it!
+All the bike data is stored this repository in JSON files. So if you see a mistake or want to update something, do it!
 
 #### Running it
 
