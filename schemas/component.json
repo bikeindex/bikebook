@@ -1,0 +1,226 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bikebook component",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri"
+    },
+    "schema_version": {
+      "const": "0.20.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^c/[a-z0-9_/]+$",
+      "description": "Catalog path, prefixed c/: manufacturer slug/first year/model group and model slug"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "unknown",
+        "water_bottle_cage",
+        "stem",
+        "chain_guide",
+        "fairing",
+        "lights",
+        "bell_noisemaker",
+        "basket",
+        "chain_tensioners",
+        "derailleur",
+        "training_wheels",
+        "bottom_bracket",
+        "brake",
+        "hub_guard",
+        "generator_dynamo",
+        "handlebar",
+        "wheel",
+        "saddle",
+        "rim",
+        "axle_nuts",
+        "hub",
+        "spokes",
+        "tube",
+        "tire",
+        "brake_lever",
+        "shift_and_brake_lever",
+        "brake_rotor",
+        "brake_pad",
+        "shifter",
+        "throttle",
+        "fork",
+        "rear_suspension",
+        "headset",
+        "brake_cable",
+        "shift_cable",
+        "chain",
+        "drive_belt",
+        "chainrings",
+        "cassette",
+        "crankset",
+        "pedals",
+        "computer",
+        "pegs",
+        "toe_clips",
+        "grips_tape",
+        "seatpost_clamp",
+        "detangler",
+        "kickstand",
+        "rack",
+        "seatpost",
+        "fender",
+        "aero_bars",
+        "e_vehicle_battery",
+        "e_vehicle_charger",
+        "e_vehicle_remote",
+        "e_vehicle_motor",
+        "e_vehicle_wiring_harness",
+        "pannier",
+        "frame_bag",
+        "internal_frame_storage",
+        "cargo_bike_side_rails",
+        "handlebar_bag",
+        "seat_bag",
+        "top_tube_bag",
+        "child_seat",
+        "top_of_rack_bag"
+      ]
+    },
+    "manufacturer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model_group": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Model family grouping sibling models/variants"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Other names it's specced under"
+    },
+    "first_year": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Year it launched"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "description": "URLs parsed from, in parse order"
+    },
+    "motor": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "hub_drive",
+            "mid_drive",
+            "mid_drive_dedicated",
+            "friction_drive",
+            null
+          ]
+        },
+        "sensor_cadence": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "sensor_speed": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "spoke_magnet",
+            "rotor_magnet",
+            "rim_magnet",
+            "hub",
+            null
+          ]
+        },
+        "sensor_torque": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "bottom_bracket_spindle",
+            "crank_spider",
+            "hub",
+            "dropout",
+            null
+          ]
+        },
+        "certification": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "water_rating": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "IP ingress-protection rating, e.g. IPX7"
+        },
+        "rated_power": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Continuous/nominal, basis for legal class, in watts",
+          "x-unit": "w"
+        },
+        "peak_power": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "In watts",
+          "x-unit": "w"
+        },
+        "max_torque": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "In newton-meters",
+          "x-unit": "nm"
+        }
+      },
+      "additionalProperties": false,
+      "description": "E-vehicle Motor only"
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "type"
+  ],
+  "additionalProperties": false
+}
