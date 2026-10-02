@@ -485,61 +485,12 @@
           "additionalProperties": false
         },
         "headset": {
-          "type": "object",
-          "properties": {
-            "threaded": {
-              "type": [
-                "boolean",
-                "null"
-              ]
-            },
-            "cup_top": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "enum": [
-                "external",
-                "zero_stack",
-                "integrated",
-                null
-              ]
-            },
-            "cup_bottom": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "enum": [
-                "external",
-                "zero_stack",
-                "integrated",
-                null
-              ]
-            },
-            "steerer": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "description": "E.g. 1\", 1-1/8\", or 1-1/8\" to 1-1/2\" tapered"
-            },
-            "internal_top": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "description": "SHIS, e.g. ZS44/28.6"
-            },
-            "internal_bottom": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "description": "SHIS, e.g. ZS56/40"
-            }
-          },
-          "additionalProperties": false
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^((EC|ZS|IS)\\d+(\\.\\d+)?/\\d+(\\.\\d+)?(-(24|25\\.4|26)tpi)?( H\\d+(\\.\\d+)?)?( \\| (EC|ZS|IS)\\d+(\\.\\d+)?/\\d+(\\.\\d+)?( H\\d+(\\.\\d+)?)?)?|\\| (EC|ZS|IS)\\d+(\\.\\d+)?/\\d+(\\.\\d+)?( H\\d+(\\.\\d+)?)?)$",
+          "description": "SHIS, upper | lower, e.g. ZS44/28.6 | ZS56/40 or EC34/28.6-26tpi | EC34/30 H13.7"
         },
         "seatpost_diameter": {
           "type": [
@@ -694,6 +645,24 @@
               "null"
             ],
             "description": "E.g. Syntace X-12, Kabolt or Deadbolt"
+          },
+          "cassette_interface": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "hg",
+              "hg_road",
+              "micro_spline",
+              "xd",
+              "xdr",
+              "campagnolo",
+              "campagnolo_n3w",
+              "freewheel",
+              null
+            ],
+            "description": "The freehub or driver body a rear wheel's cassette mounts on; hg_road is Shimano's 11/12-speed road body"
           },
           "dropout": {
             "type": [
