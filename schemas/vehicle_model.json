@@ -8,7 +8,7 @@
       "format": "uri"
     },
     "schema_version": {
-      "const": "0.20.0"
+      "const": "0.20.1"
     },
     "id": {
       "type": "string",
@@ -745,6 +745,26 @@
       },
       "description": "Position-qualified gear count or internal hub (e.g. '12 Rear', '12 Internal Rear'), or special (Fixed/Belt Drive/etc.); a pedalled rear gear comes with its front, '1 Front' for a single chainring",
       "x-complete": true
+    },
+    "gearing": {
+      "type": "object",
+      "properties": {
+        "front": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "description": "Teeth on each chainring, smallest first"
+        },
+        "rear": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "description": "Teeth on each cog, smallest first; at least the smallest and largest"
+        }
+      },
+      "additionalProperties": false
     },
     "brakes": {
       "type": "array",
