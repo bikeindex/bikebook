@@ -436,17 +436,19 @@
             "additionalProperties": false
           }
         },
-        "internal_cable_routing": {
+        "cable_routing": {
           "type": [
             "string",
             "null"
           ],
           "enum": [
+            "external",
             "dropper",
-            "full",
+            "internal",
+            "stealth",
             null
           ],
-          "description": "Dropper: only the dropper post's cable runs inside the frame"
+          "description": "Dropper: only the dropper post's cable runs inside the frame; internal: through ports in the frame; stealth: through the headset or stem"
         },
         "bottom_bracket": {
           "type": "object",
@@ -456,7 +458,7 @@
                 "string",
                 "null"
               ],
-              "description": "E.g. BSA, T47, PF92 or threaded"
+              "description": "E.g. BSA, T47, BB92 or threaded"
             },
             "width": {
               "type": [
@@ -897,6 +899,21 @@
               "friction_drive",
               null
             ]
+          },
+          "spindle": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "A mid drive's crank interface, e.g. ISIS"
+          },
+          "spindle_length": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "description": "In millimeters",
+            "x-unit": "mm"
           },
           "sensor_cadence": {
             "type": [
