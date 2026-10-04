@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.20.1",
+  "schema_version": "0.20.6",
   "id": "m/riese_and_muller/2026/load5_75_rohloff_hs_us",
   "manufacturer": "Riese & Müller",
   "vehicle_model_group": "Load5 75",
@@ -36,7 +36,7 @@
     "suspension_front_travel": 80,
     "suspension_rear_travel": 80,
     "rear_shock_length": 165,
-    "rear_shock_stroke": 38.0,
+    "rear_shock_stroke": 38,
     "mounts": [
       {
         "type": "rack"
@@ -50,7 +50,7 @@
     },
     "headset": "ZS44/28.6 | ZS56/40",
     "seatpost_diameter": 34.9,
-    "seatpost_clamp_diameter": 40.0
+    "seatpost_clamp_diameter": 40
   },
   "wheels": [
     {
@@ -62,7 +62,8 @@
       "tire_system": "tube",
       "axle": "thru_axle",
       "axle_diameter": 15,
-      "axle_spacing": 110
+      "axle_spacing": 110,
+      "axle_thread_pitch": 1.5
     },
     {
       "bsd": 559,
@@ -119,7 +120,9 @@
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 100,
-      "us_e_bike_class": "3",
+      "us_e_bike_class": [
+        3
+      ],
       "operating_modes": [
         {
           "mode": "assist",
@@ -147,6 +150,9 @@
         "standover": 590,
         "bb_height": 300,
         "trail": 54,
+        "dimensions": {
+          "length": 2645
+        },
         "total_weight": 38.1,
         "max_weight_rider": 110,
         "extra_measurements": {
@@ -156,7 +162,6 @@
           "front_shock_mounting_width": 22,
           "headset_size": "38.1/28.6",
           "headset_system": "semi integrated",
-          "overall_length": 2645,
           "rear_shock_locking_screw": 8,
           "rear_shock_mounting_width": 22,
           "rear_suspension_ratio": 2.2,
@@ -402,6 +407,7 @@
     {
       "type": "unknown",
       "type_detail": "Mirror",
+      "manufacturer": "Busch + Müller",
       "description": "Busch & Müller Cycle Star"
     },
     {

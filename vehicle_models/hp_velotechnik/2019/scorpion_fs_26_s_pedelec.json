@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.20.1",
+  "schema_version": "0.20.6",
   "id": "m/hp_velotechnik/2019/scorpion_fs_26_s_pedelec",
   "manufacturer": "HP Velotechnik",
   "model": "Scorpion fs 26 S-Pedelec",
@@ -112,7 +112,9 @@
       "charging_time": 270,
       "peak_power": 1000,
       "max_torque": 40,
-      "us_e_bike_class": "3",
+      "us_e_bike_class": [
+        3
+      ],
       "operating_modes": [
         {
           "mode": "assist",
@@ -142,6 +144,10 @@
   "components": [
     {
       "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
       "description": "hydraulic disc brakes, coupled at the front, individually activated at the rear"
     },
     {

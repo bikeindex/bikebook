@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.20.1",
+  "schema_version": "0.20.6",
   "id": "m/trek/2026/fuel_plus_mx_9_9_x0_axs_gen_2",
   "manufacturer": "Trek",
   "vehicle_model_group": "Fuel+",
@@ -35,11 +35,11 @@
     "suspension_front_travel": 160,
     "max_fork_travel": 170,
     "rear_shock_length": 205,
-    "rear_shock_stroke": 60.0,
+    "rear_shock_stroke": 60,
     "cable_routing": "internal",
     "bottom_bracket": {
       "spindle": "ISIS",
-      "spindle_length": 135.0
+      "spindle_length": 135
     },
     "headset": "ZS44/28.6 | ZS52/36",
     "seatpost_diameter": 34.9,
@@ -58,6 +58,7 @@
       "axle": "thru_axle",
       "axle_diameter": 15,
       "axle_spacing": 110,
+      "axle_thread_pitch": 1.5,
       "axle_standard": "Kabolt X",
       "max_tire_width": 64
     },
@@ -72,6 +73,7 @@
       "axle_diameter": 12,
       "axle_spacing": 148,
       "axle_length": 184.5,
+      "axle_standard": "Switch",
       "cassette_interface": "xd"
     },
     {
@@ -79,10 +81,12 @@
       "position": [
         "rear"
       ],
+      "configured": false,
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 148,
       "axle_length": 184.5,
+      "axle_standard": "Switch",
       "cassette_interface": "xd",
       "max_tire_width": 64
     }
@@ -125,7 +129,7 @@
       "model": "HPR60",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "spindle_length": 135.0,
+      "spindle_length": 135,
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "battery_size": 580,
@@ -133,7 +137,9 @@
       "rated_power": 250,
       "peak_power": 350,
       "max_torque": 60,
-      "us_e_bike_class": "1"
+      "us_e_bike_class": [
+        1
+      ]
     }
   ],
   "sizes": [
@@ -155,7 +161,7 @@
         "bb_height": 343,
         "fork_rake": 44,
         "trail": 132,
-        "max_seatpost_insertion": 280.0,
+        "max_seatpost_insertion": 280,
         "max_weight_rider": 136,
         "min_rider_height": 1550,
         "max_rider_height": 1650,
@@ -182,7 +188,7 @@
         "bb_height": 343,
         "fork_rake": 44,
         "trail": 132,
-        "max_seatpost_insertion": 310.0,
+        "max_seatpost_insertion": 310,
         "total_weight": 19.02,
         "max_weight_rider": 136,
         "min_rider_height": 1650,
@@ -210,7 +216,7 @@
         "bb_height": 343,
         "fork_rake": 44,
         "trail": 132,
-        "max_seatpost_insertion": 330.0,
+        "max_seatpost_insertion": 330,
         "max_weight_rider": 136,
         "min_rider_height": 1770,
         "max_rider_height": 1880,
@@ -237,7 +243,7 @@
         "bb_height": 343,
         "fork_rake": 44,
         "trail": 132,
-        "max_seatpost_insertion": 365.0,
+        "max_seatpost_insertion": 365,
         "max_weight_rider": 136,
         "min_rider_height": 1880,
         "max_rider_height": 1950,
@@ -264,7 +270,7 @@
         "bb_height": 343,
         "fork_rake": 44,
         "trail": 132,
-        "max_seatpost_insertion": 385.0,
+        "max_seatpost_insertion": 385,
         "max_weight_rider": 136,
         "min_rider_height": 1950,
         "max_rider_height": 2030,

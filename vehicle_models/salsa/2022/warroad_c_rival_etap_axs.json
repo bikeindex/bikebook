@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.20.1",
+  "schema_version": "0.20.6",
   "id": "m/salsa/2022/warroad_c_rival_etap_axs",
   "manufacturer": "Salsa",
   "vehicle_model_group": "Warroad",
@@ -30,16 +30,21 @@
     "mounts": [
       {
         "type": "bottle",
-        "location": "down_tube"
+        "location": "downtube"
       },
       {
         "type": "bottle",
-        "location": "down_tube_2",
-        "description": "56 cm and up"
+        "sizes": [
+          "56cm",
+          "57.5cm",
+          "59cm",
+          "61cm"
+        ],
+        "location": "downtube_2"
       },
       {
         "type": "bottle",
-        "location": "under_down_tube"
+        "location": "under_downtube"
       },
       {
         "type": "bottle",
@@ -115,6 +120,7 @@
       "position": [
         "front"
       ],
+      "configured": false,
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 100,
@@ -127,6 +133,7 @@
       "position": [
         "rear"
       ],
+      "configured": false,
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 142,
@@ -329,12 +336,20 @@
     {
       "type": "brake",
       "type_detail": "Brake Calipers",
+      "position": [
+        "front",
+        "rear"
+      ],
       "manufacturer": "SRAM",
       "description": "SRAM Rival eTap AXS"
     },
     {
       "type": "brake_rotor",
       "type_detail": "Rotors",
+      "position": [
+        "front",
+        "rear"
+      ],
       "manufacturer": "SRAM",
       "description": "SRAM Centerline (Center Lock, 160 mm)",
       "dimensions": {

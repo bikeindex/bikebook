@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.20.1",
+  "schema_version": "0.20.6",
   "id": "m/surly/2018/karate_monkey",
   "manufacturer": "Surly",
   "vehicle_model_group": "Karate Monkey",
@@ -40,7 +40,7 @@
     "mounts": [
       {
         "type": "bottle",
-        "location": "down_tube"
+        "location": "downtube"
       },
       {
         "type": "bottle",
@@ -50,7 +50,7 @@
     "cable_routing": "dropper",
     "bottom_bracket": {
       "shell": "threaded",
-      "width": 73.0
+      "width": 73
     },
     "headset": "ZS44/28.6 | EC44/30",
     "seatpost_diameter": 30.9,
@@ -68,6 +68,7 @@
       "axle": "thru_axle",
       "axle_diameter": 15,
       "axle_spacing": 110,
+      "axle_thread_pitch": 1.5,
       "max_tire_width": 76
     },
     {
@@ -89,9 +90,11 @@
       "position": [
         "front"
       ],
+      "configured": false,
       "axle": "thru_axle",
       "axle_diameter": 15,
       "axle_spacing": 110,
+      "axle_thread_pitch": 1.5,
       "max_tire_width": 64
     },
     {
@@ -99,6 +102,7 @@
       "position": [
         "rear"
       ],
+      "configured": false,
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 148,
@@ -266,6 +270,10 @@
     {
       "type": "brake",
       "type_detail": "Brake Calipers",
+      "position": [
+        "front",
+        "rear"
+      ],
       "manufacturer": "Tektro",
       "description": "Tektro HD-M275"
     },
@@ -277,6 +285,10 @@
     {
       "type": "brake_rotor",
       "type_detail": "Rotors",
+      "position": [
+        "front",
+        "rear"
+      ],
       "manufacturer": "Tektro",
       "description": "Tektro 180/160, 6-Bolt"
     },

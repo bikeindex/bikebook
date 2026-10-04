@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.20.1",
+  "schema_version": "0.20.6",
   "id": "m/santa_cruz/2024/v10_dh_s",
   "manufacturer": "Santa Cruz",
   "vehicle_model_group": "V10",
@@ -59,6 +59,7 @@
       "axle": "thru_axle",
       "axle_diameter": 20,
       "axle_spacing": 110,
+      "axle_thread_pitch": 1.5,
       "axle_standard": "Kabolt"
     },
     {
@@ -66,12 +67,15 @@
       "position": [
         "rear"
       ],
+      "sizes": [
+        "XL"
+      ],
       "tire_width": 64,
       "tire_system": "tubeless_ready",
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 157,
-      "axle_length": 182.0,
+      "axle_length": 182,
       "cassette_interface": "hg",
       "dropout": "flip_chip",
       "max_tire_width": 64
@@ -81,12 +85,17 @@
       "position": [
         "rear"
       ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
       "tire_width": 64,
       "tire_system": "tubeless_ready",
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 157,
-      "axle_length": 182.0,
+      "axle_length": 182,
       "cassette_interface": "hg",
       "dropout": "flip_chip",
       "max_tire_width": 64
@@ -375,6 +384,10 @@
     },
     {
       "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
       "manufacturer": "SRAM",
       "description": "SRAM Code Bronze Stealth"
     },

@@ -8,7 +8,7 @@
       "format": "uri"
     },
     "schema_version": {
-      "const": "0.20.1"
+      "const": "0.20.6"
     },
     "id": {
       "type": "string",
@@ -410,13 +410,20 @@
                 },
                 "description": "The wheel a rack or fender mount serves"
               },
+              "sizes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "The sizes that have it, when not every size, named as in sizes[].name"
+              },
               "location": {
                 "type": [
                   "string",
                   "null"
                 ],
-                "pattern": "^(down_tube|under_down_tube|seat_tube|top_tube|under_top_tube|fork_legs)(_([2-9]|[1-9][0-9]+))?$",
-                "description": "Down_tube, under_down_tube, seat_tube, top_tube, under_top_tube, fork_legs; a repeated place takes _2, _3…"
+                "pattern": "^(downtube|under_downtube|seat_tube|top_tube|under_top_tube|fork_legs)(_([2-9]|[1-9][0-9]+))?$",
+                "description": "Downtube, under_downtube, seat_tube, top_tube, under_top_tube, fork_legs; a type's repeated place takes _2, _3…"
               },
               "holes": {
                 "type": [
@@ -429,8 +436,7 @@
                 "type": [
                   "string",
                   "null"
-                ],
-                "description": "E.g. the frame sizes that have it"
+                ]
               }
             },
             "additionalProperties": false
@@ -575,6 +581,20 @@
               ]
             },
             "x-complete": true
+          },
+          "sizes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "The sizes that take it, when not every size, named as in sizes[].name"
+          },
+          "configured": {
+            "type": [
+              "boolean",
+              "null"
+            ],
+            "description": "False for a wheel the frame takes that the complete build doesn't come with"
           },
           "tire_width": {
             "type": [
@@ -738,6 +758,7 @@
           "fixed",
           "continuously_variable",
           "coaster_brake",
+          "freecoaster",
           "belt_drive",
           "shaft_drive",
           "left_side_drive"
@@ -819,6 +840,13 @@
               ]
             },
             "x-complete": true
+          },
+          "sizes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "The sizes that have it, when not every size, named as in sizes[].name"
           },
           "rotor_diameter": {
             "type": [
@@ -1041,17 +1069,16 @@
             "x-unit": "nm"
           },
           "us_e_bike_class": {
-            "type": [
-              "string",
-              "null"
-            ],
-            "enum": [
-              "1",
-              "2",
-              "3",
-              "2_and_3",
-              null
-            ]
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "enum": [
+                1,
+                2,
+                3
+              ]
+            },
+            "description": "Every class it can be set to ride in, e.g. [2, 3] for a class-switchable throttle bike"
           },
           "operating_modes": {
             "type": "array",
@@ -1373,6 +1400,22 @@
                 "description": "Fork Length (A2C), in millimeters",
                 "x-unit": "mm"
               },
+              "travel_front": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Fork travel at this size, when it varies by size, in millimeters",
+                "x-unit": "mm"
+              },
+              "travel_rear": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Rear wheel travel at this size, when it varies by size, in millimeters",
+                "x-unit": "mm"
+              },
               "handlebar_width": {
                 "type": [
                   "number",
@@ -1420,6 +1463,68 @@
                 ],
                 "description": "Max Seatpost Insertion, in millimeters",
                 "x-unit": "mm"
+              },
+              "dimensions": {
+                "type": "object",
+                "properties": {
+                  "length": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "In millimeters",
+                    "x-unit": "mm"
+                  },
+                  "width": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "In millimeters",
+                    "x-unit": "mm"
+                  },
+                  "height": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "In millimeters",
+                    "x-unit": "mm"
+                  }
+                },
+                "additionalProperties": false,
+                "description": "Overall dimensions"
+              },
+              "dimensions_folded": {
+                "type": "object",
+                "properties": {
+                  "length": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "In millimeters",
+                    "x-unit": "mm"
+                  },
+                  "width": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "In millimeters",
+                    "x-unit": "mm"
+                  },
+                  "height": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "In millimeters",
+                    "x-unit": "mm"
+                  }
+                },
+                "additionalProperties": false,
+                "description": "Folded dimensions"
               },
               "total_weight": {
                 "type": [

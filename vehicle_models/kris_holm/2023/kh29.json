@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.20.1",
+  "schema_version": "0.20.6",
   "id": "m/kris_holm/2023/kh29",
   "manufacturer": "Kris Holm",
   "vehicle_model_group": "KH",
@@ -65,7 +65,7 @@
     {
       "name": "KH29",
       "geometry": {
-        "total_weight": 6,
+        "total_weight": 6.3,
         "extra_measurements": {
           "inseam_min": 750
         }
@@ -75,11 +75,17 @@
   "components": [
     {
       "type": "brake",
+      "position": [
+        "center"
+      ],
       "manufacturer": "Shimano",
       "description": "Shimano Hydraulic Disc Brake"
     },
     {
       "type": "brake_rotor",
+      "position": [
+        "center"
+      ],
       "description": "203mm Disc Brake Rotor",
       "dimensions": {
         "diameter": 203
@@ -145,6 +151,9 @@
     },
     {
       "type": "tire",
+      "position": [
+        "center"
+      ],
       "description": "Duro Crux 29 x 3.25\" 60 TPI (1215 g)",
       "dimensions": {
         "width": 82.55,

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.20.1",
+  "schema_version": "0.20.6",
   "id": "m/schwinn/2024/largo_1_step_thru",
   "manufacturer": "Schwinn",
   "vehicle_model_group": "Largo",
@@ -30,7 +30,7 @@
     "material": "steel",
     "bottom_bracket": {
       "shell": "American",
-      "width": 68.0,
+      "width": 68,
       "spindle": "one-piece"
     },
     "headset": "EC34/28.6-26tpi | EC34/30"
@@ -39,10 +39,17 @@
     {
       "bsd": 559,
       "position": [
-        "front",
-        "rear"
+        "front"
       ],
       "tire_width": 54
+    },
+    {
+      "bsd": 559,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 54,
+      "axle": "bolt_on"
     }
   ],
   "drivetrain": [
@@ -77,6 +84,9 @@
     },
     {
       "type": "brake",
+      "position": [
+        "rear"
+      ],
       "description": "Coaster"
     },
     {
@@ -154,6 +164,10 @@
     },
     {
       "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
       "description": "26 in x 2.125 in, wire bead",
       "dimensions": {
         "diameter": 559

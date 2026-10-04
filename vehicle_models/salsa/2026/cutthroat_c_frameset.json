@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.20.1",
+  "schema_version": "0.20.6",
   "id": "m/salsa/2026/cutthroat_c_frameset",
   "manufacturer": "Salsa",
   "vehicle_model_group": "Cutthroat",
@@ -30,18 +30,22 @@
     "mounts": [
       {
         "type": "bottle",
-        "location": "down_tube",
+        "location": "downtube",
         "holes": 3
       },
       {
         "type": "bottle",
-        "location": "down_tube_2",
-        "holes": 3,
-        "description": "56 cm and up"
+        "sizes": [
+          "56cm",
+          "58cm",
+          "60cm"
+        ],
+        "location": "downtube_2",
+        "holes": 3
       },
       {
         "type": "bottle",
-        "location": "under_down_tube",
+        "location": "under_downtube",
         "holes": 3
       },
       {
@@ -72,11 +76,11 @@
     "cable_routing": "internal",
     "bottom_bracket": {
       "shell": "BB92",
-      "width": 92.0
+      "width": 92
     },
     "headset": "IS41/28.6 | IS52/40",
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 32.0,
+    "seatpost_clamp_diameter": 32,
     "front_derailleur_mount": "braze-on",
     "derailleur_hanger": "SRAM UDH",
     "max_chainring": 50
@@ -90,6 +94,7 @@
       "axle": "thru_axle",
       "axle_diameter": 15,
       "axle_spacing": 110,
+      "axle_thread_pitch": 1.5,
       "max_tire_width": 76
     },
     {
@@ -100,8 +105,8 @@
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 148,
-      "axle_length": 175.0,
-      "axle_thread_pitch": 1.0,
+      "axle_length": 175,
+      "axle_thread_pitch": 1,
       "max_tire_width": 61
     }
   ],
