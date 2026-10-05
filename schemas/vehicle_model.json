@@ -8,7 +8,7 @@
       "format": "uri"
     },
     "schema_version": {
-      "const": "0.20.6"
+      "const": "0.21.0"
     },
     "id": {
       "type": "string",
@@ -323,53 +323,6 @@
             "null"
           ]
         },
-        "suspension_front_travel": {
-          "type": [
-            "integer",
-            "null"
-          ],
-          "description": "In millimeters",
-          "x-unit": "mm"
-        },
-        "suspension_rear_travel": {
-          "type": [
-            "integer",
-            "null"
-          ],
-          "description": "In millimeters",
-          "x-unit": "mm"
-        },
-        "max_fork_travel": {
-          "type": [
-            "integer",
-            "null"
-          ],
-          "description": "In millimeters",
-          "x-unit": "mm"
-        },
-        "rear_shock_length": {
-          "type": [
-            "integer",
-            "null"
-          ],
-          "description": "Eye to eye, in millimeters",
-          "x-unit": "mm"
-        },
-        "rear_shock_stroke": {
-          "type": [
-            "number",
-            "null"
-          ],
-          "description": "In millimeters",
-          "x-unit": "mm"
-        },
-        "rear_shock_mount": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "E.g. trunnion or 30x8 bushings"
-        },
         "mounts": {
           "type": "array",
           "items": {
@@ -548,6 +501,59 @@
       },
       "additionalProperties": false
     },
+    "suspension": {
+      "type": "object",
+      "properties": {
+        "front_travel": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "In millimeters",
+          "x-unit": "mm"
+        },
+        "max_fork_travel": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "In millimeters",
+          "x-unit": "mm"
+        },
+        "rear_travel": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "In millimeters",
+          "x-unit": "mm"
+        },
+        "rear_shock_length": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Eye to eye, in millimeters",
+          "x-unit": "mm"
+        },
+        "rear_shock_stroke": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "In millimeters",
+          "x-unit": "mm"
+        },
+        "rear_shock_mount": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "E.g. trunnion or 30x8 bushings"
+        }
+      },
+      "additionalProperties": false
+    },
     "wheels": {
       "type": "array",
       "items": {
@@ -654,6 +660,14 @@
             "x-unit": "mm"
           },
           "axle_thread_pitch": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "description": "In millimeters",
+            "x-unit": "mm"
+          },
+          "axle_thread_length": {
             "type": [
               "number",
               "null"

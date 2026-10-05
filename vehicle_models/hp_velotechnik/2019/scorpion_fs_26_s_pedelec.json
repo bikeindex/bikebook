@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.20.6",
+  "schema_version": "0.21.0",
   "id": "m/hp_velotechnik/2019/scorpion_fs_26_s_pedelec",
   "manufacturer": "HP Velotechnik",
   "model": "Scorpion fs 26 S-Pedelec",
@@ -31,8 +31,6 @@
   "frame": {
     "material": "aluminum",
     "folding": true,
-    "suspension_front_travel": 60,
-    "suspension_rear_travel": 80,
     "mounts": [
       {
         "type": "rack"
@@ -42,6 +40,10 @@
       "shell": "BSA",
       "width": 68.0
     }
+  },
+  "suspension": {
+    "front_travel": 60,
+    "rear_travel": 80
   },
   "wheels": [
     {
@@ -130,6 +132,11 @@
       "name": "One size",
       "geometry": {
         "wheelbase": 1280,
+        "dimensions_folded": {
+          "length": 1230,
+          "width": 830,
+          "height": 620
+        },
         "total_weight": 37,
         "max_weight_rider": 140,
         "min_rider_height": 1620,
