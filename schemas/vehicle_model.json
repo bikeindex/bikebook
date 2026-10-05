@@ -8,7 +8,7 @@
       "format": "uri"
     },
     "schema_version": {
-      "const": "0.21.0"
+      "const": "0.21.1"
     },
     "id": {
       "type": "string",
@@ -316,6 +316,13 @@
             null
           ],
           "x-complete": true
+        },
+        "material_detail": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "The manufacturer's name for its material or grade, e.g. Reynolds 853 steel or FACT 11m carbon"
         },
         "folding": {
           "type": [
