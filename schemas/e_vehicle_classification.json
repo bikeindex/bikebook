@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bikebook e-vehicle classification",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri"
+    },
+    "schema_version": {
+      "const": "0.22.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^ec/[a-z0-9_/]+$",
+      "description": "Catalog path, prefixed ec/: jurisdiction/classification slug"
+    },
+    "jurisdiction": {
+      "type": "string",
+      "pattern": "^(AU|CA|CN|EU|GB|IN|TW|US)(-[A-Z0-9]{1,3})?$",
+      "description": "ISO 3166-1 alpha-2 country code, or EU, suffixed with a state or province's ISO 3166-2 code, e.g. US-CA"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "throttle": {
+      "type": "boolean",
+      "description": "Whether the motor may propel it without the rider pedaling"
+    },
+    "max_speed": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "The fastest the motor may propel it, in kilometers per hour",
+      "x-unit": "km/h"
+    },
+    "min_power": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "The motor power it's above, in watts",
+      "x-unit": "w"
+    },
+    "max_power": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "The motor's power limit; restrictions say whether it's inclusive, in watts",
+      "x-unit": "w"
+    },
+    "restrictions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "jurisdiction",
+    "name",
+    "description",
+    "throttle",
+    "restrictions"
+  ],
+  "additionalProperties": false
+}

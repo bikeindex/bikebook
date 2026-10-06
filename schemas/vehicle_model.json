@@ -8,7 +8,7 @@
       "format": "uri"
     },
     "schema_version": {
-      "const": "0.21.1"
+      "const": "0.22.0"
     },
     "id": {
       "type": "string",
@@ -130,6 +130,7 @@
         "track_racing",
         "trials",
         "artistic_cycling",
+        "dirt_travel",
         "mtb_bikepacking",
         "mtb_trail_all_mountain",
         "mtb_cross_country",
@@ -1089,17 +1090,21 @@
             "description": "In newton-meters",
             "x-unit": "nm"
           },
-          "us_e_bike_class": {
+          "e_vehicle_classifications": {
             "type": "array",
             "items": {
-              "type": "integer",
+              "type": "string",
               "enum": [
-                1,
-                2,
-                3
+                "ec/us/ca/moped",
+                "ec/us/ca/motor_driven_cycle",
+                "ec/us/ca/motorcycle",
+                "ec/us/ca/off_highway_electric_motorcycle",
+                "ec/us/class_1",
+                "ec/us/class_2",
+                "ec/us/class_3"
               ]
             },
-            "description": "Every class it can be set to ride in, e.g. [2, 3] for a class-switchable throttle bike"
+            "description": "Every classification it can be set to ride in, by its db/e_vehicle_classifications id, e.g. both ec/us/class_2 and ec/us/class_3 for a class-switchable throttle bike"
           },
           "operating_modes": {
             "type": "array",
@@ -1842,74 +1847,138 @@
     "model_configuration"
   ],
   "additionalProperties": false,
-  "if": {
-    "required": [
-      "propulsion",
-      "drivetrain"
-    ],
-    "properties": {
-      "propulsion": {
-        "enum": [
-          "pedal",
-          "pedal_assist",
-          "pedal_assist_and_throttle",
-          "hand_cycle"
-        ]
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "propulsion",
+          "drivetrain"
+        ],
+        "properties": {
+          "propulsion": {
+            "enum": [
+              "pedal",
+              "pedal_assist",
+              "pedal_assist_and_throttle",
+              "hand_cycle"
+            ]
+          },
+          "drivetrain": {
+            "contains": {
+              "enum": [
+                "1_rear",
+                "2_rear",
+                "3_rear",
+                "4_rear",
+                "5_rear",
+                "6_rear",
+                "7_rear",
+                "8_rear",
+                "9_rear",
+                "10_rear",
+                "11_rear",
+                "12_rear",
+                "13_rear",
+                "14_rear",
+                "1_internal_rear",
+                "2_internal_rear",
+                "3_internal_rear",
+                "4_internal_rear",
+                "5_internal_rear",
+                "6_internal_rear",
+                "7_internal_rear",
+                "8_internal_rear",
+                "9_internal_rear",
+                "10_internal_rear",
+                "11_internal_rear",
+                "12_internal_rear",
+                "13_internal_rear",
+                "14_internal_rear",
+                "continuously_variable"
+              ]
+            }
+          }
+        }
       },
-      "drivetrain": {
-        "contains": {
-          "enum": [
-            "1_rear",
-            "2_rear",
-            "3_rear",
-            "4_rear",
-            "5_rear",
-            "6_rear",
-            "7_rear",
-            "8_rear",
-            "9_rear",
-            "10_rear",
-            "11_rear",
-            "12_rear",
-            "13_rear",
-            "14_rear",
-            "1_internal_rear",
-            "2_internal_rear",
-            "3_internal_rear",
-            "4_internal_rear",
-            "5_internal_rear",
-            "6_internal_rear",
-            "7_internal_rear",
-            "8_internal_rear",
-            "9_internal_rear",
-            "10_internal_rear",
-            "11_internal_rear",
-            "12_internal_rear",
-            "13_internal_rear",
-            "14_internal_rear",
-            "continuously_variable"
-          ]
+      "then": {
+        "properties": {
+          "drivetrain": {
+            "contains": {
+              "enum": [
+                "1_front",
+                "2_front",
+                "3_front",
+                "2_internal_front",
+                "3_internal_front",
+                "6_speed_pinion",
+                "9_speed_pinion",
+                "12_speed_pinion",
+                "18_speed_pinion"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "primary_activity"
+        ],
+        "properties": {
+          "primary_activity": {
+            "const": "dirt_travel"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "type"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "stroller",
+              "wheelchair",
+              "bike_trailer",
+              "trail_behind",
+              "skateboard",
+              "scooter",
+              "e_scooter",
+              "epamd",
+              "e_motorcycle",
+              "e_atv"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "type"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "stroller",
+              "wheelchair",
+              "bike_trailer",
+              "trail_behind",
+              "skateboard",
+              "scooter",
+              "balance_bike"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "primary_activity": {
+            "const": "dirt_travel"
+          }
         }
       }
     }
-  },
-  "then": {
-    "properties": {
-      "drivetrain": {
-        "contains": {
-          "enum": [
-            "1_front",
-            "2_front",
-            "3_front",
-            "2_internal_front",
-            "3_internal_front",
-            "6_speed_pinion",
-            "9_speed_pinion",
-            "12_speed_pinion",
-            "18_speed_pinion"
-          ]
-        }
-      }
-    }
-  }
+  ]
 }
