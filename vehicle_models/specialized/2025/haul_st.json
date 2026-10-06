@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.22.0",
+  "schema_version": "0.22.1",
   "id": "m/specialized/2025/haul_st",
   "manufacturer": "Specialized",
   "vehicle_model_group": "Globe Haul",
@@ -9,7 +9,10 @@
     "US"
   ],
   "type": "cargo_bike",
-  "propulsion": "pedal_assist",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
   "primary_activity": "cargo",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/specialized/2025/haul_st.png",
@@ -45,7 +48,7 @@
         "#B7B2A4"
       ],
       "url": "https://web.archive.org/web/20250713203700/https://www.specialized.com/us/en/haul-st/p/277759?ranMID=49187&ranEAID=7m8EnekPF5E&ranSiteID=7m8EnekPF5E-m7hbrT3pz6L0xu0IIQUdaw&utm_campaign=The+Wirecutter&utm_source=rakuten_usa&utm_medium=affiliate&utm_content=1262556",
-      "url_live": true,
+      "url_live": false,
       "url_is_official": true
     }
   ],
@@ -136,22 +139,20 @@
       "battery_size": 772,
       "battery_chemistry": "li-ion",
       "rated_power": 700,
-      "e_vehicle_classifications": [
-        "ec/us/class_2",
-        "ec/us/class_3"
-      ],
       "operating_modes": [
         {
           "mode": "assist",
           "availability": "stock",
           "max_speed": 45,
-          "range_claimed": 97
+          "range_claimed": 97,
+          "e_vehicle_classification": "evc/us/class_3"
         },
         {
           "mode": "throttle",
           "availability": "sold_separately",
           "max_speed": 32,
-          "throttle_type": "Thumb"
+          "throttle_type": "Thumb",
+          "e_vehicle_classification": "evc/us/class_2"
         }
       ]
     }

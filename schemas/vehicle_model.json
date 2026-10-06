@@ -8,7 +8,7 @@
       "format": "uri"
     },
     "schema_version": {
-      "const": "0.22.0"
+      "const": "0.22.1"
     },
     "id": {
       "type": "string",
@@ -97,19 +97,17 @@
       "x-complete": true
     },
     "propulsion": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "enum": [
-        "pedal",
-        "pedal_assist",
-        "throttle",
-        "pedal_assist_and_throttle",
-        "hand_cycle",
-        "human_powered",
-        null
-      ],
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "pedal",
+          "pedal_assist",
+          "throttle",
+          "hand_cycle",
+          "human_powered"
+        ]
+      },
       "x-complete": true
     },
     "primary_activity": {
@@ -282,7 +280,7 @@
               "boolean",
               "null"
             ],
-            "description": "Whether the URL currently resolves"
+            "description": "Whether the manufacturer's page is still up; false for an archive capture, which shows it as it was"
           },
           "url_is_official": {
             "type": [
@@ -1090,22 +1088,6 @@
             "description": "In newton-meters",
             "x-unit": "nm"
           },
-          "e_vehicle_classifications": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "enum": [
-                "ec/us/ca/moped",
-                "ec/us/ca/motor_driven_cycle",
-                "ec/us/ca/motorcycle",
-                "ec/us/ca/off_highway_electric_motorcycle",
-                "ec/us/class_1",
-                "ec/us/class_2",
-                "ec/us/class_3"
-              ]
-            },
-            "description": "Every classification it can be set to ride in, by its db/e_vehicle_classifications id, e.g. both ec/us/class_2 and ec/us/class_3 for a class-switchable throttle bike"
-          },
           "operating_modes": {
             "type": "array",
             "items": {
@@ -1196,6 +1178,24 @@
                     null
                   ],
                   "description": "Throttle only"
+                },
+                "e_vehicle_classification": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "enum": [
+                    "evc/us/ca/moped",
+                    "evc/us/ca/motor_driven_cycle",
+                    "evc/us/ca/motorcycle",
+                    "evc/us/ca/off_highway_electric_motorcycle",
+                    "evc/us/ca/off_highway_motor_vehicle",
+                    "evc/us/class_1",
+                    "evc/us/class_2",
+                    "evc/us/class_3",
+                    null
+                  ],
+                  "description": "The classification riding in this mode puts it in, by its db/e_vehicle_classifications id"
                 }
               },
               "required": [
@@ -1856,12 +1856,13 @@
         ],
         "properties": {
           "propulsion": {
-            "enum": [
-              "pedal",
-              "pedal_assist",
-              "pedal_assist_and_throttle",
-              "hand_cycle"
-            ]
+            "contains": {
+              "enum": [
+                "pedal",
+                "pedal_assist",
+                "hand_cycle"
+              ]
+            }
           },
           "drivetrain": {
             "contains": {

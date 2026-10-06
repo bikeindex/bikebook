@@ -1,11 +1,14 @@
 {
-  "schema_version": "0.22.0",
+  "schema_version": "0.22.1",
   "id": "m/reactive_adaptations/2025/mako",
   "manufacturer": "Reactive Adaptations",
   "model": "Mako",
   "model_configuration": "complete",
   "type": "recumbent",
-  "propulsion": "hand_cycle",
+  "propulsion": [
+    "hand_cycle",
+    "pedal_assist"
+  ],
   "primary_activity": "mtb_trail_all_mountain",
   "handlebar_type": "forward",
   "stock_photo": "https://bikebook.bikeindex.org/reactive_adaptations/2025/mako.jpg",
@@ -44,7 +47,7 @@
       "original_msrp": 1780000,
       "original_msrp_currency": "USD",
       "url": "https://web.archive.org/web/20251227194719/https://reactiveadaptations.com/mako-recumbent-offroad-handcycle/",
-      "url_live": true,
+      "url_live": false,
       "url_is_official": true
     }
   ],
@@ -105,7 +108,8 @@
       "operating_modes": [
         {
           "mode": "assist",
-          "availability": "sold_separately"
+          "availability": "sold_separately",
+          "e_vehicle_classification": "evc/us/class_1"
         }
       ]
     }

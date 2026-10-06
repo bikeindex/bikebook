@@ -1,11 +1,13 @@
 {
-  "schema_version": "0.22.0",
+  "schema_version": "0.22.1",
   "id": "m/csc_motorcycles/2021/city_slicker",
   "manufacturer": "CSC Motorcycles",
   "model": "City Slicker",
   "model_configuration": "complete",
   "type": "e_motorcycle",
-  "propulsion": "throttle",
+  "propulsion": [
+    "throttle"
+  ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/csc_motorcycles/2021/city_slicker.jpg",
@@ -22,7 +24,7 @@
         "Gloss white with black accents"
       ],
       "url": "https://web.archive.org/web/20210304050524/https://cscmotorcycles.com/2021-city-slicker-e-bike/",
-      "url_live": true,
+      "url_live": false,
       "url_is_official": true
     }
   ],
@@ -72,15 +74,13 @@
       "charging_time": 480,
       "rated_power": 1500,
       "peak_power": 3200,
-      "e_vehicle_classifications": [
-        "ec/us/ca/motor_driven_cycle"
-      ],
       "operating_modes": [
         {
           "mode": "throttle",
           "availability": "stock",
           "max_speed": 75,
-          "range_claimed": 100
+          "range_claimed": 100,
+          "e_vehicle_classification": "evc/us/ca/motor_driven_cycle"
         }
       ]
     }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.22.0",
+  "schema_version": "0.22.1",
   "id": "m/trek/2026/fuel_plus_mx_9_9_x0_axs_gen_2",
   "manufacturer": "Trek",
   "vehicle_model_group": "Fuel+",
@@ -9,7 +9,9 @@
     "US"
   ],
   "type": "bike",
-  "propulsion": "pedal_assist",
+  "propulsion": [
+    "pedal_assist"
+  ],
   "primary_activity": "mtb_trail_all_mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/trek/2026/fuel_plus_mx_9_9_x0_axs_gen_2.png",
@@ -141,8 +143,11 @@
       "rated_power": 250,
       "peak_power": 350,
       "max_torque": 60,
-      "e_vehicle_classifications": [
-        "ec/us/class_1"
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "e_vehicle_classification": "evc/us/class_1"
+        }
       ]
     }
   ],
