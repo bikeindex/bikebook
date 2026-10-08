@@ -8,17 +8,28 @@
       "format": "uri"
     },
     "schema_version": {
-      "const": "0.22.1"
+      "const": "0.23.0"
     },
     "id": {
       "type": "string",
       "pattern": "^evc/[a-z0-9_/]+$",
-      "description": "Catalog path, prefixed evc/: jurisdiction/classification slug"
+      "description": "Catalog path, prefixed evc/: jurisdiction/classification slug, or a group's bare slug"
     },
     "jurisdiction": {
-      "type": "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "pattern": "^(AU|CA|CN|EU|GB|IN|TW|US)(-[A-Z0-9]{1,3})?$",
-      "description": "ISO 3166-1 alpha-2 country code, or EU, suffixed with a state or province's ISO 3166-2 code, e.g. US-CA"
+      "description": "ISO 3166-1 alpha-2 country code, or EU, suffixed with a state or province's ISO 3166-2 code, e.g. US-CA; a group, which classifications from any jurisdiction can name, has none"
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^evc/[a-z0-9_/]+$"
+      },
+      "description": "The shared classifications whose definition this one fits, by their ids; a vehicle carries a group's id rather than each state's"
     },
     "name": {
       "type": "string"
@@ -36,6 +47,14 @@
         "null"
       ],
       "description": "The fastest the motor may propel it, in kilometers per hour",
+      "x-unit": "km/h"
+    },
+    "max_throttle_speed": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "The fastest the motor may propel it on its own, without the rider pedaling, in kilometers per hour",
       "x-unit": "km/h"
     },
     "min_power": {
@@ -71,7 +90,6 @@
   "required": [
     "schema_version",
     "id",
-    "jurisdiction",
     "name",
     "description",
     "throttle",

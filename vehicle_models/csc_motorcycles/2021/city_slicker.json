@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.22.1",
+  "schema_version": "0.23.0",
   "id": "m/csc_motorcycles/2021/city_slicker",
   "manufacturer": "CSC Motorcycles",
   "model": "City Slicker",
@@ -80,7 +80,9 @@
           "availability": "stock",
           "max_speed": 75,
           "range_claimed": 100,
-          "e_vehicle_classification": "evc/us/ca/motor_driven_cycle"
+          "e_vehicle_classifications": [
+            "evc/motor_driven_cycle"
+          ]
         }
       ]
     }
@@ -203,6 +205,11 @@
     },
     {
       "type": "unknown",
+      "type_detail": "Key Lockable",
+      "description": "Seat, Luggage Compartment, Battery, Forks, Ignition"
+    },
+    {
+      "type": "unknown",
       "type_detail": "Storage Compartment",
       "description": "16.0 in x 8.5 in x 8.5 in"
     },
@@ -210,10 +217,6 @@
       "type": "unknown",
       "type_detail": "Warranty",
       "description": "12 Months, Unlimited Mileage"
-    },
-    {
-      "type": "unknown",
-      "description": "Key lockable Seat, Luggage Compartment, Battery, Forks, Ignition"
     },
     {
       "type": "unknown",
