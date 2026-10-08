@@ -1,4 +1,4 @@
-#![BikeBook.io](https://github.com/bikeindex/bikebook/blob/master/public/small_icon.png?raw=true) [BikeBook.io](http://bikebook.io)
+#![BikeBook.io](public/small_icon.png) [BikeBook.io](http://bikebook.io)
 
 Compare bikes!
 
