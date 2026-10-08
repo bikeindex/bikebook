@@ -1,23 +1,39 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/wa/motorcycle",
   "jurisdiction": "US-WA",
   "groups": [
     "evc/motorcycle"
   ],
   "name": "Motorcycle",
-  "description": "A motor vehicle designed to travel on no more than three wheels, ridden on a seat or saddle and steered with a handlebar; an electric two-wheeler whose motor exceeds five brake horsepower (3,730 W) is a full motorcycle rather than a motor-driven cycle. Defined by Revised Code of Washington §46.04.330; ESSB 6110 (Chapter 159, Laws of 2026) notes this definition covers many vehicles its narrower e-bike definition excludes, and has the Department of Licensing drafting an electric motorcycle framework due December 15, 2026 (interim) and October 31, 2027 (final).",
+  "description": "A motor vehicle designed to travel on no more than three wheels, ridden on a seat or saddle and steered with a handlebar; an electric two-wheeler whose motor exceeds five brake horsepower (3,750 W) is a full motorcycle rather than a motor-driven cycle. Defined by Revised Code of Washington §46.04.330; ESSB 6110 (Chapter 159, Laws of 2026) notes this definition covers many vehicles its narrower e-bike definition excludes, and has the Department of Licensing drafting an electric motorcycle framework due December 15, 2026 (interim) and October 31, 2027 (final).",
   "throttle": true,
-  "min_power": 3730,
+  "min_power": 3750,
   "restrictions": [
-    "A seat or saddle, handlebar steering, and no more than three wheels",
-    "Its motor produces more than five brake horsepower (3,730 W); one at or under that is a motor-driven cycle",
-    "Not an electric-assisted bicycle, moped or motorized foot scooter; since June 11, 2026, anything able to exceed 20 mph on its motor alone, or built to be switched out of e-bike limits, isn't an e-bike",
-    "Riders need a driver's license with a motorcycle endorsement",
-    "Every rider and passenger must wear a motorcycle helmet on a state highway, county road or city street",
-    "The operator must wear glasses, goggles or a face shield unless it has a windshield, and it needs mirrors on both sides",
-    "Registered and plated with the Department of Licensing, and must carry liability insurance",
-    "One ridden only off-road without street registration is an off-road vehicle instead"
+    {
+      "rule": "A seat or saddle, handlebar steering, and no more than three wheels"
+    },
+    {
+      "rule": "Its motor produces more than five brake horsepower (3,750 W); one at or under that is a motor-driven cycle"
+    },
+    {
+      "rule": "Not an electric-assisted bicycle, moped or motorized foot scooter; since June 11, 2026, anything able to exceed 20 mph on its motor alone, or built to be switched out of e-bike limits, isn't an e-bike"
+    },
+    {
+      "rule": "Riders need a driver's license with a motorcycle endorsement"
+    },
+    {
+      "rule": "Every rider and passenger must wear a motorcycle helmet on a state highway, county road or city street"
+    },
+    {
+      "rule": "The operator must wear glasses, goggles or a face shield unless it has a windshield, and it needs mirrors on both sides"
+    },
+    {
+      "rule": "Registered and plated with the Department of Licensing, and must carry liability insurance"
+    },
+    {
+      "rule": "One ridden only off-road without street registration is an off-road vehicle instead"
+    }
   ],
   "sources": [
     "https://app.leg.wa.gov/RCW/default.aspx?cite=46.04.330",

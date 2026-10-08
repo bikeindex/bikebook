@@ -1,25 +1,46 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/az/motorcycle",
   "jurisdiction": "US-AZ",
   "groups": [
     "evc/motorcycle"
   ],
   "name": "Motorcycle",
-  "description": "A road-registered motor vehicle with a seat or saddle and no more than three wheels; an electric one whose motor produces more than 5 horsepower (3,730 W) is a full motorcycle rather than a motor driven cycle. Defined by Arizona Revised Statutes §28-101.",
+  "description": "A road-registered motor vehicle with a seat or saddle and no more than three wheels; an electric one whose motor produces more than 5 horsepower (3,750 W) is a full motorcycle rather than a motor driven cycle. Defined by Arizona Revised Statutes §28-101.",
   "throttle": true,
-  "min_power": 3730,
+  "min_power": 3750,
   "restrictions": [
-    "A seat or saddle, and no more than three wheels on the ground; electric bicycles, electric scooters and mopeds are excluded",
-    "Its motor produces more than 5 horsepower (3,730 W); one at or under that is a motor driven cycle",
-    "Riders need a class M license or a motorcycle endorsement, so must be at least 16; under 18 they must hold a motorcycle instruction permit for six months and complete an approved course or 30 certified hours of practice",
-    "Riders and passengers under 18 must wear a helmet, and every rider must wear glasses, goggles or a face shield unless it has a windshield",
-    "Must have a rearview mirror, seat and footrests, and carries a passenger only if built for one",
-    "Titled, registered and plated with MVD, and must carry liability insurance",
-    "From January 1, 2027, renewing its registration requires at least one registered owner with a motorcycle endorsement, unless a business owns it or it is registered exclusively off-highway",
-    "A two-wheeled one may pass stopped traffic in its lane or between lanes at up to 15 mph, on roads with two or more lanes each way and a limit of 45 mph or less",
-    "Allowed in high occupancy vehicle lanes",
-    "Not allowed on sidewalks"
+    {
+      "rule": "A seat or saddle, and no more than three wheels on the ground; electric bicycles, electric scooters and mopeds are excluded"
+    },
+    {
+      "rule": "Its motor produces more than 5 horsepower (3,750 W); one at or under that is a motor driven cycle"
+    },
+    {
+      "rule": "Riders need a class M license or a motorcycle endorsement, so must be at least 16; under 18 they must hold a motorcycle instruction permit for six months and complete an approved course or 30 certified hours of practice"
+    },
+    {
+      "rule": "Riders and passengers under 18 must wear a helmet, and every rider must wear glasses, goggles or a face shield unless it has a windshield"
+    },
+    {
+      "rule": "Must have a rearview mirror, seat and footrests, and carries a passenger only if built for one"
+    },
+    {
+      "rule": "Titled, registered and plated with MVD, and must carry liability insurance"
+    },
+    {
+      "rule": "Renewing its registration requires at least one registered owner with a motorcycle endorsement, unless a business owns it or it is registered exclusively off-highway",
+      "starts_on": "2027-01-01"
+    },
+    {
+      "rule": "A two-wheeled one may pass stopped traffic in its lane or between lanes at up to 15 mph, on roads with two or more lanes each way and a limit of 45 mph or less"
+    },
+    {
+      "rule": "Allowed in high occupancy vehicle lanes"
+    },
+    {
+      "rule": "Not allowed on sidewalks"
+    }
   ],
   "sources": [
     "https://www.azleg.gov/ars/28/00101.htm",

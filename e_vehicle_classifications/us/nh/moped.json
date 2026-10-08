@@ -1,19 +1,31 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/nh/moped",
   "jurisdiction": "US-NH",
   "name": "Moped",
-  "description": "A motor-driven cycle, so a motor of no more than 5 horsepower (3,730 W), whose speed attainable in one mile is 30 mph or less. The 50 cc and no-shifting limits apply only to an internal combustion engine, so an electric motor qualifies on speed and power alone. Defined by New Hampshire RSA 259:57, which excludes electric bicycles.",
+  "description": "A motor-driven cycle, so a motor of no more than 5 horsepower (3,750 W), whose speed attainable in one mile is 30 mph or less. The 50 cc and no-shifting limits apply only to an internal combustion engine, so an electric motor qualifies on speed and power alone. Defined by New Hampshire RSA 259:57, which excludes electric bicycles.",
   "throttle": true,
   "max_speed": 48.28,
-  "max_power": 3730,
+  "max_power": 3750,
   "restrictions": [
-    "A motor-driven cycle: a motorcycle or motor scooter with a motor of no more than 5 horsepower (3,730 W), or a bicycle with a motor attached that isn't an electric bicycle",
-    "Can reach no more than 30 mph within one mile",
-    "Not a motorcycle under state law",
-    "Riders need a driver's license from any state, a motorcycle license, or a restricted moped license earned by passing a written exam",
-    "No statewide helmet requirement: the helmet law for riders under 18 covers motorcycles, which exclude mopeds",
-    "Registered with the Division of Motor Vehicles, with a moped plate distinct from a motorcycle's; no municipal registration permit is needed"
+    {
+      "rule": "A motor-driven cycle: a motorcycle or motor scooter with a motor of no more than 5 horsepower (3,750 W), or a bicycle with a motor attached that isn't an electric bicycle"
+    },
+    {
+      "rule": "Can reach no more than 30 mph within one mile"
+    },
+    {
+      "rule": "Not a motorcycle under state law"
+    },
+    {
+      "rule": "Riders need a driver's license from any state, a motorcycle license, or a restricted moped license earned by passing a written exam"
+    },
+    {
+      "rule": "No statewide helmet requirement: the helmet law for riders under 18 covers motorcycles, which exclude mopeds"
+    },
+    {
+      "rule": "Registered with the Division of Motor Vehicles, with a moped plate distinct from a motorcycle's; no municipal registration permit is needed"
+    }
   ],
   "sources": [
     "https://gc.nh.gov/rsa/html/XXI/259/259-57.htm",

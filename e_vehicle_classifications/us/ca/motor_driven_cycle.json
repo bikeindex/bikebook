@@ -1,24 +1,48 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/ca/motor_driven_cycle",
   "jurisdiction": "US-CA",
   "groups": [
     "evc/motor_driven_cycle"
   ],
   "name": "Motor-Driven Cycle",
-  "description": "A light electric motorcycle: its motor produces 5 gross brake horsepower (3,730 W) or less, the electric counterpart of a motorcycle under 150 cc. Defined by California Vehicle Code §405, as amended by SB 1167 (Chapter 846, Statutes of 2026).",
+  "description": "A light electric motorcycle: its motor produces 5 gross brake horsepower (3,750 W) or less, the electric counterpart of a motorcycle under 150 cc. Defined by California Vehicle Code §405, as amended by SB 1167 (Chapter 846, Statutes of 2026).",
+  "limits_start_on": "2027-01-01",
   "throttle": true,
-  "max_power": 3730,
+  "max_power": 3750,
   "restrictions": [
-    "A motorcycle: a seat or saddle, and no more than three wheels on the ground",
-    "Its motor produces 5 gross brake horsepower (3,730 W) or less; one under 3,000 W is a motor-driven cycle rather than a moped when it can go faster than 30 mph",
-    "Built for highway use: meets federal motor vehicle safety standards, with a 17-digit VIN and a safety certification label",
-    "Riders need a driver's license with an M1 motorcycle endorsement",
-    "Riders must wear a motorcycle helmet",
-    "Registered and plated with the DMV, and must carry liability insurance",
-    "Barred from any freeway or expressway where Caltrans or the local authority posts a prohibition",
-    "Not allowed on bike paths or trails",
-    "A vehicle, not property: it can be towed or impounded"
+    {
+      "rule": "A motorcycle: a seat or saddle, and no more than three wheels on the ground"
+    },
+    {
+      "rule": "Its motor produces 5 gross brake horsepower (3,750 W) or less; one under 3,000 W is a motor-driven cycle rather than a moped when it can go faster than 30 mph",
+      "starts_on": "2027-01-01"
+    },
+    {
+      "rule": "The line is drawn only by an engine of 150 cc or less, which an electric motor doesn't have",
+      "ends_on": "2027-01-01"
+    },
+    {
+      "rule": "Built for highway use: meets federal motor vehicle safety standards, with a 17-digit VIN and a safety certification label"
+    },
+    {
+      "rule": "Riders need a driver's license with an M1 motorcycle endorsement"
+    },
+    {
+      "rule": "Riders must wear a motorcycle helmet"
+    },
+    {
+      "rule": "Registered and plated with the DMV, and must carry liability insurance"
+    },
+    {
+      "rule": "Barred from any freeway or expressway where Caltrans or the local authority posts a prohibition"
+    },
+    {
+      "rule": "Not allowed on bike paths or trails"
+    },
+    {
+      "rule": "A vehicle, not property: it can be towed or impounded"
+    }
   ],
   "sources": [
     "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1167",

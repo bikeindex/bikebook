@@ -8,7 +8,7 @@
       "format": "uri"
     },
     "schema_version": {
-      "const": "0.23.0"
+      "const": "0.23.2"
     },
     "id": {
       "type": "string",
@@ -37,6 +37,15 @@
     "description": {
       "type": "string"
     },
+    "limits_start_on": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "The day its speed and power limits take effect, when a law not yet in force sets them; its rules carry their own dates"
+    },
     "throttle": {
       "type": "boolean",
       "description": "Whether the motor may propel it without the rider pedaling"
@@ -62,7 +71,7 @@
         "integer",
         "null"
       ],
-      "description": "The motor power it's above, in watts",
+      "description": "The motor power it's above; a horsepower limit converts at 750 W per hp, as federal law and California's statute do, in watts",
       "x-unit": "w"
     },
     "max_power": {
@@ -70,13 +79,40 @@
         "integer",
         "null"
       ],
-      "description": "The motor's power limit; restrictions say whether it's inclusive, in watts",
+      "description": "The motor's power limit; restrictions say whether it's inclusive, and a horsepower limit converts at 750 W per hp, in watts",
       "x-unit": "w"
     },
     "restrictions": {
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "rule": {
+            "type": "string"
+          },
+          "starts_on": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "description": "The day it takes effect; a rule without one is in force now"
+          },
+          "ends_on": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "description": "The day it stops applying"
+          }
+        },
+        "required": [
+          "rule"
+        ],
+        "additionalProperties": false
       }
     },
     "sources": {

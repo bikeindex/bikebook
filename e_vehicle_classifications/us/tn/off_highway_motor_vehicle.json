@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/tn/off_highway_motor_vehicle",
   "jurisdiction": "US-TN",
   "groups": [
@@ -9,10 +9,18 @@
   "description": "A vehicle designed primarily to be operated off public highways, a term the statute says includes any motorcycle commonly called a dirt bike, which is where an off-road electric dirt bike lands. Defined by Tennessee Code Annotated §55-8-101 and regulated by §55-3-101 and chapter 52 of Title 55.",
   "throttle": true,
   "restrictions": [
-    "Designed primarily for use off public highways; no limit on motor power or speed",
-    "Titled, and carries the state's special identification device, when ridden on land other than a highway",
-    "Can't be registered for the road; only Class I (four to six off-road tires) and Class II (side-by-side) off-highway vehicles can be plated for county roads",
-    "A parent or guardian may not let a rider or passenger under 18 on one without a helmet meeting FMVSS 218, except on the family's or a relative's private property or while commuting to hunt with a valid hunting license"
+    {
+      "rule": "Designed primarily for use off public highways; no limit on motor power or speed"
+    },
+    {
+      "rule": "Titled, and carries the state's special identification device, when ridden on land other than a highway"
+    },
+    {
+      "rule": "Can't be registered for the road; only Class I (four to six off-road tires) and Class II (side-by-side) off-highway vehicles can be plated for county roads"
+    },
+    {
+      "rule": "A parent or guardian may not let a rider or passenger under 18 on one without a helmet meeting FMVSS 218, except on the family's or a relative's private property or while commuting to hunt with a valid hunting license"
+    }
   ],
   "sources": [
     "https://codes.findlaw.com/tn/title-55-motor-and-other-vehicles/tn-code-sect-55-8-101/",

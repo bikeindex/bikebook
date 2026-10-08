@@ -1,20 +1,34 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/mo/motorized_bicycle",
   "jurisdiction": "US-MO",
   "name": "Motorized Bicycle",
-  "description": "Missouri's moped: a two- or three-wheeled device with an automatic transmission whose motor produces less than 3 gross brake horsepower (2,238 W) and can't propel it faster than 30 mph on level ground. It needs a licensed rider but no title or registration. Defined by Revised Statutes of Missouri §301.010 and regulated by §307.195; electric bicycles are excluded.",
+  "description": "Missouri's moped: a two- or three-wheeled device with an automatic transmission whose motor produces less than 3 gross brake horsepower (2,250 W) and can't propel it faster than 30 mph on level ground. It needs a licensed rider but no title or registration. Defined by Revised Statutes of Missouri §301.010 and regulated by §307.195; electric bicycles are excluded.",
   "throttle": true,
   "max_speed": 48.28,
-  "max_power": 2238,
+  "max_power": 2250,
   "restrictions": [
-    "Two or three wheels and an automatic transmission; pedals aren't required",
-    "Its motor produces less than 3 gross brake horsepower (2,238 W) and can't propel it faster than 30 mph on level ground",
-    "The definition also caps the motor's cylinder capacity at 50 cc, a gas-engine measure, and excludes electric bicycles by name rather than electric motors",
-    "Riders need a valid driver's license; no motorcycle endorsement",
-    "No state helmet requirement",
-    "Not titled or registered with the Department of Revenue",
-    "Not allowed on interstate highways"
+    {
+      "rule": "Two or three wheels and an automatic transmission; pedals aren't required"
+    },
+    {
+      "rule": "Its motor produces less than 3 gross brake horsepower (2,250 W) and can't propel it faster than 30 mph on level ground"
+    },
+    {
+      "rule": "The definition also caps the motor's cylinder capacity at 50 cc, a gas-engine measure, and excludes electric bicycles by name rather than electric motors"
+    },
+    {
+      "rule": "Riders need a valid driver's license; no motorcycle endorsement"
+    },
+    {
+      "rule": "No state helmet requirement"
+    },
+    {
+      "rule": "Not titled or registered with the Department of Revenue"
+    },
+    {
+      "rule": "Not allowed on interstate highways"
+    }
   ],
   "sources": [
     "https://revisor.mo.gov/main/OneSection.aspx?section=301.010",

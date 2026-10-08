@@ -1,23 +1,39 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/wy/motorcycle",
   "jurisdiction": "US-WY",
   "groups": [
     "evc/motorcycle"
   ],
   "name": "Motorcycle",
-  "description": "A motor vehicle with a seat or saddle designed to travel on no more than three wheels, which for registration includes motorized bicycles and scooters; an electric two-wheeler whose motor exceeds five brake horsepower (3,730 W) is a full motorcycle rather than a motor-driven cycle. Defined by Wyoming Statutes §31-1-101(a)(xv)(E) and §31-5-102(a)(xxii), as compiled in May 2026.",
+  "description": "A motor vehicle with a seat or saddle designed to travel on no more than three wheels, which for registration includes motorized bicycles and scooters; an electric two-wheeler whose motor exceeds five brake horsepower (3,750 W) is a full motorcycle rather than a motor-driven cycle. Defined by Wyoming Statutes §31-1-101(a)(xv)(E) and §31-5-102(a)(xxii), as compiled in May 2026.",
   "throttle": true,
-  "min_power": 3730,
+  "min_power": 3750,
   "restrictions": [
-    "A seat or saddle and no more than three wheels on the ground; a sidecar for one passenger is allowed",
-    "Its motor produces more than five brake horsepower (3,730 W); one at or under that is a motor-driven cycle",
-    "Not a moped, motorized skateboard, multipurpose vehicle, electric bicycle or off-road recreational vehicle",
-    "Riders need a class M motorcycle license or endorsement",
-    "Riders and passengers under 18 must wear a fastened helmet on public roads",
-    "Its headlamp must be on at all times, including in daylight, and a passenger needs footrests",
-    "Registered with the county treasurer and must carry liability insurance",
-    "No lane splitting, and no more than two abreast in a lane"
+    {
+      "rule": "A seat or saddle and no more than three wheels on the ground; a sidecar for one passenger is allowed"
+    },
+    {
+      "rule": "Its motor produces more than five brake horsepower (3,750 W); one at or under that is a motor-driven cycle"
+    },
+    {
+      "rule": "Not a moped, motorized skateboard, multipurpose vehicle, electric bicycle or off-road recreational vehicle"
+    },
+    {
+      "rule": "Riders need a class M motorcycle license or endorsement"
+    },
+    {
+      "rule": "Riders and passengers under 18 must wear a fastened helmet on public roads"
+    },
+    {
+      "rule": "Its headlamp must be on at all times, including in daylight, and a passenger needs footrests"
+    },
+    {
+      "rule": "Registered with the county treasurer and must carry liability insurance"
+    },
+    {
+      "rule": "No lane splitting, and no more than two abreast in a lane"
+    }
   ],
   "sources": [
     "https://wyoleg.gov/statutes/compress/title31.pdf"

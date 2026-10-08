@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/ms/dirt_bike",
   "jurisdiction": "US-MS",
   "groups": [
@@ -9,12 +9,24 @@
   "description": "A motor-powered vehicle with two or more tires, designed to travel over any terrain and capable of travelling off paved roads, whether or not it can be ridden legally on a street; one of Mississippi's off-road vehicles, with ATVs and recreational off-highway vehicles. Defined by Mississippi Code §63-31-3(5)(c), which excludes electric bicycles.",
   "throttle": true,
   "restrictions": [
-    "Two or more tires and designed to travel over any terrain, whether or not it may be ridden legally on a public street",
-    "No limit on motor power or speed",
-    "An electric bicycle is kept out of the off-road vehicle, dirt bike and ATV laws",
-    "On public property, the rider needs a driver's license or a certificate from an off-road vehicle safety course taught through the Cooperative Extension Service or another organization the Department of Public Safety approves",
-    "On public property, every rider and passenger under 16 must wear a helmet meeting FMVSS 218",
-    "The off-road vehicle law doesn't authorize riding it on a public road or highway"
+    {
+      "rule": "Two or more tires and designed to travel over any terrain, whether or not it may be ridden legally on a public street"
+    },
+    {
+      "rule": "No limit on motor power or speed"
+    },
+    {
+      "rule": "An electric bicycle is kept out of the off-road vehicle, dirt bike and ATV laws"
+    },
+    {
+      "rule": "On public property, the rider needs a driver's license or a certificate from an off-road vehicle safety course taught through the Cooperative Extension Service or another organization the Department of Public Safety approves"
+    },
+    {
+      "rule": "On public property, every rider and passenger under 16 must wear a helmet meeting FMVSS 218"
+    },
+    {
+      "rule": "The off-road vehicle law doesn't authorize riding it on a public road or highway"
+    }
   ],
   "sources": [
     "https://billstatus.ls.state.ms.us/documents/2021/pdf/HB/1100-1199/HB1195SG.pdf",

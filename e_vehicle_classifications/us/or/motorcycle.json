@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/or/motorcycle",
   "jurisdiction": "US-OR",
   "groups": [
@@ -9,13 +9,27 @@
   "description": "A self-propelled vehicle with a seat or saddle and no more than three wheels on the ground, other than a moped: an electric two-wheeler that can go faster than 30 mph is a motorcycle. Defined by Oregon Revised Statutes §801.365.",
   "throttle": true,
   "restrictions": [
-    "A seat or saddle, and no more than three wheels on the ground",
-    "No power or speed limit; anything faster than a moped's 30 mph lands here",
-    "Riders need a driver's license with a motorcycle endorsement, which requires being 16 or older and completing a Team Oregon rider education course",
-    "Riders and passengers must wear a DOT motorcycle helmet",
-    "Titled and registered with the DMV, with a license plate, and must carry liability and uninsured motorist insurance",
-    "Not allowed on sidewalks, bicycle lanes or bicycle paths",
-    "One ridden on two wheels off the highway is a Class III all-terrain vehicle there"
+    {
+      "rule": "A seat or saddle, and no more than three wheels on the ground"
+    },
+    {
+      "rule": "No power or speed limit; anything faster than a moped's 30 mph lands here"
+    },
+    {
+      "rule": "Riders need a driver's license with a motorcycle endorsement, which requires being 16 or older and completing a Team Oregon rider education course"
+    },
+    {
+      "rule": "Riders and passengers must wear a DOT motorcycle helmet"
+    },
+    {
+      "rule": "Titled and registered with the DMV, with a license plate, and must carry liability and uninsured motorist insurance"
+    },
+    {
+      "rule": "Not allowed on sidewalks, bicycle lanes or bicycle paths"
+    },
+    {
+      "rule": "One ridden on two wheels off the highway is a Class III all-terrain vehicle there"
+    }
   ],
   "sources": [
     "https://www.oregonlegislature.gov/bills_laws/ors/ors801.html",

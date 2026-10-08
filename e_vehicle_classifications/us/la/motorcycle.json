@@ -1,23 +1,39 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/la/motorcycle",
   "jurisdiction": "US-LA",
   "groups": [
     "evc/motorcycle"
   ],
   "name": "Motorcycle",
-  "description": "A motor vehicle with a seat or saddle, designed to travel on no more than three wheels, excluding motorized bicycles and electric-assisted bicycles; an electric one with a motor over 5 horsepower (3,730 W) is a full motorcycle rather than a motor-driven cycle. Defined by Louisiana Revised Statutes §32:1(51).",
+  "description": "A motor vehicle with a seat or saddle, designed to travel on no more than three wheels, excluding motorized bicycles and electric-assisted bicycles; an electric one with a motor over 5 horsepower (3,750 W) is a full motorcycle rather than a motor-driven cycle. Defined by Louisiana Revised Statutes §32:1(51).",
   "throttle": true,
-  "min_power": 3730,
+  "min_power": 3750,
   "restrictions": [
-    "A seat or saddle, and no more than three wheels on the ground; excludes motorized bicycles and electric-assisted bicycles",
-    "Its motor exceeds 5 horsepower (3,730 W); one at or below that is a motor-driven cycle",
-    "Riders need a motorcycle (M) endorsement on a Louisiana driver's license or learner's permit, earned with knowledge and skills tests or a state motorcycle safety course",
-    "Every rider and passenger must wear a motorcycle safety helmet secured with a chin strap",
-    "Riders must wear approved eye protection unless it has a windshield tall enough to protect their eyes",
-    "Titled, registered and plated with the Office of Motor Vehicles, with liability insurance",
-    "Passengers only on a seat designed for one, and no child young enough to need a child safety seat",
-    "Entitled to a full lane; no lane splitting, and no more than two abreast in a lane"
+    {
+      "rule": "A seat or saddle, and no more than three wheels on the ground; excludes motorized bicycles and electric-assisted bicycles"
+    },
+    {
+      "rule": "Its motor exceeds 5 horsepower (3,750 W); one at or below that is a motor-driven cycle"
+    },
+    {
+      "rule": "Riders need a motorcycle (M) endorsement on a Louisiana driver's license or learner's permit, earned with knowledge and skills tests or a state motorcycle safety course"
+    },
+    {
+      "rule": "Every rider and passenger must wear a motorcycle safety helmet secured with a chin strap"
+    },
+    {
+      "rule": "Riders must wear approved eye protection unless it has a windshield tall enough to protect their eyes"
+    },
+    {
+      "rule": "Titled, registered and plated with the Office of Motor Vehicles, with liability insurance"
+    },
+    {
+      "rule": "Passengers only on a seat designed for one, and no child young enough to need a child safety seat"
+    },
+    {
+      "rule": "Entitled to a full lane; no lane splitting, and no more than two abreast in a lane"
+    }
   ],
   "sources": [
     "https://legis.la.gov/legis/Law.aspx?d=88016",

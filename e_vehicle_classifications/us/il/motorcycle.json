@@ -1,20 +1,38 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/il/motorcycle",
   "jurisdiction": "US-IL",
   "name": "Motorcycle",
   "description": "A road-registered motor vehicle with a seat or saddle and no more than three wheels on the ground. From January 1, 2027, an electric one rated above 8,000 W nominal is a motorcycle rather than a motor driven cycle; until then, with the motor driven cycle line drawn only by engine displacement, an electric two-wheeler beyond moped limits is a motorcycle. Defined by Illinois Vehicle Code §1-147 (625 ILCS 5/1-147), with the line set by SB 3484 (Public Act 104-0854).",
+  "limits_start_on": "2027-01-01",
   "throttle": true,
   "min_power": 8000,
   "restrictions": [
-    "A seat or saddle, and no more than three wheels on the ground; an autocycle isn't one",
-    "From January 1, 2027, an electric motor rated above 8,000 W nominal; one from 750 W up to 8,000 W is a motor driven cycle",
-    "Riders need a driver's license with a Class M classification; riders aged 16 or 17 must also complete driver education and an IDOT-approved motorcycle training course",
-    "Rider and passenger must wear glasses, goggles or a face shield unless it has a windshield that rises above the rider's eyes",
-    "No helmet requirement",
-    "Titled and registered with the Secretary of State, carries a license plate, and must carry liability insurance",
-    "One not built and equipped for highway use can't be registered and gets a distinctive title instead",
-    "Riders sit astride facing forward with at least one hand on the handlebars, and carry a passenger only if it's built for two"
+    {
+      "rule": "A seat or saddle, and no more than three wheels on the ground; an autocycle isn't one"
+    },
+    {
+      "rule": "An electric motor rated above 8,000 W nominal; one from 750 W up to 8,000 W is a motor driven cycle",
+      "starts_on": "2027-01-01"
+    },
+    {
+      "rule": "Riders need a driver's license with a Class M classification; riders aged 16 or 17 must also complete driver education and an IDOT-approved motorcycle training course"
+    },
+    {
+      "rule": "Rider and passenger must wear glasses, goggles or a face shield unless it has a windshield that rises above the rider's eyes"
+    },
+    {
+      "rule": "No helmet requirement"
+    },
+    {
+      "rule": "Titled and registered with the Secretary of State, carries a license plate, and must carry liability insurance"
+    },
+    {
+      "rule": "One not built and equipped for highway use can't be registered and gets a distinctive title instead"
+    },
+    {
+      "rule": "Riders sit astride facing forward with at least one hand on the handlebars, and carry a passenger only if it's built for two"
+    }
   ],
   "sources": [
     "https://www.ilga.gov/Documents/legislation/ilcs/documents/062500050K1-147.htm",

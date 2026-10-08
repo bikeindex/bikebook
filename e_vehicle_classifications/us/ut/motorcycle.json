@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/ut/motorcycle",
   "jurisdiction": "US-UT",
   "groups": [
@@ -9,14 +9,34 @@
   "description": "A motor vehicle with a seat or saddle designed to travel on no more than three wheels, which since H.B. 381 (2026) expressly includes mopeds and electric motorcycles, whether powered by an electric motor or a combustion engine. Defined by Utah Code §41-6a-102, as amended by H.B. 381 (2026), effective May 6, 2026, which also repealed the separate motor-driven cycle category.",
   "throttle": true,
   "restrictions": [
-    "A seat or saddle for the rider and no more than three wheels on the ground; includes autocycles, mopeds and electric motorcycles",
-    "Not an electric assisted bicycle or a motor assisted scooter",
-    "Utah no longer has a motor-driven cycle category: H.B. 381 repealed it, so a light motorcycle that isn't a moped is simply a motorcycle",
-    "Riders need a class D driver license with a motorcycle endorsement, except on a moped or autocycle",
-    "Riders under 21 must wear a motorcycle helmet meeting FMVSS 218 on a highway",
-    "Needs a headlamp, tail lamp, stop lamp, rear reflector, brakes, horn, mirror and road tires",
-    "Titled and registered with the Division of Motor Vehicles, with a registration fee each year",
-    "Entitled to full use of a lane; lane filtering is allowed only past stopped traffic, at 15 mph or less, on roads posted 45 mph or less with two or more lanes each way, until that rule is repealed July 1, 2027"
+    {
+      "rule": "A seat or saddle for the rider and no more than three wheels on the ground; includes autocycles, mopeds and electric motorcycles"
+    },
+    {
+      "rule": "Not an electric assisted bicycle or a motor assisted scooter"
+    },
+    {
+      "rule": "Utah no longer has a motor-driven cycle category: H.B. 381 repealed it, so a light motorcycle that isn't a moped is simply a motorcycle"
+    },
+    {
+      "rule": "Riders need a class D driver license with a motorcycle endorsement, except on a moped or autocycle"
+    },
+    {
+      "rule": "Riders under 21 must wear a motorcycle helmet meeting FMVSS 218 on a highway"
+    },
+    {
+      "rule": "Needs a headlamp, tail lamp, stop lamp, rear reflector, brakes, horn, mirror and road tires"
+    },
+    {
+      "rule": "Titled and registered with the Division of Motor Vehicles, with a registration fee each year"
+    },
+    {
+      "rule": "Entitled to full use of a lane"
+    },
+    {
+      "rule": "Lane filtering is allowed only past stopped traffic, at 15 mph or less, on roads posted 45 mph or less with two or more lanes each way",
+      "ends_on": "2027-07-01"
+    }
   ],
   "sources": [
     "https://le.utah.gov/xcode/Title41/Chapter6A/41-6a-S102.html",

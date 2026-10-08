@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/nd/motorcycle",
   "jurisdiction": "US-ND",
   "groups": [
@@ -9,15 +9,33 @@
   "description": "Every motor vehicle with a seat or saddle for the rider designed to travel on no more than three wheels, other than an electric bicycle. An electric two-wheeler past the motorized bicycle limits (2 brake horsepower, 30 mph, 32 inches wide, no shifting) is one. Defined by North Dakota Century Code §39-01-01 and regulated by chapter 39-10.2.",
   "throttle": true,
   "restrictions": [
-    "A seat or saddle for the rider, and no more than three wheels on the ground",
-    "An electric two-wheeler with more than 2 brake horsepower (1,492 W), able to go faster than 30 mph, wider than 32 inches or needing the rider to shift, is a motorcycle rather than a motorized bicycle",
-    "Riders need a class M license or endorsement; the skill test can be waived for an approved motorcycle safety course",
-    "A class M learner's permit is available from 14, but at 14 and 15 only while enrolled in or after completing an approved safety course; it bars riding when headlights are required and carrying passengers",
-    "Riders under 16 must hold the permit for two months and complete the safety course before licensing, and may not ride a motorcycle over 510 cc",
-    "Riders and passengers under 18 must wear a safety helmet meeting US DOT standards, and a passenger must wear one whenever the operator must",
-    "Registered with the Department of Transportation, with one number plate",
-    "May not be ridden between lanes of traffic or more than two abreast in a lane",
-    "One built only for off-highway use is a class I off-highway vehicle instead"
+    {
+      "rule": "A seat or saddle for the rider, and no more than three wheels on the ground"
+    },
+    {
+      "rule": "An electric two-wheeler with more than 2 brake horsepower (1,500 W), able to go faster than 30 mph, wider than 32 inches or needing the rider to shift, is a motorcycle rather than a motorized bicycle"
+    },
+    {
+      "rule": "Riders need a class M license or endorsement; the skill test can be waived for an approved motorcycle safety course"
+    },
+    {
+      "rule": "A class M learner's permit is available from 14, but at 14 and 15 only while enrolled in or after completing an approved safety course; it bars riding when headlights are required and carrying passengers"
+    },
+    {
+      "rule": "Riders under 16 must hold the permit for two months and complete the safety course before licensing, and may not ride a motorcycle over 510 cc"
+    },
+    {
+      "rule": "Riders and passengers under 18 must wear a safety helmet meeting US DOT standards, and a passenger must wear one whenever the operator must"
+    },
+    {
+      "rule": "Registered with the Department of Transportation, with one number plate"
+    },
+    {
+      "rule": "May not be ridden between lanes of traffic or more than two abreast in a lane"
+    },
+    {
+      "rule": "One built only for off-highway use is a class I off-highway vehicle instead"
+    }
   ],
   "sources": [
     "https://ndlegis.gov/cencode/t39c01.pdf",

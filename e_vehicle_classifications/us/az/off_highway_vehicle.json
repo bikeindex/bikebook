@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/az/off_highway_vehicle",
   "jurisdiction": "US-AZ",
   "groups": [
@@ -9,15 +9,35 @@
   "description": "A motorized vehicle operated primarily off highways and built or modified for recreational all-terrain travel, explicitly including motorcycles and dirt bikes powered by anything other than muscle or wind, so an off-road electric dirt bike is one. Defined by Arizona Revised Statutes §28-1171, with operator rules amended by SB 1567 (2024).",
   "throttle": true,
   "restrictions": [
-    "No limit on motor power or speed",
-    "Needs a $25 annual off-highway vehicle decal when designed by its manufacturer primarily for unimproved terrain and weighing 2,500 lb or less unladen; it is also titled and plated with MVD",
-    "From January 1, 2025 to June 1, 2027, a registered owner must pass the free Arizona Game and Fish OHV safety course before the decal is issued or renewed",
-    "State law requires a valid driver license to drive one; if a rider under 12 has none, the parent or guardian is cited",
-    "Riders and passengers under 18 must wear a properly fastened DOT-rated motorized-vehicle helmet on public and state land",
-    "Must have adequate brakes, headlights and taillights after dark, a muffler holding it to 96 decibels and a USDA-approved spark arrestor, except on a closed course",
-    "Ridden only on roads, trails, routes and areas opened to off-highway vehicles, and never off them in a way that damages habitat or resources",
-    "May be registered for highway use, by affidavit, once it meets the highway equipment requirements; otherwise it may be on a highway only incidentally",
-    "The off-highway vehicle rules don't apply on private or Indian land"
+    {
+      "rule": "No limit on motor power or speed"
+    },
+    {
+      "rule": "Needs a $25 annual off-highway vehicle decal when designed by its manufacturer primarily for unimproved terrain and weighing 2,500 lb or less unladen; it is also titled and plated with MVD"
+    },
+    {
+      "rule": "A registered owner must pass the free Arizona Game and Fish OHV safety course before the decal is issued or renewed",
+      "starts_on": "2025-01-01",
+      "ends_on": "2027-06-01"
+    },
+    {
+      "rule": "State law requires a valid driver license to drive one; if a rider under 12 has none, the parent or guardian is cited"
+    },
+    {
+      "rule": "Riders and passengers under 18 must wear a properly fastened DOT-rated motorized-vehicle helmet on public and state land"
+    },
+    {
+      "rule": "Must have adequate brakes, headlights and taillights after dark, a muffler holding it to 96 decibels and a USDA-approved spark arrestor, except on a closed course"
+    },
+    {
+      "rule": "Ridden only on roads, trails, routes and areas opened to off-highway vehicles, and never off them in a way that damages habitat or resources"
+    },
+    {
+      "rule": "May be registered for highway use, by affidavit, once it meets the highway equipment requirements; otherwise it may be on a highway only incidentally"
+    },
+    {
+      "rule": "The off-highway vehicle rules don't apply on private or Indian land"
+    }
   ],
   "sources": [
     "https://www.azleg.gov/ars/28/01171.htm",

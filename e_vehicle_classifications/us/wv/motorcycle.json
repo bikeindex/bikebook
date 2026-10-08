@@ -1,23 +1,39 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/wv/motorcycle",
   "jurisdiction": "US-WV",
   "groups": [
     "evc/motorcycle"
   ],
   "name": "Motorcycle",
-  "description": "A motor vehicle with a seat or saddle designed to travel on no more than three wheels, other than a tractor; an electric two-wheeler whose motor exceeds five brake horsepower (3,730 W) is a full motorcycle rather than a motor-driven cycle. Defined by West Virginia Code §17C-1-4, unchanged since 1963; no 2025–2026 changes to it or the moped and motor-driven cycle definitions.",
+  "description": "A motor vehicle with a seat or saddle designed to travel on no more than three wheels, other than a tractor; an electric two-wheeler whose motor exceeds five brake horsepower (3,750 W) is a full motorcycle rather than a motor-driven cycle. Defined by West Virginia Code §17C-1-4, unchanged since 1963; no 2025–2026 changes to it or the moped and motor-driven cycle definitions.",
   "throttle": true,
-  "min_power": 3730,
+  "min_power": 3750,
   "restrictions": [
-    "A seat or saddle and no more than three wheels on the ground",
-    "Its motor produces more than five brake horsepower (3,730 W); one at or under that is a motor-driven cycle",
-    "Riders need a motorcycle (F) endorsement or a Class F motorcycle-only license, earned with a knowledge test and an on-cycle skills test or a rider course; riders under 18 must first complete the Level II graduated license",
-    "Every rider and passenger must wear a fastened helmet meeting FMVSS 218, ANSI Z90.1 or Snell standards",
-    "Every rider and passenger must wear shatter-resistant safety glasses, goggles or a face shield",
-    "Handlebars or grips may be no more than 15 inches above the seat, and it needs a handlebar or fairing mirror showing 200 feet behind",
-    "Registered with the DMV as a Class G vehicle, with insurance information required at renewal",
-    "Off the highway, a motorcycle is ridden under the all-terrain vehicle rules instead"
+    {
+      "rule": "A seat or saddle and no more than three wheels on the ground"
+    },
+    {
+      "rule": "Its motor produces more than five brake horsepower (3,750 W); one at or under that is a motor-driven cycle"
+    },
+    {
+      "rule": "Riders need a motorcycle (F) endorsement or a Class F motorcycle-only license, earned with a knowledge test and an on-cycle skills test or a rider course; riders under 18 must first complete the Level II graduated license"
+    },
+    {
+      "rule": "Every rider and passenger must wear a fastened helmet meeting FMVSS 218, ANSI Z90.1 or Snell standards"
+    },
+    {
+      "rule": "Every rider and passenger must wear shatter-resistant safety glasses, goggles or a face shield"
+    },
+    {
+      "rule": "Handlebars or grips may be no more than 15 inches above the seat, and it needs a handlebar or fairing mirror showing 200 feet behind"
+    },
+    {
+      "rule": "Registered with the DMV as a Class G vehicle, with insurance information required at renewal"
+    },
+    {
+      "rule": "Off the highway, a motorcycle is ridden under the all-terrain vehicle rules instead"
+    }
   ],
   "sources": [
     "https://code.wvlegislature.gov/17C-1-4/",

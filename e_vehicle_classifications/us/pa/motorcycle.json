@@ -1,22 +1,36 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/pa/motorcycle",
   "jurisdiction": "US-PA",
   "groups": [
     "evc/motorcycle"
   ],
   "name": "Motorcycle",
-  "description": "A motor vehicle with a seat or saddle designed to travel on no more than three wheels; an electric one whose motor produces more than 5 brake horsepower (about 3,730 W) is a full motorcycle rather than a motor-driven cycle. Defined by Pennsylvania Consolidated Statutes Title 75 §102.",
+  "description": "A motor vehicle with a seat or saddle designed to travel on no more than three wheels; an electric one whose motor produces more than 5 brake horsepower (about 3,750 W) is a full motorcycle rather than a motor-driven cycle. Defined by Pennsylvania Consolidated Statutes Title 75 §102.",
   "throttle": true,
-  "min_power": 3730,
+  "min_power": 3750,
   "restrictions": [
-    "A seat or saddle, and no more than three wheels on the ground",
-    "Its motor produces more than 5 brake horsepower (about 3,730 W)",
-    "Riders need a Class M license",
-    "Riders under 21 must wear a motorcycle helmet, as must older riders unless they've held a motorcycle license for two years or completed an approved rider safety course",
-    "Riders must wear eye protection",
-    "Titled and registered with PennDOT for $18 a year, with the registration card carried while riding, and must carry insurance",
-    "Pennsylvania has no off-highway motorcycle category: its ATV law excludes trail bikes, and an off-road electric dirt bike without a VIN can't be registered, so it's ridden only on private property or trails that allow it"
+    {
+      "rule": "A seat or saddle, and no more than three wheels on the ground"
+    },
+    {
+      "rule": "Its motor produces more than 5 brake horsepower (about 3,750 W)"
+    },
+    {
+      "rule": "Riders need a Class M license"
+    },
+    {
+      "rule": "Riders under 21 must wear a motorcycle helmet, as must older riders unless they've held a motorcycle license for two years or completed an approved rider safety course"
+    },
+    {
+      "rule": "Riders must wear eye protection"
+    },
+    {
+      "rule": "Titled and registered with PennDOT for $18 a year, with the registration card carried while riding, and must carry insurance"
+    },
+    {
+      "rule": "Pennsylvania has no off-highway motorcycle category: its ATV law excludes trail bikes, and an off-road electric dirt bike without a VIN can't be registered, so it's ridden only on private property or trails that allow it"
+    }
   ],
   "sources": [
     "https://www.palegis.us/statutes/consolidated/view-statute?txtType=PDF&ttl=75&div=00.&chpt=1",

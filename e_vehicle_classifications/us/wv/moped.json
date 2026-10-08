@@ -1,23 +1,37 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/wv/moped",
   "jurisdiction": "US-WV",
   "groups": [
     "evc/moped"
   ],
   "name": "Moped",
-  "description": "A motorcycle or motor-driven cycle with two or three wheels, foot pedals for muscular propulsion, and a power source of at most two brake horsepower (1,492 W) that can't propel it past 30 mph on a level road; an electric motor qualifies, since only a combustion engine is held to 50 cc. Defined by West Virginia Code §17C-1-5a, last amended in 2020.",
+  "description": "A motorcycle or motor-driven cycle with two or three wheels, foot pedals for muscular propulsion, and a power source of at most two brake horsepower (1,500 W) that can't propel it past 30 mph on a level road; an electric motor qualifies, since only a combustion engine is held to 50 cc. Defined by West Virginia Code §17C-1-5a, last amended in 2020.",
   "throttle": true,
   "max_speed": 48.28,
-  "max_power": 1492,
+  "max_power": 1500,
   "restrictions": [
-    "Two or three wheels and foot pedals that permit muscular propulsion",
-    "An independent power source of at most two brake horsepower (1,492 W) that can't propel it unassisted faster than 30 mph on a level road",
-    "A power drive system that works without clutching or shifting once engaged",
-    "Not an electric bicycle; an e-bike with a bigger motor, or modified past e-bike limits, can land here",
-    "Counts as a motorcycle or motor-driven cycle unless the traffic code says otherwise",
-    "The operator must face forward astride a permanent seat, or stand on the footpegs or pedals, and may carry a passenger only if it's designed for one",
-    "Handlebars or grips may be no more than 15 inches above the seat, it needs a handlebar or fairing mirror showing 200 feet behind, and any windshield must be shatter-resistant safety glazing"
+    {
+      "rule": "Two or three wheels and foot pedals that permit muscular propulsion"
+    },
+    {
+      "rule": "An independent power source of at most two brake horsepower (1,500 W) that can't propel it unassisted faster than 30 mph on a level road"
+    },
+    {
+      "rule": "A power drive system that works without clutching or shifting once engaged"
+    },
+    {
+      "rule": "Not an electric bicycle; an e-bike with a bigger motor, or modified past e-bike limits, can land here"
+    },
+    {
+      "rule": "Counts as a motorcycle or motor-driven cycle unless the traffic code says otherwise"
+    },
+    {
+      "rule": "The operator must face forward astride a permanent seat, or stand on the footpegs or pedals, and may carry a passenger only if it's designed for one"
+    },
+    {
+      "rule": "Handlebars or grips may be no more than 15 inches above the seat, it needs a handlebar or fairing mirror showing 200 feet behind, and any windshield must be shatter-resistant safety glazing"
+    }
   ],
   "sources": [
     "https://code.wvlegislature.gov/17C-1-5a/",

@@ -1,26 +1,48 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/id/motorcycle",
   "jurisdiction": "US-ID",
   "groups": [
     "evc/motorcycle"
   ],
   "name": "Motorcycle",
-  "description": "A motor vehicle with a seat or saddle and no more than three wheels on the ground that meets federal motor vehicle safety standards as designed, including a motorbike converted to meet them; an electric one is a motorcycle once its motor exceeds the 5 brake horsepower (3,730 W) of a motor-driven cycle. Defined by Idaho Code §49-114(11).",
+  "description": "A motor vehicle with a seat or saddle and no more than three wheels on the ground that meets federal motor vehicle safety standards as designed, including a motorbike converted to meet them; an electric one is a motorcycle once its motor exceeds the 5 brake horsepower (3,750 W) of a motor-driven cycle. Defined by Idaho Code §49-114(11).",
   "throttle": true,
-  "min_power": 3730,
+  "min_power": 3750,
   "restrictions": [
-    "A seat or saddle, and no more than three wheels on the ground",
-    "Its motor produces more than 5 brake horsepower (3,730 W), above a motor-driven cycle; ITD treats an electric motor the same as a combustion engine",
-    "Meets federal motor vehicle safety standards as originally designed; not a motorbike, moped, motor-driven cycle or electric-assisted bicycle",
-    "An off-road motorbike becomes a motorcycle when its owner fits it to meet federal motor vehicle safety standards and Idaho's equipment rules, and self-certifies the conversion on ITD form 3018",
-    "Titled, and registered and plated for highway use, or instead issued a restricted vehicle plate or an OHV sticker for OHV roads and trails only",
-    "Riders need a valid driver's license with a motorcycle \"M\" endorsement",
-    "An applicant under 21 must complete an approved motorcycle rider training course to get the endorsement",
-    "A motorcycle instruction permit allows daylight riding only, with no freeways and no passengers",
-    "Riders and passengers under 18 must wear a protective helmet, except on private property",
-    "Must carry liability insurance",
-    "With highway plates, may be ridden on all highways, including interstates"
+    {
+      "rule": "A seat or saddle, and no more than three wheels on the ground"
+    },
+    {
+      "rule": "Its motor produces more than 5 brake horsepower (3,750 W), above a motor-driven cycle; ITD treats an electric motor the same as a combustion engine"
+    },
+    {
+      "rule": "Meets federal motor vehicle safety standards as originally designed; not a motorbike, moped, motor-driven cycle or electric-assisted bicycle"
+    },
+    {
+      "rule": "An off-road motorbike becomes a motorcycle when its owner fits it to meet federal motor vehicle safety standards and Idaho's equipment rules, and self-certifies the conversion on ITD form 3018"
+    },
+    {
+      "rule": "Titled, and registered and plated for highway use, or instead issued a restricted vehicle plate or an OHV sticker for OHV roads and trails only"
+    },
+    {
+      "rule": "Riders need a valid driver's license with a motorcycle \"M\" endorsement"
+    },
+    {
+      "rule": "An applicant under 21 must complete an approved motorcycle rider training course to get the endorsement"
+    },
+    {
+      "rule": "A motorcycle instruction permit allows daylight riding only, with no freeways and no passengers"
+    },
+    {
+      "rule": "Riders and passengers under 18 must wear a protective helmet, except on private property"
+    },
+    {
+      "rule": "Must carry liability insurance"
+    },
+    {
+      "rule": "With highway plates, may be ridden on all highways, including interstates"
+    }
   ],
   "sources": [
     "https://legislature.idaho.gov/statutesrules/idstat/title49/t49ch1/sect49-114/",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/ut/electric_motorcycle",
   "jurisdiction": "US-UT",
   "name": "Electric Motorcycle",
@@ -7,16 +7,37 @@
   "throttle": true,
   "min_power": 750,
   "restrictions": [
-    "A seat or saddle and no more than three wheels, with an electric motor of more than 750 watts or able to exceed 20 mph on motor power alone",
-    "Not an electric assisted bicycle or a motor assisted scooter",
-    "Has the rights and duties of a motorcycle operator under the traffic code",
-    "Riders need a driver's license with a motorcycle endorsement",
-    "Riders under 21 must wear a motorcycle helmet meeting FMVSS 218 on a highway",
-    "Must be street-legal (lights, mirrors and other motorcycle equipment), titled and registered with the Division of Motor Vehicles, and insured to ride on public roads",
-    "Barred from freeways, since §41-6a-1511 treats an electric motorcycle as a high power electric device",
-    "Off-road, one designed primarily for off-highway use is ridden as an off-highway motorcycle with OHV registration instead",
-    "From January 1, 2027, commercial sellers must disclose in sales and advertising that it is not an electric assisted bicycle but a motor vehicle subject to motor vehicle laws",
-    "Police are citing and impounding unregistered high-powered electric bikes ridden on public roads, sidewalks or paths"
+    {
+      "rule": "A seat or saddle and no more than three wheels, with an electric motor of more than 750 watts or able to exceed 20 mph on motor power alone"
+    },
+    {
+      "rule": "Not an electric assisted bicycle or a motor assisted scooter"
+    },
+    {
+      "rule": "Has the rights and duties of a motorcycle operator under the traffic code"
+    },
+    {
+      "rule": "Riders need a driver's license with a motorcycle endorsement"
+    },
+    {
+      "rule": "Riders under 21 must wear a motorcycle helmet meeting FMVSS 218 on a highway"
+    },
+    {
+      "rule": "Must be street-legal (lights, mirrors and other motorcycle equipment), titled and registered with the Division of Motor Vehicles, and insured to ride on public roads"
+    },
+    {
+      "rule": "Barred from freeways, since §41-6a-1511 treats an electric motorcycle as a high power electric device"
+    },
+    {
+      "rule": "Off-road, one designed primarily for off-highway use is ridden as an off-highway motorcycle with OHV registration instead"
+    },
+    {
+      "rule": "Commercial sellers must disclose in sales and advertising that it is not an electric assisted bicycle but a motor vehicle subject to motor vehicle laws",
+      "starts_on": "2027-01-01"
+    },
+    {
+      "rule": "Police are citing and impounding unregistered high-powered electric bikes ridden on public roads, sidewalks or paths"
+    }
   ],
   "sources": [
     "https://le.utah.gov/xcode/Title41/Chapter6A/41-6a-S102.html",

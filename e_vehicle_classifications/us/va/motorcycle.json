@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/va/motorcycle",
   "jurisdiction": "US-VA",
   "groups": [
@@ -9,13 +9,27 @@
   "description": "A motor vehicle designed to travel on no more than three wheels and capable of more than 35 mph; an electric two-wheeler too fast or powerful to be a moped lands here, as does a moped ridden past 35 mph. Defined by Code of Virginia §46.2-100.",
   "throttle": true,
   "restrictions": [
-    "No more than three wheels on the ground and capable of more than 35 mph",
-    "A moped with a motor over 1,500 watts is titled as a motorcycle, and a moped ridden faster than 35 mph is treated as one",
-    "Virginia's motor-driven cycle category covers only small gasoline engines, so an electric light motorcycle is a moped or a motorcycle",
-    "Riders need a driver's license with a Class M designation, or a motorcycle learner's permit",
-    "Every rider and passenger must wear an approved helmet, and the operator a face shield, safety glasses or goggles unless it has an approved windshield",
-    "Titled and registered with the DMV with motorcycle plates, and must meet the insurance and safety inspection requirements",
-    "An off-road motorcycle converted for road use must be certified to federal motor vehicle safety standards and titled and registered as a motorcycle before it's ridden on the road"
+    {
+      "rule": "No more than three wheels on the ground and capable of more than 35 mph"
+    },
+    {
+      "rule": "A moped with a motor over 1,500 watts is titled as a motorcycle, and a moped ridden faster than 35 mph is treated as one"
+    },
+    {
+      "rule": "Virginia's motor-driven cycle category covers only small gasoline engines, so an electric light motorcycle is a moped or a motorcycle"
+    },
+    {
+      "rule": "Riders need a driver's license with a Class M designation, or a motorcycle learner's permit"
+    },
+    {
+      "rule": "Every rider and passenger must wear an approved helmet, and the operator a face shield, safety glasses or goggles unless it has an approved windshield"
+    },
+    {
+      "rule": "Titled and registered with the DMV with motorcycle plates, and must meet the insurance and safety inspection requirements"
+    },
+    {
+      "rule": "An off-road motorcycle converted for road use must be certified to federal motor vehicle safety standards and titled and registered as a motorcycle before it's ridden on the road"
+    }
   ],
   "sources": [
     "https://law.lis.virginia.gov/vacode/title46.2/chapter1/section46.2-100/",

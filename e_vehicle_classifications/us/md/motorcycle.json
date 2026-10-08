@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/md/motorcycle",
   "jurisdiction": "US-MD",
   "groups": [
@@ -9,12 +9,24 @@
   "description": "A motor vehicle with a seat or saddle, designed to travel on no more than three wheels at speeds over 35 mph, of a type required to meet the federal safety standards for motorcycles. Defined by Maryland Transportation Article §11-136.",
   "throttle": true,
   "restrictions": [
-    "A seat or saddle, no more than three wheels on the ground, and designed to go faster than 35 mph",
-    "Of a type required to meet the federal motor vehicle safety standards for motorcycles; an off-road dirt bike that can't be registered as one is an off-highway recreational vehicle",
-    "Riders need a Class M driver's license, earned by experience or an approved basic motorcycle safety course",
-    "A rider on a motorcycle learner's permit may carry only a qualifying licensed supervisor",
-    "Every rider and passenger must wear an approved helmet, and the operator must wear approved eye protection unless it has a windscreen",
-    "Titled and registered as a Class D (motorcycle) vehicle, and must carry liability insurance"
+    {
+      "rule": "A seat or saddle, no more than three wheels on the ground, and designed to go faster than 35 mph"
+    },
+    {
+      "rule": "Of a type required to meet the federal motor vehicle safety standards for motorcycles; an off-road dirt bike that can't be registered as one is an off-highway recreational vehicle"
+    },
+    {
+      "rule": "Riders need a Class M driver's license, earned by experience or an approved basic motorcycle safety course"
+    },
+    {
+      "rule": "A rider on a motorcycle learner's permit may carry only a qualifying licensed supervisor"
+    },
+    {
+      "rule": "Every rider and passenger must wear an approved helmet, and the operator must wear approved eye protection unless it has a windscreen"
+    },
+    {
+      "rule": "Titled and registered as a Class D (motorcycle) vehicle, and must carry liability insurance"
+    }
   ],
   "sources": [
     "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gtr&section=11-136&enactments=false",

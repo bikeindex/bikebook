@@ -1,23 +1,39 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/ri/motorcycle",
   "jurisdiction": "US-RI",
   "groups": [
     "evc/motorcycle"
   ],
   "name": "Motorcycle",
-  "description": "A motor vehicle with no more than three wheels on the ground and a saddle the rider sits astride; an electric one whose motor produces more than 5 horsepower (about 3,730 W) is a full motorcycle rather than a motor-driven cycle. Defined by Rhode Island General Laws §31-1-3(n).",
+  "description": "A motor vehicle with no more than three wheels on the ground and a saddle the rider sits astride; an electric one whose motor produces more than 5 horsepower (about 3,750 W) is a full motorcycle rather than a motor-driven cycle. Defined by Rhode Island General Laws §31-1-3(n).",
   "throttle": true,
-  "min_power": 3730,
+  "min_power": 3750,
   "restrictions": [
-    "A saddle the rider sits astride, and no more than three wheels on the ground",
-    "Its motor produces more than 5 horsepower (about 3,730 W)",
-    "Riders need a driver's license with a motorcycle (M) endorsement, which requires being 16 or older and completing a CCRI motorcycle safety course; motorcycle permits are no longer issued",
-    "Riders under 21, and every rider in the first year after their motorcycle license is issued, must wear an approved helmet",
-    "Riders must wear approved eye protection",
-    "Must have a rear-view mirror",
-    "Registered with the DMV as a motorcycle",
-    "One built for off-road use that the DMV won't register for the road is a recreational vehicle instead"
+    {
+      "rule": "A saddle the rider sits astride, and no more than three wheels on the ground"
+    },
+    {
+      "rule": "Its motor produces more than 5 horsepower (about 3,750 W)"
+    },
+    {
+      "rule": "Riders need a driver's license with a motorcycle (M) endorsement, which requires being 16 or older and completing a CCRI motorcycle safety course; motorcycle permits are no longer issued"
+    },
+    {
+      "rule": "Riders under 21, and every rider in the first year after their motorcycle license is issued, must wear an approved helmet"
+    },
+    {
+      "rule": "Riders must wear approved eye protection"
+    },
+    {
+      "rule": "Must have a rear-view mirror"
+    },
+    {
+      "rule": "Registered with the DMV as a motorcycle"
+    },
+    {
+      "rule": "One built for off-road use that the DMV won't register for the road is a recreational vehicle instead"
+    }
   ],
   "sources": [
     "https://webserver.rilegislature.gov/Statutes/TITLE31/31-1/31-1-3.htm",

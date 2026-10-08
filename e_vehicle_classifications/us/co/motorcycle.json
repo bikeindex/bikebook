@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/co/motorcycle",
   "jurisdiction": "US-CO",
   "name": "Motorcycle",
@@ -7,18 +7,43 @@
   "throttle": true,
   "min_power": 4476,
   "restrictions": [
-    "Handlebars connected to the front wheel or wheels, a seat the rider sits astride, and no more than three wheels on the ground",
-    "Its motor exceeds 4,476 W or it has a manual clutch; below that, without a manual clutch, it is a low-power scooter",
-    "Built for the roadways; one designed primarily for use off the public highways, such as an electric dirt bike, is an off-highway vehicle instead",
-    "Riders need a driver's license with a motorcycle endorsement; a three-wheel-only endorsement doesn't cover a two-wheeler",
-    "The endorsement requires age 16; riders under 18 must first hold a motorcycle instruction permit for 12 months, and those under 16 must pass a Colorado State Patrol-approved training course before getting one",
-    "From August 12, 2026, a minor under 18 who isn't emancipated needs a parent's or legal guardian's written permission to get a motorcycle instruction permit (HB 26-1079)",
-    "Riders and passengers under 18 must wear a motorcycle helmet meeting FMVSS 218",
-    "Riders and passengers must wear goggles or eyeglasses with safety glass or plastic lenses, unless their helmet has eye protection",
-    "Titled, registered and plated with the DMV, and must carry liability insurance",
-    "Entitled to a full traffic lane; no lane splitting, passing in the same lane, or riding more than two abreast",
-    "Restricted to roads and to OHV trails and forest roads open to motorized use; not allowed on sidewalks or non-motorized trails",
-    "On OHV trails and public-land routes, a plated motorcycle also needs a Colorado Parks and Wildlife OHV permit"
+    {
+      "rule": "Handlebars connected to the front wheel or wheels, a seat the rider sits astride, and no more than three wheels on the ground"
+    },
+    {
+      "rule": "Its motor exceeds 4,476 W or it has a manual clutch; below that, without a manual clutch, it is a low-power scooter"
+    },
+    {
+      "rule": "Built for the roadways; one designed primarily for use off the public highways, such as an electric dirt bike, is an off-highway vehicle instead"
+    },
+    {
+      "rule": "Riders need a driver's license with a motorcycle endorsement; a three-wheel-only endorsement doesn't cover a two-wheeler"
+    },
+    {
+      "rule": "The endorsement requires age 16; riders under 18 must first hold a motorcycle instruction permit for 12 months, and those under 16 must pass a Colorado State Patrol-approved training course before getting one"
+    },
+    {
+      "rule": "A minor under 18 who isn't emancipated needs a parent's or legal guardian's written permission to get a motorcycle instruction permit (HB 26-1079)",
+      "starts_on": "2026-08-12"
+    },
+    {
+      "rule": "Riders and passengers under 18 must wear a motorcycle helmet meeting FMVSS 218"
+    },
+    {
+      "rule": "Riders and passengers must wear goggles or eyeglasses with safety glass or plastic lenses, unless their helmet has eye protection"
+    },
+    {
+      "rule": "Titled, registered and plated with the DMV, and must carry liability insurance"
+    },
+    {
+      "rule": "Entitled to a full traffic lane; no lane splitting, passing in the same lane, or riding more than two abreast"
+    },
+    {
+      "rule": "Restricted to roads and to OHV trails and forest roads open to motorized use; not allowed on sidewalks or non-motorized trails"
+    },
+    {
+      "rule": "On OHV trails and public-land routes, a plated motorcycle also needs a Colorado Parks and Wildlife OHV permit"
+    }
   ],
   "sources": [
     "https://codes.findlaw.com/co/title-42-vehicles-and-traffic/co-rev-st-sect-42-1-102/",

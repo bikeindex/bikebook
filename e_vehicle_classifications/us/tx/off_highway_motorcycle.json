@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/tx/off_highway_motorcycle",
   "jurisdiction": "US-TX",
   "groups": [
@@ -9,10 +9,18 @@
   "description": "A motorcycle ridden for off-highway recreation, one of the off-highway vehicles that need a Texas Parks and Wildlife decal on public riding land, which is how an off-road electric dirt bike is ridden legally. Defined as an off-highway vehicle by Texas Parks and Wildlife Code §29.001.",
   "throttle": true,
   "restrictions": [
-    "Built for off-highway recreation; no limit on motor power or speed",
-    "Needs an annual off-highway vehicle decal from Texas Parks and Wildlife, at least $8 and valid September through August, to ride on public land or land developed with a department grant where off-highway riding is legal",
-    "The Transportation Code calls a seated two-wheeler with an electric motor that isn't designed for highway use and can't be titled a pocket bike or minimotorbike, and nothing in Texas's scooter law authorizes one on a road, street, bicycle path or sidewalk",
-    "The all-terrain vehicle rules, including their safety certificate, cover only vehicles on three or more tires"
+    {
+      "rule": "Built for off-highway recreation; no limit on motor power or speed"
+    },
+    {
+      "rule": "Needs an annual off-highway vehicle decal from Texas Parks and Wildlife, at least $8 and valid September through August, to ride on public land or land developed with a department grant where off-highway riding is legal"
+    },
+    {
+      "rule": "The Transportation Code calls a seated two-wheeler with an electric motor that isn't designed for highway use and can't be titled a pocket bike or minimotorbike, and nothing in Texas's scooter law authorizes one on a road, street, bicycle path or sidewalk"
+    },
+    {
+      "rule": "The all-terrain vehicle rules, including their safety certificate, cover only vehicles on three or more tires"
+    }
   ],
   "sources": [
     "https://statutes.capitol.texas.gov/Docs/PW/htm/PW.29.htm",

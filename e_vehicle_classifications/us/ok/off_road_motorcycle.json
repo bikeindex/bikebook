@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/ok/off_road_motorcycle",
   "jurisdiction": "US-OK",
   "groups": [
@@ -9,11 +9,21 @@
   "description": "A motorcycle manufactured for and used exclusively off roads, highways and other paved surfaces, such as an off-road e-moto. Defined by 47 O.S. §1102 and registered and titled under §§1105 and 1115.3.",
   "throttle": true,
   "restrictions": [
-    "A motorcycle manufactured for and used exclusively off roads, highways and other paved surfaces",
-    "Registered once with Service Oklahoma within 30 days of purchase, with no yearly registration fee; optional for one bought before July 1, 2005, or owned under an agricultural exemption",
-    "Titled when bought or transferred on or after July 1, 2005",
-    "Exempt from the motorcycle equipment rules (mirrors, windshield or eyewear, speedometer, fenders, horn) on trail rides off public roads",
-    "Riders and passengers under 18 must wear a helmet meeting FMVSS 218"
+    {
+      "rule": "A motorcycle manufactured for and used exclusively off roads, highways and other paved surfaces"
+    },
+    {
+      "rule": "Registered once with Service Oklahoma within 30 days of purchase, with no yearly registration fee; optional for one bought before July 1, 2005, or owned under an agricultural exemption"
+    },
+    {
+      "rule": "Titled when bought or transferred on or after July 1, 2005"
+    },
+    {
+      "rule": "Exempt from the motorcycle equipment rules (mirrors, windshield or eyewear, speedometer, fenders, horn) on trail rides off public roads"
+    },
+    {
+      "rule": "Riders and passengers under 18 must wear a helmet meeting FMVSS 218"
+    }
   ],
   "sources": [
     "https://www.oklegislature.gov/OK_Statutes/CompleteTitles/os47.pdf"

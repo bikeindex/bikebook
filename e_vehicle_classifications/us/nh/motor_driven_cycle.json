@@ -1,23 +1,39 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/nh/motor_driven_cycle",
   "jurisdiction": "US-NH",
   "groups": [
     "evc/motor_driven_cycle"
   ],
   "name": "Motor-Driven Cycle",
-  "description": "Any motorcycle or motor scooter whose motor produces no more than 5 horsepower (3,730 W), and any bicycle with a motor attached that isn't an electric bicycle; one that can't reach more than 30 mph within a mile is a moped instead. Defined by New Hampshire RSA 259:65.",
+  "description": "Any motorcycle or motor scooter whose motor produces no more than 5 horsepower (3,750 W), and any bicycle with a motor attached that isn't an electric bicycle; one that can't reach more than 30 mph within a mile is a moped instead. Defined by New Hampshire RSA 259:65.",
   "throttle": true,
-  "max_power": 3730,
+  "max_power": 3750,
   "restrictions": [
-    "A motorcycle or motor scooter with a motor of no more than 5 horsepower (3,730 W)",
-    "A pedaled bike with a motor outside the e-bike limits is a motor-driven cycle too",
-    "One that can reach no more than 30 mph within a mile is a moped",
-    "Riders need a motorcycle license or endorsement, or a motorcycle learner's permit",
-    "Riders and passengers under 18 must wear a helmet",
-    "Riders need eyeglasses, goggles or a face shield unless a windshield protects their eyes and face",
-    "Can't go faster than 35 mph at night unless its headlamp shows a person or vehicle 300 feet ahead",
-    "Registered with a permit from the city or town and a state plate"
+    {
+      "rule": "A motorcycle or motor scooter with a motor of no more than 5 horsepower (3,750 W)"
+    },
+    {
+      "rule": "A pedaled bike with a motor outside the e-bike limits is a motor-driven cycle too"
+    },
+    {
+      "rule": "One that can reach no more than 30 mph within a mile is a moped"
+    },
+    {
+      "rule": "Riders need a motorcycle license or endorsement, or a motorcycle learner's permit"
+    },
+    {
+      "rule": "Riders and passengers under 18 must wear a helmet"
+    },
+    {
+      "rule": "Riders need eyeglasses, goggles or a face shield unless a windshield protects their eyes and face"
+    },
+    {
+      "rule": "Can't go faster than 35 mph at night unless its headlamp shows a person or vehicle 300 feet ahead"
+    },
+    {
+      "rule": "Registered with a permit from the city or town and a state plate"
+    }
   ],
   "sources": [
     "https://gc.nh.gov/rsa/html/XXI/259/259-65.htm",

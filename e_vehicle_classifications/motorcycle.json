@@ -1,14 +1,22 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/motorcycle",
   "name": "Motorcycle, over 5 hp",
-  "description": "A road motorcycle whose motor produces more than 5 brake horsepower (3,730 W), which is a motorcycle under every classification naming this group. A vehicle carries this group's id in place of each classification in it.",
+  "description": "A road motorcycle whose motor produces more than 5 brake horsepower (3,750 W), which is a motorcycle under every classification naming this group. A vehicle carries this group's id in place of each classification in it.",
   "throttle": true,
-  "min_power": 3730,
+  "min_power": 3750,
   "restrictions": [
-    "A seat or saddle and no more than three wheels",
-    "Its motor produces more than 5 brake horsepower (3,730 W)",
-    "Built for highway use; one built for off-highway use is an off-highway motorcycle instead",
-    "Each classification naming this group holds its own jurisdiction's license, registration, insurance, helmet and riding rules"
+    {
+      "rule": "A seat or saddle and no more than three wheels"
+    },
+    {
+      "rule": "Its motor produces more than 5 brake horsepower (3,750 W)"
+    },
+    {
+      "rule": "Built for highway use; one built for off-highway use is an off-highway motorcycle instead"
+    },
+    {
+      "rule": "Each classification naming this group holds its own jurisdiction's license, registration, insurance, helmet and riding rules"
+    }
   ]
 }

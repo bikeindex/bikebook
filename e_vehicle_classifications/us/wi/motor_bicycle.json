@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/wi/motor_bicycle",
   "jurisdiction": "US-WI",
   "name": "Motor Bicycle",
@@ -7,13 +7,27 @@
   "throttle": true,
   "max_speed": 48.28,
   "restrictions": [
-    "A bicycle with a seat and an added power unit that isn't part of the original vehicle",
-    "Travels no faster than 30 mph with a 150-pound rider on a dry, level, hard surface with no wind",
-    "Not an electric bicycle or a moped",
-    "Riders need a valid operator's license, or a special restricted or restricted license",
-    "Ridden under the rules for bicycles, except the crosswalk rules",
-    "Not allowed on a bicycle way with the power unit running",
-    "Exempt from state registration, though a municipality may require local registration"
+    {
+      "rule": "A bicycle with a seat and an added power unit that isn't part of the original vehicle"
+    },
+    {
+      "rule": "Travels no faster than 30 mph with a 150-pound rider on a dry, level, hard surface with no wind"
+    },
+    {
+      "rule": "Not an electric bicycle or a moped"
+    },
+    {
+      "rule": "Riders need a valid operator's license, or a special restricted or restricted license"
+    },
+    {
+      "rule": "Ridden under the rules for bicycles, except the crosswalk rules"
+    },
+    {
+      "rule": "Not allowed on a bicycle way with the power unit running"
+    },
+    {
+      "rule": "Exempt from state registration, though a municipality may require local registration"
+    }
   ],
   "sources": [
     "https://docs.legis.wisconsin.gov/document/statutes/340.01(30)",

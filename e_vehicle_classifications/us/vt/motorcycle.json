@@ -1,24 +1,42 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/vt/motorcycle",
   "jurisdiction": "US-VT",
   "groups": [
     "evc/motorcycle"
   ],
   "name": "Motorcycle",
-  "description": "A motor vehicle with a seat or saddle designed to travel on no more than three wheels, other than a motor-driven cycle, motor-assisted bicycle or electric bicycle; an electric two-wheeler whose motor exceeds two brake horsepower (1,492 W) or that can go faster than 30 mph is one. Defined by 23 V.S.A. §4(18), unchanged by the 2025–2026 sessions.",
+  "description": "A motor vehicle with a seat or saddle designed to travel on no more than three wheels, other than a motor-driven cycle, motor-assisted bicycle or electric bicycle; an electric two-wheeler whose motor exceeds two brake horsepower (1,500 W) or that can go faster than 30 mph is one. Defined by 23 V.S.A. §4(18), unchanged by the 2025–2026 sessions.",
   "throttle": true,
-  "min_power": 1492,
+  "min_power": 1500,
   "restrictions": [
-    "A seat or saddle and no more than three wheels on the ground; includes autocycles",
-    "Anything faster or more powerful than a motor-driven cycle (two brake horsepower, 30 mph) is a motorcycle",
-    "Riders need a driver's or junior driver's license with a motorcycle endorsement, earned by passing a knowledge exam and a skills exam",
-    "Every rider and passenger must wear a helmet meeting FMVSS 218 on a highway, except in a fully enclosed autocycle",
-    "The operator must wear glasses, goggles or a face shield if it has no windshield",
-    "Registered with the DMV each year, and must carry liability insurance",
-    "An off-road motorcycle must pass a Vermont state safety inspection before it can be registered or titled for road use",
-    "Off the highway, a two-wheeled vehicle is an ATV, with its registration and trail-decal rules, only if it has permanent, full-time power to both wheels; an ordinary electric dirt bike isn't one",
-    "Ridden in the travel lanes like any motor vehicle"
+    {
+      "rule": "A seat or saddle and no more than three wheels on the ground; includes autocycles"
+    },
+    {
+      "rule": "Anything faster or more powerful than a motor-driven cycle (two brake horsepower, 30 mph) is a motorcycle"
+    },
+    {
+      "rule": "Riders need a driver's or junior driver's license with a motorcycle endorsement, earned by passing a knowledge exam and a skills exam"
+    },
+    {
+      "rule": "Every rider and passenger must wear a helmet meeting FMVSS 218 on a highway, except in a fully enclosed autocycle"
+    },
+    {
+      "rule": "The operator must wear glasses, goggles or a face shield if it has no windshield"
+    },
+    {
+      "rule": "Registered with the DMV each year, and must carry liability insurance"
+    },
+    {
+      "rule": "An off-road motorcycle must pass a Vermont state safety inspection before it can be registered or titled for road use"
+    },
+    {
+      "rule": "Off the highway, a two-wheeled vehicle is an ATV, with its registration and trail-decal rules, only if it has permanent, full-time power to both wheels; an ordinary electric dirt bike isn't one"
+    },
+    {
+      "rule": "Ridden in the travel lanes like any motor vehicle"
+    }
   ],
   "sources": [
     "https://legislature.vermont.gov/statutes/section/23/001/00004",

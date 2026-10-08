@@ -1,23 +1,39 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/ks/motorcycle",
   "jurisdiction": "US-KS",
   "groups": [
     "evc/motorcycle"
   ],
   "name": "Motorcycle",
-  "description": "A motor vehicle with a seat or saddle designed to travel on no more than three wheels; an electric one whose motor produces more than 5 brake horsepower (3,730 W) is a full motorcycle rather than a motor-driven cycle. Defined by Kansas Statutes Annotated §8-1438 and §8-126(x).",
+  "description": "A motor vehicle with a seat or saddle designed to travel on no more than three wheels; an electric one whose motor produces more than 5 brake horsepower (3,750 W) is a full motorcycle rather than a motor-driven cycle. Defined by Kansas Statutes Annotated §8-1438 and §8-126(x).",
   "throttle": true,
-  "min_power": 3730,
+  "min_power": 3750,
   "restrictions": [
-    "A seat or saddle, and no more than three wheels on the ground; excludes electric-assisted bicycles",
-    "Its motor produces more than 5 brake horsepower (3,730 W); one at or below that is a motor-driven cycle",
-    "A vehicle exceeding any motorized bicycle limit is titled and registered as a motorcycle",
-    "Riders need a class M driver's license",
-    "Riders and passengers under 18 must wear a motorcycle helmet",
-    "The operator must wear shatterproof eye protection unless it has a windscreen at least 10 inches tall, and passengers under 18 must wear it regardless",
-    "Titled and registered, and must carry motor vehicle liability insurance",
-    "Kansas has no off-highway motorcycle category: its all-terrain vehicle definition needs three or more tires, so a two-wheeled off-road e-moto is still a motorcycle and can't be ridden on a highway unless registered"
+    {
+      "rule": "A seat or saddle, and no more than three wheels on the ground; excludes electric-assisted bicycles"
+    },
+    {
+      "rule": "Its motor produces more than 5 brake horsepower (3,750 W); one at or below that is a motor-driven cycle"
+    },
+    {
+      "rule": "A vehicle exceeding any motorized bicycle limit is titled and registered as a motorcycle"
+    },
+    {
+      "rule": "Riders need a class M driver's license"
+    },
+    {
+      "rule": "Riders and passengers under 18 must wear a motorcycle helmet"
+    },
+    {
+      "rule": "The operator must wear shatterproof eye protection unless it has a windscreen at least 10 inches tall, and passengers under 18 must wear it regardless"
+    },
+    {
+      "rule": "Titled and registered, and must carry motor vehicle liability insurance"
+    },
+    {
+      "rule": "Kansas has no off-highway motorcycle category: its all-terrain vehicle definition needs three or more tires, so a two-wheeled off-road e-moto is still a motorcycle and can't be ridden on a highway unless registered"
+    }
   ],
   "sources": [
     "https://ksrevisor.gov/statutes/chapters/ch08/008_014_0038.html",

@@ -1,26 +1,48 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/al/motor_driven_cycle",
   "jurisdiction": "US-AL",
   "groups": [
     "evc/motor_driven_cycle"
   ],
   "name": "Motor-Driven Cycle",
-  "description": "Alabama's light motorcycle class, which takes in mopeds and motor scooters: a motorcycle whose motor produces 5 brake horsepower (3,730 W) or less and that weighs under 200 lb fully equipped, plus any bicycle with a motor attached. An electric bicycle over the e-bike limits lands here. Defined by Code of Alabama §32-1-1.1(37), with the e-bike exclusion added by HB 99 (Act 2021-134).",
+  "description": "Alabama's light motorcycle class, which takes in mopeds and motor scooters: a motorcycle whose motor produces 5 brake horsepower (3,750 W) or less and that weighs under 200 lb fully equipped, plus any bicycle with a motor attached. An electric bicycle over the e-bike limits lands here. Defined by Code of Alabama §32-1-1.1(37), with the e-bike exclusion added by HB 99 (Act 2021-134).",
   "throttle": true,
-  "max_power": 3730,
+  "max_power": 3750,
   "restrictions": [
-    "A motorcycle or motor scooter (a seat or saddle and no more than three wheels) whose motor produces no more than 5 brake horsepower (3,730 W) and that weighs less than 200 lb fully equipped",
-    "Any bicycle with a motor attached is a motor-driven cycle too; the statute sets no power limit for one",
-    "A bicycle whose motor is 750 W or more, or that fits none of the three e-bike classes, is no longer an electric bicycle and lands here",
-    "Alabama law has no separate moped category; the state treats a moped as a motor-driven cycle",
-    "Riders need Class M on their license; at 14 or 15 they can get a Class M restricted to motor-driven cycles (restriction B) by passing the motorcycle knowledge test or an MSF Basic Riders Course",
-    "Riders 17 and younger are held to the graduated license's operating hours and restrictions",
-    "Riders and passengers must wear a motorcycle helmet meeting Alabama's standard, and shoes",
-    "Registered and tagged to ride on public highways, and must carry liability insurance; exempt from title",
-    "Needs at least one working brake, which the state may inspect and disapprove",
-    "At night or in poor visibility, can't go faster than 35 mph unless its headlamp lights a person or vehicle 300 feet ahead",
-    "Not allowed on sidewalks"
+    {
+      "rule": "A motorcycle or motor scooter (a seat or saddle and no more than three wheels) whose motor produces no more than 5 brake horsepower (3,750 W) and that weighs less than 200 lb fully equipped"
+    },
+    {
+      "rule": "Any bicycle with a motor attached is a motor-driven cycle too; the statute sets no power limit for one"
+    },
+    {
+      "rule": "A bicycle whose motor is 750 W or more, or that fits none of the three e-bike classes, is no longer an electric bicycle and lands here"
+    },
+    {
+      "rule": "Alabama law has no separate moped category; the state treats a moped as a motor-driven cycle"
+    },
+    {
+      "rule": "Riders need Class M on their license; at 14 or 15 they can get a Class M restricted to motor-driven cycles (restriction B) by passing the motorcycle knowledge test or an MSF Basic Riders Course"
+    },
+    {
+      "rule": "Riders 17 and younger are held to the graduated license's operating hours and restrictions"
+    },
+    {
+      "rule": "Riders and passengers must wear a motorcycle helmet meeting Alabama's standard, and shoes"
+    },
+    {
+      "rule": "Registered and tagged to ride on public highways, and must carry liability insurance; exempt from title"
+    },
+    {
+      "rule": "Needs at least one working brake, which the state may inspect and disapprove"
+    },
+    {
+      "rule": "At night or in poor visibility, can't go faster than 35 mph unless its headlamp lights a person or vehicle 300 feet ahead"
+    },
+    {
+      "rule": "Not allowed on sidewalks"
+    }
   ],
   "sources": [
     "https://alison.legislature.state.al.us/code-of-alabama?section=32-1-1.1",

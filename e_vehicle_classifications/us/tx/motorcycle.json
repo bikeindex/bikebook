@@ -1,21 +1,35 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/tx/motorcycle",
   "jurisdiction": "US-TX",
   "groups": [
     "evc/motorcycle"
   ],
   "name": "Motorcycle",
-  "description": "A motor vehicle, other than a tractor or moped, with a rider's saddle and no more than three wheels on the ground: an electric two-wheeler that can top 30 mph or has a motor over 5 brake horsepower (about 3,730 W) is a motorcycle. Defined by Texas Transportation Code §541.201(9); Texas dropped its separate motor-driven cycle category in 2019 (HB 3171).",
+  "description": "A motor vehicle, other than a tractor or moped, with a rider's saddle and no more than three wheels on the ground: an electric two-wheeler that can top 30 mph or has a motor over 5 brake horsepower (about 3,750 W) is a motorcycle. Defined by Texas Transportation Code §541.201(9); Texas dropped its separate motor-driven cycle category in 2019 (HB 3171).",
   "throttle": true,
   "restrictions": [
-    "A rider's saddle and no more than three wheels on the ground",
-    "Anything faster than a moped's 30 mph or with a motor over 5 brake horsepower (about 3,730 W)",
-    "Riders need a Class M license, which requires completing a DPS-approved motorcycle operator training course",
-    "Riders 15 to 17 who've completed the course can get a restricted Class M license, limited to 250 cc until 16",
-    "Riders and passengers must wear a motorcycle helmet, unless 21 or older and either trained in an approved motorcycle safety course or covered by health insurance for motorcycle crash injuries",
-    "Registered with the Texas DMV for $30 a year, and must carry liability insurance",
-    "Carries a passenger only if built for one, with footrests and handholds, and never one under 5 except in a sidecar"
+    {
+      "rule": "A rider's saddle and no more than three wheels on the ground"
+    },
+    {
+      "rule": "Anything faster than a moped's 30 mph or with a motor over 5 brake horsepower (about 3,750 W)"
+    },
+    {
+      "rule": "Riders need a Class M license, which requires completing a DPS-approved motorcycle operator training course"
+    },
+    {
+      "rule": "Riders 15 to 17 who've completed the course can get a restricted Class M license, limited to 250 cc until 16"
+    },
+    {
+      "rule": "Riders and passengers must wear a motorcycle helmet, unless 21 or older and either trained in an approved motorcycle safety course or covered by health insurance for motorcycle crash injuries"
+    },
+    {
+      "rule": "Registered with the Texas DMV for $30 a year, and must carry liability insurance"
+    },
+    {
+      "rule": "Carries a passenger only if built for one, with footrests and handholds, and never one under 5 except in a sidecar"
+    }
   ],
   "sources": [
     "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.541.htm",

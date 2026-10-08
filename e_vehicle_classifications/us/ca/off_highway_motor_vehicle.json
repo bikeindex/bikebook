@@ -1,15 +1,23 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/ca/off_highway_motor_vehicle",
   "jurisdiction": "US-CA",
   "name": "Off-Highway Motor Vehicle",
   "description": "A motor vehicle used only off the highway and not registered for it, such as an electric ATV or off-road quad. Defined by California Vehicle Code §38010 and §38012, whose list of examples (all-terrain vehicles, dirt bikes, dune buggies, jeeps) isn't exhaustive.",
   "throttle": true,
   "restrictions": [
-    "Not registered for highway use, so it can't be ridden on a highway, street, sidewalk, bike lane or bike path",
-    "Ridden only in designated OHV areas, on public lands open to off-highway vehicles, or on private property",
-    "Identified with a California OHV Green Sticker from the DMV to ride on public lands, or on private land open to the public; not needed on private land the owner controls",
-    "One that is an all-terrain vehicle (a single seat the operator straddles, three or more low-pressure tires, 50 inches or narrower and 900 lb or lighter) also needs: a motorcycle helmet on everyone aboard, a safety certificate, training course or certified adult's supervision for a rider under 18, a parent or authorized adult supervising a rider under 14, and no passenger unless it's built for one"
+    {
+      "rule": "Not registered for highway use, so it can't be ridden on a highway, street, sidewalk, bike lane or bike path"
+    },
+    {
+      "rule": "Ridden only in designated OHV areas, on public lands open to off-highway vehicles, or on private property"
+    },
+    {
+      "rule": "Identified with a California OHV Green Sticker from the DMV to ride on public lands, or on private land open to the public; not needed on private land the owner controls"
+    },
+    {
+      "rule": "One that is an all-terrain vehicle (a single seat the operator straddles, three or more low-pressure tires, 50 inches or narrower and 900 lb or lighter) also needs: a motorcycle helmet on everyone aboard, a safety certificate, training course or certified adult's supervision for a rider under 18, a parent or authorized adult supervising a rider under 14, and no passenger unless it's built for one"
+    }
   ],
   "sources": [
     "https://ohv.parks.ca.gov/pages/1234/files/OHV%20Information%20Bulletin%2025-1%20SB-586%20Electric%20Motorcycles%20ADA%20Final.pdf",

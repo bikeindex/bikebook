@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/mi/motorcycle",
   "jurisdiction": "US-MI",
   "groups": [
@@ -9,13 +9,27 @@
   "description": "A motor vehicle with a saddle or seat, designed to travel on no more than three wheels. An electric two-wheeler that isn't an electric bicycle and can go faster than 30 mph is a motorcycle. Defined by Michigan Compiled Laws §257.31.",
   "throttle": true,
   "restrictions": [
-    "A saddle or seat, and no more than three wheels on the ground",
-    "Faster than a moped's 30 mph limit, or with a gearbox the rider shifts",
-    "Riders need a motorcycle endorsement on their license; riders under 18 must first pass an approved motorcycle safety course, and older applicants pass a test that includes riding",
-    "Every rider and passenger must wear an approved crash helmet, unless 21 or older with ,000 of first-party medical coverage and, for the operator, two years' endorsement or a safety course",
-    "Registered with the Secretary of State",
-    "Entitled to full use of a lane; no riding between lines of traffic or more than two abreast",
-    "Riders sit astride a permanent seat, carrying no more people than it's built for"
+    {
+      "rule": "A saddle or seat, and no more than three wheels on the ground"
+    },
+    {
+      "rule": "Faster than a moped's 30 mph limit, or with a gearbox the rider shifts"
+    },
+    {
+      "rule": "Riders need a motorcycle endorsement on their license; riders under 18 must first pass an approved motorcycle safety course, and older applicants pass a test that includes riding"
+    },
+    {
+      "rule": "Every rider and passenger must wear an approved crash helmet, unless 21 or older with ,000 of first-party medical coverage and, for the operator, two years' endorsement or a safety course"
+    },
+    {
+      "rule": "Registered with the Secretary of State"
+    },
+    {
+      "rule": "Entitled to full use of a lane; no riding between lines of traffic or more than two abreast"
+    },
+    {
+      "rule": "Riders sit astride a permanent seat, carrying no more people than it's built for"
+    }
   ],
   "sources": [
     "https://www.legislature.mi.gov/documents/mcl/pdf/MCL-257-31.pdf",

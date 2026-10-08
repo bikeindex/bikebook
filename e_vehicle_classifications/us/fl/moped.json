@@ -1,26 +1,46 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/fl/moped",
   "jurisdiction": "US-FL",
   "groups": [
     "evc/moped"
   ],
   "name": "Moped",
-  "description": "A pedaled two- or three-wheeler with a seat whose motor is rated at 2 brake horsepower (1,492 W) or less and can't propel it faster than 30 mph; an electric bike with a motor of 750 W or more, or one outside the three e-bike classes, lands here while it stays within those limits. Defined by Florida Statutes §316.003(44) and §320.01(27).",
+  "description": "A pedaled two- or three-wheeler with a seat whose motor is rated at 2 brake horsepower (1,500 W) or less and can't propel it faster than 30 mph; an electric bike with a motor of 750 W or more, or one outside the three e-bike classes, lands here while it stays within those limits. Defined by Florida Statutes §316.003(44) and §320.01(27).",
   "throttle": true,
   "max_speed": 48.28,
-  "max_power": 1492,
+  "max_power": 1500,
   "restrictions": [
-    "Pedals for human propulsion, a seat or saddle, and no more than three wheels",
-    "Its motor is rated at no more than 2 brake horsepower (1,492 W) and can't propel it faster than 30 mph on level ground",
-    "An automatic drive: no clutching or shifting by the rider once the drive system is engaged",
-    "Without pedals it isn't a moped but a motorcycle, whatever its power",
-    "Riders need a driver's license and must be 16 or older; no motorcycle endorsement, since the licensing law's motorcycle definition excludes mopeds",
-    "Riders 16 or older needn't wear a helmet or eye protection",
-    "Registered with FLHSMV, with the plate permanently affixed and visible from the rear; it isn't titled",
-    "Registering it doesn't require insurance: PIP and property damage liability proof applies only to vehicles with four or more wheels",
-    "Carries a passenger only on a seat designed for one",
-    "Not allowed on sidewalks or bicycle paths"
+    {
+      "rule": "Pedals for human propulsion, a seat or saddle, and no more than three wheels"
+    },
+    {
+      "rule": "Its motor is rated at no more than 2 brake horsepower (1,500 W) and can't propel it faster than 30 mph on level ground"
+    },
+    {
+      "rule": "An automatic drive: no clutching or shifting by the rider once the drive system is engaged"
+    },
+    {
+      "rule": "Without pedals it isn't a moped but a motorcycle, whatever its power"
+    },
+    {
+      "rule": "Riders need a driver's license and must be 16 or older; no motorcycle endorsement, since the licensing law's motorcycle definition excludes mopeds"
+    },
+    {
+      "rule": "Riders 16 or older needn't wear a helmet or eye protection"
+    },
+    {
+      "rule": "Registered with FLHSMV, with the plate permanently affixed and visible from the rear; it isn't titled"
+    },
+    {
+      "rule": "Registering it doesn't require insurance: PIP and property damage liability proof applies only to vehicles with four or more wheels"
+    },
+    {
+      "rule": "Carries a passenger only on a seat designed for one"
+    },
+    {
+      "rule": "Not allowed on sidewalks or bicycle paths"
+    }
   ],
   "sources": [
     "https://www.flsenate.gov/Laws/Statutes/2026/316.003",

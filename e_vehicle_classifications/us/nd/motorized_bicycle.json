@@ -1,25 +1,43 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/nd/motorized_bicycle",
   "jurisdiction": "US-ND",
   "groups": [
     "evc/moped"
   ],
   "name": "Motorized Bicycle",
-  "description": "A moped: two or three wheels, pedals or footrests, a power source of no more than 2 brake horsepower (1,492 W) that can't push it past 30 mph unassisted on a level road, an automatic drive and a width of 32 inches or less. An electric vehicle qualifies on power and speed alone, since the displacement cap applies only to combustion engines. Defined by North Dakota Century Code §39-01-01 and regulated with motorcycles by chapter 39-10.2.",
+  "description": "A moped: two or three wheels, pedals or footrests, a power source of no more than 2 brake horsepower (1,500 W) that can't push it past 30 mph unassisted on a level road, an automatic drive and a width of 32 inches or less. An electric vehicle qualifies on power and speed alone, since the displacement cap applies only to combustion engines. Defined by North Dakota Century Code §39-01-01 and regulated with motorcycles by chapter 39-10.2.",
   "throttle": true,
   "max_speed": 48.28,
-  "max_power": 1492,
+  "max_power": 1500,
   "restrictions": [
-    "Two or three wheels, with foot pedals or footrests",
-    "A power source of no more than 2 brake horsepower (1,492 W) that can't propel it faster than 30 mph unassisted on a level road",
-    "A direct or automatic drive needing no clutching or shifting once engaged, and no wider than 32 inches",
-    "An electric bicycle is excluded, so an e-bike over 750 watts or past its class speed lands here if it stays within these limits",
-    "Counted as a motor vehicle for registration, title and operator's licensing",
-    "Riders need an operator's license or permit, or a motorized bicycle operator's permit, available from 14 with a written test; a class M license isn't required",
-    "Riders and passengers under 18 must wear a safety helmet meeting US DOT standards, and a passenger must wear one whenever the operator must",
-    "The operator rides astride the permanent seat and carries a passenger only if it's designed for two",
-    "May not be ridden between lanes of traffic or more than two abreast in a lane"
+    {
+      "rule": "Two or three wheels, with foot pedals or footrests"
+    },
+    {
+      "rule": "A power source of no more than 2 brake horsepower (1,500 W) that can't propel it faster than 30 mph unassisted on a level road"
+    },
+    {
+      "rule": "A direct or automatic drive needing no clutching or shifting once engaged, and no wider than 32 inches"
+    },
+    {
+      "rule": "An electric bicycle is excluded, so an e-bike over 750 watts or past its class speed lands here if it stays within these limits"
+    },
+    {
+      "rule": "Counted as a motor vehicle for registration, title and operator's licensing"
+    },
+    {
+      "rule": "Riders need an operator's license or permit, or a motorized bicycle operator's permit, available from 14 with a written test; a class M license isn't required"
+    },
+    {
+      "rule": "Riders and passengers under 18 must wear a safety helmet meeting US DOT standards, and a passenger must wear one whenever the operator must"
+    },
+    {
+      "rule": "The operator rides astride the permanent seat and carries a passenger only if it's designed for two"
+    },
+    {
+      "rule": "May not be ridden between lanes of traffic or more than two abreast in a lane"
+    }
   ],
   "sources": [
     "https://ndlegis.gov/cencode/t39c01.pdf",

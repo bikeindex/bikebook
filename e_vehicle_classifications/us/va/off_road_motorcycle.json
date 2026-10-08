@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/va/off_road_motorcycle",
   "jurisdiction": "US-VA",
   "groups": [
@@ -9,9 +9,15 @@
   "description": "A motorcycle designed exclusively for off-road use by one rider, with no more than two wheels on the ground, such as an electric dirt bike like a Sur-Ron or Talaria. Defined by Code of Virginia §46.2-100.",
   "throttle": true,
   "restrictions": [
-    "Designed exclusively for off-road use, for one rider, with no more than two wheels on the ground; no limit on motor power or speed",
-    "Not registered and gets no plates; a new one needs a title only if it has a gasoline or diesel engine over 50 cc, so an electric one may be titled but needn't be",
-    "Can't be ridden on public roads unless converted for road use, certified to federal motor vehicle safety standards, and titled and registered as a motorcycle"
+    {
+      "rule": "Designed exclusively for off-road use, for one rider, with no more than two wheels on the ground; no limit on motor power or speed"
+    },
+    {
+      "rule": "Not registered and gets no plates; a new one needs a title only if it has a gasoline or diesel engine over 50 cc, so an electric one may be titled but needn't be"
+    },
+    {
+      "rule": "Can't be ridden on public roads unless converted for road use, certified to federal motor vehicle safety standards, and titled and registered as a motorcycle"
+    }
   ],
   "sources": [
     "https://law.lis.virginia.gov/vacode/title46.2/chapter1/section46.2-100/",

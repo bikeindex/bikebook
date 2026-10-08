@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/or/motor_assisted_scooter",
   "jurisdiction": "US-OR",
   "name": "Motor Assisted Scooter",
@@ -8,16 +8,55 @@
   "max_speed": 38.62,
   "max_power": 1000,
   "restrictions": [
-    "No more than four wheels, a foot support or seat, and can be propelled by its motor or by human power",
-    "Its electric motor puts out no more than 1,000 watts and can't propel it faster than 24 mph on level ground; from January 1, 2027 (HB 4007, 2026), no faster than 20 mph",
-    "Riders must be 16 or older and may not ride faster than 15 mph; from January 1, 2027, 14 or older and no faster than 20 mph",
-    "Riders of any age must wear an approved bicycle-type helmet; from January 1, 2027, only riders and passengers under 16 must",
-    "No driver's license, registration or insurance",
-    "No passengers",
-    "Must use an adjacent bicycle lane or path where there is one, unless a local ordinance bans it there",
-    "Kept off highways with a posted speed limit over 25 mph, except in a bicycle lane or to cross",
-    "Kept off sidewalks except to enter or leave adjacent property",
-    "From January 1, 2027, selling one as a motor assisted scooter when it doesn't fit the definition, or is built to be switched or modified out of it, is a traffic violation and an unlawful trade practice"
+    {
+      "rule": "No more than four wheels, a foot support or seat, and can be propelled by its motor or by human power"
+    },
+    {
+      "rule": "Its electric motor puts out no more than 1,000 watts"
+    },
+    {
+      "rule": "Its motor can't propel it faster than 24 mph on level ground",
+      "ends_on": "2027-01-01"
+    },
+    {
+      "rule": "Its motor can't propel it faster than 20 mph on level ground (HB 4007, 2026)",
+      "starts_on": "2027-01-01"
+    },
+    {
+      "rule": "Riders must be 16 or older and may not ride faster than 15 mph",
+      "ends_on": "2027-01-01"
+    },
+    {
+      "rule": "Riders must be 14 or older and may not ride faster than 20 mph",
+      "starts_on": "2027-01-01"
+    },
+    {
+      "rule": "Riders of any age must wear an approved bicycle-type helmet",
+      "ends_on": "2027-01-01"
+    },
+    {
+      "rule": "Riders and passengers under 16 must wear an approved bicycle-type helmet",
+      "starts_on": "2027-01-01"
+    },
+    {
+      "rule": "No driver's license, registration or insurance"
+    },
+    {
+      "rule": "No passengers"
+    },
+    {
+      "rule": "Must use an adjacent bicycle lane or path where there is one, unless a local ordinance bans it there"
+    },
+    {
+      "rule": "Kept off highways with a posted speed limit over 25 mph, except in a bicycle lane or to cross"
+    },
+    {
+      "rule": "Kept off sidewalks except to enter or leave adjacent property"
+    },
+    {
+      "rule": "Selling one as a motor assisted scooter when it doesn't fit the definition, or is built to be switched or modified out of it, is a traffic violation and an unlawful trade practice",
+      "starts_on": "2027-01-01"
+    }
   ],
   "sources": [
     "https://www.oregonlegislature.gov/bills_laws/ors/ors801.html",

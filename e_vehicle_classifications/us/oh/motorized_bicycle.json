@@ -1,23 +1,43 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/oh/motorized_bicycle",
   "jurisdiction": "US-OH",
   "name": "Motorized Bicycle",
-  "description": "A moped: two tandem wheels, or one in front and two behind, that may be pedaled, with a helper motor of no more than 50 cc that produces no more than 1 brake horsepower (746 W) and can't push it past 20 mph on a level surface. An electric bicycle is excluded. Defined by Ohio Revised Code §4511.01(L) and §4501.01(L), and regulated by §4511.521.",
+  "description": "A moped: two tandem wheels, or one in front and two behind, that may be pedaled, with a helper motor of no more than 50 cc that produces no more than 1 brake horsepower (750 W) and can't push it past 20 mph on a level surface. An electric bicycle is excluded. Defined by Ohio Revised Code §4511.01(L) and §4501.01(L), and regulated by §4511.521.",
   "throttle": true,
   "max_speed": 32.19,
-  "max_power": 746,
+  "max_power": 750,
   "restrictions": [
-    "Two tandem wheels, or one in front and two behind, and pedals",
-    "A helper motor of no more than 50 cc piston displacement producing no more than 1 brake horsepower (746 W); the definition doesn't separately address electric motors",
-    "Can't propel it faster than 20 mph on a level surface",
-    "An electric bicycle (operable pedals, under 750 watts, class speeds) is excluded",
-    "Riders 14 and 15 need a probationary motorized bicycle license, which takes a knowledge test and a riding demonstration; riders 16 and older need a driver's license or a motorized bicycle license",
-    "Riders under 18 must wear a protective helmet with the chin strap fastened, and the moped must have a rear-view mirror",
-    "Registered with the BMV, with a $10 license tax",
-    "Carries only the operator",
-    "Ridden within three feet of the right edge of the roadway when practicable, obeying the traffic rules for vehicles",
-    "Barred from freeways"
+    {
+      "rule": "Two tandem wheels, or one in front and two behind, and pedals"
+    },
+    {
+      "rule": "A helper motor of no more than 50 cc piston displacement producing no more than 1 brake horsepower (750 W); the definition doesn't separately address electric motors"
+    },
+    {
+      "rule": "Can't propel it faster than 20 mph on a level surface"
+    },
+    {
+      "rule": "An electric bicycle (operable pedals, under 750 watts, class speeds) is excluded"
+    },
+    {
+      "rule": "Riders 14 and 15 need a probationary motorized bicycle license, which takes a knowledge test and a riding demonstration; riders 16 and older need a driver's license or a motorized bicycle license"
+    },
+    {
+      "rule": "Riders under 18 must wear a protective helmet with the chin strap fastened, and the moped must have a rear-view mirror"
+    },
+    {
+      "rule": "Registered with the BMV, with a $10 license tax"
+    },
+    {
+      "rule": "Carries only the operator"
+    },
+    {
+      "rule": "Ridden within three feet of the right edge of the roadway when practicable, obeying the traffic rules for vehicles"
+    },
+    {
+      "rule": "Barred from freeways"
+    }
   ],
   "sources": [
     "https://codes.ohio.gov/ohio-revised-code/section-4511.01",

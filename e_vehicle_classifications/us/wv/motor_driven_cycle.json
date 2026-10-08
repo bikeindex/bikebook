@@ -1,21 +1,33 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/wv/motor_driven_cycle",
   "jurisdiction": "US-WV",
   "groups": [
     "evc/motor_driven_cycle"
   ],
   "name": "Motor-Driven Cycle",
-  "description": "A light motorcycle with an engine of more than 50 cc but not more than 150 cc, or a motor of not more than five brake horsepower (3,730 W); an electric two-wheeler over the e-bike limits without pedals, or too fast to be a moped, lands here when its motor is within that limit. Defined by West Virginia Code §17C-1-5, unchanged since 2002.",
+  "description": "A light motorcycle with an engine of more than 50 cc but not more than 150 cc, or a motor of not more than five brake horsepower (3,750 W); an electric two-wheeler over the e-bike limits without pedals, or too fast to be a moped, lands here when its motor is within that limit. Defined by West Virginia Code §17C-1-5, unchanged since 2002.",
   "throttle": true,
-  "max_power": 3730,
+  "max_power": 3750,
   "restrictions": [
-    "A motorcycle: a seat or saddle and no more than three wheels",
-    "Its motor produces not more than five brake horsepower (3,730 W)",
-    "Riders need a motorcycle license, a license with a motorcycle (F) endorsement, or a motorcycle instruction permit",
-    "Every rider and passenger must wear a fastened helmet meeting FMVSS 218, ANSI Z90.1 or Snell standards",
-    "Every rider and passenger must wear shatter-resistant safety glasses, goggles or a face shield",
-    "Handlebars or grips may be no more than 15 inches above the seat, and it needs a handlebar or fairing mirror showing 200 feet behind"
+    {
+      "rule": "A motorcycle: a seat or saddle and no more than three wheels"
+    },
+    {
+      "rule": "Its motor produces not more than five brake horsepower (3,750 W)"
+    },
+    {
+      "rule": "Riders need a motorcycle license, a license with a motorcycle (F) endorsement, or a motorcycle instruction permit"
+    },
+    {
+      "rule": "Every rider and passenger must wear a fastened helmet meeting FMVSS 218, ANSI Z90.1 or Snell standards"
+    },
+    {
+      "rule": "Every rider and passenger must wear shatter-resistant safety glasses, goggles or a face shield"
+    },
+    {
+      "rule": "Handlebars or grips may be no more than 15 inches above the seat, and it needs a handlebar or fairing mirror showing 200 feet behind"
+    }
   ],
   "sources": [
     "https://code.wvlegislature.gov/17C-1-5/",

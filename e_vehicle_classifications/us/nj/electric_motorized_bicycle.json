@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/nj/electric_motorized_bicycle",
   "jurisdiction": "US-NJ",
   "name": "Electric Motorized Bicycle",
@@ -7,14 +7,32 @@
   "throttle": true,
   "min_power": 750,
   "restrictions": [
-    "Two wheels, fully operable pedals and an electric motor capable of more than 750 watts",
-    "Capable of more than 28 mph",
-    "Not a motorized bicycle or low-speed electric bicycle: the definition of motorcycle names it, so motorcycle rules apply",
-    "Riders need a motorcycle license or endorsement",
-    "Riders and passengers must wear a motorcycle helmet",
-    "Titled, registered and insured as a motorcycle",
-    "Selling one online is banned until January 19, 2027, a year after P.L.2025, c.285 took effect",
-    "Selling a kit that turns a low-speed electric bicycle into one is prohibited"
+    {
+      "rule": "Two wheels, fully operable pedals and an electric motor capable of more than 750 watts"
+    },
+    {
+      "rule": "Capable of more than 28 mph"
+    },
+    {
+      "rule": "Not a motorized bicycle or low-speed electric bicycle: the definition of motorcycle names it, so motorcycle rules apply"
+    },
+    {
+      "rule": "Riders need a motorcycle license or endorsement"
+    },
+    {
+      "rule": "Riders and passengers must wear a motorcycle helmet"
+    },
+    {
+      "rule": "Titled, registered and insured as a motorcycle"
+    },
+    {
+      "rule": "Selling one online is banned for the year after P.L.2025, c.285 took effect",
+      "starts_on": "2026-01-19",
+      "ends_on": "2027-01-19"
+    },
+    {
+      "rule": "Selling a kit that turns a low-speed electric bicycle into one is prohibited"
+    }
   ],
   "sources": [
     "https://pub.njleg.gov/bills/2024/PL25/285_.HTM",

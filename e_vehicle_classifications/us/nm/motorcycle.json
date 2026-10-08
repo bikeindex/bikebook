@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/nm/motorcycle",
   "jurisdiction": "US-NM",
   "groups": [
@@ -9,16 +9,36 @@
   "description": "Every motor vehicle with a seat or saddle for the rider designed to travel on no more than three wheels. A seated electric two-wheeler past the electric-assisted bicycle limits is one, since New Mexico's moped category covers only small combustion engines. Defined by NMSA 1978 §66-1-4.11, as amended by SB 69 (2023).",
   "throttle": true,
   "restrictions": [
-    "A seat or saddle for the rider, and no more than three wheels on the ground",
-    "An electric moped-class vehicle is a motorcycle because the moped definition requires a piston engine under 50 cc",
-    "A two- or three-wheeler that can exceed 20 mph on electric power alone and isn't an electric-assisted bicycle is also an electric mobility device",
-    "Riders need a Class M license; it's available from 13 with the Motorcycle Safety Foundation Basic RiderCourse, which riders under 18 must complete",
-    "Motorcycle endorsements are set by engine displacement: W for 100 cc and up, Y for 50 to 99 cc, Z under 50 cc",
-    "Newly licensed riders under 18 may not carry passengers",
-    "Riders and passengers under 18 must wear a securely fastened safety helmet",
-    "Riders must wear eye protection unless it has a fixed windshield",
-    "Titled and registered with the Motor Vehicle Division, and must carry liability insurance under the Mandatory Financial Responsibility Act",
-    "Carries a passenger only if it's designed for two"
+    {
+      "rule": "A seat or saddle for the rider, and no more than three wheels on the ground"
+    },
+    {
+      "rule": "An electric moped-class vehicle is a motorcycle because the moped definition requires a piston engine under 50 cc"
+    },
+    {
+      "rule": "A two- or three-wheeler that can exceed 20 mph on electric power alone and isn't an electric-assisted bicycle is also an electric mobility device"
+    },
+    {
+      "rule": "Riders need a Class M license; it's available from 13 with the Motorcycle Safety Foundation Basic RiderCourse, which riders under 18 must complete"
+    },
+    {
+      "rule": "Motorcycle endorsements are set by engine displacement: W for 100 cc and up, Y for 50 to 99 cc, Z under 50 cc"
+    },
+    {
+      "rule": "Newly licensed riders under 18 may not carry passengers"
+    },
+    {
+      "rule": "Riders and passengers under 18 must wear a securely fastened safety helmet"
+    },
+    {
+      "rule": "Riders must wear eye protection unless it has a fixed windshield"
+    },
+    {
+      "rule": "Titled and registered with the Motor Vehicle Division, and must carry liability insurance under the Mandatory Financial Responsibility Act"
+    },
+    {
+      "rule": "Carries a passenger only if it's designed for two"
+    }
   ],
   "sources": [
     "https://www.nmlegis.gov/Sessions/23%20Regular/final/SB0069.pdf",

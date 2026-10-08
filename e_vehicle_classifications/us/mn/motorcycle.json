@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/mn/motorcycle",
   "jurisdiction": "US-MN",
   "groups": [
@@ -9,15 +9,33 @@
   "description": "Any motor vehicle with a seat or saddle designed to travel on no more than three wheels, including motor scooters: the default category for an electric two- or three-wheeler that is neither an electric-assisted bicycle nor a motorized bicycle. Defined by Minnesota Statutes §169.011, subd. 44; a 2026 bill (HF 3785 / SF 4186) to define e-motos as electric motorcycles didn't pass.",
   "throttle": true,
   "restrictions": [
-    "A seat or saddle and no more than three wheels on the ground; motor scooters are motorcycles",
-    "An electric two- or three-wheeler faster than 30 mph or more powerful than 2 brake horsepower (1,492 W) is too much for a motorized bicycle and lands here",
-    "No limit on motor power or speed",
-    "Needs a title, and a title needs a 17-digit VIN, which a machine lacking federal motor vehicle safety equipment can't get; without a title and registration it can't be ridden on public roads",
-    "Riders need a driver's license with a two-wheeled vehicle (motorcycle) endorsement",
-    "Riders and passengers under 18, and anyone riding on an instruction permit, must wear a helmet; every rider must wear eye protection",
-    "Registered with a rear license plate, and must carry liability insurance",
-    "May pass between lanes of traffic only at 25 mph or less and no more than 15 mph faster than traffic, and never in school zones or single-lane work zones",
-    "Not allowed on sidewalks"
+    {
+      "rule": "A seat or saddle and no more than three wheels on the ground; motor scooters are motorcycles"
+    },
+    {
+      "rule": "An electric two- or three-wheeler faster than 30 mph or more powerful than 2 brake horsepower (1,500 W) is too much for a motorized bicycle and lands here"
+    },
+    {
+      "rule": "No limit on motor power or speed"
+    },
+    {
+      "rule": "Needs a title, and a title needs a 17-digit VIN, which a machine lacking federal motor vehicle safety equipment can't get; without a title and registration it can't be ridden on public roads"
+    },
+    {
+      "rule": "Riders need a driver's license with a two-wheeled vehicle (motorcycle) endorsement"
+    },
+    {
+      "rule": "Riders and passengers under 18, and anyone riding on an instruction permit, must wear a helmet; every rider must wear eye protection"
+    },
+    {
+      "rule": "Registered with a rear license plate, and must carry liability insurance"
+    },
+    {
+      "rule": "May pass between lanes of traffic only at 25 mph or less and no more than 15 mph faster than traffic, and never in school zones or single-lane work zones"
+    },
+    {
+      "rule": "Not allowed on sidewalks"
+    }
   ],
   "sources": [
     "https://www.revisor.mn.gov/statutes/cite/169.011",

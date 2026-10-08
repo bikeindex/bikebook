@@ -1,13 +1,21 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/off_highway_motorcycle",
   "name": "Off-Highway Motorcycle",
   "description": "An electric motorcycle built for off-highway use, such as an electric dirt bike, ridden under the off-highway category of each classification naming this group. A vehicle carries this group's id in place of each classification in it.",
   "throttle": true,
   "restrictions": [
-    "Built by its manufacturer for off-highway use, not for the road",
-    "No limit on motor power or speed",
-    "Kept off public roads except where its jurisdiction allows it",
-    "Each classification naming this group holds its own jurisdiction's license, registration, insurance, helmet and riding rules"
+    {
+      "rule": "Built by its manufacturer for off-highway use, not for the road"
+    },
+    {
+      "rule": "No limit on motor power or speed"
+    },
+    {
+      "rule": "Kept off public roads except where its jurisdiction allows it"
+    },
+    {
+      "rule": "Each classification naming this group holds its own jurisdiction's license, registration, insurance, helmet and riding rules"
+    }
   ]
 }

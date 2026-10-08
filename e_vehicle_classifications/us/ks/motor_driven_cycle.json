@@ -1,22 +1,36 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/ks/motor_driven_cycle",
   "jurisdiction": "US-KS",
   "groups": [
     "evc/motor_driven_cycle"
   ],
   "name": "Motor-Driven Cycle",
-  "description": "A light motorcycle or motor scooter whose motor produces no more than 5 brake horsepower (3,730 W), plus every bicycle with a motor attached that isn't a motorized bicycle or an electric-assisted bicycle. An electric bicycle too fast or powerful to be an electric-assisted bicycle or a motorized bicycle lands here. Defined by Kansas Statutes Annotated §8-1439.",
+  "description": "A light motorcycle or motor scooter whose motor produces no more than 5 brake horsepower (3,750 W), plus every bicycle with a motor attached that isn't a motorized bicycle or an electric-assisted bicycle. An electric bicycle too fast or powerful to be an electric-assisted bicycle or a motorized bicycle lands here. Defined by Kansas Statutes Annotated §8-1439.",
   "throttle": true,
-  "max_power": 3730,
+  "max_power": 3750,
   "restrictions": [
-    "A motorcycle or motor scooter whose motor produces no more than 5 brake horsepower (3,730 W), or any bicycle with a motor attached",
-    "Excludes motorized bicycles (3.5 brake horsepower or less, automatic transmission, 30 mph or slower) and electric-assisted bicycles",
-    "A motorcycle under Kansas law, so titled and registered as one",
-    "Riders need a class M driver's license",
-    "Riders and passengers under 18 must wear a motorcycle helmet, and the operator must wear shatterproof eye protection unless it has a windscreen at least 10 inches tall",
-    "Must carry motor vehicle liability insurance",
-    "Needs at least one headlamp; one whose headlamp can't reveal a person 300 feet ahead may not go faster than 35 mph"
+    {
+      "rule": "A motorcycle or motor scooter whose motor produces no more than 5 brake horsepower (3,750 W), or any bicycle with a motor attached"
+    },
+    {
+      "rule": "Excludes motorized bicycles (3.5 brake horsepower or less, automatic transmission, 30 mph or slower) and electric-assisted bicycles"
+    },
+    {
+      "rule": "A motorcycle under Kansas law, so titled and registered as one"
+    },
+    {
+      "rule": "Riders need a class M driver's license"
+    },
+    {
+      "rule": "Riders and passengers under 18 must wear a motorcycle helmet, and the operator must wear shatterproof eye protection unless it has a windscreen at least 10 inches tall"
+    },
+    {
+      "rule": "Must carry motor vehicle liability insurance"
+    },
+    {
+      "rule": "Needs at least one headlamp; one whose headlamp can't reveal a person 300 feet ahead may not go faster than 35 mph"
+    }
   ],
   "sources": [
     "https://ksrevisor.gov/statutes/chapters/ch08/008_014_0039.html",

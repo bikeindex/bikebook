@@ -1,22 +1,36 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/wy/motor_driven_cycle",
   "jurisdiction": "US-WY",
   "groups": [
     "evc/motor_driven_cycle"
   ],
   "name": "Motor-Driven Cycle",
-  "description": "A light motorcycle, motor scooters and motorized bicycles included, with an engine under 150 cc or a motor of five brake horsepower (3,730 W) or less; an electric two-wheeler too fast or powerful to be a moped but within that limit lands here. Defined by Wyoming Statutes §31-5-102(a)(xxiii).",
+  "description": "A light motorcycle, motor scooters and motorized bicycles included, with an engine under 150 cc or a motor of five brake horsepower (3,750 W) or less; an electric two-wheeler too fast or powerful to be a moped but within that limit lands here. Defined by Wyoming Statutes §31-5-102(a)(xxiii).",
   "throttle": true,
-  "max_power": 3730,
+  "max_power": 3750,
   "restrictions": [
-    "A motorcycle: a seat or saddle and no more than three wheels",
-    "Its motor produces five brake horsepower (3,730 W) or less; one over two brake horsepower (1,492 W) or faster than 30 mph, or without pedals, is no longer a moped",
-    "Not an electric bicycle or a motorized skateboard",
-    "Riders need a class M motorcycle license or endorsement",
-    "Riders and passengers under 18 must wear a fastened helmet on public roads",
-    "Its headlamp must be on at all times, including in daylight",
-    "Registered as a motorcycle with the county treasurer, which requires liability insurance"
+    {
+      "rule": "A motorcycle: a seat or saddle and no more than three wheels"
+    },
+    {
+      "rule": "Its motor produces five brake horsepower (3,750 W) or less; one over two brake horsepower (1,500 W) or faster than 30 mph, or without pedals, is no longer a moped"
+    },
+    {
+      "rule": "Not an electric bicycle or a motorized skateboard"
+    },
+    {
+      "rule": "Riders need a class M motorcycle license or endorsement"
+    },
+    {
+      "rule": "Riders and passengers under 18 must wear a fastened helmet on public roads"
+    },
+    {
+      "rule": "Its headlamp must be on at all times, including in daylight"
+    },
+    {
+      "rule": "Registered as a motorcycle with the county treasurer, which requires liability insurance"
+    }
   ],
   "sources": [
     "https://wyoleg.gov/statutes/compress/title31.pdf"

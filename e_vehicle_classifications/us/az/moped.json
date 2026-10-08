@@ -1,23 +1,43 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/az/moped",
   "jurisdiction": "US-AZ",
   "name": "Moped",
-  "description": "A bicycle with operable pedals and a helper motor of 1.5 brake horsepower (1,119 W) or less that can't go faster than 25 mph on a flat surface. An electric bicycle that fits none of the three e-bike classes but stays within those limits is a moped. Defined by Arizona Revised Statutes §28-101 and regulated by §28-2513.",
+  "description": "A bicycle with operable pedals and a helper motor of 1.5 brake horsepower (1,125 W) or less that can't go faster than 25 mph on a flat surface. An electric bicycle that fits none of the three e-bike classes but stays within those limits is a moped. Defined by Arizona Revised Statutes §28-101 and regulated by §28-2513.",
   "throttle": true,
   "max_speed": 40.23,
-  "max_power": 1119,
+  "max_power": 1125,
   "restrictions": [
-    "A bicycle with operable pedals and a helper motor; electric bicycles, electric miniature scooters and electric standup scooters are excluded",
-    "Its motor produces 1.5 brake horsepower (1,119 W) or less, and the statute also caps piston displacement at 50 cc without addressing electric motors separately",
-    "Can't go faster than 25 mph on a flat surface; one that can is a motor driven cycle or motorcycle",
-    "Any class of driver license is valid, so riders must be at least 16; no motorcycle endorsement needed",
-    "Exempt from the motorcycle helmet, eye-protection and equipment rules of §28-964",
-    "Registered with MVD for a $5 fee and identified by a number fixed to its frame; no title needed",
-    "Must carry liability insurance meeting Arizona's minimums",
-    "Barred from rights-of-way designated for the exclusive use of bicycles",
-    "Not allowed on sidewalks",
-    "The unregistered, unlicensed motorized bicycle category of §28-2516 covers gas motors only, not electric ones"
+    {
+      "rule": "A bicycle with operable pedals and a helper motor; electric bicycles, electric miniature scooters and electric standup scooters are excluded"
+    },
+    {
+      "rule": "Its motor produces 1.5 brake horsepower (1,125 W) or less, and the statute also caps piston displacement at 50 cc without addressing electric motors separately"
+    },
+    {
+      "rule": "Can't go faster than 25 mph on a flat surface; one that can is a motor driven cycle or motorcycle"
+    },
+    {
+      "rule": "Any class of driver license is valid, so riders must be at least 16; no motorcycle endorsement needed"
+    },
+    {
+      "rule": "Exempt from the motorcycle helmet, eye-protection and equipment rules of §28-964"
+    },
+    {
+      "rule": "Registered with MVD for a $5 fee and identified by a number fixed to its frame; no title needed"
+    },
+    {
+      "rule": "Must carry liability insurance meeting Arizona's minimums"
+    },
+    {
+      "rule": "Barred from rights-of-way designated for the exclusive use of bicycles"
+    },
+    {
+      "rule": "Not allowed on sidewalks"
+    },
+    {
+      "rule": "The unregistered, unlicensed motorized bicycle category of §28-2516 covers gas motors only, not electric ones"
+    }
   ],
   "sources": [
     "https://www.azleg.gov/ars/28/00101.htm",

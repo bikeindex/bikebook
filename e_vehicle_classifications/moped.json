@@ -1,15 +1,23 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/moped",
   "name": "Moped, up to 2 hp and 30 mph",
-  "description": "The moped the classifications naming this group share: a motor of no more than 2 brake horsepower (1,492 W) that can't propel it faster than 30 mph. A vehicle carries this group's id in place of each classification in it.",
+  "description": "The moped the classifications naming this group share: a motor of no more than 2 brake horsepower (1,500 W) that can't propel it faster than 30 mph. A vehicle carries this group's id in place of each classification in it.",
   "throttle": true,
   "max_speed": 48.28,
-  "max_power": 1492,
+  "max_power": 1500,
   "restrictions": [
-    "Its motor produces no more than 2 brake horsepower (1,492 W)",
-    "The motor can't propel it faster than 30 mph",
-    "Past its jurisdiction's e-bike limits; one within them is an electric bicycle instead",
-    "Each classification naming this group holds its own jurisdiction's license, registration, insurance, helmet and riding rules"
+    {
+      "rule": "Its motor produces no more than 2 brake horsepower (1,500 W)"
+    },
+    {
+      "rule": "The motor can't propel it faster than 30 mph"
+    },
+    {
+      "rule": "Past its jurisdiction's e-bike limits; one within them is an electric bicycle instead"
+    },
+    {
+      "rule": "Each classification naming this group holds its own jurisdiction's license, registration, insurance, helmet and riding rules"
+    }
   ]
 }

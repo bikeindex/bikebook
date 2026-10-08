@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.0",
+  "schema_version": "0.23.2",
   "id": "evc/us/sd/off_road_vehicle",
   "jurisdiction": "US-SD",
   "groups": [
@@ -9,12 +9,24 @@
   "description": "A self-propelled vehicle on two or more wheels designed mainly for use off the highway, including any whose certificate of origin says it isn't for highway use, which is where an off-road electric dirt bike lands. Defined by South Dakota Codified Laws §32-3-1(22) and §32-20-1(4), and regulated by §32-20-12.",
   "throttle": true,
   "restrictions": [
-    "Designed primarily for use off the highway, or labeled by its manufacturer as not for highway use; no limit on motor power or speed",
-    "Titled like any other motor vehicle, but not registered or licensed for the highway",
-    "An electric two-wheeler can't be licensed as a motorcycle for the road; only a combustion off-road two-wheeler of 120 cc or more can",
-    "Kept off public streets and highways except to cross",
-    "Riders 12 or older may ride in a highway ditch, as close as possible to the outer edge of the right-of-way, but not along an interstate, a state snowmobile trail or a public bike trail",
-    "Allowed on Game, Fish and Parks lands only in a designated off-road vehicle area or trail"
+    {
+      "rule": "Designed primarily for use off the highway, or labeled by its manufacturer as not for highway use; no limit on motor power or speed"
+    },
+    {
+      "rule": "Titled like any other motor vehicle, but not registered or licensed for the highway"
+    },
+    {
+      "rule": "An electric two-wheeler can't be licensed as a motorcycle for the road; only a combustion off-road two-wheeler of 120 cc or more can"
+    },
+    {
+      "rule": "Kept off public streets and highways except to cross"
+    },
+    {
+      "rule": "Riders 12 or older may ride in a highway ditch, as close as possible to the outer edge of the right-of-way, but not along an interstate, a state snowmobile trail or a public bike trail"
+    },
+    {
+      "rule": "Allowed on Game, Fish and Parks lands only in a designated off-road vehicle area or trail"
+    }
   ],
   "sources": [
     "https://sdlegislature.gov/Statutes/32-3-1",
