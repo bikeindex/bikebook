@@ -1,9 +1,13 @@
 {
-  "schema_version": "0.23.2",
   "id": "evc/us/or/electric_bicycle",
   "jurisdiction": "US-OR",
+  "groups": [
+    "evc/us/class_1",
+    "evc/us/class_2",
+    "evc/us/class_3"
+  ],
   "name": "Electric Assisted Bicycle",
-  "description": "A bicycle with pedals and an electric motor, in one of three classes: Class 1 pedal assist to 20 mph, Class 2 throttle to 20 mph, and Class 3 pedal assist to 28 mph. Defined by Oregon Revised Statutes §801.258 as rewritten by HB 4103 (2024), which replaced the old 1,000-watt, 20 mph definition, and treated as a bicycle by §814.405.",
+  "description": "A bicycle with pedals and an electric motor, in one of three classes: Class 1 pedal assist to 20 mph, Class 2 throttle to 20 mph, and Class 3 pedal assist to 28 mph. It's treated as a bicycle.",
   "throttle": true,
   "max_speed": 45.06,
   "restrictions": [
@@ -11,13 +15,13 @@
       "rule": "Must be equipped with pedals; the statute sets no motor wattage limit since HB 4103 (2024) dropped the former 1,000-watt cap"
     },
     {
-      "rule": "Class 1 assists only while the rider pedals and stops assisting at 20 mph"
+      "rule": "Class 1 assists only while the rider pedals and stops assisting at 20 mph (Oregon Revised Statutes §801.258)"
     },
     {
-      "rule": "Class 2 can be propelled by its motor without pedaling and stops assisting at 20 mph"
+      "rule": "Class 2 can be propelled by its motor without pedaling and stops assisting at 20 mph (Oregon Revised Statutes §801.258)"
     },
     {
-      "rule": "Class 3 assists only while the rider pedals, stops assisting at 28 mph, and must have a speedometer"
+      "rule": "Class 3 assists only while the rider pedals, stops assisting at 28 mph, and must have a speedometer (Oregon Revised Statutes §801.258)"
     },
     {
       "rule": "Riders of any class must be 16 or older",
@@ -34,7 +38,7 @@
       "rule": "No driver's license needed for a rider who meets the age limit"
     },
     {
-      "rule": "Treated as a bicycle, not a motor vehicle: no title, registration or insurance"
+      "rule": "Treated as a bicycle, not a motor vehicle: no title, registration or insurance (Oregon Revised Statutes §814.405)"
     },
     {
       "rule": "May not be ridden on a sidewalk"

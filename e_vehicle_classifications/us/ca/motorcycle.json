@@ -1,21 +1,20 @@
 {
-  "schema_version": "0.23.2",
   "id": "evc/us/ca/motorcycle",
   "jurisdiction": "US-CA",
   "groups": [
     "evc/motorcycle"
   ],
   "name": "Motorcycle",
-  "description": "A road-registered electric motorcycle: its motor produces more than 5 gross brake horsepower (3,750 W), above what a motor-driven cycle may. Defined by California Vehicle Code §400, with the line set by SB 1167 (Chapter 846, Statutes of 2026).",
+  "description": "A road-registered electric motorcycle: its motor produces more than 5 gross brake horsepower (3,750 W), above what a motor-driven cycle may.",
   "limits_start_on": "2027-01-01",
   "throttle": true,
   "min_power": 3750,
   "restrictions": [
     {
-      "rule": "A seat or saddle, and no more than three wheels on the ground"
+      "rule": "A seat or saddle, and no more than three wheels on the ground (California Vehicle Code §400)"
     },
     {
-      "rule": "Its motor produces more than 5 gross brake horsepower (3,750 W)",
+      "rule": "Its motor produces more than 5 gross brake horsepower (3,750 W) (SB 1167, 2026)",
       "starts_on": "2027-01-01"
     },
     {
@@ -43,6 +42,7 @@
   "sources": [
     "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1167",
     "https://www.dmv.ca.gov/portal/vehicle-registration/new-registration/motorcycles-mopeds-and-scooters/",
-    "https://cms2.revize.com/revize/clovis/documents/Services/Police/Electric-Bicycle-and-Motorcycle-Reference-Guide-060525.pdf"
+    "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=670",
+    "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=22651"
   ]
 }

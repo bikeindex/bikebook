@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.2",
+  "schema_version": "0.23.4",
   "id": "m/liv/2016/avow_advanced_pro_0",
   "manufacturer": "Liv",
   "vehicle_model_group": "Avow",
@@ -186,7 +186,15 @@
     },
     {
       "type": "seatpost",
-      "description": "Trinity composite, -20/0/20mm offset"
+      "description": "Trinity composite, -20/0/20mm offset",
+      "dimensions": {
+        "adjustable": {
+          "offset": {
+            "min": -20,
+            "max": 20
+          }
+        }
+      }
     },
     {
       "type": "shifter",

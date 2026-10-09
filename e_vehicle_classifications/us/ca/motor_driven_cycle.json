@@ -1,29 +1,28 @@
 {
-  "schema_version": "0.23.2",
   "id": "evc/us/ca/motor_driven_cycle",
   "jurisdiction": "US-CA",
   "groups": [
     "evc/motor_driven_cycle"
   ],
   "name": "Motor-Driven Cycle",
-  "description": "A light electric motorcycle: its motor produces 5 gross brake horsepower (3,750 W) or less, the electric counterpart of a motorcycle under 150 cc. Defined by California Vehicle Code §405, as amended by SB 1167 (Chapter 846, Statutes of 2026).",
+  "description": "A light electric motorcycle: its motor produces 5 gross brake horsepower (3,750 W) or less, the electric counterpart of a motorcycle under 150 cc.",
   "limits_start_on": "2027-01-01",
   "throttle": true,
   "max_power": 3750,
   "restrictions": [
     {
-      "rule": "A motorcycle: a seat or saddle, and no more than three wheels on the ground"
+      "rule": "A motorcycle: a seat or saddle, and no more than three wheels on the ground (California Vehicle Code §405)"
     },
     {
-      "rule": "Its motor produces 5 gross brake horsepower (3,750 W) or less; one under 3,000 W is a motor-driven cycle rather than a moped when it can go faster than 30 mph",
+      "rule": "Its motor produces 5 gross brake horsepower (3,750 W) or less; one under 3,000 W is a motor-driven cycle rather than a moped when it can go faster than 30 mph (California Vehicle Code §405, as amended by SB 1167 (2026))",
       "starts_on": "2027-01-01"
     },
     {
-      "rule": "The line is drawn only by an engine of 150 cc or less, which an electric motor doesn't have",
+      "rule": "The line is drawn only by an engine under 150 cc, which an electric motor doesn't have (California Vehicle Code §405)",
       "ends_on": "2027-01-01"
     },
     {
-      "rule": "Built for highway use: meets federal motor vehicle safety standards, with a 17-digit VIN and a safety certification label"
+      "rule": "Built for highway use: meets federal motor vehicle safety standards, with a 17-digit VIN and a safety certification label (California Vehicle Code §405, as amended by SB 1167 (2026))"
     },
     {
       "rule": "Riders need a driver's license with an M1 motorcycle endorsement"
@@ -47,6 +46,7 @@
   "sources": [
     "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1167",
     "https://www.dmv.ca.gov/portal/vehicle-registration/new-registration/motorcycles-mopeds-and-scooters/",
-    "https://cms2.revize.com/revize/clovis/documents/Services/Police/Electric-Bicycle-and-Motorcycle-Reference-Guide-060525.pdf"
+    "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=670",
+    "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=22651"
   ]
 }

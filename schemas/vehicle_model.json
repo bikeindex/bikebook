@@ -8,7 +8,7 @@
       "format": "uri"
     },
     "schema_version": {
-      "const": "0.23.2"
+      "const": "0.23.4"
     },
     "id": {
       "type": "string",
@@ -536,6 +536,26 @@
     "suspension": {
       "type": "object",
       "properties": {
+        "positions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "front",
+              "center",
+              "rear",
+              "left",
+              "right",
+              "front_left",
+              "front_right",
+              "center_left",
+              "center_right",
+              "rear_left",
+              "rear_right"
+            ]
+          },
+          "description": "The positions suspended, whether or not their travel is stated"
+        },
         "front_travel": {
           "type": [
             "integer",
@@ -1748,6 +1768,22 @@
                 "description": "Max Seatpost Insertion, in millimeters",
                 "x-unit": "mm"
               },
+              "min_saddle_setback": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Min Saddle Setback, in millimeters",
+                "x-unit": "mm"
+              },
+              "max_saddle_setback": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Max Saddle Setback, in millimeters",
+                "x-unit": "mm"
+              },
               "dimensions": {
                 "type": "object",
                 "properties": {
@@ -2014,7 +2050,7 @@
                   "number",
                   "null"
                 ],
-                "description": "In millimeters",
+                "description": "A fork's or shock's travel; how far a dropper or telescoping seatpost adjusts, in millimeters",
                 "x-unit": "mm"
               },
               "offset": {
@@ -2032,6 +2068,167 @@
                 ],
                 "description": "In millimeters",
                 "x-unit": "mm"
+              },
+              "adjustable": {
+                "type": "object",
+                "properties": {
+                  "length": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "width": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "height": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "diameter": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "travel": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "offset": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "rise": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                },
+                "additionalProperties": false,
+                "description": "The least and most of a field the part adjusts through, in place of its fixed value; a negative offset is forward"
               },
               "extra_measurements": {
                 "type": [
@@ -2078,6 +2275,101 @@
                 ],
                 "description": "In degrees",
                 "x-unit": "degrees"
+              },
+              "adjustable": {
+                "type": "object",
+                "properties": {
+                  "angle": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In degrees",
+                        "x-unit": "degrees"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In degrees",
+                        "x-unit": "degrees"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "backsweep": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In degrees",
+                        "x-unit": "degrees"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In degrees",
+                        "x-unit": "degrees"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "upsweep": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In degrees",
+                        "x-unit": "degrees"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In degrees",
+                        "x-unit": "degrees"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "flare": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In degrees",
+                        "x-unit": "degrees"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In degrees",
+                        "x-unit": "degrees"
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                },
+                "additionalProperties": false,
+                "description": "The least and most of a field the part adjusts through, in place of its fixed value; a negative offset is forward"
               },
               "extra_measurements": {
                 "type": [
