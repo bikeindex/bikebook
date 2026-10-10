@@ -17,7 +17,7 @@
         "string",
         "null"
       ],
-      "pattern": "^(AU|CA|CN|EU|GB|IN|TW|US)(-[A-Z0-9]{1,3})?$",
+      "pattern": "^(AU|CA|CH|CN|EU|GB|IN|TW|US)(-[A-Z0-9]{1,3})?$",
       "description": "ISO 3166-1 alpha-2 country code, or EU, suffixed with a state or province's ISO 3166-2 code, e.g. US-CA; a group, which classifications from any jurisdiction can name, has none"
     },
     "groups": {
@@ -87,6 +87,13 @@
           "rule": {
             "type": "string"
           },
+          "citation": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "The statute, regulation or bill that states it, e.g. California Vehicle Code §312.5"
+          },
           "starts_on": {
             "type": [
               "string",
@@ -104,10 +111,19 @@
             "format": "date",
             "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
             "description": "The day it stops applying"
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uri"
+            },
+            "description": "The pages that state it"
           }
         },
         "required": [
-          "rule"
+          "rule",
+          "sources"
         ],
         "additionalProperties": false
       }
@@ -117,7 +133,8 @@
       "items": {
         "type": "string",
         "format": "uri"
-      }
+      },
+      "description": "Pages that back the classification as a whole; a page that states one of its rules goes on that rule instead"
     }
   },
   "required": [
