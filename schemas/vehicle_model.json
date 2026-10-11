@@ -1,0 +1,2565 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Bikebook vehicle model",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri"
+    },
+    "schema_version": {
+      "const": "0.24.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^m/[a-z0-9_/]+$",
+      "description": "Catalog path, prefixed m/: manufacturer slug/first year/model slug"
+    },
+    "manufacturer": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "x-complete": true
+    },
+    "vehicle_model_group": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Model family grouping sibling models/variants"
+    },
+    "model": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "x-complete": true
+    },
+    "model_configuration": {
+      "type": "string",
+      "enum": [
+        "complete",
+        "frame",
+        "frame_fork"
+      ]
+    },
+    "markets": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "AU",
+          "CA",
+          "CH",
+          "CN",
+          "EU",
+          "GB",
+          "IN",
+          "TW",
+          "US"
+        ]
+      },
+      "description": "ISO 3166-1 alpha-2 country codes, or EU"
+    },
+    "type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "bike",
+        "tandem",
+        "unicycle",
+        "tricycle",
+        "stroller",
+        "recumbent",
+        "bike_trailer",
+        "wheelchair",
+        "cargo_bike",
+        "tall_bike",
+        "penny_farthing",
+        "cargo_bike_rear",
+        "cargo_tricycle",
+        "cargo_tricycle_rear",
+        "trail_behind",
+        "pedi_cab",
+        "e_scooter",
+        "epamd",
+        "scooter",
+        "skateboard",
+        "e_motorcycle",
+        "elliptical_bike",
+        "balance_bike",
+        "e_atv",
+        null
+      ],
+      "description": "Vehicle class",
+      "x-complete": true
+    },
+    "type_detail": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "tadpole",
+        "bench_seat",
+        "seated",
+        "one_wheel_board",
+        "electric_unicycle",
+        "hoverboard",
+        "self_balancing_scooter",
+        "step_through",
+        null
+      ],
+      "description": "Tadpole: a three-wheeler with two wheels in front rather than behind; bench_seat: a moped-style bike; seated: an e-scooter; self_balancing_scooter: side-by-side wheels steered by a bar; step_through: a frame with a low or no top tube"
+    },
+    "propulsion": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "pedal",
+          "pedal_assist",
+          "throttle",
+          "hand_cycle",
+          "human_powered"
+        ]
+      },
+      "x-complete": true
+    },
+    "primary_activity": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "commuting",
+        "mtb",
+        "road_biking",
+        "atb",
+        "cargo",
+        "bmx",
+        "bike_polo",
+        "fixed_gear_freestyle",
+        "dj",
+        "track_racing",
+        "trials",
+        "artistic_cycling",
+        "dirt_travel",
+        "mtb_bikepacking",
+        "mtb_trail_all_mountain",
+        "mtb_cross_country",
+        "mtb_enduro",
+        "mtb_downhill",
+        "mtb_freeride",
+        "road_bike_touring",
+        "road_randonneuring",
+        "road_all_road",
+        "road_triathlon",
+        "road_time_trial",
+        "road_criterium",
+        "road_climbing",
+        "road_aero",
+        "road_endurance",
+        "atb_gravel",
+        "atb_cyclocross",
+        "atb_bikepacking",
+        "atb_bike_touring",
+        "atb_randonneuring",
+        "atb_all_road",
+        "atb_monster_cross",
+        "track_time_trial",
+        "track_pursuit",
+        "track_sprint",
+        "track_keirin_njs",
+        "cargo_child_carrying",
+        "cargo_commercial",
+        "bmx_race",
+        "bmx_freestyle",
+        "bmx_flatland",
+        "bmx_cruiser",
+        "dj_slopestyle",
+        "dj_4x_dual_slalom",
+        "trials_street_trials",
+        "trials_pure_trials",
+        null
+      ],
+      "x-complete": true
+    },
+    "handlebar_type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "drop_bar",
+        "horizontal",
+        "forward",
+        "other",
+        "rearward",
+        null
+      ],
+      "x-complete": true
+    },
+    "stock_photo": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri",
+      "description": "Bikebook-hosted copy of the manufacturer's product photo"
+    },
+    "target_riders": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "kid",
+          "woman",
+          "adaptive"
+        ]
+      }
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "description": "URLs parsed from, in parse order"
+    },
+    "first_year": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "x-complete": true
+    },
+    "final_year": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Last year the model was still offered (latest snapshot year); nil while still current"
+    },
+    "years": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^\\d{4}$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "original_msrp": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "description": "In cents",
+            "x-unit": "cents"
+          },
+          "original_msrp_currency": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "ISO 4217 currency code, e.g. USD"
+          },
+          "colorways": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "color_code": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Hex"
+                },
+                "colors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "black",
+                      "blue",
+                      "brown",
+                      "green",
+                      "orange",
+                      "pink",
+                      "purple",
+                      "red",
+                      "silver",
+                      "stickers",
+                      "teal",
+                      "white",
+                      "yellow"
+                    ]
+                  }
+                }
+              },
+              "additionalProperties": false
+            },
+            "description": "One per paint"
+          },
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "uri",
+            "description": "Product page URL, from the most authoritative source stating one"
+          },
+          "url_live": {
+            "type": [
+              "boolean",
+              "null"
+            ],
+            "description": "Whether the manufacturer's page is still up; false for an archive capture, which shows it as it was"
+          },
+          "url_is_official": {
+            "type": [
+              "boolean",
+              "null"
+            ],
+            "description": "Whether the URL is a manufacturer page (vs a third-party review)"
+          }
+        },
+        "additionalProperties": false
+      },
+      "description": "One record per model year, keyed by year, newest first"
+    },
+    "frame": {
+      "type": "object",
+      "properties": {
+        "material": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "steel",
+            "aluminum",
+            "carbon",
+            "titanium",
+            "magnesium",
+            "wood",
+            null
+          ],
+          "x-complete": true
+        },
+        "material_detail": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "The manufacturer's name for its material or grade, e.g. Reynolds 853 steel or FACT 11m carbon"
+        },
+        "folding": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "half_fold",
+            "triangle_fold",
+            "umbrella_fold",
+            "stem_fold",
+            "couplers",
+            null
+          ],
+          "description": "Half_fold: one hinge mid-frame, the halves side by side; triangle_fold: the rear triangle swings under (Brompton); umbrella_fold: collapses lengthwise to stand upright (Strida); stem_fold: only the handlebar stem folds, onto the deck; couplers: the frame separates into pieces"
+        },
+        "mounts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "enum": [
+                  "bottle",
+                  "rack",
+                  "fender",
+                  "top_tube_bag",
+                  "frame_bag",
+                  "accessory",
+                  null
+                ]
+              },
+              "position": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "front",
+                    "center",
+                    "rear",
+                    "left",
+                    "right",
+                    "front_left",
+                    "front_right",
+                    "center_left",
+                    "center_right",
+                    "rear_left",
+                    "rear_right"
+                  ]
+                },
+                "description": "The wheel a rack or fender mount serves"
+              },
+              "sizes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "The sizes that have it, when not every size, named as in sizes[].name"
+              },
+              "location": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "^(downtube|under_downtube|seat_tube|top_tube|under_top_tube|fork_legs)(_([2-9]|[1-9][0-9]+))?$",
+                "description": "Downtube, under_downtube, seat_tube, top_tube, under_top_tube, fork_legs; a type's repeated place takes _2, _3…"
+              },
+              "holes": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "Bolt holes, when not the usual 2 (3 for a three-pack cage)"
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "cable_routing": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "external",
+            "dropper",
+            "internal",
+            "stealth",
+            null
+          ],
+          "description": "Dropper: only the dropper post's cable runs inside the frame; internal: through ports in the frame; stealth: through the headset or stem"
+        },
+        "bottom_bracket": {
+          "type": "object",
+          "properties": {
+            "shell": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "E.g. BSA, T47, BB92 or threaded"
+            },
+            "width": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "description": "Shell width, in millimeters",
+              "x-unit": "mm"
+            },
+            "spindle": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "E.g. square taper, DUB, GXP or 24mm"
+            },
+            "spindle_length": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "description": "In millimeters",
+              "x-unit": "mm"
+            }
+          },
+          "additionalProperties": false
+        },
+        "headset": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^((EC|ZS|IS)\\d+(\\.\\d+)?/\\d+(\\.\\d+)?(-(24|25\\.4|26)tpi)?( H\\d+(\\.\\d+)?)?( \\| (EC|ZS|IS)\\d+(\\.\\d+)?/\\d+(\\.\\d+)?( H\\d+(\\.\\d+)?)?)?|\\| (EC|ZS|IS)\\d+(\\.\\d+)?/\\d+(\\.\\d+)?( H\\d+(\\.\\d+)?)?)$",
+          "description": "SHIS, upper | lower, e.g. ZS44/28.6 | ZS56/40 or EC34/28.6-26tpi | EC34/30 H13.7"
+        },
+        "seatpost_diameter": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "In millimeters",
+          "x-unit": "mm"
+        },
+        "seatpost_clamp_diameter": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "In millimeters",
+          "x-unit": "mm"
+        },
+        "front_derailleur_mount": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "E.g. braze-on, direct mount or none"
+        },
+        "derailleur_hanger": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "E.g. SRAM UDH or the manufacturer's part number"
+        },
+        "chainguide_mount": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "E.g. ISCG05"
+        },
+        "max_chainring": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "In teeth",
+          "x-unit": "teeth"
+        },
+        "max_weight_total": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "System weight limit: bike, rider and cargo, in kilograms",
+          "x-unit": "kg"
+        }
+      },
+      "additionalProperties": false
+    },
+    "suspension": {
+      "type": "object",
+      "properties": {
+        "positions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "front",
+              "center",
+              "rear",
+              "left",
+              "right",
+              "front_left",
+              "front_right",
+              "center_left",
+              "center_right",
+              "rear_left",
+              "rear_right"
+            ]
+          },
+          "description": "The positions suspended, whether or not their travel is stated"
+        },
+        "front_travel": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "In millimeters",
+          "x-unit": "mm"
+        },
+        "max_fork_travel": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "In millimeters",
+          "x-unit": "mm"
+        },
+        "rear_travel": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "In millimeters",
+          "x-unit": "mm"
+        },
+        "rear_shock_length": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Eye to eye, in millimeters",
+          "x-unit": "mm"
+        },
+        "rear_shock_stroke": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "In millimeters",
+          "x-unit": "mm"
+        },
+        "rear_shock_mount": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "E.g. trunnion or 30x8 bushings"
+        }
+      },
+      "additionalProperties": false
+    },
+    "wheels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "bsd": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "description": "In millimeters",
+            "x-unit": "mm",
+            "x-complete": true
+          },
+          "position": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "front",
+                "center",
+                "rear",
+                "left",
+                "right",
+                "front_left",
+                "front_right",
+                "center_left",
+                "center_right",
+                "rear_left",
+                "rear_right"
+              ]
+            },
+            "x-complete": true
+          },
+          "sizes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "The sizes that take it, when not every size, named as in sizes[].name"
+          },
+          "configured": {
+            "type": [
+              "boolean",
+              "null"
+            ],
+            "description": "False for a wheel the frame takes that the complete build doesn't come with"
+          },
+          "tire_width": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "description": "In millimeters",
+            "x-unit": "mm"
+          },
+          "tire_system": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "tubeless",
+              "tubeless_ready",
+              "tube",
+              "tubular",
+              null
+            ]
+          },
+          "axle": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "thru_axle",
+              "quick_release",
+              "bolt_on",
+              null
+            ]
+          },
+          "axle_diameter": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "description": "In millimeters",
+            "x-unit": "mm"
+          },
+          "axle_spacing": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "description": "In millimeters",
+            "x-unit": "mm"
+          },
+          "axle_length": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "description": "In millimeters",
+            "x-unit": "mm"
+          },
+          "axle_thread_pitch": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "description": "In millimeters",
+            "x-unit": "mm"
+          },
+          "axle_thread_length": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "description": "In millimeters",
+            "x-unit": "mm"
+          },
+          "axle_standard": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "E.g. Syntace X-12, Kabolt or Deadbolt"
+          },
+          "cassette_interface": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "hg",
+              "hg_road",
+              "micro_spline",
+              "xd",
+              "xdr",
+              "campagnolo",
+              "campagnolo_n3w",
+              "freewheel",
+              null
+            ],
+            "description": "The freehub or driver body a rear wheel's cassette mounts on; hg_road is Shimano's 11/12-speed road body"
+          },
+          "dropout": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "vertical",
+              "horizontal",
+              "track",
+              "sliding",
+              "flip_chip",
+              null
+            ]
+          },
+          "max_tire_width": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "description": "Widest tire the frame or fork clears at this bsd, in millimeters",
+            "x-unit": "mm"
+          }
+        },
+        "additionalProperties": false
+      },
+      "description": "One per bead seat diameter each position takes"
+    },
+    "drivetrain": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "1_front",
+          "2_front",
+          "3_front",
+          "2_internal_front",
+          "3_internal_front",
+          "6_speed_pinion",
+          "9_speed_pinion",
+          "12_speed_pinion",
+          "18_speed_pinion",
+          "1_rear",
+          "2_rear",
+          "3_rear",
+          "4_rear",
+          "5_rear",
+          "6_rear",
+          "7_rear",
+          "8_rear",
+          "9_rear",
+          "10_rear",
+          "11_rear",
+          "12_rear",
+          "13_rear",
+          "14_rear",
+          "1_internal_rear",
+          "2_internal_rear",
+          "3_internal_rear",
+          "4_internal_rear",
+          "5_internal_rear",
+          "6_internal_rear",
+          "7_internal_rear",
+          "8_internal_rear",
+          "9_internal_rear",
+          "10_internal_rear",
+          "11_internal_rear",
+          "12_internal_rear",
+          "13_internal_rear",
+          "14_internal_rear",
+          "fixed",
+          "continuously_variable",
+          "coaster_brake",
+          "freecoaster",
+          "belt_drive",
+          "shaft_drive",
+          "left_side_drive"
+        ]
+      },
+      "description": "Position-qualified gear count or internal hub (e.g. '12 Rear', '12 Internal Rear'), or special (Fixed/Belt Drive/etc.); a pedalled rear gear comes with its front, '1 Front' for a single chainring",
+      "x-complete": true
+    },
+    "gearing": {
+      "type": "object",
+      "properties": {
+        "front": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "description": "Teeth on each chainring, smallest first"
+        },
+        "rear": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "description": "Teeth on each cog, smallest first; at least the smallest and largest"
+        }
+      },
+      "additionalProperties": false
+    },
+    "brakes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "disc_hydraulic",
+              "disc_mechanical",
+              "linear_pull",
+              "caliper",
+              "side_pull",
+              "center_pull",
+              "cantilever",
+              "u_brake",
+              "coaster_brake",
+              "drum_brake",
+              "roller_brake",
+              "band_brake",
+              "rod_brake",
+              "spoon_brake",
+              "hydraulic_rim",
+              "delta_brake",
+              "cable_actuated_hydraulic",
+              "motor_brake",
+              null
+            ],
+            "x-complete": true
+          },
+          "position": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "front",
+                "center",
+                "rear",
+                "left",
+                "right",
+                "front_left",
+                "front_right",
+                "center_left",
+                "center_right",
+                "rear_left",
+                "rear_right",
+                "motor"
+              ]
+            },
+            "x-complete": true
+          },
+          "sizes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "The sizes that have it, when not every size, named as in sizes[].name"
+          },
+          "rotor_diameter": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "description": "In millimeters",
+            "x-unit": "mm"
+          },
+          "max_rotor_diameter": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "description": "In millimeters",
+            "x-unit": "mm"
+          },
+          "caliper_mount": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "Disc Flat Mount",
+              "Disc Post Mount",
+              "Disc IS",
+              "Center Bolt",
+              "Brake Bosses",
+              null
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "motors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^c/[a-z0-9_/]+$",
+            "description": "Its db/components id"
+          },
+          "drive_wheel": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "front",
+              "center",
+              "rear",
+              "left",
+              "right",
+              "front_left",
+              "front_right",
+              "center_left",
+              "center_right",
+              "rear_left",
+              "rear_right",
+              null
+            ],
+            "default": "rear"
+          },
+          "manufacturer": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "model": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "model_group": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Model family grouping sibling models/variants"
+          },
+          "kind": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "hub_drive",
+              "mid_drive",
+              "mid_drive_dedicated",
+              "friction_drive",
+              null
+            ]
+          },
+          "spindle": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "A mid drive's crank interface, e.g. ISIS"
+          },
+          "spindle_length": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "description": "In millimeters",
+            "x-unit": "mm"
+          },
+          "sensor_cadence": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "sensor_speed": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "spoke_magnet",
+              "rotor_magnet",
+              "rim_magnet",
+              "hub",
+              null
+            ]
+          },
+          "sensor_torque": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "bottom_bracket_spindle",
+              "crank_spider",
+              "hub",
+              "dropout",
+              null
+            ]
+          },
+          "certification": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "water_rating": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "IP ingress-protection rating, e.g. IPX7"
+          },
+          "battery_size": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "description": "In watt-hours",
+            "x-unit": "wh"
+          },
+          "battery_chemistry": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "enum": [
+              "li-ion",
+              "lifepo4",
+              "nimh",
+              "lead-acid",
+              null
+            ]
+          },
+          "battery_info": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Additional Battery Info (e.g. Cell Type"
+          },
+          "charging_time": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "description": "In minutes",
+            "x-unit": "minutes"
+          },
+          "rated_power": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "description": "Continuous/nominal, basis for legal class, in watts",
+            "x-unit": "w"
+          },
+          "peak_power": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "description": "In watts",
+            "x-unit": "w"
+          },
+          "max_torque": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "description": "In newton-meters",
+            "x-unit": "nm"
+          },
+          "operating_modes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "mode": {
+                  "type": "string",
+                  "enum": [
+                    "assist",
+                    "throttle"
+                  ]
+                },
+                "availability": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "enum": [
+                    "stock",
+                    "sold_separately",
+                    "app_update",
+                    "aftermarket",
+                    null
+                  ]
+                },
+                "max_speed": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "In kilometers per hour",
+                  "x-unit": "km/h"
+                },
+                "range_claimed": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "In kilometers",
+                  "x-unit": "km"
+                },
+                "max_slope": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "In degrees",
+                  "x-unit": "degrees"
+                },
+                "operating_temperature": {
+                  "type": "object",
+                  "properties": {
+                    "min": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "In degrees Celsius",
+                      "x-unit": "c"
+                    },
+                    "max": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "description": "In degrees Celsius",
+                      "x-unit": "c"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "levels": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "Assist only"
+                },
+                "throttle_type": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "enum": [
+                    "Thumb",
+                    "Twist",
+                    "Trigger",
+                    null
+                  ],
+                  "description": "Throttle only"
+                },
+                "e_vehicle_classifications": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "evc/moped",
+                      "evc/motor_driven_cycle",
+                      "evc/motorcycle",
+                      "evc/off_highway_motorcycle",
+                      "evc/us/ak/electric_bicycle",
+                      "evc/us/ak/motor_driven_cycle",
+                      "evc/us/ak/motorcycle",
+                      "evc/us/ak/off_highway_vehicle",
+                      "evc/us/al/electric_bicycle",
+                      "evc/us/al/motor_driven_cycle",
+                      "evc/us/al/motorcycle",
+                      "evc/us/al/off_road_vehicle",
+                      "evc/us/ar/electric_bicycle",
+                      "evc/us/ar/motor_driven_cycle",
+                      "evc/us/ar/motorcycle",
+                      "evc/us/ar/motorized_bicycle",
+                      "evc/us/az/electric_bicycle",
+                      "evc/us/az/moped",
+                      "evc/us/az/motor_driven_cycle",
+                      "evc/us/az/motorcycle",
+                      "evc/us/az/off_highway_vehicle",
+                      "evc/us/ca/electric_bicycle",
+                      "evc/us/ca/moped",
+                      "evc/us/ca/motor_driven_cycle",
+                      "evc/us/ca/motorcycle",
+                      "evc/us/ca/off_highway_electric_motorcycle",
+                      "evc/us/ca/off_highway_motor_vehicle",
+                      "evc/us/class_1",
+                      "evc/us/class_2",
+                      "evc/us/class_3",
+                      "evc/us/co/electric_bicycle",
+                      "evc/us/co/low_power_scooter",
+                      "evc/us/co/motorcycle",
+                      "evc/us/co/off_highway_vehicle",
+                      "evc/us/ct/all_terrain_vehicle",
+                      "evc/us/ct/electric_bicycle",
+                      "evc/us/ct/electric_scooter",
+                      "evc/us/ct/motor_driven_cycle",
+                      "evc/us/ct/motorcycle",
+                      "evc/us/dc/dirt_bike",
+                      "evc/us/dc/electric_bicycle",
+                      "evc/us/dc/motor_driven_cycle",
+                      "evc/us/dc/motorcycle",
+                      "evc/us/de/electric_bicycle",
+                      "evc/us/de/moped",
+                      "evc/us/de/motorcycle",
+                      "evc/us/de/off_highway_vehicle",
+                      "evc/us/de/triped",
+                      "evc/us/fl/electric_bicycle",
+                      "evc/us/fl/micromobility_device",
+                      "evc/us/fl/moped",
+                      "evc/us/fl/motorcycle",
+                      "evc/us/fl/motorized_scooter",
+                      "evc/us/fl/off_highway_motorcycle",
+                      "evc/us/ga/electric_bicycle",
+                      "evc/us/ga/moped",
+                      "evc/us/ga/motor_driven_cycle",
+                      "evc/us/ga/motorcycle",
+                      "evc/us/ga/off_road_vehicle",
+                      "evc/us/hi/electric_bicycle",
+                      "evc/us/hi/electric_motorcycle",
+                      "evc/us/hi/high_speed_electric_device",
+                      "evc/us/hi/moped",
+                      "evc/us/hi/motor_driven_cycle",
+                      "evc/us/hi/motorcycle",
+                      "evc/us/ia/electric_bicycle",
+                      "evc/us/ia/motorcycle",
+                      "evc/us/ia/motorized_bicycle",
+                      "evc/us/ia/off_road_motorcycle",
+                      "evc/us/id/electric_bicycle",
+                      "evc/us/id/moped",
+                      "evc/us/id/motor_driven_cycle",
+                      "evc/us/id/motorbike",
+                      "evc/us/id/motorcycle",
+                      "evc/us/il/electric_bicycle",
+                      "evc/us/il/moped",
+                      "evc/us/il/motor_driven_cycle",
+                      "evc/us/il/motorcycle",
+                      "evc/us/il/off_highway_motorcycle",
+                      "evc/us/in/electric_bicycle",
+                      "evc/us/in/motor_driven_cycle",
+                      "evc/us/in/motorcycle",
+                      "evc/us/in/off_road_vehicle",
+                      "evc/us/ks/electric_bicycle",
+                      "evc/us/ks/motor_driven_cycle",
+                      "evc/us/ks/motorcycle",
+                      "evc/us/ks/motorized_bicycle",
+                      "evc/us/ky/all_terrain_vehicle",
+                      "evc/us/ky/bicycle",
+                      "evc/us/ky/motor_scooter",
+                      "evc/us/ky/motorcycle",
+                      "evc/us/la/electric_bicycle",
+                      "evc/us/la/motor_driven_cycle",
+                      "evc/us/la/motorcycle",
+                      "evc/us/la/motorized_bicycle",
+                      "evc/us/la/off_road_vehicle",
+                      "evc/us/low_speed_electric_bicycle",
+                      "evc/us/ma/electric_bicycle",
+                      "evc/us/ma/motorcycle",
+                      "evc/us/ma/motorized_bicycle",
+                      "evc/us/ma/motorized_scooter",
+                      "evc/us/ma/recreation_vehicle",
+                      "evc/us/md/electric_bicycle",
+                      "evc/us/md/moped",
+                      "evc/us/md/motor_scooter",
+                      "evc/us/md/motorcycle",
+                      "evc/us/md/off_highway_recreational_vehicle",
+                      "evc/us/me/all_terrain_vehicle",
+                      "evc/us/me/electric_bicycle",
+                      "evc/us/me/moped",
+                      "evc/us/me/motorcycle",
+                      "evc/us/mi/electric_bicycle",
+                      "evc/us/mi/moped",
+                      "evc/us/mi/motorcycle",
+                      "evc/us/mi/off_road_vehicle",
+                      "evc/us/mn/electric_bicycle",
+                      "evc/us/mn/motorcycle",
+                      "evc/us/mn/motorized_bicycle",
+                      "evc/us/mn/off_highway_motorcycle",
+                      "evc/us/mo/dirt_bike",
+                      "evc/us/mo/electric_bicycle",
+                      "evc/us/mo/motorcycle",
+                      "evc/us/mo/motorized_bicycle",
+                      "evc/us/ms/dirt_bike",
+                      "evc/us/ms/electric_bicycle",
+                      "evc/us/ms/motorcycle",
+                      "evc/us/mt/electric_bicycle",
+                      "evc/us/mt/moped",
+                      "evc/us/mt/motor_driven_cycle",
+                      "evc/us/mt/motorcycle",
+                      "evc/us/mt/off_highway_vehicle",
+                      "evc/us/nc/electric_bicycle",
+                      "evc/us/nc/moped",
+                      "evc/us/nc/motor_driven_bicycle",
+                      "evc/us/nc/motorcycle",
+                      "evc/us/nd/electric_bicycle",
+                      "evc/us/nd/motorcycle",
+                      "evc/us/nd/motorized_bicycle",
+                      "evc/us/nd/off_highway_vehicle",
+                      "evc/us/ne/electric_bicycle",
+                      "evc/us/ne/minibike",
+                      "evc/us/ne/moped",
+                      "evc/us/ne/motorcycle",
+                      "evc/us/nh/electric_bicycle",
+                      "evc/us/nh/moped",
+                      "evc/us/nh/motor_driven_cycle",
+                      "evc/us/nh/motorcycle",
+                      "evc/us/nh/off_highway_recreational_vehicle",
+                      "evc/us/nj/dirt_bike",
+                      "evc/us/nj/electric_bicycle",
+                      "evc/us/nj/electric_motorized_bicycle",
+                      "evc/us/nj/motorcycle",
+                      "evc/us/nj/motorized_bicycle",
+                      "evc/us/nm/electric_bicycle",
+                      "evc/us/nm/electric_mobility_device",
+                      "evc/us/nm/motorcycle",
+                      "evc/us/nm/off_highway_motorcycle",
+                      "evc/us/nv/electric_bicycle",
+                      "evc/us/nv/moped",
+                      "evc/us/nv/motorcycle",
+                      "evc/us/nv/off_highway_vehicle",
+                      "evc/us/ny/all_terrain_vehicle",
+                      "evc/us/ny/electric_bicycle",
+                      "evc/us/ny/limited_use_motorcycle",
+                      "evc/us/ny/motorcycle",
+                      "evc/us/oh/electric_bicycle",
+                      "evc/us/oh/motorcycle",
+                      "evc/us/oh/motorized_bicycle",
+                      "evc/us/oh/off_highway_motorcycle",
+                      "evc/us/ok/electric_bicycle",
+                      "evc/us/ok/moped",
+                      "evc/us/ok/motor_driven_cycle",
+                      "evc/us/ok/motorcycle",
+                      "evc/us/ok/motorized_scooter",
+                      "evc/us/ok/off_road_motorcycle",
+                      "evc/us/or/class_iii_all_terrain_vehicle",
+                      "evc/us/or/electric_bicycle",
+                      "evc/us/or/moped",
+                      "evc/us/or/motor_assisted_scooter",
+                      "evc/us/or/motorcycle",
+                      "evc/us/pa/electric_bicycle",
+                      "evc/us/pa/motor_driven_cycle",
+                      "evc/us/pa/motorcycle",
+                      "evc/us/pa/motorized_pedalcycle",
+                      "evc/us/ri/electric_bicycle",
+                      "evc/us/ri/motor_driven_cycle",
+                      "evc/us/ri/motor_scooter",
+                      "evc/us/ri/motorcycle",
+                      "evc/us/ri/motorized_bicycle",
+                      "evc/us/ri/recreational_vehicle",
+                      "evc/us/sc/electric_bicycle",
+                      "evc/us/sc/moped",
+                      "evc/us/sc/motorcycle",
+                      "evc/us/sd/electric_bicycle",
+                      "evc/us/sd/moped",
+                      "evc/us/sd/motorcycle",
+                      "evc/us/sd/off_road_vehicle",
+                      "evc/us/tn/electric_bicycle",
+                      "evc/us/tn/motorcycle",
+                      "evc/us/tn/motorscooter",
+                      "evc/us/tn/off_highway_motor_vehicle",
+                      "evc/us/tx/electric_bicycle",
+                      "evc/us/tx/moped",
+                      "evc/us/tx/motorcycle",
+                      "evc/us/tx/off_highway_motorcycle",
+                      "evc/us/ut/electric_bicycle",
+                      "evc/us/ut/electric_motorcycle",
+                      "evc/us/ut/high_power_electric_device",
+                      "evc/us/ut/moped",
+                      "evc/us/ut/motor_assisted_scooter",
+                      "evc/us/ut/motorcycle",
+                      "evc/us/ut/off_highway_motorcycle",
+                      "evc/us/va/electric_bicycle",
+                      "evc/us/va/moped",
+                      "evc/us/va/motorcycle",
+                      "evc/us/va/motorized_skateboard_or_scooter",
+                      "evc/us/va/off_road_motorcycle",
+                      "evc/us/vt/electric_bicycle",
+                      "evc/us/vt/motor_assisted_bicycle",
+                      "evc/us/vt/motor_driven_cycle",
+                      "evc/us/vt/motorcycle",
+                      "evc/us/wa/electric_bicycle",
+                      "evc/us/wa/moped",
+                      "evc/us/wa/motor_driven_cycle",
+                      "evc/us/wa/motorcycle",
+                      "evc/us/wa/off_road_vehicle",
+                      "evc/us/wi/electric_bicycle",
+                      "evc/us/wi/moped",
+                      "evc/us/wi/motor_bicycle",
+                      "evc/us/wi/motorcycle",
+                      "evc/us/wi/off_highway_motorcycle",
+                      "evc/us/wv/electric_bicycle",
+                      "evc/us/wv/moped",
+                      "evc/us/wv/motor_driven_cycle",
+                      "evc/us/wv/motorcycle",
+                      "evc/us/wv/off_highway_vehicle",
+                      "evc/us/wy/electric_bicycle",
+                      "evc/us/wy/moped",
+                      "evc/us/wy/motor_driven_cycle",
+                      "evc/us/wy/motorcycle",
+                      "evc/us/wy/off_road_recreational_vehicle"
+                    ]
+                  },
+                  "description": "The classifications riding in this mode puts it in, by their db/e_vehicle_classifications ids: a jurisdiction's own, and the groups it fits"
+                }
+              },
+              "required": [
+                "mode"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "cargo": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "Short Tail",
+            "Mid Tail",
+            "Long Tail",
+            "Front Box",
+            "Front Platform",
+            null
+          ],
+          "description": "Load-area form: Tail types sit behind the rider; Front Box is a walled front load area, Front Platform a flat sideless front deck"
+        },
+        "length": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "In millimeters",
+          "x-unit": "mm"
+        },
+        "width": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "In millimeters",
+          "x-unit": "mm"
+        },
+        "max_weight_cargo": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "In kilograms",
+          "x-unit": "kg"
+        },
+        "attributes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "sizes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Unvalidated: ordinal (S/M/L), inches, or cm"
+          },
+          "geometry": {
+            "type": "object",
+            "properties": {
+              "reach": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Reach, in millimeters",
+                "x-unit": "mm"
+              },
+              "stack": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Stack, in millimeters",
+                "x-unit": "mm"
+              },
+              "top_tube_effective": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Top Tube (effective), in millimeters",
+                "x-unit": "mm"
+              },
+              "top_tube_ctc": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Top Tube center-to-center, in millimeters",
+                "x-unit": "mm"
+              },
+              "seat_tube_ctc": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Seat Tube C to C, in millimeters",
+                "x-unit": "mm"
+              },
+              "seat_tube_ct": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Seat Tube center-to-top, in millimeters",
+                "x-unit": "mm"
+              },
+              "head_angle": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Head Angle, in degrees",
+                "x-unit": "degrees"
+              },
+              "seat_angle": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Seat Angle, in degrees",
+                "x-unit": "degrees"
+              },
+              "head_tube": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Head Tube, in millimeters",
+                "x-unit": "mm"
+              },
+              "chainstay": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Chainstay, in millimeters",
+                "x-unit": "mm"
+              },
+              "wheelbase": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Wheelbase, in millimeters",
+                "x-unit": "mm"
+              },
+              "front_center": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Front Centre, in millimeters",
+                "x-unit": "mm"
+              },
+              "standover": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Standover, in millimeters",
+                "x-unit": "mm"
+              },
+              "bb_drop": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "BB Drop, in millimeters",
+                "x-unit": "mm"
+              },
+              "bb_height": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "BB Height, in millimeters",
+                "x-unit": "mm"
+              },
+              "fork_rake": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Fork Rake / Offset, in millimeters",
+                "x-unit": "mm"
+              },
+              "trail": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Trail, in millimeters",
+                "x-unit": "mm"
+              },
+              "fork_length_a2c": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Fork Length (A2C), in millimeters",
+                "x-unit": "mm"
+              },
+              "travel_front": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Fork travel at this size, when it varies by size, in millimeters",
+                "x-unit": "mm"
+              },
+              "travel_rear": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Rear wheel travel at this size, when it varies by size, in millimeters",
+                "x-unit": "mm"
+              },
+              "handlebar_width": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Handlebar Width, in millimeters",
+                "x-unit": "mm"
+              },
+              "stem_length": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Stem Length, in millimeters",
+                "x-unit": "mm"
+              },
+              "crank_length": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Crank Length, in millimeters",
+                "x-unit": "mm"
+              },
+              "dropper_travel": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Dropper Travel, in millimeters",
+                "x-unit": "mm"
+              },
+              "seatpost_length": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Seatpost Length, in millimeters",
+                "x-unit": "mm"
+              },
+              "max_seatpost_insertion": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Max Seatpost Insertion, in millimeters",
+                "x-unit": "mm"
+              },
+              "min_saddle_setback": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Min Saddle Setback, in millimeters",
+                "x-unit": "mm"
+              },
+              "max_saddle_setback": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Max Saddle Setback, in millimeters",
+                "x-unit": "mm"
+              },
+              "dimensions": {
+                "type": "object",
+                "properties": {
+                  "length": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "In millimeters",
+                    "x-unit": "mm"
+                  },
+                  "width": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "In millimeters",
+                    "x-unit": "mm"
+                  },
+                  "height": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "In millimeters",
+                    "x-unit": "mm"
+                  }
+                },
+                "additionalProperties": false,
+                "description": "Overall dimensions"
+              },
+              "dimensions_folded": {
+                "type": "object",
+                "properties": {
+                  "length": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "In millimeters",
+                    "x-unit": "mm"
+                  },
+                  "width": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "In millimeters",
+                    "x-unit": "mm"
+                  },
+                  "height": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "In millimeters",
+                    "x-unit": "mm"
+                  }
+                },
+                "additionalProperties": false,
+                "description": "Folded dimensions"
+              },
+              "total_weight": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Total vehicle weight at this size, in kilograms",
+                "x-unit": "kg"
+              },
+              "max_weight_rider": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "Max total payload (rider + cargo), in kilograms",
+                "x-unit": "kg"
+              },
+              "min_rider_height": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "Min Rider Height, in millimeters",
+                "x-unit": "mm"
+              },
+              "max_rider_height": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "Max Rider Height, in millimeters",
+                "x-unit": "mm"
+              },
+              "extra_measurements": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "description": "Non-canonical measurements, gathered on coerce; another unit only where the key names it, in millimeters",
+                "x-unit": "mm"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      },
+      "x-complete": true
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "unknown",
+              "water_bottle_cage",
+              "stem",
+              "chain_guide",
+              "fairing",
+              "lights",
+              "bell_noisemaker",
+              "basket",
+              "chain_tensioners",
+              "derailleur",
+              "training_wheels",
+              "bottom_bracket",
+              "brake",
+              "hub_guard",
+              "generator_dynamo",
+              "handlebar",
+              "wheel",
+              "saddle",
+              "rim",
+              "axle_nuts",
+              "hub",
+              "spokes",
+              "tube",
+              "tire",
+              "brake_lever",
+              "shift_and_brake_lever",
+              "brake_rotor",
+              "brake_pad",
+              "shifter",
+              "throttle",
+              "fork",
+              "rear_suspension",
+              "headset",
+              "brake_cable",
+              "shift_cable",
+              "chain",
+              "drive_belt",
+              "chainrings",
+              "cassette",
+              "crankset",
+              "pedals",
+              "computer",
+              "pegs",
+              "toe_clips",
+              "grips_tape",
+              "seatpost_clamp",
+              "detangler",
+              "kickstand",
+              "rack",
+              "seatpost",
+              "fender",
+              "aero_bars",
+              "e_vehicle_battery",
+              "e_vehicle_charger",
+              "e_vehicle_remote",
+              "e_vehicle_motor",
+              "e_vehicle_wiring_harness",
+              "pannier",
+              "frame_bag",
+              "internal_frame_storage",
+              "cargo_bike_side_rails",
+              "handlebar_bag",
+              "seat_bag",
+              "top_tube_bag",
+              "child_seat",
+              "top_of_rack_bag"
+            ],
+            "description": "Component category"
+          },
+          "type_detail": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "position": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "front",
+                "center",
+                "rear",
+                "left",
+                "right",
+                "front_left",
+                "front_right",
+                "center_left",
+                "center_right",
+                "rear_left",
+                "rear_right",
+                "captain",
+                "stoker"
+              ]
+            }
+          },
+          "manufacturer": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "description": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "dimensions": {
+            "type": "object",
+            "properties": {
+              "length": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "In millimeters",
+                "x-unit": "mm"
+              },
+              "width": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "In millimeters",
+                "x-unit": "mm"
+              },
+              "height": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "In millimeters",
+                "x-unit": "mm"
+              },
+              "diameter": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Clamp diameter for bars, stems and seatposts; bead seat diameter for rims, tires and wheels, in millimeters",
+                "x-unit": "mm"
+              },
+              "travel": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "A fork's or shock's travel; how far a dropper or telescoping seatpost adjusts, in millimeters",
+                "x-unit": "mm"
+              },
+              "offset": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Rake on forks; setback on seatposts, in millimeters",
+                "x-unit": "mm"
+              },
+              "rise": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "In millimeters",
+                "x-unit": "mm"
+              },
+              "adjustable": {
+                "type": "object",
+                "properties": {
+                  "length": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "width": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "height": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "diameter": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "travel": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "offset": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "rise": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In millimeters",
+                        "x-unit": "mm"
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                },
+                "additionalProperties": false,
+                "description": "The least and most of a field the part adjusts through, in place of its fixed value; a negative offset is forward"
+              },
+              "extra_measurements": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "description": "Non-canonical dimensions, gathered on coerce, in millimeters",
+                "x-unit": "mm"
+              }
+            },
+            "additionalProperties": false
+          },
+          "angles": {
+            "type": "object",
+            "properties": {
+              "angle": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "The component's own angle, e.g. a stem's rise, in degrees",
+                "x-unit": "degrees"
+              },
+              "backsweep": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "In degrees",
+                "x-unit": "degrees"
+              },
+              "upsweep": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "In degrees",
+                "x-unit": "degrees"
+              },
+              "flare": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "In degrees",
+                "x-unit": "degrees"
+              },
+              "adjustable": {
+                "type": "object",
+                "properties": {
+                  "angle": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In degrees",
+                        "x-unit": "degrees"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In degrees",
+                        "x-unit": "degrees"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "backsweep": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In degrees",
+                        "x-unit": "degrees"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In degrees",
+                        "x-unit": "degrees"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "upsweep": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In degrees",
+                        "x-unit": "degrees"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In degrees",
+                        "x-unit": "degrees"
+                      }
+                    },
+                    "additionalProperties": false
+                  },
+                  "flare": {
+                    "type": "object",
+                    "properties": {
+                      "min": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In degrees",
+                        "x-unit": "degrees"
+                      },
+                      "max": {
+                        "type": [
+                          "number",
+                          "null"
+                        ],
+                        "description": "In degrees",
+                        "x-unit": "degrees"
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                },
+                "additionalProperties": false,
+                "description": "The least and most of a field the part adjusts through, in place of its fixed value; a negative offset is forward"
+              },
+              "extra_measurements": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "description": "Non-canonical angles, gathered on coerce, in degrees",
+                "x-unit": "degrees"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "type"
+        ],
+        "additionalProperties": false
+      },
+      "x-complete": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "model_configuration"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "propulsion",
+          "drivetrain"
+        ],
+        "properties": {
+          "propulsion": {
+            "contains": {
+              "enum": [
+                "pedal",
+                "pedal_assist",
+                "hand_cycle"
+              ]
+            }
+          },
+          "drivetrain": {
+            "contains": {
+              "enum": [
+                "1_rear",
+                "2_rear",
+                "3_rear",
+                "4_rear",
+                "5_rear",
+                "6_rear",
+                "7_rear",
+                "8_rear",
+                "9_rear",
+                "10_rear",
+                "11_rear",
+                "12_rear",
+                "13_rear",
+                "14_rear",
+                "1_internal_rear",
+                "2_internal_rear",
+                "3_internal_rear",
+                "4_internal_rear",
+                "5_internal_rear",
+                "6_internal_rear",
+                "7_internal_rear",
+                "8_internal_rear",
+                "9_internal_rear",
+                "10_internal_rear",
+                "11_internal_rear",
+                "12_internal_rear",
+                "13_internal_rear",
+                "14_internal_rear",
+                "continuously_variable"
+              ]
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "drivetrain": {
+            "contains": {
+              "enum": [
+                "1_front",
+                "2_front",
+                "3_front",
+                "2_internal_front",
+                "3_internal_front",
+                "6_speed_pinion",
+                "9_speed_pinion",
+                "12_speed_pinion",
+                "18_speed_pinion"
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "primary_activity"
+        ],
+        "properties": {
+          "primary_activity": {
+            "const": "dirt_travel"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "type"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "stroller",
+              "wheelchair",
+              "bike_trailer",
+              "trail_behind",
+              "skateboard",
+              "scooter",
+              "e_scooter",
+              "epamd",
+              "e_motorcycle",
+              "e_atv"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "type"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "stroller",
+              "wheelchair",
+              "bike_trailer",
+              "trail_behind",
+              "skateboard",
+              "scooter",
+              "balance_bike"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "primary_activity": {
+            "const": "dirt_travel"
+          }
+        }
+      }
+    }
+  ]
+}
