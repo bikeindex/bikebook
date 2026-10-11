@@ -8,7 +8,7 @@
       "format": "uri"
     },
     "schema_version": {
-      "const": "0.23.5"
+      "const": "0.24.0"
     },
     "id": {
       "type": "string",
@@ -110,9 +110,10 @@
         "electric_unicycle",
         "hoverboard",
         "self_balancing_scooter",
+        "step_through",
         null
       ],
-      "description": "Tadpole: a three-wheeler with two wheels in front rather than behind; bench_seat: a moped-style bike; seated: an e-scooter; self_balancing_scooter: side-by-side wheels steered by a bar"
+      "description": "Tadpole: a three-wheeler with two wheels in front rather than behind; bench_seat: a moped-style bike; seated: an e-scooter; self_balancing_scooter: side-by-side wheels steered by a bar; step_through: a frame with a low or no top tube"
     },
     "propulsion": {
       "type": "array",
@@ -250,13 +251,13 @@
       "description": "Last year the model was still offered (latest snapshot year); nil while still current"
     },
     "years": {
-      "type": "array",
-      "items": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^\\d{4}$"
+      },
+      "additionalProperties": {
         "type": "object",
         "properties": {
-          "year": {
-            "type": "integer"
-          },
           "original_msrp": {
             "type": [
               "integer",
@@ -272,18 +273,49 @@
             ],
             "description": "ISO 4217 currency code, e.g. USD"
           },
-          "paint_descriptions": {
+          "colorways": {
             "type": "array",
             "items": {
-              "type": "string"
-            }
-          },
-          "paint_color_codes": {
-            "type": "array",
-            "items": {
-              "type": "string"
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "color_code": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Hex"
+                },
+                "colors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "black",
+                      "blue",
+                      "brown",
+                      "green",
+                      "orange",
+                      "pink",
+                      "purple",
+                      "red",
+                      "silver",
+                      "stickers",
+                      "teal",
+                      "white",
+                      "yellow"
+                    ]
+                  }
+                }
+              },
+              "additionalProperties": false
             },
-            "description": "Hex per paint, index-aligned with paint_descriptions"
+            "description": "One per paint"
           },
           "url": {
             "type": [
@@ -308,12 +340,9 @@
             "description": "Whether the URL is a manufacturer page (vs a third-party review)"
           }
         },
-        "required": [
-          "year"
-        ],
         "additionalProperties": false
       },
-      "description": "One record per model year, newest first"
+      "description": "One record per model year, keyed by year, newest first"
     },
     "frame": {
       "type": "object",
@@ -530,6 +559,14 @@
           ],
           "description": "In teeth",
           "x-unit": "teeth"
+        },
+        "max_weight_total": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "System weight limit: bike, rider and cargo, in kilograms",
+          "x-unit": "kg"
         }
       },
       "additionalProperties": false
@@ -1520,14 +1557,6 @@
           ],
           "description": "In millimeters",
           "x-unit": "mm"
-        },
-        "max_weight_total": {
-          "type": [
-            "integer",
-            "null"
-          ],
-          "description": "Total payload incl. rider, in kilograms",
-          "x-unit": "kg"
         },
         "max_weight_cargo": {
           "type": [

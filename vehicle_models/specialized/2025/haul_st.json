@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.23.5",
+  "schema_version": "0.24.0",
   "id": "m/specialized/2025/haul_st",
   "manufacturer": "Specialized",
   "vehicle_model_group": "Globe Haul",
@@ -9,6 +9,7 @@
     "US"
   ],
   "type": "cargo_bike",
+  "type_detail": "step_through",
   "propulsion": [
     "pedal_assist",
     "throttle"
@@ -18,40 +19,54 @@
   "stock_photo": "https://bikebook.bikeindex.org/specialized/2025/haul_st.png",
   "description": "Whatever you’re into, get more into it with the Specialized Globe Haul ST. It’s down for the ride. With 419 pounds of cargo capacity (rider included) up to 60 miles at a time, this fully customizable electric bike has the speed, power, range, and stability to get you wherever you need to go with whatever you need. With a grip of mounting opportunities you can bring the kids, a kayak, and stop on the way home for groceries. Don’t sweat it getting dark on you either. Integrated front and rear lights will have you dialed from dawn patrol to golden hour.\n\nPOWERED UP. The rear hub motor will have you zooming up hills with all your gear. Need a little extra boost to make it through an intersection safely? Crank up the power to get up to top speed quick, then dial it back and hit the pedals for max range.\n\nINCLUSIVE. All bodies, all fun. The unique single size frame fits riders comfortably all over the size spectrum. Using the Retül database, the adjustable fit was designed to be perfect for you. Make it longer here, shorter there, and you're ready to ride comfortably. The low center of gravity means it’s easy to handle for a newcomer or a pro, loaded up or loaded down.\n\nREADY TO ROLL. The Globe Haul ST is ready to rock straight out of the box with an included MIK-compatible rear rack, full coverage fenders, integrated lights and center stand. D.I.Y. yourself into gear-nirvana, with a whole host of Globe accessories compatible with the auxiliary mounting points… It’s your Globe, we’re just living in it.",
   "first_year": 2025,
-  "years": [
-    {
-      "year": 2026,
+  "years": {
+    "2026": {
       "original_msrp": 269999,
       "original_msrp_currency": "USD",
-      "paint_descriptions": [
-        "SATIN OBSIDIAN",
-        "GLOSS WHITE MOUNTAINS"
-      ],
-      "paint_color_codes": [
-        "#545056",
-        "#B7B2A4"
+      "colorways": [
+        {
+          "name": "Satin Obsidian",
+          "color_code": "#545056",
+          "colors": [
+            "silver"
+          ]
+        },
+        {
+          "name": "Gloss White Mountains",
+          "color_code": "#B7B2A4",
+          "colors": [
+            "silver"
+          ]
+        }
       ],
       "url": "https://www.specialized.com/us/en/haul-st/p/277759",
       "url_live": true,
       "url_is_official": true
     },
-    {
-      "year": 2025,
+    "2025": {
       "original_msrp": 249999,
       "original_msrp_currency": "USD",
-      "paint_descriptions": [
-        "SATIN OBSIDIAN",
-        "GLOSS WHITE MOUNTAINS"
-      ],
-      "paint_color_codes": [
-        "#545056",
-        "#B7B2A4"
+      "colorways": [
+        {
+          "name": "Satin Obsidian",
+          "color_code": "#545056",
+          "colors": [
+            "silver"
+          ]
+        },
+        {
+          "name": "Gloss White Mountains",
+          "color_code": "#B7B2A4",
+          "colors": [
+            "silver"
+          ]
+        }
       ],
       "url": "https://web.archive.org/web/20250713203700/https://www.specialized.com/us/en/haul-st/p/277759?ranMID=49187&ranEAID=7m8EnekPF5E&ranSiteID=7m8EnekPF5E-m7hbrT3pz6L0xu0IIQUdaw&utm_campaign=The+Wirecutter&utm_source=rakuten_usa&utm_medium=affiliate&utm_content=1262556",
       "url_live": false,
       "url_is_official": true
     }
-  ],
+  },
   "frame": {
     "material": "aluminum",
     "material_detail": "Premium Aluminum",
@@ -78,7 +93,8 @@
     },
     "headset": "ZS50.6/38.1-26tpi | ZS50.6/38.5",
     "seatpost_diameter": 34.9,
-    "seatpost_clamp_diameter": 39.0
+    "seatpost_clamp_diameter": 39.0,
+    "max_weight_total": 190
   },
   "wheels": [
     {
@@ -163,7 +179,6 @@
   ],
   "cargo": {
     "type": "Short Tail",
-    "max_weight_total": 190,
     "max_weight_cargo": 60,
     "attributes": [
       "MIK HD interface"
