@@ -8,7 +8,7 @@
       "format": "uri"
     },
     "schema_version": {
-      "const": "0.24.0"
+      "const": "0.24.2"
     },
     "id": {
       "type": "string",
@@ -49,15 +49,27 @@
       "items": {
         "type": "string",
         "enum": [
+          "AR",
           "AU",
           "CA",
           "CH",
           "CN",
           "EU",
           "GB",
+          "HK",
           "IN",
+          "JP",
+          "KR",
+          "MY",
+          "NO",
+          "NZ",
+          "PH",
+          "PY",
+          "SG",
+          "TH",
           "TW",
-          "US"
+          "US",
+          "UY"
         ]
       },
       "description": "ISO 3166-1 alpha-2 country codes, or EU"
@@ -560,6 +572,14 @@
           "description": "In teeth",
           "x-unit": "teeth"
         },
+        "max_fork_travel": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "The longest fork the frame is rated for, suspension or not, in millimeters",
+          "x-unit": "mm"
+        },
         "max_weight_total": {
           "type": [
             "integer",
@@ -574,75 +594,83 @@
     "suspension": {
       "type": "object",
       "properties": {
-        "positions": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "enum": [
-              "front",
-              "center",
-              "rear",
-              "left",
-              "right",
-              "front_left",
-              "front_right",
-              "center_left",
-              "center_right",
-              "rear_left",
-              "rear_right"
-            ]
+        "front": {
+          "type": "object",
+          "properties": {
+            "travel": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "description": "In millimeters",
+              "x-unit": "mm"
+            },
+            "shock_length": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "description": "Eye to eye, in millimeters",
+              "x-unit": "mm"
+            },
+            "shock_stroke": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "description": "In millimeters",
+              "x-unit": "mm"
+            },
+            "shock_mount": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "E.g. trunnion or 30x8 bushings"
+            }
           },
-          "description": "The positions suspended, whether or not their travel is stated"
+          "additionalProperties": false
         },
-        "front_travel": {
-          "type": [
-            "integer",
-            "null"
-          ],
-          "description": "In millimeters",
-          "x-unit": "mm"
-        },
-        "max_fork_travel": {
-          "type": [
-            "integer",
-            "null"
-          ],
-          "description": "In millimeters",
-          "x-unit": "mm"
-        },
-        "rear_travel": {
-          "type": [
-            "integer",
-            "null"
-          ],
-          "description": "In millimeters",
-          "x-unit": "mm"
-        },
-        "rear_shock_length": {
-          "type": [
-            "integer",
-            "null"
-          ],
-          "description": "Eye to eye, in millimeters",
-          "x-unit": "mm"
-        },
-        "rear_shock_stroke": {
-          "type": [
-            "number",
-            "null"
-          ],
-          "description": "In millimeters",
-          "x-unit": "mm"
-        },
-        "rear_shock_mount": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "E.g. trunnion or 30x8 bushings"
+        "rear": {
+          "type": "object",
+          "properties": {
+            "travel": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "description": "In millimeters",
+              "x-unit": "mm"
+            },
+            "shock_length": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "description": "Eye to eye, in millimeters",
+              "x-unit": "mm"
+            },
+            "shock_stroke": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "description": "In millimeters",
+              "x-unit": "mm"
+            },
+            "shock_mount": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "E.g. trunnion or 30x8 bushings"
+            }
+          },
+          "additionalProperties": false
         }
       },
-      "additionalProperties": false
+      "additionalProperties": false,
+      "description": "One record per suspended end, empty when its travel isn't stated"
     },
     "wheels": {
       "type": "array",
@@ -981,6 +1009,13 @@
               "Brake Bosses",
               null
             ]
+          },
+          "anti_lock": {
+            "type": [
+              "boolean",
+              "null"
+            ],
+            "description": "An anti-lock braking system (ABS) works this brake"
           }
         },
         "additionalProperties": false
@@ -1117,7 +1152,15 @@
               "integer",
               "null"
             ],
-            "description": "In watt-hours",
+            "description": "The stock battery's, in watt-hours",
+            "x-unit": "wh"
+          },
+          "battery_options": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            },
+            "description": "The other battery sizes offered for it, in watt-hours",
             "x-unit": "wh"
           },
           "battery_chemistry": {
@@ -1558,6 +1601,14 @@
           "description": "In millimeters",
           "x-unit": "mm"
         },
+        "volume": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "A box's or bin's capacity, in liters",
+          "x-unit": "l"
+        },
         "max_weight_cargo": {
           "type": [
             "integer",
@@ -1907,6 +1958,22 @@
                 ],
                 "description": "Max Rider Height, in millimeters",
                 "x-unit": "mm"
+              },
+              "min_rider_age": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "In years",
+                "x-unit": "years"
+              },
+              "max_rider_age": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "description": "In years",
+                "x-unit": "years"
               },
               "extra_measurements": {
                 "type": [
