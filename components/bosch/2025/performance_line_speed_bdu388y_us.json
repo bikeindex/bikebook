@@ -1,32 +1,17 @@
 {
   "schema_version": "0.24.7",
   "id": "c/bosch/2025/performance_line_speed_bdu388y_us",
-  "type": "e_vehicle_motor",
-  "manufacturer": "Bosch",
-  "model": "BDU388Y",
-  "model_group": "Performance Line Speed",
-  "aliases": [
-    "Performance Line Speed smart system"
-  ],
+  "base": "c/bosch/2025/performance_line_speed_bdu388y",
   "markets": [
     "US"
   ],
-  "first_year": 2025,
   "motor": {
-    "kind": "mid_drive",
-    "spindle": "ISIS",
-    "rated_power": 250,
-    "peak_power": 750,
-    "max_torque": 100,
-    "operating_modes": [
-      {
-        "mode": "assist",
-        "availability": "stock",
-        "max_speed": 45,
+    "operating_modes": {
+      "assist stock": {
         "e_vehicle_classifications": [
           "evc/us/class_3"
         ]
       }
-    ]
+    }
   }
 }
