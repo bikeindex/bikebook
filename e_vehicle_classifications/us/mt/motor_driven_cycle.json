@@ -2,10 +2,11 @@
   "id": "evc/us/mt/motor_driven_cycle",
   "jurisdiction": "US-MT",
   "groups": [
+    "evc/moped",
     "evc/motor_driven_cycle"
   ],
   "name": "Motor-Driven Cycle",
-  "description": "A motorcycle, including a motor scooter, whose motor produces 5 horsepower (3,750 W) or less: the light end of the motorcycle category, regulated as a motorcycle. Bicycles and mopeds are excluded.",
+  "description": "A motorcycle, including a motor scooter, whose motor produces 5 horsepower (3,750 W) or less: the light end of the motorcycle category, regulated as a motorcycle. Bicycles and mopeds are excluded, but a moped needs foot pedals, so one without them lands here.",
   "throttle": true,
   "max_power": 3750,
   "restrictions": [
@@ -24,8 +25,8 @@
       ]
     },
     {
-      "rule": "Pedals with no more than 2 brake horsepower and a 30 mph top speed make it a moped instead",
-      "citation": "Montana Code Annotated §61-1-101(44)",
+      "rule": "Foot pedals with no more than 2 brake horsepower and a 30 mph top speed make it a moped instead; one within those limits but without pedals is a motor-driven cycle",
+      "citation": "Montana Code Annotated §§61-1-101(43), (44), 61-8-102(14)",
       "sources": [
         "https://mca.legmt.gov/bills/mca/title_0610/chapter_0010/part_0010/section_0010/0610-0010-0010-0010.html",
         "https://mca.legmt.gov/bills/mca/title_0610/chapter_0080/part_0010/section_0020/0610-0080-0010-0020.html"

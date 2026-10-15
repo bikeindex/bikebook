@@ -1,8 +1,12 @@
 {
   "id": "evc/us/ar/motor_driven_cycle",
   "jurisdiction": "US-AR",
+  "groups": [
+    "evc/moped",
+    "evc/motor_driven_cycle"
+  ],
   "name": "Motor-Driven Cycle",
-  "description": "A motor vehicle with a seat or saddle, no more than three wheels on the ground, and a motor that displaces 250 cc or less, other than a motorized bicycle. The statute sets the line between it and a motorcycle by displacement alone, with no electric power or speed equivalent.",
+  "description": "A motor vehicle with a seat or saddle, no more than three wheels on the ground, and a motor that displaces 250 cc or less, other than a motorized bicycle. The statute sets the line between it and a motorcycle by displacement alone; an electric motor displaces nothing, so an electric motorcycle of up to 5 brake horsepower is one.",
   "throttle": true,
   "restrictions": [
     {
@@ -13,10 +17,18 @@
       ]
     },
     {
-      "rule": "Its motor displaces 250 cc or less; the statute gives no electric equivalent, so it doesn't say which electric motors fall here rather than under motorcycle",
+      "rule": "Its motor displaces 250 cc or less; the statute gives no electric equivalent, but an electric motor has no displacement to exceed it, so a road electric motorcycle of up to 5 brake horsepower is one",
       "citation": "Arkansas Code §27-20-101(2)",
       "sources": [
         "https://codes.findlaw.com/ar/title-27-transportation/ar-code-sect-27-20-101/"
+      ]
+    },
+    {
+      "rule": "An electric moped without pedals is one too: a bicycle is designed to be pedaled, so it can't be a motorized bicycle",
+      "citation": "Arkansas Code §§27-20-101(2), (3), 27-51-1801(1)",
+      "sources": [
+        "https://codes.findlaw.com/ar/title-27-transportation/ar-code-sect-27-20-101/",
+        "https://codes.findlaw.com/ar/title-27-transportation/ar-code-sect-27-51-1801/"
       ]
     },
     {

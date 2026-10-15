@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.24.2",
+  "schema_version": "0.24.7",
   "id": "m/santa_cruz/2024/v10_dh_s",
   "manufacturer": "Santa Cruz",
   "vehicle_model_group": "V10",
@@ -33,8 +33,7 @@
         }
       ],
       "url": "https://www.santacruzbicycles.com/products/v-10-dh-s-2024",
-      "url_live": true,
-      "url_is_official": true
+      "url_live": true
     },
     "2024": {}
   },
@@ -54,17 +53,20 @@
     "derailleur_hanger": "23-20089, 23-24890 or 23-20090",
     "chainguide_mount": "ISCG05",
     "max_chainring": 36,
-    "max_fork_travel": 203
+    "max_fork_travel": 203,
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
-      "travel": 203
+      "travel": 203,
+      "spring": "air"
     },
     "rear": {
       "travel": 208,
       "shock_length": 250,
       "shock_stroke": 75,
-      "shock_mount": "30x8 bushings front and rear"
+      "shock_mount": "30x8 bushings front and rear",
+      "spring": "coil"
     }
   },
   "wheels": [
@@ -132,6 +134,10 @@
       11,
       25
     ]
+  },
+  "groupset": {
+    "manufacturer": "SRAM",
+    "electronic": false
   },
   "brakes": [
     {

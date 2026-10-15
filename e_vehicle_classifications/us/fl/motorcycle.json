@@ -2,10 +2,12 @@
   "id": "evc/us/fl/motorcycle",
   "jurisdiction": "US-FL",
   "groups": [
+    "evc/moped",
+    "evc/motor_driven_cycle",
     "evc/motorcycle"
   ],
   "name": "Motorcycle",
-  "description": "Any motor vehicle with a seat or saddle on no more than three wheels; an electric two- or three-wheeler that is not an electric bicycle, moped or motorized scooter is a motorcycle, as is a seated electric scooter without pedals that can exceed 20 mph.",
+  "description": "Any motor vehicle with a seat or saddle on no more than three wheels, at any power; an electric two- or three-wheeler that is not an electric bicycle, moped or motorized scooter is a motorcycle, as is a pedal-less moped or seated electric scooter that can exceed 20 mph.",
   "throttle": true,
   "restrictions": [
     {
@@ -17,15 +19,15 @@
       ]
     },
     {
-      "rule": "An electric bike lands here once its motor exceeds 2 brake horsepower (1,500 W), it can exceed 30 mph, or it has no pedals and can exceed 20 mph",
-      "citation": "Florida Statutes §316.003(47)",
+      "rule": "An electric bike or moped lands here once its motor exceeds 2 brake horsepower (1,500 W) or it can exceed 30 mph; one without pedals lands here once it can exceed 20 mph, and is a motorized scooter at 20 mph or less",
+      "citation": "Florida Statutes §316.003(44), (47), (48)",
       "sources": [
         "https://www.flsenate.gov/Laws/Statutes/2026/316.003"
       ]
     },
     {
-      "rule": "Florida has no separate electric motorcycle category",
-      "citation": "Florida Statutes §316.003",
+      "rule": "Florida has no separate electric motorcycle or motor-driven cycle category: one whose motor produces no more than 5 brake horsepower (3,750 W) is still a motorcycle",
+      "citation": "Florida Statutes §316.003(47)",
       "sources": [
         "https://www.flsenate.gov/Laws/Statutes/2026/316.003"
       ]

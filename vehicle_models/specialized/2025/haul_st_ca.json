@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.24.2",
+  "schema_version": "0.24.7",
   "id": "m/specialized/2025/haul_st_ca",
   "manufacturer": "Specialized",
   "vehicle_model_group": "Globe Haul",
@@ -41,13 +41,11 @@
         }
       ],
       "url": "https://www.specialized.com/ca/en/haul-st/p/4276252",
-      "url_live": true,
-      "url_is_official": true
+      "url_live": true
     }
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Premium Aluminum",
     "mounts": [
       {
         "type": "fender"
@@ -104,6 +102,10 @@
       36
     ]
   },
+  "groupset": {
+    "manufacturer": "MicroShift",
+    "electronic": false
+  },
   "brakes": [
     {
       "type": "disc_hydraulic",
@@ -128,11 +130,14 @@
         {
           "mode": "assist",
           "availability": "stock",
-          "range_claimed": 100
+          "range_claimed": 100,
+          "e_vehicle_classifications": [
+            "evc/ca/power_assisted_bicycle"
+          ]
         },
         {
           "mode": "throttle",
-          "availability": "sold_separately",
+          "availability": "upgrade",
           "max_speed": 32,
           "throttle_type": "Thumb"
         }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.24.2",
+  "schema_version": "0.24.7",
   "id": "m/segway/2025/gt3_pro",
   "manufacturer": "Segway",
   "vehicle_model_group": "GT Series",
@@ -19,24 +19,25 @@
       "original_msrp": 269999,
       "original_msrp_currency": "USD",
       "url": "https://store.segway.com/segway-superscooter-gt3-pro",
-      "url_live": true,
-      "url_is_official": true
+      "url_live": true
     },
     "2025": {
       "original_msrp": 269999,
       "original_msrp_currency": "USD",
       "url": "https://web.archive.org/web/20250810040621/https://store.segway.com/segway-superscooter-gt3-pro",
-      "url_live": false,
-      "url_is_official": true
+      "url_live": false
     }
   },
   "frame": {
     "material": "steel",
-    "folding": "stem_fold"
+    "folding": "stem_fold",
+    "coil_compatible": true
   },
   "suspension": {
     "front": {},
-    "rear": {}
+    "rear": {
+      "spring": "coil"
+    }
   },
   "wheels": [
     {

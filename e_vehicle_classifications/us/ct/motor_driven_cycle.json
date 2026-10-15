@@ -1,13 +1,17 @@
 {
   "id": "evc/us/ct/motor_driven_cycle",
   "jurisdiction": "US-CT",
+  "groups": [
+    "evc/moped",
+    "evc/motor_driven_cycle"
+  ],
   "name": "Motor-Driven Cycle",
-  "description": "A light motorcycle, motor scooter or bicycle with an attached motor whose seat is at least 26 inches high and whose electric motor is 3,700 watts or less, plus any one-wheeled vehicle with a floorboard or foot rests. It isn't a motor vehicle, so it needs a driver's license but no registration.",
+  "description": "A light motorcycle, motor scooter or bicycle with an attached motor whose seat is at least 26 inches high and whose motor produces no more than five brake horsepower (3,750 W), plus any one-wheeled vehicle with a floorboard or foot rests. It isn't a motor vehicle, so it needs a driver's license but no registration.",
   "throttle": true,
-  "max_power": 3700,
+  "max_power": 3750,
   "restrictions": [
     {
-      "rule": "A motorcycle (other than an autocycle), a motor scooter (other than an electric scooter) or a bicycle with an attached motor (other than an electric bicycle), with a seat at least 26 inches high and a motor of 3,700 watts or less; pedals are optional",
+      "rule": "A motorcycle (other than an autocycle), a motor scooter (other than an electric scooter) or a bicycle with an attached motor (other than an electric bicycle), with a seat at least 26 inches high and a motor of 3,700 watts or less or producing five brake horsepower (3,750 W) or less, so five brake horsepower is the cap; pedals are optional",
       "citation": "Connecticut General Statutes §14-1(59)",
       "sources": [
         "https://www.cga.ct.gov/2026/sup/chap_246.htm",
@@ -16,11 +20,18 @@
       ]
     },
     {
-      "rule": "An electric bike that fails the e-bike definition lands here when its seat is at least 26 inches high and its motor is 3,700 watts or less; with a lower seat or a bigger motor it is a motorcycle",
+      "rule": "An electric bike that fails the e-bike definition lands here when its seat is at least 26 inches high and its motor produces five brake horsepower (3,750 W) or less; with a lower seat or a bigger motor it is a motorcycle",
       "citation": "Connecticut General Statutes §14-1(59)",
       "sources": [
         "https://www.cga.ct.gov/2026/sup/chap_246.htm",
         "https://www.cga.ct.gov/2026/ACT/PA/PDF/2026PA-00024-R00SB-00413-PA.PDF"
+      ]
+    },
+    {
+      "rule": "A pedal-less electric moped with a seat at least 26 inches high is a motor-driven cycle; it isn't an electric scooter, which needs human power and tops out at 20 mph",
+      "citation": "Connecticut General Statutes §14-1(32), (59)",
+      "sources": [
+        "https://www.cga.ct.gov/2026/sup/chap_246.htm"
       ]
     },
     {

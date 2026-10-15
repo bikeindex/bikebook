@@ -1,5 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/bikeindex/bikebook/main/schemas/e_vehicle_classification.json",
   "title": "Bikebook e-vehicle classification",
   "type": "object",
   "properties": {
@@ -46,6 +47,13 @@
     "throttle": {
       "type": "boolean",
       "description": "Whether the motor may propel it without the rider pedaling"
+    },
+    "e_bike_law": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "A jurisdiction's whole e-bike law rather than one class or tier of it, so it goes on a vehicle's assist mode though it allows a throttle"
     },
     "max_speed": {
       "type": [

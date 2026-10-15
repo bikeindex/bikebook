@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.24.2",
+  "schema_version": "0.24.7",
   "id": "m/riese_and_muller/2026/load5_75_rohloff_hs_us",
   "manufacturer": "Riese & Müller",
   "vehicle_model_group": "Load5 75",
@@ -48,8 +48,7 @@
         }
       ],
       "url": "https://www.r-m.de/en-us/bikes/load5-75/",
-      "url_live": true,
-      "url_is_official": true
+      "url_live": true
     }
   },
   "frame": {
@@ -69,6 +68,7 @@
     "headset": "ZS44/28.6 | ZS56/40",
     "seatpost_diameter": 34.9,
     "seatpost_clamp_diameter": 40,
+    "coil_compatible": true,
     "max_weight_total": 200
   },
   "suspension": {
@@ -78,7 +78,8 @@
     "rear": {
       "travel": 80,
       "shock_length": 165,
-      "shock_stroke": 38
+      "shock_stroke": 38,
+      "spring": "coil"
     }
   },
   "wheels": [
@@ -117,6 +118,10 @@
       19
     ]
   },
+  "groupset": {
+    "manufacturer": "Rohloff",
+    "electronic": true
+  },
   "brakes": [
     {
       "type": "disc_hydraulic",
@@ -134,7 +139,7 @@
   ],
   "motors": [
     {
-      "id": "c/bosch/2025/performance_line_speed_bdu388y",
+      "id": "c/bosch/2025/performance_line_speed_bdu388y_us",
       "drive_wheel": "rear",
       "manufacturer": "Bosch",
       "model": "BDU388Y",
@@ -167,7 +172,7 @@
   },
   "sizes": [
     {
-      "name": "universal",
+      "name": "One Size",
       "geometry": {
         "top_tube_effective": 680,
         "head_angle": 70,

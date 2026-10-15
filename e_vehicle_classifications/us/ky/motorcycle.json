@@ -2,10 +2,12 @@
   "id": "evc/us/ky/motorcycle",
   "jurisdiction": "US-KY",
   "groups": [
+    "evc/moped",
+    "evc/motor_driven_cycle",
     "evc/motorcycle"
   ],
   "name": "Motorcycle",
-  "description": "A motor-driven vehicle with a seat or saddle, designed to travel on no more than three wheels, that can go faster than 50 mph; a plug-in battery-powered one is an electric motorcycle.",
+  "description": "A motor-driven vehicle with a seat or saddle, designed to travel on no more than three wheels, at any power; the registration law adds a top speed over 50 mph, below which a step-through one is a motor scooter. A plug-in battery-powered one is an electric motorcycle.",
   "throttle": true,
   "restrictions": [
     {
@@ -17,6 +19,14 @@
       ]
     },
     {
+      "rule": "The traffic law sets no power or speed floor, so one whose motor produces no more than 5 brake horsepower (3,750 W) is still a motorcycle; Kentucky has no separate motor-driven cycle class",
+      "citation": "Kentucky Revised Statutes §§189.285(6), 186.010",
+      "sources": [
+        "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=6361",
+        "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=57824"
+      ]
+    },
+    {
       "rule": "For registration, a top speed over 50 mph; a slower step-through one of 2 brake horsepower or more is a motor scooter, registered as a motorcycle",
       "citation": "Kentucky Revised Statutes §186.010(15)",
       "sources": [
@@ -25,10 +35,11 @@
       ]
     },
     {
-      "rule": "Kentucky's moped definition requires a combustion engine of 50 cc or less, so an electric moped-class vehicle can't be registered as a moped",
-      "citation": "Kentucky Revised Statutes §186.010(5)",
+      "rule": "Kentucky's moped definition is written around an engine of 50 cc or less with no electric equivalent, so an electric moped-class vehicle isn't a moped; the traffic law makes it a motorcycle, though at 50 mph or less it fits no registration class",
+      "citation": "Kentucky Revised Statutes §§186.010(5), (15), (24), 189.285(6)",
       "sources": [
-        "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=57824"
+        "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=57824",
+        "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=6361"
       ]
     },
     {

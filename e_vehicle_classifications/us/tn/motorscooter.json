@@ -1,6 +1,10 @@
 {
   "id": "evc/us/tn/motorscooter",
   "jurisdiction": "US-TN",
+  "groups": [
+    "evc/moped",
+    "evc/motor_driven_cycle"
+  ],
   "name": "Motorscooter",
   "description": "A two- or three-wheeled vehicle with an automatic transmission whose electric motor is rated at no more than 5,000 watts, on a wheelbase of 64 inches or less and weighing no more than 450 pounds dry. An electric two-wheeler that tops an electric bicycle's 750 watts or 28 mph, or lacks operable pedals, lands here while it stays within these limits.",
   "throttle": true,
@@ -21,8 +25,15 @@
       ]
     },
     {
-      "rule": "No top-speed limit in the definition",
+      "rule": "No top-speed limit in the definition, so an electric motorcycle whose motor produces no more than 5 brake horsepower (3,750 W) is a motorscooter at any speed while it has an automatic transmission and stays within the weight and wheelbase limits; Tennessee has no separate motor-driven cycle class",
       "citation": "Tennessee Code Annotated §55-8-101",
+      "sources": [
+        "https://codes.findlaw.com/tn/title-55-motor-and-other-vehicles/tn-code-sect-55-8-101/"
+      ]
+    },
+    {
+      "rule": "A moped without pedals is a motorscooter: the motorized bicycle is defined by a 50 cc cylinder capacity, and an electric scooter must weigh under 100 pounds and stop at 20 mph",
+      "citation": "Tennessee Code Annotated §55-8-101(21), (43), (44)",
       "sources": [
         "https://codes.findlaw.com/tn/title-55-motor-and-other-vehicles/tn-code-sect-55-8-101/"
       ]

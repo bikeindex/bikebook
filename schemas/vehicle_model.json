@@ -1,5 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/bikeindex/bikebook/main/schemas/vehicle_model.json",
   "title": "Bikebook vehicle model",
   "type": "object",
   "properties": {
@@ -8,7 +9,7 @@
       "format": "uri"
     },
     "schema_version": {
-      "const": "0.24.2"
+      "const": "0.24.7"
     },
     "id": {
       "type": "string",
@@ -240,14 +241,6 @@
         "null"
       ]
     },
-    "sources": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "format": "uri"
-      },
-      "description": "URLs parsed from, in parse order"
-    },
     "first_year": {
       "type": [
         "integer",
@@ -335,7 +328,7 @@
               "null"
             ],
             "format": "uri",
-            "description": "Product page URL, from the most authoritative source stating one"
+            "description": "Manufacturer product page URL"
           },
           "url_live": {
             "type": [
@@ -343,13 +336,6 @@
               "null"
             ],
             "description": "Whether the manufacturer's page is still up; false for an archive capture, which shows it as it was"
-          },
-          "url_is_official": {
-            "type": [
-              "boolean",
-              "null"
-            ],
-            "description": "Whether the URL is a manufacturer page (vs a third-party review)"
           }
         },
         "additionalProperties": false
@@ -580,6 +566,13 @@
           "description": "The longest fork the frame is rated for, suspension or not, in millimeters",
           "x-unit": "mm"
         },
+        "coil_compatible": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "The frame takes a coil rear shock"
+        },
         "max_weight_total": {
           "type": [
             "integer",
@@ -607,7 +600,7 @@
             },
             "shock_length": {
               "type": [
-                "integer",
+                "number",
                 "null"
               ],
               "description": "Eye to eye, in millimeters",
@@ -627,6 +620,23 @@
                 "null"
               ],
               "description": "E.g. trunnion or 30x8 bushings"
+            },
+            "spring": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "air",
+                "coil",
+                null
+              ]
+            },
+            "lockout": {
+              "type": [
+                "boolean",
+                "null"
+              ]
             }
           },
           "additionalProperties": false
@@ -644,7 +654,7 @@
             },
             "shock_length": {
               "type": [
-                "integer",
+                "number",
                 "null"
               ],
               "description": "Eye to eye, in millimeters",
@@ -664,6 +674,23 @@
                 "null"
               ],
               "description": "E.g. trunnion or 30x8 bushings"
+            },
+            "spring": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "air",
+                "coil",
+                null
+              ]
+            },
+            "lockout": {
+              "type": [
+                "boolean",
+                "null"
+              ]
             }
           },
           "additionalProperties": false
@@ -915,6 +942,31 @@
             "type": "integer"
           },
           "description": "Teeth on each cog, smallest first; at least the smallest and largest"
+        }
+      },
+      "additionalProperties": false
+    },
+    "groupset": {
+      "type": "object",
+      "properties": {
+        "manufacturer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "electronic": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "Shifts electronically (Di2, AXS, eTap, EPS, wireless)"
         }
       },
       "additionalProperties": false
@@ -1234,11 +1286,12 @@
                   ],
                   "enum": [
                     "stock",
-                    "sold_separately",
+                    "upgrade",
                     "app_update",
                     "aftermarket",
                     null
-                  ]
+                  ],
+                  "description": "How the buyer gets the mode: stock; upgrade, a mode the maker sells at extra cost, picked at purchase in place of the stock one or bought and fitted later; app_update, an unlock; aftermarket, a third party's"
                 },
                 "max_speed": {
                   "type": [
@@ -1311,10 +1364,76 @@
                   "items": {
                     "type": "string",
                     "enum": [
+                      "evc/au/nsw/electrically_power_assisted_cycle",
+                      "evc/au/nsw/transitional_e_bike",
+                      "evc/au/pedalec",
+                      "evc/au/power_assisted_pedal_cycle",
+                      "evc/au/qld/electrically_power_assisted_cycle",
+                      "evc/ca/ab/moped",
+                      "evc/ca/ab/motorcycle",
+                      "evc/ca/ab/off_highway_vehicle",
+                      "evc/ca/ab/power_bicycle",
+                      "evc/ca/bc/electric_kick_scooter",
+                      "evc/ca/bc/limited_speed_motorcycle",
+                      "evc/ca/bc/motor_assisted_cycle",
+                      "evc/ca/bc/motorcycle",
+                      "evc/ca/bc/off_road_vehicle",
+                      "evc/ca/mb/moped",
+                      "evc/ca/mb/motorcycle",
+                      "evc/ca/mb/off_road_vehicle",
+                      "evc/ca/mb/power_assisted_bicycle",
+                      "evc/ca/nb/motor_driven_cycle",
+                      "evc/ca/nb/motorcycle",
+                      "evc/ca/nb/off_road_vehicle",
+                      "evc/ca/nl/moped",
+                      "evc/ca/nl/motorcycle",
+                      "evc/ca/nl/off_road_vehicle",
+                      "evc/ca/ns/limited_speed_motorcycle",
+                      "evc/ca/ns/motorcycle",
+                      "evc/ca/ns/off_highway_vehicle",
+                      "evc/ca/ns/power_assisted_bicycle",
+                      "evc/ca/nt/all_terrain_vehicle",
+                      "evc/ca/nt/motorcycle",
+                      "evc/ca/nu/all_terrain_vehicle",
+                      "evc/ca/nu/moped",
+                      "evc/ca/nu/motorcycle",
+                      "evc/ca/on/cargo_power_assisted_bicycle",
+                      "evc/ca/on/electric_kick_scooter",
+                      "evc/ca/on/limited_speed_motorcycle",
+                      "evc/ca/on/motor_assisted_bicycle",
+                      "evc/ca/on/motorcycle",
+                      "evc/ca/on/off_road_vehicle",
+                      "evc/ca/on/power_assisted_bicycle",
+                      "evc/ca/pe/moped",
+                      "evc/ca/pe/motorcycle",
+                      "evc/ca/pe/off_highway_vehicle",
+                      "evc/ca/pe/power_assisted_bicycle",
+                      "evc/ca/power_assisted_bicycle",
+                      "evc/ca/qc/moped",
+                      "evc/ca/qc/motorcycle",
+                      "evc/ca/qc/motorized_personal_mobility_device",
+                      "evc/ca/qc/off_highway_vehicle",
+                      "evc/ca/qc/power_assisted_bicycle",
+                      "evc/ca/sk/all_terrain_vehicle",
+                      "evc/ca/sk/limited_speed_motor_vehicle",
+                      "evc/ca/sk/motorcycle",
+                      "evc/ca/sk/power_assisted_bicycle",
+                      "evc/ca/yt/electric_power_assisted_cycle",
+                      "evc/ca/yt/motorcycle",
+                      "evc/ca/yt/off_road_vehicle",
+                      "evc/eu/epac",
+                      "evc/eu/l1e_a",
+                      "evc/eu/l1e_b",
+                      "evc/gb/electrically_assisted_pedal_cycle",
+                      "evc/gb/l1e_a",
+                      "evc/gb/l1e_b",
+                      "evc/l1e_a_powered_cycle",
+                      "evc/l1e_b_moped",
                       "evc/moped",
                       "evc/motor_driven_cycle",
                       "evc/motorcycle",
                       "evc/off_highway_motorcycle",
+                      "evc/pedal_moped",
                       "evc/us/ak/electric_bicycle",
                       "evc/us/ak/motor_driven_cycle",
                       "evc/us/ak/motorcycle",

@@ -2,12 +2,12 @@
   "id": "evc/us/vt/motorcycle",
   "jurisdiction": "US-VT",
   "groups": [
+    "evc/motor_driven_cycle",
     "evc/motorcycle"
   ],
   "name": "Motorcycle",
-  "description": "A motor vehicle with a seat or saddle designed to travel on no more than three wheels, other than a motor-driven cycle, motor-assisted bicycle or electric bicycle; an electric two-wheeler whose motor exceeds two brake horsepower (1,500 W) or that can go faster than 30 mph is one.",
+  "description": "A motor vehicle with a seat or saddle designed to travel on no more than three wheels, other than a motor-driven cycle, motor-assisted bicycle or electric bicycle; an electric two-wheeler that can go faster than 30 mph is one however small its motor, as is one over two brake horsepower (1,500 W).",
   "throttle": true,
-  "min_power": 1500,
   "restrictions": [
     {
       "rule": "A seat or saddle and no more than three wheels on the ground; includes autocycles",
@@ -17,8 +17,8 @@
       ]
     },
     {
-      "rule": "Anything faster or more powerful than a motor-driven cycle (two brake horsepower, 30 mph) is a motorcycle",
-      "citation": "23 V.S.A. §§4(18)(A), 4(45)(A)",
+      "rule": "Anything faster or more powerful than a motor-driven cycle (two brake horsepower, 30 mph), and so past a motor-assisted bicycle's limits too, is a motorcycle, with no power floor",
+      "citation": "23 V.S.A. §§4(18)(A), 4(45)(A), 4(45)(B)",
       "sources": [
         "https://legislature.vermont.gov/statutes/section/23/001/00004"
       ]

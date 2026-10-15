@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.24.2",
+  "schema_version": "0.24.7",
   "id": "m/trek/2026/fuel_plus_mx_9_9_x0_axs_gen_2",
   "manufacturer": "Trek",
   "vehicle_model_group": "Fuel+",
@@ -43,8 +43,7 @@
         }
       ],
       "url": "https://www.trekbikes.com/us/en_US/bikes/mountain-bikes/electric-mountain-bikes/fuel/f/F370/x/56080/",
-      "url_live": true,
-      "url_is_official": true
+      "url_live": true
     }
   },
   "frame": {
@@ -65,12 +64,14 @@
   },
   "suspension": {
     "front": {
-      "travel": 160
+      "travel": 160,
+      "spring": "air"
     },
     "rear": {
       "travel": 150,
       "shock_length": 205,
-      "shock_stroke": 60
+      "shock_stroke": 60,
+      "spring": "air"
     }
   },
   "wheels": [
@@ -130,6 +131,10 @@
       52
     ]
   },
+  "groupset": {
+    "manufacturer": "SRAM",
+    "electronic": true
+  },
   "brakes": [
     {
       "type": "disc_hydraulic",
@@ -166,6 +171,7 @@
       "operating_modes": [
         {
           "mode": "assist",
+          "max_speed": 32,
           "e_vehicle_classifications": [
             "evc/us/class_1"
           ]

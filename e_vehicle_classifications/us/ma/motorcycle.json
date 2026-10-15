@@ -2,10 +2,11 @@
   "id": "evc/us/ma/motorcycle",
   "jurisdiction": "US-MA",
   "groups": [
+    "evc/motor_driven_cycle",
     "evc/motorcycle"
   ],
   "name": "Motorcycle",
-  "description": "A motor vehicle with a seat or saddle, designed to travel on no more than three wheels, including any bicycle with a motor attached that isn't a motorized bicycle. A bicycle with an electric motor that can go faster than 30 mph, or a seated electric two-wheeler over that speed, is a motorcycle.",
+  "description": "A motor vehicle with a seat or saddle, designed to travel on no more than three wheels, including any bicycle with a motor attached that isn't a motorized bicycle. A bicycle with an electric motor that can go faster than 30 mph, or a seated electric two-wheeler over that speed, is a motorcycle, whatever its motor's power.",
   "throttle": true,
   "restrictions": [
     {
@@ -17,6 +18,13 @@
     },
     {
       "rule": "Includes any bicycle with a motor or driving wheel attached, other than a motorized bicycle (30 mph or slower) or an electric bicycle",
+      "citation": "Massachusetts General Laws chapter 90 §1",
+      "sources": [
+        "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXIV/Chapter90/Section1"
+      ]
+    },
+    {
+      "rule": "One whose motor produces no more than 5 brake horsepower is still a motorcycle once it can exceed 30 mph; Massachusetts has no separate motor-driven cycle class",
       "citation": "Massachusetts General Laws chapter 90 §1",
       "sources": [
         "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleXIV/Chapter90/Section1"
