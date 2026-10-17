@@ -1,0 +1,408 @@
+{
+  "schema_version": "0.25.0",
+  "id": "m/tern/2026/gsd_r14_gen_3_us",
+  "manufacturer": "Tern",
+  "model": "GSD R14 Gen 3",
+  "model_configuration": "complete",
+  "markets": [
+    "US",
+    "AU",
+    "CA",
+    "CH",
+    "EU",
+    "GB",
+    "NO"
+  ],
+  "type": "cargo_bike",
+  "propulsion": [
+    "pedal_assist"
+  ],
+  "primary_activity": "cargo",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/tern/2026/gsd_r14_gen_3_us.webp",
+  "description": "The GSD R14 is a smart cargo eBike with legendary Rohloff e-shifting. UL-certified & meets major cargo bike standards to safely carry up to 210 kg.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 1099900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Satin Iron Grey",
+          "colors": [
+            "silver"
+          ]
+        }
+      ],
+      "url": "https://www.ternbicycles.com/us/bikes/473/gsd-r14",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum",
+    "mounts": [
+      {
+        "type": "accessory",
+        "description": "Luggage Socket: Combo Mount"
+      }
+    ],
+    "bottom_bracket": {
+      "spindle": "ISIS"
+    },
+    "headset": "IS42/28.6 | IS52/40",
+    "max_weight_total": 210
+  },
+  "suspension": {
+    "front": {}
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front"
+      ],
+      "axle": "thru_axle",
+      "axle_thread_pitch": 1.5
+    },
+    {
+      "bsd": 406,
+      "position": [
+        "rear"
+      ]
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "14_internal_rear",
+    "belt_drive"
+  ],
+  "groupset": {
+    "manufacturer": "Rohloff",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "rear"
+      ],
+      "rotor_diameter": 203
+    },
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front"
+      ],
+      "rotor_diameter": 203,
+      "anti_lock": true
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/bosch/2022/cargo_line_bdu374y_us",
+      "drive_wheel": "rear",
+      "manufacturer": "Bosch",
+      "model": "BDU374Y",
+      "model_group": "Cargo Line",
+      "kind": "mid_drive",
+      "spindle": "ISIS",
+      "battery_size": 800,
+      "battery_chemistry": "li-ion",
+      "rated_power": 250,
+      "peak_power": 600,
+      "max_torque": 85,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 143,
+          "e_vehicle_classifications": [
+            "evc/us/class_1",
+            "evc/ca/power_assisted_bicycle"
+          ],
+          "markets": [
+            "US",
+            "CA"
+          ]
+        },
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 25,
+          "e_vehicle_classifications": [
+            "evc/au/pedalec",
+            "evc/eu/epac",
+            "evc/gb/electrically_assisted_pedal_cycle"
+          ],
+          "markets": [
+            "AU",
+            "CH",
+            "EU",
+            "GB",
+            "NO"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "wheelbase": 1360,
+        "standover": 490,
+        "dimensions": {
+          "length": 1920,
+          "width": 680,
+          "height": 1180
+        },
+        "dimensions_folded": {
+          "length": 1850,
+          "width": 460,
+          "height": 880
+        },
+        "total_weight": 38.8,
+        "max_weight_rider": 130,
+        "min_rider_height": 1530,
+        "max_rider_height": 2000,
+        "extra_measurements": {
+          "saddle_to_pedal_max": 1050,
+          "saddle_to_pedal_min": 690,
+          "seatpost_to_handlebar_max": 590,
+          "seatpost_to_handlebar_min": 490
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "bell_noisemaker",
+      "type_detail": "Bell",
+      "description": "Pitch Plus, brass"
+    },
+    {
+      "type": "bottom_bracket",
+      "description": "Motor integrated"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Magura",
+      "description": "Magura MT-C ABS, 4-piston hydraulic disc, 203 mm rotor"
+    },
+    {
+      "type": "brake_cable",
+      "type_detail": "Brake Cable & Housing",
+      "manufacturer": "Magura",
+      "description": "Magura ABS, hydraulic"
+    },
+    {
+      "type": "brake_lever",
+      "manufacturer": "Magura",
+      "description": "Magura MT-C e-stop, hydraulic, with brake light sensor"
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Cassette/Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "Gates CDX, precision CNC machined cog"
+    },
+    {
+      "type": "chain_guide",
+      "type_detail": "Chainguard",
+      "manufacturer": "Tern",
+      "description": "Tern GSD, full chain cover"
+    },
+    {
+      "type": "crankset",
+      "manufacturer": "Tern",
+      "description": "Tern GSD, Gates CDX CNC machined beltring"
+    },
+    {
+      "type": "drive_belt",
+      "type_detail": "Chain",
+      "manufacturer": "Gates Carbon Drive",
+      "description": "Gates Carbon Drive CDX belt"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "manufacturer": "Bosch",
+      "description": "Bosch 800 PowerPack, Fast Swap, Dual Battery bays, optional 2 x 800 Wh max capacity"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "100-240V, 4A (US)"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "manufacturer": "Bosch",
+      "description": "Bosch Cargo Line, 400% Assist, 85 Nm Torque; 250 W (nominal), max speed 20 mph (US)"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "manufacturer": "Bosch",
+      "description": "Bosch Kiox 300 w/ LED remote, connectivity with Bosch eBike Flow IOS/Android app, electronic bike lock, Rohloff integrated shifting w/ auto downshift"
+    },
+    {
+      "type": "fender",
+      "description": "F: Aluminum R: GSD wheel guard"
+    },
+    {
+      "type": "fork",
+      "description": "Suntour custom for Tern, 1.5\" tapered Chromoly steerer, 34 mm stanchions, Thru-axle, DIN 79010 certified: 210 kg"
+    },
+    {
+      "type": "grips_tape",
+      "type_detail": "Grips/Bar Tape",
+      "manufacturer": "Ergon",
+      "description": "Ergon"
+    },
+    {
+      "type": "handlebar",
+      "manufacturer": "Tern",
+      "description": "Tern Sweep, 6061-AL, Tern Andros adapted"
+    },
+    {
+      "type": "headset",
+      "manufacturer": "Tern",
+      "description": "Tern Flux Pro Taper by FSA, 1.5\", angular contact bearings, Physis integrated"
+    },
+    {
+      "type": "hub",
+      "position": [
+        "front"
+      ],
+      "manufacturer": "Tern",
+      "description": "Tern Atlas, Cooling Fins, Boost Thru-Axle, sealed cartridge bearings"
+    },
+    {
+      "type": "hub",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Rohloff",
+      "description": "Rohloff E14, 526% range, Boost"
+    },
+    {
+      "type": "kickstand",
+      "description": "Atlas Lockstand Gen 2, AutoLock w/ remote unlock, patented technology"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "front"
+      ],
+      "description": "Ignis Headlight, Hi/Lo beams, 700 lumens"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "rear"
+      ],
+      "description": "RearStop Brake Light, Always on"
+    },
+    {
+      "type": "pedals",
+      "description": "Urban with non-slip surface, sealed bearings"
+    },
+    {
+      "type": "rack",
+      "description": "Atlas G, 220 lb capacity"
+    },
+    {
+      "type": "rim",
+      "manufacturer": "Tern",
+      "description": "Tern Atlas, ultra wide 36 mm, dual reinforced joint",
+      "dimensions": {
+        "width": 36
+      }
+    },
+    {
+      "type": "saddle",
+      "manufacturer": "Tern",
+      "description": "Tern GSD by Velo"
+    },
+    {
+      "type": "seatpost",
+      "manufacturer": "Tern",
+      "description": "Tern VLT 41/34.9 mm, with Cane Creek suspension and LightAction levers"
+    },
+    {
+      "type": "seatpost_clamp",
+      "manufacturer": "Tern",
+      "description": "Tern Collar"
+    },
+    {
+      "type": "shift_cable",
+      "type_detail": "Shifter Cable & Housing",
+      "manufacturer": "Rohloff",
+      "description": "Rohloff E14, e-shift"
+    },
+    {
+      "type": "shifter",
+      "manufacturer": "Rohloff",
+      "description": "Rohloff E14, e-shift 14 spd"
+    },
+    {
+      "type": "spokes",
+      "type_detail": "Spokes & Nipples",
+      "description": "Stainless steel"
+    },
+    {
+      "type": "stem",
+      "type_detail": "Handlepost",
+      "manufacturer": "Tern",
+      "description": "Tern Physis 3D, 3D forged, 5 patented technologies, 12°, 290 mm",
+      "angles": {
+        "angle": 12
+      }
+    },
+    {
+      "type": "stem",
+      "manufacturer": "Tern",
+      "description": "Tern Andros, adjustable, forged construction, patented technology"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Schwalbe",
+      "description": "Schwalbe Pick-Up, cargo-optimized, Super Defense puncture protection, Reflex"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Connect Module",
+      "manufacturer": "Bosch",
+      "description": "Bosch Connect Module with GPS/GSM connectivity & anti-theft alarm when subscribed to Flow+; free 12-month trial upon activation"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Frame Lock",
+      "manufacturer": "Abus",
+      "description": "ABUS or AXA, keyed-alike with Bosch battery"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "On-board Charging",
+      "description": "USB-C, 5V/2.4A, 12W max"
+    },
+    {
+      "type": "wheel",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Tern",
+      "description": "Tern Atlas, heavy duty cargo wheel"
+    }
+  ]
+}
