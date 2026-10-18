@@ -15,7 +15,7 @@
         "$ref": "#/$defs/$schema"
       },
       "schema_version": {
-        "const": "0.25.0"
+        "const": "0.25.1"
       },
       "id": {
         "$ref": "#/$defs/id"
@@ -667,6 +667,16 @@
                 "anyOf": [
                   {
                     "$ref": "#/$defs/frame.max_weight_total"
+                  },
+                  {
+                    "const": null
+                  }
+                ]
+              },
+              "gross_weight_rating": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/frame.gross_weight_rating"
                   },
                   {
                     "const": null
@@ -3600,7 +3610,7 @@
         "$ref": "#/$defs/$schema"
       },
       "schema_version": {
-        "const": "0.25.0"
+        "const": "0.25.1"
       },
       "id": {
         "$ref": "#/$defs/id"
@@ -3814,6 +3824,9 @@
           },
           "max_weight_total": {
             "$ref": "#/$defs/frame.max_weight_total"
+          },
+          "gross_weight_rating": {
+            "$ref": "#/$defs/frame.gross_weight_rating"
           }
         },
         "additionalProperties": false
@@ -5236,6 +5249,14 @@
         "null"
       ],
       "description": "Vehicle weight limit: rider and cargo, in kilograms",
+      "x-unit": "kg"
+    },
+    "frame.gross_weight_rating": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Vehicle plus max weight, the total combined limit (curb_weight, GVWR), in kilograms",
       "x-unit": "kg"
     },
     "suspension.front.travel": {
