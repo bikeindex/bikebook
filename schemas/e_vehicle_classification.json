@@ -18,8 +18,15 @@
         "string",
         "null"
       ],
-      "pattern": "^(AR|AU|CA|CH|CN|EU|GB|HK|IN|JP|KR|MY|NO|NZ|PH|PY|SG|TH|TW|US|UY)(-[A-Z0-9]{1,3})?$",
+      "pattern": "^(AD|AE|AL|AR|AU|BA|BH|BM|BN|BO|BR|BT|CA|CH|CL|CN|CO|CR|DO|EC|EG|EU|GB|GE|GI|GT|HK|HN|ID|IL|IN|IS|JE|JP|KE|KG|KH|KR|KW|KZ|LA|LB|MC|MD|MK|MO|MU|MX|MY|NO|NZ|OM|PA|PE|PH|PY|QA|RS|RU|SA|SG|SV|TH|TR|TW|UA|US|UY|VE|VG|VN|ZA|ZM)(-[A-Z0-9]{1,3})?$",
       "description": "ISO 3166-1 alpha-2 country code, or EU, suffixed with a state or province's ISO 3166-2 code, e.g. US-CA; a group, which classifications from any jurisdiction can name, has none"
+    },
+    "jurisdiction_name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "What labels call the jurisdiction, e.g. California; a law with class_3_throttle false needs one"
     },
     "groups": {
       "type": "array",
