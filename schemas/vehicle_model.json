@@ -15,7 +15,7 @@
         "$ref": "#/$defs/$schema"
       },
       "schema_version": {
-        "const": "0.25.3"
+        "const": "0.25.4"
       },
       "id": {
         "$ref": "#/$defs/id"
@@ -132,6 +132,16 @@
         "anyOf": [
           {
             "$ref": "#/$defs/stock_photo"
+          },
+          {
+            "const": null
+          }
+        ]
+      },
+      "geometry_photo": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/geometry_photo"
           },
           {
             "const": null
@@ -3610,7 +3620,7 @@
         "$ref": "#/$defs/$schema"
       },
       "schema_version": {
-        "const": "0.25.3"
+        "const": "0.25.4"
       },
       "id": {
         "$ref": "#/$defs/id"
@@ -3655,6 +3665,9 @@
       },
       "stock_photo": {
         "$ref": "#/$defs/stock_photo"
+      },
+      "geometry_photo": {
+        "$ref": "#/$defs/geometry_photo"
       },
       "target_riders": {
         "type": "array",
@@ -4701,6 +4714,32 @@
       {
         "if": {
           "required": [
+            "geometry_photo",
+            "type"
+          ],
+          "properties": {
+            "type": {
+              "const": "bike"
+            }
+          }
+        },
+        "then": {
+          "required": [
+            "suspension"
+          ],
+          "properties": {
+            "suspension": {
+              "required": [
+                "front",
+                "rear"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "if": {
+          "required": [
             "primary_activity"
           ],
           "properties": {
@@ -5021,6 +5060,14 @@
       ],
       "format": "uri",
       "description": "Bikebook-hosted copy of the manufacturer's product photo"
+    },
+    "geometry_photo": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri",
+      "description": "Bikebook-hosted copy of the manufacturer's geometry drawing; only for a full-suspension bike or a type other than bike"
     },
     "target_riders": {
       "type": "string",
