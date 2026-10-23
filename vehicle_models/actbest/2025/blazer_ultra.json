@@ -1,11 +1,10 @@
 {
-  "schema_version": "0.25.4",
+  "schema_version": "0.25.7",
   "id": "m/actbest/2025/blazer_ultra",
   "manufacturer": "Actbest",
   "model": "Blazer Ultra",
   "model_configuration": "complete",
   "type": "bike",
-  "type_detail": "step_through",
   "propulsion": [
     "pedal_assist",
     "throttle"
@@ -103,6 +102,7 @@
   },
   "frame": {
     "material": "steel",
+    "top_tube": "step_through",
     "max_weight_total": 227
   },
   "suspension": {
@@ -125,6 +125,10 @@
     "1_front",
     "7_rear"
   ],
+  "groupset": {
+    "manufacturer": "Shimano",
+    "electronic": false
+  },
   "brakes": [
     {
       "type": "disc_hydraulic",
@@ -162,6 +166,9 @@
       ]
     }
   ],
+  "cargo": {
+    "max_weight_cargo": 24.95
+  },
   "sizes": [
     {
       "name": "One Size",
@@ -246,6 +253,7 @@
       ],
       "description": "26\"x 4.0\"",
       "dimensions": {
+        "width": 101.6,
         "diameter": 559
       }
     }

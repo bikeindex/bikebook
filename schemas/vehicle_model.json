@@ -15,7 +15,7 @@
         "$ref": "#/$defs/$schema"
       },
       "schema_version": {
-        "const": "0.25.4"
+        "const": "0.25.7"
       },
       "id": {
         "$ref": "#/$defs/id"
@@ -368,6 +368,16 @@
                 "anyOf": [
                   {
                     "$ref": "#/$defs/frame.material_detail"
+                  },
+                  {
+                    "const": null
+                  }
+                ]
+              },
+              "top_tube": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/frame.top_tube"
                   },
                   {
                     "const": null
@@ -1202,6 +1212,16 @@
                   }
                 ]
               },
+              "series": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/groupset.series"
+                  },
+                  {
+                    "const": null
+                  }
+                ]
+              },
               "description": {
                 "anyOf": [
                   {
@@ -2012,16 +2032,6 @@
           {
             "type": "object",
             "properties": {
-              "type": {
-                "anyOf": [
-                  {
-                    "$ref": "#/$defs/cargo.type"
-                  },
-                  {
-                    "const": null
-                  }
-                ]
-              },
               "length": {
                 "anyOf": [
                   {
@@ -2136,6 +2146,9 @@
                         },
                         "standover": {
                           "$ref": "#/$defs/sizes.geometry.standover"
+                        },
+                        "standover_above_bb": {
+                          "$ref": "#/$defs/sizes.geometry.standover_above_bb"
                         },
                         "bb_drop": {
                           "$ref": "#/$defs/sizes.geometry.bb_drop"
@@ -2389,6 +2402,16 @@
                                   "anyOf": [
                                     {
                                       "$ref": "#/$defs/sizes.geometry.standover"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "standover_above_bb": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/sizes.geometry.standover_above_bb"
                                     },
                                     {
                                       "const": null
@@ -3620,7 +3643,7 @@
         "$ref": "#/$defs/$schema"
       },
       "schema_version": {
-        "const": "0.25.4"
+        "const": "0.25.7"
       },
       "id": {
         "$ref": "#/$defs/id"
@@ -3745,6 +3768,9 @@
           },
           "material_detail": {
             "$ref": "#/$defs/frame.material_detail"
+          },
+          "top_tube": {
+            "$ref": "#/$defs/frame.top_tube"
           },
           "folding": {
             "$ref": "#/$defs/frame.folding"
@@ -4008,6 +4034,9 @@
               "null"
             ]
           },
+          "series": {
+            "$ref": "#/$defs/groupset.series"
+          },
           "description": {
             "type": [
               "string",
@@ -4213,9 +4242,6 @@
       "cargo": {
         "type": "object",
         "properties": {
-          "type": {
-            "$ref": "#/$defs/cargo.type"
-          },
           "length": {
             "$ref": "#/$defs/cargo.length"
           },
@@ -4286,6 +4312,9 @@
                 },
                 "standover": {
                   "$ref": "#/$defs/sizes.geometry.standover"
+                },
+                "standover_above_bb": {
+                  "$ref": "#/$defs/sizes.geometry.standover_above_bb"
                 },
                 "bb_drop": {
                   "$ref": "#/$defs/sizes.geometry.bb_drop"
@@ -4948,7 +4977,6 @@
         "e_atv",
         null
       ],
-      "description": "Vehicle class",
       "x-complete": true
     },
     "type_detail": {
@@ -4964,10 +4992,14 @@
         "electric_unicycle",
         "hoverboard",
         "self_balancing_scooter",
-        "step_through",
+        "short_tail",
+        "mid_tail",
+        "long_tail",
+        "front_box",
+        "front_platform",
         null
       ],
-      "description": "Tadpole: a three-wheeler with two wheels in front rather than behind; bench_seat: a moped-style bike; seated: an e-scooter; self_balancing_scooter: side-by-side wheels steered by a bar; step_through: a frame with a low or no top tube"
+      "description": "Tadpole: a three-wheeler with two wheels in front rather than behind; bench_seat: a moped-style bike; seated: an e-scooter; self_balancing_scooter: side-by-side wheels steered by a bar; short_tail, mid_tail and long_tail: a cargo bike's load area behind the rider; front_box: a walled front load area; front_platform: a flat sideless front deck"
     },
     "propulsion": {
       "type": "string",
@@ -5168,6 +5200,19 @@
         "null"
       ],
       "description": "The manufacturer's name for its material or grade, e.g. Reynolds 853 steel or FACT 11m carbon"
+    },
+    "frame.top_tube": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "horizontal",
+        "sloping",
+        "step_through",
+        null
+      ],
+      "description": "Sloping: drops toward the seat tube (compact); step_through: low or none, to step through"
     },
     "frame.folding": {
       "type": [
@@ -5642,6 +5687,13 @@
         "shaft_drive",
         "left_side_drive"
       ]
+    },
+    "groupset.series": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "The maker's name for the group, e.g. Rival, GRX 800, Deore XT: the lowest more than one derailleur, shifter, crankset or cassette names, else the one most name, then the shifter's"
     },
     "groupset.electronic": {
       "type": [
@@ -6353,21 +6405,6 @@
         "ZM"
       ]
     },
-    "cargo.type": {
-      "type": [
-        "string",
-        "null"
-      ],
-      "enum": [
-        "Short Tail",
-        "Mid Tail",
-        "Long Tail",
-        "Front Box",
-        "Front Platform",
-        null
-      ],
-      "description": "Load-area form: Tail types sit behind the rider; Front Box is a walled front load area, Front Platform a flat sideless front deck"
-    },
     "cargo.length": {
       "type": [
         "integer",
@@ -6394,7 +6431,7 @@
     },
     "cargo.max_weight_cargo": {
       "type": [
-        "integer",
+        "number",
         "null"
       ],
       "description": "In kilograms",
@@ -6509,6 +6546,14 @@
         "null"
       ],
       "description": "Standover, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry.standover_above_bb": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Standover above the bottom bracket, as BMX and dirt jump charts state it, in millimeters",
       "x-unit": "mm"
     },
     "sizes.geometry.bb_drop": {
@@ -6804,8 +6849,7 @@
         "top_tube_bag",
         "child_seat",
         "top_of_rack_bag"
-      ],
-      "description": "Component category"
+      ]
     },
     "components.position": {
       "type": "string",
