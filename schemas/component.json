@@ -15,7 +15,7 @@
         "$ref": "#/$defs/$schema"
       },
       "schema_version": {
-        "const": "0.25.7"
+        "const": "0.25.8"
       },
       "id": {
         "$ref": "#/$defs/id"
@@ -276,7 +276,8 @@
                             "mode"
                           ],
                           "additionalProperties": false
-                        }
+                        },
+                        "description": "One per mode for each availability, at its top speed and headline range; a riding mode or assist level (ECO, SPORT) is a setting within one, not a mode of its own"
                       },
                       {
                         "type": "object",
@@ -447,7 +448,7 @@
         "$ref": "#/$defs/$schema"
       },
       "schema_version": {
-        "const": "0.25.7"
+        "const": "0.25.8"
       },
       "id": {
         "$ref": "#/$defs/id"
@@ -576,7 +577,8 @@
                 "mode"
               ],
               "additionalProperties": false
-            }
+            },
+            "description": "One per mode for each availability, at its top speed and headline range; a riding mode or assist level (ECO, SPORT) is a setting within one, not a mode of its own"
           }
         },
         "additionalProperties": false,
@@ -668,7 +670,18 @@
         "seat_bag",
         "top_tube_bag",
         "child_seat",
-        "top_of_rack_bag"
+        "top_of_rack_bag",
+        "frame_protection",
+        "electronic_shifting_component",
+        "power_meter",
+        "sensor",
+        "device_mount",
+        "gps_connectivity_module",
+        "lock",
+        "mirror",
+        "pump",
+        "remote",
+        "tools"
       ]
     },
     "model": {
