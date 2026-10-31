@@ -1,0 +1,801 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/bikeindex/bikebook/main/schemas/component.json",
+  "title": "Bikebook component",
+  "type": "object",
+  "if": {
+    "required": [
+      "base"
+    ]
+  },
+  "then": {
+    "type": "object",
+    "properties": {
+      "$schema": {
+        "$ref": "#/$defs/$schema"
+      },
+      "schema_version": {
+        "const": "0.26.0"
+      },
+      "id": {
+        "$ref": "#/$defs/id"
+      },
+      "type": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/type"
+          },
+          {
+            "const": null
+          }
+        ]
+      },
+      "manufacturer": {
+        "anyOf": [
+          {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          {
+            "const": null
+          }
+        ]
+      },
+      "model": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/model"
+          },
+          {
+            "const": null
+          }
+        ]
+      },
+      "model_group": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/model_group"
+          },
+          {
+            "const": null
+          }
+        ]
+      },
+      "aliases": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Other names it's specced under"
+          },
+          {
+            "const": null
+          }
+        ]
+      },
+      "markets": {
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/markets"
+            },
+            "description": "The markets its pages are from, ISO 3166-1 alpha-2 codes or EU"
+          },
+          {
+            "const": null
+          }
+        ]
+      },
+      "first_year": {
+        "anyOf": [
+          {
+            "$ref": "#/$defs/first_year"
+          },
+          {
+            "const": null
+          }
+        ]
+      },
+      "motor": {
+        "anyOf": [
+          {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/motor.kind"
+                  },
+                  {
+                    "const": null
+                  }
+                ]
+              },
+              "spindle": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/motor.spindle"
+                  },
+                  {
+                    "const": null
+                  }
+                ]
+              },
+              "spindle_length": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/motor.spindle_length"
+                  },
+                  {
+                    "const": null
+                  }
+                ]
+              },
+              "sensor_cadence": {
+                "anyOf": [
+                  {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  {
+                    "const": null
+                  }
+                ]
+              },
+              "sensor_speed": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/motor.sensor_speed"
+                  },
+                  {
+                    "const": null
+                  }
+                ]
+              },
+              "sensor_torque": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/motor.sensor_torque"
+                  },
+                  {
+                    "const": null
+                  }
+                ]
+              },
+              "certification": {
+                "anyOf": [
+                  {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  {
+                    "const": null
+                  }
+                ]
+              },
+              "water_rating": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/motor.water_rating"
+                  },
+                  {
+                    "const": null
+                  }
+                ]
+              },
+              "rated_power": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/motor.rated_power"
+                  },
+                  {
+                    "const": null
+                  }
+                ]
+              },
+              "peak_power": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/motor.peak_power"
+                  },
+                  {
+                    "const": null
+                  }
+                ]
+              },
+              "max_torque": {
+                "anyOf": [
+                  {
+                    "$ref": "#/$defs/motor.max_torque"
+                  },
+                  {
+                    "const": null
+                  }
+                ]
+              },
+              "operating_modes": {
+                "anyOf": [
+                  {
+                    "anyOf": [
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "mode": {
+                              "$ref": "#/$defs/motor.operating_modes.mode"
+                            },
+                            "availability": {
+                              "$ref": "#/$defs/motor.operating_modes.availability"
+                            },
+                            "max_speed": {
+                              "$ref": "#/$defs/motor.operating_modes.max_speed"
+                            },
+                            "range_claimed": {
+                              "$ref": "#/$defs/motor.operating_modes.range_claimed"
+                            },
+                            "max_slope": {
+                              "$ref": "#/$defs/motor.operating_modes.max_slope"
+                            },
+                            "operating_temperature": {
+                              "type": "object",
+                              "properties": {
+                                "min": {
+                                  "$ref": "#/$defs/motor.operating_modes.operating_temperature.min"
+                                },
+                                "max": {
+                                  "$ref": "#/$defs/motor.operating_modes.operating_temperature.max"
+                                }
+                              },
+                              "additionalProperties": false
+                            },
+                            "levels": {
+                              "$ref": "#/$defs/motor.operating_modes.levels"
+                            },
+                            "throttle_type": {
+                              "$ref": "#/$defs/motor.operating_modes.throttle_type"
+                            },
+                            "e_vehicle_classifications": {
+                              "type": "array",
+                              "items": {
+                                "$ref": "#/$defs/motor.operating_modes.e_vehicle_classifications"
+                              },
+                              "description": "The classifications riding in this mode puts it in, by their db/e_vehicle_classifications ids: a jurisdiction's own, and the groups it fits"
+                            }
+                          },
+                          "required": [
+                            "mode"
+                          ],
+                          "additionalProperties": false
+                        },
+                        "description": "One per mode for each availability, at its top speed and headline range; a riding mode or assist level (ECO, SPORT) is a setting within one, not a mode of its own"
+                      },
+                      {
+                        "type": "object",
+                        "additionalProperties": {
+                          "anyOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "mode": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/motor.operating_modes.mode"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "availability": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/motor.operating_modes.availability"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "max_speed": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/motor.operating_modes.max_speed"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "range_claimed": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/motor.operating_modes.range_claimed"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "max_slope": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/motor.operating_modes.max_slope"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "operating_temperature": {
+                                  "anyOf": [
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "min": {
+                                          "anyOf": [
+                                            {
+                                              "$ref": "#/$defs/motor.operating_modes.operating_temperature.min"
+                                            },
+                                            {
+                                              "const": null
+                                            }
+                                          ]
+                                        },
+                                        "max": {
+                                          "anyOf": [
+                                            {
+                                              "$ref": "#/$defs/motor.operating_modes.operating_temperature.max"
+                                            },
+                                            {
+                                              "const": null
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "additionalProperties": false
+                                    },
+                                    {
+                                      "const": false
+                                    }
+                                  ]
+                                },
+                                "levels": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/motor.operating_modes.levels"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "throttle_type": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/motor.operating_modes.throttle_type"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "e_vehicle_classifications": {
+                                  "anyOf": [
+                                    {
+                                      "type": "array",
+                                      "items": {
+                                        "$ref": "#/$defs/motor.operating_modes.e_vehicle_classifications"
+                                      },
+                                      "description": "The classifications riding in this mode puts it in, by their db/e_vehicle_classifications ids: a jurisdiction's own, and the groups it fits"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                }
+                              },
+                              "additionalProperties": false
+                            },
+                            {
+                              "const": false
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "const": null
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "description": "E-vehicle Motor only"
+          },
+          {
+            "const": false
+          }
+        ]
+      },
+      "base": {
+        "type": "string",
+        "pattern": "^c/[a-z0-9_/]+$",
+        "description": "Makes this file an overlay of that one, holding only what differs from it: objects merge key by key, false removes an object and null any other value, and a list may be written as an object of the items that differ, keyed by what identifies each"
+      }
+    },
+    "additionalProperties": false,
+    "required": [
+      "schema_version",
+      "id",
+      "base"
+    ]
+  },
+  "else": {
+    "type": "object",
+    "properties": {
+      "$schema": {
+        "$ref": "#/$defs/$schema"
+      },
+      "schema_version": {
+        "const": "0.26.0"
+      },
+      "id": {
+        "$ref": "#/$defs/id"
+      },
+      "type": {
+        "$ref": "#/$defs/type"
+      },
+      "manufacturer": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "model": {
+        "$ref": "#/$defs/model"
+      },
+      "model_group": {
+        "$ref": "#/$defs/model_group"
+      },
+      "aliases": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Other names it's specced under"
+      },
+      "markets": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/markets"
+        },
+        "description": "The markets its pages are from, ISO 3166-1 alpha-2 codes or EU"
+      },
+      "first_year": {
+        "$ref": "#/$defs/first_year"
+      },
+      "motor": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "$ref": "#/$defs/motor.kind"
+          },
+          "spindle": {
+            "$ref": "#/$defs/motor.spindle"
+          },
+          "spindle_length": {
+            "$ref": "#/$defs/motor.spindle_length"
+          },
+          "sensor_cadence": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "sensor_speed": {
+            "$ref": "#/$defs/motor.sensor_speed"
+          },
+          "sensor_torque": {
+            "$ref": "#/$defs/motor.sensor_torque"
+          },
+          "certification": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "water_rating": {
+            "$ref": "#/$defs/motor.water_rating"
+          },
+          "rated_power": {
+            "$ref": "#/$defs/motor.rated_power"
+          },
+          "peak_power": {
+            "$ref": "#/$defs/motor.peak_power"
+          },
+          "max_torque": {
+            "$ref": "#/$defs/motor.max_torque"
+          },
+          "operating_modes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "mode": {
+                  "$ref": "#/$defs/motor.operating_modes.mode"
+                },
+                "availability": {
+                  "$ref": "#/$defs/motor.operating_modes.availability"
+                },
+                "max_speed": {
+                  "$ref": "#/$defs/motor.operating_modes.max_speed"
+                },
+                "range_claimed": {
+                  "$ref": "#/$defs/motor.operating_modes.range_claimed"
+                },
+                "max_slope": {
+                  "$ref": "#/$defs/motor.operating_modes.max_slope"
+                },
+                "operating_temperature": {
+                  "type": "object",
+                  "properties": {
+                    "min": {
+                      "$ref": "#/$defs/motor.operating_modes.operating_temperature.min"
+                    },
+                    "max": {
+                      "$ref": "#/$defs/motor.operating_modes.operating_temperature.max"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "levels": {
+                  "$ref": "#/$defs/motor.operating_modes.levels"
+                },
+                "throttle_type": {
+                  "$ref": "#/$defs/motor.operating_modes.throttle_type"
+                },
+                "e_vehicle_classifications": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/motor.operating_modes.e_vehicle_classifications"
+                  },
+                  "description": "The classifications riding in this mode puts it in, by their db/e_vehicle_classifications ids: a jurisdiction's own, and the groups it fits"
+                }
+              },
+              "required": [
+                "mode"
+              ],
+              "additionalProperties": false
+            },
+            "description": "One per mode for each availability, at its top speed and headline range; a riding mode or assist level (ECO, SPORT) is a setting within one, not a mode of its own"
+          }
+        },
+        "additionalProperties": false,
+        "description": "E-vehicle Motor only"
+      }
+    },
+    "required": [
+      "schema_version",
+      "id",
+      "type"
+    ],
+    "additionalProperties": false
+  },
+  "$defs": {
+    "$schema": {
+      "type": "string",
+      "format": "uri"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^c/[a-z0-9_/]+$",
+      "description": "Catalog path, prefixed c/: manufacturer slug/first year/model group and model slug"
+    },
+    "type": {
+      "$ref": "https://raw.githubusercontent.com/bikeindex/bikebook/main/schemas/vocabulary.json#/$defs/component_type"
+    },
+    "model": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model_group": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Model family grouping sibling models/variants"
+    },
+    "markets": {
+      "$ref": "https://raw.githubusercontent.com/bikeindex/bikebook/main/schemas/vocabulary.json#/$defs/market"
+    },
+    "first_year": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Year it launched"
+    },
+    "motor.kind": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "hub_drive",
+        "mid_drive",
+        "mid_drive_dedicated",
+        "friction_drive",
+        null
+      ]
+    },
+    "motor.spindle": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "A mid drive's crank interface, e.g. ISIS"
+    },
+    "motor.spindle_length": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "In millimeters",
+      "x-unit": "mm"
+    },
+    "motor.sensor_speed": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "spoke_magnet",
+        "rotor_magnet",
+        "rim_magnet",
+        "hub",
+        null
+      ]
+    },
+    "motor.sensor_torque": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "bottom_bracket_spindle",
+        "crank_spider",
+        "hub",
+        "dropout",
+        null
+      ]
+    },
+    "motor.water_rating": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "IP ingress-protection rating, e.g. IPX7"
+    },
+    "motor.rated_power": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Continuous/nominal, basis for legal class, in watts",
+      "x-unit": "w"
+    },
+    "motor.peak_power": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "In watts",
+      "x-unit": "w"
+    },
+    "motor.max_torque": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "In newton-meters",
+      "x-unit": "nm"
+    },
+    "motor.operating_modes.mode": {
+      "type": "string",
+      "enum": [
+        "assist",
+        "throttle"
+      ]
+    },
+    "motor.operating_modes.availability": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "stock",
+        "upgrade",
+        "app_update",
+        "aftermarket",
+        null
+      ],
+      "description": "How the buyer gets the mode: stock; upgrade, a mode the maker sells at extra cost, picked at purchase in place of the stock one or bought and fitted later; app_update, an unlock; aftermarket, a third party's"
+    },
+    "motor.operating_modes.max_speed": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "In kilometers per hour",
+      "x-unit": "km/h"
+    },
+    "motor.operating_modes.range_claimed": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "In kilometers",
+      "x-unit": "km"
+    },
+    "motor.operating_modes.max_slope": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "In degrees",
+      "x-unit": "degrees"
+    },
+    "motor.operating_modes.operating_temperature.min": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "In degrees Celsius",
+      "x-unit": "c"
+    },
+    "motor.operating_modes.operating_temperature.max": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "In degrees Celsius",
+      "x-unit": "c"
+    },
+    "motor.operating_modes.levels": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Assist only"
+    },
+    "motor.operating_modes.throttle_type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "Thumb",
+        "Twist",
+        "Trigger",
+        null
+      ],
+      "description": "Throttle only"
+    },
+    "motor.operating_modes.e_vehicle_classifications": {
+      "$ref": "https://raw.githubusercontent.com/bikeindex/bikebook/main/schemas/vocabulary.json#/$defs/e_vehicle_classification"
+    }
+  }
+}
