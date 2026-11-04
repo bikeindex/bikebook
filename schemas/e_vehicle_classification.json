@@ -109,6 +109,30 @@
           "rule": {
             "type": "string"
           },
+          "categories": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "rider_rule",
+                "seller_rule",
+                "vehicle_definition",
+                "enforcement",
+                "legal_context",
+                "top_rule"
+              ]
+            },
+            "minItems": 1,
+            "description": "What it covers: rider_rule what the rider or owner does, registration and insurance included; seller_rule what its maker, dealer or seller does; vehicle_definition what the vehicle is or must have; enforcement penalties, impound and police powers; legal_context the law around the rules rather than one anyone follows, like a repeal, a gap, a ruling, an undated bill or a duty on governments, motorists or landowners; top_rule, on at most 3 of a classification's rules, what a rider whose vehicle is in it most needs to know"
+          },
+          "jurisdiction": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^(AD|AE|AL|AR|AU|BA|BH|BM|BN|BO|BR|BT|CA|CH|CL|CN|CO|CR|DO|EC|EG|EU|GB|GE|GI|GT|HK|HN|ID|IL|IN|IS|JE|JP|KE|KG|KH|KR|KW|KZ|LA|LB|MC|MD|MK|MO|MU|MX|MY|NO|NZ|OM|PA|PE|PH|PY|QA|RS|RU|SA|SG|SV|TH|TR|TW|UA|US|UY|VE|VG|VN|ZA|ZM)(-[A-Z0-9]{1,3}(-(\\d{3}|\\d{5}))?)?(:[a-z_]+)?$",
+            "description": "The narrower place it applies: an area, with a US county's or Census place's FIPS code after its state (US-CA-081, US-NY-51000), and a :land_type (US:national_park); it holds in every area whose code starts with it, and a rule without one wherever its classification does"
+          },
           "citation": {
             "type": [
               "string",
@@ -145,6 +169,7 @@
         },
         "required": [
           "rule",
+          "categories",
           "sources"
         ],
         "additionalProperties": false
@@ -166,5 +191,24 @@
     "throttle",
     "restrictions"
   ],
-  "additionalProperties": false
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "properties": {
+        "restrictions": {
+          "contains": {
+            "properties": {
+              "categories": {
+                "contains": {
+                  "const": "top_rule"
+                }
+              }
+            }
+          },
+          "minContains": 0,
+          "maxContains": 3
+        }
+      }
+    }
+  ]
 }

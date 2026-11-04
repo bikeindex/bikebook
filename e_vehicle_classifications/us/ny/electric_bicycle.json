@@ -14,6 +14,9 @@
   "restrictions": [
     {
       "rule": "No more than 36 inches wide, with operable pedals and an electric motor of less than 750 watts",
+      "categories": [
+        "vehicle_definition"
+      ],
       "citation": "Vehicle and Traffic Law §102-c",
       "sources": [
         "https://www.nysenate.gov/legislation/laws/VAT/102-C"
@@ -21,6 +24,9 @@
     },
     {
       "rule": "Class 1 assists only while the rider is pedaling and class 2 may be propelled by the motor alone; both stop assisting at 20 mph",
+      "categories": [
+        "vehicle_definition"
+      ],
       "citation": "Vehicle and Traffic Law §102-c",
       "sources": [
         "https://www.nysenate.gov/legislation/laws/VAT/102-C"
@@ -28,6 +34,10 @@
     },
     {
       "rule": "Class 3 may be propelled by the motor alone and stops assisting at 25 mph; it may be ridden only in a city of a million or more people, which means New York City",
+      "categories": [
+        "vehicle_definition"
+      ],
+      "jurisdiction": "US-NY-51000",
       "citation": "Vehicle and Traffic Law §§102-c, 1242",
       "sources": [
         "https://www.nysenate.gov/legislation/laws/VAT/102-C",
@@ -35,21 +45,44 @@
       ]
     },
     {
+      "rule": "Past these limits it isn't a bicycle with electric assist: with a seat and a top speed of 40 mph or less it's a limited use motorcycle, and faster a motorcycle, either of which must be registered",
+      "categories": [
+        "vehicle_definition"
+      ],
+      "citation": "Vehicle and Traffic Law §§102-c, 121-b, 123",
+      "sources": [
+        "https://www.nysenate.gov/legislation/laws/VAT/102-C",
+        "https://www.nysenate.gov/legislation/laws/VAT/121-B",
+        "https://www.nysenate.gov/legislation/laws/VAT/123"
+      ]
+    },
+    {
       "rule": "Meets the CPSC's bicycle requirements (16 CFR part 1512)",
+      "categories": [
+        "vehicle_definition"
+      ],
       "citation": "Vehicle and Traffic Law §102-c",
       "sources": [
         "https://www.nysenate.gov/legislation/laws/VAT/102-C"
       ]
     },
     {
-      "rule": "Carries a label stating its class, top assisted speed and motor wattage, required since June 1, 2022",
+      "rule": "Carries a label stating its class, top assisted speed and motor wattage",
+      "categories": [
+        "seller_rule"
+      ],
       "citation": "Vehicle and Traffic Law §1242",
+      "starts_on": "2022-06-01",
       "sources": [
         "https://www.nysenate.gov/legislation/laws/VAT/1242"
       ]
     },
     {
       "rule": "Riders must be 16 or older",
+      "categories": [
+        "rider_rule",
+        "top_rule"
+      ],
       "citation": "Vehicle and Traffic Law §1242",
       "sources": [
         "https://www.nysenate.gov/legislation/laws/VAT/1242"
@@ -57,6 +90,9 @@
     },
     {
       "rule": "Class 3 riders must wear a helmet",
+      "categories": [
+        "rider_rule"
+      ],
       "citation": "Vehicle and Traffic Law §1238",
       "sources": [
         "https://www.nysenate.gov/legislation/laws/VAT/1238"
@@ -64,6 +100,10 @@
     },
     {
       "rule": "Not registered with the DMV",
+      "categories": [
+        "rider_rule",
+        "top_rule"
+      ],
       "sources": [
         "https://dmv.ny.gov/registration/electric-scooters-and-bicycles-and-other-unregistered-vehicles",
         "https://parks.ny.gov/sites/default/files/OPRHPPolicyBicyclesElectricAssist.pdf"
@@ -71,6 +111,10 @@
     },
     {
       "rule": "State law allows it on roads with a posted speed limit of 30 mph or less and in bicycle lanes",
+      "categories": [
+        "rider_rule",
+        "top_rule"
+      ],
       "citation": "Vehicle and Traffic Law §1242",
       "sources": [
         "https://www.nysenate.gov/legislation/laws/VAT/1242"
@@ -78,13 +122,19 @@
     },
     {
       "rule": "Not ridden on a sidewalk unless a local law allows it; may be parked on one if it leaves pedestrians room to pass",
+      "categories": [
+        "rider_rule"
+      ],
       "citation": "Vehicle and Traffic Law §1242",
       "sources": [
         "https://www.nysenate.gov/legislation/laws/VAT/1242"
       ]
     },
     {
-      "rule": "Cities, towns and villages may further regulate when, where and how it's ridden, including speed limits, helmets and reflective gear; New York City has capped e-bikes at 15 mph since October 24, 2025",
+      "rule": "Cities, towns and villages may further regulate when, where and how it's ridden, including speed limits, helmets and reflective gear",
+      "categories": [
+        "legal_context"
+      ],
       "citation": "Vehicle and Traffic Law §1242",
       "sources": [
         "https://www.nysenate.gov/legislation/laws/VAT/1242",
@@ -92,7 +142,23 @@
       ]
     },
     {
+      "rule": "In New York City, capped at 15 mph",
+      "categories": [
+        "rider_rule"
+      ],
+      "jurisdiction": "US-NY-51000",
+      "citation": "Vehicle and Traffic Law §1242",
+      "starts_on": "2025-10-24",
+      "sources": [
+        "https://www.nysenate.gov/legislation/laws/VAT/1242",
+        "https://rules.cityofnewyork.us/rule/speed-limits-for-e-bikes-e-scooters-and-pedal-assist-commercial-bicycles/"
+      ]
+    },
+    {
       "rule": "On public lands other than roads it may be ridden only where the agency in charge authorizes it",
+      "categories": [
+        "rider_rule"
+      ],
       "citation": "Vehicle and Traffic Law §1242",
       "sources": [
         "https://www.nysenate.gov/legislation/laws/VAT/1242"
@@ -100,12 +166,18 @@
     },
     {
       "rule": "State parks allow class 1 and class 2 on boardwalks and paved or improved paths at up to 15 mph, and class 1 alone on natural-surface trails open to bicycles; class 3 is banned at every state park facility, and all classes from parkways",
+      "categories": [
+        "rider_rule"
+      ],
       "sources": [
         "https://parks.ny.gov/sites/default/files/OPRHPPolicyBicyclesElectricAssist.pdf"
       ]
     },
     {
       "rule": "Breaking these rules carries a civil fine of up to $50",
+      "categories": [
+        "enforcement"
+      ],
       "citation": "Vehicle and Traffic Law §1242",
       "sources": [
         "https://www.nysenate.gov/legislation/laws/VAT/1242"

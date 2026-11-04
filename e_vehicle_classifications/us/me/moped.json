@@ -5,12 +5,15 @@
     "evc/moped"
   ],
   "name": "Moped",
-  "description": "A motorized device on two or three wheels of 10 inches or larger, with an electric motor under 1,500 watts (or an engine of 50 cc or less) and an automatic drive, with or without pedals. An electric two-wheeler that isn't an electric bicycle and stays under 1,500 watts lands here, whatever its speed.",
+  "description": "A motorized device on two or three wheels of 10 inches or larger, with an electric motor under 1,500 watts (or an engine of 50 cc or less) and an automatic drive, with or without pedals. An electric two-wheeler that isn't an electric bicycle and stays under 1,500 watts lands here, whatever its speed, unless it's slow and light enough to be a motorized bicycle.",
   "throttle": true,
   "max_power": 1500,
   "restrictions": [
     {
       "rule": "Two or three wheels of 10 inches or larger in diameter; pedals are optional",
+      "categories": [
+        "vehicle_definition"
+      ],
       "citation": "Maine Revised Statutes Title 29-A §101(36)",
       "sources": [
         "https://legislature.maine.gov/statutes/29-a/title29-asec101.html"
@@ -18,6 +21,9 @@
     },
     {
       "rule": "An electric motor under 1,500 watts, and a drive that needs no clutching or shifting once engaged",
+      "categories": [
+        "vehicle_definition"
+      ],
       "citation": "Maine Revised Statutes Title 29-A §101(36)",
       "sources": [
         "https://legislature.maine.gov/statutes/29-a/title29-asec101.html"
@@ -25,6 +31,9 @@
     },
     {
       "rule": "No top-speed limit in the definition",
+      "categories": [
+        "vehicle_definition"
+      ],
       "citation": "Maine Revised Statutes Title 29-A §101(36)",
       "sources": [
         "https://legislature.maine.gov/statutes/29-a/title29-asec101.html"
@@ -32,6 +41,9 @@
     },
     {
       "rule": "Not an electric bicycle: one modified to assist past 20 mph on the motor alone or 28 mph with pedaling is no longer one",
+      "categories": [
+        "vehicle_definition"
+      ],
       "citation": "Maine Revised Statutes Title 29-A §§101(36), 2063(14)",
       "sources": [
         "https://legislature.maine.gov/statutes/29-a/title29-asec101.html",
@@ -39,7 +51,22 @@
       ]
     },
     {
+      "rule": "One whose motor is rated 1.5 brake horsepower (1,125 W) or less and can't propel it past 25 mph is a motorized bicycle instead, which can't be registered",
+      "categories": [
+        "vehicle_definition"
+      ],
+      "citation": "Maine Revised Statutes Title 29-A §101(36), (41)",
+      "sources": [
+        "https://legislature.maine.gov/statutes/29-a/title29-asec101.html",
+        "https://www.maine.gov/sos/bmv/vehicles/registering-other-than-passenger-vehicle/off-road-vehicles-motorized-scooters-mopeds-and-motorcycles"
+      ]
+    },
+    {
       "rule": "Riders need a driver's license of any class or one endorsed for motorcycles or mopeds; a moped learner's permit takes a minimum age of 16 and a vision and knowledge test, and doesn't allow passengers",
+      "categories": [
+        "rider_rule",
+        "top_rule"
+      ],
       "citation": "Maine Revised Statutes Title 29-A §§1252, 1304",
       "sources": [
         "https://legislature.maine.gov/statutes/29-A/title29-Asec1252.html",
@@ -48,6 +75,10 @@
     },
     {
       "rule": "Riders and passengers under 18, riders on a learner's permit or within a year of their driving test, and their passengers must wear a helmet meeting FMVSS 218 or ANSI Z90.1",
+      "categories": [
+        "rider_rule",
+        "top_rule"
+      ],
       "citation": "Maine Revised Statutes Title 29-A §2083",
       "sources": [
         "https://legislature.maine.gov/statutes/29-A/title29-Asec2083.html"
@@ -55,6 +86,10 @@
     },
     {
       "rule": "A motor vehicle, so registered with the Secretary of State and covered by the financial responsibility (insurance) requirement",
+      "categories": [
+        "rider_rule",
+        "top_rule"
+      ],
       "citation": "Maine Revised Statutes Title 29-A §§101(42), 351, 1601",
       "sources": [
         "https://legislature.maine.gov/statutes/29-a/title29-asec101.html",
@@ -64,6 +99,9 @@
     },
     {
       "rule": "Kept off interstate highways and any way where bicycles are prohibited",
+      "categories": [
+        "rider_rule"
+      ],
       "citation": "Maine Revised Statutes Title 29-A §1252",
       "sources": [
         "https://legislature.maine.gov/statutes/29-A/title29-Asec1252.html"

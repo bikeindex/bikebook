@@ -10,6 +10,9 @@
   "restrictions": [
     {
       "rule": "Weighs no more than 100 pounds, with two or three wheels more than 11 inches in diameter",
+      "categories": [
+        "vehicle_definition"
+      ],
       "citation": "Pennsylvania Consolidated Statutes Title 75 §102, as amended by Act 154 of 2014",
       "sources": [
         "https://www.pa.gov/content/dam/copapwp-pagov/en/dmv/documents/business-partners/driver-and-vehicle-services-bulletin/bulletin%2014-21%20special%20edition.pdf",
@@ -18,6 +21,9 @@
     },
     {
       "rule": "Operable pedals and an electric motor rated at no more than 750 watts",
+      "categories": [
+        "vehicle_definition"
+      ],
       "citation": "Pennsylvania Consolidated Statutes Title 75 §102",
       "sources": [
         "https://www.palegis.us/statutes/consolidated/view-statute?txtType=PDF&ttl=75&div=00.&chpt=1&sctn=2&subsctn=0"
@@ -25,6 +31,9 @@
     },
     {
       "rule": "The motor alone can't propel it faster than 20 mph on a level surface; a throttle is allowed",
+      "categories": [
+        "vehicle_definition"
+      ],
       "citation": "Pennsylvania Consolidated Statutes Title 75 §102",
       "sources": [
         "https://www.palegis.us/statutes/consolidated/view-statute?txtType=PDF&ttl=75&div=00.&chpt=1&sctn=2&subsctn=0"
@@ -32,12 +41,19 @@
     },
     {
       "rule": "No class system: Pennsylvania has not adopted the three-class model law",
+      "categories": [
+        "vehicle_definition"
+      ],
       "sources": [
         "https://www.palegis.us/statutes/consolidated/view-statute?txtType=PDF&ttl=75&div=00.&chpt=1&sctn=2&subsctn=0"
       ]
     },
     {
       "rule": "Riders must be 16 or older",
+      "categories": [
+        "rider_rule",
+        "top_rule"
+      ],
       "citation": "Pennsylvania Consolidated Statutes Title 75 §3514",
       "sources": [
         "https://www.pa.gov/content/dam/copapwp-pagov/en/dmv/documents/business-partners/driver-and-vehicle-services-bulletin/bulletin%2014-21%20special%20edition.pdf",
@@ -46,6 +62,9 @@
     },
     {
       "rule": "Riders and passengers under 12 must wear a bicycle helmet, including a child in a bike seat or towed trailer",
+      "categories": [
+        "rider_rule"
+      ],
       "citation": "Pennsylvania Consolidated Statutes Title 75 §3510",
       "sources": [
         "https://www.palegis.us/statutes/consolidated/view-statute?txtType=PDF&ttl=75&div=00.&chpt=35&sctn=10&subsctn=0"
@@ -53,6 +72,9 @@
     },
     {
       "rule": "Carries only as many riders as it's designed for, though an adult may carry a child in an attached child seat or trailer",
+      "categories": [
+        "rider_rule"
+      ],
       "citation": "Pennsylvania Consolidated Statutes Title 75 §3504",
       "sources": [
         "https://www.palegis.us/statutes/consolidated/view-statute?txtType=PDF&ttl=75&div=00.&chpt=35&sctn=4&subsctn=0"
@@ -60,12 +82,20 @@
     },
     {
       "rule": "No driver's license, title, registration or insurance",
+      "categories": [
+        "rider_rule",
+        "top_rule"
+      ],
       "sources": [
         "https://www.pa.gov/content/dam/copapwp-pagov/en/dmv/documents/business-partners/driver-and-vehicle-services-bulletin/bulletin%2014-21%20special%20edition.pdf"
       ]
     },
     {
       "rule": "Follows the same rules of the road as a bicycle; banned from freeways",
+      "categories": [
+        "rider_rule",
+        "top_rule"
+      ],
       "citation": "Pennsylvania Consolidated Statutes Title 75 §§3501, 3511",
       "sources": [
         "https://www.palegis.us/statutes/consolidated/view-statute?txtType=PDF&ttl=75&div=00.&chpt=35&sctn=1&subsctn=0",
@@ -74,19 +104,40 @@
     },
     {
       "rule": "May be ridden on sidewalks, yielding to pedestrians, except in a business district unless signs allow it or where a bike lane runs alongside",
+      "categories": [
+        "rider_rule"
+      ],
       "citation": "Pennsylvania Consolidated Statutes Title 75 §3508",
       "sources": [
         "https://www.palegis.us/statutes/consolidated/view-statute?txtType=PDF&ttl=75&div=00.&chpt=35&sctn=8&subsctn=0"
       ]
     },
     {
-      "rule": "In state parks and forests, allowed on roads and on trails open to bicycles, but must be pedaled, not run on throttle alone, on non-motorized trails; barred from natural areas and yellow- or orange-blazed hiking trails",
+      "rule": "In state parks, allowed on roads and on trails open to bicycles, but must be pedaled, not run on throttle alone, on non-motorized trails; barred from natural areas and yellow- or orange-blazed hiking trails",
+      "categories": [
+        "rider_rule"
+      ],
+      "jurisdiction": "US-PA:state_park",
+      "sources": [
+        "https://www.pa.gov/agencies/dcnr/recreation/what-to-do/biking/ebike-policy"
+      ]
+    },
+    {
+      "rule": "In state forests, allowed on roads and on trails open to bicycles, but must be pedaled, not run on throttle alone, on non-motorized trails; barred from natural areas and yellow- or orange-blazed hiking trails",
+      "categories": [
+        "rider_rule"
+      ],
+      "jurisdiction": "US-PA:state_forest",
       "sources": [
         "https://www.pa.gov/agencies/dcnr/recreation/what-to-do/biking/ebike-policy"
       ]
     },
     {
       "rule": "A parent may not knowingly let their child break these rules; a violation is a summary offense with a $10 fine",
+      "categories": [
+        "rider_rule",
+        "enforcement"
+      ],
       "citation": "Pennsylvania Consolidated Statutes Title 75 §§3502, 3503",
       "sources": [
         "https://www.palegis.us/statutes/consolidated/view-statute?txtType=PDF&ttl=75&div=00.&chpt=35&sctn=2&subsctn=0",
@@ -95,6 +146,9 @@
     },
     {
       "rule": "One with pedals and an automatic transmission that exceeds these limits but has a top design speed of 25 mph or less is a motorized pedalcycle, a motor vehicle that needs a Class C driver's license",
+      "categories": [
+        "vehicle_definition"
+      ],
       "citation": "Pennsylvania Consolidated Statutes Title 75 §102",
       "sources": [
         "https://www.palegis.us/statutes/consolidated/view-statute?txtType=PDF&ttl=75&div=00.&chpt=1&sctn=2&subsctn=0",

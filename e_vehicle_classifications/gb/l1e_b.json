@@ -12,6 +12,9 @@
   "restrictions": [
     {
       "rule": "Two wheels, a maximum design speed of no more than 45 km/h, and a maximum continuous rated or net power of no more than 4,000 W",
+      "categories": [
+        "vehicle_definition"
+      ],
       "citation": "Regulation (EU) No 168/2013 (assimilated), art. 4(2)(a)(ii), Annex I",
       "sources": [
         "https://www.legislation.gov.uk/eur/2013/168/annex/I",
@@ -20,6 +23,9 @@
     },
     {
       "rule": "Past the L1e-A limits, assisting beyond 25 km/h or with more than 1,000 W; one within them is an L1e-A powered cycle instead",
+      "categories": [
+        "vehicle_definition"
+      ],
       "citation": "Regulation (EU) No 168/2013 (assimilated), art. 4(4)(a), Annex I",
       "sources": [
         "https://www.legislation.gov.uk/eur/2013/168/annex/I",
@@ -28,6 +34,9 @@
     },
     {
       "rule": "A motor vehicle, so one first used from January 2016 must be type approved, or get a Motorcycle Single Vehicle Approval as a two-wheeled moped, before it can be registered",
+      "categories": [
+        "seller_rule"
+      ],
       "citation": "Road Traffic Act 1988, s. 189(1)(c); Regulation (EU) No 168/2013 (assimilated), art. 2(1)",
       "sources": [
         "https://www.gov.uk/electric-bike-rules#when-your-electric-bike-needs-vehicle-approval",
@@ -37,6 +46,9 @@
     },
     {
       "rule": "Must be registered with the DVLA and taxed, at the zero-emission motorcycle rate",
+      "categories": [
+        "rider_rule"
+      ],
       "sources": [
         "https://www.gov.uk/electric-bike-rules#if-your-bike-is-not-an-eapc",
         "https://www.gov.uk/vehicle-tax-rate-tables/other-vehicle-tax-rates#motorcycle-with-or-without-sidecar-tc17"
@@ -44,6 +56,11 @@
     },
     {
       "rule": "Must be insured for use on a road or other public place; an uninsured one may be seized",
+      "categories": [
+        "rider_rule",
+        "enforcement",
+        "top_rule"
+      ],
       "citation": "Road Traffic Act 1988, s. 143",
       "sources": [
         "https://www.legislation.gov.uk/ukpga/1988/52/section/143",
@@ -52,6 +69,10 @@
     },
     {
       "rule": "A moped for licensing, so the rider needs a category AM licence from age 16, earned with CBT, a theory test and a practical test; a full A or car (B) licence includes AM",
+      "categories": [
+        "rider_rule",
+        "top_rule"
+      ],
       "citation": "Road Traffic Act 1988, ss. 87, 108(1); Directive 2006/126/EC (assimilated), art. 4(2); Motor Vehicles (Driving Licences) Regulations 1999, SI 1999/2864, reg. 9(1A), Sch. 2",
       "sources": [
         "https://www.legislation.gov.uk/ukpga/1988/52/section/108",
@@ -63,7 +84,23 @@
       ]
     },
     {
-      "rule": "On a provisional licence, the rider must first complete compulsory basic training (CBT), display L plates (D plates allowed in Wales) and carry no passenger",
+      "rule": "On a provisional licence, the rider must first complete compulsory basic training (CBT), display L plates and carry no passenger",
+      "categories": [
+        "rider_rule"
+      ],
+      "citation": "Road Traffic Act 1988, s. 97(3)(e); Motor Vehicles (Driving Licences) Regulations 1999, SI 1999/2864, reg. 16",
+      "sources": [
+        "https://www.legislation.gov.uk/ukpga/1988/52/section/97",
+        "https://www.legislation.gov.uk/uksi/1999/2864/regulation/16",
+        "https://www.gov.uk/ride-motorcycle-moped"
+      ]
+    },
+    {
+      "rule": "In Wales, D plates may be displayed in place of L plates on a provisional licence",
+      "categories": [
+        "rider_rule"
+      ],
+      "jurisdiction": "GB-WLS",
       "citation": "Road Traffic Act 1988, s. 97(3)(e); Motor Vehicles (Driving Licences) Regulations 1999, SI 1999/2864, reg. 16",
       "sources": [
         "https://www.legislation.gov.uk/ukpga/1988/52/section/97",
@@ -73,6 +110,10 @@
     },
     {
       "rule": "The rider and any passenger must wear a motorcycle helmet meeting BS 6658:1985 or UNECE Regulation 22.05 or 22.06, unless a Sikh wearing a turban",
+      "categories": [
+        "rider_rule",
+        "top_rule"
+      ],
       "citation": "Motor Cycles (Protective Helmets) Regulations 1998, SI 1998/1807, reg. 4; Road Traffic Act 1988, s. 16(2)",
       "sources": [
         "https://www.legislation.gov.uk/uksi/1998/1807/regulation/4",
@@ -82,6 +123,9 @@
     },
     {
       "rule": "Needs an MOT test certificate once it's three years past first registration",
+      "categories": [
+        "rider_rule"
+      ],
       "citation": "Road Traffic Act 1988, s. 47",
       "sources": [
         "https://www.legislation.gov.uk/ukpga/1988/52/section/47"
@@ -89,6 +133,9 @@
     },
     {
       "rule": "Ridden only on the road: not on cycle tracks, cycle lanes or pavements",
+      "categories": [
+        "rider_rule"
+      ],
       "citation": "Road Traffic Act 1988, s. 21; Roads (Scotland) Act 1984, s. 129(5)",
       "sources": [
         "https://www.gov.uk/electric-bike-rules#where-you-can-ride-if-your-bike-is-not-an-eapc",
@@ -98,6 +145,11 @@
     },
     {
       "rule": "In Northern Ireland too it's a motorcycle or moped: it must be type approved, registered, taxed and insured, and its rider needs a driving licence and a motorcycle helmet",
+      "categories": [
+        "rider_rule",
+        "seller_rule"
+      ],
+      "jurisdiction": "GB-NIR",
       "sources": [
         "https://www.nidirect.gov.uk/articles/electric-bikes-electrically-assisted-pedal-cycles"
       ]
