@@ -119,11 +119,13 @@
                 "vehicle_definition",
                 "enforcement",
                 "legal_context",
-                "top_rule"
+                "top_rule_0",
+                "top_rule_1",
+                "top_rule_2"
               ]
             },
             "minItems": 1,
-            "description": "What it covers: rider_rule what the rider or owner does, registration and insurance included; seller_rule what its maker, dealer or seller does; vehicle_definition what the vehicle is or must have; enforcement penalties, impound and police powers; legal_context the law around the rules rather than one anyone follows, like a repeal, a gap, a ruling, an undated bill or a duty on governments, motorists or landowners; top_rule, on at most 3 of a classification's rules, what a rider whose vehicle is in it most needs to know"
+            "description": "What it covers: rider_rule what the rider or owner does, registration and insurance included; seller_rule what its maker, dealer or seller does; vehicle_definition what the vehicle is or must have; enforcement penalties, impound and police powers; legal_context the law around the rules rather than one anyone follows, like a repeal, a gap, a ruling, an undated bill or a duty on governments, motorists or landowners; top_rule_0, top_rule_1, and top_rule_2, each on at most one of a classification's rules and never on a vehicle_definition that isn't also a rider_rule, what a rider whose vehicle is in it most needs to know and wouldn't assume, most important first, never common sense like a helmet, a sidewalk ban or a local authority, agency or land manager being able to ban or allow it, though a default ban one has to lift counts"
           },
           "jurisdiction": {
             "type": [
@@ -196,17 +198,78 @@
     {
       "properties": {
         "restrictions": {
-          "contains": {
-            "properties": {
-              "categories": {
-                "contains": {
-                  "const": "top_rule"
+          "allOf": [
+            {
+              "contains": {
+                "properties": {
+                  "categories": {
+                    "contains": {
+                      "const": "top_rule_0"
+                    }
+                  }
+                }
+              },
+              "minContains": 0,
+              "maxContains": 1
+            },
+            {
+              "contains": {
+                "properties": {
+                  "categories": {
+                    "contains": {
+                      "const": "top_rule_1"
+                    }
+                  }
+                }
+              },
+              "minContains": 0,
+              "maxContains": 1
+            },
+            {
+              "contains": {
+                "properties": {
+                  "categories": {
+                    "contains": {
+                      "const": "top_rule_2"
+                    }
+                  }
+                }
+              },
+              "minContains": 0,
+              "maxContains": 1
+            }
+          ],
+          "items": {
+            "if": {
+              "properties": {
+                "categories": {
+                  "contains": {
+                    "const": "vehicle_definition"
+                  },
+                  "not": {
+                    "contains": {
+                      "const": "rider_rule"
+                    }
+                  }
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "categories": {
+                  "not": {
+                    "contains": {
+                      "enum": [
+                        "top_rule_0",
+                        "top_rule_1",
+                        "top_rule_2"
+                      ]
+                    }
+                  }
                 }
               }
             }
-          },
-          "minContains": 0,
-          "maxContains": 3
+          }
         }
       }
     }
