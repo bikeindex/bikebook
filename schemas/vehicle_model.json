@@ -15,7 +15,7 @@
         "$ref": "#/$defs/$schema"
       },
       "schema_version": {
-        "const": "0.26.3"
+        "const": "0.27.0"
       },
       "id": {
         "$ref": "#/$defs/id"
@@ -252,6 +252,28 @@
                                   },
                                   "stock_photo": {
                                     "$ref": "#/$defs/years.colorways.stock_photo"
+                                  },
+                                  "variants": {
+                                    "type": "array",
+                                    "items": {
+                                      "type": "object",
+                                      "properties": {
+                                        "sku": {
+                                          "$ref": "#/$defs/years.colorways.variants.sku"
+                                        },
+                                        "gtin": {
+                                          "$ref": "#/$defs/years.colorways.variants.gtin"
+                                        },
+                                        "size": {
+                                          "$ref": "#/$defs/years.colorways.variants.size"
+                                        },
+                                        "original_msrp": {
+                                          "$ref": "#/$defs/years.colorways.variants.original_msrp"
+                                        }
+                                      },
+                                      "additionalProperties": false
+                                    },
+                                    "description": "One per size the maker sells in this paint, each with a sku or gtin"
                                   }
                                 },
                                 "additionalProperties": false
@@ -305,6 +327,95 @@
                                         "anyOf": [
                                           {
                                             "$ref": "#/$defs/years.colorways.stock_photo"
+                                          },
+                                          {
+                                            "const": null
+                                          }
+                                        ]
+                                      },
+                                      "variants": {
+                                        "anyOf": [
+                                          {
+                                            "anyOf": [
+                                              {
+                                                "type": "array",
+                                                "items": {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "sku": {
+                                                      "$ref": "#/$defs/years.colorways.variants.sku"
+                                                    },
+                                                    "gtin": {
+                                                      "$ref": "#/$defs/years.colorways.variants.gtin"
+                                                    },
+                                                    "size": {
+                                                      "$ref": "#/$defs/years.colorways.variants.size"
+                                                    },
+                                                    "original_msrp": {
+                                                      "$ref": "#/$defs/years.colorways.variants.original_msrp"
+                                                    }
+                                                  },
+                                                  "additionalProperties": false
+                                                },
+                                                "description": "One per size the maker sells in this paint, each with a sku or gtin"
+                                              },
+                                              {
+                                                "type": "object",
+                                                "additionalProperties": {
+                                                  "anyOf": [
+                                                    {
+                                                      "type": "object",
+                                                      "properties": {
+                                                        "sku": {
+                                                          "anyOf": [
+                                                            {
+                                                              "$ref": "#/$defs/years.colorways.variants.sku"
+                                                            },
+                                                            {
+                                                              "const": null
+                                                            }
+                                                          ]
+                                                        },
+                                                        "gtin": {
+                                                          "anyOf": [
+                                                            {
+                                                              "$ref": "#/$defs/years.colorways.variants.gtin"
+                                                            },
+                                                            {
+                                                              "const": null
+                                                            }
+                                                          ]
+                                                        },
+                                                        "size": {
+                                                          "anyOf": [
+                                                            {
+                                                              "$ref": "#/$defs/years.colorways.variants.size"
+                                                            },
+                                                            {
+                                                              "const": null
+                                                            }
+                                                          ]
+                                                        },
+                                                        "original_msrp": {
+                                                          "anyOf": [
+                                                            {
+                                                              "$ref": "#/$defs/years.colorways.variants.original_msrp"
+                                                            },
+                                                            {
+                                                              "const": null
+                                                            }
+                                                          ]
+                                                        }
+                                                      },
+                                                      "additionalProperties": false
+                                                    },
+                                                    {
+                                                      "const": false
+                                                    }
+                                                  ]
+                                                }
+                                              }
+                                            ]
                                           },
                                           {
                                             "const": null
@@ -3658,7 +3769,7 @@
         "$ref": "#/$defs/$schema"
       },
       "schema_version": {
-        "const": "0.26.3"
+        "const": "0.27.0"
       },
       "id": {
         "$ref": "#/$defs/id"
@@ -3761,6 +3872,28 @@
                   },
                   "stock_photo": {
                     "$ref": "#/$defs/years.colorways.stock_photo"
+                  },
+                  "variants": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "sku": {
+                          "$ref": "#/$defs/years.colorways.variants.sku"
+                        },
+                        "gtin": {
+                          "$ref": "#/$defs/years.colorways.variants.gtin"
+                        },
+                        "size": {
+                          "$ref": "#/$defs/years.colorways.variants.size"
+                        },
+                        "original_msrp": {
+                          "$ref": "#/$defs/years.colorways.variants.original_msrp"
+                        }
+                      },
+                      "additionalProperties": false
+                    },
+                    "description": "One per size the maker sells in this paint, each with a sku or gtin"
                   }
                 },
                 "additionalProperties": false
@@ -4786,6 +4919,38 @@
         }
       },
       {
+        "properties": {
+          "years": {
+            "additionalProperties": {
+              "properties": {
+                "colorways": {
+                  "items": {
+                    "properties": {
+                      "variants": {
+                        "items": {
+                          "anyOf": [
+                            {
+                              "required": [
+                                "sku"
+                              ]
+                            },
+                            {
+                              "required": [
+                                "gtin"
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
         "if": {
           "required": [
             "primary_activity"
@@ -5114,6 +5279,36 @@
       ],
       "format": "uri",
       "description": "Bikebook-hosted copy of the manufacturer's photo of this colorway"
+    },
+    "years.colorways.variants.sku": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "The maker's part number"
+    },
+    "years.colorways.variants.gtin": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^\\d{12,14}$",
+      "description": "UPC-12, EAN-13 or GTIN-14, its check digit valid"
+    },
+    "years.colorways.variants.size": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Named as in sizes[].name"
+    },
+    "years.colorways.variants.original_msrp": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "In the year's original_msrp_currency, only when it differs from the year's original_msrp, in cents",
+      "x-unit": "cents"
     },
     "years.url": {
       "type": [
