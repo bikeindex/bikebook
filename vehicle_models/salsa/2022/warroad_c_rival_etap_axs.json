@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.27.0",
+  "schema_version": "0.28.0",
   "id": "m/salsa/2022/warroad_c_rival_etap_axs",
   "manufacturer": "Salsa",
   "vehicle_model_group": "Warroad",
@@ -155,7 +155,7 @@
       "axle_length": 120.0,
       "axle_thread_pitch": 1.5,
       "axle_thread_length": 12.0,
-      "max_tire_width": 35
+      "tire_width_max": 35
     },
     {
       "bsd": 622,
@@ -171,7 +171,7 @@
       "axle_thread_pitch": 1.5,
       "axle_thread_length": 20.0,
       "cassette_interface": "xdr",
-      "max_tire_width": 35
+      "tire_width_max": 35
     },
     {
       "bsd": 584,
@@ -184,7 +184,7 @@
       "axle_spacing": 100,
       "axle_length": 120.0,
       "axle_thread_pitch": 1.5,
-      "max_tire_width": 47
+      "tire_width_max": 47
     },
     {
       "bsd": 584,
@@ -198,7 +198,7 @@
       "axle_length": 167.0,
       "axle_thread_pitch": 1.5,
       "cassette_interface": "xdr",
-      "max_tire_width": 47
+      "tire_width_max": 47
     }
   ],
   "drivetrain": [
@@ -228,7 +228,7 @@
         "rear"
       ],
       "rotor_diameter": 160,
-      "max_rotor_diameter": 160,
+      "rotor_diameter_max": 160,
       "caliper_mount": "Disc Flat Mount"
     }
   ],
@@ -252,8 +252,8 @@
         "handlebar_width": 380,
         "stem_length": 70,
         "crank_length": 165,
-        "min_rider_height": 1420,
-        "max_rider_height": 1570
+        "rider_height_min": 1420,
+        "rider_height_max": 1570
       }
     },
     {
@@ -275,8 +275,8 @@
         "handlebar_width": 380,
         "stem_length": 70,
         "crank_length": 170,
-        "min_rider_height": 1550,
-        "max_rider_height": 1650
+        "rider_height_min": 1550,
+        "rider_height_max": 1650
       }
     },
     {
@@ -298,8 +298,8 @@
         "handlebar_width": 400,
         "stem_length": 80,
         "crank_length": 170,
-        "min_rider_height": 1620,
-        "max_rider_height": 1730
+        "rider_height_min": 1620,
+        "rider_height_max": 1730
       }
     },
     {
@@ -322,8 +322,8 @@
         "stem_length": 90,
         "crank_length": 172.5,
         "total_weight": 8.93,
-        "min_rider_height": 1700,
-        "max_rider_height": 1800
+        "rider_height_min": 1700,
+        "rider_height_max": 1800
       }
     },
     {
@@ -345,8 +345,8 @@
         "handlebar_width": 440,
         "stem_length": 90,
         "crank_length": 172.5,
-        "min_rider_height": 1780,
-        "max_rider_height": 1880
+        "rider_height_min": 1780,
+        "rider_height_max": 1880
       }
     },
     {
@@ -368,8 +368,8 @@
         "handlebar_width": 440,
         "stem_length": 100,
         "crank_length": 175,
-        "min_rider_height": 1850,
-        "max_rider_height": 1930
+        "rider_height_min": 1850,
+        "rider_height_max": 1930
       }
     },
     {
@@ -391,7 +391,7 @@
         "handlebar_width": 460,
         "stem_length": 110,
         "crank_length": 175,
-        "min_rider_height": 1900
+        "rider_height_min": 1900
       }
     }
   ],
@@ -512,10 +512,8 @@
       "manufacturer": "DT Swiss",
       "description": "DT Swiss C 1800 12 x 100 mm",
       "dimensions": {
-        "extra_measurements": {
-          "axle_diameter": 12,
-          "axle_spacing": 100
-        }
+        "axle_diameter": 12,
+        "axle_spacing": 100
       }
     },
     {
@@ -526,10 +524,8 @@
       "manufacturer": "DT Swiss",
       "description": "DT Swiss C 1800 12 x 142 mm",
       "dimensions": {
-        "extra_measurements": {
-          "axle_diameter": 12,
-          "axle_spacing": 142
-        }
+        "axle_diameter": 12,
+        "axle_spacing": 142
       }
     }
   ]

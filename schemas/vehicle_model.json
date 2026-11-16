@@ -15,7 +15,7 @@
         "$ref": "#/$defs/$schema"
       },
       "schema_version": {
-        "const": "0.27.0"
+        "const": "0.28.0"
       },
       "id": {
         "$ref": "#/$defs/id"
@@ -1063,8 +1063,8 @@
                     "dropout": {
                       "$ref": "#/$defs/wheels.dropout"
                     },
-                    "max_tire_width": {
-                      "$ref": "#/$defs/wheels.max_tire_width"
+                    "tire_width_max": {
+                      "$ref": "#/$defs/wheels.tire_width_max"
                     }
                   },
                   "additionalProperties": false
@@ -1236,10 +1236,10 @@
                             }
                           ]
                         },
-                        "max_tire_width": {
+                        "tire_width_max": {
                           "anyOf": [
                             {
-                              "$ref": "#/$defs/wheels.max_tire_width"
+                              "$ref": "#/$defs/wheels.tire_width_max"
                             },
                             {
                               "const": null
@@ -1406,8 +1406,8 @@
                     "rotor_diameter": {
                       "$ref": "#/$defs/brakes.rotor_diameter"
                     },
-                    "max_rotor_diameter": {
-                      "$ref": "#/$defs/brakes.max_rotor_diameter"
+                    "rotor_diameter_max": {
+                      "$ref": "#/$defs/brakes.rotor_diameter_max"
                     },
                     "caliper_mount": {
                       "$ref": "#/$defs/brakes.caliper_mount"
@@ -1474,10 +1474,10 @@
                             }
                           ]
                         },
-                        "max_rotor_diameter": {
+                        "rotor_diameter_max": {
                           "anyOf": [
                             {
-                              "$ref": "#/$defs/brakes.max_rotor_diameter"
+                              "$ref": "#/$defs/brakes.rotor_diameter_max"
                             },
                             {
                               "const": null
@@ -2258,6 +2258,9 @@
                         "seat_angle": {
                           "$ref": "#/$defs/sizes.geometry.seat_angle"
                         },
+                        "seat_angle_actual": {
+                          "$ref": "#/$defs/sizes.geometry.seat_angle_actual"
+                        },
                         "head_tube": {
                           "$ref": "#/$defs/sizes.geometry.head_tube"
                         },
@@ -2315,11 +2318,23 @@
                         "max_seatpost_insertion": {
                           "$ref": "#/$defs/sizes.geometry.max_seatpost_insertion"
                         },
-                        "min_saddle_setback": {
-                          "$ref": "#/$defs/sizes.geometry.min_saddle_setback"
+                        "saddle_setback_min": {
+                          "$ref": "#/$defs/sizes.geometry.saddle_setback_min"
                         },
-                        "max_saddle_setback": {
-                          "$ref": "#/$defs/sizes.geometry.max_saddle_setback"
+                        "saddle_setback_max": {
+                          "$ref": "#/$defs/sizes.geometry.saddle_setback_max"
+                        },
+                        "seat_height_min": {
+                          "$ref": "#/$defs/sizes.geometry.seat_height_min"
+                        },
+                        "seat_height_max": {
+                          "$ref": "#/$defs/sizes.geometry.seat_height_max"
+                        },
+                        "seat_height_bb_min": {
+                          "$ref": "#/$defs/sizes.geometry.seat_height_bb_min"
+                        },
+                        "seat_height_bb_max": {
+                          "$ref": "#/$defs/sizes.geometry.seat_height_bb_max"
                         },
                         "dimensions": {
                           "type": "object",
@@ -2356,26 +2371,242 @@
                         "total_weight": {
                           "$ref": "#/$defs/sizes.geometry.total_weight"
                         },
+                        "frame_weight": {
+                          "$ref": "#/$defs/sizes.geometry.frame_weight"
+                        },
+                        "fork_weight": {
+                          "$ref": "#/$defs/sizes.geometry.fork_weight"
+                        },
                         "max_weight_rider": {
                           "$ref": "#/$defs/sizes.geometry.max_weight_rider"
                         },
-                        "min_rider_height": {
-                          "$ref": "#/$defs/sizes.geometry.min_rider_height"
+                        "rider_height_min": {
+                          "$ref": "#/$defs/sizes.geometry.rider_height_min"
                         },
-                        "max_rider_height": {
-                          "$ref": "#/$defs/sizes.geometry.max_rider_height"
+                        "rider_height_max": {
+                          "$ref": "#/$defs/sizes.geometry.rider_height_max"
                         },
-                        "min_rider_age": {
-                          "$ref": "#/$defs/sizes.geometry.min_rider_age"
+                        "rider_inseam_min": {
+                          "$ref": "#/$defs/sizes.geometry.rider_inseam_min"
                         },
-                        "max_rider_age": {
-                          "$ref": "#/$defs/sizes.geometry.max_rider_age"
+                        "rider_inseam_max": {
+                          "$ref": "#/$defs/sizes.geometry.rider_inseam_max"
+                        },
+                        "rider_age_min": {
+                          "$ref": "#/$defs/sizes.geometry.rider_age_min"
+                        },
+                        "rider_age_max": {
+                          "$ref": "#/$defs/sizes.geometry.rider_age_max"
                         },
                         "extra_measurements": {
                           "$ref": "#/$defs/sizes.geometry.extra_measurements"
                         }
                       },
                       "additionalProperties": false
+                    },
+                    "geometry_settings": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "$ref": "#/$defs/sizes.geometry_settings.name"
+                          },
+                          "geometry": {
+                            "type": "object",
+                            "properties": {
+                              "reach": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.reach"
+                              },
+                              "stack": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.stack"
+                              },
+                              "top_tube_effective": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.top_tube_effective"
+                              },
+                              "top_tube_ctc": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.top_tube_ctc"
+                              },
+                              "seat_tube_ctc": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_tube_ctc"
+                              },
+                              "seat_tube_ct": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_tube_ct"
+                              },
+                              "head_angle": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.head_angle"
+                              },
+                              "seat_angle": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_angle"
+                              },
+                              "seat_angle_actual": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_angle_actual"
+                              },
+                              "head_tube": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.head_tube"
+                              },
+                              "chainstay": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.chainstay"
+                              },
+                              "wheelbase": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.wheelbase"
+                              },
+                              "front_center": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.front_center"
+                              },
+                              "standover": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.standover"
+                              },
+                              "standover_above_bb": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.standover_above_bb"
+                              },
+                              "bb_drop": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.bb_drop"
+                              },
+                              "bb_height": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.bb_height"
+                              },
+                              "fork_rake": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.fork_rake"
+                              },
+                              "trail": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.trail"
+                              },
+                              "fork_length_a2c": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.fork_length_a2c"
+                              },
+                              "travel_front": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.travel_front"
+                              },
+                              "travel_rear": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.travel_rear"
+                              },
+                              "handlebar_width": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.handlebar_width"
+                              },
+                              "stem_length": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.stem_length"
+                              },
+                              "crank_length": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.crank_length"
+                              },
+                              "dropper_travel": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.dropper_travel"
+                              },
+                              "seatpost_length": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.seatpost_length"
+                              },
+                              "max_seatpost_insertion": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.max_seatpost_insertion"
+                              },
+                              "saddle_setback_min": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.saddle_setback_min"
+                              },
+                              "saddle_setback_max": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.saddle_setback_max"
+                              },
+                              "seat_height_min": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_height_min"
+                              },
+                              "seat_height_max": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_height_max"
+                              },
+                              "seat_height_bb_min": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_height_bb_min"
+                              },
+                              "seat_height_bb_max": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_height_bb_max"
+                              },
+                              "dimensions": {
+                                "type": "object",
+                                "properties": {
+                                  "length": {
+                                    "$ref": "#/$defs/sizes.geometry_settings.geometry.dimensions.length"
+                                  },
+                                  "width": {
+                                    "$ref": "#/$defs/sizes.geometry_settings.geometry.dimensions.width"
+                                  },
+                                  "height": {
+                                    "$ref": "#/$defs/sizes.geometry_settings.geometry.dimensions.height"
+                                  }
+                                },
+                                "additionalProperties": false,
+                                "description": "Overall dimensions"
+                              },
+                              "dimensions_folded": {
+                                "type": "object",
+                                "properties": {
+                                  "length": {
+                                    "type": [
+                                      "number",
+                                      "null"
+                                    ],
+                                    "description": "In millimeters",
+                                    "x-unit": "mm"
+                                  },
+                                  "width": {
+                                    "type": [
+                                      "number",
+                                      "null"
+                                    ],
+                                    "description": "In millimeters",
+                                    "x-unit": "mm"
+                                  },
+                                  "height": {
+                                    "type": [
+                                      "number",
+                                      "null"
+                                    ],
+                                    "description": "In millimeters",
+                                    "x-unit": "mm"
+                                  }
+                                },
+                                "additionalProperties": false,
+                                "description": "Folded dimensions"
+                              },
+                              "total_weight": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.total_weight"
+                              },
+                              "frame_weight": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.frame_weight"
+                              },
+                              "fork_weight": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.fork_weight"
+                              },
+                              "max_weight_rider": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.max_weight_rider"
+                              },
+                              "rider_height_min": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_height_min"
+                              },
+                              "rider_height_max": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_height_max"
+                              },
+                              "rider_inseam_min": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_inseam_min"
+                              },
+                              "rider_inseam_max": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_inseam_max"
+                              },
+                              "rider_age_min": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_age_min"
+                              },
+                              "rider_age_max": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_age_max"
+                              },
+                              "extra_measurements": {
+                                "$ref": "#/$defs/sizes.geometry_settings.geometry.extra_measurements"
+                              }
+                            },
+                            "additionalProperties": false
+                          }
+                        },
+                        "required": [
+                          "name"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "description": "Each other setting of a flip chip or adjustable frame, geometry holding only the figures that differ from the stock geometry"
                     }
                   },
                   "additionalProperties": false
@@ -2478,6 +2709,16 @@
                                   "anyOf": [
                                     {
                                       "$ref": "#/$defs/sizes.geometry.seat_angle"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "seat_angle_actual": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/sizes.geometry.seat_angle_actual"
                                     },
                                     {
                                       "const": null
@@ -2674,20 +2915,60 @@
                                     }
                                   ]
                                 },
-                                "min_saddle_setback": {
+                                "saddle_setback_min": {
                                   "anyOf": [
                                     {
-                                      "$ref": "#/$defs/sizes.geometry.min_saddle_setback"
+                                      "$ref": "#/$defs/sizes.geometry.saddle_setback_min"
                                     },
                                     {
                                       "const": null
                                     }
                                   ]
                                 },
-                                "max_saddle_setback": {
+                                "saddle_setback_max": {
                                   "anyOf": [
                                     {
-                                      "$ref": "#/$defs/sizes.geometry.max_saddle_setback"
+                                      "$ref": "#/$defs/sizes.geometry.saddle_setback_max"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "seat_height_min": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/sizes.geometry.seat_height_min"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "seat_height_max": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/sizes.geometry.seat_height_max"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "seat_height_bb_min": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/sizes.geometry.seat_height_bb_min"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "seat_height_bb_max": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/sizes.geometry.seat_height_bb_max"
                                     },
                                     {
                                       "const": null
@@ -2792,6 +3073,26 @@
                                     }
                                   ]
                                 },
+                                "frame_weight": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/sizes.geometry.frame_weight"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "fork_weight": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/sizes.geometry.fork_weight"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
                                 "max_weight_rider": {
                                   "anyOf": [
                                     {
@@ -2802,40 +3103,60 @@
                                     }
                                   ]
                                 },
-                                "min_rider_height": {
+                                "rider_height_min": {
                                   "anyOf": [
                                     {
-                                      "$ref": "#/$defs/sizes.geometry.min_rider_height"
+                                      "$ref": "#/$defs/sizes.geometry.rider_height_min"
                                     },
                                     {
                                       "const": null
                                     }
                                   ]
                                 },
-                                "max_rider_height": {
+                                "rider_height_max": {
                                   "anyOf": [
                                     {
-                                      "$ref": "#/$defs/sizes.geometry.max_rider_height"
+                                      "$ref": "#/$defs/sizes.geometry.rider_height_max"
                                     },
                                     {
                                       "const": null
                                     }
                                   ]
                                 },
-                                "min_rider_age": {
+                                "rider_inseam_min": {
                                   "anyOf": [
                                     {
-                                      "$ref": "#/$defs/sizes.geometry.min_rider_age"
+                                      "$ref": "#/$defs/sizes.geometry.rider_inseam_min"
                                     },
                                     {
                                       "const": null
                                     }
                                   ]
                                 },
-                                "max_rider_age": {
+                                "rider_inseam_max": {
                                   "anyOf": [
                                     {
-                                      "$ref": "#/$defs/sizes.geometry.max_rider_age"
+                                      "$ref": "#/$defs/sizes.geometry.rider_inseam_max"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "rider_age_min": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/sizes.geometry.rider_age_min"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "rider_age_max": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/sizes.geometry.rider_age_max"
                                     },
                                     {
                                       "const": null
@@ -2857,6 +3178,813 @@
                             },
                             {
                               "const": false
+                            }
+                          ]
+                        },
+                        "geometry_settings": {
+                          "anyOf": [
+                            {
+                              "anyOf": [
+                                {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "object",
+                                    "properties": {
+                                      "name": {
+                                        "$ref": "#/$defs/sizes.geometry_settings.name"
+                                      },
+                                      "geometry": {
+                                        "type": "object",
+                                        "properties": {
+                                          "reach": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.reach"
+                                          },
+                                          "stack": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.stack"
+                                          },
+                                          "top_tube_effective": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.top_tube_effective"
+                                          },
+                                          "top_tube_ctc": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.top_tube_ctc"
+                                          },
+                                          "seat_tube_ctc": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_tube_ctc"
+                                          },
+                                          "seat_tube_ct": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_tube_ct"
+                                          },
+                                          "head_angle": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.head_angle"
+                                          },
+                                          "seat_angle": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_angle"
+                                          },
+                                          "seat_angle_actual": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_angle_actual"
+                                          },
+                                          "head_tube": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.head_tube"
+                                          },
+                                          "chainstay": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.chainstay"
+                                          },
+                                          "wheelbase": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.wheelbase"
+                                          },
+                                          "front_center": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.front_center"
+                                          },
+                                          "standover": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.standover"
+                                          },
+                                          "standover_above_bb": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.standover_above_bb"
+                                          },
+                                          "bb_drop": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.bb_drop"
+                                          },
+                                          "bb_height": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.bb_height"
+                                          },
+                                          "fork_rake": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.fork_rake"
+                                          },
+                                          "trail": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.trail"
+                                          },
+                                          "fork_length_a2c": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.fork_length_a2c"
+                                          },
+                                          "travel_front": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.travel_front"
+                                          },
+                                          "travel_rear": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.travel_rear"
+                                          },
+                                          "handlebar_width": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.handlebar_width"
+                                          },
+                                          "stem_length": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.stem_length"
+                                          },
+                                          "crank_length": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.crank_length"
+                                          },
+                                          "dropper_travel": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.dropper_travel"
+                                          },
+                                          "seatpost_length": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.seatpost_length"
+                                          },
+                                          "max_seatpost_insertion": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.max_seatpost_insertion"
+                                          },
+                                          "saddle_setback_min": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.saddle_setback_min"
+                                          },
+                                          "saddle_setback_max": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.saddle_setback_max"
+                                          },
+                                          "seat_height_min": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_height_min"
+                                          },
+                                          "seat_height_max": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_height_max"
+                                          },
+                                          "seat_height_bb_min": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_height_bb_min"
+                                          },
+                                          "seat_height_bb_max": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_height_bb_max"
+                                          },
+                                          "dimensions": {
+                                            "type": "object",
+                                            "properties": {
+                                              "length": {
+                                                "$ref": "#/$defs/sizes.geometry_settings.geometry.dimensions.length"
+                                              },
+                                              "width": {
+                                                "$ref": "#/$defs/sizes.geometry_settings.geometry.dimensions.width"
+                                              },
+                                              "height": {
+                                                "$ref": "#/$defs/sizes.geometry_settings.geometry.dimensions.height"
+                                              }
+                                            },
+                                            "additionalProperties": false,
+                                            "description": "Overall dimensions"
+                                          },
+                                          "dimensions_folded": {
+                                            "type": "object",
+                                            "properties": {
+                                              "length": {
+                                                "type": [
+                                                  "number",
+                                                  "null"
+                                                ],
+                                                "description": "In millimeters",
+                                                "x-unit": "mm"
+                                              },
+                                              "width": {
+                                                "type": [
+                                                  "number",
+                                                  "null"
+                                                ],
+                                                "description": "In millimeters",
+                                                "x-unit": "mm"
+                                              },
+                                              "height": {
+                                                "type": [
+                                                  "number",
+                                                  "null"
+                                                ],
+                                                "description": "In millimeters",
+                                                "x-unit": "mm"
+                                              }
+                                            },
+                                            "additionalProperties": false,
+                                            "description": "Folded dimensions"
+                                          },
+                                          "total_weight": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.total_weight"
+                                          },
+                                          "frame_weight": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.frame_weight"
+                                          },
+                                          "fork_weight": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.fork_weight"
+                                          },
+                                          "max_weight_rider": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.max_weight_rider"
+                                          },
+                                          "rider_height_min": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_height_min"
+                                          },
+                                          "rider_height_max": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_height_max"
+                                          },
+                                          "rider_inseam_min": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_inseam_min"
+                                          },
+                                          "rider_inseam_max": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_inseam_max"
+                                          },
+                                          "rider_age_min": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_age_min"
+                                          },
+                                          "rider_age_max": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_age_max"
+                                          },
+                                          "extra_measurements": {
+                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.extra_measurements"
+                                          }
+                                        },
+                                        "additionalProperties": false
+                                      }
+                                    },
+                                    "required": [
+                                      "name"
+                                    ],
+                                    "additionalProperties": false
+                                  },
+                                  "description": "Each other setting of a flip chip or adjustable frame, geometry holding only the figures that differ from the stock geometry"
+                                },
+                                {
+                                  "type": "object",
+                                  "additionalProperties": {
+                                    "anyOf": [
+                                      {
+                                        "type": "object",
+                                        "properties": {
+                                          "name": {
+                                            "anyOf": [
+                                              {
+                                                "$ref": "#/$defs/sizes.geometry_settings.name"
+                                              },
+                                              {
+                                                "const": null
+                                              }
+                                            ]
+                                          },
+                                          "geometry": {
+                                            "anyOf": [
+                                              {
+                                                "type": "object",
+                                                "properties": {
+                                                  "reach": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.reach"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "stack": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.stack"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "top_tube_effective": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.top_tube_effective"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "top_tube_ctc": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.top_tube_ctc"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "seat_tube_ctc": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_tube_ctc"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "seat_tube_ct": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_tube_ct"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "head_angle": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.head_angle"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "seat_angle": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_angle"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "seat_angle_actual": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_angle_actual"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "head_tube": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.head_tube"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "chainstay": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.chainstay"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "wheelbase": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.wheelbase"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "front_center": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.front_center"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "standover": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.standover"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "standover_above_bb": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.standover_above_bb"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "bb_drop": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.bb_drop"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "bb_height": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.bb_height"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "fork_rake": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.fork_rake"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "trail": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.trail"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "fork_length_a2c": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.fork_length_a2c"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "travel_front": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.travel_front"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "travel_rear": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.travel_rear"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "handlebar_width": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.handlebar_width"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "stem_length": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.stem_length"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "crank_length": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.crank_length"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "dropper_travel": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.dropper_travel"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "seatpost_length": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.seatpost_length"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "max_seatpost_insertion": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.max_seatpost_insertion"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "saddle_setback_min": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.saddle_setback_min"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "saddle_setback_max": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.saddle_setback_max"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "seat_height_min": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_height_min"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "seat_height_max": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_height_max"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "seat_height_bb_min": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_height_bb_min"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "seat_height_bb_max": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_height_bb_max"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "dimensions": {
+                                                    "anyOf": [
+                                                      {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "length": {
+                                                            "anyOf": [
+                                                              {
+                                                                "$ref": "#/$defs/sizes.geometry_settings.geometry.dimensions.length"
+                                                              },
+                                                              {
+                                                                "const": null
+                                                              }
+                                                            ]
+                                                          },
+                                                          "width": {
+                                                            "anyOf": [
+                                                              {
+                                                                "$ref": "#/$defs/sizes.geometry_settings.geometry.dimensions.width"
+                                                              },
+                                                              {
+                                                                "const": null
+                                                              }
+                                                            ]
+                                                          },
+                                                          "height": {
+                                                            "anyOf": [
+                                                              {
+                                                                "$ref": "#/$defs/sizes.geometry_settings.geometry.dimensions.height"
+                                                              },
+                                                              {
+                                                                "const": null
+                                                              }
+                                                            ]
+                                                          }
+                                                        },
+                                                        "additionalProperties": false,
+                                                        "description": "Overall dimensions"
+                                                      },
+                                                      {
+                                                        "const": false
+                                                      }
+                                                    ]
+                                                  },
+                                                  "dimensions_folded": {
+                                                    "anyOf": [
+                                                      {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "length": {
+                                                            "anyOf": [
+                                                              {
+                                                                "type": [
+                                                                  "number",
+                                                                  "null"
+                                                                ],
+                                                                "description": "In millimeters",
+                                                                "x-unit": "mm"
+                                                              },
+                                                              {
+                                                                "const": null
+                                                              }
+                                                            ]
+                                                          },
+                                                          "width": {
+                                                            "anyOf": [
+                                                              {
+                                                                "type": [
+                                                                  "number",
+                                                                  "null"
+                                                                ],
+                                                                "description": "In millimeters",
+                                                                "x-unit": "mm"
+                                                              },
+                                                              {
+                                                                "const": null
+                                                              }
+                                                            ]
+                                                          },
+                                                          "height": {
+                                                            "anyOf": [
+                                                              {
+                                                                "type": [
+                                                                  "number",
+                                                                  "null"
+                                                                ],
+                                                                "description": "In millimeters",
+                                                                "x-unit": "mm"
+                                                              },
+                                                              {
+                                                                "const": null
+                                                              }
+                                                            ]
+                                                          }
+                                                        },
+                                                        "additionalProperties": false,
+                                                        "description": "Folded dimensions"
+                                                      },
+                                                      {
+                                                        "const": false
+                                                      }
+                                                    ]
+                                                  },
+                                                  "total_weight": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.total_weight"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "frame_weight": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.frame_weight"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "fork_weight": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.fork_weight"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "max_weight_rider": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.max_weight_rider"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "rider_height_min": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_height_min"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "rider_height_max": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_height_max"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "rider_inseam_min": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_inseam_min"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "rider_inseam_max": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_inseam_max"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "rider_age_min": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_age_min"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "rider_age_max": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_age_max"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  },
+                                                  "extra_measurements": {
+                                                    "anyOf": [
+                                                      {
+                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.extra_measurements"
+                                                      },
+                                                      {
+                                                        "const": null
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                "additionalProperties": false
+                                              },
+                                              {
+                                                "const": false
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "additionalProperties": false
+                                      },
+                                      {
+                                        "const": false
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "const": null
                             }
                           ]
                         }
@@ -2935,6 +4063,15 @@
                         },
                         "rise": {
                           "$ref": "#/$defs/components.dimensions.rise"
+                        },
+                        "axle_diameter": {
+                          "$ref": "#/$defs/components.dimensions.axle_diameter"
+                        },
+                        "axle_spacing": {
+                          "$ref": "#/$defs/components.dimensions.axle_spacing"
+                        },
+                        "inner_width": {
+                          "$ref": "#/$defs/components.dimensions.inner_width"
                         },
                         "adjustable": {
                           "type": "object",
@@ -3255,6 +4392,36 @@
                                   "anyOf": [
                                     {
                                       "$ref": "#/$defs/components.dimensions.rise"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "axle_diameter": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/components.dimensions.axle_diameter"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "axle_spacing": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/components.dimensions.axle_spacing"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "inner_width": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/components.dimensions.inner_width"
                                     },
                                     {
                                       "const": null
@@ -3769,7 +4936,7 @@
         "$ref": "#/$defs/$schema"
       },
       "schema_version": {
-        "const": "0.27.0"
+        "const": "0.28.0"
       },
       "id": {
         "$ref": "#/$defs/id"
@@ -4140,8 +5307,8 @@
             "dropout": {
               "$ref": "#/$defs/wheels.dropout"
             },
-            "max_tire_width": {
-              "$ref": "#/$defs/wheels.max_tire_width"
+            "tire_width_max": {
+              "$ref": "#/$defs/wheels.tire_width_max"
             }
           },
           "additionalProperties": false
@@ -4225,8 +5392,8 @@
             "rotor_diameter": {
               "$ref": "#/$defs/brakes.rotor_diameter"
             },
-            "max_rotor_diameter": {
-              "$ref": "#/$defs/brakes.max_rotor_diameter"
+            "rotor_diameter_max": {
+              "$ref": "#/$defs/brakes.rotor_diameter_max"
             },
             "caliper_mount": {
               "$ref": "#/$defs/brakes.caliper_mount"
@@ -4450,6 +5617,9 @@
                 "seat_angle": {
                   "$ref": "#/$defs/sizes.geometry.seat_angle"
                 },
+                "seat_angle_actual": {
+                  "$ref": "#/$defs/sizes.geometry.seat_angle_actual"
+                },
                 "head_tube": {
                   "$ref": "#/$defs/sizes.geometry.head_tube"
                 },
@@ -4507,11 +5677,23 @@
                 "max_seatpost_insertion": {
                   "$ref": "#/$defs/sizes.geometry.max_seatpost_insertion"
                 },
-                "min_saddle_setback": {
-                  "$ref": "#/$defs/sizes.geometry.min_saddle_setback"
+                "saddle_setback_min": {
+                  "$ref": "#/$defs/sizes.geometry.saddle_setback_min"
                 },
-                "max_saddle_setback": {
-                  "$ref": "#/$defs/sizes.geometry.max_saddle_setback"
+                "saddle_setback_max": {
+                  "$ref": "#/$defs/sizes.geometry.saddle_setback_max"
+                },
+                "seat_height_min": {
+                  "$ref": "#/$defs/sizes.geometry.seat_height_min"
+                },
+                "seat_height_max": {
+                  "$ref": "#/$defs/sizes.geometry.seat_height_max"
+                },
+                "seat_height_bb_min": {
+                  "$ref": "#/$defs/sizes.geometry.seat_height_bb_min"
+                },
+                "seat_height_bb_max": {
+                  "$ref": "#/$defs/sizes.geometry.seat_height_bb_max"
                 },
                 "dimensions": {
                   "type": "object",
@@ -4548,26 +5730,242 @@
                 "total_weight": {
                   "$ref": "#/$defs/sizes.geometry.total_weight"
                 },
+                "frame_weight": {
+                  "$ref": "#/$defs/sizes.geometry.frame_weight"
+                },
+                "fork_weight": {
+                  "$ref": "#/$defs/sizes.geometry.fork_weight"
+                },
                 "max_weight_rider": {
                   "$ref": "#/$defs/sizes.geometry.max_weight_rider"
                 },
-                "min_rider_height": {
-                  "$ref": "#/$defs/sizes.geometry.min_rider_height"
+                "rider_height_min": {
+                  "$ref": "#/$defs/sizes.geometry.rider_height_min"
                 },
-                "max_rider_height": {
-                  "$ref": "#/$defs/sizes.geometry.max_rider_height"
+                "rider_height_max": {
+                  "$ref": "#/$defs/sizes.geometry.rider_height_max"
                 },
-                "min_rider_age": {
-                  "$ref": "#/$defs/sizes.geometry.min_rider_age"
+                "rider_inseam_min": {
+                  "$ref": "#/$defs/sizes.geometry.rider_inseam_min"
                 },
-                "max_rider_age": {
-                  "$ref": "#/$defs/sizes.geometry.max_rider_age"
+                "rider_inseam_max": {
+                  "$ref": "#/$defs/sizes.geometry.rider_inseam_max"
+                },
+                "rider_age_min": {
+                  "$ref": "#/$defs/sizes.geometry.rider_age_min"
+                },
+                "rider_age_max": {
+                  "$ref": "#/$defs/sizes.geometry.rider_age_max"
                 },
                 "extra_measurements": {
                   "$ref": "#/$defs/sizes.geometry.extra_measurements"
                 }
               },
               "additionalProperties": false
+            },
+            "geometry_settings": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "$ref": "#/$defs/sizes.geometry_settings.name"
+                  },
+                  "geometry": {
+                    "type": "object",
+                    "properties": {
+                      "reach": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.reach"
+                      },
+                      "stack": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.stack"
+                      },
+                      "top_tube_effective": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.top_tube_effective"
+                      },
+                      "top_tube_ctc": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.top_tube_ctc"
+                      },
+                      "seat_tube_ctc": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_tube_ctc"
+                      },
+                      "seat_tube_ct": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_tube_ct"
+                      },
+                      "head_angle": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.head_angle"
+                      },
+                      "seat_angle": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_angle"
+                      },
+                      "seat_angle_actual": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_angle_actual"
+                      },
+                      "head_tube": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.head_tube"
+                      },
+                      "chainstay": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.chainstay"
+                      },
+                      "wheelbase": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.wheelbase"
+                      },
+                      "front_center": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.front_center"
+                      },
+                      "standover": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.standover"
+                      },
+                      "standover_above_bb": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.standover_above_bb"
+                      },
+                      "bb_drop": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.bb_drop"
+                      },
+                      "bb_height": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.bb_height"
+                      },
+                      "fork_rake": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.fork_rake"
+                      },
+                      "trail": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.trail"
+                      },
+                      "fork_length_a2c": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.fork_length_a2c"
+                      },
+                      "travel_front": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.travel_front"
+                      },
+                      "travel_rear": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.travel_rear"
+                      },
+                      "handlebar_width": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.handlebar_width"
+                      },
+                      "stem_length": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.stem_length"
+                      },
+                      "crank_length": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.crank_length"
+                      },
+                      "dropper_travel": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.dropper_travel"
+                      },
+                      "seatpost_length": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.seatpost_length"
+                      },
+                      "max_seatpost_insertion": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.max_seatpost_insertion"
+                      },
+                      "saddle_setback_min": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.saddle_setback_min"
+                      },
+                      "saddle_setback_max": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.saddle_setback_max"
+                      },
+                      "seat_height_min": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_height_min"
+                      },
+                      "seat_height_max": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_height_max"
+                      },
+                      "seat_height_bb_min": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_height_bb_min"
+                      },
+                      "seat_height_bb_max": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.seat_height_bb_max"
+                      },
+                      "dimensions": {
+                        "type": "object",
+                        "properties": {
+                          "length": {
+                            "$ref": "#/$defs/sizes.geometry_settings.geometry.dimensions.length"
+                          },
+                          "width": {
+                            "$ref": "#/$defs/sizes.geometry_settings.geometry.dimensions.width"
+                          },
+                          "height": {
+                            "$ref": "#/$defs/sizes.geometry_settings.geometry.dimensions.height"
+                          }
+                        },
+                        "additionalProperties": false,
+                        "description": "Overall dimensions"
+                      },
+                      "dimensions_folded": {
+                        "type": "object",
+                        "properties": {
+                          "length": {
+                            "type": [
+                              "number",
+                              "null"
+                            ],
+                            "description": "In millimeters",
+                            "x-unit": "mm"
+                          },
+                          "width": {
+                            "type": [
+                              "number",
+                              "null"
+                            ],
+                            "description": "In millimeters",
+                            "x-unit": "mm"
+                          },
+                          "height": {
+                            "type": [
+                              "number",
+                              "null"
+                            ],
+                            "description": "In millimeters",
+                            "x-unit": "mm"
+                          }
+                        },
+                        "additionalProperties": false,
+                        "description": "Folded dimensions"
+                      },
+                      "total_weight": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.total_weight"
+                      },
+                      "frame_weight": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.frame_weight"
+                      },
+                      "fork_weight": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.fork_weight"
+                      },
+                      "max_weight_rider": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.max_weight_rider"
+                      },
+                      "rider_height_min": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_height_min"
+                      },
+                      "rider_height_max": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_height_max"
+                      },
+                      "rider_inseam_min": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_inseam_min"
+                      },
+                      "rider_inseam_max": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_inseam_max"
+                      },
+                      "rider_age_min": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_age_min"
+                      },
+                      "rider_age_max": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_age_max"
+                      },
+                      "extra_measurements": {
+                        "$ref": "#/$defs/sizes.geometry_settings.geometry.extra_measurements"
+                      }
+                    },
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "name"
+                ],
+                "additionalProperties": false
+              },
+              "description": "Each other setting of a flip chip or adjustable frame, geometry holding only the figures that differ from the stock geometry"
             }
           },
           "additionalProperties": false
@@ -4629,6 +6027,15 @@
                 },
                 "rise": {
                   "$ref": "#/$defs/components.dimensions.rise"
+                },
+                "axle_diameter": {
+                  "$ref": "#/$defs/components.dimensions.axle_diameter"
+                },
+                "axle_spacing": {
+                  "$ref": "#/$defs/components.dimensions.axle_spacing"
+                },
+                "inner_width": {
+                  "$ref": "#/$defs/components.dimensions.inner_width"
                 },
                 "adjustable": {
                   "type": "object",
@@ -5292,8 +6699,8 @@
         "string",
         "null"
       ],
-      "pattern": "^\\d{12,14}$",
-      "description": "UPC-12, EAN-13 or GTIN-14, its check digit valid"
+      "pattern": "^(\\d{8}|\\d{12,14})$",
+      "description": "EAN-8, UPC-12, EAN-13 or GTIN-14, its check digit valid"
     },
     "years.colorways.variants.size": {
       "type": [
@@ -5778,7 +7185,7 @@
         null
       ]
     },
-    "wheels.max_tire_width": {
+    "wheels.tire_width_max": {
       "type": [
         "integer",
         "null"
@@ -5902,7 +7309,7 @@
       "description": "In millimeters",
       "x-unit": "mm"
     },
-    "brakes.max_rotor_diameter": {
+    "brakes.rotor_diameter_max": {
       "type": [
         "integer",
         "null"
@@ -6268,7 +7675,15 @@
         "number",
         "null"
       ],
-      "description": "Seat Angle, in degrees",
+      "description": "Seat Angle (effective), in degrees",
+      "x-unit": "degrees"
+    },
+    "sizes.geometry.seat_angle_actual": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Seat Angle (actual), along the seat tube, in degrees",
       "x-unit": "degrees"
     },
     "sizes.geometry.head_tube": {
@@ -6423,7 +7838,7 @@
       "description": "Max Seatpost Insertion, in millimeters",
       "x-unit": "mm"
     },
-    "sizes.geometry.min_saddle_setback": {
+    "sizes.geometry.saddle_setback_min": {
       "type": [
         "number",
         "null"
@@ -6431,12 +7846,44 @@
       "description": "Min Saddle Setback, in millimeters",
       "x-unit": "mm"
     },
-    "sizes.geometry.max_saddle_setback": {
+    "sizes.geometry.saddle_setback_max": {
       "type": [
         "number",
         "null"
       ],
       "description": "Max Saddle Setback, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry.seat_height_min": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Ground to the top of the saddle at its lowest setting; a fixed seat's height, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry.seat_height_max": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Ground to the top of the saddle at its highest setting; a fixed seat's height, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry.seat_height_bb_min": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Bottom bracket centre to the top of the saddle, at the lowest the size fits, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry.seat_height_bb_max": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Bottom bracket centre to the top of the saddle, at the highest the size fits, in millimeters",
       "x-unit": "mm"
     },
     "sizes.geometry.dimensions.length": {
@@ -6495,6 +7942,22 @@
       "description": "Total vehicle weight at this size, in kilograms",
       "x-unit": "kg"
     },
+    "sizes.geometry.frame_weight": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "In kilograms",
+      "x-unit": "kg"
+    },
+    "sizes.geometry.fork_weight": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "In kilograms",
+      "x-unit": "kg"
+    },
     "sizes.geometry.max_weight_rider": {
       "type": [
         "integer",
@@ -6503,7 +7966,7 @@
       "description": "Max rider weight, in kilograms",
       "x-unit": "kg"
     },
-    "sizes.geometry.min_rider_height": {
+    "sizes.geometry.rider_height_min": {
       "type": [
         "integer",
         "null"
@@ -6511,7 +7974,7 @@
       "description": "Min Rider Height, in millimeters",
       "x-unit": "mm"
     },
-    "sizes.geometry.max_rider_height": {
+    "sizes.geometry.rider_height_max": {
       "type": [
         "integer",
         "null"
@@ -6519,7 +7982,23 @@
       "description": "Max Rider Height, in millimeters",
       "x-unit": "mm"
     },
-    "sizes.geometry.min_rider_age": {
+    "sizes.geometry.rider_inseam_min": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "In millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry.rider_inseam_max": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "In millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry.rider_age_min": {
       "type": [
         "integer",
         "null"
@@ -6527,7 +8006,7 @@
       "description": "In years",
       "x-unit": "years"
     },
-    "sizes.geometry.max_rider_age": {
+    "sizes.geometry.rider_age_max": {
       "type": [
         "integer",
         "null"
@@ -6536,6 +8015,394 @@
       "x-unit": "years"
     },
     "sizes.geometry.extra_measurements": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "Non-canonical measurements, gathered on coerce; another unit only where the key names it, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.name": {
+      "type": "string",
+      "description": "The maker's name for the setting, e.g. low"
+    },
+    "sizes.geometry_settings.geometry.reach": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Reach, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.stack": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Stack, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.top_tube_effective": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Top Tube (effective), in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.top_tube_ctc": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Top Tube center-to-center, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.seat_tube_ctc": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Seat Tube C to C, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.seat_tube_ct": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Seat Tube center-to-top, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.head_angle": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Head Angle, in degrees",
+      "x-unit": "degrees"
+    },
+    "sizes.geometry_settings.geometry.seat_angle": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Seat Angle (effective), in degrees",
+      "x-unit": "degrees"
+    },
+    "sizes.geometry_settings.geometry.seat_angle_actual": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Seat Angle (actual), along the seat tube, in degrees",
+      "x-unit": "degrees"
+    },
+    "sizes.geometry_settings.geometry.head_tube": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Head Tube, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.chainstay": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Chainstay, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.wheelbase": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Wheelbase, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.front_center": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Front Centre, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.standover": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Standover, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.standover_above_bb": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Standover above the bottom bracket, as BMX and dirt jump charts state it, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.bb_drop": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "BB Drop, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.bb_height": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "BB Height, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.fork_rake": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Fork Rake / Offset, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.trail": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Trail, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.fork_length_a2c": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Fork Length (A2C), in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.travel_front": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Fork travel at this size, when it varies by size, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.travel_rear": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Rear wheel travel at this size, when it varies by size, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.handlebar_width": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Handlebar Width, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.stem_length": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Stem Length, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.crank_length": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Crank Length, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.dropper_travel": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Dropper Travel, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.seatpost_length": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Seatpost Length, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.max_seatpost_insertion": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Max Seatpost Insertion, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.saddle_setback_min": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Min Saddle Setback, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.saddle_setback_max": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Max Saddle Setback, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.seat_height_min": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Ground to the top of the saddle at its lowest setting; a fixed seat's height, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.seat_height_max": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Ground to the top of the saddle at its highest setting; a fixed seat's height, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.seat_height_bb_min": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Bottom bracket centre to the top of the saddle, at the lowest the size fits, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.seat_height_bb_max": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Bottom bracket centre to the top of the saddle, at the highest the size fits, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.dimensions.length": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "In millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.dimensions.width": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "In millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.dimensions.height": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "In millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.total_weight": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Total vehicle weight at this size, in kilograms",
+      "x-unit": "kg"
+    },
+    "sizes.geometry_settings.geometry.frame_weight": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "In kilograms",
+      "x-unit": "kg"
+    },
+    "sizes.geometry_settings.geometry.fork_weight": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "In kilograms",
+      "x-unit": "kg"
+    },
+    "sizes.geometry_settings.geometry.max_weight_rider": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Max rider weight, in kilograms",
+      "x-unit": "kg"
+    },
+    "sizes.geometry_settings.geometry.rider_height_min": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Min Rider Height, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.rider_height_max": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Max Rider Height, in millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.rider_inseam_min": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "In millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.rider_inseam_max": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "In millimeters",
+      "x-unit": "mm"
+    },
+    "sizes.geometry_settings.geometry.rider_age_min": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "In years",
+      "x-unit": "years"
+    },
+    "sizes.geometry_settings.geometry.rider_age_max": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "In years",
+      "x-unit": "years"
+    },
+    "sizes.geometry_settings.geometry.extra_measurements": {
       "type": [
         "object",
         "null"
@@ -6618,6 +8485,30 @@
         "null"
       ],
       "description": "In millimeters",
+      "x-unit": "mm"
+    },
+    "components.dimensions.axle_diameter": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "In millimeters",
+      "x-unit": "mm"
+    },
+    "components.dimensions.axle_spacing": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "The hub's over-locknut width, in millimeters",
+      "x-unit": "mm"
+    },
+    "components.dimensions.inner_width": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "A rim's internal width, in millimeters",
       "x-unit": "mm"
     },
     "components.dimensions.adjustable.length.min": {
