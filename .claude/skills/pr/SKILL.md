@@ -34,8 +34,8 @@ An upstream of `origin/main` publishes nothing: `git branch --unset-upstream`, t
 
 Everything here diffs `origin/<base>...HEAD`. Commit what it produces before step 1.
 
-- **Data files (`vehicle_models/`, `components/`, `e_vehicle_classifications/`, `schemas/`) come only from a publish** (AGENTS.md). A hand edit to one is a mistake to undo and fix at the source; say so rather than PR it.
-- **Run what CI runs**: `cargo fmt --check`, `cargo clippy --all-targets --locked -- -D warnings` and `cargo test --locked --no-fail-fast`. A failing data check is reported in the body, not patched in the file.
+- **This repo is the canonical source of the data** (AGENTS.md), so a data fix is made here, in the file. Read the diff of each changed file under `vehicle_models/`, `components/` and `e_vehicle_classifications/` against the branch's purpose: a value it didn't mean to change is a mistake to undo.
+- **Run what CI runs**: `cargo fmt --check`, `cargo clippy --all-targets --locked -- -D warnings` and `cargo test --locked --no-fail-fast`. A failing data check is fixed in the file on this branch; one the branch can't fix goes in the body's **Ongoing** note.
 - **A changed `schemas/*.json` whose `$id` version moved makes this a schema-version PR**, which is always the user's to merge.
 - **Documentation the branch adds or edits** — `README.markdown`, `AGENTS.md`, anything under `.claude/` — check every claim against the files it describes; nothing runs a doc. Grep for the subject before adding a line: a fact stated twice drifts, and the restatement is the one that goes wrong.
 

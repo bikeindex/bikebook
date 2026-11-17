@@ -2,10 +2,10 @@
 name: merge-conflicts
 description: >-
   How to bring a branch up to date and resolve git merge conflicts the way this
-  repo expects — merge (never rebase or force-push), resolve published data files
-  by republishing rather than hand-merging, understand each side's intent before
-  choosing, ask when a resolution isn't clear-cut, keep the merge commit to just
-  the merge, and audit what merged cleanly before committing. Trigger whenever
+  repo expects — merge (never rebase or force-push), merge a data file key by key,
+  understand each side's intent before choosing, ask when a resolution isn't
+  clear-cut, keep the merge commit to just the merge, and audit what merged
+  cleanly before committing. Trigger whenever
   you're about to run `git merge`/`git pull`, sync a branch with `main`, "update
   from main", pick up commits on the branch's own remote, or resolve conflict
   markers — including "fix the conflicts", "merge main in", or "this branch is
@@ -23,14 +23,18 @@ allowed-tools: Bash, Read, Edit, Write, Glob, Grep
 
 ## Resolve
 
-**A published data file — anything under `vehicle_models/`, `components/`, `e_vehicle_classifications/` or `schemas/` — is never hand-merged.** It's a copy of the catalog (AGENTS.md), so the right content is what the catalog publishes now, not a blend of two old publishes. Republish over the conflicted files and `git add` the result; if you can't republish from here, stop with the merge uncommitted and ask the user. The same goes for a modify/delete conflict on one: whether the file still exists is the publish's answer.
+**A data file — anything under `vehicle_models/`, `components/` or `e_vehicle_classifications/` — merges key by key.** This repo is the data's canonical source (AGENTS.md), so its resolution is the data from then on. Compare the merge base (`git show :1:<path>`) with each side (`:2:` this branch, `:3:` the base) and take each side's changed values: a key only one side changed takes that side's, a key the base added or removed stays added or removed. **A key both sides changed to different values is a question for the user**, naming the file, the key and both values — a wrong value merged silently is wrong data. So is a modify/delete conflict: whether the model still exists is the user's call. Write the result in the file's existing key order, pretty-printed (AGENTS.md).
 
-Everything else (`README.markdown`, `AGENTS.md`, `.claude/`, licenses):
+**A `schemas/` file both sides changed is a schema change from each side**: combine them only when they touch different definitions and their versions agree; otherwise ask.
+
+Everything else (`README.markdown`, `AGENTS.md`, `.claude/`, code, licenses):
 
 - Read both sides' intent before choosing — `git log --oneline --merge -- <file>` shows the commits that touched it on each side. The answer is often a combination. Don't drop the branch's purpose or revert something the base did on purpose.
 - **A value both sides changed takes the base's; the branch only adds what the base lacks.** Ask when the two can't both hold and the right one isn't clear — a wrong silent resolution is worse than a question.
 - Edit out the unwanted half of each `<<<<<<<` block. `git checkout --ours/--theirs` replaces the whole file and loses the other side's clean hunks (`git checkout -m -- <file>` restores the markers).
 - **The merge commit holds only the merge.** Fixes the merge makes due go in commits after it.
+
+After resolving, before committing, run `cargo test --locked --no-fail-fast`: a merged data file that's misordered, misformatted or off its schema fails it.
 
 ## Check what merged cleanly
 
