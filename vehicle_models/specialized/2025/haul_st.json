@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2025/haul_st",
   "manufacturer": "Specialized",
-  "vehicle_model_group": "Globe Haul",
+  "model_group": "Globe Haul",
   "model": "Haul ST",
   "model_configuration": "complete",
   "markets": [
@@ -106,7 +106,11 @@
         "type": "fender"
       },
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
     "bottom_bracket": {
@@ -117,8 +121,7 @@
     },
     "headset": "ZS50.6/38.1-26tpi | ZS50.6/38.5",
     "seatpost_diameter": 34.9,
-    "seatpost_clamp_diameter": 39.0,
-    "max_weight_total": 190
+    "seatpost_clamp_diameter": 39.0
   },
   "wheels": [
     {
@@ -179,10 +182,15 @@
       "drive_wheel": "rear",
       "manufacturer": "Globe",
       "kind": "hub_drive",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX7",
-      "battery_size": 772,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 772,
+        "chemistry": "li-ion"
+      },
       "rated_power": 700,
       "operating_modes": [
         {
@@ -206,12 +214,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 60,
-    "attributes": [
-      "MIK HD interface"
-    ]
-  },
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 190
+    },
+    {
+      "load": "rear_rack",
+      "weight": 60
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

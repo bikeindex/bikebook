@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/actbest/2026/blazer_ultra",
   "manufacturer": "Actbest",
-  "vehicle_model_group": "Blazer",
+  "model_group": "Blazer",
   "model": "Blazer Ultra",
   "model_configuration": "complete",
   "type": "bike",
@@ -76,8 +76,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 227
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -114,9 +113,11 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "peak_power": 1800,
       "max_torque": 110,
       "operating_modes": [
@@ -140,9 +141,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 24.95
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 24.95
+    },
+    {
+      "load": "payload",
+      "weight": 227
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

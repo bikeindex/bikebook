@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reactive_adaptations/2025/mako",
   "manufacturer": "Reactive Adaptations",
   "model": "Mako",
@@ -181,7 +181,9 @@
       "manufacturer": "CYC",
       "model": "Photon",
       "kind": "mid_drive",
-      "battery_info": "Jumbo Shark Battery (20aH)",
+      "battery": {
+        "cells": "Jumbo Shark"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -194,6 +196,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 91
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -203,7 +211,6 @@
           "length": 1930,
           "width": 889
         },
-        "max_weight_rider": 91,
         "extra_measurements": {
           "track_width": 813,
           "weight_with_battery_and_motor_kg": 49.9

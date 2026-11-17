@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/segway/2025/gt3_pro",
   "manufacturer": "Segway",
-  "vehicle_model_group": "GT Series",
+  "model_group": "GT Series",
   "model": "GT3 Pro",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -75,8 +75,10 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 2160,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 2160,
+        "charging_time": 480
+      },
       "rated_power": 1700,
       "peak_power": 3500,
       "operating_modes": [
@@ -97,8 +99,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 2160,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 2160,
+        "charging_time": 480
+      },
       "rated_power": 1700,
       "peak_power": 3500,
       "operating_modes": [
@@ -114,6 +118,12 @@
           }
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -132,7 +142,6 @@
           "height": 700
         },
         "total_weight": 53.1,
-        "max_weight_rider": 150,
         "rider_height_min": 1600,
         "rider_height_max": 2000,
         "rider_age_min": 18,
