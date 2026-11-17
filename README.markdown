@@ -16,6 +16,8 @@ The data files in this repository (`.json` and `.csv`) are licensed under a <a r
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/></a>
 
+Product descriptions (the `description` of vehicle models and components) and photos (`stock_photo`, `geometry_photo`) belong to their manufacturers and aren't covered by CC BY-SA. They're included to identify the products, and we'll remove any on request: email licensing@bikeindex.org.
+
 Read more about the license and attribution at [bikeindex.org/bikebook/license](https://bikeindex.org/bikebook/license).
 
 All code in this repository (e.g. CI, publishing, etc) is licensed under the [GNU Affero General Public License v3.0 or later](LICENSE_CODE) (`AGPL-3.0-or-later`).
