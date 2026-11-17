@@ -20,6 +20,4 @@ Product descriptions (the `description` of vehicle models and components) and ph
 
 Read more about the license and attribution at [bikeindex.org/bikebook/license](https://bikeindex.org/bikebook/license).
 
-All code in this repository (e.g. CI, publishing, etc) is licensed under the [GNU Affero General Public License v3.0 or later](LICENSE_CODE) (`AGPL-3.0-or-later`).
-
 The data is provided as is, without warranties of any kind. E-vehicle classification, certification and legality information is general guidance, not legal advice: laws vary by country, state, city and campus and change over time, so check local rules and the manufacturer's documentation before relying on them.
