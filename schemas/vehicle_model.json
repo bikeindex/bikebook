@@ -1,7 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/bikeindex/bikebook/main/schemas/vehicle_model.json",
+  "$id": "https://bikebook.bikeindex.org/schemas/vehicle_model/v1.0.0.json",
   "title": "Bikebook vehicle model",
+  "description": "schema_version is semantic: a major version removes, renames or retypes a field or removes an enum value, a minor one adds an optional field or an enum value, and a patch changes only descriptions. The published catalog's format is versioned apart from it, one integer raised whenever the layout of its files changes.",
   "type": "object",
   "if": {
     "required": [
@@ -15,7 +16,7 @@
         "$ref": "#/$defs/$schema"
       },
       "schema_version": {
-        "const": "0.28.0"
+        "const": "1.0.0"
       },
       "id": {
         "$ref": "#/$defs/id"
@@ -30,10 +31,10 @@
           }
         ]
       },
-      "vehicle_model_group": {
+      "model_group": {
         "anyOf": [
           {
-            "$ref": "#/$defs/vehicle_model_group"
+            "$ref": "#/$defs/model_group"
           },
           {
             "const": null
@@ -550,6 +551,9 @@
                             "holes": {
                               "$ref": "#/$defs/frame.mounts.holes"
                             },
+                            "interface": {
+                              "$ref": "#/$defs/frame.mounts.interface"
+                            },
                             "description": {
                               "type": [
                                 "string",
@@ -619,6 +623,16 @@
                                   "anyOf": [
                                     {
                                       "$ref": "#/$defs/frame.mounts.holes"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "interface": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/frame.mounts.interface"
                                     },
                                     {
                                       "const": null
@@ -801,26 +815,6 @@
                 "anyOf": [
                   {
                     "$ref": "#/$defs/frame.coil_compatible"
-                  },
-                  {
-                    "const": null
-                  }
-                ]
-              },
-              "max_weight_total": {
-                "anyOf": [
-                  {
-                    "$ref": "#/$defs/frame.max_weight_total"
-                  },
-                  {
-                    "const": null
-                  }
-                ]
-              },
-              "gross_weight_rating": {
-                "anyOf": [
-                  {
-                    "$ref": "#/$defs/frame.gross_weight_rating"
                   },
                   {
                     "const": null
@@ -1571,34 +1565,53 @@
                     "sensor_torque": {
                       "$ref": "#/$defs/motors.sensor_torque"
                     },
-                    "certification": {
-                      "type": [
-                        "string",
-                        "null"
-                      ]
+                    "certifications": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/$defs/motors.certifications"
+                      },
+                      "description": "The standards it's certified to"
                     },
                     "water_rating": {
                       "$ref": "#/$defs/motors.water_rating"
                     },
-                    "battery_size": {
-                      "$ref": "#/$defs/motors.battery_size"
-                    },
-                    "battery_options": {
-                      "type": "array",
-                      "items": {
-                        "type": "integer"
+                    "battery": {
+                      "type": "object",
+                      "properties": {
+                        "capacity": {
+                          "$ref": "#/$defs/motors.battery.capacity"
+                        },
+                        "capacity_options": {
+                          "type": "array",
+                          "items": {
+                            "type": "integer"
+                          },
+                          "description": "The other battery capacities offered for it, in watt-hours",
+                          "x-unit": "wh"
+                        },
+                        "voltage": {
+                          "$ref": "#/$defs/motors.battery.voltage"
+                        },
+                        "chemistry": {
+                          "$ref": "#/$defs/motors.battery.chemistry"
+                        },
+                        "cells": {
+                          "$ref": "#/$defs/motors.battery.cells"
+                        },
+                        "weight": {
+                          "$ref": "#/$defs/motors.battery.weight"
+                        },
+                        "removable": {
+                          "type": [
+                            "boolean",
+                            "null"
+                          ]
+                        },
+                        "charging_time": {
+                          "$ref": "#/$defs/motors.battery.charging_time"
+                        }
                       },
-                      "description": "The other battery sizes offered for it, in watt-hours",
-                      "x-unit": "wh"
-                    },
-                    "battery_chemistry": {
-                      "$ref": "#/$defs/motors.battery_chemistry"
-                    },
-                    "battery_info": {
-                      "$ref": "#/$defs/motors.battery_info"
-                    },
-                    "charging_time": {
-                      "$ref": "#/$defs/motors.charging_time"
+                      "additionalProperties": false
                     },
                     "rated_power": {
                       "$ref": "#/$defs/motors.rated_power"
@@ -1803,13 +1816,14 @@
                             }
                           ]
                         },
-                        "certification": {
+                        "certifications": {
                           "anyOf": [
                             {
-                              "type": [
-                                "string",
-                                "null"
-                              ]
+                              "type": "array",
+                              "items": {
+                                "$ref": "#/$defs/motors.certifications"
+                              },
+                              "description": "The standards it's certified to"
                             },
                             {
                               "const": null
@@ -1826,58 +1840,104 @@
                             }
                           ]
                         },
-                        "battery_size": {
+                        "battery": {
                           "anyOf": [
                             {
-                              "$ref": "#/$defs/motors.battery_size"
-                            },
-                            {
-                              "const": null
-                            }
-                          ]
-                        },
-                        "battery_options": {
-                          "anyOf": [
-                            {
-                              "type": "array",
-                              "items": {
-                                "type": "integer"
+                              "type": "object",
+                              "properties": {
+                                "capacity": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/motors.battery.capacity"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "capacity_options": {
+                                  "anyOf": [
+                                    {
+                                      "type": "array",
+                                      "items": {
+                                        "type": "integer"
+                                      },
+                                      "description": "The other battery capacities offered for it, in watt-hours",
+                                      "x-unit": "wh"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "voltage": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/motors.battery.voltage"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "chemistry": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/motors.battery.chemistry"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "cells": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/motors.battery.cells"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "weight": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/motors.battery.weight"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "removable": {
+                                  "anyOf": [
+                                    {
+                                      "type": [
+                                        "boolean",
+                                        "null"
+                                      ]
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                },
+                                "charging_time": {
+                                  "anyOf": [
+                                    {
+                                      "$ref": "#/$defs/motors.battery.charging_time"
+                                    },
+                                    {
+                                      "const": null
+                                    }
+                                  ]
+                                }
                               },
-                              "description": "The other battery sizes offered for it, in watt-hours",
-                              "x-unit": "wh"
+                              "additionalProperties": false
                             },
                             {
-                              "const": null
-                            }
-                          ]
-                        },
-                        "battery_chemistry": {
-                          "anyOf": [
-                            {
-                              "$ref": "#/$defs/motors.battery_chemistry"
-                            },
-                            {
-                              "const": null
-                            }
-                          ]
-                        },
-                        "battery_info": {
-                          "anyOf": [
-                            {
-                              "$ref": "#/$defs/motors.battery_info"
-                            },
-                            {
-                              "const": null
-                            }
-                          ]
-                        },
-                        "charging_time": {
-                          "anyOf": [
-                            {
-                              "$ref": "#/$defs/motors.charging_time"
-                            },
-                            {
-                              "const": null
+                              "const": false
                             }
                           ]
                         },
@@ -2187,35 +2247,99 @@
                     "const": null
                   }
                 ]
-              },
-              "max_weight_cargo": {
-                "anyOf": [
-                  {
-                    "$ref": "#/$defs/cargo.max_weight_cargo"
-                  },
-                  {
-                    "const": null
-                  }
-                ]
-              },
-              "attributes": {
-                "anyOf": [
-                  {
-                    "type": "array",
-                    "items": {
-                      "type": "string"
-                    }
-                  },
-                  {
-                    "const": null
-                  }
-                ]
               }
             },
             "additionalProperties": false
           },
           {
             "const": false
+          }
+        ]
+      },
+      "weight_limits": {
+        "anyOf": [
+          {
+            "anyOf": [
+              {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "load": {
+                      "$ref": "#/$defs/weight_limits.load"
+                    },
+                    "weight": {
+                      "$ref": "#/$defs/weight_limits.weight"
+                    },
+                    "sizes": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "The sizes that have it, when not every size, named as in sizes[].name"
+                    }
+                  },
+                  "required": [
+                    "load",
+                    "weight"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              {
+                "type": "object",
+                "additionalProperties": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "load": {
+                          "anyOf": [
+                            {
+                              "$ref": "#/$defs/weight_limits.load"
+                            },
+                            {
+                              "const": null
+                            }
+                          ]
+                        },
+                        "weight": {
+                          "anyOf": [
+                            {
+                              "$ref": "#/$defs/weight_limits.weight"
+                            },
+                            {
+                              "const": null
+                            }
+                          ]
+                        },
+                        "sizes": {
+                          "anyOf": [
+                            {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              },
+                              "description": "The sizes that have it, when not every size, named as in sizes[].name"
+                            },
+                            {
+                              "const": null
+                            }
+                          ]
+                        }
+                      },
+                      "additionalProperties": false
+                    },
+                    {
+                      "const": false
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "const": null
           }
         ]
       },
@@ -2376,9 +2500,6 @@
                         },
                         "fork_weight": {
                           "$ref": "#/$defs/sizes.geometry.fork_weight"
-                        },
-                        "max_weight_rider": {
-                          "$ref": "#/$defs/sizes.geometry.max_weight_rider"
                         },
                         "rider_height_min": {
                           "$ref": "#/$defs/sizes.geometry.rider_height_min"
@@ -2572,9 +2693,6 @@
                               },
                               "fork_weight": {
                                 "$ref": "#/$defs/sizes.geometry_settings.geometry.fork_weight"
-                              },
-                              "max_weight_rider": {
-                                "$ref": "#/$defs/sizes.geometry_settings.geometry.max_weight_rider"
                               },
                               "rider_height_min": {
                                 "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_height_min"
@@ -3093,16 +3211,6 @@
                                     }
                                   ]
                                 },
-                                "max_weight_rider": {
-                                  "anyOf": [
-                                    {
-                                      "$ref": "#/$defs/sizes.geometry.max_weight_rider"
-                                    },
-                                    {
-                                      "const": null
-                                    }
-                                  ]
-                                },
                                 "rider_height_min": {
                                   "anyOf": [
                                     {
@@ -3353,9 +3461,6 @@
                                           },
                                           "fork_weight": {
                                             "$ref": "#/$defs/sizes.geometry_settings.geometry.fork_weight"
-                                          },
-                                          "max_weight_rider": {
-                                            "$ref": "#/$defs/sizes.geometry_settings.geometry.max_weight_rider"
                                           },
                                           "rider_height_min": {
                                             "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_height_min"
@@ -3878,16 +3983,6 @@
                                                     "anyOf": [
                                                       {
                                                         "$ref": "#/$defs/sizes.geometry_settings.geometry.fork_weight"
-                                                      },
-                                                      {
-                                                        "const": null
-                                                      }
-                                                    ]
-                                                  },
-                                                  "max_weight_rider": {
-                                                    "anyOf": [
-                                                      {
-                                                        "$ref": "#/$defs/sizes.geometry_settings.geometry.max_weight_rider"
                                                       },
                                                       {
                                                         "const": null
@@ -4936,7 +5031,7 @@
         "$ref": "#/$defs/$schema"
       },
       "schema_version": {
-        "const": "0.28.0"
+        "const": "1.0.0"
       },
       "id": {
         "$ref": "#/$defs/id"
@@ -4944,8 +5039,8 @@
       "manufacturer": {
         "$ref": "#/$defs/manufacturer"
       },
-      "vehicle_model_group": {
-        "$ref": "#/$defs/vehicle_model_group"
+      "model_group": {
+        "$ref": "#/$defs/model_group"
       },
       "model": {
         "$ref": "#/$defs/model"
@@ -5121,6 +5216,9 @@
                 "holes": {
                   "$ref": "#/$defs/frame.mounts.holes"
                 },
+                "interface": {
+                  "$ref": "#/$defs/frame.mounts.interface"
+                },
                 "description": {
                   "type": [
                     "string",
@@ -5178,12 +5276,6 @@
           },
           "coil_compatible": {
             "$ref": "#/$defs/frame.coil_compatible"
-          },
-          "max_weight_total": {
-            "$ref": "#/$defs/frame.max_weight_total"
-          },
-          "gross_weight_rating": {
-            "$ref": "#/$defs/frame.gross_weight_rating"
           }
         },
         "additionalProperties": false
@@ -5452,34 +5544,53 @@
             "sensor_torque": {
               "$ref": "#/$defs/motors.sensor_torque"
             },
-            "certification": {
-              "type": [
-                "string",
-                "null"
-              ]
+            "certifications": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/motors.certifications"
+              },
+              "description": "The standards it's certified to"
             },
             "water_rating": {
               "$ref": "#/$defs/motors.water_rating"
             },
-            "battery_size": {
-              "$ref": "#/$defs/motors.battery_size"
-            },
-            "battery_options": {
-              "type": "array",
-              "items": {
-                "type": "integer"
+            "battery": {
+              "type": "object",
+              "properties": {
+                "capacity": {
+                  "$ref": "#/$defs/motors.battery.capacity"
+                },
+                "capacity_options": {
+                  "type": "array",
+                  "items": {
+                    "type": "integer"
+                  },
+                  "description": "The other battery capacities offered for it, in watt-hours",
+                  "x-unit": "wh"
+                },
+                "voltage": {
+                  "$ref": "#/$defs/motors.battery.voltage"
+                },
+                "chemistry": {
+                  "$ref": "#/$defs/motors.battery.chemistry"
+                },
+                "cells": {
+                  "$ref": "#/$defs/motors.battery.cells"
+                },
+                "weight": {
+                  "$ref": "#/$defs/motors.battery.weight"
+                },
+                "removable": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ]
+                },
+                "charging_time": {
+                  "$ref": "#/$defs/motors.battery.charging_time"
+                }
               },
-              "description": "The other battery sizes offered for it, in watt-hours",
-              "x-unit": "wh"
-            },
-            "battery_chemistry": {
-              "$ref": "#/$defs/motors.battery_chemistry"
-            },
-            "battery_info": {
-              "$ref": "#/$defs/motors.battery_info"
-            },
-            "charging_time": {
-              "$ref": "#/$defs/motors.charging_time"
+              "additionalProperties": false
             },
             "rated_power": {
               "$ref": "#/$defs/motors.rated_power"
@@ -5569,18 +5680,35 @@
           },
           "volume": {
             "$ref": "#/$defs/cargo.volume"
-          },
-          "max_weight_cargo": {
-            "$ref": "#/$defs/cargo.max_weight_cargo"
-          },
-          "attributes": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           }
         },
         "additionalProperties": false
+      },
+      "weight_limits": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "load": {
+              "$ref": "#/$defs/weight_limits.load"
+            },
+            "weight": {
+              "$ref": "#/$defs/weight_limits.weight"
+            },
+            "sizes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "The sizes that have it, when not every size, named as in sizes[].name"
+            }
+          },
+          "required": [
+            "load",
+            "weight"
+          ],
+          "additionalProperties": false
+        }
       },
       "sizes": {
         "type": "array",
@@ -5735,9 +5863,6 @@
                 },
                 "fork_weight": {
                   "$ref": "#/$defs/sizes.geometry.fork_weight"
-                },
-                "max_weight_rider": {
-                  "$ref": "#/$defs/sizes.geometry.max_weight_rider"
                 },
                 "rider_height_min": {
                   "$ref": "#/$defs/sizes.geometry.rider_height_min"
@@ -5931,9 +6056,6 @@
                       },
                       "fork_weight": {
                         "$ref": "#/$defs/sizes.geometry_settings.geometry.fork_weight"
-                      },
-                      "max_weight_rider": {
-                        "$ref": "#/$defs/sizes.geometry_settings.geometry.max_weight_rider"
                       },
                       "rider_height_min": {
                         "$ref": "#/$defs/sizes.geometry_settings.geometry.rider_height_min"
@@ -6436,7 +6558,7 @@
       ],
       "x-complete": true
     },
-    "vehicle_model_group": {
+    "model_group": {
       "type": [
         "string",
         "null"
@@ -6459,7 +6581,7 @@
       ]
     },
     "markets": {
-      "$ref": "https://raw.githubusercontent.com/bikeindex/bikebook/main/schemas/vocabulary.json#/$defs/market"
+      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v1.0.0.json#/$defs/market"
     },
     "type": {
       "type": [
@@ -6829,6 +6951,21 @@
       ],
       "description": "Bolt holes, when not the usual 2 (3 for a three-pack cage)"
     },
+    "frame.mounts.interface": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "mik",
+        "mik_hd",
+        "racktime_snapit",
+        "atranvelo_avs",
+        "thule_yepp_easyfit",
+        null
+      ],
+      "description": "The accessory standard a rack's top takes"
+    },
     "frame.cable_routing": {
       "type": [
         "string",
@@ -6940,22 +7077,6 @@
         "null"
       ],
       "description": "The frame takes a coil rear shock"
-    },
-    "frame.max_weight_total": {
-      "type": [
-        "integer",
-        "null"
-      ],
-      "description": "Vehicle weight limit: rider and cargo, in kilograms",
-      "x-unit": "kg"
-    },
-    "frame.gross_weight_rating": {
-      "type": [
-        "integer",
-        "null"
-      ],
-      "description": "Vehicle plus max weight, the total combined limit (curb_weight, GVWR), in kilograms",
-      "x-unit": "kg"
     },
     "suspension.front.travel": {
       "type": [
@@ -7428,6 +7549,31 @@
         null
       ]
     },
+    "motors.certifications": {
+      "type": "string",
+      "enum": [
+        "UL 2849",
+        "UL 2271",
+        "UL 2272",
+        "UL 2580",
+        "UL 1012",
+        "UL 1446",
+        "EN 15194",
+        "EN 50604",
+        "EN 14764",
+        "EN 14766",
+        "EN 55014-1",
+        "IEC 62133",
+        "ISO 4210",
+        "UN 38.3",
+        "16 CFR 1512",
+        "ANSI/SVIA 1",
+        "ASTM F963",
+        "CE",
+        "RoHS",
+        "FCC"
+      ]
+    },
     "motors.water_rating": {
       "type": [
         "string",
@@ -7435,7 +7581,7 @@
       ],
       "description": "IP ingress-protection rating, e.g. IPX7"
     },
-    "motors.battery_size": {
+    "motors.battery.capacity": {
       "type": [
         "integer",
         "null"
@@ -7443,7 +7589,15 @@
       "description": "The stock battery's, in watt-hours",
       "x-unit": "wh"
     },
-    "motors.battery_chemistry": {
+    "motors.battery.voltage": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "In volts",
+      "x-unit": "v"
+    },
+    "motors.battery.chemistry": {
       "type": [
         "string",
         "null"
@@ -7456,14 +7610,22 @@
         null
       ]
     },
-    "motors.battery_info": {
+    "motors.battery.cells": {
       "type": [
         "string",
         "null"
       ],
-      "description": "Additional Battery Info (e.g. Cell Type"
+      "description": "The cells' maker, model and format, e.g. Samsung 50E 21700"
     },
-    "motors.charging_time": {
+    "motors.battery.weight": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "In kilograms",
+      "x-unit": "kg"
+    },
+    "motors.battery.charging_time": {
       "type": [
         "integer",
         "null"
@@ -7570,10 +7732,10 @@
       "description": "Throttle only"
     },
     "motors.operating_modes.e_vehicle_classifications": {
-      "$ref": "https://raw.githubusercontent.com/bikeindex/bikebook/main/schemas/vocabulary.json#/$defs/e_vehicle_classification"
+      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v1.0.0.json#/$defs/e_vehicle_classification"
     },
     "motors.operating_modes.markets": {
-      "$ref": "https://raw.githubusercontent.com/bikeindex/bikebook/main/schemas/vocabulary.json#/$defs/market"
+      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v1.0.0.json#/$defs/market"
     },
     "cargo.length": {
       "type": [
@@ -7599,11 +7761,23 @@
       "description": "A box's or bin's capacity, in liters",
       "x-unit": "l"
     },
-    "cargo.max_weight_cargo": {
-      "type": [
-        "number",
-        "null"
+    "weight_limits.load": {
+      "type": "string",
+      "enum": [
+        "rider",
+        "cargo",
+        "payload",
+        "gross",
+        "rear_rack",
+        "front_rack",
+        "handlebar_basket",
+        "pannier_per_side",
+        "trailer"
       ],
+      "description": "Payload: rider and cargo; gross: the vehicle and its payload (GVWR)"
+    },
+    "weight_limits.weight": {
+      "type": "number",
       "description": "In kilograms",
       "x-unit": "kg"
     },
@@ -7956,14 +8130,6 @@
         "null"
       ],
       "description": "In kilograms",
-      "x-unit": "kg"
-    },
-    "sizes.geometry.max_weight_rider": {
-      "type": [
-        "integer",
-        "null"
-      ],
-      "description": "Max rider weight, in kilograms",
       "x-unit": "kg"
     },
     "sizes.geometry.rider_height_min": {
@@ -8346,14 +8512,6 @@
       "description": "In kilograms",
       "x-unit": "kg"
     },
-    "sizes.geometry_settings.geometry.max_weight_rider": {
-      "type": [
-        "integer",
-        "null"
-      ],
-      "description": "Max rider weight, in kilograms",
-      "x-unit": "kg"
-    },
     "sizes.geometry_settings.geometry.rider_height_min": {
       "type": [
         "integer",
@@ -8411,7 +8569,7 @@
       "x-unit": "mm"
     },
     "components.type": {
-      "$ref": "https://raw.githubusercontent.com/bikeindex/bikebook/main/schemas/vocabulary.json#/$defs/component_type"
+      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v1.0.0.json#/$defs/component_type"
     },
     "components.position": {
       "type": "string",

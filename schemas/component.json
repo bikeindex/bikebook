@@ -1,7 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/bikeindex/bikebook/main/schemas/component.json",
+  "$id": "https://bikebook.bikeindex.org/schemas/component/v1.0.0.json",
   "title": "Bikebook component",
+  "description": "schema_version is semantic: a major version removes, renames or retypes a field or removes an enum value, a minor one adds an optional field or an enum value, and a patch changes only descriptions. The published catalog's format is versioned apart from it, one integer raised whenever the layout of its files changes.",
   "type": "object",
   "if": {
     "required": [
@@ -15,7 +16,7 @@
         "$ref": "#/$defs/$schema"
       },
       "schema_version": {
-        "const": "0.28.0"
+        "const": "1.0.0"
       },
       "id": {
         "$ref": "#/$defs/id"
@@ -169,13 +170,14 @@
                   }
                 ]
               },
-              "certification": {
+              "certifications": {
                 "anyOf": [
                   {
-                    "type": [
-                      "string",
-                      "null"
-                    ]
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/$defs/motor.certifications"
+                    },
+                    "description": "The standards it's certified to"
                   },
                   {
                     "const": null
@@ -448,7 +450,7 @@
         "$ref": "#/$defs/$schema"
       },
       "schema_version": {
-        "const": "0.28.0"
+        "const": "1.0.0"
       },
       "id": {
         "$ref": "#/$defs/id"
@@ -509,11 +511,12 @@
           "sensor_torque": {
             "$ref": "#/$defs/motor.sensor_torque"
           },
-          "certification": {
-            "type": [
-              "string",
-              "null"
-            ]
+          "certifications": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/motor.certifications"
+            },
+            "description": "The standards it's certified to"
           },
           "water_rating": {
             "$ref": "#/$defs/motor.water_rating"
@@ -603,7 +606,7 @@
       "description": "Catalog path, prefixed c/: manufacturer slug/first year/model group and model slug"
     },
     "type": {
-      "$ref": "https://raw.githubusercontent.com/bikeindex/bikebook/main/schemas/vocabulary.json#/$defs/component_type"
+      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v1.0.0.json#/$defs/component_type"
     },
     "model": {
       "type": [
@@ -619,7 +622,7 @@
       "description": "Model family grouping sibling models/variants"
     },
     "markets": {
-      "$ref": "https://raw.githubusercontent.com/bikeindex/bikebook/main/schemas/vocabulary.json#/$defs/market"
+      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v1.0.0.json#/$defs/market"
     },
     "first_year": {
       "type": [
@@ -680,6 +683,31 @@
         "hub",
         "dropout",
         null
+      ]
+    },
+    "motor.certifications": {
+      "type": "string",
+      "enum": [
+        "UL 2849",
+        "UL 2271",
+        "UL 2272",
+        "UL 2580",
+        "UL 1012",
+        "UL 1446",
+        "EN 15194",
+        "EN 50604",
+        "EN 14764",
+        "EN 14766",
+        "EN 55014-1",
+        "IEC 62133",
+        "ISO 4210",
+        "UN 38.3",
+        "16 CFR 1512",
+        "ANSI/SVIA 1",
+        "ASTM F963",
+        "CE",
+        "RoHS",
+        "FCC"
       ]
     },
     "motor.water_rating": {
@@ -795,7 +823,7 @@
       "description": "Throttle only"
     },
     "motor.operating_modes.e_vehicle_classifications": {
-      "$ref": "https://raw.githubusercontent.com/bikeindex/bikebook/main/schemas/vocabulary.json#/$defs/e_vehicle_classification"
+      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v1.0.0.json#/$defs/e_vehicle_classification"
     }
   }
 }
