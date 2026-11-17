@@ -1,15 +1,19 @@
-#![BikeBook.io](bikebook.svg) [BikeBook.io](http://bikebook.io)
+# <img src="bikebook.svg" alt="Bike Book logo" height="32"> [Bike Book](https://bikeindex.org/bikebook)
 
 Compare bikes and EPAMD!
 
-**Open source everything!**
+Use the viewer at [bikeindex.org/bikebook](https://bikeindex.org/bikebook) to view the models
+
+This repository contains the data that is used to render that.
+
+Please submit any fixes that you have!
 
 ---
 
-The data in this repository is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+The data files in this repository (`.json` and `.csv`) are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/></a>
 
 Read more about the license and attribution at [bikeindex.org/bikebook/license](https://bikeindex.org/bikebook/license).
 
-Any code in this repository is licensed under the [AGPL](LICENSE_CODE)
+All code in this repository is licensed under the [AGPL](LICENSE_CODE) (e.g. CI, publishing, etc)
