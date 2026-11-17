@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/envo/2022/snowkart",
+  "manufacturer": "Envo",
+  "model": "SnowKart",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/envo/2022/snowkart.png",
+  "first_year": 2022,
+  "years": {
+    "2026": {
+      "original_msrp": 587900,
+      "original_msrp_currency": "CAD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "ESK",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://envodrive.com/products/envo-electric-snowkart",
+      "url_live": true
+    },
+    "2022": {}
+  },
+  "frame": {
+    "material": "steel"
+  },
+  "motors": [
+    {
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
+      "rated_power": 750,
+      "peak_power": 1500,
+      "max_torque": 120,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 20,
+          "e_vehicle_classifications": [
+            "evc/pedal_moped"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Thumb",
+          "e_vehicle_classifications": [
+            "evc/pedal_moped"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "dimensions": {
+          "length": 370,
+          "width": 90,
+          "height": 110
+        },
+        "total_weight": 45
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "type_detail": "Brake cut-off magnetic switches",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Just stick the magnet sensors, no need to disassemble the brake levers."
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Li-Ion 48V 17.5Ah"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Battery energy: 840Wh"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "750W Rated (1500W Max.)"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "Brushless Motor Controller"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "LCD3 meter provides you with a variety of functions such as vehicle controls and vehicle status digitized displays to meet the trip demands."
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "Rainproof Controller and tools bag"
+    },
+    {
+      "type": "throttle",
+      "type_detail": "Thumb Throttle",
+      "description": "Haul effect sensor, Analogue linear increasing torque"
+    }
+  ]
+}
