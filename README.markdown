@@ -15,5 +15,3 @@ The data files in this repository (`.json` and `.csv`) are licensed under a <a r
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/></a>
 
 Read more about the license and attribution at [bikeindex.org/bikebook/license](https://bikeindex.org/bikebook/license).
-
-The code that checks it is in [bikebook_ci](https://github.com/bikeindex/bikebook_ci), licensed under the AGPL.
