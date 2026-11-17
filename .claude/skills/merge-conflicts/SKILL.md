@@ -34,7 +34,7 @@ Everything else (`README.markdown`, `AGENTS.md`, `.claude/`, code, licenses):
 - Edit out the unwanted half of each `<<<<<<<` block. `git checkout --ours/--theirs` replaces the whole file and loses the other side's clean hunks (`git checkout -m -- <file>` restores the markers).
 - **The merge commit holds only the merge.** Fixes the merge makes due go in commits after it.
 
-After resolving, before committing, run `cargo test --locked --no-fail-fast`: a merged data file that's misordered, misformatted or off its schema fails it.
+After resolving, before committing, run the checks (AGENTS.md § Checks): a merged data file that's misordered, misformatted or off its schema fails it.
 
 ## Check what merged cleanly
 

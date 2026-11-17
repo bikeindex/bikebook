@@ -16,4 +16,4 @@ The data files in this repository (`.json` and `.csv`) are licensed under a <a r
 
 Read more about the license and attribution at [bikeindex.org/bikebook/license](https://bikeindex.org/bikebook/license).
 
-All code in this repository is licensed under the [AGPL](LICENSE_CODE) (e.g. CI, publishing, etc)
+The code that checks it is in [bikebook_ci](https://github.com/bikeindex/bikebook_ci), licensed under the AGPL.

@@ -35,10 +35,8 @@ An upstream of `origin/main` publishes nothing: `git branch --unset-upstream`, t
 Everything here diffs `origin/<base>...HEAD`. Commit what it produces before step 1.
 
 - **This repo is the canonical source of the data** (AGENTS.md), so a data fix is made here, in the file. Read the diff of each changed file under `vehicle_models/`, `components/` and `e_vehicle_classifications/` against the branch's purpose: a value it didn't mean to change is a mistake to undo.
-- **Run what CI runs**: `cargo fmt --check`, `cargo clippy --all-targets --locked -- -D warnings` and `cargo test --locked --no-fail-fast`. A failing data check is fixed in the file on this branch; one the branch can't fix goes in the body's **Ongoing** note.
-- **When the branch changes code** (`src/`, `tests/`, `.github/workflows/`), run `/simplify` over it first and apply what it finds, so the body describes the diff's final shape. Skip it for a data- or docs-only branch: it fans out subagents to find nothing.
-- **Audit the tests the branch adds — required whenever it adds any.** List them with `git diff origin/<base>...HEAD -U0 -- 'src/*.rs' 'tests/*.rs' | grep -E '^(\+\+\+ |\+\s*fn |\+\s*#\[test\])'` and ask of each: *what bug does this fail on?* Delete the ones that only restate the code (AGENTS.md § Code). A new check over the catalog needs its companion test that breaks a sample.
-- **Audit the comments the branch adds — required.** List them with `git diff origin/<base>...HEAD -U0 -- '*.rs' '*.yml' '*.toml' | grep -E '^(\+\+\+ |\+.*(//|#))'` and apply AGENTS.md § Comments (keep, razor or delete) to each, only on lines this branch changed. An empty result on a branch that changed code means the pathspec missed it.
+- **Run the checks** (AGENTS.md § Checks). A failing data check is fixed in the file on this branch; one the branch can't fix goes in the body's **Ongoing** note.
+- **A change to `.github/`, `.claude/`, `AGENTS.md` or `schemas/` waits on the user's review** (`.github/CODEOWNERS`): say so in the reply.
 - **A changed `schemas/*.json` whose `$id` version moved makes this a schema-version PR**, which is always the user's to merge.
 - **Documentation the branch adds or edits** — `README.markdown`, `AGENTS.md`, anything under `.claude/` — check every claim against the files it describes; nothing runs a doc. Grep for the subject before adding a line: a fact stated twice drifts, and the restatement is the one that goes wrong.
 
