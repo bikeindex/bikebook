@@ -26,7 +26,7 @@ pub fn root() -> PathBuf {
     PathBuf::from(env!("CARGO_MANIFEST_DIR"))
 }
 
-/// Every .json file under the directory, relative to the repo root
+/// Relative to the repo root
 pub fn json_paths(directory: &str) -> Vec<String> {
     fn walk(directory: &Path, out: &mut Vec<PathBuf>) {
         for entry in fs::read_dir(directory).into_iter().flatten().flatten() {
@@ -63,7 +63,7 @@ pub fn data_paths() -> Vec<String> {
         .collect()
 }
 
-/// The repo's JSON files that parse, by relative path. `formatting` reports the rest
+/// A file that doesn't parse is left out, for `formatting` to report
 pub fn parsed(paths: &[String]) -> BTreeMap<String, Value> {
     paths
         .iter()
