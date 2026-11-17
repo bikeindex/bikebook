@@ -1,0 +1,9 @@
+[package]
+name = "bikebook_data_checks"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+jsonschema = { version = "0.61.2", default-features = false, features = ["idna"] }
+serde_json = { version = "1.0.154", features = ["preserve_order"] }
