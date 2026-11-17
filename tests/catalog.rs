@@ -30,7 +30,7 @@ fn catalog_problems(catalog: &Catalog) -> Vec<String> {
         let base = data.get("base").and_then(Value::as_str);
         if let Some(base) = base {
             match catalog.by_id(base) {
-                None => problem(format!("its base {base} isn't published")),
+                None => problem(format!("its base {base} isn't in this repo")),
                 Some(based) if based.get("base").is_some() => {
                     problem(format!("its base {base} is itself an overlay"))
                 }
@@ -60,7 +60,7 @@ fn catalog_problems(catalog: &Catalog) -> Vec<String> {
         };
         for motor in motors {
             if catalog.by_id(motor).is_none() {
-                problem(format!("its motor {motor} isn't published"));
+                problem(format!("its motor {motor} isn't in this repo"));
             }
         }
         if Catalog::kind(path) != "vehicle_model" {
@@ -152,7 +152,7 @@ fn a_misplaced_or_dangling_file_is_reported() {
     assert!(
         problems
             .iter()
-            .any(|problem| problem.contains("isn't published")),
+            .any(|problem| problem.contains("isn't in this repo")),
         "{problems:?}"
     );
 }

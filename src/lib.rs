@@ -141,7 +141,7 @@ impl Catalog {
         };
         let base = self
             .by_id(base_id)
-            .ok_or_else(|| format!("its base {base_id} isn't published"))?;
+            .ok_or_else(|| format!("its base {base_id} isn't in this repo"))?;
         let mut merged = vehicle(base);
         merge(
             &mut merged,
@@ -316,7 +316,7 @@ impl Schemas {
         let document = self
             .documents
             .get(id)
-            .ok_or_else(|| format!("no published schema {id}"))?;
+            .ok_or_else(|| format!("no schema {id}"))?;
         jsonschema::options()
             .with_retriever(Retriever(self.documents.clone()))
             .should_validate_formats(true)

@@ -12,7 +12,7 @@ fn order_errors(schemas: &Schemas, path: &str, data: &Value) -> Vec<String> {
     };
     let id = Schemas::id(kind, &version);
     if !schemas.documents.contains_key(&id) {
-        return vec![format!("{path}: no published schema {id}")];
+        return vec![format!("{path}: no schema {id}")];
     }
     schemas
         .key_order_errors(&id, data)
