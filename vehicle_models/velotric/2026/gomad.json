@@ -1,0 +1,436 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/velotric/2026/gomad",
+  "manufacturer": "Velotric",
+  "model": "GoMad",
+  "model_configuration": "complete",
+  "type": "cargo_bike_rear",
+  "type_detail": "long_tail",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "cargo",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/velotric/2026/gomad.png",
+  "description": "Designed for real-life use, Gomad combines strong hauling capability, stable handling, and reliable power for commuting, cargo, and daily riding.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 199900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Dark Amber",
+          "colors": [
+            "orange"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/velotric/2026/gomad.png",
+          "variants": [
+            {
+              "sku": "VGM10001A",
+              "gtin": "850060178917",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Obsidian",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/velotric/2026/gomad_obsidian.png",
+          "variants": [
+            {
+              "sku": "VGM10002A",
+              "gtin": "850060178924",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Sage",
+          "colors": [
+            "green"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/velotric/2026/gomad_sage.png",
+          "variants": [
+            {
+              "sku": "VGM10003A",
+              "gtin": "850060178931",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://www.velotricbike.com/products/velotric-gomad-utility-ebike",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "aluminum",
+    "mounts": [
+      {
+        "type": "fender"
+      },
+      {
+        "type": "rack"
+      }
+    ],
+    "seatpost_diameter": 30.9,
+    "max_weight_total": 227
+  },
+  "suspension": {
+    "front": {
+      "travel": 100,
+      "lockout": true
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front"
+      ],
+      "tire_width": 102,
+      "axle": "thru_axle",
+      "axle_diameter": 15,
+      "axle_spacing": 135,
+      "axle_thread_pitch": 1.5
+    },
+    {
+      "bsd": 406,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 102
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "8_rear"
+  ],
+  "gearing": {
+    "front": [
+      52
+    ],
+    "rear": [
+      11,
+      34
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front"
+      ],
+      "rotor_diameter": 203
+    },
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "kind": "hub_drive",
+      "sensor_cadence": true,
+      "sensor_torque": "bottom_bracket_spindle",
+      "certification": "UL 2849, UL 2271, ISO 4210, UL 2580",
+      "water_rating": "IPX6",
+      "battery_size": 802,
+      "battery_chemistry": "li-ion",
+      "battery_info": "Samsung/LG 21700 cell, Certificated by UL2580",
+      "rated_power": 750,
+      "peak_power": 1300,
+      "max_torque": 85,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 121,
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "range_claimed": 80,
+          "throttle_type": "Trigger",
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        },
+        {
+          "mode": "assist",
+          "availability": "app_update",
+          "max_speed": 45,
+          "e_vehicle_classifications": [
+            "evc/us/class_3"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "upgrade",
+          "throttle_type": "Twist"
+        }
+      ]
+    }
+  ],
+  "cargo": {
+    "max_weight_cargo": 79.83
+  },
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "reach": 420,
+        "wheelbase": 1171,
+        "standover": 500,
+        "seat_height_min": 720,
+        "seat_height_max": 930,
+        "dimensions": {
+          "length": 1811
+        },
+        "total_weight": 34.9,
+        "rider_height_min": 1524,
+        "rider_height_max": 1905,
+        "extra_measurements": {
+          "handlebar_height": 1180,
+          "total_weight_without_battery_kg": 30.4
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Tektro",
+      "description": "Tektro Hydraulic Disc Brake"
+    },
+    {
+      "type": "brake_lever",
+      "description": "Aluminum Alloy, with Power Cutoff"
+    },
+    {
+      "type": "brake_rotor",
+      "type_detail": "Rotors",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "203mm Front/180mm Rear"
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "8-speed,11-34T"
+    },
+    {
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC 8-speed"
+    },
+    {
+      "type": "chainrings",
+      "description": "52T Narrow-Wide Chainring"
+    },
+    {
+      "type": "crankset",
+      "description": "Aluminum Alloy, 165mm",
+      "dimensions": {
+        "length": 165
+      }
+    },
+    {
+      "type": "derailleur",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "SHIMANO 8-speed"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48V, 16.7Ah (801.6Wh), IPX7, Certificated by UL2271"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "48V, 3A Fast Charger"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "48V, 750W, (1300W Peak Power), 85Nm"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "3.5\" Full Color, High Brightness, Bluetooth, NFC, Adjustable Angle"
+    },
+    {
+      "type": "fender",
+      "description": "Plastic, Front and Rear Full Coverage"
+    },
+    {
+      "type": "fork",
+      "manufacturer": "RST",
+      "description": "RST Hydraulic Suspension 100mm Travel with Lock-out, 36mm Inner Tube",
+      "dimensions": {
+        "travel": 100
+      }
+    },
+    {
+      "type": "grips_tape",
+      "type_detail": "Grips",
+      "description": "Durable Ergonomic Grips, Lockable"
+    },
+    {
+      "type": "handlebar",
+      "description": "BMX Style, 31.8mm Bar Clamp, 700mm",
+      "dimensions": {
+        "width": 700,
+        "diameter": 31.8
+      }
+    },
+    {
+      "type": "hub",
+      "position": [
+        "front"
+      ],
+      "description": "NOVATEC Aluminum Alloy, 15x135mm Thru-axle",
+      "dimensions": {
+        "axle_diameter": 15,
+        "axle_spacing": 135
+      }
+    },
+    {
+      "type": "kickstand",
+      "description": "Aluminum Alloy, Included, Rear Mount"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "front"
+      ],
+      "description": "500LM High-output Integrated LED, Adjustable Angle"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "rear"
+      ],
+      "description": "Braking Indicator, Turn Signal, Rear Light Steady/Flash, Integrated with Rear Rack"
+    },
+    {
+      "type": "pedals",
+      "description": "Plastic"
+    },
+    {
+      "type": "rack",
+      "position": [
+        "rear"
+      ],
+      "description": "MIK HD Compatible，Integrated with Frame"
+    },
+    {
+      "type": "rim",
+      "description": "Aluminum Alloy"
+    },
+    {
+      "type": "saddle",
+      "manufacturer": "Velotric",
+      "description": "VELOTRIC Comfort Ergonomic Seat"
+    },
+    {
+      "type": "seatpost",
+      "description": "Aluminum Alloy, Ф30.9mm",
+      "dimensions": {
+        "diameter": 30.9
+      }
+    },
+    {
+      "type": "seatpost_clamp",
+      "description": "Aluminum Alloy, Quick Release"
+    },
+    {
+      "type": "shifter",
+      "type_detail": "Shift Lever",
+      "manufacturer": "Shimano",
+      "description": "SHIMANO 8-speed"
+    },
+    {
+      "type": "stem",
+      "description": "Quill Stem, 31.8mm Clamp, 30mm Length, 140mm Vertical Adjustment Range",
+      "dimensions": {
+        "length": 30,
+        "diameter": 31.8
+      }
+    },
+    {
+      "type": "throttle",
+      "description": "Trigger-control, Removable"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Kenda",
+      "description": "KENDA 20x4.0\" eBike Puncture Resistant Tires",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 406
+      }
+    },
+    {
+      "type": "top_of_rack_bag",
+      "type_detail": "Rear Rack Bag",
+      "position": [
+        "rear"
+      ],
+      "description": "Included as Standard Equipment"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "USB Port",
+      "description": "USB Type-C phone Charge"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Pedal Assist",
+      "description": "5 Riding Modes+Stealth Mode /Ride Tuning"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Walk Mode",
+      "description": "2.9MPH/ Walk & Hold"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "App",
+      "description": "App OTA"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Anti-theft",
+      "description": "Apple Find My & Google's Find Hub，NFC Card Unlock"
+    }
+  ]
+}

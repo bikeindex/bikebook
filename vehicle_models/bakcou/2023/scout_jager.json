@@ -1,0 +1,254 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/bakcou/2023/scout_jager",
+  "manufacturer": "Bakcou",
+  "vehicle_model_group": "Scout",
+  "model": "Scout Jäger",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "mtb_trail_all_mountain",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/bakcou/2023/scout_jager.png",
+  "description": "The Scout Jäger is built for riders who want the agility of a traditional mountain bike combined with the power of an electric bike. Constructed from high-grade 6061 aluminum alloy, the frame delivers a lightweight yet durable platform that excels on tight trails, steep climbs, and technical terrain. Its responsive handling and balanced geometry make it a versatile choice for hunters, trail riders, and outdoor enthusiasts looking to cover more ground with confidence.",
+  "first_year": 2023,
+  "years": {
+    "2026": {
+      "original_msrp": 779900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Matte Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/bakcou/2023/scout_jager.png",
+          "variants": [
+            {
+              "sku": "B-SCJ19-B21",
+              "gtin": "679628563558",
+              "size": "19\" (Large - 5'10\" & taller)"
+            }
+          ]
+        },
+        {
+          "name": "Matte Army Green",
+          "colors": [
+            "green"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/bakcou/2023/scout_jager_matte_army_green.jpg",
+          "variants": [
+            {
+              "sku": "B-SCJ19-G21",
+              "gtin": "679628563541",
+              "size": "19\" (Large - 5'10\" & taller)"
+            }
+          ]
+        }
+      ],
+      "url": "https://bakcou.com/products/scout-jager",
+      "url_live": true
+    },
+    "2023": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum",
+    "bottom_bracket": {
+      "spindle": "ISIS"
+    }
+  },
+  "suspension": {
+    "front": {
+      "travel": 140,
+      "spring": "air"
+    },
+    "rear": {
+      "travel": 120,
+      "shock_length": 165,
+      "shock_stroke": 38
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 559,
+      "position": [
+        "front"
+      ],
+      "tire_width": 102,
+      "axle": "thru_axle",
+      "axle_spacing": 150,
+      "axle_thread_pitch": 1.5
+    },
+    {
+      "bsd": 559,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 102,
+      "axle": "thru_axle",
+      "axle_spacing": 197
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "14_internal_rear"
+  ],
+  "groupset": {
+    "manufacturer": "Rohloff",
+    "series": "Speedhub",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 203
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/bafang/m620_mm_g510_1000_c",
+      "drive_wheel": "rear",
+      "manufacturer": "Bafang",
+      "model": "MM G510.1000.C",
+      "model_group": "M620",
+      "kind": "mid_drive",
+      "spindle": "ISIS",
+      "sensor_cadence": true,
+      "sensor_torque": "bottom_bracket_spindle",
+      "certification": "CE / UL 2849",
+      "water_rating": "IPX5",
+      "battery_size": 1008,
+      "battery_chemistry": "li-ion",
+      "rated_power": 1000,
+      "peak_power": 1440,
+      "max_torque": 160,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 80,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Thumb",
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "19\" (Large - 5'10\" & taller)",
+      "geometry": {
+        "total_weight": 37.2
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "axle_nuts",
+      "type_detail": "AXLE",
+      "description": "150mm Thru Axle Front Hub; 197mm Thru Axle, 12.. Diameter Rear Hub"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Powerful Tektro HD E725 Quad Piston Hydraulic 203mm Front & Rear Rotors"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Integrated 48V 21Ah Lithium-Ion battery"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang Ultra M620 750w/1000w mid-drive motor with integrated Torque sensor and 160Nm of torque."
+    },
+    {
+      "type": "e_vehicle_remote",
+      "manufacturer": "Bafang",
+      "description": "Bafang Ultra Motor DPC18 Color Integrated Stem Display"
+    },
+    {
+      "type": "fork",
+      "type_detail": "RST Renegade Air Fork, 140mm of travel",
+      "manufacturer": "RST",
+      "description": "RST Renegade Air Fork, 140mm of travel",
+      "dimensions": {
+        "travel": 140
+      }
+    },
+    {
+      "type": "handlebar",
+      "type_detail": "STEERING",
+      "manufacturer": "Promax",
+      "description": "PROMAX Wide 760mm Handlebars with ergonomic locking grips",
+      "dimensions": {
+        "width": 760
+      }
+    },
+    {
+      "type": "hub",
+      "type_detail": "GEARING",
+      "manufacturer": "Rohloff",
+      "description": "Rohloff 14-Speed Internal Gear Hub"
+    },
+    {
+      "type": "rear_suspension",
+      "type_detail": "Rear Shock",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "RockShox",
+      "description": "Rockshox Monarch 165x38, 120mm travel",
+      "dimensions": {
+        "length": 165,
+        "travel": 38
+      }
+    },
+    {
+      "type": "throttle",
+      "description": "Removable Left Thumb Throttle"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "26” x 4.0\" Maxxis Minion",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 559
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "BEST USE",
+      "description": "Rocky, Steep Terrain"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "TECHNOLOGY",
+      "description": "Comprehensive On-Demand Program for all classification selections."
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/quietkat/2023/lynx",
+  "manufacturer": "QuietKat",
+  "model": "Lynx",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/quietkat/2023/lynx.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/quietkat/2023/lynx_geometry.png",
+  "description": "A cafe moto-inspired all-terrain eBike designed for fast-paced urban commutes and off-road adventures.",
+  "first_year": 2023,
+  "years": {
+    "2026": {
+      "original_msrp": 249900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Alloy",
+          "stock_photo": "https://bikebook.bikeindex.org/quietkat/2023/lynx.jpg",
+          "variants": [
+            {
+              "sku": "AFO-24-LYX-VPO-ALY-OS",
+              "gtin": "810095125751",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://quietkat.com/products/lynx-electric-cafe-racer",
+      "url_live": true
+    },
+    "2023": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "cable_routing": "internal",
+    "coil_compatible": true,
+    "max_weight_total": 136
+  },
+  "suspension": {
+    "front": {
+      "travel": 203,
+      "spring": "coil"
+    },
+    "rear": {
+      "travel": 100,
+      "shock_length": 210,
+      "shock_stroke": 50,
+      "spring": "coil"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 507,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 102
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "2_internal_rear"
+  ],
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 203
+    }
+  ],
+  "motors": [
+    {
+      "kind": "hub_drive",
+      "battery_size": 960,
+      "rated_power": 1000,
+      "peak_power": 1440,
+      "max_torque": 83,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 45,
+          "range_claimed": 97,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "stack": 644,
+        "head_angle": 63.5,
+        "head_tube": 170,
+        "chainstay": 488,
+        "wheelbase": 1298,
+        "front_center": 811,
+        "standover": 813,
+        "bb_drop": 32,
+        "bb_height": 312,
+        "fork_rake": 42,
+        "fork_length_a2c": 512,
+        "total_weight": 45.4
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Gemma 2 Piston Hydraulic, 203mm Rotor"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "19.2Ah/48V 960Wh 12lbs"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "1000W Automatic Hub Drive (VP0™)"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "Smart LED with Bluetooth, GPS, Cellular"
+    },
+    {
+      "type": "fork",
+      "description": "KKE 34CS 203mm Inverted Mechanical Coil Fork",
+      "dimensions": {
+        "travel": 203
+      }
+    },
+    {
+      "type": "hub",
+      "type_detail": "Gears",
+      "description": "Automatic Two Speed Internal System"
+    },
+    {
+      "type": "rear_suspension",
+      "type_detail": "Rear Shock",
+      "position": [
+        "rear"
+      ],
+      "description": "KKE Mechanical Coil 210x50mm",
+      "dimensions": {
+        "length": 210,
+        "travel": 50
+      }
+    },
+    {
+      "type": "throttle",
+      "description": "Twist-Throttle"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "24” x 4.0” Vee Mission Command",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 507
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Modes",
+      "description": "Unlimited, Walk-Assist"
+    }
+  ]
+}

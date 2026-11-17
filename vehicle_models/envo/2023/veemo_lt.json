@@ -1,0 +1,192 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/envo/2023/veemo_lt",
+  "manufacturer": "Envo",
+  "vehicle_model_group": "Veemo",
+  "model": "Veemo LT",
+  "model_configuration": "complete",
+  "type": "tricycle",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/envo/2023/veemo_lt.png",
+  "description": "The Veemo LT, now powered by the ENVO powertrain, is a product born from years of Research & Development. This version of the Veemo replaces the semi-enclosed body with a front bumper and rear passenger seat and foot rests. The LT a great option for riders who are looking for the added stability and comfort of the Veemo platform, but don't require the added weather protection provided by the exterior body. Plus, the platform is fully compatible with the exterior body, so it can be added on later. This smooth, dynamic, elegant velomobile is the world's most practical utilitarian vehicle to get you from A to B on-time, every time. More importantly, it does so with zero-emissions for pennies on the dollar compared to driving a car. Our full-power ride mode delivers a great experience, whether you are headed up the road for groceries or using Veemo as your daily commuter.",
+  "first_year": 2023,
+  "years": {
+    "2026": {
+      "original_msrp": 739900,
+      "original_msrp_currency": "CAD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "veemo-lt",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://envodrive.com/products/veemo-lt",
+      "url_live": true
+    },
+    "2023": {}
+  },
+  "frame": {
+    "material": "steel",
+    "bottom_bracket": {
+      "width": 68
+    },
+    "coil_compatible": true
+  },
+  "suspension": {
+    "rear": {
+      "shock_length": 165,
+      "shock_stroke": 35,
+      "spring": "coil"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 44
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "8_rear"
+  ],
+  "gearing": {
+    "front": [
+      38
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Altus",
+    "description": "SHIMANO ALTUS 8 speed",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front"
+      ],
+      "rotor_diameter": 203
+    },
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "sensor_speed": "spoke_magnet",
+      "certification": "UL 2271",
+      "battery_size": 720,
+      "battery_chemistry": "li-ion",
+      "battery_info": "21700",
+      "rated_power": 750,
+      "max_torque": 80,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 100,
+          "e_vehicle_classifications": [
+            "evc/pedal_moped"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Thumb",
+          "e_vehicle_classifications": [
+            "evc/pedal_moped"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "total_weight": 61
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "bottom_bracket",
+      "type_detail": "BB Sets",
+      "description": "Sealed 68mm B.B"
+    },
+    {
+      "type": "brake",
+      "type_detail": "Brake Set",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Dyisland Hydraulic Brakes (front 203mm OD, rear 180mm OD)"
+    },
+    {
+      "type": "crankset",
+      "type_detail": "Crank Set",
+      "description": "L145mm*38T",
+      "dimensions": {
+        "length": 145
+      }
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48V/15AH 21700 LG/Panasonic Lithium battery UL2271"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "54V 2A CC-CV 240/120V ULc"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "LCD Display with speedometer, odometer, pedal-assist indicator, etc"
+    },
+    {
+      "type": "rear_suspension",
+      "position": [
+        "rear"
+      ],
+      "description": "Coil Spring Rear Shock - Eye to Eye x Travel (165mmx35mm)",
+      "dimensions": {
+        "length": 165,
+        "travel": 35
+      }
+    },
+    {
+      "type": "sensor",
+      "description": "PAS/thumb throttle, speed sensor"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "20in x 1.75 Tire, black, with AV butyle tube",
+      "dimensions": {
+        "diameter": 406
+      }
+    }
+  ]
+}

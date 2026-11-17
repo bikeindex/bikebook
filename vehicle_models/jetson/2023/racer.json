@@ -1,0 +1,94 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/jetson/2023/racer",
+  "manufacturer": "Jetson",
+  "model": "Racer",
+  "model_configuration": "complete",
+  "type": "e_scooter",
+  "propulsion": [
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/jetson/2023/racer.png",
+  "description": "The Racer’s 250-Watt motor allows riders to hit a top speed of 15.5 miles per hour.",
+  "first_year": 2023,
+  "final_year": 2023,
+  "years": {
+    "2023": {
+      "original_msrp": 49999,
+      "original_msrp_currency": "USD",
+      "url": "https://web.archive.org/web/20230603180227/https://ridejetson.com/products/racer-electric-scooter",
+      "url_live": false
+    }
+  },
+  "frame": {
+    "material": "steel",
+    "folding": "stem_fold"
+  },
+  "wheels": [
+    {
+      "bsd": 134,
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "battery_size": 270,
+      "battery_chemistry": "li-ion",
+      "charging_time": 300,
+      "rated_power": 250,
+      "operating_modes": [
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 24,
+          "range_claimed": 26,
+          "max_slope": 15
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "dimensions": {
+          "length": 1074,
+          "width": 470,
+          "height": 1176
+        },
+        "dimensions_folded": {
+          "length": 1074,
+          "width": 470,
+          "height": 450
+        },
+        "total_weight": 15.6,
+        "max_weight_rider": 100,
+        "rider_age_min": 12
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "e_vehicle_battery",
+      "description": "36V, 7.5Ah lithium-ion battery"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "250 watt"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Warranty",
+      "description": "1 year limited"
+    },
+    {
+      "type": "wheel",
+      "description": "8.5\""
+    }
+  ]
+}

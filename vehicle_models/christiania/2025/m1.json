@@ -1,0 +1,198 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/christiania/2025/m1",
+  "manufacturer": "Christiania Bikes",
+  "model": "M1",
+  "model_configuration": "complete",
+  "type": "cargo_tricycle",
+  "propulsion": [
+    "pedal_assist"
+  ],
+  "primary_activity": "cargo",
+  "handlebar_type": "horizontal",
+  "description": "The Christiania Bike M1 combines classic design with a powerful mid-drive motor and an integrated battery that supports external charging. The M1 comes with an integrated IoT system that, via Christiania Bikes, provides advanced anti-theft protection with an immobilizer, built-in GPS, and an alarm, as well as several customizable settings. At the same time, you can always stay updated on the bike’s status, both remotely via mobile networks (2G/4G/LTE) and via Bluetooth.",
+  "first_year": 2025,
+  "years": {
+    "2026": {
+      "original_msrp": 581250,
+      "original_msrp_currency": "EUR",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "1984.2303",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://www.christianiabikes.com/en/product/christiania-bike-m1/",
+      "url_live": true
+    },
+    "2025": {}
+  },
+  "frame": {
+    "material": "aluminum"
+  },
+  "wheels": [
+    {
+      "bsd": 507,
+      "position": [
+        "front"
+      ],
+      "tire_width": 55
+    },
+    {
+      "bsd": 507,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 55,
+      "cassette_interface": "freewheel"
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "5_internal_rear"
+  ],
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Nexus",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 203
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "rear",
+      "manufacturer": "Shimano",
+      "model": "EP600 Cargo",
+      "kind": "mid_drive",
+      "battery_size": 720,
+      "battery_chemistry": "li-ion",
+      "battery_info": "Samsung/LG cells",
+      "peak_power": 500,
+      "max_torque": 85,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "range_claimed": 65,
+          "e_vehicle_classifications": [
+            "evc/eu/epac"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size"
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Hydraulic front and rear brakes with 203 mm rotors and parking locks on both levers."
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "built-in with Samsung/LG cells, 40×21700 cells; 36 V, 20 Ah (720 Wh)"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "36 V charger with 42 V output voltage, 2 A output current; EU 3-pin plug"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "manufacturer": "Shimano",
+      "description": "Shimano EP600 Cargo mid-drive, max torque 85 Nm, max peak power 500 W"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "manufacturer": "Shimano",
+      "description": "Shimano EN500"
+    },
+    {
+      "type": "fender",
+      "description": "Stainless steel."
+    },
+    {
+      "type": "gps_connectivity_module",
+      "type_detail": "IoT",
+      "description": "Built-in IoT with a 1-year free subscription; buzzer, lock function, GPS, etc."
+    },
+    {
+      "type": "hub",
+      "type_detail": "Gear",
+      "manufacturer": "Shimano",
+      "description": "Shimano Nexus C7000 mechanical 5-speed internal gear hub with freewheel and disc brake."
+    },
+    {
+      "type": "hub",
+      "description": "Aluminum alloy with ball bearings"
+    },
+    {
+      "type": "lights",
+      "type_detail": "Headlights",
+      "position": [
+        "front"
+      ],
+      "description": "2 headlights"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "rear"
+      ],
+      "description": "1 rear light"
+    },
+    {
+      "type": "lock",
+      "description": "Ring lock included; same keys for the ring lock and battery lock."
+    },
+    {
+      "type": "rim",
+      "description": "Black, double-walled aluminum."
+    },
+    {
+      "type": "shift_cable",
+      "description": "comes with an external charging port"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "24 x 2.15, puncture protection level 7 (highest level), 40 mm Dunlop valve.",
+      "dimensions": {
+        "diameter": 507
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Wood",
+      "description": "9mm water-resistant FSC-certified birch plywood."
+    },
+    {
+      "type": "wheel",
+      "description": "24″",
+      "dimensions": {
+        "diameter": 507
+      }
+    }
+  ]
+}

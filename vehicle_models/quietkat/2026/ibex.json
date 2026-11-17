@@ -1,0 +1,210 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/quietkat/2026/ibex",
+  "manufacturer": "QuietKat",
+  "model": "Ibex",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "mtb_trail_all_mountain",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/quietkat/2026/ibex.jpg",
+  "description": "Experience next level versatility this incredible full-suspension eBike and create unforgettable memories that will last a lifetime. Ride with confidence knowing that you have the most capable and reliable all-terrain full-suspension E-MTB by your side. Choose the QuietKat Ibex eBike for your next adventure and prepare to be amazed.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 349900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "TAC Black",
+          "colors": [
+            "black"
+          ],
+          "variants": [
+            {
+              "sku": "AFO-25-IBX-FS-TAC-17",
+              "size": "Medium"
+            }
+          ]
+        },
+        {
+          "name": "Smoke",
+          "colors": [
+            "silver"
+          ],
+          "variants": [
+            {
+              "sku": "AFO-23-IBX-VPO-SMK-19",
+              "size": "Large"
+            }
+          ]
+        }
+      ],
+      "url": "https://quietkat.com/products/ibex",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "aluminum",
+    "cable_routing": "internal",
+    "coil_compatible": true,
+    "max_weight_total": 136
+  },
+  "suspension": {
+    "front": {
+      "travel": 140,
+      "spring": "air"
+    },
+    "rear": {
+      "travel": 140,
+      "shock_length": 200,
+      "shock_stroke": 57,
+      "spring": "coil"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 559,
+      "position": [
+        "front"
+      ],
+      "tire_width": 122
+    },
+    {
+      "bsd": 559,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 122,
+      "axle": "thru_axle",
+      "axle_spacing": 197
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "8_rear"
+  ],
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "rear",
+      "kind": "mid_drive",
+      "battery_size": 1008,
+      "rated_power": 1000,
+      "peak_power": 1500,
+      "max_torque": 160,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "range_claimed": 101,
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Thumb",
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "Medium",
+      "geometry": {
+        "total_weight": 34
+      }
+    },
+    {
+      "name": "Large"
+    }
+  ],
+  "components": [
+    {
+      "type": "axle_nuts",
+      "type_detail": "Rear Axle",
+      "position": [
+        "rear"
+      ],
+      "description": "197mm Thru Axle"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "4-Piston Hydraulic Disc"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "19.2Ah/48V | 1008Wh"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "Mid-Drive 1000W (VP0 2.0™)"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "Customizable LED"
+    },
+    {
+      "type": "fork",
+      "description": "140mm KKE Inverted Air Fork",
+      "dimensions": {
+        "travel": 140
+      }
+    },
+    {
+      "type": "rear_suspension",
+      "type_detail": "Rear Shock",
+      "position": [
+        "rear"
+      ],
+      "description": "200mm x 57mm Mechanical Coil",
+      "dimensions": {
+        "length": 200,
+        "travel": 57
+      }
+    },
+    {
+      "type": "throttle",
+      "description": "Removable Thumb Throttle"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "26” x 4.8” All-Terrain",
+      "dimensions": {
+        "width": 121.92,
+        "diameter": 559
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Modes",
+      "description": "Unlimited, Walk-Assist"
+    }
+  ]
+}

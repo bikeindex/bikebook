@@ -1,0 +1,109 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/jetson/2021/canyon",
+  "manufacturer": "Jetson",
+  "model": "Canyon",
+  "model_configuration": "complete",
+  "type": "e_scooter",
+  "propulsion": [
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/jetson/2021/canyon.png",
+  "description": "The Jetson Canyon Folding Electric Scooter is a premium scooter with all the features that riders need whether they are commuting to work or cruising the neighborhood. 500 watt motor and 22 mile battery.",
+  "first_year": 2021,
+  "years": {
+    "2026": {
+      "original_msrp": 89999,
+      "original_msrp_currency": "USD",
+      "url": "https://ridejetson.com/products/canyon-electric-scooter",
+      "url_live": true
+    },
+    "2021": {
+      "original_msrp": 89999,
+      "original_msrp_currency": "USD",
+      "url": "https://web.archive.org/web/20210918222805/https://ridejetson.com/products/canyon-electric-scooter",
+      "url_live": false
+    }
+  },
+  "frame": {
+    "material": "steel",
+    "folding": "stem_fold"
+  },
+  "wheels": [
+    {
+      "bsd": 134,
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "battery_size": 480,
+      "battery_chemistry": "li-ion",
+      "charging_time": 360,
+      "rated_power": 500,
+      "operating_modes": [
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 25,
+          "range_claimed": 35,
+          "max_slope": 20
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "dimensions": {
+          "length": 1130,
+          "width": 470,
+          "height": 1250
+        },
+        "dimensions_folded": {
+          "length": 1130,
+          "width": 470,
+          "height": 480
+        },
+        "total_weight": 28.1,
+        "max_weight_rider": 120,
+        "rider_age_min": 12
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "e_vehicle_battery",
+      "description": "48V, 10Ah lithium-ion battery"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "500 watt"
+    },
+    {
+      "type": "tire",
+      "type_detail": "Tire Type",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Solid"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "SKU",
+      "description": "JCANYO-BLK"
+    },
+    {
+      "type": "wheel",
+      "type_detail": "Wheel Size",
+      "description": "8.5 in."
+    }
+  ]
+}

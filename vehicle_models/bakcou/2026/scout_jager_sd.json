@@ -1,0 +1,238 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/bakcou/2026/scout_jager_sd",
+  "manufacturer": "Bakcou",
+  "vehicle_model_group": "Scout",
+  "model": "Scout Jäger SD",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "mtb_trail_all_mountain",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/bakcou/2026/scout_jager_sd.png",
+  "description": "The Scout Jäger SD is built for riders who demand premium comfort and confident handling on challenging terrain. Its lightweight 6061 aircraft-grade aluminum full-suspension frame is engineered to absorb rough trails while maintaining excellent stability and control. Balanced geometry, internal cable routing, and aggressive fat tires create a responsive ride that's equally at home on mountain trails, backcountry roads, and extended off-road adventures.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 779900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Matte Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/bakcou/2026/scout_jager_sd_matte_black.png",
+          "variants": [
+            {
+              "sku": "B-SJB-SDNB",
+              "gtin": "679628558578",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Matte Army Green",
+          "colors": [
+            "green"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/bakcou/2026/scout_jager_sd.png",
+          "variants": [
+            {
+              "sku": "B-SJG-SDNB",
+              "gtin": "679628558561",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://bakcou.com/products/scout-jager-sd",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aircraft-Grade Aluminum",
+    "cable_routing": "internal",
+    "bottom_bracket": {
+      "spindle": "ISIS"
+    }
+  },
+  "suspension": {
+    "front": {
+      "travel": 140,
+      "spring": "air"
+    },
+    "rear": {
+      "travel": 120,
+      "shock_length": 165,
+      "shock_stroke": 38
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 559,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 102
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "14_internal_rear"
+  ],
+  "groupset": {
+    "manufacturer": "Rohloff",
+    "series": "Speedhub",
+    "electronic": true
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 203
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/bafang/m620_mm_g510_1000_c",
+      "drive_wheel": "rear",
+      "manufacturer": "Bafang",
+      "model": "MM G510.1000.C",
+      "model_group": "M620",
+      "kind": "mid_drive",
+      "spindle": "ISIS",
+      "sensor_cadence": true,
+      "sensor_torque": "bottom_bracket_spindle",
+      "certification": "CE / UL 2849",
+      "water_rating": "IPX5",
+      "battery_size": 1040,
+      "battery_chemistry": "li-ion",
+      "rated_power": 1000,
+      "peak_power": 1440,
+      "max_torque": 160,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 80,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Thumb",
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "total_weight": 41.3
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Tektro",
+      "description": "Tektro HD E725 Quad Piston Hydraulic Brakes with 203mm Front & Rear Rotors"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Integrated Battery 52V - 20ah; Lithium-Ion battery with 52v / 4amp Smart Charger."
+    },
+    {
+      "type": "e_vehicle_motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang Ultra M620 Mid-Drive Motor. Class 1/2/3 capable. Torque sensor and 160Nm of torque"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "Integrated Stem Display."
+    },
+    {
+      "type": "fork",
+      "type_detail": "RST Renegade Air Fork, 140mm travel",
+      "manufacturer": "RST",
+      "description": "RST Renegade Air Fork, 140mm travel",
+      "dimensions": {
+        "travel": 140
+      }
+    },
+    {
+      "type": "handlebar",
+      "type_detail": "STEERING",
+      "manufacturer": "Promax",
+      "description": "PROMAX 760mm Wide Handlebars with Ergonomic Locking Grips",
+      "dimensions": {
+        "width": 760
+      }
+    },
+    {
+      "type": "hub",
+      "type_detail": "GEARING",
+      "manufacturer": "Rohloff",
+      "description": "Rohloff E-14 Electronic 14-Speed Hub"
+    },
+    {
+      "type": "rear_suspension",
+      "type_detail": "Rear Shock",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "RockShox",
+      "description": "Rockshox Monarch 165 x 38, 120mm travel",
+      "dimensions": {
+        "length": 165,
+        "travel": 38
+      }
+    },
+    {
+      "type": "throttle",
+      "description": "Removable Left Thumb Throttle"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "26\" x 4.0\" Maxxis Minion",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 559
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "BEST USE",
+      "description": "Rocky, Steep Terrain"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "TECHNOLOGY",
+      "description": "Comprehensive On-Demand Program for all classification selections."
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/eminent/2023/drive_lt_frame",
+  "manufacturer": "Eminent",
+  "vehicle_model_group": "Drive",
+  "model": "Drive LT Frame",
+  "model_configuration": "frame",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist"
+  ],
+  "primary_activity": "mtb_trail_all_mountain",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/eminent/2023/drive_lt_frame.jpg",
+  "description": "Shimano EP8 Motor & 504W LI Battery Includes wiring and electronics for Shimano EP8 system",
+  "first_year": 2023,
+  "years": {
+    "2026": {
+      "original_msrp": 679900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Navy-Turquois-Gloss",
+          "colors": [
+            "blue"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/eminent/2023/drive_lt_frame.jpg"
+        },
+        {
+          "name": "Olive-Tan-Gloss",
+          "colors": [
+            "green",
+            "brown"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/eminent/2023/drive_lt_frame_olive_tan_gloss.jpg"
+        }
+      ],
+      "url": "https://eminentcycles.com/products/drive-lt-frame",
+      "url_live": true
+    },
+    "2023": {}
+  },
+  "frame": {
+    "material": "carbon",
+    "bottom_bracket": {
+      "spindle": "Shimano EP8"
+    },
+    "headset": "ZS44/28.6 | ZS56/40",
+    "seatpost_diameter": 34.9
+  },
+  "suspension": {
+    "rear": {
+      "travel": 140
+    }
+  },
+  "wheels": [
+    {
+      "position": [
+        "rear"
+      ],
+      "axle_spacing": 157,
+      "tire_width_max": 66
+    },
+    {
+      "position": [
+        "front"
+      ],
+      "tire_width_max": 66
+    }
+  ],
+  "drivetrain": [
+    "1_front"
+  ],
+  "gearing": {
+    "front": [
+      34
+    ]
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter_max": 203
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/shimano/2020/ep800_du_ep800",
+      "drive_wheel": "rear",
+      "manufacturer": "Shimano",
+      "model": "DU-EP800",
+      "model_group": "EP800",
+      "kind": "mid_drive",
+      "spindle": "Shimano EP8",
+      "sensor_cadence": true,
+      "battery_size": 504,
+      "rated_power": 250,
+      "max_torque": 85,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "e_vehicle_classifications": [
+            "evc/us/class_1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "M",
+      "geometry": {
+        "reach": 455,
+        "stack": 628,
+        "top_tube_effective": 599,
+        "seat_tube_ct": 430,
+        "head_angle": 65,
+        "seat_angle": 77,
+        "head_tube": 110,
+        "chainstay": 440,
+        "wheelbase": 1218,
+        "standover": 710,
+        "bb_height": 337,
+        "fork_rake": 44,
+        "fork_length_a2c": 557,
+        "max_seatpost_insertion": 288
+      },
+      "geometry_settings": [
+        {
+          "name": "slack",
+          "geometry": {
+            "head_angle": 64.5,
+            "seat_angle": 76.5,
+            "bb_height": 330
+          }
+        }
+      ]
+    },
+    {
+      "name": "L",
+      "geometry": {
+        "reach": 485,
+        "stack": 639,
+        "top_tube_effective": 632,
+        "seat_tube_ct": 450,
+        "head_angle": 65,
+        "seat_angle": 77,
+        "head_tube": 120,
+        "chainstay": 440,
+        "wheelbase": 1253,
+        "standover": 710,
+        "bb_height": 337,
+        "fork_rake": 44,
+        "fork_length_a2c": 557,
+        "max_seatpost_insertion": 308
+      },
+      "geometry_settings": [
+        {
+          "name": "slack",
+          "geometry": {
+            "head_angle": 64.5,
+            "seat_angle": 76.5,
+            "bb_height": 330
+          }
+        }
+      ]
+    },
+    {
+      "name": "XL",
+      "geometry": {
+        "reach": 515,
+        "stack": 646,
+        "top_tube_effective": 664,
+        "seat_tube_ct": 450,
+        "head_angle": 65,
+        "seat_angle": 77,
+        "head_tube": 130,
+        "chainstay": 440,
+        "wheelbase": 1287,
+        "standover": 710,
+        "bb_height": 337,
+        "fork_rake": 44,
+        "fork_length_a2c": 557,
+        "max_seatpost_insertion": 308
+      },
+      "geometry_settings": [
+        {
+          "name": "slack",
+          "geometry": {
+            "head_angle": 64.5,
+            "seat_angle": 76.5,
+            "bb_height": 330
+          }
+        }
+      ]
+    }
+  ],
+  "components": [
+    {
+      "type": "chain_guide",
+      "type_detail": "Chain Guide Mount",
+      "description": "Integrated Top Guide"
+    },
+    {
+      "type": "crankset",
+      "type_detail": "CRANKS",
+      "description": "Deore 6100 - Front Crank w/34T chainring"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "manufacturer": "Shimano",
+      "description": "Shimano EP8 & 504W Battery w/charger"
+    },
+    {
+      "type": "e_vehicle_wiring_harness",
+      "description": "Wiring and electronics for Shimano EP8 system"
+    },
+    {
+      "type": "headset",
+      "type_detail": "Headset Type",
+      "description": "ZS 44/ZS 56 removable"
+    }
+  ]
+}

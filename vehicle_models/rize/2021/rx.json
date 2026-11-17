@@ -1,0 +1,334 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/rize/2021/rx",
+  "manufacturer": "Rize",
+  "vehicle_model_group": "RX",
+  "model": "RX",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/rize/2021/rx.jpg",
+  "description": "Feel the surge of the Rize RX, a powerhouse equipped with the most powerful motor ever made for an e-bike mid-drive system—a 52v setup and a 1000w Bafang motor delivering 160Nm of torque. Designed for comfort and built for the wild, it promises smooth rides and endless adventures with up to 80 miles on the Dual Battery option, preparing you for an unforgettable journey.",
+  "first_year": 2021,
+  "years": {
+    "2026": {
+      "original_msrp": 269900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Matte Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/rize/2021/rx.jpg",
+          "variants": [
+            {
+              "sku": "A110-084-15B",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Brushed Gray",
+          "colors": [
+            "silver"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/rize/2021/rx_brushed_gray.jpg",
+          "variants": [
+            {
+              "sku": "A31-083-15G",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Gloss Red",
+          "colors": [
+            "red"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/rize/2021/rx_gloss_red.jpg",
+          "variants": [
+            {
+              "sku": "A112-084-15R",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://rizebikes.com/products/rize-rx-1",
+      "url_live": true
+    },
+    "2021": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum",
+    "bottom_bracket": {
+      "spindle": "ISIS"
+    },
+    "seatpost_diameter": 31.6,
+    "max_weight_total": 125
+  },
+  "suspension": {
+    "front": {
+      "lockout": true
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 584,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 58
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "9_rear"
+  ],
+  "gearing": {
+    "front": [
+      44
+    ],
+    "rear": [
+      11,
+      34
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Acera",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/bafang/m620_mm_g510_1000_c",
+      "drive_wheel": "rear",
+      "manufacturer": "Bafang",
+      "model": "MM G510.1000.C",
+      "model_group": "M620",
+      "kind": "mid_drive",
+      "spindle": "ISIS",
+      "sensor_cadence": true,
+      "sensor_speed": "spoke_magnet",
+      "sensor_torque": "bottom_bracket_spindle",
+      "certification": "CE / UL 2849",
+      "water_rating": "IPX5",
+      "battery_size": 780,
+      "battery_options": [
+        1560
+      ],
+      "battery_chemistry": "li-ion",
+      "battery_info": "Samsung 21700 50E Cell",
+      "charging_time": 300,
+      "rated_power": 1000,
+      "peak_power": 1440,
+      "max_torque": 160,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 51,
+          "range_claimed": 64,
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "standover": 730,
+        "seat_height_min": 920,
+        "seat_height_max": 1110,
+        "dimensions": {
+          "length": 1850
+        },
+        "total_weight": 33.6,
+        "rider_height_min": 1676,
+        "rider_height_max": 1930
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Tektro",
+      "description": "Tektro Hydraulic Disc 180mm"
+    },
+    {
+      "type": "brake_lever",
+      "description": "Safety Motor Inhibitors"
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "Nickel Plated 11-34T 9-Speed"
+    },
+    {
+      "type": "crankset",
+      "type_detail": "Crank",
+      "description": "44T Single Guard"
+    },
+    {
+      "type": "derailleur",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Acera"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "52v 15Ah Samsung 21700 50E Cell (780Wh)"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "52v 30Ah Samsung 21700 50E Cell (1560Wh)"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang 1000w 160Nm"
+    },
+    {
+      "type": "fender",
+      "type_detail": "Rear Rack and Mudguards",
+      "position": [
+        "rear"
+      ],
+      "description": "Rear Rack and Mudguards"
+    },
+    {
+      "type": "fork",
+      "manufacturer": "SR Suntour",
+      "description": "SR Suntour XCT-ATB Hydraulic Lockout"
+    },
+    {
+      "type": "handlebar",
+      "type_detail": "Adjustable Handlebars",
+      "description": "Adjustable Handlebars"
+    },
+    {
+      "type": "lights",
+      "type_detail": "Super Bright Headlight",
+      "position": [
+        "front"
+      ],
+      "description": "Super Bright Headlight"
+    },
+    {
+      "type": "lights",
+      "type_detail": "Taillight",
+      "position": [
+        "rear"
+      ],
+      "description": "Taillight"
+    },
+    {
+      "type": "pedals",
+      "manufacturer": "Wellgo",
+      "description": "Wellgo Aluminum Platform"
+    },
+    {
+      "type": "rim",
+      "description": "Double Wall"
+    },
+    {
+      "type": "saddle",
+      "manufacturer": "Selle Royal",
+      "description": "Selle Royal LOOKIN Basic (GEL)"
+    },
+    {
+      "type": "seatpost",
+      "type_detail": "Seat Post",
+      "description": "350mm x 31.6mm",
+      "dimensions": {
+        "length": 350,
+        "diameter": 31.6
+      }
+    },
+    {
+      "type": "shifter",
+      "manufacturer": "Shimano",
+      "description": "Shimano Rapid Fire 9-Speed"
+    },
+    {
+      "type": "stem",
+      "type_detail": "Handlebar Stem",
+      "manufacturer": "Promax",
+      "description": "Promax Adjustable High Rise"
+    },
+    {
+      "type": "throttle",
+      "description": "100% Power on Demand"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Kenda",
+      "description": "Premium MTB Kenda Nevegal X"
+    },
+    {
+      "type": "tire",
+      "type_detail": "Tire Size",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "27.5\" x 2.30\"",
+      "dimensions": {
+        "width": 58.42,
+        "diameter": 584
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Minimum Inseam",
+      "description": "29\""
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Charge Cycle",
+      "description": "800"
+    }
+  ]
+}

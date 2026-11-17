@@ -1,0 +1,362 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/himiway/2021/d7_pro",
+  "manufacturer": "Himiway",
+  "vehicle_model_group": "D7",
+  "model": "D7 Pro",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "mtb",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/himiway/2021/d7_pro.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/himiway/2021/d7_pro_geometry.svg",
+  "description": "The Himiway D7 Pro is a high-performance softail electric mountain bike engineered for hardcore off-road enthusiasts, backcountry hunters, and heavy-duty riders. Widely known as the \"monster truck\" of e-bikes, it delivers unstoppable mountain performance, combining industry-leading power with sophisticated full suspension to conquer the most unforgiving trails on earth.\nWhether you're plowing through deep snow, carving through soft sand, or navigating deeply rutted mountain passes, the D7 Pro keeps you comfortably in control. It features the industry's widest 26\" x 4.8\" CST super fat tires for unmatched grip, paired with an advanced four-bar linkage rear suspension and a massive 150mm DASH-AIR-20 inverted front fork. This premium softail setup specializes in absorbing aggressive upward forces and jarring impacts, dramatically reducing rider fatigue on extreme terrain.\nAt its core lies a beastly Bafang 1000W Mid-Drive Motor (peaking at 1300W). Driven by a highly responsive torque sensor and delivering a jaw-dropping 160Nm of torque, this bike provides explosive acceleration and effortlessly scales the steepest mountain slopes. It is fueled by an integrated, high-capacity 960Wh Samsung/LG battery, providing up to 80 miles of pedal-assist range to keep you exploring deeper into the wilderness.\nBuilt incredibly robust with a 400 lb payload capacity, the D7 Pro is highly favored by taller and heavier riders (comfortably fitting riders from 5'4\" to 6'4\"+). It utilizes a precision 10-speed Shimano gear shift system to optimize your battery range and climbing efficiency, while 180mm hydraulic disc brakes guarantee fade-free stopping power on steep, loose descents. Complete with a pressure-relief Selle Royal saddle and a professional thumb throttle, the D7 Pro is uncompromising in both extreme durability and comfort.\n\nHardcore mountain bikers and off-road trailblazers\nHunters and outdoor adventurers needing deep woods access\nTaller and larger riders (highly praised by riders 250+ lbs)\nRiders navigating extreme environments (deep snow, mud, soft sand, rocky terrain)\nThose who demand the absolute maximum motor torque (160Nm)\n\nWhy Choose the D7 Pro?\n\nMaximum Traction: The widest 26\" x 4.8\" CST all-terrain fat tires on the US market",
+  "first_year": 2021,
+  "years": {
+    "2026": {
+      "original_msrp": 399900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black & White Gradient",
+          "colors": [
+            "black",
+            "white"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/himiway/2021/d7_pro.png",
+          "variants": [
+            {
+              "sku": "HMW-D7PRO-PG-US",
+              "gtin": "749734967578",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "King",
+          "stock_photo": "https://bikebook.bikeindex.org/himiway/2021/d7_pro_king.png",
+          "variants": [
+            {
+              "sku": "HMW-D7PRO-BK-US",
+              "gtin": "749734967561",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://himiwaybike.com/products/himiway-d7-pro-cobra-electric-hunting-bike",
+      "url_live": true
+    },
+    "2021": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum",
+    "bottom_bracket": {
+      "spindle": "ISIS"
+    },
+    "seatpost_diameter": 30.9,
+    "max_weight_total": 181
+  },
+  "suspension": {
+    "front": {
+      "travel": 220,
+      "spring": "coil"
+    },
+    "rear": {
+      "shock_length": 190,
+      "shock_stroke": 45
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 559,
+      "position": [
+        "front"
+      ],
+      "tire_width": 122,
+      "axle": "thru_axle",
+      "axle_diameter": 15,
+      "axle_spacing": 150,
+      "axle_thread_pitch": 1.5
+    },
+    {
+      "bsd": 559,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 122,
+      "axle_diameter": 12,
+      "axle_spacing": 197
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "10_rear"
+  ],
+  "gearing": {
+    "front": [
+      38
+    ],
+    "rear": [
+      11,
+      48
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Cues",
+    "description": "Shimano cues U6000 10 speed",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/bafang/m620_mm_g510_1000_c",
+      "drive_wheel": "rear",
+      "manufacturer": "Bafang",
+      "model": "MM G510.1000.C",
+      "model_group": "M620",
+      "kind": "mid_drive",
+      "spindle": "ISIS",
+      "sensor_cadence": true,
+      "sensor_torque": "bottom_bracket_spindle",
+      "certification": "CE / UL 2849",
+      "water_rating": "IPX5",
+      "battery_size": 960,
+      "battery_chemistry": "li-ion",
+      "rated_power": 1000,
+      "peak_power": 1300,
+      "max_torque": 160,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 45,
+          "range_claimed": 129,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Thumb",
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "reach": 472,
+        "stack": 625,
+        "top_tube_effective": 620,
+        "head_angle": 64,
+        "head_tube": 140,
+        "chainstay": 508,
+        "wheelbase": 1336,
+        "standover": 780,
+        "seat_height_bb_min": 531,
+        "seat_height_bb_max": 772,
+        "total_weight": 40.2,
+        "rider_height_min": 1600,
+        "rider_height_max": 1956,
+        "extra_measurements": {
+          "handlebar_height": 1085
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Tektro",
+      "description": "Tektro HD-E730 4-piston hydraulic brake"
+    },
+    {
+      "type": "brake_rotor",
+      "type_detail": "Rotors",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "F: TR203-17 R: TR180-17"
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Cassette",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano cues CS-LG400-10 11-48T"
+    },
+    {
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC eglide 130L"
+    },
+    {
+      "type": "chainrings",
+      "type_detail": "Chain ring",
+      "description": "38T 104BCD narrow wide chainring"
+    },
+    {
+      "type": "crankset",
+      "type_detail": "Crank arm",
+      "description": "M620 (Fat) 170mm",
+      "dimensions": {
+        "length": 170
+      }
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Samsung/LG 48V 20Ah"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "U.S. standard 3.0 A fast charger"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "manufacturer": "Bafang",
+      "description": "BaFang DP C18 LCD display"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "48V/25A"
+    },
+    {
+      "type": "fork",
+      "description": "KKE R150S coil spring fork compression/Rebound adjustable 220mm travel 15*150mm thru axle",
+      "dimensions": {
+        "travel": 220,
+        "axle_diameter": 15,
+        "axle_spacing": 150
+      }
+    },
+    {
+      "type": "handlebar",
+      "manufacturer": "Promax",
+      "description": "Promax HB-3188DB -W780"
+    },
+    {
+      "type": "headset",
+      "description": "Neco H383AE 28.6×44*56×30mm"
+    },
+    {
+      "type": "kickstand",
+      "description": "Heavy-duty aluminum kickstand"
+    },
+    {
+      "type": "lights",
+      "description": "48V LED light"
+    },
+    {
+      "type": "pedals",
+      "manufacturer": "Wellgo",
+      "description": "Wellgo B087B"
+    },
+    {
+      "type": "rear_suspension",
+      "type_detail": "Shock",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "RockShox",
+      "description": "ROCKSHOX deluxe select+ 190*45mm",
+      "dimensions": {
+        "length": 190,
+        "travel": 45
+      }
+    },
+    {
+      "type": "saddle",
+      "manufacturer": "Selle Royal",
+      "description": "Selle royal vivo"
+    },
+    {
+      "type": "seatpost",
+      "description": "Exa speed-up 30.9*500mm 150mm travel",
+      "dimensions": {
+        "length": 500,
+        "diameter": 30.9,
+        "travel": 150
+      }
+    },
+    {
+      "type": "sensor",
+      "description": "Torque sensor丨shifting sensor丨speed sensor丨brake sensor"
+    },
+    {
+      "type": "stem",
+      "description": "3D forged alloy Ext:50mm",
+      "dimensions": {
+        "length": 50
+      }
+    },
+    {
+      "type": "throttle",
+      "description": "Thumb throttle"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "CST",
+      "description": "CST roly poly 26*4.8",
+      "dimensions": {
+        "width": 121.92,
+        "diameter": 559
+      }
+    },
+    {
+      "type": "wheel",
+      "position": [
+        "front"
+      ],
+      "description": "M9CF-150 12G*150*15mm 26'' 36h",
+      "dimensions": {
+        "diameter": 559,
+        "axle_diameter": 15,
+        "axle_spacing": 150
+      }
+    },
+    {
+      "type": "wheel",
+      "position": [
+        "rear"
+      ],
+      "description": "M9ZR-197 12G*197*12mm 26'' 36h",
+      "dimensions": {
+        "diameter": 559,
+        "axle_diameter": 12,
+        "axle_spacing": 197
+      }
+    }
+  ]
+}

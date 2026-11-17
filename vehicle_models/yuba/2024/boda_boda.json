@@ -1,0 +1,335 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/yuba/2024/boda_boda",
+  "manufacturer": "Yuba",
+  "vehicle_model_group": "Boda Boda",
+  "model": "Boda Boda",
+  "model_configuration": "complete",
+  "type": "cargo_bike",
+  "propulsion": [
+    "pedal_assist"
+  ],
+  "primary_activity": "cargo",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/yuba/2024/boda_boda.png",
+  "description": "Iconic commuter, made better.",
+  "first_year": 2024,
+  "years": {
+    "2026": {
+      "original_msrp": 529900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "EL-BB2510BLUC",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://yubabikes.com/product/boda-boda/",
+      "url_live": true
+    },
+    "2024": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061-T6 Aluminum",
+    "top_tube": "step_through",
+    "bottom_bracket": {
+      "spindle": "ISIS"
+    },
+    "headset": "ZS66/28.6 | ZS66/39.8",
+    "seatpost_diameter": 31.6,
+    "max_weight_total": 200
+  },
+  "suspension": {
+    "front": {
+      "travel": 80,
+      "spring": "air"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 559,
+      "position": [
+        "front"
+      ],
+      "tire_width": 60,
+      "axle": "thru_axle",
+      "axle_thread_pitch": 1.5
+    },
+    {
+      "bsd": 559,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 60
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "10_rear"
+  ],
+  "gearing": {
+    "front": [
+      44
+    ],
+    "rear": [
+      11,
+      48
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Cues",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/bosch/2022/cargo_line_bdu374y_us",
+      "drive_wheel": "rear",
+      "manufacturer": "Bosch",
+      "model": "BDU374Y",
+      "model_group": "Cargo Line",
+      "kind": "mid_drive",
+      "spindle": "ISIS",
+      "certification": "EN 15194",
+      "battery_size": 500,
+      "battery_chemistry": "li-ion",
+      "rated_power": 250,
+      "peak_power": 600,
+      "max_torque": 85,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "e_vehicle_classifications": [
+            "evc/us/class_1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "top_tube_effective": 630,
+        "seat_tube_ctc": 420,
+        "head_angle": 69,
+        "seat_angle": 71,
+        "head_tube": 175,
+        "chainstay": 600,
+        "wheelbase": 1238,
+        "bb_drop": 42,
+        "bb_height": 295,
+        "dimensions": {
+          "length": 2000
+        },
+        "total_weight": 32,
+        "max_weight_rider": 120,
+        "rider_height_min": 1550,
+        "rider_height_max": 1950,
+        "extra_measurements": {
+          "rear_rack_length": 650,
+          "stepover_height": 550
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "bell_noisemaker",
+      "description": "Bell"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Magura",
+      "description": "MAGURA THIRTY 2 Hydraulic (4 pistons front / 2 pistons rear)"
+    },
+    {
+      "type": "brake_lever",
+      "manufacturer": "Magura",
+      "description": "MAGURA THIRTY 2 Hydraulic"
+    },
+    {
+      "type": "brake_rotor",
+      "type_detail": "Rotor",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Magura",
+      "description": "MAGURA MDR-C 180mm",
+      "dimensions": {
+        "diameter": 180
+      }
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Cassette",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "SHIMANO CUES CS-LG400 LINKGLIDE 11-48T 10 Speed"
+    },
+    {
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC EGLIDE 10 Speed"
+    },
+    {
+      "type": "crankset",
+      "description": "LASCO 170mm 44T",
+      "dimensions": {
+        "length": 170
+      }
+    },
+    {
+      "type": "derailleur",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "SHIMANO CUES RD-U6000 LINKGLIDE 10 Speed"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "manufacturer": "Bosch",
+      "description": "BOSCH PowerTube 500Wh integrated (PowerMore 250Wh compatible)"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "manufacturer": "Bosch",
+      "description": "BOSCH Cargo Line 250W, 85N.m, 36V"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "manufacturer": "Bosch",
+      "description": "BOSCH LED REMOTE (Connect module compatible)"
+    },
+    {
+      "type": "fender",
+      "description": "Alloy Fenders"
+    },
+    {
+      "type": "fork",
+      "manufacturer": "SR Suntour",
+      "description": "SR SUNTOUR MOBIE 25 TRAVEL 80mm Air Lock",
+      "dimensions": {
+        "travel": 80
+      }
+    },
+    {
+      "type": "grips_tape",
+      "type_detail": "Grips",
+      "description": "HERRMANS NUCORE TOUR Lock on"
+    },
+    {
+      "type": "handlebar",
+      "manufacturer": "Satori",
+      "description": "SATORI ROXETTA 700mm 20° Backsweep 31.8mm",
+      "dimensions": {
+        "width": 700,
+        "diameter": 31.8
+      },
+      "angles": {
+        "backsweep": 20
+      }
+    },
+    {
+      "type": "headset",
+      "description": "SANAGI ZS66/28.6 - ZS66/39.8"
+    },
+    {
+      "type": "hub",
+      "description": "Thru Axle (14Gx36Hx100x15 Front | 14Gx36Hx148x12 Rear)"
+    },
+    {
+      "type": "kickstand",
+      "description": "Stand Together Kickstand"
+    },
+    {
+      "type": "lights",
+      "description": "Herrmans Lights"
+    },
+    {
+      "type": "pedals",
+      "description": "VP-527 Alloy"
+    },
+    {
+      "type": "rim",
+      "description": "DB-32 MTB Double Wall (36H Front | 36H Rear)"
+    },
+    {
+      "type": "saddle",
+      "manufacturer": "Yuba",
+      "description": "YUBA Comfort Saddle with handle"
+    },
+    {
+      "type": "seatpost",
+      "manufacturer": "Promax",
+      "description": "PROMAX 400mm 31.6mm Aluminum (Dropper seat post compatible)",
+      "dimensions": {
+        "diameter": 31.6
+      }
+    },
+    {
+      "type": "shifter",
+      "type_detail": "Shift Lever",
+      "manufacturer": "Shimano",
+      "description": "SHIMANO CUES SL-U6000 LINKGLIDE 10 Speed"
+    },
+    {
+      "type": "stem",
+      "manufacturer": "Satori",
+      "description": "SATORI HATCHBACK 70mm",
+      "dimensions": {
+        "length": 70
+      }
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Schwalbe",
+      "description": "SCHWALBE Pick Up (26” x 2.35” Front | 26” x 2.35” Rear)",
+      "dimensions": {
+        "width": 59.69,
+        "diameter": 559
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Optional",
+      "description": "Monkey Bars, BaseRack, Stuff Rack, BackRest, Soft Spot, Mini Soft Spot, Pin Lock, Pop Top, Crest, Power More, SideBoards, Yepp 2 Maxi, WoofTop, Pot, Front EcoDeck, Grab & Go, Eco Baguette, Pegs"
+    },
+    {
+      "type": "wheel",
+      "description": "26\" Front & Rear - Alloy Double Wall, 36 spokes",
+      "dimensions": {
+        "diameter": 559
+      }
+    }
+  ]
+}

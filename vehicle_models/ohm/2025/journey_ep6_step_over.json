@@ -1,0 +1,361 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/ohm/2025/journey_ep6_step_over",
+  "manufacturer": "OHM",
+  "vehicle_model_group": "Journey",
+  "model": "Journey EP6 Step-Over",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/ohm/2025/journey_ep6_step_over.png",
+  "description": "The Journey delivers everything most riders need, nothing they don't. Choose EP500 for efficient urban riding, or EP600 for 40% more torque on hills and heavy loads. Integrated cargo, front suspension, and all-condition lighting come standard. 531Wh battery for daily use; 708Wh option for extended range.",
+  "first_year": 2025,
+  "years": {
+    "2026": {
+      "original_msrp": 389900,
+      "original_msrp_currency": "CAD",
+      "colorways": [
+        {
+          "name": "Noble Grey Metallic",
+          "colors": [
+            "silver"
+          ]
+        }
+      ],
+      "url": "https://www.ohmcycles.com/products/journey",
+      "url_live": true
+    },
+    "2025": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum",
+    "cable_routing": "stealth",
+    "bottom_bracket": {
+      "spindle": "Shimano EP8"
+    },
+    "seatpost_diameter": 30.9
+  },
+  "suspension": {
+    "front": {
+      "travel": 100,
+      "spring": "coil",
+      "lockout": true
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 584,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 57
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "9_rear"
+  ],
+  "gearing": {
+    "front": [
+      44
+    ],
+    "rear": [
+      11,
+      46
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Cues",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front"
+      ],
+      "rotor_diameter": 203
+    },
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/shimano/2022/ep600_du_ep600",
+      "drive_wheel": "rear",
+      "manufacturer": "Shimano",
+      "model": "DU-EP600",
+      "model_group": "EP600",
+      "kind": "mid_drive",
+      "spindle": "Shimano EP8",
+      "sensor_cadence": true,
+      "certification": "UL 2849",
+      "battery_size": 531,
+      "battery_options": [
+        708
+      ],
+      "battery_chemistry": "li-ion",
+      "rated_power": 250,
+      "peak_power": 500,
+      "max_torque": 85,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "e_vehicle_classifications": [
+            "evc/ca/power_assisted_bicycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "cargo": {
+    "max_weight_cargo": 25
+  },
+  "sizes": [
+    {
+      "name": "S",
+      "geometry": {
+        "rider_height_min": 1524,
+        "rider_height_max": 1676
+      }
+    },
+    {
+      "name": "M",
+      "geometry": {
+        "total_weight": 27.1,
+        "rider_height_min": 1651,
+        "rider_height_max": 1803
+      }
+    },
+    {
+      "name": "L",
+      "geometry": {
+        "rider_height_min": 1778,
+        "rider_height_max": 1930
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano BL-MT200, Dual piston, Hydraulic Disc Shimano"
+    },
+    {
+      "type": "brake_rotor",
+      "type_detail": "Front Rotor",
+      "position": [
+        "front"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano SM-RT64, 203mm",
+      "dimensions": {
+        "diameter": 203
+      }
+    },
+    {
+      "type": "brake_rotor",
+      "type_detail": "Rear Rotor",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano SM-RT64, 180mm with Magnet",
+      "dimensions": {
+        "diameter": 180
+      }
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Cassette",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano CS-LG300-9, CUES, 9-Speed, 11-46T"
+    },
+    {
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC eGLIDE EPT, w/Quicklink"
+    },
+    {
+      "type": "crankset",
+      "manufacturer": "FSA",
+      "description": "FSA CK-752 Forged AL6061 spider, 44T w/chainguard"
+    },
+    {
+      "type": "derailleur",
+      "manufacturer": "Shimano",
+      "description": "Shimano RD-U4000, CUES, GS 9-Speed, Shadow Design"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "531Wh, Aluminium casing, w/Shimano Service (Optional 708Wh)"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "Smart Plus Charger, 42V 4A"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "manufacturer": "Shimano",
+      "description": "Shimano SC-EN500"
+    },
+    {
+      "type": "fender",
+      "description": "HEBIE Alumee, Double Wall, Aluminium"
+    },
+    {
+      "type": "fork",
+      "manufacturer": "SR Suntour",
+      "description": "SR Suntour XCM34-Boost, Coil, Lockout, 100mm Travel",
+      "dimensions": {
+        "travel": 100
+      }
+    },
+    {
+      "type": "grips_tape",
+      "type_detail": "Grips",
+      "manufacturer": "Velo",
+      "description": "VELO Comfort Ergo, Lock on"
+    },
+    {
+      "type": "handlebar",
+      "description": "MJ 31.8mm, Rise: 25mm, Backsweep: 7°",
+      "dimensions": {
+        "diameter": 31.8,
+        "rise": 25
+      },
+      "angles": {
+        "backsweep": 7
+      }
+    },
+    {
+      "type": "headset",
+      "manufacturer": "Acros",
+      "description": "ACROS AZF-789 ICR (Internal Cable Routing)"
+    },
+    {
+      "type": "hub",
+      "position": [
+        "front"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano HB-TC500-15-B"
+    },
+    {
+      "type": "hub",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano FH-TC500-HM-B"
+    },
+    {
+      "type": "kickstand",
+      "manufacturer": "Pletscher",
+      "description": "PLETSCHER COMP 40"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "front"
+      ],
+      "manufacturer": "Lezyne",
+      "description": "Lezyne Mini STVZO E300+, 100 LUX / 300 Lumen"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Lezyne",
+      "description": "Lezyne Super Bright STVZO, 12 Lumen"
+    },
+    {
+      "type": "pedals",
+      "manufacturer": "Wellgo",
+      "description": "WELLGO, Aluminium body, Cr-Mo axle, sealed cartridge"
+    },
+    {
+      "type": "rack",
+      "type_detail": "Carrier",
+      "manufacturer": "Racktime",
+      "description": "RACKTIME Snap-it 1.0, Bag/Basket Compatible, 25kg max"
+    },
+    {
+      "type": "rim",
+      "description": "ALEXRIMS MD35, 32H"
+    },
+    {
+      "type": "saddle",
+      "manufacturer": "Velo",
+      "description": "VELO Comfort Ergo"
+    },
+    {
+      "type": "seatpost",
+      "description": "MJ 30.9mm",
+      "dimensions": {
+        "diameter": 30.9
+      }
+    },
+    {
+      "type": "shifter",
+      "manufacturer": "Shimano",
+      "description": "Shimano SL-U4010-9R, CUES, 9-Speed Rapidfire Plus, with OGD Shimano"
+    },
+    {
+      "type": "stem",
+      "manufacturer": "Satori",
+      "description": "SATORI Shorty, 45mm, Adjustable 0–+90°",
+      "dimensions": {
+        "length": 45
+      },
+      "angles": {
+        "adjustable": {
+          "angle": {
+            "min": 0,
+            "max": 90
+          }
+        }
+      }
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Schwalbe",
+      "description": "Schwalbe Hurricane, Performance, 27.5 × 2.25, HS499 ADDIX 67EPI",
+      "dimensions": {
+        "width": 57.15,
+        "diameter": 584
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Frame Style",
+      "description": "Step-Over"
+    }
+  ]
+}

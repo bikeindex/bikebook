@@ -1,0 +1,340 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/wildeway/2026/mantis",
+  "manufacturer": "Wildeway",
+  "model": "Mantis",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "atb",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/wildeway/2026/mantis.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/wildeway/2026/mantis_geometry.jpg",
+  "description": "The Wildeway Mantis electric off-road motorcycle is designed specifically for outdoor off-road riding. It features throttle-controlled speed and a reliable 60V 30Ah battery. The combination of 20\" x 4.0\" all-terrain tires, a spring-suspension front fork, and a high-strength rear suspension spring ensures a smooth, comfortable ride, even on rugged terrain. With five speed modes and a top speed of 40 mph (approx. 65 km/h), it adapts to various riding scenarios, while a full charge takes just 8–9 hours.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 129900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/wildeway/2026/mantis_black.jpg"
+        },
+        {
+          "name": "Gray",
+          "colors": [
+            "silver"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/wildeway/2026/mantis_gray.jpg"
+        },
+        {
+          "name": "Yellow",
+          "colors": [
+            "yellow"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/wildeway/2026/mantis.jpg"
+        }
+      ],
+      "url": "https://wildewayebike.com/products/wildeway-mantis",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "steel",
+    "material_detail": "High-Carbon Steel",
+    "max_weight_total": 120
+  },
+  "suspension": {
+    "front": {
+      "travel": 80
+    },
+    "rear": {}
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 102
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "7_rear"
+  ],
+  "gearing": {
+    "front": [
+      52
+    ],
+    "rear": [
+      14,
+      28
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 203
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "rear",
+      "kind": "hub_drive",
+      "sensor_cadence": true,
+      "water_rating": "IPX65",
+      "battery_size": 1800,
+      "battery_chemistry": "li-ion",
+      "battery_info": "Samsung/LG 21700 cell",
+      "charging_time": 540,
+      "peak_power": 4000,
+      "max_torque": 100,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 64,
+          "range_claimed": 80,
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "range_claimed": 69,
+          "throttle_type": "Twist",
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        },
+        {
+          "mode": "assist",
+          "availability": "app_update",
+          "max_speed": 64,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "seat_height_min": 800,
+        "seat_height_max": 800,
+        "dimensions": {
+          "length": 1778,
+          "width": 701,
+          "height": 1080
+        },
+        "total_weight": 58.5,
+        "rider_height_min": 1626,
+        "rider_height_max": 1930,
+        "extra_measurements": {
+          "max_handlebar_height": 1099.82
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Hydraulic Disc Brakes"
+    },
+    {
+      "type": "brake_lever",
+      "description": "Aluminum Alloy, with power cutoff"
+    },
+    {
+      "type": "brake_rotor",
+      "type_detail": "Rotors",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "203mm front / 203mm rear",
+      "dimensions": {
+        "diameter": 203
+      }
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Cassette",
+      "position": [
+        "rear"
+      ],
+      "description": "7-speed, 14-28T"
+    },
+    {
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC 7-speed"
+    },
+    {
+      "type": "chainrings",
+      "description": "52T narrow-wide chainring"
+    },
+    {
+      "type": "crankset",
+      "description": "Aluminum Alloy, 170mm",
+      "dimensions": {
+        "length": 170
+      }
+    },
+    {
+      "type": "derailleur",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "SHIMANO, 7-speed"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "60V 30Ah (1800Wh) Long-Range Battery"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "60V 3.5A Fast Charger"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "position": [
+        "rear"
+      ],
+      "description": "60V, 4000W (peak), 100Nm"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "LCD Color Display"
+    },
+    {
+      "type": "fender",
+      "position": [
+        "front"
+      ],
+      "description": "Front Fender"
+    },
+    {
+      "type": "fork",
+      "type_detail": "80MM Front Fork",
+      "position": [
+        "front"
+      ],
+      "description": "80MM Front Fork"
+    },
+    {
+      "type": "included_not_installed",
+      "type_detail": "Cable Binder",
+      "description": "Cable Binder"
+    },
+    {
+      "type": "included_not_installed",
+      "type_detail": "Tools",
+      "description": "Toolkit"
+    },
+    {
+      "type": "kickstand",
+      "description": "Bike Kickstand"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "front"
+      ],
+      "description": "600LM LED, Adjustable angle"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "rear"
+      ],
+      "description": "Braking Indicator and Turn signal"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Front & Rear Light"
+    },
+    {
+      "type": "pedals",
+      "description": "Left & Right Pedals"
+    },
+    {
+      "type": "rear_suspension",
+      "type_detail": "Horst-link Rear Suspension",
+      "position": [
+        "rear"
+      ],
+      "description": "Horst-link Rear Suspension"
+    },
+    {
+      "type": "rim",
+      "description": "Aluminum alloy"
+    },
+    {
+      "type": "shifter",
+      "type_detail": "Shift Lever",
+      "manufacturer": "Shimano",
+      "description": "SHIMANO, 7-speed"
+    },
+    {
+      "type": "throttle",
+      "type_detail": "Throttle Assist",
+      "description": "Half-twist"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "20\"x4.0\" puncture-resistant tires",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 406
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "USB Port",
+      "description": "USB Type-C phone charge"
+    },
+    {
+      "type": "wheel",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Front and rear wheels"
+    }
+  ]
+}

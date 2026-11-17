@@ -1,0 +1,333 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/rize/2021/rx_pro",
+  "manufacturer": "Rize",
+  "vehicle_model_group": "RX",
+  "model": "RX Pro",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "mtb",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/rize/2021/rx_pro.jpg",
+  "description": "Embrace adventure with the RX Pro, boasting the most powerful e-bike mid-drive motor—a 52v system and 1000w Bafang unleashing 160Nm of torque. Its fat tires excel off-road, offering unmatched traction. Crafted for comfort and designed for the wild, it promises seamless rides and boundless exploration up to 80 miles with the Dual Battery option. Prepare for an unforgettable journey where every path unveils new discoveries.",
+  "first_year": 2021,
+  "years": {
+    "2026": {
+      "original_msrp": 299900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Matte Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/rize/2021/rx_pro.jpg",
+          "variants": [
+            {
+              "sku": "A33-093-15B",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Brushed Gray",
+          "colors": [
+            "silver"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/rize/2021/rx_pro_brushed_gray.jpg",
+          "variants": [
+            {
+              "sku": "A34-093-15G",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Gloss Red",
+          "colors": [
+            "red"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/rize/2021/rx_pro_gloss_red.jpg",
+          "variants": [
+            {
+              "sku": "A35-093-15R",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://rizebikes.com/products/rx-pro-1",
+      "url_live": true
+    },
+    "2021": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum",
+    "bottom_bracket": {
+      "spindle": "ISIS"
+    },
+    "seatpost_diameter": 31.6,
+    "max_weight_total": 136
+  },
+  "suspension": {
+    "front": {
+      "lockout": true
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 559,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 102
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "9_rear"
+  ],
+  "gearing": {
+    "front": [
+      44
+    ],
+    "rear": [
+      11,
+      34
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Alivio",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/bafang/m620_mm_g510_1000_c",
+      "drive_wheel": "rear",
+      "manufacturer": "Bafang",
+      "model": "MM G510.1000.C",
+      "model_group": "M620",
+      "kind": "mid_drive",
+      "spindle": "ISIS",
+      "sensor_cadence": true,
+      "sensor_speed": "spoke_magnet",
+      "sensor_torque": "bottom_bracket_spindle",
+      "certification": "CE / UL 2849",
+      "water_rating": "IPX5",
+      "battery_size": 780,
+      "battery_options": [
+        1560
+      ],
+      "battery_chemistry": "li-ion",
+      "battery_info": "Samsung 21700 50E Cell",
+      "charging_time": 300,
+      "rated_power": 1000,
+      "peak_power": 1440,
+      "max_torque": 160,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 51,
+          "range_claimed": 64,
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "standover": 730,
+        "seat_height_min": 930,
+        "seat_height_max": 1110,
+        "dimensions": {
+          "length": 1910
+        },
+        "total_weight": 39.9,
+        "rider_height_min": 1676,
+        "rider_height_max": 1930
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Tektro",
+      "description": "Tektro Hydraulic Disc 180mm"
+    },
+    {
+      "type": "brake_lever",
+      "description": "Safety Motor Inhibitors"
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "Nickel Plated 11-34T 9-Speed"
+    },
+    {
+      "type": "crankset",
+      "type_detail": "Crank",
+      "description": "44T Single Guard"
+    },
+    {
+      "type": "derailleur",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Alivio"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "52v 15Ah Samsung 21700 50E Cell (780Wh)"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "52v 30Ah Samsung 21700 50E Cell (1560Wh)"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang 1000w 160Nm"
+    },
+    {
+      "type": "fender",
+      "type_detail": "Rear Rack and Mudguards",
+      "position": [
+        "rear"
+      ],
+      "description": "Rear Rack and Mudguards"
+    },
+    {
+      "type": "fork",
+      "description": "Mozo Fatman Hydraulic Lockout"
+    },
+    {
+      "type": "handlebar",
+      "type_detail": "Adjustable Handlebars",
+      "description": "Adjustable Handlebars"
+    },
+    {
+      "type": "lights",
+      "type_detail": "Super Bright Headlight",
+      "position": [
+        "front"
+      ],
+      "description": "Super Bright Headlight"
+    },
+    {
+      "type": "lights",
+      "type_detail": "Taillight",
+      "position": [
+        "rear"
+      ],
+      "description": "Taillight"
+    },
+    {
+      "type": "pedals",
+      "manufacturer": "Wellgo",
+      "description": "Wellgo Aluminum Platform"
+    },
+    {
+      "type": "rim",
+      "description": "Double Wall"
+    },
+    {
+      "type": "saddle",
+      "manufacturer": "Selle Royal",
+      "description": "Selle Royal LOOKIN Basic (GEL)"
+    },
+    {
+      "type": "seatpost",
+      "type_detail": "Seat Post",
+      "description": "350mm x 31.6mm",
+      "dimensions": {
+        "length": 350,
+        "diameter": 31.6
+      }
+    },
+    {
+      "type": "shifter",
+      "manufacturer": "Shimano",
+      "description": "Shimano Rapid Fire 9-Speed"
+    },
+    {
+      "type": "stem",
+      "type_detail": "Handlebar Stem",
+      "manufacturer": "Promax",
+      "description": "Promax Adjustable High Rise"
+    },
+    {
+      "type": "throttle",
+      "description": "100% Power on Demand"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Kenda",
+      "description": "Kenda with K-Shield Puncture Resistant Technology"
+    },
+    {
+      "type": "tire",
+      "type_detail": "Tire Size",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "26\" x 4\"",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 559
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Minimum Inseam",
+      "description": "29\""
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Charge Cycle",
+      "description": "800"
+    }
+  ]
+}

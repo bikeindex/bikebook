@@ -1,0 +1,367 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/eahora/2023/ft_01",
+  "manufacturer": "Eahora",
+  "vehicle_model_group": "FT-01",
+  "model": "FT-01",
+  "model_configuration": "complete",
+  "type": "bike",
+  "type_detail": "bench_seat",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/eahora/2023/ft_01.png",
+  "description": "Explore new frontiers with Eahora's FT-01, a masterpiece of human-centric design. Experience the perfect blend of form and function with the FT-01, crafted with Eahora's passion for innovation. Made with high-quality materials, the FT-01 ensures durability and reliability, guaranteeing your adventures are worry-free. In-house designers engineered the frame for enhanced ergonomics, solid handling, and an ideal fit for riders at the bottom end of our height recommendation range.",
+  "first_year": 2023,
+  "years": {
+    "2026": {
+      "original_msrp": 179900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/eahora/2023/ft_01.png",
+          "variants": [
+            {
+              "sku": "MSK1072",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "White",
+          "colors": [
+            "white"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/eahora/2023/ft_01_white.png",
+          "variants": [
+            {
+              "sku": "MSK1073",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://www.eahoraebike.com/products/eahora-ft-01",
+      "url_live": true
+    },
+    "2023": {}
+  },
+  "frame": {
+    "material": "steel",
+    "material_detail": "High-Carbon Steel",
+    "coil_compatible": true,
+    "max_weight_total": 120
+  },
+  "suspension": {
+    "front": {
+      "travel": 100,
+      "spring": "coil"
+    },
+    "rear": {
+      "spring": "coil"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 102
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "1_rear"
+  ],
+  "gearing": {
+    "front": [
+      48
+    ]
+  },
+  "groupset": {
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "rear",
+      "kind": "hub_drive",
+      "sensor_cadence": true,
+      "water_rating": "IPX6",
+      "battery_size": 960,
+      "battery_chemistry": "li-ion",
+      "battery_info": "Lithium-ion Grade A 21700 Cells",
+      "rated_power": 1000,
+      "peak_power": 1200,
+      "max_torque": 95,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 42,
+          "range_claimed": 80,
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "range_claimed": 45,
+          "throttle_type": "Twist",
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "chainstay": 500,
+        "wheelbase": 1151,
+        "standover": 691,
+        "seat_height_min": 851,
+        "seat_height_max": 851,
+        "dimensions": {
+          "length": 1730,
+          "width": 749
+        },
+        "total_weight": 41.1,
+        "rider_height_min": 1651,
+        "rider_height_max": 1905,
+        "extra_measurements": {
+          "handlebar_height": 1151,
+          "reach_distance": 500,
+          "rim_diameter": 417
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "bell_noisemaker",
+      "type_detail": "Head Light",
+      "description": "1,100 Lumens (12W) LED with built-in horn"
+    },
+    {
+      "type": "bell_noisemaker",
+      "type_detail": "Bell",
+      "description": "Electric horn built-in headlight"
+    },
+    {
+      "type": "brake",
+      "type_detail": "Brake System",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Hydraulic disc brakes with motor cutoff"
+    },
+    {
+      "type": "brake",
+      "type_detail": "Brake Caliper/Pads",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "2-Piston calipers with semi-metallic pads"
+    },
+    {
+      "type": "brake_rotor",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "180mm (φ) x 2.3mm (t) steel rotors",
+      "dimensions": {
+        "diameter": 180
+      }
+    },
+    {
+      "type": "crankset",
+      "description": "170mm, 48T chainring with dual-sided cover",
+      "dimensions": {
+        "length": 170
+      }
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Battery Capacity: 960 Watt·hour (48V 20Ah)"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Battery Lifespan: ≥ 1,000 charge cycles to 80% of capacity"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "54.6V 3A Quick charger, 6-7H charge time"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "1,000W, or peak 1,200W"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "Rear hub motor, brushless, IPX6"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "4\" color LCD, USB charge port"
+    },
+    {
+      "type": "fender",
+      "description": "Front & Rear fenders included"
+    },
+    {
+      "type": "fork",
+      "position": [
+        "front"
+      ],
+      "description": "100mm Travel coil suspension alloy fork",
+      "dimensions": {
+        "travel": 100
+      }
+    },
+    {
+      "type": "grips_tape",
+      "type_detail": "Grips",
+      "description": "120mm x 22.2mm (φ) rubber, anti-slip"
+    },
+    {
+      "type": "handlebar",
+      "description": "Aluminum 640mm x 31.8mm (φ, center), rise",
+      "dimensions": {
+        "width": 640,
+        "diameter": 31.8
+      }
+    },
+    {
+      "type": "headset",
+      "description": "Integrated threadless headset"
+    },
+    {
+      "type": "kickstand",
+      "description": "Aluminum alloy heavy-duty"
+    },
+    {
+      "type": "lights",
+      "type_detail": "Head Light",
+      "position": [
+        "front"
+      ],
+      "description": "1,100 Lumens (12W) LED with built-in horn"
+    },
+    {
+      "type": "lights",
+      "type_detail": "Tail Light",
+      "position": [
+        "rear"
+      ],
+      "description": "Tail light with brake signal blinker"
+    },
+    {
+      "type": "pedals",
+      "manufacturer": "Wellgo",
+      "description": "WELLGO 16/9 aluminum alloy platform"
+    },
+    {
+      "type": "rear_suspension",
+      "type_detail": "Shock Absorber",
+      "position": [
+        "rear"
+      ],
+      "description": "FASTACE coil suspension"
+    },
+    {
+      "type": "rim",
+      "description": "36H aluminum alloy rims"
+    },
+    {
+      "type": "saddle",
+      "description": "Motorcycle-style saddle seat"
+    },
+    {
+      "type": "seatpost",
+      "description": "No seatpost"
+    },
+    {
+      "type": "shifter",
+      "type_detail": "Shifting Gears",
+      "description": "Sigle speed no shifting, 48T chainring"
+    },
+    {
+      "type": "spokes",
+      "description": "Black stainless steel"
+    },
+    {
+      "type": "stem",
+      "description": "31.8mm (φ, handlebar) * 35° A-head",
+      "dimensions": {
+        "diameter": 31.8
+      },
+      "angles": {
+        "angle": 35
+      }
+    },
+    {
+      "type": "throttle",
+      "type_detail": "Throttle Type",
+      "description": "5 Levels twist, slightly delayed response (safe design)"
+    },
+    {
+      "type": "tire",
+      "type_detail": "Tire Type",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "20\" x 4.0\" fat tires with tube (25-28 psi)",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 406
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Additional Modes",
+      "description": "Cruise Control, 6 km/h Walk"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Additinal Reflectors",
+      "description": "Pedals"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Additional Riding Modes",
+      "description": "Walk, Cruise control"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Riding Modes",
+      "description": "3 Levels Pedal-Assist (Cadence), 3 Levels Throttle"
+    }
+  ]
+}

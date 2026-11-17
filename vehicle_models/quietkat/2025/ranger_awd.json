@@ -1,0 +1,260 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/quietkat/2025/ranger_awd",
+  "manufacturer": "QuietKat",
+  "vehicle_model_group": "Ranger",
+  "model": "Ranger AWD",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "mtb",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/quietkat/2025/ranger_awd.jpg",
+  "description": "A capable, all-terrain utility eBike with dual hub-drive motors providing enhanced traction for slick terrain such as ice, mud, and deep sand.",
+  "first_year": 2025,
+  "years": {
+    "2026": {
+      "original_msrp": 299900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Veil Cumbre Camo",
+          "stock_photo": "https://bikebook.bikeindex.org/quietkat/2025/ranger_awd_veil_cumbre_camo.jpg",
+          "variants": [
+            {
+              "sku": "AFO-23-RAN-AWD-BRE-17",
+              "gtin": "810095126925",
+              "size": "Medium"
+            },
+            {
+              "sku": "AFO-23-RAN-AWD-BRE-19",
+              "gtin": "810095126932",
+              "size": "Large"
+            }
+          ]
+        },
+        {
+          "name": "Sonic",
+          "stock_photo": "https://bikebook.bikeindex.org/quietkat/2025/ranger_awd.jpg",
+          "variants": [
+            {
+              "sku": "AFO-23-RAN-AWD-SNC-17",
+              "gtin": "810095126949",
+              "size": "Medium"
+            },
+            {
+              "sku": "AFO-23-RAN-AWD-SNC-19",
+              "gtin": "810095126956",
+              "size": "Large"
+            }
+          ]
+        }
+      ],
+      "url": "https://quietkat.com/products/ranger-awd-electric-bike",
+      "url_live": true
+    },
+    "2025": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "cable_routing": "internal",
+    "max_weight_total": 147
+  },
+  "suspension": {
+    "front": {
+      "travel": 120
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 559,
+      "position": [
+        "front"
+      ],
+      "tire_width": 114,
+      "axle": "bolt_on",
+      "axle_spacing": 135
+    },
+    {
+      "bsd": 559,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 114,
+      "axle": "bolt_on",
+      "axle_spacing": 175
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "1_rear"
+  ],
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "front",
+      "kind": "hub_drive",
+      "battery_size": 828,
+      "rated_power": 750,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 45,
+          "range_claimed": 84,
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/us/class_3"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Thumb"
+        }
+      ]
+    },
+    {
+      "drive_wheel": "rear",
+      "kind": "hub_drive",
+      "battery_size": 828,
+      "rated_power": 750,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 45,
+          "range_claimed": 84,
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/us/class_3"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Thumb"
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "Medium",
+      "geometry": {
+        "stack": 691,
+        "top_tube_effective": 659,
+        "top_tube_ctc": 628.5,
+        "seat_tube_ct": 432,
+        "head_angle": 71,
+        "seat_angle": 71,
+        "head_tube": 180,
+        "chainstay": 532,
+        "wheelbase": 1222.5,
+        "front_center": 695,
+        "bb_drop": 52,
+        "bb_height": 328,
+        "fork_rake": 50,
+        "fork_length_a2c": 515,
+        "total_weight": 29.5
+      }
+    },
+    {
+      "name": "Large",
+      "geometry": {
+        "stack": 691,
+        "top_tube_effective": 659,
+        "top_tube_ctc": 624,
+        "seat_tube_ct": 483,
+        "head_angle": 71,
+        "seat_angle": 71,
+        "head_tube": 180,
+        "chainstay": 532,
+        "wheelbase": 1222.5,
+        "front_center": 695,
+        "bb_drop": 52,
+        "bb_height": 328,
+        "fork_rake": 50,
+        "fork_length_a2c": 515
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "axle_nuts",
+      "type_detail": "Axle",
+      "description": "175mm Solid Axle Rear. 135mm Solid Axle Front"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Tektro",
+      "description": "Tektro 2-piston Hydraulic Brakes"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "17.25AH/48V | 828Wh | 10 lbs"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "Dual 750W Hub-Drive Motors"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "manufacturer": "QuietKat",
+      "description": "QuietKat Custom Programed LCD Display"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "Front Motor Only, Rear Motor Only, or AWD"
+    },
+    {
+      "type": "fork",
+      "manufacturer": "RST",
+      "description": "RST 120mm Suspension Fork",
+      "dimensions": {
+        "travel": 120
+      }
+    },
+    {
+      "type": "saddle",
+      "manufacturer": "QuietKat",
+      "description": "QuietKat Premium Comfort Saddle"
+    },
+    {
+      "type": "seatpost",
+      "description": "Suspension Seatpost"
+    },
+    {
+      "type": "throttle",
+      "description": "Removable Thumb Throttle"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Kenda",
+      "description": "Kenda Juggernaut 26” x 4.5” 30 TPI",
+      "dimensions": {
+        "width": 114.3,
+        "diameter": 559
+      }
+    }
+  ]
+}

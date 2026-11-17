@@ -1,0 +1,145 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/jetson/2023/highline",
+  "manufacturer": "Jetson",
+  "model": "Highline",
+  "model_configuration": "complete",
+  "type": "e_scooter",
+  "propulsion": [
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/jetson/2023/highline.png",
+  "description": "The Jetson Highline features LED lights on the stem, deck, and handle for a ride that is guaranteed to be dazzling.",
+  "first_year": 2023,
+  "final_year": 2023,
+  "years": {
+    "2023": {
+      "original_msrp": 19999,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2023/highline.png"
+        },
+        {
+          "name": "Graphite",
+          "colors": [
+            "silver"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2023/highline_graphite.png"
+        }
+      ],
+      "url": "https://web.archive.org/web/20230401174042/https://ridejetson.com/products/highline-electric-scooter",
+      "url_live": false
+    }
+  },
+  "frame": {
+    "material": "steel",
+    "folding": "stem_fold"
+  },
+  "wheels": [
+    {
+      "bsd": 90,
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "brakes": [
+    {
+      "type": "spoon_brake",
+      "position": [
+        "rear"
+      ]
+    },
+    {
+      "type": "motor_brake",
+      "position": [
+        "motor"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "kind": "hub_drive",
+      "battery_size": 56,
+      "battery_chemistry": "li-ion",
+      "charging_time": 240,
+      "rated_power": 200,
+      "operating_modes": [
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 16,
+          "range_claimed": 5,
+          "max_slope": 10,
+          "throttle_type": "Thumb"
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "dimensions": {
+          "length": 833,
+          "width": 424,
+          "height": 927
+        },
+        "dimensions_folded": {
+          "length": 749,
+          "width": 424,
+          "height": 267
+        },
+        "total_weight": 6.4,
+        "max_weight_rider": 66,
+        "rider_age_min": 8
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "rear"
+      ],
+      "description": "Rear foot brake and e-brake"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "21.6V, 2.6Ah lithium-ion"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "200 watt hub motor"
+    },
+    {
+      "type": "kickstand"
+    },
+    {
+      "type": "lights",
+      "description": "LED light up stem, deck, and handle"
+    },
+    {
+      "type": "throttle",
+      "type_detail": "Throttle Type",
+      "description": "Thumb throttle"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Warranty",
+      "description": "1 year limited"
+    },
+    {
+      "type": "wheel",
+      "description": "6\""
+    }
+  ]
+}

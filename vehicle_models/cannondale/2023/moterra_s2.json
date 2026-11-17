@@ -1,0 +1,349 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/cannondale/2023/moterra_s2",
+  "manufacturer": "Cannondale",
+  "vehicle_model_group": "Moterra Neo",
+  "model": "Moterra S2",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist"
+  ],
+  "primary_activity": "mtb",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/cannondale/2023/moterra_s2.png",
+  "description": "A trail-slaying aluminum e-mountain bike, ready to crank up the fun factor on any terrain, anywhere.",
+  "first_year": 2023,
+  "years": {
+    "2026": {
+      "colorways": [
+        {
+          "name": "Quicksand",
+          "stock_photo": "https://bikebook.bikeindex.org/cannondale/2023/moterra_s2.png",
+          "variants": [
+            {
+              "sku": "C65453U10LG",
+              "size": "LG"
+            },
+            {
+              "sku": "C65453U10MD",
+              "size": "MD"
+            },
+            {
+              "sku": "C65453U10SM",
+              "size": "SM"
+            },
+            {
+              "sku": "C65453U10XL",
+              "size": "XL"
+            }
+          ]
+        }
+      ],
+      "url": "https://www.cannondale.com/en/bikes/electric/e-mountain/moterra-neo/moterra-neo-s2",
+      "url_live": true
+    },
+    "2023": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "SmartForm C2 Aluminum",
+    "mounts": [
+      {
+        "type": "fender",
+        "position": [
+          "front"
+        ]
+      },
+      {
+        "type": "rack",
+        "position": [
+          "front"
+        ]
+      }
+    ],
+    "cable_routing": "internal",
+    "bottom_bracket": {
+      "spindle": "Shimano EP8"
+    },
+    "headset": "IS42/28.6 | IS52/40"
+  },
+  "suspension": {
+    "front": {
+      "travel": 150,
+      "spring": "coil"
+    },
+    "rear": {
+      "travel": 150,
+      "spring": "air"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 622,
+      "position": [
+        "front"
+      ],
+      "tire_width": 66,
+      "tire_system": "tubeless_ready",
+      "axle": "thru_axle",
+      "axle_diameter": 15,
+      "axle_spacing": 110,
+      "axle_thread_pitch": 1.5
+    },
+    {
+      "bsd": 622,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 66,
+      "tire_system": "tubeless_ready",
+      "axle": "thru_axle",
+      "axle_diameter": 12,
+      "axle_spacing": 148
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "12_rear"
+  ],
+  "gearing": {
+    "front": [
+      34
+    ],
+    "rear": [
+      10,
+      51
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Deore",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 203
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/shimano/2022/ep801_du_ep801",
+      "drive_wheel": "rear",
+      "manufacturer": "Shimano",
+      "model": "DU-EP801",
+      "model_group": "EP801",
+      "kind": "mid_drive",
+      "spindle": "Shimano EP8",
+      "sensor_cadence": true,
+      "certification": "UL 2849",
+      "battery_size": 630,
+      "battery_chemistry": "li-ion",
+      "rated_power": 250,
+      "max_torque": 85,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "e_vehicle_classifications": [
+            "evc/us/class_1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "SM",
+      "geometry": {
+        "fork_rake": 44,
+        "dropper_travel": 130
+      }
+    },
+    {
+      "name": "MD",
+      "geometry": {
+        "fork_rake": 44,
+        "dropper_travel": 150
+      }
+    },
+    {
+      "name": "LG",
+      "geometry": {
+        "fork_rake": 44,
+        "dropper_travel": 150
+      }
+    },
+    {
+      "name": "XL",
+      "geometry": {
+        "fork_rake": 44,
+        "dropper_travel": 150
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano MT420, 4-piston hydraulic disc, 203/203mm Deore RT30 rotors"
+    },
+    {
+      "type": "brake_lever",
+      "manufacturer": "Shimano",
+      "description": "Shimano MT420 hydraulic disc"
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Rear Cogs",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Deore, Hyperglide, 10-51, 12-speed"
+    },
+    {
+      "type": "chain",
+      "manufacturer": "Shimano",
+      "description": "Shimano M6100 Hyperglide, 12-speed"
+    },
+    {
+      "type": "crankset",
+      "type_detail": "Crank",
+      "manufacturer": "FSA",
+      "description": "FSA E-Bike, 165mm, Shimano 12-speed, 34T",
+      "dimensions": {
+        "length": 165
+      }
+    },
+    {
+      "type": "derailleur",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Deore M6100 SGS"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "manufacturer": "Shimano",
+      "description": "Shimano BT-E8036, 630Wh"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "manufacturer": "Shimano",
+      "description": "Shimano Battery Charger 2A"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "manufacturer": "Shimano",
+      "description": "Shimano SC-EN500"
+    },
+    {
+      "type": "fork",
+      "manufacturer": "RockShox",
+      "description": "RockShox 35 Silver TK, 150mm, Coil, 15x110mm thru-axle, tapered steerer, 44mm offset, rack and fender compatible",
+      "dimensions": {
+        "travel": 150,
+        "offset": 44,
+        "axle_diameter": 15,
+        "axle_spacing": 110
+      }
+    },
+    {
+      "type": "grips_tape",
+      "type_detail": "Grips",
+      "manufacturer": "Cannondale",
+      "description": "Cannondale Locking Grips"
+    },
+    {
+      "type": "handlebar",
+      "manufacturer": "Cannondale",
+      "description": "Cannondale 3 Riser, 6061 Alloy, 15mm rise, 8° sweep, 4° rise, 780mm",
+      "dimensions": {
+        "width": 780,
+        "rise": 15
+      },
+      "angles": {
+        "backsweep": 8
+      }
+    },
+    {
+      "type": "headset",
+      "description": "Integrated, 1-1/8 to 1.5\", sealed bearings"
+    },
+    {
+      "type": "hub",
+      "manufacturer": "Shimano",
+      "description": "(F) Shimano MT400, 15x110mm thru-axle / (R) Shimano MT410, 12x148mm thru-axle"
+    },
+    {
+      "type": "rear_suspension",
+      "type_detail": "Rear Shock",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "RockShox",
+      "description": "RockShox Deluxe Select +, DebonAir, 2-Pos mode adjust, adjustable rebound"
+    },
+    {
+      "type": "rim",
+      "manufacturer": "WTB",
+      "description": "WTB STX i25 TCS, 32h"
+    },
+    {
+      "type": "saddle",
+      "manufacturer": "Cannondale",
+      "description": "Cannondale Stage 3"
+    },
+    {
+      "type": "seatpost",
+      "manufacturer": "TranzX",
+      "description": "TranzX dropper, internal routing, 31.6, 130mm (S), 150mm (M-XL)"
+    },
+    {
+      "type": "shifter",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Deore M6100, 12-speed"
+    },
+    {
+      "type": "spokes",
+      "description": "Stainless Steel, 14g"
+    },
+    {
+      "type": "stem",
+      "manufacturer": "Cannondale",
+      "description": "Cannondale 3, 3D Forged 6061 Alloy, 1-1/8\", 31.8, 6°",
+      "angles": {
+        "angle": 6
+      }
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Maxxis",
+      "description": "Maxxis Rekon, 29x2.6\", EXO",
+      "dimensions": {
+        "width": 66.04,
+        "diameter": 622
+      }
+    }
+  ]
+}

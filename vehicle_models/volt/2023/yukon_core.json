@@ -1,0 +1,278 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/volt/2023/yukon_core",
+  "manufacturer": "Volt Bike",
+  "vehicle_model_group": "Yukon",
+  "model": "Yukon Core",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "mtb",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/volt/2023/yukon_core.jpg",
+  "description": "With the greatest performance, power, and adaptability of any VoltBike model, the Yukon Core is engineered to remove barriers. Featuring the signature cutting-edge M620 mid-Drive system with torque and cadence sensing. The Core has double the torque of our best-selling Yukon 750 model!\nDelivering extremely natural feeling just like a non-motorized bike. Perfect for conquering big hills, or towing a bike trailer.\nComes with a 20 Amp Hour (or larger) Li-ion battery to power this extremely strong motor. We've paired this with hydraulic brakes, a large colour LCD screen and SRAM X5 9 gears clutch rear derailleur, Yukon Core brings absolute versatility and strength.",
+  "first_year": 2023,
+  "years": {
+    "2026": {
+      "original_msrp": 329900,
+      "original_msrp_currency": "CAD",
+      "colorways": [
+        {
+          "name": "Grey",
+          "colors": [
+            "silver"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/volt/2023/yukon_core_grey.jpg",
+          "variants": [
+            {
+              "sku": "yukon-core-b-19.6a",
+              "size": "19\""
+            }
+          ]
+        }
+      ],
+      "url": "https://voltbike.com/products/yukon-core",
+      "url_live": true
+    },
+    "2023": {}
+  },
+  "frame": {
+    "material": "steel",
+    "bottom_bracket": {
+      "spindle": "ISIS"
+    },
+    "seatpost_diameter": 31.6,
+    "max_weight_total": 145
+  },
+  "suspension": {
+    "front": {
+      "travel": 90,
+      "lockout": true
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 559,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 102
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "9_rear"
+  ],
+  "gearing": {
+    "front": [
+      40
+    ]
+  },
+  "groupset": {
+    "manufacturer": "SRAM",
+    "series": "X5",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/bafang/m620_mm_g510_1000_c",
+      "drive_wheel": "rear",
+      "manufacturer": "Bafang",
+      "model": "MM G510.1000.C",
+      "model_group": "M620",
+      "kind": "mid_drive",
+      "spindle": "ISIS",
+      "sensor_cadence": true,
+      "sensor_torque": "bottom_bracket_spindle",
+      "certification": "UL 2271",
+      "water_rating": "IPX5",
+      "battery_size": 940,
+      "battery_chemistry": "li-ion",
+      "rated_power": 1000,
+      "peak_power": 1440,
+      "max_torque": 160,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 80,
+          "e_vehicle_classifications": [
+            "evc/pedal_moped"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Thumb",
+          "e_vehicle_classifications": [
+            "evc/pedal_moped"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "19\"",
+      "geometry": {
+        "reach": 457,
+        "top_tube_effective": 559,
+        "wheelbase": 1207,
+        "standover": 813,
+        "seat_height_min": 927,
+        "seat_height_max": 1041,
+        "dimensions": {
+          "length": 1930
+        },
+        "total_weight": 36.3,
+        "max_weight_rider": 145,
+        "extra_measurements": {
+          "handlebar_height_max": 1181,
+          "handlebar_height_min": 1118
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "bottom_bracket",
+      "manufacturer": "Bafang",
+      "description": "Bafang M620 with integrated torque sensor"
+    },
+    {
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Rust Buster. 12.7mm pin to pin center. 124 links. Total length 1547.8mm",
+      "dimensions": {
+        "length": 1547.8
+      }
+    },
+    {
+      "type": "crankset",
+      "description": "Aluminum Alloy-6061 40T Crank 130 BCD"
+    },
+    {
+      "type": "derailleur",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM X5 9 speed rear derailleur"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "19.6Ah 48V Li-ion Samsung (940Wh) UL 2271 certified. Assembled by Phylion."
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Battery Style: Clip-on"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "Mid-Drive"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "LCD Screen"
+    },
+    {
+      "type": "fork",
+      "manufacturer": "RST",
+      "description": "RST Guide aluminum alloy suspension with lockout function. 90mm travel. 135mm dropout. 32mm stanchions"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "front"
+      ],
+      "description": "Spanninga Kendo+ LED 30 Lux. Powered by the main battery and controlled from the keypad"
+    },
+    {
+      "type": "pedals",
+      "manufacturer": "Wellgo",
+      "description": "Wellgo LU-313 w/ reflectors"
+    },
+    {
+      "type": "rack",
+      "type_detail": "Sturdy Rear Rack",
+      "position": [
+        "rear"
+      ],
+      "description": "Sturdy Rear Rack"
+    },
+    {
+      "type": "seatpost",
+      "type_detail": "Seat Post",
+      "manufacturer": "Promax",
+      "description": "Promax SP-252 Aluminum 6061 Alloy, 31.6mm*350mm",
+      "dimensions": {
+        "length": 350,
+        "diameter": 31.6
+      }
+    },
+    {
+      "type": "shifter",
+      "type_detail": "Shifter Type",
+      "manufacturer": "SRAM",
+      "description": "SRAM X5 trigger shifter"
+    },
+    {
+      "type": "spokes",
+      "description": "Front 255mm 12G, Rear 220mm 13G"
+    },
+    {
+      "type": "stem",
+      "manufacturer": "Promax",
+      "description": "Promax MA-596 w/ adjustable angle 35° - 145°. 105mm extension, bar bore 31.8mm",
+      "dimensions": {
+        "length": 105,
+        "diameter": 31.8
+      },
+      "angles": {
+        "adjustable": {
+          "angle": {
+            "min": 35,
+            "max": 145
+          }
+        }
+      }
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Kenda",
+      "description": "Kenda Juggernaut 26x4 KS Shield, Wire Bead, 30 TPI casing, puncture resistant layer",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 559
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Derailleur Guard",
+      "description": "Rear Metal Derailleur Guard"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Frame Type",
+      "description": "Step-Over"
+    }
+  ]
+}

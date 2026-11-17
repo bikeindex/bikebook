@@ -1,0 +1,138 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/gotrax/2022/eclipse",
+  "manufacturer": "GOTRAX",
+  "vehicle_model_group": "Eclipse",
+  "model": "Eclipse",
+  "model_configuration": "complete",
+  "type": "e_scooter",
+  "propulsion": [
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "first_year": 2022,
+  "years": {
+    "2026": {
+      "original_msrp": 69900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "variants": [
+            {
+              "sku": "GT-ECLIPSE-BLACK-HNCB",
+              "gtin": "810132396144",
+              "size": "One Size"
+            },
+            {
+              "sku": "GT-ECLIPSE-BLACK",
+              "gtin": "810066086135",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://gotrax.com/products/eclipse-electric-scooter",
+      "url_live": true
+    },
+    "2022": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum",
+    "folding": "stem_fold"
+  },
+  "wheels": [
+    {
+      "bsd": 152,
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "brakes": [
+    {
+      "type": "drum_brake",
+      "position": [
+        "front",
+        "rear"
+      ]
+    },
+    {
+      "type": "motor_brake",
+      "position": [
+        "motor"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "certification": "UL 2272",
+      "water_rating": "IPX4",
+      "battery_size": 720,
+      "charging_time": 360,
+      "rated_power": 500,
+      "operating_modes": [
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 51,
+          "throttle_type": "Thumb"
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "total_weight": 24.9,
+        "max_weight_rider": 120
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Front and Rear Wheel Drum Brakes + Electromagnetic Brake"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48V 15Ah"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "42V 2.0A"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "500 Watts"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "LED"
+    },
+    {
+      "type": "lights",
+      "type_detail": "Headlight",
+      "position": [
+        "front"
+      ],
+      "description": "LED"
+    },
+    {
+      "type": "throttle",
+      "description": "Thumb"
+    }
+  ]
+}

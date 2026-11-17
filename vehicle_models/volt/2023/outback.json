@@ -1,0 +1,375 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/volt/2023/outback",
+  "manufacturer": "Volt Bike",
+  "vehicle_model_group": "Outback",
+  "model": "Outback",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "mtb_trail_all_mountain",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/volt/2023/outback.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/volt/2023/outback_geometry.svg",
+  "description": "The Outback offers the ultimate mix between trail and city biking. The power of a Yukon... but with a reliable full-suspension frame design, RockShox rear air shock, and faster rolling tires. All this comes together to make for an exhilarating and comfortable riding experience, all in a very well priced package. Its powerful Bafang 500w (750w peak) motor paired with a 48v 20Ah Li-ion battery (with optional 25Ah upgrade) ensures that your trip can go the full distance at full speed.\nThe Outback is now available in a Large (18.5\" frame with 26 x 3.0 tires) and a smaller (16.5\" frame with 26 x 3.0 tires) for riders as small as 5'3\"\nThe Outback can be built as the FatBack with a 26\" x 4.0 fat tire option. This includes the wider rim we use on the Yukon 750 bikes. This offers extra stability, and also makes it easier to find winter tires in this more common tire size.",
+  "first_year": 2023,
+  "years": {
+    "2026": {
+      "original_msrp": 259900,
+      "original_msrp_currency": "CAD",
+      "colorways": [
+        {
+          "name": "Grey",
+          "colors": [
+            "silver"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/volt/2023/outback.jpg",
+          "variants": [
+            {
+              "sku": "outback-mframe-grey-19.6ah",
+              "size": "16.5\""
+            },
+            {
+              "sku": "outback-mframe-grey-25ah",
+              "size": "16.5\""
+            },
+            {
+              "sku": "outback-lframe-grey-19.6ah",
+              "size": "18.5\"",
+              "original_msrp": 265900
+            },
+            {
+              "sku": "outback-lframe-grey-25ah",
+              "size": "18.5\""
+            }
+          ]
+        },
+        {
+          "name": "Blue",
+          "colors": [
+            "blue"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/volt/2023/outback_blue.jpg",
+          "variants": [
+            {
+              "sku": "outback-mframe-blue-19.6ah",
+              "size": "16.5\""
+            },
+            {
+              "sku": "outback-mframe-blue-25ah",
+              "size": "16.5\""
+            },
+            {
+              "sku": "outback-lframe-blue-19.6ah",
+              "size": "18.5\""
+            },
+            {
+              "sku": "outback-lframe-blue-25ah",
+              "size": "18.5\""
+            }
+          ]
+        }
+      ],
+      "url": "https://voltbike.com/products/outback",
+      "url_live": true
+    },
+    "2023": {}
+  },
+  "frame": {
+    "material": "steel",
+    "seatpost_diameter": 31.6,
+    "max_weight_total": 127
+  },
+  "suspension": {
+    "front": {
+      "lockout": true
+    },
+    "rear": {
+      "spring": "air"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 559,
+      "position": [
+        "front"
+      ],
+      "tire_width": 76
+    },
+    {
+      "bsd": 559,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 76,
+      "cassette_interface": "freewheel"
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "7_rear"
+  ],
+  "gearing": {
+    "front": [
+      44
+    ],
+    "rear": [
+      13,
+      34
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Acera",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "manufacturer": "Bafang",
+      "model": "G06",
+      "kind": "hub_drive",
+      "certification": "UL 2271",
+      "battery_size": 960,
+      "battery_options": [
+        1200
+      ],
+      "battery_chemistry": "li-ion",
+      "battery_info": "Samsung Cells",
+      "rated_power": 500,
+      "peak_power": 750,
+      "max_torque": 80,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 100,
+          "e_vehicle_classifications": [
+            "evc/ca/power_assisted_bicycle"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Twist",
+          "e_vehicle_classifications": [
+            "evc/ca/power_assisted_bicycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "16.5\"",
+      "geometry": {
+        "reach": 432,
+        "top_tube_effective": 559,
+        "wheelbase": 1219,
+        "standover": 787,
+        "seat_height_min": 838,
+        "seat_height_max": 1067,
+        "dimensions": {
+          "length": 1905
+        },
+        "total_weight": 34,
+        "max_weight_rider": 127,
+        "extra_measurements": {
+          "handlebar_height": 1041
+        }
+      }
+    },
+    {
+      "name": "18.5\"",
+      "geometry": {
+        "reach": 508,
+        "top_tube_effective": 610,
+        "wheelbase": 1270,
+        "standover": 787,
+        "seat_height_min": 889,
+        "seat_height_max": 1118,
+        "dimensions": {
+          "length": 1930
+        },
+        "max_weight_rider": 127,
+        "extra_measurements": {
+          "handlebar_height": 1041
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "bottom_bracket",
+      "description": "Neco 910, 23.5mm + 120mm + 23.5mm"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Hydraulic disc brakes front/rear Tektro Auriga HD-E500"
+    },
+    {
+      "type": "brake_lever",
+      "manufacturer": "Tektro",
+      "description": "Tektro Auriga with safety power cut"
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Freewheel Cassette",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SunRace",
+      "description": "Sunrace M2 Freewheel Super-Low 7 Speed 13-34T"
+    },
+    {
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Rust Buster"
+    },
+    {
+      "type": "crankset",
+      "description": "Aluminum Alloy-6061 44T Crank, 170mm with Outer Guard",
+      "dimensions": {
+        "length": 170
+      }
+    },
+    {
+      "type": "derailleur",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Acera RD-410 7 speed direct rear derailler"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48V 20Ah Li-ion Samsung (960Wh) Samsung Cells. UL 2271 certified. Assembled by Phylion."
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Battery Style: Clip-on"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "48v 500W (750W Peak) Bafang G06 Hub Motor"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "Hub Motor"
+    },
+    {
+      "type": "fork",
+      "manufacturer": "RST",
+      "description": "RST Guide aluminum alloy suspension with lockout function. (Upgradeable to RockShox Bluto)"
+    },
+    {
+      "type": "handlebar",
+      "manufacturer": "Promax",
+      "description": "PROMAX ALLUMINUM ALLOY 31.8mm*22.2mm*680mm, 9 degree",
+      "dimensions": {
+        "width": 680
+      }
+    },
+    {
+      "type": "hub",
+      "type_detail": "Hubset",
+      "description": "Alloy 6061 Electric Motor"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "front"
+      ],
+      "description": "Spanninga Kendo+ LED 30 Lux. Powered by the main battery and controlled from the keypad."
+    },
+    {
+      "type": "pedals",
+      "manufacturer": "Wellgo",
+      "description": "Wellgo LU-313 with reflectors"
+    },
+    {
+      "type": "rear_suspension",
+      "position": [
+        "rear"
+      ],
+      "description": "Air Shock RockShox Monarch R. Highly tunable DebonAir™ with rebound adjustment"
+    },
+    {
+      "type": "rim",
+      "description": "26 inch with 36 spokes",
+      "dimensions": {
+        "diameter": 559
+      }
+    },
+    {
+      "type": "saddle",
+      "type_detail": "Seat",
+      "manufacturer": "Velo",
+      "description": "Velo Plush VL-6142"
+    },
+    {
+      "type": "seatpost",
+      "type_detail": "Seat Post",
+      "manufacturer": "Promax",
+      "description": "Promax SP-252 Aluminum 6061 Alloy, 31.6mm*350mm",
+      "dimensions": {
+        "length": 350,
+        "diameter": 31.6
+      }
+    },
+    {
+      "type": "shifter",
+      "type_detail": "Shifter Type",
+      "manufacturer": "Shimano",
+      "description": "Shimano Tourney TX50R6CT Thumb Shifter Plus 7-Speed"
+    },
+    {
+      "type": "spokes",
+      "description": "Rear 13G, Front 13G"
+    },
+    {
+      "type": "stem",
+      "manufacturer": "Promax",
+      "description": "PROMAX Fixed Stem"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Kenda",
+      "description": "Kenda Kiniption 26x3\", Wire Bead, 30 TPI casing, Weight is 1285 g. Tread 2mm in the center.",
+      "dimensions": {
+        "width": 76.2,
+        "diameter": 559
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Derailleur Guard",
+      "description": "Rear Metal Derailleur Guard"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Frame Type",
+      "description": "Step-Over"
+    }
+  ]
+}

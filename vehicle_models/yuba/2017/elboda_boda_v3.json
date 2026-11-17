@@ -1,0 +1,93 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/yuba/2017/elboda_boda_v3",
+  "manufacturer": "Yuba",
+  "vehicle_model_group": "elBoda",
+  "model": "elBoda Boda V3",
+  "model_configuration": "complete",
+  "type": "cargo_bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "cargo",
+  "handlebar_type": "horizontal",
+  "first_year": 2017,
+  "final_year": 2017,
+  "years": {
+    "2017": {
+      "original_msrp": 299900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Green",
+          "colors": [
+            "green"
+          ],
+          "variants": [
+            {
+              "sku": "ELBB16ERWG"
+            }
+          ]
+        },
+        {
+          "name": "Red",
+          "colors": [
+            "red"
+          ],
+          "variants": [
+            {
+              "sku": "ELBB16ERMR"
+            }
+          ]
+        },
+        {
+          "name": "White",
+          "colors": [
+            "white"
+          ],
+          "variants": [
+            {
+              "sku": "ELBB16ERWW"
+            }
+          ]
+        }
+      ],
+      "url": "https://index.commoncrawl.org/CC-MAIN-2017-22/20170527153856/http://yubabikes.com/boda-boda/elboda-boda-v3",
+      "url_live": false
+    }
+  },
+  "frame": {
+    "material": "aluminum"
+  },
+  "motors": [
+    {
+      "manufacturer": "BionX",
+      "battery_size": 557,
+      "battery_chemistry": "li-ion",
+      "max_torque": 40,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "range_claimed": 60,
+          "levels": 5
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        }
+      ]
+    }
+  ],
+  "components": [
+    {
+      "type": "e_vehicle_motor",
+      "manufacturer": "BionX",
+      "description": "BionX"
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/zen/2026/photon_pure",
+  "manufacturer": "Zen",
+  "vehicle_model_group": "Photon",
+  "model": "Photon Pure",
+  "model_configuration": "complete",
+  "markets": [
+    "CA",
+    "US"
+  ],
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/zen/2026/photon_pure.webp",
+  "description": "The Photon Pure is the easiest way into the Photon family — a clean, confident ride made for everyday journeys. It keeps everything that makes a Zen a joy to ride: a smooth, responsive motor that flattens hills and headwinds, dependable braking, and integrated lighting so you’re seen day or night. Whether it’s the school run, a grocery trip or the long way home, the Pure just works — and it’s assembled and supported right here in North America.\nWe obsess over the details you feel every day: a comfortable, upright riding position, tidy cable routing and components chosen to last. Low-maintenance, easy to live with, and ready whenever you are.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 269900,
+      "original_msrp_currency": "CAD",
+      "colorways": [
+        {
+          "name": "Lime Green",
+          "color_code": "#B9D84A",
+          "colors": [
+            "green"
+          ]
+        },
+        {
+          "name": "Starlight White",
+          "color_code": "#F2F2F2",
+          "colors": [
+            "white"
+          ],
+          "variants": [
+            {
+              "sku": "ZEN-PURE",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Carbon Grey",
+          "color_code": "#5B5E63",
+          "colors": [
+            "black",
+            "silver"
+          ]
+        }
+      ],
+      "url": "https://www.zenebikes.com/shop/zen-pure-photon-pure-11",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum",
+    "top_tube": "step_through"
+  },
+  "suspension": {
+    "front": {
+      "travel": 110
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 584,
+      "position": [
+        "front"
+      ],
+      "tire_width": 61,
+      "axle": "thru_axle",
+      "axle_thread_pitch": 1.5
+    },
+    {
+      "bsd": 584,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 61
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "9_rear"
+  ],
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Cues",
+    "description": "Shimano CUES Shadow LinkGlide 9-speed",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "kind": "hub_drive",
+      "sensor_torque": "bottom_bracket_spindle",
+      "certification": "UL 2271",
+      "battery_size": 780,
+      "battery_options": [
+        1040
+      ],
+      "battery_chemistry": "li-ion",
+      "battery_info": "Samsung 2170 cells",
+      "rated_power": 750,
+      "peak_power": 900,
+      "max_torque": 65,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 137,
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/pedal_moped"
+          ],
+          "markets": [
+            "CA"
+          ]
+        },
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 45,
+          "range_claimed": 137,
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/us/class_3"
+          ],
+          "markets": [
+            "US"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 32,
+          "e_vehicle_classifications": [
+            "evc/us/class_2",
+            "evc/pedal_moped"
+          ]
+        }
+      ]
+    }
+  ],
+  "cargo": {
+    "max_weight_cargo": 25
+  },
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "total_weight": 29.5
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Tektro",
+      "description": "Tektro E350 hydraulic disc, 2-piston"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "UL 2271 certified 52V — 780 Wh (15 Ah) or 1040 Wh (20 Ah), Samsung 2170 cells"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "52V 4A smart charger, UL-certified"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "52V 750W geared hub motor with torque sensor (900 W peak)"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "KD-686 LCD with CANbus"
+    },
+    {
+      "type": "fork",
+      "manufacturer": "SR Suntour",
+      "description": "SR Suntour hydraulic fork, 110 mm, thru-axle",
+      "dimensions": {
+        "travel": 110
+      }
+    },
+    {
+      "type": "lights",
+      "description": "Integrated lighting with brake light"
+    },
+    {
+      "type": "rack",
+      "position": [
+        "rear"
+      ],
+      "description": "Integrated, up to 25 kg"
+    },
+    {
+      "type": "throttle",
+      "description": "Up to 32 km/h"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "27.5 x 2.4 in Kenda Kwik Seven Sport, puncture-resistant",
+      "dimensions": {
+        "width": 60.96,
+        "diameter": 584
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Warranty",
+      "description": "1 yr bike, lifetime frame"
+    }
+  ]
+}

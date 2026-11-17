@@ -1,0 +1,418 @@
+{
+  "schema_version": "0.28.0",
+  "id": "m/troxus/2025/trax_suv",
+  "manufacturer": "Troxus",
+  "model": "Trax SUV",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/troxus/2025/trax_suv.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/troxus/2025/trax_suv_geometry.jpg",
+  "description": "The Trax SUV is a premium dual-suspension commuter built for comfort, control, and confidence. Whether you're cruising suburban streets or taking the scenic way home, this powerhouse offers smooth rides, powerful performance, and a sleek, SUV-inspired design. It’s luxury on two wheels, without the fuel bill.",
+  "first_year": 2025,
+  "years": {
+    "2026": {
+      "original_msrp": 259900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Chalk",
+          "colors": [
+            "white"
+          ],
+          "variants": [
+            {
+              "sku": "10870100315",
+              "gtin": "850063567480",
+              "size": "Medium (Step Thru)"
+            }
+          ]
+        },
+        {
+          "name": "Cadet Blue",
+          "colors": [
+            "blue"
+          ],
+          "variants": [
+            {
+              "sku": "10870100317",
+              "size": "Large (Step Over)"
+            }
+          ]
+        }
+      ],
+      "url": "https://www.troxusmobility.com/products/trax-suv-15-750-e-bike",
+      "url_live": true
+    },
+    "2025": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061-T6 Aluminum",
+    "cable_routing": "stealth",
+    "bottom_bracket": {
+      "spindle": "square taper"
+    },
+    "seatpost_diameter": 30.9,
+    "seatpost_clamp_diameter": 35,
+    "max_weight_total": 136
+  },
+  "suspension": {
+    "front": {
+      "travel": 75
+    },
+    "rear": {
+      "shock_length": 165,
+      "shock_stroke": 35,
+      "spring": "air"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 584,
+      "position": [
+        "front"
+      ],
+      "tire_width": 61,
+      "axle": "thru_axle",
+      "axle_diameter": 15,
+      "axle_thread_pitch": 1.5
+    },
+    {
+      "bsd": 584,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 61
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "9_rear"
+  ],
+  "gearing": {
+    "front": [
+      46
+    ],
+    "rear": [
+      11,
+      36
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Cues",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "rear",
+      "manufacturer": "Bafang",
+      "kind": "hub_drive",
+      "sensor_cadence": true,
+      "sensor_torque": "bottom_bracket_spindle",
+      "certification": "UL 2271",
+      "battery_size": 720,
+      "battery_chemistry": "li-ion",
+      "battery_info": "Samsung® Cells",
+      "rated_power": 750,
+      "max_torque": 85,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 45,
+          "range_claimed": 113,
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/us/class_3"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 32,
+          "throttle_type": "Thumb",
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "Medium (Step Thru)",
+      "geometry": {
+        "reach": 455,
+        "stack": 611,
+        "top_tube_effective": 626,
+        "seat_tube_ct": 445,
+        "head_angle": 68,
+        "seat_angle": 74.4,
+        "head_tube": 160,
+        "chainstay": 480,
+        "wheelbase": 1214,
+        "bb_drop": 35,
+        "bb_height": 321,
+        "fork_rake": 44,
+        "fork_length_a2c": 476,
+        "total_weight": 34,
+        "max_weight_rider": 111
+      }
+    },
+    {
+      "name": "Large (Step Over)",
+      "geometry": {
+        "reach": 475,
+        "stack": 616,
+        "top_tube_effective": 647,
+        "seat_tube_ct": 483,
+        "head_angle": 68,
+        "seat_angle": 74.4,
+        "head_tube": 165,
+        "chainstay": 480,
+        "wheelbase": 1236,
+        "bb_drop": 35,
+        "bb_height": 321,
+        "fork_rake": 44,
+        "fork_length_a2c": 476,
+        "max_weight_rider": 111
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "bottom_bracket",
+      "description": "Square Taper Sealed Bearings, Torque & Cadence Sensors Included"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Tektro",
+      "description": "Tektro® Hydraulic, w/ Brake Sensors"
+    },
+    {
+      "type": "brake_rotor",
+      "type_detail": "Rotors",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "180mm / 180mm",
+      "dimensions": {
+        "diameter": 180
+      }
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Cassette",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano® 9-Speed, 11-36T"
+    },
+    {
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC® CUES 9-Spd"
+    },
+    {
+      "type": "crankset",
+      "description": "Aluminum, 46T, w/ Single Alloy Chainguard, Square Taper, 170mm",
+      "dimensions": {
+        "length": 170
+      }
+    },
+    {
+      "type": "derailleur",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano® CUES, 9-Speed"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "UL-2271 Certified / Internal / Removable / Lithium Ion, 48V/15Ah (720Wh) with Samsung® Cells"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "2A / 100-240V Input / 54.6V Output"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang® 48V/750W Hub-Drive Motor, 85Nm Peak Torque"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "Stem-Integrated Color Display, Bluetooth, w/ Turn Signals, w/ Multi-Function Remote"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "48Vx22A/12V"
+    },
+    {
+      "type": "fender",
+      "description": "Alloy, 27.5\"x2.4\", Full Coverage"
+    },
+    {
+      "type": "fork",
+      "manufacturer": "SR Suntour",
+      "description": "Suntour® Front Suspension Fork, MOBIE-A32, 75mm Travel",
+      "dimensions": {
+        "travel": 75
+      }
+    },
+    {
+      "type": "grips_tape",
+      "type_detail": "Grips",
+      "description": "Ergonomic Comfort"
+    },
+    {
+      "type": "handlebar",
+      "description": "Alloy, 31.8mmx680mm Wide, 25mm Rise, 9 Deg. Backsweep",
+      "dimensions": {
+        "width": 680,
+        "diameter": 31.8,
+        "rise": 25
+      }
+    },
+    {
+      "type": "headset",
+      "description": "ICR Type, Threadless, Internal 57/62mm, w/ Internal Cable Routing"
+    },
+    {
+      "type": "hub",
+      "position": [
+        "front"
+      ],
+      "description": "Sealed Bearing, O.L.D. 100mm, 15mm Thru-Axle",
+      "dimensions": {
+        "axle_diameter": 15
+      }
+    },
+    {
+      "type": "hub",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Bafang",
+      "description": "Bafang® 48V 750W/ 28 MPH. 85Nm"
+    },
+    {
+      "type": "kickstand",
+      "description": "Adjustable Side Kickstand"
+    },
+    {
+      "type": "lights",
+      "description": "Front Light & Rear Light"
+    },
+    {
+      "type": "pedals",
+      "description": "9/16″ Alloy Platform with Reflectors"
+    },
+    {
+      "type": "rack",
+      "description": "Lightweight Semi-Integrated Alloy Rear Model / MIK-Compatible Rear Rack"
+    },
+    {
+      "type": "rear_suspension",
+      "type_detail": "Rear Shocks",
+      "position": [
+        "rear"
+      ],
+      "description": "DNM AO-38RC Air Shock, 165x35mm Travel",
+      "dimensions": {
+        "length": 165,
+        "travel": 35
+      }
+    },
+    {
+      "type": "rim",
+      "description": "Alloy, Double Wall Front & Rear, 36H, w/ Eyelets"
+    },
+    {
+      "type": "saddle",
+      "manufacturer": "Troxus",
+      "description": "Troxus Comfort / 200mm Wide",
+      "dimensions": {
+        "width": 200
+      }
+    },
+    {
+      "type": "seatpost",
+      "type_detail": "Seat Post",
+      "description": "Alloy, 30.9x200 / 250mm",
+      "dimensions": {
+        "length": 200,
+        "diameter": 30.9
+      }
+    },
+    {
+      "type": "seatpost_clamp",
+      "type_detail": "Seat Post Clamp",
+      "description": "Alloy, 35mm w/ Quick Release",
+      "dimensions": {
+        "diameter": 35
+      }
+    },
+    {
+      "type": "sensor",
+      "description": "Switchable Torque And Cadence Sensor Modes"
+    },
+    {
+      "type": "shifter",
+      "manufacturer": "Shimano",
+      "description": "Shimano® CUES 9-Speed"
+    },
+    {
+      "type": "spokes",
+      "description": "Stainless 14G. Front / 13G. Rear"
+    },
+    {
+      "type": "stem",
+      "description": "Alloy, Forged, Adjustable, w/ Integrated Display / Ext. 110mm, w/ Internal Cable Routing",
+      "dimensions": {
+        "length": 110
+      }
+    },
+    {
+      "type": "throttle",
+      "description": "Thumb Throttle on Handlebar"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Kenda",
+      "description": "KENDA® 27.5x2.4\", w/ Reflective Stripes",
+      "dimensions": {
+        "width": 60.96,
+        "diameter": 584
+      }
+    }
+  ]
+}
