@@ -10,4 +10,4 @@ The first time you open a pull request, the CLA Assistant bot comments on it wit
 
 ## Making a change
 
-Each data file has to pass the checks `cargo test` runs: `AGENTS.md` describes how the files are laid out and what's checked. CI runs them on every pull request.
+CI checks every data file on each pull request. `AGENTS.md` describes how the files are laid out, what's checked and how to run the checks yourself.
