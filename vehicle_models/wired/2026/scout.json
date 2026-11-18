@@ -1,0 +1,309 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/wired/2026/scout",
+  "manufacturer": "Wired",
+  "model": "Scout",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "mtb",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/wired/2026/scout.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/wired/2026/scout_geometry.png",
+  "description": "Introducing the Wired Scout - the step-thru version of our powerful Wired Warrior! UL2849 certified with UL2271 certified batteries, featuring the same exclusive 2000W Hengtai geared motor in an accessible, easy-to-mount frame design.\n\nThe Scout delivers approximately 5000W at peak power with dual 72V high-discharge Samsung batteries that provide exceptional range and performance when you need it most.\n\nStep-Thru Frame with Full Dual Suspension: Easy mounting with front and rear suspension for maximum comfort\n\nPerfect For\n\nThe Scout combines the accessibility of a step-thru frame with the raw power of our Warrior platform and the safety of UL2849/UL2271 certifications. Whether you're commuting daily or exploring off-road trails, the dual suspension system and powerful motor make every ride comfortable and exhilarating. The step-thru design makes it ideal for riders of all ages and abilities.\n\nWhy Choose the Scout?\n\nGet the same powerful performance as the Warrior in a more accessible step-thru package with industry-leading safety certifications. The exclusive Hengtai motor and dual 72V Samsung battery system deliver uncompromising power, while the step-thru frame, dual suspension, and UL2849/UL2271 certifications ensure comfort, ease of use, and peace of mind for every rider.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 279900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Graphite",
+          "colors": [
+            "silver"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/scout_graphite.png",
+          "variants": [
+            {
+              "sku": "SG09-26",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "White",
+          "colors": [
+            "white"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/scout_white.png",
+          "variants": [
+            {
+              "sku": "SW08-26",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Blue",
+          "colors": [
+            "blue"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/scout_blue.png",
+          "variants": [
+            {
+              "sku": "SB08-26",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Camo",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/scout_camo.png",
+          "variants": [
+            {
+              "sku": "SC11-26",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Wicked Red",
+          "colors": [
+            "red"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/scout.png",
+          "variants": [
+            {
+              "sku": "SR08-26",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://wiredebikes.com/products/wired-scout",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum",
+    "top_tube": "step_through"
+  },
+  "suspension": {
+    "front": {
+      "travel": 75
+    },
+    "rear": {
+      "shock_length": 190,
+      "shock_stroke": 50,
+      "lockout": true
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 559,
+      "position": [
+        "front"
+      ],
+      "tire_width": 102,
+      "axle": "thru_axle",
+      "axle_thread_pitch": 1.5
+    },
+    {
+      "bsd": 559,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 102,
+      "cassette_interface": "freewheel"
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "7_rear"
+  ],
+  "gearing": {
+    "front": [
+      56
+    ],
+    "rear": [
+      11,
+      34
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "description": "7-speed Shimano",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 203
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "rear",
+      "kind": "hub_drive",
+      "sensor_cadence": true,
+      "sensor_torque": "bottom_bracket_spindle",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 2520,
+        "voltage": 72,
+        "chemistry": "li-ion",
+        "cells": "21700"
+      },
+      "rated_power": 2000,
+      "peak_power": 5000,
+      "max_torque": 180,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 145,
+          "levels": 9,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 32,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        },
+        {
+          "mode": "assist",
+          "availability": "app_update",
+          "max_speed": 72,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "wheelbase": 1295,
+        "bb_height": 320,
+        "seat_height_min": 808,
+        "seat_height_max": 899,
+        "dimensions": {
+          "length": 2070
+        },
+        "total_weight": 65.8,
+        "rider_height_min": 1575,
+        "rider_height_max": 1981,
+        "extra_measurements": {
+          "handlebar_height": 1245,
+          "rear_rack_height": 860,
+          "step_through_height": 572
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "4-piston Gemma hydraulic brakes with large 203mm rotors offer confident stopping power at high speeds. Be confident at any speed."
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "11-34T rear freewheel"
+    },
+    {
+      "type": "crankset",
+      "type_detail": "Chainring",
+      "description": "Prowheel 56t with double chain cover. 170mm crank arm",
+      "dimensions": {
+        "length": 170
+      }
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "72V 20Ah front + 72V 15Ah rear batteries (total ~35Ah). Samsung High Discharge 21700 lithium cells (50-S 21700) for reliable, long-life performance (2520Wh total)"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "72V Hentach 2000W nominal brushless geared hub motor that produces a peak output of over 5000W and 180Nm of torque for incredible acceleration and climbing ability. Wired Ebikes has earned sole exclusivity on the most powerful geared hub motor available"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "Full color customizable display screen. Select class mode, power output and much more; USB-C phone charger (Android and Apple iphone 14 or earlier) conveniently located on power button cluster"
+    },
+    {
+      "type": "fork",
+      "manufacturer": "RST",
+      "description": "RST Guide with 75mm of travel. Thru-Axle quick release for safety and convenience",
+      "dimensions": {
+        "travel": 75
+      }
+    },
+    {
+      "type": "rear_suspension",
+      "type_detail": "Rear shock",
+      "position": [
+        "rear"
+      ],
+      "description": "DNM AO-8RC 190mm x 50mm with lockout",
+      "dimensions": {
+        "length": 190,
+        "travel": 50
+      }
+    },
+    {
+      "type": "throttle",
+      "description": "Unique to Wired Ebikes, we now offer a completely customizable throttle. In the display settings, easily limit the power in which the throttle provides. Simply select the percentage that you are comfortable with!"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Innova",
+      "description": "Innova 26x4 Fat Tires. Puncture resistant and rated for higher speeds",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 559
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "Our exclusive Patriot System Controller produces an output of over 65 amps and 5000W"
+    }
+  ]
+}

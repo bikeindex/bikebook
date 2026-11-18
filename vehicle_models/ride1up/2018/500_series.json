@@ -104,6 +104,7 @@
       "sensor_cadence": true,
       "battery": {
         "capacity": 624,
+        "voltage": 48,
         "chemistry": "li-ion",
         "cells": "LG"
       },
@@ -178,10 +179,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V22A Lishui Sine-wave (potential peak output of 1000w)"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "KD21C Adjustable Speed LCD"
     },
     {
@@ -223,7 +220,10 @@
     {
       "type": "seatpost",
       "type_detail": "Seat Post",
-      "description": "XR 27.2mm diameter, ST 28.6mm diameter, x350mm Adjustable Angle Seat Post"
+      "description": "XR 27.2mm diameter, ST 28.6mm diameter, x350mm Adjustable Angle Seat Post",
+      "dimensions": {
+        "length": 350
+      }
     },
     {
       "type": "shifter",
@@ -280,6 +280,11 @@
         "width": 55.88,
         "diameter": 584
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V22A Lishui Sine-wave (potential peak output of 1000w)"
     }
   ]
 }
