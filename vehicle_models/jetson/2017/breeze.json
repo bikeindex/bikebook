@@ -1,0 +1,168 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/jetson/2017/breeze",
+  "manufacturer": "Jetson",
+  "model_group": "Breeze",
+  "model": "Breeze",
+  "model_configuration": "complete",
+  "type": "e_scooter",
+  "propulsion": [
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/jetson/2017/breeze.png",
+  "first_year": 2017,
+  "years": {
+    "2026": {
+      "original_msrp": 99999,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2017/breeze.png"
+        }
+      ],
+      "url": "https://ridejetson.com/products/breeze-folding-electric-scooter",
+      "url_live": true
+    },
+    "2017": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "folding": "stem_fold"
+  },
+  "wheels": [
+    {
+      "bsd": 152,
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "brakes": [
+    {
+      "type": "linear_pull",
+      "position": [
+        "front"
+      ],
+      "caliper_mount": "Brake Bosses"
+    },
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "kind": "hub_drive",
+      "battery": {
+        "capacity": 317,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
+      "rated_power": 250,
+      "operating_modes": [
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 29,
+          "range_claimed": 32,
+          "max_slope": 20,
+          "throttle_type": "Thumb"
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 147
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "dimensions": {
+          "length": 1092,
+          "width": 508,
+          "height": 1118
+        },
+        "total_weight": 15.4,
+        "rider_age_min": 13,
+        "extra_measurements": {
+          "handlebar_height_max": 965,
+          "handlebar_height_min": 610
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "bell_noisemaker",
+      "type_detail": "Bell"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Front v-brake & rear disc brake"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "36V, 8.8Ah rechargeable lithium-ion"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Removable Battery: No"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "250 watt brushless hub motor"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "Backlit LCD with speed odometer & battery meter"
+    },
+    {
+      "type": "kickstand"
+    },
+    {
+      "type": "lights",
+      "description": "LED headlight & brake light"
+    },
+    {
+      "type": "throttle",
+      "type_detail": "Throttle Type",
+      "description": "Thumb throttle"
+    },
+    {
+      "type": "tire",
+      "type_detail": "Tire Type",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Pneumatic"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Deck Size",
+      "description": "28\" x 9.5\""
+    },
+    {
+      "type": "unknown",
+      "type_detail": "SKU",
+      "description": "JMY3000-BLK"
+    }
+  ]
+}

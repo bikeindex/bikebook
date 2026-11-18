@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/heybike/2026/titan",
+  "manufacturer": "Heybike",
+  "model": "Titan",
+  "model_configuration": "complete",
+  "type": "bike",
+  "type_detail": "bench_seat",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/heybike/2026/titan.png",
+  "description": "Moto-inspired. Full suspension. Up to 80 miles with dual batteries.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 149900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "White",
+          "colors": [
+            "white"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/heybike/2026/titan.png",
+          "variants": [
+            {
+              "sku": "HB1TitanUSWH1A",
+              "gtin": "751390575813",
+              "size": "One Size"
+            },
+            {
+              "sku": "HB1TitanUSWH2A",
+              "gtin": "751390575837",
+              "size": "One Size",
+              "original_msrp": 179900
+            }
+          ]
+        },
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/heybike/2026/titan_black.png",
+          "variants": [
+            {
+              "sku": "HB1TitanUSBK1A",
+              "gtin": "751390575806",
+              "size": "One Size"
+            },
+            {
+              "sku": "HB1TitanUSBK2A",
+              "gtin": "751390575820",
+              "size": "One Size",
+              "original_msrp": 179900
+            }
+          ]
+        }
+      ],
+      "url": "https://www.heybike.com/products/titan",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "steel",
+    "coil_compatible": true
+  },
+  "suspension": {
+    "front": {
+      "travel": 80
+    },
+    "rear": {
+      "travel": 55,
+      "spring": "coil"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 102
+    }
+  ],
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "certifications": [
+        "UL 2849"
+      ],
+      "water_rating": "IPX4",
+      "battery": {
+        "capacity": 720,
+        "capacity_options": [
+          1440
+        ],
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
+      "rated_power": 750,
+      "peak_power": 1500,
+      "max_torque": 65,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 64,
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "rider_height_min": 1600,
+        "rider_height_max": 1905
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Hydraulic Brakes"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48V 15Ah Lithium Battery(720Wh ×2, Total 1440Wh)"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "750W Rated / 1500W Peak"
+    },
+    {
+      "type": "fork",
+      "type_detail": "Front Suspension",
+      "position": [
+        "front"
+      ],
+      "description": "Hydraulic Fork, 80 mm Travel",
+      "dimensions": {
+        "travel": 80
+      }
+    },
+    {
+      "type": "rear_suspension",
+      "position": [
+        "rear"
+      ],
+      "description": "Spring Suspension, 55 mm Travel"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "20 × 4.0\" Fat Tires",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 406
+      }
+    }
+  ]
+}

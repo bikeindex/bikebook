@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/fission/2023/hellbender_max",
+  "manufacturer": "Fission",
+  "model": "Hellbender Max",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "mtb",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/fission/2023/hellbender_max.jpg",
+  "description": "A high-torque, heavy-duty utility vehicle built to conquer the steepest mountain ascents. Anchored by a 1000W Bafang Ultra-Drive motor delivering 160 N·m of raw climbing torque, the Hellbender Max handles massive payloads across challenging backcountry terrain. Featuring a premium dual-air suspension system, high-capacity LG battery, intelligent Bafang DP C18 color dashboard, precision SRAM NX 1x11 drivetrain, and heavy-gauge DYISLAND quad-piston hydraulic brakes, it provides relentless power and reliability for deep-woods access.",
+  "first_year": 2023,
+  "years": {
+    "2026": {
+      "original_msrp": 489900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Shadow Grass",
+          "variants": [
+            {
+              "sku": "HB1000FCAM2L23",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Bottomland",
+          "variants": [
+            {
+              "sku": "HB1000FCAM1L23",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://fissioncycles.com/product/fission-hellbender-max/",
+      "url_live": true
+    },
+    "2023": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Premium Aluminum",
+    "bottom_bracket": {
+      "spindle": "ISIS"
+    }
+  },
+  "suspension": {
+    "front": {
+      "spring": "air"
+    },
+    "rear": {
+      "spring": "air"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 559,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 122
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "11_rear"
+  ],
+  "groupset": {
+    "manufacturer": "SRAM",
+    "series": "NX",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/bafang/m620_mm_g510_1000_c",
+      "drive_wheel": "rear",
+      "manufacturer": "Bafang",
+      "model": "MM G510.1000.C",
+      "model_group": "M620",
+      "kind": "mid_drive",
+      "spindle": "ISIS",
+      "sensor_cadence": true,
+      "sensor_torque": "bottom_bracket_spindle",
+      "certifications": [
+        "UL 2849",
+        "CE"
+      ],
+      "water_rating": "IPX5",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
+      "rated_power": 1000,
+      "peak_power": 1440,
+      "max_torque": 160,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 45,
+          "range_claimed": 105,
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Thumb",
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "total_weight": 45.4
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "type_detail": "Brake System",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "DYISLAND™ LD4X-300 Hydraulic Disc Assembly"
+    },
+    {
+      "type": "brake_lever",
+      "description": "DYISLAND™ LDN Series with Electronic Motor Cut-Off"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "LG 48V / 20 AH (High-Density Cells)"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang 48V / 1000W Ultra-Drive Mid-Drive (G510)"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "manufacturer": "Bafang",
+      "description": "Bafang DP C18.U 4.2 Intelligent Full-Color LCD Dashboard"
+    },
+    {
+      "type": "fork",
+      "type_detail": "Front Suspension",
+      "position": [
+        "front"
+      ],
+      "description": "EXSHO Inverted Air Fork (Adjustable Damping)"
+    },
+    {
+      "type": "rear_suspension",
+      "position": [
+        "rear"
+      ],
+      "description": "Fastace Rear Air Shock (Piggyback Reservoir)"
+    },
+    {
+      "type": "sensor",
+      "type_detail": "Drive Sensor",
+      "description": "Precision Real-Time Torque Sensing"
+    },
+    {
+      "type": "shifter",
+      "type_detail": "Gearing Array",
+      "manufacturer": "SRAM",
+      "description": "SRAM NX 11-Speed 1x Mountain Drivetrain"
+    },
+    {
+      "type": "shifter",
+      "type_detail": "Shift Technology",
+      "description": "X-ACTUATION™ Precise Cable Pull Ratio"
+    },
+    {
+      "type": "tire",
+      "type_detail": "Tire Profile",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Maxxis",
+      "description": "Maxxis Minion 26″ × 4.8″ (Ultra-High Volume Fat Tires)",
+      "dimensions": {
+        "width": 121.92,
+        "diameter": 559
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Caliper Type",
+      "description": "4-Piston Opposing Layout with Thick-Gauge Rotors"
+    }
+  ]
+}

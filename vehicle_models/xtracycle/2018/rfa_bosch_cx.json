@@ -1,0 +1,357 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/xtracycle/2018/rfa_bosch_cx",
+  "manufacturer": "Xtracycle",
+  "model_group": "RFA",
+  "model": "RFA Bosch CX",
+  "model_configuration": "complete",
+  "type": "cargo_bike_rear",
+  "type_detail": "long_tail",
+  "propulsion": [
+    "pedal_assist"
+  ],
+  "primary_activity": "cargo",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/xtracycle/2018/rfa_bosch_cx.jpg",
+  "first_year": 2018,
+  "final_year": 2018,
+  "years": {
+    "2018": {
+      "colorways": [
+        {
+          "name": "Sunrise Yellow (Glossy)",
+          "colors": [
+            "yellow"
+          ]
+        },
+        {
+          "name": "Midnight Black (Glossy)",
+          "colors": [
+            "black"
+          ]
+        }
+      ],
+      "url": "https://xtracycle.com/pages/legacy-model-geometry-spec",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "steel",
+    "material_detail": "4130 Chromoly Steel",
+    "cable_routing": "external",
+    "seatpost_clamp_diameter": 34.9
+  },
+  "wheels": [
+    {
+      "bsd": 507,
+      "position": [
+        "front"
+      ],
+      "tire_width": 64,
+      "axle": "thru_axle",
+      "axle_diameter": 15,
+      "axle_thread_pitch": 1.5
+    },
+    {
+      "bsd": 507,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 64,
+      "axle": "bolt_on",
+      "axle_diameter": 10,
+      "axle_spacing": 168
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "9_rear"
+  ],
+  "gearing": {
+    "front": [
+      18
+    ],
+    "rear": [
+      11
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Acera",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "rear",
+      "manufacturer": "Bosch",
+      "model": "CX",
+      "model_group": "Performance Line CX",
+      "kind": "mid_drive",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
+      "rated_power": 250,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "e_vehicle_classifications": [
+            "evc/us/class_1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "reach": 370,
+        "stack": 670,
+        "top_tube_effective": 560,
+        "top_tube_ctc": 565,
+        "seat_tube_ctc": 468,
+        "head_tube": 230,
+        "chainstay": 648,
+        "wheelbase": 1257,
+        "fork_length_a2c": 422,
+        "total_weight": 29,
+        "extra_measurements": {
+          "actual_length": 1930,
+          "deck_height": 686,
+          "deck_length": 635,
+          "step_over_height": 570
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano BR-MT 400 Hydraulic"
+    },
+    {
+      "type": "brake_lever",
+      "manufacturer": "Shimano",
+      "description": "Shimano BR-MT 400 Hydraulic"
+    },
+    {
+      "type": "brake_rotor",
+      "type_detail": "Front rotor",
+      "position": [
+        "front"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano SM-RT56M, 180mm",
+      "dimensions": {
+        "diameter": 180
+      }
+    },
+    {
+      "type": "brake_rotor",
+      "type_detail": "Rear rotor",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano SM-RT56M, 180mm",
+      "dimensions": {
+        "diameter": 180
+      }
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Cassette",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SunRace",
+      "description": "SunRace CSMS2 TAY 9 speed, Fluid Drive Plus, 11 tooth – 42 tooth"
+    },
+    {
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC X10E for E-Bikes"
+    },
+    {
+      "type": "crankset",
+      "type_detail": "Crank",
+      "manufacturer": "FSA",
+      "description": "FSA CK-745 for Bosch, 170mm, 18 tooth cog (Performance, CX)",
+      "dimensions": {
+        "length": 170
+      }
+    },
+    {
+      "type": "derailleur",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Acera RD-M3000, 10 speed Shadow Plus Design"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "manufacturer": "Bosch",
+      "description": "Bosch 400wH (single), 500wH (single), 800wH (dual 400wH), 1000wH (dual 500wH)"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "manufacturer": "Bosch",
+      "description": "Bosch 2A Compact Charger (for single battery) or 4A Standard Charger (for dual battery)"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "manufacturer": "Bosch",
+      "description": "Bosch CX (Class 1 – 20mph max)"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "manufacturer": "Bosch",
+      "description": "Bosch Purion or Kiox"
+    },
+    {
+      "type": "fork",
+      "type_detail": "Fork material",
+      "description": "4130 Chromoly Steel"
+    },
+    {
+      "type": "grips_tape",
+      "type_detail": "Grips",
+      "manufacturer": "Ergon",
+      "description": "ERGON GP10-S-SD 30x130mm"
+    },
+    {
+      "type": "handlebar",
+      "manufacturer": "Xtracycle",
+      "description": "Xtracycle Comfort Handlebar"
+    },
+    {
+      "type": "headset",
+      "manufacturer": "FSA",
+      "description": "FSA Mallet"
+    },
+    {
+      "type": "hub",
+      "position": [
+        "front"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Deore XT HB-M8010, 15 mm thru axle)",
+      "dimensions": {
+        "axle_diameter": 15
+      }
+    },
+    {
+      "type": "hub",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Acera FH-M3050, 168mm bolt-on (RFA Sport) / Formula DC-32 36h, 135mm x 10mm (RFA Utility)",
+      "dimensions": {
+        "axle_diameter": 10,
+        "axle_spacing": 135
+      }
+    },
+    {
+      "type": "kickstand",
+      "description": "Ursus 80 Jumbo Double Leg Kickstand, 300mm"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "front"
+      ],
+      "description": "Herrmans H-Black MR8 E 6-12V"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "rear"
+      ],
+      "description": "Herrmans H-Trace Dynamo"
+    },
+    {
+      "type": "rack",
+      "type_detail": "RearRack",
+      "description": "Sport MultiRack (Sport) / Utility MultiRack (Utility)"
+    },
+    {
+      "type": "rack",
+      "type_detail": "Rear MultiRack",
+      "position": [
+        "rear"
+      ],
+      "description": "Sport MultiRack (Sport) / Utility MultiRack (Utility)"
+    },
+    {
+      "type": "rim",
+      "description": "24″ Alex MD-40/36H double-walled",
+      "dimensions": {
+        "diameter": 507
+      }
+    },
+    {
+      "type": "saddle",
+      "manufacturer": "Xtracycle",
+      "description": "Xtracycle Comfort Saddle"
+    },
+    {
+      "type": "seatpost",
+      "type_detail": "Seat post",
+      "description": "300mm (small), 400mm (medium), or 450mm (large)"
+    },
+    {
+      "type": "seatpost_clamp",
+      "type_detail": "Seat clamp (collar)",
+      "description": "Qbest-PrimeAero 6061 aluminum 34.9mm quick release",
+      "dimensions": {
+        "diameter": 34.9
+      }
+    },
+    {
+      "type": "shifter",
+      "manufacturer": "Shimano",
+      "description": "Shimano Deore SL-T6000 10 speed Rapidfire Plus"
+    },
+    {
+      "type": "spokes",
+      "description": "14/15 gauge stainless, with PB15 14L brass nipples"
+    },
+    {
+      "type": "stem",
+      "description": "60mm (small), 90mm (medium), or 120mm (large)"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Maxxis",
+      "description": "Maxxis Hookworm 24″ x 2.5″",
+      "dimensions": {
+        "width": 63.5,
+        "diameter": 507
+      }
+    }
+  ]
+}

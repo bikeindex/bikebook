@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/yuba/2025/fastrack",
+  "manufacturer": "Yuba",
+  "model_group": "FastRack",
+  "model": "FastRack",
+  "model_configuration": "complete",
+  "type": "cargo_bike",
+  "propulsion": [
+    "pedal_assist"
+  ],
+  "primary_activity": "cargo",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/yuba/2025/fastrack.png",
+  "description": "Smooth handling, compact design – THE perfect city blend.",
+  "first_year": 2025,
+  "years": {
+    "2026": {
+      "original_msrp": 399900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Espresso",
+          "colors": [
+            "brown"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/yuba/2025/fastrack_espresso.png",
+          "variants": [
+            {
+              "sku": "FR-25S10BKUS",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Latte",
+          "stock_photo": "https://bikebook.bikeindex.org/yuba/2025/fastrack.png",
+          "variants": [
+            {
+              "sku": "FR-25S10BEUS",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://yubabikes.com/product/fastrack/",
+      "url_live": true
+    },
+    "2025": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "bottom_bracket": {
+      "spindle": "Shimano E8000"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 61
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "10_rear"
+  ],
+  "gearing": {
+    "rear": [
+      11,
+      36
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/shimano/2018/e7000_du_e7000",
+      "drive_wheel": "rear",
+      "manufacturer": "Shimano",
+      "model": "DU-E7000",
+      "model_group": "E7000",
+      "kind": "mid_drive",
+      "spindle": "Shimano E8000",
+      "sensor_cadence": true,
+      "certifications": [
+        "EN 15194"
+      ],
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
+      "rated_power": 250,
+      "max_torque": 60,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "e_vehicle_classifications": [
+            "evc/us/class_1"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "dimensions": {
+          "length": 1880
+        },
+        "total_weight": 34.5,
+        "rider_height_min": 1448,
+        "rider_height_max": 1880
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Hydraulic Disk Brakes - Magura"
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Cassette",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 10-Speed 11-36T"
+    },
+    {
+      "type": "derailleur",
+      "manufacturer": "Shimano",
+      "description": "Shimano 10-Speed"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "manufacturer": "Shimano",
+      "description": "Shimano Steps E7000 - 500Wh Battery"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Schwalbe",
+      "description": "Schwalbe 20” x 2.4” width",
+      "dimensions": {
+        "width": 60.96,
+        "diameter": 406
+      }
+    },
+    {
+      "type": "wheel",
+      "description": "Alloy Double Wall, 36 spokes Front & Rear"
+    }
+  ]
+}

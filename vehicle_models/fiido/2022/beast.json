@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/fiido/2022/beast",
+  "manufacturer": "Fiido",
+  "model": "Beast",
+  "model_configuration": "complete",
+  "type": "e_scooter",
+  "propulsion": [
+    "throttle"
+  ],
+  "primary_activity": "dirt_travel",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/fiido/2022/beast.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/fiido/2022/beast_geometry.jpg",
+  "description": "No longer just a simple standing experience.",
+  "first_year": 2022,
+  "years": {
+    "2026": {
+      "original_msrp": 239900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "B1-32B-US",
+              "gtin": "6971957790723",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://fiido.com/products/fiido-beast-electric-scooter",
+      "url_live": true
+    },
+    "2022": {}
+  },
+  "frame": {
+    "material": "magnesium",
+    "folding": "stem_fold"
+  },
+  "wheels": [
+    {
+      "bsd": 165,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 90
+    }
+  ],
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    },
+    {
+      "type": "motor_brake",
+      "position": [
+        "motor"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "front",
+      "battery": {
+        "capacity": 1536,
+        "chemistry": "li-ion",
+        "charging_time": 660
+      },
+      "rated_power": 500,
+      "operating_modes": [
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 45,
+          "range_claimed": 70,
+          "operating_temperature": {
+            "min": -10,
+            "max": 50
+          }
+        }
+      ]
+    },
+    {
+      "drive_wheel": "rear",
+      "battery": {
+        "capacity": 1536,
+        "chemistry": "li-ion",
+        "charging_time": 660
+      },
+      "rated_power": 800,
+      "operating_modes": [
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 45,
+          "range_claimed": 70,
+          "operating_temperature": {
+            "min": -10,
+            "max": 50
+          }
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "seat_height_min": 445,
+        "seat_height_max": 445,
+        "dimensions": {
+          "length": 1310,
+          "width": 710,
+          "height": 1200
+        },
+        "dimensions_folded": {
+          "length": 1310,
+          "width": 710,
+          "height": 570
+        },
+        "total_weight": 38.8,
+        "rider_height_min": 1500,
+        "rider_height_max": 2000,
+        "extra_measurements": {
+          "handlebar_height": 1030,
+          "handlebar_height_max": 1200
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "type_detail": "Brake system",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Dual hydraulic brake + electronic brake"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48V 1536Wh"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Battery type: High quality lithium battery"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "100~240V"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "manufacturer": "Fiido",
+      "description": "Fiido system"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "LED display with USB charging port"
+    },
+    {
+      "type": "tire",
+      "type_detail": "Tire size",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "11 inch (90/65-6.5)",
+      "dimensions": {
+        "diameter": 165
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Security system",
+      "manufacturer": "Fiido",
+      "description": "Fiido unique keyless security system"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Riding mode",
+      "description": "E-scooter mode + Go-kart mode"
+    }
+  ]
+}

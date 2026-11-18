@@ -1,0 +1,329 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/volt/2023/mariner_v2",
+  "manufacturer": "Volt Bike",
+  "model_group": "Mariner",
+  "model": "Mariner V2",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "mtb_trail_all_mountain",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/volt/2023/mariner_v2.jpg",
+  "description": "The Mariner V2 is our latest foldable eBike, featuring premium components such as hydraulic brakes, a powerful 500W (750W peak) motor, and standard Color LCD display with a USB charge port.\nIf you want the fun and power of the Yukon V2 in a smaller package, the Mariner V2 is perfect for you. It features the same powerful motor as the Yukon V2 but in a lighter frame with smaller, 20” diameter, 4” wide wheels. Ideal for trails, off-road adventures, and city trips, the motor offers 9 levels of pedal assist to help you conquer hills effortlessly.\nThis comfortable ride suits individuals 5’2” and taller, supporting up to 280 lbs. The strong frame and sturdy wheels are complemented by a 14Ah battery, tested to UL 2271 safety standards, offering a range of 50 to 60km on easy terrain.",
+  "first_year": 2023,
+  "years": {
+    "2026": {
+      "original_msrp": 234900,
+      "original_msrp_currency": "CAD",
+      "colorways": [
+        {
+          "name": "Grey",
+          "colors": [
+            "silver"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/volt/2023/mariner_v2_grey.jpg",
+          "variants": [
+            {
+              "sku": "mariner-v2-g",
+              "size": "16\""
+            }
+          ]
+        },
+        {
+          "name": "Red",
+          "colors": [
+            "red"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/volt/2023/mariner_v2.jpg"
+        },
+        {
+          "name": "White",
+          "colors": [
+            "white"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/volt/2023/mariner_v2_white.jpg",
+          "variants": [
+            {
+              "sku": "mariner-v2-w",
+              "size": "16\""
+            }
+          ]
+        }
+      ],
+      "url": "https://voltbike.com/products/mariner-v2",
+      "url_live": true
+    },
+    "2023": {}
+  },
+  "frame": {
+    "material": "steel",
+    "top_tube": "step_through",
+    "folding": "half_fold",
+    "seatpost_diameter": 31.6
+  },
+  "suspension": {
+    "front": {
+      "travel": 120
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front"
+      ],
+      "tire_width": 102
+    },
+    {
+      "bsd": 406,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 102,
+      "cassette_interface": "freewheel"
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "7_rear"
+  ],
+  "gearing": {
+    "front": [
+      44
+    ],
+    "rear": [
+      13,
+      34
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Acera",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "manufacturer": "Bafang",
+      "model": "G06",
+      "kind": "hub_drive",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion"
+      },
+      "rated_power": 500,
+      "peak_power": 750,
+      "max_torque": 80,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 60,
+          "levels": 9,
+          "e_vehicle_classifications": [
+            "evc/ca/power_assisted_bicycle"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Twist",
+          "e_vehicle_classifications": [
+            "evc/ca/power_assisted_bicycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 127
+    },
+    {
+      "load": "payload",
+      "weight": 127
+    }
+  ],
+  "sizes": [
+    {
+      "name": "16\"",
+      "geometry": {
+        "reach": 508,
+        "top_tube_effective": 597,
+        "wheelbase": 1118,
+        "standover": 406,
+        "seat_height_min": 762,
+        "seat_height_max": 991,
+        "dimensions": {
+          "length": 1753
+        },
+        "dimensions_folded": {
+          "length": 965,
+          "width": 610,
+          "height": 787
+        },
+        "total_weight": 29.5,
+        "extra_measurements": {
+          "handlebar_height_max": 1270,
+          "handlebar_height_min": 1118
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "bottom_bracket",
+      "description": "Neco 910, 23.5mm + 120mm + 23.5mm"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Hydraulic disc brakes front/rear Tektro Auriga HD-E500"
+    },
+    {
+      "type": "brake_lever",
+      "description": "Wuxing 108PDD+BS108 with safety power cut"
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Freewheel Cassette",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SunRace",
+      "description": "Sunrace M2 Freewheel Super-Low 7 Speed 13-34T"
+    },
+    {
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Rust Buster"
+    },
+    {
+      "type": "crankset",
+      "description": "Aluminum Alloy-6061 44T Crank, 165mm with Outer Guard",
+      "dimensions": {
+        "length": 165
+      }
+    },
+    {
+      "type": "derailleur",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Acera RD-410 7 speed direct rear derailler"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48V 14Ah Samsung Li-ion"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Battery Style: Internal"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "48v 500W (750W Peak) Bafang G06 Hub Motor"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "Hub Motor"
+    },
+    {
+      "type": "fender",
+      "type_detail": "Sturdy Rear Rack and Mudguards",
+      "position": [
+        "rear"
+      ],
+      "description": "Sturdy Rear Rack and Mudguards"
+    },
+    {
+      "type": "fork",
+      "description": "Mozo Fatman-20 with 80-120mm travel"
+    },
+    {
+      "type": "hub",
+      "type_detail": "Hubset",
+      "description": "Alloy 6061 Electric Motor"
+    },
+    {
+      "type": "pedals",
+      "manufacturer": "Wellgo",
+      "description": "Wellgo F-265T Folding Pedals"
+    },
+    {
+      "type": "rack",
+      "type_detail": "Rear-Rack Dimensions",
+      "position": [
+        "rear"
+      ],
+      "description": "L13\"xW6\""
+    },
+    {
+      "type": "rim",
+      "description": "20 inch with 36 spokes",
+      "dimensions": {
+        "diameter": 406
+      }
+    },
+    {
+      "type": "saddle",
+      "type_detail": "Seat",
+      "manufacturer": "Velo",
+      "description": "Velo VL-8020E"
+    },
+    {
+      "type": "seatpost",
+      "type_detail": "Seat Post",
+      "manufacturer": "Promax",
+      "description": "Promax SP-252 Aluminum 6061 Alloy, 31.6mm*350mm",
+      "dimensions": {
+        "length": 350,
+        "diameter": 31.6
+      }
+    },
+    {
+      "type": "shifter",
+      "type_detail": "Shifter Type",
+      "manufacturer": "Shimano",
+      "description": "Shimano Tourney TX50R6CT Thumb Shifter Plus 7-Speed"
+    },
+    {
+      "type": "stem",
+      "description": "Aluminum Alloy SVMONO SM-A150-8R, diameter 28.6mm, bore: 25.4mm, weight: 520g"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Kenda",
+      "description": "Kenda Krusade K1188 20x4\", Wire Bead",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 406
+      }
+    }
+  ]
+}

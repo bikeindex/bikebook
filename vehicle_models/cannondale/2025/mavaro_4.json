@@ -1,0 +1,392 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/cannondale/2025/mavaro_4",
+  "manufacturer": "Cannondale",
+  "model_group": "Mavaro",
+  "model": "Mavaro 4",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/cannondale/2025/mavaro_4.png",
+  "description": "Come rain or shine, town or country, Mavaro braves the elements with ease and never lets you down.",
+  "first_year": 2025,
+  "years": {
+    "2026": {
+      "colorways": [
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/cannondale/2025/mavaro_4.png",
+          "variants": [
+            {
+              "sku": "C64175U10LG",
+              "size": "LG"
+            },
+            {
+              "sku": "C64175U10MD",
+              "size": "MD"
+            },
+            {
+              "sku": "C64175U10SM",
+              "size": "SM"
+            },
+            {
+              "sku": "C64175U10XL",
+              "size": "XL"
+            }
+          ]
+        },
+        {
+          "name": "Tungsten Blue",
+          "colors": [
+            "blue"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/cannondale/2025/mavaro_4_tungsten_blue.png",
+          "variants": [
+            {
+              "sku": "C64175U20LG",
+              "size": "LG"
+            },
+            {
+              "sku": "C64175U20MD",
+              "size": "MD"
+            },
+            {
+              "sku": "C64175U20SM",
+              "size": "SM"
+            },
+            {
+              "sku": "C64175U20XL",
+              "size": "XL"
+            }
+          ]
+        }
+      ],
+      "url": "https://www.cannondale.com/en/bikes/electric/e-urban/mavaro/mavaro-4",
+      "url_live": true
+    },
+    "2025": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "SmartForm C2 Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
+      }
+    ],
+    "cable_routing": "internal",
+    "headset": "ZS44/28.6 | ZS56/40"
+  },
+  "suspension": {
+    "front": {
+      "travel": 63,
+      "spring": "coil",
+      "lockout": true
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 622,
+      "position": [
+        "front"
+      ],
+      "tire_width": 55,
+      "axle": "thru_axle",
+      "axle_diameter": 15,
+      "axle_spacing": 110,
+      "axle_thread_pitch": 1.5
+    },
+    {
+      "bsd": 622,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 55,
+      "axle": "quick_release"
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "5_internal_rear",
+    "belt_drive"
+  ],
+  "gearing": {
+    "front": [
+      46
+    ],
+    "rear": [
+      34
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Nexus",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front"
+      ],
+      "rotor_diameter": 180
+    },
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "rear"
+      ],
+      "rotor_diameter": 160
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/bosch/2023/active_line_plus_bdu334y_us",
+      "drive_wheel": "rear",
+      "manufacturer": "Bosch",
+      "model": "BDU334Y",
+      "model_group": "Active Line Plus",
+      "kind": "mid_drive",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
+      "rated_power": 250,
+      "peak_power": 600,
+      "max_torque": 50,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "e_vehicle_classifications": [
+            "evc/us/class_1"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    }
+  ],
+  "sizes": [
+    {
+      "name": "SM",
+      "geometry": {
+        "fork_rake": 44,
+        "seatpost_length": 350
+      }
+    },
+    {
+      "name": "MD",
+      "geometry": {
+        "fork_rake": 44,
+        "seatpost_length": 400
+      }
+    },
+    {
+      "name": "LG",
+      "geometry": {
+        "fork_rake": 44
+      }
+    },
+    {
+      "name": "XL",
+      "geometry": {
+        "fork_rake": 44
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano MT200 hydraulic disc, 180/160mm RT30 rotors"
+    },
+    {
+      "type": "brake_lever",
+      "manufacturer": "Shimano",
+      "description": "Shimano MT200 hydraulic disc"
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Rear Cogs",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Gates Carbon Drive",
+      "description": "Gates CDC, 34T"
+    },
+    {
+      "type": "crankset",
+      "type_detail": "Crank",
+      "manufacturer": "Gates Carbon Drive",
+      "description": "Gates Bosch E-bike, w/ 46T sprocket"
+    },
+    {
+      "type": "drive_belt",
+      "type_detail": "Belt",
+      "manufacturer": "Gates Carbon Drive",
+      "description": "Gates CDC carbon drive belt"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "manufacturer": "Bosch",
+      "description": "Bosch PowerTube, 500Wh"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "manufacturer": "Bosch",
+      "description": "Bosch 2A"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "manufacturer": "Bosch",
+      "description": "Bosch Purion 200"
+    },
+    {
+      "type": "fender",
+      "description": "full-coverage fenders"
+    },
+    {
+      "type": "fork",
+      "manufacturer": "SR Suntour",
+      "description": "SR Suntour Mobie A32, 63mm travel, coil with preload adjuster, lockout, crown light mount, 44mm offset",
+      "dimensions": {
+        "travel": 63,
+        "offset": 44
+      }
+    },
+    {
+      "type": "grips_tape",
+      "type_detail": "Grips",
+      "manufacturer": "Ergon",
+      "description": "Ergon GC10"
+    },
+    {
+      "type": "handlebar",
+      "manufacturer": "Cannondale",
+      "description": "Cannondale Urban Ergo Bar, 6061 Alloy, 25mm rise, 35° sweep, 0° rise, 680mm",
+      "dimensions": {
+        "width": 680,
+        "rise": 25
+      },
+      "angles": {
+        "backsweep": 35
+      }
+    },
+    {
+      "type": "headset",
+      "description": "Semi-Integrated, Tapered; 1-1/8\"-1-1/2\""
+    },
+    {
+      "type": "hub",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Nexus Inter-5E, 5-speed internal gear hub"
+    },
+    {
+      "type": "hub",
+      "manufacturer": "Shimano",
+      "description": "(F) Shimano TC500, 15x110mm thru-axle / (R) Shimano Nexus Inter-5E, 5-speed internal gear hub",
+      "dimensions": {
+        "axle_diameter": 15,
+        "axle_spacing": 110
+      }
+    },
+    {
+      "type": "lights",
+      "manufacturer": "AXA",
+      "description": "Axa Compactline 35E front light"
+    },
+    {
+      "type": "lights",
+      "manufacturer": "AXA",
+      "description": "Axa Blueline rear light"
+    },
+    {
+      "type": "lock",
+      "manufacturer": "Abus",
+      "description": "Abus framelock (key-matched with battery lock)"
+    },
+    {
+      "type": "rack",
+      "manufacturer": "Tubus",
+      "description": "Tubus rear rack (25kg, Racktime SnapIt 1.0 compatible)"
+    },
+    {
+      "type": "rim",
+      "description": "Alloy, double wall, 32 hole, 25mm internal width, disc-specific",
+      "dimensions": {
+        "inner_width": 25
+      }
+    },
+    {
+      "type": "saddle",
+      "manufacturer": "Selle Royal",
+      "description": "Selle Royal Nuvola"
+    },
+    {
+      "type": "seatpost",
+      "manufacturer": "Cannondale",
+      "description": "Cannondale 4, 6061 Alloy, 31.6, 300 (SM), 350mm (MD), 400mm (XL)"
+    },
+    {
+      "type": "shifter",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Nexus Revoshift, 5-speed twist shifter"
+    },
+    {
+      "type": "spokes",
+      "description": "Stainless Steel, 14g"
+    },
+    {
+      "type": "stem",
+      "manufacturer": "Cannondale",
+      "description": "Cannondale 3 w/ Intellimount, Alloy, 31.8mm clamp, 70mm, +6°, w/ SP Connect SPC+ Stem Mount",
+      "dimensions": {
+        "length": 70,
+        "diameter": 31.8
+      },
+      "angles": {
+        "angle": 6
+      }
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Continental",
+      "description": "Continental eContact Plus w/ reflective sidewalls , 29x2.2\" 55-622 (M,L,XL), 27.5x2.2\" 55-584 (S)",
+      "dimensions": {
+        "width": 55
+      }
+    }
+  ]
+}

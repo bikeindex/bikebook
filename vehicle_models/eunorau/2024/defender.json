@@ -1,0 +1,358 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/eunorau/2024/defender",
+  "manufacturer": "Eunorau",
+  "model_group": "Defender",
+  "model": "Defender",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "mtb",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/eunorau/2024/defender.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/eunorau/2024/defender_geometry.png",
+  "first_year": 2024,
+  "years": {
+    "2026": {
+      "original_msrp": 189900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Army Green",
+          "colors": [
+            "green"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/eunorau/2024/defender.jpg",
+          "variants": [
+            {
+              "sku": "DEFENDER-275-19-GN",
+              "gtin": "795847390048",
+              "size": "19\""
+            },
+            {
+              "sku": "DEFENDER-275-17-GN",
+              "gtin": "795847390031",
+              "size": "17\""
+            }
+          ]
+        },
+        {
+          "name": "Safari",
+          "stock_photo": "https://bikebook.bikeindex.org/eunorau/2024/defender_safari.jpg",
+          "variants": [
+            {
+              "sku": "DEFENDER-275-19-WS",
+              "gtin": "795847390024",
+              "size": "19\""
+            }
+          ]
+        }
+      ],
+      "url": "https://eunorau-ebike.com/products/defender",
+      "url_live": true
+    },
+    "2024": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum",
+    "mounts": [
+      {
+        "type": "fender"
+      },
+      {
+        "type": "rack"
+      }
+    ]
+  },
+  "suspension": {
+    "front": {
+      "travel": 100
+    },
+    "rear": {
+      "lockout": true
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 584,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 76
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "7_rear"
+  ],
+  "gearing": {
+    "front": [
+      44
+    ],
+    "rear": [
+      14,
+      28
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "kind": "hub_drive",
+      "battery": {
+        "capacity": 720
+      },
+      "rated_power": 500,
+      "max_torque": 60,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 129,
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Thumb",
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
+  "sizes": [
+    {
+      "name": "17\"",
+      "geometry": {
+        "reach": 416,
+        "stack": 466,
+        "top_tube_effective": 582,
+        "seat_tube_ctc": 432,
+        "head_tube": 165,
+        "chainstay": 495,
+        "wheelbase": 1306,
+        "bb_height": 361,
+        "dimensions": {
+          "length": 2042
+        },
+        "total_weight": 29.9,
+        "rider_height_min": 1600,
+        "rider_height_max": 1930
+      }
+    },
+    {
+      "name": "19\"",
+      "geometry": {
+        "reach": 465,
+        "stack": 476,
+        "top_tube_effective": 607,
+        "seat_tube_ctc": 483,
+        "head_tube": 165,
+        "chainstay": 495,
+        "wheelbase": 1316,
+        "bb_height": 361,
+        "dimensions": {
+          "length": 2052
+        },
+        "rider_height_min": 1600,
+        "rider_height_max": 1930
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Eunorau",
+      "description": "EUNORAU Design Hydraulic disc Brakes"
+    },
+    {
+      "type": "brake_lever",
+      "description": "Hydraulic Brakes Lever with motor cutoff switch"
+    },
+    {
+      "type": "brake_rotor",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "180mm front and rear",
+      "dimensions": {
+        "diameter": 180
+      }
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Cassette",
+      "position": [
+        "rear"
+      ],
+      "description": "14-28T"
+    },
+    {
+      "type": "chainrings",
+      "description": "44T aluminum chain wheel with protection"
+    },
+    {
+      "type": "crankset",
+      "type_detail": "Crank",
+      "description": "170mm forged alloy",
+      "dimensions": {
+        "length": 170
+      }
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48V15Ah, Optional 15Ah/17Ah battery (Dual battery design)"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "US standard 2.0 A smart charger"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "Rear Drive 500W"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "48V500W Rear Motor with 60N.m"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "48V * 20A"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "BC182 Display, EUNORAU APP Support"
+    },
+    {
+      "type": "fork",
+      "description": "ZOOM 100mm travel suspension fork",
+      "dimensions": {
+        "travel": 100
+      }
+    },
+    {
+      "type": "included_not_installed",
+      "type_detail": "Tool",
+      "description": "Included"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "rear"
+      ],
+      "description": "Taillight"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "front"
+      ],
+      "description": "40LUX LED light"
+    },
+    {
+      "type": "pedals",
+      "description": "High Quality Nylon Pedals"
+    },
+    {
+      "type": "rear_suspension",
+      "type_detail": "Shock",
+      "position": [
+        "rear"
+      ],
+      "description": "EXA KS/A5, 165mm"
+    },
+    {
+      "type": "rim",
+      "description": "27.5 inch Black Alloy",
+      "dimensions": {
+        "diameter": 584
+      }
+    },
+    {
+      "type": "saddle",
+      "description": "Comfortable Saddle, height to ground 35.0\"-40.9\""
+    },
+    {
+      "type": "shifter",
+      "manufacturer": "Shimano",
+      "description": "SHIMANO ASLM315 7RC-7S"
+    },
+    {
+      "type": "stem",
+      "manufacturer": "Eunorau",
+      "description": "EUNORAU TDS-D507G-8FOV"
+    },
+    {
+      "type": "throttle",
+      "description": "Thumb throttle"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "27.5\" x 3.0\"",
+      "dimensions": {
+        "width": 76.2,
+        "diameter": 584
+      }
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "CHAOYANG Tires 27.5 x 3.0",
+      "dimensions": {
+        "width": 76.2,
+        "diameter": 584
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Box Dimensions",
+      "description": "(cm) 170 L x 32.5 W x 85 H"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Note",
+      "description": "The second 17ah battery is not compatible with 17\" DEFENDER; To utilize the 17Ah second battery on the 19\" DEFENDER, it's necessary to lock out the rear shock."
+    }
+  ]
+}

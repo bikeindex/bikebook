@@ -1,0 +1,260 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/fuell/2024/flluid_1e",
+  "manufacturer": "Fuell",
+  "model_group": "Flluid",
+  "model": "Flluid-1E",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/fuell/2024/flluid_1e.png",
+  "description": "$5,495 (1/1S) - $5,995 (1E)\n\nThe FUELL Flluid-1 (20 mph), Flluid-1S (28mph with Shimano Hub) and Flluid-1E (28mph with Enviolo CVT) come standard with two large 504Wh batteries, a torque sensing 500W mid motor, and a Gates Carbon belt drive with an internally geared hub. Ride all you want with low maintenance and exceptional power.",
+  "first_year": 2024,
+  "years": {
+    "2026": {
+      "original_msrp": 599500,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Gloss Dark Grey",
+          "colors": [
+            "silver"
+          ],
+          "variants": [
+            {
+              "sku": "1MDSUMEEFP",
+              "size": "Medium"
+            },
+            {
+              "sku": "1MDSULEEFP",
+              "size": "Large"
+            }
+          ]
+        },
+        {
+          "name": "Gloss Silver",
+          "colors": [
+            "silver"
+          ],
+          "variants": [
+            {
+              "sku": "1MDSUMEEFQ",
+              "size": "Medium"
+            },
+            {
+              "sku": "1MDSULEEFQ",
+              "size": "Large"
+            }
+          ]
+        },
+        {
+          "name": "Gloss Blue",
+          "colors": [
+            "blue"
+          ],
+          "variants": [
+            {
+              "sku": "1MDSUMEEFM",
+              "size": "Medium"
+            }
+          ]
+        },
+        {
+          "name": "Gloss Dark Red",
+          "colors": [
+            "red"
+          ],
+          "variants": [
+            {
+              "sku": "1MDSUMEEFN",
+              "size": "Medium"
+            },
+            {
+              "sku": "1MDSULEEFN",
+              "size": "Large"
+            }
+          ]
+        }
+      ],
+      "url": "https://fuell.com/products/fuell-flluid-ebicycle",
+      "url_live": true
+    },
+    "2024": {}
+  },
+  "frame": {
+    "material": "steel"
+  },
+  "suspension": {
+    "front": {
+      "travel": 120,
+      "spring": "air"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 584,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 57
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "continuously_variable",
+    "belt_drive"
+  ],
+  "groupset": {
+    "manufacturer": "Enviolo",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "rear",
+      "kind": "mid_drive",
+      "sensor_torque": "bottom_bracket_spindle",
+      "battery": {
+        "capacity": 1008,
+        "voltage": 48,
+        "charging_time": 300
+      },
+      "rated_power": 500,
+      "max_torque": 100,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 45,
+          "range_claimed": 200,
+          "e_vehicle_classifications": [
+            "evc/us/class_3"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "Medium",
+      "geometry": {
+        "total_weight": 36,
+        "rider_height_min": 1600,
+        "rider_height_max": 1854
+      }
+    },
+    {
+      "name": "Large",
+      "geometry": {
+        "rider_height_min": 1753,
+        "rider_height_max": 1981
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Tektro",
+      "description": "Tektro HD-E 350, 180mm disk"
+    },
+    {
+      "type": "drive_belt",
+      "type_detail": "Belt",
+      "manufacturer": "Gates Carbon Drive",
+      "description": "Gates Carbon Beltdrive"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Battery Type: 2 Removable Batteries with LED level indicator"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Battery Capacity: 1008 Wh"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Battery Voltage: 48V"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "3 Amp Fast Charger"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "Mid-Drive Bofeili (FUELL exclusive)"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "3.2inch IPS color screen with battery capacity, speed, distance, 5 assist levels, walking mode and USB charging port"
+    },
+    {
+      "type": "fork",
+      "type_detail": "Front Suspension",
+      "position": [
+        "front"
+      ],
+      "manufacturer": "SR Suntour",
+      "description": "Suntour XCR34, 120 mm travel, Air adjustable",
+      "dimensions": {
+        "travel": 120
+      }
+    },
+    {
+      "type": "gps_connectivity_module",
+      "description": "Embedded GPS tracker (optional)"
+    },
+    {
+      "type": "hub",
+      "position": [
+        "rear"
+      ],
+      "description": "Enviolo CVT"
+    },
+    {
+      "type": "lights",
+      "description": "Roxim Z4E Pro, 900 lumens ultra bright and ultra wide"
+    },
+    {
+      "type": "lock",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Abus",
+      "description": "Abus rear wheel lock"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Pirelli CYCL-E GT (Granturismo) 27.5’’ x 2.25",
+      "dimensions": {
+        "width": 57.15,
+        "diameter": 584
+      }
+    },
+    {
+      "type": "unknown",
+      "description": "PIN Code to start Flluid's dashboard"
+    }
+  ]
+}

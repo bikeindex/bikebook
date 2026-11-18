@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/vanpowers/2026/urbanfold",
+  "manufacturer": "VanPowers",
+  "model": "UrbanFold",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/vanpowers/2026/urbanfold.jpg",
+  "description": "A Foldable Fat-Tire E-Bike Made for Everyday Life\n\nThe Vanpowers UrbanFold is a foldable fat-tire electric bike made for the many ways your day unfolds. Ride across town for work, meet friends for coffee, make a quick neighborhood stop, or take the scenic route through the park. It brings electric assistance to everyday trips while giving you the flexibility to make more room between rides.\n\nCompact Storage, More Room for Life\n\nA folding frame and handlebar stem help reduce UrbanFold’s footprint when the ride is over. Store it at home, keep it nearby at the office, or plan a trip where bringing a bike along is part of the adventure. Fold it when space matters; unfold it when you’re ready to go.\n\nComfort for the Routes You Really Ride\n\nUrbanFold’s 20 × 4.0-inch fat tires, front and rear suspension, upright riding position, and cushioned saddle are designed with everyday comfort in mind. From city streets to paved greenways and less-than-perfect pavement, it’s a bike that makes the journey worth enjoying—not just the destination.\n\nElectric Assistance That Moves With Your Day\n\nWith up to 55 Nm of torque and 7-speed mechanical gearing, UrbanFold gives you options as your pace and route change. The handlebar-mounted LCD panel keeps assistance controls within reach, so you can focus on the ride ahead.\n\nWhether your plans call for a commute, a coffee run, or an easygoing weekend ride, UrbanFold is ready to unfold with them. Make space for more of the moments you want to ride.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 109900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Apex Blue",
+          "colors": [
+            "blue"
+          ],
+          "variants": [
+            {
+              "sku": "US01+HDAK00004_P00_US_BU",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "variants": [
+            {
+              "sku": "US01+HDAK00004_P00_US_B",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://www.vanpowers.com/products/vanpowers-urbanfold-foldable-fat-tire-electric-bike",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "aluminum",
+    "folding": "half_fold"
+  },
+  "suspension": {
+    "front": {},
+    "rear": {}
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 102
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "7_rear"
+  ],
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "rear",
+      "kind": "hub_drive",
+      "battery": {
+        "capacity": 499,
+        "charging_time": 360
+      },
+      "rated_power": 500,
+      "peak_power": 1000,
+      "max_torque": 55,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 35,
+          "range_claimed": 35,
+          "levels": 3,
+          "e_vehicle_classifications": [
+            "evc/us/class_3"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock"
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "wheelbase": 1171,
+        "dimensions": {
+          "length": 1910,
+          "width": 630,
+          "height": 1100
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Front & rear disc brakes"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48V, 10.4Ah (499.2Wh)"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "input 100–240V, output 54.6V / 2A"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "1000W peak (500W rated) rear hub"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "Backlit display for at-a-glance ride information"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "front"
+      ],
+      "description": "Integrated front light for added forward visibility"
+    },
+    {
+      "type": "seatpost",
+      "description": "Quick-release seatpost adjustment"
+    },
+    {
+      "type": "stem",
+      "description": "Folding handlebar stem"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "20 × 4.0 in.",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 406
+      }
+    },
+    {
+      "type": "unknown",
+      "description": "Central frame hinge with locking lever"
+    }
+  ]
+}

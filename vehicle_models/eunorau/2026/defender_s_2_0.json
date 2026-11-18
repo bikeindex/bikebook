@@ -1,0 +1,402 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/eunorau/2026/defender_s_2_0",
+  "manufacturer": "Eunorau",
+  "model_group": "Defender",
+  "model": "Defender S 2.0",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "mtb_trail_all_mountain",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/eunorau/2026/defender_s_2_0.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/eunorau/2026/defender_s_2_0_geometry.png",
+  "description": "DEFENDER-S 2.0 — Dual-Motor Full-Suspension Fat-Tire E-Bike\nBuilt for challenging terrain and all-season exploration, the DEFENDER-S 2.0 combines dual-motor traction, responsive torque-sensing assist, and a four-bar full-suspension frame.\nTwo 750W hub motors provide confident all-wheel-drive support, while the 48V 17Ah battery supplies the energy needed for demanding rides. Wide 26\" × 4.0\" fat tires, hydraulic disc brakes, and a Shimano 9-speed drivetrain help you stay in control across hills, loose surfaces, and uneven trails.\nDual-Motor All-Wheel Drive\nA 750W hub motor at each wheel provides a combined rated motor output of 1,500W. Power is delivered to both the front and rear wheels, improving traction and giving you additional support when climbing or riding over loose terrain.\nNatural Torque-Sensing Assist\nThe torque sensor responds to how hard you pedal and adjusts motor assistance accordingly. Pedal lightly for gentle support or apply more pressure when you need additional power, creating a smoother and more intuitive riding experience.\nFour-Bar Full Suspension\nThe four-bar suspension design helps isolate bumps and maintain better wheel contact over uneven terrain. A suspension fork at the front and an air shock at the rear work together to improve comfort, stability, and control.\n48V 17Ah Battery\nThe 48V 17Ah battery uses high-capacity cells and is designed to support the demands of the dual-motor system.\n26\" × 4.0\" Fat-Tire Stability\nWide fat tires provide a larger contact area for enhanced grip and stability. They help the bike maintain control across gravel, dirt, sand, snow, and other loose or uneven surfaces.\nSmooth 9-Speed Shifting\nThe Shimano 9-speed drivetrain gives you a practical range of gears for climbing, cruising, and adapting to changing terrain. The handlebar-mounted shifter makes gear changes quick and convenient.\nConfident Hydraulic Braking\nFront and rear hydraulic disc brakes are paired with large 203mm rotors for controlled stopping performance. Integrated motor cut-off sensors immediately interrupt motor assistance when either brake lever is engaged.\nClear, Connected Controls\nThe handlebar-mounted display provides convenient access to pedal-assist and speed settings. Bluetooth functionality supports compatible connected features, while the integrated front light and horn add everyday convenience.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 279900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Moon Black",
+          "colors": [
+            "black"
+          ],
+          "variants": [
+            {
+              "sku": "EBDEDR217BKWD",
+              "gtin": "888621836662",
+              "size": "17\""
+            },
+            {
+              "sku": "EBDEDR219BKWD",
+              "gtin": "888621836402",
+              "size": "19\""
+            }
+          ]
+        },
+        {
+          "name": "Dry Grass Camo",
+          "variants": [
+            {
+              "sku": "EBDEDR217CMWD",
+              "gtin": "888621836679",
+              "size": "17\""
+            },
+            {
+              "sku": "EBDEDR219CMWD",
+              "gtin": "795847390208",
+              "size": "19\""
+            }
+          ]
+        },
+        {
+          "name": "Army Green",
+          "colors": [
+            "green"
+          ],
+          "variants": [
+            {
+              "sku": "EBDEDR217GRWD",
+              "gtin": "888621836396",
+              "size": "17\""
+            },
+            {
+              "sku": "EBDEDR219GRWD",
+              "gtin": "888621836556",
+              "size": "19\""
+            }
+          ]
+        }
+      ],
+      "url": "https://eunorau-ebike.com/products/defender-s",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum"
+  },
+  "suspension": {
+    "front": {
+      "travel": 75,
+      "lockout": true
+    },
+    "rear": {
+      "travel": 165,
+      "spring": "air"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 559,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 102
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "9_rear"
+  ],
+  "gearing": {
+    "front": [
+      42
+    ],
+    "rear": [
+      11,
+      36
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Cues",
+    "description": "Shimano CUES 9-speed",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 203
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "front",
+      "kind": "hub_drive",
+      "battery": {
+        "capacity": 816,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
+      "rated_power": 750,
+      "max_torque": 85,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 64,
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        },
+        {
+          "mode": "assist",
+          "availability": "app_update",
+          "max_speed": 45,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        }
+      ]
+    },
+    {
+      "drive_wheel": "rear",
+      "kind": "hub_drive",
+      "battery": {
+        "capacity": 816,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
+      "rated_power": 750,
+      "max_torque": 85,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 64,
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        },
+        {
+          "mode": "assist",
+          "availability": "app_update",
+          "max_speed": 45,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
+  "sizes": [
+    {
+      "name": "17\"",
+      "geometry": {
+        "reach": 448,
+        "stack": 592,
+        "top_tube_effective": 645,
+        "seat_tube_ctc": 432,
+        "head_tube": 165,
+        "chainstay": 495,
+        "wheelbase": 1306,
+        "bb_height": 359,
+        "seat_height_bb_min": 585,
+        "seat_height_bb_max": 735,
+        "dimensions": {
+          "length": 2042
+        },
+        "total_weight": 40.5,
+        "rider_height_min": 1600,
+        "rider_height_max": 1750
+      }
+    },
+    {
+      "name": "19\"",
+      "geometry": {
+        "reach": 458,
+        "stack": 595,
+        "top_tube_effective": 655,
+        "seat_tube_ctc": 483,
+        "head_tube": 165,
+        "chainstay": 495,
+        "wheelbase": 1316,
+        "bb_height": 359,
+        "seat_height_bb_min": 635,
+        "seat_height_bb_max": 785,
+        "dimensions": {
+          "length": 2052
+        },
+        "rider_height_min": 1750,
+        "rider_height_max": 1950
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Hydraulic disc brakes with motor cut-off sensors"
+    },
+    {
+      "type": "brake_rotor",
+      "type_detail": "Rotors",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "203mm front and rear",
+      "dimensions": {
+        "diameter": 203
+      }
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Cassette",
+      "position": [
+        "rear"
+      ],
+      "description": "11–36T, 9-speed"
+    },
+    {
+      "type": "crankset",
+      "description": "42T, 170mm",
+      "dimensions": {
+        "length": 170
+      }
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48V 17Ah removable lithium-ion battery"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Up to 80 mi / 128 km combined*"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "Dual 48V 750W hub motors"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "MINI TOUCH Color display with Bluetooth functionality"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "48V 25A dual-motor controller"
+    },
+    {
+      "type": "fork",
+      "type_detail": "Front suspension",
+      "position": [
+        "front"
+      ],
+      "description": "75mm travel, preload and lockout",
+      "dimensions": {
+        "travel": 75
+      }
+    },
+    {
+      "type": "handlebar",
+      "description": "700mm alloy riser bar",
+      "dimensions": {
+        "width": 700
+      }
+    },
+    {
+      "type": "lights",
+      "type_detail": "Integrated Front Light",
+      "position": [
+        "front"
+      ],
+      "description": "Integrated Front Light"
+    },
+    {
+      "type": "rear_suspension",
+      "position": [
+        "rear"
+      ],
+      "description": "165mm eye-to-eye adjustable air shock"
+    },
+    {
+      "type": "rim",
+      "description": "26-inch double-wall alloy rims",
+      "dimensions": {
+        "diameter": 559
+      }
+    },
+    {
+      "type": "saddle",
+      "description": "Comfort saddle"
+    },
+    {
+      "type": "shifter",
+      "manufacturer": "Shimano",
+      "description": "Shimano CUES 9-speed Rapidfire Plus"
+    },
+    {
+      "type": "stem",
+      "description": "Adjustable alloy stem"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "26 × 4.0-inch",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 559
+      }
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "26 × 4.0-inch fat tires",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 559
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Default startup mode",
+      "description": "Class 2, assisted up to 20 mph / 32 km/h"
+    },
+    {
+      "type": "wheel",
+      "type_detail": "Power at Both Wheels",
+      "description": "Power at Both Wheels"
+    }
+  ]
+}

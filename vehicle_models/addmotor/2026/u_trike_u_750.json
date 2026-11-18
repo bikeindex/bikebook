@@ -1,0 +1,305 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/addmotor/2026/u_trike_u_750",
+  "manufacturer": "Addmotor",
+  "model_group": "U-Trike",
+  "model": "U-Trike U-750",
+  "model_configuration": "complete",
+  "type": "tricycle",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/addmotor/2026/u_trike_u_750.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/addmotor/2026/u_trike_u_750_geometry.png",
+  "description": "Lock for stability or pivot to lean — one tilting electric trike, two confident rides.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 259900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Blue",
+          "colors": [
+            "blue"
+          ],
+          "variants": [
+            {
+              "sku": "EB7574",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Gulf Blue",
+          "colors": [
+            "blue"
+          ],
+          "variants": [
+            {
+              "sku": "EB7579",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Mint Green",
+          "colors": [
+            "teal",
+            "green"
+          ],
+          "variants": [
+            {
+              "sku": "EB7577",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Red",
+          "colors": [
+            "red"
+          ],
+          "variants": [
+            {
+              "sku": "EB7572",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://www.addmotor.com/products/u-trike-u750",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum"
+  },
+  "suspension": {
+    "front": {
+      "travel": 80,
+      "spring": "coil"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 102
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "7_rear"
+  ],
+  "groupset": {
+    "manufacturer": "Shimano",
+    "description": "Shimano 7-Speed",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_mechanical",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "rear",
+      "kind": "hub_drive",
+      "sensor_torque": "bottom_bracket_spindle",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
+      "rated_power": 750,
+      "peak_power": 1400,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 137,
+          "levels": 7,
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Twist",
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "reach": 399,
+        "wheelbase": 1295,
+        "standover": 439,
+        "handlebar_width": 699,
+        "seat_height_min": 848,
+        "seat_height_max": 950,
+        "dimensions": {
+          "length": 1849,
+          "width": 851
+        },
+        "total_weight": 75.7,
+        "rider_height_min": 1549,
+        "rider_height_max": 1829,
+        "extra_measurements": {
+          "handlebar_height_max": 1151,
+          "handlebar_height_min": 1100
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Mechanical Disc Brakes On Each Wheel"
+    },
+    {
+      "type": "brake",
+      "type_detail": "Parking Brake"
+    },
+    {
+      "type": "brake_rotor",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "180mm Front / 2*180mm Rear Rotors on 3 Wheels",
+      "dimensions": {
+        "diameter": 180
+      }
+    },
+    {
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Stainless Chain"
+    },
+    {
+      "type": "derailleur",
+      "manufacturer": "Shimano",
+      "description": "Shimano 7 Speed Rear Derailleur"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48V*20 Ah Samsung Battery"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "48V*2.0A 5 Pins US Standard DC Charger 5 Pins With Auto Magnetic Suction"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "750W Rear-Drive Motor, Peak 1400W"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "manufacturer": "Addmotor",
+      "description": "Addmotor 5-Inch LCD Display"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "manufacturer": "Addmotor",
+      "description": "Addmotor 25A Controller"
+    },
+    {
+      "type": "fork",
+      "position": [
+        "front"
+      ],
+      "description": "Oil Spring Fork with 80mm of Travel",
+      "dimensions": {
+        "travel": 80
+      }
+    },
+    {
+      "type": "lights",
+      "type_detail": "HeadLight",
+      "position": [
+        "front"
+      ],
+      "description": "Powered By Main Battery And Controlled By the uneven buttons"
+    },
+    {
+      "type": "lights",
+      "type_detail": "Taillight",
+      "position": [
+        "rear"
+      ],
+      "description": "Powered By Main Battery And Controlled By Display with Brake Light Function"
+    },
+    {
+      "type": "rack",
+      "type_detail": "Front Rack Size",
+      "position": [
+        "front"
+      ],
+      "description": "11\" - 13\"L x 7.8\"W x 8.6\"H"
+    },
+    {
+      "type": "rack",
+      "type_detail": "Rear Rack Size",
+      "position": [
+        "rear"
+      ],
+      "description": "24.4\"L x 20\"W x 10.6\"H"
+    },
+    {
+      "type": "rim",
+      "description": "Aluminum Double Wall"
+    },
+    {
+      "type": "saddle",
+      "description": "Saddle with Backrest"
+    },
+    {
+      "type": "throttle",
+      "description": "Variable Speed Control - 1/2 Twist Throttle"
+    },
+    {
+      "type": "tire",
+      "type_detail": "Tire Size",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "20\" X 4.0\"",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 406
+      }
+    }
+  ]
+}

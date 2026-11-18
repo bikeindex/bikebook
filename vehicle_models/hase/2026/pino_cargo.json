@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/hase/2026/pino_cargo",
+  "manufacturer": "Hase bikes",
+  "model": "PINO CARGO",
+  "model_configuration": "complete",
+  "type": "cargo_bike",
+  "propulsion": [
+    "pedal_assist"
+  ],
+  "primary_activity": "cargo",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/hase/2026/pino_cargo.jpg",
+  "description": "The PINO CARGO is a different kind of e-motor cargo bike. A slimline and agile cargo bike that, in its free time, leads a “double life” as a tandem.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "colorways": [
+        {
+          "name": "Dormant Orange",
+          "colors": [
+            "orange"
+          ]
+        }
+      ],
+      "url": "https://www.hasebikesusa.com/pino-cargo.html",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "aluminum",
+    "bottom_bracket": {
+      "spindle": "Shimano EP8"
+    }
+  },
+  "suspension": {
+    "front": {}
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front"
+      ],
+      "axle": "thru_axle",
+      "axle_thread_pitch": 1.5
+    },
+    {
+      "bsd": 559,
+      "position": [
+        "rear"
+      ],
+      "axle": "thru_axle",
+      "axle_spacing": 148
+    }
+  ],
+  "drivetrain": [
+    "2_front",
+    "11_rear"
+  ],
+  "gearing": {
+    "front": [
+      38,
+      44
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/shimano/2020/ep800_du_ep800_eu",
+      "drive_wheel": "rear",
+      "manufacturer": "Shimano",
+      "model": "DU-EP800",
+      "model_group": "EP800",
+      "kind": "mid_drive",
+      "spindle": "Shimano EP8",
+      "sensor_cadence": true,
+      "battery": {
+        "capacity": 504,
+        "capacity_options": [
+          630
+        ]
+      },
+      "rated_power": 250,
+      "max_torque": 85,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 25,
+          "e_vehicle_classifications": [
+            "evc/eu/epac"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 40
+    },
+    {
+      "load": "payload",
+      "weight": 225
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "dimensions": {
+          "length": 2450,
+          "width": 800,
+          "height": 1250
+        },
+        "total_weight": 38
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "type_detail": "Brake system",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "hydraulic disc brakes"
+    },
+    {
+      "type": "crankset",
+      "position": [
+        "front"
+      ],
+      "manufacturer": "Hase bikes",
+      "description": "HASE BIKES crankset with length-adjustable crank arms (adjustable from 65 – 165 mm) / 165 mm, 38 T",
+      "dimensions": {
+        "length": 165
+      }
+    },
+    {
+      "type": "crankset",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Hase bikes",
+      "description": "HASE BIKES tandem crankset with integrated freewheel / 170 mm, right 44 T, left 36 T",
+      "dimensions": {
+        "length": 170
+      }
+    },
+    {
+      "type": "derailleur",
+      "type_detail": "Gear system",
+      "manufacturer": "Shimano",
+      "description": "Shimano 11-speed derailleur / Microshift bar-end shifters and ergo grips"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "504 Wh or 630 Wh"
+    },
+    {
+      "type": "fender",
+      "manufacturer": "SKS",
+      "description": "SKS matte black"
+    },
+    {
+      "type": "fork",
+      "description": "Spinner 300 suspension fork"
+    },
+    {
+      "type": "frame_bag",
+      "type_detail": "Transport volume, PORTER BAG",
+      "description": "80 L (expandable to 120 L)"
+    },
+    {
+      "type": "frame_bag",
+      "type_detail": "Max. load PORTER BAG",
+      "description": "88 lb (40 kg)"
+    },
+    {
+      "type": "kickstand",
+      "manufacturer": "Hase bikes",
+      "description": "HASE BIKES Double Kickstand"
+    },
+    {
+      "type": "lights",
+      "type_detail": "Lighting",
+      "description": "powered by motor battery / B+M IQ-X headlight / B+M Toplight 2C Plus"
+    },
+    {
+      "type": "rack",
+      "type_detail": "Luggage rack",
+      "manufacturer": "Tubus",
+      "description": "Tubus Logo (max. 88 lb/40 kg)"
+    },
+    {
+      "type": "wheel",
+      "description": "front 20” / rear 26” / black aluminum double-walled rims, rear with double eyelets / SAPIM stainless-steel spokes / hubs with thru axle and Boost standard"
+    }
+  ]
+}
