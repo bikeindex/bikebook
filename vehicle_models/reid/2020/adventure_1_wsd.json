@@ -6,7 +6,8 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal_assist",
+    "throttle"
   ],
   "primary_activity": "road_all_road",
   "handlebar_type": "horizontal",
@@ -121,12 +122,14 @@
       "max_torque": 40,
       "operating_modes": [
         {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Twist"
+        },
+        {
           "mode": "assist",
           "availability": "stock",
-          "max_speed": 25,
-          "e_vehicle_classifications": [
-            "evc/au/pedalec"
-          ]
+          "max_speed": 25
         }
       ]
     }
