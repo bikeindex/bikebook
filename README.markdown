@@ -6,7 +6,7 @@ Use the viewer at [bikeindex.org/bikebook](https://bikeindex.org/bikebook) to vi
 
 This repository contains the data that is used to render that.
 
-Please submit any fixes that you have! See [CONTRIBUTING](CONTRIBUTING.md): contributors sign our [Contributor License Agreement](CLA.md) before their first pull request is merged.
+Please submit any fixes that you have! See [CONTRIBUTING](CONTRIBUTING.md): contributors sign our [Contributor License Agreement](https://cla-assistant.io/bikeindex/bikebook) before their first pull request is merged.
 
 ---
 
