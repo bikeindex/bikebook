@@ -1,12 +1,20 @@
 # <img src="bikebook.svg" alt="Bike Book logo" height="32"> [Bike Book](https://bikeindex.org/bikebook)
 
-Compare bikes and EPAMD!
+Compare bikes, e-bikes and e-Personal Mobility Devices (aka EPAMD).
 
-Use the viewer at [bikeindex.org/bikebook](https://bikeindex.org/bikebook) to view the models
+Use the viewer at [bikeindex.org/bikebook](https://bikeindex.org/bikebook) to view the models.
 
 This repository contains the data that is used to render that.
 
 Please submit any fixes that you have!
+
+## Technical info
+
+This repository is a flat file database. The data is stored in JSON files.
+
+**A file is at `<maker>/<year>/<slug>.json`, and its `id` repeats that path behind a type prefix** — `m/trek/2026/fuel_plus_mx_9_9_x0_axs_gen_2` is [vehicle_models/trek/2026/fuel_plus_mx_9_9_x0_axs_gen_2.json](vehicle_models/trek/2026/fuel_plus_mx_9_9_x0_axs_gen_2.json)
+
+The manifest lists all the files, the catalog is published by [bikebook_ci](https://github.com/bikeindex/bikebook_ci) (which also is where the tests are).
 
 ---
 
