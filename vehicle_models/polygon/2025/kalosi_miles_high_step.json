@@ -115,10 +115,13 @@
   ],
   "motors": [
     {
+      "drive_wheel": "rear",
       "manufacturer": "Bafang",
+      "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
         "capacity": 520,
+        "voltage": 36,
         "chemistry": "li-ion"
       },
       "rated_power": 250,
@@ -277,7 +280,10 @@
     },
     {
       "type": "rim",
-      "description": "ALLOY DOUBLE WALL H:18mm W: 21mm 622-18 36H FOR TYRE 622-20/54"
+      "description": "ALLOY DOUBLE WALL H:18mm W: 21mm 622-18 36H FOR TYRE 622-20/54",
+      "dimensions": {
+        "width": 21
+      }
     },
     {
       "type": "saddle",

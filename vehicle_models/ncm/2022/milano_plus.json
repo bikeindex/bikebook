@@ -38,6 +38,7 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6061 Aluminum",
     "top_tube": "step_through"
   },
   "suspension": {
@@ -98,7 +99,8 @@
     {
       "kind": "hub_drive",
       "battery": {
-        "capacity": 768
+        "capacity": 768,
+        "voltage": 48
       },
       "rated_power": 500,
       "peak_power": 750,
@@ -192,11 +194,6 @@
     {
       "type": "e_vehicle_remote",
       "manufacturer": "Das-Kit",
-      "description": "Das-Kit, CT-i5, 48V18A"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "manufacturer": "Das-Kit",
       "description": "Das-Kit, C7"
     },
     {
@@ -242,6 +239,12 @@
       ],
       "manufacturer": "Schwalbe",
       "description": "Schwalbe, Marathon/Big Ben"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "manufacturer": "Das-Kit",
+      "description": "Das-Kit, CT-i5, 48V18A"
     }
   ]
 }

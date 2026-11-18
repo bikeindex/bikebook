@@ -90,10 +90,13 @@
   ],
   "motors": [
     {
+      "drive_wheel": "rear",
       "manufacturer": "Bafang",
+      "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
         "capacity": 252,
+        "voltage": 36,
         "chemistry": "li-ion",
         "cells": "SAMSUNG"
       },
@@ -229,7 +232,10 @@
     },
     {
       "type": "rim",
-      "description": "ALLOY DOUBLE WALL H:21mm W: 17.9mm 559-17.9 36H FOR TYRE 559-40/57"
+      "description": "ALLOY DOUBLE WALL H:21mm W: 17.9mm 559-17.9 36H FOR TYRE 559-40/57",
+      "dimensions": {
+        "width": 17.9
+      }
     },
     {
       "type": "saddle",

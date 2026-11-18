@@ -45,6 +45,7 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6061 Aluminum",
     "top_tube": "step_through"
   },
   "suspension": {
@@ -92,7 +93,8 @@
     {
       "kind": "hub_drive",
       "battery": {
-        "capacity": 576
+        "capacity": 576,
+        "voltage": 48
       },
       "rated_power": 500,
       "peak_power": 900,
@@ -131,6 +133,7 @@
         "front",
         "rear"
       ],
+      "manufacturer": "Tektro",
       "description": "F/R: Tektro Disc Brakes,MD-M280,180mm rotor"
     },
     {
@@ -175,11 +178,6 @@
       "type": "e_vehicle_motor",
       "manufacturer": "Das-Kit",
       "description": "Das-Kit, X15, 48V 500W / 900W"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "manufacturer": "Das-Kit",
-      "description": "Das-Kit, CT-i6, 48V18A"
     },
     {
       "type": "e_vehicle_remote",
@@ -232,6 +230,12 @@
         "width": 50.8,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "manufacturer": "Das-Kit",
+      "description": "Das-Kit, CT-i6, 48V18A"
     }
   ]
 }

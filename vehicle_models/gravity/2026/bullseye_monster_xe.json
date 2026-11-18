@@ -64,6 +64,7 @@
         "rear"
       ],
       "tire_width": 108,
+      "axle": "bolt_on",
       "tire_width_max": 127
     }
   ],
@@ -99,9 +100,11 @@
     {
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
+      "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
       "battery": {
-        "capacity": 557
+        "capacity": 557,
+        "voltage": 48
       },
       "rated_power": 750,
       "operating_modes": [
@@ -238,7 +241,10 @@
     {
       "type": "handlebar",
       "manufacturer": "Kalloy",
-      "description": "KALLOY LowRise W:700MMx9 DEGREES, ALLOY BLACK"
+      "description": "KALLOY LowRise W:700MMx9 DEGREES, ALLOY BLACK",
+      "dimensions": {
+        "width": 700
+      }
     },
     {
       "type": "hub",
@@ -263,7 +269,10 @@
     {
       "type": "seatpost",
       "type_detail": "Seat Post",
-      "description": "Micro Adjust 400MM, ALLOY BLACK aluminum (insert min 2 inches below lowest top tube weld / maintain clamp collar tightness)"
+      "description": "Micro Adjust 400MM, ALLOY BLACK aluminum (insert min 2 inches below lowest top tube weld / maintain clamp collar tightness)",
+      "dimensions": {
+        "length": 400
+      }
     },
     {
       "type": "sensor",
@@ -305,6 +314,7 @@
         "front",
         "rear"
       ],
+      "manufacturer": "Vee Rubber",
       "description": "26\"x4.25 VEE RUBBER BULLDOZER, 72TPI TIRE",
       "dimensions": {
         "width": 107.95,

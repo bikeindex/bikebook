@@ -129,6 +129,8 @@
   ],
   "motors": [
     {
+      "drive_wheel": "rear",
+      "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
@@ -136,6 +138,7 @@
       ],
       "battery": {
         "capacity": 720,
+        "voltage": 48,
         "chemistry": "li-ion"
       },
       "rated_power": 500,
@@ -232,10 +235,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "BLDC Sine-wave controller 25A waterproof connectors, CAN"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "Color Display with Bluetooth App connectivity, CAN"
     },
     {
@@ -314,6 +313,11 @@
         "width": 59.69,
         "diameter": 584
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "BLDC Sine-wave controller 25A waterproof connectors, CAN"
     }
   ]
 }
