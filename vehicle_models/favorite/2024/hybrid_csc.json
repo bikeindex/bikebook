@@ -43,7 +43,8 @@
       {
         "type": "rack"
       }
-    ]
+    ],
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -105,6 +106,7 @@
       "water_rating": "IPX4",
       "battery": {
         "capacity": 672,
+        "voltage": 48,
         "chemistry": "li-ion",
         "cells": "LG MJ1 3500mAh"
       },
@@ -216,10 +218,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V 22A sine-wave controller with Off-Road/Commuting switch"
-    },
-    {
-      "type": "e_vehicle_remote",
       "manufacturer": "Favorite",
       "description": "Favorite Smart System with LG premium color LCD"
     },
@@ -295,7 +293,11 @@
       "type": "seatpost",
       "type_detail": "Seat post",
       "manufacturer": "Promax",
-      "description": "Promax 15.75\" × 1.24\""
+      "description": "Promax 15.75\" × 1.24\"",
+      "dimensions": {
+        "length": 400,
+        "diameter": 31.6
+      }
     },
     {
       "type": "sensor",
@@ -318,6 +320,11 @@
         "width": 55.88,
         "diameter": 584
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V 22A sine-wave controller with Off-Road/Commuting switch"
     },
     {
       "type": "unknown",

@@ -73,7 +73,8 @@
         "type": "rack"
       }
     ],
-    "cable_routing": "internal"
+    "cable_routing": "internal",
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -125,6 +126,7 @@
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
         "capacity": 672,
+        "voltage": 48,
         "chemistry": "li-ion",
         "cells": "LG/Samsung"
       },
@@ -241,10 +243,6 @@
       "description": "Favorite Smart System — built-in LG color LCD display + FavoriteBikes app"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "48V 22A sine-wave; switchable ride profiles"
-    },
-    {
       "type": "fork",
       "position": [
         "front"
@@ -268,7 +266,11 @@
       "type": "seatpost",
       "type_detail": "Seat post",
       "manufacturer": "Promax",
-      "description": "Promax 15.75\" × 1.24\" (suspension seat post on select builds)"
+      "description": "Promax 15.75\" × 1.24\" (suspension seat post on select builds)",
+      "dimensions": {
+        "length": 400,
+        "diameter": 31.6
+      }
     },
     {
       "type": "sensor",
@@ -297,6 +299,11 @@
       "type": "unknown",
       "type_detail": "Bluetooth",
       "description": "Bluetooth connectivity for iOS and Android; FavoriteBikes app (speed, navigation, OTA firmware updates)"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V 22A sine-wave; switchable ride profiles"
     }
   ]
 }

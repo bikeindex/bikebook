@@ -34,7 +34,8 @@
     "2022": {}
   },
   "frame": {
-    "material": "aluminum"
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -82,7 +83,8 @@
     {
       "kind": "hub_drive",
       "battery": {
-        "capacity": 624
+        "capacity": 624,
+        "voltage": 48
       },
       "rated_power": 500,
       "peak_power": 750,
@@ -130,6 +132,7 @@
         "front",
         "rear"
       ],
+      "manufacturer": "Tektro",
       "description": "F/R: Tektro Mechanical Disc Brakes"
     },
     {
@@ -173,11 +176,6 @@
       "type": "e_vehicle_motor",
       "manufacturer": "Das-Kit",
       "description": "Das-Kit, X15, 48V 500W / 750W"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "manufacturer": "Das-Kit",
-      "description": "Das-Kit, CT-i5, 48V18A"
     },
     {
       "type": "e_vehicle_remote",
@@ -234,6 +232,12 @@
         "width": 101.6,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "manufacturer": "Das-Kit",
+      "description": "Das-Kit, CT-i5, 48V18A"
     }
   ]
 }
