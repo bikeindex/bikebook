@@ -111,6 +111,9 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
+    "bottom_bracket": {
+      "spindle": "ISIS"
+    },
     "seatpost_diameter": 28.6
   },
   "suspension": {
@@ -171,29 +174,39 @@
   ],
   "motors": [
     {
+      "id": "c/bafang/m620_mm_g510_1000_c",
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
-      "model": "m620 ultra",
+      "model": "MM G510.1000.C",
+      "model_group": "M620",
       "kind": "mid_drive",
+      "spindle": "ISIS",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
+      "water_rating": "IPX5",
       "battery": {
         "capacity": 1794,
         "voltage": 52
       },
+      "rated_power": 1000,
+      "peak_power": 1440,
+      "max_torque": 170,
       "operating_modes": [
         {
           "mode": "assist",
           "availability": "stock",
           "range_claimed": 84,
-          "levels": 5
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/off_highway_motorcycle"
           ]
         }
       ]

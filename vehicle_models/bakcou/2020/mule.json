@@ -205,6 +205,9 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "Grade 6061 Aluminum",
+    "bottom_bracket": {
+      "spindle": "ISIS"
+    },
     "seatpost_diameter": 27.2
   },
   "suspension": {
@@ -271,11 +274,16 @@
   ],
   "motors": [
     {
+      "id": "c/bafang/m620_mm_g510_1000_c",
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
-      "model": "M620 Ultra",
+      "model": "MM G510.1000.C",
+      "model_group": "M620",
       "kind": "mid_drive",
+      "spindle": "ISIS",
+      "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
+      "water_rating": "IPX5",
       "battery": {
         "capacity": 840,
         "capacity_options": [
@@ -286,7 +294,7 @@
         "chemistry": "li-ion"
       },
       "rated_power": 1000,
-      "peak_power": 1500,
+      "peak_power": 1440,
       "max_torque": 160,
       "operating_modes": [
         {

@@ -28,12 +28,6 @@
     "front": {},
     "rear": {}
   },
-  "gearing": {
-    "rear": [
-      44,
-      48
-    ]
-  },
   "motors": [
     {
       "drive_wheel": "rear",
@@ -42,7 +36,8 @@
         "capacity": 2304,
         "voltage": 60,
         "chemistry": "li-ion",
-        "cells": "LG 21700 (5000 MAH)"
+        "cells": "LG 21700 (5000 MAH)",
+        "weight": 12.85
       },
       "max_torque": 34,
       "operating_modes": [
@@ -85,10 +80,6 @@
     {
       "type": "e_vehicle_battery",
       "description": "Battery Size: 170mm x 140mm x 380mm"
-    },
-    {
-      "type": "e_vehicle_battery",
-      "description": "Battery Weight: 12.85 KG"
     },
     {
       "type": "e_vehicle_motor",
@@ -162,6 +153,14 @@
     },
     {
       "type": "unknown",
+      "type_detail": "Rear Wheel Torque",
+      "position": [
+        "rear"
+      ],
+      "description": "284 N.M (44T Sprocket) / 309 N.M (48T Sprocket)"
+    },
+    {
+      "type": "unknown",
       "type_detail": "Gear Ratio",
       "description": "8.35 (44T) / 9.18 (48T)"
     },
@@ -174,14 +173,6 @@
       "type": "unknown",
       "type_detail": "Regen Adjustement",
       "description": "4 Levels Adjustable in the Speedometer"
-    },
-    {
-      "type": "wheel",
-      "type_detail": "Rear Wheel Torque",
-      "position": [
-        "rear"
-      ],
-      "description": "284 N.M (44T Sprocket) / 309 N.M (48T Sprocket)"
     }
   ]
 }
