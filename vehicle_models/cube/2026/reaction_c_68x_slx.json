@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/reaction_c_68x_slx",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Reaction",
+  "model_group": "Reaction",
   "model": "Reaction C:68X SLX",
   "model_configuration": "complete",
   "type": "bike",
@@ -35,9 +35,7 @@
       "width": 92,
       "spindle": "DUB"
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 105,
-    "gross_weight_rating": 115
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -106,6 +104,16 @@
       "caliper_mount": "Disc Flat Mount"
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 115
+    }
+  ],
   "sizes": [
     {
       "name": "S",
@@ -113,7 +121,6 @@
         "handlebar_width": 760,
         "stem_length": 60,
         "crank_length": 170,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "diameter_seatpost": 27.2,
           "diameter_tire_maximum": 750,
@@ -130,7 +137,6 @@
         "crank_length": 170,
         "total_weight": 9.9,
         "frame_weight": 0.9,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "diameter_seatpost": 27.2,
           "diameter_tire_maximum": 750,
@@ -145,7 +151,6 @@
         "handlebar_width": 760,
         "stem_length": 70,
         "crank_length": 175,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "diameter_seatpost": 27.2,
           "diameter_tire_maximum": 750,
@@ -160,7 +165,6 @@
         "handlebar_width": 760,
         "stem_length": 70,
         "crank_length": 175,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "diameter_seatpost": 27.2,
           "diameter_tire_maximum": 750,

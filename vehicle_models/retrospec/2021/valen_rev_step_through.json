@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2021/valen_rev_step_through",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Valen Rev",
+  "model_group": "Valen Rev",
   "model": "Valen Rev Step Through",
   "model_configuration": "complete",
   "type": "bike",
@@ -131,7 +131,9 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -154,13 +156,18 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "20\"",
       "geometry": {
         "standover": 787,
         "total_weight": 32.7,
-        "max_weight_rider": 113,
         "rider_height_min": 1524,
         "rider_height_max": 1930
       }

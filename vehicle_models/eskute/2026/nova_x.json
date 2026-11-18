@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eskute/2026/nova_x",
   "manufacturer": "Eskute",
-  "vehicle_model_group": "Nova",
+  "model_group": "Nova",
   "model": "Nova X",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -95,8 +95,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 127
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -131,8 +130,10 @@
   "motors": [
     {
       "water_rating": "IPX4",
-      "battery_size": 1104,
-      "charging_time": 510,
+      "battery": {
+        "capacity": 1104,
+        "charging_time": 510
+      },
       "peak_power": 4000,
       "max_torque": 230,
       "operating_modes": [
@@ -146,6 +147,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 127
     }
   ],
   "sizes": [

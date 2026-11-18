@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/puckipuppy/2025/rottweiler",
   "manufacturer": "Puckipuppy",
   "model": "Rottweiler",
@@ -55,8 +55,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 227
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -95,10 +94,15 @@
     {
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271, UL 2849",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 960,
       "operating_modes": [
@@ -119,6 +123,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [

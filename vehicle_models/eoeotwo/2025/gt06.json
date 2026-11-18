@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eoeotwo/2025/gt06",
   "manufacturer": "EOEOTWO",
-  "vehicle_model_group": "GT06",
+  "model_group": "GT06",
   "model": "GT06",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -75,8 +75,12 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
-      "battery_size": 624,
+      "certifications": [
+        "UL 2272"
+      ],
+      "battery": {
+        "capacity": 624
+      },
       "rated_power": 1200,
       "peak_power": 1200,
       "operating_modes": [
@@ -89,12 +93,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 38,
-        "max_weight_rider": 150
+        "total_weight": 38
       }
     }
   ],

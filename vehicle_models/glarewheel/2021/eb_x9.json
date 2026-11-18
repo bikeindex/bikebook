@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/glarewheel/2021/eb_x9",
   "manufacturer": "Glarewheel",
   "model": "EB-X9",
@@ -23,8 +23,7 @@
     "2021": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 113
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -51,7 +50,9 @@
   ],
   "motors": [
     {
-      "battery_size": 360,
+      "battery": {
+        "capacity": 360
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -64,6 +65,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
     }
   ],
   "sizes": [

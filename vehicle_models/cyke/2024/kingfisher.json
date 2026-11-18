@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cyke/2024/kingfisher",
   "manufacturer": "Cyke",
   "model": "Kingfisher",
@@ -91,12 +91,16 @@
       "drive_wheel": "rear",
       "kind": "mid_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
-      "charging_time": 120,
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 120
+      },
       "rated_power": 250,
       "peak_power": 345,
       "max_torque": 65,
@@ -112,6 +116,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
     }
   ],
   "sizes": [
@@ -135,8 +145,7 @@
           "width": 370,
           "height": 700
         },
-        "total_weight": 22.7,
-        "max_weight_rider": 110
+        "total_weight": 22.7
       }
     }
   ],

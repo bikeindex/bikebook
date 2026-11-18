@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rattan/2025/lf_pro_2_0_eu",
   "manufacturer": "Rattan",
   "model": "LF Pro 2.0",
@@ -57,8 +57,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 180
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -95,8 +94,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 864,
-      "charging_time": 540,
+      "battery": {
+        "capacity": 864,
+        "charging_time": 540
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -118,6 +119,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2023/twostroke_al_20",
   "manufacturer": "BMC",
-  "vehicle_model_group": "Twostroke",
+  "model_group": "Twostroke",
   "model": "Twostroke AL 20",
   "model_configuration": "complete",
   "markets": [
@@ -81,9 +81,7 @@
     "bottom_bracket": {
       "shell": "BSA"
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 51,
-    "gross_weight_rating": 60
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -120,6 +118,16 @@
         "rear"
       ],
       "rotor_diameter": 140
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 51
+    },
+    {
+      "load": "gross",
+      "weight": 60
     }
   ],
   "sizes": [

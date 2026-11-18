@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rize/2021/fixie",
   "manufacturer": "Rize",
   "model": "Fixie",
@@ -94,8 +94,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 113
+    "material_detail": "6061 Aluminum"
   },
   "wheels": [
     {
@@ -132,8 +131,10 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "battery_size": 345,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 345,
+        "charging_time": 300
+      },
       "rated_power": 350,
       "max_torque": 45,
       "operating_modes": [
@@ -155,6 +156,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
     }
   ],
   "sizes": [

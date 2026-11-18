@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/serial_1/2022/rush_cty_speed",
   "manufacturer": "Serial 1",
-  "vehicle_model_group": "Rush",
+  "model_group": "Rush",
   "model": "Rush/CTY Speed (GEN 2)",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,9 +40,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "cable_routing": "internal",
-    "max_weight_total": 100,
-    "gross_weight_rating": 127
+    "cable_routing": "internal"
   },
   "wheels": [
     {
@@ -78,8 +76,10 @@
       "manufacturer": "QORE",
       "model": "TF Mag",
       "kind": "mid_drive",
-      "battery_size": 706,
-      "charging_time": 390,
+      "battery": {
+        "capacity": 706,
+        "charging_time": 390
+      },
       "max_torque": 90,
       "operating_modes": [
         {
@@ -94,9 +94,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 9.98
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 9.98
+    },
+    {
+      "load": "payload",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 127
+    }
+  ],
   "sizes": [
     {
       "name": "S"

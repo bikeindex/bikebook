@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gopower/2025/go_explore",
   "manufacturer": "Gopower",
   "model": "Go Explore",
@@ -56,8 +56,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -107,7 +106,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -129,6 +130,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -222,10 +229,6 @@
       "type": "e_vehicle_remote",
       "manufacturer": "Gopower",
       "description": "GO POWER Colored LCD screen displays speedometer, odometer, pedal assist level, battery gauge, brake light indicator, headlight indicator, turn signal indicator light, gear position display, and cruise control indicator light."
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V 750W"
     },
     {
       "type": "e_vehicle_wiring_harness",
@@ -337,6 +340,11 @@
       "dimensions": {
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "CONTROLLER",
+      "description": "48V 750W"
     }
   ]
 }

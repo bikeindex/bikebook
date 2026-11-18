@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2024/tesoro_x_1_stepthru",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Tesoro Neo X",
+  "model_group": "Tesoro Neo X",
   "model": "Tesoro X 1 StepThru",
   "model_configuration": "complete",
   "markets": [
@@ -54,6 +54,15 @@
     "material": "aluminum",
     "material_detail": "SmartForm C1 Aluminum",
     "top_tube": "step_through",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
+      }
+    ],
     "cable_routing": "stealth",
     "headset": "IS42/28.6 | IS52/40"
   },
@@ -124,9 +133,13 @@
       "model": "BDU378Y",
       "model_group": "Performance Line Speed",
       "kind": "mid_drive",
-      "certification": "UL 2849",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -143,9 +156,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    }
+  ],
   "sizes": [
     {
       "name": "SM",

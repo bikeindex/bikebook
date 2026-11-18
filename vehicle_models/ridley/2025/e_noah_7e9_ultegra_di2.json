@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ridley/2025/e_noah_7e9_ultegra_di2",
   "manufacturer": "Ridley",
-  "vehicle_model_group": "E-Noah",
+  "model_group": "E-Noah",
   "model": "E-Noah 7E9 Ultegra Di2",
   "model_configuration": "complete",
   "markets": [
@@ -132,8 +132,10 @@
       "drive_wheel": "rear",
       "manufacturer": "TQ",
       "kind": "mid_drive",
-      "battery_size": 290,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 290,
+        "chemistry": "li-ion"
+      },
       "max_torque": 40,
       "operating_modes": [
         {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2018/town_hybrid_sport_400_black_edition_trapeze",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Town Hybrid",
+  "model_group": "Town Hybrid",
   "model": "Town Hybrid Sport 400 black edition Trapeze",
   "model_configuration": "complete",
   "type": "bike",
@@ -95,8 +95,10 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,

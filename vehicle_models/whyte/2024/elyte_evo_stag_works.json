@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/whyte/2024/elyte_evo_stag_works",
   "manufacturer": "Whyte",
-  "vehicle_model_group": "ELyte EVO",
+  "model_group": "ELyte EVO",
   "model": "ELyte EVO Stag Works",
   "model_configuration": "complete",
   "type": "bike",
@@ -157,9 +157,11 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
-      "charging_time": 210,
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion",
+        "charging_time": 210
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 100,

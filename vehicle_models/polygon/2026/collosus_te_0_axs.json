@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/polygon/2026/collosus_te_0_axs",
   "manufacturer": "Polygon",
-  "vehicle_model_group": "Collosus",
+  "model_group": "Collosus",
   "model": "Collosus TE 0 AXS",
   "model_configuration": "complete",
   "type": "bike",
@@ -127,9 +127,11 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 100,

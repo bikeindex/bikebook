@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2019/spark_rc_900_team_us",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Spark",
+  "model_group": "Spark",
   "model": "Spark RC 900 Team",
   "model_configuration": "complete",
   "markets": [
@@ -68,9 +68,7 @@
       "width": 89.5,
       "spindle": "GXP"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 116,
-    "gross_weight_rating": 128
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -137,6 +135,16 @@
         "rear"
       ],
       "rotor_diameter": 180
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 116
+    },
+    {
+      "load": "gross",
+      "weight": 128
     }
   ],
   "sizes": [

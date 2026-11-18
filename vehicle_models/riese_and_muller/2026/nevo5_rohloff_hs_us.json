@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2026/nevo5_rohloff_hs_us",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Nevo5",
+  "model_group": "Nevo5",
   "model": "Nevo5 rohloff HS",
   "model_configuration": "complete",
   "markets": [
@@ -60,14 +60,16 @@
         "type": "fender"
       },
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
     ],
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 109,
-    "gross_weight_rating": 140
+    }
   },
   "suspension": {
     "front": {
@@ -128,8 +130,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 100,
@@ -143,6 +147,28 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 140
+    },
+    {
+      "load": "rear_rack",
+      "weight": 27
+    },
+    {
+      "load": "front_rack",
+      "weight": 5
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 5
     }
   ],
   "sizes": [
@@ -165,16 +191,12 @@
           "length": 1885
         },
         "total_weight": 30.2,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "no",
           "top_tube_height": 435,
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     },
@@ -197,16 +219,12 @@
           "length": 1910
         },
         "total_weight": 30.4,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "no",
           "top_tube_height": 435,
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     },
@@ -229,16 +247,12 @@
           "length": 1905
         },
         "total_weight": 30.5,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "no",
           "top_tube_height": 435,
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     },
@@ -261,16 +275,12 @@
           "length": 1940
         },
         "total_weight": 30.6,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "no",
           "top_tube_height": 435,
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     }

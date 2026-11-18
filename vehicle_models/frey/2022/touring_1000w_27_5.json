@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/frey/2022/touring_1000w_27_5",
   "manufacturer": "FREY",
-  "vehicle_model_group": "Touring",
+  "model_group": "Touring",
   "model": "Touring 1000W 27.5",
   "model_configuration": "complete",
   "type": "bike",
@@ -51,8 +51,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {
@@ -94,7 +93,9 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 1008,
+      "battery": {
+        "capacity": 1008
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -105,6 +106,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

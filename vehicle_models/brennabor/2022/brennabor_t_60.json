@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/brennabor/2022/brennabor_t_60",
   "manufacturer": "Brennabor",
   "model": "BRENNABOR T-60",
@@ -37,12 +37,20 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
     "bottom_bracket": {
       "shell": "BSA"
     },
     "seatpost_diameter": 30.4,
-    "derailleur_hanger": "Slider Dropout",
-    "gross_weight_rating": 130
+    "derailleur_hanger": "Slider Dropout"
   },
   "suspension": {
     "front": {
@@ -94,6 +102,12 @@
         "rear"
       ],
       "rotor_diameter": 180
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/micargi/2025/bali",
   "manufacturer": "Micargi",
   "model": "Bali",
@@ -88,8 +88,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 557,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 557,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {

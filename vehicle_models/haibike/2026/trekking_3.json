@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/haibike/2026/trekking_3",
   "manufacturer": "Haibike",
-  "vehicle_model_group": "Trekking",
+  "model_group": "Trekking",
   "model": "Trekking 3",
   "model_configuration": "complete",
   "type": "bike",
@@ -59,8 +59,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 150
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -105,8 +104,10 @@
       "model": "BDU346Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 540,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 540,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -120,6 +121,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

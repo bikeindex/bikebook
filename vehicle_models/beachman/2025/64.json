@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/beachman/2025/64",
   "manufacturer": "Beachman",
-  "vehicle_model_group": "'64",
+  "model_group": "'64",
   "model": "'64",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -86,10 +86,12 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 2800,
-      "battery_options": [
-        3600
-      ],
+      "battery": {
+        "capacity": 2800,
+        "capacity_options": [
+          3600
+        ]
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -99,6 +101,12 @@
           "range_claimed": 89
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
     }
   ],
   "sizes": [
@@ -112,8 +120,7 @@
           "width": 610,
           "height": 914
         },
-        "total_weight": 99.8,
-        "max_weight_rider": 136
+        "total_weight": 99.8
       }
     }
   ],

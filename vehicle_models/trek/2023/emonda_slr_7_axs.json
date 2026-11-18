@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2023/emonda_slr_7_axs",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Émonda",
+  "model_group": "Émonda",
   "model": "Émonda SLR 7 AXS",
   "model_configuration": "complete",
   "type": "bike",
@@ -526,9 +526,7 @@
     "bottom_bracket": {
       "shell": "T47",
       "spindle": "DUB"
-    },
-    "max_weight_total": 117,
-    "gross_weight_rating": 125
+    }
   },
   "wheels": [
     {
@@ -587,6 +585,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 117
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

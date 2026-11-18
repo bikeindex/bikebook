@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hiboy/2025/titan_pro",
   "manufacturer": "Hiboy",
-  "vehicle_model_group": "TITAN",
+  "model_group": "TITAN",
   "model": "TITAN PRO",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -67,9 +67,11 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "water_rating": "IPX4",
-      "battery_size": 1728,
-      "battery_chemistry": "li-ion",
-      "charging_time": 810,
+      "battery": {
+        "capacity": 1728,
+        "chemistry": "li-ion",
+        "charging_time": 810
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "operating_modes": [
@@ -86,9 +88,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IPX4",
-      "battery_size": 1728,
-      "battery_chemistry": "li-ion",
-      "charging_time": 810,
+      "battery": {
+        "capacity": 1728,
+        "chemistry": "li-ion",
+        "charging_time": 810
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "operating_modes": [
@@ -102,6 +106,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -112,7 +122,6 @@
           "height": 1306
         },
         "total_weight": 47,
-        "max_weight_rider": 150,
         "rider_height_min": 1600,
         "rider_height_max": 1930
       }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/smlro/2025/xdc600_plus_3000w",
   "manufacturer": "Smlro",
-  "vehicle_model_group": "XDC600",
+  "model_group": "XDC600",
   "model": "XDC600 Plus 3000W",
   "model_configuration": "complete",
   "type": "bike",
@@ -70,8 +70,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 180
+    ]
   },
   "suspension": {
     "front": {}
@@ -102,8 +101,10 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "battery_size": 1560,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1560,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "max_torque": 82,
       "operating_modes": [
@@ -127,8 +128,10 @@
     },
     {
       "drive_wheel": "rear",
-      "battery_size": 1560,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1560,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "max_torque": 82,
       "operating_modes": [
@@ -149,6 +152,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [

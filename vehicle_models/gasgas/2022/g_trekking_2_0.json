@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gasgas/2022/g_trekking_2_0",
   "manufacturer": "GASGAS",
-  "vehicle_model_group": "G Trekking",
+  "model_group": "G Trekking",
   "model": "G Trekking 2.0",
   "model_configuration": "complete",
   "markets": [
@@ -42,12 +42,17 @@
     "mounts": [
       {
         "type": "fender"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
     ],
     "headset": "ZS44/28.6 | ZS56/40",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 103,
-    "gross_weight_rating": 130
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -110,7 +115,9 @@
       "manufacturer": "Yamaha",
       "model": "PW-ST",
       "kind": "mid_drive",
-      "battery_size": 630,
+      "battery": {
+        "capacity": 630
+      },
       "rated_power": 250,
       "max_torque": 70,
       "operating_modes": [
@@ -125,9 +132,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 15
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 15
+    },
+    {
+      "load": "payload",
+      "weight": 103
+    },
+    {
+      "load": "gross",
+      "weight": 130
+    }
+  ],
   "sizes": [
     {
       "name": "M",

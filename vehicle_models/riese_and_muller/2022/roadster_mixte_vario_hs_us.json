@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2022/roadster_mixte_vario_hs_us",
   "base": "m/riese_and_muller/2022/roadster_mixte_vario_hs",
   "markets": [
@@ -29,20 +29,32 @@
       }
     }
   },
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 150
+    },
+    {
+      "load": "rear_rack",
+      "weight": 20
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 5
+    }
+  ],
   "sizes": {
     "Mixte 45 cm": {
       "geometry": {
         "extra_measurements": {
-          "childseat_compatibility_carrier": null,
-          "weight_rating_front_carrier_kg": null
+          "childseat_compatibility_carrier": null
         }
       }
     },
     "Mixte 53 cm": {
       "geometry": {
         "extra_measurements": {
-          "childseat_compatibility_carrier": null,
-          "weight_rating_front_carrier_kg": null
+          "childseat_compatibility_carrier": null
         }
       }
     }

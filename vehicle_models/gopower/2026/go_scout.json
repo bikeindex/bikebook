@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gopower/2026/go_scout",
   "manufacturer": "Gopower",
   "model": "Go Scout",
@@ -54,8 +54,7 @@
   },
   "frame": {
     "material": "steel",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 150
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -94,9 +93,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 374,
-      "battery_chemistry": "li-ion",
-      "battery_info": "36V",
+      "battery": {
+        "capacity": 374,
+        "voltage": 36,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -118,6 +119,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/marsant_s/2025/w2",
   "manufacturer": "Marsant's",
   "model": "W2",
@@ -73,7 +73,9 @@
     {
       "drive_wheel": "rear_left",
       "kind": "hub_drive",
-      "battery_size": 1123,
+      "battery": {
+        "capacity": 1123
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -87,7 +89,9 @@
     {
       "drive_wheel": "rear_right",
       "kind": "hub_drive",
-      "battery_size": 1123,
+      "battery": {
+        "capacity": 1123
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -99,12 +103,15 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
-      "name": "One Size",
-      "geometry": {
-        "max_weight_rider": 150
-      }
+      "name": "One Size"
     }
   ],
   "components": [

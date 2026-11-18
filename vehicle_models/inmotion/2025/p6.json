@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2025/p6",
   "manufacturer": "Inmotion",
   "model": "P6",
@@ -51,8 +51,7 @@
     }
   },
   "frame": {
-    "material": "magnesium",
-    "max_weight_total": 140
+    "material": "magnesium"
   },
   "suspension": {
     "front": {
@@ -80,10 +79,12 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 4200,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 50S",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 4200,
+        "chemistry": "li-ion",
+        "cells": "Samsung 50S",
+        "charging_time": 240
+      },
       "rated_power": 6000,
       "peak_power": 20000,
       "max_torque": 300,
@@ -96,6 +97,12 @@
           "max_slope": 45
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 140
     }
   ],
   "sizes": [

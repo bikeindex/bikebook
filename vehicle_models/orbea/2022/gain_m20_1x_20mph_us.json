@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/orbea/2022/gain_m20_1x_20mph_us",
   "manufacturer": "Orbea",
-  "vehicle_model_group": "Gain",
+  "model_group": "Gain",
   "model": "Gain M20 1X 20mph",
   "model_configuration": "complete",
   "markets": [
@@ -97,8 +97,10 @@
     {
       "manufacturer": "Mahle",
       "kind": "hub_drive",
-      "battery_size": 248,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 248,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

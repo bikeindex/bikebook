@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2025/ev13m",
   "manufacturer": "Evercross",
   "model": "EV13M",
@@ -67,8 +67,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 40
+    "material": "steel"
   },
   "wheels": [
     {
@@ -81,7 +80,9 @@
   ],
   "motors": [
     {
-      "battery_size": 75,
+      "battery": {
+        "capacity": 75
+      },
       "rated_power": 150,
       "operating_modes": [
         {
@@ -91,6 +92,12 @@
           "range_claimed": 15
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 40
     }
   ],
   "sizes": [

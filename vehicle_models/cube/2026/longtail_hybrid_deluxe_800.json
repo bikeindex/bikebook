@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/longtail_hybrid_deluxe_800",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Longtail Hybrid",
+  "model_group": "Longtail Hybrid",
   "model": "Longtail Hybrid Deluxe 800",
   "model_configuration": "complete",
   "type": "cargo_bike_rear",
@@ -37,9 +37,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 163,
-    "gross_weight_rating": 200
+    "seatpost_diameter": 34.9
   },
   "wheels": [
     {
@@ -97,8 +95,10 @@
       "model_group": "Cargo Line",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -114,9 +114,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 60
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "cargo",
+      "weight": 60
+    },
+    {
+      "load": "gross",
+      "weight": 200
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -134,7 +145,6 @@
         "stem_length": 90,
         "crank_length": 170,
         "total_weight": 36.2,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 50,
           "bike_length_max": 1966,

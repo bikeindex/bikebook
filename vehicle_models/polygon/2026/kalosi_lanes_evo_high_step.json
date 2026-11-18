@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/polygon/2026/kalosi_lanes_evo_high_step",
   "manufacturer": "Polygon",
-  "vehicle_model_group": "Kalosi",
+  "model_group": "Kalosi",
   "model": "Kalosi Lanes EVO High Step",
   "model_configuration": "complete",
   "type": "bike",
@@ -128,9 +128,11 @@
       "kind": "mid_drive",
       "spindle": "square taper",
       "sensor_cadence": false,
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
-      "battery_info": "36V, 14Ah",
+      "battery": {
+        "capacity": 504,
+        "voltage": 36,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [

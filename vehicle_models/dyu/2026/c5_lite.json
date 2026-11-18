@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dyu/2026/c5_lite",
   "manufacturer": "DYU",
   "model": "C5 Lite",
@@ -45,8 +45,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 120
+    ]
   },
   "suspension": {
     "front": {}
@@ -76,10 +75,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 500,
       "peak_power": 1000,
       "max_torque": 42,
@@ -102,6 +105,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

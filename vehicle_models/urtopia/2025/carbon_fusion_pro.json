@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/urtopia/2025/carbon_fusion_pro",
   "manufacturer": "Urtopia",
-  "vehicle_model_group": "Carbon Fusion",
+  "model_group": "Carbon Fusion",
   "model": "Carbon Fusion Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -77,8 +77,16 @@
   "frame": {
     "material": "carbon",
     "top_tube": "step_through",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 150
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -127,14 +135,18 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
-      "water_rating": "IP65",
-      "battery_size": 529,
-      "battery_options": [
-        882
+      "certifications": [
+        "UL 2271"
       ],
-      "battery_chemistry": "li-ion",
-      "charging_time": 210,
+      "water_rating": "IP65",
+      "battery": {
+        "capacity": 529,
+        "capacity_options": [
+          882
+        ],
+        "chemistry": "li-ion",
+        "charging_time": 210
+      },
       "rated_power": 500,
       "peak_power": 720,
       "max_torque": 60,
@@ -166,6 +178,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

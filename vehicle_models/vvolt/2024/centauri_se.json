@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vvolt/2024/centauri_se",
   "manufacturer": "Vvolt",
-  "vehicle_model_group": "Centauri",
+  "model_group": "Centauri",
   "model": "Centauri SE",
   "model_configuration": "complete",
   "type": "bike",
@@ -131,8 +131,12 @@
       "manufacturer": "Ananda",
       "model": "M100",
       "kind": "mid_drive",
-      "certification": "UL 2271",
-      "battery_size": 490,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 490
+      },
       "rated_power": 350,
       "max_torque": 120,
       "operating_modes": [

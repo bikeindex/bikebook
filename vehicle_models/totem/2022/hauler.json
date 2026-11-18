@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/totem/2022/hauler",
   "manufacturer": "Totem",
   "model": "Hauler",
@@ -63,8 +63,7 @@
     "bottom_bracket": {
       "spindle": "square taper"
     },
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 136
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {
@@ -112,9 +111,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 21700 cells",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700"
+      },
       "rated_power": 750,
       "max_torque": 85,
       "operating_modes": [
@@ -139,9 +140,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 24.95
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 24.95
+    },
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/merida/2027/etmo_700",
   "manufacturer": "Merida Bikes",
-  "vehicle_model_group": "ETMO",
+  "model_group": "ETMO",
   "model": "ETMO 700",
   "model_configuration": "complete",
   "type": "bike",
@@ -101,7 +101,7 @@
     ]
   },
   "groupset": {
-    "series": "SX",
+    "series": "S100",
     "electronic": false
   },
   "brakes": [
@@ -123,8 +123,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebycco/2026/v1_eu",
   "manufacturer": "Ebycco",
   "model": "V1",
@@ -18,7 +18,7 @@
   "first_year": 2026,
   "years": {
     "2026": {
-      "original_msrp": 75900,
+      "original_msrp": 115900,
       "original_msrp_currency": "EUR",
       "colorways": [
         {
@@ -39,8 +39,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -74,11 +73,16 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 562,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 562,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 350,
       "max_torque": 40,
       "operating_modes": [
@@ -100,6 +104,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

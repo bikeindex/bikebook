@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mod/2026/berlin_step_thru_3_class_1",
   "manufacturer": "MOD Bikes",
-  "vehicle_model_group": "Berlin",
+  "model_group": "Berlin",
   "model": "Berlin Step-Thru 3 Class 1",
   "model_configuration": "complete",
   "type": "bike",
@@ -104,9 +104,11 @@
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IP44",
-      "battery_size": 615,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 615,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "max_torque": 69,
       "operating_modes": [

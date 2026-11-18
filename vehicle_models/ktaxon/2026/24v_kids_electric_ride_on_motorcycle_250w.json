@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktaxon/2026/24v_kids_electric_ride_on_motorcycle_250w",
   "manufacturer": "Ktaxon",
   "model": "24V Kids Electric Ride-On Motorcycle 250W",
@@ -75,8 +75,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 59
+    "material": "steel"
   },
   "suspension": {
     "rear": {}
@@ -93,7 +92,9 @@
   ],
   "motors": [
     {
-      "battery_size": 168,
+      "battery": {
+        "capacity": 168
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -104,6 +105,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 59
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eahora/2024/terra_ii",
   "manufacturer": "Eahora",
-  "vehicle_model_group": "Terra",
+  "model_group": "Terra",
   "model": "Terra II",
   "model_configuration": "complete",
   "type": "bike",
@@ -69,8 +69,7 @@
     "material": "steel",
     "material_detail": "High-Carbon Steel",
     "seatpost_diameter": 38.1,
-    "coil_compatible": true,
-    "max_weight_total": 150
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -126,9 +125,12 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IP65",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A.",
+      "battery": {
+        "capacity": 960,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A"
+      },
       "rated_power": 750,
       "max_torque": 65,
       "operating_modes": [
@@ -159,9 +161,12 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IP65",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A.",
+      "battery": {
+        "capacity": 960,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A"
+      },
       "rated_power": 750,
       "max_torque": 65,
       "operating_modes": [
@@ -186,6 +191,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

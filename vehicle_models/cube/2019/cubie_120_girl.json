@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2019/cubie_120_girl",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Cubie",
+  "model_group": "Cubie",
   "model": "Cubie 120 girl",
   "model_configuration": "complete",
   "type": "bike",
@@ -33,9 +33,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 24,
-    "gross_weight_rating": 30
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -68,6 +66,16 @@
       "position": [
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 24
+    },
+    {
+      "load": "gross",
+      "weight": 30
     }
   ],
   "sizes": [

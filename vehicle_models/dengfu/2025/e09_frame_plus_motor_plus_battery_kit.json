@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dengfu/2025/e09_frame_plus_motor_plus_battery_kit",
   "manufacturer": "Dengfu",
   "model": "E09 Frame + Motor + Battery Kit",
@@ -88,8 +88,10 @@
     {
       "manufacturer": "Bafang",
       "model": "M510",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

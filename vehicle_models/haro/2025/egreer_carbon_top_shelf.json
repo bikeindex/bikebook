@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/haro/2025/egreer_carbon_top_shelf",
   "manufacturer": "Haro",
-  "vehicle_model_group": "eGreer",
+  "model_group": "eGreer",
   "model": "eGreer Carbon Top Shelf",
   "model_configuration": "complete",
   "type": "bike",
@@ -127,8 +127,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,

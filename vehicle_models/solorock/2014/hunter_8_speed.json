@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/solorock/2014/hunter_8_speed",
   "manufacturer": "Solorock",
-  "vehicle_model_group": "Hunter",
+  "model_group": "Hunter",
   "model": "Hunter 8-Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -86,6 +86,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -96,7 +102,6 @@
           "height": 660
         },
         "total_weight": 13,
-        "max_weight_rider": 100,
         "rider_height_min": 1480,
         "rider_height_max": 2000
       }
@@ -208,7 +213,10 @@
     {
       "type": "seatpost",
       "type_detail": "Seat post",
-      "description": "6061 Aluminum, 33.9 mm thick with extended length& laser-engraved scale mark, sand-anodized, special anti-slip seat tube bushing (no-scratching, tight holding/griping)"
+      "description": "6061 Aluminum, 33.9 mm thick with extended length& laser-engraved scale mark, sand-anodized, special anti-slip seat tube bushing (no-scratching, tight holding/griping)",
+      "dimensions": {
+        "diameter": 33.9
+      }
     },
     {
       "type": "shifter",

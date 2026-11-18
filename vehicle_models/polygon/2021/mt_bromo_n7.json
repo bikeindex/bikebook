@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/polygon/2021/mt_bromo_n7",
   "manufacturer": "Polygon",
-  "vehicle_model_group": "MT Bromo",
+  "model_group": "MT Bromo",
   "model": "MT Bromo N7",
   "model_configuration": "complete",
   "type": "bike",
@@ -133,7 +133,9 @@
       "kind": "mid_drive",
       "spindle": "Shimano E8000",
       "sensor_cadence": true,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 60,
       "operating_modes": [

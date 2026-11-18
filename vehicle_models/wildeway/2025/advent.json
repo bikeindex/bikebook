@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wildeway/2025/advent",
   "manufacturer": "Wildeway",
   "model": "Advent",
@@ -54,8 +54,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 227
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {
@@ -96,9 +95,12 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung / LG",
+      "battery": {
+        "capacity": 960,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "Samsung / LG"
+      },
       "rated_power": 750,
       "peak_power": 1300,
       "max_torque": 68,
@@ -119,9 +121,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 49.9
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 49.9
+    },
+    {
+      "load": "payload",
+      "weight": 227
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

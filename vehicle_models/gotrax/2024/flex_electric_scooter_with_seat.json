@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2024/flex_electric_scooter_with_seat",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "Flex",
+  "model_group": "Flex",
   "model": "Flex Electric Scooter with Seat",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -61,8 +61,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "stem_fold",
-    "max_weight_total": 100
+    "folding": "stem_fold"
   },
   "suspension": {
     "front": {},
@@ -88,10 +87,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 480,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 480,
+        "charging_time": 360
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -104,6 +107,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "payload",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -113,8 +126,7 @@
           "width": 208,
           "height": 998
         },
-        "total_weight": 19.5,
-        "max_weight_rider": 120
+        "total_weight": 19.5
       }
     }
   ],

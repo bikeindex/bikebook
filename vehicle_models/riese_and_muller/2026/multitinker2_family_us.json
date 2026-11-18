@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2026/multitinker2_family_us",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Multitinker2",
+  "model_group": "Multitinker2",
   "model": "Multitinker2 FAMILY",
   "model_configuration": "complete",
   "markets": [
@@ -62,9 +62,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 34.9,
-    "seatpost_clamp_diameter": 40,
-    "max_weight_total": 164,
-    "gross_weight_rating": 200
+    "seatpost_clamp_diameter": 40
   },
   "suspension": {
     "front": {
@@ -121,8 +119,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 700,
       "max_torque": 90,
@@ -136,6 +136,28 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 200
+    },
+    {
+      "load": "rear_rack",
+      "weight": 70
+    },
+    {
+      "load": "front_rack",
+      "weight": 8
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 5
     }
   ],
   "sizes": [
@@ -156,7 +178,6 @@
           "length": 1887
         },
         "total_weight": 36,
-        "max_weight_rider": 110,
         "rider_height_min": 1500,
         "rider_height_max": 2000,
         "extra_measurements": {
@@ -164,11 +185,7 @@
           "compatibility_tagalong_trailer_bike": "yes",
           "top_tube_height": 464,
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_cargo_front_carrier_kg": 8,
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 70
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     }

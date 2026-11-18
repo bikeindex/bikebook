@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/voltvogue/2026/bk_20",
   "manufacturer": "Voltvogue",
-  "vehicle_model_group": "BK",
+  "model_group": "BK",
   "model": "BK-20",
   "model_configuration": "complete",
   "type": "bike",
@@ -35,8 +35,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 150
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {},
@@ -58,9 +57,10 @@
   ],
   "motors": [
     {
-      "battery_size": 960,
-      "battery_info": "20 Ah",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 960,
+        "charging_time": 300
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -81,6 +81,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -113,6 +119,10 @@
       "description": "Battery life: 4 hr"
     },
     {
+      "type": "e_vehicle_battery",
+      "description": "48 V"
+    },
+    {
       "type": "e_vehicle_charger",
       "description": "Charger"
     },
@@ -142,16 +152,6 @@
       "type": "unknown",
       "type_detail": "Features",
       "description": "Adjustable Handlebar Height, Adjustable Height, Adjustable Seat Height, Adjustable Speed, Multi-Speed, Waterproof"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Volts",
-      "description": "48 V"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Amps",
-      "description": "20 Amps"
     },
     {
       "type": "unknown",

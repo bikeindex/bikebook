@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2020/precaliber_20_7_speed",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Precaliber",
+  "model_group": "Precaliber",
   "model": "Precaliber 20 7-speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -95,9 +95,7 @@
     "bottom_bracket": {
       "width": 68,
       "spindle": "square taper"
-    },
-    "max_weight_total": 25,
-    "gross_weight_rating": 36
+    }
   },
   "suspension": {
     "front": {
@@ -148,6 +146,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 36
     }
   ],
   "sizes": [

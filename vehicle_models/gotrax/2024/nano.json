@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2024/nano",
   "manufacturer": "GOTRAX",
   "model": "Nano",
@@ -111,8 +111,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 100
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -135,8 +134,12 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 281,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 281
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -158,6 +161,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

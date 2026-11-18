@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/yuba/2021/supercargo_cl",
   "manufacturer": "Yuba",
-  "vehicle_model_group": "Supercargo",
+  "model_group": "Supercargo",
   "model": "Supercargo CL",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -119,8 +119,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 200
+    "material_detail": "6061 Aluminum"
   },
   "wheels": [
     {
@@ -163,9 +162,13 @@
       "model": "BDU450CX",
       "model_group": "Cargo Line",
       "kind": "mid_drive",
-      "certification": "EN 15194",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "EN 15194"
+      ],
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -179,6 +182,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

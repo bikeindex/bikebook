@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tripper/2022/m_carg0",
   "manufacturer": "Tripper",
   "model": "M-CARG0",
@@ -25,8 +25,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 200
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -74,8 +73,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 1469,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1469,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -97,6 +98,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [
@@ -175,10 +182,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V / 28A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "CDC6 Display"
     },
     {
@@ -248,6 +251,11 @@
         "width": 60.96,
         "diameter": 507
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V / 28A"
     },
     {
       "type": "unknown",

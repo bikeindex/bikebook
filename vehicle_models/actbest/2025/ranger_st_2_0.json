@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/actbest/2025/ranger_st_2_0",
   "manufacturer": "Actbest",
-  "vehicle_model_group": "Ranger",
+  "model_group": "Ranger",
   "model": "Ranger ST 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -112,8 +112,7 @@
   },
   "frame": {
     "material": "steel",
-    "top_tube": "step_through",
-    "max_weight_total": 227
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {}
@@ -147,11 +146,15 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "peak_power": 1800,
       "max_torque": 110,
       "operating_modes": [
@@ -175,9 +178,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 24.95
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 24.95
+    },
+    {
+      "load": "payload",
+      "weight": 227
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -195,8 +205,8 @@
           "height": 1140
         },
         "total_weight": 35,
-        "rider_height_min": 1702,
-        "rider_height_max": 1956,
+        "rider_height_min": 1626,
+        "rider_height_max": 2007,
         "extra_measurements": {
           "handlebar_height": 1100,
           "rear_rack_height": 800

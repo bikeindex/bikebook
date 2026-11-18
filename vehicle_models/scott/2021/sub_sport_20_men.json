@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/sub_sport_20_men",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Sub Sport",
+  "model_group": "Sub Sport",
   "model": "Sub Sport 20 Men",
   "model_configuration": "complete",
   "type": "bike",
@@ -53,9 +53,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 110,
-    "gross_weight_rating": 128
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -106,6 +104,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 128
     }
   ],
   "sizes": [

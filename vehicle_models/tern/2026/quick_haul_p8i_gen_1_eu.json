@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tern/2026/quick_haul_p8i_gen_1_eu",
   "manufacturer": "Tern",
-  "vehicle_model_group": "Quick Haul",
+  "model_group": "Quick Haul",
   "model": "Quick Haul P8i Gen 1",
   "model_configuration": "complete",
   "markets": [
@@ -49,8 +49,7 @@
     "bottom_bracket": {
       "spindle": "BNI"
     },
-    "seatpost_diameter": 31.6,
-    "gross_weight_rating": 150
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -102,8 +101,10 @@
       "model_group": "Active Line",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 290,
       "max_torque": 40,
@@ -120,14 +121,24 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 50
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "cargo",
+      "weight": 50
+    },
+    {
+      "load": "gross",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "max_weight_rider": 120,
         "rider_height_min": 1600,
         "rider_height_max": 1950,
         "extra_measurements": {

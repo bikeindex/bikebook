@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bianchi/2022/e_impulso_tourer_deore_1x11sp",
   "manufacturer": "Bianchi",
-  "vehicle_model_group": "e-Impulso",
+  "model_group": "e-Impulso",
   "model": "e-Impulso Tourer Deore 1x11sp",
   "model_configuration": "complete",
   "type": "bike",
@@ -88,8 +88,10 @@
     {
       "manufacturer": "Mahle",
       "model": "X35 Plus",
-      "battery_size": 250,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 250,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -102,9 +104,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 15
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 15
+    }
+  ],
   "sizes": [
     {
       "name": "One Size"

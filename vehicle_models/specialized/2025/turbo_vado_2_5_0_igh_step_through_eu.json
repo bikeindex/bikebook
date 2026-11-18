@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2025/turbo_vado_2_5_0_igh_step_through_eu",
   "base": "m/specialized/2025/turbo_vado_2_5_0_igh_step_through",
   "markets": [
@@ -65,6 +65,9 @@
   },
   "motors": {
     "0": {
+      "battery": {
+        "chemistry": null
+      },
       "operating_modes": {
         "assist stock": {
           "e_vehicle_classifications": [
@@ -73,8 +76,7 @@
           "max_speed": null
         }
       },
-      "certification": null,
-      "battery_chemistry": null
+      "certifications": null
     }
   },
   "components": [
@@ -188,7 +190,6 @@
     },
     {
       "type": "hub",
-      "type_detail": "Derailleur",
       "position": [
         "rear"
       ],

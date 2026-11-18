@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2026/r1_plus",
   "manufacturer": "Eunorau",
-  "vehicle_model_group": "R1",
+  "model_group": "R1",
   "model": "R1+",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -95,12 +95,13 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "certification": "Yes",
       "water_rating": "IP65",
-      "battery_size": 2880,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cell",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 2880,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 240
+      },
       "rated_power": 5000,
       "peak_power": 17000,
       "max_torque": 500,

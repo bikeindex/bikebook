@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vivi/2021/mt26gul",
   "manufacturer": "Vivi",
-  "vehicle_model_group": "MT26",
+  "model_group": "MT26",
   "model": "MT26GUL",
   "model_configuration": "complete",
   "type": "bike",
@@ -73,8 +73,7 @@
     "material_detail": "High-Carbon Steel",
     "top_tube": "step_through",
     "seatpost_diameter": 28.6,
-    "seatpost_clamp_diameter": 30,
-    "max_weight_total": 150
+    "seatpost_clamp_diameter": 30
   },
   "suspension": {
     "front": {
@@ -132,11 +131,16 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP54",
-      "battery_size": 374,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 374,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 1000,
       "max_torque": 65,
@@ -161,6 +165,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

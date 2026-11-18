@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hikeep/2026/soleix8",
   "manufacturer": "Hikeep",
   "model": "Soleix8",
@@ -50,8 +50,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 136
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {},
@@ -83,11 +82,17 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2580, UL 2271",
+      "certifications": [
+        "UL 2271",
+        "UL 2580"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 749,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG Cell",
+      "battery": {
+        "capacity": 749,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 1000,
       "peak_power": 2000,
       "max_torque": 120,
@@ -121,6 +126,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rattan/2026/lm_750_pro_eu",
   "manufacturer": "Rattan",
-  "vehicle_model_group": "LM/LF 750 Pro",
+  "model_group": "LM/LF 750 Pro",
   "model": "LM 750 Pro",
   "model_configuration": "complete",
   "markets": [
@@ -70,8 +70,7 @@
   "frame": {
     "material": "steel",
     "top_tube": "step_through",
-    "folding": "half_fold",
-    "max_weight_total": 180
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -103,9 +102,12 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_info": "13AH",
-      "charging_time": 420,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "charging_time": 420
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -126,6 +128,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [

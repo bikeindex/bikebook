@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2023/samedi_27_wide_5_sa27fw5",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Samedi 27 Wide",
+  "model_group": "Samedi 27 Wide",
   "model": "Samedi 27 Wide 5 SA27FW5",
   "model_configuration": "complete",
   "type": "bike",
@@ -61,9 +61,7 @@
     },
     "headset": "ZS44/28.6 | ZS56/40",
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 110,
-    "gross_weight_rating": 135
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -138,8 +136,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -155,6 +155,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 135
     }
   ],
   "sizes": [

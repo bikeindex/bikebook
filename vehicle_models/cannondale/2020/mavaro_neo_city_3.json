@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2020/mavaro_neo_city_3",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Mavaro",
+  "model_group": "Mavaro",
   "model": "Mavaro Neo City 3",
   "model_configuration": "complete",
   "type": "bike",
@@ -87,8 +87,10 @@
   ],
   "motors": [
     {
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

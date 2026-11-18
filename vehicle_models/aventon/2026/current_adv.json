@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aventon/2026/current_adv",
   "manufacturer": "Aventón",
-  "vehicle_model_group": "Current",
+  "model_group": "Current",
   "model": "Current ADV",
   "model_configuration": "complete",
   "type": "bike",
@@ -87,8 +87,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 136
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -157,8 +156,10 @@
       "model": "Ultro X",
       "kind": "mid_drive",
       "water_rating": "IP67",
-      "battery_size": 800,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 800,
+        "charging_time": 360
+      },
       "peak_power": 850,
       "max_torque": 110,
       "operating_modes": [
@@ -180,6 +181,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

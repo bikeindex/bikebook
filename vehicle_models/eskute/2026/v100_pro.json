@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eskute/2026/v100_pro",
   "manufacturer": "Eskute",
-  "vehicle_model_group": "V100",
+  "model_group": "V100",
   "model": "V100 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -103,8 +103,7 @@
       {
         "type": "fender"
       }
-    ],
-    "max_weight_total": 163
+    ]
   },
   "suspension": {
     "front": {},
@@ -137,8 +136,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 749,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 749,
+        "charging_time": 480
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "operating_modes": [
@@ -162,9 +163,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.43
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.43
+    },
+    {
+      "load": "payload",
+      "weight": 163
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

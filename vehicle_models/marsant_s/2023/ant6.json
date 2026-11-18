@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/marsant_s/2023/ant6",
   "manufacturer": "Marsant's",
-  "vehicle_model_group": "Ant",
+  "model_group": "Ant",
   "model": "Ant6",
   "model_configuration": "complete",
   "type": "bike",
@@ -65,8 +65,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061-T6 Aluminum",
-    "max_weight_total": 181
+    "material_detail": "6061-T6 Aluminum"
   },
   "suspension": {
     "front": {
@@ -101,9 +100,13 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2271",
-      "battery_size": 979,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 979,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "operating_modes": [
@@ -134,6 +137,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

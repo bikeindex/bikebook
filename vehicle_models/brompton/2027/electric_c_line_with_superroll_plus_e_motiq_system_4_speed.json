@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/brompton/2027/electric_c_line_with_superroll_plus_e_motiq_system_4_speed",
   "manufacturer": "Brompton Bicycle",
-  "vehicle_model_group": "Electric C Line",
+  "model_group": "Electric C Line",
   "model": "Electric C Line with SuperRoll+ - e-Motiq system - 4-speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -133,8 +133,11 @@
   ],
   "motors": [
     {
-      "battery_size": 345,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 345,
+        "weight": 3.8,
+        "charging_time": 300
+      },
       "rated_power": 250,
       "max_torque": 24,
       "operating_modes": [

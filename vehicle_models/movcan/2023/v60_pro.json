@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/movcan/2023/v60_pro",
   "manufacturer": "Movcan",
-  "vehicle_model_group": "V60",
+  "model_group": "V60",
   "model": "V60 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -80,8 +80,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -117,8 +116,10 @@
   "motors": [
     {
       "water_rating": "IPX5",
-      "battery_size": 874,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 874,
+        "charging_time": 420
+      },
       "rated_power": 1500,
       "peak_power": 2000,
       "max_torque": 80,
@@ -143,6 +144,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

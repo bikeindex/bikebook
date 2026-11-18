@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/motobecane/2026/m600_29er_fs",
   "manufacturer": "Motobecane",
-  "vehicle_model_group": "HAL eBoost",
+  "model_group": "HAL eBoost",
   "model": "M600 29er FS",
   "model_configuration": "complete",
   "type": "bike",
@@ -111,8 +111,10 @@
       "model": "MMG521",
       "kind": "mid_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 120,
       "operating_modes": [

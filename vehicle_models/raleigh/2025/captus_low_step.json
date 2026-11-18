@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/raleigh/2025/captus_low_step",
   "manufacturer": "Raleigh",
-  "vehicle_model_group": "Captus",
+  "model_group": "Captus",
   "model": "Captus Low Step",
   "model_configuration": "complete",
   "markets": [
@@ -118,8 +118,10 @@
       "model": "BDU332Y",
       "model_group": "Active Line",
       "kind": "mid_drive",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 586,
       "max_torque": 40,

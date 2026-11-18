@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/giant/2019/explore_e_plus_3_step_thru",
   "manufacturer": "Giant",
-  "vehicle_model_group": "Explore",
+  "model_group": "Explore",
   "model": "Explore E+ 3 Step Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -107,8 +107,10 @@
       "manufacturer": "Giant",
       "model": "SyncDrive Sport",
       "kind": "mid_drive",
-      "battery_size": 407,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 407,
+        "chemistry": "li-ion"
+      },
       "max_torque": 80,
       "operating_modes": [
         {

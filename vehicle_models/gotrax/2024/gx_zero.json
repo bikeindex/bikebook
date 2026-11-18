@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2024/gx_zero",
   "manufacturer": "GOTRAX",
   "model": "GX Zero",
@@ -78,10 +78,14 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IP54",
-      "battery_size": 576,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 576,
+        "charging_time": 420
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -95,10 +99,14 @@
     },
     {
       "drive_wheel": "rear",
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IP54",
-      "battery_size": 576,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 576,
+        "charging_time": 420
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -111,6 +119,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -120,8 +134,7 @@
           "width": 681,
           "height": 1316
         },
-        "total_weight": 29.9,
-        "max_weight_rider": 120
+        "total_weight": 29.9
       }
     }
   ],

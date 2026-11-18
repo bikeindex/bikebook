@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sun/2022/north_bay_step_thru",
   "manufacturer": "Sun",
-  "vehicle_model_group": "North Bay",
+  "model_group": "North Bay",
   "model": "North Bay Step-Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -134,6 +134,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "15.5\"",
@@ -158,7 +164,6 @@
         "stem_length": 80,
         "crank_length": 170,
         "total_weight": 14.5,
-        "max_weight_rider": 113,
         "extra_measurements": {
           "minimum_saddle_to_pedal": 660,
           "minimum_step_through": 457
@@ -166,10 +171,7 @@
       }
     },
     {
-      "name": "17.5\"",
-      "geometry": {
-        "max_weight_rider": 113
-      }
+      "name": "17.5\""
     },
     {
       "name": "19\"",
@@ -193,7 +195,6 @@
         "handlebar_width": 635,
         "stem_length": 80,
         "crank_length": 170,
-        "max_weight_rider": 113,
         "extra_measurements": {
           "minimum_saddle_to_pedal": 749,
           "minimum_step_through": 457

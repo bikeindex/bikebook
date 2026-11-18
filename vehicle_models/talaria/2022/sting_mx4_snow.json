@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/talaria/2022/sting_mx4_snow",
   "manufacturer": "Talaria",
-  "vehicle_model_group": "MX4",
+  "model_group": "MX4",
   "model": "Sting MX4 Snow",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -35,10 +35,13 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 2700,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG Brand 21700 Cell (5000 MAH/Cell)",
-      "charging_time": 180,
+      "battery": {
+        "capacity": 2700,
+        "voltage": 60,
+        "chemistry": "li-ion",
+        "cells": "LG 21700 (5000 MAH)",
+        "charging_time": 180
+      },
       "max_torque": 45,
       "operating_modes": [
         {

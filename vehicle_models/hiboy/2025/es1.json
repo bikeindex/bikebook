@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hiboy/2025/es1",
   "manufacturer": "Hiboy",
   "model": "ES1",
@@ -132,11 +132,15 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 56,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 56,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 30,
       "peak_power": 45,
       "operating_modes": [
@@ -150,6 +154,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 50
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -160,7 +170,6 @@
           "height": 729
         },
         "total_weight": 5.3,
-        "max_weight_rider": 50,
         "rider_height_min": 1000,
         "rider_height_max": 1400,
         "rider_age_min": 4,

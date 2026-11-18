@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2023/porter",
   "manufacturer": "GOTRAX",
   "model": "Porter",
@@ -60,8 +60,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "wheels": [
     {
@@ -85,10 +84,14 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 499,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 499,
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -112,6 +115,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -121,8 +134,7 @@
           "width": 650,
           "height": 1199
         },
-        "total_weight": 33.3,
-        "max_weight_rider": 150
+        "total_weight": 33.3
       }
     }
   ],

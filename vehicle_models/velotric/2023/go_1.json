@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velotric/2023/go_1",
   "manufacturer": "Velotric",
   "model": "Go 1",
@@ -97,8 +97,7 @@
       }
     ],
     "cable_routing": "internal",
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 200
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {
@@ -159,10 +158,13 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IPX6",
-      "battery_size": 691,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG 21700",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 691,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "LG 21700",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 900,
       "max_torque": 65,
@@ -198,9 +200,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54
+    },
+    {
+      "load": "payload",
+      "weight": 200
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

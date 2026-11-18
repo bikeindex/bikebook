@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/throne/2025/spyder_750w",
   "manufacturer": "Throne Cycles",
-  "vehicle_model_group": "Spyder",
+  "model_group": "Spyder",
   "model": "Spyder 750W",
   "model_configuration": "complete",
   "type": "bike",
@@ -82,8 +82,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {

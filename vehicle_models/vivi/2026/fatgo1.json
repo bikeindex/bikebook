@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vivi/2026/fatgo1",
   "manufacturer": "Vivi",
   "model": "FatGo1",
@@ -82,8 +82,7 @@
     "top_tube": "step_through",
     "folding": "half_fold",
     "seatpost_diameter": 30.4,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 130
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -133,11 +132,16 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 648,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 648,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 60,
@@ -164,9 +168,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 50
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 50
+    },
+    {
+      "load": "payload",
+      "weight": 130
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

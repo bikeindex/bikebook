@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aventon/2026/level_4_adv_step_through",
   "manufacturer": "Aventón",
-  "vehicle_model_group": "Level",
+  "model_group": "Level",
   "model": "Level 4 ADV Step-Through",
   "model_configuration": "complete",
   "type": "bike",
@@ -76,8 +76,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 136
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -143,12 +142,17 @@
       "model": "Ultro S",
       "kind": "mid_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP67",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
-      "battery_info": "36V, 20Ah",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 800,
+        "voltage": 36,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 100,
@@ -178,6 +182,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/engwe/2026/l20_3_0",
   "manufacturer": "ENGWE",
-  "vehicle_model_group": "L20",
+  "model_group": "L20",
   "model": "L20 3.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,8 +54,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 150
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -106,12 +105,16 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG 21700 Cells",
-      "charging_time": 120,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "LG 21700",
+        "charging_time": 120
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 90,
@@ -132,6 +135,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

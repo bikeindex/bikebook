@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/merida/2025/espeeder_200_se",
   "manufacturer": "Merida Bikes",
-  "vehicle_model_group": "eSPEEDER",
+  "model_group": "eSPEEDER",
   "model": "eSPEEDER 200 SE",
   "model_configuration": "complete",
   "type": "bike",
@@ -36,9 +36,7 @@
     "bottom_bracket": {
       "shell": "BSA"
     },
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 105,
-    "gross_weight_rating": 120
+    "seatpost_diameter": 30.9
   },
   "wheels": [
     {
@@ -113,8 +111,10 @@
       "manufacturer": "Mahle",
       "model": "X35",
       "kind": "hub_drive",
-      "battery_size": 248,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 248,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [
@@ -123,6 +123,16 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 105
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

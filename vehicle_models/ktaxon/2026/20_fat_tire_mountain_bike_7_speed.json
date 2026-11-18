@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktaxon/2026/20_fat_tire_mountain_bike_7_speed",
   "manufacturer": "Ktaxon",
-  "vehicle_model_group": "Fat Tire Mountain Bike",
+  "model_group": "Fat Tire Mountain Bike",
   "model": "20\" Fat Tire Mountain Bike 7-Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -49,8 +49,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 68
+    "material": "steel"
   },
   "wheels": [
     {
@@ -60,6 +59,14 @@
         "rear"
       ],
       "tire_width": 76
+    },
+    {
+      "bsd": 76,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "configured": false
     }
   ],
   "drivetrain": [
@@ -76,6 +83,12 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 68
     }
   ],
   "sizes": [

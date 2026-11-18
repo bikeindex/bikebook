@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mukkpet/2024/breeze",
   "manufacturer": "Mukkpet",
   "model": "Breeze",
@@ -36,8 +36,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 150
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -69,8 +68,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 1440,
-      "charging_time": 330,
+      "battery": {
+        "capacity": 1440,
+        "charging_time": 330
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "operating_modes": [
@@ -89,6 +90,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

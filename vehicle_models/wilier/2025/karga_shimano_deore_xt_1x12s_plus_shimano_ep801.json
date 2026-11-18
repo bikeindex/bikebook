@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wilier/2025/karga_shimano_deore_xt_1x12s_plus_shimano_ep801",
   "manufacturer": "Wilier",
-  "vehicle_model_group": "Karga",
+  "model_group": "Karga",
   "model": "Karga Shimano Deore XT 1X12S + Shimano EP801",
   "model_configuration": "complete",
   "type": "bike",
@@ -132,8 +132,12 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 720,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [
@@ -336,12 +340,6 @@
         "width": 60.96,
         "diameter": 622
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Electric system",
-      "manufacturer": "Shimano",
-      "description": "SHIMANO EP801"
     },
     {
       "type": "wheel",

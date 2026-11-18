@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/benno/2018/boost_e_10d",
   "manufacturer": "Benno",
-  "vehicle_model_group": "Boost",
+  "model_group": "Boost",
   "model": "Boost E 10D",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -81,8 +81,10 @@
       "model": "Performance",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 63,

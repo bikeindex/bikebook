@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/actbest/2024/core_swept",
   "manufacturer": "Actbest",
-  "vehicle_model_group": "Core",
+  "model_group": "Core",
   "model": "Core-Swept",
   "model_configuration": "complete",
   "type": "bike",
@@ -248,8 +248,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 159
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -291,8 +290,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 468,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 468,
+        "charging_time": 360
+      },
       "rated_power": 350,
       "peak_power": 750,
       "max_torque": 55,
@@ -321,9 +322,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.43
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.43
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

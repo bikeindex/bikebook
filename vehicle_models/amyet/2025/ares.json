@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/amyet/2025/ares",
   "manufacturer": "Amyet",
   "model": "Ares",
@@ -54,8 +54,7 @@
       {
         "type": "fender"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {},
@@ -78,10 +77,12 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "battery_size": 1300,
-      "battery_options": [
-        1040
-      ],
+      "battery": {
+        "capacity": 1300,
+        "capacity_options": [
+          1040
+        ]
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -97,10 +98,12 @@
     },
     {
       "drive_wheel": "rear",
-      "battery_size": 1300,
-      "battery_options": [
-        1040
-      ],
+      "battery": {
+        "capacity": 1300,
+        "capacity_options": [
+          1040
+        ]
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -113,6 +116,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -155,11 +164,6 @@
       "type": "included_not_installed",
       "type_detail": "Tool Kit",
       "description": "Tool Kit"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Speed Quantity",
-      "description": "32mph 7 Speed Gears"
     },
     {
       "type": "unknown",

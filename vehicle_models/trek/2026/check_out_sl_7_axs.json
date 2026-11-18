@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2026/check_out_sl_7_axs",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Check-OUT",
+  "model_group": "Check-OUT",
   "model": "Check-OUT SL 7 AXS",
   "model_configuration": "complete",
   "type": "bike",
@@ -71,9 +71,7 @@
       "shell": "T47",
       "spindle": "DUB"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 113,
-    "gross_weight_rating": 125
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -140,6 +138,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

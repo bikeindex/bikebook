@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/likebike/2025/rail_7",
   "manufacturer": "Likebike",
-  "vehicle_model_group": "Rail",
+  "model_group": "Rail",
   "model": "Rail 7",
   "model_configuration": "complete",
   "type": "bike",
@@ -37,8 +37,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -70,7 +69,9 @@
   ],
   "motors": [
     {
-      "battery_size": 960,
+      "battery": {
+        "capacity": 960
+      },
       "rated_power": 750,
       "peak_power": 2000,
       "max_torque": 95,
@@ -89,6 +90,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

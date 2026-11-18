@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/espin/2022/nesta",
   "manufacturer": "Espin",
   "model": "Nesta",
@@ -108,10 +108,12 @@
       "manufacturer": "Espin",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 35e Cells",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion",
+        "cells": "Samsung 35e",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "max_torque": 85,
@@ -133,9 +135,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 30
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 30
+    }
+  ],
   "sizes": [
     {
       "name": "17\"",
@@ -171,6 +176,10 @@
       "description": "Removable Lithium-ion 48V, 10.4Ah (504Wh) Samsung 35e Cells"
     },
     {
+      "type": "e_vehicle_charger",
+      "description": "2 Amp Charger"
+    },
+    {
       "type": "e_vehicle_motor",
       "manufacturer": "Espin",
       "description": "Espin"
@@ -197,6 +206,11 @@
       "dimensions": {
         "diameter": 31.8
       }
+    },
+    {
+      "type": "included_not_installed",
+      "type_detail": "Tools",
+      "description": "Tool Box"
     },
     {
       "type": "pedals",

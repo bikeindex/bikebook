@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2025/rs_jet",
   "manufacturer": "Inmotion",
-  "vehicle_model_group": "RS",
+  "model_group": "RS",
   "model": "RS Jet",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -80,8 +80,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP56",
-      "battery_size": 1800,
-      "charging_time": 600,
+      "battery": {
+        "capacity": 1800,
+        "charging_time": 600
+      },
       "rated_power": 2400,
       "peak_power": 4600,
       "operating_modes": [
@@ -95,6 +97,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -104,8 +112,7 @@
           "width": 700,
           "height": 1290
         },
-        "total_weight": 46.3,
-        "max_weight_rider": 150
+        "total_weight": 46.3
       }
     }
   ],

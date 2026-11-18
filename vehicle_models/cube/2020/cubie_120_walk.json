@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2020/cubie_120_walk",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Cubie",
+  "model_group": "Cubie",
   "model": "Cubie 120 walk",
   "model_configuration": "complete",
   "type": "balance_bike",
@@ -31,9 +31,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 26,
-    "gross_weight_rating": 30
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -42,6 +40,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 26
+    },
+    {
+      "load": "gross",
+      "weight": 30
     }
   ],
   "sizes": [

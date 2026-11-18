@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2022/srx_pro_all_terrain_hoverboard",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "SRX",
+  "model_group": "SRX",
   "model": "SRX PRO All Terrain Hoverboard",
   "model_configuration": "complete",
   "type": "epamd",
@@ -244,9 +244,11 @@
   ],
   "motors": [
     {
-      "battery_size": 144,
-      "battery_info": "36V",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 144,
+        "voltage": 36,
+        "charging_time": 300
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -258,9 +260,11 @@
       ]
     },
     {
-      "battery_size": 144,
-      "battery_info": "36V",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 144,
+        "voltage": 36,
+        "charging_time": 300
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -272,6 +276,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -281,8 +291,7 @@
           "width": 203,
           "height": 254
         },
-        "total_weight": 12,
-        "max_weight_rider": 100
+        "total_weight": 12
       }
     }
   ],

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dengfu/2025/e55_am_can_bus_economical",
   "manufacturer": "Dengfu",
-  "vehicle_model_group": "E55",
+  "model_group": "E55",
   "model": "E55 AM CAN-BUS Economical",
   "model_configuration": "complete",
   "type": "bike",
@@ -144,10 +144,15 @@
       "spindle": "ISIS",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / UL 2849",
+      "certifications": [
+        "UL 2849",
+        "CE"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 1040,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1040,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "peak_power": 1440,
       "max_torque": 170,

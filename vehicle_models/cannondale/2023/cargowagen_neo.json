@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2023/cargowagen_neo",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Cargowagen Neo",
+  "model_group": "Cargowagen Neo",
   "model": "Cargowagen Neo",
   "model_configuration": "complete",
   "markets": [
@@ -150,9 +150,13 @@
       "manufacturer": "Bosch",
       "model": "Performance Speed",
       "kind": "mid_drive",
-      "certification": "UL 2849",
-      "battery_size": 545,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 545,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

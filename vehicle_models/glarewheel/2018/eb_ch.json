@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/glarewheel/2018/eb_ch",
   "manufacturer": "Glarewheel",
-  "vehicle_model_group": "EB-CH",
+  "model_group": "EB-CH",
   "model": "EB-CH",
   "model_configuration": "complete",
   "type": "bike",
@@ -68,9 +68,11 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung",
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "operating_modes": [
@@ -90,6 +92,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -102,7 +110,6 @@
         "dimensions": {
           "length": 2108.2
         },
-        "max_weight_rider": 136,
         "rider_height_min": 1626,
         "rider_height_max": 1956,
         "extra_measurements": {

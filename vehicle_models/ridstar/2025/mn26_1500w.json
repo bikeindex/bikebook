@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ridstar/2025/mn26_1500w",
   "manufacturer": "Ridstar",
   "model": "MN26 1500W",
@@ -33,8 +33,7 @@
           "rear"
         ]
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {}
@@ -68,8 +67,10 @@
   ],
   "motors": [
     {
-      "battery_size": 960,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 960,
+        "charging_time": 360
+      },
       "rated_power": 1500,
       "peak_power": 2000,
       "operating_modes": [
@@ -90,6 +91,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

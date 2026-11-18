@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2026/gambler_rc",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Gambler",
+  "model_group": "Gambler",
   "model": "Gambler RC",
   "model_configuration": "complete",
   "markets": [
@@ -78,9 +78,7 @@
     },
     "headset": "ZS56/28.6 | ZS56/40",
     "seatpost_diameter": 31.6,
-    "derailleur_hanger": "SRAM UDH",
-    "max_weight_total": 113,
-    "gross_weight_rating": 130
+    "derailleur_hanger": "SRAM UDH"
   },
   "suspension": {
     "front": {
@@ -137,6 +135,16 @@
         "rear"
       ],
       "rotor_diameter": 200
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
+    },
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [

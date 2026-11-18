@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2026/sturmvogel_evo",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Sturmvogel EVO",
+  "model_group": "Sturmvogel EVO",
   "model": "Sturmvogel EVO",
   "model_configuration": "complete",
   "type": "bike",
@@ -64,9 +64,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 124,
-    "gross_weight_rating": 150
+    "seatpost_diameter": 34.9
   },
   "wheels": [
     {
@@ -111,11 +109,14 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_options": [
-        800
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "capacity_options": [
+          800
+        ],
+        "chemistry": "li-ion",
+        "weight": 5.3
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 85,
@@ -129,6 +130,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 124
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -245,14 +256,6 @@
       "type": "derailleur",
       "type_detail": "Derailleur type",
       "description": "Hub gear"
-    },
-    {
-      "type": "derailleur",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "SHIMANO Nexus 5-speed hub gear"
     },
     {
       "type": "drive_belt",

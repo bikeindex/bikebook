@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2026/c10",
   "manufacturer": "Inmotion",
   "model": "C10",
@@ -47,8 +47,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 374,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 374,
+        "charging_time": 420
+      },
       "rated_power": 700,
       "peak_power": 1400,
       "operating_modes": [
@@ -60,6 +62,12 @@
           "max_slope": 17
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -76,8 +84,7 @@
           "width": 564,
           "height": 555
         },
-        "total_weight": 28.1,
-        "max_weight_rider": 120
+        "total_weight": 28.1
       }
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hovsco/2023/xander_max",
   "manufacturer": "Hovsco",
   "model": "Xander Max",
@@ -53,9 +53,11 @@
   "motors": [
     {
       "water_rating": "IPX5",
-      "battery_size": 374,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 374,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 350,
       "peak_power": 500,
       "operating_modes": [
@@ -69,12 +71,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 16.4,
-        "max_weight_rider": 100,
         "rider_height_min": 1300,
         "rider_height_max": 2000
       }

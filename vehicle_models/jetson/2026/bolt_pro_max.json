@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2026/bolt_pro_max",
   "manufacturer": "Jetson",
-  "vehicle_model_group": "Bolt",
+  "model_group": "Bolt",
   "model": "Bolt Pro Max",
   "model_configuration": "complete",
   "type": "bike",
@@ -51,9 +51,11 @@
   ],
   "motors": [
     {
-      "battery_size": 216,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 216,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -79,6 +81,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -94,7 +102,6 @@
           "height": 744
         },
         "total_weight": 22.3,
-        "max_weight_rider": 100,
         "rider_age_min": 12
       }
     }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velowave/2024/forest_sm",
   "manufacturer": "Velowave",
-  "vehicle_model_group": "Forest",
+  "model_group": "Forest",
   "model": "Forest SM",
   "model_configuration": "complete",
   "type": "bike",
@@ -68,8 +68,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 35,
-    "max_weight_total": 175
+    "seatpost_clamp_diameter": 35
   },
   "suspension": {
     "front": {
@@ -126,10 +125,12 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 300
+      },
       "rated_power": 500,
       "peak_power": 760,
       "max_torque": 130,
@@ -154,6 +155,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 175
     }
   ],
   "sizes": [

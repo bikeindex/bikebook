@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mihogo/2024/one",
   "manufacturer": "Mihogo",
   "model": "ONE",
@@ -59,8 +59,7 @@
       "spindle": "square taper"
     },
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 40.8,
-    "max_weight_total": 200
+    "seatpost_clamp_diameter": 40.8
   },
   "suspension": {
     "front": {
@@ -114,8 +113,10 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 1382,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1382,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "operating_modes": [
@@ -136,9 +137,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 50
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 50
+    },
+    {
+      "load": "payload",
+      "weight": 200
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

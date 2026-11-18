@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tern/2026/byb_s11_gen_1",
   "manufacturer": "Tern",
-  "vehicle_model_group": "BYB",
+  "model_group": "BYB",
   "model": "BYB S11 Gen 1",
   "model_configuration": "complete",
   "markets": [
@@ -57,9 +57,7 @@
     ],
     "bottom_bracket": {
       "spindle": "30mm"
-    },
-    "max_weight_total": 107,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -98,9 +96,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 20
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 105
+    },
+    {
+      "load": "cargo",
+      "weight": 20
+    },
+    {
+      "load": "gross",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -111,7 +120,6 @@
           "height": 510
         },
         "total_weight": 12.7,
-        "max_weight_rider": 105,
         "rider_height_min": 1470,
         "rider_height_max": 1950,
         "extra_measurements": {

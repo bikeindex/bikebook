@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/haro/2024/skwad_2",
   "manufacturer": "Haro",
-  "vehicle_model_group": "Skwad",
+  "model_group": "Skwad",
   "model": "Skwad 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -94,9 +94,11 @@
     {
       "manufacturer": "Bafang",
       "sensor_cadence": true,
-      "battery_size": 576,
-      "battery_chemistry": "li-ion",
-      "battery_info": "EVE 2900 cells",
+      "battery": {
+        "capacity": 576,
+        "chemistry": "li-ion",
+        "cells": "EVE 2900"
+      },
       "rated_power": 500,
       "operating_modes": [
         {

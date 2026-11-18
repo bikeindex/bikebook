@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ride1up/2023/revv1_ht",
   "manufacturer": "Ride1Up",
-  "vehicle_model_group": "Revv1",
+  "model_group": "Revv1",
   "model": "Revv1 HT",
   "model_configuration": "complete",
   "type": "bike",
@@ -95,10 +95,14 @@
       "model": "RM G0F4",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2271",
-      "battery_size": 780,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 50E 21700 Cells",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 780,
+        "chemistry": "li-ion",
+        "cells": "Samsung 50E 21700"
+      },
       "max_torque": 100,
       "operating_modes": [
         {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dahon/2024/boardwalk_d7",
   "manufacturer": "Dahon",
-  "vehicle_model_group": "Boardwalk",
+  "model_group": "Boardwalk",
   "model": "Boardwalk D7",
   "model_configuration": "complete",
   "type": "bike",
@@ -85,7 +85,8 @@
   "frame": {
     "material": "steel",
     "material_detail": "4130 Chromoly Steel",
-    "folding": "half_fold"
+    "folding": "half_fold",
+    "seatpost_diameter": 33.9
   },
   "wheels": [
     {
@@ -126,6 +127,12 @@
       "caliper_mount": "Brake Bosses"
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 105
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -136,7 +143,6 @@
           "height": 680
         },
         "total_weight": 12,
-        "max_weight_rider": 105,
         "rider_height_min": 1500,
         "rider_height_max": 1900
       }
@@ -256,7 +262,11 @@
     {
       "type": "seatpost",
       "manufacturer": "Dahon",
-      "description": "DAHON Custom 6061 Aluminum, 33.9 mm x 530 mm"
+      "description": "DAHON Custom 6061 Aluminum, 33.9 mm x 530 mm",
+      "dimensions": {
+        "length": 530,
+        "diameter": 33.9
+      }
     },
     {
       "type": "shifter",

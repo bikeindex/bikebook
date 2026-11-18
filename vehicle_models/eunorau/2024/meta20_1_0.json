@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2024/meta20_1_0",
   "manufacturer": "Eunorau",
-  "vehicle_model_group": "META",
+  "model_group": "META",
   "model": "META20 1.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -101,8 +101,7 @@
       {
         "type": "fender"
       }
-    ],
-    "max_weight_total": 130
+    ]
   },
   "suspension": {
     "front": {}
@@ -151,11 +150,12 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "Yes",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung cells",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 420
+      },
       "rated_power": 500,
       "max_torque": 55,
       "operating_modes": [
@@ -177,6 +177,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 130
     }
   ],
   "sizes": [
@@ -267,10 +273,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "48V 500W hub motor with max 55 N.m torque"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V 20A"
     },
     {
       "type": "e_vehicle_remote",
@@ -371,6 +373,11 @@
         "width": 76.2,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V 20A"
     }
   ]
 }

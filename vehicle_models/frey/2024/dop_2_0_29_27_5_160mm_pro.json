@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/frey/2024/dop_2_0_29_27_5_160mm_pro",
   "manufacturer": "FREY",
-  "vehicle_model_group": "DOP",
+  "model_group": "DOP",
   "model": "DOP 2.0 29/27.5*160mm PRO",
   "model_configuration": "complete",
   "type": "bike",
@@ -47,8 +47,7 @@
   "frame": {
     "material": "aluminum",
     "seatpost_diameter": 31.6,
-    "coil_compatible": true,
-    "max_weight_total": 120
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -97,9 +96,21 @@
   ],
   "motors": [
     {
+      "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "model": "M560",
-      "battery_size": 720,
+      "model_group": "M560",
+      "kind": "mid_drive",
+      "sensor_cadence": true,
+      "sensor_torque": "bottom_bracket_spindle",
+      "certifications": [
+        "UL 2849",
+        "CE"
+      ],
+      "water_rating": "IPX6",
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 500,
       "max_torque": 130,
       "operating_modes": [
@@ -108,6 +119,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

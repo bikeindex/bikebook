@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ghostcat/2026/saber_s1",
   "manufacturer": "GhostCat",
   "model": "Saber S1",
@@ -34,8 +34,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 159
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -86,11 +85,15 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2271",
-      "battery_size": 1800,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
-      "charging_time": 420,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 1800,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 420
+      },
       "rated_power": 2200,
       "peak_power": 3700,
       "max_torque": 160,
@@ -116,9 +119,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 22.68
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 22.68
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

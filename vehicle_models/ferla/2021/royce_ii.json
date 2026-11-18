@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ferla/2021/royce_ii",
   "manufacturer": "Ferla",
-  "vehicle_model_group": "Royce",
+  "model_group": "Royce",
   "model": "Royce II",
   "model_configuration": "complete",
   "type": "cargo_tricycle",
@@ -127,9 +127,13 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "certification": "UL 2849",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -144,9 +148,18 @@
   ],
   "cargo": {
     "length": 1003,
-    "width": 635,
-    "max_weight_cargo": 204.12
+    "width": 635
   },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    },
+    {
+      "load": "cargo",
+      "weight": 204.12
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -156,8 +169,7 @@
           "width": 851,
           "height": 1194
         },
-        "total_weight": 71.7,
-        "max_weight_rider": 113
+        "total_weight": 71.7
       }
     }
   ],

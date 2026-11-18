@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hi_power/2026/mpuv",
   "manufacturer": "Hi Power Cycles",
   "model": "MPUV",
@@ -91,8 +91,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 780,
-      "charging_time": 540,
+      "battery": {
+        "capacity": 780,
+        "charging_time": 540
+      },
       "rated_power": 750,
       "peak_power": 3500,
       "max_torque": 300,
@@ -108,9 +110,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 113.4
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 113.4
+    }
+  ],
   "sizes": [
     {
       "name": "Short",

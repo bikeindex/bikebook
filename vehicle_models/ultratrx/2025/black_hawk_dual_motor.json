@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ultratrx/2025/black_hawk_dual_motor",
   "manufacturer": "UltraTRX",
-  "vehicle_model_group": "Black Hawk",
+  "model_group": "Black Hawk",
   "model": "Black Hawk Dual Motor",
   "model_configuration": "complete",
   "type": "bike",
@@ -90,8 +90,10 @@
       "drive_wheel": "front",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 910,
-      "charging_time": 240,
+      "battery": {
+        "capacity": 910,
+        "charging_time": 240
+      },
       "rated_power": 1560,
       "max_torque": 100,
       "operating_modes": [
@@ -117,8 +119,10 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 910,
-      "charging_time": 240,
+      "battery": {
+        "capacity": 910,
+        "charging_time": 240
+      },
       "rated_power": 1560,
       "max_torque": 100,
       "operating_modes": [
@@ -141,12 +145,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "Medium - 18\"",
       "geometry": {
-        "total_weight": 38.6,
-        "max_weight_rider": 181
+        "total_weight": 38.6
       }
     }
   ],

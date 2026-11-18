@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/greenworks/2024/80v_stealth_mini_bike",
   "manufacturer": "Greenworks",
-  "vehicle_model_group": "STEALTH",
+  "model_group": "STEALTH",
   "model": "80V STEALTH Mini-Bike",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -57,9 +57,11 @@
   ],
   "motors": [
     {
-      "battery_size": 1280,
-      "battery_chemistry": "li-ion",
-      "charging_time": 60,
+      "battery": {
+        "capacity": 1280,
+        "chemistry": "li-ion",
+        "charging_time": 60
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -72,12 +74,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 65.3,
-        "max_weight_rider": 100
+        "total_weight": 65.3
       }
     }
   ],

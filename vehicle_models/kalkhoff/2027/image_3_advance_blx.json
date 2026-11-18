@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kalkhoff/2027/image_3_advance_blx",
   "manufacturer": "Kalkhoff",
-  "vehicle_model_group": "Image",
+  "model_group": "Image",
   "model": "Image 3 Advance BLX",
   "model_configuration": "complete",
   "type": "bike",
@@ -89,8 +89,15 @@
   },
   "frame": {
     "material": "steel",
-    "max_weight_total": 121,
-    "gross_weight_rating": 150
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ]
   },
   "suspension": {
     "front": {
@@ -194,8 +201,10 @@
       "model": "BDU344Y",
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
-      "battery_size": 540,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 540,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,
@@ -211,9 +220,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 27
+    },
+    {
+      "load": "payload",
+      "weight": 121
+    },
+    {
+      "load": "gross",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "Diamond M",

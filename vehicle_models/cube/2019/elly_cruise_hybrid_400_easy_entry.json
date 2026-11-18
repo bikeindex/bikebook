@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2019/elly_cruise_hybrid_400_easy_entry",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Elly Hybrid",
+  "model_group": "Elly Hybrid",
   "model": "Elly Cruise Hybrid 400 Easy Entry",
   "model_configuration": "complete",
   "type": "bike",
@@ -30,6 +30,15 @@
   },
   "frame": {
     "material": "aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
+      }
+    ],
     "headset": "ZS44/28.6 | ZS44/30",
     "seatpost_diameter": 27.2,
     "seatpost_clamp_diameter": 31.8
@@ -88,8 +97,10 @@
       "manufacturer": "Bosch",
       "model": "Active Generation 3",
       "kind": "mid_drive",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [

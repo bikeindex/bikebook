@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hover_1/2024/neo_i",
   "manufacturer": "Hover-1",
-  "vehicle_model_group": "Neo",
+  "model_group": "Neo",
   "model": "Neo I",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -96,7 +96,9 @@
   ],
   "motors": [
     {
-      "battery_size": 130,
+      "battery": {
+        "capacity": 130
+      },
       "rated_power": 200,
       "operating_modes": [
         {
@@ -106,6 +108,12 @@
           "range_claimed": 11
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 60
     }
   ],
   "sizes": [
@@ -123,7 +131,6 @@
           "height": 318
         },
         "total_weight": 12,
-        "max_weight_rider": 60,
         "rider_age_min": 8
       }
     }

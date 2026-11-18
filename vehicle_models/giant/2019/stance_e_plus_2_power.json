@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/giant/2019/stance_e_plus_2_power",
   "manufacturer": "Giant",
-  "vehicle_model_group": "Stance",
+  "model_group": "Stance",
   "model": "Stance E+ 2 Power",
   "model_configuration": "complete",
   "type": "bike",
@@ -103,8 +103,10 @@
       "manufacturer": "Giant",
       "model": "SyncDrive Sport",
       "kind": "mid_drive",
-      "battery_size": 497,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 497,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

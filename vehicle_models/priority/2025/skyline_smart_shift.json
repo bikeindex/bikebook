@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/priority/2025/skyline_smart_shift",
   "manufacturer": "Priority Bicycles",
   "model": "Skyline Smart.Shift",
@@ -108,7 +108,9 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -127,9 +129,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 22
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    },
+    {
+      "load": "cargo",
+      "weight": 22
+    }
+  ],
   "sizes": [
     {
       "name": "Small",
@@ -147,7 +156,6 @@
         "fork_rake": 42,
         "fork_length_a2c": 480,
         "crank_length": 170,
-        "max_weight_rider": 136,
         "rider_inseam_min": 711,
         "rider_inseam_max": 787
       }
@@ -169,7 +177,6 @@
         "fork_length_a2c": 480,
         "crank_length": 170,
         "total_weight": 30.8,
-        "max_weight_rider": 136,
         "rider_inseam_min": 762,
         "rider_inseam_max": 838
       }
@@ -190,7 +197,6 @@
         "fork_rake": 42,
         "fork_length_a2c": 480,
         "crank_length": 170,
-        "max_weight_rider": 136,
         "rider_inseam_min": 813,
         "rider_inseam_max": 889
       }

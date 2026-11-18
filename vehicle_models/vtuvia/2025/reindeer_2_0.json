@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vtuvia/2025/reindeer_2_0",
   "manufacturer": "Vtuvia",
+  "model_group": "Reindeer",
   "model": "Reindeer 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -51,8 +52,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 181
+    ]
   },
   "suspension": {
     "front": {}
@@ -97,10 +97,15 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271, UL 2849",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 85,
@@ -123,6 +128,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -137,7 +148,6 @@
         "dimensions": {
           "length": 1854
         },
-        "max_weight_rider": 181,
         "rider_height_min": 1651,
         "rider_height_max": 1956,
         "extra_measurements": {
@@ -199,10 +209,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "48V 750W (PEAK 1200W) Rear Brushless Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V 25A"
     },
     {
       "type": "e_vehicle_remote",
@@ -269,6 +275,11 @@
         "width": 101.6,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V 25A"
     },
     {
       "type": "unknown",

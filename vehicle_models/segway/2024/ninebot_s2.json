@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/segway/2024/ninebot_s2",
   "manufacturer": "Segway",
+  "model_group": "Ninebot S",
   "model": "Ninebot S2",
   "model_configuration": "complete",
   "type": "epamd",
@@ -39,8 +40,7 @@
     }
   },
   "frame": {
-    "material": "magnesium",
-    "max_weight_total": 100
+    "material": "magnesium"
   },
   "wheels": [
     {
@@ -70,8 +70,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 335,
-      "charging_time": 270,
+      "battery": {
+        "capacity": 335,
+        "charging_time": 270
+      },
       "rated_power": 800,
       "peak_power": 1600,
       "operating_modes": [
@@ -87,6 +89,12 @@
           }
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

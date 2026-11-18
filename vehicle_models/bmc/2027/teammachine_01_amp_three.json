@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2027/teammachine_01_amp_three",
   "manufacturer": "BMC",
-  "vehicle_model_group": "Teammachine AMP",
+  "model_group": "Teammachine AMP",
   "model": "Teammachine 01 AMP THREE",
   "model_configuration": "complete",
   "markets": [
@@ -74,9 +74,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
-    "max_weight_total": 98,
-    "gross_weight_rating": 110
+    "material": "carbon"
   },
   "wheels": [
     {
@@ -138,8 +136,10 @@
       "manufacturer": "TQ",
       "model": "HPR40",
       "kind": "mid_drive",
-      "battery_size": 290,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 290,
+        "chemistry": "li-ion"
+      },
       "peak_power": 200,
       "max_torque": 40,
       "operating_modes": [
@@ -153,6 +153,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 98
+    },
+    {
+      "load": "gross",
+      "weight": 110
     }
   ],
   "sizes": [

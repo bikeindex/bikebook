@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/litening_aero_c_68x_slt",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Litening",
+  "model_group": "Litening",
   "model": "Litening AERO C:68X SLT",
   "model_configuration": "complete",
   "type": "bike",
@@ -35,9 +35,7 @@
     "cable_routing": "internal",
     "bottom_bracket": {
       "spindle": "24mm"
-    },
-    "max_weight_total": 107,
-    "gross_weight_rating": 115
+    }
   },
   "wheels": [
     {
@@ -95,6 +93,16 @@
       "caliper_mount": "Disc Flat Mount"
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 115
+    }
+  ],
   "sizes": [
     {
       "name": "50 cm",
@@ -111,7 +119,6 @@
         "handlebar_width": 380,
         "stem_length": 90,
         "crank_length": 165,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 72,
           "protrusion_height_80mm": 747
@@ -133,7 +140,6 @@
         "handlebar_width": 380,
         "stem_length": 90,
         "crank_length": 165,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 72,
           "protrusion_height_80mm": 762
@@ -155,7 +161,6 @@
         "handlebar_width": 380,
         "stem_length": 100,
         "crank_length": 165,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 69,
           "protrusion_height_80mm": 784
@@ -179,7 +184,6 @@
         "crank_length": 170,
         "total_weight": 7.1,
         "frame_weight": 0.98,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 69,
           "protrusion_height_80mm": 804
@@ -201,7 +205,6 @@
         "handlebar_width": 400,
         "stem_length": 110,
         "crank_length": 170,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 67,
           "protrusion_height_80mm": 824
@@ -223,7 +226,6 @@
         "handlebar_width": 400,
         "stem_length": 120,
         "crank_length": 172.5,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 67,
           "protrusion_height_80mm": 840
@@ -245,7 +247,6 @@
         "handlebar_width": 400,
         "stem_length": 120,
         "crank_length": 172.5,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 67,
           "protrusion_height_80mm": 855

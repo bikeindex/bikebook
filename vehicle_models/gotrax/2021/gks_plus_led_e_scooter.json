@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2021/gks_plus_led_e_scooter",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "GKS",
+  "model_group": "GKS",
   "model": "GKS Plus LED E-Scooter",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -151,9 +151,13 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
-      "battery_size": 101,
-      "charging_time": 300,
+      "certifications": [
+        "UL 2272"
+      ],
+      "battery": {
+        "capacity": 101,
+        "charging_time": 300
+      },
       "rated_power": 150,
       "operating_modes": [
         {
@@ -165,6 +169,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 80
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -174,8 +184,7 @@
           "width": 386,
           "height": 869
         },
-        "total_weight": 9.5,
-        "max_weight_rider": 80
+        "total_weight": 9.5
       }
     }
   ],

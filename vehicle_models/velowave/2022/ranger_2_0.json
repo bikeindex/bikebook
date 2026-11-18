@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velowave/2022/ranger_2_0",
   "manufacturer": "Velowave",
-  "vehicle_model_group": "Ranger",
+  "model_group": "Ranger",
   "model": "Ranger 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -59,8 +59,7 @@
     "material_detail": "6061 Aluminum",
     "cable_routing": "internal",
     "seatpost_diameter": 30.4,
-    "seatpost_clamp_diameter": 35,
-    "max_weight_total": 136
+    "seatpost_clamp_diameter": 35
   },
   "suspension": {
     "front": {
@@ -117,10 +116,12 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG Cells",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 480
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 80,
@@ -146,6 +147,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

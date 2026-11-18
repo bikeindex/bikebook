@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gazelle/2026/medeo_t9_us",
   "manufacturer": "Gazelle",
-  "vehicle_model_group": "Medeo",
+  "model_group": "Medeo",
   "model": "Medeo T9",
   "model_configuration": "complete",
   "markets": [
@@ -136,7 +136,16 @@
   },
   "frame": {
     "material": "aluminum",
-    "top_tube": "sloping"
+    "top_tube": "sloping",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ]
   },
   "suspension": {
     "front": {
@@ -187,8 +196,10 @@
       "model": "BDU334Y",
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
-      "battery_size": 545,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 545,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 50,

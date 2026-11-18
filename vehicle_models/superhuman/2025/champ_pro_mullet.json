@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/superhuman/2025/champ_pro_mullet",
   "manufacturer": "Superhuman Bikes",
-  "vehicle_model_group": "Champ",
+  "model_group": "Champ",
   "model": "Champ Pro Mullet",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -55,8 +55,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "7116 Aluminum",
-    "max_weight_total": 150
+    "material_detail": "7116 Aluminum"
   },
   "suspension": {
     "front": {
@@ -99,10 +98,12 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 2841,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 50S Cells",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 2841,
+        "chemistry": "li-ion",
+        "cells": "Samsung 50S",
+        "charging_time": 240
+      },
       "rated_power": 4000,
       "peak_power": 13000,
       "max_torque": 305,
@@ -120,6 +121,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "M",
@@ -133,7 +144,6 @@
           "height": 1149
         },
         "total_weight": 69.9,
-        "max_weight_rider": 150,
         "extra_measurements": {
           "ground_clearance": 270
         }

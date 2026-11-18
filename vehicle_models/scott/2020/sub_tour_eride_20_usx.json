@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2020/sub_tour_eride_20_usx",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Sub Tour",
+  "model_group": "Sub Tour",
   "model": "Sub Tour eRIDE 20 USX",
   "model_configuration": "complete",
   "markets": [
@@ -139,8 +139,10 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,

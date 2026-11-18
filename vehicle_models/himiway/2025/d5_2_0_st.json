@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/himiway/2025/d5_2_0_st",
   "manufacturer": "Himiway",
-  "vehicle_model_group": "D5 2.0",
+  "model_group": "D5 2.0",
   "model": "D5 2.0 ST",
   "model_configuration": "complete",
   "type": "bike",
@@ -68,7 +68,16 @@
   "frame": {
     "material": "aluminum",
     "top_tube": "step_through",
-    "max_weight_total": 181
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ],
+    "seatpost_diameter": 33.9
   },
   "suspension": {
     "front": {
@@ -137,12 +146,15 @@
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX5",
-      "battery_size": 720,
-      "battery_options": [
-        1680
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung/LG 21700 cell",
+      "battery": {
+        "capacity": 720,
+        "capacity_options": [
+          1680
+        ],
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "Samsung/LG 21700"
+      },
       "rated_power": 750,
       "max_torque": 90,
       "operating_modes": [
@@ -176,9 +188,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.43
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.43
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "Regular",
@@ -354,7 +373,10 @@
     },
     {
       "type": "seatpost",
-      "description": "Aluminum Alloy, Φ33.9mm"
+      "description": "Aluminum Alloy, Φ33.9mm",
+      "dimensions": {
+        "diameter": 33.9
+      }
     },
     {
       "type": "seatpost_clamp",

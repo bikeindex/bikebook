@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/acid_160",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Acid",
+  "model_group": "Acid",
   "model": "Acid 160",
   "model_configuration": "complete",
   "type": "bike",
@@ -34,9 +34,7 @@
     "material": "aluminum",
     "bottom_bracket": {
       "shell": "BSA"
-    },
-    "max_weight_total": 22,
-    "gross_weight_rating": 30
+    }
   },
   "wheels": [
     {
@@ -85,6 +83,16 @@
       "caliper_mount": "Brake Bosses"
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 20
+    },
+    {
+      "load": "gross",
+      "weight": 30
+    }
+  ],
   "sizes": [
     {
       "name": "16\"",
@@ -102,7 +110,6 @@
         "stem_length": 40,
         "crank_length": 102,
         "total_weight": 7.1,
-        "max_weight_rider": 20,
         "extra_measurements": {
           "bb_height_to_hub": 7,
           "protrusion_height_80mm": 445

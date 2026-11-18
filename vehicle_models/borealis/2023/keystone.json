@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/borealis/2023/keystone",
   "manufacturer": "Borealis",
   "model": "Keystone",
@@ -202,8 +202,10 @@
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "battery_size": 630,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 630,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [

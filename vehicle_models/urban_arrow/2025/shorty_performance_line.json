@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/urban_arrow/2025/shorty_performance_line",
   "manufacturer": "Urban Arrow",
-  "vehicle_model_group": "Shorty",
+  "model_group": "Shorty",
   "model": "Shorty Performance Line",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -43,9 +43,7 @@
     "bottom_bracket": {
       "spindle": "BNI"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 182,
-    "gross_weight_rating": 225
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -101,7 +99,9 @@
       "model_group": "Performance Line",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 400,
+      "battery": {
+        "capacity": 400
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 65,
@@ -118,15 +118,25 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 50
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    },
+    {
+      "load": "cargo",
+      "weight": 50
+    },
+    {
+      "load": "gross",
+      "weight": 225
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 43,
-        "max_weight_rider": 125
+        "total_weight": 43
       }
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ecotric/2018/cheetah",
   "manufacturer": "Ecotric",
   "model": "Cheetah",
@@ -45,8 +45,7 @@
       {
         "type": "fender"
       }
-    ],
-    "max_weight_total": 120
+    ]
   },
   "wheels": [
     {
@@ -80,9 +79,11 @@
     {
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 450,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 450,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -98,6 +99,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

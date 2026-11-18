@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/motobecane/2019/hal_eboost_27_plus_fs",
   "manufacturer": "Motobecane",
-  "vehicle_model_group": "HAL eBoost",
+  "model_group": "HAL eBoost",
   "model": "HAL eBoost 27+ FS",
   "model_configuration": "complete",
   "type": "bike",
@@ -94,8 +94,10 @@
       "kind": "mid_drive",
       "spindle": "Shimano E8000",
       "sensor_cadence": true,
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 70,
       "operating_modes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/propain/2026/ekano_al_enduro_factory",
   "manufacturer": "Propain",
-  "vehicle_model_group": "Ekano",
+  "model_group": "Ekano",
   "model": "Ekano AL Enduro Factory",
   "model_configuration": "complete",
   "type": "bike",
@@ -46,8 +46,7 @@
     "seatpost_clamp_diameter": 34.9,
     "derailleur_hanger": "UDH",
     "max_fork_travel": 170,
-    "coil_compatible": true,
-    "gross_weight_rating": 130
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -104,7 +103,9 @@
       "manufacturer": "DJI",
       "model": "Avinox M2S",
       "kind": "mid_drive",
-      "battery_size": 800,
+      "battery": {
+        "capacity": 800
+      },
       "rated_power": 250,
       "peak_power": 1300,
       "max_torque": 150,
@@ -117,6 +118,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [

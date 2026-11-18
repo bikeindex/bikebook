@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velotric/2024/nomad_1_plus",
   "manufacturer": "Velotric",
-  "vehicle_model_group": "Nomad",
+  "model_group": "Nomad",
   "model": "Nomad 1 Plus",
   "model_configuration": "complete",
   "type": "bike",
@@ -155,8 +155,7 @@
         "type": "fender"
       }
     ],
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 200
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -205,10 +204,18 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849, ISO 4210, UL 2580, UL 2271",
-      "battery_size": 691,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung/LG 21700 cell, Certificated by UL 2580",
+      "certifications": [
+        "UL 2849",
+        "UL 2271",
+        "UL 2580",
+        "ISO 4210"
+      ],
+      "battery": {
+        "capacity": 691,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "Samsung/LG 21700"
+      },
       "rated_power": 750,
       "max_torque": 75,
       "operating_modes": [
@@ -227,6 +234,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

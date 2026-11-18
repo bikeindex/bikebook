@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/madsen/2024/electric_dk2_premium",
   "manufacturer": "Madsen",
-  "vehicle_model_group": "Electric DK2",
+  "model_group": "Electric DK2",
   "model": "Electric DK2 Premium",
   "model_configuration": "complete",
   "type": "cargo_bike_rear",
@@ -76,8 +76,7 @@
         "type": "rack"
       }
     ],
-    "cable_routing": "internal",
-    "max_weight_total": 271
+    "cable_routing": "internal"
   },
   "wheels": [
     {
@@ -120,7 +119,9 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "mid_drive",
-      "battery_size": 624,
+      "battery": {
+        "capacity": 624
+      },
       "rated_power": 750,
       "max_torque": 120,
       "operating_modes": [
@@ -135,6 +136,12 @@
   "cargo": {
     "volume": 151
   },
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 271
+    }
+  ],
   "sizes": [
     {
       "name": "One Size"
@@ -157,6 +164,10 @@
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Chain"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "Integrated 750-watt Bafang mid-drive motor (500-watt for Canada), powerful 48V 13Ah battery with lockable mount, 120 Nm of torque, pedal assist system with 5 power levels, gear sensor for smooth shifting, and LCD display."
     },
     {
       "type": "lights",
@@ -200,11 +211,6 @@
         "width": 60.96,
         "diameter": 406
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "ELECTRIC SYSTEM",
-      "description": "Integrated 750-watt Bafang mid-drive motor (500-watt for Canada), powerful 48V 13Ah battery with lockable mount, 120 Nm of torque, pedal assist system with 5 power levels, gear sensor for smooth shifting, and LCD display."
     },
     {
       "type": "unknown",

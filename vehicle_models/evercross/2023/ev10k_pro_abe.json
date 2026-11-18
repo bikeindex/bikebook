@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2023/ev10k_pro_abe",
   "manufacturer": "Evercross",
-  "vehicle_model_group": "EV10K",
+  "model_group": "EV10K",
   "model": "EV10K Pro ABE",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -56,7 +56,9 @@
   "motors": [
     {
       "water_rating": "IP54",
-      "battery_size": 374,
+      "battery": {
+        "capacity": 374
+      },
       "rated_power": 400,
       "operating_modes": [
         {
@@ -67,6 +69,12 @@
           "max_slope": 15
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -84,8 +92,7 @@
           "width": 510,
           "height": 540
         },
-        "total_weight": 16,
-        "max_weight_rider": 120
+        "total_weight": 16
       }
     }
   ],

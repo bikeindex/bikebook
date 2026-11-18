@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/giant/2027/stance_e_plus_0",
   "manufacturer": "Giant",
-  "vehicle_model_group": "Stance",
+  "model_group": "Stance",
   "model": "Stance E+ 0",
   "model_configuration": "complete",
   "type": "bike",
@@ -138,8 +138,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "water_rating": "IPX6",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "peak_power": 800,
       "max_torque": 100,
       "operating_modes": [

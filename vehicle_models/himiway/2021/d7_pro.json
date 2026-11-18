@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/himiway/2021/d7_pro",
   "manufacturer": "Himiway",
-  "vehicle_model_group": "D7",
+  "model_group": "D7",
   "model": "D7 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -59,8 +59,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 181
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -134,10 +133,15 @@
       "spindle": "ISIS",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / UL 2849",
+      "certifications": [
+        "UL 2849",
+        "CE"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "peak_power": 1300,
       "max_torque": 160,
@@ -160,6 +164,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [
@@ -243,10 +253,6 @@
       "type": "e_vehicle_remote",
       "manufacturer": "Bafang",
       "description": "BaFang DP C18 LCD display"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V/25A"
     },
     {
       "type": "fork",
@@ -333,6 +339,11 @@
         "width": 121.92,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V/25A"
     },
     {
       "type": "wheel",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/envo/2025/x50",
   "manufacturer": "Envo",
   "model": "X50",
@@ -44,8 +44,7 @@
     "bottom_bracket": {
       "width": 68
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 200
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -91,9 +90,13 @@
     {
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 80,
@@ -108,6 +111,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

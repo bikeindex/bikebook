@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/himiway/2025/a7_large",
   "manufacturer": "Himiway",
-  "vehicle_model_group": "A7",
+  "model_group": "A7",
   "model": "A7 Large",
   "model_configuration": "complete",
   "type": "bike",
@@ -73,11 +73,14 @@
     "top_tube": "step_through",
     "mounts": [
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
     ],
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 181
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -141,9 +144,12 @@
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX6",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung/LG 21700 cell",
+      "battery": {
+        "capacity": 720,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "Samsung/LG 21700"
+      },
       "rated_power": 500,
       "max_torque": 60,
       "operating_modes": [
@@ -177,9 +183,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.43
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.43
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "Large",

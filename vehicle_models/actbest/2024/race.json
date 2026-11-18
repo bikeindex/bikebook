@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/actbest/2024/race",
   "manufacturer": "Actbest",
   "model": "Race",
@@ -217,8 +217,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 159
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -251,12 +250,16 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IP65",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
-      "battery_info": "36V 13Ah",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 499,
+        "voltage": 36,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 500,
       "peak_power": 1200,
       "operating_modes": [
@@ -281,9 +284,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.43
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.43
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

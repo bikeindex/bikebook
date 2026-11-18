@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2019/d2",
   "manufacturer": "Inmotion",
-  "vehicle_model_group": "D2",
+  "model_group": "D2",
   "model": "D2",
   "model_configuration": "complete",
   "type": "epamd",
@@ -21,8 +21,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 80
+    "material": "steel"
   },
   "brakes": [
     {
@@ -35,9 +34,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 108,
-      "battery_info": "108.36Wh (4.3Ah)",
-      "charging_time": 150,
+      "battery": {
+        "capacity": 108,
+        "cells": "108.36Wh",
+        "charging_time": 150
+      },
       "operating_modes": [
         {
           "mode": "throttle",
@@ -51,6 +52,12 @@
           }
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 80
     }
   ],
   "sizes": [

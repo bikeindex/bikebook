@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bigniu/2025/bg_x_pro",
   "manufacturer": "Bigniu",
-  "vehicle_model_group": "BG-X",
+  "model_group": "BG-X",
   "model": "BG-X Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -63,8 +63,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 159
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -72,11 +71,28 @@
   },
   "wheels": [
     {
+      "bsd": 127,
+      "position": [
+        "front",
+        "rear"
+      ]
+    },
+    {
       "bsd": 406,
       "position": [
         "front",
         "rear"
       ],
+      "configured": false,
+      "tire_width": 127
+    },
+    {
+      "bsd": 406,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "configured": false,
       "tire_width": 127
     }
   ],
@@ -94,9 +110,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL Certification",
-      "battery_size": 1404,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1404,
+        "charging_time": 420
+      },
       "rated_power": 1500,
       "peak_power": 3000,
       "max_torque": 120,
@@ -121,6 +138,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

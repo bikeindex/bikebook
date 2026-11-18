@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2024/iconic_evo_tr_2_speed",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Iconic EVO",
+  "model_group": "Iconic EVO",
   "model": "Iconic EVO TR 2 Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -107,10 +107,14 @@
       "manufacturer": "Bosch",
       "model": "Performance Speed",
       "kind": "mid_drive",
-      "certification": "UL 2849",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "max_torque": 85,
       "operating_modes": [
         {

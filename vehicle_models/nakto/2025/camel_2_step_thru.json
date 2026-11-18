@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/nakto/2025/camel_2_step_thru",
   "manufacturer": "Nakto",
-  "vehicle_model_group": "Camel",
+  "model_group": "Camel",
   "model": "Camel 2 Step-Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,8 +40,7 @@
   },
   "frame": {
     "material": "steel",
-    "top_tube": "step_through",
-    "max_weight_total": 113
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {}
@@ -77,9 +76,11 @@
     {
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 480,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 480,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -95,6 +96,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2026/t1",
   "manufacturer": "Eunorau",
   "model": "T1",
@@ -61,8 +61,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 120
+    ]
   },
   "wheels": [
     {
@@ -115,10 +114,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "Yes",
-      "battery_size": 832,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG Cells",
+      "battery": {
+        "capacity": 832,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -139,6 +139,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

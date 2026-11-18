@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2021/chatham_step_through_3_speed",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Chatham",
+  "model_group": "Chatham",
   "model": "Chatham Step Through 3 Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -168,13 +168,18 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "26\"",
       "geometry": {
         "standover": 737,
         "crank_length": 165,
-        "max_weight_rider": 113,
         "rider_height_min": 1524,
         "rider_height_max": 1930
       }
@@ -212,14 +217,6 @@
       "description": "Steel 3-pc 170mm x 44T steel sprocket w/guard"
     },
     {
-      "type": "derailleur",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Nexus 3-speed Internal Geared Hub w/Coaster Brake"
-    },
-    {
       "type": "fork",
       "description": "Unicrown, steel, 1\" threaded, 2x eyelets"
     },
@@ -242,6 +239,14 @@
     {
       "type": "hub",
       "description": "Steel, ball-bearing, 36H, bolt-on, F/100-R/120mm"
+    },
+    {
+      "type": "hub",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Nexus 3-speed Internal Geared Hub w/Coaster Brake"
     },
     {
       "type": "kickstand",

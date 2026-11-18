@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/scale_16",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Scale",
+  "model_group": "Scale",
   "model": "Scale 16",
   "model_configuration": "complete",
   "type": "bike",
@@ -65,9 +65,7 @@
       "shell": "BSA",
       "width": 68
     },
-    "headset": "ZS44/28.6 | ZS44/30",
-    "max_weight_total": 42,
-    "gross_weight_rating": 50
+    "headset": "ZS44/28.6 | ZS44/30"
   },
   "wheels": [
     {
@@ -108,6 +106,16 @@
         "rear"
       ],
       "caliper_mount": "Brake Bosses"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 42
+    },
+    {
+      "load": "gross",
+      "weight": 50
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2025/sonic_am_1",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Sonic EVO",
+  "model_group": "Sonic EVO",
   "model": "Sonic AM 1",
   "model_configuration": "complete",
   "type": "bike",
@@ -62,12 +62,24 @@
             },
             {
               "sku": "zeg9999999-525900250847_ZEG",
-              "gtin": "4063518386659",
               "size": "L"
             },
             {
               "sku": "zeg9999999-525900250851_ZEG",
               "size": "XL"
+            }
+          ]
+        },
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "variants": [
+            {
+              "sku": "zeg9999999-525900250847_ZEG",
+              "gtin": "4063518386659",
+              "size": "L"
             }
           ]
         }
@@ -83,9 +95,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "headset": "IS60/28.6 | ZS60/46",
-    "max_weight_total": 124,
-    "gross_weight_rating": 150
+    "headset": "IS60/28.6 | ZS60/46"
   },
   "suspension": {
     "front": {
@@ -140,8 +150,11 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion",
+        "weight": 6.1
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 85,
@@ -155,6 +168,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 124
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

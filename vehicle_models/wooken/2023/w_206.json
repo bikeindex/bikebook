@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wooken/2023/w_206",
   "manufacturer": "Wooken",
   "model": "W-206",
@@ -79,8 +79,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {},
@@ -118,8 +117,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 480,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 480,
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 1000,
       "operating_modes": [
@@ -142,6 +143,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

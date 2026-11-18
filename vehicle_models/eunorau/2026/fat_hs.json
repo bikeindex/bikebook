@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2026/fat_hs",
   "manufacturer": "Eunorau",
   "model": "Fat-HS",
@@ -56,8 +56,7 @@
     ],
     "bottom_bracket": {
       "spindle": "square taper"
-    },
-    "max_weight_total": 136
+    }
   },
   "suspension": {
     "front": {
@@ -115,10 +114,16 @@
       "kind": "mid_drive",
       "spindle": "square taper",
       "sensor_cadence": true,
-      "certification": "Yes",
+      "certifications": [
+        "EN 14764",
+        "CE",
+        "RoHS"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 720,
-      "battery_info": "SAMSUNG Cells",
+      "battery": {
+        "capacity": 720,
+        "cells": "SAMSUNG"
+      },
       "rated_power": 1000,
       "max_torque": 160,
       "operating_modes": [
@@ -141,6 +146,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [
@@ -252,10 +263,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "DP C080.C LCD Display"
     },
     {
@@ -359,6 +366,11 @@
         "width": 101.6,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V"
     },
     {
       "type": "unknown",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2026/mardi_27_6_ma6o26",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Mardi 27",
+  "model_group": "Mardi 27",
   "model": "Mardi 27.6 MA6O26",
   "model_configuration": "complete",
   "type": "bike",
@@ -96,6 +96,13 @@
       {
         "type": "bottle",
         "location": "seat_tube"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
     "cable_routing": "stealth",
@@ -103,9 +110,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 131,
-    "gross_weight_rating": 160
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -174,8 +179,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 90,
@@ -190,6 +197,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 131
+    },
+    {
+      "load": "gross",
+      "weight": 160
     }
   ],
   "sizes": [
@@ -390,7 +407,6 @@
     },
     {
       "type": "hub",
-      "type_detail": "Rear Derailleur",
       "position": [
         "rear"
       ],

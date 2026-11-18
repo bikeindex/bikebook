@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ado/2026/air_carbon_pro",
   "manufacturer": "ADO",
-  "vehicle_model_group": "Air Carbon",
+  "model_group": "Air Carbon",
   "model": "Air Carbon Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -44,6 +44,13 @@
       {
         "type": "accessory",
         "description": "Luggage Socket: ADO AQS 2.0 System"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
     ]
   },
@@ -76,10 +83,14 @@
       "manufacturer": "Bafang",
       "model": "H700",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "SGS CE",
+      "certifications": [
+        "CE"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 370,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 370,
+        "charging_time": 360
+      },
       "rated_power": 250,
       "peak_power": 250,
       "max_torque": 50,
@@ -101,9 +112,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 15
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "cargo",
+      "weight": 15
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -120,7 +138,6 @@
           "length": 1500
         },
         "total_weight": 16.2,
-        "max_weight_rider": 120,
         "rider_height_min": 1500,
         "rider_height_max": 2000,
         "extra_measurements": {

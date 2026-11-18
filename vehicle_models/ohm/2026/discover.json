@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ohm/2026/discover",
   "manufacturer": "OHM",
-  "vehicle_model_group": "Discover",
+  "model_group": "Discover",
   "model": "Discover",
   "model_configuration": "complete",
   "type": "bike",
@@ -86,13 +86,17 @@
       "model": "BDU334Y",
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
-      "certification": "UL 2849",
-      "battery_size": 400,
-      "battery_options": [
-        545,
-        800
+      "certifications": [
+        "UL 2849"
       ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "capacity_options": [
+          545,
+          800
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 50,
@@ -108,9 +112,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 27
+    }
+  ],
   "sizes": [
     {
       "name": "S",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/engwe/2025/y400",
   "manufacturer": "ENGWE",
   "model": "Y400",
@@ -53,9 +53,11 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX4",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -69,12 +71,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 24,
-        "max_weight_rider": 120
+        "total_weight": 24
       }
     }
   ],

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kent/2022/shockwave_26",
   "manufacturer": "Kent",
-  "vehicle_model_group": "Shockwave",
+  "model_group": "Shockwave",
   "model": "Shockwave 26",
   "model_configuration": "complete",
   "type": "bike",
@@ -78,12 +78,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 15.9,
-        "max_weight_rider": 125,
         "rider_height_min": 1549,
         "rider_height_max": 1753,
         "rider_age_min": 13

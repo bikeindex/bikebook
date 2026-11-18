@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/batch/2026/ecbc_3",
   "manufacturer": "Batch Bicycles",
-  "vehicle_model_group": "eCB",
+  "model_group": "eCB",
   "model": "eCBc.3",
   "model_configuration": "complete",
   "type": "bike",
@@ -116,7 +116,9 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 500,
       "operating_modes": [
         {

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wicked_thumb/2026/custom_shop_chopper",
   "manufacturer": "Wicked Thumb",
   "model": "Custom Shop Chopper",
@@ -87,9 +87,11 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 35E cells",
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion",
+        "cells": "Samsung 35E"
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 120,
@@ -219,10 +221,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V, 25amp"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "C900E-USB 3.8” color LCD Display w/ USB Port"
     },
     {
@@ -324,6 +322,11 @@
       "type": "unknown",
       "type_detail": "STANCE",
       "description": "1.75\" Seat Tube, 25.25\" Reach, 34\" Minimum Saddle Height"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "CONTROLLER",
+      "description": "48V, 25amp"
     }
   ]
 }

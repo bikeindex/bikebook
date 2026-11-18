@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2024/eris_pro",
   "manufacturer": "Jetson",
-  "vehicle_model_group": "Eris",
+  "model_group": "Eris",
   "model": "Eris Pro",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -51,9 +51,11 @@
   ],
   "motors": [
     {
-      "battery_size": 270,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 270,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -64,6 +66,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -81,7 +89,6 @@
           "height": 508
         },
         "total_weight": 15.9,
-        "max_weight_rider": 120,
         "rider_age_min": 12,
         "extra_measurements": {
           "handlebar_height": 1161

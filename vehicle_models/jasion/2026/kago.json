@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jasion/2026/kago",
   "manufacturer": "Jasion",
   "model": "Kago",
@@ -53,8 +53,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 159
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -85,7 +84,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 2080,
+      "battery": {
+        "capacity": 2080
+      },
       "peak_power": 1200,
       "max_torque": 80,
       "operating_modes": [
@@ -107,9 +108,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 158.76
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 158.76
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -149,10 +157,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "52V/25A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LCD Display"
     },
     {
@@ -174,6 +178,11 @@
         "width": 76.2,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "52V/25A"
     },
     {
       "type": "unknown",

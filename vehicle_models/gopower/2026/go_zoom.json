@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gopower/2026/go_zoom",
   "manufacturer": "Gopower",
   "model": "Go Zoom",
@@ -59,8 +59,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 281,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 281,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -70,6 +72,12 @@
           "range_claimed": 29
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -85,7 +93,6 @@
           "height": 431.8
         },
         "total_weight": 10,
-        "max_weight_rider": 120,
         "extra_measurements": {
           "deck_length": 584.2,
           "deck_width": 152.4,

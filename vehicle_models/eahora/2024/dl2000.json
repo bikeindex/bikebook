@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eahora/2024/dl2000",
   "manufacturer": "Eahora",
   "model": "DL2000",
@@ -37,8 +37,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "High-Carbon Steel",
-    "coil_compatible": true,
-    "max_weight_total": 150
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -88,9 +87,12 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 1560,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A",
+      "battery": {
+        "capacity": 1560,
+        "voltage": 52,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A"
+      },
       "rated_power": 800,
       "peak_power": 1000,
       "max_torque": 65,
@@ -120,9 +122,12 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 1560,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A",
+      "battery": {
+        "capacity": 1560,
+        "voltage": 52,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A"
+      },
       "rated_power": 800,
       "peak_power": 1000,
       "max_torque": 65,
@@ -147,6 +152,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2021/travel_sl_trapeze",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Travel",
+  "model_group": "Travel",
   "model": "Travel SL Trapeze",
   "model_configuration": "complete",
   "type": "bike",
@@ -33,9 +33,7 @@
     "material": "aluminum",
     "headset": "IS42/28.6 | IS42/30",
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 126,
-    "gross_weight_rating": 140
+    "seatpost_clamp_diameter": 31.8
   },
   "wheels": [
     {
@@ -83,9 +81,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 126
+    },
+    {
+      "load": "gross",
+      "weight": 140
+    }
+  ],
   "sizes": [
     {
       "name": "Z XS-46cm",

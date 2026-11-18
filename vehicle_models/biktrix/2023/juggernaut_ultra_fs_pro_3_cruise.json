@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biktrix/2023/juggernaut_ultra_fs_pro_3_cruise",
   "manufacturer": "Biktrix",
-  "vehicle_model_group": "Juggernaut Ultra FS",
+  "model_group": "Juggernaut Ultra FS",
   "model": "Juggernaut Ultra FS Pro 3 Cruise",
   "model_configuration": "complete",
   "type": "bike",
@@ -118,8 +118,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 120
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -192,9 +191,14 @@
       "spindle": "ISIS",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / UL 2849",
+      "certifications": [
+        "UL 2849",
+        "CE"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 1794,
+      "battery": {
+        "capacity": 1794
+      },
       "rated_power": 1000,
       "peak_power": 1440,
       "max_torque": 160,
@@ -217,6 +221,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

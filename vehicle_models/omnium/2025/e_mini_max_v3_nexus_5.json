@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/omnium/2025/e_mini_max_v3_nexus_5",
   "manufacturer": "Omnium",
-  "vehicle_model_group": "E-Mini-Max",
+  "model_group": "E-Mini-Max",
   "model": "E-Mini-Max V3 Nexus 5",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -68,8 +68,7 @@
     ],
     "headset": "IS42/28.6-26tpi | IS42/30",
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34,
-    "max_weight_total": 150
+    "seatpost_clamp_diameter": 34
   },
   "wheels": [
     {
@@ -128,8 +127,10 @@
       "manufacturer": "Shimano",
       "model": "Steps EP801 CRG",
       "kind": "mid_drive",
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -142,9 +143,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 50
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 50
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "XS (49.5)",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/trike_cargo_hybrid_1500",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Trike Hybrid",
+  "model_group": "Trike Hybrid",
   "model": "Trike Cargo Hybrid 1500",
   "model_configuration": "complete",
   "type": "cargo_tricycle",
@@ -35,9 +35,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 150,
-    "gross_weight_rating": 220
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -106,8 +104,10 @@
       "model_group": "Cargo Line",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -124,9 +124,22 @@
     }
   ],
   "cargo": {
-    "width": 740,
-    "max_weight_cargo": 60
+    "width": 740
   },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
+    },
+    {
+      "load": "cargo",
+      "weight": 60
+    },
+    {
+      "load": "gross",
+      "weight": 220
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -144,7 +157,6 @@
         "stem_length": 90,
         "crank_length": 170,
         "total_weight": 70,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "bb_height_to_hub": 20,
           "bike_length_max": 2200

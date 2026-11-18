@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bh/2027/atom_plus_nx_suv",
   "manufacturer": "BH Bikes",
-  "vehicle_model_group": "Atom+ NX",
+  "model_group": "Atom+ NX",
   "model": "Atom+ NX SUV",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,6 +42,15 @@
   },
   "frame": {
     "material": "aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
     "cable_routing": "internal",
     "bottom_bracket": {
       "spindle": "ISIS"
@@ -108,7 +117,9 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
+      "battery": {
+        "capacity": 800
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,

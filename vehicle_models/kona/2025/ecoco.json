@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kona/2025/ecoco",
   "manufacturer": "Kona",
   "model": "Ecoco",
@@ -28,14 +28,17 @@
           "variants": [
             {
               "sku": "B36ECOBLSHIN01",
+              "gtin": "841073185269",
               "size": "S"
             },
             {
               "sku": "B36ECOBLSHIN03",
+              "gtin": "841073185276",
               "size": "M"
             },
             {
               "sku": "B36ECOBLSHIN05",
+              "gtin": "841073185283",
               "size": "L"
             }
           ]
@@ -117,8 +120,10 @@
       "kind": "mid_drive",
       "spindle": "Shimano E8000",
       "sensor_cadence": true,
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 60,
       "operating_modes": [

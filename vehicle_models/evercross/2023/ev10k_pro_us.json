@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2023/ev10k_pro_us",
   "manufacturer": "Evercross",
-  "vehicle_model_group": "EV10K",
+  "model_group": "EV10K",
   "model": "EV10K Pro",
   "model_configuration": "complete",
   "markets": [
@@ -62,8 +62,10 @@
   ],
   "motors": [
     {
-      "battery_size": 432,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 432,
+        "charging_time": 480
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -74,6 +76,12 @@
           "max_slope": 11
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -90,8 +98,7 @@
           "width": 510,
           "height": 540
         },
-        "total_weight": 16,
-        "max_weight_rider": 150
+        "total_weight": 16
       }
     }
   ],

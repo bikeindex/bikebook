@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2023/mavaro_sl_1",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Mavaro Neo SL",
+  "model_group": "Mavaro Neo SL",
   "model": "Mavaro SL 1",
   "model_configuration": "complete",
   "type": "bike",
@@ -110,8 +110,10 @@
       "model": "G020 Hub",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -122,9 +124,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 18
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 18
+    }
+  ],
   "sizes": [
     {
       "name": "MD"

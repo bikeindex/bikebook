@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/focus/2025/aventura_fs_6_7",
   "manufacturer": "Focus",
-  "vehicle_model_group": "Aventura²",
+  "model_group": "Aventura²",
   "model": "Aventura² Fs 6.7",
   "model_configuration": "complete",
   "type": "bike",
@@ -132,10 +132,17 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "7005 Hydroformed Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
     "cable_routing": "stealth",
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 119,
-    "gross_weight_rating": 150
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -192,8 +199,10 @@
       "model": "BDU346Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -209,9 +218,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 20
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 20
+    },
+    {
+      "load": "payload",
+      "weight": 119
+    },
+    {
+      "load": "gross",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "S",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/snapcycle/2024/pegasus_lite",
   "manufacturer": "Snapcycle",
   "model": "Pegasus Lite",
@@ -55,8 +55,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 150
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -109,9 +108,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -133,6 +134,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

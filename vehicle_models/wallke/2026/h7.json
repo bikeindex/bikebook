@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wallke/2026/h7",
   "manufacturer": "Wallke",
-  "vehicle_model_group": "H7",
+  "model_group": "H7",
   "model": "H7",
   "model_configuration": "complete",
   "type": "bike",
@@ -106,8 +106,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 181
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {},
@@ -147,9 +146,13 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UN38.3 / MSDS / UL",
-      "battery_size": 1920,
-      "charging_time": 360,
+      "certifications": [
+        "UN 38.3"
+      ],
+      "battery": {
+        "capacity": 1920,
+        "charging_time": 360
+      },
       "rated_power": 2000,
       "peak_power": 4000,
       "max_torque": 105,
@@ -175,9 +178,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

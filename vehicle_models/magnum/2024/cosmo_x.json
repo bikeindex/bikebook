@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/magnum/2024/cosmo_x",
   "manufacturer": "Magnum Bikes",
-  "vehicle_model_group": "Cosmo",
+  "model_group": "Cosmo",
   "model": "Cosmo X",
   "model_configuration": "complete",
   "type": "bike",
@@ -90,8 +90,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 120
+    ]
   },
   "suspension": {
     "front": {
@@ -134,10 +133,11 @@
     {
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "15Ah",
-      "charging_time": 450,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 450
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -159,6 +159,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

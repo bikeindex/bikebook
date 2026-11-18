@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ride1up/2023/cf_racer1",
   "manufacturer": "Ride1Up",
   "model": "CF Racer1",
@@ -64,19 +64,19 @@
           "variants": [
             {
               "sku": "CFR1-SM-GRV-GRY",
-              "size": "Small"
+              "size": "50cm"
             },
             {
               "sku": "CFR1-LRG-GRV-GRY",
-              "size": "Large"
+              "size": "56cm"
             },
             {
               "sku": "CFR1-SM-RD-GRY",
-              "size": "Small"
+              "size": "50cm"
             },
             {
               "sku": "CFR1-LRG-RD-GRY",
-              "size": "Large"
+              "size": "56cm"
             }
           ]
         },
@@ -89,19 +89,19 @@
           "variants": [
             {
               "sku": "CFR1-LRG-RD-BLK",
-              "size": "Large"
+              "size": "56cm"
             },
             {
               "sku": "CFR1-SM-GRV-BLK",
-              "size": "Small"
+              "size": "50cm"
             },
             {
               "sku": "CFR1-LRG-GRV-BLK",
-              "size": "Large"
+              "size": "56cm"
             },
             {
               "sku": "CFR1-SM-RD-BLK",
-              "size": "Small"
+              "size": "50cm"
             }
           ]
         }
@@ -172,9 +172,11 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 252,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
+      "battery": {
+        "capacity": 252,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 250,
       "max_torque": 42,
       "operating_modes": [
@@ -192,6 +194,13 @@
   ],
   "sizes": [
     {
+      "name": "Large",
+      "geometry": {
+        "rider_height_min": 1727,
+        "rider_height_max": 1905
+      }
+    },
+    {
       "name": "Small",
       "geometry": {
         "rider_height_min": 1600,
@@ -199,11 +208,10 @@
       }
     },
     {
-      "name": "Large",
-      "geometry": {
-        "rider_height_min": 1727,
-        "rider_height_max": 1905
-      }
+      "name": "50cm"
+    },
+    {
+      "name": "56cm"
     }
   ],
   "components": [

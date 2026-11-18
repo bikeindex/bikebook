@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/niu/2026/xqi_400_wild",
   "manufacturer": "Niu",
-  "vehicle_model_group": "XQi 400",
+  "model_group": "XQi 400",
   "model": "XQi 400 Wild",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -51,10 +51,13 @@
   ],
   "motors": [
     {
-      "battery_size": 2880,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 Lithium Ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 2880,
+        "voltage": 72,
+        "chemistry": "li-ion",
+        "cells": "21700",
+        "charging_time": 420
+      },
       "rated_power": 7000,
       "peak_power": 14400,
       "operating_modes": [

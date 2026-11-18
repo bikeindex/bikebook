@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/marsant_s/2022/p2",
   "manufacturer": "Marsant's",
   "model": "P2",
@@ -58,8 +58,7 @@
   "frame": {
     "material": "magnesium",
     "folding": "half_fold",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 111
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "rear": {}
@@ -91,11 +90,13 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 281,
-      "battery_options": [
-        378
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 281,
+        "capacity_options": [
+          378
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -117,6 +118,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 111
     }
   ],
   "sizes": [

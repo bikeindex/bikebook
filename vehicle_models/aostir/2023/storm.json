@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aostir/2023/storm",
   "manufacturer": "Aostir",
   "model": "Storm",
@@ -37,8 +37,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 118
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -74,8 +73,10 @@
   "motors": [
     {
       "sensor_speed": "spoke_magnet",
-      "battery_size": 600,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 600,
+        "charging_time": 360
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -97,6 +98,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 118
     }
   ],
   "sizes": [

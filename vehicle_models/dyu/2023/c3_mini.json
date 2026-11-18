@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dyu/2023/c3_mini",
   "manufacturer": "DYU",
   "model": "C3 Mini",
@@ -40,8 +40,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -64,9 +63,10 @@
   "motors": [
     {
       "water_rating": "IP54",
-      "battery_size": 281,
-      "battery_info": "7.8 Ah",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 281,
+        "charging_time": 240
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -91,6 +91,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

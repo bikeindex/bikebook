@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2023/journey_electric_cruiser",
   "manufacturer": "Jetson",
-  "vehicle_model_group": "Journey",
+  "model_group": "Journey",
   "model": "Journey Electric Cruiser",
   "model_configuration": "complete",
   "type": "bike",
@@ -46,9 +46,11 @@
   ],
   "motors": [
     {
-      "battery_size": 313,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 313,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -64,6 +66,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -74,7 +82,6 @@
           "height": 1130
         },
         "total_weight": 20.3,
-        "max_weight_rider": 100,
         "rider_age_min": 14
       }
     }

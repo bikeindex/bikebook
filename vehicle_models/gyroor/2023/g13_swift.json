@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gyroor/2023/g13_swift",
   "manufacturer": "Gyroor",
   "model": "G13 Swift",
@@ -128,8 +128,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 80
+    "material": "steel"
   },
   "wheels": [
     {
@@ -142,8 +141,12 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
-      "battery_size": 72,
+      "certifications": [
+        "UL 2272"
+      ],
+      "battery": {
+        "capacity": 72
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -153,6 +156,12 @@
           "range_claimed": 12
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 80
     }
   ],
   "sizes": [

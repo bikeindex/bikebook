@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/frey/2023/ex_fat",
   "manufacturer": "FREY",
-  "vehicle_model_group": "EX",
+  "model_group": "EX",
   "model": "EX-Fat",
   "model_configuration": "complete",
   "type": "bike",
@@ -106,9 +106,14 @@
       "spindle": "ISIS",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / UL 2849",
+      "certifications": [
+        "UL 2849",
+        "CE"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 1344,
+      "battery": {
+        "capacity": 1344
+      },
       "rated_power": 1000,
       "peak_power": 1440,
       "max_torque": 160,

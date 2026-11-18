@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2026/aminga_750",
   "manufacturer": "BULLS Bikes",
   "model": "Aminga 750",
@@ -104,10 +104,14 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "certification": "UL 2849",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

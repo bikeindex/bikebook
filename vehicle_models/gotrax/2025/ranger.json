@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2025/ranger",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "Ranger",
+  "model_group": "Ranger",
   "model": "Ranger",
   "model_configuration": "complete",
   "type": "bike",
@@ -60,8 +60,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -97,10 +96,14 @@
   "motors": [
     {
       "sensor_speed": "spoke_magnet",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 499,
-      "charging_time": 330,
+      "battery": {
+        "capacity": 499,
+        "charging_time": 330
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -127,6 +130,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "payload",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -136,8 +149,7 @@
           "width": 739,
           "height": 1069
         },
-        "total_weight": 31.6,
-        "max_weight_rider": 120
+        "total_weight": 31.6
       }
     }
   ],

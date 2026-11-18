@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/intheair/2023/ranger",
   "manufacturer": "InTheAir",
   "model": "Ranger",
@@ -16,7 +16,7 @@
   "first_year": 2023,
   "years": {
     "2026": {
-      "original_msrp": 75000,
+      "original_msrp": 158000,
       "original_msrp_currency": "USD",
       "colorways": [
         {
@@ -43,8 +43,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 150
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -85,9 +84,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "max_torque": 85,
       "operating_modes": [
@@ -107,6 +108,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -169,10 +176,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "750W brushless gear motor"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V / 750W"
     },
     {
       "type": "e_vehicle_remote",
@@ -265,6 +268,11 @@
         "width": 101.6,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V / 750W"
     }
   ]
 }

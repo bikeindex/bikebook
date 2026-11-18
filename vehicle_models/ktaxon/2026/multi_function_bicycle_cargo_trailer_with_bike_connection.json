@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktaxon/2026/multi_function_bicycle_cargo_trailer_with_bike_connection",
   "manufacturer": "Ktaxon",
   "model": "Multi-Function Bicycle Cargo Trailer with Bike Connection",
@@ -23,13 +23,13 @@
             "black",
             "red"
           ],
+          "stock_photo": "https://bikebook.bikeindex.org/ktaxon/2026/multi_function_bicycle_cargo_trailer_with_bike_connection.jpg",
           "variants": [
             {
               "sku": "K1-G40000580",
               "size": "One Size"
             }
-          ],
-          "stock_photo": "https://bikebook.bikeindex.org/ktaxon/2026/multi_function_bicycle_cargo_trailer_with_bike_connection.jpg"
+          ]
         }
       ],
       "url": "https://www.ktaxon.com/ktaxon-multi-function-bicycle-cargo-trailer-with-bike-connection-suspension-brakes-handlebars-and-convertible-design-p13657.html",
@@ -48,9 +48,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 50
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 50
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/priority/2026/folder_3",
   "manufacturer": "Priority Bicycles",
-  "vehicle_model_group": "Folder",
+  "model_group": "Folder",
   "model": "Folder 3",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,7 +40,7 @@
   "frame": {
     "material": "aluminum",
     "folding": "half_fold",
-    "max_weight_total": 104
+    "seatpost_diameter": 33.9
   },
   "wheels": [
     {
@@ -75,6 +75,12 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 104
     }
   ],
   "sizes": [
@@ -146,7 +152,10 @@
     },
     {
       "type": "seatpost",
-      "description": "33.9mm Fixed Aluminum"
+      "description": "33.9mm Fixed Aluminum",
+      "dimensions": {
+        "diameter": 33.9
+      }
     },
     {
       "type": "shifter",

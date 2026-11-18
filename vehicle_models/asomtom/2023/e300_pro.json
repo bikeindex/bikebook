@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/asomtom/2023/e300_pro",
   "manufacturer": "Asomtom",
-  "vehicle_model_group": "E300",
+  "model_group": "E300",
   "model": "E300 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,8 +42,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 181
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -73,7 +72,9 @@
   ],
   "motors": [
     {
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 85,
@@ -93,6 +94,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wilier/2025/urta_hybrid_sram_xx_sl_eagle_axs_t_type_1x12s",
   "manufacturer": "Wilier",
-  "vehicle_model_group": "Urta Hybrid",
+  "model_group": "Urta Hybrid",
   "model": "Urta Hybrid SRAM XX SL Eagle AXS T-Type 1X12S",
   "model_configuration": "complete",
   "type": "bike",
@@ -140,8 +140,10 @@
       "kind": "mid_drive",
       "spindle": "ETOR Drive",
       "spindle_length": 135,
-      "battery_size": 430,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 430,
+        "chemistry": "li-ion"
+      },
       "peak_power": 450,
       "max_torque": 60,
       "operating_modes": [

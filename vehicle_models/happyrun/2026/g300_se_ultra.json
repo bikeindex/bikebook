@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/happyrun/2026/g300_se_ultra",
   "manufacturer": "HappyRun",
-  "vehicle_model_group": "G300",
+  "model_group": "G300",
   "model": "G300 SE Ultra",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -35,8 +35,7 @@
   },
   "frame": {
     "material": "steel",
-    "coil_compatible": true,
-    "max_weight_total": 150
+    "coil_compatible": true
   },
   "suspension": {
     "front": {},
@@ -73,9 +72,11 @@
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
       "water_rating": "IPX5",
-      "battery_size": 1860,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1860,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "peak_power": 6000,
       "max_torque": 240,
       "operating_modes": [
@@ -94,6 +95,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

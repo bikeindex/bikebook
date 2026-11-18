@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/niu/2026/nqix_300",
   "manufacturer": "Niu",
-  "vehicle_model_group": "NQiX",
+  "model_group": "NQiX",
   "model": "NQiX 300",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -21,8 +21,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -66,10 +65,12 @@
   ],
   "motors": [
     {
-      "battery_size": 2016,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium Ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 2016,
+        "chemistry": "li-ion",
+        "cells": "Cylindrical",
+        "charging_time": 360
+      },
       "rated_power": 3000,
       "peak_power": 5000,
       "max_torque": 180,
@@ -85,6 +86,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/orbea/2022/vibe_h10_eq_20mph_us",
   "manufacturer": "Orbea",
-  "vehicle_model_group": "Vibe",
+  "model_group": "Vibe",
   "model": "Vibe H10 EQ 20mph",
   "model_configuration": "complete",
   "markets": [
@@ -117,8 +117,10 @@
     {
       "manufacturer": "Mahle",
       "kind": "hub_drive",
-      "battery_size": 248,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 248,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -132,9 +134,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 15
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 15
+    }
+  ],
   "sizes": [
     {
       "name": "S",

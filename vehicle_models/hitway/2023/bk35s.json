@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hitway/2023/bk35s",
   "manufacturer": "Hitway",
-  "vehicle_model_group": "BK35",
+  "model_group": "BK35",
   "model": "BK35S",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,8 +41,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -71,9 +70,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 324,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 324,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 250,
       "max_torque": 30,
       "operating_modes": [
@@ -89,6 +90,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

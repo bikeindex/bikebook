@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2025/mustang",
   "manufacturer": "GOTRAX",
   "model": "Mustang",
@@ -59,8 +59,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 120
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -106,11 +105,15 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 750,
       "max_torque": 90,
       "operating_modes": [
@@ -136,6 +139,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    },
+    {
+      "load": "payload",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "18 inches",
@@ -146,7 +159,6 @@
           "height": 1067
         },
         "total_weight": 34.7,
-        "max_weight_rider": 125,
         "rider_height_min": 1626,
         "rider_height_max": 1880
       }

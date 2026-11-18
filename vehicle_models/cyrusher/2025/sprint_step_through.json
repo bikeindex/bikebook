@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cyrusher/2025/sprint_step_through",
   "manufacturer": "Cyrusher",
   "model": "Sprint Step-Through",
@@ -71,8 +71,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 150
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {},
@@ -118,10 +117,12 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 540
+      },
       "rated_power": 750,
       "peak_power": 1400,
       "operating_modes": [
@@ -142,6 +143,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

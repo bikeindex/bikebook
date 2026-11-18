@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wildsyde/2020/hunni_bunni_750w",
   "manufacturer": "Wildsyde",
+  "model_group": "Hunni Bunni",
   "model": "Hunni Bunni 750W",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,8 +43,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 136
+    "material_detail": "6061 Aluminum"
   },
   "wheels": [
     {
@@ -97,9 +97,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 750,
       "max_torque": 90,
       "operating_modes": [
@@ -122,6 +124,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

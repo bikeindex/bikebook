@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/scale_20_rigid",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Scale",
+  "model_group": "Scale",
   "model": "Scale 20 rigid",
   "model_configuration": "complete",
   "markets": [
@@ -72,9 +72,7 @@
       "shell": "BSA",
       "width": 68,
       "spindle": "square taper"
-    },
-    "max_weight_total": 40,
-    "gross_weight_rating": 50
+    }
   },
   "wheels": [
     {
@@ -113,6 +111,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 40
+    },
+    {
+      "load": "gross",
+      "weight": 50
     }
   ],
   "sizes": [

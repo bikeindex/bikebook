@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ape_ryder/2025/buffalo_e",
   "manufacturer": "Ape Ryder",
-  "vehicle_model_group": "Buffalo",
+  "model_group": "Buffalo",
   "model": "Buffalo E",
   "model_configuration": "complete",
   "type": "bike",
@@ -44,8 +44,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 130
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -86,8 +85,10 @@
   ],
   "motors": [
     {
-      "battery_size": 540,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 540,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -99,6 +100,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 130
     }
   ],
   "sizes": [

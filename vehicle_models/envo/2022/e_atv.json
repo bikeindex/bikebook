@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/envo/2022/e_atv",
   "manufacturer": "Envo",
   "model": "e-ATV",
@@ -33,8 +33,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 200
+    "material": "steel"
   },
   "wheels": [
     {
@@ -57,7 +56,9 @@
   ],
   "motors": [
     {
-      "battery_size": 3000,
+      "battery": {
+        "capacity": 3000
+      },
       "rated_power": 3000,
       "operating_modes": [
         {
@@ -67,6 +68,12 @@
           "range_claimed": 70
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

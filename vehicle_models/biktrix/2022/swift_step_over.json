@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biktrix/2022/swift_step_over",
   "manufacturer": "Biktrix",
-  "vehicle_model_group": "Swift",
+  "model_group": "Swift",
   "model": "Swift Step-Over",
   "model_configuration": "complete",
   "type": "bike",
@@ -13,7 +13,7 @@
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/biktrix/2022/swift_step_over.jpg",
-  "description": "SOLD OUT\nThe Biktrix Swift Commuter eBike is the ultimate combination of speed, comfort, and control. The upright riding position provides superior visibility and control for city riding. The hub-motor makes the Swift simple and reliable, requiring little maintenance. The Swift is an efficient, easy, and affordable way to get where you need to go.",
+  "description": "The Biktrix Swift Commuter eBike is the ultimate combination of speed, comfort, and control. The upright riding position provides superior visibility and control for city riding. The hub-motor makes the Swift simple and reliable, requiring little maintenance. The Swift is an efficient, easy, and affordable way to get where you need to go.",
   "first_year": 2022,
   "final_year": 2022,
   "years": {
@@ -116,7 +116,9 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 840,
+      "battery": {
+        "capacity": 840
+      },
       "rated_power": 500,
       "operating_modes": [
         {

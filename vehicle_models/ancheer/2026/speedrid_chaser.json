@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ancheer/2026/speedrid_chaser",
   "manufacturer": "Ancheer",
   "model": "Speedrid Chaser",
@@ -52,8 +52,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 136
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -87,7 +86,9 @@
   ],
   "motors": [
     {
-      "battery_size": 499,
+      "battery": {
+        "capacity": 499
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -102,6 +103,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

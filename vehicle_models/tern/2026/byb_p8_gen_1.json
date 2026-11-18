@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tern/2026/byb_p8_gen_1",
   "manufacturer": "Tern",
-  "vehicle_model_group": "BYB",
+  "model_group": "BYB",
   "model": "BYB P8 Gen 1",
   "model_configuration": "complete",
   "markets": [
@@ -60,9 +60,7 @@
         "type": "accessory",
         "description": "Luggage Socket: Combo Mount"
       }
-    ],
-    "max_weight_total": 105,
-    "gross_weight_rating": 120
+    ]
   },
   "wheels": [
     {
@@ -102,9 +100,20 @@
       "caliper_mount": "Brake Bosses"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 20
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 105
+    },
+    {
+      "load": "cargo",
+      "weight": 20
+    },
+    {
+      "load": "gross",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -115,7 +124,6 @@
           "height": 520
         },
         "total_weight": 14.3,
-        "max_weight_rider": 105,
         "rider_height_min": 1470,
         "rider_height_max": 1950,
         "extra_measurements": {

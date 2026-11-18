@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/varun/2025/x_plorer_raptor_us",
   "manufacturer": "Varun",
-  "vehicle_model_group": "X-Plorer",
+  "model_group": "X-Plorer",
   "model": "X-Plorer Raptor",
   "model_configuration": "complete",
   "markets": [
@@ -54,8 +54,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -100,7 +99,9 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 998,
+      "battery": {
+        "capacity": 998
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "max_torque": 85,
@@ -133,6 +134,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

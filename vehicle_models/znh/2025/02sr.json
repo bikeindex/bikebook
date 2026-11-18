@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/znh/2025/02sr",
   "manufacturer": "Znh",
-  "vehicle_model_group": "02",
+  "model_group": "02",
   "model": "02SR",
   "model_configuration": "complete",
   "type": "bike",
@@ -30,8 +30,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "wheels": [
     {
@@ -62,10 +61,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
-      "battery_size": 676,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 676,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 1000,
       "operating_modes": [
@@ -86,6 +89,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

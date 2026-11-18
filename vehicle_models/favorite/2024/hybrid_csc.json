@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/favorite/2024/hybrid_csc",
   "manufacturer": "Favorite",
-  "vehicle_model_group": "Hybrid",
+  "model_group": "Hybrid",
   "model": "Hybrid CSC",
   "model_configuration": "complete",
   "type": "bike",
@@ -43,8 +43,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 136
+    ]
   },
   "suspension": {
     "front": {
@@ -99,11 +98,16 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG MJ1 3500mAh cells",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "cells": "LG MJ1 3500mAh"
+      },
       "rated_power": 500,
       "max_torque": 60,
       "operating_modes": [
@@ -124,6 +128,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

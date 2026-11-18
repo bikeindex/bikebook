@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2024/xr_pro",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "XR",
+  "model_group": "XR",
   "model": "XR Pro",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -82,10 +82,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 187,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 187,
+        "charging_time": 360
+      },
       "rated_power": 300,
       "operating_modes": [
         {
@@ -98,6 +102,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -107,8 +117,7 @@
           "width": 470,
           "height": 1143
         },
-        "total_weight": 16.1,
-        "max_weight_rider": 100
+        "total_weight": 16.1
       }
     }
   ],

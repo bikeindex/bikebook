@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jackrabbit/2024/og2",
   "manufacturer": "JackRabbit",
-  "vehicle_model_group": "OG2",
+  "model_group": "OG2",
   "model": "OG2",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -80,11 +80,16 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2271, UL 2272",
+      "certifications": [
+        "UL 2271",
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 151,
-      "battery_chemistry": "li-ion",
-      "charging_time": 180,
+      "battery": {
+        "capacity": 151,
+        "chemistry": "li-ion",
+        "charging_time": 180
+      },
       "rated_power": 300,
       "operating_modes": [
         {
@@ -96,6 +101,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
     }
   ],
   "sizes": [
@@ -113,7 +124,6 @@
           "height": 775
         },
         "total_weight": 11.3,
-        "max_weight_rider": 125,
         "rider_height_min": 1448,
         "rider_height_max": 1880
       }

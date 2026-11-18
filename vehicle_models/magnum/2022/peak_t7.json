@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/magnum/2022/peak_t7",
   "manufacturer": "Magnum Bikes",
-  "vehicle_model_group": "Peak",
+  "model_group": "Peak",
   "model": "Peak T7",
   "model_configuration": "complete",
   "type": "bike",
@@ -90,8 +90,7 @@
         "type": "accessory",
         "location": "top_tube"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "wheels": [
     {
@@ -128,11 +127,16 @@
     {
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "certification": "UL 2271, UL 2849",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "20Ah, 48V",
-      "charging_time": 600,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 960,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "charging_time": 600
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "operating_modes": [
@@ -154,6 +158,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

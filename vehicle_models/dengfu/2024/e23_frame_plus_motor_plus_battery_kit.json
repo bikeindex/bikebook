@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dengfu/2024/e23_frame_plus_motor_plus_battery_kit",
   "manufacturer": "Dengfu",
-  "vehicle_model_group": "E23",
+  "model_group": "E23",
   "model": "E23 Frame + Motor + Battery Kit",
   "model_configuration": "frame",
   "type": "bike",
@@ -86,7 +86,9 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "battery_size": 840,
+      "battery": {
+        "capacity": 840
+      },
       "rated_power": 1000,
       "operating_modes": [
         {

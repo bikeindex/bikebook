@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2022/multicharger_gt_family",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Multicharger GT",
+  "model_group": "Multicharger GT",
   "model": "Multicharger GT family",
   "model_configuration": "complete",
   "markets": [
@@ -78,8 +78,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_clamp_diameter": 40,
-    "gross_weight_rating": 175
+    "seatpost_clamp_diameter": 40
   },
   "suspension": {
     "front": {
@@ -141,8 +140,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -155,6 +156,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 175
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 5
     }
   ],
   "sizes": [
@@ -180,9 +191,7 @@
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "yes",
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": "rear: 50 /front: 5 /Cargo front: 8"
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     },
@@ -208,9 +217,7 @@
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "yes",
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": "rear: 50 /front: 5 /Cargo front: 8"
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vivi/2021/f26ful",
   "manufacturer": "Vivi",
   "model": "F26FUL",
@@ -68,8 +68,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 150
+    "seatpost_clamp_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -127,11 +126,16 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP54",
-      "battery_size": 864,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 864,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 1000,
       "max_torque": 75,
@@ -156,6 +160,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

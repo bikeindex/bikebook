@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/engwe/2023/e26",
   "manufacturer": "ENGWE",
-  "vehicle_model_group": "E26",
+  "model_group": "E26",
   "model": "E26",
   "model_configuration": "complete",
   "type": "bike",
@@ -82,8 +82,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 150
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {},
@@ -114,9 +113,11 @@
   ],
   "motors": [
     {
-      "battery_size": 768,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 768,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "max_torque": 70,
@@ -131,6 +132,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

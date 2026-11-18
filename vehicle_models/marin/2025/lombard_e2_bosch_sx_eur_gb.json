@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/marin/2025/lombard_e2_bosch_sx_eur_gb",
   "manufacturer": "Marin Bikes",
-  "vehicle_model_group": "Lombard",
+  "model_group": "Lombard",
   "model": "Lombard E2 - Bosch SX EUR",
   "model_configuration": "complete",
   "markets": [
@@ -160,8 +160,10 @@
       "model_group": "Performance Line Sprint",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 55,

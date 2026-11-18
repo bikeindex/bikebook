@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bh/2025/ilynx_plus_enduro_9_8",
   "manufacturer": "BH Bikes",
-  "vehicle_model_group": "iLYNX+ ENDURO",
+  "model_group": "iLYNX+ ENDURO",
   "model": "iLYNX+ ENDURO 9.8",
   "model_configuration": "complete",
   "type": "bike",
@@ -123,8 +123,12 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 810,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 810
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [

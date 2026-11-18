@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/engwe/2024/l20_2_0",
   "manufacturer": "ENGWE",
-  "vehicle_model_group": "L20",
+  "model_group": "L20",
   "model": "L20 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -90,8 +90,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 120
+    ]
   },
   "suspension": {
     "front": {},
@@ -124,9 +123,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 676,
-      "battery_chemistry": "li-ion",
-      "charging_time": 390,
+      "battery": {
+        "capacity": 676,
+        "chemistry": "li-ion",
+        "charging_time": 390
+      },
       "rated_power": 750,
       "peak_power": 1125,
       "max_torque": 75,
@@ -148,6 +149,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

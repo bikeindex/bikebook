@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/e_ride_pro/2026/mini_r",
   "manufacturer": "E Ride Pro",
   "model": "Mini R",
@@ -54,9 +54,11 @@
   ],
   "motors": [
     {
-      "battery_size": 2100,
-      "battery_chemistry": "li-ion",
-      "charging_time": 120,
+      "battery": {
+        "capacity": 2100,
+        "chemistry": "li-ion",
+        "charging_time": 120
+      },
       "rated_power": 3000,
       "peak_power": 8000,
       "operating_modes": [
@@ -72,14 +74,19 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 65
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "seat_height_min": 678,
         "seat_height_max": 678,
-        "total_weight": 54.4,
-        "max_weight_rider": 65
+        "total_weight": 54.4
       }
     }
   ],

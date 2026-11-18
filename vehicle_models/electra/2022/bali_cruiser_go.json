@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/electra/2022/bali_cruiser_go",
   "manufacturer": "Electra",
   "model": "Bali Cruiser Go!",
@@ -54,9 +54,7 @@
     "bottom_bracket": {
       "shell": "T47"
     },
-    "headset": "ZS44/28.6-26tpi | ZS44/30",
-    "max_weight_total": 115,
-    "gross_weight_rating": 136
+    "headset": "ZS44/28.6-26tpi | ZS44/30"
   },
   "wheels": [
     {
@@ -102,7 +100,9 @@
     {
       "manufacturer": "Hyena",
       "kind": "hub_drive",
-      "battery_size": 250,
+      "battery": {
+        "capacity": 250
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -114,6 +114,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 115
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

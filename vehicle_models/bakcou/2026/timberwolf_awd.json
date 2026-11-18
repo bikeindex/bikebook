@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bakcou/2026/timberwolf_awd",
   "manufacturer": "Bakcou",
+  "model_group": "Timberwolf",
   "model": "Timberwolf AWD",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -112,9 +113,11 @@
       "drive_wheel": "front",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 1008,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1008,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -129,9 +132,11 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 1008,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1008,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -143,12 +148,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 145
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 40.8,
-        "max_weight_rider": 145,
         "extra_measurements": {
           "ground_clearance": 152
         }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2018/cross_hybrid_sl_allroad_500_trapeze",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Cross Hybrid",
+  "model_group": "Cross Hybrid",
   "model": "Cross Hybrid SL Allroad 500 Trapeze",
   "model_configuration": "complete",
   "type": "bike",
@@ -88,8 +88,10 @@
       "model": "Performance CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 75,
       "operating_modes": [

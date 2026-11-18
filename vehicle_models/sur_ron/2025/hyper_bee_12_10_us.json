@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sur_ron/2025/hyper_bee_12_10_us",
   "manufacturer": "Sur-Ron",
-  "vehicle_model_group": "Hyper Bee",
+  "model_group": "Hyper Bee",
   "model": "Hyper Bee 12/10",
   "model_configuration": "complete",
   "markets": [
@@ -51,8 +51,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Forged Aluminum",
-    "max_weight_total": 65
+    "material_detail": "Forged Aluminum"
   },
   "suspension": {
     "front": {
@@ -91,8 +90,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 1260,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1260,
+        "chemistry": "li-ion"
+      },
       "peak_power": 5000,
       "max_torque": 142,
       "operating_modes": [
@@ -106,6 +107,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 65
     }
   ],
   "sizes": [

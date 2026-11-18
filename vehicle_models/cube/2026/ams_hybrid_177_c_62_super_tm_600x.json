@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/ams_hybrid_177_c_62_super_tm_600x",
   "manufacturer": "Cube",
-  "vehicle_model_group": "AMS Hybrid",
+  "model_group": "AMS Hybrid",
   "model": "AMS Hybrid 177 C:62 Super TM 600X",
   "model_configuration": "complete",
   "type": "bike",
@@ -112,8 +112,10 @@
       "model_group": "Performance Line CX-R",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -129,6 +131,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
+    }
+  ],
   "sizes": [
     {
       "name": "S",
@@ -137,7 +145,6 @@
         "stem_length": 50,
         "crank_length": 165,
         "max_seatpost_insertion": 210,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "diameter_seatpost": 31.6,
           "diameter_tire_maximum": 723,
@@ -156,7 +163,6 @@
         "crank_length": 165,
         "max_seatpost_insertion": 240,
         "total_weight": 21.3,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "diameter_seatpost": 31.6,
           "diameter_tire_maximum": 723,
@@ -174,7 +180,6 @@
         "stem_length": 50,
         "crank_length": 165,
         "max_seatpost_insertion": 260,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "diameter_seatpost": 31.6,
           "diameter_tire_maximum": 723,
@@ -192,7 +197,6 @@
         "stem_length": 50,
         "crank_length": 165,
         "max_seatpost_insertion": 320,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "diameter_seatpost": 31.6,
           "diameter_tire_maximum": 723,

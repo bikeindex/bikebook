@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2023/chatham_rev_3",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Chatham Rev",
+  "model_group": "Chatham Rev",
   "model": "Chatham Rev 3",
   "model_configuration": "complete",
   "type": "bike",
@@ -148,9 +148,14 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 360,
-      "charging_time": 270,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 360,
+        "charging_time": 270
+      },
       "rated_power": 350,
       "max_torque": 55,
       "operating_modes": [
@@ -175,13 +180,18 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 158
+    }
+  ],
   "sizes": [
     {
       "name": "18\" Step Over",
       "geometry": {
         "standover": 787,
         "total_weight": 26.3,
-        "max_weight_rider": 158,
         "rider_height_min": 1676,
         "rider_height_max": 1930
       }

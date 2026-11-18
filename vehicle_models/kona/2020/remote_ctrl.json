@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kona/2020/remote_ctrl",
   "manufacturer": "Kona",
-  "vehicle_model_group": "Remote",
+  "model_group": "Remote",
   "model": "Remote CTRL",
   "model_configuration": "complete",
   "type": "bike",
@@ -110,8 +110,10 @@
       "model": "BDU450CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

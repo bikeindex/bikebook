@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hover_1/2022/highlander",
   "manufacturer": "Hover-1",
   "model": "Highlander",
@@ -66,7 +66,9 @@
   ],
   "motors": [
     {
-      "battery_size": 187,
+      "battery": {
+        "capacity": 187
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -76,6 +78,12 @@
           "range_claimed": 14
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -92,8 +100,7 @@
           "width": 400,
           "height": 400
         },
-        "total_weight": 15,
-        "max_weight_rider": 120
+        "total_weight": 15
       }
     }
   ],

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/et/2022/f1000",
   "manufacturer": "ET Cycle",
-  "vehicle_model_group": "F Series",
+  "model_group": "F Series",
   "model": "F1000",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,9 +42,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 106,
-    "gross_weight_rating": 140
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -89,8 +87,10 @@
     {
       "manufacturer": "Das-Kit",
       "model": "G20 Integrated rim",
-      "battery_size": 1008,
-      "battery_info": "Panasonic Cells",
+      "battery": {
+        "capacity": 1008,
+        "cells": "Panasonic"
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 60,
@@ -113,6 +113,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 106
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

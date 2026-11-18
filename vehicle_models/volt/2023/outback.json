@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/volt/2023/outback",
   "manufacturer": "Volt Bike",
-  "vehicle_model_group": "Outback",
+  "model_group": "Outback",
   "model": "Outback",
   "model_configuration": "complete",
   "type": "bike",
@@ -80,8 +80,7 @@
   },
   "frame": {
     "material": "steel",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 127
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -140,13 +139,17 @@
       "manufacturer": "Bafang",
       "model": "G06",
       "kind": "hub_drive",
-      "certification": "UL 2271",
-      "battery_size": 960,
-      "battery_options": [
-        1200
+      "certifications": [
+        "UL 2271"
       ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
+      "battery": {
+        "capacity": 960,
+        "capacity_options": [
+          1200
+        ],
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 80,
@@ -171,6 +174,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 127
+    },
+    {
+      "load": "payload",
+      "weight": 127
+    }
+  ],
   "sizes": [
     {
       "name": "16.5\"",
@@ -185,7 +198,6 @@
           "length": 1905
         },
         "total_weight": 34,
-        "max_weight_rider": 127,
         "extra_measurements": {
           "handlebar_height": 1041
         }
@@ -203,7 +215,6 @@
         "dimensions": {
           "length": 1930
         },
-        "max_weight_rider": 127,
         "extra_measurements": {
           "handlebar_height": 1041
         }

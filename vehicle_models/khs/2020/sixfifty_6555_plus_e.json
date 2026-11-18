@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/khs/2020/sixfifty_6555_plus_e",
   "manufacturer": "KHS Bicycles",
-  "vehicle_model_group": "SixFifty",
+  "model_group": "SixFifty",
   "model": "SixFifty 6555 Plus E",
   "model_configuration": "complete",
   "type": "bike",
@@ -114,9 +114,11 @@
       "kind": "mid_drive",
       "spindle": "Shimano E8000",
       "sensor_cadence": true,
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 250,
       "max_torque": 70,
       "operating_modes": [

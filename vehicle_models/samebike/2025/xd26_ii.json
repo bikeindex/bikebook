@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/samebike/2025/xd26_ii",
   "manufacturer": "samebike",
   "model": "XD26-II",
@@ -79,8 +79,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 150
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {},
@@ -115,9 +114,11 @@
   ],
   "motors": [
     {
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 250,
       "max_torque": 70,
       "operating_modes": [
@@ -133,6 +134,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dahon/2024/hit_d6",
   "manufacturer": "Dahon",
-  "vehicle_model_group": "HIT",
+  "model_group": "HIT",
   "model": "HIT D6",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,7 +42,7 @@
     "material": "aluminum",
     "material_detail": "Dalloy Aluminum",
     "folding": "half_fold",
-    "max_weight_total": 105
+    "seatpost_diameter": 33.9
   },
   "wheels": [
     {
@@ -82,6 +82,16 @@
       "caliper_mount": "Brake Bosses"
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 105
+    },
+    {
+      "load": "payload",
+      "weight": 105
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -92,7 +102,6 @@
           "height": 650
         },
         "total_weight": 11.6,
-        "max_weight_rider": 105,
         "rider_height_min": 1500,
         "rider_height_max": 1900
       }
@@ -197,7 +206,11 @@
     },
     {
       "type": "seatpost",
-      "description": "Aluminum, 33.9 x 580 mm, Adjustable"
+      "description": "Aluminum, 33.9 x 580 mm, Adjustable",
+      "dimensions": {
+        "length": 580,
+        "diameter": 33.9
+      }
     },
     {
       "type": "shifter",

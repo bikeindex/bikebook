@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bakcou/2026/puma_x22_sd",
   "manufacturer": "Bakcou",
+  "model_group": "Puma",
   "model": "Puma X22 SD",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -82,9 +83,11 @@
   ],
   "motors": [
     {
-      "battery_size": 5256,
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 5256,
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 6000,
       "peak_power": 22000,
       "max_torque": 850,

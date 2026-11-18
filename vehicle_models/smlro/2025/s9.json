@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/smlro/2025/s9",
   "manufacturer": "Smlro",
   "model": "S9",
@@ -46,8 +46,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -71,9 +70,13 @@
   },
   "motors": [
     {
-      "certification": "CE",
-      "battery_size": 624,
-      "charging_time": 540,
+      "certifications": [
+        "CE"
+      ],
+      "battery": {
+        "capacity": 624,
+        "charging_time": 540
+      },
       "peak_power": 500,
       "operating_modes": [
         {
@@ -95,6 +98,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

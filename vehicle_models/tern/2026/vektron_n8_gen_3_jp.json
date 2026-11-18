@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tern/2026/vektron_n8_gen_3_jp",
   "manufacturer": "Tern",
-  "vehicle_model_group": "Vektron",
+  "model_group": "Vektron",
   "model": "Vektron N8 Gen 3",
   "model_configuration": "complete",
   "markets": [
@@ -35,9 +35,7 @@
     "bottom_bracket": {
       "spindle": "BNI"
     },
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 98,
-    "gross_weight_rating": 120
+    "seatpost_diameter": 34.9
   },
   "wheels": [
     {
@@ -86,8 +84,10 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 300,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 300,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,
@@ -99,6 +99,16 @@
           "range_claimed": 105
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 98
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -138,18 +148,15 @@
         "front",
         "rear"
       ],
-      "manufacturer": "Shimano",
       "description": "SHIMANO or TEKTRO, hydraulic disc"
     },
     {
       "type": "brake_cable",
       "type_detail": "Brake Cable & Housing",
-      "manufacturer": "Shimano",
       "description": "SHIMANO or TEKTRO, hydraulic disc"
     },
     {
       "type": "brake_lever",
-      "manufacturer": "Shimano",
       "description": "SHIMANO or TEKTRO, hydraulic disc"
     },
     {

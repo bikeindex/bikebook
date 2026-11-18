@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2025/flash_lite_st_1_0",
   "manufacturer": "Eunorau",
-  "vehicle_model_group": "Flash",
+  "model_group": "Flash",
   "model": "Flash Lite ST 1.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -60,8 +60,7 @@
     "top_tube": "step_through",
     "bottom_bracket": {
       "width": 100
-    },
-    "max_weight_total": 200
+    }
   },
   "suspension": {
     "front": {
@@ -104,10 +103,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "Yes",
-      "battery_size": 832,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG Cells",
+      "battery": {
+        "capacity": 832,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 750,
       "max_torque": 92,
       "operating_modes": [
@@ -126,6 +126,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

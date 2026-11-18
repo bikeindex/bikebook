@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2022/axial_ws_c_62_sl",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Axial",
+  "model_group": "Axial",
   "model": "Axial WS C:62 SL",
   "model_configuration": "complete",
   "type": "bike",
@@ -34,9 +34,7 @@
     "bottom_bracket": {
       "shell": "press fit",
       "spindle": "DUB"
-    },
-    "max_weight_total": 106,
-    "gross_weight_rating": 115
+    }
   },
   "wheels": [
     {
@@ -84,6 +82,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 106
+    },
+    {
+      "load": "gross",
+      "weight": 115
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ghostcat/2026/f4x",
   "manufacturer": "GhostCat",
   "model": "F4X",
@@ -89,8 +89,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 125
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -126,11 +125,16 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2271",
-      "battery_size": 1500,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium LG Cells",
-      "charging_time": 420,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 1500,
+        "voltage": 60,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 420
+      },
       "rated_power": 2200,
       "peak_power": 3300,
       "max_torque": 160,
@@ -154,6 +158,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

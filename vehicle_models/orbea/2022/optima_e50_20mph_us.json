@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/orbea/2022/optima_e50_20mph_us",
   "manufacturer": "Orbea",
-  "vehicle_model_group": "Optima",
+  "model_group": "Optima",
   "model": "Optima E50 20mph",
   "model_configuration": "complete",
   "markets": [
@@ -92,8 +92,10 @@
     {
       "manufacturer": "Mahle",
       "kind": "hub_drive",
-      "battery_size": 248,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 248,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2019/v8f",
   "manufacturer": "Inmotion",
-  "vehicle_model_group": "V8",
+  "model_group": "V8",
   "model": "V8F",
   "model_configuration": "complete",
   "type": "epamd",
@@ -26,8 +26,7 @@
     "2019": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 118
+    "material": "steel"
   },
   "brakes": [
     {
@@ -40,8 +39,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 518,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 518,
+        "charging_time": 300
+      },
       "operating_modes": [
         {
           "mode": "throttle",
@@ -51,6 +52,12 @@
           "max_slope": 30
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 118
     }
   ],
   "sizes": [

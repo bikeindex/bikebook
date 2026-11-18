@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/niu/2026/xqi_500_street",
   "manufacturer": "Niu",
-  "vehicle_model_group": "XQi 500",
+  "model_group": "XQi 500",
   "model": "XQi 500 Street",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -59,10 +59,13 @@
   ],
   "motors": [
     {
-      "battery_size": 3840,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 Lithium Ion",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 3840,
+        "voltage": 96,
+        "chemistry": "li-ion",
+        "cells": "21700",
+        "charging_time": 240
+      },
       "rated_power": 12000,
       "peak_power": 28800,
       "max_torque": 100,

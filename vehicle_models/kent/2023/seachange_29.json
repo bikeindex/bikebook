@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kent/2023/seachange_29",
   "manufacturer": "Kent",
-  "vehicle_model_group": "Seachange",
+  "model_group": "Seachange",
   "model": "Seachange 29",
   "model_configuration": "complete",
   "type": "bike",
@@ -67,12 +67,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 15.4,
-        "max_weight_rider": 125,
         "rider_height_min": 1702,
         "rider_height_max": 1905,
         "rider_age_min": 14

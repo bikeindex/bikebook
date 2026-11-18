@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/denago/2023/hunting_1",
   "manufacturer": "Denago",
   "model": "Hunting 1",
@@ -96,11 +96,16 @@
       "spindle": "ISIS",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / UL 2849",
+      "certifications": [
+        "UL 2849",
+        "CE"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG 21700 cells",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "LG 21700"
+      },
       "rated_power": 1000,
       "peak_power": 1440,
       "max_torque": 160,
@@ -126,6 +131,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -144,8 +155,7 @@
         "fork_length_a2c": 550,
         "stem_length": 75,
         "crank_length": 170,
-        "total_weight": 39,
-        "max_weight_rider": 136
+        "total_weight": 39
       }
     }
   ],

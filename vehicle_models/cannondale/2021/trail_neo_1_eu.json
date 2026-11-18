@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2021/trail_neo_1_eu",
   "base": "m/cannondale/2021/trail_neo_1",
   "markets": [
@@ -128,7 +128,9 @@
       "id": "c/bosch/2021/performance_line_cx_bdu374y",
       "model": "BDU374Y",
       "spindle": "ISIS",
-      "battery_size": 750,
+      "battery": {
+        "capacity": 750
+      },
       "operating_modes": {
         "assist stock": {
           "max_speed": 25,

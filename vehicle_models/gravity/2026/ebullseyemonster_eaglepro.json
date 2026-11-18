@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gravity/2026/ebullseyemonster_eaglepro",
   "manufacturer": "Gravity",
-  "vehicle_model_group": "eBullseye",
+  "model_group": "eBullseye",
   "model": "eBullseyeMonster EaglePro",
   "model_configuration": "complete",
   "type": "bike",
@@ -115,10 +115,16 @@
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / EN 14766 / ROHS",
+      "certifications": [
+        "EN 14766",
+        "CE",
+        "RoHS"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 653,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 653,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 120,
       "operating_modes": [

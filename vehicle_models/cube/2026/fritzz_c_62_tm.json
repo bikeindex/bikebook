@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/fritzz_c_62_tm",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Fritzz",
+  "model_group": "Fritzz",
   "model": "Fritzz C:62 TM",
   "model_configuration": "complete",
   "type": "bike",
@@ -38,9 +38,7 @@
       "width": 73,
       "spindle": "DUB"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 102,
-    "gross_weight_rating": 120
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -107,6 +105,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "S",
@@ -115,7 +123,6 @@
         "stem_length": 50,
         "crank_length": 165,
         "max_seatpost_insertion": 230,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "angle_stem_degrees": 6,
           "diameter_seatpost": 31.6,
@@ -135,7 +142,6 @@
         "crank_length": 165,
         "max_seatpost_insertion": 265,
         "total_weight": 17.2,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "angle_stem_degrees": 6,
           "diameter_seatpost": 31.6,
@@ -154,7 +160,6 @@
         "stem_length": 50,
         "crank_length": 165,
         "max_seatpost_insertion": 280,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "angle_stem_degrees": 6,
           "diameter_seatpost": 31.6,
@@ -173,7 +178,6 @@
         "stem_length": 50,
         "crank_length": 165,
         "max_seatpost_insertion": 278,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "angle_stem_degrees": 6,
           "diameter_seatpost": 31.6,

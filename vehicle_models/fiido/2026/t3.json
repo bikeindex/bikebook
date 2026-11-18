@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fiido/2026/t3",
   "manufacturer": "Fiido",
-  "vehicle_model_group": "T3",
+  "model_group": "T3",
   "model": "T3",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -34,8 +34,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -82,7 +81,9 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 972,
+      "battery": {
+        "capacity": 972
+      },
       "rated_power": 250,
       "max_torque": 100,
       "operating_modes": [
@@ -91,6 +92,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

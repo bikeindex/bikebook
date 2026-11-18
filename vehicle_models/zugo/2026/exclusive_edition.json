@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/zugo/2026/exclusive_edition",
   "manufacturer": "Zugo Bike",
-  "vehicle_model_group": "Rhino",
+  "model_group": "Rhino",
   "model": "Exclusive Edition",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,8 +42,7 @@
       {
         "type": "fender"
       }
-    ],
-    "max_weight_total": 147
+    ]
   },
   "suspension": {
     "front": {}
@@ -81,9 +80,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IP67",
-      "battery_size": 1008,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
+      "battery": {
+        "capacity": 1008,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "operating_modes": [
@@ -105,6 +106,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 147
     }
   ],
   "sizes": [

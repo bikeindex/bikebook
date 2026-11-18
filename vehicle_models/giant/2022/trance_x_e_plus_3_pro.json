@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/giant/2022/trance_x_e_plus_3_pro",
   "manufacturer": "Giant",
-  "vehicle_model_group": "Trance",
+  "model_group": "Trance",
   "model": "Trance X E+ 3 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -134,8 +134,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "water_rating": "IPX6",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "max_torque": 85,
       "operating_modes": [
         {

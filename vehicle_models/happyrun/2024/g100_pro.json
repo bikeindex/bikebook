@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/happyrun/2024/g100_pro",
   "manufacturer": "HappyRun",
-  "vehicle_model_group": "G100",
+  "model_group": "G100",
   "model": "G100 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -105,8 +105,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "Stainless Steel",
-    "max_weight_total": 181
+    "material_detail": "Stainless Steel"
   },
   "suspension": {
     "front": {},
@@ -148,9 +147,11 @@
   "motors": [
     {
       "water_rating": "IP54",
-      "battery_size": 2376,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 2376,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 3000,
       "peak_power": 6000,
       "max_torque": 170,
@@ -175,9 +176,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 14.97
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 181
+    },
+    {
+      "load": "cargo",
+      "weight": 14.97
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -189,7 +201,6 @@
           "length": 1727
         },
         "total_weight": 72.1,
-        "max_weight_rider": 181,
         "rider_height_min": 1600,
         "rider_height_max": 1956,
         "extra_measurements": {

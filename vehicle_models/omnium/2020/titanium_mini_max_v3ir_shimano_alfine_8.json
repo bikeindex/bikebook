@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/omnium/2020/titanium_mini_max_v3ir_shimano_alfine_8",
   "manufacturer": "Omnium",
-  "vehicle_model_group": "Mini-Max",
+  "model_group": "Mini-Max",
   "model": "Titanium Mini-Max V3ir Shimano Alfine 8",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -12,7 +12,7 @@
   "primary_activity": "cargo",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/omnium/2020/titanium_mini_max_v3ir_shimano_alfine_8.jpg",
-  "description": "The Mini-Max is the middle child of the lineup, with the best of both the Cargo and the Mini. The shorter wheelbase makes it handle more like a normal bike, with a tighter turn radius and increased manoeuvrability.\n\nDespite its strength and load capacity, the Mini-Max rides like a regular bike when empty thanks to its clever geometry and balanced wheelbase. That compact length gives it snappy handling and easy parking, while still offering solid stability when carrying loads. From daily commutes to kid drop-offs and hauling gear — this bike handles it all.\n\nThe Titanium Mini-Max V3 is the versatile workhorse of the lineup — light, strong, and built to last forever. With future proof replaceable inserts, and clearance for comfy 55mm tires, it’s ready for any setup or surface.\n\nTitanium is unmatched: it won’t rust, crack, or corrode, no matter the conditions. It’s lighter than steel but just as tough, delivering a smooth, responsive ride with zero maintenance fuss. Simply put — steel is real, but titanium is realer.\n\nGetting the perfect fit makes all the difference in how your Omnium feels and performs. Use the chart to find the frame size that best matches your height.\n\nEach Omnium frame size covers a range of rider heights, so if you’re between sizes, consider how you like your bike to feel:\n\nWith On-Demand OMNIUM titanium frames are made to order and finished to your preference as a frame kit or complete, based on your wishes.\n\nChoose model, complete or frame kit, size, decal or anodizing, optional titanium and carbon parts and any accessories – Once the frame arrives it will be built up to your chosen specifications.\n\nWe open up orders for Titanium On-Demand 4 times a year and lead time starts when the on-demand window closes – See the on-demand order schedule for the next windows.\n\nProduction and shipping times is approximately 6 months – Once the frames are here all frame kits and completes need to be build up. Frame kits are quicker to build up and will start shipping first. All bikes are shipped within 2 weeks of arrival.\n\nThe order window for Titanium bikes will be open in the following periods\n\nApex is SRAM’s dedicated gravel groupset, a 1×11 groupset with wide range and is simple to use. With a long cage that fits a 42-tooth cassette and the X-HORIZON design reduces shifting force adding extra comfort. It also comes with Sram CAGE LOCK making wheel removal and maintenance much easier.\n\nWe have upgraded the Apex drivetrains with the Rival 1 Wide crankset, with its wider Q-Factor and DUB bottom bracket it is the right fit for the OMNIUM platform.\n\nAlfine 8 is the ultimate in hasle free and affordable drivetrains – combined with a titanium frame and gates belt, this bike will outlast any other bike with minimal service needed.\n\nThe Gates CDX carbon belt replaces the chain for a longer lasting cleaner drivetrain ideal for commuters.\n\nGeometry is the same across steel and titanium but tubing is changed to add more stiffness to the titanium frame.",
+  "description": "The Mini-Max is the middle child of the lineup, with the best of both the Cargo and the Mini. The shorter wheelbase makes it handle more like a normal bike, with a tighter turn radius and increased manoeuvrability.\n\nDespite its strength and load capacity, the Mini-Max rides like a regular bike when empty thanks to its clever geometry and balanced wheelbase. That compact length gives it snappy handling and easy parking, while still offering solid stability when carrying loads. From daily commutes to kid drop-offs and hauling gear — this bike handles it all.\n\nThe Titanium Mini-Max V3 is the versatile workhorse of the lineup — light, strong, and built to last forever. With future proof replaceable inserts, and clearance for comfy 55mm tires, it’s ready for any setup or surface.\n\nTitanium is unmatched: it won’t rust, crack, or corrode, no matter the conditions. It’s lighter than steel but just as tough, delivering a smooth, responsive ride with zero maintenance fuss. Simply put — steel is real, but titanium is realer.\n\nGetting the perfect fit makes all the difference in how your Omnium feels and performs. Use the chart to find the frame size that best matches your height.\n\nEach Omnium frame size covers a range of rider heights, so if you’re between sizes, consider how you like your bike to feel:\n\nWith On-Demand OMNIUM titanium frames are made to order and finished to your preference as a frame kit or complete, based on your wishes.\n\nChoose model, complete or frame kit, size, decal or anodizing, optional titanium and carbon parts and any accessories – Once the frame arrives it will be built up to your chosen specifications.\n\nWe open up orders for Titanium On-Demand 4 times a year and lead time starts when the on-demand window closes – See the on-demand order schedule for the next windows.\n\nFrame kits are quicker to build up and will start shipping first. All bikes are shipped within 2 weeks of arrival.\n\nThe order window for Titanium bikes will be open in the following periods\n\nApex is SRAM’s dedicated gravel groupset, a 1×11 groupset with wide range and is simple to use. With a long cage that fits a 42-tooth cassette and the X-HORIZON design reduces shifting force adding extra comfort. It also comes with Sram CAGE LOCK making wheel removal and maintenance much easier.\n\nWe have upgraded the Apex drivetrains with the Rival 1 Wide crankset, with its wider Q-Factor and DUB bottom bracket it is the right fit for the OMNIUM platform.\n\nAlfine 8 is the ultimate in hasle free and affordable drivetrains – combined with a titanium frame and gates belt, this bike will outlast any other bike with minimal service needed.\n\nThe Gates CDX carbon belt replaces the chain for a longer lasting cleaner drivetrain ideal for commuters.\n\nGeometry is the same across steel and titanium but tubing is changed to add more stiffness to the titanium frame.",
   "first_year": 2020,
   "years": {
     "2026": {
@@ -34,8 +34,7 @@
     "headset": "IS42/28.6-26tpi | IS42/30",
     "seatpost_diameter": 31.6,
     "seatpost_clamp_diameter": 34.9,
-    "front_derailleur_mount": "none",
-    "max_weight_total": 150
+    "front_derailleur_mount": "none"
   },
   "wheels": [
     {
@@ -101,9 +100,16 @@
       "caliper_mount": "Disc IS"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 50
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 50
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "XS (49.5)",

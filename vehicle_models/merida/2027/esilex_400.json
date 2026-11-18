@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/merida/2027/esilex_400",
   "manufacturer": "Merida Bikes",
-  "vehicle_model_group": "eSILEX",
+  "model_group": "eSILEX",
   "model": "eSILEX 400",
   "model_configuration": "complete",
   "type": "bike",
@@ -96,8 +96,10 @@
       "manufacturer": "Mahle",
       "model": "X30",
       "kind": "hub_drive",
-      "battery_size": 237,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 237,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 45,
       "operating_modes": [

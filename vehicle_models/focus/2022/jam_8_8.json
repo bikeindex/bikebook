@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/focus/2022/jam_8_8",
   "manufacturer": "Focus",
-  "vehicle_model_group": "Jam",
+  "model_group": "Jam",
   "model": "Jam 8.8",
   "model_configuration": "complete",
   "type": "bike",
@@ -56,9 +56,7 @@
   "frame": {
     "material": "carbon",
     "cable_routing": "stealth",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 94,
-    "gross_weight_rating": 110
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -115,6 +113,16 @@
         "rear"
       ],
       "rotor_diameter": 200
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 94
+    },
+    {
+      "load": "gross",
+      "weight": 110
     }
   ],
   "sizes": [

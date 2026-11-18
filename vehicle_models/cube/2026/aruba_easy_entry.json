@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/aruba_easy_entry",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Aruba",
+  "model_group": "Aruba",
   "model": "Aruba Easy Entry",
   "model_configuration": "complete",
   "type": "bike",
@@ -32,14 +32,21 @@
   },
   "frame": {
     "material": "aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
+      }
+    ],
     "bottom_bracket": {
       "shell": "BSA",
       "width": 68
     },
     "headset": "ZS44/28.6 | ZS44/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 123,
-    "gross_weight_rating": 140
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -83,9 +90,20 @@
       "caliper_mount": "Brake Bosses"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 140
+    }
+  ],
   "sizes": [
     {
       "name": "45 cm",
@@ -102,7 +120,6 @@
         "handlebar_width": 660,
         "stem_length": 90,
         "crank_length": 170,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 75
         }
@@ -124,7 +141,6 @@
         "stem_length": 90,
         "crank_length": 170,
         "total_weight": 17,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 75
         }
@@ -145,7 +161,6 @@
         "handlebar_width": 660,
         "stem_length": 90,
         "crank_length": 170,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 75
         }

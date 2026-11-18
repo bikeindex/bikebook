@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/asomtom/2024/s2",
   "manufacturer": "Asomtom",
   "model": "S2",
@@ -38,8 +38,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 136
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -70,7 +69,9 @@
   ],
   "motors": [
     {
-      "battery_size": 360,
+      "battery": {
+        "capacity": 360
+      },
       "rated_power": 350,
       "peak_power": 612,
       "operating_modes": [
@@ -92,6 +93,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/around_the_block_24_men_s_3_speed",
   "manufacturer": "sixthreezero",
-  "vehicle_model_group": "Around the Block",
+  "model_group": "Around the Block",
   "model": "Around the Block 24 Men's 3-Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -60,6 +60,12 @@
     "series": "Nexus",
     "electronic": false
   },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -70,7 +76,6 @@
         "bb_height": 279,
         "fork_length_a2c": 381,
         "total_weight": 17.6,
-        "max_weight_rider": 136,
         "rider_height_min": 1321,
         "rider_height_max": 1524,
         "extra_measurements": {
@@ -104,17 +109,18 @@
       "description": "Crank Material: Steel Crank Arm Length: 155mm or 6.5\"in Teeth Count: 34T"
     },
     {
-      "type": "derailleur",
-      "manufacturer": "Shimano",
-      "description": "Shimano Nexus Internal 3 Speed"
-    },
-    {
       "type": "fork",
       "description": "Standard Steel Fork with 3/8\" Axel Threading"
     },
     {
       "type": "headset",
       "description": "22.2mm Steel Headset"
+    },
+    {
+      "type": "hub",
+      "type_detail": "DERAILLEURS",
+      "manufacturer": "Shimano",
+      "description": "Shimano Nexus Internal 3 Speed"
     },
     {
       "type": "shifter",

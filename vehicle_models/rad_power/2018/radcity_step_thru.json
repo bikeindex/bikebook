@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rad_power/2018/radcity_step_thru",
   "manufacturer": "Rad Power Bikes",
-  "vehicle_model_group": "RadCity",
+  "model_group": "RadCity",
   "model": "RadCity Step-Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -113,9 +113,11 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 35E Cells",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "cells": "Samsung 35E"
+      },
       "rated_power": 750,
       "max_torque": 40,
       "operating_modes": [
@@ -135,9 +137,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27.22
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 27.22
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -212,10 +217,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "750W Brushless Shengyi Direct Drive Hub Motor with 40Nm of Torque"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V, 750W"
     },
     {
       "type": "e_vehicle_remote",
@@ -313,6 +314,11 @@
         "width": 58.42,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "CONTROLLER",
+      "description": "48V, 750W"
     },
     {
       "type": "unknown",

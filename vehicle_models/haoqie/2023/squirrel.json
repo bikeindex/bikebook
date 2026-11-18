@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/haoqie/2023/squirrel",
   "manufacturer": "Haoqie",
   "model": "Squirrel",
@@ -59,8 +59,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 159
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -98,9 +97,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -119,6 +120,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

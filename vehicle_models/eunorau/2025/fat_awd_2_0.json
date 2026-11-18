@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2025/fat_awd_2_0",
   "manufacturer": "Eunorau",
-  "vehicle_model_group": "Fat-AWD",
+  "model_group": "Fat-AWD",
   "model": "Fat-AWD 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -53,8 +53,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 170
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -106,10 +105,11 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "Yes",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 500,
       "max_torque": 110,
       "operating_modes": [
@@ -136,10 +136,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "Yes",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 500,
       "max_torque": 110,
       "operating_modes": [
@@ -161,6 +162,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 170
     }
   ],
   "sizes": [
@@ -243,10 +250,6 @@
       "description": "BC182 LCD display, EUNORAU GO App Support"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "48V 20A"
-    },
-    {
       "type": "fork",
       "manufacturer": "RST",
       "description": "RST GUIDE 95mm travel suspension",
@@ -322,6 +325,11 @@
         "width": 101.6,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V 20A"
     },
     {
       "type": "unknown",

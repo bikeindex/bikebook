@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bsa/2026/viona",
   "manufacturer": "BSA",
   "model": "Viona",
@@ -66,8 +66,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 216,
-      "battery_chemistry": "lifepo4",
+      "battery": {
+        "capacity": 216,
+        "chemistry": "lifepo4"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

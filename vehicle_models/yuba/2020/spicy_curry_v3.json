@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/yuba/2020/spicy_curry_v3",
   "manufacturer": "Yuba",
-  "vehicle_model_group": "Spicy Curry",
+  "model_group": "Spicy Curry",
   "model": "Spicy Curry V3",
   "model_configuration": "complete",
   "type": "cargo_bike_rear",
@@ -203,8 +203,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 200
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -253,9 +252,13 @@
       "model": "BDU450CX",
       "model_group": "Cargo Line",
       "kind": "mid_drive",
-      "certification": "EN 15194",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "EN 15194"
+      ],
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -277,6 +280,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

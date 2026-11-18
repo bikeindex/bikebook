@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/magnum/2024/cosmo_2_0_t",
   "manufacturer": "Magnum Bikes",
-  "vehicle_model_group": "Cosmo",
+  "model_group": "Cosmo",
   "model": "Cosmo 2.0 T",
   "model_configuration": "complete",
   "type": "bike",
@@ -15,6 +15,7 @@
   "stock_photo": "https://bikebook.bikeindex.org/magnum/2024/cosmo_2_0_t.jpg",
   "description": "Experience the ultimate ride with our upgraded bestseller! The Magnum Cosmo 2.0 T features a light low-step frame, fully-integrated 13Ah color-matched battery, and powerful 500W motor with dual-sensor technology. Our torque and cadence sensing sys...",
   "first_year": 2024,
+  "final_year": 2026,
   "years": {
     "2026": {
       "original_msrp": 199900,
@@ -100,8 +101,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 150
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -145,11 +145,15 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2271, UL 2849",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "battery_info": "13Ah",
-      "charging_time": 330,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "charging_time": 330
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -171,6 +175,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

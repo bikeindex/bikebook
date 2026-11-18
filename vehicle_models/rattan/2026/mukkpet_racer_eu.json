@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rattan/2026/mukkpet_racer_eu",
   "manufacturer": "Rattan",
   "model": "Mukkpet Racer",
@@ -42,8 +42,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -81,8 +80,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 864,
-      "charging_time": 540,
+      "battery": {
+        "capacity": 864,
+        "charging_time": 540
+      },
       "max_torque": 120,
       "operating_modes": [
         {
@@ -104,6 +105,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

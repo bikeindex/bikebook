@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/larry_vs_harry/2025/ebullitt_ep801",
   "manufacturer": "Larry Vs Harry",
-  "vehicle_model_group": "Bullitt",
+  "model_group": "Bullitt",
   "model": "eBullitt EP801",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -38,9 +38,7 @@
     "material_detail": "7005 Aluminum",
     "bottom_bracket": {
       "spindle": "Shimano EP8"
-    },
-    "max_weight_total": 176,
-    "gross_weight_rating": 204
+    }
   },
   "wheels": [
     {
@@ -97,12 +95,16 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 504,
-      "battery_options": [
-        630
+      "certifications": [
+        "UL 2849"
       ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "capacity_options": [
+          630
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [
@@ -115,6 +117,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 176
+    },
+    {
+      "load": "gross",
+      "weight": 204
     }
   ],
   "sizes": [

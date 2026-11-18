@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bianchi/2022/e_spillo_city_step_thru_altus_8sp",
   "manufacturer": "Bianchi",
-  "vehicle_model_group": "E-Spillo",
+  "model_group": "E-Spillo",
   "model": "E-Spillo City Step Thru Altus 8sp",
   "model_configuration": "complete",
   "type": "bike",
@@ -23,6 +23,15 @@
   "frame": {
     "material": "aluminum",
     "top_tube": "step_through",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "atranvelo_avs"
+      }
+    ],
     "bottom_bracket": {
       "spindle_length": 124
     },
@@ -77,8 +86,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 317,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 317,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

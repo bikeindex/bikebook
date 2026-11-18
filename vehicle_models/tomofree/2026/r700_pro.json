@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tomofree/2026/r700_pro",
   "manufacturer": "Tomofree",
-  "vehicle_model_group": "R700",
+  "model_group": "R700",
   "model": "R700 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -26,8 +26,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 150
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {},
@@ -55,9 +54,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 1440,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1440,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "max_torque": 70,
       "operating_modes": [
@@ -76,6 +77,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

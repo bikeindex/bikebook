@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/denago/2026/folding_2",
   "manufacturer": "Denago",
-  "vehicle_model_group": "Folding",
+  "model_group": "Folding",
   "model": "Folding 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -56,8 +56,7 @@
   "frame": {
     "material": "aluminum",
     "folding": "half_fold",
-    "seatpost_diameter": 31.8,
-    "max_weight_total": 120
+    "seatpost_diameter": 31.8
   },
   "suspension": {
     "front": {}
@@ -100,10 +99,12 @@
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX4",
-      "battery_size": 653,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 653,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -126,6 +127,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

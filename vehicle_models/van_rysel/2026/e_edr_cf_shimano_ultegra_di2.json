@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/van_rysel/2026/e_edr_cf_shimano_ultegra_di2",
   "manufacturer": "Van Rysel",
-  "vehicle_model_group": "E-EDR",
+  "model_group": "E-EDR",
   "model": "E-EDR CF Shimano Ultegra Di2",
   "model_configuration": "complete",
   "type": "bike",
@@ -34,8 +34,7 @@
         "location": "seat_tube"
       }
     ],
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 100
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -92,7 +91,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 350,
+      "battery": {
+        "capacity": 350
+      },
       "rated_power": 250,
       "max_torque": 60,
       "operating_modes": [
@@ -106,6 +107,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dirtysixer/2021/allroad_mark_ii",
   "manufacturer": "DirtySixer",
   "model": "AllRoad Mark II",
@@ -54,9 +54,7 @@
       "spindle": "30mm"
     },
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 165,
-    "gross_weight_rating": 181
+    "seatpost_clamp_diameter": 34.9
   },
   "wheels": [
     {
@@ -116,6 +114,16 @@
         "rear"
       ],
       "rotor_diameter": 203
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 165
+    },
+    {
+      "load": "gross",
+      "weight": 181
     }
   ],
   "sizes": [

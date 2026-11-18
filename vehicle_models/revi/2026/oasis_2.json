@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/revi/2026/oasis_2",
   "manufacturer": "Revi",
-  "vehicle_model_group": "Oasis",
+  "model_group": "Oasis",
   "model": "Oasis.2",
   "model_configuration": "complete",
   "type": "bike",
@@ -48,8 +48,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 159
+    "material_detail": "6061 Aluminum"
   },
   "wheels": [
     {
@@ -83,10 +82,13 @@
     {
       "manufacturer": "Bafang",
       "sensor_cadence": true,
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 720,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -108,9 +110,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 20.41
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 20.41
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

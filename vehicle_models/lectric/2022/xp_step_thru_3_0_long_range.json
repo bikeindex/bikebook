@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lectric/2022/xp_step_thru_3_0_long_range",
   "manufacturer": "Lectric eBikes",
-  "vehicle_model_group": "XP 3.0",
+  "model_group": "XP 3.0",
   "model": "XP Step-Thru 3.0 Long-Range",
   "model_configuration": "complete",
   "type": "bike",
@@ -68,8 +68,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {
@@ -117,7 +116,9 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP65",
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 1000,
       "max_torque": 55,
@@ -141,9 +142,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 68.04
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 68.04
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    },
+    {
+      "load": "rear_rack",
+      "weight": 68.04
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -170,7 +182,6 @@
           "handlebar_height_min": 1143,
           "handlebar_reach_max": 508,
           "handlebar_reach_min": 470,
-          "rear_rack_capacity_kg": 68.04,
           "rear_rack_length": 406,
           "rear_rack_width": 178
         }

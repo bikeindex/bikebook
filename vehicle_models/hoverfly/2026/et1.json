@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hoverfly/2026/et1",
   "manufacturer": "Hoverfly",
   "model": "ET1",
@@ -69,8 +69,7 @@
   "frame": {
     "material": "steel",
     "top_tube": "step_through",
-    "folding": "half_fold",
-    "max_weight_total": 181
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -99,10 +98,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2271",
+      "certifications": [
+        "UL 2271"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 648,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 648,
+        "charging_time": 360
+      },
       "peak_power": 900,
       "operating_modes": [
         {
@@ -122,6 +125,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

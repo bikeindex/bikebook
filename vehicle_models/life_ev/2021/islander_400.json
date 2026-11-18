@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/life_ev/2021/islander_400",
   "manufacturer": "Life EV",
   "model": "Islander 400",
@@ -39,8 +39,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061-T6 Aluminum",
-    "headset": "ZS44/28.6 | ZS44/30",
-    "max_weight_total": 129
+    "headset": "ZS44/28.6 | ZS44/30"
   },
   "wheels": [
     {
@@ -68,8 +67,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 513,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 513,
+        "chemistry": "li-ion",
+        "weight": 3.2
+      },
       "rated_power": 400,
       "peak_power": 575,
       "operating_modes": [
@@ -83,6 +85,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 129
     }
   ],
   "sizes": [
@@ -138,10 +146,6 @@
       "description": "LCD Screen / Half Twist Throttle"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "36V 16A"
-    },
-    {
       "type": "fork",
       "description": "Chromoly Rigid"
     },
@@ -178,6 +182,11 @@
         "width": 53.34,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "36V 16A"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/znh/2021/z2",
   "manufacturer": "Znh",
-  "vehicle_model_group": "02",
+  "model_group": "02",
   "model": "Z2",
   "model_configuration": "complete",
   "type": "bike",
@@ -62,8 +62,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 120
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -101,8 +100,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -120,6 +121,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -154,7 +161,7 @@
     },
     {
       "type": "e_vehicle_battery",
-      "description": "Battery and Range: The battery is located on the middle frame of this bicycle. The battery is easy to remove.; The mileage of a bicycle depends on the capacity of the battery. ZNH Z2 comes standard with 360 Wh battery. The table below provides information about the battery options for this bike and the range of different driving procedures.; Specification"
+      "description": "Battery and Range: The battery is located on the middle frame of this bicycle. The battery is easy to remove.; The mileage of a bicycle depends on the capacity of the battery. ZNH Z2 comes standard with 360 Wh battery. The table below provides information about the battery options for this bike and the range of different driving procedures."
     },
     {
       "type": "e_vehicle_battery",
@@ -170,11 +177,7 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "36V / 2A"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "LED display; Pedal Assist: Intelligent 0~3 level pedal assist; SIZE"
+      "description": "LED display; Pedal Assist: Intelligent 0~3 level pedal assist"
     },
     {
       "type": "lights",
@@ -195,6 +198,11 @@
         "width": 49.53,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "36V / 2A"
     }
   ]
 }

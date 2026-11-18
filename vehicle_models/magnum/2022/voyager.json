@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/magnum/2022/voyager",
   "manufacturer": "Magnum Bikes",
   "model": "Voyager",
@@ -64,8 +64,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 140
+    ]
   },
   "suspension": {
     "front": {}
@@ -106,10 +105,11 @@
     {
       "manufacturer": "Das-Kit",
       "kind": "hub_drive",
-      "battery_size": 576,
-      "battery_chemistry": "li-ion",
-      "battery_info": "12Ah",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 576,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -131,6 +131,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 140
     }
   ],
   "sizes": [

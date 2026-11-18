@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/devinci/2026/e_troy_lite_gx_axs_12s",
   "manufacturer": "Devinci",
-  "vehicle_model_group": "E-Troy Lite",
+  "model_group": "E-Troy Lite",
   "model": "E-Troy Lite GX AXS 12S",
   "model_configuration": "complete",
   "markets": [
@@ -112,8 +112,10 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,

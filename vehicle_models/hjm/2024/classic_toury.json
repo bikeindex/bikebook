@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hjm/2024/classic_toury",
   "manufacturer": "HJM",
   "model": "Classic Toury",
@@ -49,8 +49,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 31.8,
-    "max_weight_total": 159
+    "seatpost_diameter": 31.8
   },
   "suspension": {
     "front": {}
@@ -95,9 +94,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "max_torque": 80,
@@ -118,6 +119,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

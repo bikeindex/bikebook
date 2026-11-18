@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2026/vuca_evo_fs_1_wave",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Vuca EVO",
+  "model_group": "Vuca EVO",
   "model": "Vuca EVO FS 1 Wave",
   "model_configuration": "complete",
   "type": "bike",
@@ -80,9 +80,7 @@
     "bottom_bracket": {
       "spindle": "Pinion Standard"
     },
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 118,
-    "gross_weight_rating": 150
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -142,7 +140,10 @@
       "model": "MGU",
       "kind": "mid_drive",
       "spindle": "Pinion Standard",
-      "battery_size": 800,
+      "battery": {
+        "capacity": 800,
+        "weight": 6.4
+      },
       "rated_power": 250,
       "peak_power": 800,
       "max_torque": 85,
@@ -157,6 +158,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 118
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2020/supersix_evo_neo_3",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "SuperSix",
+  "model_group": "SuperSix",
   "model": "SuperSix EVO Neo 3",
   "model_configuration": "complete",
   "markets": [
@@ -84,8 +84,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 250,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 250,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

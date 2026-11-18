@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/haven/2023/power_drift_step_thru",
   "manufacturer": "Haven",
   "model": "Power Drift Step-Thru",
@@ -78,9 +78,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 270,
-      "battery_chemistry": "li-ion",
-      "battery_info": "SAMSUNG CELL",
+      "battery": {
+        "capacity": 270,
+        "chemistry": "li-ion",
+        "cells": "SAMSUNG"
+      },
       "rated_power": 350,
       "operating_modes": [
         {

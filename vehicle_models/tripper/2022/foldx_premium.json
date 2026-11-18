@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tripper/2022/foldx_premium",
   "manufacturer": "Tripper",
   "model": "FoldX Premium",
@@ -80,8 +80,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [

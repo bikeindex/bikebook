@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ado/2026/air_30_ultra",
   "manufacturer": "ADO",
-  "vehicle_model_group": "Air 30",
+  "model_group": "Air 30",
   "model": "Air 30 Ultra",
   "model_configuration": "complete",
   "type": "bike",
@@ -67,10 +67,14 @@
     {
       "manufacturer": "Bafang",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "SGS CE",
+      "certifications": [
+        "CE"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 370,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 370,
+        "charging_time": 360
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [
@@ -87,6 +91,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -101,7 +111,6 @@
           "length": 1840
         },
         "total_weight": 21.5,
-        "max_weight_rider": 120,
         "rider_height_min": 1530,
         "rider_height_max": 1950,
         "extra_measurements": {

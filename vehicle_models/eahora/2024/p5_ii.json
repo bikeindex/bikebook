@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eahora/2024/p5_ii",
   "manufacturer": "Eahora",
-  "vehicle_model_group": "P5",
+  "model_group": "P5",
   "model": "P5 II",
   "model_configuration": "complete",
   "type": "bike",
@@ -35,8 +35,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "magnesium",
-    "max_weight_total": 150
+    "material": "magnesium"
   },
   "suspension": {
     "front": {
@@ -85,9 +84,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 1500,
       "max_torque": 102,
       "operating_modes": [
@@ -112,6 +113,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

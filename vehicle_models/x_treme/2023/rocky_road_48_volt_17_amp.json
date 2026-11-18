@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/x_treme/2023/rocky_road_48_volt_17_amp",
   "manufacturer": "X-Treme",
   "model": "Rocky Road 48 Volt 17 Amp",
@@ -85,9 +85,11 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 816,
-      "battery_chemistry": "li-ion",
-      "charging_time": 180,
+      "battery": {
+        "capacity": 816,
+        "chemistry": "li-ion",
+        "charging_time": 180
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -111,6 +113,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -118,7 +126,6 @@
         "seat_height_min": 826,
         "seat_height_max": 1029,
         "total_weight": 30.4,
-        "max_weight_rider": 159,
         "extra_measurements": {
           "handlebar_height": 1060
         }
@@ -153,6 +160,10 @@
       "type": "derailleur",
       "manufacturer": "Shimano",
       "description": "Shimano® 9-Speed Atlus Gears & Shifter"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48 Volts"
     },
     {
       "type": "e_vehicle_battery",
@@ -268,11 +279,6 @@
       "type": "unknown",
       "type_detail": "Amps",
       "description": "Upgraded 17 AH Integrated Lithium Battery"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Volts",
-      "description": "48 Volts"
     },
     {
       "type": "unknown",

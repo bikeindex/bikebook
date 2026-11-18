@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/segway/2026/xaber_300",
   "manufacturer": "Segway",
   "model": "Xaber 300",
@@ -46,8 +46,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Forged 6000 Series Aluminum",
-    "max_weight_total": 150
+    "material_detail": "Forged 6000 Series Aluminum"
   },
   "suspension": {
     "front": {
@@ -96,9 +95,11 @@
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
       "water_rating": "IPX5",
-      "battery_size": 3168,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 3168,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 8000,
       "peak_power": 21000,
       "operating_modes": [
@@ -113,6 +114,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/juiced/2026/scrambler_full_suspension",
   "manufacturer": "Juiced Bikes",
-  "vehicle_model_group": "Scrambler",
+  "model_group": "Scrambler",
   "model": "Scrambler Full Suspension",
   "model_configuration": "complete",
   "type": "bike",
@@ -48,8 +48,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 102
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -85,8 +84,13 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 998,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 998
+      },
       "rated_power": 750,
       "peak_power": 1764,
       "max_torque": 90,
@@ -110,6 +114,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 102
     }
   ],
   "sizes": [

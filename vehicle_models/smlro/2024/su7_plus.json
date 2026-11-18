@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/smlro/2024/su7_plus",
   "manufacturer": "Smlro",
   "model": "SU7 Plus",
@@ -81,8 +81,10 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "battery_size": 1075,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1075,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -98,8 +100,10 @@
     },
     {
       "drive_wheel": "rear",
-      "battery_size": 1075,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1075,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "operating_modes": [
         {

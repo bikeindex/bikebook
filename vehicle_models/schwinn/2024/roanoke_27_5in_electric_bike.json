@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/schwinn/2024/roanoke_27_5in_electric_bike",
   "manufacturer": "Schwinn",
   "model": "Roanoke 27.5in Electric Bike",
@@ -103,9 +103,13 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 540,
-      "charging_time": 240,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 540,
+        "charging_time": 240
+      },
       "rated_power": 500,
       "operating_modes": [
         {

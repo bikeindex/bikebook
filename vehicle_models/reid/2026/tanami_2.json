@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2026/tanami_2",
   "manufacturer": "Reid",
-  "vehicle_model_group": "Tanami",
+  "model_group": "Tanami",
   "model": "Tanami 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -59,8 +59,7 @@
       "spindle": "square taper"
     },
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 100
+    "seatpost_clamp_diameter": 31.8
   },
   "wheels": [
     {
@@ -116,8 +115,12 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2271",
-      "battery_size": 352,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 352
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -130,6 +133,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

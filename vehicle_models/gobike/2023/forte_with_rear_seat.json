@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gobike/2023/forte_with_rear_seat",
   "manufacturer": "GOBike",
-  "vehicle_model_group": "FORTE",
+  "model_group": "FORTE",
   "model": "FORTE with Rear Seat",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -17,7 +17,7 @@
   "first_year": 2023,
   "years": {
     "2026": {
-      "original_msrp": 299900,
+      "original_msrp": 359900,
       "original_msrp_currency": "USD",
       "url": "https://electricgobike.com/products/forte-electric-tricycle-with-rear-seat",
       "url_live": true
@@ -68,9 +68,10 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 835,
-      "battery_chemistry": "li-ion",
-      "battery_info": "17.4AH",
+      "battery": {
+        "capacity": 835,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 900,
       "operating_modes": [
@@ -95,6 +96,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 200
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -105,7 +112,6 @@
           "height": 1245
         },
         "total_weight": 49.4,
-        "max_weight_rider": 200,
         "extra_measurements": {
           "rear_seat_height": 305
         }

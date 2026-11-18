@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/cargo_hybrid_comfort_slx_800",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Cargo Hybrid",
+  "model_group": "Cargo Hybrid",
   "model": "Cargo Hybrid Comfort SLX 800",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -36,9 +36,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 153,
-    "gross_weight_rating": 200
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {}
@@ -106,8 +104,10 @@
       "model_group": "Cargo Line",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 100,
@@ -125,9 +125,22 @@
   ],
   "cargo": {
     "width": 735,
-    "volume": 200,
-    "max_weight_cargo": 60
+    "volume": 200
   },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
+    },
+    {
+      "load": "cargo",
+      "weight": 60
+    },
+    {
+      "load": "gross",
+      "weight": 200
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -145,7 +158,6 @@
         "stem_length": 80,
         "crank_length": 170,
         "total_weight": 47,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "bb_height_to_hub": 66,
           "bike_length_max": 2606,

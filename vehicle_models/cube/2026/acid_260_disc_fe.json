@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/acid_260_disc_fe",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Acid",
+  "model_group": "Acid",
   "model": "Acid 260 Disc FE",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,9 +40,7 @@
       "shell": "BSA",
       "width": 73
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 64,
-    "gross_weight_rating": 80
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -95,9 +93,20 @@
       "caliper_mount": "Disc Flat Mount"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 10
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 60
+    },
+    {
+      "load": "cargo",
+      "weight": 10
+    },
+    {
+      "load": "gross",
+      "weight": 80
+    }
+  ],
   "sizes": [
     {
       "name": "26\"",
@@ -115,7 +124,6 @@
         "stem_length": 50,
         "crank_length": 170,
         "total_weight": 15.8,
-        "max_weight_rider": 60,
         "extra_measurements": {
           "bb_height_to_hub": 47,
           "protrusion_height_80mm": 681

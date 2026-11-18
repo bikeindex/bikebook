@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/genesis/2026/croix_de_fer_60",
   "manufacturer": "Genesis",
-  "vehicle_model_group": "Croix De Fer",
+  "model_group": "Croix De Fer",
   "model": "Croix De Fer 60",
   "model_configuration": "complete",
   "type": "bike",
@@ -100,7 +100,9 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 171,
+      "battery": {
+        "capacity": 171
+      },
       "peak_power": 275,
       "max_torque": 65,
       "operating_modes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2016/jet_20_s",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Jet",
+  "model_group": "Jet",
   "model": "Jet 20 S",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,9 +42,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "Hi-Tensile Steel",
-    "seatpost_diameter": 22.2,
-    "max_weight_total": 24,
-    "gross_weight_rating": 36
+    "seatpost_diameter": 22.2
   },
   "wheels": [
     {
@@ -78,6 +76,16 @@
       "position": [
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 24
+    },
+    {
+      "load": "gross",
+      "weight": 36
     }
   ],
   "sizes": [

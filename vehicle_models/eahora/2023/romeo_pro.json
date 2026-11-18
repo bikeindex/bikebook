@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eahora/2023/romeo_pro",
   "manufacturer": "Eahora",
-  "vehicle_model_group": "Romeo",
+  "model_group": "Romeo",
   "model": "Romeo Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -74,8 +74,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 150
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {
@@ -130,9 +129,12 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IPX6",
-      "battery_size": 2880,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A",
+      "battery": {
+        "capacity": 2880,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A"
+      },
       "rated_power": 1200,
       "peak_power": 1600,
       "max_torque": 120,
@@ -158,6 +160,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

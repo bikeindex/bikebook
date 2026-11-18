@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hiboy/2022/ve1_pro",
   "manufacturer": "Hiboy",
   "model": "VE1 Pro",
@@ -74,8 +74,9 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX4",
-      "battery_info": "10Ah",
-      "charging_time": 360,
+      "battery": {
+        "charging_time": 360
+      },
       "rated_power": 350,
       "peak_power": 500,
       "operating_modes": [
@@ -89,6 +90,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -99,7 +106,6 @@
           "height": 531
         },
         "total_weight": 22.2,
-        "max_weight_rider": 100,
         "rider_height_min": 1550,
         "rider_height_max": 1930,
         "rider_age_min": 16,

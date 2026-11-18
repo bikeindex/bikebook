@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/envo/2022/lynx_16",
   "manufacturer": "Envo",
-  "vehicle_model_group": "Lynx",
+  "model_group": "Lynx",
   "model": "Lynx 16",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,8 +42,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "T6-Aluminum Aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 100
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -77,8 +76,10 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 461,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 461,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [
@@ -101,6 +102,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

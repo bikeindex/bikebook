@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ncm/2024/cru7s",
   "manufacturer": "NCM eBikes",
-  "vehicle_model_group": "CRU7",
+  "model_group": "CRU7",
   "model": "CRU7s",
   "model_configuration": "complete",
   "type": "bike",
@@ -35,9 +35,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 110,
-    "gross_weight_rating": 140
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -87,7 +85,10 @@
       "manufacturer": "Das-Kit",
       "model": "X15S",
       "kind": "hub_drive",
-      "battery_size": 912,
+      "battery": {
+        "capacity": 912,
+        "weight": 5.4
+      },
       "rated_power": 750,
       "peak_power": 1100,
       "operating_modes": [
@@ -108,6 +109,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

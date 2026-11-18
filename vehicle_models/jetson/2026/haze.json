@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2026/haze",
   "manufacturer": "Jetson",
   "model": "Haze",
@@ -50,9 +50,11 @@
   ],
   "motors": [
     {
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -79,6 +81,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -94,7 +102,6 @@
           "height": 699
         },
         "total_weight": 21.8,
-        "max_weight_rider": 120,
         "rider_age_min": 12
       }
     }

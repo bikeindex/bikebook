@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gazelle/2026/ultimate_t10_us",
   "manufacturer": "Gazelle",
-  "vehicle_model_group": "Ultimate",
+  "model_group": "Ultimate",
   "model": "Ultimate T10",
   "model_configuration": "complete",
   "markets": [
@@ -70,7 +70,16 @@
     }
   },
   "frame": {
-    "material": "aluminum"
+    "material": "aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ]
   },
   "suspension": {
     "front": {
@@ -127,9 +136,11 @@
       "model": "BDU344Y",
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
-      "battery_size": 540,
-      "battery_chemistry": "li-ion",
-      "charging_time": 462,
+      "battery": {
+        "capacity": 540,
+        "chemistry": "li-ion",
+        "charging_time": 462
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,

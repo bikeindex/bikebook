@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rad_power/2019/radmini",
   "manufacturer": "Rad Power Bikes",
-  "vehicle_model_group": "RadMini",
+  "model_group": "RadMini",
   "model": "RadMini",
   "model_configuration": "complete",
   "type": "bike",
@@ -56,8 +56,7 @@
       "spindle": "square taper"
     },
     "headset": "ZS44/28.6 | ZS44/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 125
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -121,9 +120,11 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 35E Cells",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "cells": "Samsung 35E"
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -141,6 +142,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [
@@ -252,10 +259,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V, 750W"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "Backlit LCD with Charge Indicator, Speedometer, Odometer, Trip Odometer, Pedal Assist Level, Wattmeter, and More"
     },
     {
@@ -353,6 +356,11 @@
         "width": 101.6,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "CONTROLLER",
+      "description": "48V, 750W"
     },
     {
       "type": "unknown",

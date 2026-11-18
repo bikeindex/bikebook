@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gyroor/2024/c1_plus",
   "manufacturer": "Gyroor",
-  "vehicle_model_group": "C1",
+  "model_group": "C1",
   "model": "C1 Plus",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -70,10 +70,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 648,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 648,
+        "charging_time": 420
+      },
       "rated_power": 650,
       "peak_power": 1000,
       "operating_modes": [
@@ -86,12 +90,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 28.6,
-        "max_weight_rider": 136,
         "rider_height_min": 1549,
         "rider_height_max": 1956
       }

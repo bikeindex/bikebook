@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2022/stereo_hybrid_160_hpc_sl_625_27_5",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Stereo Hybrid",
+  "model_group": "Stereo Hybrid",
   "model": "Stereo Hybrid 160 HPC SL 625 27.5",
   "model_configuration": "complete",
   "type": "bike",
@@ -32,9 +32,7 @@
   "frame": {
     "material": "carbon",
     "cable_routing": "stealth",
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 125,
-    "gross_weight_rating": 150
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -107,8 +105,10 @@
       "model": "BDU450CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -122,6 +122,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

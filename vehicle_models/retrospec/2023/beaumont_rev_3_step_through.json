@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2023/beaumont_rev_3_step_through",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Beaumont Rev",
+  "model_group": "Beaumont Rev",
   "model": "Beaumont Rev 3 Step Through",
   "model_configuration": "complete",
   "type": "bike",
@@ -163,9 +163,14 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 360,
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 360,
+        "charging_time": 360
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -189,16 +194,22 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 9.98
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    },
+    {
+      "load": "cargo",
+      "weight": 9.98
+    }
+  ],
   "sizes": [
     {
       "name": "Small 16\"",
       "geometry": {
         "standover": 491,
         "total_weight": 26.1,
-        "max_weight_rider": 159,
         "rider_height_min": 1524,
         "rider_height_max": 1778
       }

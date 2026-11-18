@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/quietkat/2025/ranger_awd",
   "manufacturer": "QuietKat",
-  "vehicle_model_group": "Ranger",
+  "model_group": "Ranger",
   "model": "Ranger AWD",
   "model_configuration": "complete",
   "type": "bike",
@@ -60,8 +60,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "cable_routing": "internal",
-    "max_weight_total": 147
+    "cable_routing": "internal"
   },
   "suspension": {
     "front": {
@@ -105,7 +104,9 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 828,
+      "battery": {
+        "capacity": 828
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -128,7 +129,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 828,
+      "battery": {
+        "capacity": 828
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -147,6 +150,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 147
     }
   ],
   "sizes": [

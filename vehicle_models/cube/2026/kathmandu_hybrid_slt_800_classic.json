@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/kathmandu_hybrid_slt_800_classic",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Kathmandu Hybrid",
+  "model_group": "Kathmandu Hybrid",
   "model": "Kathmandu Hybrid SLT 800 Classic",
   "model_configuration": "complete",
   "type": "bike",
@@ -33,9 +33,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 131,
-    "gross_weight_rating": 160
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -110,8 +108,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -127,9 +127,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 160
+    }
+  ],
   "sizes": [
     {
       "name": "50 cm",
@@ -147,7 +158,6 @@
         "stem_length": 65,
         "crank_length": 175,
         "max_seatpost_insertion": 180,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": -68,
           "protrusion_height_80mm": 777
@@ -170,7 +180,6 @@
         "stem_length": 80,
         "crank_length": 175,
         "max_seatpost_insertion": 230,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": -68,
           "protrusion_height_80mm": 817
@@ -194,7 +203,6 @@
         "crank_length": 175,
         "max_seatpost_insertion": 280,
         "total_weight": 28.4,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": -68,
           "protrusion_height_80mm": 850
@@ -217,7 +225,6 @@
         "stem_length": 80,
         "crank_length": 175,
         "max_seatpost_insertion": 280,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": -68,
           "protrusion_height_80mm": 882
@@ -240,7 +247,6 @@
         "stem_length": 90,
         "crank_length": 175,
         "max_seatpost_insertion": 280,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": -68,
           "protrusion_height_80mm": 923

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2020/litening_c_68x_pro",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Litening",
+  "model_group": "Litening",
   "model": "Litening C:68X Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -31,9 +31,7 @@
   },
   "frame": {
     "material": "carbon",
-    "cable_routing": "stealth",
-    "max_weight_total": 107,
-    "gross_weight_rating": 115
+    "cable_routing": "stealth"
   },
   "wheels": [
     {
@@ -72,6 +70,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 107
+    },
+    {
+      "load": "gross",
+      "weight": 115
     }
   ],
   "sizes": [

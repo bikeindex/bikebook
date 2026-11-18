@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eskute/2026/c300r_so",
   "manufacturer": "Eskute",
-  "vehicle_model_group": "C300R",
+  "model_group": "C300R",
   "model": "C300R SO",
   "model_configuration": "complete",
   "type": "bike",
@@ -92,8 +92,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 227
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -133,8 +132,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX4",
-      "battery_size": 998,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 998,
+        "charging_time": 480
+      },
       "peak_power": 1800,
       "operating_modes": [
         {
@@ -158,9 +159,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.43
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.43
+    },
+    {
+      "load": "payload",
+      "weight": 227
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

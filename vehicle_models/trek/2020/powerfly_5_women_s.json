@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2020/powerfly_5_women_s",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Powerfly",
+  "model_group": "Powerfly",
   "model": "Powerfly 5 Women's",
   "model_configuration": "complete",
   "type": "bike",
@@ -55,9 +55,7 @@
     "material": "aluminum",
     "material_detail": "Alpha Platinum Aluminum",
     "headset": "IS42/28.6 | IS52/40",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 114,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -152,8 +150,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "max_torque": 75,
       "operating_modes": [
         {
@@ -165,6 +165,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 114
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

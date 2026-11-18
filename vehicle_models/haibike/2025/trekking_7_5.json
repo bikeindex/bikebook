@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/haibike/2025/trekking_7_5",
   "manufacturer": "Haibike",
-  "vehicle_model_group": "Trekking",
+  "model_group": "Trekking",
   "model": "Trekking 7.5",
   "model_configuration": "complete",
   "type": "bike",
@@ -69,8 +69,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 130
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -120,8 +119,10 @@
       "manufacturer": "Yamaha",
       "model": "PW-X3",
       "kind": "mid_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [
@@ -134,6 +135,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 130
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2024/teammachine_r_01_ltd",
   "manufacturer": "BMC",
-  "vehicle_model_group": "Teammachine R",
+  "model_group": "Teammachine R",
   "model": "Teammachine R 01 LTD",
   "model_configuration": "complete",
   "markets": [
@@ -135,9 +135,7 @@
     "bottom_bracket": {
       "shell": "BB86",
       "width": 86.5
-    },
-    "max_weight_total": 103,
-    "gross_weight_rating": 110
+    }
   },
   "wheels": [
     {
@@ -190,6 +188,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 103
+    },
+    {
+      "load": "gross",
+      "weight": 110
     }
   ],
   "sizes": [

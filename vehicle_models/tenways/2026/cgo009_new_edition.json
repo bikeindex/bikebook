@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tenways/2026/cgo009_new_edition",
   "manufacturer": "Tenways",
-  "vehicle_model_group": "CGO009",
+  "model_group": "CGO009",
   "model": "CGO009 New Edition",
   "model_configuration": "complete",
   "type": "bike",
@@ -68,9 +68,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 124,
-    "gross_weight_rating": 145
+    "material_detail": "6061 Aluminum"
   },
   "wheels": [
     {
@@ -101,9 +99,11 @@
       "model": "C9",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 374,
-      "battery_chemistry": "li-ion",
-      "battery_info": "36 V, 10.4 Ah",
+      "battery": {
+        "capacity": 374,
+        "voltage": 36,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 45,
       "operating_modes": [
@@ -119,9 +119,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 20
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 20
+    },
+    {
+      "load": "payload",
+      "weight": 124
+    },
+    {
+      "load": "gross",
+      "weight": 145
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

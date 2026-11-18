@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bikonit/2020/warthog_md_1000",
   "manufacturer": "Bikonit",
-  "vehicle_model_group": "Warthog",
+  "model_group": "Warthog",
   "model": "Warthog MD 1000",
   "model_configuration": "complete",
   "type": "bike",
@@ -26,8 +26,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 136
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -83,8 +82,10 @@
       "manufacturer": "Bafang",
       "model": "Ultra",
       "kind": "mid_drive",
-      "battery_size": 1440,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1440,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "max_torque": 160,
@@ -107,6 +108,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

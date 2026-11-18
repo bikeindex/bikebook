@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/glarewheel/2018/eb_pr",
   "manufacturer": "Glarewheel",
   "model": "EB-PR",
@@ -89,10 +89,13 @@
   ],
   "motors": [
     {
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 624,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 800,
       "operating_modes": [

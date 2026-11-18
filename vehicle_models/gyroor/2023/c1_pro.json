@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gyroor/2023/c1_pro",
   "manufacturer": "Gyroor",
-  "vehicle_model_group": "C1",
+  "model_group": "C1",
   "model": "C1 Pro",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -66,10 +66,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 374,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 374,
+        "charging_time": 300
+      },
       "rated_power": 550,
       "peak_power": 800,
       "operating_modes": [
@@ -87,6 +91,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -102,7 +112,6 @@
           "height": 540
         },
         "total_weight": 22,
-        "max_weight_rider": 120,
         "rider_height_min": 1448,
         "rider_height_max": 1854,
         "rider_age_min": 12

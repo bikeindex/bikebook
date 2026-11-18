@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/isinwheel/2025/h7pro",
   "manufacturer": "iSinwheel",
-  "vehicle_model_group": "H7",
+  "model_group": "H7",
   "model": "H7Pro",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -70,8 +70,10 @@
   "motors": [
     {
       "water_rating": "IPX4",
-      "battery_size": 1040,
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1040,
+        "charging_time": 540
+      },
       "rated_power": 2000,
       "peak_power": 2000,
       "operating_modes": [
@@ -89,6 +91,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -102,7 +110,6 @@
           "height": 1050
         },
         "total_weight": 45,
-        "max_weight_rider": 150,
         "extra_measurements": {
           "footrest_height": 290,
           "handlebar_height": 1050,

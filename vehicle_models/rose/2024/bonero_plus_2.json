@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rose/2024/bonero_plus_2",
   "manufacturer": "ROSE",
-  "vehicle_model_group": "Bonero Plus",
+  "model_group": "Bonero Plus",
   "model": "Bonero Plus 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -80,8 +80,7 @@
       "spindle": "ISIS",
       "spindle_length": 135
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 130
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -142,7 +141,9 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 135,
-      "battery_size": 360,
+      "battery": {
+        "capacity": 360
+      },
       "peak_power": 300,
       "max_torque": 50,
       "operating_modes": [
@@ -154,6 +155,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 130
     }
   ],
   "sizes": [

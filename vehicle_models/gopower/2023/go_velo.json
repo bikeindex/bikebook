@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gopower/2023/go_velo",
   "manufacturer": "Gopower",
   "model": "Go Velo",
@@ -65,8 +65,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 125
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -117,8 +116,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 374,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 374,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -140,6 +141,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

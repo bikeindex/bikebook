@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/thomus/2023/swissrider_urban",
   "manufacturer": "Thömus",
-  "vehicle_model_group": "Swissrider",
+  "model_group": "Swissrider",
   "model": "Swissrider Urban",
   "model_configuration": "complete",
   "type": "bike",
@@ -59,7 +59,9 @@
   ],
   "motors": [
     {
-      "battery_size": 350,
+      "battery": {
+        "capacity": 350
+      },
       "operating_modes": [
         {
           "mode": "assist",

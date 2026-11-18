@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velotric/2024/t1_st_plus",
   "manufacturer": "Velotric",
-  "vehicle_model_group": "T1",
+  "model_group": "T1",
   "model": "T1 ST Plus",
   "model_configuration": "complete",
   "type": "bike",
@@ -88,8 +88,7 @@
     "material": "aluminum",
     "material_detail": "6061 Triple-Butted Aluminum",
     "top_tube": "step_through",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 150
+    "seatpost_diameter": 30.9
   },
   "wheels": [
     {
@@ -142,11 +141,19 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, ISO 4210, UL 2580, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271",
+        "UL 2580",
+        "ISO 4210"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 353,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung/LG 21700 cell, UL 2580 Certified",
+      "battery": {
+        "capacity": 353,
+        "voltage": 36,
+        "chemistry": "li-ion",
+        "cells": "Samsung/LG 21700"
+      },
       "rated_power": 350,
       "peak_power": 600,
       "max_torque": 40,
@@ -170,6 +177,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

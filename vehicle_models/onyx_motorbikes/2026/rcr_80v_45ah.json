@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/onyx_motorbikes/2026/rcr_80v_45ah",
   "manufacturer": "Onyx Motorbikes",
   "model": "RCR 80V 45AH",
@@ -84,9 +84,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 3600,
-      "battery_info": "91.97V, 80V",
-      "charging_time": 270,
+      "battery": {
+        "capacity": 3600,
+        "voltage": 80,
+        "charging_time": 270
+      },
       "rated_power": 8000,
       "peak_power": 21000,
       "operating_modes": [

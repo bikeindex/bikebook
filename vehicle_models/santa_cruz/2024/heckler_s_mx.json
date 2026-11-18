@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/santa_cruz/2024/heckler_s_mx",
   "manufacturer": "Santa Cruz",
-  "vehicle_model_group": "Heckler",
+  "model_group": "Heckler",
   "model": "Heckler S MX",
   "model_configuration": "complete",
   "type": "bike",
@@ -273,9 +273,13 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [

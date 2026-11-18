@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/varun/2026/s700_1_eu",
   "manufacturer": "Varun",
-  "vehicle_model_group": "S700",
+  "model_group": "S700",
   "model": "S700-1",
   "model_configuration": "complete",
   "markets": [
@@ -56,8 +56,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -93,9 +92,13 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "CE",
-      "battery_size": 499,
-      "charging_time": 360,
+      "certifications": [
+        "CE"
+      ],
+      "battery": {
+        "capacity": 499,
+        "charging_time": 360
+      },
       "rated_power": 250,
       "max_torque": 55,
       "operating_modes": [
@@ -109,6 +112,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

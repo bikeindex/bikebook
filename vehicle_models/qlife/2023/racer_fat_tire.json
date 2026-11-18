@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/qlife/2023/racer_fat_tire",
   "manufacturer": "Qlife",
-  "vehicle_model_group": "Racer",
+  "model_group": "Racer",
   "model": "Racer Fat Tire",
   "model_configuration": "complete",
   "type": "bike",
@@ -124,8 +124,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 159
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -161,8 +160,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 499,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 499,
+        "charging_time": 360
+      },
       "peak_power": 1500,
       "max_torque": 70,
       "operating_modes": [
@@ -178,9 +179,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.43
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.43
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

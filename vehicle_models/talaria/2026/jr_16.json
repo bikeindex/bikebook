@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/talaria/2026/jr_16",
   "manufacturer": "Talaria",
   "model": "JR-16",
@@ -52,8 +52,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 70
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -83,9 +82,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 240,
-      "battery_info": "10 Ah",
-      "charging_time": 150,
+      "battery": {
+        "capacity": 240,
+        "charging_time": 150
+      },
       "peak_power": 720,
       "max_torque": 50,
       "operating_modes": [
@@ -96,6 +96,12 @@
           "range_claimed": 25
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 70
     }
   ],
   "sizes": [

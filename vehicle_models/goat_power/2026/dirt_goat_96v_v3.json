@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/goat_power/2026/dirt_goat_96v_v3",
   "manufacturer": "Goat Power Bikes",
+  "model_group": "Dirt Goat",
   "model": "Dirt Goat 96V V3",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -33,8 +34,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 180
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -71,7 +71,9 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 5280,
+      "battery": {
+        "capacity": 5280
+      },
       "peak_power": 35000,
       "max_torque": 800,
       "operating_modes": [
@@ -86,6 +88,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [

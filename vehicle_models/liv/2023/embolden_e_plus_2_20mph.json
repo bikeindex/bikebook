@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/liv/2023/embolden_e_plus_2_20mph",
   "manufacturer": "Liv",
-  "vehicle_model_group": "Embolden",
+  "model_group": "Embolden",
   "model": "Embolden E+ 2 20MPH",
   "model_configuration": "complete",
   "type": "bike",
@@ -168,8 +168,10 @@
       "model": "SyncDrive Sport 2",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 250,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 250,
+        "chemistry": "li-ion"
+      },
       "max_torque": 75,
       "operating_modes": [
         {

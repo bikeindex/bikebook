@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2017/beam",
   "manufacturer": "Jetson",
   "model": "Beam",
@@ -69,9 +69,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 106,
-      "battery_chemistry": "li-ion",
-      "charging_time": 180,
+      "battery": {
+        "capacity": 106,
+        "chemistry": "li-ion",
+        "charging_time": 180
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -83,6 +85,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
     }
   ],
   "sizes": [
@@ -100,7 +108,6 @@
           "height": 165
         },
         "total_weight": 10.9,
-        "max_weight_rider": 113,
         "rider_age_min": 13,
         "extra_measurements": {
           "handlebar_height_max": 902,

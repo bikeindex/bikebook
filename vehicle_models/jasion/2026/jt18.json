@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jasion/2026/jt18",
   "manufacturer": "Jasion",
   "model": "JT18",
@@ -55,8 +55,7 @@
   "frame": {
     "material": "steel",
     "top_tube": "step_through",
-    "folding": "half_fold",
-    "max_weight_total": 136
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -84,7 +83,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 624,
+      "battery": {
+        "capacity": 624
+      },
       "rated_power": 1200,
       "operating_modes": [
         {
@@ -106,6 +107,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [
@@ -149,10 +156,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "45V/15A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LCD Display"
     },
     {
@@ -174,6 +177,11 @@
         "width": 76.2,
         "diameter": 355
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "45V/15A"
     },
     {
       "type": "unknown",

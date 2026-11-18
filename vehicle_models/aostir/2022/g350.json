@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aostir/2022/g350",
   "manufacturer": "Aostir",
   "model": "G350",
@@ -61,8 +61,10 @@
   "motors": [
     {
       "sensor_speed": "spoke_magnet",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "max_torque": 60,
       "operating_modes": [

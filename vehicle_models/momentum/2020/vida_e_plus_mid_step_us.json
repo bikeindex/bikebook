@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/momentum/2020/vida_e_plus_mid_step_us",
   "manufacturer": "Momentum",
-  "vehicle_model_group": "Vida",
+  "model_group": "Vida",
   "model": "Vida E+ Mid-Step",
   "model_configuration": "complete",
   "markets": [
@@ -127,8 +127,10 @@
       "model": "SyncDrive Life",
       "kind": "mid_drive",
       "spindle": "square taper",
-      "battery_size": 375,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 375,
+        "chemistry": "li-ion"
+      },
       "max_torque": 60,
       "operating_modes": [
         {

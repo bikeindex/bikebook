@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pedego/2022/trike",
   "manufacturer": "Pedego",
   "model": "Trike",
@@ -80,9 +80,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 396,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 CELLS",
+      "battery": {
+        "capacity": 396,
+        "chemistry": "li-ion",
+        "cells": "18650"
+      },
       "rated_power": 250,
       "max_torque": 30,
       "operating_modes": [

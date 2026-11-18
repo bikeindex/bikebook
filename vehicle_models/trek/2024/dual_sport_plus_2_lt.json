@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2024/dual_sport_plus_2_lt",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Dual",
+  "model_group": "Dual",
   "model": "Dual Sport+ 2 LT",
   "model_configuration": "complete",
   "type": "bike",
@@ -91,9 +91,7 @@
       "shell": "threaded",
       "spindle_length": 122.5
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 118,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -146,7 +144,9 @@
     {
       "manufacturer": "Hyena",
       "kind": "hub_drive",
-      "battery_size": 250,
+      "battery": {
+        "capacity": 250
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [
@@ -159,6 +159,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 118
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

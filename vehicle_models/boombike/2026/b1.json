@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/boombike/2026/b1",
   "manufacturer": "Boombike",
   "model": "B1",
@@ -45,8 +45,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -86,11 +85,16 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 1075,
-      "battery_chemistry": "li-ion",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 1075,
+        "chemistry": "li-ion",
+        "charging_time": 600
+      },
       "rated_power": 1000,
       "max_torque": 180,
       "operating_modes": [
@@ -116,11 +120,16 @@
     },
     {
       "drive_wheel": "rear",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 1075,
-      "battery_chemistry": "li-ion",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 1075,
+        "chemistry": "li-ion",
+        "charging_time": 600
+      },
       "rated_power": 1000,
       "max_torque": 180,
       "operating_modes": [
@@ -143,6 +152,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

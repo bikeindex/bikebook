@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hover_1/2020/comet",
   "manufacturer": "Hover-1",
   "model": "Comet",
@@ -95,7 +95,9 @@
   ],
   "motors": [
     {
-      "battery_size": 101,
+      "battery": {
+        "capacity": 101
+      },
       "rated_power": 200,
       "operating_modes": [
         {
@@ -105,6 +107,12 @@
           "range_claimed": 8
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 68
     }
   ],
   "sizes": [
@@ -121,8 +129,7 @@
           "width": 269,
           "height": 378
         },
-        "total_weight": 10,
-        "max_weight_rider": 68
+        "total_weight": 10
       }
     }
   ],

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2026/machete_rx_1",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Machete",
+  "model_group": "Machete",
   "model": "Machete RX 1",
   "model_configuration": "complete",
   "type": "bike",
@@ -75,9 +75,7 @@
   "frame": {
     "material": "carbon",
     "cable_routing": "internal",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 114,
-    "gross_weight_rating": 125
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -126,6 +124,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 114
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

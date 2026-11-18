@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kornorge/2026/t73_pro_max",
   "manufacturer": "Kornorge",
-  "vehicle_model_group": "T73",
+  "model_group": "T73",
   "model": "T73 Pro Max",
   "model_configuration": "complete",
   "type": "bike",
@@ -53,8 +53,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -93,11 +92,15 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 1709,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1709,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "peak_power": 1500,
       "max_torque": 80,
       "operating_modes": [
@@ -126,11 +129,15 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 1709,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1709,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "peak_power": 1500,
       "max_torque": 80,
       "operating_modes": [
@@ -154,6 +161,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

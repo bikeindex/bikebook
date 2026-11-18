@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2025/elo",
   "manufacturer": "GOTRAX",
   "model": "eLo",
@@ -38,8 +38,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 120
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -76,8 +75,10 @@
     {
       "sensor_cadence": true,
       "water_rating": "IPX4",
-      "battery_size": 374,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 374,
+        "charging_time": 420
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -100,6 +101,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "payload",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -109,8 +120,7 @@
           "width": 670,
           "height": 1070
         },
-        "total_weight": 23.6,
-        "max_weight_rider": 120
+        "total_weight": 23.6
       }
     }
   ],

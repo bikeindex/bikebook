@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/focus/2025/atlas_6_8_eqp",
   "manufacturer": "Focus",
-  "vehicle_model_group": "Atlas",
+  "model_group": "Atlas",
   "model": "Atlas 6.8 Eqp",
   "model_configuration": "complete",
   "type": "bike",
@@ -114,9 +114,7 @@
       "spindle": "24mm"
     },
     "headset": "IS52/28.6 | IS52/40",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 121,
-    "gross_weight_rating": 135
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -169,9 +167,20 @@
       "rotor_diameter": 180
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 16
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 16
+    },
+    {
+      "load": "payload",
+      "weight": 121
+    },
+    {
+      "load": "gross",
+      "weight": 135
+    }
+  ],
   "sizes": [
     {
       "name": "XS",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fiido/2024/air",
   "manufacturer": "Fiido",
   "model": "Air",
@@ -41,8 +41,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "carbon",
-    "max_weight_total": 120
+    "material": "carbon"
   },
   "wheels": [
     {
@@ -86,7 +85,9 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 209,
+      "battery": {
+        "capacity": 209
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -94,6 +95,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

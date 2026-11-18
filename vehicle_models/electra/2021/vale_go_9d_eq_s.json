@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/electra/2021/vale_go_9d_eq_s",
   "manufacturer": "Electra",
-  "vehicle_model_group": "Vale",
+  "model_group": "Vale",
   "model": "Vale Go! 9D EQ S",
   "model_configuration": "complete",
   "type": "bike",
@@ -85,9 +85,7 @@
     "bottom_bracket": {
       "spindle": "BNI"
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 111,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -146,8 +144,10 @@
       "model_group": "Performance Line Sport",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 65,
@@ -161,6 +161,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 111
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

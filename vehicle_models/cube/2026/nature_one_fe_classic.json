@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/nature_one_fe_classic",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Nature",
+  "model_group": "Nature",
   "model": "Nature ONE FE Classic",
   "model_configuration": "complete",
   "type": "bike",
@@ -36,9 +36,7 @@
       "shell": "BSA",
       "width": 68
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 122,
-    "gross_weight_rating": 140
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -92,9 +90,20 @@
       "caliper_mount": "Disc Flat Mount"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 140
+    }
+  ],
   "sizes": [
     {
       "name": "46 cm",
@@ -112,7 +121,6 @@
         "stem_length": 70,
         "crank_length": 170,
         "max_seatpost_insertion": 220,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 60,
           "protrusion_height_80mm": 772
@@ -135,7 +143,6 @@
         "stem_length": 70,
         "crank_length": 170,
         "max_seatpost_insertion": 250,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 60,
           "protrusion_height_80mm": 805
@@ -159,7 +166,6 @@
         "crank_length": 175,
         "max_seatpost_insertion": 300,
         "total_weight": 17.8,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 60,
           "protrusion_height_80mm": 838
@@ -182,7 +188,6 @@
         "stem_length": 90,
         "crank_length": 175,
         "max_seatpost_insertion": 300,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 60,
           "protrusion_height_80mm": 867
@@ -205,7 +210,6 @@
         "stem_length": 90,
         "crank_length": 175,
         "max_seatpost_insertion": 300,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 60,
           "protrusion_height_80mm": 896

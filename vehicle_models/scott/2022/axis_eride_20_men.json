@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2022/axis_eride_20_men",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Axis",
+  "model_group": "Axis",
   "model": "Axis eRIDE 20 Men",
   "model_configuration": "complete",
   "type": "bike",
@@ -58,15 +58,17 @@
     "material_detail": "6061 Aluminum",
     "mounts": [
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
       }
     ],
     "cable_routing": "internal",
     "bottom_bracket": {
       "spindle": "BNI"
-    },
-    "max_weight_total": 101,
-    "gross_weight_rating": 128
+    }
   },
   "suspension": {
     "front": {
@@ -136,7 +138,9 @@
       "model_group": "Performance Line",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 500,
+      "battery": {
+        "capacity": 500
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 65,
@@ -150,6 +154,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 101
+    },
+    {
+      "load": "gross",
+      "weight": 128
     }
   ],
   "sizes": [

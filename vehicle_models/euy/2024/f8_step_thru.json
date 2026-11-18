@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/euy/2024/f8_step_thru",
   "manufacturer": "Euy",
   "model": "F8 Step Thru",
@@ -81,8 +81,7 @@
   },
   "frame": {
     "material": "steel",
-    "top_tube": "step_through",
-    "max_weight_total": 181
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -117,10 +116,14 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 750,
       "max_torque": 72,
       "operating_modes": [
@@ -140,6 +143,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [
@@ -214,10 +223,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V/25A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LCD display"
     },
     {
@@ -271,6 +276,11 @@
         "width": 101.6,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V/25A"
     },
     {
       "type": "unknown",

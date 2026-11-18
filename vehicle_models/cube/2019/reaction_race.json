@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2019/reaction_race",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Reaction",
+  "model_group": "Reaction",
   "model": "Reaction Race",
   "model_configuration": "complete",
   "type": "bike",
@@ -37,9 +37,7 @@
     },
     "headset": "IS42/28.6 | IS52/40",
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 102,
-    "gross_weight_rating": 115
+    "seatpost_clamp_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -136,6 +134,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 102
+    },
+    {
+      "load": "gross",
+      "weight": 115
     }
   ],
   "sizes": [

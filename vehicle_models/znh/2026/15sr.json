@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/znh/2026/15sr",
   "manufacturer": "Znh",
-  "vehicle_model_group": "15",
+  "model_group": "15",
   "model": "15SR",
   "model_configuration": "complete",
   "type": "bike",
@@ -32,8 +32,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "Hi-Tensile Steel",
-    "max_weight_total": 150
+    "material_detail": "Hi-Tensile Steel"
   },
   "suspension": {
     "front": {}
@@ -57,8 +56,10 @@
   },
   "motors": [
     {
-      "battery_size": 624,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 360
+      },
       "peak_power": 1000,
       "operating_modes": [
         {
@@ -71,6 +72,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2023/domane_plus_slr_6_axs",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Domane+",
+  "model_group": "Domane+",
   "model": "Domane+ SLR 6 AXS",
   "model_configuration": "complete",
   "type": "bike",
@@ -334,9 +334,7 @@
     "bottom_bracket": {
       "spindle": "ISIS",
       "spindle_length": 135
-    },
-    "max_weight_total": 112,
-    "gross_weight_rating": 125
+    }
   },
   "wheels": [
     {
@@ -404,8 +402,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 135,
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 300,
       "max_torque": 50,
@@ -419,6 +419,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 112
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

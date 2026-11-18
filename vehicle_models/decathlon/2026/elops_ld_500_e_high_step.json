@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/decathlon/2026/elops_ld_500_e_high_step",
   "manufacturer": "Decathlon",
-  "vehicle_model_group": "Elops LD E",
+  "model_group": "Elops LD E",
   "model": "Elops LD 500 E High Step",
   "model_configuration": "complete",
   "type": "bike",
@@ -32,8 +32,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -76,8 +75,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 45,
       "operating_modes": [
@@ -90,6 +91,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

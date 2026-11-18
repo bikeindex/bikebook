@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gopower/2025/go_dash",
   "manufacturer": "Gopower",
   "model": "Go Dash",
@@ -42,8 +42,7 @@
   "frame": {
     "material": "steel",
     "folding": "half_fold",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 150
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -75,7 +74,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "rated_power": 400,
       "operating_modes": [
         {
@@ -98,6 +99,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -110,7 +121,6 @@
           "length": 1447.8
         },
         "total_weight": 19,
-        "max_weight_rider": 150,
         "rider_height_min": 1473,
         "rider_height_max": 1905,
         "extra_measurements": {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2025/mavaro_2_low_stepthru_eu",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Mavaro",
+  "model_group": "Mavaro",
   "model": "Mavaro 2 Low StepThru",
   "model_configuration": "complete",
   "markets": [
@@ -82,6 +82,15 @@
     "material": "aluminum",
     "material_detail": "SmartForm C1 Aluminum",
     "top_tube": "step_through",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
+      }
+    ],
     "cable_routing": "stealth",
     "bottom_bracket": {
       "spindle": "ISIS"
@@ -158,8 +167,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -175,9 +186,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 27
+    }
+  ],
   "sizes": [
     {
       "name": "SM",
@@ -274,14 +288,6 @@
       "description": "Gates Bosch E-bike, w/ 46T sprocket"
     },
     {
-      "type": "derailleur",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Nexus Inter-5E, 5-speed internal gear hub"
-    },
-    {
       "type": "drive_belt",
       "type_detail": "Belt",
       "manufacturer": "Gates Carbon Drive",
@@ -342,6 +348,14 @@
       "type": "headset",
       "manufacturer": "Acros",
       "description": "Acros integrated cable routing, 1.8\" sealed bearings with tapered reducers"
+    },
+    {
+      "type": "hub",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Nexus Inter-5E, 5-speed internal gear hub"
     },
     {
       "type": "hub",

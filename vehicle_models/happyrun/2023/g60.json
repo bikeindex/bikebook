@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/happyrun/2023/g60",
   "manufacturer": "HappyRun",
-  "vehicle_model_group": "G60",
+  "model_group": "G60",
   "model": "G60",
   "model_configuration": "complete",
   "type": "bike",
@@ -80,8 +80,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "Chromoly Steel",
-    "max_weight_total": 159
+    "material_detail": "Chromoly Steel"
   },
   "suspension": {
     "front": {},
@@ -114,7 +113,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 888,
+      "battery": {
+        "capacity": 888
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "operating_modes": [
@@ -135,6 +136,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

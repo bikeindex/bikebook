@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2027/mardi_27_es_ma1o27",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Mardi 27",
+  "model_group": "Mardi 27",
   "model": "Mardi 27 ES MA1O27",
   "model_configuration": "complete",
   "type": "bike",
@@ -58,13 +58,18 @@
       {
         "type": "bottle",
         "location": "seat_tube"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
     "cable_routing": "stealth",
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 106,
-    "gross_weight_rating": 135
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -134,8 +139,10 @@
       "model": "BDU344Y",
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
-      "battery_size": 540,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 540,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,
@@ -150,6 +157,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 106
+    },
+    {
+      "load": "gross",
+      "weight": 135
     }
   ],
   "sizes": [

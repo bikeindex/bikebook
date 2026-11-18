@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cycrown/2026/run_mini",
   "manufacturer": "Cycrown",
   "model": "Run Mini",
@@ -47,8 +47,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -80,8 +79,10 @@
   "motors": [
     {
       "sensor_speed": "spoke_magnet",
-      "battery_size": 374,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 374,
+        "charging_time": 300
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -107,6 +108,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

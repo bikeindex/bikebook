@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/happyrun/2026/g60",
   "manufacturer": "HappyRun",
-  "vehicle_model_group": "G60",
+  "model_group": "G60",
   "model": "G60",
   "model_configuration": "complete",
   "type": "bike",
@@ -36,8 +36,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -72,11 +71,15 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IP54",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 500,
       "peak_power": 1500,
       "operating_modes": [
@@ -101,9 +104,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 14.97
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 14.97
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/brompton/2026/electric_g_line_e_motiq_system_us",
   "manufacturer": "Brompton Bicycle",
-  "vehicle_model_group": "Electric G Line",
+  "model_group": "Electric G Line",
   "model": "Electric G Line - e-Motiq system",
   "model_configuration": "complete",
   "markets": [
@@ -170,9 +170,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
-      "battery_size": 345,
-      "charging_time": 240,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 345,
+        "weight": 3.8,
+        "charging_time": 240
+      },
       "operating_modes": [
         {
           "mode": "assist",

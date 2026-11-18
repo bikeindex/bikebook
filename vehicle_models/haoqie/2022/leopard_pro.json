@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/haoqie/2022/leopard_pro",
   "manufacturer": "Haoqie",
   "model": "Leopard Pro",
@@ -34,8 +34,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 181
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -73,11 +72,13 @@
   ],
   "motors": [
     {
-      "battery_size": 768,
-      "battery_options": [
-        960
-      ],
-      "charging_time": 360,
+      "battery": {
+        "capacity": 768,
+        "capacity_options": [
+          960
+        ],
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 90,
@@ -98,6 +99,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

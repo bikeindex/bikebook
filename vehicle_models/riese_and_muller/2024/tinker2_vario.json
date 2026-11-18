@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2024/tinker2_vario",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Tinker2",
+  "model_group": "Tinker2",
   "model": "Tinker2 vario",
   "model_configuration": "complete",
   "markets": [
@@ -73,9 +73,7 @@
       }
     ],
     "seatpost_diameter": 34.9,
-    "seatpost_clamp_diameter": 40,
-    "max_weight_total": 110,
-    "gross_weight_rating": 135
+    "seatpost_clamp_diameter": 40
   },
   "suspension": {
     "front": {
@@ -135,8 +133,10 @@
       "model_group": "Performance Line",
       "kind": "mid_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 545,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 545,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -149,6 +149,24 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 135
+    },
+    {
+      "load": "rear_rack",
+      "weight": 25
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 3
     }
   ],
   "sizes": [
@@ -168,7 +186,6 @@
           "length": 1590
         },
         "total_weight": 24.9,
-        "max_weight_rider": 110,
         "rider_height_min": 1500,
         "rider_height_max": 2000,
         "extra_measurements": {
@@ -177,9 +194,7 @@
           "headset_size": 28.6,
           "top_tube_height": 605,
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 3,
-          "weight_rating_luggage_rack_kg": 25
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     }

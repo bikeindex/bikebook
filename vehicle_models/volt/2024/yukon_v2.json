@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/volt/2024/yukon_v2",
   "manufacturer": "Volt Bike",
-  "vehicle_model_group": "Yukon",
+  "model_group": "Yukon",
   "model": "Yukon V2",
   "model_configuration": "complete",
   "type": "bike",
@@ -62,8 +62,7 @@
   },
   "frame": {
     "material": "steel",
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 145
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {
@@ -120,10 +119,14 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "certification": "UL 2271",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung cells",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 80,
@@ -148,6 +151,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    },
+    {
+      "load": "payload",
+      "weight": 145
+    }
+  ],
   "sizes": [
     {
       "name": "17\"",
@@ -162,7 +175,6 @@
           "length": 1880
         },
         "total_weight": 33.6,
-        "max_weight_rider": 136,
         "extra_measurements": {
           "handlebar_height_max": 1168,
           "handlebar_height_min": 1016
@@ -181,7 +193,6 @@
         "dimensions": {
           "length": 1930
         },
-        "max_weight_rider": 136,
         "extra_measurements": {
           "handlebar_height_max": 1168,
           "handlebar_height_min": 1016

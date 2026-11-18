@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2013/source_elite_step_through",
   "manufacturer": "Specialized",
   "model": "Source Elite Step-Through",
@@ -116,9 +116,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    }
+  ],
   "components": [
     {
       "type": "bell_noisemaker",

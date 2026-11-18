@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/emojo/2026/street_x",
   "manufacturer": "Emojo",
   "model": "Street X",
@@ -54,8 +54,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 147
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -82,10 +81,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -107,6 +110,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 147
+    },
+    {
+      "load": "payload",
+      "weight": 147
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -116,8 +129,7 @@
           "width": 762,
           "height": 1143
         },
-        "total_weight": 37.2,
-        "max_weight_rider": 147
+        "total_weight": 37.2
       }
     }
   ],

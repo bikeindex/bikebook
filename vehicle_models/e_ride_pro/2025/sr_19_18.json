@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/e_ride_pro/2025/sr_19_18",
   "manufacturer": "E Ride Pro",
-  "vehicle_model_group": "SR",
+  "model_group": "SR",
   "model": "SR 19/18",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -48,9 +48,11 @@
   ],
   "motors": [
     {
-      "battery_size": 3600,
-      "battery_chemistry": "li-ion",
-      "charging_time": 210,
+      "battery": {
+        "capacity": 3600,
+        "chemistry": "li-ion",
+        "charging_time": 210
+      },
       "rated_power": 10000,
       "peak_power": 25000,
       "operating_modes": [
@@ -66,14 +68,19 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 137
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "seat_height_min": 830,
         "seat_height_max": 830,
-        "total_weight": 83,
-        "max_weight_rider": 137
+        "total_weight": 83
       }
     }
   ],

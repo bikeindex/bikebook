@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/movcan/2022/eb60",
   "manufacturer": "Movcan",
   "model": "EB60",
@@ -79,8 +79,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -116,8 +115,10 @@
   "motors": [
     {
       "water_rating": "IPX5",
-      "battery_size": 998,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 998,
+        "charging_time": 420
+      },
       "rated_power": 2000,
       "peak_power": 2500,
       "max_torque": 90,
@@ -142,6 +143,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

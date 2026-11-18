@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2026/evo_cx_2",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "EVO CX",
+  "model_group": "EVO CX",
   "model": "EVO CX 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -217,9 +217,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "headset": "ZS56/28.6 | ZS66/40",
-    "max_weight_total": 105,
-    "gross_weight_rating": 130
+    "headset": "ZS56/28.6 | ZS66/40"
   },
   "suspension": {
     "front": {
@@ -290,12 +288,15 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_options": [
-        540,
-        800
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "capacity_options": [
+          540,
+          800
+        ],
+        "chemistry": "li-ion",
+        "weight": 5.1
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 85,
@@ -309,6 +310,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 105
+    },
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [

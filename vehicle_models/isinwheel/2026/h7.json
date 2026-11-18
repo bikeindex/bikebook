@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/isinwheel/2026/h7",
   "manufacturer": "iSinwheel",
-  "vehicle_model_group": "H7",
+  "model_group": "H7",
   "model": "H7",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -68,8 +68,10 @@
   "motors": [
     {
       "water_rating": "IPX4",
-      "battery_size": 749,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 749,
+        "charging_time": 420
+      },
       "rated_power": 1500,
       "peak_power": 1500,
       "operating_modes": [
@@ -87,6 +89,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -97,7 +105,6 @@
           "height": 1050
         },
         "total_weight": 50.5,
-        "max_weight_rider": 150,
         "extra_measurements": {
           "handlebar_height": 1049
         }

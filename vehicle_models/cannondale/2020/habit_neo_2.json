@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2020/habit_neo_2",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Habit",
+  "model_group": "Habit",
   "model": "Habit Neo 2",
   "model_configuration": "complete",
   "markets": [
@@ -127,8 +127,10 @@
   ],
   "motors": [
     {
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/benno/2024/boost_evo_4_performance",
   "manufacturer": "Benno",
-  "vehicle_model_group": "Boost",
+  "model_group": "Boost",
   "model": "Boost EVO 4 Performance",
   "model_configuration": "complete",
   "markets": [
@@ -91,8 +91,10 @@
       "model_group": "Performance Line",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 400,
-      "charging_time": 390,
+      "battery": {
+        "capacity": 400,
+        "charging_time": 390
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 65,
@@ -126,9 +128,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 60
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 60
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

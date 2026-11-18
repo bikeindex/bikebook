@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lankeleisi/2026/gt800",
   "manufacturer": "Lankeleisi",
   "model": "GT800",
@@ -50,8 +50,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 150
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -104,9 +103,11 @@
       "kind": "mid_drive",
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IP54",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "max_torque": 120,
       "operating_modes": [
@@ -116,6 +117,12 @@
           "range_claimed": 150
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

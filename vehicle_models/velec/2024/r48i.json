@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velec/2024/r48i",
   "manufacturer": "Velec",
-  "vehicle_model_group": "R48",
+  "model_group": "R48",
   "model": "R48i",
   "model_configuration": "complete",
   "type": "bike",
@@ -83,11 +83,15 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
-      "battery_size": 480,
-      "battery_options": [
-        672
+      "certifications": [
+        "UL 2271"
       ],
+      "battery": {
+        "capacity": 480,
+        "capacity_options": [
+          672
+        ]
+      },
       "rated_power": 500,
       "max_torque": 65,
       "operating_modes": [

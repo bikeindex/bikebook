@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/paselec/2026/em04_pro",
   "manufacturer": "Paselec",
-  "vehicle_model_group": "EM04",
+  "model_group": "EM04",
   "model": "EM04 Pro",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -42,8 +42,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 120
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {},
@@ -88,9 +87,11 @@
       "kind": "mid_drive_dedicated",
       "sensor_speed": "spoke_magnet",
       "water_rating": "IPX6",
-      "battery_size": 1620,
-      "battery_chemistry": "li-ion",
-      "charging_time": 324,
+      "battery": {
+        "capacity": 1620,
+        "chemistry": "li-ion",
+        "charging_time": 324
+      },
       "peak_power": 5500,
       "max_torque": 220,
       "operating_modes": [
@@ -104,6 +105,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

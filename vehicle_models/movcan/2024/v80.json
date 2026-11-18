@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/movcan/2024/v80",
   "manufacturer": "Movcan",
   "model": "V80",
@@ -93,8 +93,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -131,8 +130,10 @@
     {
       "sensor_cadence": true,
       "water_rating": "IPX5",
-      "battery_size": 624,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 1000,
       "max_torque": 80,
@@ -154,6 +155,12 @@
           "range_claimed": 48
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

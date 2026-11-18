@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pure/2017/city_classic_8_speed",
   "manufacturer": "Pure Cycles",
-  "vehicle_model_group": "City",
+  "model_group": "City",
   "model": "City Classic 8-Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -24,6 +24,7 @@
           "colors": [
             "black"
           ],
+          "stock_photo": "https://bikebook.bikeindex.org/pure/2017/city_classic_8_speed_black.jpg",
           "variants": [
             {
               "sku": "670966",
@@ -40,8 +41,7 @@
               "gtin": "888571079911",
               "size": "Large"
             }
-          ],
-          "stock_photo": "https://bikebook.bikeindex.org/pure/2017/city_classic_8_speed_black.jpg"
+          ]
         }
       ],
       "url": "https://purecycles.com/products/pure-city-classic-bike-8-speed",
@@ -113,21 +113,25 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113,
+      "sizes": [
+        "Small",
+        "Large"
+      ]
+    }
+  ],
   "sizes": [
     {
-      "name": "Small",
-      "geometry": {
-        "max_weight_rider": 113
-      }
+      "name": "Small"
     },
     {
       "name": "Medium"
     },
     {
-      "name": "Large",
-      "geometry": {
-        "max_weight_rider": 113
-      }
+      "name": "Large"
     }
   ],
   "components": [

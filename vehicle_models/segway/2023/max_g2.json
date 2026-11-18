@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/segway/2023/max_g2",
   "manufacturer": "Segway",
-  "vehicle_model_group": "MAX Series",
+  "model_group": "MAX Series",
   "model": "MAX G2",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -78,8 +78,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 551,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 551,
+        "charging_time": 300
+      },
       "rated_power": 450,
       "peak_power": 1000,
       "operating_modes": [
@@ -97,6 +99,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -112,7 +120,6 @@
           "height": 605
         },
         "total_weight": 24.3,
-        "max_weight_rider": 120,
         "rider_height_min": 1200,
         "rider_height_max": 2000,
         "rider_age_min": 16

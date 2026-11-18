@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/khs/2021/sixfifty_5555_plus_e",
   "manufacturer": "KHS Bicycles",
-  "vehicle_model_group": "Sixfifty",
+  "model_group": "Sixfifty",
   "model": "Sixfifty 5555 Plus E",
   "model_configuration": "complete",
   "type": "bike",
@@ -111,8 +111,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 80,
       "operating_modes": [

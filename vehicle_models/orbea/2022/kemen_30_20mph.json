@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/orbea/2022/kemen_30_20mph",
   "manufacturer": "Orbea",
-  "vehicle_model_group": "Kemen",
+  "model_group": "Kemen",
   "model": "Kemen 30 20mph",
   "model_configuration": "complete",
   "type": "bike",
@@ -113,7 +113,9 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "battery_size": 540,
+      "battery": {
+        "capacity": 540
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [
@@ -128,9 +130,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 18
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 18
+    }
+  ],
   "sizes": [
     {
       "name": "S",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eahora/2025/juliet_pro_ii",
   "manufacturer": "Eahora",
-  "vehicle_model_group": "Juliet",
+  "model_group": "Juliet",
   "model": "Juliet Pro II",
   "model_configuration": "complete",
   "type": "bike",
@@ -57,8 +57,7 @@
     "material_detail": "High-Carbon Steel",
     "top_tube": "step_through",
     "seatpost_diameter": 38.1,
-    "coil_compatible": true,
-    "max_weight_total": 181
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -113,9 +112,12 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IPX6",
-      "battery_size": 4200,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A.",
+      "battery": {
+        "capacity": 4200,
+        "voltage": 60,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A"
+      },
       "rated_power": 2200,
       "max_torque": 110,
       "operating_modes": [
@@ -146,9 +148,12 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IPX6",
-      "battery_size": 4200,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A.",
+      "battery": {
+        "capacity": 4200,
+        "voltage": 60,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A"
+      },
       "rated_power": 2200,
       "max_torque": 110,
       "operating_modes": [
@@ -173,6 +178,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

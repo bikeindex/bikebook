@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2018/cross_hybrid_one_allroad_400_trapeze",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Cross Hybrid",
+  "model_group": "Cross Hybrid",
   "model": "Cross Hybrid ONE Allroad 400 Trapeze",
   "model_configuration": "complete",
   "type": "bike",
@@ -96,8 +96,10 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,

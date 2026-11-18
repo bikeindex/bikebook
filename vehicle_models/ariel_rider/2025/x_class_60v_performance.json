@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ariel_rider/2025/x_class_60v_performance",
   "manufacturer": "Ariel Rider",
-  "vehicle_model_group": "X-Class",
+  "model_group": "X-Class",
   "model": "X-Class 60V Performance",
   "model_configuration": "complete",
   "type": "bike",
@@ -36,8 +36,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 159
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -85,9 +84,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IP65",
-      "battery_size": 2100,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung cells",
+      "battery": {
+        "capacity": 2100,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "max_torque": 132,
       "operating_modes": [
@@ -109,6 +110,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

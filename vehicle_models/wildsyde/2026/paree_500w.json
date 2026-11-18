@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wildsyde/2026/paree_500w",
   "manufacturer": "Wildsyde",
   "model": "Paree 500W",
@@ -49,8 +49,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 136
+    "top_tube": "step_through"
   },
   "wheels": [
     {
@@ -102,9 +101,11 @@
       "manufacturer": "Bafang",
       "model": "H610",
       "kind": "hub_drive",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 500,
       "max_torque": 65,
       "operating_modes": [
@@ -127,6 +128,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rize/2021/liberty",
   "manufacturer": "Rize",
-  "vehicle_model_group": "Liberty",
+  "model_group": "Liberty",
   "model": "Liberty",
   "model_configuration": "complete",
   "type": "bike",
@@ -18,7 +18,7 @@
   "first_year": 2021,
   "years": {
     "2026": {
-      "original_msrp": 189900,
+      "original_msrp": 239900,
       "original_msrp_currency": "USD",
       "colorways": [
         {
@@ -56,8 +56,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 136
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -107,13 +106,15 @@
     {
       "manufacturer": "Bafang",
       "sensor_cadence": true,
-      "battery_size": 780,
-      "battery_options": [
-        1560
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 21700 50E Cell",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 780,
+        "capacity_options": [
+          1560
+        ],
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700 50E",
+        "charging_time": 300
+      },
       "rated_power": 1000,
       "max_torque": 95,
       "operating_modes": [
@@ -143,6 +144,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

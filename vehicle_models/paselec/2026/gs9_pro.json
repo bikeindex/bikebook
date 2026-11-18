@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/paselec/2026/gs9_pro",
   "manufacturer": "Paselec",
   "model": "GS9 Pro",
@@ -66,8 +66,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 136
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {},
@@ -105,9 +104,11 @@
     {
       "sensor_speed": "spoke_magnet",
       "water_rating": "IPX4",
-      "battery_size": 749,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 749,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "peak_power": 1300,
       "operating_modes": [
         {
@@ -127,6 +128,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

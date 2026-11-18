@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2020/blacktop_1_0",
   "manufacturer": "Reid",
-  "vehicle_model_group": "Blacktop",
+  "model_group": "Blacktop",
   "model": "Blacktop 1.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -110,8 +110,10 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung cells",
+      "battery": {
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

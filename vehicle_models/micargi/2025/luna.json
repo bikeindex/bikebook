@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/micargi/2025/luna",
   "manufacturer": "Micargi",
   "model": "Luna",
@@ -85,9 +85,11 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 350,
       "operating_modes": [
         {

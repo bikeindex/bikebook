@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bakcou/2020/mule_step_through_26",
   "manufacturer": "Bakcou",
-  "vehicle_model_group": "Mule",
+  "model_group": "Mule",
   "model": "Mule Step-Through (ST) 26\"",
   "model_configuration": "complete",
   "type": "bike",
@@ -229,12 +229,14 @@
   ],
   "motors": [
     {
-      "battery_size": 840,
-      "battery_options": [
-        1008,
-        922
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 840,
+        "capacity_options": [
+          1008,
+          922
+        ],
+        "chemistry": "li-ion"
+      },
       "max_torque": 160,
       "operating_modes": [
         {

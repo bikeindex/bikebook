@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tomofree/2026/xt60",
   "manufacturer": "Tomofree",
   "model": "XT60",
@@ -24,8 +24,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 150
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {}
@@ -56,9 +55,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 463,
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 463,
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "peak_power": 1200,
       "operating_modes": [
         {
@@ -76,6 +77,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

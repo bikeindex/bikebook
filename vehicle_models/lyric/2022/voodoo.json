@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lyric/2022/voodoo",
   "manufacturer": "Lyric",
   "model": "Voodoo",
@@ -57,8 +57,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "4130 Powder-Coated Steel",
-    "max_weight_total": 181
+    "material_detail": "4130 Powder-Coated Steel"
   },
   "suspension": {
     "front": {
@@ -104,9 +103,11 @@
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
       "sensor_cadence": true,
-      "battery_size": 3456,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 40T cells",
+      "battery": {
+        "capacity": 3456,
+        "chemistry": "li-ion",
+        "cells": "Samsung 40T"
+      },
       "rated_power": 750,
       "peak_power": 18000,
       "max_torque": 240,
@@ -140,6 +141,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

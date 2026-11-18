@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/helokeep/2026/k6_mini",
   "manufacturer": "Helokeep",
-  "vehicle_model_group": "K6",
+  "model_group": "K6",
   "model": "K6 Mini",
   "model_configuration": "complete",
   "type": "bike",
@@ -36,8 +36,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 181
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {},
@@ -69,10 +68,13 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 768,
-      "battery_info": "15.6 Ah",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 768,
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 85,
@@ -94,6 +96,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

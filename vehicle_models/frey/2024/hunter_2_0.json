@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/frey/2024/hunter_2_0",
   "manufacturer": "FREY",
-  "vehicle_model_group": "Hunter",
+  "model_group": "Hunter",
   "model": "Hunter 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -14,6 +14,7 @@
   "stock_photo": "https://bikebook.bikeindex.org/frey/2024/hunter_2_0.jpg",
   "description": "HUNTER 2.0 :\nFeatures fully upgraded\n\nNewly Designed Geometry\nThe newly designed geometry provides this mountain sport-oriented ebike with a relatively low standover height, making it suitable for riders of various heights.\nDurable High-Strength Frame Material\nOur electric bicycles boast a high-strength, durable geometry, including a robust rear triangle, ensuring reliable performance even in challenging terrains.\n\nHigh Power, Long Range for Enjoyable Riding Experience\nWe've upgraded the power system of our electric bikes, equipping them with high-power motors and larger capacity batteries, providing you with longer-lasting riding enjoyment. Whether climbing steep hills or traversing complex mountain forests, our vehicles can handle them with ease, allowing you to enjoy the thrill of riding.\nVersatile Customization for Personalized Riding\nElectric bikes offer various customization options, including belt drive systems and internal gear hubs, for a personalized riding experience. Quiet belt drives and smooth internal gears make your ride comfortable and effortless.\n\nOur eBike's fortified geometry and fat tires guarantee stability and traction on any terrain, ensuring a smooth and safe ride across diverse landscapes.\n\nMountain\n\nGravel Road\n\nBrick Road\n\nSandy Ground\n\nSnowy Road\n\nWetland",
   "first_year": 2024,
+  "final_year": 2026,
   "years": {
     "2026": {
       "original_msrp": 389900,
@@ -41,8 +42,7 @@
     "material": "steel",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 150
+    }
   },
   "suspension": {
     "front": {
@@ -91,12 +91,17 @@
       "spindle": "ISIS",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / UL 2849",
-      "water_rating": "IPX5",
-      "battery_size": 1200,
-      "battery_options": [
-        1440
+      "certifications": [
+        "UL 2849",
+        "CE"
       ],
+      "water_rating": "IPX5",
+      "battery": {
+        "capacity": 1200,
+        "capacity_options": [
+          1440
+        ]
+      },
       "rated_power": 1000,
       "peak_power": 1440,
       "max_torque": 160,
@@ -109,6 +114,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

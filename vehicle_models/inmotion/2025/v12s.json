@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2025/v12s",
   "manufacturer": "Inmotion",
-  "vehicle_model_group": "V12",
+  "model_group": "V12",
   "model": "V12S",
   "model_configuration": "complete",
   "type": "epamd",
@@ -35,8 +35,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 140
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -55,10 +54,12 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP56",
-      "battery_size": 1440,
-      "battery_chemistry": "li-ion",
-      "battery_info": "20S4P Samsung 21700 50S",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1440,
+        "chemistry": "li-ion",
+        "cells": "20S4P Samsung 21700 50S",
+        "charging_time": 420
+      },
       "rated_power": 2500,
       "peak_power": 6000,
       "max_torque": 130,
@@ -71,6 +72,12 @@
           "max_slope": 35
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 140
     }
   ],
   "sizes": [

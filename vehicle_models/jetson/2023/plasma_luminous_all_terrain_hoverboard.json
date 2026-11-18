@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2023/plasma_luminous_all_terrain_hoverboard",
   "manufacturer": "Jetson",
-  "vehicle_model_group": "Plasma",
+  "model_group": "Plasma",
   "model": "Plasma Luminous All-Terrain Hoverboard",
   "model_configuration": "complete",
   "type": "epamd",
@@ -48,9 +48,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 90,
-      "battery_chemistry": "li-ion",
-      "charging_time": 180,
+      "battery": {
+        "capacity": 90,
+        "chemistry": "li-ion",
+        "charging_time": 180
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -63,6 +65,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -73,7 +81,6 @@
           "height": 185
         },
         "total_weight": 7.3,
-        "max_weight_rider": 100,
         "rider_age_min": 12
       }
     }

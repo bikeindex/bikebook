@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hikeep/2025/mas",
   "manufacturer": "Hikeep",
-  "vehicle_model_group": "MA",
+  "model_group": "MA",
   "model": "MAS",
   "model_configuration": "complete",
   "type": "bike",
@@ -51,8 +51,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 181
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -91,9 +90,11 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 2400,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 2400,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 3000,
       "peak_power": 4000,
       "max_torque": 250,
@@ -117,6 +118,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

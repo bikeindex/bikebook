@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/puckipuppy/2026/bulldog",
   "manufacturer": "Puckipuppy",
-  "vehicle_model_group": "Bulldog",
+  "model_group": "Bulldog",
   "model": "Bulldog",
   "model_configuration": "complete",
   "type": "bike",
@@ -55,8 +55,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 181
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -94,10 +93,15 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "UL 2271, UL 2849",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 1440,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1440,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1350,
       "operating_modes": [
@@ -120,6 +124,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

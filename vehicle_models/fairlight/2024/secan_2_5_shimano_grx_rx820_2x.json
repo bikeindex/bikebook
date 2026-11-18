@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fairlight/2024/secan_2_5_shimano_grx_rx820_2x",
   "manufacturer": "Fairlight",
-  "vehicle_model_group": "Secan",
+  "model_group": "Secan",
   "model": "Secan 2.5 Shimano GRX RX820 2x",
   "model_configuration": "complete",
   "type": "bike",
@@ -73,8 +73,7 @@
     "headset": "ZS44/28.6 | EC44/40",
     "seatpost_diameter": 27.2,
     "front_derailleur_mount": "28.6mm clamp",
-    "max_chainring": 50,
-    "max_weight_total": 115
+    "max_chainring": 50
   },
   "wheels": [
     {
@@ -159,9 +158,20 @@
       "rotor_diameter_max": 160
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 115
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 115
+    }
+  ],
   "sizes": [
     {
       "name": "51R",
@@ -180,8 +190,7 @@
         "bb_drop": 77,
         "fork_rake": 50,
         "trail": 71.3,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     },
     {
@@ -201,8 +210,7 @@
         "bb_drop": 77,
         "fork_rake": 50,
         "trail": 71.3,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     },
     {
@@ -222,8 +230,7 @@
         "bb_drop": 77,
         "fork_rake": 50,
         "trail": 68,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     },
     {
@@ -243,8 +250,7 @@
         "bb_drop": 77,
         "fork_rake": 50,
         "trail": 64.7,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     },
     {
@@ -264,8 +270,7 @@
         "bb_drop": 77,
         "fork_rake": 50,
         "trail": 61.5,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     },
     {
@@ -285,8 +290,7 @@
         "bb_drop": 77,
         "fork_rake": 50,
         "trail": 61.5,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     },
     {
@@ -306,8 +310,7 @@
         "bb_drop": 77,
         "fork_rake": 50,
         "trail": 58.2,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     },
     {
@@ -327,8 +330,7 @@
         "bb_drop": 77,
         "fork_rake": 50,
         "trail": 58.2,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     },
     {
@@ -348,8 +350,7 @@
         "bb_drop": 77,
         "fork_rake": 50,
         "trail": 58.2,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     },
     {
@@ -369,8 +370,7 @@
         "bb_drop": 77,
         "fork_rake": 50,
         "trail": 58.2,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     }
   ],

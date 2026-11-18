@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/samebike/2021/lvhl26a",
   "manufacturer": "samebike",
   "model": "LVHL26A",
@@ -43,8 +43,7 @@
     "material_detail": "6061 Aluminum",
     "folding": "half_fold",
     "cable_routing": "internal",
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 120
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {
@@ -104,8 +103,10 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IP54",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 50,
       "operating_modes": [
@@ -137,6 +138,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

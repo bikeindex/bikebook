@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2026/copperhead_evo_1_trapeze",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Copperhead EVO",
+  "model_group": "Copperhead EVO",
   "model": "Copperhead EVO 1 Trapeze",
   "model_configuration": "complete",
   "type": "bike",
@@ -118,9 +118,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "headset": "ZS56/28.6 | ZS66/46",
-    "max_weight_total": 126,
-    "gross_weight_rating": 150
+    "headset": "ZS56/28.6 | ZS66/46"
   },
   "suspension": {
     "front": {
@@ -188,11 +186,14 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_options": [
-        800
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "capacity_options": [
+          800
+        ],
+        "chemistry": "li-ion",
+        "weight": 4.9
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 85,
@@ -206,6 +207,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 126
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

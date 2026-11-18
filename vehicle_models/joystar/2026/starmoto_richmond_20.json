@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/joystar/2026/starmoto_richmond_20",
   "manufacturer": "Joystar",
-  "vehicle_model_group": "Starmoto",
+  "model_group": "Starmoto",
   "model": "Starmoto Richmond 20",
   "model_configuration": "complete",
   "type": "bike",
@@ -119,8 +119,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 100
+    "material": "steel"
   },
   "wheels": [
     {
@@ -148,9 +147,11 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 187,
-      "battery_chemistry": "li-ion",
-      "charging_time": 270,
+      "battery": {
+        "capacity": 187,
+        "chemistry": "li-ion",
+        "charging_time": 270
+      },
       "rated_power": 250,
       "max_torque": 46,
       "operating_modes": [
@@ -164,6 +165,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

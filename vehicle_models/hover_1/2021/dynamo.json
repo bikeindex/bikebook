@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hover_1/2021/dynamo",
   "manufacturer": "Hover-1",
   "model": "Dynamo",
@@ -65,7 +65,9 @@
   ],
   "motors": [
     {
-      "battery_size": 180,
+      "battery": {
+        "capacity": 180
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -75,6 +77,12 @@
           "range_claimed": 26
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -91,8 +99,7 @@
           "width": 404,
           "height": 419
         },
-        "total_weight": 14,
-        "max_weight_rider": 120
+        "total_weight": 14
       }
     }
   ],

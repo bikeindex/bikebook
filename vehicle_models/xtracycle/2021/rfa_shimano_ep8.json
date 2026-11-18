@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/xtracycle/2021/rfa_shimano_ep8",
   "manufacturer": "Xtracycle",
-  "vehicle_model_group": "RFA",
+  "model_group": "RFA",
   "model": "RFA Shimano EP8 (Class 1)",
   "model_configuration": "complete",
   "type": "cargo_bike_rear",
@@ -92,9 +92,7 @@
       "spindle": "Shimano EP8"
     },
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 185,
-    "gross_weight_rating": 213
+    "seatpost_clamp_diameter": 34.9
   },
   "wheels": [
     {
@@ -152,8 +150,10 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "battery_size": 630,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 630,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [
@@ -166,6 +166,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 185
+    },
+    {
+      "load": "gross",
+      "weight": 213
     }
   ],
   "sizes": [

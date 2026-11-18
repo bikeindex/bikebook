@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ecotric/2020/bison",
   "manufacturer": "Ecotric",
   "model": "Bison",
@@ -39,8 +39,7 @@
     "2020": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 120
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -74,9 +73,11 @@
     {
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -95,6 +96,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/simple_glide_deluxe_750w_fat_tire_rear_motor",
   "manufacturer": "sixthreezero",
-  "vehicle_model_group": "Simple Glide",
+  "model_group": "Simple Glide",
   "model": "Simple Glide Deluxe 750w Fat Tire Rear Motor",
   "model_configuration": "complete",
   "type": "recumbent",
@@ -34,8 +34,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 159
+    "material": "aluminum"
   },
   "suspension": {
     "rear": {}
@@ -78,7 +77,9 @@
   ],
   "motors": [
     {
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -91,6 +92,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

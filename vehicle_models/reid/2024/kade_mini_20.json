@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2024/kade_mini_20",
   "manufacturer": "Reid",
-  "vehicle_model_group": "KADe",
+  "model_group": "KADe",
   "model": "KADe Mini 20",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -105,8 +105,12 @@
       "manufacturer": "Ananda",
       "model": "R210",
       "kind": "hub_drive",
-      "certification": "EN50604",
-      "battery_size": 504,
+      "certifications": [
+        "EN 50604"
+      ],
+      "battery": {
+        "capacity": 504
+      },
       "rated_power": 250,
       "operating_modes": [
         {

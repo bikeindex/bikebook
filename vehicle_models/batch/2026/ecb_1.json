@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/batch/2026/ecb_1",
   "manufacturer": "Batch Bicycles",
-  "vehicle_model_group": "eCB",
+  "model_group": "eCB",
   "model": "eCB.1",
   "model_configuration": "complete",
   "type": "bike",
@@ -109,7 +109,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 420,
+      "battery": {
+        "capacity": 420
+      },
       "rated_power": 500,
       "operating_modes": [
         {

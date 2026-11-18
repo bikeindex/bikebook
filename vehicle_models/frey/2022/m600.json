@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/frey/2022/m600",
   "manufacturer": "FREY",
   "model": "M600",
@@ -49,8 +49,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 120
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -110,9 +109,15 @@
       "kind": "mid_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / EN 14766 / ROHS",
+      "certifications": [
+        "EN 14766",
+        "CE",
+        "RoHS"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 672,
+      "battery": {
+        "capacity": 672
+      },
       "rated_power": 500,
       "max_torque": 120,
       "operating_modes": [
@@ -121,6 +126,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

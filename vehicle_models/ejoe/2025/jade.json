@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ejoe/2025/jade",
   "manufacturer": "Ejoe",
   "model": "JADE",
@@ -52,8 +52,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 136
+    "top_tube": "step_through"
   },
   "wheels": [
     {
@@ -94,10 +93,12 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -118,6 +119,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -128,7 +135,6 @@
           "height": 1041
         },
         "total_weight": 27.2,
-        "max_weight_rider": 136,
         "rider_height_min": 1575,
         "rider_height_max": 1905
       }

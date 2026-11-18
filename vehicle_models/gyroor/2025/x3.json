@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gyroor/2025/x3",
   "manufacturer": "Gyroor",
   "model": "X3",
@@ -80,10 +80,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 499,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 499,
+        "charging_time": 420
+      },
       "rated_power": 700,
       "operating_modes": [
         {
@@ -96,6 +100,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -105,8 +115,7 @@
           "width": 582,
           "height": 1275
         },
-        "total_weight": 24,
-        "max_weight_rider": 120
+        "total_weight": 24
       }
     }
   ],

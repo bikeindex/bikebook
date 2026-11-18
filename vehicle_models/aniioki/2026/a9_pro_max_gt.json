@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aniioki/2026/a9_pro_max_gt",
   "manufacturer": "Aniioki",
-  "vehicle_model_group": "A9 Pro Max",
+  "model_group": "A9 Pro Max",
   "model": "A9 Pro Max GT",
   "model_configuration": "complete",
   "type": "bike",
@@ -53,8 +53,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Aerospace-Grade Aluminum",
-    "max_weight_total": 227
+    "material_detail": "Aerospace-Grade Aluminum"
   },
   "suspension": {
     "front": {
@@ -94,10 +93,13 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 5040,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 5040,
+        "voltage": 72,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A",
+        "charging_time": 600
+      },
       "rated_power": 3000,
       "peak_power": 3500,
       "max_torque": 270,
@@ -128,10 +130,13 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 5040,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 5040,
+        "voltage": 72,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A",
+        "charging_time": 600
+      },
       "rated_power": 3000,
       "peak_power": 3500,
       "max_torque": 270,
@@ -157,6 +162,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [

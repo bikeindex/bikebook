@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2025/clutch_160_7_c67",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "CLUTCH",
+  "model_group": "CLUTCH",
   "model": "CLUTCH 160.7 C67",
   "model_configuration": "complete",
   "type": "bike",
@@ -96,9 +96,7 @@
       "spindle": "Pinion Standard"
     },
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 38.6,
-    "max_weight_total": 123,
-    "gross_weight_rating": 150
+    "seatpost_clamp_diameter": 38.6
   },
   "suspension": {
     "front": {
@@ -169,8 +167,10 @@
       "model": "MGU",
       "kind": "mid_drive",
       "spindle": "Pinion Standard",
-      "battery_size": 780,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 780,
+        "chemistry": "li-ion"
+      },
       "peak_power": 800,
       "max_torque": 85,
       "operating_modes": [
@@ -183,6 +183,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 123
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

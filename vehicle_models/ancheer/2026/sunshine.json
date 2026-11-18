@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ancheer/2026/sunshine",
   "manufacturer": "Ancheer",
   "model": "Sunshine",
@@ -90,8 +90,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -121,9 +120,13 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 374,
+      "battery": {
+        "capacity": 374
+      },
       "peak_power": 750,
       "max_torque": 50,
       "operating_modes": [
@@ -141,6 +144,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

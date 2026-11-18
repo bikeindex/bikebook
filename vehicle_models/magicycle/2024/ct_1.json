@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/magicycle/2024/ct_1",
   "manufacturer": "Magicycle",
   "model": "CT-1",
@@ -63,8 +63,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 28.6,
-    "max_weight_total": 181
+    "seatpost_diameter": 28.6
   },
   "suspension": {
     "front": {}
@@ -102,9 +101,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "peak_power": 1100,
       "max_torque": 60,
@@ -128,6 +129,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

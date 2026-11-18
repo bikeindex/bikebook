@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mokwheel/2025/flint_pro_st",
   "manufacturer": "Mokwheel",
-  "vehicle_model_group": "Flint",
+  "model_group": "Flint",
   "model": "Flint Pro ST",
   "model_configuration": "complete",
   "type": "bike",
@@ -83,8 +83,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 136
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -129,7 +128,9 @@
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX6",
-      "battery_size": 360,
+      "battery": {
+        "capacity": 360
+      },
       "rated_power": 250,
       "peak_power": 500,
       "max_torque": 40,
@@ -145,6 +146,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

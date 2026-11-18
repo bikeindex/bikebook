@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2025/off_6_fs_of6f26",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Samedi 27 Off",
+  "model_group": "Samedi 27 Off",
   "model": "OFF 6 FS OF6F26",
   "model_configuration": "complete",
   "type": "bike",
@@ -82,9 +82,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 135,
-    "gross_weight_rating": 160
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -159,8 +157,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -176,6 +176,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 135
+    },
+    {
+      "load": "gross",
+      "weight": 160
     }
   ],
   "sizes": [

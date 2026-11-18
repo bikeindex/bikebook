@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2017/precaliber_16_boy_s",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Precaliber",
+  "model_group": "Precaliber",
   "model": "Precaliber 16 Boy's",
   "model_configuration": "complete",
   "type": "bike",
@@ -52,9 +52,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Alpha Silver Aluminum",
-    "max_weight_total": 26,
-    "gross_weight_rating": 36
+    "material_detail": "Alpha Silver Aluminum"
   },
   "wheels": [
     {
@@ -81,6 +79,16 @@
       "position": [
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 26
+    },
+    {
+      "load": "gross",
+      "weight": 36
     }
   ],
   "sizes": [

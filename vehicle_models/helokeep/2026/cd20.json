@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/helokeep/2026/cd20",
   "manufacturer": "Helokeep",
   "model": "CD20",
@@ -56,8 +56,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 250
+    ]
   },
   "suspension": {
     "front": {},
@@ -90,7 +89,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 1589,
+      "battery": {
+        "capacity": 1589
+      },
       "rated_power": 1100,
       "peak_power": 1500,
       "max_torque": 110,
@@ -113,6 +114,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 250
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lapierre/2026/overvolt_ht_5_6",
   "manufacturer": "Lapierre",
-  "vehicle_model_group": "Overvolt HT",
+  "model_group": "Overvolt HT",
   "model": "Overvolt HT 5.6",
   "model_configuration": "complete",
   "type": "bike",
@@ -59,8 +59,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 120
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -112,8 +111,10 @@
       "model_group": "Performance Line PX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 700,
       "max_torque": 90,
@@ -127,6 +128,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

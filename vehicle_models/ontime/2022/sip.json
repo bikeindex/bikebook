@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ontime/2022/sip",
   "manufacturer": "Ontime",
   "model": "SIP",
@@ -81,8 +81,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 136
+    "material_detail": "6061 Aluminum"
   },
   "wheels": [
     {
@@ -123,10 +122,12 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Battery Cell",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -143,6 +144,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

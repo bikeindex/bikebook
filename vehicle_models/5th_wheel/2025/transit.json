@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/5th_wheel/2025/transit",
   "manufacturer": "5th Wheel",
   "model": "Transit",
@@ -51,8 +51,12 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
-      "battery_size": 374,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 374
+      },
       "rated_power": 350,
       "peak_power": 700,
       "operating_modes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/simple_step_thru_750w_deluxe_women_s",
   "manufacturer": "sixthreezero",
-  "vehicle_model_group": "Simple Step-Thru Electric",
+  "model_group": "Simple Step-Thru Electric",
   "model": "Simple Step-Thru 750W Deluxe Women's",
   "model_configuration": "complete",
   "type": "bike",
@@ -55,8 +55,7 @@
     "bottom_bracket": {
       "width": 68,
       "spindle_length": 118
-    },
-    "max_weight_total": 159
+    }
   },
   "suspension": {
     "front": {}
@@ -107,8 +106,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -127,6 +128,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

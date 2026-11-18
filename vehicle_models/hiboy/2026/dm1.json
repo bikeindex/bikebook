@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hiboy/2026/dm1",
   "manufacturer": "Hiboy",
   "model": "DM1",
@@ -68,9 +68,11 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX4",
-      "battery_size": 734,
-      "battery_chemistry": "li-ion",
-      "charging_time": 450,
+      "battery": {
+        "capacity": 734,
+        "chemistry": "li-ion",
+        "charging_time": 450
+      },
       "rated_power": 1000,
       "peak_power": 1200,
       "operating_modes": [
@@ -84,6 +86,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -93,8 +101,7 @@
           "width": 599,
           "height": 1326
         },
-        "total_weight": 32.5,
-        "max_weight_rider": 100
+        "total_weight": 32.5
       }
     }
   ],

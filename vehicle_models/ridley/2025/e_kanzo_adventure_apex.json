@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ridley/2025/e_kanzo_adventure_apex",
   "manufacturer": "Ridley",
-  "vehicle_model_group": "E-Kanzo Adventure",
+  "model_group": "E-Kanzo Adventure",
   "model": "E-Kanzo Adventure APEX",
   "model_configuration": "complete",
   "markets": [
@@ -143,8 +143,10 @@
       "manufacturer": "Bosch",
       "model": "BDU38YY",
       "kind": "mid_drive",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

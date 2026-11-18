@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kasen/2024/x2_0",
   "manufacturer": "Kasen",
   "model": "X2.0",
@@ -93,8 +93,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {
@@ -144,9 +143,11 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -167,9 +168,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 24.95
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 24.95
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

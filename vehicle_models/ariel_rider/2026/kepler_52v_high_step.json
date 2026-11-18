@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ariel_rider/2026/kepler_52v_high_step",
   "manufacturer": "Ariel Rider",
-  "vehicle_model_group": "Kepler",
+  "model_group": "Kepler",
   "model": "Kepler 52V High-Step",
   "model_configuration": "complete",
   "type": "bike",
@@ -78,8 +78,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 181
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -139,11 +138,16 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 1040,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 21700",
+      "battery": {
+        "capacity": 1040,
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700"
+      },
       "rated_power": 750,
       "peak_power": 1940,
       "max_torque": 118,
@@ -162,6 +166,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

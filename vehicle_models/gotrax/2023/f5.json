@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2023/f5",
   "manufacturer": "GOTRAX",
   "model": "F5",
@@ -63,8 +63,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 136
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -100,11 +99,15 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 653,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 653,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -128,6 +131,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    },
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -137,8 +150,7 @@
           "width": 599,
           "height": 1308
         },
-        "total_weight": 30.3,
-        "max_weight_rider": 136
+        "total_weight": 30.3
       }
     }
   ],

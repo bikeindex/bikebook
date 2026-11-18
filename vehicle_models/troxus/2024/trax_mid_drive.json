@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/troxus/2024/trax_mid_drive",
   "manufacturer": "Troxus",
   "model": "Trax Mid-Drive",
@@ -78,8 +78,7 @@
     },
     "headset": "ZS44/28.6 | ZS56/40",
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 35,
-    "max_weight_total": 150
+    "seatpost_clamp_diameter": 35
   },
   "suspension": {
     "front": {
@@ -142,10 +141,14 @@
       "kind": "mid_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung® Cells",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 500,
       "max_torque": 130,
       "operating_modes": [
@@ -169,6 +172,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

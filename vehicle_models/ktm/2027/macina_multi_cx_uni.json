@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/macina_multi_cx_uni",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Macina Multi",
+  "model_group": "Macina Multi",
   "model": "Macina Multi CX UNI",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,12 +40,19 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "front"
+        ],
+        "interface": "racktime_snapit"
+      }
+    ],
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "headset": "ZS44/28.6 | ZS56/40",
-    "max_weight_total": 190,
-    "gross_weight_rating": 220
+    "headset": "ZS44/28.6 | ZS56/40"
   },
   "wheels": [
     {
@@ -94,8 +101,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 725,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 725,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -109,6 +118,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 190
+    },
+    {
+      "load": "gross",
+      "weight": 220
     }
   ],
   "sizes": [

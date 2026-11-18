@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gopower/2026/go_curv",
   "manufacturer": "Gopower",
   "model": "Go Curv",
@@ -98,8 +98,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "top_tube": "step_through",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -149,8 +148,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -171,6 +172,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

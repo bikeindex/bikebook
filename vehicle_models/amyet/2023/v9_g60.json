@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/amyet/2023/v9_g60",
   "manufacturer": "Amyet",
   "model": "V9-G60",
@@ -66,8 +66,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "Chromoly Steel",
-    "max_weight_total": 150
+    "material_detail": "Chromoly Steel"
   },
   "suspension": {
     "front": {},
@@ -89,8 +88,12 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
-      "battery_size": 960,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 960
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "operating_modes": [
@@ -111,6 +114,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aima/2026/key_west_2_0",
   "manufacturer": "AIMA E-Bike",
-  "vehicle_model_group": "Key West",
+  "model_group": "Key West",
   "model": "Key West 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -49,9 +49,17 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Single-Butted Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 145
+    "seatpost_clamp_diameter": 34.9
   },
   "wheels": [
     {
@@ -97,11 +105,16 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG",
-      "charging_time": 300,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 672,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 300
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -122,6 +135,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 145
     }
   ],
   "sizes": [

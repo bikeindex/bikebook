@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lankeleisi/2026/xt750_plus_big_fork",
   "manufacturer": "Lankeleisi",
-  "vehicle_model_group": "XT750",
+  "model_group": "XT750",
   "model": "XT750 Plus Big Fork",
   "model_configuration": "complete",
   "type": "bike",
@@ -68,8 +68,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 180
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -117,9 +116,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 1000,
       "max_torque": 95,
       "operating_modes": [
@@ -142,6 +143,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [

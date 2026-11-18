@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pedego/2025/ridge_rider",
   "manufacturer": "Pedego",
-  "vehicle_model_group": "Ridge Rider",
+  "model_group": "Ridge Rider",
   "model": "Ridge Rider",
   "model_configuration": "complete",
   "type": "bike",
@@ -135,9 +135,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 CELLS",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "cells": "18650"
+      },
       "rated_power": 749,
       "max_torque": 60,
       "operating_modes": [
@@ -169,12 +171,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "crank_length": 130,
-        "max_weight_rider": 113,
         "extra_measurements": {
           "total_weight_without_battery_kg": 21
         }

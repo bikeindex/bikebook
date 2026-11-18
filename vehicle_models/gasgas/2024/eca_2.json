@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gasgas/2024/eca_2",
   "manufacturer": "GASGAS",
-  "vehicle_model_group": "ECA",
+  "model_group": "ECA",
   "model": "ECA 2",
   "model_configuration": "complete",
   "markets": [
@@ -43,9 +43,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 34.9,
-    "chainguide_mount": "ISCG05",
-    "max_weight_total": 104,
-    "gross_weight_rating": 130
+    "chainguide_mount": "ISCG05"
   },
   "suspension": {
     "front": {
@@ -119,7 +117,9 @@
       "manufacturer": "Yamaha",
       "model": "PW-X3",
       "kind": "mid_drive",
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [
@@ -132,6 +132,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 104
+    },
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [

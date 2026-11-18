@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jackrabbit/2025/xg_pro",
   "manufacturer": "JackRabbit",
-  "vehicle_model_group": "XG",
+  "model_group": "XG",
   "model": "XG Pro",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -73,11 +73,16 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2271, UL 2272",
+      "certifications": [
+        "UL 2271",
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 749,
       "operating_modes": [
         {
@@ -99,6 +104,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -114,7 +125,6 @@
           "height": 787
         },
         "total_weight": 16.8,
-        "max_weight_rider": 125,
         "rider_height_min": 1448,
         "rider_height_max": 1981
       }

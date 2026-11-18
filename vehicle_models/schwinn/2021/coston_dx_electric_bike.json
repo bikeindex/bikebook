@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/schwinn/2021/coston_dx_electric_bike",
   "manufacturer": "Schwinn",
-  "vehicle_model_group": "Coston",
+  "model_group": "Coston",
   "model": "Coston DX Electric Bike",
   "model_configuration": "complete",
   "type": "bike",
@@ -117,8 +117,7 @@
       "width": 68,
       "spindle": "square taper"
     },
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 136
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {
@@ -171,8 +170,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 360,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 360,
+        "charging_time": 300
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -194,21 +195,26 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 24.95
-  },
-  "sizes": [
+  "weight_limits": [
     {
-      "name": "S/M",
-      "geometry": {
-        "max_weight_rider": 111
-      }
+      "load": "rider",
+      "weight": 111
     },
     {
-      "name": "L/X",
-      "geometry": {
-        "max_weight_rider": 111
-      }
+      "load": "cargo",
+      "weight": 24.95
+    },
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
+  "sizes": [
+    {
+      "name": "S/M"
+    },
+    {
+      "name": "L/X"
     }
   ],
   "components": [

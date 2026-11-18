@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hbbc/2025/women_s_electric_cruiser",
   "manufacturer": "HBBC",
-  "vehicle_model_group": "Electric Cruiser",
+  "model_group": "Electric Cruiser",
   "model": "Women's Electric Cruiser",
   "model_configuration": "complete",
   "type": "bike",
@@ -134,11 +134,15 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG 5.0 21700 cells",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "cells": "LG 5.0 21700",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "max_torque": 85,
       "operating_modes": [

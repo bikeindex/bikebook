@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/favorite/2025/stormx",
   "manufacturer": "Favorite",
   "model": "StormX",
@@ -42,8 +42,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 150
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -88,9 +87,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 917,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 917,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -112,9 +113,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

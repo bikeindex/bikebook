@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wildeway/2025/fw11s_15ah",
   "manufacturer": "Wildeway",
-  "vehicle_model_group": "FW11",
+  "model_group": "FW11",
   "model": "FW11S 15Ah",
   "model_configuration": "complete",
   "type": "bike",
@@ -77,8 +77,7 @@
   "frame": {
     "material": "steel",
     "top_tube": "step_through",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -128,7 +127,9 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IPX65",
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 64,
@@ -162,9 +163,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 30
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 30
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

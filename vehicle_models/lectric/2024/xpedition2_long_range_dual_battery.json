@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lectric/2024/xpedition2_long_range_dual_battery",
   "manufacturer": "Lectric eBikes",
-  "vehicle_model_group": "XPedition2",
+  "model_group": "XPedition2",
   "model": "XPedition2 Long-Range Dual-Battery",
   "model_configuration": "complete",
   "type": "cargo_bike_rear",
@@ -85,8 +85,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 204
+    ]
   },
   "suspension": {
     "front": {
@@ -145,11 +144,16 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271, UL 2849",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 1680,
-      "battery_chemistry": "li-ion",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1680,
+        "chemistry": "li-ion",
+        "charging_time": 540
+      },
       "rated_power": 750,
       "peak_power": 1310,
       "max_torque": 85,
@@ -173,9 +177,24 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 136.08
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    },
+    {
+      "load": "cargo",
+      "weight": 136.08
+    },
+    {
+      "load": "payload",
+      "weight": 204
+    },
+    {
+      "load": "rear_rack",
+      "weight": 136.08
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -195,7 +214,6 @@
           "height": 762
         },
         "total_weight": 29.48,
-        "max_weight_rider": 150,
         "rider_height_min": 1499,
         "rider_height_max": 1956,
         "extra_measurements": {
@@ -203,7 +221,6 @@
           "handlebar_height_min": 1041,
           "handlebar_reach_max": 622,
           "handlebar_reach_min": 432,
-          "rear_rack_capacity_kg": 136.08,
           "rear_rack_length": 932,
           "rear_rack_width": 173
         }

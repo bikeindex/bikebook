@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dwmeigi/2021/mg708_hera",
   "manufacturer": "Dwmeigi",
-  "vehicle_model_group": "Hera",
+  "model_group": "Hera",
   "model": "MG708-Hera",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -53,8 +53,7 @@
   },
   "frame": {
     "material": "steel",
-    "top_tube": "step_through",
-    "max_weight_total": 150
+    "top_tube": "step_through"
   },
   "wheels": [
     {
@@ -79,9 +78,11 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 468,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 468,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -102,6 +103,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

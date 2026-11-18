@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/yuba/2022/kombi_e5",
   "manufacturer": "Yuba",
-  "vehicle_model_group": "Kombi",
+  "model_group": "Kombi",
   "model": "Kombi E5",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -86,8 +86,7 @@
     "material": "steel",
     "bottom_bracket": {
       "spindle": "square taper"
-    },
-    "max_weight_total": 200
+    }
   },
   "wheels": [
     {
@@ -139,9 +138,13 @@
       "kind": "mid_drive",
       "spindle": "square taper",
       "sensor_cadence": false,
-      "certification": "EN 15194",
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "EN 15194"
+      ],
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [
@@ -154,6 +157,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

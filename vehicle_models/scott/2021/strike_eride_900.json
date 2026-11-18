@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/strike_eride_900",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Strike",
+  "model_group": "Strike",
   "model": "Strike eRIDE 900",
   "model_configuration": "complete",
   "markets": [
@@ -65,9 +65,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 105,
-    "gross_weight_rating": 128
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -144,7 +142,9 @@
       "model": "BDU450CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 625,
+      "battery": {
+        "capacity": 625
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -159,6 +159,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 105
+    },
+    {
+      "load": "gross",
+      "weight": 128
     }
   ],
   "sizes": [

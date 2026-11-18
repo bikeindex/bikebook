@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/joystar/2026/radspur_20",
   "manufacturer": "Joystar",
   "model": "Radspur 20",
@@ -106,8 +106,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 125,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 125,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

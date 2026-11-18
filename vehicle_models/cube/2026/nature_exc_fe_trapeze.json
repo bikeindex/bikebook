@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/nature_exc_fe_trapeze",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Nature",
+  "model_group": "Nature",
   "model": "Nature EXC FE Trapeze",
   "model_configuration": "complete",
   "type": "bike",
@@ -38,9 +38,7 @@
       "spindle": "24mm"
     },
     "headset": "IS42/28.6 | IS42/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 122,
-    "gross_weight_rating": 140
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -98,9 +96,20 @@
       "caliper_mount": "Disc Flat Mount"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 140
+    }
+  ],
   "sizes": [
     {
       "name": "46 cm",
@@ -118,7 +127,6 @@
         "stem_length": 70,
         "crank_length": 170,
         "max_seatpost_insertion": 270,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 60,
           "protrusion_height_80mm": 685
@@ -142,7 +150,6 @@
         "crank_length": 170,
         "max_seatpost_insertion": 270,
         "total_weight": 17.6,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 60,
           "protrusion_height_80mm": 697
@@ -165,7 +172,6 @@
         "stem_length": 90,
         "crank_length": 175,
         "max_seatpost_insertion": 270,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 60,
           "protrusion_height_80mm": 717

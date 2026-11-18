@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2025/a7_seated",
   "manufacturer": "GOTRAX",
   "model": "A7 Seated",
@@ -100,10 +100,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 499,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 499,
+        "charging_time": 300
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -116,6 +120,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -125,8 +135,7 @@
           "width": 555,
           "height": 1090
         },
-        "total_weight": 33.1,
-        "max_weight_rider": 120
+        "total_weight": 33.1
       }
     }
   ],

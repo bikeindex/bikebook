@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hover_1/2023/alpha_2_0",
   "manufacturer": "Hover-1",
-  "vehicle_model_group": "Alpha",
+  "model_group": "Alpha",
   "model": "Alpha 2.0",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -100,7 +100,9 @@
   ],
   "motors": [
     {
-      "battery_size": 216,
+      "battery": {
+        "capacity": 216
+      },
       "rated_power": 450,
       "operating_modes": [
         {
@@ -110,6 +112,12 @@
           "range_claimed": 19
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -127,7 +135,6 @@
           "height": 429
         },
         "total_weight": 15.6,
-        "max_weight_rider": 120,
         "rider_age_min": 16
       }
     }

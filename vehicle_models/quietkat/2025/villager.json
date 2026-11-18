@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/quietkat/2025/villager",
   "manufacturer": "QuietKat",
   "model": "Villager",
@@ -42,8 +42,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "cable_routing": "internal",
-    "max_weight_total": 147
+    "cable_routing": "internal"
   },
   "suspension": {
     "front": {
@@ -92,7 +91,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 696,
+      "battery": {
+        "capacity": 696
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -110,6 +111,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 147
     }
   ],
   "sizes": [

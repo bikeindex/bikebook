@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/volt/2023/kodiak",
   "manufacturer": "Volt Bike",
-  "vehicle_model_group": "Kodiak",
+  "model_group": "Kodiak",
   "model": "Kodiak",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -52,8 +52,7 @@
     "bottom_bracket": {
       "spindle": "square taper"
     },
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 136
+    "seatpost_diameter": 30.4
   },
   "wheels": [
     {
@@ -102,10 +101,14 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2271",
-      "battery_size": 950,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 950,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 80,
@@ -130,6 +133,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    },
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "16\"",
@@ -145,7 +158,6 @@
           "length": 1956
         },
         "total_weight": 34.5,
-        "max_weight_rider": 136,
         "extra_measurements": {
           "handlebar_height_max": 1245,
           "handlebar_height_min": 1105

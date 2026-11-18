@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2020/acid_hybrid_one_400_29",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Acid Hybrid",
+  "model_group": "Acid Hybrid",
   "model": "Acid Hybrid ONE 400 29",
   "model_configuration": "complete",
   "type": "bike",
@@ -36,9 +36,7 @@
     },
     "headset": "ZS44/28.6 | ZS56/40",
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 117,
-    "gross_weight_rating": 140
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -94,7 +92,9 @@
       "model_group": "Performance Line",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 400,
+      "battery": {
+        "capacity": 400
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 65,
@@ -108,6 +108,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 117
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/5th_wheel/2024/v30_pro",
   "manufacturer": "5th Wheel",
   "model": "V30 Pro",
@@ -22,7 +22,7 @@
       "url_live": false
     },
     "2024": {
-      "original_msrp": 73999,
+      "original_msrp": 89999,
       "original_msrp_currency": "USD",
       "url": "https://web.archive.org/web/20240526022059/https://5thwheelebike.com/products/5th-wheel-v30pro-electric-scooter-with-turn-signals-10-solid-tires-19-9-miles-range-18-mph-350w-motor-foldable-electric-scooter-for-adults",
       "url_live": false
@@ -60,8 +60,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 270,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 270,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -72,6 +74,12 @@
           "max_slope": 9
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -89,7 +97,6 @@
           "height": 457
         },
         "total_weight": 14.6,
-        "max_weight_rider": 120,
         "extra_measurements": {
           "handlebar_height": 760
         }

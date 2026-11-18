@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2024/boone_5",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Boone",
+  "model_group": "Boone",
   "model": "Boone 5",
   "model_configuration": "complete",
   "type": "bike",
@@ -69,9 +69,7 @@
     "bottom_bracket": {
       "shell": "T47",
       "spindle": "DUB"
-    },
-    "max_weight_total": 116,
-    "gross_weight_rating": 125
+    }
   },
   "wheels": [
     {
@@ -129,6 +127,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 116
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

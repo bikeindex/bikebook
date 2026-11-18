@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/scale_rc_400_pro",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Scale",
+  "model_group": "Scale",
   "model": "Scale RC 400 Pro",
   "model_configuration": "complete",
   "markets": [
@@ -69,9 +69,7 @@
       "width": 68,
       "spindle": "square taper"
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 60,
-    "gross_weight_rating": 70
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -116,6 +114,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 60
+    },
+    {
+      "load": "gross",
+      "weight": 70
     }
   ],
   "sizes": [

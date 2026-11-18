@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/segway/2020/max_g30lp",
   "manufacturer": "Segway",
-  "vehicle_model_group": "MAX Series",
+  "model_group": "MAX Series",
   "model": "MAX G30LP",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -56,8 +56,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 367,
-      "charging_time": 390,
+      "battery": {
+        "capacity": 367,
+        "charging_time": 390
+      },
       "rated_power": 350,
       "peak_power": 700,
       "operating_modes": [
@@ -75,6 +77,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -90,7 +98,6 @@
           "height": 534
         },
         "total_weight": 17.5,
-        "max_weight_rider": 100,
         "rider_height_min": 1200,
         "rider_height_max": 2000,
         "rider_age_min": 14

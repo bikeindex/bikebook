@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/droyd/2025/berzerker",
   "manufacturer": "Droyd",
   "model": "Berzerker",
@@ -62,8 +62,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 100
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -96,9 +95,11 @@
   ],
   "motors": [
     {
-      "battery_size": 1440,
-      "battery_chemistry": "lifepo4",
-      "charging_time": 720,
+      "battery": {
+        "capacity": 1440,
+        "chemistry": "lifepo4",
+        "charging_time": 720
+      },
       "rated_power": 2000,
       "peak_power": 3000,
       "operating_modes": [
@@ -113,6 +114,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

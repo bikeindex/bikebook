@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mukkpet/2025/tank",
   "manufacturer": "Mukkpet",
   "model": "Tank",
@@ -41,8 +41,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 181
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {},
@@ -65,7 +64,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "operating_modes": [
@@ -85,6 +86,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [
@@ -118,10 +125,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "750W; 1500W Peak Geared Hub Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V 25A"
     },
     {
       "type": "e_vehicle_remote",
@@ -164,6 +167,11 @@
         "width": 101.6,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V 25A"
     }
   ]
 }

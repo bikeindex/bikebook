@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2016/conduit_plus",
   "manufacturer": "Trek",
   "model": "Conduit+",
@@ -49,9 +49,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "Alpha Gold Aluminum",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 115,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -94,14 +92,26 @@
       "manufacturer": "Shimano",
       "model": "STEPS drive",
       "kind": "mid_drive",
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 115
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

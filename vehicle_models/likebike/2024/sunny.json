@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/likebike/2024/sunny",
   "manufacturer": "Likebike",
   "model": "Sunny",
@@ -36,8 +36,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -67,8 +66,9 @@
   ],
   "motors": [
     {
-      "battery_size": 374,
-      "battery_info": "10.4Ah",
+      "battery": {
+        "capacity": 374
+      },
       "rated_power": 350,
       "peak_power": 540,
       "operating_modes": [
@@ -82,6 +82,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

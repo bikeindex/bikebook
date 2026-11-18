@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/magnum/2023/pilot_hub",
   "manufacturer": "Magnum Bikes",
-  "vehicle_model_group": "Pilot",
+  "model_group": "Pilot",
   "model": "Pilot Hub",
   "model_configuration": "complete",
   "type": "bike",
@@ -110,11 +110,15 @@
     {
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "certification": "UL 2271, UL 2849",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "15Ah",
-      "charging_time": 450,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 450
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2022/flying_circus",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Flying Circus",
+  "model_group": "Flying Circus",
   "model": "Flying Circus",
   "model_configuration": "complete",
   "type": "bike",
@@ -32,9 +32,7 @@
     "material": "aluminum",
     "headset": "IS42/28.6 | IS42/30",
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 103,
-    "gross_weight_rating": 115
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -77,6 +75,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 103
+    },
+    {
+      "load": "gross",
+      "weight": 115
     }
   ],
   "sizes": [

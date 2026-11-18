@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2026/emetro_plus_500w",
   "manufacturer": "Reid",
   "model": "eMetro+ 500W",
@@ -46,8 +46,7 @@
       "spindle": "square taper"
     },
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 137
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -108,8 +107,12 @@
       "manufacturer": "Ananda",
       "model": "R530",
       "kind": "hub_drive",
-      "certification": "UL 2271",
-      "battery_size": 720,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 500,
       "peak_power": 768,
       "max_torque": 65,
@@ -128,9 +131,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 27
+    },
+    {
+      "load": "payload",
+      "weight": 137
+    }
+  ],
   "sizes": [
     {
       "name": "20\"",

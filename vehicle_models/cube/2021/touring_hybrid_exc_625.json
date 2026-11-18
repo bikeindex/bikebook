@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2021/touring_hybrid_exc_625",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Touring Hybrid",
+  "model_group": "Touring Hybrid",
   "model": "Touring Hybrid EXC 625",
   "model_configuration": "complete",
   "type": "bike",
@@ -21,13 +21,20 @@
   },
   "frame": {
     "material": "steel",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
+      }
+    ],
     "bottom_bracket": {
       "spindle": "BNI"
     },
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 112,
-    "gross_weight_rating": 140
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -81,8 +88,10 @@
       "model_group": "Performance Line",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 65,
@@ -98,9 +107,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 112
+    },
+    {
+      "load": "gross",
+      "weight": 140
+    }
+  ],
   "sizes": [
     {
       "name": "M S-50cm",

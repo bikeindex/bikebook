@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/marsant_s/2025/p5",
   "manufacturer": "Marsant's",
   "model": "P5",
@@ -40,8 +40,7 @@
   },
   "frame": {
     "material": "magnesium",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 141
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -76,8 +75,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 768,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 768,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "max_torque": 91,
@@ -98,6 +99,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 141
     }
   ],
   "sizes": [

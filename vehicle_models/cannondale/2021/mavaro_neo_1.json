@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2021/mavaro_neo_1",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Mavaro Neo",
+  "model_group": "Mavaro Neo",
   "model": "Mavaro Neo 1",
   "model_configuration": "complete",
   "type": "bike",
@@ -176,8 +176,10 @@
       "model": "BDU450CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -294,7 +296,13 @@
     },
     {
       "type": "hub",
-      "type_detail": "Rear Derailleur",
+      "position": [
+        "rear"
+      ],
+      "description": "Enviolo Continuously Variable Transmission internal gear hub"
+    },
+    {
+      "type": "hub",
       "position": [
         "rear"
       ],
@@ -311,13 +319,6 @@
         "axle_diameter": 15,
         "axle_spacing": 100
       }
-    },
-    {
-      "type": "hub",
-      "position": [
-        "rear"
-      ],
-      "description": "Enviolo Continuously Variable Transmission internal gear hub"
     },
     {
       "type": "lights",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktaxon/2026/mobility_scooters",
   "manufacturer": "Ktaxon",
   "model": "Mobility Scooters",
@@ -61,8 +61,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "brakes": [
     {
@@ -74,10 +73,16 @@
   ],
   "motors": [
     {
-      "certification": "CE, FCC, ROHS Certified",
-      "battery_size": 288,
-      "battery_chemistry": "lead-acid",
-      "charging_time": 360,
+      "certifications": [
+        "CE",
+        "RoHS",
+        "FCC"
+      ],
+      "battery": {
+        "capacity": 288,
+        "chemistry": "lead-acid",
+        "charging_time": 360
+      },
       "rated_power": 180,
       "operating_modes": [
         {
@@ -87,6 +92,12 @@
           "range_claimed": 24
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

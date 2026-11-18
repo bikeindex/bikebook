@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jasion/2026/thunder_pro",
   "manufacturer": "Jasion",
-  "vehicle_model_group": "Thunder",
+  "model_group": "Thunder",
   "model": "Thunder Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -63,8 +63,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 227
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -103,8 +102,10 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 1040,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1040,
+        "charging_time": 480
+      },
       "rated_power": 1200,
       "peak_power": 2000,
       "max_torque": 115,
@@ -128,6 +129,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gyroor/2023/c1",
   "manufacturer": "Gyroor",
-  "vehicle_model_group": "C1",
+  "model_group": "C1",
   "model": "C1",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -84,9 +84,13 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
-      "battery_size": 270,
-      "charging_time": 300,
+      "certifications": [
+        "UL 2272"
+      ],
+      "battery": {
+        "capacity": 270,
+        "charging_time": 300
+      },
       "rated_power": 450,
       "peak_power": 550,
       "operating_modes": [
@@ -98,6 +102,12 @@
           "max_slope": 9
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -112,7 +122,6 @@
           "height": 533
         },
         "total_weight": 19.5,
-        "max_weight_rider": 120,
         "rider_height_min": 1448,
         "rider_height_max": 1829
       }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vanpowers/2026/vanswift",
   "manufacturer": "VanPowers",
   "model": "VanSwift",
@@ -50,8 +50,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "wheels": [
     {
@@ -75,9 +74,11 @@
   ],
   "motors": [
     {
-      "battery_size": 288,
-      "battery_chemistry": "lead-acid",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 288,
+        "chemistry": "lead-acid",
+        "charging_time": 480
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -88,6 +89,12 @@
           "max_slope": 12
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

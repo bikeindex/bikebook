@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/phenix_240_c_62_slx",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Phenix",
+  "model_group": "Phenix",
   "model": "Phenix 240 C:62 SLX",
   "model_configuration": "complete",
   "type": "bike",
@@ -38,9 +38,7 @@
       "width": 92,
       "spindle": "24mm"
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 72,
-    "gross_weight_rating": 80
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -90,6 +88,16 @@
       "caliper_mount": "Disc Flat Mount"
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 65
+    },
+    {
+      "load": "gross",
+      "weight": 80
+    }
+  ],
   "sizes": [
     {
       "name": "24\"",
@@ -105,7 +113,6 @@
         "wheelbase": 960,
         "total_weight": 7.2,
         "frame_weight": 0.9,
-        "max_weight_rider": 65,
         "extra_measurements": {
           "bb_height_to_hub": 45,
           "protrusion_height_80mm": 605

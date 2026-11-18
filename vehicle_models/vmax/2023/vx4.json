@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vmax/2023/vx4",
   "manufacturer": "VMAX",
-  "vehicle_model_group": "VX4",
+  "model_group": "VX4",
   "model": "VX4",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -58,12 +58,14 @@
   "motors": [
     {
       "water_rating": "IPX6",
-      "battery_size": 624,
-      "battery_options": [
-        874,
-        1114
-      ],
-      "charging_time": 720,
+      "battery": {
+        "capacity": 624,
+        "capacity_options": [
+          874,
+          1114
+        ],
+        "charging_time": 720
+      },
       "rated_power": 500,
       "peak_power": 1600,
       "operating_modes": [
@@ -75,6 +77,12 @@
           "max_slope": 18
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -92,7 +100,6 @@
           "height": 570
         },
         "total_weight": 27.4,
-        "max_weight_rider": 150,
         "extra_measurements": {
           "deck_length": 690,
           "deck_to_handlebar_height": 1020,

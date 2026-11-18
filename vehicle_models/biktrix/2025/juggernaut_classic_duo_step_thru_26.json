@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biktrix/2025/juggernaut_classic_duo_step_thru_26",
   "manufacturer": "Biktrix",
-  "vehicle_model_group": "Juggernaut Classic",
+  "model_group": "Juggernaut Classic",
   "model": "Juggernaut Classic Duo Step-Thru 26",
   "model_configuration": "complete",
   "type": "bike",
@@ -108,8 +108,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "top_tube": "step_through",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 150
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -171,7 +170,9 @@
       "model": "bbs02",
       "kind": "mid_drive",
       "sensor_cadence": true,
-      "battery_size": 1794,
+      "battery": {
+        "capacity": 1794
+      },
       "rated_power": 750,
       "max_torque": 120,
       "operating_modes": [
@@ -190,6 +191,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

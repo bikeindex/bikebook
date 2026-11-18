@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velowave/2024/brawny_xm",
   "manufacturer": "Velowave",
   "model": "Brawny XM",
@@ -67,8 +67,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 38.1,
-    "max_weight_total": 175
+    "seatpost_clamp_diameter": 38.1
   },
   "suspension": {
     "front": {
@@ -125,10 +124,12 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 420
+      },
       "rated_power": 1000,
       "peak_power": 1200,
       "max_torque": 160,
@@ -153,6 +154,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 175
     }
   ],
   "sizes": [

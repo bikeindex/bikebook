@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/surly/2022/skid_loader",
   "manufacturer": "Surly",
   "model": "Skid Loader",
@@ -142,8 +142,7 @@
     "cable_routing": "internal",
     "headset": "EC34/28.6 | EC34/30",
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 33.1,
-    "max_weight_total": 181
+    "seatpost_clamp_diameter": 33.1
   },
   "wheels": [
     {
@@ -215,9 +214,11 @@
       "manufacturer": "Bosch",
       "model": "Performance Cargo",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
-      "charging_time": 450,
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion",
+        "charging_time": 450
+      },
       "peak_power": 600,
       "max_torque": 85,
       "operating_modes": [
@@ -234,9 +235,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 27
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "Small",

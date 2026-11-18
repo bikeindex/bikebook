@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/macfox/2023/x2_pro",
   "manufacturer": "Macfox",
   "model": "X2 Pro",
@@ -80,10 +80,15 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 960,
-      "battery_info": "48V 20Ah",
-      "charging_time": 420,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 960,
+        "voltage": 48,
+        "charging_time": 420
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "operating_modes": [
@@ -107,6 +112,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -119,7 +130,6 @@
           "height": 1041
         },
         "total_weight": 32.7,
-        "max_weight_rider": 150,
         "rider_height_min": 1600
       }
     }

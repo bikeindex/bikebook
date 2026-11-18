@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mokwheel/2025/mesa_lite_st_2_0",
   "manufacturer": "Mokwheel",
-  "vehicle_model_group": "Mesa",
+  "model_group": "Mesa",
   "model": "Mesa Lite ST 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,8 +41,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 136
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -86,7 +85,9 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 529,
+      "battery": {
+        "capacity": 529
+      },
       "rated_power": 350,
       "peak_power": 600,
       "max_torque": 45,
@@ -111,6 +112,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

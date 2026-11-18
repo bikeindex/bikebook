@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/movcan/2026/s_01_4_wheel_mobility_scooter",
   "manufacturer": "Movcan",
   "model": "S-01 4-Wheel Mobility Scooter",
@@ -58,7 +58,9 @@
   ],
   "motors": [
     {
-      "battery_size": 960,
+      "battery": {
+        "capacity": 960
+      },
       "rated_power": 250,
       "peak_power": 600,
       "operating_modes": [
@@ -71,12 +73,15 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 190
+    }
+  ],
   "sizes": [
     {
-      "name": "One Size",
-      "geometry": {
-        "max_weight_rider": 190
-      }
+      "name": "One Size"
     }
   ],
   "components": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/giant/2021/roam_e_plus_gts",
   "manufacturer": "Giant",
-  "vehicle_model_group": "Roam",
+  "model_group": "Roam",
   "model": "Roam E+ GTS",
   "model_configuration": "complete",
   "type": "bike",
@@ -113,8 +113,10 @@
       "model": "SyncDrive Core",
       "kind": "mid_drive",
       "spindle": "square taper",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "max_torque": 50,
       "operating_modes": [
         {

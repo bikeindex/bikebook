@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/evryjourney_recumbent_rickshaw_750w",
   "manufacturer": "sixthreezero",
-  "vehicle_model_group": "EVRYjourney Rickshaw",
+  "model_group": "EVRYjourney Rickshaw",
   "model": "EVRYjourney Recumbent Rickshaw 750w",
   "model_configuration": "complete",
   "type": "pedi_cab",
@@ -33,8 +33,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 113
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -72,7 +71,9 @@
   ],
   "motors": [
     {
-      "battery_size": 1008,
+      "battery": {
+        "capacity": 1008
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -84,6 +85,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
     }
   ],
   "sizes": [

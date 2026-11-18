@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velotric/2025/triker",
   "manufacturer": "Velotric",
   "model": "Triker",
@@ -125,8 +125,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 227
+    ]
   },
   "suspension": {
     "front": {
@@ -183,11 +182,19 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, ISO 4210, UL 2580, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271",
+        "UL 2580",
+        "ISO 4210"
+      ],
       "water_rating": "IPX7",
-      "battery_size": 804,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 cell, Certificated by UL 2580",
+      "battery": {
+        "capacity": 804,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "18650"
+      },
       "rated_power": 750,
       "peak_power": 1300,
       "max_torque": 90,
@@ -220,6 +227,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [

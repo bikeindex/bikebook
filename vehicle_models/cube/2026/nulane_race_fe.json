@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/nulane_race_fe",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Nulane",
+  "model_group": "Nulane",
   "model": "Nulane Race FE",
   "model_configuration": "complete",
   "type": "bike",
@@ -51,9 +51,7 @@
       "spindle": "24mm"
     },
     "headset": "IS42/28.6 | IS52/40",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 126,
-    "gross_weight_rating": 140
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -108,9 +106,20 @@
       "caliper_mount": "Disc Flat Mount"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 140
+    }
+  ],
   "sizes": [
     {
       "name": "XS",
@@ -127,7 +136,6 @@
         "handlebar_width": 660,
         "stem_length": 70,
         "crank_length": 170,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 751
@@ -149,7 +157,6 @@
         "handlebar_width": 660,
         "stem_length": 70,
         "crank_length": 170,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 780
@@ -172,7 +179,6 @@
         "stem_length": 90,
         "crank_length": 175,
         "total_weight": 13.9,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 812
@@ -194,7 +200,6 @@
         "handlebar_width": 660,
         "stem_length": 90,
         "crank_length": 175,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 832
@@ -216,7 +221,6 @@
         "handlebar_width": 660,
         "stem_length": 90,
         "crank_length": 175,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 852

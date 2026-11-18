@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/glarewheel/2022/es_s12pro",
   "manufacturer": "Glarewheel",
   "model": "ES-S12PRO",
@@ -59,8 +59,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 600,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 600,
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -70,6 +72,12 @@
           "range_claimed": 64
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 118
     }
   ],
   "sizes": [
@@ -86,8 +94,7 @@
           "width": 254,
           "height": 528
         },
-        "total_weight": 31.3,
-        "max_weight_rider": 118
+        "total_weight": 31.3
       }
     }
   ],

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/van_rysel/2026/e_edr_cf_mahle_x20_shimano_105_di2_gb",
   "manufacturer": "Van Rysel",
-  "vehicle_model_group": "E-EDR",
+  "model_group": "E-EDR",
   "model": "E-EDR CF Mahle x20 Shimano 105 di2",
   "model_configuration": "complete",
   "markets": [
@@ -106,7 +106,9 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 350,
+      "battery": {
+        "capacity": 350
+      },
       "rated_power": 250,
       "max_torque": 55,
       "operating_modes": [

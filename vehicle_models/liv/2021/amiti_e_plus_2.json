@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/liv/2021/amiti_e_plus_2",
   "manufacturer": "Liv",
-  "vehicle_model_group": "Amiti",
+  "model_group": "Amiti",
   "model": "Amiti E+ 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -59,6 +59,13 @@
     "mounts": [
       {
         "type": "fender"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
     ],
     "seatpost_diameter": 30.9
@@ -113,7 +120,9 @@
       "manufacturer": "Giant",
       "model": "SyncDrive Sport",
       "kind": "mid_drive",
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

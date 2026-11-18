@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tomofree/2023/k7pro",
   "manufacturer": "Tomofree",
   "model": "K7PRO",
@@ -32,8 +32,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 100
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -55,9 +54,11 @@
   ],
   "motors": [
     {
-      "battery_size": 270,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 270,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 250,
       "peak_power": 400,
       "operating_modes": [
@@ -68,6 +69,12 @@
           "max_slope": 20
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biktrix/2023/stunner_step_over_6",
   "manufacturer": "Biktrix",
-  "vehicle_model_group": "Stunner",
+  "model_group": "Stunner",
   "model": "Stunner Step-Over 6",
   "model_configuration": "complete",
   "type": "bike",
@@ -68,8 +68,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 28.6,
-    "max_weight_total": 150
+    "seatpost_diameter": 28.6
   },
   "suspension": {
     "front": {
@@ -128,7 +127,9 @@
       "model": "bbs02",
       "kind": "mid_drive",
       "sensor_cadence": true,
-      "battery_size": 1008,
+      "battery": {
+        "capacity": 1008
+      },
       "max_torque": 120,
       "operating_modes": [
         {
@@ -146,6 +147,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

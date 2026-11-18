@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/batavus/2026/altura_cp",
   "manufacturer": "Batavus",
-  "vehicle_model_group": "Altura",
+  "model_group": "Altura",
   "model": "Altura CP",
   "model_configuration": "complete",
   "type": "bike",
@@ -107,11 +107,13 @@
       "model": "BDU332Y",
       "model_group": "Active Line",
       "kind": "mid_drive",
-      "battery_size": 400,
-      "battery_options": [
-        500
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "capacity_options": [
+          500
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 586,
       "max_torque": 40,

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/segway/2025/xafari",
   "manufacturer": "Segway",
   "model": "Xafari",
@@ -20,6 +20,19 @@
       "original_msrp_currency": "USD",
       "colorways": [
         {
+          "name": "Silver",
+          "colors": [
+            "silver"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/segway/2025/xafari_silver.png",
+          "variants": [
+            {
+              "sku": "AA.21.01.01.0001",
+              "size": "5'–6'2\""
+            }
+          ]
+        },
+        {
           "name": "Red",
           "colors": [
             "red"
@@ -28,18 +41,6 @@
           "variants": [
             {
               "sku": "AA.21.01.01.0002",
-              "size": "5'–6'2\""
-            }
-          ]
-        },
-        {
-          "name": "Silver",
-          "colors": [
-            "silver"
-          ],
-          "variants": [
-            {
-              "sku": "AA.21.01.01.0001",
               "size": "5'–6'2\""
             }
           ]
@@ -53,6 +54,7 @@
       "original_msrp_currency": "USD",
       "colorways": [
         {
+          "stock_photo": "https://bikebook.bikeindex.org/segway/2025/xafari_.png",
           "variants": [
             {
               "sku": "AA.21.01.01.0001",
@@ -67,8 +69,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Full-Cast Aluminum",
-    "max_weight_total": 160
+    "material_detail": "Full-Cast Aluminum"
   },
   "suspension": {
     "front": {
@@ -102,8 +103,10 @@
   "motors": [
     {
       "water_rating": "IPX5",
-      "battery_size": 936,
-      "charging_time": 318,
+      "battery": {
+        "capacity": 936,
+        "charging_time": 318
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -124,6 +127,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 160
     }
   ],
   "sizes": [

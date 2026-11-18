@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dwmeigi/2024/mg2301_silverado_hd_500w_ca",
   "manufacturer": "Dwmeigi",
-  "vehicle_model_group": "Silverado",
+  "model_group": "Silverado",
   "model": "MG2301-Silverado-HD 500W",
   "model_configuration": "complete",
   "markets": [
@@ -94,10 +94,12 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung cells",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 300
+      },
       "rated_power": 500,
       "max_torque": 80,
       "operating_modes": [

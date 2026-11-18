@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/life_joy",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Life",
+  "model_group": "Life",
   "model": "Life JOY",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,9 +40,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 100,
-    "gross_weight_rating": 117
+    "material_detail": "6061 Aluminum"
   },
   "wheels": [
     {
@@ -81,6 +79,16 @@
         "rear"
       ],
       "caliper_mount": "Brake Bosses"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 117
     }
   ],
   "sizes": [

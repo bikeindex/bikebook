@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/c_inverter/2024/taurus",
   "manufacturer": "C Inverter",
   "model": "Taurus",
@@ -73,8 +73,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -104,7 +103,9 @@
   ],
   "motors": [
     {
-      "battery_size": 696,
+      "battery": {
+        "capacity": 696
+      },
       "rated_power": 500,
       "peak_power": 800,
       "operating_modes": [
@@ -113,6 +114,7 @@
           "availability": "stock",
           "max_speed": 32,
           "range_claimed": 115,
+          "max_slope": 35,
           "levels": 5,
           "e_vehicle_classifications": [
             "evc/ca/power_assisted_bicycle"
@@ -126,6 +128,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

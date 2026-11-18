@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/addmotor/2025/citytan_m_315",
   "manufacturer": "Addmotor",
   "model": "Citytan M-315",
@@ -65,8 +65,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 141
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -106,8 +105,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 648,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 648,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 1100,
       "operating_modes": [
@@ -130,6 +131,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 141
     }
   ],
   "sizes": [

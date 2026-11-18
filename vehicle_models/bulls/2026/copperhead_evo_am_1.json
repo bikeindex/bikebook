@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2026/copperhead_evo_am_1",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Copperhead EVO",
+  "model_group": "Copperhead EVO",
   "model": "Copperhead EVO AM 1",
   "model_configuration": "complete",
   "type": "bike",
@@ -75,9 +75,7 @@
       "spindle": "ISIS"
     },
     "headset": "ZS56/28.6 | ZS66/46",
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 104,
-    "gross_weight_rating": 130
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -138,11 +136,14 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_options": [
-        600
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "capacity_options": [
+          600
+        ],
+        "chemistry": "li-ion",
+        "weight": 5.1
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 85,
@@ -156,6 +157,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 104
+    },
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [

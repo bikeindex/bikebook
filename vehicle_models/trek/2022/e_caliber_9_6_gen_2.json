@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2022/e_caliber_9_6_gen_2",
   "manufacturer": "Trek",
-  "vehicle_model_group": "E-Caliber",
+  "model_group": "E-Caliber",
   "model": "E-Caliber 9.6 Gen 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -53,9 +53,7 @@
     "material_detail": "OCLV Mountain Carbon",
     "cable_routing": "dropper",
     "headset": "IS42/28.6 | IS52/40",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 117,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -136,8 +134,10 @@
       "manufacturer": "Fazua",
       "model": "Ride Trail 50",
       "kind": "mid_drive",
-      "battery_size": 250,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 250,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -148,6 +148,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 117
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

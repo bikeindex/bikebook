@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ridley/2023/fenix_disc_and_fork",
   "manufacturer": "Ridley",
-  "vehicle_model_group": "Fenix",
+  "model_group": "Fenix",
   "model": "Fenix Disc & Fork",
   "model_configuration": "frame_fork",
   "markets": [
@@ -82,8 +82,7 @@
   },
   "frame": {
     "material": "carbon",
-    "cable_routing": "internal",
-    "gross_weight_rating": 110
+    "cable_routing": "internal"
   },
   "wheels": [
     {
@@ -114,6 +113,12 @@
         "rear"
       ],
       "caliper_mount": "Disc Flat Mount"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 110
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/montague/2020/m_e1",
   "manufacturer": "Montague",
   "model": "M-E1",
@@ -89,8 +89,10 @@
       "kind": "mid_drive",
       "spindle": "Shimano E8000",
       "sensor_cadence": true,
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 60,
       "operating_modes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vanmoof/2025/s6_open",
   "manufacturer": "VanMoof",
-  "vehicle_model_group": "6-Series",
+  "model_group": "6-Series",
   "model": "S6 Open",
   "model_configuration": "complete",
   "type": "bike",
@@ -78,8 +78,10 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 487,
-      "charging_time": 240,
+      "battery": {
+        "capacity": 487,
+        "charging_time": 240
+      },
       "rated_power": 250,
       "max_torque": 68,
       "operating_modes": [

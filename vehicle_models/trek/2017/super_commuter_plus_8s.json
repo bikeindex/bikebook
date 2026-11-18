@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2017/super_commuter_plus_8s",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Super",
+  "model_group": "Super",
   "model": "Super Commuter+ 8S",
   "model_configuration": "complete",
   "type": "bike",
@@ -58,9 +58,7 @@
   "frame": {
     "material": "steel",
     "headset": "IS42/28.6 | IS52/40",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 112,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -114,8 +112,10 @@
       "manufacturer": "Bosch",
       "model": "Performance Speed",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "max_torque": 63,
       "operating_modes": [
@@ -128,6 +128,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 112
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

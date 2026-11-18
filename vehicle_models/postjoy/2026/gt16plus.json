@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/postjoy/2026/gt16plus",
   "manufacturer": "PostJoy",
   "model": "GT16Plus",
@@ -23,8 +23,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 166
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -57,8 +56,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 1800,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1800,
+        "charging_time": 480
+      },
       "peak_power": 5500,
       "max_torque": 70,
       "operating_modes": [
@@ -78,12 +79,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 166
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 45,
-        "max_weight_rider": 166,
         "rider_height_min": 1448,
         "rider_height_max": 1829
       }

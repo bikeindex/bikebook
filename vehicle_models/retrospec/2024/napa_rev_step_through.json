@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2024/napa_rev_step_through",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Napa Rev",
+  "model_group": "Napa Rev",
   "model": "Napa Rev Step Through",
   "model_configuration": "complete",
   "type": "bike",
@@ -105,10 +105,15 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 cells",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion",
+        "cells": "21700"
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -130,19 +135,23 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "S: 43cm",
       "geometry": {
-        "standover": 483,
-        "max_weight_rider": 159
+        "standover": 483
       }
     },
     {
       "name": "M: 47cm",
       "geometry": {
-        "standover": 483,
-        "max_weight_rider": 159
+        "standover": 483
       }
     }
   ],

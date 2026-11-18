@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/santa_cruz/2025/vala_xx_axs_rsv",
   "manufacturer": "Santa Cruz",
-  "vehicle_model_group": "Vala",
+  "model_group": "Vala",
   "model": "Vala XX AXS RSV",
   "model_configuration": "complete",
   "type": "bike",
@@ -259,8 +259,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,

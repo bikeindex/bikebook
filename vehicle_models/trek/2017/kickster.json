@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2017/kickster",
   "manufacturer": "Trek",
   "model": "Kickster",
@@ -52,9 +52,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 19,
-    "gross_weight_rating": 23
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -64,6 +62,16 @@
         "rear"
       ],
       "tire_width": 44
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 19
+    },
+    {
+      "load": "gross",
+      "weight": 23
     }
   ],
   "sizes": [

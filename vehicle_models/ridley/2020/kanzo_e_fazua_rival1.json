@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ridley/2020/kanzo_e_fazua_rival1",
   "manufacturer": "Ridley",
   "model": "Kanzo-E Fazua Rival1",
@@ -109,9 +109,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 94,
-    "gross_weight_rating": 110
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -169,8 +167,10 @@
       "manufacturer": "Fazua",
       "model": "Evation 2.0 Drive + Bottom Bracket",
       "kind": "mid_drive",
-      "battery_size": 250,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 250,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 55,
       "operating_modes": [
@@ -187,6 +187,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 94
+    },
+    {
+      "load": "gross",
+      "weight": 110
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/electra/2021/cruiser_lux_7d_step_thru",
   "manufacturer": "Electra",
-  "vehicle_model_group": "Cruiser",
+  "model_group": "Cruiser",
   "model": "Cruiser Lux 7D Step-Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -65,9 +65,7 @@
     "material_detail": "6061-T6 Aluminum",
     "top_tube": "step_through",
     "headset": "EC30/25.4-24tpi | EC30/26.4",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 120,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -104,6 +102,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

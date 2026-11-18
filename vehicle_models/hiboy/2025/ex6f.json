@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hiboy/2025/ex6f",
   "manufacturer": "Hiboy",
-  "vehicle_model_group": "EX6",
+  "model_group": "EX6",
   "model": "EX6F",
   "model_configuration": "complete",
   "type": "bike",
@@ -124,8 +124,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 120
+    ]
   },
   "suspension": {
     "front": {}
@@ -155,11 +154,15 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 696,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 696,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -179,6 +182,12 @@
           "range_claimed": 66
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

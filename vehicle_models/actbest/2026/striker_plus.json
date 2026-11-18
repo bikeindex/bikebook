@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/actbest/2026/striker_plus",
   "manufacturer": "Actbest",
-  "vehicle_model_group": "Striker",
+  "model_group": "Striker",
   "model": "Striker Plus",
   "model_configuration": "complete",
   "type": "bike",
@@ -67,8 +67,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 163
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -104,10 +103,15 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2271, UL 2849",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 1040,
-      "charging_time": 600,
+      "battery": {
+        "capacity": 1040,
+        "charging_time": 600
+      },
       "peak_power": 2000,
       "max_torque": 140,
       "operating_modes": [
@@ -130,6 +134,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 163
     }
   ],
   "sizes": [

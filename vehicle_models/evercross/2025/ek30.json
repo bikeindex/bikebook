@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2025/ek30",
   "manufacturer": "Evercross",
   "model": "EK30",
@@ -36,8 +36,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -68,7 +67,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -81,6 +82,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

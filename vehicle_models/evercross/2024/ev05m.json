@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2024/ev05m",
   "manufacturer": "Evercross",
   "model": "EV05M",
@@ -71,8 +71,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 40
+    "material": "steel"
   },
   "wheels": [
     {
@@ -85,7 +84,9 @@
   ],
   "motors": [
     {
-      "battery_size": 75,
+      "battery": {
+        "capacity": 75
+      },
       "rated_power": 150,
       "operating_modes": [
         {
@@ -95,6 +96,12 @@
           "range_claimed": 10
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 40
     }
   ],
   "sizes": [

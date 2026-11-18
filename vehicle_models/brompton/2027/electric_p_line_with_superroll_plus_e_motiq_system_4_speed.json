@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/brompton/2027/electric_p_line_with_superroll_plus_e_motiq_system_4_speed",
   "manufacturer": "Brompton Bicycle",
-  "vehicle_model_group": "Electric P Line",
+  "model_group": "Electric P Line",
   "model": "Electric P Line with SuperRoll+ - e-Motiq system - 4-speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -148,8 +148,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 345,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 345,
+        "weight": 4,
+        "charging_time": 300
+      },
       "operating_modes": [
         {
           "mode": "assist",

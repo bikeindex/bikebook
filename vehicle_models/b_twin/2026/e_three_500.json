@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/b_twin/2026/e_three_500",
   "manufacturer": "b'Twin",
   "model": "E-THREE 500",
@@ -38,8 +38,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 170
+    ]
   },
   "wheels": [
     {
@@ -72,7 +71,9 @@
   ],
   "motors": [
     {
-      "battery_size": 711,
+      "battery": {
+        "capacity": 711
+      },
       "max_torque": 60,
       "operating_modes": [
         {
@@ -84,6 +85,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 170
     }
   ],
   "sizes": [

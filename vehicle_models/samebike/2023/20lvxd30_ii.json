@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/samebike/2023/20lvxd30_ii",
   "manufacturer": "samebike",
   "model": "20LVXD30-II",
@@ -55,8 +55,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aviation Aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -90,8 +89,10 @@
   ],
   "motors": [
     {
-      "battery_size": 499,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 499,
+        "charging_time": 360
+      },
       "rated_power": 250,
       "max_torque": 35,
       "operating_modes": [
@@ -106,6 +107,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

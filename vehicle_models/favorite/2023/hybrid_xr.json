@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/favorite/2023/hybrid_xr",
   "manufacturer": "Favorite",
-  "vehicle_model_group": "Hybrid",
+  "model_group": "Hybrid",
   "model": "Hybrid XR",
   "model_configuration": "complete",
   "type": "bike",
@@ -121,9 +121,11 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG/Samsung cells",
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion",
+        "cells": "LG/Samsung"
+      },
       "rated_power": 500,
       "operating_modes": [
         {

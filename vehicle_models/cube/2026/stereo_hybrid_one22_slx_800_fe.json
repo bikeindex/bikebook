@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/stereo_hybrid_one22_slx_800_fe",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Stereo Hybrid",
+  "model_group": "Stereo Hybrid",
   "model": "Stereo Hybrid ONE22 SLX 800 FE",
   "model_configuration": "complete",
   "type": "bike",
@@ -50,9 +50,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 131,
-    "gross_weight_rating": 160
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -150,8 +148,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -167,9 +167,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 160
+    }
+  ],
   "sizes": [
     {
       "name": "S",
@@ -187,7 +198,6 @@
         "stem_length": 50,
         "crank_length": 170,
         "max_seatpost_insertion": 190,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": -23,
           "protrusion_height_80mm": 764
@@ -211,7 +221,6 @@
         "crank_length": 170,
         "max_seatpost_insertion": 205,
         "total_weight": 28.4,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": -43,
           "protrusion_height_80mm": 786
@@ -234,7 +243,6 @@
         "stem_length": 50,
         "crank_length": 170,
         "max_seatpost_insertion": 210,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": -43,
           "protrusion_height_80mm": 784
@@ -257,7 +265,6 @@
         "stem_length": 50,
         "crank_length": 170,
         "max_seatpost_insertion": 280,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": -43,
           "protrusion_height_80mm": 794

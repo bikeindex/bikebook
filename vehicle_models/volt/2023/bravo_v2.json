@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/volt/2023/bravo_v2",
   "manufacturer": "Volt Bike",
-  "vehicle_model_group": "Bravo",
+  "model_group": "Bravo",
   "model": "Bravo V2",
   "model_configuration": "complete",
   "type": "bike",
@@ -55,8 +55,7 @@
   },
   "frame": {
     "material": "steel",
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 127
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {}
@@ -110,10 +109,14 @@
       "manufacturer": "Bafang",
       "model": "G070",
       "kind": "hub_drive",
-      "certification": "UL 2271",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung cells",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 500,
       "max_torque": 65,
       "operating_modes": [
@@ -137,6 +140,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 127
+    },
+    {
+      "load": "payload",
+      "weight": 127
+    }
+  ],
   "sizes": [
     {
       "name": "19\"",
@@ -151,7 +164,6 @@
           "length": 1829
         },
         "total_weight": 29,
-        "max_weight_rider": 127,
         "extra_measurements": {
           "handlebar_height_max": 1168,
           "handlebar_height_min": 1016

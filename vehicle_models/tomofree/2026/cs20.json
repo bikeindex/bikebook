@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tomofree/2026/cs20",
   "manufacturer": "Tomofree",
   "model": "CS20",
@@ -32,8 +32,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 150
+    "material_detail": "High-Carbon Steel"
   },
   "wheels": [
     {
@@ -65,8 +64,10 @@
   ],
   "motors": [
     {
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "peak_power": 500,
       "operating_modes": [
         {
@@ -84,6 +85,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

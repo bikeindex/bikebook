@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gasgas/2024/moto_2",
   "manufacturer": "GASGAS",
-  "vehicle_model_group": "MOTO",
+  "model_group": "MOTO",
   "model": "Moto 2",
   "model_configuration": "complete",
   "markets": [
@@ -38,9 +38,7 @@
   },
   "frame": {
     "material": "steel",
-    "headset": "ZS44/28.6 | ZS44/30",
-    "max_weight_total": 116,
-    "gross_weight_rating": 150
+    "headset": "ZS44/28.6 | ZS44/30"
   },
   "wheels": [
     {
@@ -89,8 +87,10 @@
       "manufacturer": "Bafang",
       "model": "H550",
       "kind": "hub_drive",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 60,
       "operating_modes": [
@@ -102,6 +102,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 116
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

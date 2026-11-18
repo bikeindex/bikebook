@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fatte_bikes/2020/penalosa",
   "manufacturer": "FattE-Bikes",
   "model": "Peñalosa",
@@ -68,12 +68,14 @@
   "motors": [
     {
       "sensor_speed": "spoke_magnet",
-      "battery_size": 696,
-      "battery_options": [
-        840
-      ],
-      "battery_info": "LG cells",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 696,
+        "capacity_options": [
+          840
+        ],
+        "cells": "LG",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {

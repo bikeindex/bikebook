@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/e_lux/2023/tahoe_gt",
   "manufacturer": "E-Lux",
-  "vehicle_model_group": "Tahoe",
+  "model_group": "Tahoe",
   "model": "Tahoe GT",
   "model_configuration": "complete",
   "type": "bike",
@@ -57,8 +57,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 136
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -94,7 +93,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 960,
+      "battery": {
+        "capacity": 960
+      },
       "rated_power": 750,
       "peak_power": 1375,
       "operating_modes": [
@@ -113,6 +114,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/philodo/2026/starx",
   "manufacturer": "Philodo",
   "model": "Starx",
@@ -31,8 +31,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 204
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -68,10 +67,14 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 2160,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 2160,
+        "charging_time": 360
+      },
       "rated_power": 3000,
       "peak_power": 8000,
       "max_torque": 280,
@@ -87,6 +90,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [
@@ -143,10 +152,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "60V 100A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "Color multifunctional display"
     },
     {
@@ -195,6 +200,11 @@
         "width": 101.6,
         "diameter": 254
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "60V 100A"
     },
     {
       "type": "unknown",

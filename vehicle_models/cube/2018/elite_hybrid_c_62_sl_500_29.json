@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2018/elite_hybrid_c_62_sl_500_29",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Elite Hybrid",
+  "model_group": "Elite Hybrid",
   "model": "Elite Hybrid C:62 SL 500 29",
   "model_configuration": "complete",
   "type": "bike",
@@ -93,8 +93,10 @@
       "model": "Performance CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 75,
       "operating_modes": [

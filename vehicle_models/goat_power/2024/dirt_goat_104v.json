@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/goat_power/2024/dirt_goat_104v",
   "manufacturer": "Goat Power Bikes",
-  "vehicle_model_group": "Dirt Goat",
+  "model_group": "Dirt Goat",
   "model": "Dirt Goat 104V",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -63,7 +63,9 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 6240,
+      "battery": {
+        "capacity": 6240
+      },
       "max_torque": 1100,
       "operating_modes": [
         {

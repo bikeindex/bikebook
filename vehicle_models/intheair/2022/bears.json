@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/intheair/2022/bears",
   "manufacturer": "InTheAir",
   "model": "Bears",
@@ -16,7 +16,7 @@
   "first_year": 2022,
   "years": {
     "2026": {
-      "original_msrp": 79900,
+      "original_msrp": 139900,
       "original_msrp_currency": "USD",
       "colorways": [
         {
@@ -40,8 +40,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 136
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -82,8 +81,10 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 65,
       "operating_modes": [
@@ -105,6 +106,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [
@@ -174,10 +181,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V / 12A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LCD backlight display"
     },
     {
@@ -242,6 +245,11 @@
         "width": 101.6,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V / 12A"
     }
   ]
 }

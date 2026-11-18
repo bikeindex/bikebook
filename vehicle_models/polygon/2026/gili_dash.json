@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/polygon/2026/gili_dash",
   "manufacturer": "Polygon",
-  "vehicle_model_group": "Gili",
+  "model_group": "Gili",
   "model": "Gili Dash",
   "model_configuration": "complete",
   "type": "bike",
@@ -108,9 +108,11 @@
     {
       "manufacturer": "Bafang",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 252,
-      "battery_chemistry": "li-ion",
-      "battery_info": "SAMSUNG CELL",
+      "battery": {
+        "capacity": 252,
+        "chemistry": "li-ion",
+        "cells": "SAMSUNG"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

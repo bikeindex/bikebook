@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2020/canvas_neo_1",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Canvas",
+  "model_group": "Canvas",
   "model": "Canvas Neo 1",
   "model_configuration": "complete",
   "markets": [
@@ -93,8 +93,10 @@
   ],
   "motors": [
     {
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

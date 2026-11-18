@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/electra/2023/kakau_cruiser_go",
   "manufacturer": "Electra",
   "model": "Kakau Cruiser Go!",
@@ -48,9 +48,7 @@
       "spindle_length": 122.5
     },
     "headset": "EC34/28.6-26tpi | EC34/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 114,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -96,7 +94,9 @@
     {
       "manufacturer": "Hyena",
       "kind": "hub_drive",
-      "battery_size": 250,
+      "battery": {
+        "capacity": 250
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -107,6 +107,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 114
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

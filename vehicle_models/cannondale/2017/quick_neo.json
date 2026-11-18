@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2017/quick_neo",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Quick",
+  "model_group": "Quick",
   "model": "Quick Neo",
   "model_configuration": "complete",
   "markets": [
@@ -92,8 +92,10 @@
       "manufacturer": "Shimano",
       "model": "STePS DU-E6001",
       "kind": "mid_drive",
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

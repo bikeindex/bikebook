@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gobike/2023/trio_crossover",
   "manufacturer": "GOBike",
   "model": "TRIO Crossover",
@@ -17,7 +17,7 @@
   "first_year": 2023,
   "years": {
     "2026": {
-      "original_msrp": 99900,
+      "original_msrp": 149900,
       "original_msrp_currency": "USD",
       "colorways": [
         {
@@ -76,8 +76,10 @@
       "drive_wheel": "front",
       "manufacturer": "GOBike",
       "kind": "hub_drive",
-      "battery_size": 768,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 768,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -102,6 +104,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 200
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -116,8 +124,7 @@
           "width": 965,
           "height": 686
         },
-        "total_weight": 29.5,
-        "max_weight_rider": 200
+        "total_weight": 29.5
       }
     }
   ],

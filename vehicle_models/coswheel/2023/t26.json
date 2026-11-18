@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/coswheel/2023/t26",
   "manufacturer": "Coswheel",
   "model": "T26",
@@ -25,8 +25,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061-T6 Aluminum",
-    "max_weight_total": 150
+    "material_detail": "6061-T6 Aluminum"
   },
   "suspension": {
     "front": {
@@ -74,10 +73,12 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 1200,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 Cells",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1200,
+        "chemistry": "li-ion",
+        "cells": "18650",
+        "charging_time": 480
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "max_torque": 80,
@@ -102,6 +103,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -166,10 +173,6 @@
       "description": "Easy Read LCD Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "48V 28A"
-    },
-    {
       "type": "fork",
       "type_detail": "Front Suspension",
       "position": [
@@ -228,6 +231,11 @@
         "width": 101.6,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V 28A"
     },
     {
       "type": "unknown",

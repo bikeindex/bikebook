@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2019/kid_200",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Kid",
+  "model_group": "Kid",
   "model": "Kid 200",
   "model_configuration": "complete",
   "type": "bike",
@@ -32,9 +32,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 30,
-    "gross_weight_rating": 40
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -67,6 +65,16 @@
         "rear"
       ],
       "caliper_mount": "Brake Bosses"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 30
+    },
+    {
+      "load": "gross",
+      "weight": 40
     }
   ],
   "sizes": [

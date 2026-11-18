@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2016/jet_16",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Jet",
+  "model_group": "Jet",
   "model": "Jet 16",
   "model_configuration": "complete",
   "type": "bike",
@@ -56,9 +56,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "Hi-Tensile Steel",
-    "max_weight_total": 25,
-    "gross_weight_rating": 36
+    "material_detail": "Hi-Tensile Steel"
   },
   "wheels": [
     {
@@ -85,6 +83,16 @@
       "position": [
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 36
     }
   ],
   "sizes": [

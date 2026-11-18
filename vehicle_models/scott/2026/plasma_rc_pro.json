@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2026/plasma_rc_pro",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Plasma",
+  "model_group": "Plasma",
   "model": "Plasma RC Pro",
   "model_configuration": "complete",
   "markets": [
@@ -86,9 +86,7 @@
     "bottom_bracket": {
       "shell": "press fit",
       "spindle": "24mm"
-    },
-    "max_weight_total": 110,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -128,6 +126,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

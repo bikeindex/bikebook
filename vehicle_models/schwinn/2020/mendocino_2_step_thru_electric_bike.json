@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/schwinn/2020/mendocino_2_step_thru_electric_bike",
   "manufacturer": "Schwinn",
-  "vehicle_model_group": "Mendocino",
+  "model_group": "Mendocino",
   "model": "Mendocino 2 Step-Thru Electric Bike",
   "model_configuration": "complete",
   "type": "bike",
@@ -79,8 +79,7 @@
       "width": 68,
       "spindle": "square taper"
     },
-    "headset": "EC34/28.6-26tpi | EC34/30",
-    "max_weight_total": 136
+    "headset": "EC34/28.6-26tpi | EC34/30"
   },
   "wheels": [
     {
@@ -137,8 +136,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 313,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 313,
+        "charging_time": 300
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -160,9 +161,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 24.95
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 24.95
+    },
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size"

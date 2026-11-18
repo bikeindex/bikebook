@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/myroon_pro",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Myroon",
+  "model_group": "Myroon",
   "model": "Myroon Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -39,9 +39,7 @@
   },
   "frame": {
     "material": "carbon",
-    "cable_routing": "stealth",
-    "max_weight_total": 107,
-    "gross_weight_rating": 120
+    "cable_routing": "stealth"
   },
   "suspension": {
     "front": {
@@ -92,6 +90,16 @@
         "rear"
       ],
       "rotor_diameter": 180
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 107
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

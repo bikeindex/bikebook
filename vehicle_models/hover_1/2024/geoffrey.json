@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hover_1/2024/geoffrey",
   "manufacturer": "Hover-1",
   "model": "Geoffrey",
@@ -56,7 +56,9 @@
   ],
   "motors": [
     {
-      "battery_size": 29,
+      "battery": {
+        "capacity": 29
+      },
       "rated_power": 80,
       "operating_modes": [
         {
@@ -66,6 +68,12 @@
           "range_claimed": 3
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 36
     }
   ],
   "sizes": [
@@ -78,7 +86,6 @@
           "height": 826
         },
         "total_weight": 4.8,
-        "max_weight_rider": 36,
         "rider_age_min": 5
       }
     }

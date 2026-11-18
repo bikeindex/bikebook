@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2026/koa_rev_3",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Koa Rev",
+  "model_group": "Koa Rev",
   "model": "Koa Rev 3",
   "model_configuration": "complete",
   "type": "bike",
@@ -111,10 +111,15 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 Cells",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion",
+        "cells": "21700"
+      },
       "rated_power": 500,
       "peak_power": 770,
       "max_torque": 65,
@@ -139,12 +144,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "18\" Frame",
       "geometry": {
         "standover": 828,
-        "max_weight_rider": 159,
         "rider_height_min": 1676,
         "rider_height_max": 1930
       }

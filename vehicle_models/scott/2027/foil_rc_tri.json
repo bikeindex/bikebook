@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2027/foil_rc_tri",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Foil",
+  "model_group": "Foil",
   "model": "Foil RC TRI",
   "model_configuration": "complete",
   "type": "bike",
@@ -79,9 +79,7 @@
       "shell": "press fit",
       "width": 86.5,
       "spindle": "DUB"
-    },
-    "max_weight_total": 112,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -127,6 +125,16 @@
         "rear"
       ],
       "rotor_diameter": 140
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 112
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

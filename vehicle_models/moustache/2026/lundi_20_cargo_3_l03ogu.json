@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2026/lundi_20_cargo_3_l03ogu",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Lundi 20 Cargo",
+  "model_group": "Lundi 20 Cargo",
   "model": "Lundi 20 Cargo 3 L03OGU",
   "model_configuration": "complete",
   "type": "bike",
@@ -53,15 +53,27 @@
       {
         "type": "bottle",
         "location": "seat_tube"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "front"
+        ],
+        "interface": "mik"
       }
     ],
     "bottom_bracket": {
       "spindle": "ISIS"
     },
     "seatpost_diameter": 34.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 167,
-    "gross_weight_rating": 200
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -135,12 +147,13 @@
       "model_group": "Cargo Line",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 545,
-      "battery_options": [
-        800
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "800 Wh: +£600",
+      "battery": {
+        "capacity": 545,
+        "capacity_options": [
+          800
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -157,9 +170,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 70
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 70
+    },
+    {
+      "load": "payload",
+      "weight": 167
+    },
+    {
+      "load": "gross",
+      "weight": 200
+    }
+  ],
   "sizes": [
     {
       "name": "390",

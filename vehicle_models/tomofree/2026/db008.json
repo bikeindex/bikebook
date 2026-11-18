@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tomofree/2026/db008",
   "manufacturer": "Tomofree",
   "model": "DB008",
@@ -31,8 +31,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -56,9 +55,11 @@
   "motors": [
     {
       "water_rating": "IPX4",
-      "battery_size": 300,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 300,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "peak_power": 250,
       "operating_modes": [
         {
@@ -68,6 +69,12 @@
           "max_slope": 20
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

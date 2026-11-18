@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2023/j_on",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "J",
+  "model_group": "J",
   "model": "J. on",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,8 +54,7 @@
       }
     ],
     "cable_routing": "stealth",
-    "seatpost_diameter": 31.6,
-    "gross_weight_rating": 135
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -133,8 +132,10 @@
       "model": "BDU336Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -148,6 +149,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 135
     }
   ],
   "sizes": [

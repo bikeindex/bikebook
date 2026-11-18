@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/decathlon/2026/rockrider_e_actv_900_low_step",
   "manufacturer": "Decathlon",
-  "vehicle_model_group": "Rockrider E-ACTV",
+  "model_group": "Rockrider E-ACTV",
   "model": "Rockrider E-ACTV 900 Low Step",
   "model_configuration": "complete",
   "type": "bike",
@@ -43,8 +43,7 @@
         "location": "downtube"
       }
     ],
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 150
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -79,8 +78,10 @@
   ],
   "motors": [
     {
-      "battery_size": 694,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 694,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 65,
       "operating_modes": [
@@ -93,6 +94,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

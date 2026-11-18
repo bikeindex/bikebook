@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/macina_aera_fs_elite_lfc",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Macina Aera",
+  "model_group": "Macina Aera",
   "model": "Macina Aera FS Elite LFC",
   "model_configuration": "complete",
   "type": "bike",
@@ -44,9 +44,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "headset": "ZS44/28.6 | ZS56/40",
-    "max_weight_total": 110,
-    "gross_weight_rating": 140
+    "headset": "ZS44/28.6 | ZS56/40"
   },
   "suspension": {
     "front": {
@@ -125,8 +123,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 100,
@@ -140,6 +140,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

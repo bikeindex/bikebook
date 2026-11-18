@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/totem/2024/volcano_2_0",
   "manufacturer": "Totem",
-  "vehicle_model_group": "Volcano",
+  "model_group": "Volcano",
   "model": "Volcano 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -58,8 +58,7 @@
     "bottom_bracket": {
       "spindle": "square taper"
     },
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 136
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {
@@ -109,9 +108,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "battery_size": 557,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 cells",
+      "battery": {
+        "capacity": 557,
+        "chemistry": "li-ion",
+        "cells": "18650"
+      },
       "rated_power": 500,
       "max_torque": 65,
       "operating_modes": [
@@ -133,6 +134,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

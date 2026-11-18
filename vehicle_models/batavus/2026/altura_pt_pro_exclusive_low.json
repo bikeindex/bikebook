@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/batavus/2026/altura_pt_pro_exclusive_low",
   "manufacturer": "Batavus",
-  "vehicle_model_group": "Altura",
+  "model_group": "Altura",
   "model": "Altura PT Pro Exclusive LOW",
   "model_configuration": "complete",
   "type": "bike",
@@ -64,8 +64,7 @@
     "bottom_bracket": {
       "spindle": "BNI"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 130
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -115,8 +114,10 @@
       "model": "BDU346Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -130,6 +131,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 130
     }
   ],
   "sizes": [

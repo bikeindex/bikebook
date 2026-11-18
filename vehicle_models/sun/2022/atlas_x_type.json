@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sun/2022/atlas_x_type",
   "manufacturer": "Sun",
-  "vehicle_model_group": "Atlas",
+  "model_group": "Atlas",
   "model": "Atlas X-Type",
   "model_configuration": "complete",
   "type": "bike",
@@ -93,12 +93,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "18.5\"",
       "geometry": {
-        "total_weight": 20.4,
-        "max_weight_rider": 136
+        "total_weight": 20.4
       }
     }
   ],

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2024/roadmachine_01_amp_one",
   "manufacturer": "BMC",
-  "vehicle_model_group": "Roadmachine AMP",
+  "model_group": "Roadmachine AMP",
   "model": "Roadmachine 01 AMP ONE",
   "model_configuration": "complete",
   "markets": [
@@ -145,9 +145,7 @@
     "bottom_bracket": {
       "spindle": "ISIS",
       "spindle_length": 135
-    },
-    "max_weight_total": 107,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -211,8 +209,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 135,
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "peak_power": 300,
       "max_torque": 50,
       "operating_modes": [
@@ -226,6 +226,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 107
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

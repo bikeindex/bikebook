@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2026/kai_gravity_board",
   "manufacturer": "Jetson",
   "model": "Kai Gravity Board",
@@ -36,7 +36,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "charging_time": 300,
+      "battery": {
+        "charging_time": 300
+      },
       "rated_power": 300,
       "operating_modes": [
         {
@@ -46,6 +48,12 @@
           "max_slope": 10
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
     }
   ],
   "sizes": [
@@ -58,7 +66,6 @@
           "height": 180
         },
         "total_weight": 6.8,
-        "max_weight_rider": 100,
         "rider_age_min": 12
       }
     }

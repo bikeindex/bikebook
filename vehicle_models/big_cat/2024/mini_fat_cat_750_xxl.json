@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/big_cat/2024/mini_fat_cat_750_xxl",
   "manufacturer": "Big Cat Bikes",
   "model": "Mini Fat Cat 750 XXL",
@@ -82,8 +82,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 134
+    ]
   },
   "suspension": {
     "front": {}
@@ -122,9 +121,11 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "operating_modes": [
@@ -143,6 +144,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 134
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/marin/2026/dsx_e_int",
   "manufacturer": "Marin Bikes",
-  "vehicle_model_group": "DSX",
+  "model_group": "DSX",
   "model": "DSX E - INT",
   "model_configuration": "complete",
   "markets": [
@@ -155,8 +155,10 @@
       "model_group": "Performance Line Sprint",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 55,

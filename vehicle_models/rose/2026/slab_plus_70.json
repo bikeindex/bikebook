@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rose/2026/slab_plus_70",
   "manufacturer": "ROSE",
-  "vehicle_model_group": "Slab Plus",
+  "model_group": "Slab Plus",
   "model": "Slab Plus 70",
   "model_configuration": "complete",
   "type": "bike",
@@ -79,8 +79,7 @@
     "material": "carbon",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 130
+    }
   },
   "suspension": {
     "front": {
@@ -142,8 +141,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -157,6 +158,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 130
     }
   ],
   "sizes": [

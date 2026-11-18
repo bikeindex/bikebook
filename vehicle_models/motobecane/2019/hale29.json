@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/motobecane/2019/hale29",
   "manufacturer": "Motobecane",
-  "vehicle_model_group": "HAL eBoost",
+  "model_group": "HAL eBoost",
   "model": "HALe29",
   "model_configuration": "complete",
   "type": "bike",
@@ -99,8 +99,10 @@
       "kind": "mid_drive",
       "spindle": "Shimano E8000",
       "sensor_cadence": true,
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 500,
       "max_torque": 60,

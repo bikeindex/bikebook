@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fahrbike/2022/cruz",
   "manufacturer": "Fahrbike",
   "model": "Cruz",
@@ -33,8 +33,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 150
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -82,10 +81,12 @@
     {
       "sensor_cadence": true,
       "water_rating": "IPX5",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 21700 50E Cell",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700 50E",
+        "charging_time": 480
+      },
       "rated_power": 500,
       "max_torque": 80,
       "operating_modes": [
@@ -108,6 +109,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

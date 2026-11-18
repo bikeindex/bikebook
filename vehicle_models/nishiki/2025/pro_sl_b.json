@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/nishiki/2025/pro_sl_b",
   "manufacturer": "Nishiki",
-  "vehicle_model_group": "Pro SL",
+  "model_group": "Pro SL",
   "model": "Pro SL-B",
   "model_configuration": "complete",
   "type": "bike",
@@ -74,8 +74,10 @@
       "manufacturer": "Yamaha",
       "model": "PW-ST",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 70,
       "operating_modes": [

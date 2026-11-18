@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vtuvia/2026/e_cozy",
   "manufacturer": "Vtuvia",
   "model": "E-Cozy",
@@ -57,8 +57,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "top_tube": "step_through",
-    "folding": "half_fold",
-    "max_weight_total": 204
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -98,9 +97,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 85,
@@ -124,6 +125,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [
@@ -203,10 +210,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V 25A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "3.5\"Full Color,High Brightness,Adjustable Angle"
     },
     {
@@ -263,6 +266,11 @@
       "type": "unknown",
       "type_detail": "Reverse function",
       "description": "Yes"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V 25A"
     },
     {
       "type": "unknown",

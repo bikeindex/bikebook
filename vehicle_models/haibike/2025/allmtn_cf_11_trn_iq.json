@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/haibike/2025/allmtn_cf_11_trn_iq",
   "manufacturer": "Haibike",
-  "vehicle_model_group": "ALLMTN",
+  "model_group": "ALLMTN",
   "model": "ALLMTN CF 11 TRN/IQ",
   "model_configuration": "complete",
   "type": "bike",
@@ -61,8 +61,7 @@
     "bottom_bracket": {
       "spindle": "Pinion Standard"
     },
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 135
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -123,7 +122,9 @@
       "model": "MGU",
       "kind": "mid_drive",
       "spindle": "Pinion Standard",
-      "battery_size": 800,
+      "battery": {
+        "capacity": 800
+      },
       "peak_power": 800,
       "max_torque": 85,
       "operating_modes": [
@@ -136,6 +137,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 135
     }
   ],
   "sizes": [

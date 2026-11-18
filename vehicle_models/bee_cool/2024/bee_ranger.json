@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bee_cool/2024/bee_ranger",
   "manufacturer": "Bee Cool",
-  "vehicle_model_group": "Bee Ranger",
+  "model_group": "Bee Ranger",
   "model": "Bee Ranger",
   "model_configuration": "complete",
   "type": "bike",
@@ -175,10 +175,14 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 Cells",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "21700"
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "max_torque": 110,

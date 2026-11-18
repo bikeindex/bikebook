@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/talaria/2026/x3_mini",
   "manufacturer": "Talaria",
-  "vehicle_model_group": "X3 Mini",
+  "model_group": "X3 Mini",
   "model": "X3 Mini",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -62,9 +62,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 2400,
-      "battery_info": "40Ah",
-      "charging_time": 150,
+      "battery": {
+        "capacity": 2400,
+        "charging_time": 150
+      },
       "rated_power": 2000,
       "peak_power": 5000,
       "max_torque": 34,

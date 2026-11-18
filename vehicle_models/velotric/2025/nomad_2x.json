@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velotric/2025/nomad_2x",
   "manufacturer": "Velotric",
-  "vehicle_model_group": "Nomad",
+  "model_group": "Nomad",
   "model": "Nomad 2X",
   "model_configuration": "complete",
   "type": "bike",
@@ -176,11 +176,14 @@
         "type": "fender"
       },
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 254
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -250,11 +253,19 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271, ISO 4210, UL 2580",
+      "certifications": [
+        "UL 2849",
+        "UL 2271",
+        "UL 2580",
+        "ISO 4210"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 802,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung/LG 21700 cell, Certificated by UL2580",
+      "battery": {
+        "capacity": 802,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "Samsung/LG 21700"
+      },
       "rated_power": 750,
       "max_torque": 105,
       "operating_modes": [
@@ -291,6 +302,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 254
     }
   ],
   "sizes": [

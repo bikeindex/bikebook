@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/stereo_one22_rookie",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Stereo",
+  "model_group": "Stereo",
   "model": "Stereo ONE22 Rookie",
   "model_configuration": "complete",
   "type": "bike",
@@ -35,9 +35,7 @@
       "spindle": "24mm"
     },
     "headset": "ZS44/28.6 | ZS56/40",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 65,
-    "gross_weight_rating": 80
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -102,6 +100,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 65
+    },
+    {
+      "load": "gross",
+      "weight": 80
+    }
+  ],
   "sizes": [
     {
       "name": "XS",
@@ -119,7 +127,6 @@
         "stem_length": 50,
         "crank_length": 170,
         "total_weight": 15,
-        "max_weight_rider": 65,
         "extra_measurements": {
           "bb_height_to_hub": 20,
           "protrusion_height_80mm": 699
@@ -141,7 +148,6 @@
         "handlebar_width": 760,
         "stem_length": 50,
         "crank_length": 170,
-        "max_weight_rider": 65,
         "extra_measurements": {
           "bb_height_to_hub": 20,
           "protrusion_height_80mm": 718

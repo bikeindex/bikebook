@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2026/let_s_fold_250w",
   "manufacturer": "Reid",
-  "vehicle_model_group": "Let's Fold",
+  "model_group": "Let's Fold",
   "model": "Let's Fold 250W",
   "model_configuration": "complete",
   "type": "bike",
@@ -49,8 +49,8 @@
     "bottom_bracket": {
       "spindle": "square taper"
     },
-    "seatpost_clamp_diameter": 40.8,
-    "max_weight_total": 137
+    "seatpost_diameter": 33.9,
+    "seatpost_clamp_diameter": 40.8
   },
   "wheels": [
     {
@@ -102,8 +102,12 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "EN50604",
-      "battery_size": 460,
+      "certifications": [
+        "EN 50604"
+      ],
+      "battery": {
+        "capacity": 460
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -118,9 +122,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 15
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 15
+    },
+    {
+      "load": "payload",
+      "weight": 137
+    }
+  ],
   "sizes": [
     {
       "name": "20\"",
@@ -254,7 +265,10 @@
     },
     {
       "type": "seatpost",
-      "description": "Alloy 33.9mm 550mm"
+      "description": "Alloy 33.9mm 550mm",
+      "dimensions": {
+        "diameter": 33.9
+      }
     },
     {
       "type": "seatpost_clamp",

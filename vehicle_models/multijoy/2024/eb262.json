@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/multijoy/2024/eb262",
   "manufacturer": "Multijoy",
   "model": "EB262",
@@ -57,8 +57,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 166
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -92,10 +91,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
-      "battery_size": 281,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 281,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 350,
       "peak_power": 450,
       "max_torque": 40,
@@ -117,6 +120,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 166
     }
   ],
   "sizes": [

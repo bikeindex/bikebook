@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hi_power/2026/trailblazer",
   "manufacturer": "Hi Power Cycles",
-  "vehicle_model_group": "Trailblazer",
+  "model_group": "Trailblazer",
   "model": "Trailblazer",
   "model_configuration": "complete",
   "type": "bike",
@@ -121,7 +121,9 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "mid_drive",
-      "battery_size": 480,
+      "battery": {
+        "capacity": 480
+      },
       "rated_power": 750,
       "max_torque": 100,
       "operating_modes": [

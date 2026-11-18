@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gazelle/2026/avignon_c380_us",
   "manufacturer": "Gazelle",
   "model": "Avignon C380",
@@ -70,7 +70,16 @@
     }
   },
   "frame": {
-    "material": "aluminum"
+    "material": "aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ]
   },
   "suspension": {
     "front": {
@@ -129,9 +138,11 @@
       "model": "BDU346Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
-      "charging_time": 294,
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion",
+        "charging_time": 294
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,

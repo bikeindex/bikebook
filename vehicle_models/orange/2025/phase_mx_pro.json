@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/orange/2025/phase_mx_pro",
   "manufacturer": "Orange Bikes",
-  "vehicle_model_group": "Phase MX",
+  "model_group": "Phase MX",
   "model": "Phase MX Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -122,10 +122,14 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 630,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 630,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [

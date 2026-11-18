@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biria/2023/electric_easy_boarding",
   "manufacturer": "Biria",
   "model": "Electric Easy Boarding",
@@ -90,9 +90,11 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 350,
       "operating_modes": [
         {

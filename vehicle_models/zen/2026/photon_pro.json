@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/zen/2026/photon_pro",
   "manufacturer": "Zen",
-  "vehicle_model_group": "Photon",
+  "model_group": "Photon",
   "model": "Photon Pro",
   "model_configuration": "complete",
   "markets": [
@@ -52,8 +52,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 250
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -95,10 +94,14 @@
       "manufacturer": "Ananda",
       "kind": "mid_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
-      "battery_size": 1040,
-      "battery_chemistry": "li-ion",
-      "battery_info": "52V 20Ah",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 1040,
+        "voltage": 52,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 160,
       "operating_modes": [
@@ -137,6 +140,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 250
     }
   ],
   "sizes": [

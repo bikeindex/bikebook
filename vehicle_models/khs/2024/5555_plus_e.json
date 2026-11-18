@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/khs/2024/5555_plus_e",
   "manufacturer": "KHS Bicycles",
   "model": "5555 Plus E",
@@ -132,8 +132,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 655,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 655,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 80,
       "operating_modes": [

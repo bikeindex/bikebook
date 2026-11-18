@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2022/fold_sport_hybrid_500",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Fold Hybrid",
+  "model_group": "Fold Hybrid",
   "model": "Fold Sport Hybrid 500",
   "model_configuration": "complete",
   "type": "bike",
@@ -44,9 +44,7 @@
       "spindle": "BNI"
     },
     "seatpost_diameter": 34.9,
-    "seatpost_clamp_diameter": 40,
-    "max_weight_total": 99,
-    "gross_weight_rating": 125
+    "seatpost_clamp_diameter": 40
   },
   "wheels": [
     {
@@ -105,8 +103,10 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,
@@ -120,6 +120,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 99
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/decathlon/2026/elops_900_e_low_step",
   "manufacturer": "Decathlon",
   "model": "Elops 900 E Low Step",
@@ -33,8 +33,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 125
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -74,8 +73,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 417,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 417,
+        "chemistry": "li-ion"
+      },
       "peak_power": 250,
       "max_torque": 35,
       "operating_modes": [
@@ -88,6 +89,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

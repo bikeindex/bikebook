@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/troxus/2026/lynx_plus_iq",
   "manufacturer": "Troxus",
-  "vehicle_model_group": "Lynx Plus",
+  "model_group": "Lynx Plus",
   "model": "Lynx Plus iQ",
   "model_configuration": "complete",
   "type": "bike",
@@ -67,13 +67,21 @@
     "material": "aluminum",
     "material_detail": "6061-T6 Aluminum",
     "top_tube": "step_through",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
     "bottom_bracket": {
       "spindle": "square taper"
     },
     "headset": "ZS44/28.6 | ZS44/30",
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 35,
-    "max_weight_total": 181
+    "seatpost_clamp_diameter": 35
   },
   "suspension": {
     "front": {
@@ -138,10 +146,14 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung® Cells",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "max_torque": 86,
       "operating_modes": [
@@ -165,6 +177,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

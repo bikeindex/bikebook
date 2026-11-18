@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2025/accord",
   "manufacturer": "GOTRAX",
   "model": "Accord",
@@ -91,8 +91,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 120
+    ]
   },
   "suspension": {
     "front": {}
@@ -127,10 +126,14 @@
   "motors": [
     {
       "sensor_speed": "spoke_magnet",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 374,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 374,
+        "charging_time": 420
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -154,12 +157,21 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "payload",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 29.9,
-        "max_weight_rider": 120
+        "total_weight": 29.9
       }
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/heybike/2022/explore",
   "manufacturer": "Heybike",
   "model": "Explore",
@@ -40,8 +40,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 181
+    "material": "steel"
   },
   "wheels": [
     {
@@ -65,9 +64,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -85,6 +86,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

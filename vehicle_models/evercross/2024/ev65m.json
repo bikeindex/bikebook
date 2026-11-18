@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2024/ev65m",
   "manufacturer": "Evercross",
   "model": "EV65M",
@@ -38,8 +38,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 75
+    "material": "steel"
   },
   "wheels": [
     {
@@ -52,7 +51,9 @@
   ],
   "motors": [
     {
-      "battery_size": 374,
+      "battery": {
+        "capacity": 374
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -62,6 +63,12 @@
           "range_claimed": 20
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 75
     }
   ],
   "sizes": [

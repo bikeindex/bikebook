@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dengfu/2026/e97_folding",
   "manufacturer": "Dengfu",
   "model": "E97 Folding",
@@ -110,9 +110,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung cells",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 250,
       "max_torque": 45,
       "operating_modes": [

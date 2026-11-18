@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2024/judd_rev_2",
   "manufacturer": "Retrospec",
   "model": "Judd Rev 2",
@@ -119,10 +119,15 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 cells",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion",
+        "cells": "18650"
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -145,6 +150,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -155,7 +166,6 @@
           "width": 508,
           "height": 711
         },
-        "max_weight_rider": 159,
         "rider_height_min": 1600,
         "rider_height_max": 1905
       }

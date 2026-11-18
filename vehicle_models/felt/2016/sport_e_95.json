@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/felt/2016/sport_e_95",
   "manufacturer": "Felt",
-  "vehicle_model_group": "Sport-e",
+  "model_group": "Sport-e",
   "model": "Sport-e 95",
   "model_configuration": "complete",
   "type": "bike",
@@ -112,8 +112,10 @@
       "manufacturer": "Bosch",
       "model": "Performance",
       "kind": "mid_drive",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {

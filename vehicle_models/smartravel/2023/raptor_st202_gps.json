@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/smartravel/2023/raptor_st202_gps",
   "manufacturer": "Smartravel",
-  "vehicle_model_group": "Raptor",
+  "model_group": "Raptor",
   "model": "Raptor ST202 GPS",
   "model_configuration": "complete",
   "type": "bike",
@@ -44,8 +44,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 160
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -82,7 +81,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 1296,
+      "battery": {
+        "capacity": 1296
+      },
       "rated_power": 1200,
       "peak_power": 1500,
       "max_torque": 86,
@@ -100,9 +101,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 158.76
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 158.76
+    },
+    {
+      "load": "payload",
+      "weight": 160
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

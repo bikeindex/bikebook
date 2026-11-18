@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/yuba/2021/mundo_lux",
   "manufacturer": "Yuba",
-  "vehicle_model_group": "Mundo",
+  "model_group": "Mundo",
   "model": "Mundo Lux",
   "model_configuration": "complete",
   "type": "cargo_bike_rear",
@@ -55,8 +55,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 249
+    "material": "steel"
   },
   "wheels": [
     {
@@ -84,6 +83,12 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 249
     }
   ],
   "sizes": [

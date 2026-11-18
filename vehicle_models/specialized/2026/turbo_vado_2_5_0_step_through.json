@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2026/turbo_vado_2_5_0_step_through",
   "manufacturer": "Specialized",
-  "vehicle_model_group": "Turbo Vado",
+  "model_group": "Turbo Vado",
   "model": "Turbo Vado 2 5.0 Step-Through",
   "model_configuration": "complete",
   "type": "bike",
@@ -90,7 +90,11 @@
     "top_tube": "step_through",
     "mounts": [
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
     "bottom_bracket": {
@@ -164,10 +168,15 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP56",
-      "battery_size": 710,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 710,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 560,
       "max_torque": 90,
@@ -183,12 +192,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27,
-    "attributes": [
-      "MIK HD interface"
-    ]
-  },
+  "weight_limits": [
+    {
+      "load": "rear_rack",
+      "weight": 27
+    }
+  ],
   "sizes": [
     {
       "name": "S",

@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/isinwheel/2024/v10",
   "manufacturer": "iSinwheel",
+  "model_group": "V10",
   "model": "V10",
   "model_configuration": "complete",
   "type": "skateboard",
@@ -33,8 +34,7 @@
   },
   "frame": {
     "material": "wood",
-    "material_detail": "8 maple + 1 Bamboo + 1 Fiber Glass",
-    "max_weight_total": 120
+    "material_detail": "8 maple + 1 Bamboo + 1 Fiber Glass"
   },
   "wheels": [
     {
@@ -48,10 +48,12 @@
   "motors": [
     {
       "water_rating": "IP54",
-      "battery_size": 583,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 583,
+        "chemistry": "li-ion",
+        "cells": "21700",
+        "charging_time": 360
+      },
       "rated_power": 1500,
       "operating_modes": [
         {
@@ -65,10 +67,12 @@
     },
     {
       "water_rating": "IP54",
-      "battery_size": 583,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 583,
+        "chemistry": "li-ion",
+        "cells": "21700",
+        "charging_time": 360
+      },
       "rated_power": 1500,
       "operating_modes": [
         {
@@ -79,6 +83,12 @@
           "max_slope": 25
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

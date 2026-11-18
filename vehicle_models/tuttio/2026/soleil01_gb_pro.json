@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tuttio/2026/soleil01_gb_pro",
   "manufacturer": "Tuttio",
-  "vehicle_model_group": "Soleil01",
+  "model_group": "Soleil01",
   "model": "Soleil01 GB PRO",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -34,8 +34,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 120
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -71,9 +70,11 @@
   "motors": [
     {
       "water_rating": "IPX6",
-      "battery_size": 1296,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1296,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "peak_power": 3360,
       "max_torque": 220,
       "operating_modes": [
@@ -88,6 +89,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -158,10 +165,6 @@
       "description": "Black & White Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "48V 70A"
-    },
-    {
       "type": "fork",
       "type_detail": "Front Suspension",
       "position": [
@@ -222,6 +225,11 @@
       "type": "unknown",
       "type_detail": "Hydraulic Suspension",
       "description": "Hydraulic Suspension"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V 70A"
     },
     {
       "type": "unknown",

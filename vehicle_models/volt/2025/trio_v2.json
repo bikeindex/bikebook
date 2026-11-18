@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/volt/2025/trio_v2",
   "manufacturer": "Volt Bike",
-  "vehicle_model_group": "Trio",
+  "model_group": "Trio",
   "model": "Trio V2",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -47,8 +47,7 @@
     "bottom_bracket": {
       "width": 100
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 136
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -105,8 +104,10 @@
       "drive_wheel": "front",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 80,
@@ -135,6 +136,12 @@
     "length": 381,
     "width": 457
   },
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "17.5\"",

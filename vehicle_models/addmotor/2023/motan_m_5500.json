@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/addmotor/2023/motan_m_5500",
   "manufacturer": "Addmotor",
-  "vehicle_model_group": "Motan",
+  "model_group": "Motan",
   "model": "Motan M-5500",
   "model_configuration": "complete",
   "type": "bike",
@@ -52,8 +52,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 159
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -102,9 +101,11 @@
       "manufacturer": "Addmotor",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 1250,
       "operating_modes": [
         {
@@ -124,6 +125,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tripper/2020/falcon_ii",
   "manufacturer": "Tripper",
-  "vehicle_model_group": "Falcon II",
+  "model_group": "Falcon II",
   "model": "Falcon II",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,8 +42,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 227
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -80,8 +79,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "operating_modes": [
@@ -101,6 +102,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [

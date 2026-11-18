@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/speedster_gravel_10",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Speedster",
+  "model_group": "Speedster",
   "model": "Speedster Gravel 10",
   "model_configuration": "complete",
   "markets": [
@@ -88,9 +88,7 @@
       "shell": "press fit",
       "spindle": "24mm"
     },
-    "headset": "IS42/28.6 | IS52/40",
-    "max_weight_total": 110,
-    "gross_weight_rating": 120
+    "headset": "IS42/28.6 | IS52/40"
   },
   "wheels": [
     {
@@ -129,6 +127,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

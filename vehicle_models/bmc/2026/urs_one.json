@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2026/urs_one",
   "manufacturer": "BMC",
-  "vehicle_model_group": "URS",
+  "model_group": "URS",
   "model": "URS ONE",
   "model_configuration": "complete",
   "markets": [
@@ -104,9 +104,7 @@
     "bottom_bracket": {
       "shell": "press fit",
       "spindle": "DUB"
-    },
-    "max_weight_total": 110,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -164,6 +162,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

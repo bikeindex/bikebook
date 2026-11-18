@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gyroor/2026/gt73_pro",
   "manufacturer": "Gyroor",
-  "vehicle_model_group": "GT73",
+  "model_group": "GT73",
   "model": "GT73 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -35,8 +35,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -80,10 +79,14 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IP65",
-      "battery_size": 2184,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 2184,
+        "charging_time": 360
+      },
       "rated_power": 1500,
       "peak_power": 3000,
       "max_torque": 338,
@@ -109,6 +112,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

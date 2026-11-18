@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kingbull/2025/literider_2_0",
   "manufacturer": "KingBull",
   "model": "Literider 2.0",
@@ -50,8 +50,7 @@
     "material": "aluminum",
     "folding": "half_fold",
     "cable_routing": "internal",
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 181
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {
@@ -102,11 +101,16 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2580",
+      "certifications": [
+        "UL 2580"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 cell, Certificated by UL 2580",
+      "battery": {
+        "capacity": 720,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "18650"
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -132,9 +136,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 68.04
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 68.04
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -225,10 +236,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "Custom bafang 750W brushless hub motor"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V/22A"
     },
     {
       "type": "e_vehicle_remote",
@@ -343,6 +350,11 @@
       "type_detail": "Inner Tubes",
       "manufacturer": "CST",
       "description": "CST 20\"*4.0\", Schrader"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V/22A"
     },
     {
       "type": "unknown",

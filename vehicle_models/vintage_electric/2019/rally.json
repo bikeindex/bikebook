@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vintage_electric/2019/rally",
   "manufacturer": "Vintage Electric",
   "model": "Rally",
@@ -106,8 +106,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 500,
-      "charging_time": 120,
+      "battery": {
+        "capacity": 500,
+        "charging_time": 120
+      },
       "rated_power": 750,
       "operating_modes": [
         {

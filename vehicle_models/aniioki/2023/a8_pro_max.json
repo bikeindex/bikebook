@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aniioki/2023/a8_pro_max",
   "manufacturer": "Aniioki",
-  "vehicle_model_group": "A8 Pro Max",
+  "model_group": "A8 Pro Max",
   "model": "A8 Pro Max",
   "model_configuration": "complete",
   "type": "bike",
@@ -116,11 +116,13 @@
   ],
   "motors": [
     {
-      "battery_size": 3640,
-      "battery_options": [
-        2880
-      ],
-      "charging_time": 600,
+      "battery": {
+        "capacity": 3640,
+        "capacity_options": [
+          2880
+        ],
+        "charging_time": 600
+      },
       "rated_power": 1600,
       "peak_power": 2000,
       "max_torque": 120,

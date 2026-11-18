@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velotric/2023/t1",
   "manufacturer": "Velotric",
-  "vehicle_model_group": "T1",
+  "model_group": "T1",
   "model": "T1",
   "model_configuration": "complete",
   "type": "bike",
@@ -119,8 +119,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 150
+    "seatpost_diameter": 30.9
   },
   "wheels": [
     {
@@ -175,10 +174,13 @@
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX6",
-      "battery_size": 353,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 21700",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 353,
+        "voltage": 36,
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700",
+        "charging_time": 360
+      },
       "rated_power": 350,
       "peak_power": 600,
       "max_torque": 45,
@@ -201,6 +203,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

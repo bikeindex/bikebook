@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/macina_joy",
   "manufacturer": "KTM",
   "model": "Macina JOY",
@@ -49,9 +49,7 @@
       }
     ],
     "cable_routing": "stealth",
-    "headset": "ZS44/28.6 | ZS56/40",
-    "max_weight_total": 118,
-    "gross_weight_rating": 142
+    "headset": "ZS44/28.6 | ZS56/40"
   },
   "suspension": {
     "front": {
@@ -90,8 +88,10 @@
       "model": "BDU306Y",
       "model_group": "Hub Line",
       "kind": "hub_drive",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 400,
       "max_torque": 45,
@@ -105,6 +105,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 118
+    },
+    {
+      "load": "gross",
+      "weight": 142
     }
   ],
   "sizes": [

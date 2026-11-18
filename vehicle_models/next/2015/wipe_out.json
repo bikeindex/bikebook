@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/next/2015/wipe_out",
   "manufacturer": "Next",
   "model": "Wipe Out",
@@ -31,6 +31,14 @@
             {
               "gtin": "087876110439",
               "size": "One Size"
+            },
+            {
+              "gtin": "087876101772"
+            },
+            {
+              "sku": "8110-13",
+              "gtin": "087876110132",
+              "size": "One Size"
             }
           ]
         }
@@ -41,8 +49,7 @@
     "2015": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 48
+    "material": "steel"
   },
   "wheels": [
     {
@@ -69,6 +76,12 @@
       "position": [
         "front"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 48
     }
   ],
   "sizes": [
@@ -128,11 +141,6 @@
       "dimensions": {
         "diameter": 406
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Frame size field",
-      "description": "20 in"
     },
     {
       "type": "unknown",

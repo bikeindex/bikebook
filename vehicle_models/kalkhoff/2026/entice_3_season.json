@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kalkhoff/2026/entice_3_season",
   "manufacturer": "Kalkhoff",
-  "vehicle_model_group": "Entice",
+  "model_group": "Entice",
   "model": "Entice 3 Season",
   "model_configuration": "complete",
   "type": "bike",
@@ -69,11 +69,18 @@
   },
   "frame": {
     "material": "steel",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ],
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 122,
-    "gross_weight_rating": 150
+    }
   },
   "suspension": {
     "front": {
@@ -172,8 +179,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 540,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 540,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -189,9 +198,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 27
+    },
+    {
+      "load": "payload",
+      "weight": 122
+    },
+    {
+      "load": "gross",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "Diamond M",

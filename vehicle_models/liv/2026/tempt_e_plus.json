@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/liv/2026/tempt_e_plus",
   "manufacturer": "Liv",
-  "vehicle_model_group": "Tempt",
+  "model_group": "Tempt",
   "model": "Tempt E+",
   "model_configuration": "complete",
   "type": "bike",
@@ -170,8 +170,10 @@
       "model": "SyncDrive Sport 2",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 430,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 430,
+        "chemistry": "li-ion"
+      },
       "max_torque": 75,
       "operating_modes": [
         {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pivot/2026/shuttle_sl_am_team_xx_eagle_transmission",
   "manufacturer": "Pivot",
-  "vehicle_model_group": "Shuttle SL-AM",
+  "model_group": "Shuttle SL-AM",
   "model": "Shuttle SL-AM Team XX Eagle Transmission",
   "model_configuration": "complete",
   "type": "bike",
@@ -121,8 +121,10 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,

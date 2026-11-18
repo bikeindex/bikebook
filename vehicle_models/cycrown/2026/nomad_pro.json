@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cycrown/2026/nomad_pro",
   "manufacturer": "Cycrown",
   "model": "Nomad Pro",
@@ -39,8 +39,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -78,8 +77,10 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 960,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 960,
+        "charging_time": 300
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "operating_modes": [
@@ -98,6 +99,12 @@
           "range_claimed": 48
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

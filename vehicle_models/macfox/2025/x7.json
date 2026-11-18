@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/macfox/2025/x7",
   "manufacturer": "Macfox",
   "model": "X7",
@@ -90,10 +90,15 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 624,
-      "battery_info": "48V 13Ah",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 624,
+        "voltage": 48,
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -117,6 +122,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "X7",
@@ -129,7 +140,6 @@
           "height": 1016
         },
         "total_weight": 39.5,
-        "max_weight_rider": 150,
         "rider_height_min": 1549
       }
     },
@@ -144,7 +154,6 @@
           "height": 1016
         },
         "total_weight": 39.5,
-        "max_weight_rider": 150,
         "rider_height_min": 1600
       }
     }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tamobyke/2024/v29_pro",
   "manufacturer": "Tamobyke",
-  "vehicle_model_group": "V29",
+  "model_group": "V29",
   "model": "V29 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,8 +41,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -80,8 +79,10 @@
     {
       "sensor_cadence": true,
       "water_rating": "IPX5",
-      "battery_size": 1498,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1498,
+        "charging_time": 420
+      },
       "rated_power": 1500,
       "max_torque": 80,
       "operating_modes": [
@@ -105,6 +106,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

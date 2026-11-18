@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/totem/2023/volcano",
   "manufacturer": "Totem",
-  "vehicle_model_group": "Volcano",
+  "model_group": "Volcano",
   "model": "Volcano",
   "model_configuration": "complete",
   "type": "bike",
@@ -89,8 +89,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 557,
-      "charging_time": 240,
+      "battery": {
+        "capacity": 557,
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 500,
       "operating_modes": [
         {

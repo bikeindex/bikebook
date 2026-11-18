@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/magnum/2024/pathfinder_350",
   "manufacturer": "Magnum Bikes",
-  "vehicle_model_group": "Pathfinder",
+  "model_group": "Pathfinder",
   "model": "Pathfinder 350",
   "model_configuration": "complete",
   "type": "bike",
@@ -83,8 +83,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 100
+    ]
   },
   "wheels": [
     {
@@ -121,10 +120,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 468,
-      "battery_chemistry": "li-ion",
-      "battery_info": "13Ah",
-      "charging_time": 390,
+      "battery": {
+        "capacity": 468,
+        "chemistry": "li-ion",
+        "charging_time": 390
+      },
       "rated_power": 350,
       "peak_power": 500,
       "operating_modes": [
@@ -146,6 +146,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

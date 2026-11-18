@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2024/let_s_moto_500w_us",
   "manufacturer": "Reid",
-  "vehicle_model_group": "Let's Moto",
+  "model_group": "Let's Moto",
   "model": "Let's Moto 500W",
   "model_configuration": "complete",
   "markets": [
@@ -88,8 +88,7 @@
       "spindle": "square taper"
     },
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 35,
-    "max_weight_total": 150
+    "seatpost_clamp_diameter": 35
   },
   "wheels": [
     {
@@ -141,8 +140,12 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "IEC62133",
-      "battery_size": 468,
+      "certifications": [
+        "IEC 62133"
+      ],
+      "battery": {
+        "capacity": 468
+      },
       "rated_power": 500,
       "max_torque": 55,
       "operating_modes": [
@@ -166,9 +169,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 40
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 40
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "20\"",

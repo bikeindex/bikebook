@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/greenworks/2023/80v_venture_commuter",
   "manufacturer": "Greenworks",
-  "vehicle_model_group": "VENTURE",
+  "model_group": "VENTURE",
   "model": "80V VENTURE Commuter",
   "model_configuration": "complete",
   "type": "bike",
@@ -74,9 +74,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 320,
-      "battery_chemistry": "li-ion",
-      "charging_time": 40,
+      "battery": {
+        "capacity": 320,
+        "chemistry": "li-ion",
+        "charging_time": 40
+      },
       "peak_power": 500,
       "operating_modes": [
         {
@@ -100,12 +102,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 26.6,
-        "max_weight_rider": 136
+        "total_weight": 26.6
       }
     }
   ],

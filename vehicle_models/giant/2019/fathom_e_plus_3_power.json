@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/giant/2019/fathom_e_plus_3_power",
   "manufacturer": "Giant",
-  "vehicle_model_group": "Fathom",
+  "model_group": "Fathom",
   "model": "Fathom E+ 3 POWER",
   "model_configuration": "complete",
   "type": "bike",
@@ -119,8 +119,10 @@
       "manufacturer": "Giant",
       "model": "SyncDrive Sport",
       "kind": "mid_drive",
-      "battery_size": 497,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 497,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/urtopia/2025/chord",
   "manufacturer": "Urtopia",
   "model": "Chord",
@@ -36,8 +36,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 130
+    "material_detail": "6061 Aluminum"
   },
   "wheels": [
     {
@@ -69,8 +68,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 353,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 353,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "max_torque": 45,
       "operating_modes": [
@@ -85,6 +86,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 130
     }
   ],
   "sizes": [

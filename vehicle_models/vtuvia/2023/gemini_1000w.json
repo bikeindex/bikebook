@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vtuvia/2023/gemini_1000w",
   "manufacturer": "Vtuvia",
   "model": "Gemini 1000W",
@@ -38,8 +38,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 181
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -86,9 +85,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 1092,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1092,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "max_torque": 100,
@@ -114,6 +115,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -129,7 +136,6 @@
           "length": 1900
         },
         "total_weight": 44.5,
-        "max_weight_rider": 181,
         "rider_height_min": 1727,
         "rider_height_max": 1956,
         "extra_measurements": {
@@ -186,10 +192,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "52V 1000W (PEAK 1500W) Rear Brushless Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "52V 28A"
     },
     {
       "type": "e_vehicle_remote",
@@ -261,6 +263,11 @@
       "type": "unknown",
       "type_detail": "Frame style",
       "description": "Step-Over"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "52V 28A"
     },
     {
       "type": "unknown",

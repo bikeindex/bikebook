@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bianchi/2020/e_spillo_city_altus_8sp",
   "manufacturer": "Bianchi",
-  "vehicle_model_group": "E-Spillo",
+  "model_group": "E-Spillo",
   "model": "E-Spillo City Altus 8sp",
   "model_configuration": "complete",
   "type": "bike",
@@ -77,8 +77,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 318,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 318,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 28,
       "operating_modes": [

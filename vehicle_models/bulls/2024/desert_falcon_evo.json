@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2024/desert_falcon_evo",
   "manufacturer": "BULLS Bikes",
   "model": "Desert Falcon EVO",
@@ -87,10 +87,14 @@
       "manufacturer": "Bosch",
       "model": "Performance Speed",
       "kind": "mid_drive",
-      "certification": "UL 2849",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "max_torque": 85,
       "operating_modes": [
         {

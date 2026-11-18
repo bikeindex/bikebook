@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/macina_lycan_892",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Macina Lycan",
+  "model_group": "Macina Lycan",
   "model": "Macina Lycan 892",
   "model_configuration": "complete",
   "type": "bike",
@@ -45,9 +45,7 @@
     "material_detail": "6061 Aluminum",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 110,
-    "gross_weight_rating": 137
+    }
   },
   "suspension": {
     "front": {
@@ -126,8 +124,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -141,6 +141,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 137
     }
   ],
   "sizes": [

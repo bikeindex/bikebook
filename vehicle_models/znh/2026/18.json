@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/znh/2026/18",
   "manufacturer": "Znh",
   "model": "18",
@@ -38,8 +38,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -70,10 +69,14 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "max_torque": 70,
@@ -95,6 +98,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

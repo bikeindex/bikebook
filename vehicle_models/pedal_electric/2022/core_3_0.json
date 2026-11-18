@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pedal_electric/2022/core_3_0",
   "manufacturer": "Pedal Electric",
   "model": "Core 3.0",
@@ -98,7 +98,9 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -123,14 +125,19 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "45\"",
       "geometry": {
         "seat_height_min": 895,
         "seat_height_max": 895,
-        "total_weight": 29.5,
-        "max_weight_rider": 159
+        "total_weight": 29.5
       }
     }
   ],

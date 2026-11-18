@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ejoe/2024/ace",
   "manufacturer": "Ejoe",
   "model": "Ace",
@@ -33,8 +33,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 159
+    "material_detail": "6061 Aluminum"
   },
   "wheels": [
     {
@@ -64,8 +63,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -78,6 +79,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

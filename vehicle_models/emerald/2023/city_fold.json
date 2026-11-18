@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/emerald/2023/city_fold",
   "manufacturer": "Emerald",
   "model": "City Fold",
@@ -40,8 +40,7 @@
   "frame": {
     "material": "magnesium",
     "folding": "half_fold",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 109
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -78,8 +77,11 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 270,
-      "charging_time": 240,
+      "battery": {
+        "capacity": 270,
+        "weight": 2.3,
+        "charging_time": 240
+      },
       "rated_power": 300,
       "max_torque": 35,
       "operating_modes": [
@@ -105,6 +107,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 109
+    },
+    {
+      "load": "payload",
+      "weight": 109
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -122,7 +134,6 @@
           "height": 531
         },
         "total_weight": 21.8,
-        "max_weight_rider": 109,
         "rider_height_min": 1499,
         "rider_height_max": 1829,
         "extra_measurements": {

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gyroor/2025/eb263",
   "manufacturer": "Gyroor",
   "model": "EB263",
@@ -51,8 +51,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 170
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -85,10 +84,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
-      "battery_size": 374,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 374,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 550,
       "peak_power": 700,
       "operating_modes": [
@@ -103,6 +106,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 170
     }
   ],
   "sizes": [

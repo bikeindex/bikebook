@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ape_ryder/2025/a10_pro",
   "manufacturer": "Ape Ryder",
   "model": "A10 Pro",
@@ -31,8 +31,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -72,7 +71,9 @@
   ],
   "motors": [
     {
-      "battery_size": 360,
+      "battery": {
+        "capacity": 360
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -84,6 +85,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/a_spadz/2025/cavet",
   "manufacturer": "A-Spadz",
-  "vehicle_model_group": "Cavet",
+  "model_group": "Cavet",
   "model": "Cavet",
   "model_configuration": "complete",
   "type": "bike",
@@ -34,8 +34,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aircraft-Grade Aluminum",
-    "max_weight_total": 180
+    "material_detail": "6061 Aircraft-Grade Aluminum"
   },
   "suspension": {
     "front": {
@@ -78,8 +77,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 749,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 749,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 55,
       "operating_modes": [
@@ -93,6 +94,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/acid_200_disc_fe",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Acid",
+  "model_group": "Acid",
   "model": "Acid 200 Disc FE",
   "model_configuration": "complete",
   "type": "bike",
@@ -37,9 +37,7 @@
     "material": "aluminum",
     "bottom_bracket": {
       "shell": "BSA"
-    },
-    "max_weight_total": 30,
-    "gross_weight_rating": 40
+    }
   },
   "wheels": [
     {
@@ -78,6 +76,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 30
+    },
+    {
+      "load": "gross",
+      "weight": 40
+    }
+  ],
   "sizes": [
     {
       "name": "20\"",
@@ -95,7 +103,6 @@
         "stem_length": 40,
         "crank_length": 114,
         "total_weight": 9.6,
-        "max_weight_rider": 30,
         "extra_measurements": {
           "bb_height_to_hub": 20,
           "protrusion_height_80mm": 529

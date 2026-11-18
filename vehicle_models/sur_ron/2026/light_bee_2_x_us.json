@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sur_ron/2026/light_bee_2_x_us",
   "manufacturer": "Sur-Ron",
-  "vehicle_model_group": "Light Bee",
+  "model_group": "Light Bee",
   "model": "Light Bee 2 X",
   "model_configuration": "complete",
   "markets": [
@@ -45,8 +45,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Forged Aluminum",
-    "max_weight_total": 100
+    "material_detail": "Forged Aluminum"
   },
   "suspension": {
     "front": {
@@ -83,7 +82,9 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 3530,
+      "battery": {
+        "capacity": 3530
+      },
       "peak_power": 24000,
       "max_torque": 410,
       "operating_modes": [
@@ -97,6 +98,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

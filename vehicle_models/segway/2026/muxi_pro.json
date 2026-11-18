@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/segway/2026/muxi_pro",
   "manufacturer": "Segway",
-  "vehicle_model_group": "MUXI",
+  "model_group": "MUXI",
   "model": "MUXI Pro",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -92,8 +92,10 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IPX5",
-      "battery_size": 717,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 717,
+        "charging_time": 420
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -116,9 +118,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 55
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "cargo",
+      "weight": 55
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -128,8 +137,7 @@
           "width": 741,
           "height": 1103
         },
-        "total_weight": 37.3,
-        "max_weight_rider": 120
+        "total_weight": 37.3
       }
     }
   ],

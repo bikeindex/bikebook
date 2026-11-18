@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2026/foil_rc_team_us",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Foil",
+  "model_group": "Foil",
   "model": "Foil RC Team",
   "model_configuration": "complete",
   "markets": [
@@ -30,6 +30,39 @@
             "black"
           ],
           "variants": [
+            {
+              "sku": "425681"
+            },
+            {
+              "sku": "4256818330002",
+              "gtin": "7616185379539",
+              "size": "XXS"
+            },
+            {
+              "sku": "4256818330004",
+              "gtin": "7616185379546",
+              "size": "XS"
+            },
+            {
+              "sku": "4256818330006",
+              "gtin": "7616185379553",
+              "size": "S"
+            },
+            {
+              "sku": "4256818330008",
+              "gtin": "7616185379560",
+              "size": "M"
+            },
+            {
+              "sku": "4256818330010",
+              "gtin": "7616185379577",
+              "size": "L"
+            },
+            {
+              "sku": "4256818330012",
+              "gtin": "7616185379584",
+              "size": "XL"
+            },
             {
               "sku": "427375"
             },
@@ -67,39 +100,6 @@
               "sku": "4273758330014",
               "gtin": "7616185476238",
               "size": "XXL"
-            },
-            {
-              "sku": "425681"
-            },
-            {
-              "sku": "4256818330002",
-              "gtin": "7616185379539",
-              "size": "XXS"
-            },
-            {
-              "sku": "4256818330004",
-              "gtin": "7616185379546",
-              "size": "XS"
-            },
-            {
-              "sku": "4256818330006",
-              "gtin": "7616185379553",
-              "size": "S"
-            },
-            {
-              "sku": "4256818330008",
-              "gtin": "7616185379560",
-              "size": "M"
-            },
-            {
-              "sku": "4256818330010",
-              "gtin": "7616185379577",
-              "size": "L"
-            },
-            {
-              "sku": "4256818330012",
-              "gtin": "7616185379584",
-              "size": "XL"
             }
           ]
         }
@@ -116,9 +116,7 @@
       "shell": "press fit",
       "width": 86.5,
       "spindle": "DUB"
-    },
-    "max_weight_total": 112,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -171,6 +169,16 @@
         "rear"
       ],
       "rotor_diameter": 140
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 112
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

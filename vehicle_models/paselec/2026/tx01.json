@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/paselec/2026/tx01",
   "manufacturer": "Paselec",
   "model": "TX01",
@@ -45,8 +45,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 122
+    ]
   },
   "suspension": {
     "front": {}
@@ -85,9 +84,11 @@
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
       "water_rating": "IPX4",
-      "battery_size": 768,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 768,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "peak_power": 1000,
       "operating_modes": [
         {
@@ -109,9 +110,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 24.95
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 24.95
+    },
+    {
+      "load": "payload",
+      "weight": 122
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

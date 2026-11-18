@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/electra/2019/super_deluxe_tandem_7i",
   "manufacturer": "Electra",
-  "vehicle_model_group": "Super",
+  "model_group": "Super",
   "model": "Super Deluxe Tandem 7i",
   "model_configuration": "complete",
   "type": "tandem",
@@ -65,9 +65,7 @@
     "material": "aluminum",
     "material_detail": "6061-T6 Aluminum",
     "headset": "EC34/28.6-26tpi | EC34/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 223,
-    "gross_weight_rating": 250
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -110,6 +108,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 223
+    },
+    {
+      "load": "gross",
+      "weight": 250
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cyrusher/2025/ranger_2_0",
   "manufacturer": "Cyrusher",
   "model": "Ranger 2.0",
@@ -71,7 +71,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "max_weight_total": 159
+    "seatpost_diameter": 33.9
   },
   "suspension": {
     "front": {
@@ -122,8 +122,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 1040,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1040,
+        "charging_time": 420
+      },
       "rated_power": 750,
       "max_torque": 95,
       "operating_modes": [
@@ -144,6 +146,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [
@@ -266,7 +274,10 @@
     {
       "type": "seatpost",
       "type_detail": "Seat Post",
-      "description": "33.9 mm / Adjustable height"
+      "description": "33.9 mm / Adjustable height",
+      "dimensions": {
+        "diameter": 33.9
+      }
     },
     {
       "type": "spokes",

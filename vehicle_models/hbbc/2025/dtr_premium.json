@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hbbc/2025/dtr_premium",
   "manufacturer": "HBBC",
-  "vehicle_model_group": "DTR",
+  "model_group": "DTR",
   "model": "DTR Premium",
   "model_configuration": "complete",
   "type": "bike",
@@ -86,8 +86,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 147
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -116,10 +115,15 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "certification": "UL 2849, UL 2771",
-      "battery_size": 922,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG 21700 cells",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 922,
+        "chemistry": "li-ion",
+        "cells": "LG 21700"
+      },
       "rated_power": 750,
       "peak_power": 1152,
       "max_torque": 80,
@@ -150,6 +154,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 147
     }
   ],
   "sizes": [

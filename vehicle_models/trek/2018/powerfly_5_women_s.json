@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2018/powerfly_5_women_s",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Powerfly",
+  "model_group": "Powerfly",
   "model": "Powerfly 5 Women's",
   "model_configuration": "complete",
   "type": "bike",
@@ -51,9 +51,7 @@
     "material": "aluminum",
     "material_detail": "Alpha Platinum Aluminum",
     "headset": "IS42/28.6 | IS52/40",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 113,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -113,8 +111,10 @@
       "model": "Performance CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 75,
       "operating_modes": [
@@ -123,6 +123,16 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

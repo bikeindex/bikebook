@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sun/2022/atlas_transit_sd_step_thru",
   "manufacturer": "Sun",
-  "vehicle_model_group": "Atlas Transit",
+  "model_group": "Atlas Transit",
   "model": "Atlas Transit SD Step-Thru",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -129,12 +129,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "20\"",
       "geometry": {
         "total_weight": 22.2,
-        "max_weight_rider": 113,
         "rider_height_min": 1372,
         "rider_height_max": 1575
       }

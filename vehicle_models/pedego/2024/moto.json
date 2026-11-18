@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pedego/2024/moto",
   "manufacturer": "Pedego",
   "model": "Moto",
@@ -123,10 +123,17 @@
     {
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271, UL 2580, UL 1446",
+      "certifications": [
+        "UL 2849",
+        "UL 2271",
+        "UL 2580",
+        "UL 1446"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 922,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 922,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "operating_modes": [
@@ -159,12 +166,15 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
-      "name": "One Size",
-      "geometry": {
-        "max_weight_rider": 181
-      }
+      "name": "One Size"
     }
   ],
   "components": [

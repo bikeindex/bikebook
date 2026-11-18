@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2027/samedi_28_2_s82o27",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Samedi 28",
+  "model_group": "Samedi 28",
   "model": "Samedi 28.2 S82O27",
   "model_configuration": "complete",
   "type": "bike",
@@ -83,13 +83,18 @@
       {
         "type": "bottle",
         "location": "seat_tube"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
     "cable_routing": "stealth",
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 108,
-    "gross_weight_rating": 135
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -160,8 +165,10 @@
       "model": "BDU346Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 540,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 540,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -176,6 +183,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 108
+    },
+    {
+      "load": "gross",
+      "weight": 135
     }
   ],
   "sizes": [

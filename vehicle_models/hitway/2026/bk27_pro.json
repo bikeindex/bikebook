@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hitway/2026/bk27_pro",
   "manufacturer": "Hitway",
+  "model_group": "BK27",
   "model": "BK27 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -27,7 +28,6 @@
           "variants": [
             {
               "sku": "HW-BK27PRO-BLACK-APP",
-              "gtin": "7792932493595",
               "size": "One Size"
             }
           ]
@@ -41,7 +41,6 @@
           "variants": [
             {
               "sku": "HW-BK27PRO-WHITE-APP",
-              "gtin": "7792932493595",
               "size": "One Size"
             }
           ]
@@ -99,9 +98,11 @@
     {
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 768,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 768,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 250,
       "max_torque": 45,
       "operating_modes": [

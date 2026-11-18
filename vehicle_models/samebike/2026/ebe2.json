@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/samebike/2026/ebe2",
   "manufacturer": "samebike",
   "model": "EBE2",
@@ -39,8 +39,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 150
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {}
@@ -74,8 +73,10 @@
   ],
   "motors": [
     {
-      "battery_size": 468,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 468,
+        "charging_time": 360
+      },
       "rated_power": 250,
       "max_torque": 35,
       "operating_modes": [
@@ -98,6 +99,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

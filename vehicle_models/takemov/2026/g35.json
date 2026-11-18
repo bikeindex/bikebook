@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/takemov/2026/g35",
   "manufacturer": "TakeMov",
-  "vehicle_model_group": "G35",
+  "model_group": "G35",
   "model": "G35",
   "model_configuration": "complete",
   "type": "bike",
@@ -50,8 +50,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -82,10 +81,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 60,
@@ -100,6 +103,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

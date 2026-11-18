@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2023/adventure_neo_allroad",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Adventure Neo Allroad",
+  "model_group": "Adventure Neo Allroad",
   "model": "Adventure Neo Allroad",
   "model_configuration": "complete",
   "markets": [
@@ -139,8 +139,10 @@
       "manufacturer": "Bafang",
       "model": "G020 Hub",
       "kind": "hub_drive",
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

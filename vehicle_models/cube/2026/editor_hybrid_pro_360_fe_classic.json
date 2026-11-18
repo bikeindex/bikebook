@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/editor_hybrid_pro_360_fe_classic",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Editor Hybrid",
+  "model_group": "Editor Hybrid",
   "model": "Editor Hybrid Pro 360 FE Classic",
   "model_configuration": "complete",
   "type": "bike",
@@ -33,9 +33,7 @@
   "frame": {
     "material": "aluminum",
     "cable_routing": "stealth",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 120,
-    "gross_weight_rating": 140
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -86,8 +84,10 @@
       "model": "BDU306Y",
       "model_group": "Hub Line",
       "kind": "hub_drive",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 400,
       "max_torque": 45,
@@ -103,9 +103,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 140
+    }
+  ],
   "sizes": [
     {
       "name": "50 cm",
@@ -123,7 +134,6 @@
         "stem_length": 60,
         "crank_length": 175,
         "max_seatpost_insertion": 200,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": -70,
           "protrusion_height_80mm": 776
@@ -147,7 +157,6 @@
         "crank_length": 175,
         "max_seatpost_insertion": 245,
         "total_weight": 19.2,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": -70,
           "protrusion_height_80mm": 810
@@ -170,7 +179,6 @@
         "stem_length": 80,
         "crank_length": 175,
         "max_seatpost_insertion": 280,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": -70,
           "protrusion_height_80mm": 851
@@ -193,7 +201,6 @@
         "stem_length": 90,
         "crank_length": 175,
         "max_seatpost_insertion": 280,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": -70,
           "protrusion_height_80mm": 880

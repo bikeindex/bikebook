@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/revi/2018/predator",
   "manufacturer": "Revi",
   "model": "Predator",
@@ -65,8 +65,10 @@
       "manufacturer": "Bafang",
       "model": "GEAR",
       "kind": "hub_drive",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 800,
       "operating_modes": [

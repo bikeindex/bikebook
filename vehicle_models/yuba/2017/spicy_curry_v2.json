@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/yuba/2017/spicy_curry_v2",
   "manufacturer": "Yuba",
-  "vehicle_model_group": "Spicy Curry",
+  "model_group": "Spicy Curry",
   "model": "Spicy Curry V2",
   "model_configuration": "complete",
   "type": "cargo_bike_rear",
@@ -67,8 +67,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 136
+    "seatpost_diameter": 30.9
   },
   "wheels": [
     {
@@ -122,8 +121,10 @@
       "model": "Performance Line CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -132,6 +133,12 @@
           "range_claimed": 100
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

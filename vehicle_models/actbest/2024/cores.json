@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/actbest/2024/cores",
   "manufacturer": "Actbest",
-  "vehicle_model_group": "Core",
+  "model_group": "Core",
   "model": "Cores",
   "model_configuration": "complete",
   "type": "bike",
@@ -153,8 +153,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 159
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -192,10 +191,14 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IP54",
-      "battery_size": 576,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 576,
+        "charging_time": 360
+      },
       "peak_power": 1200,
       "max_torque": 70,
       "operating_modes": [
@@ -222,9 +225,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.43
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.43
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

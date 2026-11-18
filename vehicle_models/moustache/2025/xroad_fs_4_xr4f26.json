@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2025/xroad_fs_4_xr4f26",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Xroad",
+  "model_group": "Xroad",
   "model": "Xroad FS 4 XR4F26",
   "model_configuration": "complete",
   "type": "bike",
@@ -90,9 +90,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 130,
-    "gross_weight_rating": 160
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -166,8 +164,10 @@
       "model_group": "Performance Line PX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 700,
       "max_torque": 90,
@@ -183,6 +183,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 130
+    },
+    {
+      "load": "gross",
+      "weight": 160
     }
   ],
   "sizes": [

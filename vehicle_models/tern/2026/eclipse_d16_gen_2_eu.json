@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tern/2026/eclipse_d16_gen_2_eu",
   "manufacturer": "Tern",
-  "vehicle_model_group": "Eclipse",
+  "model_group": "Eclipse",
   "model": "Eclipse D16 Gen 2",
   "model_configuration": "complete",
   "markets": [
@@ -54,9 +54,7 @@
         "type": "accessory",
         "description": "Luggage Socket"
       }
-    ],
-    "max_weight_total": 105,
-    "gross_weight_rating": 120
+    ]
   },
   "wheels": [
     {
@@ -95,6 +93,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 105
+    },
+    {
+      "load": "gross",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -105,7 +113,6 @@
           "height": 750
         },
         "total_weight": 14.8,
-        "max_weight_rider": 105,
         "rider_height_min": 1480,
         "rider_height_max": 1950,
         "extra_measurements": {

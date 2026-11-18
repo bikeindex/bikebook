@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vitilan/2024/l5",
   "manufacturer": "Vitilan",
   "model": "L5",
@@ -54,8 +54,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -105,8 +104,10 @@
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX6",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 960,
       "max_torque": 65,
@@ -131,6 +132,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -210,10 +217,6 @@
       "description": "48V Multi-function Intelligent Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "48V / 20A"
-    },
-    {
       "type": "fork",
       "description": "Adjustable Spring Suspension Fork"
     },
@@ -266,6 +269,11 @@
         "width": 60.96,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V / 20A"
     }
   ]
 }

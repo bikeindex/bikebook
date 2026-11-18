@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/christiania/2025/r1",
   "manufacturer": "Christiania Bikes",
   "model": "R1",
@@ -64,9 +64,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "battery_size": 748,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
+      "battery": {
+        "capacity": 748,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 250,
       "peak_power": 620,
       "max_torque": 65,

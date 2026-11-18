@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2026/iconic_evo_fs",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Iconic EVO",
+  "model_group": "Iconic EVO",
   "model": "Iconic EVO FS",
   "model_configuration": "complete",
   "type": "bike",
@@ -75,9 +75,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 121,
-    "gross_weight_rating": 150
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -147,11 +145,14 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_options": [
-        800
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "capacity_options": [
+          800
+        ],
+        "chemistry": "li-ion",
+        "weight": 4.9
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 100,
@@ -165,6 +166,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 121
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

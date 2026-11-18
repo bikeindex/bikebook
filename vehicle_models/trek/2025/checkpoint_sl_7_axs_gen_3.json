@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2025/checkpoint_sl_7_axs_gen_3",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Checkpoint",
+  "model_group": "Checkpoint",
   "model": "Checkpoint SL 7 AXS Gen 3",
   "model_configuration": "complete",
   "type": "bike",
@@ -110,9 +110,7 @@
       "shell": "T47",
       "spindle": "DUB"
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 116,
-    "gross_weight_rating": 125
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -170,6 +168,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 116
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

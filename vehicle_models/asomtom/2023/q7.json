@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/asomtom/2023/q7",
   "manufacturer": "Asomtom",
   "model": "Q7",
@@ -40,8 +40,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 181
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -76,7 +75,9 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "battery_size": 749,
+      "battery": {
+        "capacity": 749
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "operating_modes": [
@@ -95,6 +96,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

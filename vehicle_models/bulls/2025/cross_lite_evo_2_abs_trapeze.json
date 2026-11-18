@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2025/cross_lite_evo_2_abs_trapeze",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Cross EVO",
+  "model_group": "Cross EVO",
   "model": "Cross Lite EVO 2 ABS Trapeze",
   "model_configuration": "complete",
   "type": "bike",
@@ -50,9 +50,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 121,
-    "gross_weight_rating": 150
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -103,8 +101,11 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion",
+        "weight": 10
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 85,
@@ -118,6 +119,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 121
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

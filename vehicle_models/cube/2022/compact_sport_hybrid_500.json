@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2022/compact_sport_hybrid_500",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Compact Hybrid",
+  "model_group": "Compact Hybrid",
   "model": "Compact Sport Hybrid 500",
   "model_configuration": "complete",
   "type": "bike",
@@ -43,9 +43,7 @@
       "spindle": "BNI"
     },
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 101,
-    "gross_weight_rating": 125
+    "seatpost_clamp_diameter": 31.8
   },
   "wheels": [
     {
@@ -111,8 +109,10 @@
       "model_group": "Performance Line",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 65,
@@ -126,6 +126,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 101
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

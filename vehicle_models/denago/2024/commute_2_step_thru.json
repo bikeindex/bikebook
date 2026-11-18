@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/denago/2024/commute_2_step_thru",
   "manufacturer": "Denago",
-  "vehicle_model_group": "Commute",
+  "model_group": "Commute",
   "model": "Commute 2 Step-Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -116,9 +116,13 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
-      "battery_size": 653,
-      "charging_time": 300,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 653,
+        "charging_time": 300
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -137,6 +141,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
     }
   ],
   "sizes": [
@@ -161,8 +171,7 @@
         "crank_length": 170,
         "seat_height_min": 800,
         "seat_height_max": 1031,
-        "total_weight": 29.9,
-        "max_weight_rider": 136
+        "total_weight": 29.9
       }
     },
     {
@@ -186,8 +195,7 @@
         "crank_length": 170,
         "seat_height_min": 899,
         "seat_height_max": 1130,
-        "total_weight": 30.8,
-        "max_weight_rider": 136
+        "total_weight": 30.8
       }
     }
   ],

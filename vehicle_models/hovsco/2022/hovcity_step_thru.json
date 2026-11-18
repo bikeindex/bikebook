@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hovsco/2022/hovcity_step_thru",
   "manufacturer": "Hovsco",
   "model": "HovCity Step-Thru",
@@ -47,8 +47,7 @@
     "bottom_bracket": {
       "spindle": "square taper"
     },
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 136
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {
@@ -106,9 +105,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 540,
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 540,
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 500,
       "peak_power": 730,
       "max_torque": 45,
@@ -135,6 +136,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

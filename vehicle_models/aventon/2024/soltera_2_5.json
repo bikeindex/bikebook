@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aventon/2024/soltera_2_5",
   "manufacturer": "Aventón",
-  "vehicle_model_group": "Soltera",
+  "model_group": "Soltera",
   "model": "Soltera 2.5",
   "model_configuration": "complete",
   "type": "bike",
@@ -78,8 +78,7 @@
     "bottom_bracket": {
       "spindle": "square taper"
     },
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 136
+    "seatpost_clamp_diameter": 31.8
   },
   "wheels": [
     {
@@ -134,12 +133,17 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 346,
-      "battery_chemistry": "li-ion",
-      "battery_info": "36V, 9.6Ah",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 346,
+        "voltage": 36,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 350,
       "peak_power": 540,
       "max_torque": 45,
@@ -162,6 +166,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

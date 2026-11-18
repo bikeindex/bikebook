@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freego/2022/dk200",
   "manufacturer": "Freego",
   "model": "DK200",
@@ -42,8 +42,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -78,8 +77,10 @@
   ],
   "motors": [
     {
-      "battery_size": 960,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 960,
+        "charging_time": 300
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -100,6 +101,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

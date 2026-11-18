@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/keteles/2023/k800_2000w",
   "manufacturer": "Keteles",
-  "vehicle_model_group": "K800",
+  "model_group": "K800",
   "model": "K800 2000W",
   "model_configuration": "complete",
   "type": "bike",
@@ -99,9 +99,11 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 1104,
-      "battery_chemistry": "li-ion",
-      "battery_info": "SAMSUNG cells",
+      "battery": {
+        "capacity": 1104,
+        "chemistry": "li-ion",
+        "cells": "SAMSUNG"
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -126,9 +128,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 1104,
-      "battery_chemistry": "li-ion",
-      "battery_info": "SAMSUNG cells",
+      "battery": {
+        "capacity": 1104,
+        "chemistry": "li-ion",
+        "cells": "SAMSUNG"
+      },
       "rated_power": 1000,
       "operating_modes": [
         {

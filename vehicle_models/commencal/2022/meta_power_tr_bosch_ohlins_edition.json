@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/commencal/2022/meta_power_tr_bosch_ohlins_edition",
   "manufacturer": "Commencal Bikes",
-  "vehicle_model_group": "META Power TR",
+  "model_group": "META Power TR",
   "model": "META Power TR Bosch Ohlins Edition",
   "model_configuration": "complete",
   "type": "bike",
@@ -26,7 +26,25 @@
             "teal",
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/commencal/2022/meta_power_tr_bosch_ohlins_edition_aqua_blue.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/commencal/2022/meta_power_tr_bosch_ohlins_edition_aqua_blue.jpg",
+          "variants": [
+            {
+              "sku": "22METAPWTROH2-L",
+              "size": "L"
+            },
+            {
+              "sku": "22METAPWTROH2-M",
+              "size": "M"
+            },
+            {
+              "sku": "22METAPWTROH2-S",
+              "size": "S"
+            },
+            {
+              "sku": "22METAPWTROH2-XL",
+              "size": "XL"
+            }
+          ]
         },
         {
           "name": "Emerald Green",
@@ -152,8 +170,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

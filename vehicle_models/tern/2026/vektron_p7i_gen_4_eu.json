@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tern/2026/vektron_p7i_gen_4_eu",
   "manufacturer": "Tern",
-  "vehicle_model_group": "Vektron",
+  "model_group": "Vektron",
   "model": "Vektron P7i Gen 4",
   "model_configuration": "complete",
   "markets": [
@@ -57,9 +57,7 @@
         "type": "accessory",
         "description": "Luggage Socket"
       }
-    ],
-    "max_weight_total": 102,
-    "gross_weight_rating": 125
+    ]
   },
   "wheels": [
     {
@@ -102,7 +100,9 @@
       "model": "BDU334Y",
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 50,
@@ -119,9 +119,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 105
+    },
+    {
+      "load": "cargo",
+      "weight": 27
+    },
+    {
+      "load": "gross",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -132,7 +143,6 @@
           "height": 680
         },
         "total_weight": 22.9,
-        "max_weight_rider": 105,
         "rider_height_min": 1470,
         "rider_height_max": 1950,
         "extra_measurements": {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/envo/2022/lynx_20",
   "manufacturer": "Envo",
-  "vehicle_model_group": "Lynx",
+  "model_group": "Lynx",
   "model": "Lynx 20",
   "model_configuration": "complete",
   "type": "bike",
@@ -100,13 +100,26 @@
       28
     ]
   },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
   "motors": [
     {
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "certification": "UL 2849",
-      "battery_size": 461,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 461,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 80,
       "operating_modes": [

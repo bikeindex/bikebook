@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2021/tesoro_neo_x_1",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Tesoro",
+  "model_group": "Tesoro",
   "model": "Tesoro Neo X 1",
   "model_configuration": "complete",
   "markets": [
@@ -166,8 +166,10 @@
       "model": "BDU490P",
       "model_group": "Performance Line Speed",
       "kind": "mid_drive",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -183,9 +185,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    }
+  ],
   "sizes": [
     {
       "name": "SM",

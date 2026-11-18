@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2022/tesoro_x_2_low_stepthru",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Tesoro Neo X",
+  "model_group": "Tesoro Neo X",
   "model": "Tesoro X 2 Low StepThru",
   "model_configuration": "complete",
   "type": "bike",
@@ -118,8 +118,10 @@
       "model": "BDU336Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -135,9 +137,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    }
+  ],
   "sizes": [
     {
       "name": "SM",

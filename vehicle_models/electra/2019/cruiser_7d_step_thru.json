@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/electra/2019/cruiser_7d_step_thru",
   "manufacturer": "Electra",
-  "vehicle_model_group": "Cruiser",
+  "model_group": "Cruiser",
   "model": "Cruiser 7D Step-Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -112,9 +112,7 @@
       "shell": "American",
       "spindle": "one-piece"
     },
-    "headset": "EC30/25.4-24tpi | EC30/26.4",
-    "max_weight_total": 119,
-    "gross_weight_rating": 136
+    "headset": "EC30/25.4-24tpi | EC30/26.4"
   },
   "wheels": [
     {
@@ -151,6 +149,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 119
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

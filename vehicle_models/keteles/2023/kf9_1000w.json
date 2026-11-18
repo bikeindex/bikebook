@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/keteles/2023/kf9_1000w",
   "manufacturer": "Keteles",
-  "vehicle_model_group": "KF9",
+  "model_group": "KF9",
   "model": "KF9 1000W",
   "model_configuration": "complete",
   "type": "bike",
@@ -77,8 +77,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "max_torque": 72,
       "operating_modes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/troxus/2024/lynx_folding",
   "manufacturer": "Troxus",
   "model": "Lynx Folding",
@@ -61,8 +61,7 @@
     },
     "headset": "ZS44/28.6 | ZS44/30",
     "seatpost_diameter": 28.6,
-    "seatpost_clamp_diameter": 35,
-    "max_weight_total": 136
+    "seatpost_clamp_diameter": 35
   },
   "suspension": {
     "front": {
@@ -124,10 +123,14 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2271",
-      "battery_size": 480,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 480,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 500,
       "max_torque": 65,
       "operating_modes": [
@@ -150,6 +153,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

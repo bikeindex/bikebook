@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/envo/2026/m50",
   "manufacturer": "Envo",
   "model": "M50",
@@ -48,8 +48,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061-T6 Aluminum",
-    "headset": "ZS44/28.6 | ZS56/40",
-    "max_weight_total": 181
+    "headset": "ZS44/28.6 | ZS56/40"
   },
   "suspension": {
     "front": {
@@ -105,9 +104,13 @@
       "kind": "mid_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "max_torque": 100,
       "operating_modes": [
@@ -121,6 +124,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

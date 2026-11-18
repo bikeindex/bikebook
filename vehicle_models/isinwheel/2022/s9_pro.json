@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/isinwheel/2022/s9_pro",
   "manufacturer": "iSinwheel",
   "model": "S9 Pro",
@@ -63,8 +63,10 @@
   "motors": [
     {
       "water_rating": "IP54",
-      "battery_size": 281,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 281,
+        "charging_time": 300
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -81,6 +83,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -94,7 +102,6 @@
           "height": 480
         },
         "total_weight": 13.5,
-        "max_weight_rider": 100,
         "rider_height_min": 1400,
         "rider_height_max": 2000
       }

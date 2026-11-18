@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/samebike/2023/xwc05",
   "manufacturer": "samebike",
-  "vehicle_model_group": "XWC05",
+  "model_group": "XWC05",
   "model": "XWC05",
   "model_configuration": "complete",
   "type": "bike",
@@ -58,8 +58,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "cable_routing": "internal",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 120
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -119,9 +118,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IP54",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 battery cells",
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "cells": "18650"
+      },
       "rated_power": 750,
       "max_torque": 60,
       "operating_modes": [
@@ -153,6 +154,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/envo/2025/stax",
   "manufacturer": "Envo",
-  "vehicle_model_group": "Stax",
+  "model_group": "Stax",
   "model": "Stax",
   "model_configuration": "complete",
   "type": "bike",
@@ -93,10 +93,14 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849",
-      "battery_size": 461,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 461,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 500,
       "max_torque": 80,
       "operating_modes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/wild_one_20_atb",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Wild ONE",
+  "model_group": "Wild ONE",
   "model": "Wild ONE 20 ATB",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,9 +42,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 50,
-    "gross_weight_rating": 63
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -88,6 +86,16 @@
         "rear"
       ],
       "caliper_mount": "Brake Bosses"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 50
+    },
+    {
+      "load": "gross",
+      "weight": 63
     }
   ],
   "sizes": [

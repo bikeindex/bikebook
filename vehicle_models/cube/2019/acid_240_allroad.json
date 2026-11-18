@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2019/acid_240_allroad",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Acid",
+  "model_group": "Acid",
   "model": "Acid 240 Allroad",
   "model_configuration": "complete",
   "type": "bike",
@@ -33,9 +33,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 102,
-    "gross_weight_rating": 115
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -71,6 +69,16 @@
         "rear"
       ],
       "caliper_mount": "Brake Bosses"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 102
+    },
+    {
+      "load": "gross",
+      "weight": 115
     }
   ],
   "sizes": [

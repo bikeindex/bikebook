@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tst/2026/r7",
   "manufacturer": "TST",
   "model": "R7",
@@ -62,8 +62,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 204
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -99,9 +98,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "peak_power": 1500,
       "max_torque": 90,
       "operating_modes": [
@@ -123,6 +124,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

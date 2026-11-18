@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/giant/2021/fastroad_e_plus_ex_pro",
   "manufacturer": "Giant",
-  "vehicle_model_group": "FastRoad",
+  "model_group": "FastRoad",
   "model": "FastRoad E+ EX Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -61,7 +61,11 @@
         "type": "fender"
       },
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
     ]
   },
@@ -122,8 +126,10 @@
       "manufacturer": "Giant",
       "model": "SyncDrive Pro",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "max_torque": 80,
       "operating_modes": [
         {

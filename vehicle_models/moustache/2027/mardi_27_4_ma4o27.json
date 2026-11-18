@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2027/mardi_27_4_ma4o27",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Mardi 27",
+  "model_group": "Mardi 27",
   "model": "Mardi 27.4 MA4O27",
   "model_configuration": "complete",
   "type": "bike",
@@ -122,6 +122,13 @@
       {
         "type": "bottle",
         "location": "seat_tube"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
     "cable_routing": "stealth",
@@ -129,9 +136,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 105,
-    "gross_weight_rating": 135
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -203,12 +208,13 @@
       "model_group": "Performance Line PX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_options": [
-        600
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "600 Wh: -£300",
+      "battery": {
+        "capacity": 800,
+        "capacity_options": [
+          600
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 700,
       "max_torque": 90,
@@ -223,6 +229,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 105
+    },
+    {
+      "load": "gross",
+      "weight": 135
     }
   ],
   "sizes": [

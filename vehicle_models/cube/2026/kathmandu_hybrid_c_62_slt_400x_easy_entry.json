@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/kathmandu_hybrid_c_62_slt_400x_easy_entry",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Kathmandu Hybrid",
+  "model_group": "Kathmandu Hybrid",
   "model": "Kathmandu Hybrid C:62 SLT 400X Easy Entry",
   "model_configuration": "complete",
   "type": "bike",
@@ -33,9 +33,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 118,
-    "gross_weight_rating": 135
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -98,8 +96,10 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,
@@ -115,9 +115,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 135
+    }
+  ],
   "sizes": [
     {
       "name": "46 cm",
@@ -135,7 +146,6 @@
         "stem_length": 65,
         "crank_length": 165,
         "max_seatpost_insertion": 220,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "bb_height_to_hub": 75
         }
@@ -158,7 +168,6 @@
         "crank_length": 165,
         "max_seatpost_insertion": 260,
         "total_weight": 16.3,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "bb_height_to_hub": 75
         }
@@ -180,7 +189,6 @@
         "stem_length": 90,
         "crank_length": 165,
         "max_seatpost_insertion": 280,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "bb_height_to_hub": 75
         }
@@ -202,7 +210,6 @@
         "stem_length": 90,
         "crank_length": 165,
         "max_seatpost_insertion": 300,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "bb_height_to_hub": 75
         }

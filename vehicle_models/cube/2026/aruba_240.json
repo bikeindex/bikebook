@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/aruba_240",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Aruba",
+  "model_group": "Aruba",
   "model": "Aruba 240",
   "model_configuration": "complete",
   "type": "bike",
@@ -38,9 +38,7 @@
     "bottom_bracket": {
       "width": 68
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 69,
-    "gross_weight_rating": 80
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -81,9 +79,20 @@
       "caliper_mount": "Brake Bosses"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 10
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 65
+    },
+    {
+      "load": "cargo",
+      "weight": 10
+    },
+    {
+      "load": "gross",
+      "weight": 80
+    }
+  ],
   "sizes": [
     {
       "name": "24\"",
@@ -98,7 +107,6 @@
         "chainstay": 393,
         "wheelbase": 926,
         "total_weight": 10.4,
-        "max_weight_rider": 65,
         "extra_measurements": {
           "bb_height_to_hub": 50
         }

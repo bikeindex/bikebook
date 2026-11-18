@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riding_times/2026/gt73_pro_safety_edition",
   "manufacturer": "Riding Times",
-  "vehicle_model_group": "GT73",
+  "model_group": "GT73",
   "model": "GT73 Pro Safety Edition",
   "model_configuration": "complete",
   "type": "bike",
@@ -24,8 +24,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -61,11 +60,15 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 2160,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 2160,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "peak_power": 750,
       "operating_modes": [
         {
@@ -87,6 +90,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

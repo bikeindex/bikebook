@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/relaxed_body_20_w_office_chair",
   "manufacturer": "sixthreezero",
-  "vehicle_model_group": "Relaxed Body",
+  "model_group": "Relaxed Body",
   "model": "Relaxed Body 20 w/ Office Chair",
   "model_configuration": "complete",
   "type": "bike",
@@ -33,8 +33,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 159
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -67,8 +66,10 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -80,6 +81,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

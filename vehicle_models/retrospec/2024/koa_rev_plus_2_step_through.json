@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2024/koa_rev_plus_2_step_through",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Koa Rev+",
+  "model_group": "Koa Rev+",
   "model": "Koa Rev+ 2 Step Through",
   "model_configuration": "complete",
   "type": "bike",
@@ -105,10 +105,15 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 cells",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "21700"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -127,12 +132,15 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
-      "name": "16.5\" Step Through",
-      "geometry": {
-        "max_weight_rider": 159
-      }
+      "name": "16.5\" Step Through"
     }
   ],
   "components": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2023/fusion",
   "manufacturer": "GOTRAX",
   "model": "Fusion",
@@ -124,10 +124,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 209,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 209,
+        "charging_time": 300
+      },
       "rated_power": 300,
       "operating_modes": [
         {
@@ -140,25 +144,24 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 13.6,
-        "max_weight_rider": 100
+        "total_weight": 13.6
       }
     },
     {
-      "name": "Fusion",
-      "geometry": {
-        "max_weight_rider": 100
-      }
+      "name": "Fusion"
     },
     {
-      "name": "Fusion w/Seat",
-      "geometry": {
-        "max_weight_rider": 100
-      }
+      "name": "Fusion w/Seat"
     }
   ],
   "components": [

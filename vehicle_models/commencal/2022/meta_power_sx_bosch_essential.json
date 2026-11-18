@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/commencal/2022/meta_power_sx_bosch_essential",
   "manufacturer": "Commencal Bikes",
-  "vehicle_model_group": "META Power SX",
+  "model_group": "META Power SX",
   "model": "META Power SX Bosch Essential",
   "model_configuration": "complete",
   "type": "bike",
@@ -51,7 +51,25 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/commencal/2022/meta_power_sx_bosch_essential_70_s_green.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/commencal/2022/meta_power_sx_bosch_essential_70_s_green.jpg",
+          "variants": [
+            {
+              "sku": "22METAPWE2-L",
+              "size": "L"
+            },
+            {
+              "sku": "22METAPWE2-M",
+              "size": "M"
+            },
+            {
+              "sku": "22METAPWE2-S",
+              "size": "S"
+            },
+            {
+              "sku": "22METAPWE2-XL",
+              "size": "XL"
+            }
+          ]
         }
       ],
       "url": "https://www.commencal.com/us/en/22METAPWE1.html",
@@ -150,8 +168,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

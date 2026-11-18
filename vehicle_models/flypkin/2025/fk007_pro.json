@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/flypkin/2025/fk007_pro",
   "manufacturer": "FLYPKIN",
-  "vehicle_model_group": "FK007",
+  "model_group": "FK007",
   "model": "FK007 Pro",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -51,8 +51,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 441,
-      "charging_time": 240,
+      "battery": {
+        "capacity": 441,
+        "charging_time": 240
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -64,6 +66,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -73,8 +81,7 @@
           "width": 429,
           "height": 1240
         },
-        "total_weight": 16.3,
-        "max_weight_rider": 120
+        "total_weight": 16.3
       }
     }
   ],
@@ -118,11 +125,6 @@
       "dimensions": {
         "diameter": 152
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Maximum Distance Range",
-      "description": "22 Mils"
     },
     {
       "type": "unknown",

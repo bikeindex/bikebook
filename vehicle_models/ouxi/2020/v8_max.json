@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ouxi/2020/v8_max",
   "manufacturer": "OUXI",
-  "vehicle_model_group": "V8",
+  "model_group": "V8",
   "model": "V8 Max",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,8 +42,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 150
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {}
@@ -80,8 +79,10 @@
     {
       "sensor_cadence": true,
       "water_rating": "IP54",
-      "battery_size": 1440,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1440,
+        "charging_time": 420
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 85,
@@ -106,6 +107,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

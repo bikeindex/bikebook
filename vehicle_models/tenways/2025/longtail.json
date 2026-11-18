@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tenways/2025/longtail",
   "manufacturer": "Tenways",
   "model": "Longtail",
@@ -42,9 +42,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 188,
-    "gross_weight_rating": 220
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -84,9 +82,11 @@
       "model": "M410",
       "kind": "mid_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "36 V, 20 Ah",
+      "battery": {
+        "capacity": 720,
+        "voltage": 36,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 80,
       "operating_modes": [
@@ -100,6 +100,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 188
+    },
+    {
+      "load": "gross",
+      "weight": 220
     }
   ],
   "sizes": [
@@ -160,7 +170,6 @@
     },
     {
       "type": "hub",
-      "type_detail": "Rear Derailleur",
       "position": [
         "rear"
       ],

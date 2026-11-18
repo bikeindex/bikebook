@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/magicycle/2023/cruiser_pro_step_thru",
   "manufacturer": "Magicycle",
-  "vehicle_model_group": "Cruiser",
+  "model_group": "Cruiser",
   "model": "Cruiser Pro Step-Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -64,8 +64,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 227
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -110,9 +109,11 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 1040,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 1040,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 100,
@@ -136,6 +137,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/thomus/2022/lightrider_e_ultimate",
   "manufacturer": "Thömus",
-  "vehicle_model_group": "Lightrider",
+  "model_group": "Lightrider",
   "model": "Lightrider E-Ultimate",
   "model_configuration": "complete",
   "type": "bike",
@@ -74,7 +74,9 @@
   ],
   "motors": [
     {
-      "battery_size": 250,
+      "battery": {
+        "capacity": 250
+      },
       "operating_modes": [
         {
           "mode": "assist",

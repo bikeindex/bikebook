@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2018/v10f",
   "manufacturer": "Inmotion",
   "model": "V10F",
@@ -38,8 +38,7 @@
     "2018": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "brakes": [
     {
@@ -53,10 +52,12 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP55",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "20S4P LG18650 Samsung 32E",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "20S4P LG18650 Samsung 32E",
+        "charging_time": 480
+      },
       "rated_power": 2000,
       "peak_power": 4000,
       "max_torque": 90,
@@ -73,6 +74,12 @@
           }
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/marsant_s/2023/p1",
   "manufacturer": "Marsant's",
   "model": "P1",
@@ -73,7 +73,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 281,
+      "battery": {
+        "capacity": 281
+      },
       "rated_power": 300,
       "max_torque": 6,
       "operating_modes": [
@@ -87,6 +89,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -96,7 +104,6 @@
           "length": 1070
         },
         "total_weight": 14.6,
-        "max_weight_rider": 100,
         "rider_height_min": 1575,
         "rider_height_max": 1905,
         "extra_measurements": {

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ferla/2024/agile",
   "manufacturer": "Ferla",
   "model": "Agile",
@@ -14,6 +14,7 @@
   "stock_photo": "https://bikebook.bikeindex.org/ferla/2024/agile.jpg",
   "description": "Transform your daily rides with the Ferla Agile ST, built for navigating city streets and exploring scenic paths with ease. With its powerful mid-motor and responsive throttle, you'll effortlessly glide up hills and zip past traffic, turning every journey into a fun adventure.",
   "first_year": 2024,
+  "final_year": 2026,
   "years": {
     "2026": {
       "original_msrp": 249900,
@@ -72,8 +73,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 125
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -129,9 +129,11 @@
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "SAMSUNG cell",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "SAMSUNG"
+      },
       "max_torque": 120,
       "operating_modes": [
         {
@@ -152,6 +154,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

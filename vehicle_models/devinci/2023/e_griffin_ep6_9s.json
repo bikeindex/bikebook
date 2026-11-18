@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/devinci/2023/e_griffin_ep6_9s",
   "manufacturer": "Devinci",
-  "vehicle_model_group": "E-Griffin",
+  "model_group": "E-Griffin",
   "model": "E-Griffin EP6 9s",
   "model_configuration": "complete",
   "markets": [
@@ -119,8 +119,12 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 540,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 540
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [

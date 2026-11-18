@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dynacraft/2025/dora_the_explorer_6v_4x4_quad",
   "manufacturer": "Dynacraft",
   "model": "Dora the Explorer 6V 4X4 Quad",
@@ -43,12 +43,13 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 18
+    "material": "steel"
   },
   "motors": [
     {
-      "charging_time": 480,
+      "battery": {
+        "charging_time": 480
+      },
       "operating_modes": [
         {
           "mode": "throttle",
@@ -59,6 +60,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 18
     }
   ],
   "sizes": [

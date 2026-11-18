@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riding_times/2025/gt54_pro",
   "manufacturer": "Riding Times",
-  "vehicle_model_group": "GT54",
+  "model_group": "GT54",
   "model": "GT54 Pro",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -24,8 +24,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 100
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -68,9 +67,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 1500,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700",
+      "battery": {
+        "capacity": 1500,
+        "chemistry": "li-ion",
+        "cells": "21700"
+      },
       "peak_power": 3000,
       "max_torque": 338,
       "operating_modes": [
@@ -84,6 +85,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

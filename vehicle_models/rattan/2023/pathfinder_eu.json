@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rattan/2023/pathfinder_eu",
   "manufacturer": "Rattan",
-  "vehicle_model_group": "Pathfinder",
+  "model_group": "Pathfinder",
   "model": "Pathfinder",
   "model_configuration": "complete",
   "markets": [
@@ -72,8 +72,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 181
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -109,8 +108,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 720,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 720,
+        "charging_time": 300
+      },
       "max_torque": 80,
       "operating_modes": [
         {
@@ -132,6 +133,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

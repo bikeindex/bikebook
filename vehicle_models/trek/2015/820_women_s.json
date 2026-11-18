@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2015/820_women_s",
   "manufacturer": "Trek",
-  "vehicle_model_group": "820",
+  "model_group": "820",
   "model": "820 Women's",
   "model_configuration": "complete",
   "type": "bike",
@@ -51,9 +51,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120,
-    "gross_weight_rating": 136
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -105,6 +103,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

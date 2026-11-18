@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/santa_cruz/2021/heckler_r_mx",
   "manufacturer": "Santa Cruz",
-  "vehicle_model_group": "Heckler",
+  "model_group": "Heckler",
   "model": "Heckler R MX",
   "model_configuration": "complete",
   "type": "bike",
@@ -117,8 +117,10 @@
       "kind": "mid_drive",
       "spindle": "Shimano E8000",
       "sensor_cadence": true,
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 60,
       "operating_modes": [

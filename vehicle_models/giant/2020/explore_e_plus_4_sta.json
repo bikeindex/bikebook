@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/giant/2020/explore_e_plus_4_sta",
   "manufacturer": "Giant",
-  "vehicle_model_group": "Explore",
+  "model_group": "Explore",
   "model": "Explore E+ 4 STA",
   "model_configuration": "complete",
   "type": "bike",
@@ -110,8 +110,10 @@
       "manufacturer": "Giant",
       "model": "SyncDrive Sport",
       "kind": "mid_drive",
-      "battery_size": 407,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 407,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

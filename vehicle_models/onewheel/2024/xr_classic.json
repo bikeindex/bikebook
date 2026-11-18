@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/onewheel/2024/xr_classic",
   "manufacturer": "OneWheel",
   "model": "XR Classic",
@@ -50,9 +50,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_chemistry": "li-ion",
-      "battery_info": "Nickel Manganese Cobalt Oxide (NMC)",
-      "charging_time": 140,
+      "battery": {
+        "chemistry": "li-ion",
+        "charging_time": 140
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -64,6 +65,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -73,8 +80,7 @@
           "width": 248,
           "height": 276
         },
-        "total_weight": 13.6,
-        "max_weight_rider": 125
+        "total_weight": 13.6
       }
     }
   ],

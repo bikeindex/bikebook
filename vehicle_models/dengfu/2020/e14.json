@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dengfu/2020/e14",
   "manufacturer": "Dengfu",
-  "vehicle_model_group": "E14",
+  "model_group": "E14",
   "model": "E14",
   "model_configuration": "complete",
   "type": "bike",
@@ -87,8 +87,10 @@
     {
       "manufacturer": "Bafang",
       "model": "M500",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2024/copperhead_evo_hd_750_diamond",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Copperhead EVO",
+  "model_group": "Copperhead EVO",
   "model": "Copperhead EVO HD 750 Diamond",
   "model_configuration": "complete",
   "type": "bike",
@@ -104,10 +104,14 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "certification": "UL 2849",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

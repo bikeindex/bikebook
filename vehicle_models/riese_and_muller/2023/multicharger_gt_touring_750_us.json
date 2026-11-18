@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2023/multicharger_gt_touring_750_us",
   "base": "m/riese_and_muller/2023/multicharger_gt_touring_750",
   "markets": [
@@ -25,22 +25,22 @@
       }
     }
   },
-  "sizes": {
-    "47 cm": {
-      "geometry": {
-        "extra_measurements": {
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_luggage_rack_kg": 65
-        }
-      }
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 175
     },
-    "51 cm": {
-      "geometry": {
-        "extra_measurements": {
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_luggage_rack_kg": 65
-        }
-      }
+    {
+      "load": "rear_rack",
+      "weight": 65
+    },
+    {
+      "load": "front_rack",
+      "weight": 5
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 5
     }
-  }
+  ]
 }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/znh/2024/15s",
   "manufacturer": "Znh",
-  "vehicle_model_group": "15",
+  "model_group": "15",
   "model": "15S",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,8 +41,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 120
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -78,8 +77,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -97,6 +98,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -143,10 +150,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V / 2A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LED display 3 modes"
     },
     {
@@ -168,6 +171,11 @@
         "width": 59.69,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V / 2A"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2019/access_ws_sl_eagle",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Access",
+  "model_group": "Access",
   "model": "Access WS SL Eagle",
   "model_configuration": "complete",
   "type": "bike",
@@ -38,9 +38,7 @@
       "spindle": "DUB"
     },
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 102,
-    "gross_weight_rating": 115
+    "seatpost_clamp_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -105,6 +103,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 102
+    },
+    {
+      "load": "gross",
+      "weight": 115
     }
   ],
   "sizes": [

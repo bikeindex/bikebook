@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2021/bolt_up",
   "manufacturer": "Jetson",
-  "vehicle_model_group": "Bolt Ride-On",
+  "model_group": "Bolt Ride-On",
   "model": "Bolt Up",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -56,9 +56,11 @@
   ],
   "motors": [
     {
-      "battery_size": 216,
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 216,
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -70,6 +72,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -87,7 +95,6 @@
           "height": 572
         },
         "total_weight": 18.6,
-        "max_weight_rider": 120,
         "rider_age_min": 12
       }
     }

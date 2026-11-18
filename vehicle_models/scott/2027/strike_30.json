@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2027/strike_30",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Strike",
+  "model_group": "Strike",
   "model": "Strike 30",
   "model_configuration": "complete",
   "markets": [
@@ -81,9 +81,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 31.6,
-    "derailleur_hanger": "SRAM UDH",
-    "max_weight_total": 104,
-    "gross_weight_rating": 130
+    "derailleur_hanger": "SRAM UDH"
   },
   "suspension": {
     "front": {
@@ -163,8 +161,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -218,6 +218,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 104
+    },
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [

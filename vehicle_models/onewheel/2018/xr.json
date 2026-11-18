@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/onewheel/2018/xr",
   "manufacturer": "OneWheel",
   "model": "XR",
@@ -68,9 +68,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_chemistry": "li-ion",
-      "battery_info": "NMC",
-      "charging_time": 110,
+      "battery": {
+        "chemistry": "li-ion",
+        "charging_time": 110
+      },
       "rated_power": 750,
       "operating_modes": [
         {

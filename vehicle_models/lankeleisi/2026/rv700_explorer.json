@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lankeleisi/2026/rv700_explorer",
   "manufacturer": "Lankeleisi",
-  "vehicle_model_group": "RV",
+  "model_group": "RV",
   "model": "RV700 Explorer",
   "model_configuration": "complete",
   "type": "bike",
@@ -52,8 +52,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 180
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -104,9 +103,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 768,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 768,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 1000,
       "max_torque": 90,
       "operating_modes": [
@@ -129,6 +130,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2026/valen_rev_14",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Valen Rev",
+  "model_group": "Valen Rev",
   "model": "Valen Rev 14",
   "model_configuration": "complete",
   "type": "bike",
@@ -107,8 +107,13 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 280,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 280
+      },
       "rated_power": 250,
       "peak_power": 500,
       "max_torque": 45,
@@ -133,13 +138,18 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 118
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "standover": 681,
         "total_weight": 26.6,
-        "max_weight_rider": 118,
         "rider_height_min": 1448,
         "rider_height_max": 1600,
         "rider_age_min": 13

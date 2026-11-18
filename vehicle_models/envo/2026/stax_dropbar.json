@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/envo/2026/stax_dropbar",
   "manufacturer": "Envo",
-  "vehicle_model_group": "Stax",
+  "model_group": "Stax",
   "model": "Stax DropBar",
   "model_configuration": "complete",
   "type": "bike",
@@ -92,9 +92,11 @@
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 461,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
+      "battery": {
+        "capacity": 461,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 500,
       "max_torque": 60,
       "operating_modes": [

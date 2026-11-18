@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/scarp_mt_291",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Scarp MT",
+  "model_group": "Scarp MT",
   "model": "Scarp MT 291",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,9 +41,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "cable_routing": "dropper",
-    "max_weight_total": 118,
-    "gross_weight_rating": 134
+    "cable_routing": "dropper"
   },
   "suspension": {
     "front": {
@@ -91,6 +89,16 @@
         "rear"
       ],
       "rotor_diameter": 180
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 118
+    },
+    {
+      "load": "gross",
+      "weight": 134
     }
   ],
   "sizes": [

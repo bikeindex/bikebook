@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/varun/2026/m20_2_us",
   "manufacturer": "Varun",
-  "vehicle_model_group": "M20",
+  "model_group": "M20",
   "model": "M20-2",
   "model_configuration": "complete",
   "markets": [
@@ -54,8 +54,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -87,8 +86,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP65",
-      "battery_size": 624,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 300
+      },
       "rated_power": 500,
       "peak_power": 1000,
       "max_torque": 90,
@@ -118,6 +119,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

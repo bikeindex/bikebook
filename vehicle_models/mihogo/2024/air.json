@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mihogo/2024/air",
   "manufacturer": "Mihogo",
   "model": "Air",
@@ -59,8 +59,7 @@
   },
   "frame": {
     "material": "carbon",
-    "material_detail": "Carbon T800",
-    "max_weight_total": 125
+    "material_detail": "Carbon T800"
   },
   "suspension": {
     "front": {
@@ -103,8 +102,10 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 921,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 921,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -115,9 +116,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 50
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 50
+    },
+    {
+      "load": "payload",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2026/icex_1_0",
   "manufacturer": "Eunorau",
   "model": "ICEX 1.0",
@@ -57,11 +57,12 @@
   ],
   "motors": [
     {
-      "certification": "Yes",
       "water_rating": "IPX4",
-      "battery_size": 1217,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1217,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 2000,
       "operating_modes": [
         {
@@ -72,6 +73,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -88,8 +95,7 @@
           "width": 760,
           "height": 550
         },
-        "total_weight": 50,
-        "max_weight_rider": 120
+        "total_weight": 50
       }
     }
   ],

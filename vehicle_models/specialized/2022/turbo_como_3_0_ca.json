@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2022/turbo_como_3_0_ca",
   "manufacturer": "Specialized",
-  "vehicle_model_group": "Turbo Como",
+  "model_group": "Turbo Como",
   "model": "Turbo Como 3.0",
   "model_configuration": "complete",
   "markets": [
@@ -60,7 +60,11 @@
     "top_tube": "step_through",
     "mounts": [
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
     "bottom_bracket": {
@@ -133,7 +137,9 @@
       "spindle": "ISIS",
       "sensor_cadence": true,
       "water_rating": "IP56",
-      "battery_size": 530,
+      "battery": {
+        "capacity": 530
+      },
       "rated_power": 250,
       "peak_power": 430,
       "max_torque": 50,
@@ -149,12 +155,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27,
-    "attributes": [
-      "MIK HD interface"
-    ]
-  },
+  "weight_limits": [
+    {
+      "load": "rear_rack",
+      "weight": 27
+    }
+  ],
   "sizes": [
     {
       "name": "S",

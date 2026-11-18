@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2024/a1",
   "manufacturer": "Evercross",
   "model": "A1",
@@ -68,7 +68,9 @@
   ],
   "motors": [
     {
-      "battery_size": 672,
+      "battery": {
+        "capacity": 672
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -80,12 +82,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 26.9,
-        "max_weight_rider": 150
+        "total_weight": 26.9
       }
     }
   ],

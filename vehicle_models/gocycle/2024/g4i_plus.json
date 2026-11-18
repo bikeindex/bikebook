@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gocycle/2024/g4i_plus",
   "manufacturer": "Gocycle",
-  "vehicle_model_group": "G4",
+  "model_group": "G4",
   "model": "G4i+",
   "model_configuration": "complete",
   "type": "bike",
@@ -127,9 +127,11 @@
       "drive_wheel": "front",
       "manufacturer": "Gocycle",
       "kind": "hub_drive",
-      "battery_size": 375,
-      "battery_chemistry": "li-ion",
-      "charging_time": 210,
+      "battery": {
+        "capacity": 375,
+        "chemistry": "li-ion",
+        "charging_time": 210
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -142,6 +144,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
     }
   ],
   "sizes": [
@@ -158,8 +166,7 @@
           "width": 371,
           "height": 615
         },
-        "total_weight": 16.7,
-        "max_weight_rider": 100
+        "total_weight": 16.7
       }
     }
   ],

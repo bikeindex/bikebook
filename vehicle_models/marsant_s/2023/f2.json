@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/marsant_s/2023/f2",
   "manufacturer": "Marsant's",
   "model": "F2",
@@ -108,7 +108,9 @@
     {
       "drive_wheel": "rear_left",
       "kind": "hub_drive",
-      "battery_size": 1123,
+      "battery": {
+        "capacity": 1123
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -123,7 +125,9 @@
     {
       "drive_wheel": "rear_right",
       "kind": "hub_drive",
-      "battery_size": 1123,
+      "battery": {
+        "capacity": 1123
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -134,6 +138,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -147,7 +157,6 @@
           "length": 1280
         },
         "total_weight": 53,
-        "max_weight_rider": 150,
         "rider_height_min": 1575,
         "rider_height_max": 1905,
         "extra_measurements": {

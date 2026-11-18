@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/orbea/2022/rise_m_ltd_20mph",
   "manufacturer": "Orbea",
-  "vehicle_model_group": "Rise",
+  "model_group": "Rise",
   "model": "Rise M-LTD 20mph",
   "model_configuration": "complete",
   "type": "bike",
@@ -114,7 +114,9 @@
       "manufacturer": "Shimano",
       "model": "EP8-RS",
       "kind": "mid_drive",
-      "battery_size": 360,
+      "battery": {
+        "capacity": 360
+      },
       "operating_modes": [
         {
           "mode": "assist",

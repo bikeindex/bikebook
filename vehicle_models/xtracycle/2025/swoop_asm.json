@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/xtracycle/2025/swoop_asm",
   "manufacturer": "Xtracycle",
-  "vehicle_model_group": "Swoop",
+  "model_group": "Swoop",
   "model": "Swoop ASM",
   "model_configuration": "complete",
   "type": "cargo_bike_rear",
@@ -55,6 +55,15 @@
   "frame": {
     "material": "steel",
     "material_detail": "4130 Chromoly Steel",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ],
     "cable_routing": "internal"
   },
   "suspension": {
@@ -119,9 +128,14 @@
       "manufacturer": "Shimano",
       "model": "STEPS EP6 Cargo",
       "kind": "mid_drive",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 630,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 630,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

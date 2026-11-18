@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/segway/2023/c2",
   "manufacturer": "Segway",
-  "vehicle_model_group": "C Series",
+  "model_group": "C Series",
   "model": "C2",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -34,8 +34,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX4",
-      "battery_size": 54,
-      "charging_time": 210,
+      "battery": {
+        "capacity": 54,
+        "charging_time": 210
+      },
       "rated_power": 130,
       "peak_power": 160,
       "operating_modes": [
@@ -53,6 +55,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 50
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -68,7 +76,6 @@
           "height": 500
         },
         "total_weight": 10.4,
-        "max_weight_rider": 50,
         "rider_height_min": 1200,
         "rider_height_max": 1600,
         "rider_age_min": 6

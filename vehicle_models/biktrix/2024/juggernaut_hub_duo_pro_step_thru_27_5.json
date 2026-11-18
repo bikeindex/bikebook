@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biktrix/2024/juggernaut_hub_duo_pro_step_thru_27_5",
   "manufacturer": "Biktrix",
-  "vehicle_model_group": "Juggernaut Hub Duo",
+  "model_group": "Juggernaut Hub Duo",
   "model": "Juggernaut Hub Duo Pro Step-Thru 27.5",
   "model_configuration": "complete",
   "type": "bike",
@@ -82,8 +82,7 @@
       "spindle": "square taper"
     },
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 38,
-    "max_weight_total": 150
+    "seatpost_clamp_diameter": 38
   },
   "suspension": {
     "front": {
@@ -136,7 +135,9 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 1924,
+      "battery": {
+        "capacity": 1924
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -155,6 +156,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

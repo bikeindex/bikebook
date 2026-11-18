@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/electra/2021/townie_path_9d_eq_step_over",
   "manufacturer": "Electra",
-  "vehicle_model_group": "Townie",
+  "model_group": "Townie",
   "model": "Townie Path 9D EQ Step-Over",
   "model_configuration": "complete",
   "type": "bike",
@@ -86,14 +86,21 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061-T6 Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
     "cable_routing": "internal",
     "bottom_bracket": {
       "width": 68
     },
     "headset": "ZS44/28.6-26tpi | ZS44/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 119,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -130,6 +137,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 119
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eahora/2024/cupid",
   "manufacturer": "Eahora",
   "model": "Cupid",
@@ -80,8 +80,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "High-Carbon Steel",
-    "coil_compatible": true,
-    "max_weight_total": 150
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -135,9 +134,12 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IPX6",
-      "battery_size": 1440,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A",
+      "battery": {
+        "capacity": 1440,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A"
+      },
       "rated_power": 1000,
       "peak_power": 1200,
       "max_torque": 90,
@@ -163,6 +165,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

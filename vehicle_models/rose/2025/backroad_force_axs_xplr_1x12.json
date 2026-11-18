@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rose/2025/backroad_force_axs_xplr_1x12",
   "manufacturer": "ROSE",
-  "vehicle_model_group": "Backroad",
+  "model_group": "Backroad",
   "model": "Backroad Force AXS XPLR 1x12",
   "model_configuration": "complete",
   "type": "bike",
@@ -101,8 +101,7 @@
     "cable_routing": "internal",
     "bottom_bracket": {
       "spindle": "DUB"
-    },
-    "max_weight_total": 110
+    }
   },
   "wheels": [
     {
@@ -132,6 +131,9 @@
     "12_rear"
   ],
   "gearing": {
+    "front": [
+      40
+    ],
     "rear": [
       10,
       44
@@ -149,6 +151,12 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
     }
   ],
   "sizes": [

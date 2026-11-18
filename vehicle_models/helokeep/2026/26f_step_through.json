@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/helokeep/2026/26f_step_through",
   "manufacturer": "Helokeep",
   "model": "26F Step-Through",
@@ -51,8 +51,7 @@
   },
   "frame": {
     "material": "steel",
-    "top_tube": "step_through",
-    "max_weight_total": 249
+    "top_tube": "step_through"
   },
   "wheels": [
     {
@@ -79,8 +78,12 @@
   ],
   "motors": [
     {
-      "certification": "UL 2271",
-      "battery_size": 1200,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 1200
+      },
       "peak_power": 3000,
       "max_torque": 220,
       "operating_modes": [
@@ -94,6 +97,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 249
     }
   ],
   "sizes": [

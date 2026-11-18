@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktaxon/2026/bicycle_cargo_trailer_with_20_tires",
   "manufacturer": "Ktaxon",
   "model": "Bicycle Cargo Trailer with 20\" Tires",
@@ -48,9 +48,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 91
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 91
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

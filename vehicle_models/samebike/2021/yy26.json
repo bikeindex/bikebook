@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/samebike/2021/yy26",
   "manufacturer": "samebike",
   "model": "YY26",
@@ -47,8 +47,7 @@
     "material_detail": "6061 Aluminum",
     "top_tube": "step_through",
     "cable_routing": "internal",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 150
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -108,9 +107,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IP54",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 battery cells",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "18650"
+      },
       "rated_power": 750,
       "max_torque": 60,
       "operating_modes": [
@@ -142,6 +143,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

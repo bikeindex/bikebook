@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/addmotor/2023/motan_m_430",
   "manufacturer": "Addmotor",
-  "vehicle_model_group": "Motan",
+  "model_group": "Motan",
   "model": "Motan M-430",
   "model_configuration": "complete",
   "type": "bike",
@@ -101,8 +101,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 136
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -145,9 +144,11 @@
       "drive_wheel": "rear",
       "manufacturer": "Addmotor",
       "kind": "hub_drive",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -159,6 +160,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

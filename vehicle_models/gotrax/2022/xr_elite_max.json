@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2022/xr_elite_max",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "XR",
+  "model_group": "XR",
   "model": "XR Elite MAX",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -73,9 +73,13 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
-      "battery_size": 280,
-      "charging_time": 300,
+      "certifications": [
+        "UL 2272"
+      ],
+      "battery": {
+        "capacity": 280,
+        "charging_time": 300
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -87,6 +91,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -96,8 +106,7 @@
           "width": 470,
           "height": 1143
         },
-        "total_weight": 15.9,
-        "max_weight_rider": 120
+        "total_weight": 15.9
       }
     }
   ],

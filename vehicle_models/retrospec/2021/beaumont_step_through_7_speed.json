@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2021/beaumont_step_through_7_speed",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Beaumont",
+  "model_group": "Beaumont",
   "model": "Beaumont Step Through 7 Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -118,8 +118,7 @@
         "type": "fender"
       }
     ],
-    "headset": "EC34/28.6-26tpi | EC34/30",
-    "max_weight_total": 113
+    "headset": "EC34/28.6-26tpi | EC34/30"
   },
   "wheels": [
     {
@@ -159,9 +158,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 18.14
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 18.14
+    },
+    {
+      "load": "payload",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "42cm",

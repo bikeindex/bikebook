@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/magicycle/2023/20_deer_step_thru",
   "manufacturer": "Magicycle",
-  "vehicle_model_group": "Deer",
+  "model_group": "Deer",
   "model": "20\" Deer Step-Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -90,8 +90,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 204
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -137,9 +136,11 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 1040,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1040,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 100,
@@ -163,6 +164,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

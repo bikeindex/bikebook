@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2025/addict_rc_20",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Addict",
+  "model_group": "Addict",
   "model": "Addict RC 20",
   "model_configuration": "complete",
   "markets": [
@@ -86,9 +86,7 @@
     "bottom_bracket": {
       "shell": "press fit",
       "spindle": "24mm"
-    },
-    "max_weight_total": 112,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -133,6 +131,16 @@
         "rear"
       ],
       "rotor_diameter": 140
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 112
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

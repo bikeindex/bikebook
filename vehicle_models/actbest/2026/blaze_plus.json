@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/actbest/2026/blaze_plus",
   "manufacturer": "Actbest",
-  "vehicle_model_group": "Blaze",
+  "model_group": "Blaze",
   "model": "Blaze Plus",
   "model_configuration": "complete",
   "type": "bike",
@@ -75,8 +75,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 159
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -108,8 +107,10 @@
   "motors": [
     {
       "water_rating": "IPX5",
-      "battery_size": 749,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 749,
+        "charging_time": 480
+      },
       "peak_power": 2000,
       "max_torque": 110,
       "operating_modes": [
@@ -130,6 +131,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

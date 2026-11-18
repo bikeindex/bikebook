@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2020/stereo_hybrid_120_pro_625_allroad_29",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Stereo Hybrid",
+  "model_group": "Stereo Hybrid",
   "model": "Stereo Hybrid 120 Pro 625 Allroad 29",
   "model_configuration": "complete",
   "type": "bike",
@@ -32,9 +32,7 @@
   "frame": {
     "material": "aluminum",
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 123,
-    "gross_weight_rating": 150
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -92,7 +90,9 @@
       "model": "BDU450CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 625,
+      "battery": {
+        "capacity": 625
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -108,9 +108,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 123
+    },
+    {
+      "load": "gross",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "16\"",

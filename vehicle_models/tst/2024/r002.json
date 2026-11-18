@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tst/2024/r002",
   "manufacturer": "TST",
   "model": "R002",
@@ -72,8 +72,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 204
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -109,12 +108,14 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 720,
-      "battery_options": [
-        1200
-      ],
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 720,
+        "capacity_options": [
+          1200
+        ],
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "peak_power": 1500,
       "max_torque": 90,
       "operating_modes": [
@@ -128,6 +129,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

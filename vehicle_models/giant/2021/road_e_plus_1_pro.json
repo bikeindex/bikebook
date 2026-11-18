@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/giant/2021/road_e_plus_1_pro",
   "manufacturer": "Giant",
   "model": "Road E+ 1 Pro",
@@ -115,8 +115,10 @@
       "manufacturer": "Giant",
       "model": "SyncDrive Pro",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "max_torque": 80,
       "operating_modes": [
         {

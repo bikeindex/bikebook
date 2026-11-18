@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/envo/2024/flex_trike",
   "manufacturer": "Envo",
-  "vehicle_model_group": "Flex",
+  "model_group": "Flex",
   "model": "Flex Trike",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -37,8 +37,7 @@
     "material": "aluminum",
     "material_detail": "6061 Foldable Aluminum",
     "top_tube": "step_through",
-    "folding": "half_fold",
-    "max_weight_total": 180
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -85,8 +84,12 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849",
-      "battery_size": 720,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 1000,
       "max_torque": 80,
       "operating_modes": [
@@ -101,6 +104,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [
@@ -192,10 +201,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V, 500W"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LCD Display with speedometer, odometer, pedal-assist indicator, etc"
     },
     {
@@ -225,6 +230,11 @@
     {
       "type": "saddle",
       "description": "Ergonomic Saddle - Leather"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V, 500W"
     }
   ]
 }

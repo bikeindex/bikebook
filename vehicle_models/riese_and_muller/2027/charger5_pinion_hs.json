@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2027/charger5_pinion_hs",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Charger5",
+  "model_group": "Charger5",
   "model": "Charger5 pinion HS",
   "model_configuration": "complete",
   "markets": [
@@ -58,14 +58,16 @@
         "type": "fender"
       },
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
     ],
     "bottom_bracket": {
       "spindle": "Pinion Standard"
-    },
-    "max_weight_total": 130,
-    "gross_weight_rating": 160
+    }
   },
   "suspension": {
     "front": {
@@ -125,8 +127,10 @@
       "model": "MGU",
       "kind": "mid_drive",
       "spindle": "Pinion Standard",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "peak_power": 800,
       "max_torque": 85,
       "operating_modes": [
@@ -140,6 +144,28 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    },
+    {
+      "load": "gross",
+      "weight": 160
+    },
+    {
+      "load": "rear_rack",
+      "weight": 27
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 5
+    },
+    {
+      "load": "pannier_per_side",
+      "weight": 7.5
     }
   ],
   "sizes": [
@@ -162,16 +188,12 @@
           "length": 1900
         },
         "total_weight": 28.5,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "no",
           "headset_size": 38.1,
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27,
-          "weight_rating_pannier_rack_per_side_kg": 7.5
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     },
@@ -194,16 +216,12 @@
           "length": 1940
         },
         "total_weight": 28.7,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "no",
           "headset_size": 38.1,
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27,
-          "weight_rating_pannier_rack_per_side_kg": 7.5
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     },
@@ -226,16 +244,12 @@
           "length": 1980
         },
         "total_weight": 28.9,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "no",
           "headset_size": 38.1,
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27,
-          "weight_rating_pannier_rack_per_side_kg": 7.5
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     },
@@ -258,16 +272,12 @@
           "length": 2010
         },
         "total_weight": 29.1,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "no",
           "headset_size": 38.1,
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27,
-          "weight_rating_pannier_rack_per_side_kg": 7.5
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     }

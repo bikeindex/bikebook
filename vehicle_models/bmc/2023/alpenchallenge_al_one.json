@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2023/alpenchallenge_al_one",
   "manufacturer": "BMC",
-  "vehicle_model_group": "Alpenchallenge",
+  "model_group": "Alpenchallenge",
   "model": "Alpenchallenge AL ONE",
   "model_configuration": "complete",
   "markets": [
@@ -86,9 +86,7 @@
     "cable_routing": "internal",
     "bottom_bracket": {
       "shell": "BSA"
-    },
-    "max_weight_total": 108,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -131,6 +129,16 @@
         "rear"
       ],
       "rotor_diameter": 180
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 108
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

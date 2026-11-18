@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebkarocy/2026/k8",
   "manufacturer": "Ebkarocy",
   "model": "K8",
@@ -68,7 +68,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 624,
+      "battery": {
+        "capacity": 624
+      },
       "peak_power": 750,
       "operating_modes": [
         {
@@ -86,12 +88,15 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
-      "name": "One Size",
-      "geometry": {
-        "max_weight_rider": 159
-      }
+      "name": "One Size"
     }
   ],
   "components": [

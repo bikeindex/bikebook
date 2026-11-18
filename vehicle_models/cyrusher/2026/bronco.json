@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cyrusher/2026/bronco",
   "manufacturer": "Cyrusher",
   "model": "Bronco",
@@ -56,8 +56,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 150
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {},
@@ -101,8 +100,10 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "battery_size": 624,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 480
+      },
       "rated_power": 750,
       "max_torque": 85,
       "operating_modes": [
@@ -123,6 +124,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

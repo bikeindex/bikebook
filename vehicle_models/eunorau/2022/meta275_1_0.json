@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2022/meta275_1_0",
   "manufacturer": "Eunorau",
-  "vehicle_model_group": "META",
+  "model_group": "META",
   "model": "META275 1.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -63,8 +63,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 130
+    ]
   },
   "wheels": [
     {
@@ -110,10 +109,11 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "Yes",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "max_torque": 65,
       "operating_modes": [
@@ -135,6 +135,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 130
     }
   ],
   "sizes": [
@@ -214,10 +220,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V 20A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "BC182 LCD display"
     },
     {
@@ -286,6 +288,11 @@
         "width": 66.04,
         "diameter": 584
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V 20A"
     },
     {
       "type": "unknown",

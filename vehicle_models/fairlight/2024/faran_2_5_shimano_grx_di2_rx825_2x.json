@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fairlight/2024/faran_2_5_shimano_grx_di2_rx825_2x",
   "manufacturer": "Fairlight",
-  "vehicle_model_group": "Faran",
+  "model_group": "Faran",
   "model": "Faran 2.5 Shimano GRX Di2 RX825 2x",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,8 +40,7 @@
     },
     "seatpost_diameter": 27.2,
     "front_derailleur_mount": "28.6mm clamp",
-    "max_chainring": 50,
-    "max_weight_total": 125
+    "max_chainring": 50
   },
   "wheels": [
     {
@@ -126,9 +125,20 @@
       "rotor_diameter_max": 160
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
       "name": "51R",
@@ -147,8 +157,7 @@
         "bb_drop": 77,
         "fork_rake": 60,
         "trail": 54,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -168,8 +177,7 @@
         "bb_drop": 77,
         "fork_rake": 60,
         "trail": 54,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -189,8 +197,7 @@
         "bb_drop": 77,
         "fork_rake": 60,
         "trail": 51,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -210,8 +217,7 @@
         "bb_drop": 77,
         "fork_rake": 60,
         "trail": 51,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -231,8 +237,7 @@
         "bb_drop": 77,
         "fork_rake": 60,
         "trail": 51,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -252,8 +257,7 @@
         "bb_drop": 77,
         "fork_rake": 60,
         "trail": 51,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -273,8 +277,7 @@
         "bb_drop": 77,
         "fork_rake": 60,
         "trail": 48,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -294,8 +297,7 @@
         "bb_drop": 77,
         "fork_rake": 60,
         "trail": 48,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -315,8 +317,7 @@
         "bb_drop": 77,
         "fork_rake": 60,
         "trail": 48,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -336,8 +337,7 @@
         "bb_drop": 77,
         "fork_rake": 60,
         "trail": 48,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     }
   ],

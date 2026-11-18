@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fiido/2021/t1_pro",
   "manufacturer": "Fiido",
   "model": "T1 Pro",
@@ -37,8 +37,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "seatpost_diameter": 33.9,
-    "max_weight_total": 200
+    "seatpost_diameter": 33.9
   },
   "suspension": {
     "front": {
@@ -85,7 +84,9 @@
   "motors": [
     {
       "sensor_speed": "spoke_magnet",
-      "battery_size": 960,
+      "battery": {
+        "capacity": 960
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -106,6 +107,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

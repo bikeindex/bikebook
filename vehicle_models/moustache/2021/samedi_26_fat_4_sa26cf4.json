@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2021/samedi_26_fat_4_sa26cf4",
   "manufacturer": "Moustache bikes",
   "model": "Samedi 26 FAT 4 SA26CF4",
@@ -55,9 +55,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 124,
-    "gross_weight_rating": 150
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -124,8 +122,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -140,6 +140,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 124
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

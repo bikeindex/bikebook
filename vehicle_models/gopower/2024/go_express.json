@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gopower/2024/go_express",
   "manufacturer": "Gopower",
   "model": "Go Express",
@@ -55,8 +55,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "folding": "half_fold",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 150
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -108,8 +107,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -130,6 +131,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tout_terrain/2023/scrambler_xplore_gt_ii_28_select_4_1_us",
   "manufacturer": "Tout Terrain",
-  "vehicle_model_group": "Scrambler",
+  "model_group": "Scrambler",
   "model": "Scrambler Xplore GT II 28 Select 4.1",
   "model_configuration": "complete",
   "markets": [
@@ -132,9 +132,12 @@
       "caliper_mount": "Disc Flat Mount"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 130
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 130
+    }
+  ],
   "sizes": [
     {
       "name": "S",

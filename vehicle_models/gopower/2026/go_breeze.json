@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gopower/2026/go_breeze",
   "manufacturer": "Gopower",
   "model": "Go Breeze",
@@ -63,7 +63,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -124,10 +126,6 @@
       "description": "Pedal assist level, speed, battery level, trip distance, odometer"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "36V 350W"
-    },
-    {
       "type": "e_vehicle_wiring_harness",
       "description": "IPX4 Water Resistant Wirings"
     },
@@ -167,6 +165,11 @@
       "dimensions": {
         "diameter": 305
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "36V 350W"
     }
   ]
 }

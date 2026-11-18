@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/multijoy/2026/650w_electric_tricycle",
   "manufacturer": "Multijoy",
   "model": "650W Electric Tricycle",
@@ -57,7 +57,9 @@
   ],
   "motors": [
     {
-      "battery_size": 648,
+      "battery": {
+        "capacity": 648
+      },
       "rated_power": 650,
       "peak_power": 1000,
       "operating_modes": [
@@ -71,12 +73,15 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
-      "name": "One Size",
-      "geometry": {
-        "max_weight_rider": 136
-      }
+      "name": "One Size"
     }
   ],
   "components": [

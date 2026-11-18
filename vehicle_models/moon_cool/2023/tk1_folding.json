@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moon_cool/2023/tk1_folding",
   "manufacturer": "Moon Cool",
-  "vehicle_model_group": "TK",
+  "model_group": "TK",
   "model": "TK1 Folding",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -115,8 +115,7 @@
   "frame": {
     "material": "aluminum",
     "folding": "half_fold",
-    "seatpost_diameter": 31.8,
-    "max_weight_total": 181
+    "seatpost_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -177,9 +176,15 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "2849&2271 by SGS;CFR1512",
-      "battery_size": 696,
-      "charging_time": 480,
+      "certifications": [
+        "UL 2849",
+        "UL 2271",
+        "16 CFR 1512"
+      ],
+      "battery": {
+        "capacity": 696,
+        "charging_time": 480
+      },
       "rated_power": 500,
       "peak_power": 1092,
       "max_torque": 65,
@@ -205,6 +210,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -213,7 +224,7 @@
         "wheelbase": 36,
         "standover": 16,
         "handlebar_width": 660,
-        "seat_height_min": 991,
+        "seat_height_min": 770,
         "seat_height_max": 991,
         "dimensions": {
           "length": 1670,

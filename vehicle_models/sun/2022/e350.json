@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sun/2022/e350",
   "manufacturer": "Sun",
   "model": "E350",
@@ -91,8 +91,10 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 374,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 374,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -114,12 +116,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "24\"",
       "geometry": {
-        "total_weight": 33.1,
-        "max_weight_rider": 113
+        "total_weight": 33.1
       }
     }
   ],

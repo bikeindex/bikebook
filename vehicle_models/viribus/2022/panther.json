@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/viribus/2022/panther",
   "manufacturer": "Viribus",
   "model": "Panther",
@@ -53,8 +53,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 150
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -92,9 +91,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IP65",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -117,6 +118,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -174,10 +181,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V / 15A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LCD display with USB charging"
     },
     {
@@ -219,6 +222,11 @@
       "type": "tube",
       "type_detail": "Pneumatic Tubes",
       "description": "Fitted"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V / 15A"
     },
     {
       "type": "unknown",

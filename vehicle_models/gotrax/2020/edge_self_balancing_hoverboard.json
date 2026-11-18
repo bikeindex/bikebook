@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2020/edge_self_balancing_hoverboard",
   "manufacturer": "GOTRAX",
   "model": "Edge Self Balancing Hoverboard",
@@ -125,8 +125,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 80
+    "material": "steel"
   },
   "wheels": [
     {
@@ -139,7 +138,9 @@
   ],
   "motors": [
     {
-      "battery_size": 66,
+      "battery": {
+        "capacity": 66
+      },
       "rated_power": 150,
       "operating_modes": [
         {
@@ -151,7 +152,9 @@
       ]
     },
     {
-      "battery_size": 66,
+      "battery": {
+        "capacity": 66
+      },
       "rated_power": 150,
       "operating_modes": [
         {
@@ -161,6 +164,12 @@
           "range_claimed": 5
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 80
     }
   ],
   "sizes": [

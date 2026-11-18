@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/voltvogue/2026/vm16",
   "manufacturer": "Voltvogue",
   "model": "VM16",
@@ -37,8 +37,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 150
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {},
@@ -65,9 +64,10 @@
   ],
   "motors": [
     {
-      "battery_size": 864,
-      "battery_info": "18 Ah",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 864,
+        "charging_time": 540
+      },
       "rated_power": 1200,
       "peak_power": 1500,
       "operating_modes": [
@@ -83,12 +83,21 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 41,
-        "max_weight_rider": 150,
         "rider_height_min": 1676,
         "rider_height_max": 1981
       }
@@ -115,6 +124,10 @@
     },
     {
       "type": "e_vehicle_battery",
+      "description": "48 V"
+    },
+    {
+      "type": "e_vehicle_battery",
       "description": "Battery life: 10 years"
     },
     {
@@ -138,21 +151,6 @@
         "width": 76.2,
         "diameter": 254
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Volts",
-      "description": "48 V"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Speeds field",
-      "description": "31"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Frame size field",
-      "description": "61.42 in"
     },
     {
       "type": "unknown",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/electra/2021/townie_path_go_10d_eq_step_thru",
   "manufacturer": "Electra",
-  "vehicle_model_group": "Townie",
+  "model_group": "Townie",
   "model": "Townie Path Go! 10D EQ Step-Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -84,14 +84,21 @@
     "material": "aluminum",
     "material_detail": "6061-T6 Aluminum",
     "top_tube": "step_through",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
     "cable_routing": "internal",
     "bottom_bracket": {
       "spindle": "BNI"
     },
     "headset": "ZS44/28.6-26tpi | ZS44/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 111,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -139,8 +146,10 @@
       "model_group": "Performance Line",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 65,
@@ -154,6 +163,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 111
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

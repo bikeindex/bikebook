@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/revi/2023/runabout_2",
   "manufacturer": "Revi",
-  "vehicle_model_group": "Runabout",
+  "model_group": "Runabout",
   "model": "Runabout.2",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -113,8 +113,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 159
+    ]
   },
   "suspension": {
     "front": {}
@@ -155,11 +154,17 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 780,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 780,
+        "voltage": 52,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1040,
       "max_torque": 80,
@@ -182,9 +187,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 45.36
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 45.36
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

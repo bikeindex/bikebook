@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/isinwheel/2026/a12",
   "manufacturer": "iSinwheel",
   "model": "A12",
@@ -53,8 +53,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 70
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -80,8 +79,10 @@
   "motors": [
     {
       "water_rating": "IP54",
-      "battery_size": 187,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 187,
+        "charging_time": 360
+      },
       "rated_power": 350,
       "peak_power": 500,
       "operating_modes": [
@@ -103,6 +104,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 70
+    },
+    {
+      "load": "payload",
+      "weight": 70
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -113,7 +124,6 @@
           "height": 710
         },
         "total_weight": 17.8,
-        "max_weight_rider": 70,
         "rider_age_min": 3,
         "rider_age_max": 10
       }

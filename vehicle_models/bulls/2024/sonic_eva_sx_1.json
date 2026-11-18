@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2024/sonic_eva_sx_1",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Sonic EVA SX",
+  "model_group": "Sonic EVA SX",
   "model": "Sonic EVA SX 1",
   "model_configuration": "complete",
   "type": "bike",
@@ -50,9 +50,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 111,
-    "gross_weight_rating": 130
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -110,8 +108,11 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion",
+        "weight": 3.5
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 55,
@@ -125,6 +126,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 111
+    },
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [

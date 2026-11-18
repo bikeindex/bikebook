@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vitesse/2026/signal",
   "manufacturer": "Vitesse",
   "model": "Signal",
@@ -21,7 +21,6 @@
         {
           "name": "Slate Blue",
           "colors": [
-            "silver",
             "blue"
           ],
           "stock_photo": "https://bikebook.bikeindex.org/vitesse/2026/signal.jpg",
@@ -96,8 +95,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 252,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 252,
+        "charging_time": 360
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -111,12 +112,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 19.1,
-        "max_weight_rider": 125,
         "rider_height_min": 1727,
         "rider_height_max": 1829,
         "rider_age_min": 14

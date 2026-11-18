@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktaxon/2026/14_electric_bike_for_adults_550w",
   "manufacturer": "Ktaxon",
+  "model_group": "Electric Bike for Adults",
   "model": "14\" Electric Bike for Adults 550W",
   "model_configuration": "complete",
   "type": "bike",
@@ -50,8 +51,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "High-Carbon Steel",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -84,8 +84,10 @@
   ],
   "motors": [
     {
-      "battery_size": 270,
-      "charging_time": 240,
+      "battery": {
+        "capacity": 270,
+        "charging_time": 240
+      },
       "rated_power": 450,
       "peak_power": 550,
       "operating_modes": [
@@ -99,6 +101,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

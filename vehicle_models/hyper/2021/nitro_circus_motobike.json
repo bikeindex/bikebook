@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hyper/2021/nitro_circus_motobike",
   "manufacturer": "Hyper",
-  "vehicle_model_group": "MotoBike",
+  "model_group": "MotoBike",
   "model": "Nitro Circus MotoBike",
   "model_configuration": "complete",
   "type": "bike",
@@ -72,12 +72,15 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 45
+    }
+  ],
   "sizes": [
     {
-      "name": "One Size",
-      "geometry": {
-        "max_weight_rider": 45
-      }
+      "name": "One Size"
     }
   ],
   "components": [

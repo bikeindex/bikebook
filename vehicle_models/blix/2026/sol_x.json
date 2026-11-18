@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/blix/2026/sol_x",
   "manufacturer": "Blix",
   "model": "Sol X",
@@ -50,8 +50,16 @@
   },
   "frame": {
     "material": "aluminum",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 181
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -86,7 +94,9 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 614,
+      "battery": {
+        "capacity": 614
+      },
       "rated_power": 750,
       "max_torque": 70,
       "operating_modes": [
@@ -118,9 +128,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27.22
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 144
+    },
+    {
+      "load": "cargo",
+      "weight": 27.22
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -135,7 +156,6 @@
         "seat_height_min": 810,
         "seat_height_max": 1020,
         "total_weight": 28.1,
-        "max_weight_rider": 144,
         "rider_height_min": 1549,
         "rider_height_max": 1880,
         "extra_measurements": {

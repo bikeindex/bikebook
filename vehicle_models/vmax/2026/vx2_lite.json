@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vmax/2026/vx2_lite",
   "manufacturer": "VMAX",
-  "vehicle_model_group": "VX2",
+  "model_group": "VX2",
   "model": "VX2 Lite",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -58,12 +58,14 @@
   "motors": [
     {
       "water_rating": "IPX6",
-      "battery_size": 500,
-      "battery_options": [
-        624,
-        874
-      ],
-      "charging_time": 540,
+      "battery": {
+        "capacity": 500,
+        "capacity_options": [
+          624,
+          874
+        ],
+        "charging_time": 540
+      },
       "rated_power": 500,
       "peak_power": 1400,
       "operating_modes": [
@@ -75,6 +77,12 @@
           "max_slope": 16
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 130
     }
   ],
   "sizes": [
@@ -94,7 +102,6 @@
           "height": 535
         },
         "total_weight": 21.9,
-        "max_weight_rider": 130,
         "extra_measurements": {
           "deck_height": 230,
           "deck_length": 456,

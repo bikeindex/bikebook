@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hase/2020/trets",
   "manufacturer": "Hase bikes",
-  "vehicle_model_group": "TRETS",
+  "model_group": "TRETS",
   "model": "TRETS",
   "model_configuration": "complete",
   "type": "recumbent",
@@ -34,8 +34,7 @@
     "2020": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 65
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -75,6 +74,12 @@
         "rear_left",
         "rear_right"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 65
     }
   ],
   "sizes": [

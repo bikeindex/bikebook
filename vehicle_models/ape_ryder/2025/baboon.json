@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ape_ryder/2025/baboon",
   "manufacturer": "Ape Ryder",
   "model": "Baboon",
@@ -34,8 +34,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 118
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -70,7 +69,9 @@
   ],
   "motors": [
     {
-      "battery_size": 696,
+      "battery": {
+        "capacity": 696
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -85,12 +86,21 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "payload",
+      "weight": 118
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 35,
-        "max_weight_rider": 120
+        "total_weight": 35
       }
     }
   ],

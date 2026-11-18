@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2023/fourstroke_two",
   "manufacturer": "BMC",
-  "vehicle_model_group": "Fourstroke",
+  "model_group": "Fourstroke",
   "model": "Fourstroke TWO",
   "model_configuration": "complete",
   "markets": [
@@ -79,9 +79,7 @@
     "bottom_bracket": {
       "shell": "BB92",
       "width": 92
-    },
-    "max_weight_total": 98,
-    "gross_weight_rating": 110
+    }
   },
   "suspension": {
     "front": {
@@ -128,6 +126,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 98
+    },
+    {
+      "load": "gross",
+      "weight": 110
     }
   ],
   "sizes": [

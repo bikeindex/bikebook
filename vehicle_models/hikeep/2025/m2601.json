@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hikeep/2025/m2601",
   "manufacturer": "Hikeep",
   "model": "M2601",
@@ -65,8 +65,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 136
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -100,7 +99,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 374,
+      "battery": {
+        "capacity": 374
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 80,
@@ -115,6 +116,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

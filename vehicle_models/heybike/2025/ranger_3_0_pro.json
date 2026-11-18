@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/heybike/2025/ranger_3_0_pro",
   "manufacturer": "Heybike",
+  "model_group": "Ranger",
   "model": "Ranger 3.0 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -133,8 +134,7 @@
           "rear"
         ]
       }
-    ],
-    "max_weight_total": 200
+    ]
   },
   "suspension": {
     "front": {
@@ -176,9 +176,13 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 720,
-      "charging_time": 480,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 720,
+        "charging_time": 480
+      },
       "rated_power": 750,
       "peak_power": 1400,
       "max_torque": 80,
@@ -197,6 +201,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

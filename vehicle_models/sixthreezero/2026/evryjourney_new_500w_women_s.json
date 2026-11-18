@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/evryjourney_new_500w_women_s",
   "manufacturer": "sixthreezero",
-  "vehicle_model_group": "EVRYjourney Electric",
+  "model_group": "EVRYjourney Electric",
   "model": "EVRYjourney NEW 500W Women's",
   "model_configuration": "complete",
   "type": "bike",
@@ -92,8 +92,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "operating_modes": [
         {

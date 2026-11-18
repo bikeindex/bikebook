@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2022/acid_260_disc",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Acid",
+  "model_group": "Acid",
   "model": "Acid 260 Disc",
   "model_configuration": "complete",
   "type": "bike",
@@ -37,9 +37,7 @@
     "bottom_bracket": {
       "width": 68
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 66,
-    "gross_weight_rating": 80
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -83,6 +81,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 66
+    },
+    {
+      "load": "gross",
+      "weight": 80
     }
   ],
   "sizes": [

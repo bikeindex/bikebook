@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/roxter_16_gb",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Roxter",
+  "model_group": "Roxter",
   "model": "Roxter 16",
   "model_configuration": "complete",
   "markets": [
@@ -52,9 +52,7 @@
       "shell": "American",
       "spindle": "one-piece"
     },
-    "headset": "ZS44/28.6 | ZS44/30",
-    "max_weight_total": 41,
-    "gross_weight_rating": 50
+    "headset": "ZS44/28.6 | ZS44/30"
   },
   "wheels": [
     {
@@ -85,6 +83,16 @@
       "position": [
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 41
+    },
+    {
+      "load": "gross",
+      "weight": 50
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/viribus/2025/fc2_folding",
   "manufacturer": "Viribus",
   "model": "FC2 Folding",
@@ -83,8 +83,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 181
+    "folding": "half_fold"
   },
   "suspension": {
     "rear": {}
@@ -115,9 +114,13 @@
   ],
   "motors": [
     {
-      "certification": "UL 2271",
+      "certifications": [
+        "UL 2271"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 706,
+      "battery": {
+        "capacity": 706
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 80,
@@ -140,6 +143,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/yeti/2026/mte_te4",
   "manufacturer": "Yeti",
-  "vehicle_model_group": "MTe",
+  "model_group": "MTe",
   "model": "MTe TE4",
   "model_configuration": "complete",
   "type": "bike",
@@ -107,8 +107,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 135,
-      "battery_size": 290,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 290,
+        "chemistry": "li-ion"
+      },
       "peak_power": 350,
       "max_torque": 60,
       "operating_modes": [

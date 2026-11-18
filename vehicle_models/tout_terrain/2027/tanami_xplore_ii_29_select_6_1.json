@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tout_terrain/2027/tanami_xplore_ii_29_select_6_1",
   "manufacturer": "Tout Terrain",
-  "vehicle_model_group": "Tanami",
+  "model_group": "Tanami",
   "model": "Tanami Xplore II 29 Select 6.1",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,9 +41,7 @@
       }
     ],
     "headset": "EC34/28.6 | EC34/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 163,
-    "gross_weight_rating": 180
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -105,6 +103,16 @@
       ],
       "rotor_diameter": 160,
       "caliper_mount": "Disc IS"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 163
+    },
+    {
+      "load": "gross",
+      "weight": 180
     }
   ],
   "sizes": [
@@ -350,11 +358,6 @@
       "type": "unknown",
       "type_detail": "Power supply",
       "description": "Cinq Plug Pure 7"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Terrain",
-      "description": "Allroad"
     },
     {
       "type": "unknown",

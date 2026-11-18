@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fiido/2024/c11_pro",
   "manufacturer": "Fiido",
-  "vehicle_model_group": "C11",
+  "model_group": "C11",
   "model": "C11 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,8 +41,7 @@
   "frame": {
     "material": "aluminum",
     "top_tube": "step_through",
-    "seatpost_diameter": 33.9,
-    "max_weight_total": 120
+    "seatpost_diameter": 33.9
   },
   "suspension": {
     "front": {
@@ -96,9 +95,11 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 250,
       "max_torque": 55,
       "operating_modes": [
@@ -121,9 +122,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/revi/2023/prowler",
   "manufacturer": "Revi",
   "model": "Prowler",
@@ -36,8 +36,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 181
+    "material_detail": "6061 Aluminum"
   },
   "wheels": [
     {
@@ -81,11 +80,17 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 1040,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 1040,
+        "voltage": 52,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "operating_modes": [
@@ -107,9 +112,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 20.41
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 20.41
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

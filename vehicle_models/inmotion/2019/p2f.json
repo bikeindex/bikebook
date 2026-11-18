@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2019/p2f",
   "manufacturer": "Inmotion",
-  "vehicle_model_group": "P2",
+  "model_group": "P2",
   "model": "P2F",
   "model_configuration": "complete",
   "type": "bike",
@@ -22,8 +22,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "drivetrain": [
     "1_front",
@@ -33,8 +32,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 835,
-      "battery_info": "36V 23.2Ah",
+      "battery": {
+        "capacity": 835,
+        "voltage": 36
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -45,6 +46,12 @@
           "max_slope": 12
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

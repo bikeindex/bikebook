@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bee_cool/2025/bee_zipper",
   "manufacturer": "Bee Cool",
   "model": "Bee Zipper",
@@ -74,8 +74,7 @@
       }
     ],
     "headset": "ZS44/28.6 | ZS44/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 227
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -121,9 +120,13 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 864,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 864,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1300,
       "max_torque": 92,
@@ -143,6 +146,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [
@@ -242,10 +251,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "750W (continuous) 1300W (peak) brushless geared hub motor with 92 Nm of torque, 5:1 planetary gear reduction"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V, 22A"
     },
     {
       "type": "e_vehicle_remote",
@@ -361,6 +366,11 @@
         "width": 101.6,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V, 22A"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/denago/2024/folding_1",
   "manufacturer": "Denago",
-  "vehicle_model_group": "Folding",
+  "model_group": "Folding",
   "model": "Folding 1",
   "model_configuration": "complete",
   "type": "bike",
@@ -100,10 +100,14 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "certification": "UL 2271",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 500,
       "max_torque": 90,
       "operating_modes": [

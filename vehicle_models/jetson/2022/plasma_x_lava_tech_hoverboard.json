@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2022/plasma_x_lava_tech_hoverboard",
   "manufacturer": "Jetson",
-  "vehicle_model_group": "Plasma",
+  "model_group": "Plasma",
   "model": "Plasma X Lava Tech Hoverboard",
   "model_configuration": "complete",
   "type": "epamd",
@@ -67,9 +67,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 72,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 72,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -82,6 +84,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -92,7 +100,6 @@
           "height": 185
         },
         "total_weight": 5.9,
-        "max_weight_rider": 100,
         "rider_age_min": 12
       }
     }

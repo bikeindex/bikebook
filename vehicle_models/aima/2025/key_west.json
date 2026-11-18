@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aima/2025/key_west",
   "manufacturer": "AIMA E-Bike",
-  "vehicle_model_group": "Key West",
+  "model_group": "Key West",
   "model": "Key West",
   "model_configuration": "complete",
   "type": "bike",
@@ -44,8 +44,7 @@
     "material": "aluminum",
     "material_detail": "6061 Single-Butted Aluminum",
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 145
+    "seatpost_clamp_diameter": 34.9
   },
   "wheels": [
     {
@@ -91,9 +90,13 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849",
-      "battery_size": 614,
-      "charging_time": 300,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 614,
+        "charging_time": 300
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -114,6 +117,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 145
     }
   ],
   "sizes": [

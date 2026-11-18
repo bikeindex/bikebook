@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2024/lundi_27_4_lu27o0425",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Lundi 27",
+  "model_group": "Lundi 27",
   "model": "Lundi 27.4 LU27O0425",
   "model_configuration": "complete",
   "type": "bike",
@@ -62,12 +62,24 @@
       {
         "type": "bottle",
         "location": "seat_tube"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "front"
+        ],
+        "interface": "mik"
       }
     ],
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 122,
-    "gross_weight_rating": 150
+    "seatpost_clamp_diameter": 34.9
   },
   "wheels": [
     {
@@ -128,15 +140,16 @@
       "id": "c/bosch/2022/performance_line_bdu336y_gb",
       "drive_wheel": "rear",
       "manufacturer": "Bosch",
-      "model": "Performance Line BDU33",
+      "model": "BDU336Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_options": [
-        625
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "625 Wh: +£200",
+      "battery": {
+        "capacity": 500,
+        "capacity_options": [
+          625
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -152,6 +165,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 122
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

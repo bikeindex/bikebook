@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/porsche/2025/sport",
   "manufacturer": "Porsche",
-  "vehicle_model_group": "Sport",
+  "model_group": "Sport",
   "model": "Sport",
   "model_configuration": "complete",
   "type": "bike",
@@ -135,9 +135,13 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 630,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 630,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [
@@ -150,6 +154,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -169,7 +179,6 @@
         "bb_drop": 45,
         "bb_height": 299,
         "crank_length": 160,
-        "max_weight_rider": 120,
         "rider_height_min": 1560,
         "rider_height_max": 1700
       }
@@ -191,7 +200,6 @@
         "bb_height": 300,
         "crank_length": 165,
         "total_weight": 21.1,
-        "max_weight_rider": 120,
         "rider_height_min": 1680,
         "rider_height_max": 1820
       }
@@ -212,7 +220,6 @@
         "bb_drop": 75,
         "bb_height": 300,
         "crank_length": 165,
-        "max_weight_rider": 120,
         "rider_height_min": 1800,
         "rider_height_max": 1940
       }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bianchi/2020/impulso_e_allroad_grx_600_11sp",
   "manufacturer": "Bianchi",
-  "vehicle_model_group": "e-Impulso",
+  "model_group": "e-Impulso",
   "model": "Impulso E-Allroad GRX 600 11sp",
   "model_configuration": "complete",
   "type": "bike",
@@ -100,8 +100,10 @@
   ],
   "motors": [
     {
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

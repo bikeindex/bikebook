@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fiido/2024/e_gravel_c22",
   "manufacturer": "Fiido",
-  "vehicle_model_group": "E-Gravel",
+  "model_group": "E-Gravel",
   "model": "E-Gravel C22",
   "model_configuration": "complete",
   "type": "bike",
@@ -53,8 +53,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 120
+    "seatpost_diameter": 30.9
   },
   "wheels": [
     {
@@ -103,8 +102,10 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 209,
-      "charging_time": 180,
+      "battery": {
+        "capacity": 209,
+        "charging_time": 180
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -112,6 +113,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

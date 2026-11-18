@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/likebike/2024/cityfun",
   "manufacturer": "Likebike",
   "model": "Cityfun",
@@ -41,8 +41,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -63,7 +62,6 @@
   ],
   "motors": [
     {
-      "battery_info": "10.4Ah",
       "rated_power": 500,
       "peak_power": 1500,
       "operating_modes": [
@@ -84,6 +82,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

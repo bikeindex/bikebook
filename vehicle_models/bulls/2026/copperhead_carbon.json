@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2026/copperhead_carbon",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Copperhead",
+  "model_group": "Copperhead",
   "model": "Copperhead Carbon",
   "model_configuration": "complete",
   "type": "bike",
@@ -109,10 +109,15 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "certification": "UL 2849",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion",
+        "weight": 2.2,
+        "charging_time": 360
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,

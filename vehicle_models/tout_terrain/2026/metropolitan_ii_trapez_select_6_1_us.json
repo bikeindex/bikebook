@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tout_terrain/2026/metropolitan_ii_trapez_select_6_1_us",
   "manufacturer": "Tout Terrain",
-  "vehicle_model_group": "Metropolitan",
+  "model_group": "Metropolitan",
   "model": "Metropolitan II Trapez Select 6.1",
   "model_configuration": "complete",
   "markets": [
@@ -41,7 +41,11 @@
         "type": "fender"
       },
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "front"
+        ],
+        "interface": "racktime_snapit"
       },
       {
         "type": "bottle",
@@ -54,12 +58,17 @@
       {
         "type": "bottle",
         "location": "fork_legs_2"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
       }
     ],
     "headset": "EC34/28.6 | EC34/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 144,
-    "gross_weight_rating": 160
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -120,6 +129,16 @@
       ],
       "rotor_diameter": 160,
       "caliper_mount": "Disc IS"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 144
+    },
+    {
+      "load": "gross",
+      "weight": 160
     }
   ],
   "sizes": [
@@ -318,11 +337,6 @@
       "type_detail": "Steering stop",
       "manufacturer": "Tout Terrain",
       "description": "Tout Terrain Ergo-Stop-II Plus"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Terrain",
-      "description": "Road"
     },
     {
       "type": "unknown",

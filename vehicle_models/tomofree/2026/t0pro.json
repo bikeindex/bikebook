@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tomofree/2026/t0pro",
   "manufacturer": "Tomofree",
   "model": "T0PRO",
@@ -25,8 +25,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "High-Carbon Steel",
-    "folding": "half_fold",
-    "max_weight_total": 91
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {},
@@ -54,8 +53,10 @@
   ],
   "motors": [
     {
-      "battery_size": 960,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 960,
+        "charging_time": 480
+      },
       "rated_power": 400,
       "peak_power": 750,
       "operating_modes": [
@@ -73,6 +74,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 91
     }
   ],
   "sizes": [

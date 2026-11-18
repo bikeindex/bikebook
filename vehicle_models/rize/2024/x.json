@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rize/2024/x",
   "manufacturer": "Rize",
   "model": "X",
@@ -16,7 +16,7 @@
   "first_year": 2024,
   "years": {
     "2026": {
-      "original_msrp": 219900,
+      "original_msrp": 249900,
       "original_msrp_currency": "USD",
       "colorways": [
         {
@@ -49,8 +49,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 136
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -99,13 +98,15 @@
     {
       "manufacturer": "Bafang",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 780,
-      "battery_options": [
-        1560
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 21700 50E Cell",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 780,
+        "capacity_options": [
+          1560
+        ],
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700 50E",
+        "charging_time": 300
+      },
       "rated_power": 1000,
       "max_torque": 95,
       "operating_modes": [
@@ -135,6 +136,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

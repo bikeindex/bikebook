@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/nishiki/2021/escalante_women_s_us",
   "manufacturer": "Nishiki",
-  "vehicle_model_group": "Escalante",
+  "model_group": "Escalante",
   "model": "Escalante Women's",
   "model_configuration": "complete",
   "markets": [
@@ -30,13 +30,13 @@
           "colors": [
             "white"
           ],
+          "stock_photo": "https://bikebook.bikeindex.org/nishiki/2021/escalante_women_s_us.jpg",
           "variants": [
             {
               "sku": "21783490",
               "size": "OSFA"
             }
-          ],
-          "stock_photo": "https://bikebook.bikeindex.org/nishiki/2021/escalante_women_s_us.jpg"
+          ]
         }
       ],
       "url": "https://globalpreview.dickssportinggoods.com/p/nishiki-womens-escalante-electric-comfort-bike-21niswnshksclntlxbik/21niswnshksclntlxbik",
@@ -83,8 +83,12 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "max_torque": 40,
       "operating_modes": [

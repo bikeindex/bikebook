@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/niu/2026/nqi_sport_extended_range",
   "manufacturer": "Niu",
-  "vehicle_model_group": "NQi Sport",
+  "model_group": "NQi Sport",
   "model": "NQi Sport Extended Range",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -21,8 +21,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 269
+    "material": "steel"
   },
   "wheels": [
     {
@@ -59,10 +58,11 @@
   "motors": [
     {
       "manufacturer": "Bosch",
-      "battery_size": 2100,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 2100,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 1600,
       "peak_power": 1800,
       "operating_modes": [
@@ -73,6 +73,12 @@
           "range_claimed": 77
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 269
     }
   ],
   "sizes": [

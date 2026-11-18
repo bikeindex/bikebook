@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wallke/2026/h7_awd",
   "manufacturer": "Wallke",
-  "vehicle_model_group": "H7",
+  "model_group": "H7",
   "model": "H7 AWD",
   "model_configuration": "complete",
   "type": "bike",
@@ -99,8 +99,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 181
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {},
@@ -145,13 +144,17 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UN38.3 / MSDS / UL",
-      "battery_size": 1920,
-      "battery_options": [
-        2880
+      "certifications": [
+        "UN 38.3"
       ],
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 1920,
+        "capacity_options": [
+          2880
+        ],
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 1000,
       "peak_power": 1600,
       "max_torque": 95,
@@ -180,13 +183,17 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UN38.3 / MSDS / UL",
-      "battery_size": 1920,
-      "battery_options": [
-        2880
+      "certifications": [
+        "UN 38.3"
       ],
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 1920,
+        "capacity_options": [
+          2880
+        ],
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 1000,
       "peak_power": 1600,
       "max_torque": 95,
@@ -212,9 +219,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

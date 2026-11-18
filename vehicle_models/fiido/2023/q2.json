@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fiido/2023/q2",
   "manufacturer": "Fiido",
   "model": "Q2",
@@ -68,7 +68,9 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 1253,
+      "battery": {
+        "capacity": 1253
+      },
       "rated_power": 400,
       "operating_modes": [
         {
@@ -83,7 +85,9 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 1253,
+      "battery": {
+        "capacity": 1253
+      },
       "rated_power": 800,
       "operating_modes": [
         {
@@ -93,6 +97,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -106,7 +116,6 @@
           "length": 1290
         },
         "total_weight": 29,
-        "max_weight_rider": 120,
         "rider_height_min": 1500,
         "rider_height_max": 2000,
         "extra_measurements": {

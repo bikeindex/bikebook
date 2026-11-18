@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/znh/2025/19",
   "manufacturer": "Znh",
+  "model_group": "19",
   "model": "19",
   "model_configuration": "complete",
   "type": "bike",
@@ -13,6 +14,7 @@
   "stock_photo": "https://bikebook.bikeindex.org/znh/2025/19.jpg",
   "description": "1.Smooth 750W Powerful Riding Performance\n750W high torque brushless motor with top speed locked at 20MPH, matched 7-speed gear system and 55Nm torque, easily handles city roads and 30° slopes for daily commuting and leisure trips.\n2.Safe UL2849 Certified Removable Battery\n48V 13Ah lithium battery with full BMS protection and UL2849 safety certification. Full charge takes 4-6 hours, supporting 20-35 miles throttle range and 30-60 miles pedal assist range. Detachable design for convenient charging and storage.\n3.Comfort Step-Thru Frame Complete Configuration\nLow step-through frame suits all adult riders, equipped with dual shock-absorbing suspension, responsive dual disc brakes, real-time LCD display, front headlight and rear passenger seat, balancing comfort and daily practicality.\n4.Sturdy & All-Weather Commuter Design\nCarbon steel frame holds max 265lbs load, IPX4 waterproof electronic components work normally on rainy days. Built-in electric horn and 24-inch standard tires bring stable, safe urban riding experience for men and women.\n5.Safety Notice & 24/7 After-Sales Support\nThis ebike is for private off-road & recreational use only, wear helmet before riding. Our customer service team is online 24 hours to solve all your issues.",
   "first_year": 2025,
+  "final_year": 2026,
   "years": {
     "2026": {
       "original_msrp": 69900,
@@ -76,10 +78,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "max_torque": 55,
       "operating_modes": [

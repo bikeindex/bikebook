@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gazelle/2026/ultimate_t11_plus_us",
   "manufacturer": "Gazelle",
-  "vehicle_model_group": "Ultimate",
+  "model_group": "Ultimate",
   "model": "Ultimate T11+",
   "model_configuration": "complete",
   "markets": [
@@ -49,6 +49,15 @@
   },
   "frame": {
     "material": "aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ],
     "bottom_bracket": {
       "spindle": "ISIS"
     }
@@ -108,9 +117,11 @@
       "model_group": "Performance Line Sport",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 540,
-      "battery_chemistry": "li-ion",
-      "charging_time": 462,
+      "battery": {
+        "capacity": 540,
+        "chemistry": "li-ion",
+        "charging_time": 462
+      },
       "rated_power": 250,
       "peak_power": 700,
       "max_torque": 85,

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2025/v6",
   "manufacturer": "Inmotion",
   "model": "V6",
@@ -34,8 +34,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 90
+    "material": "steel"
   },
   "brakes": [
     {
@@ -48,10 +47,13 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 240,
-      "battery_chemistry": "li-ion",
-      "battery_info": "13S2P EVE 18650, 26V",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 240,
+        "voltage": 26,
+        "chemistry": "li-ion",
+        "cells": "13S2P EVE 18650",
+        "charging_time": 300
+      },
       "rated_power": 500,
       "peak_power": 1000,
       "max_torque": 40,
@@ -64,6 +66,12 @@
           "max_slope": 18
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 90
     }
   ],
   "sizes": [

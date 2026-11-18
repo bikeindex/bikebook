@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biria/2024/eb_top_3",
   "manufacturer": "Biria",
-  "vehicle_model_group": "Easy Boarding",
+  "model_group": "Easy Boarding",
   "model": "EB Top 3",
   "model_configuration": "complete",
   "type": "bike",
@@ -119,12 +119,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "40 cm",
       "geometry": {
         "total_weight": 14.1,
-        "max_weight_rider": 120,
         "rider_height_min": 1549,
         "rider_height_max": 1676
       }
@@ -132,7 +137,6 @@
     {
       "name": "46 cm",
       "geometry": {
-        "max_weight_rider": 120,
         "rider_height_min": 1702,
         "rider_height_max": 1803
       }

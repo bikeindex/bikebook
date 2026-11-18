@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2023/timemachine_01_disc_frameset",
   "manufacturer": "BMC",
-  "vehicle_model_group": "Timemachine",
+  "model_group": "Timemachine",
   "model": "Timemachine 01 DISC Frameset",
   "model_configuration": "frame_fork",
   "markets": [
@@ -75,8 +75,7 @@
   },
   "frame": {
     "material": "carbon",
-    "cable_routing": "internal",
-    "gross_weight_rating": 110
+    "cable_routing": "internal"
   },
   "wheels": [
     {
@@ -95,6 +94,12 @@
       "axle_spacing": 100,
       "axle_thread_pitch": 1.5,
       "tire_width_max": 27
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 110
     }
   ],
   "sizes": [

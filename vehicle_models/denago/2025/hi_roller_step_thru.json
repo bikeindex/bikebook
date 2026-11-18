@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/denago/2025/hi_roller_step_thru",
   "manufacturer": "Denago",
   "model": "Hi Roller Step-thru",
@@ -68,8 +68,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 136
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {}
@@ -112,9 +111,11 @@
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX4",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -133,6 +134,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/keteles/2024/kaijielaisi_v3_pro",
   "manufacturer": "Keteles",
-  "vehicle_model_group": "Kaijielaisi V3",
+  "model_group": "Kaijielaisi V3",
   "model": "Kaijielaisi V3 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -83,9 +83,11 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 1352,
-      "battery_chemistry": "li-ion",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 1352,
+        "chemistry": "li-ion",
+        "charging_time": 600
+      },
       "rated_power": 1600,
       "operating_modes": [
         {
@@ -110,9 +112,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 1352,
-      "battery_chemistry": "li-ion",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 1352,
+        "chemistry": "li-ion",
+        "charging_time": 600
+      },
       "rated_power": 1600,
       "operating_modes": [
         {
@@ -148,6 +152,7 @@
           "length": 1951,
           "height": 1120
         },
+        "total_weight": 38,
         "rider_height_min": 1700,
         "rider_height_max": 2200,
         "extra_measurements": {
@@ -179,6 +184,14 @@
     {
       "type": "e_vehicle_battery",
       "description": "52V 26AH Lithium Battery"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Battery Lifetime: 800 cycles"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "52V 2.0A"
     },
     {
       "type": "e_vehicle_motor",
@@ -221,6 +234,11 @@
         "width": 101.6,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Gross Weight",
+      "description": "42KG"
     }
   ]
 }

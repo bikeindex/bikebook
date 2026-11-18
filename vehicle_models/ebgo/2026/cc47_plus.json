@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebgo/2026/cc47_plus",
   "manufacturer": "Ebgo",
   "model": "CC47+",
@@ -147,10 +147,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
-      "battery_size": 480,
-      "battery_chemistry": "li-ion",
-      "charging_time": 150,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 480,
+        "chemistry": "li-ion",
+        "charging_time": 150
+      },
       "rated_power": 500,
       "max_torque": 65,
       "operating_modes": [

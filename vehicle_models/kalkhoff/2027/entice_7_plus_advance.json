@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kalkhoff/2027/entice_7_plus_advance",
   "manufacturer": "Kalkhoff",
-  "vehicle_model_group": "Entice",
+  "model_group": "Entice",
   "model": "Entice 7+ Advance",
   "model_configuration": "complete",
   "type": "bike",
@@ -102,11 +102,18 @@
   },
   "frame": {
     "material": "steel",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 134,
-    "gross_weight_rating": 170
+    }
   },
   "suspension": {
     "front": {
@@ -209,8 +216,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -226,9 +235,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 170
+    }
+  ],
   "sizes": [
     {
       "name": "Diamond S",
@@ -244,8 +264,7 @@
         "bb_drop": 20,
         "fork_rake": 44,
         "fork_length_a2c": 533,
-        "total_weight": 34.9,
-        "max_weight_rider": 120
+        "total_weight": 34.9
       }
     },
     {
@@ -262,8 +281,7 @@
         "bb_drop": 20,
         "fork_rake": 44,
         "fork_length_a2c": 533,
-        "total_weight": 35,
-        "max_weight_rider": 120
+        "total_weight": 35
       }
     },
     {
@@ -280,29 +298,25 @@
         "bb_drop": 20,
         "fork_rake": 44,
         "fork_length_a2c": 533,
-        "total_weight": 35.1,
-        "max_weight_rider": 120
+        "total_weight": 35.1
       }
     },
     {
       "name": "Wave S",
       "geometry": {
-        "total_weight": 34.9,
-        "max_weight_rider": 120
+        "total_weight": 34.9
       }
     },
     {
       "name": "Wave M",
       "geometry": {
-        "total_weight": 34.9,
-        "max_weight_rider": 120
+        "total_weight": 34.9
       }
     },
     {
       "name": "Wave L",
       "geometry": {
-        "total_weight": 35.1,
-        "max_weight_rider": 120
+        "total_weight": 35.1
       }
     }
   ],

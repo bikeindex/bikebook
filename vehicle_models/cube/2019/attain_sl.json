@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2019/attain_sl",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Attain",
+  "model_group": "Attain",
   "model": "Attain SL",
   "model_configuration": "complete",
   "type": "bike",
@@ -33,9 +33,7 @@
     "material": "aluminum",
     "material_detail": "6061-T6 Aluminum",
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 106,
-    "gross_weight_rating": 115
+    "seatpost_clamp_diameter": 31.8
   },
   "wheels": [
     {
@@ -73,6 +71,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 106
+    },
+    {
+      "load": "gross",
+      "weight": 115
     }
   ],
   "sizes": [

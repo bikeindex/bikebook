@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2026/clunker_evo",
   "manufacturer": "BULLS Bikes",
   "model": "Clunker EVO",
@@ -79,9 +79,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 115,
-    "gross_weight_rating": 135
+    ]
   },
   "wheels": [
     {
@@ -138,7 +136,10 @@
       "manufacturer": "Bafang",
       "model": "H600",
       "kind": "hub_drive",
-      "battery_size": 520,
+      "battery": {
+        "capacity": 520,
+        "weight": 4.5
+      },
       "rated_power": 250,
       "max_torque": 30,
       "operating_modes": [
@@ -151,6 +152,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 115
+    },
+    {
+      "load": "gross",
+      "weight": 135
     }
   ],
   "sizes": [

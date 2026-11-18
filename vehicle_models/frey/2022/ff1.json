@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/frey/2022/ff1",
   "manufacturer": "FREY",
   "model": "FF1",
@@ -36,8 +36,7 @@
     "material": "aluminum",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 120
+    }
   },
   "suspension": {
     "front": {
@@ -90,9 +89,14 @@
       "spindle": "ISIS",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / UL 2849",
+      "certifications": [
+        "UL 2849",
+        "CE"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 1008,
+      "battery": {
+        "capacity": 1008
+      },
       "rated_power": 1000,
       "peak_power": 1440,
       "max_torque": 160,
@@ -105,6 +109,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

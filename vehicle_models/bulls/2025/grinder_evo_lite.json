@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2025/grinder_evo_lite",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Grinder EVO",
+  "model_group": "Grinder EVO",
   "model": "Grinder EVO Lite",
   "model_configuration": "complete",
   "type": "bike",
@@ -91,9 +91,11 @@
       "manufacturer": "Fazua",
       "model": "Ride 50 Evation",
       "kind": "mid_drive",
-      "battery_size": 255,
-      "battery_chemistry": "li-ion",
-      "charging_time": 210,
+      "battery": {
+        "capacity": 255,
+        "chemistry": "li-ion",
+        "charging_time": 210
+      },
       "max_torque": 55,
       "operating_modes": [
         {

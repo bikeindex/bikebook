@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wildsyde/2021/beast_750w",
   "manufacturer": "Wildsyde",
-  "vehicle_model_group": "Beast",
+  "model_group": "Beast",
   "model": "Beast 750W",
   "model_configuration": "complete",
   "type": "bike",
@@ -15,6 +15,7 @@
   "stock_photo": "https://bikebook.bikeindex.org/wildsyde/2021/beast_750w.jpg",
   "description": "Power, presence and pure muscle—meet the Beast™, our burliest bike yet. For those who want to own the road, this fat-tire eBike is the ultimate in stability and control. With a 750W motor and 20Ah battery you’ll get 35-50+ miles of range, so you can ride longer and farther. Cruise up to 20mph whether you’re in the city or on the scenic route. The Beast’s tough design and big power means it’s for confident riders who want style and substance.",
   "first_year": 2021,
+  "final_year": 2026,
   "years": {
     "2026": {
       "original_msrp": 279500,
@@ -57,8 +58,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 136
+    "material_detail": "6061 Aluminum"
   },
   "wheels": [
     {
@@ -112,9 +112,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -137,6 +139,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

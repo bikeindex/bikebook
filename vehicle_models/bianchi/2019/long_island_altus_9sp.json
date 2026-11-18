@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bianchi/2019/long_island_altus_9sp",
   "manufacturer": "Bianchi",
   "model": "Long Island Altus 9sp",
@@ -80,8 +80,10 @@
       "model": "Central",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 80,
       "operating_modes": [

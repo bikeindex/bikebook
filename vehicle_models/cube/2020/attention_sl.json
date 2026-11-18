@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2020/attention_sl",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Attention",
+  "model_group": "Attention",
   "model": "Attention SL",
   "model_configuration": "complete",
   "type": "bike",
@@ -32,9 +32,7 @@
   "frame": {
     "material": "aluminum",
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 136,
-    "gross_weight_rating": 150
+    "seatpost_clamp_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -95,6 +93,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

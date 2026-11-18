@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/momentum/2025/ea_102",
   "manufacturer": "Momentum",
   "model": "EA-102",
@@ -74,8 +74,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 670,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 670,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {

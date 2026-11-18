@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebycco/2024/eb7pro_26_eu",
   "manufacturer": "Ebycco",
-  "vehicle_model_group": "EB7",
+  "model_group": "EB7",
   "model": "EB7PRO 26",
   "model_configuration": "complete",
   "markets": [
@@ -21,7 +21,7 @@
   "first_year": 2024,
   "years": {
     "2026": {
-      "original_msrp": 135900,
+      "original_msrp": 185900,
       "original_msrp_currency": "EUR",
       "url": "https://ebycco.com/products/e-bycco-eb7pro-26-best-electric-bike-for-commuting-2000w-peak-3000w-52v23ah",
       "url_live": true
@@ -37,8 +37,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {},
@@ -74,11 +73,16 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 1196,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1196,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "max_torque": 100,
@@ -98,11 +102,16 @@
     },
     {
       "drive_wheel": "rear",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 1196,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1196,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "max_torque": 100,
@@ -119,6 +128,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -182,10 +197,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "52V, 3000W"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LCD display, Waterproof"
     },
     {
@@ -241,6 +252,11 @@
       "type": "unknown",
       "type_detail": "Riding Modes",
       "description": "Electric throttle /Pedal Assist/Pedaling/Cruise/Walking Mode"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "52V, 3000W"
     }
   ]
 }

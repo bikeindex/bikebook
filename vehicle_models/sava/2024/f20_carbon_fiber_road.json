@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sava/2024/f20_carbon_fiber_road",
   "manufacturer": "Sava",
-  "vehicle_model_group": "F20",
+  "model_group": "F20",
   "model": "F20 Carbon Fiber Road",
   "model_configuration": "complete",
   "type": "bike",
@@ -74,8 +74,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "carbon",
-    "max_weight_total": 160
+    "material": "carbon"
   },
   "wheels": [
     {
@@ -103,6 +102,12 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 160
     }
   ],
   "sizes": [

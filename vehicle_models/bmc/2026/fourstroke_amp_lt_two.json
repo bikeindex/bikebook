@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2026/fourstroke_amp_lt_two",
   "manufacturer": "BMC",
-  "vehicle_model_group": "Fourstroke AMP",
+  "model_group": "Fourstroke AMP",
   "model": "Fourstroke AMP LT TWO",
   "model_configuration": "complete",
   "markets": [
@@ -74,9 +74,7 @@
   },
   "frame": {
     "material": "carbon",
-    "cable_routing": "internal",
-    "max_weight_total": 92,
-    "gross_weight_rating": 110
+    "cable_routing": "internal"
   },
   "suspension": {
     "front": {
@@ -132,8 +130,10 @@
       "manufacturer": "TQ",
       "model": "HPR",
       "kind": "mid_drive",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -146,6 +146,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 92
+    },
+    {
+      "load": "gross",
+      "weight": 110
     }
   ],
   "sizes": [

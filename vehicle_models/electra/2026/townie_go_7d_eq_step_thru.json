@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/electra/2026/townie_go_7d_eq_step_thru",
   "manufacturer": "Electra",
-  "vehicle_model_group": "Townie",
+  "model_group": "Townie",
   "model": "Townie Go! 7D EQ Step-Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -61,9 +61,7 @@
       "spindle_length": 122.5
     },
     "headset": "ZS44/28.6-26tpi | ZS44/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 115,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -116,8 +114,12 @@
     {
       "manufacturer": "Hyena",
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 250,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 250
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [
@@ -130,6 +132,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 115
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

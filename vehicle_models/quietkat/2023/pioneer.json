@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/quietkat/2023/pioneer",
   "manufacturer": "QuietKat",
   "model": "Pioneer",
@@ -22,8 +22,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 147
+    "material": "steel"
   },
   "wheels": [
     {
@@ -51,7 +50,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 614,
+      "battery": {
+        "capacity": 614
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -67,6 +68,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 147
     }
   ],
   "sizes": [

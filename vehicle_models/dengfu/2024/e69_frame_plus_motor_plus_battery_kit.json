@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dengfu/2024/e69_frame_plus_motor_plus_battery_kit",
   "manufacturer": "Dengfu",
   "model": "E69 Frame + Motor + Battery Kit",
@@ -87,8 +87,10 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 75,
       "operating_modes": [

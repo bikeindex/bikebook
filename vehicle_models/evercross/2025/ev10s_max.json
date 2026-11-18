@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2025/ev10s_max",
   "manufacturer": "Evercross",
-  "vehicle_model_group": "EV10S",
+  "model_group": "EV10S",
   "model": "EV10S Max",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -58,7 +58,9 @@
   "motors": [
     {
       "water_rating": "IP54",
-      "battery_size": 864,
+      "battery": {
+        "capacity": 864
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -68,6 +70,12 @@
           "range_claimed": 90
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -82,8 +90,7 @@
         "dimensions_folded": {
           "height": 550
         },
-        "total_weight": 21.4,
-        "max_weight_rider": 150
+        "total_weight": 21.4
       }
     }
   ],

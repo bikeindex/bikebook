@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mondraker/2025/neat_rr",
   "manufacturer": "Mondraker",
-  "vehicle_model_group": "Neat",
+  "model_group": "Neat",
   "model": "Neat RR",
   "model_configuration": "complete",
   "type": "bike",
@@ -123,8 +123,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 135,
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "peak_power": 300,
       "max_torque": 50,
       "operating_modes": [

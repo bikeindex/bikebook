@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2023/ev85f",
   "manufacturer": "Evercross",
-  "vehicle_model_group": "EV85F",
+  "model_group": "EV85F",
   "model": "EV85F",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -64,8 +64,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 281,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 281,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -76,6 +78,12 @@
           "max_slope": 10
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -90,8 +98,7 @@
           "width": 470,
           "height": 1140
         },
-        "total_weight": 15,
-        "max_weight_rider": 120
+        "total_weight": 15
       }
     }
   ],

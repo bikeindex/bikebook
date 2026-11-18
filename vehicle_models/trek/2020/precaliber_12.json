@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2020/precaliber_12",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Precaliber",
+  "model_group": "Precaliber",
   "model": "Precaliber 12",
   "model_configuration": "complete",
   "type": "bike",
@@ -62,9 +62,7 @@
     "bottom_bracket": {
       "width": 68,
       "spindle": "square taper"
-    },
-    "max_weight_total": 29,
-    "gross_weight_rating": 36
+    }
   },
   "wheels": [
     {
@@ -95,6 +93,16 @@
       "position": [
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 29
+    },
+    {
+      "load": "gross",
+      "weight": 36
     }
   ],
   "sizes": [

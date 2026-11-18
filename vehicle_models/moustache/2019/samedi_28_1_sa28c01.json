@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2019/samedi_28_1_sa28c01",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Samedi 28",
+  "model_group": "Samedi 28",
   "model": "Samedi 28.1 SA28C01",
   "model_configuration": "complete",
   "type": "bike",
@@ -57,9 +57,7 @@
       "spindle": "BNI"
     },
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 112,
-    "gross_weight_rating": 135
+    "seatpost_clamp_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -131,8 +129,10 @@
       "model_group": "Active Line",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 290,
       "max_torque": 40,
@@ -147,6 +147,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 112
+    },
+    {
+      "load": "gross",
+      "weight": 135
     }
   ],
   "sizes": [

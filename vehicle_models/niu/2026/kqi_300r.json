@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/niu/2026/kqi_300r",
   "manufacturer": "Niu",
-  "vehicle_model_group": "KQi 300",
+  "model_group": "KQi 300",
   "model": "KQi 300R",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -52,8 +52,10 @@
   ],
   "motors": [
     {
-      "battery_size": 487,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 487,
+        "charging_time": 300
+      },
       "rated_power": 900,
       "peak_power": 1300,
       "operating_modes": [
@@ -64,6 +66,12 @@
           "range_claimed": 60
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -82,7 +90,6 @@
           "height": 544
         },
         "total_weight": 20.9,
-        "max_weight_rider": 120,
         "rider_age_min": 14
       }
     }

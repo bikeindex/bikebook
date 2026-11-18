@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2022/mavaro_neo_1_low_stepthru_gb",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Mavaro Neo",
+  "model_group": "Mavaro Neo",
   "model": "Mavaro Neo 1 Low StepThru",
   "model_configuration": "complete",
   "markets": [
@@ -152,8 +152,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -170,9 +172,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    }
+  ],
   "sizes": [
     {
       "name": "S/M",
@@ -269,7 +274,6 @@
     },
     {
       "type": "hub",
-      "type_detail": "Rear Derailleur",
       "position": [
         "rear"
       ],

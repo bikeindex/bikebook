@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/liv/2027/intrigue_advanced_e_plus_se",
   "manufacturer": "Liv",
-  "vehicle_model_group": "Intrigue",
+  "model_group": "Intrigue",
   "model": "Intrigue Advanced E+ SE",
   "model_configuration": "complete",
   "type": "bike",
@@ -36,8 +36,7 @@
   "frame": {
     "material": "carbon",
     "material_detail": "Advanced-Grade Carbon",
-    "seatpost_diameter": 30.9,
-    "gross_weight_rating": 156
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -105,8 +104,10 @@
       "model": "SyncDrive Pro 4",
       "kind": "mid_drive",
       "water_rating": "IPX7",
-      "battery_size": 560,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 560,
+        "chemistry": "li-ion"
+      },
       "peak_power": 850,
       "max_torque": 120,
       "operating_modes": [
@@ -115,6 +116,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 156
     }
   ],
   "sizes": [

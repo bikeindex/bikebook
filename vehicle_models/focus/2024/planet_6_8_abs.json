@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/focus/2024/planet_6_8_abs",
   "manufacturer": "Focus",
-  "vehicle_model_group": "Planet²",
+  "model_group": "Planet²",
   "model": "Planet² 6.8 Abs",
   "model_configuration": "complete",
   "type": "bike",
@@ -79,9 +79,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 123,
-    "gross_weight_rating": 150
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -146,8 +144,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -163,9 +163,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 123
+    },
+    {
+      "load": "gross",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "S",

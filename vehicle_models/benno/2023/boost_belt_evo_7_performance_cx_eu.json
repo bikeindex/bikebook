@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/benno/2023/boost_belt_evo_7_performance_cx_eu",
   "manufacturer": "Benno",
-  "vehicle_model_group": "Boost",
+  "model_group": "Boost",
   "model": "Boost Belt EVO 7 Performance CX",
   "model_configuration": "complete",
   "markets": [
@@ -75,6 +75,13 @@
       {
         "type": "accessory",
         "description": "Rail System"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
     "bottom_bracket": {
@@ -139,9 +146,11 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 545,
-      "battery_chemistry": "li-ion",
-      "charging_time": 294,
+      "battery": {
+        "capacity": 545,
+        "chemistry": "li-ion",
+        "charging_time": 294
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -161,9 +170,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 60
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 60
+    }
+  ],
   "sizes": [
     {
       "name": "Easy On",

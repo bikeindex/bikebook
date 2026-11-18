@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dahon/2024/unio_e20",
   "manufacturer": "Dahon",
   "model": "Unio E20",
@@ -101,8 +101,10 @@
       "drive_wheel": "rear",
       "manufacturer": "Dahon",
       "kind": "mid_drive",
-      "battery_size": 313,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 313,
+        "chemistry": "li-ion"
+      },
       "rated_power": 200,
       "operating_modes": [
         {
@@ -114,9 +116,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 10
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 105
+    },
+    {
+      "load": "cargo",
+      "weight": 10
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -127,7 +136,6 @@
           "height": 710
         },
         "total_weight": 18.7,
-        "max_weight_rider": 105,
         "rider_height_min": 1500,
         "rider_height_max": 1900
       }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2023/fetch_plus_2",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Fetch+",
+  "model_group": "Fetch+",
   "model": "Fetch+ 2",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -69,9 +69,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 169,
-    "gross_weight_rating": 200
+    "seatpost_diameter": 34.9
   },
   "wheels": [
     {
@@ -136,9 +134,13 @@
       "model_group": "Cargo Line",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "certification": "UL 2849",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -152,6 +154,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 169
+    },
+    {
+      "load": "gross",
+      "weight": 200
     }
   ],
   "sizes": [

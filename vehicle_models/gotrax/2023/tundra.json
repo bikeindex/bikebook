@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2023/tundra",
   "manufacturer": "GOTRAX",
   "model": "Tundra",
@@ -74,11 +74,13 @@
           "variants": [
             {
               "sku": "GT-TUNDRA750SO-SIL",
-              "gtin": "810066086258"
+              "gtin": "810066086258",
+              "size": "One Size"
             },
             {
               "sku": "GT-TUNDRA750ST-SIL",
-              "gtin": "810066086449"
+              "gtin": "810066086449",
+              "size": "One Size"
             }
           ]
         },
@@ -91,11 +93,13 @@
           "variants": [
             {
               "sku": "GT-TUNDRA750ST-GRN",
-              "gtin": "810066086456"
+              "gtin": "810066086456",
+              "size": "One Size"
             },
             {
               "sku": "GT-TUNDRA750SO-GRN",
-              "gtin": "810066086265"
+              "gtin": "810066086265",
+              "size": "One Size"
             }
           ]
         }
@@ -106,8 +110,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 136
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -144,11 +147,15 @@
     {
       "manufacturer": "Bafang",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -172,6 +179,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    },
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -189,21 +206,8 @@
           "height": 1179
         },
         "total_weight": 35.4,
-        "max_weight_rider": 136,
         "rider_height_min": 1524,
         "rider_height_max": 1930
-      }
-    },
-    {
-      "name": "Front",
-      "geometry": {
-        "max_weight_rider": 120
-      }
-    },
-    {
-      "name": "Rear",
-      "geometry": {
-        "max_weight_rider": 120
       }
     }
   ],

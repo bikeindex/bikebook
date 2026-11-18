@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tst/2025/buddy_pro",
   "manufacturer": "TST",
   "model": "Buddy Pro",
@@ -52,8 +52,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 204
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -90,9 +89,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "operating_modes": [
@@ -106,6 +107,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

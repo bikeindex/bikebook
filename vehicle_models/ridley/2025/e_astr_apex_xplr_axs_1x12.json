@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ridley/2025/e_astr_apex_xplr_axs_1x12",
   "manufacturer": "Ridley",
-  "vehicle_model_group": "E-ASTR",
+  "model_group": "E-ASTR",
   "model": "E-ASTR Apex XPLR AXS 1x12",
   "model_configuration": "complete",
   "markets": [
@@ -157,8 +157,10 @@
       "drive_wheel": "rear",
       "manufacturer": "TQ",
       "kind": "mid_drive",
-      "battery_size": 290,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 290,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

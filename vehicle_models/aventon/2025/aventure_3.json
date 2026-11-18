@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aventon/2025/aventure_3",
   "manufacturer": "Aventón",
-  "vehicle_model_group": "Aventure",
+  "model_group": "Aventure",
   "model": "Aventure 3",
   "model_configuration": "complete",
   "type": "bike",
@@ -125,8 +125,7 @@
       "spindle": "square taper"
     },
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 181
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -186,12 +185,17 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
+      "certifications": [
+        "UL 2271"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 733,
-      "battery_chemistry": "li-ion",
-      "battery_info": "36V, 20Ah, LG 21700 cells",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 733,
+        "voltage": 36,
+        "chemistry": "li-ion",
+        "cells": "LG 21700",
+        "charging_time": 300
+      },
       "rated_power": 750,
       "peak_power": 1440,
       "max_torque": 80,
@@ -221,6 +225,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

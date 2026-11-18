@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/schwinn/2020/emonroe_250",
   "manufacturer": "Schwinn",
-  "vehicle_model_group": "eMonroe",
+  "model_group": "eMonroe",
   "model": "eMonroe 250",
   "model_configuration": "complete",
   "type": "bike",
@@ -92,7 +92,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 400,
+      "battery": {
+        "capacity": 400
+      },
       "rated_power": 250,
       "operating_modes": [
         {

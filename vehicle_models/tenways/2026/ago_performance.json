@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tenways/2026/ago_performance",
   "manufacturer": "Tenways",
-  "vehicle_model_group": "AGO",
+  "model_group": "AGO",
   "model": "AGO Performance",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,7 +54,16 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum"
+    "material_detail": "6061 Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ]
   },
   "suspension": {
     "front": {}
@@ -99,8 +108,10 @@
       "model": "BDU346Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 540,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 540,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -117,9 +128,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 145
+    },
+    {
+      "load": "cargo",
+      "weight": 27
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -132,8 +150,7 @@
         "chainstay": 461,
         "wheelbase": 1155,
         "standover": 506,
-        "total_weight": 27,
-        "max_weight_rider": 145
+        "total_weight": 27
       }
     }
   ],

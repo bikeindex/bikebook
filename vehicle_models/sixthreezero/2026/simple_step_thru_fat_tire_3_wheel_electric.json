@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/simple_step_thru_fat_tire_3_wheel_electric",
   "manufacturer": "sixthreezero",
   "model": "Simple Step Thru FAT Tire 3 Wheel Electric",
@@ -98,8 +98,10 @@
       "drive_wheel": "front",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {

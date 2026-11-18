@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gobike/2022/futuro",
   "manufacturer": "GOBike",
   "model": "FUTURO",
@@ -16,7 +16,7 @@
   "first_year": 2022,
   "years": {
     "2026": {
-      "original_msrp": 79900,
+      "original_msrp": 99900,
       "original_msrp_currency": "USD",
       "colorways": [
         {
@@ -84,9 +84,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 374,
-      "battery_chemistry": "li-ion",
-      "battery_info": "7.8AH",
+      "battery": {
+        "capacity": 374,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "peak_power": 500,
       "operating_modes": [
@@ -107,6 +108,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 130
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -116,8 +123,7 @@
           "width": 318,
           "height": 1219
         },
-        "total_weight": 21.8,
-        "max_weight_rider": 130
+        "total_weight": 21.8
       }
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moon_cool/2026/ft1",
   "manufacturer": "Moon Cool",
   "model": "FT1",
@@ -107,8 +107,7 @@
   "frame": {
     "material": "aluminum",
     "folding": "half_fold",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 181
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -157,8 +156,14 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "2849&2271 by SGS;CFR1512",
-      "battery_size": 696,
+      "certifications": [
+        "UL 2849",
+        "UL 2271",
+        "16 CFR 1512"
+      ],
+      "battery": {
+        "capacity": 696
+      },
       "rated_power": 500,
       "peak_power": 1092,
       "max_torque": 45,
@@ -182,6 +187,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

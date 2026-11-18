@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lankeleisi/2025/golf_x",
   "manufacturer": "Lankeleisi",
   "model": "Golf-X",
@@ -74,8 +74,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 200
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -119,8 +118,10 @@
   "motors": [
     {
       "water_rating": "IP54",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -142,6 +143,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

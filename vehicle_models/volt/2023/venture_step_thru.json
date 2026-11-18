@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/volt/2023/venture_step_thru",
   "manufacturer": "Volt Bike",
-  "vehicle_model_group": "Venture",
+  "model_group": "Venture",
   "model": "Venture Step-Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -55,8 +55,7 @@
   "frame": {
     "material": "steel",
     "top_tube": "step_through",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 127
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {}
@@ -108,10 +107,16 @@
       "kind": "mid_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / EN 14766 / ROHS",
+      "certifications": [
+        "EN 14766",
+        "CE",
+        "RoHS"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 120,
       "operating_modes": [
@@ -135,6 +140,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 127
+    },
+    {
+      "load": "payload",
+      "weight": 127
+    }
+  ],
   "sizes": [
     {
       "name": "17\"",
@@ -149,7 +164,6 @@
           "length": 1727
         },
         "total_weight": 29,
-        "max_weight_rider": 127,
         "extra_measurements": {
           "handlebar_height_max": 1168,
           "handlebar_height_min": 1016

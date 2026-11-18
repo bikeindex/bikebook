@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/santa_cruz/2026/bullit_podium",
   "manufacturer": "Santa Cruz",
-  "vehicle_model_group": "Bullit",
+  "model_group": "Bullit",
   "model": "Bullit Podium",
   "model_configuration": "complete",
   "type": "bike",
@@ -144,8 +144,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,

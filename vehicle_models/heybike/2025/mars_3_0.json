@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/heybike/2025/mars_3_0",
   "manufacturer": "Heybike",
+  "model_group": "Mars",
   "model": "Mars 3.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -133,8 +134,7 @@
           "rear"
         ]
       }
-    ],
-    "max_weight_total": 200
+    ]
   },
   "suspension": {
     "front": {
@@ -176,9 +176,14 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 624,
-      "charging_time": 420,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 624,
+        "charging_time": 420
+      },
       "rated_power": 750,
       "peak_power": 1400,
       "max_torque": 95,
@@ -200,6 +205,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

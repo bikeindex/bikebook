@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/happyrun/2025/g70",
   "manufacturer": "HappyRun",
-  "vehicle_model_group": "G70",
+  "model_group": "G70",
   "model": "G70",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -65,8 +65,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {},
@@ -102,9 +101,11 @@
   "motors": [
     {
       "water_rating": "IP54",
-      "battery_size": 1824,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1824,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 1000,
       "peak_power": 2000,
       "max_torque": 110,
@@ -130,9 +131,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 22.68
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    },
+    {
+      "load": "cargo",
+      "weight": 22.68
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -144,7 +156,6 @@
           "length": 1677
         },
         "total_weight": 61.2,
-        "max_weight_rider": 159,
         "rider_height_min": 1600,
         "rider_height_max": 2007,
         "extra_measurements": {

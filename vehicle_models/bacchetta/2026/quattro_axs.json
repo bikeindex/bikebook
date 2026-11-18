@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bacchetta/2026/quattro_axs",
   "manufacturer": "Bacchetta",
-  "vehicle_model_group": "Quattro",
+  "model_group": "Quattro",
   "model": "Quattro AXS",
   "model_configuration": "complete",
   "type": "recumbent",
@@ -64,19 +64,21 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
-      "name": "Large",
-      "geometry": {
-        "max_weight_rider": 125
-      }
+      "name": "Large"
     },
     {
       "name": "Medium",
       "geometry": {
         "total_weight": 9.5,
-        "frame_weight": 1.561,
-        "max_weight_rider": 125
+        "frame_weight": 1.561
       }
     }
   ],

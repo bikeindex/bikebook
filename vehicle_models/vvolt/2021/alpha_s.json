@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vvolt/2021/alpha_s",
   "manufacturer": "Vvolt",
-  "vehicle_model_group": "Alpha",
+  "model_group": "Alpha",
   "model": "Alpha S",
   "model_configuration": "complete",
   "type": "bike",
@@ -106,7 +106,9 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 375,
+      "battery": {
+        "capacity": 375
+      },
       "rated_power": 350,
       "operating_modes": [
         {

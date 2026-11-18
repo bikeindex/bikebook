@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/yuba/2017/elmundo_v5",
   "manufacturer": "Yuba",
-  "vehicle_model_group": "elMundo",
+  "model_group": "elMundo",
   "model": "elMundo V5",
   "model_configuration": "complete",
   "type": "cargo_bike_rear",
@@ -75,7 +75,9 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 557,
+      "battery": {
+        "capacity": 557
+      },
       "operating_modes": [
         {
           "mode": "assist",

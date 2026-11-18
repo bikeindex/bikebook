@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2019/powerfly_lt_9_7",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Powerfly",
+  "model_group": "Powerfly",
   "model": "Powerfly LT 9.7",
   "model_configuration": "complete",
   "type": "bike",
@@ -60,9 +60,7 @@
     "material": "carbon",
     "material_detail": "OCLV Mountain Carbon",
     "cable_routing": "dropper",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 112,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -130,8 +128,10 @@
       "model": "BDU450CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -145,6 +145,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 112
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

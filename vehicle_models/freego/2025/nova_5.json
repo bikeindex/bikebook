@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freego/2025/nova_5",
   "manufacturer": "Freego",
-  "vehicle_model_group": "Nova",
+  "model_group": "Nova",
   "model": "Nova 5",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -36,8 +36,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Forged Aluminum",
-    "max_weight_total": 120
+    "material_detail": "Forged Aluminum"
   },
   "suspension": {
     "front": {
@@ -81,10 +80,12 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 2880,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung cells",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 2880,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 360
+      },
       "rated_power": 4000,
       "peak_power": 8000,
       "max_torque": 380,
@@ -100,6 +101,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/evryjourney_electric_rickshaw_1000w_mid_drive",
   "manufacturer": "sixthreezero",
-  "vehicle_model_group": "EVRYjourney Rickshaw",
+  "model_group": "EVRYjourney Rickshaw",
   "model": "EVRYjourney Electric Rickshaw 1000w Mid Drive",
   "model_configuration": "complete",
   "type": "pedi_cab",
@@ -39,8 +39,7 @@
   "frame": {
     "material": "aluminum",
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 227
+    "seatpost_clamp_diameter": 31.8
   },
   "suspension": {
     "front": {}
@@ -89,9 +88,11 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 1008,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
+      "battery": {
+        "capacity": 1008,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -103,6 +104,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [

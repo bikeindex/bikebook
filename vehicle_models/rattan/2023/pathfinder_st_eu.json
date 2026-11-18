@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rattan/2023/pathfinder_st_eu",
   "manufacturer": "Rattan",
-  "vehicle_model_group": "Pathfinder",
+  "model_group": "Pathfinder",
   "model": "Pathfinder ST",
   "model_configuration": "complete",
   "markets": [
@@ -59,8 +59,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 181
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -96,8 +95,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 720,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 720,
+        "charging_time": 300
+      },
       "max_torque": 80,
       "operating_modes": [
         {
@@ -119,6 +120,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

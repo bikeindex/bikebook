@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/quietkat/2026/ranger_xr",
   "manufacturer": "QuietKat",
-  "vehicle_model_group": "Ranger",
+  "model_group": "Ranger",
   "model": "Ranger XR",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,8 +40,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 147
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -81,7 +80,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 615,
+      "battery": {
+        "capacity": 615
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -99,6 +100,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 147
     }
   ],
   "sizes": [

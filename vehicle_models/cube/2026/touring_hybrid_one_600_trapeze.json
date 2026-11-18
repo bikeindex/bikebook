@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/touring_hybrid_one_600_trapeze",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Touring Hybrid",
+  "model_group": "Touring Hybrid",
   "model": "Touring Hybrid ONE 600 Trapeze",
   "model_configuration": "complete",
   "type": "bike",
@@ -33,9 +33,7 @@
   "frame": {
     "material": "aluminum",
     "cable_routing": "stealth",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 123,
-    "gross_weight_rating": 150
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -102,8 +100,10 @@
       "model": "BDU346Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -119,9 +119,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "46 cm",
@@ -139,7 +150,6 @@
         "stem_length": 65,
         "crank_length": 175,
         "max_seatpost_insertion": 270,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "bb_height_to_hub": 68,
           "protrusion_height_80mm": 769
@@ -163,7 +173,6 @@
         "crank_length": 175,
         "max_seatpost_insertion": 300,
         "total_weight": 27,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "bb_height_to_hub": 68,
           "protrusion_height_80mm": 778
@@ -186,7 +195,6 @@
         "stem_length": 80,
         "crank_length": 175,
         "max_seatpost_insertion": 300,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "bb_height_to_hub": 68,
           "protrusion_height_80mm": 817
@@ -209,7 +217,6 @@
         "stem_length": 80,
         "crank_length": 175,
         "max_seatpost_insertion": 300,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "bb_height_to_hub": 68,
           "protrusion_height_80mm": 850

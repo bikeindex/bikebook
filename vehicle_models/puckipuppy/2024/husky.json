@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/puckipuppy/2024/husky",
   "manufacturer": "Puckipuppy",
-  "vehicle_model_group": "Husky",
+  "model_group": "Husky",
   "model": "Husky",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -69,8 +69,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 227
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -107,9 +106,13 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 835,
+      "battery": {
+        "capacity": 835
+      },
       "rated_power": 750,
       "peak_power": 960,
       "operating_modes": [
@@ -130,6 +133,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [

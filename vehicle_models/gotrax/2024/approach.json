@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2024/approach",
   "manufacturer": "GOTRAX",
   "model": "Approach",
@@ -85,8 +85,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 120
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -120,7 +119,12 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 374
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -140,6 +144,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

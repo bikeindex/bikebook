@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/marin/2024/sausalito_e1_st_int",
   "manufacturer": "Marin Bikes",
-  "vehicle_model_group": "Sausalito",
+  "model_group": "Sausalito",
   "model": "Sausalito E1 ST - INT",
   "model_configuration": "complete",
   "type": "bike",
@@ -134,8 +134,10 @@
       "kind": "mid_drive",
       "spindle": "square taper",
       "sensor_cadence": false,
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [

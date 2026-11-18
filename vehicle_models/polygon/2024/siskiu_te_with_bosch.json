@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/polygon/2024/siskiu_te_with_bosch",
   "manufacturer": "Polygon",
-  "vehicle_model_group": "Siskiu",
+  "model_group": "Siskiu",
   "model": "Siskiu TE With Bosch",
   "model_configuration": "complete",
   "type": "bike",
@@ -127,8 +127,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_chemistry": "li-ion",
-      "charging_time": 340,
+      "battery": {
+        "chemistry": "li-ion",
+        "charging_time": 340
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

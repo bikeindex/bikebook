@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cirq/2024/coyote_plus",
   "manufacturer": "Cirq",
-  "vehicle_model_group": "Coyote",
+  "model_group": "Coyote",
   "model": "Coyote Plus",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,8 +42,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 136
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -84,9 +83,11 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 806,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 806,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 65,
@@ -112,9 +113,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 24.95
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 24.95
+    },
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -180,10 +188,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V 20A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "Color LCD Display with USB Charging Port"
     },
     {
@@ -243,6 +247,11 @@
         "width": 101.6,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "CONTROLLER",
+      "description": "48V 20A"
     }
   ]
 }

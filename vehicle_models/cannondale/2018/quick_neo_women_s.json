@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2018/quick_neo_women_s",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Quick",
+  "model_group": "Quick",
   "model": "Quick NEO Women's",
   "model_configuration": "complete",
   "markets": [
@@ -96,8 +96,10 @@
       "manufacturer": "Shimano",
       "model": "STEPS DU-E6050",
       "kind": "mid_drive",
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

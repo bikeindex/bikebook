@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/glarewheel/2021/eb_x7",
   "manufacturer": "Glarewheel",
+  "model_group": "EB-X7",
   "model": "EB-X7",
   "model_configuration": "complete",
   "type": "bike",
@@ -33,8 +34,7 @@
     "2021": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 113
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -55,7 +55,9 @@
   ],
   "motors": [
     {
-      "battery_size": 384,
+      "battery": {
+        "capacity": 384
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -67,6 +69,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
     }
   ],
   "sizes": [

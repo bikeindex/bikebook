@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2020/marlin_4",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Marlin",
+  "model_group": "Marlin",
   "model": "Marlin 4",
   "model_configuration": "complete",
   "type": "bike",
@@ -210,9 +210,7 @@
       "width": 73
     },
     "headset": "ZS44/28.6 | ZS44/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 121,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -306,6 +304,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 121
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eahora/2023/ft_01",
   "manufacturer": "Eahora",
-  "vehicle_model_group": "FT-01",
+  "model_group": "FT-01",
   "model": "FT-01",
   "model_configuration": "complete",
   "type": "bike",
@@ -56,8 +56,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "High-Carbon Steel",
-    "coil_compatible": true,
-    "max_weight_total": 120
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -106,9 +105,12 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IPX6",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion Grade A 21700 Cells",
+      "battery": {
+        "capacity": 960,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "Grade A 21700"
+      },
       "rated_power": 1000,
       "peak_power": 1200,
       "max_torque": 95,
@@ -133,6 +135,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

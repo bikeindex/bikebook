@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/christiania/2025/classic_sloped_mid_drive_us",
   "manufacturer": "Christiania Bikes",
-  "vehicle_model_group": "Classic",
+  "model_group": "Classic",
   "model": "Classic Sloped Mid Drive",
   "model_configuration": "complete",
   "markets": [
@@ -60,8 +60,9 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "certification": "Directive 2014/30/EU, Machine Directive 2006/42/EC, Standard EN 15914",
-      "battery_size": 626,
+      "battery": {
+        "capacity": 626
+      },
       "operating_modes": [
         {
           "mode": "assist",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2025/sirrus_x_3_0_step_through_eq_eu",
   "manufacturer": "Specialized",
-  "vehicle_model_group": "Sirrus",
+  "model_group": "Sirrus",
   "model": "Sirrus X 3.0 Step-Through EQ",
   "model_configuration": "complete",
   "markets": [
@@ -162,9 +162,12 @@
       "caliper_mount": "Disc Flat Mount"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 15
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 15
+    }
+  ],
   "sizes": [
     {
       "name": "XS",

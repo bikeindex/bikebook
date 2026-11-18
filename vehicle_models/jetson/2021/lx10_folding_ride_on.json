@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2021/lx10_folding_ride_on",
   "manufacturer": "Jetson",
   "model": "LX10 Folding Ride-On",
@@ -101,9 +101,11 @@
   ],
   "motors": [
     {
-      "battery_size": 216,
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 216,
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -124,6 +126,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 118
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -139,7 +147,6 @@
           "height": 686
         },
         "total_weight": 16.3,
-        "max_weight_rider": 118,
         "rider_age_min": 12
       }
     }

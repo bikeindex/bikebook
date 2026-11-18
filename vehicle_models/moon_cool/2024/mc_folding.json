@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moon_cool/2024/mc_folding",
   "manufacturer": "Moon Cool",
-  "vehicle_model_group": "MC",
+  "model_group": "MC",
   "model": "MC Folding",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -23,8 +23,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "Hi-Tensile Steel",
-    "folding": "half_fold",
-    "max_weight_total": 159
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -71,6 +70,12 @@
         "rear"
       ],
       "caliper_mount": "Brake Bosses"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

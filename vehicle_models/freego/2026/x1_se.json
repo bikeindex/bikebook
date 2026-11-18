@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freego/2026/x1_se",
   "manufacturer": "Freego",
-  "vehicle_model_group": "X1",
+  "model_group": "X1",
   "model": "X1 SE",
   "model_configuration": "complete",
   "type": "bike",
@@ -34,8 +34,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -66,8 +65,10 @@
   ],
   "motors": [
     {
-      "battery_size": 1620,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 1620,
+        "charging_time": 360
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -89,6 +90,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

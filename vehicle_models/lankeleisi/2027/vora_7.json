@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lankeleisi/2027/vora_7",
   "manufacturer": "Lankeleisi",
   "model": "Vora-7",
@@ -61,8 +61,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 180
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -106,9 +105,11 @@
   "motors": [
     {
       "water_rating": "IP54",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 21700 cells",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700"
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -130,6 +131,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [

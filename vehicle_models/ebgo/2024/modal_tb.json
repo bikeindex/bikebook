@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebgo/2024/modal_tb",
   "manufacturer": "Ebgo",
-  "vehicle_model_group": "Modal",
+  "model_group": "Modal",
   "model": "Modal TB",
   "model_configuration": "complete",
   "type": "bike",
@@ -110,9 +110,11 @@
   ],
   "motors": [
     {
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG 21000 cells",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion",
+        "cells": "LG 21000"
+      },
       "rated_power": 350,
       "operating_modes": [
         {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/volt/2026/elegant_v2_lite",
   "manufacturer": "Volt Bike",
-  "vehicle_model_group": "Elegant",
+  "model_group": "Elegant",
   "model": "Elegant V2 Lite",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,8 +42,7 @@
   "frame": {
     "material": "aluminum",
     "top_tube": "step_through",
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 127
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {}
@@ -97,9 +96,11 @@
       "manufacturer": "Bafang",
       "model": "G020",
       "kind": "hub_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 500,
       "max_torque": 65,
       "operating_modes": [
@@ -123,6 +124,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 127
+    },
+    {
+      "load": "payload",
+      "weight": 127
+    }
+  ],
   "sizes": [
     {
       "name": "18\"",
@@ -137,7 +148,6 @@
           "length": 1854
         },
         "total_weight": 27.7,
-        "max_weight_rider": 127,
         "extra_measurements": {
           "handlebar_height_max": 1194,
           "handlebar_height_min": 1054

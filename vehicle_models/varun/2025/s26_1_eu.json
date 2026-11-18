@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/varun/2025/s26_1_eu",
   "manufacturer": "Varun",
   "model": "S26-1",
@@ -56,8 +56,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 170
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -94,10 +93,14 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "EN 15194",
+      "certifications": [
+        "EN 15194"
+      ],
       "water_rating": "IP54",
-      "battery_size": 864,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 864,
+        "charging_time": 360
+      },
       "rated_power": 250,
       "peak_power": 1000,
       "max_torque": 85,
@@ -115,6 +118,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 170
+    },
+    {
+      "load": "payload",
+      "weight": 170
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -130,7 +143,6 @@
           "length": 1960
         },
         "total_weight": 35,
-        "max_weight_rider": 170,
         "rider_height_min": 1700,
         "rider_height_max": 2050,
         "extra_measurements": {

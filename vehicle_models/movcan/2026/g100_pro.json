@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/movcan/2026/g100_pro",
   "manufacturer": "Movcan",
-  "vehicle_model_group": "G100",
+  "model_group": "G100",
   "model": "G100 Pro",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -96,8 +96,10 @@
   ],
   "motors": [
     {
-      "battery_size": 1196,
-      "charging_time": 600,
+      "battery": {
+        "capacity": 1196,
+        "charging_time": 600
+      },
       "peak_power": 1300,
       "operating_modes": [
         {
@@ -108,12 +110,15 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
-      "name": "One Size",
-      "geometry": {
-        "max_weight_rider": 120
-      }
+      "name": "One Size"
     }
   ],
   "components": [

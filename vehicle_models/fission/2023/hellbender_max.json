@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fission/2023/hellbender_max",
   "manufacturer": "Fission",
   "model": "Hellbender Max",
@@ -73,6 +73,8 @@
     "11_rear"
   ],
   "groupset": {
+    "manufacturer": "SRAM",
+    "series": "NX",
     "electronic": false
   },
   "brakes": [
@@ -95,10 +97,15 @@
       "spindle": "ISIS",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / UL 2849",
+      "certifications": [
+        "UL 2849",
+        "CE"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "peak_power": 1440,
       "max_torque": 160,
@@ -182,6 +189,12 @@
     },
     {
       "type": "shifter",
+      "type_detail": "Gearing Array",
+      "manufacturer": "SRAM",
+      "description": "SRAM NX 11-Speed 1x Mountain Drivetrain"
+    },
+    {
+      "type": "shifter",
       "type_detail": "Shift Technology",
       "description": "X-ACTUATION™ Precise Cable Pull Ratio"
     },
@@ -198,12 +211,6 @@
         "width": 121.92,
         "diameter": 559
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Gearing Array",
-      "manufacturer": "SRAM",
-      "description": "SRAM NX 11-Speed 1x Mountain Drivetrain"
     },
     {
       "type": "unknown",

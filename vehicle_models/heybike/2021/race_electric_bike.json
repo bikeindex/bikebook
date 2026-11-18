@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/heybike/2021/race_electric_bike",
   "manufacturer": "Heybike",
-  "vehicle_model_group": "Race",
+  "model_group": "Race",
   "model": "Race Electric Bike",
   "model_configuration": "complete",
   "type": "bike",
@@ -30,8 +30,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -52,8 +51,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -67,6 +68,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -108,10 +115,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "36V / 2A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LCD display"
     },
     {
@@ -127,6 +130,11 @@
       "type": "unknown",
       "type_detail": "Recommended",
       "description": "Rider Heights 5'4\" ~ 6'4\""
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "36V / 2A"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2027/scale_pro_700",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Scale",
+  "model_group": "Scale",
   "model": "Scale Pro 700",
   "model_configuration": "complete",
   "markets": [
@@ -72,9 +72,7 @@
       "shell": "BB92",
       "width": 92
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 67,
-    "gross_weight_rating": 80
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -127,6 +125,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 67
+    },
+    {
+      "load": "gross",
+      "weight": 80
     }
   ],
   "sizes": [

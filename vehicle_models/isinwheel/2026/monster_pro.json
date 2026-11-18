@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/isinwheel/2026/monster_pro",
   "manufacturer": "iSinwheel",
-  "vehicle_model_group": "Monster",
+  "model_group": "Monster",
   "model": "Monster Pro",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -51,8 +51,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -86,8 +85,10 @@
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
       "water_rating": "IP66",
-      "battery_size": 1620,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1620,
+        "charging_time": 480
+      },
       "peak_power": 5000,
       "max_torque": 190,
       "operating_modes": [
@@ -106,6 +107,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

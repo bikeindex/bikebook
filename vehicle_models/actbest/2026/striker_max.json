@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/actbest/2026/striker_max",
   "manufacturer": "Actbest",
-  "vehicle_model_group": "Striker",
+  "model_group": "Striker",
   "model": "Striker Max",
   "model_configuration": "complete",
   "type": "bike",
@@ -64,8 +64,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 163
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -103,8 +102,10 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 2080,
-      "charging_time": 600,
+      "battery": {
+        "capacity": 2080,
+        "charging_time": 600
+      },
       "peak_power": 1500,
       "max_torque": 200,
       "operating_modes": [
@@ -131,8 +132,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 2080,
-      "charging_time": 600,
+      "battery": {
+        "capacity": 2080,
+        "charging_time": 600
+      },
       "peak_power": 1500,
       "max_torque": 200,
       "operating_modes": [
@@ -154,6 +157,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 163
     }
   ],
   "sizes": [

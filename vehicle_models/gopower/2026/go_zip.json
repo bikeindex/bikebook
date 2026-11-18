@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gopower/2026/go_zip",
   "manufacturer": "Gopower",
   "model": "Go Zip",
@@ -56,7 +56,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "rated_power": 150,
       "operating_modes": [
         {
@@ -65,6 +67,12 @@
           "max_speed": 16
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 70
     }
   ],
   "sizes": [
@@ -80,8 +88,7 @@
           "length": 736.6,
           "width": 127,
           "height": 304.8
-        },
-        "max_weight_rider": 70
+        }
       }
     }
   ],
@@ -105,10 +112,6 @@
     {
       "type": "e_vehicle_remote",
       "description": "Display indicator, Speed, Battery Level, and Light Status"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "24V 150W"
     },
     {
       "type": "e_vehicle_wiring_harness",
@@ -151,6 +154,11 @@
         "rear"
       ],
       "description": "6.5-inch solid tires"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "CONTROLLER",
+      "description": "24V 150W"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/orbea/2026/rise_sl_h10_20mph_us",
   "manufacturer": "Orbea",
-  "vehicle_model_group": "Rise",
+  "model_group": "Rise",
   "model": "Rise SL H10 20mph",
   "model_configuration": "complete",
   "markets": [
@@ -112,7 +112,9 @@
       "manufacturer": "Shimano",
       "model": "EP600 RS Gen2 MC",
       "kind": "mid_drive",
-      "battery_size": 630,
+      "battery": {
+        "capacity": 630
+      },
       "operating_modes": [
         {
           "mode": "assist",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/numove_160",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Numove",
+  "model_group": "Numove",
   "model": "Numove 160",
   "model_configuration": "complete",
   "type": "bike",
@@ -35,9 +35,7 @@
     "bottom_bracket": {
       "width": 68
     },
-    "seatpost_diameter": 25.4,
-    "max_weight_total": 24,
-    "gross_weight_rating": 30
+    "seatpost_diameter": 25.4
   },
   "wheels": [
     {
@@ -68,6 +66,16 @@
       "caliper_mount": "Brake Bosses"
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 20
+    },
+    {
+      "load": "gross",
+      "weight": 30
+    }
+  ],
   "sizes": [
     {
       "name": "16\"",
@@ -82,7 +90,6 @@
         "chainstay": 275,
         "wheelbase": 703,
         "total_weight": 5.8,
-        "max_weight_rider": 20,
         "extra_measurements": {
           "bb_height_to_hub": 16
         }

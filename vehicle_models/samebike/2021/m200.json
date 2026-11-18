@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/samebike/2021/m200",
   "manufacturer": "samebike",
   "model": "M200",
@@ -56,8 +56,7 @@
     "material_detail": "6061 Aluminum",
     "folding": "half_fold",
     "cable_routing": "internal",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 136
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -115,9 +114,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IP54",
-      "battery_size": 1440,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 battery cells",
+      "battery": {
+        "capacity": 1440,
+        "chemistry": "li-ion",
+        "cells": "18650"
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -149,6 +150,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

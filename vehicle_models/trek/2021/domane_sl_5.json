@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2021/domane_sl_5",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Domane",
+  "model_group": "Domane",
   "model": "Domane SL 5",
   "model_configuration": "complete",
   "type": "bike",
@@ -300,9 +300,7 @@
     "cable_routing": "dropper",
     "bottom_bracket": {
       "shell": "T47"
-    },
-    "max_weight_total": 115,
-    "gross_weight_rating": 125
+    }
   },
   "wheels": [
     {
@@ -361,6 +359,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 115
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

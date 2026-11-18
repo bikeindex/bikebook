@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2023/ebe6",
   "manufacturer": "GOTRAX",
   "model": "EBE6",
@@ -90,9 +90,11 @@
   "motors": [
     {
       "water_rating": "IPX4",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -107,6 +109,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -116,8 +124,7 @@
           "width": 620,
           "height": 1168
         },
-        "total_weight": 24.3,
-        "max_weight_rider": 120
+        "total_weight": 24.3
       }
     }
   ],

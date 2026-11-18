@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2018/touring_hybrid_exc_500_trapeze",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Touring Hybrid",
+  "model_group": "Touring Hybrid",
   "model": "Touring Hybrid EXC 500 Trapeze",
   "model_configuration": "complete",
   "type": "bike",
@@ -29,6 +29,15 @@
   },
   "frame": {
     "material": "aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
+      }
+    ],
     "bottom_bracket": {
       "spindle": "BNI"
     },
@@ -97,8 +106,10 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2026/addict_gravel_30_us",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Addict",
+  "model_group": "Addict",
   "model": "Addict Gravel 30",
   "model_configuration": "complete",
   "markets": [
@@ -86,9 +86,7 @@
       "shell": "BSA",
       "spindle": "24mm"
     },
-    "derailleur_hanger": "SRAM UDH",
-    "max_weight_total": 110,
-    "gross_weight_rating": 120
+    "derailleur_hanger": "SRAM UDH"
   },
   "wheels": [
     {
@@ -126,6 +124,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

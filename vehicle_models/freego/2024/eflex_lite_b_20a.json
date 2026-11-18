@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freego/2024/eflex_lite_b_20a",
   "manufacturer": "Freego",
-  "vehicle_model_group": "eFlex",
+  "model_group": "eFlex",
   "model": "eFlex Lite B-20A",
   "model_configuration": "complete",
   "type": "bike",
@@ -67,8 +67,10 @@
   ],
   "motors": [
     {
-      "battery_size": 720,
-      "charging_time": 600,
+      "battery": {
+        "capacity": 720,
+        "charging_time": 600
+      },
       "rated_power": 500,
       "peak_power": 800,
       "operating_modes": [

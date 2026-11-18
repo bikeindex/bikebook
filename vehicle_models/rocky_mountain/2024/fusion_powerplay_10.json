@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rocky_mountain/2024/fusion_powerplay_10",
   "manufacturer": "Rocky Mountain Bicycles",
-  "vehicle_model_group": "Fusion Powerplay",
+  "model_group": "Fusion Powerplay",
   "model": "Fusion Powerplay 10",
   "model_configuration": "complete",
   "type": "bike",
@@ -134,8 +134,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 480,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 480,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 700,
       "max_torque": 108,

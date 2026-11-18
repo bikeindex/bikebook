@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sur_ron/2023/light_bee_s_us",
   "manufacturer": "Sur-Ron",
-  "vehicle_model_group": "Light Bee",
+  "model_group": "Light Bee",
   "model": "Light Bee S",
   "model_configuration": "complete",
   "markets": [
@@ -39,8 +39,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Forged Aluminum",
-    "max_weight_total": 75
+    "material_detail": "Forged Aluminum"
   },
   "suspension": {
     "front": {
@@ -71,9 +70,11 @@
   ],
   "motors": [
     {
-      "battery_size": 1248,
-      "battery_chemistry": "li-ion",
-      "charging_time": 330,
+      "battery": {
+        "capacity": 1248,
+        "chemistry": "li-ion",
+        "charging_time": 330
+      },
       "peak_power": 3500,
       "max_torque": 220,
       "operating_modes": [
@@ -87,6 +88,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 75
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2017/gen_1",
   "manufacturer": "Jetson",
   "model": "Gen 1",
@@ -135,9 +135,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 816,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 816,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -161,6 +163,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -171,7 +179,6 @@
           "height": 1041
         },
         "total_weight": 49.8,
-        "max_weight_rider": 136,
         "rider_age_min": 18
       }
     }

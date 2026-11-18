@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/nakto/2017/cruiser_2",
   "manufacturer": "Nakto",
   "model": "Cruiser 2",
@@ -37,8 +37,7 @@
     "2017": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 159
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -57,7 +56,9 @@
   ],
   "motors": [
     {
-      "battery_size": 768,
+      "battery": {
+        "capacity": 768
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -75,6 +76,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

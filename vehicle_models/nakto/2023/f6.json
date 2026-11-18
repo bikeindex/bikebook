@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/nakto/2023/f6",
   "manufacturer": "Nakto",
   "model": "F6",
@@ -35,8 +35,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 159
+    "material": "steel"
   },
   "wheels": [
     {
@@ -69,8 +68,10 @@
     {
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 768,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 768,
+        "charging_time": 360
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -90,6 +91,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eskute/2026/v200_pro",
   "manufacturer": "Eskute",
-  "vehicle_model_group": "V200",
+  "model_group": "V200",
   "model": "V200 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -79,8 +79,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 163
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -115,8 +114,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 1082,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1082,
+        "charging_time": 480
+      },
       "peak_power": 2000,
       "max_torque": 99,
       "operating_modes": [
@@ -140,9 +141,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.43
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.43
+    },
+    {
+      "load": "payload",
+      "weight": 163
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

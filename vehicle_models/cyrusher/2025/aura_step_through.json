@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cyrusher/2025/aura_step_through",
   "manufacturer": "Cyrusher",
   "model": "Aura Step-Through",
@@ -69,8 +69,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 159
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {}
@@ -104,10 +103,12 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 780,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 21700",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 780,
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700",
+        "charging_time": 480
+      },
       "rated_power": 750,
       "peak_power": 1050,
       "max_torque": 95,
@@ -130,6 +131,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wilier/2024/karga_shimano_deore_plus_ep6",
   "manufacturer": "Wilier",
-  "vehicle_model_group": "Karga",
+  "model_group": "Karga",
   "model": "Karga Shimano Deore + EP6",
   "model_configuration": "complete",
   "type": "bike",
@@ -44,7 +44,10 @@
     }
   },
   "frame": {
-    "material": "carbon"
+    "material": "carbon",
+    "bottom_bracket": {
+      "spindle": "Shimano EP8"
+    }
   },
   "suspension": {
     "front": {
@@ -93,12 +96,27 @@
   ],
   "motors": [
     {
-      "battery_size": 720,
+      "id": "c/shimano/2022/ep600_du_ep600_eu",
+      "drive_wheel": "rear",
+      "manufacturer": "Shimano",
+      "model": "DU-EP600",
+      "model_group": "EP600",
+      "kind": "mid_drive",
+      "spindle": "Shimano EP8",
+      "sensor_cadence": true,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 720
+      },
+      "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [
         {
           "mode": "assist",
           "availability": "stock",
+          "max_speed": 25,
           "e_vehicle_classifications": [
             "evc/eu/epac"
           ]
@@ -284,12 +302,6 @@
         "width": 60.96,
         "diameter": 622
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Electric system",
-      "manufacturer": "Shimano",
-      "description": "SHIMANO EP6"
     },
     {
       "type": "wheel",

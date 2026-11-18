@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2018/crossrip_plus",
   "manufacturer": "Trek",
   "model": "CrossRip+",
@@ -57,9 +57,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "Alpha Gold Aluminum",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 115,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -115,8 +113,10 @@
       "manufacturer": "Bosch",
       "model": "Performance Speed",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "max_torque": 63,
       "operating_modes": [
@@ -129,6 +129,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 115
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

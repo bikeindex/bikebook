@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2026/daily_grinder_3",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Grinder",
+  "model_group": "Grinder",
   "model": "Daily Grinder 3",
   "model_configuration": "complete",
   "type": "bike",
@@ -107,9 +107,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 121,
-    "gross_weight_rating": 135
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -158,6 +156,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 121
+    },
+    {
+      "load": "gross",
+      "weight": 135
     }
   ],
   "sizes": [

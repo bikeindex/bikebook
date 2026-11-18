@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/segway/2026/ninebot_s2_kids",
   "manufacturer": "Segway",
-  "vehicle_model_group": "Ninebot S",
+  "model_group": "Ninebot S",
   "model": "Ninebot S2 Kids",
   "model_configuration": "complete",
   "type": "epamd",
@@ -41,8 +41,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 60
+    "material": "steel"
   },
   "brakes": [
     {
@@ -56,8 +55,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP34",
-      "battery_chemistry": "li-ion",
-      "charging_time": 150,
+      "battery": {
+        "chemistry": "li-ion",
+        "charging_time": 150
+      },
       "rated_power": 260,
       "peak_power": 700,
       "operating_modes": [
@@ -69,6 +70,12 @@
           "max_slope": 5
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 60
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/liv/2025/avail_advanced_e_plus_elite_ar",
   "manufacturer": "Liv",
-  "vehicle_model_group": "Avail",
+  "model_group": "Avail",
   "model": "Avail Advanced E+ Elite AR",
   "model_configuration": "complete",
   "type": "bike",
@@ -121,9 +121,14 @@
       "manufacturer": "Giant",
       "model": "SyncDrive Move+",
       "kind": "hub_drive",
-      "certification": "UL 2271, UL 1012",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2271",
+        "UL 1012"
+      ],
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "peak_power": 500,
       "max_torque": 30,
       "operating_modes": [

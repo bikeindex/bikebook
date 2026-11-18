@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2026/urs_amp_one",
   "manufacturer": "BMC",
-  "vehicle_model_group": "URS AMP",
+  "model_group": "URS AMP",
   "model": "URS AMP ONE",
   "model_configuration": "complete",
   "markets": [
@@ -104,9 +104,7 @@
     "bottom_bracket": {
       "spindle": "ISIS",
       "spindle_length": 135
-    },
-    "max_weight_total": 105,
-    "gross_weight_rating": 120
+    }
   },
   "suspension": {
     "front": {
@@ -176,8 +174,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 135,
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "peak_power": 350,
       "max_torque": 60,
       "operating_modes": [
@@ -192,6 +192,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 105
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/epcycling/2021/ep_city_female",
   "manufacturer": "EPcycling",
-  "vehicle_model_group": "EP-City",
+  "model_group": "EP-City",
   "model": "EP-City Female",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,8 +40,7 @@
     "material_detail": "6061 Aluminum",
     "top_tube": "step_through",
     "folding": "half_fold",
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 75
+    "seatpost_clamp_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -89,9 +88,11 @@
   "motors": [
     {
       "manufacturer": "EPcycling",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 250,
       "max_torque": 80,
       "operating_modes": [
@@ -108,6 +109,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 75
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dahon/2026/briza_d8",
   "manufacturer": "Dahon",
   "model": "Briza D8",
@@ -50,7 +50,8 @@
   "frame": {
     "material": "aluminum",
     "top_tube": "step_through",
-    "folding": "half_fold"
+    "folding": "half_fold",
+    "seatpost_diameter": 33.9
   },
   "wheels": [
     {
@@ -88,6 +89,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 105
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -98,7 +105,6 @@
           "height": 815
         },
         "total_weight": 12.8,
-        "max_weight_rider": 105,
         "rider_height_min": 1450,
         "rider_height_max": 1900
       }
@@ -195,7 +201,11 @@
     {
       "type": "seatpost",
       "manufacturer": "Dahon",
-      "description": "Dahon JB-SP-314 φ33.9*580mm"
+      "description": "Dahon JB-SP-314 φ33.9*580mm",
+      "dimensions": {
+        "length": 580,
+        "diameter": 33.9
+      }
     },
     {
       "type": "shifter",

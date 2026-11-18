@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2023/tesoro_x_3_low_stepthru_eu",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Tesoro Neo X",
+  "model_group": "Tesoro Neo X",
   "model": "Tesoro X 3 Low StepThru",
   "model_configuration": "complete",
   "markets": [
@@ -59,6 +59,15 @@
     "material": "aluminum",
     "material_detail": "SmartForm C2 Aluminum",
     "top_tube": "step_through",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
+      }
+    ],
     "cable_routing": "internal",
     "headset": "ZS44/28.6 | ZS56/40"
   },
@@ -123,8 +132,10 @@
       "model": "BDU334Y",
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 50,
@@ -140,9 +151,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    }
+  ],
   "sizes": [
     {
       "name": "SM",

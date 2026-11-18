@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/onewheel/2024/pint_s",
   "manufacturer": "OneWheel",
-  "vehicle_model_group": "Pint",
+  "model_group": "Pint",
   "model": "Pint S",
   "model_configuration": "complete",
   "type": "epamd",
@@ -50,7 +50,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "charging_time": 225,
+      "battery": {
+        "charging_time": 225
+      },
       "operating_modes": [
         {
           "mode": "throttle",
@@ -61,12 +63,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 12.2,
-        "max_weight_rider": 113
+        "total_weight": 12.2
       }
     }
   ],

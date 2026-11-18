@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wicked_thumb/2025/pbr_x_chopper",
   "manufacturer": "Wicked Thumb",
   "model": "PBR X Chopper",
@@ -14,7 +14,6 @@
   "stock_photo": "https://bikebook.bikeindex.org/wicked_thumb/2025/pbr_x_chopper.webp",
   "description": "The 2025 PBR X Wicked Thumb Dream Chopper features a white, Wicked Thumb Rat Chopper Ebike with 13\" ape hangers, red wheels and black tires.",
   "first_year": 2025,
-  "final_year": 2026,
   "years": {
     "2026": {
       "original_msrp": 299500,
@@ -53,8 +52,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aircraft Aluminum",
-    "headset": "ZS44/28.6 | ZS44/30",
-    "max_weight_total": 147
+    "headset": "ZS44/28.6 | ZS44/30"
   },
   "wheels": [
     {
@@ -99,9 +97,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 50E cells",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "Samsung 50E"
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 80,
@@ -122,6 +122,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 147
     }
   ],
   "sizes": [
@@ -227,10 +233,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "750W brushless geared rear hub motor - 80 Nm torque, 5:1 planetary gear reduction"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V, 25amp"
     },
     {
       "type": "e_vehicle_remote",
@@ -343,6 +345,11 @@
       "type": "unknown",
       "type_detail": "STANCE",
       "description": "1.75\" Seat Tube, 25.25\" Reach, 34\" Minimum Saddle Height"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "CONTROLLER",
+      "description": "48V, 25amp"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ride1up/2023/portola",
   "manufacturer": "Ride1Up",
-  "vehicle_model_group": "Portola",
+  "model_group": "Portola",
   "model": "Portola",
   "model_configuration": "complete",
   "type": "bike",
@@ -124,9 +124,14 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "max_torque": 65,
       "operating_modes": [
@@ -150,9 +155,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 68.04
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 68.04
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

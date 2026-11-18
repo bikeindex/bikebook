@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dirwin/2021/pioneer",
   "manufacturer": "Dirwin",
-  "vehicle_model_group": "Pioneer",
+  "model_group": "Pioneer",
   "model": "Pioneer",
   "model_configuration": "complete",
   "type": "bike",
@@ -50,8 +50,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "seatpost_diameter": 30.4,
-    "seatpost_clamp_diameter": 35,
-    "max_weight_total": 159
+    "seatpost_clamp_diameter": 35
   },
   "suspension": {
     "front": {}
@@ -93,10 +92,15 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -119,6 +123,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [
@@ -196,10 +206,6 @@
       "description": "TFT LCD Color Display with USB-C Charging"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "48V 25A"
-    },
-    {
       "type": "fork",
       "position": [
         "front"
@@ -269,6 +275,11 @@
         "width": 101.6,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V 25A"
     }
   ]
 }

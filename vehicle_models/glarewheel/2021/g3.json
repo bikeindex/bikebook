@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/glarewheel/2021/g3",
   "manufacturer": "Glarewheel",
   "model": "G3",
@@ -68,8 +68,7 @@
     "2021": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 100
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -82,9 +81,11 @@
   ],
   "motors": [
     {
-      "battery_size": 144,
-      "battery_chemistry": "li-ion",
-      "charging_time": 120,
+      "battery": {
+        "capacity": 144,
+        "chemistry": "li-ion",
+        "charging_time": 120
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -97,9 +98,11 @@
       ]
     },
     {
-      "battery_size": 144,
-      "battery_chemistry": "li-ion",
-      "charging_time": 120,
+      "battery": {
+        "capacity": 144,
+        "chemistry": "li-ion",
+        "charging_time": 120
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -110,6 +113,12 @@
           "max_slope": 17
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

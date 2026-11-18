@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dengfu/2019/e07_economical",
   "manufacturer": "Dengfu",
-  "vehicle_model_group": "E07",
+  "model_group": "E07",
   "model": "E07 Economical",
   "model_configuration": "complete",
   "type": "bike",
@@ -81,9 +81,11 @@
     {
       "manufacturer": "Bafang",
       "model": "M800 G530",
-      "battery_size": 288,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Panasonic cell",
+      "battery": {
+        "capacity": 288,
+        "chemistry": "li-ion",
+        "cells": "Panasonic"
+      },
       "rated_power": 200,
       "operating_modes": [
         {

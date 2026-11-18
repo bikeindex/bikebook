@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2027/domane_plus_sl_7_axs_gen_5",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Domane+",
+  "model_group": "Domane+",
   "model": "Domane+ SL 7 AXS Gen 5",
   "model_configuration": "complete",
   "type": "bike",
@@ -184,9 +184,7 @@
   "frame": {
     "material": "carbon",
     "material_detail": "500 Series OCLV Carbon",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 113,
-    "gross_weight_rating": 125
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -252,9 +250,13 @@
       "manufacturer": "TQ",
       "model": "HPR40",
       "kind": "mid_drive",
-      "certification": "UL 2849",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "peak_power": 200,
       "max_torque": 40,
       "operating_modes": [
@@ -267,6 +269,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/volt/2023/yukon_core",
   "manufacturer": "Volt Bike",
-  "vehicle_model_group": "Yukon",
+  "model_group": "Yukon",
   "model": "Yukon Core",
   "model_configuration": "complete",
   "type": "bike",
@@ -44,8 +44,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 145
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -97,10 +96,14 @@
       "spindle": "ISIS",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
+      "certifications": [
+        "UL 2271"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 940,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 940,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "peak_power": 1440,
       "max_torque": 160,
@@ -125,6 +128,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 145
+    },
+    {
+      "load": "payload",
+      "weight": 145
+    }
+  ],
   "sizes": [
     {
       "name": "19\"",
@@ -139,7 +152,6 @@
           "length": 1930
         },
         "total_weight": 36.3,
-        "max_weight_rider": 145,
         "extra_measurements": {
           "handlebar_height_max": 1181,
           "handlebar_height_min": 1118

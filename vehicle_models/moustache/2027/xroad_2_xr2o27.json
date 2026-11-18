@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2027/xroad_2_xr2o27",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Xroad",
+  "model_group": "Xroad",
   "model": "Xroad 2 XR2O27",
   "model_configuration": "complete",
   "type": "bike",
@@ -122,13 +122,18 @@
       {
         "type": "bottle",
         "location": "seat_tube"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
     "cable_routing": "stealth",
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 108,
-    "gross_weight_rating": 135
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -194,12 +199,13 @@
       "model": "BDU346Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 540,
-      "battery_options": [
-        600
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "600 Wh: +£200",
+      "battery": {
+        "capacity": 540,
+        "capacity_options": [
+          600
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -214,6 +220,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 108
+    },
+    {
+      "load": "gross",
+      "weight": 135
     }
   ],
   "sizes": [

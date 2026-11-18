@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2025/domane_plus_al_5",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Domane+",
+  "model_group": "Domane+",
   "model": "Domane+ AL 5",
   "model_configuration": "complete",
   "type": "bike",
@@ -109,9 +109,7 @@
       "spindle_length": 110
     },
     "headset": "IS42/28.6 | IS52/40",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 110,
-    "gross_weight_rating": 125
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -171,7 +169,9 @@
     {
       "manufacturer": "Hyena",
       "kind": "hub_drive",
-      "battery_size": 250,
+      "battery": {
+        "capacity": 250
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [
@@ -184,6 +184,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

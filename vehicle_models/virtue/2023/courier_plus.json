@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/virtue/2023/courier_plus",
   "manufacturer": "Virtue",
   "model": "Courier+",
@@ -82,9 +82,11 @@
   ],
   "motors": [
     {
-      "battery_size": 614,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 614,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -97,9 +99,14 @@
   ],
   "cargo": {
     "length": 686,
-    "width": 635,
-    "max_weight_cargo": 115
+    "width": 635
   },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 115
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

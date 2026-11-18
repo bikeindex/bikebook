@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/all_terrain_zip_n_fold_750w",
   "manufacturer": "sixthreezero",
   "model": "All-Terrain Zip n' Fold 750W",
@@ -86,8 +86,10 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -106,12 +108,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 31,
-        "max_weight_rider": 136,
         "rider_height_min": 1549,
         "rider_height_max": 1930
       }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hyper/2023/e_ride_mountain_mid_drive_mtb_ds",
   "manufacturer": "Hyper",
   "model": "E-Ride Mountain Mid-Drive MTB-DS",
@@ -80,8 +80,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 378,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 378,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -96,12 +98,15 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
-      "name": "One Size",
-      "geometry": {
-        "max_weight_rider": 125
-      }
+      "name": "One Size"
     }
   ],
   "components": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/micargi/2025/raiatea_500w",
   "manufacturer": "Micargi",
   "model": "Raiatea 500W",
@@ -91,8 +91,10 @@
   "motors": [
     {
       "sensor_speed": "spoke_magnet",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "operating_modes": [
         {

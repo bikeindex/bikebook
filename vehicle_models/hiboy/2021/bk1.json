@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hiboy/2021/bk1",
   "manufacturer": "Hiboy",
   "model": "BK1",
@@ -55,8 +55,7 @@
     "2021": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 35
+    "material": "steel"
   },
   "wheels": [
     {
@@ -84,9 +83,11 @@
   "motors": [
     {
       "water_rating": "IPX4",
-      "battery_size": 50,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 50,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 100,
       "operating_modes": [
         {
@@ -97,6 +98,12 @@
           "max_slope": 5
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 35
     }
   ],
   "sizes": [

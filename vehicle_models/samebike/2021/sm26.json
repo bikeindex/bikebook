@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/samebike/2021/sm26",
   "manufacturer": "samebike",
   "model": "SM26",
@@ -42,8 +42,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "cable_routing": "internal",
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 120
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {
@@ -103,9 +102,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IP54",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 battery cells",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion",
+        "cells": "18650"
+      },
       "rated_power": 500,
       "max_torque": 60,
       "operating_modes": [
@@ -137,6 +138,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

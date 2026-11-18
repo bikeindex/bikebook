@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gobike/2023/forza_compact",
   "manufacturer": "GOBike",
-  "vehicle_model_group": "FORZA",
+  "model_group": "FORZA",
   "model": "FORZA Compact",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -18,7 +18,7 @@
   "first_year": 2023,
   "years": {
     "2026": {
-      "original_msrp": 99900,
+      "original_msrp": 129900,
       "original_msrp_currency": "USD",
       "colorways": [
         {
@@ -73,8 +73,10 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -99,6 +101,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 200
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -113,8 +121,7 @@
           "width": 1016,
           "height": 1016
         },
-        "total_weight": 36.7,
-        "max_weight_rider": 200
+        "total_weight": 36.7
       }
     }
   ],

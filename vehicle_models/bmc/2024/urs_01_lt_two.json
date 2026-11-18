@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2024/urs_01_lt_two",
   "manufacturer": "BMC",
-  "vehicle_model_group": "URS",
+  "model_group": "URS",
   "model": "URS 01 LT TWO",
   "model_configuration": "complete",
   "markets": [
@@ -127,9 +127,7 @@
       "shell": "BB86",
       "width": 86.5,
       "spindle": "DUB"
-    },
-    "max_weight_total": 109,
-    "gross_weight_rating": 120
+    }
   },
   "suspension": {
     "front": {
@@ -182,6 +180,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 109
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

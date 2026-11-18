@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aipas/2024/c1_pro_xpress_st",
   "manufacturer": "Aipas",
-  "vehicle_model_group": "C1",
+  "model_group": "C1",
   "model": "C1 Pro Xpress ST",
   "model_configuration": "complete",
   "type": "bike",
@@ -78,8 +78,7 @@
   },
   "frame": {
     "material": "steel",
-    "top_tube": "step_through",
-    "max_weight_total": 181
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -121,10 +120,14 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2271",
+      "certifications": [
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 614,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 614,
+        "chemistry": "li-ion"
+      },
       "peak_power": 1100,
       "max_torque": 90,
       "operating_modes": [
@@ -145,6 +148,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dyu/2026/x1_mini",
   "manufacturer": "DYU",
   "model": "X1 Mini",
@@ -50,8 +50,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {},
@@ -78,10 +77,11 @@
   "motors": [
     {
       "water_rating": "IP54",
-      "battery_size": 281,
-      "battery_chemistry": "li-ion",
-      "battery_info": "7.8Ah",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 281,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 350,
       "peak_power": 500,
       "operating_modes": [
@@ -107,6 +107,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

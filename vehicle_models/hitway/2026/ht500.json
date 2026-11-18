@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hitway/2026/ht500",
   "manufacturer": "Hitway",
   "model": "HT500",
@@ -52,8 +52,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -89,9 +88,11 @@
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
       "water_rating": "IPX4",
-      "battery_size": 1620,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 1620,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 2500,
       "peak_power": 4000,
       "max_torque": 238,
@@ -105,6 +106,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

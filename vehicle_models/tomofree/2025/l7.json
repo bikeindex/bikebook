@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tomofree/2025/l7",
   "manufacturer": "Tomofree",
   "model": "L7",
@@ -67,9 +67,11 @@
   ],
   "motors": [
     {
-      "battery_size": 2100,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 2100,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "peak_power": 6000,
       "max_torque": 84,
       "operating_modes": [
@@ -81,6 +83,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -101,7 +109,6 @@
           "height": 670
         },
         "total_weight": 57,
-        "max_weight_rider": 150,
         "rider_height_min": 1524,
         "rider_height_max": 1905,
         "extra_measurements": {

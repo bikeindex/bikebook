@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/canyon/2024/spectral_onfly_cf_8",
   "manufacturer": "Canyon bicycles",
   "model": "Spectral:ONfly CF 8",
@@ -193,8 +193,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 135,
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "peak_power": 300,
       "max_torque": 50,
       "operating_modes": [

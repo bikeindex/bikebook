@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bianchi/2020/e_spillo_classic_lady_altus_7sp",
   "manufacturer": "Bianchi",
-  "vehicle_model_group": "E-Spillo",
+  "model_group": "E-Spillo",
   "model": "E-Spillo Classic Lady Altus 7sp",
   "model_configuration": "complete",
   "type": "bike",
@@ -36,6 +36,15 @@
   },
   "frame": {
     "material": "aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "atranvelo_avs"
+      }
+    ],
     "bottom_bracket": {
       "spindle_length": 119
     },
@@ -89,8 +98,10 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

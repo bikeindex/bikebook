@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/denago/2024/city_3_step_thru",
   "manufacturer": "Denago",
-  "vehicle_model_group": "City",
+  "model_group": "City",
   "model": "City 3 Step-thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -108,8 +108,10 @@
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX4",
-      "battery_size": 653,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 653,
+        "charging_time": 300
+      },
       "rated_power": 500,
       "max_torque": 50,
       "operating_modes": [
@@ -135,6 +137,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "S/M",
@@ -157,8 +165,7 @@
         "crank_length": 170,
         "seat_height_min": 770,
         "seat_height_max": 990,
-        "total_weight": 28.1,
-        "max_weight_rider": 136
+        "total_weight": 28.1
       }
     },
     {
@@ -182,8 +189,7 @@
         "crank_length": 170,
         "seat_height_min": 900,
         "seat_height_max": 1130,
-        "total_weight": 29,
-        "max_weight_rider": 136
+        "total_weight": 29
       }
     }
   ],

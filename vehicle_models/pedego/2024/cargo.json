@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pedego/2024/cargo",
   "manufacturer": "Pedego",
   "model": "Cargo",
@@ -116,10 +116,17 @@
     {
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271, UL 2580, UL 1446, UL 2771",
+      "certifications": [
+        "UL 2849",
+        "UL 2271",
+        "UL 2580",
+        "UL 1446"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "operating_modes": [
@@ -152,6 +159,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -163,8 +176,7 @@
         "seat_height_min": 890,
         "dimensions": {
           "length": 1985
-        },
-        "max_weight_rider": 181
+        }
       }
     }
   ],

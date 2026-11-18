@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebycco/2025/eb7pro_26_ca",
   "manufacturer": "Ebycco",
-  "vehicle_model_group": "EB7",
+  "model_group": "EB7",
   "model": "EB7PRO 26",
   "model_configuration": "complete",
   "markets": [
@@ -21,7 +21,7 @@
   "first_year": 2025,
   "years": {
     "2026": {
-      "original_msrp": 182900,
+      "original_msrp": 232900,
       "original_msrp_currency": "CAD",
       "colorways": [
         {
@@ -38,8 +38,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -75,11 +74,16 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 1664,
-      "battery_chemistry": "li-ion",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1664,
+        "chemistry": "li-ion",
+        "charging_time": 540
+      },
       "peak_power": 3000,
       "max_torque": 95,
       "operating_modes": [
@@ -99,11 +103,16 @@
     },
     {
       "drive_wheel": "rear",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 1664,
-      "battery_chemistry": "li-ion",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1664,
+        "chemistry": "li-ion",
+        "charging_time": 540
+      },
       "peak_power": 3000,
       "max_torque": 95,
       "operating_modes": [
@@ -120,6 +129,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -180,10 +195,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "52V, 3000W/6000W"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LCD color display, Waterproof"
     },
     {
@@ -211,6 +222,11 @@
       "type": "unknown",
       "type_detail": "5 Pedal Assist Speed",
       "description": "24/32/40/53/64 KM/H"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "52V, 3000W/6000W"
     },
     {
       "type": "unknown",

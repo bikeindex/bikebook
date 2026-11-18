@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2021/beaumont_rev",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Beaumont Rev",
+  "model_group": "Beaumont Rev",
   "model": "Beaumont Rev",
   "model_configuration": "complete",
   "type": "bike",
@@ -128,8 +128,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -151,12 +153,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "50CM - S",
       "geometry": {
         "standover": 749,
-        "max_weight_rider": 100,
         "rider_height_min": 1575,
         "rider_height_max": 1651
       }
@@ -166,7 +173,6 @@
       "geometry": {
         "standover": 787,
         "total_weight": 26.3,
-        "max_weight_rider": 100,
         "rider_height_min": 1676,
         "rider_height_max": 1727
       }
@@ -175,7 +181,6 @@
       "name": "58CM - L",
       "geometry": {
         "standover": 813,
-        "max_weight_rider": 100,
         "rider_height_min": 1753,
         "rider_height_max": 1829
       }

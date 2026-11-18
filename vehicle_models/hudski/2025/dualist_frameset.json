@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hudski/2025/dualist_frameset",
   "manufacturer": "Hudski",
-  "vehicle_model_group": "Dualist",
+  "model_group": "Dualist",
   "model": "Dualist Frameset",
   "model_configuration": "frame_fork",
   "type": "bike",
@@ -42,8 +42,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "max_fork_travel": 50,
-    "max_weight_total": 127
+    "max_fork_travel": 50
   },
   "wheels": [
     {
@@ -52,6 +51,12 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 127
     }
   ],
   "sizes": [

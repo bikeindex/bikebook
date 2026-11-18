@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lankeleisi/2026/xc4000",
   "manufacturer": "Lankeleisi",
   "model": "XC4000",
@@ -50,8 +50,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 180
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -97,9 +96,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 1000,
       "max_torque": 90,
       "operating_modes": [
@@ -121,6 +122,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [

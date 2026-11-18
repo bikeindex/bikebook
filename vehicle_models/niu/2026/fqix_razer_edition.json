@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/niu/2026/fqix_razer_edition",
   "manufacturer": "Niu",
-  "vehicle_model_group": "FQiX",
+  "model_group": "FQiX",
   "model": "FQiX Razer Edition",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -12,7 +12,7 @@
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/niu/2026/fqix_razer_edition.jpg",
-  "description": "The FQiX × Razer. Fast Travel Unlocked. 2500 units worldwide, no restock. 110 km range, 3800W (FQiX 150) or 4100W (FQiX 300). Drops 2026.",
+  "description": "The FQiX × Razer. Fast Travel Unlocked. 110 km range, 3800W (FQiX 150) or 4100W (FQiX 300). Drops 2026.",
   "first_year": 2026,
   "years": {
     "2026": {
@@ -59,9 +59,11 @@
   ],
   "motors": [
     {
-      "battery_size": 2016,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 2016,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "peak_power": 3800,
       "operating_modes": [
         {

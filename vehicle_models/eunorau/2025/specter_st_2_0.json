@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2025/specter_st_2_0",
   "manufacturer": "Eunorau",
-  "vehicle_model_group": "SPECTER",
+  "model_group": "SPECTER",
   "model": "SPECTER-ST 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -67,8 +67,7 @@
     ],
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 136
+    }
   },
   "suspension": {
     "front": {
@@ -125,12 +124,17 @@
       "spindle": "ISIS",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "Yes",
+      "certifications": [
+        "UL 2849",
+        "CE"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
-      "battery_info": "SAMSUNG Cells",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion",
+        "cells": "SAMSUNG",
+        "charging_time": 480
+      },
       "rated_power": 1000,
       "peak_power": 1440,
       "max_torque": 160,
@@ -154,6 +158,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

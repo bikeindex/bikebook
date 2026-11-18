@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biktrix/2022/juggernaut_classic_9_27_5",
   "manufacturer": "Biktrix",
-  "vehicle_model_group": "Juggernaut Classic",
+  "model_group": "Juggernaut Classic",
   "model": "Juggernaut Classic 9 27.5",
   "model_configuration": "complete",
   "type": "bike",
@@ -132,8 +132,10 @@
       "manufacturer": "Bafang",
       "model": "bbs02",
       "sensor_cadence": true,
-      "battery_size": 816,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 816,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bh/2025/ilynx_plus_sl_trail_8_5",
   "manufacturer": "BH Bikes",
-  "vehicle_model_group": "iLYNX+ SL TRAIL",
+  "model_group": "iLYNX+ SL TRAIL",
   "model": "iLYNX+ SL TRAIL 8.5",
   "model_configuration": "complete",
   "type": "bike",
@@ -124,8 +124,12 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 810,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 810
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [

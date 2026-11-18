@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gobike/2022/robusto",
   "manufacturer": "GOBike",
   "model": "ROBUSTO",
@@ -17,7 +17,7 @@
   "first_year": 2022,
   "years": {
     "2026": {
-      "original_msrp": 114900,
+      "original_msrp": 199900,
       "original_msrp_currency": "USD",
       "colorways": [
         {
@@ -84,9 +84,10 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
-      "battery_info": "10.4AH",
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 900,
       "operating_modes": [
@@ -109,6 +110,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -118,8 +125,7 @@
           "width": 711,
           "height": 1080
         },
-        "total_weight": 24.9,
-        "max_weight_rider": 150
+        "total_weight": 24.9
       }
     }
   ],

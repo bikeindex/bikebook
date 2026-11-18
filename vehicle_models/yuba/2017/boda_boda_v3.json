@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/yuba/2017/boda_boda_v3",
   "manufacturer": "Yuba",
-  "vehicle_model_group": "Boda Boda",
+  "model_group": "Boda Boda",
   "model": "Boda Boda V3",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -102,8 +102,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 110
+    "seatpost_diameter": 30.9
   },
   "wheels": [
     {
@@ -150,6 +149,12 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
     }
   ],
   "sizes": [

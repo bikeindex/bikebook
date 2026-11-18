@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rize/2021/rx",
   "manufacturer": "Rize",
-  "vehicle_model_group": "RX",
+  "model_group": "RX",
   "model": "RX",
   "model_configuration": "complete",
   "type": "bike",
@@ -17,7 +17,7 @@
   "first_year": 2021,
   "years": {
     "2026": {
-      "original_msrp": 269900,
+      "original_msrp": 319900,
       "original_msrp_currency": "USD",
       "colorways": [
         {
@@ -71,8 +71,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 125
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -129,15 +128,20 @@
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / UL 2849",
-      "water_rating": "IPX5",
-      "battery_size": 780,
-      "battery_options": [
-        1560
+      "certifications": [
+        "UL 2849",
+        "CE"
       ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 21700 50E Cell",
-      "charging_time": 300,
+      "water_rating": "IPX5",
+      "battery": {
+        "capacity": 780,
+        "capacity_options": [
+          1560
+        ],
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700 50E",
+        "charging_time": 300
+      },
       "rated_power": 1000,
       "peak_power": 1440,
       "max_torque": 160,
@@ -160,6 +164,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

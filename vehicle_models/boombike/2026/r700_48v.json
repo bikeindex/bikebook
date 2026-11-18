@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/boombike/2026/r700_48v",
   "manufacturer": "Boombike",
-  "vehicle_model_group": "R700",
+  "model_group": "R700",
   "model": "R700 48V",
   "model_configuration": "complete",
   "type": "bike",
@@ -35,8 +35,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 159
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -77,10 +76,15 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 960,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 960,
+        "charging_time": 480
+      },
       "peak_power": 1500,
       "max_torque": 105,
       "operating_modes": [
@@ -103,6 +107,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

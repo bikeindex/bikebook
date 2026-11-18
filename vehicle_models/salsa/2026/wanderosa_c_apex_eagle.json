@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/salsa/2026/wanderosa_c_apex_eagle",
   "manufacturer": "Salsa",
-  "vehicle_model_group": "Wanderosa",
+  "model_group": "Wanderosa",
   "model": "Wanderosa C Apex Eagle",
   "model_configuration": "complete",
   "type": "bike",
@@ -157,10 +157,12 @@
       "kind": "mid_drive",
       "spindle": "ETOR Drive",
       "spindle_length": 135,
-      "battery_size": 480,
-      "battery_chemistry": "li-ion",
-      "battery_info": "43.2V, 9.9Ah",
-      "charging_time": 210,
+      "battery": {
+        "capacity": 480,
+        "voltage": 43.2,
+        "chemistry": "li-ion",
+        "charging_time": 210
+      },
       "peak_power": 450,
       "max_torque": 60,
       "operating_modes": [

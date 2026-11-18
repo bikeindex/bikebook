@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/znh/2025/02sr_750w",
   "manufacturer": "Znh",
-  "vehicle_model_group": "02",
+  "model_group": "02",
   "model": "02SR 750W",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,8 +40,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "Hi-Tensile Steel",
-    "max_weight_total": 150
+    "material_detail": "Hi-Tensile Steel"
   },
   "suspension": {
     "front": {}
@@ -65,8 +64,10 @@
   },
   "motors": [
     {
-      "battery_size": 624,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 360
+      },
       "peak_power": 750,
       "operating_modes": [
         {
@@ -79,6 +80,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

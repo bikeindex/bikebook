@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/swft/2024/sd",
   "manufacturer": "SWFT",
   "model": "SD",
@@ -37,9 +37,11 @@
   ],
   "motors": [
     {
-      "battery_size": 281,
-      "battery_chemistry": "li-ion",
-      "charging_time": 390,
+      "battery": {
+        "capacity": 281,
+        "chemistry": "li-ion",
+        "charging_time": 390
+      },
       "rated_power": 400,
       "operating_modes": [
         {
@@ -51,6 +53,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -60,8 +68,7 @@
           "width": 540,
           "height": 1115
         },
-        "total_weight": 33,
-        "max_weight_rider": 120
+        "total_weight": 33
       }
     }
   ],

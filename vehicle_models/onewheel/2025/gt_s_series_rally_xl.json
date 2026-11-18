@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/onewheel/2025/gt_s_series_rally_xl",
   "manufacturer": "OneWheel",
-  "vehicle_model_group": "GT",
+  "model_group": "GT",
   "model": "GT S-Series Rally XL",
   "model_configuration": "complete",
   "type": "epamd",
@@ -51,9 +51,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_chemistry": "li-ion",
-      "battery_info": "NMC",
-      "charging_time": 165,
+      "battery": {
+        "chemistry": "li-ion",
+        "charging_time": 165
+      },
       "operating_modes": [
         {
           "mode": "throttle",
@@ -62,6 +63,12 @@
           "range_claimed": 45
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
     }
   ],
   "sizes": [
@@ -73,8 +80,7 @@
           "width": 241,
           "height": 292
         },
-        "total_weight": 15.4,
-        "max_weight_rider": 125
+        "total_weight": 15.4
       }
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2026/s1",
   "manufacturer": "Eunorau",
   "model": "S1",
@@ -52,8 +52,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 100
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -100,10 +99,11 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "certification": "Yes",
-      "battery_size": 1800,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1800,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "peak_power": 4800,
       "max_torque": 150,
       "operating_modes": [
@@ -118,6 +118,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

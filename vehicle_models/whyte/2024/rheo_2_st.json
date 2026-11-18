@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/whyte/2024/rheo_2_st",
   "manufacturer": "Whyte",
-  "vehicle_model_group": "RHeO",
+  "model_group": "RHeO",
   "model": "RHeO 2 ST",
   "model_configuration": "complete",
   "type": "bike",
@@ -143,7 +143,9 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 252,
+      "battery": {
+        "capacity": 252
+      },
       "rated_power": 250,
       "max_torque": 45,
       "operating_modes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/volt/2026/mariner_lite",
   "manufacturer": "Volt Bike",
-  "vehicle_model_group": "Mariner",
+  "model_group": "Mariner",
   "model": "Mariner Lite",
   "model_configuration": "complete",
   "type": "bike",
@@ -48,8 +48,7 @@
         "type": "fender"
       }
     ],
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 127
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -99,8 +98,10 @@
     {
       "manufacturer": "Sutto",
       "kind": "hub_drive",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 80,
       "operating_modes": [
@@ -124,6 +125,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 127
+    },
+    {
+      "load": "payload",
+      "weight": 127
+    }
+  ],
   "sizes": [
     {
       "name": "17\"",
@@ -143,7 +154,6 @@
           "height": 737
         },
         "total_weight": 30.8,
-        "max_weight_rider": 127,
         "extra_measurements": {
           "handlebar_height_max": 1245,
           "handlebar_height_min": 1105

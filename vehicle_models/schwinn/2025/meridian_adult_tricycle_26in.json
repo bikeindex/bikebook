@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/schwinn/2025/meridian_adult_tricycle_26in",
   "manufacturer": "Schwinn",
-  "vehicle_model_group": "Meridian Adult",
+  "model_group": "Meridian Adult",
   "model": "Meridian Adult Tricycle 26in",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -108,9 +108,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 19.96
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 19.96
+    }
+  ],
   "sizes": [
     {
       "name": "15.5\""

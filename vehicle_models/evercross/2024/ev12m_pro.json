@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2024/ev12m_pro",
   "manufacturer": "Evercross",
-  "vehicle_model_group": "EV12M",
+  "model_group": "EV12M",
   "model": "EV12M Pro",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -58,8 +58,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 65
+    "material": "steel"
   },
   "wheels": [
     {
@@ -72,7 +71,9 @@
   ],
   "motors": [
     {
-      "battery_size": 144,
+      "battery": {
+        "capacity": 144
+      },
       "peak_power": 300,
       "operating_modes": [
         {
@@ -82,6 +83,12 @@
           "max_slope": 10
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 65
     }
   ],
   "sizes": [

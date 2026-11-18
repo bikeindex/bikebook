@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/merida/2025/efloat_city_400_eq",
   "manufacturer": "Merida Bikes",
-  "vehicle_model_group": "eFLOAT CITY",
+  "model_group": "eFLOAT CITY",
   "model": "eFLOAT CITY 400 EQ",
   "model_configuration": "complete",
   "type": "bike",
@@ -38,12 +38,14 @@
         "type": "fender"
       },
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 120,
-    "gross_weight_rating": 150
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -107,8 +109,10 @@
       "model": "BDU336Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -118,6 +122,16 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

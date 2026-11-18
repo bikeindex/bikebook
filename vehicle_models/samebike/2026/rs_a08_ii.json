@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/samebike/2026/rs_a08_ii",
   "manufacturer": "samebike",
-  "vehicle_model_group": "RS-A08",
+  "model_group": "RS-A08",
   "model": "RS-A08-II",
   "model_configuration": "complete",
   "type": "bike",
@@ -83,8 +83,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aviation Aluminum",
-    "max_weight_total": 150
+    "material_detail": "6061 Aviation Aluminum"
   },
   "suspension": {
     "front": {},
@@ -119,8 +118,10 @@
   ],
   "motors": [
     {
-      "battery_size": 816,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 816,
+        "charging_time": 480
+      },
       "rated_power": 250,
       "max_torque": 80,
       "operating_modes": [
@@ -136,6 +137,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

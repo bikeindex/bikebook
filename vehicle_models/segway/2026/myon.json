@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/segway/2026/myon",
   "manufacturer": "Segway",
   "model": "Myon",
@@ -72,8 +72,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 136
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -123,8 +122,10 @@
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX5",
-      "battery_size": 722,
-      "charging_time": 330,
+      "battery": {
+        "capacity": 722,
+        "charging_time": 330
+      },
       "rated_power": 500,
       "peak_power": 1500,
       "max_torque": 85,
@@ -148,6 +149,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "5'1\"–5'10\"",
@@ -166,7 +177,6 @@
           "width": 690,
           "height": 1140
         },
-        "max_weight_rider": 120,
         "rider_height_min": 1549,
         "rider_height_max": 1778,
         "rider_inseam_min": 721
@@ -190,7 +200,6 @@
           "height": 1140
         },
         "total_weight": 33,
-        "max_weight_rider": 120,
         "rider_height_min": 1600,
         "rider_height_max": 1880,
         "rider_inseam_min": 763

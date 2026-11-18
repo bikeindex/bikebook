@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pinarello/2021/nytro_gravel_force",
   "manufacturer": "Pinarello",
-  "vehicle_model_group": "Nytro Gravel",
+  "model_group": "Nytro Gravel",
   "model": "Nytro Gravel Force",
   "model_configuration": "complete",
   "type": "bike",
@@ -77,8 +77,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 135,
-      "battery_size": 250,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 250,
+        "chemistry": "li-ion"
+      },
       "peak_power": 350,
       "max_torque": 58,
       "operating_modes": [

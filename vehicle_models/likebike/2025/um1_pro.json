@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/likebike/2025/um1_pro",
   "manufacturer": "Likebike",
-  "vehicle_model_group": "UM1",
+  "model_group": "UM1",
   "model": "UM1 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -15,6 +15,7 @@
   "stock_photo": "https://bikebook.bikeindex.org/likebike/2025/um1_pro.jpg",
   "description": "Best 50 miles long range fat tire electric bike with 20\" x 4\" fat tires for off road trails and adventures outdoor.",
   "first_year": 2025,
+  "final_year": 2026,
   "years": {
     "2026": {
       "original_msrp": 169900,
@@ -79,8 +80,10 @@
   ],
   "motors": [
     {
-      "battery_size": 1584,
-      "charging_time": 510,
+      "battery": {
+        "capacity": 1584,
+        "charging_time": 510
+      },
       "rated_power": 1200,
       "operating_modes": [
         {

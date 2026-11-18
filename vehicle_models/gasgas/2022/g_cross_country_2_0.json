@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gasgas/2022/g_cross_country_2_0",
   "manufacturer": "GASGAS",
-  "vehicle_model_group": "G Cross Country",
+  "model_group": "G Cross Country",
   "model": "G Cross Country 2.0",
   "model_configuration": "complete",
   "markets": [
@@ -40,9 +40,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "headset": "ZS44/28.6 | ZS56/40",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 106,
-    "gross_weight_rating": 130
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -107,7 +105,9 @@
       "manufacturer": "Yamaha",
       "model": "PW-ST",
       "kind": "mid_drive",
-      "battery_size": 630,
+      "battery": {
+        "capacity": 630
+      },
       "rated_power": 250,
       "max_torque": 70,
       "operating_modes": [
@@ -120,6 +120,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 106
+    },
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [

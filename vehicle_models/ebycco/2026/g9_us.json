@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebycco/2026/g9_us",
   "manufacturer": "Ebycco",
   "model": "G9",
@@ -20,7 +20,7 @@
   "first_year": 2026,
   "years": {
     "2026": {
-      "original_msrp": 169900,
+      "original_msrp": 229900,
       "original_msrp_currency": "USD",
       "colorways": [
         {
@@ -36,8 +36,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 204
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -73,11 +72,16 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 1560,
-      "battery_chemistry": "li-ion",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1560,
+        "chemistry": "li-ion",
+        "charging_time": 540
+      },
       "peak_power": 4500,
       "max_torque": 120,
       "operating_modes": [
@@ -102,11 +106,16 @@
     },
     {
       "drive_wheel": "rear",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 1560,
-      "battery_chemistry": "li-ion",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1560,
+        "chemistry": "li-ion",
+        "charging_time": 540
+      },
       "peak_power": 4500,
       "max_torque": 120,
       "operating_modes": [
@@ -128,6 +137,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

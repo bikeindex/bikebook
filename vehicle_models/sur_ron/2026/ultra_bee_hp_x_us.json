@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sur_ron/2026/ultra_bee_hp_x_us",
   "manufacturer": "Sur-Ron",
-  "vehicle_model_group": "Ultra Bee",
+  "model_group": "Ultra Bee",
   "model": "Ultra Bee HP X",
   "model_configuration": "complete",
   "markets": [
@@ -38,8 +38,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Forged Aluminum",
-    "max_weight_total": 100
+    "material_detail": "Forged Aluminum"
   },
   "suspension": {
     "front": {
@@ -79,8 +78,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 4440,
-      "charging_time": 270,
+      "battery": {
+        "capacity": 4440,
+        "charging_time": 270
+      },
       "peak_power": 24500,
       "max_torque": 521,
       "operating_modes": [
@@ -94,6 +95,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

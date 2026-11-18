@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/volt/2024/yukon_elite_step_thru",
   "manufacturer": "Volt Bike",
-  "vehicle_model_group": "Yukon",
+  "model_group": "Yukon",
   "model": "Yukon Elite Step-Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -37,8 +37,7 @@
   "frame": {
     "material": "steel",
     "top_tube": "step_through",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 145
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -88,10 +87,16 @@
       "kind": "mid_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / EN 14766 / ROHS",
+      "certifications": [
+        "EN 14766",
+        "CE",
+        "RoHS"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 120,
       "operating_modes": [
@@ -115,6 +120,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    },
+    {
+      "load": "payload",
+      "weight": 145
+    }
+  ],
   "sizes": [
     {
       "name": "18\"",
@@ -129,7 +144,6 @@
           "length": 1905
         },
         "total_weight": 37.6,
-        "max_weight_rider": 136,
         "extra_measurements": {
           "handlebar_height_max": 1168,
           "handlebar_height_min": 1092

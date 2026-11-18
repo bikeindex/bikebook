@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eddy_merckx/2024/e_pevele_c_apex_axs",
   "manufacturer": "Eddy Merckx",
-  "vehicle_model_group": "E-Pévèle",
+  "model_group": "E-Pévèle",
   "model": "E-Pévèle C APEX AXS",
   "model_configuration": "complete",
   "markets": [
@@ -101,8 +101,7 @@
   },
   "frame": {
     "material": "carbon",
-    "seatpost_diameter": 27.2,
-    "gross_weight_rating": 110
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -155,7 +154,9 @@
       "manufacturer": "Mahle",
       "model": "X20",
       "kind": "hub_drive",
-      "battery_size": 350,
+      "battery": {
+        "capacity": 350
+      },
       "peak_power": 275,
       "max_torque": 65,
       "operating_modes": [
@@ -170,6 +171,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 110
     }
   ],
   "sizes": [

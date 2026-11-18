@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rambo/2025/hellcat_2_0_fs_all_wheel_drive",
   "manufacturer": "Rambo",
   "model": "Hellcat 2.0 FS All-Wheel Drive",
@@ -61,8 +61,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061-T6 Aluminum",
-    "max_weight_total": 136
+    "material_detail": "6061-T6 Aluminum"
   },
   "suspension": {
     "front": {
@@ -105,10 +104,12 @@
       "drive_wheel": "front",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 960,
-      "battery_options": [
-        1440
-      ],
+      "battery": {
+        "capacity": 960,
+        "capacity_options": [
+          1440
+        ]
+      },
       "rated_power": 1000,
       "peak_power": 1250,
       "max_torque": 90,
@@ -136,10 +137,12 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 960,
-      "battery_options": [
-        1440
-      ],
+      "battery": {
+        "capacity": 960,
+        "capacity_options": [
+          1440
+        ]
+      },
       "rated_power": 1000,
       "peak_power": 1250,
       "max_torque": 90,
@@ -162,6 +165,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

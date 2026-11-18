@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ontime/2022/phantom",
   "manufacturer": "Ontime",
   "model": "Phantom",
@@ -45,8 +45,7 @@
     "material_detail": "6061 Aluminum",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 125
+    }
   },
   "suspension": {
     "front": {},
@@ -91,12 +90,17 @@
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / UL 2849",
+      "certifications": [
+        "UL 2849",
+        "CE"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Battery Cell",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 300
+      },
       "rated_power": 1000,
       "peak_power": 1440,
       "max_torque": 160,
@@ -119,6 +123,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

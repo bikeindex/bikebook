@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/day_6/2024/ultra750_photon_hd",
   "manufacturer": "Day 6",
-  "vehicle_model_group": "Ultra750",
+  "model_group": "Ultra750",
   "model": "Ultra750 Photon HD",
   "model_configuration": "complete",
   "type": "bike",
@@ -63,8 +63,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 136
+    "top_tube": "step_through"
   },
   "wheels": [
     {
@@ -106,12 +105,14 @@
       "manufacturer": "CYC",
       "model": "Photon Gen 2",
       "kind": "mid_drive",
-      "battery_size": 672,
-      "battery_options": [
-        1092
-      ],
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 672,
+        "capacity_options": [
+          1092
+        ],
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "operating_modes": [
@@ -135,6 +136,12 @@
           "availability": "app_update"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pedego/2026/avenue_pro",
   "manufacturer": "Pedego",
-  "vehicle_model_group": "Avenue",
+  "model_group": "Avenue",
   "model": "Avenue Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -103,8 +103,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 113
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -160,10 +159,15 @@
     {
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271, UL 2580",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "certifications": [
+        "UL 2271",
+        "UL 2580"
+      ],
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "max_torque": 85,
       "operating_modes": [
@@ -187,9 +191,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 24.95
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 24.95
+    },
+    {
+      "load": "payload",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "28\" Step Thru",

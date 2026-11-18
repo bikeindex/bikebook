@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2025/e_fold",
   "manufacturer": "GOTRAX",
   "model": "E-Fold",
@@ -41,8 +41,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -66,10 +65,14 @@
   "motors": [
     {
       "sensor_speed": "spoke_magnet",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 374,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 374,
+        "charging_time": 360
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -93,6 +96,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "payload",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -102,8 +115,7 @@
           "width": 678,
           "height": 1229
         },
-        "total_weight": 22.2,
-        "max_weight_rider": 120
+        "total_weight": 22.2
       }
     }
   ],

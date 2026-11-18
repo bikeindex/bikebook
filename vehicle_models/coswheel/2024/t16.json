@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/coswheel/2024/t16",
   "manufacturer": "Coswheel",
   "model": "T16",
@@ -33,8 +33,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {
@@ -82,10 +81,12 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 Cells",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "18650",
+        "charging_time": 480
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "max_torque": 50,
@@ -107,6 +108,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -171,10 +178,6 @@
       "description": "Easy Read LCD Display, Equipped with UDE remote control + 2 NFC cards"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "48V 22A"
-    },
-    {
       "type": "fork",
       "type_detail": "Front Suspension",
       "position": [
@@ -234,6 +237,11 @@
         "width": 101.6,
         "diameter": 305
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V 22A"
     },
     {
       "type": "unknown",

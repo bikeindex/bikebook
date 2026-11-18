@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sun/2026/e_fat_tad",
   "manufacturer": "Sun",
   "model": "E-Fat Tad",
@@ -102,9 +102,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -120,6 +122,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "37-55\" X-Seam",
@@ -131,8 +139,7 @@
         "dimensions": {
           "length": 2120
         },
-        "total_weight": 38.1,
-        "max_weight_rider": 136
+        "total_weight": 38.1
       }
     }
   ],

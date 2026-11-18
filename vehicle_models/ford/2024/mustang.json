@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ford/2024/mustang",
   "manufacturer": "Ford",
-  "vehicle_model_group": "Mustang",
+  "model_group": "Mustang",
   "model": "Mustang",
   "model_configuration": "complete",
   "type": "bike",
@@ -152,7 +152,9 @@
   ],
   "motors": [
     {
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 750,
       "max_torque": 85,
       "operating_modes": [

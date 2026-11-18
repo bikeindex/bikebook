@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gyroor/2025/h30_max",
   "manufacturer": "Gyroor",
   "model": "H30 Max",
@@ -88,9 +88,13 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
-      "battery_size": 56,
-      "charging_time": 120,
+      "certifications": [
+        "UL 2272"
+      ],
+      "battery": {
+        "capacity": 56,
+        "charging_time": 120
+      },
       "rated_power": 150,
       "operating_modes": [
         {
@@ -103,6 +107,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 60
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -113,7 +123,6 @@
           "height": 965
         },
         "total_weight": 6,
-        "max_weight_rider": 60,
         "rider_age_min": 6,
         "rider_age_max": 12,
         "extra_measurements": {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/schwinn/2024/mendocino_step_thru_electric_bike_500_watt_motor",
   "manufacturer": "Schwinn",
-  "vehicle_model_group": "Mendocino",
+  "model_group": "Mendocino",
   "model": "Mendocino Step-Thru Electric Bike 500-Watt Motor",
   "model_configuration": "complete",
   "type": "bike",
@@ -65,8 +65,7 @@
     ],
     "cable_routing": "internal",
     "headset": "EC34/28.6-26tpi | EC34/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 136
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -115,9 +114,13 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 540,
-      "charging_time": 240,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 540,
+        "charging_time": 240
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -139,9 +142,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 24.95
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 24.95
+    },
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

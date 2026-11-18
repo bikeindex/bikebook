@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/macina_prowler_master_cx_r",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Macina Prowler",
+  "model_group": "Macina Prowler",
   "model": "Macina Prowler Master CX-R",
   "model_configuration": "complete",
   "type": "bike",
@@ -101,8 +101,10 @@
       "model_group": "Performance Line CX-R",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,

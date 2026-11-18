@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hikeep/2026/mad",
   "manufacturer": "Hikeep",
-  "vehicle_model_group": "MA",
+  "model_group": "MA",
   "model": "MAD",
   "model_configuration": "complete",
   "type": "bike",
@@ -52,8 +52,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 181
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -85,7 +84,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 4800,
+      "battery": {
+        "capacity": 4800
+      },
       "rated_power": 5000,
       "peak_power": 8000,
       "max_torque": 400,
@@ -108,6 +109,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

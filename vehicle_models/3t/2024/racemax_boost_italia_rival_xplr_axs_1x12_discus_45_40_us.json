@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/3t/2024/racemax_boost_italia_rival_xplr_axs_1x12_discus_45_40_us",
   "manufacturer": "3T",
-  "vehicle_model_group": "RaceMax Boost",
+  "model_group": "RaceMax Boost",
   "model": "RaceMax Boost Italia Rival XPLR AXS 1X12 Discus 45/40",
   "model_configuration": "complete",
   "markets": [
@@ -128,8 +128,10 @@
       "manufacturer": "Mahle",
       "model": "X20",
       "kind": "hub_drive",
-      "battery_size": 236,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 236,
+        "chemistry": "li-ion"
+      },
       "peak_power": 275,
       "max_torque": 65,
       "operating_modes": [

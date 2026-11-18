@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/keteles/2023/xf4000_2000w",
   "manufacturer": "Keteles",
-  "vehicle_model_group": "XF4000",
+  "model_group": "XF4000",
   "model": "XF4000 2000W",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,8 +54,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 200
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {},
@@ -93,8 +92,10 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 1104,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1104,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -120,8 +121,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 1104,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1104,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -143,6 +146,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sava/2021/electric_assist",
   "manufacturer": "Sava",
   "model": "Electric Assist",
@@ -81,9 +81,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 209,
-      "battery_chemistry": "li-ion",
-      "charging_time": 180,
+      "battery": {
+        "capacity": 209,
+        "chemistry": "li-ion",
+        "charging_time": 180
+      },
       "rated_power": 250,
       "operating_modes": [
         {

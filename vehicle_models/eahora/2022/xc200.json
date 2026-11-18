@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eahora/2022/xc200",
   "manufacturer": "Eahora",
   "model": "XC200",
@@ -37,8 +37,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "High-Grade Rust-Proof Aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {},
@@ -70,9 +69,11 @@
   ],
   "motors": [
     {
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -90,6 +91,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

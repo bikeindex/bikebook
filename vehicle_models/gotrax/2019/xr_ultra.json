@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2019/xr_ultra",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "XR",
+  "model_group": "XR",
   "model": "Xr Ultra",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -143,11 +143,15 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IP54",
-      "battery_size": 252,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 252,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 300,
       "operating_modes": [
         {
@@ -160,6 +164,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -169,8 +179,7 @@
           "width": 434,
           "height": 1120
         },
-        "total_weight": 11.8,
-        "max_weight_rider": 100
+        "total_weight": 11.8
       }
     }
   ],

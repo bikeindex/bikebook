@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rambo/2025/kid_s_24_chameleon",
   "manufacturer": "Rambo",
   "model": "Kid's 24\" Chameleon",
@@ -52,8 +52,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061-T6 Aluminum",
-    "max_weight_total": 82
+    "material_detail": "6061-T6 Aluminum"
   },
   "wheels": [
     {
@@ -82,7 +81,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 252,
+      "battery": {
+        "capacity": 252
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -103,6 +104,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 82
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aniioki/2026/a8_pro_max_gt",
   "manufacturer": "Aniioki",
-  "vehicle_model_group": "A8 Pro Max",
+  "model_group": "A8 Pro Max",
   "model": "A8 Pro Max GT",
   "model_configuration": "complete",
   "type": "bike",
@@ -53,8 +53,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 181
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -101,10 +100,13 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 5040,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 5040,
+        "voltage": 72,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A",
+        "charging_time": 540
+      },
       "rated_power": 2500,
       "peak_power": 3000,
       "max_torque": 135,
@@ -135,10 +137,13 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 5040,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 5040,
+        "voltage": 72,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A",
+        "charging_time": 540
+      },
       "rated_power": 2500,
       "peak_power": 3000,
       "max_torque": 135,
@@ -164,6 +169,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

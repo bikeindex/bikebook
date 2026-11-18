@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2026/multicharger3_vario_hs",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Multicharger3",
+  "model_group": "Multicharger3",
   "model": "Multicharger3 vario HS",
   "model_configuration": "complete",
   "markets": [
@@ -67,9 +67,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_clamp_diameter": 40,
-    "max_weight_total": 143,
-    "gross_weight_rating": 175
+    "seatpost_clamp_diameter": 40
   },
   "suspension": {
     "front": {
@@ -128,8 +126,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 100,
@@ -143,6 +143,24 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 143
+    },
+    {
+      "load": "gross",
+      "weight": 175
+    },
+    {
+      "load": "rear_rack",
+      "weight": 65
+    },
+    {
+      "load": "front_rack",
+      "weight": 8
     }
   ],
   "sizes": [
@@ -169,10 +187,7 @@
           "compatibility_tagalong_trailer_bike": "no",
           "headset_size": 38.1,
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_cargo_front_carrier_kg": 8,
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_luggage_rack_kg": 65
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     },
@@ -199,10 +214,7 @@
           "compatibility_tagalong_trailer_bike": "no",
           "headset_size": 38.1,
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_cargo_front_carrier_kg": 8,
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_luggage_rack_kg": 65
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     }

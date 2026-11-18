@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/electra/2026/ponto_go",
   "manufacturer": "Electra",
-  "vehicle_model_group": "Ponto",
+  "model_group": "Ponto",
   "model": "Ponto Go!",
   "model_configuration": "complete",
   "type": "bike",
@@ -56,9 +56,7 @@
     "material_detail": "6061-T6 Aluminum",
     "bottom_bracket": {
       "spindle": "square taper"
-    },
-    "max_weight_total": 162,
-    "gross_weight_rating": 199
+    }
   },
   "suspension": {
     "front": {
@@ -112,8 +110,12 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 625,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 625
+      },
       "max_torque": 60,
       "operating_modes": [
         {
@@ -133,6 +135,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 162
+    },
+    {
+      "load": "gross",
+      "weight": 199
     }
   ],
   "sizes": [

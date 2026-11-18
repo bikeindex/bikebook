@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hiboy/2024/x300",
   "manufacturer": "Hiboy",
   "model": "X300",
@@ -82,9 +82,11 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 648,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 648,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 500,
       "peak_power": 700,
       "operating_modes": [
@@ -98,6 +100,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -108,7 +116,6 @@
           "height": 1275
         },
         "total_weight": 24,
-        "max_weight_rider": 120,
         "rider_height_min": 1600,
         "rider_height_max": 1930
       }

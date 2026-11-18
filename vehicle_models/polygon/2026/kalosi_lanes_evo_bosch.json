@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/polygon/2026/kalosi_lanes_evo_bosch",
   "manufacturer": "Polygon",
-  "vehicle_model_group": "Kalosi",
+  "model_group": "Kalosi",
   "model": "Kalosi Lanes EVO Bosch",
   "model_configuration": "complete",
   "type": "bike",
@@ -138,7 +138,9 @@
       "model": "BDU334Y",
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 50,

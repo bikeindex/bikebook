@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/orbea/2027/wild_tr_m10_20mph_us",
   "manufacturer": "Orbea",
-  "vehicle_model_group": "Wild",
+  "model_group": "Wild",
   "model": "Wild TR M10 20mph",
   "model_configuration": "complete",
   "markets": [
@@ -116,8 +116,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,

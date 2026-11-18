@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ari/2024/bonneville_elite",
   "manufacturer": "Ari",
-  "vehicle_model_group": "Bonneville",
+  "model_group": "Bonneville",
   "model": "Bonneville Elite",
   "model_configuration": "complete",
   "type": "bike",
@@ -151,8 +151,10 @@
       "kind": "mid_drive",
       "spindle": "ETOR Drive",
       "spindle_length": 135,
-      "battery_size": 430,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 430,
+        "chemistry": "li-ion"
+      },
       "peak_power": 450,
       "max_torque": 60,
       "operating_modes": [

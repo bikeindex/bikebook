@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2019/domane_al_2",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Domane",
+  "model_group": "Domane",
   "model": "Domane AL 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -164,9 +164,7 @@
       "spindle_length": 110
     },
     "headset": "IS42/28.6 | IS42/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 114,
-    "gross_weight_rating": 125
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -218,6 +216,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 114
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

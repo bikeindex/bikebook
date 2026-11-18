@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freego/2026/nova_4",
   "manufacturer": "Freego",
-  "vehicle_model_group": "Nova",
+  "model_group": "Nova",
   "model": "Nova 4",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -33,8 +33,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -70,10 +69,12 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 1800,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 cells",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1800,
+        "chemistry": "li-ion",
+        "cells": "21700",
+        "charging_time": 420
+      },
       "rated_power": 3000,
       "peak_power": 6000,
       "max_torque": 280,
@@ -89,6 +90,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

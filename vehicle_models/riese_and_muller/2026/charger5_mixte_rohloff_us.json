@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2026/charger5_mixte_rohloff_us",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Charger5 Mixte",
+  "model_group": "Charger5 Mixte",
   "model": "Charger5 Mixte rohloff",
   "model_configuration": "complete",
   "markets": [
@@ -54,14 +54,16 @@
         "type": "fender"
       },
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
     ],
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 131,
-    "gross_weight_rating": 160
+    }
   },
   "suspension": {
     "front": {
@@ -123,8 +125,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -138,6 +142,24 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 131
+    },
+    {
+      "load": "gross",
+      "weight": 160
+    },
+    {
+      "load": "rear_rack",
+      "weight": 27
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 5
     }
   ],
   "sizes": [
@@ -164,9 +186,7 @@
           "compatibility_tagalong_trailer_bike": "yes",
           "headset_size": 38.1,
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     },
@@ -193,9 +213,7 @@
           "compatibility_tagalong_trailer_bike": "yes",
           "headset_size": 38.1,
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     },
@@ -222,9 +240,7 @@
           "compatibility_tagalong_trailer_bike": "yes",
           "headset_size": 38.1,
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     }

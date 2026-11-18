@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/goat_power/2026/chopper_goat_kd",
   "manufacturer": "Goat Power Bikes",
   "model": "Chopper Goat KD",
@@ -26,8 +26,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 68
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -51,8 +50,10 @@
   ],
   "motors": [
     {
-      "battery_size": 360,
-      "charging_time": 240,
+      "battery": {
+        "capacity": 360,
+        "charging_time": 240
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -63,6 +64,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 68
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hiboy/2026/dk2",
   "manufacturer": "Hiboy",
   "model": "DK2",
@@ -77,8 +77,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 68
+    "material": "steel"
   },
   "wheels": [
     {
@@ -101,9 +100,11 @@
   "motors": [
     {
       "water_rating": "IPX4",
-      "battery_size": 108,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 108,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "peak_power": 150,
       "operating_modes": [
         {
@@ -117,6 +118,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 68
     }
   ],
   "sizes": [

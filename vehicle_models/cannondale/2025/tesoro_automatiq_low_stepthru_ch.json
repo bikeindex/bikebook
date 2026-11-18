@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2025/tesoro_automatiq_low_stepthru_ch",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Tesoro",
+  "model_group": "Tesoro",
   "model": "Tesoro Automatiq Low StepThru",
   "model_configuration": "complete",
   "markets": [
@@ -59,6 +59,15 @@
     "material": "aluminum",
     "material_detail": "SmartForm C1 Aluminum",
     "top_tube": "step_through",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
+      }
+    ],
     "cable_routing": "stealth",
     "bottom_bracket": {
       "spindle": "ISIS"
@@ -136,8 +145,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -153,9 +164,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 27
+    }
+  ],
   "sizes": [
     {
       "name": "SM",
@@ -279,7 +293,6 @@
     },
     {
       "type": "hub",
-      "type_detail": "Rear Derailleur",
       "position": [
         "rear"
       ],

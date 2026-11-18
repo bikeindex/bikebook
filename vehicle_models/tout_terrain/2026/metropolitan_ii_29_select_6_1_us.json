@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tout_terrain/2026/metropolitan_ii_29_select_6_1_us",
   "manufacturer": "Tout Terrain",
-  "vehicle_model_group": "Metropolitan",
+  "model_group": "Metropolitan",
   "model": "Metropolitan II 29 Select 6.1",
   "model_configuration": "complete",
   "markets": [
@@ -41,7 +41,11 @@
         "type": "fender"
       },
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "front"
+        ],
+        "interface": "racktime_snapit"
       },
       {
         "type": "bottle",
@@ -54,6 +58,13 @@
       {
         "type": "bottle",
         "location": "under_downtube"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
       }
     ],
     "bottom_bracket": {
@@ -62,9 +73,7 @@
       "spindle": "square taper"
     },
     "headset": "EC34/28.6 | EC34/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 141,
-    "gross_weight_rating": 160
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -120,6 +129,16 @@
       ],
       "rotor_diameter": 160,
       "caliper_mount": "Disc IS"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 141
+    },
+    {
+      "load": "gross",
+      "weight": 160
     }
   ],
   "sizes": [

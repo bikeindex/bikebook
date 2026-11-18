@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/focus/2024/jam_7_8",
   "manufacturer": "Focus",
-  "vehicle_model_group": "Jam²",
+  "model_group": "Jam²",
   "model": "Jam² 7.8",
   "model_configuration": "complete",
   "type": "bike",
@@ -59,8 +59,7 @@
     "cable_routing": "stealth",
     "bottom_bracket": {
       "spindle": "Shimano EP8"
-    },
-    "gross_weight_rating": 150
+    }
   },
   "suspension": {
     "front": {
@@ -127,9 +126,13 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [
@@ -142,6 +145,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

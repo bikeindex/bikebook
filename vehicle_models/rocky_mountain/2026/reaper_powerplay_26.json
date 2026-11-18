@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rocky_mountain/2026/reaper_powerplay_26",
   "manufacturer": "Rocky Mountain Bicycles",
-  "vehicle_model_group": "Reaper Powerplay",
+  "model_group": "Reaper Powerplay",
   "model": "Reaper Powerplay 26",
   "model_configuration": "complete",
   "type": "bike",
@@ -107,8 +107,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 240,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 240,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 300,
       "max_torque": 40,

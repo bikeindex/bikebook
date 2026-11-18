@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eoeotwo/2026/gt06_plus",
   "manufacturer": "EOEOTWO",
-  "vehicle_model_group": "GT06",
+  "model_group": "GT06",
   "model": "GT06 Plus",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -36,7 +36,9 @@
   ],
   "motors": [
     {
-      "battery_size": 1217,
+      "battery": {
+        "capacity": 1217
+      },
       "rated_power": 2400,
       "operating_modes": [
         {
@@ -49,12 +51,15 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
-      "name": "One Size",
-      "geometry": {
-        "max_weight_rider": 150
-      }
+      "name": "One Size"
     }
   ],
   "components": [

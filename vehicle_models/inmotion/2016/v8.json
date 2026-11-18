@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2016/v8",
   "manufacturer": "Inmotion",
-  "vehicle_model_group": "V8",
+  "model_group": "V8",
   "model": "V8",
   "model_configuration": "complete",
   "type": "epamd",
@@ -29,8 +29,7 @@
     "2016": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "brakes": [
     {
@@ -44,9 +43,11 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP55",
-      "battery_size": 480,
-      "battery_info": "480Wh",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 480,
+        "cells": "480Wh",
+        "charging_time": 300
+      },
       "rated_power": 800,
       "operating_modes": [
         {
@@ -61,6 +62,12 @@
           }
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

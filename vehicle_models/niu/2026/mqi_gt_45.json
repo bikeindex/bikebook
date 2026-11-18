@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/niu/2026/mqi_gt_45",
   "manufacturer": "Niu",
-  "vehicle_model_group": "MQi GT",
+  "model_group": "MQi GT",
   "model": "MQi GT 45",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -21,8 +21,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 269
+    "material": "steel"
   },
   "wheels": [
     {
@@ -59,10 +58,12 @@
   "motors": [
     {
       "manufacturer": "Bosch",
-      "battery_size": 2976,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 Lithium Ion",
-      "charging_time": 270,
+      "battery": {
+        "capacity": 2976,
+        "chemistry": "li-ion",
+        "cells": "18650",
+        "charging_time": 270
+      },
       "rated_power": 3100,
       "peak_power": 3100,
       "operating_modes": [
@@ -76,6 +77,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 269
     }
   ],
   "sizes": [

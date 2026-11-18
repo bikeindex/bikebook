@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tout_terrain/2027/appia_select_6_1",
   "manufacturer": "Tout Terrain",
-  "vehicle_model_group": "Appia",
+  "model_group": "Appia",
   "model": "Appia Select 6.1",
   "model_configuration": "complete",
   "type": "bike",
@@ -30,10 +30,17 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
+      }
+    ],
     "headset": "ZS44/28.6 | ZS56/40",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 133,
-    "gross_weight_rating": 160
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -110,7 +117,9 @@
       "manufacturer": "Pinion",
       "model": "E1.9",
       "kind": "mid_drive",
-      "battery_size": 700,
+      "battery": {
+        "capacity": 700
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -120,6 +129,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 133
+    },
+    {
+      "load": "gross",
+      "weight": 160
     }
   ],
   "sizes": [
@@ -378,11 +397,6 @@
         "width": 57,
         "diameter": 622
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Terrain",
-      "description": "Allroad"
     },
     {
       "type": "unknown",

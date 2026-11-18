@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/roll_road/2026/emma_4_0",
   "manufacturer": "Roll Road",
-  "vehicle_model_group": "Emma",
+  "model_group": "Emma",
   "model": "Emma 4.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -55,8 +55,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Aerospace-Grade Aluminum",
-    "max_weight_total": 204
+    "material_detail": "Aerospace-Grade Aluminum"
   },
   "suspension": {
     "front": {
@@ -96,7 +95,9 @@
       "model": "SUTTO",
       "sensor_speed": "spoke_magnet",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 2080,
+      "battery": {
+        "capacity": 2080
+      },
       "rated_power": 1500,
       "peak_power": 2200,
       "operating_modes": [
@@ -127,6 +128,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

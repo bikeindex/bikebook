@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kona/2026/dew_e",
   "manufacturer": "Kona",
-  "vehicle_model_group": "Dew-E",
+  "model_group": "Dew-E",
   "model": "Dew-E",
   "model_configuration": "complete",
   "type": "bike",
@@ -125,8 +125,10 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 60,
       "operating_modes": [

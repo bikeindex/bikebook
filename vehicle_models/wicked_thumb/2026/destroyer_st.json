@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wicked_thumb/2026/destroyer_st",
   "manufacturer": "Wicked Thumb",
-  "vehicle_model_group": "Destroyer",
+  "model_group": "Destroyer",
   "model": "Destroyer ST",
   "model_configuration": "complete",
   "type": "bike",
@@ -104,9 +104,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 1040,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 50E cells",
+      "battery": {
+        "capacity": 1040,
+        "chemistry": "li-ion",
+        "cells": "Samsung 50E"
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 120,
@@ -246,10 +248,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "52V, 30amp"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "C900E-USB 3.8” color LCD Display w/ USB Port"
     },
     {
@@ -359,6 +357,11 @@
       "type": "unknown",
       "type_detail": "STANCE",
       "description": "1.75\" Seat Tube, 25.25\" Reach, 34\" Minimum Saddle Height"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "CONTROLLER",
+      "description": "52V, 30amp"
     }
   ]
 }

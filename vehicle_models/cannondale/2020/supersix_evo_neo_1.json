@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2020/supersix_evo_neo_1",
   "manufacturer": "Cannondale",
   "model": "SuperSix EVO Neo 1",
@@ -123,8 +123,10 @@
       "manufacturer": "Mahle",
       "model": "X35",
       "kind": "hub_drive",
-      "battery_size": 250,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 250,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [

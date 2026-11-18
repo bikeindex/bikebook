@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/emerald/2023/fold",
   "manufacturer": "Emerald",
   "model": "Fold",
@@ -53,8 +53,7 @@
     "material": "aluminum",
     "material_detail": "6061 Single-Butted Aluminum",
     "top_tube": "step_through",
-    "folding": "half_fold",
-    "max_weight_total": 181
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -93,11 +92,13 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 1642",
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung cell",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "weight": 3.7,
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 53,
@@ -123,6 +124,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 181
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -140,7 +151,6 @@
           "height": 965
         },
         "total_weight": 31.8,
-        "max_weight_rider": 181,
         "rider_height_min": 1499,
         "rider_height_max": 1905,
         "extra_measurements": {

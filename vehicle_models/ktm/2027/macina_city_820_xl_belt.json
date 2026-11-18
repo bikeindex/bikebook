@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/macina_city_820_xl_belt",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Macina City",
+  "model_group": "Macina City",
   "model": "Macina City 820 XL Belt",
   "model_configuration": "complete",
   "type": "bike",
@@ -47,9 +47,7 @@
     "material_detail": "6061 Aluminum",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 149,
-    "gross_weight_rating": 180
+    }
   },
   "suspension": {
     "front": {
@@ -86,8 +84,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -101,6 +101,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 149
+    },
+    {
+      "load": "gross",
+      "weight": 180
     }
   ],
   "sizes": [
@@ -196,14 +206,6 @@
       }
     },
     {
-      "type": "derailleur",
-      "type_detail": "R.DERAILL",
-      "position": [
-        "rear"
-      ],
-      "description": "1X5 SHIMANO NEXUS"
-    },
-    {
       "type": "drive_belt",
       "type_detail": "Belt",
       "manufacturer": "Gates Carbon Drive",
@@ -254,6 +256,14 @@
       "type": "headset",
       "manufacturer": "Acros",
       "description": "Acros AICR intern 1.1/8\"-1.5\" angle lim"
+    },
+    {
+      "type": "hub",
+      "type_detail": "R.DERAILL",
+      "position": [
+        "rear"
+      ],
+      "description": "1X5 SHIMANO NEXUS"
     },
     {
       "type": "kickstand",

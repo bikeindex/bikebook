@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vtuvia/2024/cmb_8_speed",
   "manufacturer": "Vtuvia",
   "model": "CMB 8-Speed",
@@ -47,8 +47,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 136
+    ]
   },
   "suspension": {
     "front": {}
@@ -87,10 +86,15 @@
       "kind": "mid_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271, UL 2849",
-      "battery_size": 691,
-      "battery_chemistry": "li-ion",
-      "charging_time": 450,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 691,
+        "chemistry": "li-ion",
+        "charging_time": 450
+      },
       "rated_power": 500,
       "peak_power": 820,
       "max_torque": 175,
@@ -113,6 +117,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -127,7 +137,6 @@
           "length": 1872
         },
         "total_weight": 27.2,
-        "max_weight_rider": 136,
         "rider_height_min": 1549,
         "rider_height_max": 1854,
         "extra_measurements": {
@@ -185,10 +194,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "48V 500W (PEAK 820W)VTUVIA Mid-Drive Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V 20A"
     },
     {
       "type": "e_vehicle_remote",
@@ -255,6 +260,11 @@
         "width": 60.96,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V 20A"
     },
     {
       "type": "unknown",

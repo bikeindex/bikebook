@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rambo/2026/revolt_awd_step_thru",
   "manufacturer": "Rambo",
   "model": "Revolt AWD Step Thru",
@@ -53,8 +53,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061-T6 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 136
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {},
@@ -84,7 +83,9 @@
       "drive_wheel": "front",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 780,
+      "battery": {
+        "capacity": 780
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 70,
@@ -109,7 +110,9 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 780,
+      "battery": {
+        "capacity": 780
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 70,
@@ -129,6 +132,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

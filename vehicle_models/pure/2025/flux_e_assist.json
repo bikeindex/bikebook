@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pure/2025/flux_e_assist",
   "manufacturer": "Pure Cycles",
   "model": "FLUX E-Assist",
@@ -24,6 +24,7 @@
           "colors": [
             "silver"
           ],
+          "stock_photo": "https://bikebook.bikeindex.org/pure/2025/flux_e_assist.jpg",
           "variants": [
             {
               "sku": "671371",
@@ -40,8 +41,7 @@
               "gtin": "888571118498",
               "size": "20.5\""
             }
-          ],
-          "stock_photo": "https://bikebook.bikeindex.org/pure/2025/flux_e_assist.jpg"
+          ]
         }
       ],
       "url": "https://purecycles.com/products/flux-e-assist-23181",
@@ -59,8 +59,7 @@
     ],
     "headset": "ZS41/25.4 | ZS41/26.4",
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 136
+    "seatpost_clamp_diameter": 34.9
   },
   "wheels": [
     {
@@ -116,10 +115,15 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 350,
       "max_torque": 55,
       "operating_modes": [
@@ -141,6 +145,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

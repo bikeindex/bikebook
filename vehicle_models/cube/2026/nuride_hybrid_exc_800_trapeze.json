@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/nuride_hybrid_exc_800_trapeze",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Nuride Hybrid",
+  "model_group": "Nuride Hybrid",
   "model": "Nuride Hybrid EXC 800 Trapeze",
   "model_configuration": "complete",
   "type": "bike",
@@ -36,9 +36,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 133,
-    "gross_weight_rating": 160
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -107,8 +105,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -124,9 +124,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 160
+    }
+  ],
   "sizes": [
     {
       "name": "46 cm",
@@ -144,7 +155,6 @@
         "stem_length": 65,
         "crank_length": 175,
         "max_seatpost_insertion": 270,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": 68,
           "protrusion_height_80mm": 769
@@ -168,7 +178,6 @@
         "crank_length": 175,
         "max_seatpost_insertion": 300,
         "total_weight": 26.6,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": 68,
           "protrusion_height_80mm": 778
@@ -191,7 +200,6 @@
         "stem_length": 80,
         "crank_length": 175,
         "max_seatpost_insertion": 300,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": 68,
           "protrusion_height_80mm": 817
@@ -214,7 +222,6 @@
         "stem_length": 80,
         "crank_length": 175,
         "max_seatpost_insertion": 300,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": 68,
           "protrusion_height_80mm": 850

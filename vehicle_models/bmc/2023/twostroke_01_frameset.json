@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2023/twostroke_01_frameset",
   "manufacturer": "BMC",
-  "vehicle_model_group": "Twostroke",
+  "model_group": "Twostroke",
   "model": "Twostroke 01 Frameset",
   "model_configuration": "frame",
   "markets": [
@@ -74,8 +74,7 @@
   },
   "frame": {
     "material": "carbon",
-    "cable_routing": "internal",
-    "gross_weight_rating": 110
+    "cable_routing": "internal"
   },
   "wheels": [
     {
@@ -84,6 +83,12 @@
         "rear"
       ],
       "tire_width_max": 58
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 110
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/firmstrong/2014/mini_bruiser",
   "manufacturer": "Firmstrong",
-  "vehicle_model_group": "Bruiser",
+  "model_group": "Bruiser",
   "model": "Mini Bruiser",
   "model_configuration": "complete",
   "type": "bike",
@@ -72,12 +72,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 36
+    }
+  ],
   "sizes": [
     {
       "name": "9\"",
       "geometry": {
         "total_weight": 15.9,
-        "max_weight_rider": 36,
         "rider_height_min": 864,
         "rider_height_max": 1118
       }

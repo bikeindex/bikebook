@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/liv/2021/intrigue_x_e_plus_2",
   "manufacturer": "Liv",
-  "vehicle_model_group": "Intrigue",
+  "model_group": "Intrigue",
   "model": "Intrigue X E+ 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -167,8 +167,10 @@
       "manufacturer": "Giant",
       "model": "SyncDrive Pro",
       "kind": "mid_drive",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "max_torque": 80,
       "operating_modes": [
         {

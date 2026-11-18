@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gyroor/2024/eb262",
   "manufacturer": "Gyroor",
   "model": "EB262",
@@ -51,8 +51,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 125
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -85,9 +84,13 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
-      "battery_size": 281,
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 281,
+        "charging_time": 360
+      },
       "rated_power": 350,
       "peak_power": 500,
       "operating_modes": [
@@ -102,6 +105,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

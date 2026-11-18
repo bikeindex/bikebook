@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/5th_wheel/2025/mate",
   "manufacturer": "5th Wheel",
   "model": "Mate",
@@ -36,8 +36,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 120
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -63,8 +62,10 @@
   "motors": [
     {
       "water_rating": "IP54",
-      "battery_size": 468,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 468,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 1000,
       "operating_modes": [
@@ -79,6 +80,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

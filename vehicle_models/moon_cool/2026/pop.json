@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moon_cool/2026/pop",
   "manufacturer": "Moon Cool",
   "model": "POP",
@@ -93,8 +93,7 @@
   "frame": {
     "material": "aluminum",
     "folding": "half_fold",
-    "seatpost_diameter": 33.9,
-    "max_weight_total": 150
+    "seatpost_diameter": 33.9
   },
   "suspension": {
     "front": {
@@ -149,9 +148,15 @@
     {
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "2849&2271 by SGS; CFR1512",
-      "battery_size": 653,
-      "charging_time": 420,
+      "certifications": [
+        "UL 2849",
+        "UL 2271",
+        "16 CFR 1512"
+      ],
+      "battery": {
+        "capacity": 653,
+        "charging_time": 420
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 85,
@@ -177,6 +182,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -185,7 +196,7 @@
         "wheelbase": 1130,
         "standover": 430,
         "handlebar_width": 640,
-        "seat_height_min": 1001,
+        "seat_height_min": 749,
         "seat_height_max": 1001,
         "dimensions": {
           "length": 1690

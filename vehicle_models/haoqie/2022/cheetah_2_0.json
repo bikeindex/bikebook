@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/haoqie/2022/cheetah_2_0",
   "manufacturer": "Haoqie",
   "model": "Cheetah 2.0",
@@ -53,8 +53,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 181
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -98,9 +97,11 @@
   ],
   "motors": [
     {
-      "battery_size": 1200,
-      "battery_chemistry": "li-ion",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1200,
+        "chemistry": "li-ion",
+        "charging_time": 540
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 85,
@@ -121,6 +122,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

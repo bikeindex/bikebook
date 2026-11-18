@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tuttio/2026/ict_2_0",
   "manufacturer": "Tuttio",
-  "vehicle_model_group": "ICT",
+  "model_group": "ICT",
   "model": "ICT 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -39,8 +39,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -75,9 +74,11 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 1500,
-      "battery_chemistry": "li-ion",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 1500,
+        "chemistry": "li-ion",
+        "charging_time": 600
+      },
       "peak_power": 5000,
       "max_torque": 220,
       "operating_modes": [
@@ -100,6 +101,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

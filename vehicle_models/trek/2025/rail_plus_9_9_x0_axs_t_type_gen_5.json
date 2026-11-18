@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2025/rail_plus_9_9_x0_axs_t_type_gen_5",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Rail+",
+  "model_group": "Rail+",
   "model": "Rail+ 9.9 X0 AXS T-Type Gen 5",
   "model_configuration": "complete",
   "type": "bike",
@@ -65,9 +65,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 112,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -152,9 +150,13 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "certification": "UL 2849",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 100,
@@ -168,6 +170,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 112
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

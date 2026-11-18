@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/motobecane/2026/elite_eadventure_ltd",
   "manufacturer": "Motobecane",
-  "vehicle_model_group": "Elite eAdventure",
+  "model_group": "Elite eAdventure",
   "model": "Elite eAdventure LTD",
   "model_configuration": "complete",
   "type": "bike",
@@ -105,8 +105,10 @@
       "spindle": "square taper",
       "sensor_cadence": false,
       "sensor_speed": "spoke_magnet",
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [

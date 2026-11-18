@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/actbest/2024/ranger",
   "manufacturer": "Actbest",
-  "vehicle_model_group": "Ranger",
+  "model_group": "Ranger",
   "model": "Ranger",
   "model_configuration": "complete",
   "type": "bike",
@@ -108,8 +108,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 163
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -145,8 +144,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 624,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 420
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "max_torque": 80,
@@ -174,9 +175,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 24.95
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 24.95
+    },
+    {
+      "load": "payload",
+      "weight": 163
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

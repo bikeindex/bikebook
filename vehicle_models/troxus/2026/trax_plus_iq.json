@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/troxus/2026/trax_plus_iq",
   "manufacturer": "Troxus",
-  "vehicle_model_group": "Trax Plus",
+  "model_group": "Trax Plus",
   "model": "Trax Plus iQ",
   "model_configuration": "complete",
   "type": "bike",
@@ -76,13 +76,21 @@
   },
   "frame": {
     "material": "aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
     "cable_routing": "stealth",
     "bottom_bracket": {
       "spindle": "square taper"
     },
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 35,
-    "max_weight_total": 174
+    "seatpost_clamp_diameter": 35
   },
   "suspension": {
     "front": {
@@ -140,10 +148,14 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung® Cells",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 500,
       "max_torque": 65,
       "operating_modes": [
@@ -167,6 +179,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 174
     }
   ],
   "sizes": [

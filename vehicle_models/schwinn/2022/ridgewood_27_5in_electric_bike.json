@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/schwinn/2022/ridgewood_27_5in_electric_bike",
   "manufacturer": "Schwinn",
-  "vehicle_model_group": "Ridgewood",
+  "model_group": "Ridgewood",
   "model": "Ridgewood 27.5in Electric Bike",
   "model_configuration": "complete",
   "type": "bike",
@@ -48,8 +48,7 @@
       "width": 68,
       "spindle": "square taper"
     },
-    "seatpost_diameter": 22.2,
-    "max_weight_total": 136
+    "seatpost_diameter": 22.2
   },
   "suspension": {
     "front": {
@@ -108,8 +107,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "battery": {
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -129,6 +130,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

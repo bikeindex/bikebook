@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eg/2015/oahu_500ex",
   "manufacturer": "EG Bikes",
-  "vehicle_model_group": "Oahu",
+  "model_group": "Oahu",
   "model": "Oahu 500EX",
   "model_configuration": "complete",
   "type": "bike",
@@ -77,8 +77,10 @@
   ],
   "motors": [
     {
-      "battery_size": 480,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 480,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "operating_modes": [
         {

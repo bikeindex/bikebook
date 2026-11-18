@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/catrike/2026/dumont_ecat",
   "manufacturer": "Catrike",
-  "vehicle_model_group": "Dumont",
+  "model_group": "Dumont",
   "model": "Dumont eCAT",
   "model_configuration": "complete",
   "type": "recumbent",
@@ -144,9 +144,13 @@
       "model": "BDU346Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "certification": "UL 2849",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -160,6 +164,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
     }
   ],
   "sizes": [
@@ -182,7 +192,6 @@
           "height": 635
         },
         "total_weight": 27.2,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "ground_clearance": 102,
           "height_w_seat_folded": 673,

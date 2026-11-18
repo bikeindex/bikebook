@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/varun/2025/m24_1_us",
   "manufacturer": "Varun",
   "model": "M24-1",
@@ -65,8 +65,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -96,9 +95,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 281,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 281,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "peak_power": 500,
       "operating_modes": [
         {
@@ -119,6 +120,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

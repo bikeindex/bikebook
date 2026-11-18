@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rose/2026/black_lava_3_midstep",
   "manufacturer": "ROSE",
-  "vehicle_model_group": "Black Lava",
+  "model_group": "Black Lava",
   "model": "Black Lava 3 MidStep",
   "model_configuration": "complete",
   "type": "bike",
@@ -81,12 +81,15 @@
         "type": "fender"
       },
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
       }
     ],
     "cable_routing": "internal",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 130
+    "seatpost_diameter": 30.9
   },
   "wheels": [
     {
@@ -125,6 +128,12 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 130
     }
   ],
   "sizes": [

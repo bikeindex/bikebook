@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moon_cool/2024/mc350",
   "manufacturer": "Moon Cool",
-  "vehicle_model_group": "MC",
+  "model_group": "MC",
   "model": "MC350",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -23,8 +23,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "Hi-Tensile Steel",
-    "max_weight_total": 159
+    "material_detail": "Hi-Tensile Steel"
   },
   "wheels": [
     {
@@ -79,8 +78,10 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "battery_size": 374,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 374,
+        "charging_time": 480
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -102,6 +103,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "24\"",
@@ -109,7 +116,7 @@
         "top_tube_effective": 549,
         "wheelbase": 1151,
         "standover": 439,
-        "seat_height_min": 1001,
+        "seat_height_min": 879,
         "seat_height_max": 1001,
         "dimensions": {
           "length": 1750
@@ -125,7 +132,7 @@
         "top_tube_effective": 549,
         "wheelbase": 1151,
         "standover": 439,
-        "seat_height_min": 1001,
+        "seat_height_min": 879,
         "seat_height_max": 1001,
         "dimensions": {
           "length": 1750

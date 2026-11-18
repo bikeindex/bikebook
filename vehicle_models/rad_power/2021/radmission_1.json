@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rad_power/2021/radmission_1",
   "manufacturer": "Rad Power Bikes",
   "model": "RadMission 1",
@@ -196,8 +196,7 @@
       "spindle": "square taper",
       "spindle_length": 127.5
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 125
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -246,9 +245,11 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion",
+        "cells": "18650"
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -265,6 +266,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [
@@ -386,10 +393,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V, 500W"
-    },
-    {
-      "type": "e_vehicle_remote",
       "manufacturer": "Rad Power Bikes",
       "description": "Rad Power Bikes custom LED display"
     },
@@ -476,6 +479,11 @@
         "width": 49.53,
         "diameter": 584
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V, 500W"
     },
     {
       "type": "unknown",

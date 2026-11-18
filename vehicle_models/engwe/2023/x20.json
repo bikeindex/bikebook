@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/engwe/2023/x20",
   "manufacturer": "ENGWE",
   "model": "X20",
@@ -66,8 +66,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {},
@@ -98,9 +97,11 @@
   ],
   "motors": [
     {
-      "battery_size": 691,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 691,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "peak_power": 1000,
       "max_torque": 65,
       "operating_modes": [
@@ -114,6 +115,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

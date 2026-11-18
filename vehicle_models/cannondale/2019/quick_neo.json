@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2019/quick_neo",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Quick",
+  "model_group": "Quick",
   "model": "Quick Neo",
   "model_configuration": "complete",
   "markets": [
@@ -133,8 +133,10 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,

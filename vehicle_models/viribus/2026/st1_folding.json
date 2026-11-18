@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/viribus/2026/st1_folding",
   "manufacturer": "Viribus",
   "model": "ST1 Folding",
@@ -65,8 +65,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 227
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -104,7 +103,9 @@
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX5",
-      "battery_size": 749,
+      "battery": {
+        "capacity": 749
+      },
       "rated_power": 750,
       "peak_power": 1300,
       "max_torque": 85,
@@ -127,6 +128,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [

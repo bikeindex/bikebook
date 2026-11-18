@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/emojo/2024/bull_urban_cruiser",
   "manufacturer": "Emojo",
-  "vehicle_model_group": "Bull",
+  "model_group": "Bull",
   "model": "Bull Urban Cruiser",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -141,8 +141,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 150
+    "material_detail": "6061 Aluminum"
   },
   "wheels": [
     {
@@ -170,10 +169,15 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "certification": "UL 2271, UL 2849",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -194,6 +198,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2025/universe_electric_cruiser",
   "manufacturer": "Jetson",
   "model": "Universe Electric Cruiser",
@@ -57,9 +57,11 @@
   "motors": [
     {
       "water_rating": "IPX5",
-      "battery_size": 374,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 374,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -84,6 +86,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -99,7 +107,6 @@
           "height": 726
         },
         "total_weight": 23.7,
-        "max_weight_rider": 113,
         "rider_age_min": 14
       }
     }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/liv/2021/rove_e_plus",
   "manufacturer": "Liv",
-  "vehicle_model_group": "Rove",
+  "model_group": "Rove",
   "model": "Rove E+",
   "model_configuration": "complete",
   "type": "bike",
@@ -113,8 +113,10 @@
       "model": "SyncDrive Core",
       "kind": "mid_drive",
       "spindle": "square taper",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "max_torque": 50,
       "operating_modes": [
         {

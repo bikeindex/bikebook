@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2023/xr_elite",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "XR",
+  "model_group": "XR",
   "model": "XR Elite",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -27,7 +27,6 @@
           "variants": [
             {
               "sku": "GT-XRE-BLA-HNCB",
-              "gtin": "850010317847",
               "size": "One Size"
             }
           ]
@@ -40,7 +39,6 @@
           "variants": [
             {
               "sku": "GT-XRE-BLA",
-              "gtin": "850010317847",
               "size": "One Size"
             }
           ]
@@ -102,11 +100,15 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 281,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 281,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 300,
       "operating_modes": [
         {
@@ -119,6 +121,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -128,8 +136,7 @@
           "width": 439,
           "height": 1120
         },
-        "total_weight": 14.5,
-        "max_weight_rider": 100
+        "total_weight": 14.5
       }
     }
   ],

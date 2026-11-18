@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/super73/2024/super73_z_adventure_series_le",
   "manufacturer": "Super73",
-  "vehicle_model_group": "Z Adventure",
+  "model_group": "Z Adventure",
   "model": "SUPER73-Z Adventure Series LE",
   "model_configuration": "complete",
   "type": "bike",
@@ -74,9 +74,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 720,
-      "battery_info": "48V 15Ah",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 720,
+        "voltage": 48,
+        "charging_time": 480
+      },
       "rated_power": 600,
       "operating_modes": [
         {
@@ -99,6 +101,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 147
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -111,7 +119,6 @@
           "height": 1105
         },
         "total_weight": 34,
-        "max_weight_rider": 147,
         "rider_height_min": 1549,
         "rider_height_max": 2032
       }

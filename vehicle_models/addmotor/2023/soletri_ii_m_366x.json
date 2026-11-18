@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/addmotor/2023/soletri_ii_m_366x",
   "manufacturer": "Addmotor",
   "model": "Soletri II M-366X",
@@ -101,8 +101,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "top_tube": "step_through",
-    "headset": "ZS44/28.6 | ZS44/30",
-    "max_weight_total": 204
+    "headset": "ZS44/28.6 | ZS44/30"
   },
   "suspension": {
     "front": {
@@ -155,8 +154,10 @@
     {
       "drive_wheel": "rear",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -178,6 +179,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

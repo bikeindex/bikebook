@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/macina_team_892_xl_pts",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Macina Team",
+  "model_group": "Macina Team",
   "model": "Macina Team 892 XL PTS",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,9 +40,7 @@
     "material_detail": "6061 Aluminum",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 150,
-    "gross_weight_rating": 177
+    }
   },
   "suspension": {
     "front": {
@@ -86,8 +84,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -101,6 +101,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
+    },
+    {
+      "load": "gross",
+      "weight": 177
     }
   ],
   "sizes": [

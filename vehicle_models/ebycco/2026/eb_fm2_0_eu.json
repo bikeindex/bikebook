@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebycco/2026/eb_fm2_0_eu",
   "manufacturer": "Ebycco",
   "model": "EB-FM2.0",
@@ -17,7 +17,7 @@
   "first_year": 2026,
   "years": {
     "2026": {
-      "original_msrp": 83900,
+      "original_msrp": 133900,
       "original_msrp_currency": "EUR",
       "colorways": [
         {
@@ -46,8 +46,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -85,10 +84,15 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 720,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 720,
+        "charging_time": 420
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 65,
@@ -103,6 +107,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

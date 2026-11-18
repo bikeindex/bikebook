@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tomofree/2026/dk200",
   "manufacturer": "Tomofree",
   "model": "DK200",
@@ -23,8 +23,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -48,7 +47,9 @@
   "motors": [
     {
       "water_rating": "IP5",
-      "battery_size": 960,
+      "battery": {
+        "capacity": 960
+      },
       "rated_power": 850,
       "peak_power": 1200,
       "operating_modes": [
@@ -69,6 +70,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

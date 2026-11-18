@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/voltvogue/2026/vv_5",
   "manufacturer": "Voltvogue",
   "model": "VV-5",
@@ -49,9 +49,13 @@
   ],
   "motors": [
     {
-      "certification": "UL 2271",
-      "battery_size": 187,
-      "charging_time": 240,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 187,
+        "charging_time": 240
+      },
       "rated_power": 350,
       "max_torque": 50,
       "operating_modes": [
@@ -64,6 +68,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -74,7 +84,6 @@
           "height": 521
         },
         "total_weight": 11.3,
-        "max_weight_rider": 120,
         "rider_age_min": 15
       }
     }
@@ -83,6 +92,10 @@
     {
       "type": "e_vehicle_battery",
       "description": "Battery life: 10 years"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Battery amps: 9.72 A"
     },
     {
       "type": "tire",
@@ -110,11 +123,6 @@
       "type": "unknown",
       "type_detail": "Electric scooter type",
       "description": "Self Balancing"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Amps",
-      "description": "9.72 A"
     }
   ]
 }

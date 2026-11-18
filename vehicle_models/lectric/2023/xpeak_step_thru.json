@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lectric/2023/xpeak_step_thru",
   "manufacturer": "Lectric eBikes",
-  "vehicle_model_group": "XPeak",
+  "model_group": "XPeak",
   "model": "XPeak Step-Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -58,8 +58,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 150
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -112,10 +111,14 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "ISO 4210",
+      "certifications": [
+        "ISO 4210"
+      ],
       "water_rating": "IP65",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1310,
       "max_torque": 85,
@@ -137,6 +140,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -151,7 +164,6 @@
           "height": 1067
         },
         "total_weight": 30.39,
-        "max_weight_rider": 150,
         "rider_height_min": 1575,
         "rider_height_max": 1905,
         "extra_measurements": {

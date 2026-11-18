@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moon_cool/2024/cg2",
   "manufacturer": "Moon Cool",
   "model": "CG2",
@@ -24,8 +24,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 35,
-    "max_weight_total": 204
+    "seatpost_clamp_diameter": 35
   },
   "wheels": [
     {
@@ -64,9 +63,11 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 600
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -89,6 +90,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -97,7 +104,7 @@
         "wheelbase": 1190,
         "standover": 450,
         "handlebar_width": 710,
-        "seat_height_min": 1000,
+        "seat_height_min": 800,
         "seat_height_max": 1000,
         "dimensions": {
           "length": 1750

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gasgas/2024/ecc_4",
   "manufacturer": "GASGAS",
-  "vehicle_model_group": "ECC",
+  "model_group": "ECC",
   "model": "ECC 4",
   "model_configuration": "complete",
   "markets": [
@@ -39,9 +39,7 @@
   "frame": {
     "material": "carbon",
     "seatpost_diameter": 34.9,
-    "coil_compatible": true,
-    "max_weight_total": 105,
-    "gross_weight_rating": 130
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -113,7 +111,9 @@
     {
       "manufacturer": "SRAM",
       "model": "Eagle Powertrain",
-      "battery_size": 630,
+      "battery": {
+        "capacity": 630
+      },
       "rated_power": 250,
       "max_torque": 90,
       "operating_modes": [
@@ -125,6 +125,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 105
+    },
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [

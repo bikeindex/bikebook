@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lankeleisi/2024/es500_pro",
   "manufacturer": "Lankeleisi",
   "model": "ES500 Pro",
@@ -51,8 +51,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 180
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -102,9 +101,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 696,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 696,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 500,
       "max_torque": 45,
       "operating_modes": [
@@ -123,6 +124,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [

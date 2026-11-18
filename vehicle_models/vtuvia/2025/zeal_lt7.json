@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vtuvia/2025/zeal_lt7",
   "manufacturer": "Vtuvia",
-  "vehicle_model_group": "Zeal",
+  "model_group": "Zeal",
   "model": "Zeal LT7",
   "model_configuration": "complete",
   "type": "bike",
@@ -51,8 +51,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 159
+    ]
   },
   "suspension": {
     "front": {}
@@ -97,8 +96,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 624,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 420
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 65,
@@ -121,6 +122,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -135,7 +146,6 @@
           "length": 1920
         },
         "total_weight": 28.1,
-        "max_weight_rider": 159,
         "rider_height_min": 1600,
         "rider_height_max": 1880,
         "extra_measurements": {
@@ -192,10 +202,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "48V 500W (PEAK 750W) Rear Brushless Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V 20A"
     },
     {
       "type": "e_vehicle_remote",
@@ -266,6 +272,11 @@
         "width": 66.04,
         "diameter": 584
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V 20A"
     },
     {
       "type": "unknown",

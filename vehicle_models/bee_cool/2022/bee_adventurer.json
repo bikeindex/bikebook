@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bee_cool/2022/bee_adventurer",
   "manufacturer": "Bee Cool",
-  "vehicle_model_group": "Bee Adventurer",
+  "model_group": "Bee Adventurer",
   "model": "Bee Adventurer",
   "model_configuration": "complete",
   "type": "bike",
@@ -134,9 +134,13 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 1008,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 1008,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 92,
@@ -260,10 +264,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V, 22A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "Color LCD with charge indicator, speedometer, odometer, trip odometer, pedal assist level and more"
     },
     {
@@ -379,6 +379,11 @@
         "width": 101.6,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V, 22A"
     },
     {
       "type": "unknown",

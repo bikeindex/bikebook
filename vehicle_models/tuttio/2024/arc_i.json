@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tuttio/2024/arc_i",
   "manufacturer": "Tuttio",
   "model": "ARC-I",
@@ -48,8 +48,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 75
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {},
@@ -78,8 +77,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX4",
-      "battery_size": 468,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 468,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -93,6 +94,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 75
     }
   ],
   "sizes": [

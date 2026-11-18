@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vitus/2021/mach_e",
   "manufacturer": "Vitus",
   "model": "Mach-E",
@@ -119,7 +119,9 @@
       "kind": "mid_drive",
       "spindle": "Shimano E8000",
       "sensor_cadence": true,
-      "battery_size": 504,
+      "battery": {
+        "capacity": 504
+      },
       "rated_power": 250,
       "max_torque": 60,
       "operating_modes": [

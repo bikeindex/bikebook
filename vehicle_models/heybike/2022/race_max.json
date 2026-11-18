@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/heybike/2022/race_max",
   "manufacturer": "Heybike",
-  "vehicle_model_group": "Race",
+  "model_group": "Race",
   "model": "Race Max",
   "model_configuration": "complete",
   "type": "bike",
@@ -69,8 +69,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "wheels": [
     {
@@ -97,8 +96,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -116,6 +117,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

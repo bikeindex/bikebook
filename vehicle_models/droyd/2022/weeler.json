@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/droyd/2022/weeler",
   "manufacturer": "Droyd",
   "model": "Weeler",
@@ -46,8 +46,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 60
+    "material": "steel"
   },
   "wheels": [
     {
@@ -68,9 +67,13 @@
   ],
   "motors": [
     {
-      "certification": "ASTM F963",
-      "battery_size": 192,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "ASTM F963"
+      ],
+      "battery": {
+        "capacity": 192,
+        "chemistry": "li-ion"
+      },
       "rated_power": 200,
       "operating_modes": [
         {
@@ -81,6 +84,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 60
     }
   ],
   "sizes": [

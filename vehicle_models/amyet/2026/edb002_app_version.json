@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/amyet/2026/edb002_app_version",
   "manufacturer": "Amyet",
-  "vehicle_model_group": "EDB002",
+  "model_group": "EDB002",
   "model": "EDB002 APP Version",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -66,8 +66,13 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "certification": "UL 2849, UL 2272",
-      "battery_size": 1104,
+      "certifications": [
+        "UL 2849",
+        "UL 2272"
+      ],
+      "battery": {
+        "capacity": 1104
+      },
       "peak_power": 4000,
       "max_torque": 230,
       "operating_modes": [
@@ -83,12 +88,15 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
-      "name": "One Size",
-      "geometry": {
-        "max_weight_rider": 150
-      }
+      "name": "One Size"
     }
   ],
   "components": [
@@ -111,11 +119,6 @@
         "rear"
       ],
       "description": "14\" /12\" Tires"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Speed Quantity",
-      "description": "40 MPH"
     }
   ]
 }

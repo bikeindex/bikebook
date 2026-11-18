@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rattan/2023/quercus_us",
   "manufacturer": "Rattan",
   "model": "Quercus",
@@ -57,8 +57,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 204
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -94,10 +93,14 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849",
-      "battery_size": 960,
-      "battery_info": "Samsung Cells",
-      "charging_time": 300,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 960,
+        "cells": "Samsung",
+        "charging_time": 300
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 80,
@@ -120,6 +123,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

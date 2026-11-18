@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vitus/2023/e_sommet_297_vrx",
   "manufacturer": "Vitus",
-  "vehicle_model_group": "E-Sommet",
+  "model_group": "E-Sommet",
   "model": "E-Sommet 297 VRX",
   "model_configuration": "complete",
   "type": "bike",
@@ -130,8 +130,12 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 630,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 630
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

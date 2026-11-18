@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2023/ev85f_abe",
   "manufacturer": "Evercross",
-  "vehicle_model_group": "EV85F",
+  "model_group": "EV85F",
   "model": "EV85F ABE",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -57,8 +57,9 @@
   "motors": [
     {
       "water_rating": "IP54",
-      "battery_size": 281,
-      "battery_info": "7.8 Ah",
+      "battery": {
+        "capacity": 281
+      },
       "rated_power": 400,
       "operating_modes": [
         {
@@ -69,6 +70,12 @@
           "max_slope": 12
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -85,8 +92,7 @@
           "width": 476,
           "height": 496
         },
-        "total_weight": 15,
-        "max_weight_rider": 120
+        "total_weight": 15
       }
     }
   ],

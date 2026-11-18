@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/smlro/2024/su9",
   "manufacturer": "Smlro",
   "model": "SU9",
@@ -48,8 +48,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 180
+    ]
   },
   "wheels": [
     {
@@ -77,7 +76,9 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "battery_size": 1008,
+      "battery": {
+        "capacity": 1008
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -100,7 +101,9 @@
     },
     {
       "drive_wheel": "rear",
-      "battery_size": 1008,
+      "battery": {
+        "capacity": 1008
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -120,6 +123,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [

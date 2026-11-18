@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2024/mx1_mid_drive",
   "manufacturer": "GOTRAX",
   "model": "MX1 Mid Drive",
@@ -59,8 +59,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 120
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -98,10 +97,14 @@
       "drive_wheel": "rear",
       "kind": "mid_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 653,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 653,
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -122,6 +125,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "payload",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -131,8 +144,7 @@
           "width": 719,
           "height": 1189
         },
-        "total_weight": 29.5,
-        "max_weight_rider": 120
+        "total_weight": 29.5
       }
     }
   ],

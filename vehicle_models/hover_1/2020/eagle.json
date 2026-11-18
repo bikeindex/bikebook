@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hover_1/2020/eagle",
   "manufacturer": "Hover-1",
   "model": "Eagle",
@@ -57,7 +57,9 @@
   ],
   "motors": [
     {
-      "battery_size": 144,
+      "battery": {
+        "capacity": 144
+      },
       "rated_power": 320,
       "operating_modes": [
         {
@@ -67,6 +69,12 @@
           "range_claimed": 11
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -84,7 +92,6 @@
           "height": 419
         },
         "total_weight": 9.5,
-        "max_weight_rider": 120,
         "rider_age_min": 8
       }
     }

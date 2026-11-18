@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biktrix/2025/btx_moto_volt_72",
   "manufacturer": "Biktrix",
-  "vehicle_model_group": "BTX Moto",
+  "model_group": "BTX Moto",
   "model": "BTX Moto Volt 72",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -127,7 +127,9 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 2520,
+      "battery": {
+        "capacity": 2520
+      },
       "operating_modes": [
         {
           "mode": "throttle",

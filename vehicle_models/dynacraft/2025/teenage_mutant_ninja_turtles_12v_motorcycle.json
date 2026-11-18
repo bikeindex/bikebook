@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dynacraft/2025/teenage_mutant_ninja_turtles_12v_motorcycle",
   "manufacturer": "Dynacraft",
   "model": "Teenage Mutant Ninja Turtles 12V Motorcycle",
@@ -48,12 +48,13 @@
       {
         "type": "fender"
       }
-    ],
-    "max_weight_total": 60
+    ]
   },
   "motors": [
     {
-      "charging_time": 480,
+      "battery": {
+        "charging_time": 480
+      },
       "operating_modes": [
         {
           "mode": "throttle",
@@ -65,6 +66,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 60
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hover_1/2023/ace_r350",
   "manufacturer": "Hover-1",
-  "vehicle_model_group": "Ace",
+  "model_group": "Ace",
   "model": "Ace R350",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -69,7 +69,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 270,
+      "battery": {
+        "capacity": 270
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -79,6 +81,12 @@
           "range_claimed": 30
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -95,8 +103,7 @@
           "width": 515,
           "height": 541
         },
-        "total_weight": 18,
-        "max_weight_rider": 120
+        "total_weight": 18
       }
     }
   ],

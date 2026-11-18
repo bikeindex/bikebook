@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2026/urban_grinder_evo_sx_trapeze",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Urban EVO",
+  "model_group": "Urban EVO",
   "model": "Urban Grinder EVO SX Trapeze",
   "model_configuration": "complete",
   "type": "bike",
@@ -48,9 +48,7 @@
     "material": "aluminum",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 113,
-    "gross_weight_rating": 135
+    }
   },
   "suspension": {
     "front": {
@@ -102,8 +100,11 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion",
+        "weight": 3.8
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,
@@ -117,6 +118,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
+    },
+    {
+      "load": "gross",
+      "weight": 135
     }
   ],
   "sizes": [

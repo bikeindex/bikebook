@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sun/2025/electrolite",
   "manufacturer": "Sun",
   "model": "Electrolite",
@@ -101,7 +101,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 360,
+      "battery": {
+        "capacity": 360
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -122,12 +124,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 25.4,
-        "max_weight_rider": 113
+        "total_weight": 25.4
       }
     }
   ],

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2025/turbo_porto_eu",
   "manufacturer": "Specialized",
-  "vehicle_model_group": "Porto",
+  "model_group": "Porto",
   "model": "Turbo Porto",
   "model_configuration": "complete",
   "markets": [
@@ -80,6 +80,13 @@
         "position": [
           "front"
         ]
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
     "seatpost_diameter": 34.9,
@@ -137,7 +144,9 @@
     {
       "manufacturer": "Specialized",
       "model": "2.2 Cargo",
-      "battery_size": 710,
+      "battery": {
+        "capacity": 710
+      },
       "rated_power": 250,
       "max_torque": 90,
       "operating_modes": [
@@ -152,12 +161,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 60,
-    "attributes": [
-      "MIK HD interface"
-    ]
-  },
+  "weight_limits": [
+    {
+      "load": "rear_rack",
+      "weight": 60
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -290,7 +299,6 @@
     },
     {
       "type": "hub",
-      "type_detail": "Derailleur",
       "position": [
         "rear"
       ],

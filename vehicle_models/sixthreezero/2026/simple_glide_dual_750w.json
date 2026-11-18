@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/simple_glide_dual_750w",
   "manufacturer": "sixthreezero",
-  "vehicle_model_group": "Simple Glide",
+  "model_group": "Simple Glide",
   "model": "Simple Glide Dual 750w (Max 1500w, Dual Battery, Total 30ah)",
   "model_configuration": "complete",
   "type": "recumbent",
@@ -34,8 +34,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 204
+    "material": "aluminum"
   },
   "suspension": {
     "rear": {}
@@ -80,7 +79,9 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -96,7 +97,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -108,6 +111,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

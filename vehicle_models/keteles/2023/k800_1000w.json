@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/keteles/2023/k800_1000w",
   "manufacturer": "Keteles",
-  "vehicle_model_group": "K800",
+  "model_group": "K800",
   "model": "K800 1000W",
   "model_configuration": "complete",
   "type": "bike",
@@ -91,7 +91,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 1000,
       "operating_modes": [
         {

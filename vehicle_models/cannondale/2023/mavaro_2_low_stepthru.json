@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2023/mavaro_2_low_stepthru",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Mavaro Neo",
+  "model_group": "Mavaro Neo",
   "model": "Mavaro 2 Low StepThru",
   "model_configuration": "complete",
   "markets": [
@@ -50,6 +50,15 @@
     "material": "aluminum",
     "material_detail": "SmartForm C2 Aluminum",
     "top_tube": "step_through",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
+      }
+    ],
     "cable_routing": "internal",
     "headset": "ZS44/28.6 | ZS56/40"
   },
@@ -114,9 +123,13 @@
       "model": "BDU338Y",
       "model_group": "Performance Line Sport",
       "kind": "mid_drive",
-      "certification": "UL 2849",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -132,9 +145,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    }
+  ],
   "sizes": [
     {
       "name": "SM",
@@ -226,14 +242,6 @@
       "description": "FSA for Bosch"
     },
     {
-      "type": "derailleur",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Nexus 5-speed internal gear hub"
-    },
-    {
       "type": "drive_belt",
       "type_detail": "Belt",
       "manufacturer": "Gates Carbon Drive",
@@ -289,6 +297,14 @@
     {
       "type": "headset",
       "description": "Semi-Integrated, Tapered; 1-1/8\"-1-1/2\""
+    },
+    {
+      "type": "hub",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Nexus 5-speed internal gear hub"
     },
     {
       "type": "hub",

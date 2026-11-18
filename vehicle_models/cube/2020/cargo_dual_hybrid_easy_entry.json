@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2020/cargo_dual_hybrid_easy_entry",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Cargo Hybrid",
+  "model_group": "Cargo Hybrid",
   "model": "Cargo Dual Hybrid Easy Entry",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -119,8 +119,10 @@
       "model": "BDU450CX",
       "model_group": "Cargo Line",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,

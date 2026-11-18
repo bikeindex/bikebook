@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2024/verve_plus_1_lowstep_lt",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Verve+",
+  "model_group": "Verve+",
   "model": "Verve+ 1 Lowstep LT",
   "model_configuration": "complete",
   "type": "bike",
@@ -108,15 +108,20 @@
     "mounts": [
       {
         "type": "fender"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
     ],
     "bottom_bracket": {
       "shell": "threaded",
       "spindle_length": 122.5
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 117,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -169,8 +174,12 @@
     {
       "manufacturer": "Hyena",
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 250,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 250
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [
@@ -183,6 +192,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 117
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

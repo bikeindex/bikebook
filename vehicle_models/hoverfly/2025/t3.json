@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hoverfly/2025/t3",
   "manufacturer": "Hoverfly",
   "model": "T3",
@@ -68,8 +68,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -97,9 +96,11 @@
   ],
   "motors": [
     {
-      "battery_size": 205,
-      "battery_chemistry": "lifepo4",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 205,
+        "chemistry": "lifepo4",
+        "charging_time": 360
+      },
       "rated_power": 200,
       "operating_modes": [
         {
@@ -110,6 +111,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

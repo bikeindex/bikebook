@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gopower/2026/go_flow",
   "manufacturer": "Gopower",
   "model": "Go Flow",
@@ -58,8 +58,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 281,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 281,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -71,6 +73,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -80,7 +88,6 @@
           "length": 1168.4
         },
         "total_weight": 20,
-        "max_weight_rider": 120,
         "extra_measurements": {
           "handlebar_height": 914.4
         }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/sub_cross_20_men",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Sub Cross",
+  "model_group": "Sub Cross",
   "model": "Sub Cross 20 Men",
   "model_configuration": "complete",
   "markets": [
@@ -79,9 +79,7 @@
     "bottom_bracket": {
       "spindle": "Octalink"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 114,
-    "gross_weight_rating": 128
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -127,6 +125,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 114
+    },
+    {
+      "load": "gross",
+      "weight": 128
     }
   ],
   "sizes": [

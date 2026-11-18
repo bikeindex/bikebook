@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2021/stereo_120_rookie",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Stereo",
+  "model_group": "Stereo",
   "model": "Stereo 120 Rookie",
   "model_configuration": "complete",
   "type": "bike",
@@ -34,9 +34,7 @@
     "cable_routing": "internal",
     "headset": "ZS44/28.6 | ZS44/30",
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 99,
-    "gross_weight_rating": 115
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -78,6 +76,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 99
+    },
+    {
+      "load": "gross",
+      "weight": 115
     }
   ],
   "sizes": [

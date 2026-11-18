@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2017/harper_single_speed",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Harper",
+  "model_group": "Harper",
   "model": "Harper Single Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -150,12 +150,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "57CM - L",
       "geometry": {
         "standover": 847.7,
-        "max_weight_rider": 113,
         "rider_height_min": 1854,
         "rider_height_max": 1880
       }
@@ -164,7 +169,6 @@
       "name": "60CM - XL",
       "geometry": {
         "standover": 889,
-        "max_weight_rider": 113,
         "rider_height_min": 1905,
         "rider_height_max": 1956
       }

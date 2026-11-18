@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/huffy/2024/green_machine_16in",
   "manufacturer": "Huffy",
-  "vehicle_model_group": "Green Machine",
+  "model_group": "Green Machine",
   "model": "Green Machine 16in",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -57,11 +57,16 @@
     "1_front",
     "1_rear"
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 36
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "max_weight_rider": 36,
         "rider_height_min": 1067,
         "rider_height_max": 1321,
         "rider_age_min": 5,

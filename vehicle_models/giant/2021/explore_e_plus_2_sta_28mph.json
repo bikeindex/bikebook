@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/giant/2021/explore_e_plus_2_sta_28mph",
   "manufacturer": "Giant",
-  "vehicle_model_group": "Explore",
+  "model_group": "Explore",
   "model": "Explore E+ 2 STA 28MPH",
   "model_configuration": "complete",
   "type": "bike",
@@ -53,7 +53,11 @@
     "material_detail": "ALUXX SL-Grade Aluminum",
     "mounts": [
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
     ],
     "bottom_bracket": {
@@ -113,7 +117,9 @@
       "model": "SyncDrive Life",
       "kind": "mid_drive",
       "spindle": "square taper",
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "max_torque": 60,
       "operating_modes": [
         {

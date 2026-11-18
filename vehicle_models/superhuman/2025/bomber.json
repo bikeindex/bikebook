@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/superhuman/2025/bomber",
   "manufacturer": "Superhuman Bikes",
   "model": "Bomber",
@@ -64,8 +64,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 125
+    ]
   },
   "suspension": {
     "front": {},
@@ -105,10 +104,12 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Lithium Ion Cells",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -126,6 +127,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

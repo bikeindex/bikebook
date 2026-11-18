@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/polygon/2020/path_e5_lady",
   "manufacturer": "Polygon",
-  "vehicle_model_group": "Path",
+  "model_group": "Path",
   "model": "Path E5 Lady",
   "model_configuration": "complete",
   "type": "bike",
@@ -105,7 +105,9 @@
       "spindle": "square taper",
       "sensor_cadence": false,
       "sensor_speed": "spoke_magnet",
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [

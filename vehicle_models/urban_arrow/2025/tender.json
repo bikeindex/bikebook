@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/urban_arrow/2025/tender",
   "manufacturer": "Urban Arrow",
   "model": "Tender",
@@ -35,9 +35,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 500,
-    "gross_weight_rating": 600
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -91,8 +89,10 @@
       "model_group": "Cargo Line",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 540,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 540,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -109,22 +109,31 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 300
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    },
+    {
+      "load": "cargo",
+      "weight": 300
+    },
+    {
+      "load": "gross",
+      "weight": 600
+    }
+  ],
   "sizes": [
     {
       "name": "1000",
       "geometry": {
-        "total_weight": 90,
-        "max_weight_rider": 125
+        "total_weight": 90
       }
     },
     {
       "name": "1500",
       "geometry": {
-        "total_weight": 100,
-        "max_weight_rider": 125
+        "total_weight": 100
       }
     }
   ],

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/x_treme/2023/cabo_cruiser_elite_max_60_volt",
   "manufacturer": "X-Treme",
-  "vehicle_model_group": "Cabo Cruiser",
+  "model_group": "Cabo Cruiser",
   "model": "Cabo Cruiser Elite Max 60 Volt",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -77,7 +77,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 1200,
+      "battery": {
+        "capacity": 1200
+      },
       "rated_power": 600,
       "operating_modes": [
         {
@@ -90,6 +92,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -99,8 +107,7 @@
           "width": 635,
           "height": 1016
         },
-        "total_weight": 100,
-        "max_weight_rider": 136
+        "total_weight": 100
       }
     }
   ],
@@ -117,6 +124,10 @@
         "rear"
       ],
       "description": "Front Hydraulic Disk Brakes And Rear Drum Brakes"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "60 Volts"
     },
     {
       "type": "e_vehicle_battery",
@@ -210,11 +221,6 @@
       "type": "unknown",
       "type_detail": "Amps",
       "description": "20 Amp"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Volts",
-      "description": "60 Volts"
     },
     {
       "type": "unknown",

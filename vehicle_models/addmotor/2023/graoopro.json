@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/addmotor/2023/graoopro",
   "manufacturer": "Addmotor",
   "model": "Graoopro",
@@ -74,8 +74,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 204
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -114,9 +113,11 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "21700"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -137,6 +138,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

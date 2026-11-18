@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/magnum/2025/edge",
   "manufacturer": "Magnum Bikes",
   "model": "Edge",
@@ -14,6 +14,7 @@
   "stock_photo": "https://bikebook.bikeindex.org/magnum/2025/edge.jpg",
   "description": "A bike that redefines off-road adventure! The Magnum Edge combines powerful 750W performance with rugged fat tire capability for trail-conquering riders. Whether you're exploring backcountry trails, hunting remote areas, beach riding, or tackling ...",
   "first_year": 2025,
+  "final_year": 2026,
   "years": {
     "2026": {
       "original_msrp": 209900,
@@ -65,8 +66,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -115,11 +115,15 @@
     {
       "manufacturer": "Sutto",
       "kind": "hub_drive",
-      "certification": "UL 2271, UL 2849",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "15Ah",
-      "charging_time": 390,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 390
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "operating_modes": [
@@ -141,6 +145,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

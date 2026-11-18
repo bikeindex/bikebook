@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hover_1/2021/alpha_pro",
   "manufacturer": "Hover-1",
-  "vehicle_model_group": "Alpha",
+  "model_group": "Alpha",
   "model": "Alpha Pro",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -57,8 +57,10 @@
   ],
   "motors": [
     {
-      "battery_size": 297,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 297,
+        "chemistry": "li-ion"
+      },
       "rated_power": 450,
       "operating_modes": [
         {
@@ -68,6 +70,12 @@
           "range_claimed": 29
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -84,8 +92,7 @@
           "width": 429,
           "height": 526
         },
-        "total_weight": 15.6,
-        "max_weight_rider": 120
+        "total_weight": 15.6
       }
     }
   ],

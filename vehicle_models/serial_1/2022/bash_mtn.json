@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/serial_1/2022/bash_mtn",
   "manufacturer": "Serial 1",
-  "vehicle_model_group": "Bash",
+  "model_group": "Bash",
   "model": "Bash/MTN (GEN 2)",
   "model_configuration": "complete",
   "type": "bike",
@@ -73,8 +73,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 150,
-      "battery_size": 529,
-      "charging_time": 282,
+      "battery": {
+        "capacity": 529,
+        "charging_time": 282
+      },
       "max_torque": 90,
       "operating_modes": [
         {

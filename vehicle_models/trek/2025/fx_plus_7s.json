@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2025/fx_plus_7s",
   "manufacturer": "Trek",
-  "vehicle_model_group": "FX+",
+  "model_group": "FX+",
   "model": "FX+ 7S",
   "model_configuration": "complete",
   "type": "bike",
@@ -92,15 +92,20 @@
     "mounts": [
       {
         "type": "fender"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
     ],
     "bottom_bracket": {
       "spindle": "ISIS",
       "spindle_length": 135
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 117,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -175,9 +180,13 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 135,
-      "certification": "UL 2849",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 300,
       "max_torque": 50,
@@ -191,6 +200,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 117
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/asomtom/2025/l9",
   "manufacturer": "Asomtom",
   "model": "L9",
@@ -49,8 +49,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 181
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -86,9 +85,11 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "battery_size": 1920,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
+      "battery": {
+        "capacity": 1920,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 750,
       "peak_power": 1100,
       "operating_modes": [
@@ -113,9 +114,11 @@
     },
     {
       "drive_wheel": "rear",
-      "battery_size": 1920,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
+      "battery": {
+        "capacity": 1920,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 750,
       "peak_power": 1100,
       "operating_modes": [
@@ -137,6 +140,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

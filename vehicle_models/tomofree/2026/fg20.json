@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tomofree/2026/fg20",
   "manufacturer": "Tomofree",
   "model": "FG20",
@@ -23,8 +23,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -54,7 +53,9 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IP5",
-      "battery_size": 960,
+      "battery": {
+        "capacity": 960
+      },
       "rated_power": 850,
       "peak_power": 1200,
       "operating_modes": [
@@ -75,6 +76,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

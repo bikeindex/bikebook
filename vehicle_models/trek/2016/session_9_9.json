@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2016/session_9_9",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Session",
+  "model_group": "Session",
   "model": "Session 9.9",
   "model_configuration": "complete",
   "type": "bike",
@@ -51,9 +51,7 @@
     "material": "carbon",
     "material_detail": "OCLV Mountain Carbon",
     "seatpost_diameter": 31.6,
-    "coil_compatible": true,
-    "max_weight_total": 120,
-    "gross_weight_rating": 136
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -111,6 +109,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

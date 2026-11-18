@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2019/addict_rc_15_disc_gb",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Addict",
+  "model_group": "Addict",
   "model": "Addict RC 15 disc",
   "model_configuration": "complete",
   "markets": [
@@ -71,9 +71,7 @@
       "shell": "press fit",
       "spindle": "24mm"
     },
-    "headset": "IS42/28.6 | IS52/40",
-    "max_weight_total": 112,
-    "gross_weight_rating": 120
+    "headset": "IS42/28.6 | IS52/40"
   },
   "wheels": [
     {
@@ -112,6 +110,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 112
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/engwe/2024/le20",
   "manufacturer": "ENGWE",
   "model": "LE20",
@@ -62,8 +62,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 200
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -96,9 +95,13 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 922,
-      "charging_time": 480,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 922,
+        "charging_time": 480
+      },
       "rated_power": 750,
       "max_torque": 75,
       "operating_modes": [
@@ -119,6 +122,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

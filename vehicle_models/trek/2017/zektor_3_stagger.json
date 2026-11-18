@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2017/zektor_3_stagger",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Zektor",
+  "model_group": "Zektor",
   "model": "Zektor 3 Stagger",
   "model_configuration": "complete",
   "type": "bike",
@@ -51,9 +51,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "Alpha Silver Aluminum",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 124,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -92,6 +90,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 124
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

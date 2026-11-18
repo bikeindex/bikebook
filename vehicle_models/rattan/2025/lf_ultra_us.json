@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rattan/2025/lf_ultra_us",
   "manufacturer": "Rattan",
-  "vehicle_model_group": "LM/LF Ultra",
+  "model_group": "LM/LF Ultra",
   "model": "LF Ultra",
   "model_configuration": "complete",
   "markets": [
@@ -57,8 +57,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 181
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {},
@@ -95,10 +94,13 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 1944,
-      "battery_info": "40.5AH",
-      "charging_time": 540,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 1944,
+        "charging_time": 540
+      },
       "rated_power": 1000,
       "peak_power": 1800,
       "operating_modes": [
@@ -121,6 +123,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

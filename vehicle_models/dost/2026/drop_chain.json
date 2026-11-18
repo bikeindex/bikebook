@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dost/2026/drop_chain",
   "manufacturer": "DOST",
-  "vehicle_model_group": "DROP",
+  "model_group": "DROP",
   "model": "DROP Chain",
   "model_configuration": "complete",
   "type": "bike",
@@ -46,8 +46,7 @@
     "bottom_bracket": {
       "width": 73
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 136
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {}
@@ -91,10 +90,12 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 672,
-      "battery_options": [
-        499
-      ],
+      "battery": {
+        "capacity": 672,
+        "capacity_options": [
+          499
+        ]
+      },
       "rated_power": 750,
       "max_torque": 120,
       "operating_modes": [
@@ -115,9 +116,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 45.36
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 45.36
+    },
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "17.5\"",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kbo/2026/aptum_2c",
   "manufacturer": "KBO",
   "model": "Aptum 2C",
@@ -31,8 +31,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 75
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -66,7 +65,9 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 1008,
+      "battery": {
+        "capacity": 1008
+      },
       "peak_power": 2000,
       "max_torque": 190,
       "operating_modes": [
@@ -81,6 +82,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 75
     }
   ],
   "sizes": [

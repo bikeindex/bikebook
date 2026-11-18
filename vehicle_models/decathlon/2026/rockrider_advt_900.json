@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/decathlon/2026/rockrider_advt_900",
   "manufacturer": "Decathlon",
-  "vehicle_model_group": "Rockrider ADVT",
+  "model_group": "Rockrider ADVT",
   "model": "Rockrider ADVT 900",
   "model_configuration": "complete",
   "type": "bike",
@@ -24,8 +24,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 170
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -77,9 +76,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 40
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 40
+    },
+    {
+      "load": "payload",
+      "weight": 170
+    }
+  ],
   "sizes": [
     {
       "name": "S",

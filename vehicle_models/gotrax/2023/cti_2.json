@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2023/cti_2",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "CTI",
+  "model_group": "CTI",
   "model": "CTI 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -60,8 +60,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 120
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -97,11 +96,15 @@
     {
       "manufacturer": "Bafang",
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -125,6 +128,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "payload",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -134,8 +147,7 @@
           "width": 719,
           "height": 1189
         },
-        "total_weight": 38.2,
-        "max_weight_rider": 120
+        "total_weight": 38.2
       }
     }
   ],

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gobike/2022/forza",
   "manufacturer": "GOBike",
-  "vehicle_model_group": "FORZA",
+  "model_group": "FORZA",
   "model": "FORZA",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -18,7 +18,7 @@
   "first_year": 2022,
   "years": {
     "2026": {
-      "original_msrp": 219900,
+      "original_msrp": 229900,
       "original_msrp_currency": "USD",
       "colorways": [
         {
@@ -90,8 +90,10 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 900,
       "operating_modes": [
@@ -116,6 +118,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 200
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -130,8 +138,7 @@
           "width": 1092,
           "height": 1092
         },
-        "total_weight": 36.7,
-        "max_weight_rider": 200
+        "total_weight": 36.7
       }
     }
   ],

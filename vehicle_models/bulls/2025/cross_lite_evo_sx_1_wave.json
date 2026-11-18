@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2025/cross_lite_evo_sx_1_wave",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Cross EVO",
+  "model_group": "Cross EVO",
   "model": "Cross Lite EVO SX 1 Wave",
   "model_configuration": "complete",
   "type": "bike",
@@ -56,9 +56,7 @@
       "spindle": "ISIS"
     },
     "headset": "IS52/28.6 | ZS56/40",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 112,
-    "gross_weight_rating": 135
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -111,8 +109,10 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 55,
@@ -126,6 +126,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 112
+    },
+    {
+      "load": "gross",
+      "weight": 135
     }
   ],
   "sizes": [

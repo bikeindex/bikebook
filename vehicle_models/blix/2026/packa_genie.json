@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/blix/2026/packa_genie",
   "manufacturer": "Blix",
   "model": "Packa Genie",
@@ -89,7 +89,10 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 672,
+      "battery": {
+        "capacity": 672,
+        "weight": 2.5
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -107,9 +110,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 68.03
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    },
+    {
+      "load": "cargo",
+      "weight": 68.03
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -130,7 +140,6 @@
         "seat_height_min": 800,
         "seat_height_max": 978,
         "total_weight": 29.5,
-        "max_weight_rider": 113,
         "rider_height_min": 1550,
         "rider_height_max": 1920,
         "extra_measurements": {
@@ -194,10 +203,6 @@
     {
       "type": "e_vehicle_remote",
       "description": "LCD, with USB Charge Port"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V"
     },
     {
       "type": "fender",
@@ -271,6 +276,11 @@
         "width": 60.96,
         "diameter": 507
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V"
     },
     {
       "type": "unknown",

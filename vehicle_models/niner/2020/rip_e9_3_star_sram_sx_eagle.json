@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/niner/2020/rip_e9_3_star_sram_sx_eagle",
   "manufacturer": "Niner",
-  "vehicle_model_group": "RIP e9",
+  "model_group": "RIP e9",
   "model": "RIP e9 3-Star SRAM SX Eagle",
   "model_configuration": "complete",
   "type": "bike",
@@ -138,8 +138,10 @@
       "model": "BDU450CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

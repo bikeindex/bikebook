@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tern/2026/hsd_s00_gen_2_us",
   "manufacturer": "Tern",
-  "vehicle_model_group": "HSD",
+  "model_group": "HSD",
   "model": "HSD S00 Gen 2",
   "model_configuration": "complete",
   "markets": [
@@ -44,9 +44,7 @@
         "description": "Luggage Socket: Combo Mount"
       }
     ],
-    "headset": "IS42/28.6 | IS52/40",
-    "max_weight_total": 152,
-    "gross_weight_rating": 180
+    "headset": "IS42/28.6 | IS52/40"
   },
   "suspension": {
     "front": {
@@ -106,8 +104,10 @@
       "model": "BDU346Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 545,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 545,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -144,9 +144,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 80
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "cargo",
+      "weight": 80
+    },
+    {
+      "load": "gross",
+      "weight": 180
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -157,7 +168,6 @@
           "height": 870
         },
         "total_weight": 28,
-        "max_weight_rider": 120,
         "rider_height_min": 1500,
         "rider_height_max": 1950,
         "extra_measurements": {

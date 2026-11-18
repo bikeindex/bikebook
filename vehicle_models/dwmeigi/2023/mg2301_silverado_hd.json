@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dwmeigi/2023/mg2301_silverado_hd",
   "manufacturer": "Dwmeigi",
-  "vehicle_model_group": "Silverado",
+  "model_group": "Silverado",
   "model": "MG2301-Silverado-HD",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -53,8 +53,7 @@
   "frame": {
     "material": "aluminum",
     "top_tube": "step_through",
-    "folding": "half_fold",
-    "max_weight_total": 181
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -83,8 +82,10 @@
       "drive_wheel": "front",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 672,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 672,
+        "charging_time": 300
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -106,6 +107,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

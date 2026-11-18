@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/larry_vs_harry/2025/original_bullitt",
   "manufacturer": "Larry Vs Harry",
-  "vehicle_model_group": "Bullitt",
+  "model_group": "Bullitt",
   "model": "Original Bullitt",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -35,9 +35,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "7005 Aluminum",
-    "max_weight_total": 182,
-    "gross_weight_rating": 204
+    "material_detail": "7005 Aluminum"
   },
   "wheels": [
     {
@@ -79,6 +77,16 @@
     "series": "Deore",
     "electronic": false
   },
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 182
+    },
+    {
+      "load": "gross",
+      "weight": 204
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

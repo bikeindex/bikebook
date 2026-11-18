@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/philodo/2024/traveller",
   "manufacturer": "Philodo",
   "model": "Traveller",
@@ -26,8 +26,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 204
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -67,8 +66,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 840,
-      "charging_time": 540,
+      "battery": {
+        "capacity": 840,
+        "charging_time": 540
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "operating_modes": [
@@ -92,6 +93,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -102,6 +109,13 @@
     }
   ],
   "components": [
+    {
+      "type": "basket",
+      "position": [
+        "front"
+      ],
+      "description": "front basket"
+    },
     {
       "type": "bell_noisemaker",
       "type_detail": "Front Light",
@@ -148,12 +162,31 @@
       "description": "3.7 inch multifunctional display"
     },
     {
+      "type": "fender",
+      "description": "fenders"
+    },
+    {
       "type": "fork",
       "type_detail": "Front Suspension",
       "position": [
         "front"
       ],
       "description": "Aluminum alloy suspension fork with lock"
+    },
+    {
+      "type": "included_not_installed",
+      "type_detail": "board",
+      "description": "board"
+    },
+    {
+      "type": "included_not_installed",
+      "type_detail": "soft cushion",
+      "description": "soft cushion"
+    },
+    {
+      "type": "included_not_installed",
+      "type_detail": "Tools",
+      "description": "assembly toolset"
     },
     {
       "type": "kickstand",
@@ -176,9 +209,15 @@
       "description": "Integrated Brake and Tail Lights"
     },
     {
+      "type": "mirror",
+      "description": "rearview mirrors"
+    },
+    {
       "type": "rack",
-      "type_detail": "Kid & Cargo Carrier Hoop",
-      "description": "Kid & Cargo Carrier Hoop"
+      "position": [
+        "rear"
+      ],
+      "description": "rear rack"
     },
     {
       "type": "saddle",
@@ -204,11 +243,6 @@
         "width": 76.2,
         "diameter": 406
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Package Included",
-      "description": "battery, charger, fenders, rearview mirrors, rear rack, board, soft cushion, front basket, assembly toolset, user manual"
     }
   ]
 }

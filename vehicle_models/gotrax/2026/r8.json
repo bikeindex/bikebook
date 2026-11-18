@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2026/r8",
   "manufacturer": "GOTRAX",
   "model": "R8",
@@ -40,8 +40,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 136
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -77,10 +76,14 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 648,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 648,
+        "charging_time": 420
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -105,6 +108,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    },
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -122,7 +135,6 @@
           "height": 1179
         },
         "total_weight": 35.4,
-        "max_weight_rider": 136,
         "rider_height_min": 1524,
         "rider_height_max": 1930
       }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ncm/2022/milano_plus",
   "manufacturer": "NCM eBikes",
   "model": "Milano Plus",
@@ -38,9 +38,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 113,
-    "gross_weight_rating": 140
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -99,7 +97,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 768,
+      "battery": {
+        "capacity": 768
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -108,6 +108,16 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/batavus/2026/finez_pt_exclusive_low",
   "manufacturer": "Batavus",
-  "vehicle_model_group": "Finez",
+  "model_group": "Finez",
   "model": "Finez PT Exclusive LOW",
   "model_configuration": "complete",
   "type": "bike",
@@ -133,12 +133,14 @@
       "model": "BDU334Y",
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_options": [
-        625,
-        750
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "capacity_options": [
+          625,
+          750
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 50,

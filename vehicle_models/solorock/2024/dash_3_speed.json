@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/solorock/2024/dash_3_speed",
   "manufacturer": "Solorock",
-  "vehicle_model_group": "Dash",
+  "model_group": "Dash",
   "model": "Dash 3-Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -95,6 +95,12 @@
       "caliper_mount": "Brake Bosses"
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -105,7 +111,6 @@
           "height": 570
         },
         "total_weight": 11.5,
-        "max_weight_rider": 100,
         "rider_height_min": 1520,
         "rider_height_max": 1900
       }
@@ -155,14 +160,6 @@
       }
     },
     {
-      "type": "derailleur",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Nexus 3 Speed IHG - 3 Speed Internal Hub Gear"
-    },
-    {
       "type": "fender",
       "description": "Plastic with Tail Flap, Stainless Steel Fender Stay"
     },
@@ -177,6 +174,14 @@
     {
       "type": "headset",
       "description": "Integrated"
+    },
+    {
+      "type": "hub",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Nexus 3 Speed IHG - 3 Speed Internal Hub Gear"
     },
     {
       "type": "kickstand",

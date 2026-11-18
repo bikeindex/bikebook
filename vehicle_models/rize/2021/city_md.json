@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rize/2021/city_md",
   "manufacturer": "Rize",
-  "vehicle_model_group": "City",
+  "model_group": "City",
   "model": "City MD",
   "model_configuration": "complete",
   "type": "bike",
@@ -17,7 +17,7 @@
   "first_year": 2021,
   "years": {
     "2026": {
-      "original_msrp": 229900,
+      "original_msrp": 259900,
       "original_msrp_currency": "USD",
       "colorways": [
         {
@@ -80,8 +80,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 125
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -134,13 +133,15 @@
       "kind": "mid_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "battery_size": 720,
-      "battery_options": [
-        1440
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 21700 50E Cell",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 720,
+        "capacity_options": [
+          1440
+        ],
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700 50E",
+        "charging_time": 300
+      },
       "rated_power": 750,
       "max_torque": 120,
       "operating_modes": [
@@ -170,6 +171,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

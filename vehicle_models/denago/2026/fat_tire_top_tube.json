@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/denago/2026/fat_tire_top_tube",
   "manufacturer": "Denago",
-  "vehicle_model_group": "Fat Tire",
+  "model_group": "Fat Tire",
   "model": "Fat Tire Top Tube",
   "model_configuration": "complete",
   "type": "bike",
@@ -95,9 +95,13 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
-      "battery_size": 960,
-      "battery_info": "LG 21700 cells",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 960,
+        "cells": "LG 21700"
+      },
       "rated_power": 750,
       "operating_modes": [
         {

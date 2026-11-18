@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2020/rail_9_9",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Rail",
+  "model_group": "Rail",
   "model": "Rail 9.9",
   "model_configuration": "complete",
   "type": "bike",
@@ -173,9 +173,7 @@
   "frame": {
     "material": "carbon",
     "material_detail": "OCLV Mountain Carbon",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 114,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -255,8 +253,10 @@
       "model": "BDU450CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -270,6 +270,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 114
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

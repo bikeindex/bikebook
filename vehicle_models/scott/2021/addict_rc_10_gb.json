@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/addict_rc_10_gb",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Addict",
+  "model_group": "Addict",
   "model": "Addict RC 10",
   "model_configuration": "complete",
   "markets": [
@@ -120,9 +120,7 @@
       "shell": "press fit",
       "width": 86.5,
       "spindle": "DUB"
-    },
-    "max_weight_total": 112,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -171,6 +169,16 @@
       ],
       "rotor_diameter": 160,
       "caliper_mount": "Disc Flat Mount"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 112
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

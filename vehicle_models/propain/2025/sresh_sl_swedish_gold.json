@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/propain/2025/sresh_sl_swedish_gold",
   "manufacturer": "Propain",
-  "vehicle_model_group": "Sresh",
+  "model_group": "Sresh",
   "model": "Sresh SL Swedish Gold",
   "model_configuration": "complete",
   "type": "bike",
@@ -52,8 +52,7 @@
     "seatpost_clamp_diameter": 36.4,
     "derailleur_hanger": "UDH",
     "max_fork_travel": 160,
-    "coil_compatible": true,
-    "gross_weight_rating": 130
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -102,8 +101,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 135,
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "peak_power": 350,
       "max_torque": 60,
       "operating_modes": [
@@ -115,6 +116,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tomofree/2026/tk300",
   "manufacturer": "Tomofree",
   "model": "TK300",
@@ -31,8 +31,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 181
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -69,8 +68,10 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 2122,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 2122,
+        "chemistry": "li-ion"
+      },
       "peak_power": 1750,
       "operating_modes": [
         {
@@ -83,8 +84,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 2122,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 2122,
+        "chemistry": "li-ion"
+      },
       "peak_power": 1750,
       "operating_modes": [
         {
@@ -93,6 +96,12 @@
           "range_claimed": 129
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

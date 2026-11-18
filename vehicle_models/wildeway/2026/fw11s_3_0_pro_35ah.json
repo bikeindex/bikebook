@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wildeway/2026/fw11s_3_0_pro_35ah",
   "manufacturer": "Wildeway",
-  "vehicle_model_group": "FW11",
+  "model_group": "FW11",
   "model": "FW11S 3.0 Pro 35Ah",
   "model_configuration": "complete",
   "type": "bike",
@@ -109,8 +109,7 @@
   "frame": {
     "material": "aluminum",
     "top_tube": "step_through",
-    "folding": "half_fold",
-    "max_weight_total": 159
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -147,8 +146,10 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IPX65",
-      "battery_size": 1680,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1680,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "max_torque": 68,
@@ -173,9 +174,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 40.82
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 40.82
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

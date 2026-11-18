@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ape_ryder/2024/loris",
   "manufacturer": "Ape Ryder",
   "model": "Loris",
@@ -58,8 +58,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {},
@@ -100,7 +99,9 @@
   ],
   "motors": [
     {
-      "battery_size": 672,
+      "battery": {
+        "capacity": 672
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -115,9 +116,18 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
-      "name": "One Size"
+      "name": "One Size",
+      "geometry": {
+        "total_weight": 35
+      }
     }
   ],
   "components": [

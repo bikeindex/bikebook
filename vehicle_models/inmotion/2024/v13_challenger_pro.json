@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2024/v13_challenger_pro",
   "manufacturer": "Inmotion",
   "model": "V13 Challenger Pro",
@@ -34,8 +34,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 130
+    "material": "steel"
   },
   "brakes": [
     {
@@ -49,8 +48,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP55",
-      "battery_size": 3024,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 3024,
+        "charging_time": 360
+      },
       "rated_power": 4500,
       "peak_power": 10000,
       "max_torque": 300,
@@ -63,6 +64,12 @@
           "max_slope": 45
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 130
     }
   ],
   "sizes": [

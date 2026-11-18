@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/anyterrain_4_wheel_750w_recumbent",
   "manufacturer": "sixthreezero",
-  "vehicle_model_group": "ANYterrain",
+  "model_group": "ANYterrain",
   "model": "ANYterrain 4 Wheel 750w Recumbent",
   "model_configuration": "complete",
   "type": "recumbent",
@@ -90,9 +90,11 @@
   ],
   "motors": [
     {
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cell",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "operating_modes": [
         {

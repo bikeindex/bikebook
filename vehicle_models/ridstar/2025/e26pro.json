@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ridstar/2025/e26pro",
   "manufacturer": "Ridstar",
-  "vehicle_model_group": "E26",
+  "model_group": "E26",
   "model": "E26Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -35,8 +35,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -68,7 +67,9 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "battery_size": 1104,
+      "battery": {
+        "capacity": 1104
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -92,7 +93,9 @@
     },
     {
       "drive_wheel": "rear",
-      "battery_size": 1104,
+      "battery": {
+        "capacity": 1104
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -113,6 +116,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

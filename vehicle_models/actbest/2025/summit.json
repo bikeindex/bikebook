@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/actbest/2025/summit",
   "manufacturer": "Actbest",
-  "vehicle_model_group": "Summit",
+  "model_group": "Summit",
   "model": "Summit",
   "model_configuration": "complete",
   "type": "bike",
@@ -230,8 +230,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 159
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {},
@@ -268,10 +267,14 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 576,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 576,
+        "charging_time": 360
+      },
       "peak_power": 1200,
       "max_torque": 80,
       "operating_modes": [
@@ -292,9 +295,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.43
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.43
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tern/2026/vektron_p10_gen_4_us",
   "manufacturer": "Tern",
-  "vehicle_model_group": "Vektron",
+  "model_group": "Vektron",
   "model": "Vektron P10 Gen 4",
   "model_configuration": "complete",
   "markets": [
@@ -50,9 +50,7 @@
     ],
     "bottom_bracket": {
       "spindle": "BNI"
-    },
-    "max_weight_total": 102,
-    "gross_weight_rating": 125
+    }
   },
   "wheels": [
     {
@@ -97,8 +95,10 @@
       "model_group": "Performance Line",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 65,
@@ -133,9 +133,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 105
+    },
+    {
+      "load": "cargo",
+      "weight": 27
+    },
+    {
+      "load": "gross",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -146,7 +157,6 @@
           "height": 680
         },
         "total_weight": 22.5,
-        "max_weight_rider": 105,
         "rider_height_min": 1470,
         "rider_height_max": 1950,
         "extra_measurements": {

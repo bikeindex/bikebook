@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hitway/2025/ebike_x",
   "manufacturer": "Hitway",
   "model": "Ebike X",
@@ -38,8 +38,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 120
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -73,10 +72,12 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 432,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 21700 cells",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 432,
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700",
+        "charging_time": 360
+      },
       "rated_power": 250,
       "max_torque": 32,
       "operating_modes": [
@@ -91,6 +92,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

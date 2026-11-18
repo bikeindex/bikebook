@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rodriguez/2026/ephinney_ridge_700c",
   "manufacturer": "Rodriguez",
-  "vehicle_model_group": "ePhinney Ridge",
+  "model_group": "ePhinney Ridge",
   "model": "ePhinney Ridge 700c",
   "model_configuration": "complete",
   "type": "bike",
@@ -64,8 +64,10 @@
       "model": "Performance Speed",
       "kind": "mid_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "battery": {
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "operating_modes": [
         {
           "mode": "assist",

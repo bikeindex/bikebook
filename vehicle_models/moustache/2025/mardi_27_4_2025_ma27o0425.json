@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2025/mardi_27_4_2025_ma27o0425",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Mardi 27",
+  "model_group": "Mardi 27",
   "model": "Mardi 27.4 2025 MA27O0425",
   "model_configuration": "complete",
   "type": "bike",
@@ -85,13 +85,18 @@
       {
         "type": "bottle",
         "location": "seat_tube"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
     "headset": "ZS44/28.6 | ZS56/40",
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 105,
-    "gross_weight_rating": 135
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -161,8 +166,10 @@
       "model": "BDU336Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -177,6 +184,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 105
+    },
+    {
+      "load": "gross",
+      "weight": 135
     }
   ],
   "sizes": [
@@ -313,14 +330,6 @@
       }
     },
     {
-      "type": "derailleur",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano, Nexus, 32H, 263% gear range, 10x135mm, nut"
-    },
-    {
       "type": "e_vehicle_battery",
       "manufacturer": "Bosch",
       "description": "Bosch, PowerTube 625Wh, vertical, Smart System"
@@ -373,13 +382,13 @@
     {
       "type": "hub",
       "position": [
-        "front"
+        "rear"
       ],
       "manufacturer": "Shimano",
-      "description": "Shimano, 32H, 9x100mm, QR (Quick Release)",
+      "description": "Shimano, Nexus, 32H, 263% gear range, 10x135mm, nut",
       "dimensions": {
-        "axle_diameter": 9,
-        "axle_spacing": 100
+        "axle_diameter": 10,
+        "axle_spacing": 135
       }
     },
     {
@@ -392,6 +401,18 @@
       "dimensions": {
         "axle_diameter": 10,
         "axle_spacing": 135
+      }
+    },
+    {
+      "type": "hub",
+      "position": [
+        "front"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano, 32H, 9x100mm, QR (Quick Release)",
+      "dimensions": {
+        "axle_diameter": 9,
+        "axle_spacing": 100
       }
     },
     {

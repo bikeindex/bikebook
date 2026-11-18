@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tracer/2024/verge",
   "manufacturer": "Tracer",
   "model": "Verge",
@@ -84,8 +84,13 @@
   ],
   "motors": [
     {
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
+      "sensor_cadence": true,
+      "sensor_speed": "spoke_magnet",
+      "sensor_torque": "bottom_bracket_spindle",
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion"
+      },
       "rated_power": 800,
       "operating_modes": [
         {

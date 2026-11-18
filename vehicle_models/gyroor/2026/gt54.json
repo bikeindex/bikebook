@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gyroor/2026/gt54",
   "manufacturer": "Gyroor",
-  "vehicle_model_group": "GT54",
+  "model_group": "GT54",
   "model": "GT54",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -39,8 +39,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 100
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -81,10 +80,14 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 1296,
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1296,
+        "charging_time": 540
+      },
       "rated_power": 1000,
       "peak_power": 2000,
       "max_torque": 290,
@@ -100,6 +103,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

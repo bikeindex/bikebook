@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vitus/2023/e_escarpe_290_vr",
   "manufacturer": "Vitus",
-  "vehicle_model_group": "E-Escarpe",
+  "model_group": "E-Escarpe",
   "model": "E-Escarpe 290 VR",
   "model_configuration": "complete",
   "type": "bike",
@@ -122,8 +122,12 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 630,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 630
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [

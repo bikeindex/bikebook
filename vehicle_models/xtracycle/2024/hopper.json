@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/xtracycle/2024/hopper",
   "manufacturer": "Xtracycle",
   "model": "Hopper",
@@ -46,9 +46,7 @@
     "bottom_bracket": {
       "spindle": "square taper"
     },
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 191,
-    "gross_weight_rating": 230
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {}
@@ -109,9 +107,14 @@
       "manufacturer": "Xtracycle",
       "kind": "hub_drive",
       "sensor_torque": "hub",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -131,6 +134,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 191
+    },
+    {
+      "load": "gross",
+      "weight": 230
     }
   ],
   "sizes": [

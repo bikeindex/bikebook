@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2024/barron_plus_21_speed_step_through",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Barron",
+  "model_group": "Barron",
   "model": "Barron Plus 21 Speed Step Through",
   "model_configuration": "complete",
   "type": "bike",
@@ -126,11 +126,16 @@
       "rotor_diameter": 160
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "S: 15in",
       "geometry": {
-        "max_weight_rider": 113,
         "rider_height_min": 1524,
         "rider_height_max": 1651
       }
@@ -139,7 +144,6 @@
       "name": "M: 17in",
       "geometry": {
         "standover": 787,
-        "max_weight_rider": 113,
         "rider_height_min": 1651,
         "rider_height_max": 1778
       }

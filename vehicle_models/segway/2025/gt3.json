@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/segway/2025/gt3",
   "manufacturer": "Segway",
-  "vehicle_model_group": "GT Series",
+  "model_group": "GT Series",
   "model": "GT3",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -81,8 +81,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 899,
-      "charging_time": 390,
+      "battery": {
+        "capacity": 899,
+        "charging_time": 390
+      },
       "rated_power": 1200,
       "peak_power": 2400,
       "operating_modes": [
@@ -98,6 +100,12 @@
           }
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -116,7 +124,6 @@
           "height": 705
         },
         "total_weight": 39.5,
-        "max_weight_rider": 150,
         "rider_height_min": 1600,
         "rider_height_max": 2000,
         "rider_age_min": 18,

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2025/montauk_24_single_speed",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Montauk",
+  "model_group": "Montauk",
   "model": "Montauk 24 Single Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -98,12 +98,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 91
+    }
+  ],
   "sizes": [
     {
       "name": "15\"",
       "geometry": {
         "crank_length": 165,
-        "max_weight_rider": 91,
         "rider_height_min": 1219,
         "rider_height_max": 1524
       }

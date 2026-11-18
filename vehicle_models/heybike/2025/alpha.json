@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/heybike/2025/alpha",
   "manufacturer": "Heybike",
   "model": "Alpha",
@@ -104,8 +104,7 @@
           "rear"
         ]
       }
-    ],
-    "max_weight_total": 181
+    ]
   },
   "suspension": {
     "front": {}
@@ -142,9 +141,13 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "certification": "UL 2271",
-      "battery_size": 680,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 680,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 1000,
       "max_torque": 105,
@@ -164,6 +167,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

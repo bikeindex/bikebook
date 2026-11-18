@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/magnum/2022/low_rider_2_0",
   "manufacturer": "Magnum Bikes",
-  "vehicle_model_group": "Low Rider",
+  "model_group": "Low Rider",
   "model": "Low Rider 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -15,9 +15,9 @@
   "stock_photo": "https://bikebook.bikeindex.org/magnum/2022/low_rider_2_0.jpg",
   "description": "Cruise with comfort and style! The Magnum Low rider is an easy-to-mount low-step beach cruiser style electric bike well suited for urban cycling.",
   "first_year": 2022,
-  "final_year": 2026,
+  "final_year": 2023,
   "years": {
-    "2026": {
+    "2023": {
       "original_msrp": 199900,
       "original_msrp_currency": "USD",
       "colorways": [
@@ -65,8 +65,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {
@@ -109,11 +108,15 @@
     {
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "certification": "UL 2271, UL 2849",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "15Ah",
-      "charging_time": 450,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 450
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -135,6 +138,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

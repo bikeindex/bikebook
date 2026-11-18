@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kbo/2022/tornado_step_thru",
   "manufacturer": "KBO",
-  "vehicle_model_group": "Tornado",
+  "model_group": "Tornado",
   "model": "Tornado Step-Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -52,8 +52,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 159
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {}
@@ -91,8 +90,10 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -115,6 +116,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [
@@ -181,10 +188,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "500W brushless gear motor"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V / 18A"
     },
     {
       "type": "e_vehicle_remote",
@@ -272,6 +275,11 @@
         "width": 101.6,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V / 18A"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/euphree/2026/city_robin_3",
   "manufacturer": "Euphree",
   "model": "City Robin 3",
@@ -51,8 +51,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 159
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -112,8 +111,13 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271, UL 2849",
-      "battery_size": 720,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -133,9 +137,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 45.36
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 45.36
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -150,7 +161,6 @@
           "length": 1829
         },
         "total_weight": 33.1,
-        "max_weight_rider": 159,
         "rider_height_min": 1575,
         "rider_height_max": 1829,
         "extra_measurements": {

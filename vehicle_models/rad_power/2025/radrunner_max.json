@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rad_power/2025/radrunner_max",
   "manufacturer": "Rad Power Bikes",
-  "vehicle_model_group": "RadRunner",
+  "model_group": "RadRunner",
   "model": "RadRunner Max",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -73,8 +73,7 @@
       }
     ],
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 191
+    "seatpost_clamp_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -122,10 +121,15 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "max_torque": 90,
       "operating_modes": [
@@ -149,9 +153,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54
+    },
+    {
+      "load": "payload",
+      "weight": 191
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

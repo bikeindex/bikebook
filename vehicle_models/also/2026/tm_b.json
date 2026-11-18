@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/also/2026/tm_b",
   "manufacturer": "Also",
-  "vehicle_model_group": "TM-B",
+  "model_group": "TM-B",
   "model": "TM-B",
   "model_configuration": "complete",
   "type": "bike",
@@ -478,8 +478,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Cast Aluminum",
-    "max_weight_total": 147
+    "material_detail": "Cast Aluminum"
   },
   "suspension": {
     "front": {
@@ -516,12 +515,17 @@
   ],
   "motors": [
     {
-      "certification": "UL 2271, UL 2849",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP66",
-      "battery_size": 538,
-      "battery_chemistry": "li-ion",
-      "battery_info": "48 V, 11.2 Ah",
-      "charging_time": 318,
+      "battery": {
+        "capacity": 538,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "charging_time": 318
+      },
       "rated_power": 750,
       "max_torque": 180,
       "operating_modes": [
@@ -544,6 +548,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 147
     }
   ],
   "sizes": [

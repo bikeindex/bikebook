@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2022/nuroad_fe",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Nuroad",
+  "model_group": "Nuroad",
   "model": "Nuroad FE",
   "model_configuration": "complete",
   "type": "bike",
@@ -52,9 +52,7 @@
       "spindle": "24mm"
     },
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 102,
-    "gross_weight_rating": 115
+    "seatpost_clamp_diameter": 31.8
   },
   "wheels": [
     {
@@ -96,9 +94,20 @@
       "caliper_mount": "Disc Flat Mount"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 102
+    },
+    {
+      "load": "gross",
+      "weight": 115
+    }
+  ],
   "sizes": [
     {
       "name": "50 cm / XS",

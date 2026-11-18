@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eg/2016/athens_250",
   "manufacturer": "EG Bikes",
-  "vehicle_model_group": "Athens",
+  "model_group": "Athens",
   "model": "Athens 250",
   "model_configuration": "complete",
   "type": "bike",
@@ -63,8 +63,10 @@
   },
   "motors": [
     {
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

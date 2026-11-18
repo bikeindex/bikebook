@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kona/2023/coco_hd",
   "manufacturer": "Kona",
-  "vehicle_model_group": "Coco",
+  "model_group": "Coco",
   "model": "Coco HD",
   "model_configuration": "complete",
   "type": "bike",
@@ -137,8 +137,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

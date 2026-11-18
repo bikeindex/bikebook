@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2025/carrie_easy",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Carrie",
+  "model_group": "Carrie",
   "model": "Carrie EASY",
   "model_configuration": "complete",
   "markets": [
@@ -72,9 +72,7 @@
       }
     ],
     "seatpost_diameter": 34.9,
-    "seatpost_clamp_diameter": 40,
-    "max_weight_total": 150,
-    "gross_weight_rating": 200
+    "seatpost_clamp_diameter": 40
   },
   "suspension": {
     "front": {
@@ -129,8 +127,10 @@
       "model": "BDU336Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 545,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 545,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -143,6 +143,20 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 200
+    },
+    {
+      "load": "rear_rack",
+      "weight": 27
     }
   ],
   "sizes": [
@@ -161,15 +175,13 @@
           "length": 2090
         },
         "total_weight": 50,
-        "max_weight_rider": 110,
         "rider_height_min": 1500,
         "rider_height_max": 2000,
         "extra_measurements": {
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "no",
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_luggage_rack_kg": 27
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     }

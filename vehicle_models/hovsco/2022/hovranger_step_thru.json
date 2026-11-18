@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hovsco/2022/hovranger_step_thru",
   "manufacturer": "Hovsco",
-  "vehicle_model_group": "HovRanger",
+  "model_group": "HovRanger",
   "model": "HovRanger Step-Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -55,8 +55,7 @@
     "bottom_bracket": {
       "spindle": "square taper"
     },
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 136
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {
@@ -114,9 +113,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 500,
       "peak_power": 970,
       "max_torque": 65,
@@ -143,6 +144,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

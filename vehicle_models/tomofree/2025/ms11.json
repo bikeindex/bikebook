@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tomofree/2025/ms11",
   "manufacturer": "Tomofree",
   "model": "MS11",
@@ -58,9 +58,11 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 1440,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1440,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 1200,
       "operating_modes": [
         {
@@ -74,9 +76,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 1440,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1440,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 1200,
       "operating_modes": [
         {
@@ -86,6 +90,12 @@
           "max_slope": 30
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 181
     }
   ],
   "sizes": [
@@ -102,7 +112,6 @@
           "width": 231,
           "height": 490
         },
-        "max_weight_rider": 181,
         "rider_height_min": 1520,
         "rider_height_max": 1900
       }

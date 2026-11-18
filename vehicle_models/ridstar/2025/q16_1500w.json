@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ridstar/2025/q16_1500w",
   "manufacturer": "Ridstar",
   "model": "Q16 1500W",
@@ -29,8 +29,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -65,9 +64,11 @@
   ],
   "motors": [
     {
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 1200,
       "peak_power": 1500,
       "max_torque": 85,
@@ -90,6 +91,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

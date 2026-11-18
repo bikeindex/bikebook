@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ape_ryder/2025/tamarin",
   "manufacturer": "Ape Ryder",
   "model": "Tamarin",
@@ -55,8 +55,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 120
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -97,7 +96,9 @@
   ],
   "motors": [
     {
-      "battery_size": 960,
+      "battery": {
+        "capacity": 960
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -110,6 +111,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

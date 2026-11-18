@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2023/chatham_rev_plus_2_step_through",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Chatham Rev+",
+  "model_group": "Chatham Rev+",
   "model": "Chatham Rev+ 2 Step Through",
   "model_configuration": "complete",
   "type": "bike",
@@ -143,11 +143,16 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 cells",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion",
+        "cells": "21700",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -171,12 +176,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "16\" Step Through",
       "geometry": {
         "standover": 610,
-        "max_weight_rider": 159,
         "rider_height_min": 1575,
         "rider_height_max": 1854
       }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lectric/2023/xpeak_high_step",
   "manufacturer": "Lectric eBikes",
-  "vehicle_model_group": "XPeak",
+  "model_group": "XPeak",
   "model": "XPeak High-Step",
   "model_configuration": "complete",
   "type": "bike",
@@ -106,10 +106,14 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "ISO 4210",
+      "certifications": [
+        "ISO 4210"
+      ],
       "water_rating": "IP65",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1310,
       "max_torque": 85,

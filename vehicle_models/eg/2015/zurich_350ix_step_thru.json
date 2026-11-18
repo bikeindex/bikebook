@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eg/2015/zurich_350ix_step_thru",
   "manufacturer": "EG Bikes",
-  "vehicle_model_group": "Zurich",
+  "model_group": "Zurich",
   "model": "Zurich 350IX Step-thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -73,8 +73,10 @@
   ],
   "motors": [
     {
-      "battery_size": 432,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 432,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/felt/2016/verza_e_30_s",
   "manufacturer": "Felt",
-  "vehicle_model_group": "Verza-e",
+  "model_group": "Verza-e",
   "model": "Verza-e 30 S",
   "model_configuration": "complete",
   "type": "bike",
@@ -123,8 +123,10 @@
       "manufacturer": "Shimano",
       "model": "Steps",
       "kind": "mid_drive",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {

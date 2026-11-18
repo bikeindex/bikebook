@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/puckipuppy/2025/corgi",
   "manufacturer": "Puckipuppy",
   "model": "Corgi",
@@ -77,8 +77,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 181
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -116,10 +115,15 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "UL 2271, UL 2849",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 960,
       "operating_modes": [
@@ -142,6 +146,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

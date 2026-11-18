@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2026/machete_evo_sx_1",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Machete EVO",
+  "model_group": "Machete EVO",
   "model": "Machete EVO SX 1",
   "model_configuration": "complete",
   "type": "bike",
@@ -73,9 +73,7 @@
     "material": "carbon",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 117,
-    "gross_weight_rating": 135
+    }
   },
   "suspension": {
     "front": {
@@ -127,8 +125,11 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion",
+        "weight": 3.5
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,
@@ -142,6 +143,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 117
+    },
+    {
+      "load": "gross",
+      "weight": 135
     }
   ],
   "sizes": [

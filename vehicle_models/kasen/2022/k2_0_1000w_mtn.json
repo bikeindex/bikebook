@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kasen/2022/k2_0_1000w_mtn",
   "manufacturer": "Kasen",
   "model": "K2.0 1000W MTN",
@@ -70,8 +70,7 @@
     "material_detail": "6061 Double-Butted Aluminum",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 125
+    }
   },
   "suspension": {
     "front": {
@@ -127,14 +126,19 @@
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / UL 2849",
-      "water_rating": "IPX5",
-      "battery_size": 720,
-      "battery_options": [
-        960
+      "certifications": [
+        "UL 2849",
+        "CE"
       ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung cells",
+      "water_rating": "IPX5",
+      "battery": {
+        "capacity": 720,
+        "capacity_options": [
+          960
+        ],
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 1000,
       "peak_power": 1250,
       "max_torque": 170,
@@ -160,12 +164,21 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    },
+    {
+      "load": "payload",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 31.8,
-        "max_weight_rider": 125
+        "total_weight": 31.8
       }
     }
   ],

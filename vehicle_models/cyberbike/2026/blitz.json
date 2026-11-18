@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cyberbike/2026/blitz",
   "manufacturer": "Cyberbike",
   "model": "Blitz",
@@ -37,8 +37,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 136
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {},
@@ -75,7 +74,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 1200,
+      "battery": {
+        "capacity": 1200
+      },
       "rated_power": 1000,
       "peak_power": 2000,
       "operating_modes": [
@@ -89,6 +90,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

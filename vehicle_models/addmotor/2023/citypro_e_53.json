@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/addmotor/2023/citypro_e_53",
   "manufacturer": "Addmotor",
-  "vehicle_model_group": "Citypro",
+  "model_group": "Citypro",
   "model": "Citypro E-53",
   "model_configuration": "complete",
   "type": "bike",
@@ -76,8 +76,7 @@
   },
   "frame": {
     "material": "steel",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 113
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -124,8 +123,10 @@
     {
       "manufacturer": "Addmotor",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 907,
       "operating_modes": [
@@ -150,9 +151,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

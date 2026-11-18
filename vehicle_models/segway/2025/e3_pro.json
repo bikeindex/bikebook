@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/segway/2025/e3_pro",
   "manufacturer": "Segway",
-  "vehicle_model_group": "E Series",
+  "model_group": "E Series",
   "model": "E3 Pro",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -92,8 +92,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 368,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 368,
+        "charging_time": 420
+      },
       "rated_power": 400,
       "peak_power": 800,
       "operating_modes": [
@@ -111,6 +113,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -126,7 +134,6 @@
           "height": 445
         },
         "total_weight": 18.2,
-        "max_weight_rider": 120,
         "rider_height_min": 1600,
         "rider_age_min": 16
       }

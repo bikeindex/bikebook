@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gopower/2026/go_glide",
   "manufacturer": "Gopower",
   "model": "Go Glide",
@@ -50,7 +50,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "rated_power": 130,
       "operating_modes": [
         {
@@ -62,6 +64,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 70
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -70,7 +78,6 @@
           "length": 819.912,
           "width": 350.012
         },
-        "max_weight_rider": 70,
         "extra_measurements": {
           "handlebar_height": 949.96
         }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/beachman/2026/aviator_light_motorcycle",
   "manufacturer": "Beachman",
-  "vehicle_model_group": "Aviator",
+  "model_group": "Aviator",
   "model": "Aviator Light Motorcycle",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -47,8 +47,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 4300,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 4300,
+        "chemistry": "li-ion"
+      },
       "rated_power": 3000,
       "operating_modes": [
         {
@@ -58,6 +60,12 @@
           "range_claimed": 100
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
     }
   ],
   "sizes": [
@@ -70,8 +78,7 @@
           "length": 1829,
           "width": 610,
           "height": 914
-        },
-        "max_weight_rider": 159
+        }
       }
     }
   ],

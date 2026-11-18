@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/brompton/2021/e_bike_m2l_2_speed",
   "manufacturer": "Brompton Bicycle",
-  "vehicle_model_group": "Electric C Line",
+  "model_group": "Electric C Line",
   "model": "E-Bike M2L - 2 speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -57,8 +57,10 @@
   ],
   "motors": [
     {
-      "battery_size": 300,
-      "charging_time": 240,
+      "battery": {
+        "capacity": 300,
+        "charging_time": 240
+      },
       "operating_modes": [
         {
           "mode": "assist",

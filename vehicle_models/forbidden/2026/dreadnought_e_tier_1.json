@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/forbidden/2026/dreadnought_e_tier_1",
   "manufacturer": "Forbidden Bikes",
-  "vehicle_model_group": "Dreadnought E",
+  "model_group": "Dreadnought E",
   "model": "Dreadnought E Tier 1",
   "model_configuration": "complete",
   "type": "bike",
@@ -123,11 +123,13 @@
       "manufacturer": "DJI",
       "model": "Avinox M2S",
       "kind": "mid_drive",
-      "battery_size": 600,
-      "battery_options": [
-        800
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "capacity_options": [
+          800
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 1300,
       "max_torque": 130,

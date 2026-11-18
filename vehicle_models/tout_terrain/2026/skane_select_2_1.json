@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tout_terrain/2026/skane_select_2_1",
   "manufacturer": "Tout Terrain",
   "model": "Skane Select 2.1",
@@ -36,12 +36,17 @@
       {
         "type": "bottle",
         "location": "downtube"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
       }
     ],
     "headset": "ZS44/28.6 | ZS56/40",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 132,
-    "gross_weight_rating": 160
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -103,7 +108,9 @@
       "manufacturer": "Neodrives",
       "model": "Z20 S",
       "kind": "hub_drive",
-      "battery_size": 625,
+      "battery": {
+        "capacity": 625
+      },
       "max_torque": 40,
       "operating_modes": [
         {
@@ -114,6 +121,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 132
+    },
+    {
+      "load": "gross",
+      "weight": 160
     }
   ],
   "sizes": [
@@ -315,11 +332,6 @@
         "width": 62,
         "diameter": 584
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Terrain",
-      "description": "Allroad"
     },
     {
       "type": "unknown",

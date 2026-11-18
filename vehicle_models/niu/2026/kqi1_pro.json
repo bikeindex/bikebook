@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/niu/2026/kqi1_pro",
   "manufacturer": "Niu",
+  "model_group": "KQi1",
   "model": "KQi1 Pro",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -68,8 +69,10 @@
   "motors": [
     {
       "water_rating": "IPX5",
-      "battery_size": 243,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 243,
+        "charging_time": 300
+      },
       "rated_power": 450,
       "peak_power": 500,
       "operating_modes": [
@@ -81,6 +84,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
     }
   ],
   "sizes": [
@@ -98,7 +107,6 @@
           "height": 500
         },
         "total_weight": 15.4,
-        "max_weight_rider": 100,
         "rider_age_min": 14
       }
     }

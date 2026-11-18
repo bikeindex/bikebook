@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vvolt/2024/alpha_ii",
   "manufacturer": "Vvolt",
-  "vehicle_model_group": "Alpha",
+  "model_group": "Alpha",
   "model": "Alpha II",
   "model_configuration": "complete",
   "type": "bike",
@@ -170,8 +170,12 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "certification": "UL 2771",
-      "battery_size": 374,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 374
+      },
       "rated_power": 350,
       "peak_power": 550,
       "max_torque": 45,

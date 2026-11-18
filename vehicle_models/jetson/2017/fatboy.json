@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2017/fatboy",
   "manufacturer": "Jetson",
   "model": "Fatboy",
@@ -70,9 +70,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 576,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 576,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -96,6 +98,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 200
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -106,7 +114,6 @@
           "height": 1105
         },
         "total_weight": 51.5,
-        "max_weight_rider": 200,
         "rider_age_min": 18
       }
     }

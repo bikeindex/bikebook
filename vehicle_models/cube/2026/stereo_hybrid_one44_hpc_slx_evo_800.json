@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/stereo_hybrid_one44_hpc_slx_evo_800",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Stereo Hybrid",
+  "model_group": "Stereo Hybrid",
   "model": "Stereo Hybrid ONE44 HPC SLX Evo 800",
   "model_configuration": "complete",
   "type": "bike",
@@ -36,9 +36,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 135,
-    "gross_weight_rating": 160
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -143,8 +141,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -160,6 +160,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    },
+    {
+      "load": "gross",
+      "weight": 160
+    }
+  ],
   "sizes": [
     {
       "name": "S",
@@ -168,7 +178,6 @@
         "stem_length": 50,
         "crank_length": 165,
         "max_seatpost_insertion": 220,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "angle_stem_degrees": 12,
           "diameter_seatpost": 31.6,
@@ -188,7 +197,6 @@
         "crank_length": 165,
         "max_seatpost_insertion": 230,
         "total_weight": 24.7,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "angle_stem_degrees": 12,
           "diameter_seatpost": 31.6,
@@ -207,7 +215,6 @@
         "stem_length": 50,
         "crank_length": 165,
         "max_seatpost_insertion": 250,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "angle_stem_degrees": 12,
           "diameter_seatpost": 31.6,
@@ -226,7 +233,6 @@
         "stem_length": 50,
         "crank_length": 165,
         "max_seatpost_insertion": 310,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "angle_stem_degrees": 12,
           "diameter_seatpost": 31.6,

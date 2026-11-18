@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hovsco/2026/hovbeta",
   "manufacturer": "Hovsco",
   "model": "HovBeta",
@@ -44,8 +44,7 @@
     "bottom_bracket": {
       "spindle": "square taper"
     },
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 204
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {
@@ -103,9 +102,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 750,
       "peak_power": 1300,
       "max_torque": 90,
@@ -132,6 +133,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

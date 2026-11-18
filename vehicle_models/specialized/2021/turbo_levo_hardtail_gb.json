@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2021/turbo_levo_hardtail_gb",
   "manufacturer": "Specialized",
-  "vehicle_model_group": "Turbo Levo",
+  "model_group": "Turbo Levo",
   "model": "Turbo Levo Hardtail",
   "model_configuration": "complete",
   "markets": [
@@ -138,7 +138,9 @@
       "kind": "mid_drive",
       "sensor_cadence": true,
       "water_rating": "IP56",
-      "battery_size": 400,
+      "battery": {
+        "capacity": 400
+      },
       "rated_power": 250,
       "peak_power": 420,
       "max_torque": 50,

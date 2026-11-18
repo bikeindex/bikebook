@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/van_rysel/2026/e_grvl_af_hd_sram_apex_xplr_gb",
   "manufacturer": "Van Rysel",
-  "vehicle_model_group": "E-GRVL",
+  "model_group": "E-GRVL",
   "model": "E-GRVL AF HD SRAM Apex XPLR",
   "model_configuration": "complete",
   "markets": [
@@ -38,9 +38,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061-T6 Aluminum",
-    "cable_routing": "internal",
-    "max_weight_total": 105,
-    "gross_weight_rating": 120
+    "cable_routing": "internal"
   },
   "wheels": [
     {
@@ -107,8 +105,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 250,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 250,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 45,
       "operating_modes": [
@@ -121,6 +121,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 105
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

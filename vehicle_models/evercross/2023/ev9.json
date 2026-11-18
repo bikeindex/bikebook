@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2023/ev9",
   "manufacturer": "Evercross",
   "model": "EV9",
@@ -44,8 +44,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 120
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -59,8 +58,9 @@
   "motors": [
     {
       "water_rating": "IPX4",
-      "battery_size": 144,
-      "battery_info": "4.4 Ah",
+      "battery": {
+        "capacity": 144
+      },
       "operating_modes": [
         {
           "mode": "throttle",
@@ -73,8 +73,9 @@
     },
     {
       "water_rating": "IPX4",
-      "battery_size": 144,
-      "battery_info": "4.4 Ah",
+      "battery": {
+        "capacity": 144
+      },
       "operating_modes": [
         {
           "mode": "throttle",
@@ -84,6 +85,12 @@
           "max_slope": 15
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

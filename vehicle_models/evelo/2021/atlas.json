@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evelo/2021/atlas",
   "manufacturer": "Evelo",
   "model": "Atlas",
@@ -80,10 +80,16 @@
       "kind": "mid_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / EN 14766 / ROHS",
+      "certifications": [
+        "EN 14766",
+        "CE",
+        "RoHS"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 600,
       "peak_power": 1200,
       "max_torque": 120,
@@ -107,6 +113,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -118,7 +130,6 @@
         "dimensions": {
           "length": 1905
         },
-        "max_weight_rider": 159,
         "rider_height_min": 1676,
         "rider_height_max": 1905,
         "extra_measurements": {

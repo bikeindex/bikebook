@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/paselec/2026/x8",
   "manufacturer": "Paselec",
   "model": "X8",
@@ -33,8 +33,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 120
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -73,9 +72,11 @@
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
       "water_rating": "IP54",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "peak_power": 1300,
       "max_torque": 70,
       "operating_modes": [
@@ -95,6 +96,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

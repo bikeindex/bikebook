@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/propain/2026/ekano_al_trail_swedish_gold",
   "manufacturer": "Propain",
-  "vehicle_model_group": "Ekano",
+  "model_group": "Ekano",
   "model": "Ekano AL Trail Swedish Gold",
   "model_configuration": "complete",
   "type": "bike",
@@ -48,8 +48,7 @@
     "seatpost_diameter": 31.6,
     "seatpost_clamp_diameter": 34.9,
     "derailleur_hanger": "UDH",
-    "max_fork_travel": 170,
-    "gross_weight_rating": 130
+    "max_fork_travel": 170
   },
   "suspension": {
     "front": {
@@ -101,7 +100,9 @@
       "manufacturer": "DJI",
       "model": "Avinox M2",
       "kind": "mid_drive",
-      "battery_size": 600,
+      "battery": {
+        "capacity": 600
+      },
       "rated_power": 250,
       "peak_power": 1100,
       "max_torque": 125,
@@ -114,6 +115,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [

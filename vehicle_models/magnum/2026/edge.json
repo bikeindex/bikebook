@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/magnum/2026/edge",
   "manufacturer": "Magnum Bikes",
   "model": "Edge",
@@ -51,8 +51,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -101,11 +100,15 @@
     {
       "manufacturer": "Sutto",
       "kind": "hub_drive",
-      "certification": "UL 2271, UL 2849",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "15Ah",
-      "charging_time": 390,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 390
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "operating_modes": [
@@ -127,6 +130,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

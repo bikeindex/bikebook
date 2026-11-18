@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kbo/2025/flyer",
   "manufacturer": "KBO",
   "model": "Flyer",
@@ -25,8 +25,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 50
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -40,8 +39,11 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "battery_size": 70,
-      "charging_time": 360,
+      "kind": "hub_drive",
+      "battery": {
+        "capacity": 70,
+        "charging_time": 360
+      },
       "rated_power": 120,
       "operating_modes": [
         {
@@ -51,6 +53,12 @@
           "range_claimed": 15
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 50
     }
   ],
   "sizes": [

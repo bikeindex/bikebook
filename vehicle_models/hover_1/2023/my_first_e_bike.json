@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hover_1/2023/my_first_e_bike",
   "manufacturer": "Hover-1",
   "model": "My First E-Bike",
@@ -29,7 +29,6 @@
           "variants": [
             {
               "sku": "H1-MFEB-BLU",
-              "gtin": "888255265227",
               "size": "One Size"
             }
           ]
@@ -42,7 +41,6 @@
           "variants": [
             {
               "sku": "H1-MFEB-GRN",
-              "gtin": "888255265227",
               "size": "One Size"
             }
           ]
@@ -55,7 +53,6 @@
           "variants": [
             {
               "sku": "H1-MFEB-MNT",
-              "gtin": "888255265227",
               "size": "One Size"
             }
           ]
@@ -68,7 +65,6 @@
           "variants": [
             {
               "sku": "H1-MFEB-PNK",
-              "gtin": "888255265227",
               "size": "One Size"
             }
           ]
@@ -81,7 +77,6 @@
           "variants": [
             {
               "sku": "H1-MFEB-RED",
-              "gtin": "888255265227",
               "size": "One Size"
             }
           ]
@@ -114,7 +109,9 @@
   ],
   "motors": [
     {
-      "battery_size": 104,
+      "battery": {
+        "capacity": 104
+      },
       "rated_power": 150,
       "operating_modes": [
         {
@@ -127,6 +124,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 60
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -136,8 +139,7 @@
           "width": 533,
           "height": 762
         },
-        "total_weight": 9.8,
-        "max_weight_rider": 60
+        "total_weight": 9.8
       }
     }
   ],

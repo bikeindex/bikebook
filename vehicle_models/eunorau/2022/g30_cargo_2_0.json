@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2022/g30_cargo_2_0",
   "manufacturer": "Eunorau",
   "model": "G30-Cargo 2.0",
@@ -64,8 +64,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 200
+    ]
   },
   "suspension": {
     "front": {}
@@ -107,10 +106,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "Yes",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "max_torque": 65,
       "operating_modes": [
@@ -132,6 +132,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

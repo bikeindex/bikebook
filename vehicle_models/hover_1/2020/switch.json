@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hover_1/2020/switch",
   "manufacturer": "Hover-1",
   "model": "Switch",
@@ -63,7 +63,9 @@
   ],
   "motors": [
     {
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "rated_power": 90,
       "operating_modes": [
         {
@@ -75,12 +77,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 60
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 8.5,
-        "max_weight_rider": 60,
         "rider_age_min": 8
       }
     }

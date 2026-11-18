@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2020/nuroad_hybrid_c_62_sl",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Nuroad Hybrid",
+  "model_group": "Nuroad Hybrid",
   "model": "Nuroad Hybrid C:62 SL",
   "model_configuration": "complete",
   "type": "bike",
@@ -31,9 +31,7 @@
   "frame": {
     "material": "carbon",
     "headset": "IS42/28.6 | IS52/40",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 99,
-    "gross_weight_rating": 115
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -84,7 +82,9 @@
   ],
   "motors": [
     {
-      "battery_size": 250,
+      "battery": {
+        "capacity": 250
+      },
       "rated_power": 250,
       "max_torque": 60,
       "operating_modes": [
@@ -96,6 +96,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 99
+    },
+    {
+      "load": "gross",
+      "weight": 115
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ncm/2022/c5",
   "manufacturer": "NCM eBikes",
   "model": "C5",
@@ -37,9 +37,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 106,
-    "gross_weight_rating": 125
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -77,7 +75,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 432,
+      "battery": {
+        "capacity": 432
+      },
       "rated_power": 350,
       "peak_power": 600,
       "operating_modes": [
@@ -86,6 +86,16 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 106
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

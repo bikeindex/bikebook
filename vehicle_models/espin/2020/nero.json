@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/espin/2020/nero",
   "manufacturer": "Espin",
   "model": "Nero",
@@ -97,10 +97,12 @@
       "manufacturer": "Espin",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 696,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 696,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "max_torque": 85,
@@ -122,9 +124,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 30
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 30
+    }
+  ],
   "sizes": [
     {
       "name": "17\"",
@@ -160,6 +165,10 @@
       "description": "Lithium-ion 48V, 14.5Ah (696Wh) Samsung Cells"
     },
     {
+      "type": "e_vehicle_charger",
+      "description": "2 Amp Charger"
+    },
+    {
       "type": "e_vehicle_motor",
       "manufacturer": "Espin",
       "description": "Espin"
@@ -186,6 +195,11 @@
       "dimensions": {
         "diameter": 31.8
       }
+    },
+    {
+      "type": "included_not_installed",
+      "type_detail": "Tools",
+      "description": "Tool Box"
     },
     {
       "type": "pedals",

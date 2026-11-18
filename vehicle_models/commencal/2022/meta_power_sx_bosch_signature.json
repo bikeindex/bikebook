@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/commencal/2022/meta_power_sx_bosch_signature",
   "manufacturer": "Commencal Bikes",
-  "vehicle_model_group": "META Power SX",
+  "model_group": "META Power SX",
   "model": "META Power SX Bosch Signature",
   "model_configuration": "complete",
   "type": "bike",
@@ -133,8 +133,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

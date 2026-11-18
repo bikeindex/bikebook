@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/niu/2026/nqi_gts",
   "manufacturer": "Niu",
   "model": "NQi GTS",
@@ -28,8 +28,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -77,10 +76,12 @@
     {
       "manufacturer": "Bosch",
       "water_rating": "IPX7",
-      "battery_size": 4032,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-Ion Cylindrical",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 4032,
+        "chemistry": "li-ion",
+        "cells": "Cylindrical",
+        "charging_time": 360
+      },
       "rated_power": 4000,
       "peak_power": 4100,
       "max_torque": 180,
@@ -101,6 +102,12 @@
   "cargo": {
     "volume": 19
   },
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

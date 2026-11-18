@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rose/2023/backroad_grx_rx810_di2",
   "manufacturer": "ROSE",
-  "vehicle_model_group": "Backroad",
+  "model_group": "Backroad",
   "model": "Backroad GRX RX810 Di2",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,8 +41,7 @@
   },
   "frame": {
     "material": "carbon",
-    "cable_routing": "internal",
-    "max_weight_total": 110
+    "cable_routing": "internal"
   },
   "wheels": [
     {
@@ -81,6 +80,12 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
     }
   ],
   "sizes": [

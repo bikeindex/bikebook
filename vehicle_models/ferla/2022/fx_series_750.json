@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ferla/2022/fx_series_750",
   "manufacturer": "Ferla",
   "model": "FX-Series 750",
@@ -64,9 +64,11 @@
     {
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 816,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung cells",
+      "battery": {
+        "capacity": 816,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "operating_modes": [
         {

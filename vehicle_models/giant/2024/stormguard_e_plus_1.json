@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/giant/2024/stormguard_e_plus_1",
   "manufacturer": "Giant",
-  "vehicle_model_group": "Stormguard",
+  "model_group": "Stormguard",
   "model": "Stormguard E+ 1",
   "model_configuration": "complete",
   "type": "bike",
@@ -72,6 +72,13 @@
       {
         "type": "top_tube_bag",
         "location": "top_tube"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
     ],
     "bottom_bracket": {
@@ -151,8 +158,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "water_rating": "IPX6",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "max_torque": 85,
       "operating_modes": [
         {

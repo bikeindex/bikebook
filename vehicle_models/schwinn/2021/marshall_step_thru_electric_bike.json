@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/schwinn/2021/marshall_step_thru_electric_bike",
   "manufacturer": "Schwinn",
-  "vehicle_model_group": "Marshall",
+  "model_group": "Marshall",
   "model": "Marshall Step-Thru Electric Bike",
   "model_configuration": "complete",
   "type": "bike",
@@ -113,8 +113,7 @@
       "width": 68,
       "spindle": "square taper"
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 136
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -173,8 +172,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 288,
-      "charging_time": 240,
+      "battery": {
+        "capacity": 288,
+        "charging_time": 240
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -196,18 +197,22 @@
       ]
     }
   ],
-  "sizes": [
+  "weight_limits": [
     {
-      "name": "S/M",
-      "geometry": {
-        "max_weight_rider": 111
-      }
+      "load": "rider",
+      "weight": 111
     },
     {
-      "name": "L/X",
-      "geometry": {
-        "max_weight_rider": 111
-      }
+      "load": "payload",
+      "weight": 136
+    }
+  ],
+  "sizes": [
+    {
+      "name": "S/M"
+    },
+    {
+      "name": "L/X"
     }
   ],
   "components": [

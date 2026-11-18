@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/van_rysel/2026/e_edr_af_sram_apex_axs_1x12v",
   "manufacturer": "Van Rysel",
-  "vehicle_model_group": "E-EDR",
+  "model_group": "E-EDR",
   "model": "E-EDR AF SRAM Apex AXS 1x12v",
   "model_configuration": "complete",
   "markets": [
@@ -110,7 +110,9 @@
   ],
   "motors": [
     {
-      "battery_size": 250,
+      "battery": {
+        "capacity": 250
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [

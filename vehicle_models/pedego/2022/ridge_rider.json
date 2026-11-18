@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pedego/2022/ridge_rider",
   "manufacturer": "Pedego",
-  "vehicle_model_group": "Ridge Rider",
+  "model_group": "Ridge Rider",
   "model": "Ridge Rider",
   "model_configuration": "complete",
   "type": "bike",
@@ -94,9 +94,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 CELLS",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "cells": "18650"
+      },
       "rated_power": 749,
       "max_torque": 60,
       "operating_modes": [

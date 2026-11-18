@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ado/2026/air_28",
   "manufacturer": "ADO",
-  "vehicle_model_group": "Air 28",
+  "model_group": "Air 28",
   "model": "Air 28",
   "model_configuration": "complete",
   "type": "bike",
@@ -74,9 +74,13 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "SGS CE",
-      "battery_size": 370,
-      "charging_time": 360,
+      "certifications": [
+        "CE"
+      ],
+      "battery": {
+        "capacity": 370,
+        "charging_time": 360
+      },
       "rated_power": 250,
       "peak_power": 250,
       "max_torque": 42,
@@ -98,6 +102,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -113,7 +123,6 @@
           "length": 1935
         },
         "total_weight": 23,
-        "max_weight_rider": 120,
         "rider_height_min": 1600,
         "rider_height_max": 2100,
         "extra_measurements": {

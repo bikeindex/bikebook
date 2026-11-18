@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/philodo/2026/h7_ultra",
   "manufacturer": "Philodo",
-  "vehicle_model_group": "H7",
+  "model_group": "H7",
   "model": "H7 Ultra",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,8 +41,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 150
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -82,8 +81,10 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "battery_size": 1560,
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1560,
+        "charging_time": 540
+      },
       "rated_power": 2000,
       "peak_power": 2500,
       "max_torque": 105,
@@ -109,8 +110,10 @@
     },
     {
       "drive_wheel": "rear",
-      "battery_size": 1560,
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1560,
+        "charging_time": 540
+      },
       "rated_power": 2000,
       "peak_power": 2500,
       "max_torque": 105,
@@ -133,6 +136,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -191,12 +200,25 @@
       "description": "3.7 inch multifunctional Display"
     },
     {
+      "type": "fender",
+      "description": "fenders"
+    },
+    {
       "type": "fork",
       "type_detail": "Front Suspension",
       "position": [
         "front"
       ],
       "description": "Aluminum alloy suspension fork with lock"
+    },
+    {
+      "type": "included_not_installed",
+      "type_detail": "Tools",
+      "description": "assembly toolset"
+    },
+    {
+      "type": "kickstand",
+      "description": "kickstand"
     },
     {
       "type": "lights",
@@ -214,12 +236,18 @@
       "description": "Rear light with brake light"
     },
     {
-      "type": "rack",
-      "type_detail": "Sturdy Rear Rack",
+      "type": "mirror",
       "position": [
         "rear"
       ],
-      "description": "Sturdy Rear Rack"
+      "description": "rear mirrors"
+    },
+    {
+      "type": "rack",
+      "position": [
+        "rear"
+      ],
+      "description": "rear rack"
     },
     {
       "type": "saddle",
@@ -240,11 +268,6 @@
         "width": 101.6,
         "diameter": 559
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Package Included",
-      "description": "Battery, charger, kickstand, fenders, rear rack, rear mirrors, assembly toolset, user manual"
     }
   ]
 }

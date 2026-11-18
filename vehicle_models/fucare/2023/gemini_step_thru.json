@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fucare/2023/gemini_step_thru",
   "manufacturer": "Fucare",
   "model": "Gemini Step-Thru",
@@ -42,8 +42,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 181
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {}
@@ -88,10 +87,15 @@
       "manufacturer": "Shengyi",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 1440,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung cells",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 1440,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -117,9 +121,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 45.36
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 45.36
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

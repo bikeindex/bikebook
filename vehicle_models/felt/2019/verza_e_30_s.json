@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/felt/2019/verza_e_30_s",
   "manufacturer": "Felt",
-  "vehicle_model_group": "Verza-e",
+  "model_group": "Verza-e",
   "model": "Verza-E 30 S",
   "model_configuration": "complete",
   "type": "bike",
@@ -130,8 +130,10 @@
   ],
   "motors": [
     {
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

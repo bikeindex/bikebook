@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/murf/2024/alpha_st",
   "manufacturer": "Murf Electric Bikes",
   "model": "Alpha ST",
@@ -46,8 +46,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "wheels": [
     {
@@ -74,10 +73,15 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 1040,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 1040,
+        "charging_time": 360
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -98,6 +102,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/salsa/2026/confluence_cues_11",
   "manufacturer": "Salsa",
-  "vehicle_model_group": "Confluence",
+  "model_group": "Confluence",
   "model": "Confluence CUES 11",
   "model_configuration": "complete",
   "type": "bike",
@@ -113,8 +113,7 @@
     "seatpost_clamp_diameter": 32,
     "derailleur_hanger": "MAHLE with derailleur hanger",
     "max_chainring": 46,
-    "max_fork_travel": 40,
-    "max_weight_total": 159
+    "max_fork_travel": 40
   },
   "wheels": [
     {
@@ -183,9 +182,11 @@
       "manufacturer": "Mahle",
       "model": "X30",
       "kind": "hub_drive",
-      "battery_size": 237,
-      "battery_chemistry": "li-ion",
-      "charging_time": 210,
+      "battery": {
+        "capacity": 237,
+        "chemistry": "li-ion",
+        "charging_time": 210
+      },
       "rated_power": 250,
       "max_torque": 45,
       "operating_modes": [
@@ -200,6 +201,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

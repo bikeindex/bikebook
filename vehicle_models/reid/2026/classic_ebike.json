@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2026/classic_ebike",
   "manufacturer": "Reid",
-  "vehicle_model_group": "Classic",
+  "model_group": "Classic",
   "model": "Classic eBike",
   "model_configuration": "complete",
   "type": "bike",
@@ -78,8 +78,7 @@
       "spindle": "square taper"
     },
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 137
+    "seatpost_clamp_diameter": 31.8
   },
   "wheels": [
     {
@@ -137,8 +136,12 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "IEC62133",
-      "battery_size": 352,
+      "certifications": [
+        "IEC 62133"
+      ],
+      "battery": {
+        "capacity": 352
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -153,9 +156,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 27
+    },
+    {
+      "load": "payload",
+      "weight": 137
+    }
+  ],
   "sizes": [
     {
       "name": "S - 42cm",

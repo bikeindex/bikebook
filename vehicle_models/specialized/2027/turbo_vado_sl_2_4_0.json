@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2027/turbo_vado_sl_2_4_0",
   "manufacturer": "Specialized",
-  "vehicle_model_group": "Turbo Vado",
+  "model_group": "Turbo Vado",
   "model": "Turbo Vado SL 2 4.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -155,10 +155,15 @@
       "kind": "mid_drive",
       "spindle": "DUB",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP67",
-      "battery_size": 520,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 520,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 320,
       "max_torque": 50,

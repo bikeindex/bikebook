@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freego/2023/shotgun_lite_f0",
   "manufacturer": "Freego",
-  "vehicle_model_group": "Shotgun",
+  "model_group": "Shotgun",
   "model": "Shotgun Lite F0",
   "model_configuration": "complete",
   "type": "bike",
@@ -36,8 +36,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 100
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -68,8 +67,10 @@
   ],
   "motors": [
     {
-      "battery_size": 600,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 600,
+        "charging_time": 300
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -97,6 +98,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

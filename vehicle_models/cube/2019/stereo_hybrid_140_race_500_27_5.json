@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2019/stereo_hybrid_140_race_500_27_5",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Stereo Hybrid",
+  "model_group": "Stereo Hybrid",
   "model": "Stereo Hybrid 140 Race 500 27.5",
   "model_configuration": "complete",
   "type": "bike",
@@ -33,9 +33,7 @@
     "cable_routing": "internal",
     "headset": "ZS44/28.6 | ZS44/30",
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 100,
-    "gross_weight_rating": 125
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -111,8 +109,10 @@
       "model": "BDU450CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -126,6 +126,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

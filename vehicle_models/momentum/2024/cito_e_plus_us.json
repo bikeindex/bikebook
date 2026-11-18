@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/momentum/2024/cito_e_plus_us",
   "manufacturer": "Momentum",
   "model": "Cito E+",
@@ -51,8 +51,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "ALUXX-Grade Aluminum",
-    "seatpost_diameter": 30.9,
-    "gross_weight_rating": 185
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -114,8 +113,10 @@
       "manufacturer": "Giant",
       "model": "SyncDrive Move S",
       "kind": "hub_drive",
-      "battery_size": 780,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 780,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -138,9 +139,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 59.87
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 59.87
+    },
+    {
+      "load": "gross",
+      "weight": 185
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

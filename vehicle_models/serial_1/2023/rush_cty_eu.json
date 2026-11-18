@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/serial_1/2023/rush_cty_eu",
   "manufacturer": "Serial 1",
-  "vehicle_model_group": "Rush",
+  "model_group": "Rush",
   "model": "Rush/CTY",
   "model_configuration": "complete",
   "markets": [
@@ -48,9 +48,7 @@
     "bottom_bracket": {
       "spindle": "ISIS",
       "spindle_length": 150
-    },
-    "max_weight_total": 100,
-    "gross_weight_rating": 127
+    }
   },
   "wheels": [
     {
@@ -89,8 +87,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 150,
-      "battery_size": 706,
-      "charging_time": 390,
+      "battery": {
+        "capacity": 706,
+        "charging_time": 390
+      },
       "max_torque": 90,
       "operating_modes": [
         {
@@ -105,9 +105,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 10
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 10
+    },
+    {
+      "load": "payload",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 127
+    }
+  ],
   "sizes": [
     {
       "name": "S"

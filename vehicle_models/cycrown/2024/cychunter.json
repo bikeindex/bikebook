@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cycrown/2024/cychunter",
   "manufacturer": "Cycrown",
-  "vehicle_model_group": "CycHunter",
+  "model_group": "CycHunter",
   "model": "CycHunter",
   "model_configuration": "complete",
   "type": "bike",
@@ -35,8 +35,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -59,12 +58,16 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "battery_info": "48V",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 624,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 500,
       "peak_power": 1000,
       "operating_modes": [
@@ -87,6 +90,12 @@
           "range_claimed": 72
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

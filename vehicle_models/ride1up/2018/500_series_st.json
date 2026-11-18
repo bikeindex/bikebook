@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ride1up/2018/500_series_st",
   "manufacturer": "Ride1Up",
-  "vehicle_model_group": "500 Series",
+  "model_group": "500 Series",
   "model": "500 Series ST",
   "model_configuration": "complete",
   "type": "bike",
@@ -101,9 +101,11 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 750,
       "max_torque": 60,
       "operating_modes": [

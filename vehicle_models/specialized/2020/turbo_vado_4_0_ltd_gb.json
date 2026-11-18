@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2020/turbo_vado_4_0_ltd_gb",
   "manufacturer": "Specialized",
-  "vehicle_model_group": "Turbo Vado",
+  "model_group": "Turbo Vado",
   "model": "Turbo Vado 4.0 LTD",
   "model_configuration": "complete",
   "markets": [
@@ -136,7 +136,9 @@
       "kind": "mid_drive",
       "sensor_cadence": true,
       "water_rating": "IP56",
-      "battery_size": 500,
+      "battery": {
+        "capacity": 500
+      },
       "rated_power": 250,
       "peak_power": 520,
       "max_torque": 85,

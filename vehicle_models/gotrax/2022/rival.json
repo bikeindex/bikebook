@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2022/rival",
   "manufacturer": "GOTRAX",
   "model": "Rival",
@@ -69,9 +69,13 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
-      "battery_size": 187,
-      "charging_time": 420,
+      "certifications": [
+        "UL 2272"
+      ],
+      "battery": {
+        "capacity": 187,
+        "charging_time": 420
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -83,6 +87,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -92,8 +102,7 @@
           "width": 424,
           "height": 1118
         },
-        "total_weight": 12,
-        "max_weight_rider": 100
+        "total_weight": 12
       }
     }
   ],

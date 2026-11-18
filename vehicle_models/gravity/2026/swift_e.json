@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gravity/2026/swift_e",
   "manufacturer": "Gravity",
   "model": "Swift E",
@@ -116,10 +116,15 @@
       "model_group": "RMG020",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "certification": "ROHS / CE",
+      "certifications": [
+        "CE",
+        "RoHS"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 45,
       "operating_modes": [

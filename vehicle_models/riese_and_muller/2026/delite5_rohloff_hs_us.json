@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2026/delite5_rohloff_hs_us",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Delite5",
+  "model_group": "Delite5",
   "model": "Delite5 rohloff HS",
   "model_configuration": "complete",
   "markets": [
@@ -53,9 +53,7 @@
     ],
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 127,
-    "gross_weight_rating": 160
+    }
   },
   "suspension": {
     "front": {
@@ -123,8 +121,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 100,
@@ -138,6 +138,36 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "gross",
+      "weight": 160
+    },
+    {
+      "load": "rear_rack",
+      "weight": 27,
+      "sizes": [
+        "47 cm",
+        "51 cm"
+      ]
+    },
+    {
+      "load": "front_rack",
+      "weight": 5,
+      "sizes": [
+        "47 cm",
+        "51 cm"
+      ]
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 5
     }
   ],
   "sizes": [
@@ -159,7 +189,6 @@
           "length": 1990
         },
         "total_weight": 31.3,
-        "max_weight_rider": 120,
         "extra_measurements": {
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "no",
@@ -167,10 +196,7 @@
           "rear_suspension_ratio": 2.44,
           "top_tube_height": 535,
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     },
@@ -192,7 +218,6 @@
           "length": 2040
         },
         "total_weight": 31.6,
-        "max_weight_rider": 120,
         "extra_measurements": {
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "no",
@@ -200,10 +225,7 @@
           "rear_suspension_ratio": 2.44,
           "top_tube_height": 535,
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     },
@@ -225,7 +247,6 @@
           "length": 2040
         },
         "total_weight": 32.5,
-        "max_weight_rider": 120,
         "extra_measurements": {
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "-",
@@ -233,10 +254,7 @@
           "rear_suspension_ratio": 2.44,
           "top_tube_height": 535,
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "-",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27
+          "trailer_compatibility_two_wheel_single_attachment_point": "-"
         }
       }
     }

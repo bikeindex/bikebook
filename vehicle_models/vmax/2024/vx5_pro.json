@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vmax/2024/vx5_pro",
   "manufacturer": "VMAX",
   "model": "VX5 Pro",
@@ -53,12 +53,14 @@
   "motors": [
     {
       "water_rating": "IPX6",
-      "battery_size": 180,
-      "battery_options": [
-        281,
-        374
-      ],
-      "charging_time": 300,
+      "battery": {
+        "capacity": 180,
+        "capacity_options": [
+          281,
+          374
+        ],
+        "charging_time": 300
+      },
       "rated_power": 400,
       "peak_power": 800,
       "operating_modes": [
@@ -70,6 +72,12 @@
           "max_slope": 14
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -87,7 +95,6 @@
           "height": 470
         },
         "total_weight": 16.2,
-        "max_weight_rider": 120,
         "extra_measurements": {
           "deck_length": 480,
           "deck_to_handlebar_height": 980,

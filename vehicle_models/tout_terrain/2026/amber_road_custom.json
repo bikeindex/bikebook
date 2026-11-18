@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tout_terrain/2026/amber_road_custom",
   "manufacturer": "Tout Terrain",
-  "vehicle_model_group": "Amber Road",
+  "model_group": "Amber Road",
   "model": "Amber Road Custom",
   "model_configuration": "frame_fork",
   "type": "bike",
@@ -21,8 +21,7 @@
   },
   "frame": {
     "material": "steel",
-    "headset": "EC34/28.6 | EC34/30",
-    "gross_weight_rating": 160
+    "headset": "EC34/28.6 | EC34/30"
   },
   "wheels": [
     {
@@ -59,6 +58,12 @@
         "rear"
       ],
       "caliper_mount": "Disc IS"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 160
     }
   ],
   "sizes": [
@@ -165,11 +170,6 @@
       "type": "unknown",
       "type_detail": "Frame Type",
       "description": "Diamond"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Terrain",
-      "description": "Allroad"
     },
     {
       "type": "unknown",

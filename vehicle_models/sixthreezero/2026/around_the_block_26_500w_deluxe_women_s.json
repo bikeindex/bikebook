@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/around_the_block_26_500w_deluxe_women_s",
   "manufacturer": "sixthreezero",
-  "vehicle_model_group": "Around the Block Electric",
+  "model_group": "Around the Block Electric",
   "model": "Around the Block 26 500W Deluxe Women's",
   "model_configuration": "complete",
   "type": "bike",
@@ -114,8 +114,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "operating_modes": [
         {

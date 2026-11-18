@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2021/chatham_rev",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Chatham Rev",
+  "model_group": "Chatham Rev",
   "model": "Chatham Rev",
   "model_configuration": "complete",
   "type": "bike",
@@ -119,7 +119,9 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "charging_time": 360,
+      "battery": {
+        "charging_time": 360
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -142,13 +144,18 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "45cm",
       "geometry": {
         "standover": 813,
         "total_weight": 26.3,
-        "max_weight_rider": 100,
         "rider_height_min": 1524,
         "rider_height_max": 1930
       }

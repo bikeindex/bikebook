@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2022/tesoro_neo_x_speed",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Tesoro Neo X",
+  "model_group": "Tesoro Neo X",
   "model": "Tesoro Neo X Speed",
   "model_configuration": "complete",
   "markets": [
@@ -163,9 +163,13 @@
       "model": "BDU490P",
       "model_group": "Performance Line Speed",
       "kind": "mid_drive",
-      "certification": "UL 2849",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

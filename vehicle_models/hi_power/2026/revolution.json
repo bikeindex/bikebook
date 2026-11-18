@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hi_power/2026/revolution",
   "manufacturer": "Hi Power Cycles",
-  "vehicle_model_group": "Revolution",
+  "model_group": "Revolution",
   "model": "Revolution",
   "model_configuration": "complete",
   "type": "bike",
@@ -124,7 +124,9 @@
     {
       "model": "DC Gearless",
       "kind": "hub_drive",
-      "battery_size": 2400,
+      "battery": {
+        "capacity": 2400
+      },
       "peak_power": 9000,
       "operating_modes": [
         {
@@ -147,6 +149,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -164,8 +172,7 @@
         "bb_height": 375,
         "travel_front": 203,
         "travel_rear": 240,
-        "total_weight": 39,
-        "max_weight_rider": 159
+        "total_weight": 39
       }
     }
   ],

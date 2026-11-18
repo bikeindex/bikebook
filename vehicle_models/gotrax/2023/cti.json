@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2023/cti",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "CTI",
+  "model_group": "CTI",
   "model": "CTI",
   "model_configuration": "complete",
   "type": "bike",
@@ -122,8 +122,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 120
+    "material_detail": "6061 Aluminum"
   },
   "wheels": [
     {
@@ -155,11 +154,15 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 281,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 281,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -183,6 +186,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "payload",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -192,8 +205,7 @@
           "width": 681,
           "height": 1130
         },
-        "total_weight": 29.9,
-        "max_weight_rider": 120
+        "total_weight": 29.9
       }
     }
   ],

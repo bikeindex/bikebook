@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/engwe/2024/y600",
   "manufacturer": "ENGWE",
   "model": "Y600",
@@ -20,13 +20,13 @@
       "original_msrp_currency": "USD",
       "colorways": [
         {
+          "stock_photo": "https://bikebook.bikeindex.org/engwe/2024/y600.jpg",
           "variants": [
             {
               "sku": "USY600BR",
               "size": "One Size"
             }
-          ],
-          "stock_photo": "https://bikebook.bikeindex.org/engwe/2024/y600.jpg"
+          ]
         }
       ],
       "url": "https://engwe-bikes.com/products/engwe-y600",
@@ -64,9 +64,11 @@
   "motors": [
     {
       "water_rating": "IPX5",
-      "battery_size": 864,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 864,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 500,
       "max_torque": 28,
       "operating_modes": [
@@ -81,6 +83,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -91,7 +99,6 @@
           "length": 1180
         },
         "total_weight": 24,
-        "max_weight_rider": 120,
         "extra_measurements": {
           "handlebar_height_max": 1230,
           "handlebar_height_min": 980

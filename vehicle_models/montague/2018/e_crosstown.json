@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/montague/2018/e_crosstown",
   "manufacturer": "Montague",
-  "vehicle_model_group": "Crosstown",
+  "model_group": "Crosstown",
   "model": "E-Crosstown",
   "model_configuration": "complete",
   "type": "bike",
@@ -97,9 +97,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 279,
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 279,
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 350,
       "operating_modes": [
         {

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gasgas/2022/g_trail_1_0_us",
   "base": "m/gasgas/2022/g_trail_1_0",
   "markets": [
@@ -14,14 +14,16 @@
   },
   "motors": {
     "0": {
-      "battery_size": 630,
+      "battery": {
+        "capacity": 630,
+        "chemistry": null
+      },
       "operating_modes": {
         "assist stock": {
           "max_speed": null,
           "e_vehicle_classifications": null
         }
-      },
-      "battery_chemistry": null
+      }
     }
   },
   "sizes": [

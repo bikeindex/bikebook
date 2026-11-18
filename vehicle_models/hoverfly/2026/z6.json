@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hoverfly/2026/z6",
   "manufacturer": "Hoverfly",
   "model": "Z6",
@@ -65,8 +65,10 @@
   ],
   "motors": [
     {
-      "battery_size": 499,
-      "charging_time": 330,
+      "battery": {
+        "capacity": 499,
+        "charging_time": 330
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -79,9 +81,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 24.95
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "cargo",
+      "weight": 24.95
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -91,8 +100,7 @@
           "width": 531,
           "height": 991
         },
-        "total_weight": 29.5,
-        "max_weight_rider": 120
+        "total_weight": 29.5
       }
     }
   ],

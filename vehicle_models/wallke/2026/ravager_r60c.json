@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wallke/2026/ravager_r60c",
   "manufacturer": "Wallke",
-  "vehicle_model_group": "Ravager",
+  "model_group": "Ravager",
   "model": "Ravager R60C",
   "model_configuration": "complete",
   "type": "bike",
@@ -79,8 +79,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel Q235",
-    "max_weight_total": 227
+    "material_detail": "High-Carbon Steel Q235"
   },
   "suspension": {
     "front": {},
@@ -118,9 +117,13 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UN38.3, MSDS, UL Certified",
-      "battery_size": 4200,
-      "charging_time": 360,
+      "certifications": [
+        "UN 38.3"
+      ],
+      "battery": {
+        "capacity": 4200,
+        "charging_time": 360
+      },
       "rated_power": 2000,
       "peak_power": 4000,
       "max_torque": 150,
@@ -146,9 +149,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 59.87
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 59.87
+    },
+    {
+      "load": "payload",
+      "weight": 227
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

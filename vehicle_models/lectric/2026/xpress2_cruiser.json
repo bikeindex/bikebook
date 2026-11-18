@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lectric/2026/xpress2_cruiser",
   "manufacturer": "Lectric eBikes",
-  "vehicle_model_group": "XPress2",
+  "model_group": "XPress2",
   "model": "XPress2 Cruiser",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,8 +54,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -113,11 +112,17 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271, UL 2849, ISO 4210",
+      "certifications": [
+        "UL 2849",
+        "UL 2271",
+        "ISO 4210"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "peak_power": 1310,
       "max_torque": 85,
@@ -141,6 +146,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -155,7 +170,6 @@
           "height": 1092
         },
         "total_weight": 27.22,
-        "max_weight_rider": 150,
         "rider_height_min": 1575,
         "rider_height_max": 1905,
         "extra_measurements": {

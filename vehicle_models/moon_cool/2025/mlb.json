@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moon_cool/2025/mlb",
   "manufacturer": "Moon Cool",
-  "vehicle_model_group": "ML",
+  "model_group": "ML",
   "model": "MLB",
   "model_configuration": "complete",
   "type": "bike",
@@ -21,8 +21,7 @@
   },
   "frame": {
     "material": "steel",
-    "seatpost_diameter": 25.4,
-    "max_weight_total": 159
+    "seatpost_diameter": 25.4
   },
   "wheels": [
     {
@@ -57,6 +56,12 @@
       "caliper_mount": "Brake Bosses"
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "Step Over",
@@ -64,13 +69,12 @@
         "top_tube_effective": 569,
         "wheelbase": 1100,
         "standover": 770,
+        "seat_height_min": 170,
+        "seat_height_max": 279,
         "dimensions": {
           "length": 1781
         },
-        "total_weight": 20,
-        "extra_measurements": {
-          "seat_height": 279
-        }
+        "total_weight": 20
       }
     },
     {
@@ -79,11 +83,10 @@
         "top_tube_effective": 569,
         "wheelbase": 1100,
         "standover": 671,
+        "seat_height_min": 170,
+        "seat_height_max": 279,
         "dimensions": {
           "length": 1781
-        },
-        "extra_measurements": {
-          "seat_height": 279
         }
       }
     }

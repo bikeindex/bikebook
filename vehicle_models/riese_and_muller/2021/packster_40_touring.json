@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2021/packster_40_touring",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Packster 40",
+  "model_group": "Packster 40",
   "model": "Packster 40 touring",
   "model_configuration": "complete",
   "markets": [
@@ -52,8 +52,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_clamp_diameter": 40,
-    "gross_weight_rating": 160
+    "seatpost_clamp_diameter": 40
   },
   "suspension": {
     "front": {
@@ -110,7 +109,9 @@
       "manufacturer": "Bosch",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 500,
+      "battery": {
+        "capacity": 500
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -126,6 +127,16 @@
   "cargo": {
     "length": 400
   },
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 160
+    },
+    {
+      "load": "rear_rack",
+      "weight": 20
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -149,8 +160,7 @@
           "top_tube_height": 590,
           "top_tube_length_range": "640-710",
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_luggage_rack_kg": 20
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     }

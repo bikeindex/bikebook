@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wilier/2026/filante_hybrid_sram_force_axs_e1_2x12s_wilier_hy_ndr28ac_alloy",
   "manufacturer": "Wilier",
-  "vehicle_model_group": "Filante Hybrid",
+  "model_group": "Filante Hybrid",
   "model": "Filante Hybrid SRAM Force AXS E1 2X12S Wilier HY-NDR28AC Alloy",
   "model_configuration": "complete",
   "type": "bike",
@@ -110,7 +110,9 @@
       "manufacturer": "Mahle",
       "model": "X20",
       "kind": "hub_drive",
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "peak_power": 275,
       "max_torque": 65,
       "operating_modes": [

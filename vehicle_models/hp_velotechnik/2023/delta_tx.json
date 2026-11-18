@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hp_velotechnik/2023/delta_tx",
   "manufacturer": "HP Velotechnik",
   "model": "Delta tx",
@@ -49,8 +49,7 @@
         "type": "rack"
       }
     ],
-    "coil_compatible": true,
-    "max_weight_total": 145
+    "coil_compatible": true
   },
   "suspension": {
     "rear": {
@@ -97,8 +96,10 @@
       "manufacturer": "Bafang",
       "model": "M300",
       "kind": "mid_drive",
-      "battery_size": 450,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 450,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -109,6 +110,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 145
     }
   ],
   "sizes": [

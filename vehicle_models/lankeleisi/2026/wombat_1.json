@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lankeleisi/2026/wombat_1",
   "manufacturer": "Lankeleisi",
   "model": "Wombat-1",
@@ -51,8 +51,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 200
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -97,9 +96,11 @@
   "motors": [
     {
       "water_rating": "IP54",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 1000,
       "max_torque": 75,
       "operating_modes": [
@@ -123,9 +124,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 90
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 90
+    },
+    {
+      "load": "payload",
+      "weight": 200
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

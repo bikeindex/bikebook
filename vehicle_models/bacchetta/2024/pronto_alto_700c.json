@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bacchetta/2024/pronto_alto_700c",
   "manufacturer": "Bacchetta",
-  "vehicle_model_group": "Pronto",
+  "model_group": "Pronto",
   "model": "Pronto Alto 700c",
   "model_configuration": "complete",
   "type": "recumbent",
@@ -97,7 +97,9 @@
       "manufacturer": "Bafang",
       "model": "M510",
       "kind": "mid_drive",
-      "battery_size": 630,
+      "battery": {
+        "capacity": 630
+      },
       "rated_power": 250,
       "max_torque": 95,
       "operating_modes": [
@@ -108,12 +110,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
       "name": "Medium",
       "geometry": {
         "total_weight": 20.9,
-        "max_weight_rider": 125,
         "rider_height_min": 1727,
         "rider_height_max": 1803
       }
@@ -121,7 +128,6 @@
     {
       "name": "Large",
       "geometry": {
-        "max_weight_rider": 125,
         "rider_height_min": 1803
       }
     }

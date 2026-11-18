@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/voltvogue/2026/bk26d",
   "manufacturer": "Voltvogue",
-  "vehicle_model_group": "BK",
+  "model_group": "BK",
   "model": "BK26D",
   "model_configuration": "complete",
   "type": "bike",
@@ -39,8 +39,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 120
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {},
@@ -62,9 +61,10 @@
   ],
   "motors": [
     {
-      "battery_size": 249,
-      "battery_info": "5.2 Ah",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 249,
+        "charging_time": 240
+      },
       "peak_power": 1000,
       "operating_modes": [
         {
@@ -84,6 +84,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -121,6 +127,10 @@
       "description": "Battery life: 10 years"
     },
     {
+      "type": "e_vehicle_battery",
+      "description": "48 V"
+    },
+    {
       "type": "e_vehicle_charger",
       "description": "Charger"
     },
@@ -149,28 +159,8 @@
     },
     {
       "type": "unknown",
-      "type_detail": "Frame size field",
-      "description": "26 in"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Speeds field",
-      "description": "22"
-    },
-    {
-      "type": "unknown",
       "type_detail": "Features",
       "description": "Adjustable Handlebar Height, Adjustable Height, Adjustable Seat Height, Adjustable Speed, Multi-Speed, Waterproof"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Volts",
-      "description": "48 V"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Amps",
-      "description": "5.2 Amps"
     },
     {
       "type": "unknown",

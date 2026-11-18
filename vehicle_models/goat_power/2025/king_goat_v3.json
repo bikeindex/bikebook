@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/goat_power/2025/king_goat_v3",
   "manufacturer": "Goat Power Bikes",
   "model": "King Goat V3",
@@ -88,10 +88,13 @@
   ],
   "motors": [
     {
-      "battery_size": 2880,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung/ 21700-50GB Cell",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 2880,
+        "voltage": 72,
+        "chemistry": "li-ion",
+        "cells": "Samsung/ 21700-50GB",
+        "charging_time": 300
+      },
       "peak_power": 8500,
       "max_torque": 320,
       "operating_modes": [
@@ -115,6 +118,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 204
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -122,8 +131,7 @@
         "wheelbase": 1346,
         "seat_height_min": 881,
         "seat_height_max": 881,
-        "total_weight": 81.2,
-        "max_weight_rider": 204
+        "total_weight": 81.2
       }
     }
   ],

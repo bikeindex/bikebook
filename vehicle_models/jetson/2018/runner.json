@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2018/runner",
   "manufacturer": "Jetson",
   "model": "Runner",
@@ -53,8 +53,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_chemistry": "li-ion",
-      "charging_time": 180,
+      "battery": {
+        "chemistry": "li-ion",
+        "charging_time": 180
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -71,6 +73,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -81,7 +89,6 @@
           "height": 831
         },
         "total_weight": 17.2,
-        "max_weight_rider": 136,
         "rider_age_min": 13
       }
     }

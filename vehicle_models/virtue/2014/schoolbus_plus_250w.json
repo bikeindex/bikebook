@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/virtue/2014/schoolbus_plus_250w",
   "manufacturer": "Virtue",
-  "vehicle_model_group": "Schoolbus+",
+  "model_group": "Schoolbus+",
   "model": "Schoolbus+ 250W",
   "model_configuration": "complete",
   "type": "cargo_tricycle",
@@ -90,9 +90,11 @@
   ],
   "motors": [
     {
-      "battery_size": 317,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 317,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -105,9 +107,14 @@
   ],
   "cargo": {
     "length": 940,
-    "width": 584,
-    "max_weight_cargo": 115
+    "width": 584
   },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 115
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

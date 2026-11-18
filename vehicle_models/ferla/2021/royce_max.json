@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ferla/2021/royce_max",
   "manufacturer": "Ferla",
-  "vehicle_model_group": "Royce",
+  "model_group": "Royce",
   "model": "Royce MAX",
   "model_configuration": "complete",
   "type": "cargo_tricycle",
@@ -77,8 +77,7 @@
     "2021": {}
   },
   "frame": {
-    "material": "aluminum",
-    "gross_weight_rating": 272
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -118,8 +117,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "max_torque": 160,
       "operating_modes": [
@@ -137,6 +138,16 @@
     "length": 991,
     "width": 716
   },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    },
+    {
+      "load": "payload",
+      "weight": 272
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -146,7 +157,6 @@
           "length": 2096,
           "height": 1158
         },
-        "max_weight_rider": 113,
         "extra_measurements": {
           "cargo_bike_height": 541
         }

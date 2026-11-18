@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2021/district_4_equipped",
   "manufacturer": "Trek",
-  "vehicle_model_group": "District",
+  "model_group": "District",
   "model": "District 4 Equipped",
   "model_configuration": "complete",
   "type": "bike",
@@ -57,14 +57,19 @@
     "mounts": [
       {
         "type": "fender"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
     ],
     "bottom_bracket": {
       "width": 68
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 121,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -102,9 +107,20 @@
       "rotor_diameter": 160
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 121
+    },
+    {
+      "load": "gross",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "M",

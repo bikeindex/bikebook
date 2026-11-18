@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2023/ev12m",
   "manufacturer": "Evercross",
-  "vehicle_model_group": "EV12M",
+  "model_group": "EV12M",
   "model": "EV12M",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -58,8 +58,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 65
+    "material": "steel"
   },
   "wheels": [
     {
@@ -90,6 +89,12 @@
           "max_slope": 10
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 65
     }
   ],
   "sizes": [

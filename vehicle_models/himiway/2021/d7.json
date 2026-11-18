@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/himiway/2021/d7",
   "manufacturer": "Himiway",
-  "vehicle_model_group": "D7",
+  "model_group": "D7",
   "model": "D7",
   "model_configuration": "complete",
   "type": "bike",
@@ -39,8 +39,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 181
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -104,8 +103,10 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "max_torque": 96,
       "operating_modes": [
@@ -126,6 +127,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [
@@ -214,10 +221,6 @@
       "description": "LCD display with Type-c charger"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "48V/25A"
-    },
-    {
       "type": "fork",
       "description": "DASH-AIR-20 Inverted Fork 120mm lockout & rebound adjustable",
       "dimensions": {
@@ -297,6 +300,11 @@
         "width": 114.3,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V/25A"
     },
     {
       "type": "wheel",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bianchi/2026/t_tronik_x_9_2_deore_yvb8t",
   "manufacturer": "Bianchi",
-  "vehicle_model_group": "T-Tronik",
+  "model_group": "T-Tronik",
   "model": "T-Tronik X 9.2 Deore YVB8T",
   "model_configuration": "complete",
   "type": "bike",
@@ -113,11 +113,13 @@
       "id": "c/bosch/2025/performance_line_bdu346y",
       "drive_wheel": "rear",
       "manufacturer": "Bosch",
-      "model": "Performance Line BDU3460",
+      "model": "BDU346Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,

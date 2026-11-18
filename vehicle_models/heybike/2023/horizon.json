@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/heybike/2023/horizon",
   "manufacturer": "Heybike",
   "model": "Horizon",
@@ -110,9 +110,7 @@
           "rear"
         ]
       }
-    ],
-    "max_weight_total": 150,
-    "gross_weight_rating": 150
+    ]
   },
   "suspension": {
     "front": {
@@ -150,9 +148,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 692,
-      "battery_chemistry": "li-ion",
-      "charging_time": 180,
+      "battery": {
+        "capacity": 692,
+        "chemistry": "li-ion",
+        "charging_time": 180
+      },
       "peak_power": 1400,
       "max_torque": 80,
       "operating_modes": [
@@ -165,6 +165,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/van_rysel/2026/e_grvl_af_md_sram_apex_xplr_1x12v_moteur_central",
   "manufacturer": "Van Rysel",
-  "vehicle_model_group": "E-GRVL",
+  "model_group": "E-GRVL",
   "model": "E-GRVL AF MD SRAM Apex XPLR 1x12v moteur central",
   "model_configuration": "complete",
   "markets": [
@@ -108,8 +108,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 70,
       "operating_modes": [

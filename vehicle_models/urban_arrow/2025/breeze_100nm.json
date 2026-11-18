@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/urban_arrow/2025/breeze_100nm",
   "manufacturer": "Urban Arrow",
-  "vehicle_model_group": "Breeze",
+  "model_group": "Breeze",
   "model": "Breeze 100Nm",
   "model_configuration": "complete",
   "type": "cargo_bike_rear",
@@ -90,12 +90,14 @@
       "model_group": "Cargo Line",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_options": [
-        540,
-        800
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "capacity_options": [
+          540,
+          800
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 100,

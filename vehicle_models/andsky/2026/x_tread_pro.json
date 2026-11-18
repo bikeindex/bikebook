@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/andsky/2026/x_tread_pro",
   "manufacturer": "Andsky",
   "model": "X-Tread Pro",
@@ -39,8 +39,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -85,7 +84,9 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 2700,
+      "battery": {
+        "capacity": 2700
+      },
       "rated_power": 2500,
       "peak_power": 6000,
       "max_torque": 190,
@@ -107,6 +108,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

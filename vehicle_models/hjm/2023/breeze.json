@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hjm/2023/breeze",
   "manufacturer": "HJM",
   "model": "Breeze",
@@ -115,8 +115,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 31.8,
-    "max_weight_total": 159
+    "seatpost_diameter": 31.8
   },
   "suspension": {
     "front": {}
@@ -162,9 +161,11 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "operating_modes": [
@@ -184,6 +185,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

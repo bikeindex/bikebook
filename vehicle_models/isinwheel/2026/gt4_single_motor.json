@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/isinwheel/2026/gt4_single_motor",
   "manufacturer": "iSinwheel",
-  "vehicle_model_group": "GT4",
+  "model_group": "GT4",
   "model": "GT4 Single Motor",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -61,7 +61,9 @@
   ],
   "motors": [
     {
-      "battery_size": 960,
+      "battery": {
+        "capacity": 960
+      },
       "rated_power": 1500,
       "operating_modes": [
         {
@@ -73,12 +75,15 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
-      "name": "One Size",
-      "geometry": {
-        "max_weight_rider": 150
-      }
+      "name": "One Size"
     }
   ],
   "components": [

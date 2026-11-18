@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/superhuman/2021/blade_2_0",
   "manufacturer": "Superhuman Bikes",
   "model": "Blade 2.0",
@@ -59,8 +59,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 38.1,
-    "max_weight_total": 125
+    "seatpost_clamp_diameter": 38.1
   },
   "suspension": {
     "front": {
@@ -104,10 +103,12 @@
       "model": "Ultra",
       "kind": "mid_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 910,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Lithium Ion Cells",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 910,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 240
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "max_torque": 160,
@@ -130,6 +131,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

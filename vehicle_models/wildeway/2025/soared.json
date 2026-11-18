@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wildeway/2025/soared",
   "manufacturer": "Wildeway",
   "model": "Soared",
@@ -54,8 +54,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 225
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {
@@ -105,11 +104,16 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX65",
-      "battery_size": 1440,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung/LG 21700 cell",
+      "battery": {
+        "capacity": 1440,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "Samsung/LG 21700"
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "max_torque": 68,
@@ -147,11 +151,16 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX65",
-      "battery_size": 1440,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung/LG 21700 cell",
+      "battery": {
+        "capacity": 1440,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "Samsung/LG 21700"
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "max_torque": 68,
@@ -186,9 +195,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 50
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 50
+    },
+    {
+      "load": "payload",
+      "weight": 225
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

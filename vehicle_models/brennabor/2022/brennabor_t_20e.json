@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/brennabor/2022/brennabor_t_20e",
   "manufacturer": "Brennabor",
-  "vehicle_model_group": "T-20e",
+  "model_group": "T-20e",
   "model": "BRENNABOR T-20e",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,9 +42,7 @@
     "bottom_bracket": {
       "spindle": "BNI"
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 112,
-    "gross_weight_rating": 140
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -109,8 +107,10 @@
       "kind": "mid_drive",
       "spindle": "BNI",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 300,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 300,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 290,
       "max_torque": 40,
@@ -124,6 +124,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 112
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

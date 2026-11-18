@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tern/2021/node_d8_gen_3_us",
   "manufacturer": "Tern",
-  "vehicle_model_group": "Node",
+  "model_group": "Node",
   "model": "Node D8 Gen 3",
   "model_configuration": "complete",
   "markets": [
@@ -54,9 +54,7 @@
         "type": "accessory",
         "description": "Luggage Socket"
       }
-    ],
-    "max_weight_total": 106,
-    "gross_weight_rating": 120
+    ]
   },
   "wheels": [
     {
@@ -99,9 +97,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 105
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -112,7 +121,6 @@
           "height": 840
         },
         "total_weight": 13.3,
-        "max_weight_rider": 105,
         "rider_height_min": 1480,
         "rider_height_max": 1950,
         "extra_measurements": {

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sun/2026/e_delta_b1_sx",
   "manufacturer": "Sun",
   "model": "E-Delta B1 SX",
@@ -104,10 +104,15 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 350,
       "max_torque": 60,
       "operating_modes": [
@@ -133,6 +138,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "24-41\" X-Seam",
@@ -145,8 +156,7 @@
           "length": 1870,
           "width": 760
         },
-        "total_weight": 36.1,
-        "max_weight_rider": 136
+        "total_weight": 36.1
       }
     }
   ],

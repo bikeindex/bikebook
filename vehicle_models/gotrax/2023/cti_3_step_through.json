@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2023/cti_3_step_through",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "CTI",
+  "model_group": "CTI",
   "model": "CTI 3 Step Through",
   "model_configuration": "complete",
   "type": "bike",
@@ -81,8 +81,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 136
+    ]
   },
   "suspension": {
     "front": {}
@@ -117,11 +116,15 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -145,6 +148,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    },
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -154,8 +167,7 @@
           "width": 719,
           "height": 1189
         },
-        "total_weight": 29.3,
-        "max_weight_rider": 136
+        "total_weight": 29.3
       }
     }
   ],

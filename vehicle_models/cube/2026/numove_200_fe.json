@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/numove_200_fe",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Numove",
+  "model_group": "Numove",
   "model": "Numove 200 FE",
   "model_configuration": "complete",
   "type": "bike",
@@ -43,9 +43,7 @@
     "bottom_bracket": {
       "width": 68
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 31,
-    "gross_weight_rating": 40
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -86,9 +84,20 @@
       "caliper_mount": "Brake Bosses"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 10
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 30
+    },
+    {
+      "load": "cargo",
+      "weight": 10
+    },
+    {
+      "load": "gross",
+      "weight": 40
+    }
+  ],
   "sizes": [
     {
       "name": "20\"",
@@ -102,8 +111,7 @@
         "head_tube": 148,
         "chainstay": 330,
         "wheelbase": 804,
-        "total_weight": 9,
-        "max_weight_rider": 30
+        "total_weight": 9
       }
     }
   ],

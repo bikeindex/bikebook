@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/meelod/2026/dk300plus",
   "manufacturer": "Meelod",
-  "vehicle_model_group": "DK300",
+  "model_group": "DK300",
   "model": "DK300PLUS",
   "model_configuration": "complete",
   "type": "bike",
@@ -51,8 +51,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 200
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -90,8 +89,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IP65",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "operating_modes": [
@@ -105,6 +106,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

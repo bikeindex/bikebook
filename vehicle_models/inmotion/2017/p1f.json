@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2017/p1f",
   "manufacturer": "Inmotion",
   "model": "P1F",
@@ -35,16 +35,17 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "motors": [
     {
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 313,
-      "battery_info": "36V 8.7Ah)",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 313,
+        "voltage": 36,
+        "charging_time": 360
+      },
       "operating_modes": [
         {
           "mode": "throttle",
@@ -53,6 +54,12 @@
           "range_claimed": 40
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

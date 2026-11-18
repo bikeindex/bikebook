@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2025/sonic_en_r_2",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Sonic EVO",
+  "model_group": "Sonic EVO",
   "model": "Sonic EN-R 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -50,9 +50,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "headset": "IS60/28.6 | ZS60/46",
-    "max_weight_total": 102,
-    "gross_weight_rating": 125
+    "headset": "IS60/28.6 | ZS60/46"
   },
   "suspension": {
     "front": {
@@ -112,8 +110,11 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion",
+        "weight": 4.9
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 85,
@@ -127,6 +128,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 102
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2019/dual_sport_plus_women_s",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Dual",
+  "model_group": "Dual",
   "model": "Dual Sport+ Women's",
   "model_configuration": "complete",
   "type": "bike",
@@ -57,9 +57,7 @@
       "spindle": "BNI"
     },
     "headset": "ZS44/28.6 | ZS44/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 115,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -114,8 +112,10 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,
@@ -129,6 +129,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 115
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

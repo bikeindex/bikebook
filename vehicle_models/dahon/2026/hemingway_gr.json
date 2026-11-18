@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dahon/2026/hemingway_gr",
   "manufacturer": "Dahon",
-  "vehicle_model_group": "Hemingway",
+  "model_group": "Hemingway",
   "model": "Hemingway GR",
   "model_configuration": "complete",
   "type": "bike",
@@ -51,7 +51,7 @@
   "frame": {
     "material": "aluminum",
     "folding": "half_fold",
-    "max_weight_total": 105
+    "seatpost_diameter": 33.9
   },
   "wheels": [
     {
@@ -87,6 +87,12 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 105
     }
   ],
   "sizes": [
@@ -187,7 +193,11 @@
     {
       "type": "seatpost",
       "manufacturer": "Dahon",
-      "description": "Dahon JB-SP-312 φ33.9*580mm"
+      "description": "Dahon JB-SP-312 φ33.9*580mm",
+      "dimensions": {
+        "length": 580,
+        "diameter": 33.9
+      }
     },
     {
       "type": "shifter",

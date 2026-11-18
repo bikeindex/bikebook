@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2027/turbo_vado_sl_2_4_0_au",
   "base": "m/specialized/2027/turbo_vado_sl_2_4_0",
   "markets": [
@@ -37,6 +37,21 @@
     }
   },
   "frame": {
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "front"
+        ]
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ],
     "seatpost_diameter": 30.9
   },
   "motors": {
@@ -51,12 +66,12 @@
       }
     }
   },
-  "cargo": {
-    "max_weight_cargo": 25,
-    "attributes": [
-      "MIK HD interface"
-    ]
-  },
+  "weight_limits": [
+    {
+      "load": "rear_rack",
+      "weight": 25
+    }
+  ],
   "sizes": {
     "M": {
       "geometry": {

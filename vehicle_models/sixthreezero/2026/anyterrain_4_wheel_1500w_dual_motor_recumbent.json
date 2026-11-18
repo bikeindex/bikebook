@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/anyterrain_4_wheel_1500w_dual_motor_recumbent",
   "manufacturer": "sixthreezero",
-  "vehicle_model_group": "ANYterrain",
+  "model_group": "ANYterrain",
   "model": "ANYterrain 4 Wheel 1500w Dual Motor Recumbent",
   "model_configuration": "complete",
   "type": "recumbent",
@@ -81,9 +81,11 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "battery_size": 1920,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cell",
+      "battery": {
+        "capacity": 1920,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -106,9 +108,11 @@
     },
     {
       "drive_wheel": "rear",
-      "battery_size": 1920,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cell",
+      "battery": {
+        "capacity": 1920,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "operating_modes": [
         {

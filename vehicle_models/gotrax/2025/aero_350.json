@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2025/aero_350",
   "manufacturer": "GOTRAX",
   "model": "Aero 350",
@@ -63,10 +63,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 187,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 187,
+        "charging_time": 360
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -79,6 +83,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -88,8 +98,7 @@
           "width": 470,
           "height": 648
         },
-        "total_weight": 25.4,
-        "max_weight_rider": 100
+        "total_weight": 25.4
       }
     }
   ],

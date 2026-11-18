@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fuell/2023/flluid_3s",
   "manufacturer": "Fuell",
-  "vehicle_model_group": "Flluid",
+  "model_group": "Flluid",
   "model": "Flluid-3S",
   "model_configuration": "complete",
   "type": "bike",
@@ -89,9 +89,11 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 1000,
-      "battery_info": "51.8V",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 1000,
+        "voltage": 51.8,
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 130,
@@ -116,14 +118,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 130
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "max_weight_rider": 130,
         "rider_height_min": 1550,
         "rider_height_max": 1950
       }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hiboy/2025/joy_haul",
   "manufacturer": "Hiboy",
   "model": "Joy Haul",
@@ -139,10 +139,14 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 56,
-      "charging_time": 330,
+      "battery": {
+        "capacity": 56,
+        "charging_time": 330
+      },
       "rated_power": 100,
       "operating_modes": [
         {
@@ -155,12 +159,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 50
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 12.2,
-        "max_weight_rider": 50,
         "rider_height_min": 800,
         "rider_height_max": 1500,
         "rider_age_min": 5,

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eoeotwo/2026/k2max",
   "manufacturer": "EOEOTWO",
   "model": "K2MAX",
@@ -48,7 +48,9 @@
   ],
   "motors": [
     {
-      "battery_size": 1620,
+      "battery": {
+        "capacity": 1620
+      },
       "peak_power": 4000,
       "operating_modes": [
         {
@@ -60,12 +62,15 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
-      "name": "One Size",
-      "geometry": {
-        "max_weight_rider": 150
-      }
+      "name": "One Size"
     }
   ],
   "components": [

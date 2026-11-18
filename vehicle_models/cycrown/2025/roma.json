@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cycrown/2025/roma",
   "manufacturer": "Cycrown",
   "model": "Roma",
@@ -51,8 +51,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -91,10 +90,12 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "operating_modes": [
@@ -113,6 +114,12 @@
           "range_claimed": 48
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

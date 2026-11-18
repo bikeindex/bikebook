@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kingbull/2026/hunter_2_0s",
   "manufacturer": "KingBull",
   "model": "Hunter 2.0S",
@@ -40,8 +40,7 @@
   },
   "frame": {
     "material": "steel",
-    "seatpost_diameter": 31.8,
-    "max_weight_total": 181
+    "seatpost_diameter": 31.8
   },
   "wheels": [
     {
@@ -82,8 +81,10 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IPX6",
-      "battery_size": 864,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 864,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1300,
       "max_torque": 85,
@@ -106,9 +107,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 68.04
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 68.04
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -177,10 +185,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "750W brushless hub motor"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V/22A"
     },
     {
       "type": "e_vehicle_remote",
@@ -318,6 +322,11 @@
       "type": "tube",
       "type_detail": "Inner Tubes",
       "description": "26\"*4.0\", Schrader"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V/22A"
     },
     {
       "type": "unknown",

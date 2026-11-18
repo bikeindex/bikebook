@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/macina_sport_sx_20",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Macina Sport",
+  "model_group": "Macina Sport",
   "model": "Macina Sport SX 20",
   "model_configuration": "complete",
   "type": "bike",
@@ -52,9 +52,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "headset": "ZS44/28.6 | ZS56/40",
-    "max_weight_total": 118,
-    "gross_weight_rating": 140
+    "headset": "ZS44/28.6 | ZS56/40"
   },
   "suspension": {
     "front": {
@@ -90,8 +88,10 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,
@@ -105,6 +105,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 118
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

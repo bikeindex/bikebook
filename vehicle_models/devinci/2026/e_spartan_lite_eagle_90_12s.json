@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/devinci/2026/e_spartan_lite_eagle_90_12s",
   "manufacturer": "Devinci",
-  "vehicle_model_group": "E-Spartan Lite",
+  "model_group": "E-Spartan Lite",
   "model": "E-Spartan Lite Eagle 90 12s",
   "model_configuration": "complete",
   "markets": [
@@ -18,6 +18,7 @@
   "stock_photo": "https://bikebook.bikeindex.org/devinci/2026/e_spartan_lite_eagle_90_12s.png",
   "description": "Big bike energy, now electrified. Tame the burly without holding back. The E-Spartan Lite is built to turn turbulence into confidence. Made in Canada and powered by German precision, its chassis hides Bosch’s Performance Line SX drive system and a 400Wh battery. With 165mm of rear travel and 170mm up front, a don’t-hold-back attitude, and Devinci’s lifetime warranty, the E-Spartan Lite is built to perform where it matters most…on burly territory.",
   "first_year": 2026,
+  "final_year": 2026,
   "years": {
     "2026": {
       "original_msrp": 789900,
@@ -116,8 +117,10 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,

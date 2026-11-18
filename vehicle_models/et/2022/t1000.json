@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/et/2022/t1000",
   "manufacturer": "ET Cycle",
-  "vehicle_model_group": "T Series",
+  "model_group": "T Series",
   "model": "T1000",
   "model_configuration": "complete",
   "type": "bike",
@@ -109,8 +109,10 @@
       "manufacturer": "Das-Kit",
       "model": "G20 integrated Rim",
       "kind": "hub_drive",
-      "battery_size": 1008,
-      "battery_info": "Panasonic Cells",
+      "battery": {
+        "capacity": 1008,
+        "cells": "Panasonic"
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 60,

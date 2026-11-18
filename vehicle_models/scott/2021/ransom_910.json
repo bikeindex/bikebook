@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/ransom_910",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Ransom",
+  "model_group": "Ransom",
   "model": "Ransom 910",
   "model_configuration": "complete",
   "markets": [
@@ -77,9 +77,7 @@
       "width": 92,
       "spindle": "DUB"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 113,
-    "gross_weight_rating": 128
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -166,6 +164,16 @@
         "rear"
       ],
       "rotor_diameter": 180
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
+    },
+    {
+      "load": "gross",
+      "weight": 128
     }
   ],
   "sizes": [

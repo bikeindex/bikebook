@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hbbc/2025/dtr",
   "manufacturer": "HBBC",
-  "vehicle_model_group": "DTR",
+  "model_group": "DTR",
   "model": "DTR",
   "model_configuration": "complete",
   "type": "bike",
@@ -70,9 +70,11 @@
   ],
   "motors": [
     {
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG 5.0 21700 Cells",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "LG 5.0 21700"
+      },
       "rated_power": 750,
       "operating_modes": [
         {

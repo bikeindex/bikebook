@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/addmotor/2023/citypro_e_43",
   "manufacturer": "Addmotor",
-  "vehicle_model_group": "Citypro",
+  "model_group": "Citypro",
   "model": "Citypro E-43",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,8 +41,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 136
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -81,7 +80,9 @@
   "motors": [
     {
       "sensor_speed": "spoke_magnet",
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -102,6 +103,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/zugo/2024/step_over",
   "manufacturer": "Zugo Bike",
-  "vehicle_model_group": "Rhino",
+  "model_group": "Rhino",
   "model": "Step-Over",
   "model_configuration": "complete",
   "type": "bike",
@@ -25,6 +25,7 @@
           "colors": [
             "black"
           ],
+          "stock_photo": "https://bikebook.bikeindex.org/zugo/2024/step_over.jpg",
           "variants": [
             {
               "sku": "Rhino Black 15Ah (Kit)",
@@ -37,14 +38,14 @@
               "size": "One Size",
               "original_msrp": 269900
             }
-          ],
-          "stock_photo": "https://bikebook.bikeindex.org/zugo/2024/step_over.jpg"
+          ]
         },
         {
           "name": "Gloss White",
           "colors": [
             "white"
           ],
+          "stock_photo": "https://bikebook.bikeindex.org/zugo/2024/step_over_gloss_white.jpg",
           "variants": [
             {
               "sku": "Rhino White 15Ah (Kit)",
@@ -56,14 +57,14 @@
               "size": "One Size",
               "original_msrp": 269900
             }
-          ],
-          "stock_photo": "https://bikebook.bikeindex.org/zugo/2024/step_over_gloss_white.jpg"
+          ]
         },
         {
           "name": "Iridescent Purple",
           "colors": [
             "purple"
           ],
+          "stock_photo": "https://bikebook.bikeindex.org/zugo/2024/step_over_iridescent_purple.jpg",
           "variants": [
             {
               "sku": "Rhino Purple 15Ah (Kit)",
@@ -76,8 +77,7 @@
               "size": "One Size",
               "original_msrp": 289900
             }
-          ],
-          "stock_photo": "https://bikebook.bikeindex.org/zugo/2024/step_over_iridescent_purple.jpg"
+          ]
         },
         {
           "name": "Gloss Red",
@@ -99,8 +99,7 @@
       {
         "type": "fender"
       }
-    ],
-    "max_weight_total": 147
+    ]
   },
   "wheels": [
     {
@@ -135,12 +134,14 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "water_rating": "IP67",
-      "battery_size": 750,
-      "battery_options": [
-        1000
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
+      "battery": {
+        "capacity": 750,
+        "capacity_options": [
+          1000
+        ],
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "operating_modes": [
@@ -162,6 +163,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 147
     }
   ],
   "sizes": [

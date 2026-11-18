@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dyu/2026/c4_mini",
   "manufacturer": "DYU",
   "model": "C4 Mini",
@@ -65,9 +65,11 @@
   ],
   "motors": [
     {
-      "battery_size": 281,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 281,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 250,
       "peak_power": 500,
       "operating_modes": [
@@ -78,6 +80,12 @@
           "range_claimed": 42
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -94,8 +102,7 @@
           "width": 520,
           "height": 1035
         },
-        "total_weight": 21,
-        "max_weight_rider": 120
+        "total_weight": 21
       }
     }
   ],

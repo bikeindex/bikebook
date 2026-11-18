@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2026/ransom_400_us",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Ransom",
+  "model_group": "Ransom",
   "model": "Ransom 400",
   "model_configuration": "complete",
   "markets": [
@@ -69,9 +69,7 @@
       "width": 73
     },
     "seatpost_diameter": 31.6,
-    "derailleur_hanger": "SRAM UDH",
-    "max_weight_total": 66,
-    "gross_weight_rating": 80
+    "derailleur_hanger": "SRAM UDH"
   },
   "suspension": {
     "front": {
@@ -136,6 +134,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 66
+    },
+    {
+      "load": "gross",
+      "weight": 80
     }
   ],
   "sizes": [

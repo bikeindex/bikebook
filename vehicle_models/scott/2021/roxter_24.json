@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/roxter_24",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Roxter",
+  "model_group": "Roxter",
   "model": "Roxter 24",
   "model_configuration": "complete",
   "markets": [
@@ -77,9 +77,7 @@
       "shell": "BSA",
       "width": 68,
       "spindle": "square taper"
-    },
-    "max_weight_total": 39,
-    "gross_weight_rating": 50
+    }
   },
   "wheels": [
     {
@@ -118,6 +116,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 39
+    },
+    {
+      "load": "gross",
+      "weight": 50
     }
   ],
   "sizes": [

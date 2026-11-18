@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2023/alpenchallenge_amp_al_one",
   "manufacturer": "BMC",
-  "vehicle_model_group": "Alpenchallenge AMP",
+  "model_group": "Alpenchallenge AMP",
   "model": "Alpenchallenge AMP AL ONE",
   "model_configuration": "complete",
   "markets": [
@@ -83,8 +83,7 @@
         ]
       }
     ],
-    "cable_routing": "internal",
-    "gross_weight_rating": 120
+    "cable_routing": "internal"
   },
   "wheels": [
     {
@@ -143,8 +142,10 @@
       "model": "BDU450CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -159,6 +160,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/viribus/2024/tg1_folding",
   "manufacturer": "Viribus",
-  "vehicle_model_group": "TG1",
+  "model_group": "TG1",
   "model": "TG1 Folding",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -86,8 +86,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 179
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -132,10 +131,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2271",
-      "battery_size": 468,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 468,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -159,9 +162,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 49.9
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 179
+    },
+    {
+      "load": "cargo",
+      "weight": 49.9
+    },
+    {
+      "load": "payload",
+      "weight": 179
+    }
+  ],
   "sizes": [
     {
       "name": "24''",
@@ -176,7 +190,6 @@
           "height": 860
         },
         "total_weight": 39.5,
-        "max_weight_rider": 179,
         "rider_height_min": 1499,
         "rider_height_max": 1702,
         "extra_measurements": {
@@ -197,7 +210,6 @@
           "width": 1020,
           "height": 860
         },
-        "max_weight_rider": 179,
         "rider_height_min": 1575,
         "rider_height_max": 1880,
         "extra_measurements": {

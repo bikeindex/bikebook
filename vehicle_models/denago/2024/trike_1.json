@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/denago/2024/trike_1",
   "manufacturer": "Denago",
+  "model_group": "Trike",
   "model": "Trike 1",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -77,8 +78,10 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -101,6 +104,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 220
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -120,7 +129,6 @@
         "seat_height_min": 855,
         "seat_height_max": 1035,
         "total_weight": 43.5,
-        "max_weight_rider": 220,
         "extra_measurements": {
           "down_tube_length": 894,
           "rear_wheel_track": 648

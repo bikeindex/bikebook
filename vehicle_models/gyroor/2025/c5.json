@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gyroor/2025/c5",
   "manufacturer": "Gyroor",
-  "vehicle_model_group": "C5",
+  "model_group": "C5",
   "model": "C5",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -80,10 +80,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 648,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 648,
+        "charging_time": 300
+      },
       "rated_power": 650,
       "peak_power": 1000,
       "operating_modes": [
@@ -100,6 +104,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -110,7 +120,6 @@
           "height": 1100
         },
         "total_weight": 38.1,
-        "max_weight_rider": 136,
         "rider_height_min": 1448,
         "rider_height_max": 1854
       }

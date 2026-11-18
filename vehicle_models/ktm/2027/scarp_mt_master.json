@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/scarp_mt_master",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Scarp MT",
+  "model_group": "Scarp MT",
   "model": "Scarp MT Master",
   "model_configuration": "complete",
   "type": "bike",
@@ -44,9 +44,7 @@
     "cable_routing": "dropper",
     "bottom_bracket": {
       "spindle": "DUB"
-    },
-    "max_weight_total": 108,
-    "gross_weight_rating": 121
+    }
   },
   "suspension": {
     "front": {
@@ -107,6 +105,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 108
+    },
+    {
+      "load": "gross",
+      "weight": 121
     }
   ],
   "sizes": [

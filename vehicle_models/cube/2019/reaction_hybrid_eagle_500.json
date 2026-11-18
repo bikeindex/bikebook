@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2019/reaction_hybrid_eagle_500",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Reaction Hybrid",
+  "model_group": "Reaction Hybrid",
   "model": "Reaction Hybrid EAGLE 500",
   "model_configuration": "complete",
   "type": "bike",
@@ -34,9 +34,7 @@
     "cable_routing": "internal",
     "headset": "ZS44/28.6 | ZS56/40",
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 101,
-    "gross_weight_rating": 125
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -137,8 +135,10 @@
       "model": "BDU450CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -152,6 +152,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 101
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

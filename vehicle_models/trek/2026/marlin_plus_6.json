@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2026/marlin_plus_6",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Marlin+",
+  "model_group": "Marlin+",
   "model": "Marlin+ 6",
   "model_configuration": "complete",
   "type": "bike",
@@ -96,9 +96,7 @@
     "material_detail": "Alpha Gold Aluminum",
     "cable_routing": "dropper",
     "headset": "ZS44/28.6 | ZS56/40",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 113,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -208,9 +206,13 @@
       "model": "BDU344Y",
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
-      "certification": "UL 2849",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 50,
@@ -223,6 +225,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

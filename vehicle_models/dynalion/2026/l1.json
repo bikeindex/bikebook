@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dynalion/2026/l1",
   "manufacturer": "Dynalion",
   "model": "L1",
@@ -37,8 +37,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -67,10 +66,12 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "battery_size": 360,
-      "battery_options": [
-        374
-      ],
+      "battery": {
+        "capacity": 360,
+        "capacity_options": [
+          374
+        ]
+      },
       "rated_power": 300,
       "operating_modes": [
         {
@@ -81,6 +82,12 @@
           "max_slope": 15
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

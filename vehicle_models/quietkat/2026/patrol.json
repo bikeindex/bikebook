@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/quietkat/2026/patrol",
   "manufacturer": "QuietKat",
   "model": "Patrol",
@@ -39,8 +39,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 147
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -80,8 +79,12 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2271",
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -99,6 +102,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 147
     }
   ],
   "sizes": [

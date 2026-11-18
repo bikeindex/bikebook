@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/brennabor/2022/brennabor_r_20e",
   "manufacturer": "Brennabor",
   "model": "BRENNABOR R-20e",
@@ -38,12 +38,19 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
     "bottom_bracket": {
       "spindle": "BNI"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 112,
-    "gross_weight_rating": 140
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -103,8 +110,10 @@
       "kind": "mid_drive",
       "spindle": "BNI",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,
@@ -118,6 +127,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 112
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/yuba/2025/fastrack",
   "manufacturer": "Yuba",
-  "vehicle_model_group": "FastRack",
+  "model_group": "FastRack",
   "model": "FastRack",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -52,8 +52,7 @@
     "material": "aluminum",
     "bottom_bracket": {
       "spindle": "Shimano E8000"
-    },
-    "max_weight_total": 200
+    }
   },
   "wheels": [
     {
@@ -98,9 +97,13 @@
       "kind": "mid_drive",
       "spindle": "Shimano E8000",
       "sensor_cadence": true,
-      "certification": "EN 15194",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "EN 15194"
+      ],
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 60,
       "operating_modes": [
@@ -113,6 +116,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

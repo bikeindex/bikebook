@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hjm/2023/roamer",
   "manufacturer": "HJM",
   "model": "Roamer",
@@ -73,8 +73,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 31.8,
-    "max_weight_total": 159
+    "seatpost_diameter": 31.8
   },
   "suspension": {
     "front": {}
@@ -112,8 +111,10 @@
       "manufacturer": "Bafang",
       "kind": "mid_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 1344,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1344,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -127,6 +128,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

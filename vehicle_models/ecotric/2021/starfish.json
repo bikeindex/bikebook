@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ecotric/2021/starfish",
   "manufacturer": "Ecotric",
   "model": "Starfish",
@@ -40,8 +40,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 91
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -80,9 +79,11 @@
     {
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 450,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 450,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -98,6 +99,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 91
     }
   ],
   "sizes": [

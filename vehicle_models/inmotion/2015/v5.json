@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2015/v5",
   "manufacturer": "Inmotion",
-  "vehicle_model_group": "V5",
+  "model_group": "V5",
   "model": "V5",
   "model_configuration": "complete",
   "type": "epamd",
@@ -36,8 +36,7 @@
     "2015": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "brakes": [
     {
@@ -51,8 +50,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP55",
-      "battery_size": 160,
-      "charging_time": 90,
+      "battery": {
+        "capacity": 160,
+        "charging_time": 90
+      },
       "rated_power": 450,
       "operating_modes": [
         {
@@ -67,6 +68,12 @@
           }
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

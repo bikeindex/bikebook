@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/addmotor/2026/m_380",
   "manufacturer": "Addmotor",
   "model": "M-380",
@@ -35,8 +35,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 249
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -83,9 +82,13 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
-      "battery_size": 960,
-      "battery_info": "Samsung cells",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 960,
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -107,6 +110,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 249
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2025/fluxx_fx3_self_balancing_hoverboard",
   "manufacturer": "GOTRAX",
   "model": "Fluxx FX3 (CJ9) Self Balancing Hoverboard",
@@ -113,8 +113,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 80
+    "material": "steel"
   },
   "wheels": [
     {
@@ -127,7 +126,9 @@
   ],
   "motors": [
     {
-      "battery_size": 63,
+      "battery": {
+        "capacity": 63
+      },
       "rated_power": 200,
       "operating_modes": [
         {
@@ -139,7 +140,9 @@
       ]
     },
     {
-      "battery_size": 63,
+      "battery": {
+        "capacity": 63
+      },
       "rated_power": 200,
       "operating_modes": [
         {
@@ -149,6 +152,12 @@
           "range_claimed": 6
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 80
     }
   ],
   "sizes": [

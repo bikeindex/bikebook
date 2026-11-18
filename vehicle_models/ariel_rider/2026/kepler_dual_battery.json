@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ariel_rider/2026/kepler_dual_battery",
   "manufacturer": "Ariel Rider",
-  "vehicle_model_group": "Kepler",
+  "model_group": "Kepler",
   "model": "Kepler Dual Battery",
   "model_configuration": "complete",
   "type": "bike",
@@ -66,7 +66,15 @@
   },
   "frame": {
     "material": "aluminum",
-    "max_weight_total": 181
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ]
   },
   "suspension": {
     "front": {
@@ -109,11 +117,16 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 1820,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 21700 lithium-ion cells",
+      "battery": {
+        "capacity": 1820,
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700"
+      },
       "rated_power": 750,
       "max_torque": 110,
       "operating_modes": [
@@ -137,9 +150,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 31.75
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 31.75
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

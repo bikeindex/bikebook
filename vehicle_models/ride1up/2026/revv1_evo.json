@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ride1up/2026/revv1_evo",
   "manufacturer": "Ride1Up",
-  "vehicle_model_group": "Revv1",
+  "model_group": "Revv1",
   "model": "Revv1 EVO",
   "model_configuration": "complete",
   "type": "bike",
@@ -84,8 +84,10 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 1040,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1040,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "max_torque": 100,
       "operating_modes": [

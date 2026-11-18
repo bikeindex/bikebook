@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2023/cruiser2_mixte_vario",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Cruiser2 Mixte",
+  "model_group": "Cruiser2 Mixte",
   "model": "Cruiser2 Mixte vario",
   "model_configuration": "complete",
   "markets": [
@@ -53,9 +53,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 123,
-    "gross_weight_rating": 150
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -115,8 +113,10 @@
       "model_group": "Performance Line",
       "kind": "mid_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 545,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 545,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -129,6 +129,24 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 150
+    },
+    {
+      "load": "rear_rack",
+      "weight": 20
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 3
     }
   ],
   "sizes": [
@@ -150,15 +168,12 @@
           "length": 1840
         },
         "total_weight": 26.6,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "childseat_compatibility_carrier": "no",
           "compatibility_tagalong_trailer_bike": "yes",
           "headset_size": 28.6,
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 3,
-          "weight_rating_luggage_rack_kg": 20
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     },
@@ -180,15 +195,12 @@
           "length": 1850
         },
         "total_weight": 26.8,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "childseat_compatibility_carrier": "no",
           "compatibility_tagalong_trailer_bike": "yes",
           "headset_size": 28.6,
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 3,
-          "weight_rating_luggage_rack_kg": 20
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     },
@@ -210,15 +222,12 @@
           "length": 1880
         },
         "total_weight": 27,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "childseat_compatibility_carrier": "no",
           "compatibility_tagalong_trailer_bike": "yes",
           "headset_size": 28.6,
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 3,
-          "weight_rating_luggage_rack_kg": 20
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2019/nature_men",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Nature",
+  "model_group": "Nature",
   "model": "Nature Men",
   "model_configuration": "complete",
   "type": "bike",
@@ -30,9 +30,7 @@
   "frame": {
     "material": "aluminum",
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 126,
-    "gross_weight_rating": 140
+    "seatpost_clamp_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -76,6 +74,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 126
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

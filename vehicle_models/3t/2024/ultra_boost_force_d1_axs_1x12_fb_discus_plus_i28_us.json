@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/3t/2024/ultra_boost_force_d1_axs_1x12_fb_discus_plus_i28_us",
   "manufacturer": "3T",
-  "vehicle_model_group": "Ultra Boost",
+  "model_group": "Ultra Boost",
   "model": "Ultra Boost Force D1 AXS 1X12 FB Discus Plus I28",
   "model_configuration": "complete",
   "markets": [
@@ -114,8 +114,10 @@
       "manufacturer": "Mahle",
       "model": "X20",
       "kind": "hub_drive",
-      "battery_size": 350,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 350,
+        "chemistry": "li-ion"
+      },
       "peak_power": 275,
       "max_torque": 65,
       "operating_modes": [

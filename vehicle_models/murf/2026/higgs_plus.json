@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/murf/2026/higgs_plus",
   "manufacturer": "Murf Electric Bikes",
-  "vehicle_model_group": "Higgs",
+  "model_group": "Higgs",
   "model": "Higgs Plus",
   "model_configuration": "complete",
   "type": "bike",
@@ -38,8 +38,7 @@
   },
   "frame": {
     "material": "steel",
-    "top_tube": "step_through",
-    "max_weight_total": 175
+    "top_tube": "step_through"
   },
   "wheels": [
     {
@@ -69,10 +68,15 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 780,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 780,
+        "charging_time": 360
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -94,6 +98,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 175
     }
   ],
   "sizes": [

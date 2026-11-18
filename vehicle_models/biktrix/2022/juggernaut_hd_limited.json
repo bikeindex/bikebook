@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biktrix/2022/juggernaut_hd_limited",
   "manufacturer": "Biktrix",
   "model": "Juggernaut HD Limited",
@@ -128,8 +128,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 136
+    "seatpost_diameter": 30.4
   },
   "wheels": [
     {
@@ -186,7 +185,9 @@
       "manufacturer": "Bafang",
       "kind": "mid_drive",
       "sensor_cadence": true,
-      "battery_size": 816,
+      "battery": {
+        "capacity": 816
+      },
       "rated_power": 1000,
       "max_torque": 160,
       "operating_modes": [
@@ -207,6 +208,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

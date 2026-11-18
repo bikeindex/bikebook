@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tout_terrain/2027/amber_road_select_6_2",
   "manufacturer": "Tout Terrain",
-  "vehicle_model_group": "Amber Road",
+  "model_group": "Amber Road",
   "model": "Amber Road Select 6.2",
   "model_configuration": "complete",
   "type": "bike",
@@ -32,13 +32,21 @@
   },
   "frame": {
     "material": "steel",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
+      }
+    ],
     "bottom_bracket": {
       "shell": "BSA",
       "width": 68,
       "spindle": "24mm"
     },
-    "headset": "EC34/28.6 | EC34/30",
-    "gross_weight_rating": 160
+    "headset": "EC34/28.6 | EC34/30"
   },
   "wheels": [
     {
@@ -100,6 +108,12 @@
       ],
       "rotor_diameter": 160,
       "caliper_mount": "Disc IS"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 160
     }
   ],
   "sizes": [
@@ -362,11 +376,6 @@
         "width": 42,
         "diameter": 622
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Terrain",
-      "description": "Allroad"
     },
     {
       "type": "unknown",

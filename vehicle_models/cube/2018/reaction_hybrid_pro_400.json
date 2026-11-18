@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2018/reaction_hybrid_pro_400",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Reaction Hybrid",
+  "model_group": "Reaction Hybrid",
   "model": "Reaction Hybrid Pro 400",
   "model_configuration": "complete",
   "type": "bike",
@@ -135,8 +135,10 @@
       "model": "Performance CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 75,
       "operating_modes": [

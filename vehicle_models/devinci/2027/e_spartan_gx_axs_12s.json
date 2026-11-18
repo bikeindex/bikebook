@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/devinci/2027/e_spartan_gx_axs_12s",
   "manufacturer": "Devinci",
-  "vehicle_model_group": "E-Spartan",
+  "model_group": "E-Spartan",
   "model": "E-Spartan GX AXS 12s",
   "model_configuration": "complete",
   "markets": [
@@ -112,8 +112,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,

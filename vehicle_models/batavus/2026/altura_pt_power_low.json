@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/batavus/2026/altura_pt_power_low",
   "manufacturer": "Batavus",
-  "vehicle_model_group": "Altura",
+  "model_group": "Altura",
   "model": "Altura PT Power LOW",
   "model_configuration": "complete",
   "type": "bike",
@@ -151,8 +151,10 @@
       "model": "BDU332Y",
       "model_group": "Active Line",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 586,
       "max_torque": 40,

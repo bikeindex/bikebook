@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sur_ron/2025/light_bee_l",
   "manufacturer": "Sur-Ron",
-  "vehicle_model_group": "Light Bee L",
+  "model_group": "Light Bee L",
   "model": "Light Bee L",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -42,8 +42,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Forged Aluminum",
-    "max_weight_total": 100
+    "material_detail": "Forged Aluminum"
   },
   "suspension": {
     "front": {
@@ -80,8 +79,10 @@
   ],
   "motors": [
     {
-      "battery_size": 2400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 2400,
+        "chemistry": "li-ion"
+      },
       "max_torque": 266,
       "operating_modes": [
         {
@@ -91,6 +92,12 @@
           "range_claimed": 75
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

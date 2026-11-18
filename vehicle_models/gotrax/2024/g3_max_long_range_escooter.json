@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2024/g3_max_long_range_escooter",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "G3",
+  "model_group": "G3",
   "model": "G3 MAX Long Range eScooter",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -82,11 +82,15 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 490,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 490,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -99,6 +103,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -108,8 +118,7 @@
           "width": 457,
           "height": 457
         },
-        "total_weight": 16.8,
-        "max_weight_rider": 120
+        "total_weight": 16.8
       }
     }
   ],

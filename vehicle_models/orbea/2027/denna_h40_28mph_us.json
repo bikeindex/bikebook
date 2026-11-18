@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/orbea/2027/denna_h40_28mph_us",
   "manufacturer": "Orbea",
-  "vehicle_model_group": "Denna",
+  "model_group": "Denna",
   "model": "Denna H40 28mph",
   "model_configuration": "complete",
   "markets": [
@@ -115,8 +115,12 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 420,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 420
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [

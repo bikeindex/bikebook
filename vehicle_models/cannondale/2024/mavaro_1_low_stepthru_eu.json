@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2024/mavaro_1_low_stepthru_eu",
   "base": "m/cannondale/2024/mavaro_1_low_stepthru",
-  "vehicle_model_group": "Mavaro",
+  "model_group": "Mavaro",
   "markets": [
     "EU",
     "CH",
@@ -97,7 +97,9 @@
       "model": "BDU374Y",
       "model_group": "Performance Line CX",
       "spindle": "ISIS",
-      "battery_size": 800,
+      "battery": {
+        "capacity": 800
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -109,12 +111,15 @@
           ]
         }
       },
-      "certification": null
+      "certifications": null
     }
   },
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 27
+    }
+  ],
   "sizes": [
     {
       "name": "LG",

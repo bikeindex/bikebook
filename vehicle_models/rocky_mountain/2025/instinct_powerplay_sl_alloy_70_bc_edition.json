@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rocky_mountain/2025/instinct_powerplay_sl_alloy_70_bc_edition",
   "manufacturer": "Rocky Mountain Bicycles",
-  "vehicle_model_group": "Instinct Powerplay SL",
+  "model_group": "Instinct Powerplay SL",
   "model": "Instinct Powerplay SL Alloy 70 BC Edition",
   "model_configuration": "complete",
   "type": "bike",
@@ -168,8 +168,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 480,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 480,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 700,
       "max_torque": 75,

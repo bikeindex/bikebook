@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/macina_team_872",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Macina Team",
+  "model_group": "Macina Team",
   "model": "Macina Team 872",
   "model_configuration": "complete",
   "type": "bike",
@@ -46,9 +46,7 @@
     "cable_routing": "stealth",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 118,
-    "gross_weight_rating": 142
+    }
   },
   "suspension": {
     "front": {
@@ -91,8 +89,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -106,6 +106,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 118
+    },
+    {
+      "load": "gross",
+      "weight": 142
     }
   ],
   "sizes": [

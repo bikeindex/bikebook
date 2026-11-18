@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kbo/2024/k2",
   "manufacturer": "KBO",
-  "vehicle_model_group": "K Series",
+  "model_group": "K Series",
   "model": "K2",
   "model_configuration": "complete",
   "type": "bike",
@@ -65,8 +65,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 127
+    ]
   },
   "suspension": {
     "front": {}
@@ -108,7 +107,9 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 500,
+      "battery": {
+        "capacity": 500
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -130,6 +131,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 127
     }
   ],
   "sizes": [
@@ -208,10 +215,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LCD"
     },
     {
@@ -262,6 +265,11 @@
         "width": 76.2,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V"
     }
   ]
 }

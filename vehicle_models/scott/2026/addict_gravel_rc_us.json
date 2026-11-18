@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2026/addict_gravel_rc_us",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Addict",
+  "model_group": "Addict",
   "model": "Addict Gravel RC",
   "model_configuration": "complete",
   "markets": [
@@ -85,9 +85,7 @@
       "width": 86.5,
       "spindle": "DUB"
     },
-    "derailleur_hanger": "SRAM UDH",
-    "max_weight_total": 112,
-    "gross_weight_rating": 120
+    "derailleur_hanger": "SRAM UDH"
   },
   "wheels": [
     {
@@ -125,6 +123,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 112
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

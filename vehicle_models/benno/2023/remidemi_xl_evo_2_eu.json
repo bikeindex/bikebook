@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/benno/2023/remidemi_xl_evo_2_eu",
   "manufacturer": "Benno",
-  "vehicle_model_group": "RemiDemi XL",
+  "model_group": "RemiDemi XL",
   "model": "RemiDemi XL EVO 2",
   "model_configuration": "complete",
   "markets": [
@@ -68,6 +68,13 @@
       {
         "type": "accessory",
         "description": "Rail System: Benno Plus Rails"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
     "bottom_bracket": {
@@ -136,9 +143,11 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 545,
-      "battery_chemistry": "li-ion",
-      "charging_time": 294,
+      "battery": {
+        "capacity": 545,
+        "chemistry": "li-ion",
+        "charging_time": 294
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -158,9 +167,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 60
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 60
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

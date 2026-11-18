@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/varun/2025/c14_1_us",
   "manufacturer": "Varun",
   "model": "C14-1",
@@ -58,8 +58,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "High-Carbon Steel",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "suspension": {
     "rear": {}
@@ -85,7 +84,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 281,
+      "battery": {
+        "capacity": 281
+      },
       "rated_power": 350,
       "peak_power": 500,
       "operating_modes": [
@@ -107,6 +108,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

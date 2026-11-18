@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/andsky/2024/apex_50",
   "manufacturer": "Andsky",
   "model": "Apex 50",
@@ -59,8 +59,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 159
+    ]
   },
   "suspension": {
     "front": {}
@@ -101,11 +100,13 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "battery_size": 1200,
-      "battery_options": [
-        1300
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1200,
+        "capacity_options": [
+          1300
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "max_torque": 95,
@@ -131,11 +132,13 @@
     },
     {
       "drive_wheel": "rear",
-      "battery_size": 1200,
-      "battery_options": [
-        1300
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1200,
+        "capacity_options": [
+          1300
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "max_torque": 95,
@@ -158,6 +161,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

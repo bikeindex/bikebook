@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/macfox/2024/x1s_x_bs_zay",
   "manufacturer": "Macfox",
-  "vehicle_model_group": "X1S",
+  "model_group": "X1S",
   "model": "X1S x Bs.zay",
   "model_configuration": "complete",
   "type": "bike",
@@ -56,10 +56,15 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 500,
-      "battery_info": "48V 10.4Ah",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 500,
+        "voltage": 48,
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -83,6 +88,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -95,7 +106,6 @@
           "height": 1067
         },
         "total_weight": 29.5,
-        "max_weight_rider": 100,
         "rider_height_min": 1600
       }
     }

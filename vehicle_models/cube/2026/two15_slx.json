@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/two15_slx",
   "manufacturer": "Cube",
-  "vehicle_model_group": "TWO15",
+  "model_group": "TWO15",
   "model": "TWO15 SLX",
   "model_configuration": "complete",
   "type": "bike",
@@ -38,9 +38,7 @@
       "spindle": "DUB"
     },
     "headset": "IS42/28.6 | IS42/30",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 100,
-    "gross_weight_rating": 120
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -110,6 +108,16 @@
       "rotor_diameter": 200
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "M",
@@ -117,7 +125,6 @@
         "handlebar_width": 800,
         "stem_length": 50,
         "crank_length": 165,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "diameter_seatpost": 31.6,
           "diameter_tire_maximum": 717,
@@ -134,7 +141,6 @@
         "stem_length": 50,
         "crank_length": 165,
         "total_weight": 19.1,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "diameter_seatpost": 31.6,
           "diameter_tire_maximum": 717,
@@ -150,7 +156,6 @@
         "handlebar_width": 800,
         "stem_length": 50,
         "crank_length": 165,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "diameter_seatpost": 31.6,
           "diameter_tire_maximum": 717,

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2027/fx_plus_2_midstep",
   "manufacturer": "Trek",
-  "vehicle_model_group": "FX+",
+  "model_group": "FX+",
   "model": "FX+ 2 Midstep",
   "model_configuration": "complete",
   "type": "bike",
@@ -51,11 +51,16 @@
     "mounts": [
       {
         "type": "fender"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
     ],
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 110,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -114,8 +119,12 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 520,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 520
+      },
       "rated_power": 500,
       "max_torque": 60,
       "operating_modes": [
@@ -134,6 +143,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

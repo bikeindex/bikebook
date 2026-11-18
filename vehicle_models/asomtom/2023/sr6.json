@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/asomtom/2023/sr6",
   "manufacturer": "Asomtom",
   "model": "SR6",
@@ -51,8 +51,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 181
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -89,8 +88,10 @@
   ],
   "motors": [
     {
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 85,
@@ -113,6 +114,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

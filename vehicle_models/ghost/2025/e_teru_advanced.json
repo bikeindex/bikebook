@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ghost/2025/e_teru_advanced",
   "manufacturer": "Ghost",
-  "vehicle_model_group": "E-TERU",
+  "model_group": "E-TERU",
   "model": "E-Teru Advanced",
   "model_configuration": "complete",
   "type": "bike",
@@ -90,8 +90,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 150
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -136,8 +135,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -151,6 +152,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2025/samedi_27_xroad_6_2025_sa27cx625",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Xroad",
+  "model_group": "Xroad",
   "model": "Samedi 27 Xroad 6 2025 SA27CX625",
   "model_configuration": "complete",
   "type": "bike",
@@ -48,6 +48,13 @@
       {
         "type": "bottle",
         "location": "seat_tube"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
     "bottom_bracket": {
@@ -55,9 +62,7 @@
     },
     "headset": "ZS44/28.6 | ZS56/40",
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 109,
-    "gross_weight_rating": 135
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -131,8 +136,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -147,6 +154,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 109
+    },
+    {
+      "load": "gross",
+      "weight": 135
     }
   ],
   "sizes": [

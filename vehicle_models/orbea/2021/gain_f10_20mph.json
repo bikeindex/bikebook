@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/orbea/2021/gain_f10_20mph",
   "manufacturer": "Orbea",
-  "vehicle_model_group": "Gain",
+  "model_group": "Gain",
   "model": "Gain F10 20mph",
   "model_configuration": "complete",
   "type": "bike",
@@ -99,7 +99,9 @@
       "manufacturer": "Mahle",
       "model": "X35",
       "kind": "hub_drive",
-      "battery_size": 248,
+      "battery": {
+        "capacity": 248
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [
@@ -110,9 +112,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 18
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 18
+    }
+  ],
   "sizes": [
     {
       "name": "XS"

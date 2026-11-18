@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/andsky/2026/forge_26x",
   "manufacturer": "Andsky",
-  "vehicle_model_group": "Forge",
+  "model_group": "Forge",
   "model": "Forge 26X",
   "model_configuration": "complete",
   "type": "bike",
@@ -53,8 +53,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 227
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -99,8 +98,11 @@
     {
       "drive_wheel": "front",
       "sensor_cadence": true,
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "weight": 4.5
+      },
       "peak_power": 2500,
       "max_torque": 210,
       "operating_modes": [
@@ -126,8 +128,11 @@
     {
       "drive_wheel": "rear",
       "sensor_cadence": true,
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "weight": 4.5
+      },
       "peak_power": 2500,
       "max_torque": 210,
       "operating_modes": [
@@ -149,6 +154,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [

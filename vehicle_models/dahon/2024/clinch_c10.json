@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dahon/2024/clinch_c10",
   "manufacturer": "Dahon",
   "model": "Clinch C10",
@@ -22,7 +22,8 @@
   },
   "frame": {
     "material": "carbon",
-    "folding": "half_fold"
+    "folding": "half_fold",
+    "seatpost_diameter": 33.9
   },
   "wheels": [
     {
@@ -60,6 +61,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 105
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -70,7 +77,6 @@
           "height": 600
         },
         "total_weight": 9.7,
-        "max_weight_rider": 105,
         "rider_height_min": 1500,
         "rider_height_max": 1900
       }
@@ -165,7 +171,11 @@
     {
       "type": "seatpost",
       "manufacturer": "Dahon",
-      "description": "DAHON Custom Carbon 33.9 mm x 580 mm"
+      "description": "DAHON Custom Carbon 33.9 mm x 580 mm",
+      "dimensions": {
+        "length": 580,
+        "diameter": 33.9
+      }
     },
     {
       "type": "shifter",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/focus/2024/vam_sl_9_9",
   "manufacturer": "Focus",
-  "vehicle_model_group": "Vam²",
+  "model_group": "Vam²",
   "model": "Vam² Sl 9.9",
   "model_configuration": "complete",
   "type": "bike",
@@ -83,9 +83,7 @@
       "spindle": "ETOR Drive",
       "spindle_length": 135
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 117,
-    "gross_weight_rating": 135
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -153,8 +151,10 @@
       "kind": "mid_drive",
       "spindle": "ETOR Drive",
       "spindle_length": 135,
-      "battery_size": 430,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 430,
+        "chemistry": "li-ion"
+      },
       "peak_power": 450,
       "max_torque": 60,
       "operating_modes": [
@@ -166,6 +166,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 117
+    },
+    {
+      "load": "gross",
+      "weight": 135
     }
   ],
   "sizes": [

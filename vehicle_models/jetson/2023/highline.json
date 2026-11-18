@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2023/highline",
   "manufacturer": "Jetson",
   "model": "Highline",
@@ -68,9 +68,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 56,
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 56,
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 200,
       "operating_modes": [
         {
@@ -82,6 +84,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 66
     }
   ],
   "sizes": [
@@ -99,7 +107,6 @@
           "height": 267
         },
         "total_weight": 6.4,
-        "max_weight_rider": 66,
         "rider_age_min": 8
       }
     }

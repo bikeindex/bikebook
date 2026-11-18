@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gyroor/2024/c1s",
   "manufacturer": "Gyroor",
-  "vehicle_model_group": "C1",
+  "model_group": "C1",
   "model": "C1S",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -69,10 +69,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 281,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 281,
+        "charging_time": 300
+      },
       "rated_power": 550,
       "peak_power": 800,
       "operating_modes": [
@@ -90,9 +94,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 18.14
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "cargo",
+      "weight": 18.14
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -103,7 +114,6 @@
           "height": 533
         },
         "total_weight": 22,
-        "max_weight_rider": 120,
         "rider_height_min": 1549,
         "rider_height_max": 1854,
         "rider_age_min": 12

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kent/2024/mtx_20",
   "manufacturer": "Kent",
-  "vehicle_model_group": "MTX",
+  "model_group": "MTX",
   "model": "MTX 20",
   "model_configuration": "complete",
   "type": "bike",
@@ -106,12 +106,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 68
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 10.9,
-        "max_weight_rider": 68,
         "rider_height_min": 1219,
         "rider_height_max": 1346,
         "rider_age_min": 6,

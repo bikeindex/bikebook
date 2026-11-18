@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/frey/2023/dopamine_elite",
   "manufacturer": "FREY",
-  "vehicle_model_group": "Dopamine",
+  "model_group": "Dopamine",
   "model": "Dopamine Elite",
   "model_configuration": "complete",
   "type": "bike",
@@ -83,8 +83,10 @@
     {
       "manufacturer": "Bafang",
       "model": "M510",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 95,
       "operating_modes": [

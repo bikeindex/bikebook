@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aima/2025/big_sur_u",
   "manufacturer": "AIMA E-Bike",
-  "vehicle_model_group": "Big Sur",
+  "model_group": "Big Sur",
   "model": "Big Sur U",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -50,8 +50,7 @@
       }
     ],
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 181
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -102,11 +101,16 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG",
-      "charging_time": 300,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 720,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 300
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -127,6 +131,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

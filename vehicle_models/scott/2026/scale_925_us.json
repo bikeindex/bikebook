@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2026/scale_925_us",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Scale",
+  "model_group": "Scale",
   "model": "Scale 925",
   "model_configuration": "complete",
   "markets": [
@@ -90,9 +90,7 @@
       "spindle": "24mm"
     },
     "seatpost_diameter": 31.6,
-    "derailleur_hanger": "SRAM UDH",
-    "max_weight_total": 117,
-    "gross_weight_rating": 130
+    "derailleur_hanger": "SRAM UDH"
   },
   "suspension": {
     "front": {
@@ -159,6 +157,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 117
+    },
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [

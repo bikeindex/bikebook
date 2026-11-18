@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/haoqie/2023/camel",
   "manufacturer": "Haoqie",
   "model": "Camel",
@@ -55,8 +55,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 204
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {}
@@ -93,8 +92,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 1334,
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1334,
+        "charging_time": 540
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "operating_modes": [
@@ -114,6 +115,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

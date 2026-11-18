@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/propain/2024/frameset_terrel_cf",
   "manufacturer": "Propain",
-  "vehicle_model_group": "Terrel",
+  "model_group": "Terrel",
   "model": "Frameset Terrel CF",
   "model_configuration": "frame",
   "type": "bike",
@@ -57,8 +57,7 @@
     "seatpost_clamp_diameter": 31.8,
     "front_derailleur_mount": "Braze-on",
     "derailleur_hanger": "UDH",
-    "max_fork_travel": 40,
-    "gross_weight_rating": 130
+    "max_fork_travel": 40
   },
   "wheels": [
     {
@@ -70,9 +69,16 @@
       "tire_width_max": 50
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 3
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 3
+    },
+    {
+      "load": "gross",
+      "weight": 130
+    }
+  ],
   "sizes": [
     {
       "name": "XS",

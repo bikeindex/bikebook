@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/black_rock/2021/shaka",
   "manufacturer": "Black Rock Bikes",
   "model": "Shaka",
@@ -34,8 +34,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 113
+    "material_detail": "6061 Aluminum"
   },
   "wheels": [
     {
@@ -63,9 +62,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 768,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 768,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "max_torque": 85,
       "operating_modes": [
@@ -84,6 +85,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
     }
   ],
   "sizes": [

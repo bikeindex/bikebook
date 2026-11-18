@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fairlight/2025/strael_4_0_frameset",
   "manufacturer": "Fairlight",
-  "vehicle_model_group": "Strael",
+  "model_group": "Strael",
   "model": "Strael 4.0 Frameset",
   "model_configuration": "frame_fork",
   "type": "bike",
@@ -13,6 +13,7 @@
   "stock_photo": "https://bikebook.bikeindex.org/fairlight/2025/strael_4_0_frameset.jpg",
   "description": "Road bike or All-Road bike? Why choose?\n\nOur flagship model, Strael, now in its fourth iteration, has been crowned road.cc Road Bike of the Year 2025/26 and All-Road Bike of the Year 2025/26 – an unprecedented double. Designed for tarmac-focused, year-round riding in all conditions, but with enough tyre clearance to take the sting out of broken, imperfect roads.\n\nThis frame is the culmination of a 2 year collaboration with Reynolds Technology. New tooling created from scratch. Making an entirely new tube set for this frame: ‘853 Road DZB’. Resulting in a lighter and stronger frame.\n\nIt’s a fantastic product that showcases what is possible with the material, while offering unrivalled functionality and detailing.\n\n“The closest bike to perfection I have ever ridden.” – Stu Kerton – Senior Product Reviewer – Road.cc – 5 STARS – June 2025.\n\n“It’s a perfect bike.” – Will Jones – Senior Tech Writer – Cycling News – 5 STARS – September 2025.\n\n“The Strael 4.0 is in a class of one.” – Ashley Quinlan – Road Tech Lead – Bike Radar – 5 STARS – November 2025.",
   "first_year": 2025,
+  "final_year": 2026,
   "years": {
     "2026": {
       "original_msrp": 125000,
@@ -87,8 +88,7 @@
     "headset": "ZS44/28.6 | EC44/40",
     "seatpost_diameter": 27.2,
     "front_derailleur_mount": "28.6mm clamp",
-    "max_chainring": 52,
-    "max_weight_total": 105
+    "max_chainring": 52
   },
   "wheels": [
     {
@@ -122,9 +122,28 @@
       "rotor_diameter_max": 160
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 15
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 105
+    },
+    {
+      "load": "rider",
+      "weight": 115,
+      "sizes": [
+        "61R",
+        "61T"
+      ]
+    },
+    {
+      "load": "cargo",
+      "weight": 15
+    },
+    {
+      "load": "payload",
+      "weight": 105
+    }
+  ],
   "sizes": [
     {
       "name": "51R",
@@ -143,8 +162,7 @@
         "bb_drop": 74,
         "fork_rake": 45,
         "trail": 68,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 105
+        "fork_length_a2c": 381
       }
     },
     {
@@ -164,8 +182,7 @@
         "bb_drop": 74,
         "fork_rake": 45,
         "trail": 68,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 105
+        "fork_length_a2c": 381
       }
     },
     {
@@ -185,8 +202,7 @@
         "bb_drop": 72,
         "fork_rake": 45,
         "trail": 63,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 105
+        "fork_length_a2c": 381
       }
     },
     {
@@ -206,8 +222,7 @@
         "bb_drop": 72,
         "fork_rake": 45,
         "trail": 63,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 105
+        "fork_length_a2c": 381
       }
     },
     {
@@ -227,8 +242,7 @@
         "bb_drop": 72,
         "fork_rake": 45,
         "trail": 58,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 105
+        "fork_length_a2c": 381
       }
     },
     {
@@ -248,8 +262,7 @@
         "bb_drop": 72,
         "fork_rake": 45,
         "trail": 58,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 105
+        "fork_length_a2c": 381
       }
     },
     {
@@ -269,8 +282,7 @@
         "bb_drop": 72,
         "fork_rake": 45,
         "trail": 57,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 105
+        "fork_length_a2c": 381
       }
     },
     {
@@ -290,8 +302,7 @@
         "bb_drop": 72,
         "fork_rake": 45,
         "trail": 57,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 105
+        "fork_length_a2c": 381
       }
     },
     {
@@ -311,8 +322,7 @@
         "bb_drop": 72,
         "fork_rake": 45,
         "trail": 57,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 115
+        "fork_length_a2c": 381
       }
     },
     {
@@ -332,8 +342,7 @@
         "bb_drop": 72,
         "fork_rake": 45,
         "trail": 57,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 115
+        "fork_length_a2c": 381
       }
     }
   ],

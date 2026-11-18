@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2022/allant_plus_9_9s",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Allant+",
+  "model_group": "Allant+",
   "model": "Allant+ 9.9S",
   "model_configuration": "complete",
   "type": "bike",
@@ -51,9 +51,7 @@
       }
     ],
     "cable_routing": "stealth",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 113,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -115,8 +113,10 @@
       "manufacturer": "Bosch",
       "model": "Performance Speed",
       "kind": "mid_drive",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "max_torque": 85,
       "operating_modes": [
         {
@@ -128,6 +128,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

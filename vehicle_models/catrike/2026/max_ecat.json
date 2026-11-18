@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/catrike/2026/max_ecat",
   "manufacturer": "Catrike",
-  "vehicle_model_group": "Max",
+  "model_group": "Max",
   "model": "Max eCAT",
   "model_configuration": "complete",
   "type": "recumbent",
@@ -141,9 +141,13 @@
       "model": "BDU346Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "certification": "UL 2849",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -157,6 +161,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 193
     }
   ],
   "sizes": [
@@ -174,7 +184,6 @@
           "height": 819
         },
         "total_weight": 26,
-        "max_weight_rider": 193,
         "extra_measurements": {
           "ground_clearance": 152,
           "height_w_seat_folded": 641,

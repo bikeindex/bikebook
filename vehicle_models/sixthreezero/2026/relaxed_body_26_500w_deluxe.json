@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/relaxed_body_26_500w_deluxe",
   "manufacturer": "sixthreezero",
-  "vehicle_model_group": "Relaxed Body",
+  "model_group": "Relaxed Body",
   "model": "Relaxed Body 26 500W Deluxe",
   "model_configuration": "complete",
   "type": "bike",
@@ -78,8 +78,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "operating_modes": [
         {

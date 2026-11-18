@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2023/load_60_touring_hs_us",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Load 60",
+  "model_group": "Load 60",
   "model": "Load 60 touring HS",
   "model_configuration": "complete",
   "markets": [
@@ -74,9 +74,7 @@
       }
     ],
     "seatpost_diameter": 34.9,
-    "seatpost_clamp_diameter": 40,
-    "max_weight_total": 164,
-    "gross_weight_rating": 200
+    "seatpost_clamp_diameter": 40
   },
   "suspension": {
     "front": {
@@ -142,7 +140,9 @@
       "model_group": "Cargo Line Speed",
       "kind": "mid_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 500,
+      "battery": {
+        "capacity": 500
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [
@@ -160,6 +160,20 @@
   "cargo": {
     "length": 600
   },
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 164
+    },
+    {
+      "load": "gross",
+      "weight": 200
+    },
+    {
+      "load": "rear_rack",
+      "weight": 15
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -185,8 +199,7 @@
           "top_tube_height": 625,
           "top_tube_length_range": "590-770",
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_luggage_rack_kg": 15
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     }

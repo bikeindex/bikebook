@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evelo/2022/galaxy_lux",
   "manufacturer": "Evelo",
+  "model_group": "Galaxy",
   "model": "Galaxy Lux",
   "model_configuration": "complete",
   "type": "bike",
@@ -74,7 +75,9 @@
       "kind": "mid_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 557,
+      "battery": {
+        "capacity": 557
+      },
       "rated_power": 600,
       "peak_power": 980,
       "max_torque": 105,
@@ -99,6 +102,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -110,7 +119,6 @@
         "dimensions": {
           "length": 1702
         },
-        "max_weight_rider": 159,
         "rider_height_min": 1473,
         "rider_height_max": 1778,
         "extra_measurements": {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2021/barron_21_speed",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Barron",
+  "model_group": "Barron",
   "model": "Barron 21 Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -145,12 +145,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "16in - S",
       "geometry": {
         "standover": 749,
-        "max_weight_rider": 113,
         "rider_height_min": 1651,
         "rider_height_max": 1727
       }
@@ -159,7 +164,6 @@
       "name": "18in - M",
       "geometry": {
         "standover": 787,
-        "max_weight_rider": 113,
         "rider_height_min": 1753,
         "rider_height_max": 1803
       }
@@ -168,7 +172,6 @@
       "name": "20in - L",
       "geometry": {
         "standover": 813,
-        "max_weight_rider": 113,
         "rider_height_min": 1829,
         "rider_height_max": 1880
       }
@@ -177,7 +180,6 @@
       "name": "22in - XL",
       "geometry": {
         "standover": 902,
-        "max_weight_rider": 113,
         "rider_height_min": 1905
       }
     }

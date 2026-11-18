@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/qlife/2026/cityone_plus_step_thru",
   "manufacturer": "Qlife",
   "model": "Cityone Plus Step-Thru",
@@ -143,8 +143,7 @@
   },
   "frame": {
     "material": "steel",
-    "top_tube": "step_through",
-    "max_weight_total": 159
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -185,8 +184,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 720,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 720,
+        "charging_time": 420
+      },
       "peak_power": 1200,
       "operating_modes": [
         {
@@ -201,9 +202,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.43
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.43
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

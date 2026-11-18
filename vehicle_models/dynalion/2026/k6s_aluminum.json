@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dynalion/2026/k6s_aluminum",
   "manufacturer": "Dynalion",
-  "vehicle_model_group": "K6S",
+  "model_group": "K6S",
   "model": "K6S Aluminum",
   "model_configuration": "complete",
   "type": "bike",
@@ -81,9 +81,13 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "EN 15194",
-      "battery_size": 768,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "EN 15194"
+      ],
+      "battery": {
+        "capacity": 768,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "operating_modes": [
         {

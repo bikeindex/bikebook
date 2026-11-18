@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wicked_thumb/2026/moonshiner_st_custom_shop_cargo",
   "manufacturer": "Wicked Thumb",
   "model": "Moonshiner ST Custom Shop Cargo",
@@ -36,8 +36,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aircraft Aluminum",
-    "headset": "ZS44/28.6 | ZS44/30",
-    "max_weight_total": 204
+    "headset": "ZS44/28.6 | ZS44/30"
   },
   "suspension": {
     "front": {
@@ -87,9 +86,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 1040,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 50E cells",
+      "battery": {
+        "capacity": 1040,
+        "chemistry": "li-ion",
+        "cells": "Samsung 50E"
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 120,
@@ -110,6 +111,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [
@@ -215,10 +222,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "750W-1500W brushless geared rear hub motor - 120 Nm torque, 5:1 planetary gear reduction"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "52V, 30amp"
     },
     {
       "type": "e_vehicle_remote",
@@ -331,6 +334,11 @@
       "type": "unknown",
       "type_detail": "STANCE",
       "description": "1.75\" Seat Tube, 25.25\" Reach, 35\" Minimum Saddle Height"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "CONTROLLER",
+      "description": "52V, 30amp"
     }
   ]
 }

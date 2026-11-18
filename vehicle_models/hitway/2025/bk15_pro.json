@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hitway/2025/bk15_pro",
   "manufacturer": "Hitway",
-  "vehicle_model_group": "BK15",
+  "model_group": "BK15",
   "model": "BK15 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -28,7 +28,6 @@
           "variants": [
             {
               "sku": "HW-BK15-PRO-BLACK",
-              "gtin": "08714864795621",
               "size": "One Size"
             }
           ]
@@ -42,7 +41,6 @@
           "variants": [
             {
               "sku": "HW-BK15-PRO-BLUE",
-              "gtin": "08714864795621",
               "size": "One Size"
             }
           ]
@@ -56,7 +54,6 @@
           "variants": [
             {
               "sku": "HW-BK15-PRO-WHITE",
-              "gtin": "08714864795621",
               "size": "One Size"
             }
           ]
@@ -104,9 +101,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 468,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 468,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 250,
       "operating_modes": [
         {

@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kasen/2023/ranger_2_0",
   "manufacturer": "Kasen",
+  "model_group": "Ranger",
   "model": "Ranger 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -81,8 +82,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Double-Butted Aluminum",
-    "max_weight_total": 172
+    "material_detail": "6061 Double-Butted Aluminum"
   },
   "suspension": {
     "front": {
@@ -136,12 +136,14 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 720,
-      "battery_options": [
-        960
-      ],
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 720,
+        "capacity_options": [
+          960
+        ],
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -163,6 +165,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 172
     }
   ],
   "sizes": [

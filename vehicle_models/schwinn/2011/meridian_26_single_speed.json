@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/schwinn/2011/meridian_26_single_speed",
   "manufacturer": "Schwinn",
   "model": "Meridian 26 Single Speed",
@@ -56,9 +56,14 @@
   },
   "brakes": [
     {
+      "type": "linear_pull",
+      "position": [
+        "front"
+      ]
+    },
+    {
       "type": "band_brake",
       "position": [
-        "front",
         "rear"
       ]
     }

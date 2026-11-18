@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/felt/2016/lebowsk_e_20",
   "manufacturer": "Felt",
-  "vehicle_model_group": "Lebowsk-e",
+  "model_group": "Lebowsk-e",
   "model": "Lebowsk-e 20",
   "model_configuration": "complete",
   "type": "bike",
@@ -119,8 +119,10 @@
       "manufacturer": "Bosch",
       "model": "Performance",
       "kind": "mid_drive",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {

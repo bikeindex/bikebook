@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/marsant_s/2022/p4",
   "manufacturer": "Marsant's",
   "model": "P4",
@@ -70,8 +70,7 @@
   "frame": {
     "material": "magnesium",
     "folding": "half_fold",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 110
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -100,11 +99,13 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 378,
-      "battery_options": [
-        504
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 378,
+        "capacity_options": [
+          504
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -126,6 +127,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/schwinn/2025/regent_electric_bike",
   "manufacturer": "Schwinn",
   "model": "Regent Electric Bike",
@@ -93,9 +93,13 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 350,
       "operating_modes": [
         {

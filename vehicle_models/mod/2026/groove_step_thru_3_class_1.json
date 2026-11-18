@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mod/2026/groove_step_thru_3_class_1",
   "manufacturer": "MOD Bikes",
-  "vehicle_model_group": "Groove",
+  "model_group": "Groove",
   "model": "Groove Step-Thru 3 Class 1",
   "model_configuration": "complete",
   "type": "bike",
@@ -119,11 +119,15 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
+      "certifications": [
+        "UL 2271"
+      ],
       "water_rating": "IP44",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "max_torque": 69,
       "operating_modes": [

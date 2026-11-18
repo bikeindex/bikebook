@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gt/2023/eforce_current",
   "manufacturer": "GT Bicycles",
-  "vehicle_model_group": "eForce",
+  "model_group": "eForce",
   "model": "eForce Current",
   "model_configuration": "complete",
   "type": "bike",
@@ -144,9 +144,13 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [
@@ -159,6 +163,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 138
     }
   ],
   "sizes": [
@@ -182,7 +192,6 @@
         "trail": 121,
         "travel_rear": 150,
         "dropper_travel": 120,
-        "max_weight_rider": 138,
         "rider_height_min": 1524,
         "rider_height_max": 1676
       }
@@ -207,7 +216,6 @@
         "trail": 121,
         "travel_rear": 150,
         "dropper_travel": 150,
-        "max_weight_rider": 138,
         "rider_height_min": 1651,
         "rider_height_max": 1803
       }
@@ -232,7 +240,6 @@
         "trail": 121,
         "travel_rear": 150,
         "dropper_travel": 170,
-        "max_weight_rider": 138,
         "rider_height_min": 1778,
         "rider_height_max": 1880
       }
@@ -257,7 +264,6 @@
         "trail": 121,
         "travel_rear": 150,
         "dropper_travel": 170,
-        "max_weight_rider": 138,
         "rider_height_min": 1854,
         "rider_height_max": 1981
       }

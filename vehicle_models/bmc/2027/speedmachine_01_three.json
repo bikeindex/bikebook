@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2027/speedmachine_01_three",
   "manufacturer": "BMC",
-  "vehicle_model_group": "Speedmachine",
+  "model_group": "Speedmachine",
   "model": "Speedmachine 01 THREE",
   "model_configuration": "complete",
   "markets": [
@@ -72,9 +72,7 @@
     "material": "carbon",
     "bottom_bracket": {
       "shell": "T47"
-    },
-    "max_weight_total": 99,
-    "gross_weight_rating": 110
+    }
   },
   "wheels": [
     {
@@ -127,6 +125,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 99
+    },
+    {
+      "load": "gross",
+      "weight": 110
     }
   ],
   "sizes": [

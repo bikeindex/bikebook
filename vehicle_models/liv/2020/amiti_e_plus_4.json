@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/liv/2020/amiti_e_plus_4",
   "manufacturer": "Liv",
-  "vehicle_model_group": "Amiti",
+  "model_group": "Amiti",
   "model": "Amiti E+ 4",
   "model_configuration": "complete",
   "type": "bike",
@@ -118,8 +118,10 @@
       "model": "SyncDrive Sport",
       "kind": "mid_drive",
       "spindle": "square taper",
-      "battery_size": 407,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 407,
+        "chemistry": "li-ion"
+      },
       "max_torque": 70,
       "operating_modes": [
         {

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wildeway/2026/mantis",
   "manufacturer": "Wildeway",
   "model": "Mantis",
@@ -48,8 +48,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 120
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {
@@ -100,10 +99,13 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IPX65",
-      "battery_size": 1800,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung/LG 21700 cell",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1800,
+        "voltage": 60,
+        "chemistry": "li-ion",
+        "cells": "Samsung/LG 21700",
+        "charging_time": 540
+      },
       "peak_power": 4000,
       "max_torque": 100,
       "operating_modes": [
@@ -135,6 +137,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

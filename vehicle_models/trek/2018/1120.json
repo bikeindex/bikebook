@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2018/1120",
   "manufacturer": "Trek",
-  "vehicle_model_group": "1120",
+  "model_group": "1120",
   "model": "1120",
   "model_configuration": "complete",
   "type": "bike",
@@ -65,9 +65,7 @@
       "spindle": "24mm"
     },
     "headset": "IS42/28.6 | IS52/40",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 121,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -118,6 +116,16 @@
         "rear"
       ],
       "rotor_diameter": 180
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 121
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

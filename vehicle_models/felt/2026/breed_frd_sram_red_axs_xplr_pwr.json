@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/felt/2026/breed_frd_sram_red_axs_xplr_pwr",
   "manufacturer": "Felt",
-  "vehicle_model_group": "Breed",
+  "model_group": "Breed",
   "model": "BREED FRD SRAM RED AXS XPLR PWR",
   "model_configuration": "complete",
   "type": "bike",
@@ -33,9 +33,7 @@
       "shell": "BSA",
       "width": 68,
       "spindle": "DUB"
-    },
-    "max_weight_total": 113,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -73,6 +71,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

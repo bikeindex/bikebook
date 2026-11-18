@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2019/cujo_neo_130_2",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Cujo",
+  "model_group": "Cujo",
   "model": "Cujo Neo 130 2",
   "model_configuration": "complete",
   "markets": [
@@ -163,8 +163,10 @@
       "kind": "mid_drive",
       "spindle": "Shimano E8000",
       "sensor_cadence": true,
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 70,
       "operating_modes": [

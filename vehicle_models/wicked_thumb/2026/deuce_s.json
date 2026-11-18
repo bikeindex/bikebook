@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wicked_thumb/2026/deuce_s",
   "manufacturer": "Wicked Thumb",
-  "vehicle_model_group": "Deuce",
+  "model_group": "Deuce",
   "model": "Deuce S",
   "model_configuration": "complete",
   "type": "bike",
@@ -133,9 +133,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 50E cells",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "Samsung 50E"
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -264,10 +266,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V, 25amp"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "C900E-USB 3.8” color LCD Display w/ USB Port"
     },
     {
@@ -379,6 +377,11 @@
       "type": "unknown",
       "type_detail": "STANCE",
       "description": "1.75\" Seat Tube, 25.25\" Reach, 28\" Minimum Saddle Height"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "CONTROLLER",
+      "description": "48V, 25amp"
     }
   ]
 }

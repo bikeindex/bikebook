@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2024/beaumont_plus_step_through_8_speed",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Beaumont",
+  "model_group": "Beaumont",
   "model": "Beaumont Plus Step Through 8 Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -141,16 +141,22 @@
       "rotor_diameter": 160
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 18.14
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    },
+    {
+      "load": "cargo",
+      "weight": 18.14
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "standover": 491,
         "crank_length": 170,
-        "max_weight_rider": 113,
         "rider_height_min": 1524,
         "rider_height_max": 1778
       }

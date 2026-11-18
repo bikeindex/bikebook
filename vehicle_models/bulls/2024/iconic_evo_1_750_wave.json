@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2024/iconic_evo_1_750_wave",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Iconic EVO",
+  "model_group": "Iconic EVO",
   "model": "Iconic EVO 1 750 Wave",
   "model_configuration": "complete",
   "type": "bike",
@@ -99,10 +99,14 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "certification": "UL 2849",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

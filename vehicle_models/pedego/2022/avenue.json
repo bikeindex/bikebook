@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pedego/2022/avenue",
   "manufacturer": "Pedego",
-  "vehicle_model_group": "Avenue",
+  "model_group": "Avenue",
   "model": "Avenue",
   "model_configuration": "complete",
   "type": "bike",
@@ -88,11 +88,13 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 499,
-      "battery_options": [
-        672
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 499,
+        "capacity_options": [
+          672
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 45,
       "operating_modes": [

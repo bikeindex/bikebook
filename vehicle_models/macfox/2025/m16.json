@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/macfox/2025/m16",
   "manufacturer": "Macfox",
   "model": "M16",
@@ -87,10 +87,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
-      "battery_size": 499,
-      "battery_info": "48V 10.4Ah",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 499,
+        "voltage": 48,
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -114,6 +118,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -126,7 +136,6 @@
           "height": 980
         },
         "total_weight": 29.8,
-        "max_weight_rider": 100,
         "rider_height_min": 1194
       }
     }

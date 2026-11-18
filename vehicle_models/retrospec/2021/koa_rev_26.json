@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2021/koa_rev_26",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Koa Rev",
+  "model_group": "Koa Rev",
   "model": "Koa Rev 26",
   "model_configuration": "complete",
   "type": "bike",
@@ -129,7 +129,9 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -152,13 +154,18 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "1 size 26\"",
       "geometry": {
         "standover": 864,
         "total_weight": 30.8,
-        "max_weight_rider": 100,
         "rider_height_min": 1524,
         "rider_height_max": 1930
       }

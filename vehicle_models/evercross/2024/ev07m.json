@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2024/ev07m",
   "manufacturer": "Evercross",
   "model": "EV07M",
@@ -53,8 +53,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 60
+    "material": "steel"
   },
   "wheels": [
     {
@@ -67,7 +66,9 @@
   ],
   "motors": [
     {
-      "battery_size": 101,
+      "battery": {
+        "capacity": 101
+      },
       "rated_power": 300,
       "operating_modes": [
         {
@@ -77,6 +78,12 @@
           "range_claimed": 10
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 60
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/e_lux/2023/malibu_stepthru",
   "manufacturer": "E-Lux",
-  "vehicle_model_group": "Malibu",
+  "model_group": "Malibu",
   "model": "Malibu Stepthru",
   "model_configuration": "complete",
   "type": "bike",
@@ -105,8 +105,7 @@
   },
   "frame": {
     "material": "steel",
-    "top_tube": "step_through",
-    "max_weight_total": 132
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {}
@@ -142,7 +141,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 696,
+      "battery": {
+        "capacity": 696
+      },
       "rated_power": 500,
       "peak_power": 960,
       "operating_modes": [
@@ -161,6 +162,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 132
     }
   ],
   "sizes": [

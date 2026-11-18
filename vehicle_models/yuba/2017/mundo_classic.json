@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/yuba/2017/mundo_classic",
   "manufacturer": "Yuba",
-  "vehicle_model_group": "Mundo",
+  "model_group": "Mundo",
   "model": "Mundo Classic",
   "model_configuration": "complete",
   "type": "cargo_bike_rear",
@@ -89,8 +89,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 31.8,
-    "max_weight_total": 200
+    "seatpost_diameter": 31.8
   },
   "wheels": [
     {
@@ -130,9 +129,16 @@
       "caliper_mount": "Brake Bosses"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 21.77
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 21.77
+    },
+    {
+      "load": "payload",
+      "weight": 200
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

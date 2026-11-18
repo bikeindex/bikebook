@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2024/turbo_creo_2_comp_e5_sram_apex_eagle_ca",
   "manufacturer": "Specialized",
-  "vehicle_model_group": "Turbo Creo",
+  "model_group": "Turbo Creo",
   "model": "Turbo Creo 2 Comp E5 - SRAM Apex Eagle",
   "model_configuration": "complete",
   "markets": [
@@ -227,9 +227,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 320,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 320,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

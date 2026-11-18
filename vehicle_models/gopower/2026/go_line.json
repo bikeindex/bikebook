@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gopower/2026/go_line",
   "manufacturer": "Gopower",
-  "vehicle_model_group": "Go Line",
+  "model_group": "Go Line",
   "model": "Go Line",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -68,8 +68,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 187,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 187,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -79,6 +81,12 @@
           "range_claimed": 19
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
     }
   ],
   "sizes": [
@@ -94,8 +102,7 @@
           "length": 1092.2,
           "width": 508,
           "height": 508
-        },
-        "max_weight_rider": 100
+        }
       }
     }
   ],

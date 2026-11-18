@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lectric/2024/xp_lite2_jw_black_long_range",
   "manufacturer": "Lectric eBikes",
-  "vehicle_model_group": "XP Lite2",
+  "model_group": "XP Lite2",
   "model": "XP Lite2 JW Black Long-Range",
   "model_configuration": "complete",
   "type": "bike",
@@ -62,8 +62,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 125
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -99,11 +98,16 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2271, UL 2849",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 300,
       "peak_power": 819,
       "max_torque": 28,
@@ -122,6 +126,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

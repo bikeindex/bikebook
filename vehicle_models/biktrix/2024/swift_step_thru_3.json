@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biktrix/2024/swift_step_thru_3",
   "manufacturer": "Biktrix",
-  "vehicle_model_group": "Swift",
+  "model_group": "Swift",
   "model": "Swift Step-Thru 3",
   "model_configuration": "complete",
   "type": "bike",
@@ -107,8 +107,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "top_tube": "step_through",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 120
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -196,7 +195,9 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 1008,
+      "battery": {
+        "capacity": 1008
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -214,6 +215,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

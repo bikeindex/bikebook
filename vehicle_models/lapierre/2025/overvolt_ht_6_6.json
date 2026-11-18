@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lapierre/2025/overvolt_ht_6_6",
   "manufacturer": "Lapierre",
-  "vehicle_model_group": "Overvolt HT",
+  "model_group": "Overvolt HT",
   "model": "Overvolt HT 6.6",
   "model_configuration": "complete",
   "type": "bike",
@@ -14,7 +14,6 @@
   "stock_photo": "https://bikebook.bikeindex.org/lapierre/2025/overvolt_ht_6_6.png",
   "description": "Combining the handling of a hardtail mountain bike with the\nefficiency of an e-bike, these hardtail e-mountain bikes have been\ndeveloped to help you get started on the trails and discover the joy\nof electric mountain biking.",
   "first_year": 2025,
-  "final_year": 2026,
   "years": {
     "2026": {
       "original_msrp": 329900,
@@ -60,8 +59,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 120
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -116,8 +114,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -131,6 +131,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/coswheel/2024/y16",
   "manufacturer": "Coswheel",
   "model": "Y16",
@@ -27,8 +27,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -70,10 +69,12 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 Cells",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "18650",
+        "charging_time": 480
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "max_torque": 50,
@@ -95,6 +96,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -149,10 +156,6 @@
     {
       "type": "e_vehicle_remote",
       "description": "Easy Read LCD Display"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V 22A"
     },
     {
       "type": "fork",
@@ -216,6 +219,11 @@
         "width": 101.6,
         "diameter": 305
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V 22A"
     },
     {
       "type": "unknown",

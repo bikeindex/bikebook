@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lapierre/2025/overvolt_tr_4_6",
   "manufacturer": "Lapierre",
-  "vehicle_model_group": "Overvolt TR",
+  "model_group": "Overvolt TR",
   "model": "Overvolt TR 4.6",
   "model_configuration": "complete",
   "type": "bike",
@@ -15,7 +15,6 @@
   "geometry_photo": "https://bikebook.bikeindex.org/lapierre/2025/overvolt_tr_4_6_geometry.svg",
   "description": "Designed to help you roam mountain trails and rugged tracks without limits.\nThe Overvolt TR, more than just a trail MTB:\n• A full-suspension bike enabling aggressive riding on trails\n• Versatile and enduring bike\n• Motorization that pushes the limits",
   "first_year": 2025,
-  "final_year": 2026,
   "years": {
     "2026": {
       "original_msrp": 449900,
@@ -61,8 +60,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 120
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -121,8 +119,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -136,6 +136,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

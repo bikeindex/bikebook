@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/micargi/2025/tracer_raptor_pro_ds",
   "manufacturer": "Micargi",
-  "vehicle_model_group": "Raptor",
+  "model_group": "Raptor",
   "model": "Tracer Raptor Pro DS",
   "model_configuration": "complete",
   "type": "bike",
@@ -148,8 +148,10 @@
   ],
   "motors": [
     {
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 800,
       "operating_modes": [
         {

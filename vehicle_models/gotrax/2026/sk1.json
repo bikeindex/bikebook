@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2026/sk1",
   "manufacturer": "GOTRAX",
   "model": "SK1",
@@ -111,7 +111,9 @@
   ],
   "motors": [
     {
-      "battery_info": "12.8V",
+      "battery": {
+        "voltage": 12.8
+      },
       "operating_modes": [
         {
           "mode": "throttle",
@@ -119,6 +121,12 @@
           "max_speed": 8
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 50
     }
   ],
   "sizes": [
@@ -131,7 +139,6 @@
           "height": 760
         },
         "total_weight": 3.5,
-        "max_weight_rider": 50,
         "extra_measurements": {
           "handlebar_height_max": 770,
           "handlebar_height_min": 640

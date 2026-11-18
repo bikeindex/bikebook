@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mukkpet/2026/suburban_eu",
   "manufacturer": "Mukkpet",
-  "vehicle_model_group": "Suburban",
+  "model_group": "Suburban",
   "model": "Suburban",
   "model_configuration": "complete",
   "markets": [
@@ -39,8 +39,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 150
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -71,7 +70,9 @@
   ],
   "motors": [
     {
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -93,6 +94,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

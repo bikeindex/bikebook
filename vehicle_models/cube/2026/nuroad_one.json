@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/nuroad_one",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Nuroad",
+  "model_group": "Nuroad",
   "model": "Nuroad ONE",
   "model_configuration": "complete",
   "type": "bike",
@@ -39,9 +39,7 @@
       "width": 68
     },
     "headset": "IS42/28.6 | IS52/40",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 102,
-    "gross_weight_rating": 115
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -95,6 +93,16 @@
       "caliper_mount": "Disc Flat Mount"
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 115
+    }
+  ],
   "sizes": [
     {
       "name": "XXS",
@@ -111,7 +119,6 @@
         "handlebar_width": 400,
         "stem_length": 80,
         "crank_length": 165,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 703
@@ -133,7 +140,6 @@
         "handlebar_width": 400,
         "stem_length": 80,
         "crank_length": 165,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 756
@@ -156,7 +162,6 @@
         "stem_length": 80,
         "crank_length": 165,
         "total_weight": 12.3,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 785
@@ -178,7 +183,6 @@
         "handlebar_width": 420,
         "stem_length": 90,
         "crank_length": 170,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 816
@@ -200,7 +204,6 @@
         "handlebar_width": 440,
         "stem_length": 100,
         "crank_length": 170,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 837
@@ -222,7 +225,6 @@
         "handlebar_width": 440,
         "stem_length": 100,
         "crank_length": 172.5,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 865

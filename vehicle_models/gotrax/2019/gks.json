@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2019/gks",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "GKS",
+  "model_group": "GKS",
   "model": "GKS",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -192,8 +192,12 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
-      "battery_size": 50,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 50
+      },
       "rated_power": 150,
       "operating_modes": [
         {
@@ -205,12 +209,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 55
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 8.1,
-        "max_weight_rider": 55
+        "total_weight": 8.1
       }
     }
   ],

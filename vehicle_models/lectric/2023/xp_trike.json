@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lectric/2023/xp_trike",
   "manufacturer": "Lectric eBikes",
   "model": "XP Trike",
@@ -44,8 +44,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 188
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -101,8 +100,10 @@
     {
       "sensor_cadence": true,
       "water_rating": "IP65",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 1092,
       "operating_modes": [
@@ -117,6 +118,16 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    },
+    {
+      "load": "payload",
+      "weight": 188
     }
   ],
   "sizes": [
@@ -140,7 +151,6 @@
           "height": 762
         },
         "total_weight": 29.03,
-        "max_weight_rider": 150,
         "rider_height_min": 1473,
         "rider_height_max": 1930,
         "rider_inseam_min": 559,

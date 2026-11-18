@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/helokeep/2026/26p",
   "manufacturer": "Helokeep",
   "model": "26P",
@@ -39,8 +39,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -70,7 +69,9 @@
   ],
   "motors": [
     {
-      "battery_size": 749,
+      "battery": {
+        "capacity": 749
+      },
       "peak_power": 1500,
       "operating_modes": [
         {
@@ -90,6 +91,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

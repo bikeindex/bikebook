@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2024/kade_ii",
   "manufacturer": "Reid",
-  "vehicle_model_group": "KADe",
+  "model_group": "KADe",
   "model": "KADe II",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -45,12 +45,22 @@
         "type": "fender"
       },
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "front"
+        ],
+        "interface": "mik_hd"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
     "cable_routing": "internal",
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 100
+    "seatpost_diameter": 30.4
   },
   "wheels": [
     {
@@ -102,7 +112,9 @@
       "manufacturer": "Ananda",
       "model": "M100",
       "kind": "mid_drive",
-      "battery_size": 1440,
+      "battery": {
+        "capacity": 1440
+      },
       "rated_power": 250,
       "max_torque": 110,
       "operating_modes": [
@@ -116,9 +128,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 100
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 100
+    },
+    {
+      "load": "payload",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "Unisize",

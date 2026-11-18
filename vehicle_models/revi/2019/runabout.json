@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/revi/2019/runabout",
   "manufacturer": "Revi",
-  "vehicle_model_group": "Runabout",
+  "model_group": "Runabout",
   "model": "Runabout",
   "model_configuration": "complete",
   "type": "bike",
@@ -63,8 +63,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 127
+    ]
   },
   "wheels": [
     {
@@ -100,10 +99,13 @@
   ],
   "motors": [
     {
-      "battery_size": 696,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 696,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 240
+      },
       "rated_power": 500,
       "peak_power": 800,
       "operating_modes": [
@@ -126,6 +128,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 127
     }
   ],
   "sizes": [

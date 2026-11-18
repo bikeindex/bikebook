@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/polygon/2024/collosus_n8xe",
   "manufacturer": "Polygon",
-  "vehicle_model_group": "Collosus",
+  "model_group": "Collosus",
   "model": "Collosus N8XE",
   "model_configuration": "complete",
   "type": "bike",
@@ -129,10 +129,14 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 630,
-      "battery_chemistry": "li-ion",
-      "battery_info": "36V, 14Ah",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 630,
+        "voltage": 36,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [

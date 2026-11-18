@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ride1up/2026/roadster_v3",
   "manufacturer": "Ride1Up",
   "model": "Roadster v3",
@@ -109,10 +109,15 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 cells",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion",
+        "cells": "21700"
+      },
       "rated_power": 500,
       "max_torque": 50,
       "operating_modes": [

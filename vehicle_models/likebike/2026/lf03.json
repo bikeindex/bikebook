@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/likebike/2026/lf03",
   "manufacturer": "Likebike",
-  "vehicle_model_group": "LF03",
+  "model_group": "LF03",
   "model": "LF03",
   "model_configuration": "complete",
   "type": "bike",
@@ -55,8 +55,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 200
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -94,10 +93,14 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 960,
-      "charging_time": 450,
+      "battery": {
+        "capacity": 960,
+        "charging_time": 450
+      },
       "rated_power": 750,
       "peak_power": 2000,
       "operating_modes": [
@@ -111,6 +114,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/smlro/2023/s11",
   "manufacturer": "Smlro",
   "model": "S11",
@@ -96,8 +96,10 @@
   ],
   "motors": [
     {
-      "battery_size": 480,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 480,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "operating_modes": [
         {

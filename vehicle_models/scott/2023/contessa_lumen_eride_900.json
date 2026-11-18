@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2023/contessa_lumen_eride_900",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Lumen",
+  "model_group": "Lumen",
   "model": "Contessa Lumen eRIDE 900",
   "model_configuration": "complete",
   "type": "bike",
@@ -138,8 +138,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 135,
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "peak_power": 300,
       "max_torque": 50,
       "operating_modes": [

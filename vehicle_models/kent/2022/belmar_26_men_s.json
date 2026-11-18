@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kent/2022/belmar_26_men_s",
   "manufacturer": "Kent",
-  "vehicle_model_group": "Belmar",
+  "model_group": "Belmar",
   "model": "Belmar 26 Men's",
   "model_configuration": "complete",
   "type": "bike",
@@ -67,12 +67,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 15,
-        "max_weight_rider": 125,
         "rider_height_min": 1575,
         "rider_height_max": 1829,
         "rider_age_min": 13

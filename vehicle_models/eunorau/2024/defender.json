@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2024/defender",
   "manufacturer": "Eunorau",
-  "vehicle_model_group": "Defender",
+  "model_group": "Defender",
   "model": "Defender",
   "model_configuration": "complete",
   "type": "bike",
@@ -66,8 +66,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 136
+    ]
   },
   "suspension": {
     "front": {
@@ -117,8 +116,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "Yes",
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 500,
       "max_torque": 60,
       "operating_modes": [
@@ -141,6 +141,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/santa_cruz/2024/bullit_s",
   "manufacturer": "Santa Cruz",
-  "vehicle_model_group": "Bullit",
+  "model_group": "Bullit",
   "model": "Bullit S",
   "model_configuration": "complete",
   "type": "bike",
@@ -174,9 +174,13 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 630,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 630,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [

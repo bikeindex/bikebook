@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kbo/2021/ranger",
   "manufacturer": "KBO",
   "model": "Ranger",
@@ -49,8 +49,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 33.9,
-    "max_weight_total": 181
+    "seatpost_diameter": 33.9
   },
   "wheels": [
     {
@@ -85,9 +84,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -109,6 +110,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [
@@ -176,10 +183,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "Sustained 750W brushless geared motor"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V /22A"
     },
     {
       "type": "e_vehicle_remote",
@@ -267,6 +270,11 @@
         "width": 76.2,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V /22A"
     }
   ]
 }

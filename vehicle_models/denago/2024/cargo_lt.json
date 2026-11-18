@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/denago/2024/cargo_lt",
   "manufacturer": "Denago",
-  "vehicle_model_group": "Cargo",
+  "model_group": "Cargo",
   "model": "Cargo LT",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -83,7 +83,9 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 960,
+      "battery": {
+        "capacity": 960
+      },
       "rated_power": 750,
       "max_torque": 32,
       "operating_modes": [
@@ -106,6 +108,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -125,8 +133,7 @@
         "fork_rake": 52,
         "fork_length_a2c": 415,
         "stem_length": 52,
-        "crank_length": 170,
-        "max_weight_rider": 136
+        "crank_length": 170
       }
     }
   ],

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fairlight/2025/faran_3_0_shimano_grx_rx820_2x",
   "manufacturer": "Fairlight",
-  "vehicle_model_group": "Faran",
+  "model_group": "Faran",
   "model": "Faran 3.0 Shimano GRX RX820 2x",
   "model_configuration": "complete",
   "type": "bike",
@@ -60,8 +60,7 @@
     },
     "seatpost_diameter": 27.2,
     "front_derailleur_mount": "28.6mm clamp",
-    "max_chainring": 48,
-    "max_weight_total": 125
+    "max_chainring": 48
   },
   "wheels": [
     {
@@ -146,9 +145,20 @@
       "rotor_diameter_max": 180
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
       "name": "51T",
@@ -167,8 +177,7 @@
         "bb_drop": 77,
         "fork_rake": 60,
         "trail": 55,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -188,8 +197,7 @@
         "bb_drop": 77,
         "fork_rake": 60,
         "trail": 51.8,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -209,8 +217,7 @@
         "bb_drop": 77,
         "fork_rake": 60,
         "trail": 51.8,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -230,8 +237,7 @@
         "bb_drop": 75,
         "fork_rake": 60,
         "trail": 51.8,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -251,8 +257,7 @@
         "bb_drop": 75,
         "fork_rake": 60,
         "trail": 51.8,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -272,8 +277,7 @@
         "bb_drop": 75,
         "fork_rake": 60,
         "trail": 48.5,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -293,8 +297,7 @@
         "bb_drop": 75,
         "fork_rake": 60,
         "trail": 48.5,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -314,8 +317,7 @@
         "bb_drop": 75,
         "fork_rake": 60,
         "trail": 48.5,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     }
   ],

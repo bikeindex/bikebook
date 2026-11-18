@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2019/load_75_vario_us",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Load 75",
+  "model_group": "Load 75",
   "model": "Load 75 vario",
   "model_configuration": "complete",
   "markets": [
@@ -45,9 +45,7 @@
       }
     ],
     "seatpost_diameter": 34.9,
-    "seatpost_clamp_diameter": 40,
-    "max_weight_total": 161,
-    "gross_weight_rating": 200
+    "seatpost_clamp_diameter": 40
   },
   "suspension": {
     "front": {
@@ -111,7 +109,9 @@
       "model_group": "Cargo Line",
       "kind": "mid_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 500,
+      "battery": {
+        "capacity": 500
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -129,6 +129,20 @@
   "cargo": {
     "length": 750
   },
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 161
+    },
+    {
+      "load": "gross",
+      "weight": 200
+    },
+    {
+      "load": "rear_rack",
+      "weight": 20
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -155,8 +169,7 @@
           "top_tube_height": 625,
           "top_tube_length_range": "590-770",
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_luggage_rack_kg": 20
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     }

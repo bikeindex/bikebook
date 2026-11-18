@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ncm/2022/c7",
   "manufacturer": "NCM eBikes",
   "model": "C7",
@@ -43,9 +43,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 103,
-    "gross_weight_rating": 125
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -87,7 +85,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 504,
+      "battery": {
+        "capacity": 504
+      },
       "rated_power": 350,
       "peak_power": 600,
       "operating_modes": [
@@ -96,6 +96,16 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 103
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

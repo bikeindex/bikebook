@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ridstar/2026/q50_q30lite_1000w_15_6ah",
   "manufacturer": "Ridstar",
-  "vehicle_model_group": "Q50",
+  "model_group": "Q50",
   "model": "Q50/Q30Lite 1000W 15.6AH",
   "model_configuration": "complete",
   "type": "bike",
@@ -34,8 +34,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -73,8 +72,11 @@
   ],
   "motors": [
     {
-      "battery_size": 749,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 749,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -94,6 +96,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/motobecane/2017/gigi_pro",
   "manufacturer": "Motobecane",
-  "vehicle_model_group": "Gigi",
+  "model_group": "Gigi",
   "model": "Gigi PRO",
   "model_configuration": "complete",
   "type": "bike",
@@ -58,6 +58,10 @@
       30,
       39,
       50
+    ],
+    "rear": [
+      11,
+      25
     ]
   },
   "groupset": {
@@ -87,7 +91,8 @@
         "wheelbase": 968.8,
         "standover": 691,
         "bb_drop": 69,
-        "fork_rake": 45
+        "fork_rake": 45,
+        "crank_length": 165
       }
     },
     {
@@ -102,7 +107,8 @@
         "wheelbase": 973.8,
         "standover": 709,
         "bb_drop": 69,
-        "fork_rake": 45
+        "fork_rake": 45,
+        "crank_length": 165
       }
     },
     {
@@ -117,7 +123,8 @@
         "wheelbase": 983.8,
         "standover": 742,
         "bb_drop": 69,
-        "fork_rake": 45
+        "fork_rake": 45,
+        "crank_length": 165
       }
     },
     {
@@ -132,11 +139,18 @@
         "wheelbase": 984,
         "standover": 786,
         "bb_drop": 69,
-        "fork_rake": 45
+        "fork_rake": 45,
+        "crank_length": 170
       }
     }
   ],
   "components": [
+    {
+      "type": "bottom_bracket",
+      "type_detail": "BB",
+      "manufacturer": "FSA",
+      "description": "FSA Sealed Cartridge GXP External Bearing"
+    },
     {
       "type": "brake",
       "position": [
@@ -146,15 +160,19 @@
       "description": "Forged Polished Aluminum Dual Pivot with cartridge brake pads / Shimano R-700"
     },
     {
-      "type": "chain",
+      "type": "cassette",
+      "type_detail": "CASSETTE",
+      "position": [
+        "rear"
+      ],
       "manufacturer": "Shimano",
       "description": "Shimano CSHG50 10-speed, 11-25T"
     },
     {
       "type": "crankset",
-      "type_detail": "CRANK / BB",
+      "type_detail": "CRANK",
       "manufacturer": "FSA",
-      "description": "FSA Gossamer GXP External bearing Forged Aluminum Triple 30/39/50T"
+      "description": "FSA Gossamer GXP External bearing Forged Aluminum Triple 30/39/50T (44-50cm=165mm, 53cm=170mm)"
     },
     {
       "type": "derailleur",
@@ -222,10 +240,6 @@
         "rear"
       ],
       "description": "High Modulus carbon fiber seatstays, multi-shaped aluminum chainstays. Forged Aluminum dropouts, Replaceable rear derailleur hanger."
-    },
-    {
-      "type": "unknown",
-      "description": "165mm on 44 to 50cm, 170mm on 53cm / FSA Sealed Cartridge GXP External Bearing"
     },
     {
       "type": "water_bottle_cage",

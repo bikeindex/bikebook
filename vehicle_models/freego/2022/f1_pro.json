@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freego/2022/f1_pro",
   "manufacturer": "Freego",
-  "vehicle_model_group": "F1",
+  "model_group": "F1",
   "model": "F1 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -26,6 +26,11 @@
               "sku": "F1-Pro",
               "gtin": "785885911558",
               "size": "One Size"
+            },
+            {
+              "sku": "F1 Pro-Green",
+              "gtin": "785885911572",
+              "size": "One Size"
             }
           ]
         }
@@ -36,8 +41,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -73,7 +77,9 @@
   ],
   "motors": [
     {
-      "battery_size": 1080,
+      "battery": {
+        "capacity": 1080
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -94,6 +100,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

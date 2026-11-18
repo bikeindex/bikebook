@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pedego/2022/boomerang",
   "manufacturer": "Pedego",
-  "vehicle_model_group": "Boomerang",
+  "model_group": "Boomerang",
   "model": "Boomerang",
   "model_configuration": "complete",
   "type": "bike",
@@ -93,12 +93,14 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 480,
-      "battery_options": [
-        720
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 CELLS",
+      "battery": {
+        "capacity": 480,
+        "capacity_options": [
+          720
+        ],
+        "chemistry": "li-ion",
+        "cells": "18650"
+      },
       "rated_power": 500,
       "max_torque": 45,
       "operating_modes": [

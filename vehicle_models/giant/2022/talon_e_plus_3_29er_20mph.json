@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/giant/2022/talon_e_plus_3_29er_20mph",
   "manufacturer": "Giant",
-  "vehicle_model_group": "Talon",
+  "model_group": "Talon",
   "model": "Talon E+ 3 29er 20MPH",
   "model_configuration": "complete",
   "type": "bike",
@@ -113,8 +113,10 @@
       "model": "SyncDrive Core",
       "kind": "mid_drive",
       "spindle": "square taper",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "max_torque": 50,
       "operating_modes": [
         {

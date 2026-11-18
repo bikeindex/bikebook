@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2026/turbo_tero_x_6_0_eu",
   "manufacturer": "Specialized",
-  "vehicle_model_group": "Turbo Tero",
+  "model_group": "Turbo Tero",
   "model": "Turbo Tero X 6.0",
   "model_configuration": "complete",
   "markets": [
@@ -143,10 +143,15 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP56",
-      "battery_size": 710,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 710,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 560,
       "max_torque": 90,
@@ -161,9 +166,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 20
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 20
+    }
+  ],
   "sizes": [
     {
       "name": "S",

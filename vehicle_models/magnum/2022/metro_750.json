@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/magnum/2022/metro_750",
   "manufacturer": "Magnum Bikes",
-  "vehicle_model_group": "Metro",
+  "model_group": "Metro",
   "model": "Metro 750",
   "model_configuration": "complete",
   "type": "bike",
@@ -130,8 +130,7 @@
         "type": "accessory",
         "location": "top_tube"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {
@@ -174,10 +173,11 @@
     {
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "20Ah",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 600
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "operating_modes": [
@@ -199,6 +199,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ecotric/2019/fat20s900",
   "manufacturer": "Ecotric",
-  "vehicle_model_group": "FAT20",
+  "model_group": "FAT20",
   "model": "FAT20S900",
   "model_configuration": "complete",
   "type": "bike",
@@ -29,12 +29,10 @@
           "variants": [
             {
               "sku": "NS-FAT20S900-MB",
-              "gtin": "6974718200059",
               "size": "One Size"
             },
             {
               "sku": "NS-NFAT20S900-MB",
-              "gtin": "6974718200059",
               "size": "One Size"
             }
           ]
@@ -47,8 +45,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 91
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -82,8 +79,10 @@
     {
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 600,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 600,
+        "charging_time": 480
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -102,6 +101,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 91
     }
   ],
   "sizes": [

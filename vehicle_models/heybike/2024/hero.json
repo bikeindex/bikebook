@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/heybike/2024/hero",
   "manufacturer": "Heybike",
   "model": "Hero",
@@ -81,8 +81,7 @@
           "rear"
         ]
       }
-    ],
-    "max_weight_total": 181
+    ]
   },
   "suspension": {
     "front": {},
@@ -119,8 +118,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 864,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 864,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "max_torque": 160,
       "operating_modes": [
@@ -134,6 +135,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

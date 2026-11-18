@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/heybike/2026/saturn",
   "manufacturer": "Heybike",
   "model": "Saturn",
@@ -46,8 +46,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -86,12 +85,16 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 957,
-      "battery_options": [
-        1914
+      "certifications": [
+        "UL 2849"
       ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 957,
+        "capacity_options": [
+          1914
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "max_torque": 95,
       "operating_modes": [
@@ -113,6 +116,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

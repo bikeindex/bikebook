@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2025/dimanche_28_road_6_d8626",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Dimanche 28 Road",
+  "model_group": "Dimanche 28 Road",
   "model": "Dimanche 28 Road 6 D8626",
   "model_configuration": "complete",
   "type": "bike",
@@ -71,9 +71,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 104,
-    "gross_weight_rating": 120
+    "seatpost_clamp_diameter": 34.9
   },
   "wheels": [
     {
@@ -137,8 +135,10 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,
@@ -154,6 +154,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 104
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

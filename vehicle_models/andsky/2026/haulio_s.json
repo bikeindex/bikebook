@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/andsky/2026/haulio_s",
   "manufacturer": "Andsky",
-  "vehicle_model_group": "Haulio",
+  "model_group": "Haulio",
   "model": "Haulio S",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -57,8 +57,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 40.8,
-    "max_weight_total": 227
+    "seatpost_diameter": 40.8
   },
   "suspension": {
     "front": {
@@ -104,7 +103,9 @@
       "drive_wheel": "rear",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 2880,
+      "battery": {
+        "capacity": 2880
+      },
       "rated_power": 2000,
       "peak_power": 4000,
       "max_torque": 130,
@@ -127,6 +128,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [

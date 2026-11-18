@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/postjoy/2026/s9",
   "manufacturer": "PostJoy",
   "model": "S9",
@@ -22,8 +22,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -54,8 +53,10 @@
   "motors": [
     {
       "water_rating": "IPX5",
-      "battery_size": 960,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 960,
+        "charging_time": 480
+      },
       "peak_power": 2500,
       "max_torque": 50,
       "operating_modes": [
@@ -71,12 +72,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 37.2,
-        "max_weight_rider": 150,
         "rider_height_min": 1575,
         "rider_height_max": 1956
       }

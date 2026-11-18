@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/fold_hybrid_deluxe_540",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Fold Hybrid",
+  "model_group": "Fold Hybrid",
   "model": "Fold Hybrid Deluxe 540",
   "model_configuration": "complete",
   "type": "bike",
@@ -87,8 +87,10 @@
       "model": "BDU346Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 540,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 540,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -102,6 +104,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
     }
   ],
   "sizes": [
@@ -127,7 +135,6 @@
           "height": 810
         },
         "total_weight": 25.5,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 20,
           "bike_length_max": 1720

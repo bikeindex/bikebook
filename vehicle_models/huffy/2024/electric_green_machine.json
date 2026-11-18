@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/huffy/2024/electric_green_machine",
   "manufacturer": "Huffy",
   "model": "Electric Green Machine",
@@ -60,7 +60,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 281,
+      "battery": {
+        "capacity": 281
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -82,11 +84,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 82
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "max_weight_rider": 82,
         "rider_age_min": 8
       }
     }

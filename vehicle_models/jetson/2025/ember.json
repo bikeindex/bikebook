@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2025/ember",
   "manufacturer": "Jetson",
   "model": "Ember",
@@ -50,9 +50,11 @@
   ],
   "motors": [
     {
-      "battery_size": 108,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 108,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 200,
       "operating_modes": [
         {
@@ -64,6 +66,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
     }
   ],
   "sizes": [
@@ -81,7 +89,6 @@
           "height": 480
         },
         "total_weight": 11,
-        "max_weight_rider": 100,
         "rider_age_min": 12
       }
     }

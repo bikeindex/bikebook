@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/marin/2025/larkspur_e_int",
   "manufacturer": "Marin Bikes",
-  "vehicle_model_group": "Larkspur",
+  "model_group": "Larkspur",
   "model": "Larkspur E - INT",
   "model_configuration": "complete",
   "markets": [
@@ -143,8 +143,10 @@
       "model": "BDU334Y",
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
-      "battery_size": 545,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 545,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 50,

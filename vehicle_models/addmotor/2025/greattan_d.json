@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/addmotor/2025/greattan_d",
   "manufacturer": "Addmotor",
-  "vehicle_model_group": "Greattan",
+  "model_group": "Greattan",
   "model": "Greattan D",
   "model_configuration": "complete",
   "type": "cargo_tricycle",
@@ -41,8 +41,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 159
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -81,9 +80,11 @@
     {
       "drive_wheel": "rear",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cell",
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -105,6 +106,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

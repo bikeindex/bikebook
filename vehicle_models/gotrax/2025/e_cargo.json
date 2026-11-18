@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2025/e_cargo",
   "manufacturer": "GOTRAX",
   "model": "E-Cargo",
@@ -45,8 +45,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 120
+    ]
   },
   "suspension": {
     "front": {}
@@ -81,8 +80,10 @@
     {
       "sensor_speed": "spoke_magnet",
       "water_rating": "IPX4",
-      "battery_size": 499,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 499,
+        "charging_time": 420
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -106,6 +107,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "payload",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -115,8 +126,7 @@
           "width": 729,
           "height": 1201
         },
-        "total_weight": 27.7,
-        "max_weight_rider": 120
+        "total_weight": 27.7
       }
     }
   ],

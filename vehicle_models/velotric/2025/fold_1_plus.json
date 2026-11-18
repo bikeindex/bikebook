@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velotric/2025/fold_1_plus",
   "manufacturer": "Velotric",
-  "vehicle_model_group": "Fold",
+  "model_group": "Fold",
   "model": "Fold 1 Plus",
   "model_configuration": "complete",
   "type": "bike",
@@ -171,8 +171,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 204
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -223,11 +222,19 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849, UL 2271, ISO 4210, UL 2580",
+      "certifications": [
+        "UL 2849",
+        "UL 2271",
+        "UL 2580",
+        "ISO 4210"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 608,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 cell, UL 2580 Certified",
+      "battery": {
+        "capacity": 608,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "18650"
+      },
       "rated_power": 750,
       "max_torque": 75,
       "operating_modes": [
@@ -264,6 +271,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

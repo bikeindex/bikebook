@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2024/odyssey",
   "manufacturer": "GOTRAX",
   "model": "Odyssey",
@@ -92,10 +92,14 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IP54",
-      "battery_size": 1210,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1210,
+        "charging_time": 420
+      },
       "rated_power": 650,
       "operating_modes": [
         {
@@ -109,10 +113,14 @@
     },
     {
       "drive_wheel": "rear",
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IP54",
-      "battery_size": 1210,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1210,
+        "charging_time": 420
+      },
       "rated_power": 650,
       "operating_modes": [
         {
@@ -125,6 +133,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -134,8 +148,7 @@
           "width": 686,
           "height": 1346
         },
-        "total_weight": 38.6,
-        "max_weight_rider": 136
+        "total_weight": 38.6
       }
     }
   ],

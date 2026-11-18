@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebgo/2026/expedition",
   "manufacturer": "Ebgo",
   "model": "Expedition",
@@ -34,8 +34,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Aerospace-Grade 6061 Aluminum",
-    "max_weight_total": 125
+    "material_detail": "Aerospace-Grade 6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -92,10 +91,14 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung/LG 21700-5000 mah cell",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "Samsung/LG 21700-5000 mah"
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -106,6 +109,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

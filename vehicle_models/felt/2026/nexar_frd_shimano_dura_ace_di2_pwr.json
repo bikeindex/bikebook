@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/felt/2026/nexar_frd_shimano_dura_ace_di2_pwr",
   "manufacturer": "Felt",
-  "vehicle_model_group": "Nexar",
+  "model_group": "Nexar",
   "model": "NEXAR FRD Shimano Dura-Ace Di2 PWR",
   "model_configuration": "complete",
   "type": "bike",
@@ -32,9 +32,7 @@
     "bottom_bracket": {
       "shell": "BSA",
       "spindle": "24mm"
-    },
-    "max_weight_total": 113,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -79,6 +77,16 @@
         "rear"
       ],
       "rotor_diameter": 140
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

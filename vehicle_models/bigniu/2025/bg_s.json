@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bigniu/2025/bg_s",
   "manufacturer": "Bigniu",
-  "vehicle_model_group": "BG-S",
+  "model_group": "BG-S",
   "model": "BG-S",
   "model_configuration": "complete",
   "type": "bike",
@@ -61,8 +61,7 @@
       {
         "type": "fender"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {},
@@ -94,9 +93,10 @@
   ],
   "motors": [
     {
-      "certification": "UL Certification",
-      "battery_size": 720,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 720,
+        "charging_time": 420
+      },
       "rated_power": 1000,
       "peak_power": 1200,
       "max_torque": 80,
@@ -124,6 +124,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

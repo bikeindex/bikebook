@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/engwe/2022/ep_2_pro",
   "manufacturer": "ENGWE",
-  "vehicle_model_group": "EP-2",
+  "model_group": "EP-2",
   "model": "EP-2 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -70,8 +70,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -103,9 +102,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "charging_time": 120,
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "charging_time": 120
+      },
       "peak_power": 960,
       "max_torque": 55,
       "operating_modes": [
@@ -125,6 +126,12 @@
           "range_claimed": 39
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

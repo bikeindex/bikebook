@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/electra/2023/cruiser_1_step_over",
   "manufacturer": "Electra",
-  "vehicle_model_group": "Cruiser",
+  "model_group": "Cruiser",
   "model": "Cruiser 1 Step-Over",
   "model_configuration": "complete",
   "type": "bike",
@@ -45,9 +45,7 @@
     "bottom_bracket": {
       "spindle": "square taper"
     },
-    "headset": "EC30/25.4-24tpi | EC30/26.4",
-    "max_weight_total": 120,
-    "gross_weight_rating": 136
+    "headset": "EC30/25.4-24tpi | EC30/26.4"
   },
   "wheels": [
     {
@@ -84,6 +82,16 @@
       "position": [
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bianchi/2020/e_spillo_active_sf_gent_deore_10sp",
   "manufacturer": "Bianchi",
-  "vehicle_model_group": "E-Spillo",
+  "model_group": "E-Spillo",
   "model": "E-Spillo Active SF Gent Deore 10sp",
   "model_configuration": "complete",
   "type": "bike",
@@ -23,6 +23,15 @@
   },
   "frame": {
     "material": "aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "atranvelo_avs"
+      }
+    ],
     "seatpost_diameter": 27.2
   },
   "suspension": {
@@ -71,8 +80,10 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

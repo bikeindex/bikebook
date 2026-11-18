@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rei_co_op/2026/rev_12_kids_balance",
   "manufacturer": "REI Co-op",
-  "vehicle_model_group": "REV",
+  "model_group": "REV",
   "model": "REV 12 Kids' Balance",
   "model_configuration": "complete",
   "type": "balance_bike",
@@ -63,12 +63,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 27
+    }
+  ],
   "sizes": [
     {
       "name": "12 IN",
       "geometry": {
         "total_weight": 4.1,
-        "max_weight_rider": 27,
         "rider_age_min": 2
       }
     }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/spark_rc_900_sl_axs_gb",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Spark",
+  "model_group": "Spark",
   "model": "Spark RC 900 SL AXS",
   "model_configuration": "complete",
   "markets": [
@@ -61,9 +61,7 @@
       "width": 92,
       "spindle": "DUB"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 118,
-    "gross_weight_rating": 128
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -137,6 +135,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 118
+    },
+    {
+      "load": "gross",
+      "weight": 128
     }
   ],
   "sizes": [

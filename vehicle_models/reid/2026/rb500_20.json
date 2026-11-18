@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2026/rb500_20",
   "manufacturer": "Reid",
-  "vehicle_model_group": "RB",
+  "model_group": "RB",
   "model": "RB500 20",
   "model_configuration": "complete",
   "type": "bike",
@@ -101,8 +101,12 @@
       "manufacturer": "Ananda",
       "model": "R531",
       "kind": "hub_drive",
-      "certification": "UL 2271",
-      "battery_size": 624,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 624
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 65,

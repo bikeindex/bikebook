@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/decathlon/2026/rockrider_e_expl_100_ltd_high_step",
   "manufacturer": "Decathlon",
-  "vehicle_model_group": "Rockrider E-EXPL",
+  "model_group": "Rockrider E-EXPL",
   "model": "Rockrider E-EXPL 100 LTD High Step",
   "model_configuration": "complete",
   "type": "bike",
@@ -32,8 +32,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 120
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -86,8 +85,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 316,
       "max_torque": 45,
@@ -101,6 +102,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

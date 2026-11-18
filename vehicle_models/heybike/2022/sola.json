@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/heybike/2022/sola",
   "manufacturer": "Heybike",
   "model": "Sola",
@@ -110,8 +110,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 136
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -136,8 +135,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX4",
-      "battery_size": 576,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 576,
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -157,6 +158,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aniioki/2023/aq177_pro_max",
   "manufacturer": "Aniioki",
-  "vehicle_model_group": "AQ177 Pro Max",
+  "model_group": "AQ177 Pro Max",
   "model": "AQ177 Pro Max",
   "model_configuration": "complete",
   "type": "bike",
@@ -74,8 +74,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 181
+    ]
   },
   "suspension": {
     "front": {
@@ -118,10 +117,13 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 2880,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 2880,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A",
+        "charging_time": 540
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 90,
@@ -147,6 +149,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

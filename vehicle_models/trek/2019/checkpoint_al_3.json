@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2019/checkpoint_al_3",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Checkpoint",
+  "model_group": "Checkpoint",
   "model": "Checkpoint AL 3",
   "model_configuration": "complete",
   "type": "bike",
@@ -168,9 +168,7 @@
       "spindle": "24mm"
     },
     "headset": "IS42/28.6 | IS52/40",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 114,
-    "gross_weight_rating": 125
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -228,6 +226,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 114
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2020/blacktop_2_0",
   "manufacturer": "Reid",
-  "vehicle_model_group": "Blacktop",
+  "model_group": "Blacktop",
   "model": "Blacktop 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -110,8 +110,10 @@
       "manufacturer": "Ananda",
       "model": "M80",
       "kind": "mid_drive",
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
+      "battery": {
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "max_torque": 80,
       "operating_modes": [
         {

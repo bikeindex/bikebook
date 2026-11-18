@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2016/xm700_plus_lowstep",
   "manufacturer": "Trek",
-  "vehicle_model_group": "XM700+",
+  "model_group": "XM700+",
   "model": "XM700+ Lowstep",
   "model_configuration": "complete",
   "type": "bike",
@@ -48,8 +48,7 @@
     "material_detail": "Alpha Gold Aluminum",
     "top_tube": "step_through",
     "headset": "ZS44/28.6 | ZS44/30",
-    "seatpost_diameter": 31.6,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -99,8 +98,10 @@
       "manufacturer": "Bosch",
       "model": "Performance Speed",
       "kind": "mid_drive",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "max_torque": 63,
       "operating_modes": [
@@ -113,6 +114,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

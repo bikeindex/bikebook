@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/reaction_200_tm",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Reaction",
+  "model_group": "Reaction",
   "model": "Reaction 200 TM",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,9 +40,7 @@
       "width": 68
     },
     "headset": "ZS44/28.6 | ZS44/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 30,
-    "gross_weight_rating": 40
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -94,6 +92,16 @@
       "rotor_diameter": 160
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 30
+    },
+    {
+      "load": "gross",
+      "weight": 40
+    }
+  ],
   "sizes": [
     {
       "name": "20\"",
@@ -108,7 +116,6 @@
         "chainstay": 374,
         "wheelbase": 854,
         "total_weight": 9.8,
-        "max_weight_rider": 30,
         "extra_measurements": {
           "bb_height_to_hub": 20,
           "protrusion_height_80mm": 529

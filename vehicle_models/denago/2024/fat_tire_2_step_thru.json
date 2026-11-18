@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/denago/2024/fat_tire_2_step_thru",
   "manufacturer": "Denago",
-  "vehicle_model_group": "Fat Tire",
+  "model_group": "Fat Tire",
   "model": "Fat Tire 2 Step-thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -131,7 +131,9 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 960,
+      "battery": {
+        "capacity": 960
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -154,6 +156,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
     }
   ],
   "sizes": [
@@ -179,7 +187,6 @@
         "seat_height_min": 990,
         "seat_height_max": 1220,
         "total_weight": 38.1,
-        "max_weight_rider": 136,
         "rider_height_min": 1499,
         "rider_height_max": 1778
       }
@@ -206,7 +213,6 @@
         "seat_height_min": 990,
         "seat_height_max": 1220,
         "total_weight": 38.1,
-        "max_weight_rider": 136,
         "rider_height_min": 1676,
         "rider_height_max": 1956
       }

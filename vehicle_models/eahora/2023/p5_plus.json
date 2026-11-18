@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eahora/2023/p5_plus",
   "manufacturer": "Eahora",
-  "vehicle_model_group": "P5",
+  "model_group": "P5",
   "model": "P5 Plus",
   "model_configuration": "complete",
   "type": "bike",
@@ -36,8 +36,7 @@
   },
   "frame": {
     "material": "magnesium",
-    "top_tube": "step_through",
-    "max_weight_total": 150
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -86,9 +85,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 750,
       "max_torque": 85,
       "operating_modes": [
@@ -110,6 +111,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

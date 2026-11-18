@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hiboy/2025/s2_nova",
   "manufacturer": "Hiboy",
-  "vehicle_model_group": "S2",
+  "model_group": "S2",
   "model": "S2 Nova",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -67,9 +67,11 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX4",
-      "battery_size": 324,
-      "battery_chemistry": "li-ion",
-      "charging_time": 330,
+      "battery": {
+        "capacity": 324,
+        "chemistry": "li-ion",
+        "charging_time": 330
+      },
       "rated_power": 350,
       "peak_power": 420,
       "operating_modes": [
@@ -81,6 +83,12 @@
           "max_slope": 9
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
     }
   ],
   "sizes": [
@@ -98,7 +106,6 @@
           "height": 483
         },
         "total_weight": 15.6,
-        "max_weight_rider": 100,
         "rider_height_min": 1500,
         "rider_height_max": 1850,
         "rider_age_min": 16,

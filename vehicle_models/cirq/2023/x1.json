@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cirq/2023/x1",
   "manufacturer": "Cirq",
-  "vehicle_model_group": "X1",
+  "model_group": "X1",
   "model": "X1",
   "model_configuration": "complete",
   "type": "bike",
@@ -35,8 +35,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 181
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -75,9 +74,11 @@
     {
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 874,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 874,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "operating_modes": [
@@ -103,9 +104,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 24.95
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 24.95
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -165,7 +173,7 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "52V 25A"
+      "description": "LCD DISPLAY"
     },
     {
       "type": "fork",
@@ -221,6 +229,11 @@
         "width": 101.6,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "CONTROLLER",
+      "description": "52V 25A"
     }
   ]
 }

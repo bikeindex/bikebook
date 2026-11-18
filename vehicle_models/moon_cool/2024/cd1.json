@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moon_cool/2024/cd1",
   "manufacturer": "Moon Cool",
   "model": "CD1",
@@ -116,8 +116,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 159
+    "seatpost_diameter": 30.9
   },
   "wheels": [
     {
@@ -159,9 +158,14 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 250,
-      "charging_time": 420,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 250,
+        "charging_time": 420
+      },
       "rated_power": 250,
       "peak_power": 352,
       "max_torque": 35,
@@ -187,6 +191,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -195,7 +205,7 @@
         "wheelbase": 1020,
         "standover": 360,
         "handlebar_width": 600,
-        "seat_height_min": 800,
+        "seat_height_min": 650,
         "seat_height_max": 800,
         "dimensions": {
           "length": 1470,

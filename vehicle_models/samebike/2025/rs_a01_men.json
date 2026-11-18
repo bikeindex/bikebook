@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/samebike/2025/rs_a01_men",
   "manufacturer": "samebike",
-  "vehicle_model_group": "RS-A01",
+  "model_group": "RS-A01",
   "model": "RS-A01 MEN",
   "model_configuration": "complete",
   "type": "bike",
@@ -92,8 +92,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 150
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {}
@@ -127,8 +126,10 @@
   ],
   "motors": [
     {
-      "battery_size": 540,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 540,
+        "charging_time": 360
+      },
       "rated_power": 250,
       "max_torque": 55,
       "operating_modes": [
@@ -144,6 +145,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

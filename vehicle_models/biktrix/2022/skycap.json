@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biktrix/2022/skycap",
   "manufacturer": "Biktrix",
-  "vehicle_model_group": "Skycap",
+  "model_group": "Skycap",
   "model": "Skycap",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -162,7 +162,9 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 816,
+      "battery": {
+        "capacity": 816
+      },
       "rated_power": 750,
       "operating_modes": [
         {

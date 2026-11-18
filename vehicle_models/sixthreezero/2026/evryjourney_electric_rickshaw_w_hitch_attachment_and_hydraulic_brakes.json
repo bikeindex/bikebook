@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/evryjourney_electric_rickshaw_w_hitch_attachment_and_hydraulic_brakes",
   "manufacturer": "sixthreezero",
-  "vehicle_model_group": "EVRYjourney Rickshaw",
+  "model_group": "EVRYjourney Rickshaw",
   "model": "EVRYjourney Electric Rickshaw w/ Hitch Attachment & Hydraulic Brakes",
   "model_configuration": "complete",
   "type": "pedi_cab",
@@ -36,8 +36,7 @@
   "frame": {
     "material": "aluminum",
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 227
+    "seatpost_clamp_diameter": 31.8
   },
   "suspension": {
     "front": {}
@@ -88,10 +87,15 @@
       "drive_wheel": "front",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 1008,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 1008,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -103,6 +107,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [

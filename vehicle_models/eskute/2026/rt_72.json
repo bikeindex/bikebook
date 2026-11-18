@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eskute/2026/rt_72",
   "manufacturer": "Eskute",
-  "vehicle_model_group": "RT",
+  "model_group": "RT",
   "model": "RT 72",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -67,8 +67,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 159
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -99,8 +98,10 @@
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
       "water_rating": "IPX6",
-      "battery_size": 2160,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 2160,
+        "charging_time": 360
+      },
       "peak_power": 6500,
       "max_torque": 300,
       "operating_modes": [
@@ -114,6 +115,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

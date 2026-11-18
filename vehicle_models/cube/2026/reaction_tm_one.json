@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/reaction_tm_one",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Reaction",
+  "model_group": "Reaction",
   "model": "Reaction TM ONE",
   "model_configuration": "complete",
   "type": "bike",
@@ -38,9 +38,7 @@
       "width": 68
     },
     "headset": "IS42/28.6 | IS52/40",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 123,
-    "gross_weight_rating": 140
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -134,6 +132,16 @@
       "rotor_diameter": 180
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 140
+    }
+  ],
   "sizes": [
     {
       "name": "XS",
@@ -150,7 +158,6 @@
         "handlebar_width": 760,
         "stem_length": 40,
         "crank_length": 165,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 46,
           "protrusion_height_80mm": 699
@@ -172,7 +179,6 @@
         "handlebar_width": 760,
         "stem_length": 40,
         "crank_length": 165,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 46,
           "protrusion_height_80mm": 698
@@ -195,7 +201,6 @@
         "stem_length": 50,
         "crank_length": 165,
         "total_weight": 16.1,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 60,
           "protrusion_height_80mm": 735
@@ -217,7 +222,6 @@
         "handlebar_width": 760,
         "stem_length": 50,
         "crank_length": 170,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 60,
           "protrusion_height_80mm": 741
@@ -239,7 +243,6 @@
         "handlebar_width": 760,
         "stem_length": 50,
         "crank_length": 170,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 60,
           "protrusion_height_80mm": 768

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/phenix_c_62_rookie_slx",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Phenix",
+  "model_group": "Phenix",
   "model": "Phenix C:62 Rookie SLX",
   "model_configuration": "complete",
   "type": "bike",
@@ -38,9 +38,7 @@
       "width": 92,
       "spindle": "DUB"
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 68,
-    "gross_weight_rating": 80
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -124,6 +122,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 65
+    },
+    {
+      "load": "gross",
+      "weight": 80
+    }
+  ],
   "sizes": [
     {
       "name": "XS",
@@ -138,7 +146,6 @@
         "chainstay": 410,
         "wheelbase": 1058,
         "total_weight": 11.1,
-        "max_weight_rider": 65,
         "extra_measurements": {
           "bb_height_to_hub": 46,
           "protrusion_height_80mm": 757
@@ -157,7 +164,6 @@
         "head_tube": 97,
         "chainstay": 426,
         "wheelbase": 1088,
-        "max_weight_rider": 65,
         "extra_measurements": {
           "bb_height_to_hub": 65,
           "protrusion_height_80mm": 767

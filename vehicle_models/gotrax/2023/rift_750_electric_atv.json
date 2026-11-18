@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2023/rift_750_electric_atv",
   "manufacturer": "GOTRAX",
   "model": "Rift 750 Electric ATV",
@@ -41,8 +41,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 75
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -60,8 +59,12 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
-      "battery_info": "48V",
+      "certifications": [
+        "UL 2272"
+      ],
+      "battery": {
+        "voltage": 48
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -75,6 +78,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 75
     }
   ],
   "sizes": [

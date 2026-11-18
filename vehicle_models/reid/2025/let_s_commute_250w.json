@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2025/let_s_commute_250w",
   "manufacturer": "Reid",
-  "vehicle_model_group": "Let's Commute",
+  "model_group": "Let's Commute",
   "model": "Let's Commute 250W",
   "model_configuration": "complete",
   "type": "bike",
@@ -110,7 +110,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 360,
+      "battery": {
+        "capacity": 360
+      },
       "rated_power": 250,
       "operating_modes": [
         {

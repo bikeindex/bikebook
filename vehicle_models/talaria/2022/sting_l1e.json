@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/talaria/2022/sting_l1e",
   "manufacturer": "Talaria",
   "model": "Sting L1E",
@@ -38,9 +38,12 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 2304,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG Brand 21700 Cell (5000 MAH/Cell)",
+      "battery": {
+        "capacity": 2304,
+        "voltage": 60,
+        "chemistry": "li-ion",
+        "cells": "LG 21700 (5000 MAH)"
+      },
       "max_torque": 34,
       "operating_modes": [
         {

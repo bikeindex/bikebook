@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/samebike/2023/pilot_sr",
   "manufacturer": "samebike",
-  "vehicle_model_group": "Pilot",
+  "model_group": "Pilot",
   "model": "Pilot SR",
   "model_configuration": "complete",
   "type": "bike",
@@ -95,8 +95,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "cable_routing": "internal",
-    "max_weight_total": 150
+    "cable_routing": "internal"
   },
   "suspension": {
     "front": {
@@ -160,9 +159,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IP54",
-      "battery_size": 1728,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 lithium battery cells",
+      "battery": {
+        "capacity": 1728,
+        "chemistry": "li-ion",
+        "cells": "21700"
+      },
       "rated_power": 1000,
       "max_torque": 80,
       "operating_modes": [
@@ -200,9 +201,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IP54",
-      "battery_size": 1728,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 lithium battery cells",
+      "battery": {
+        "capacity": 1728,
+        "chemistry": "li-ion",
+        "cells": "21700"
+      },
       "rated_power": 1000,
       "max_torque": 80,
       "operating_modes": [
@@ -234,6 +237,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

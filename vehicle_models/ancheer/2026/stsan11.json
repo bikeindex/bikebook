@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ancheer/2026/stsan11",
   "manufacturer": "Ancheer",
   "model": "Stsan11",
@@ -78,8 +78,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 136
+    "material": "steel"
   },
   "wheels": [
     {
@@ -107,9 +106,13 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 499,
+      "battery": {
+        "capacity": 499
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 60,
@@ -132,6 +135,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

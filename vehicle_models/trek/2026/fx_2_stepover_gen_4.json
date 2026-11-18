@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2026/fx_2_stepover_gen_4",
   "manufacturer": "Trek",
-  "vehicle_model_group": "FX",
+  "model_group": "FX",
   "model": "FX 2 Stepover Gen 4",
   "model_configuration": "complete",
   "type": "bike",
@@ -142,9 +142,7 @@
     "bottom_bracket": {
       "width": 68
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 123,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -193,6 +191,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 123
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

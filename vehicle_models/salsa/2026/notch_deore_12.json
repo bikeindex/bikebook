@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/salsa/2026/notch_deore_12",
   "manufacturer": "Salsa",
-  "vehicle_model_group": "Notch",
+  "model_group": "Notch",
   "model": "Notch Deore 12",
   "model_configuration": "complete",
   "type": "bike",
@@ -165,10 +165,12 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
-      "battery_info": "36V, 13.4Ah",
-      "charging_time": 270,
+      "battery": {
+        "capacity": 500,
+        "voltage": 36,
+        "chemistry": "li-ion",
+        "charging_time": 270
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

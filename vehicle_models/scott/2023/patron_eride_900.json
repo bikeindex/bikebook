@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2023/patron_eride_900",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Patron",
+  "model_group": "Patron",
   "model": "Patron eRIDE 900",
   "model_configuration": "complete",
   "type": "bike",
@@ -57,9 +57,7 @@
     },
     "headset": "ZS44/28.6 | ZS56/40",
     "seatpost_diameter": 31.6,
-    "derailleur_hanger": "SRAM UDH",
-    "max_weight_total": 103,
-    "gross_weight_rating": 128
+    "derailleur_hanger": "SRAM UDH"
   },
   "suspension": {
     "front": {
@@ -137,7 +135,9 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 750,
+      "battery": {
+        "capacity": 750
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -151,6 +151,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 103
+    },
+    {
+      "load": "gross",
+      "weight": 128
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rad_power/2024/radster_trail",
   "manufacturer": "Rad Power Bikes",
-  "vehicle_model_group": "Radster",
+  "model_group": "Radster",
   "model": "Radster Trail",
   "model_configuration": "complete",
   "type": "bike",
@@ -119,8 +119,7 @@
       }
     ],
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 38.1,
-    "max_weight_total": 168
+    "seatpost_clamp_diameter": 38.1
   },
   "suspension": {
     "front": {
@@ -177,10 +176,15 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 50GB or LG M50LT cells",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "Samsung 50GB or LG M50LT"
+      },
       "rated_power": 750,
       "max_torque": 100,
       "operating_modes": [
@@ -204,9 +208,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 168
+    }
+  ],
   "sizes": [
     {
       "name": "Regular",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2017/boone_7",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Boone",
+  "model_group": "Boone",
   "model": "Boone 7",
   "model_configuration": "complete",
   "type": "bike",
@@ -62,9 +62,7 @@
     "bottom_bracket": {
       "shell": "BB90"
     },
-    "headset": "IS42/28.6 | IS52/40",
-    "max_weight_total": 128,
-    "gross_weight_rating": 136
+    "headset": "IS42/28.6 | IS52/40"
   },
   "wheels": [
     {
@@ -95,6 +93,16 @@
     "series": "Force",
     "electronic": false
   },
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 128
+    },
+    {
+      "load": "gross",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "50 cm",

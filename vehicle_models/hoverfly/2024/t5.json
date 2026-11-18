@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hoverfly/2024/t5",
   "manufacturer": "Hoverfly",
   "model": "T5",
@@ -67,8 +67,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "rear": {}
@@ -94,9 +93,11 @@
   ],
   "motors": [
     {
-      "battery_size": 384,
-      "battery_chemistry": "lifepo4",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 384,
+        "chemistry": "lifepo4",
+        "charging_time": 480
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -107,6 +108,12 @@
           "max_slope": 10
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/addmotor/2023/m_66_r7",
   "manufacturer": "Addmotor",
   "model": "M-66 R7",
@@ -41,8 +41,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "top_tube": "step_through",
-    "headset": "ZS44/28.6 | ZS44/30",
-    "max_weight_total": 136
+    "headset": "ZS44/28.6 | ZS44/30"
   },
   "suspension": {
     "front": {
@@ -95,9 +94,11 @@
     {
       "manufacturer": "Bafang",
       "sensor_speed": "spoke_magnet",
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700",
-      "charging_time": 600,
+      "battery": {
+        "chemistry": "li-ion",
+        "cells": "21700",
+        "charging_time": 600
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -115,6 +116,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

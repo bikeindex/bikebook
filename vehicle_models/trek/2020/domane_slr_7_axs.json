@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2020/domane_slr_7_axs",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Domane",
+  "model_group": "Domane",
   "model": "Domane SLR 7 AXS",
   "model_configuration": "complete",
   "type": "bike",
@@ -174,9 +174,7 @@
   },
   "frame": {
     "material": "carbon",
-    "material_detail": "700 Series OCLV Carbon",
-    "max_weight_total": 116,
-    "gross_weight_rating": 125
+    "material_detail": "700 Series OCLV Carbon"
   },
   "wheels": [
     {
@@ -233,6 +231,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 116
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

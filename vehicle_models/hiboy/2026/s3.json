@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hiboy/2026/s3",
   "manufacturer": "Hiboy",
   "model": "S3",
@@ -67,9 +67,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IPX4",
-      "battery_size": 281,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 281,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 350,
       "peak_power": 460,
       "operating_modes": [
@@ -81,6 +83,12 @@
           "max_slope": 9
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
     }
   ],
   "sizes": [
@@ -98,7 +106,6 @@
           "height": 475
         },
         "total_weight": 15.6,
-        "max_weight_rider": 100,
         "rider_height_min": 1500,
         "rider_height_max": 1850,
         "rider_age_min": 16,

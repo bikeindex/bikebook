@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/decathlon/2026/rockrider_e_expl_520_s",
   "manufacturer": "Decathlon",
-  "vehicle_model_group": "Rockrider E-EXPL",
+  "model_group": "Rockrider E-EXPL",
   "model": "Rockrider E-EXPL 520 S",
   "model_configuration": "complete",
   "type": "bike",
@@ -45,8 +45,7 @@
     ],
     "headset": "ZS44/28.6",
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 125
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -112,7 +111,9 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 500,
+      "battery": {
+        "capacity": 500
+      },
       "peak_power": 460,
       "max_torque": 70,
       "operating_modes": [
@@ -126,6 +127,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

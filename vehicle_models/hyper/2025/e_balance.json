@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hyper/2025/e_balance",
   "manufacturer": "Hyper",
   "model": "E-Balance",
@@ -57,9 +57,10 @@
   ],
   "motors": [
     {
-      "certification": "UL Certified",
-      "battery_size": 108,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 108,
+        "charging_time": 300
+      },
       "rated_power": 400,
       "operating_modes": [
         {
@@ -72,12 +73,15 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 45
+    }
+  ],
   "sizes": [
     {
-      "name": "One Size",
-      "geometry": {
-        "max_weight_rider": 45
-      }
+      "name": "One Size"
     }
   ],
   "components": [

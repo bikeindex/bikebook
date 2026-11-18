@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2020/verve_plus_3_gen_2",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Verve+",
+  "model_group": "Verve+",
   "model": "Verve+ 3 Gen 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -63,9 +63,7 @@
       "spindle": "BNI"
     },
     "headset": "EC34/28.6-26tpi | EC34/30",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 111,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -125,8 +123,10 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,
@@ -140,6 +140,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 111
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

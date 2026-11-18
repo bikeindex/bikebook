@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2024/addict_rc_eride_ultimate",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Addict",
+  "model_group": "Addict",
   "model": "Addict RC eRIDE Ultimate",
   "model_configuration": "complete",
   "type": "bike",
@@ -45,9 +45,7 @@
     "cable_routing": "internal",
     "bottom_bracket": {
       "spindle": "24mm"
-    },
-    "max_weight_total": 109,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -103,8 +101,10 @@
       "manufacturer": "Mahle",
       "model": "X20",
       "kind": "hub_drive",
-      "battery_size": 236,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 236,
+        "chemistry": "li-ion"
+      },
       "peak_power": 275,
       "max_torque": 55,
       "operating_modes": [
@@ -117,6 +117,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 109
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

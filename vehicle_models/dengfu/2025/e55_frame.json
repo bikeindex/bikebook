@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dengfu/2025/e55_frame",
   "manufacturer": "Dengfu",
-  "vehicle_model_group": "E55",
+  "model_group": "E55",
   "model": "E55 Frame",
   "model_configuration": "frame",
   "type": "bike",
@@ -87,8 +87,10 @@
   ],
   "motors": [
     {
-      "battery_size": 1040,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1040,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "operating_modes": [
         {

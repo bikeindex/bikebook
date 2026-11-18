@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/benno/2023/ejoy_10d_performance_sport",
   "manufacturer": "Benno",
-  "vehicle_model_group": "eJoy",
+  "model_group": "eJoy",
   "model": "eJoy 10D Performance Sport",
   "model_configuration": "complete",
   "markets": [
@@ -65,6 +65,13 @@
         "position": [
           "front"
         ]
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "thule_yepp_easyfit"
       }
     ],
     "seatpost_diameter": 27.2,
@@ -120,9 +127,11 @@
       "manufacturer": "Bosch",
       "model": "Performance Sport",
       "kind": "mid_drive",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
-      "charging_time": 390,
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion",
+        "charging_time": 390
+      },
       "rated_power": 250,
       "max_torque": 65,
       "operating_modes": [
@@ -142,9 +151,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 40
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 40
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/thomus/2026/oberrider",
   "manufacturer": "Thömus",
-  "vehicle_model_group": "Oberrider",
+  "model_group": "Oberrider",
   "model": "Oberrider",
   "model_configuration": "complete",
   "type": "bike",
@@ -106,7 +106,9 @@
   "motors": [
     {
       "sensor_speed": "spoke_magnet",
-      "battery_size": 600,
+      "battery": {
+        "capacity": 600
+      },
       "operating_modes": [
         {
           "mode": "assist",

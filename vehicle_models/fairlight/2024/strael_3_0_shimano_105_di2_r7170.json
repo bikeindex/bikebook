@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fairlight/2024/strael_3_0_shimano_105_di2_r7170",
   "manufacturer": "Fairlight",
-  "vehicle_model_group": "Strael",
+  "model_group": "Strael",
   "model": "Strael 3.0 Shimano 105 Di2 R7170",
   "model_configuration": "complete",
   "type": "bike",
@@ -63,8 +63,7 @@
     "headset": "ZS44/28.6 | EC44/40",
     "seatpost_diameter": 27.2,
     "front_derailleur_mount": "28.6mm clamp",
-    "max_chainring": 52,
-    "max_weight_total": 105
+    "max_chainring": 52
   },
   "wheels": [
     {
@@ -122,9 +121,28 @@
       "rotor_diameter_max": 160
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 15
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 105
+    },
+    {
+      "load": "rider",
+      "weight": 115,
+      "sizes": [
+        "61R",
+        "61T"
+      ]
+    },
+    {
+      "load": "cargo",
+      "weight": 15
+    },
+    {
+      "load": "payload",
+      "weight": 105
+    }
+  ],
   "sizes": [
     {
       "name": "51R",
@@ -143,8 +161,7 @@
         "bb_drop": 68,
         "fork_rake": 45,
         "trail": 63,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 105
+        "fork_length_a2c": 381
       }
     },
     {
@@ -164,8 +181,7 @@
         "bb_drop": 68,
         "fork_rake": 45,
         "trail": 66,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 105
+        "fork_length_a2c": 381
       }
     },
     {
@@ -185,8 +201,7 @@
         "bb_drop": 68,
         "fork_rake": 45,
         "trail": 60,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 105
+        "fork_length_a2c": 381
       }
     },
     {
@@ -206,8 +221,7 @@
         "bb_drop": 68,
         "fork_rake": 45,
         "trail": 60,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 105
+        "fork_length_a2c": 381
       }
     },
     {
@@ -227,8 +241,7 @@
         "bb_drop": 68,
         "fork_rake": 45,
         "trail": 54,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 105
+        "fork_length_a2c": 381
       }
     },
     {
@@ -248,8 +261,7 @@
         "bb_drop": 68,
         "fork_rake": 45,
         "trail": 57,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 105
+        "fork_length_a2c": 381
       }
     },
     {
@@ -269,8 +281,7 @@
         "bb_drop": 68,
         "fork_rake": 45,
         "trail": 54,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 105
+        "fork_length_a2c": 381
       }
     },
     {
@@ -290,8 +301,7 @@
         "bb_drop": 68,
         "fork_rake": 45,
         "trail": 57,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 105
+        "fork_length_a2c": 381
       }
     },
     {
@@ -311,8 +321,7 @@
         "bb_drop": 68,
         "fork_rake": 45,
         "trail": 54,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 115
+        "fork_length_a2c": 381
       }
     },
     {
@@ -332,8 +341,7 @@
         "bb_drop": 68,
         "fork_rake": 45,
         "trail": 57,
-        "fork_length_a2c": 381,
-        "max_weight_rider": 115
+        "fork_length_a2c": 381
       }
     }
   ],

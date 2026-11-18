@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/x_myroon_elite",
   "manufacturer": "KTM",
-  "vehicle_model_group": "X-Myroon",
+  "model_group": "X-Myroon",
   "model": "X-Myroon Elite",
   "model_configuration": "complete",
   "type": "bike",
@@ -38,9 +38,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
-    "max_weight_total": 100,
-    "gross_weight_rating": 112
+    "material": "carbon"
   },
   "suspension": {
     "front": {
@@ -84,6 +82,16 @@
     "series": "105",
     "electronic": true
   },
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 112
+    }
+  ],
   "sizes": [
     {
       "name": "M",

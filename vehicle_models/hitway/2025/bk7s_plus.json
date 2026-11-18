@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hitway/2025/bk7s_plus",
   "manufacturer": "Hitway",
-  "vehicle_model_group": "BK7",
+  "model_group": "BK7",
   "model": "BK7S Plus",
   "model_configuration": "complete",
   "type": "bike",
@@ -81,9 +81,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 461,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 461,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 250,
       "operating_modes": [
         {

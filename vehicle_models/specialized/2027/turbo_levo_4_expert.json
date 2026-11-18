@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2027/turbo_levo_4_expert",
   "manufacturer": "Specialized",
-  "vehicle_model_group": "Turbo Levo",
+  "model_group": "Turbo Levo",
   "model": "Turbo Levo 4 Expert",
   "model_configuration": "complete",
   "type": "bike",
@@ -170,10 +170,15 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP66 / IP67",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 810,
       "max_torque": 105,

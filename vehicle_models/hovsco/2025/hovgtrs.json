@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hovsco/2025/hovgtrs",
   "manufacturer": "Hovsco",
   "model": "HovGtrs",
@@ -41,8 +41,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 204
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -81,14 +80,16 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 720,
-      "battery_options": [
-        1200,
-        1920
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 720,
+        "capacity_options": [
+          1200,
+          1920
+        ],
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 90,
@@ -119,6 +120,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/engwe/2023/m20",
   "manufacturer": "ENGWE",
-  "vehicle_model_group": "M20",
+  "model_group": "M20",
   "model": "M20",
   "model_configuration": "complete",
   "type": "bike",
@@ -87,8 +87,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 120
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {},
@@ -120,8 +119,10 @@
   ],
   "motors": [
     {
-      "battery_size": 624,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 300
+      },
       "rated_power": 750,
       "max_torque": 55,
       "operating_modes": [
@@ -141,6 +142,12 @@
           "range_claimed": 71
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

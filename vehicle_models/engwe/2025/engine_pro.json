@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/engwe/2025/engine_pro",
   "manufacturer": "ENGWE",
-  "vehicle_model_group": "Engine Pro",
+  "model_group": "Engine Pro",
   "model": "Engine Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -64,8 +64,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {},
@@ -96,7 +95,9 @@
   ],
   "motors": [
     {
-      "battery_size": 768,
+      "battery": {
+        "capacity": 768
+      },
       "peak_power": 1000,
       "operating_modes": [
         {
@@ -109,6 +110,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/propain/2023/ekano_1_al_29_ready2roll_rs",
   "manufacturer": "Propain",
-  "vehicle_model_group": "Ekano",
+  "model_group": "Ekano",
   "model": "Ekano 1 AL 29 Ready2Roll RS",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,8 +42,7 @@
     },
     "headset": "ZS44/28.6 | ZS44/30",
     "seatpost_diameter": 31.6,
-    "max_fork_travel": 170,
-    "gross_weight_rating": 130
+    "max_fork_travel": 170
   },
   "suspension": {
     "front": {
@@ -95,8 +94,10 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [
@@ -109,6 +110,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [

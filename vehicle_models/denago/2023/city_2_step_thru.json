@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/denago/2023/city_2_step_thru",
   "manufacturer": "Denago",
-  "vehicle_model_group": "City",
+  "model_group": "City",
   "model": "City 2 Step-thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -104,9 +104,14 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "certification": "UL 2271, UL 2849",
-      "battery_size": 653,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 653,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 50,
       "operating_modes": [

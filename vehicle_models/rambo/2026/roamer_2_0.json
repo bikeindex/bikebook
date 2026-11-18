@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rambo/2026/roamer_2_0",
   "manufacturer": "Rambo",
   "model": "Roamer 2.0",
@@ -52,8 +52,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 136
+    ]
   },
   "wheels": [
     {
@@ -83,12 +82,14 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "mid_drive",
-      "battery_size": 720,
-      "battery_options": [
-        960
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG branded cells",
+      "battery": {
+        "capacity": 720,
+        "capacity_options": [
+          960
+        ],
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "operating_modes": [
@@ -107,6 +108,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

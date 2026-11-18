@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/qlife/2026/racer_max_fat_tire",
   "manufacturer": "Qlife",
-  "vehicle_model_group": "Racer",
+  "model_group": "Racer",
   "model": "Racer Max Fat Tire",
   "model_configuration": "complete",
   "type": "bike",
@@ -108,8 +108,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 181
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -147,8 +146,10 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 1040,
-      "charging_time": 660,
+      "battery": {
+        "capacity": 1040,
+        "charging_time": 660
+      },
       "peak_power": 1500,
       "max_torque": 200,
       "operating_modes": [
@@ -167,8 +168,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 1040,
-      "charging_time": 660,
+      "battery": {
+        "capacity": 1040,
+        "charging_time": 660
+      },
       "peak_power": 1500,
       "max_torque": 200,
       "operating_modes": [
@@ -182,6 +185,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

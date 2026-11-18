@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/x_treme/2023/cabo_cruiser_elite_48_volt",
   "manufacturer": "X-Treme",
-  "vehicle_model_group": "Cabo Cruiser",
+  "model_group": "Cabo Cruiser",
   "model": "Cabo Cruiser Elite 48 Volt",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -82,7 +82,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 576,
+      "battery": {
+        "capacity": 576
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -95,12 +97,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 98.9,
-        "max_weight_rider": 136
+        "total_weight": 98.9
       }
     }
   ],
@@ -117,6 +124,10 @@
         "rear"
       ],
       "description": "Front Hydraulic Disk Brakes And Rear Drum Brakes"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48 Volts"
     },
     {
       "type": "e_vehicle_battery",
@@ -224,11 +235,6 @@
       "type": "unknown",
       "type_detail": "Amps",
       "description": "12 Amp"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Volts",
-      "description": "48 Volts"
     },
     {
       "type": "unknown",

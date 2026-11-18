@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/intheair/2023/rocket",
   "manufacturer": "InTheAir",
-  "vehicle_model_group": "Rocket",
+  "model_group": "Rocket",
   "model": "Rocket",
   "model_configuration": "complete",
   "type": "bike",
@@ -17,7 +17,7 @@
   "first_year": 2023,
   "years": {
     "2026": {
-      "original_msrp": 119899,
+      "original_msrp": 179900,
       "original_msrp_currency": "USD",
       "colorways": [
         {
@@ -49,8 +49,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 181
+    ]
   },
   "suspension": {
     "front": {
@@ -91,9 +90,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "battery_size": 696,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 696,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "max_torque": 85,
       "operating_modes": [
@@ -113,6 +114,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [
@@ -174,10 +181,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "750W brushless gear motor"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V / 750W"
     },
     {
       "type": "e_vehicle_remote",
@@ -266,6 +269,11 @@
         "width": 101.6,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V / 750W"
     }
   ]
 }

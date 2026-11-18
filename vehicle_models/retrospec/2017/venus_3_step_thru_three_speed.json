@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2017/venus_3_step_thru_three_speed",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Venus",
+  "model_group": "Venus",
   "model": "Venus-3 Step-Thru Three-Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -136,12 +136,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "38CM - S",
       "geometry": {
         "standover": 491,
-        "max_weight_rider": 100,
         "rider_height_max": 1626
       }
     },
@@ -149,7 +154,6 @@
       "name": "44CM - M",
       "geometry": {
         "standover": 491,
-        "max_weight_rider": 100,
         "rider_height_min": 1651
       }
     }

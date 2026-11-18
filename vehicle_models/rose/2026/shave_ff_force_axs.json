@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rose/2026/shave_ff_force_axs",
   "manufacturer": "ROSE",
-  "vehicle_model_group": "Shave FF",
+  "model_group": "Shave FF",
   "model": "Shave FF Force AXS",
   "model_configuration": "complete",
   "type": "bike",
@@ -121,8 +121,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
-    "max_weight_total": 110
+    "material": "carbon"
   },
   "wheels": [
     {
@@ -150,6 +149,12 @@
     "series": "Force",
     "electronic": true
   },
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
+    }
+  ],
   "sizes": [
     {
       "name": "XS",

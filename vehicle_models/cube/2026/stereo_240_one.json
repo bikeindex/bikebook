@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/stereo_240_one",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Stereo",
+  "model_group": "Stereo",
   "model": "Stereo 240 ONE",
   "model_configuration": "complete",
   "type": "bike",
@@ -37,9 +37,7 @@
       "width": 68
     },
     "headset": "IS42/28.6 | IS52/40",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 67,
-    "gross_weight_rating": 80
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -112,6 +110,16 @@
       "rotor_diameter": 160
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 65
+    },
+    {
+      "load": "gross",
+      "weight": 80
+    }
+  ],
   "sizes": [
     {
       "name": "24\"",
@@ -129,7 +137,6 @@
         "stem_length": 40,
         "crank_length": 130,
         "total_weight": 12.4,
-        "max_weight_rider": 65,
         "extra_measurements": {
           "bb_height_to_hub": 10,
           "protrusion_height_80mm": 623

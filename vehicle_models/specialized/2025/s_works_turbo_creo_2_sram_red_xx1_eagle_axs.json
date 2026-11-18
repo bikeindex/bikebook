@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2025/s_works_turbo_creo_2_sram_red_xx1_eagle_axs",
   "manufacturer": "Specialized",
-  "vehicle_model_group": "Turbo Creo",
+  "model_group": "Turbo Creo",
   "model": "S-Works Turbo Creo 2 - SRAM RED / XX1 Eagle AXS",
   "model_configuration": "complete",
   "type": "bike",
@@ -195,9 +195,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 320,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 320,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

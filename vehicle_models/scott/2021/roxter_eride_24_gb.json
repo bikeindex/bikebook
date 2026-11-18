@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/roxter_eride_24_gb",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Roxter",
+  "model_group": "Roxter",
   "model": "Roxter eRIDE 24",
   "model_configuration": "complete",
   "markets": [
@@ -63,9 +63,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "cable_routing": "internal",
-    "headset": "ZS44/28.6 | ZS44/30",
-    "max_weight_total": 30,
-    "gross_weight_rating": 50
+    "headset": "ZS44/28.6 | ZS44/30"
   },
   "suspension": {
     "front": {
@@ -129,7 +127,9 @@
       "manufacturer": "Bosch",
       "model": "Active",
       "kind": "mid_drive",
-      "battery_size": 400,
+      "battery": {
+        "capacity": 400
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -143,6 +143,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 30
+    },
+    {
+      "load": "gross",
+      "weight": 50
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ridley/2024/helium_disc_and_fork",
   "manufacturer": "Ridley",
-  "vehicle_model_group": "Helium",
+  "model_group": "Helium",
   "model": "Helium Disc & Fork",
   "model_configuration": "frame_fork",
   "markets": [
@@ -82,8 +82,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "carbon",
-    "gross_weight_rating": 110
+    "material": "carbon"
   },
   "wheels": [
     {
@@ -114,6 +113,12 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 110
     }
   ],
   "sizes": [

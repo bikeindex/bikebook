@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2019/srx_mini_hoverboard_for_kids",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "SRX",
+  "model_group": "SRX",
   "model": "SRX Mini Hoverboard for Kids",
   "model_configuration": "complete",
   "type": "epamd",
@@ -144,8 +144,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 60
+    "material": "steel"
   },
   "wheels": [
     {
@@ -158,8 +157,12 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
-      "charging_time": 240,
+      "certifications": [
+        "UL 2272"
+      ],
+      "battery": {
+        "charging_time": 240
+      },
       "rated_power": 100,
       "operating_modes": [
         {
@@ -171,7 +174,9 @@
       ]
     },
     {
-      "charging_time": 240,
+      "battery": {
+        "charging_time": 240
+      },
       "rated_power": 100,
       "operating_modes": [
         {
@@ -181,6 +186,12 @@
           "range_claimed": 5
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 60
     }
   ],
   "sizes": [

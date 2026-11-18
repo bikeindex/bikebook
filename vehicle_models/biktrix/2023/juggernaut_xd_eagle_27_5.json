@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biktrix/2023/juggernaut_xd_eagle_27_5",
   "manufacturer": "Biktrix",
-  "vehicle_model_group": "Juggernaut XD",
+  "model_group": "Juggernaut XD",
   "model": "Juggernaut XD Eagle 27.5",
   "model_configuration": "complete",
   "type": "bike",
@@ -55,8 +55,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 172
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -126,7 +125,9 @@
       "drive_wheel": "rear",
       "kind": "mid_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 910,
+      "battery": {
+        "capacity": 910
+      },
       "rated_power": 2300,
       "max_torque": 85,
       "operating_modes": [
@@ -147,6 +148,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 172
     }
   ],
   "sizes": [

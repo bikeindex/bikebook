@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sun/2026/e350_b1",
   "manufacturer": "Sun",
   "model": "E350-B1",
@@ -103,10 +103,15 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 350,
       "max_torque": 45,
       "operating_modes": [
@@ -130,6 +135,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "18\"",
@@ -150,7 +161,6 @@
         "stem_length": 60,
         "crank_length": 165,
         "total_weight": 33.1,
-        "max_weight_rider": 113,
         "rider_height_min": 1524,
         "rider_height_max": 1880,
         "extra_measurements": {

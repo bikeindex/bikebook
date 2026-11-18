@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/batavus/2026/senz_active_exclusive",
   "manufacturer": "Batavus",
-  "vehicle_model_group": "Senz",
+  "model_group": "Senz",
   "model": "Senz Active Exclusive",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,8 +54,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 130
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -85,6 +84,12 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 130
     }
   ],
   "sizes": [

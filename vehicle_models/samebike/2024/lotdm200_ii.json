@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/samebike/2024/lotdm200_ii",
   "manufacturer": "samebike",
   "model": "LOTDM200-II",
@@ -78,8 +78,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -113,8 +112,10 @@
   ],
   "motors": [
     {
-      "battery_size": 624,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 480
+      },
       "rated_power": 250,
       "max_torque": 70,
       "operating_modes": [
@@ -130,6 +131,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

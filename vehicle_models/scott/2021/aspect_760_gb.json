@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/aspect_760_gb",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Aspect",
+  "model_group": "Aspect",
   "model": "Aspect 760",
   "model_configuration": "complete",
   "markets": [
@@ -96,9 +96,7 @@
       "width": 73,
       "spindle": "square taper"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 113,
-    "gross_weight_rating": 128
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -142,6 +140,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
+    },
+    {
+      "load": "gross",
+      "weight": 128
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2024/v12_pro",
   "manufacturer": "Inmotion",
-  "vehicle_model_group": "V12",
+  "model_group": "V12",
   "model": "V12 Pro",
   "model_configuration": "complete",
   "type": "epamd",
@@ -35,8 +35,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "wheels": [
     {
@@ -59,10 +58,12 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 1750,
-      "battery_chemistry": "li-ion",
-      "battery_info": "24S2P LG 21700, 5000mAh",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1750,
+        "chemistry": "li-ion",
+        "cells": "24S2P LG 21700, 5000mAh",
+        "charging_time": 540
+      },
       "rated_power": 2800,
       "peak_power": 5600,
       "max_torque": 160,
@@ -75,6 +76,12 @@
           "max_slope": 45
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

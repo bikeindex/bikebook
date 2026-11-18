@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dwmeigi/2023/mg2302_silverado",
   "manufacturer": "Dwmeigi",
-  "vehicle_model_group": "Silverado",
+  "model_group": "Silverado",
   "model": "MG2302-Silverado",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -89,10 +89,12 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung cell",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 300
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [

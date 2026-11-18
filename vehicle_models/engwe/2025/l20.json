@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/engwe/2025/l20",
   "manufacturer": "ENGWE",
-  "vehicle_model_group": "L20",
+  "model_group": "L20",
   "model": "L20",
   "model_configuration": "complete",
   "type": "bike",
@@ -80,8 +80,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 120
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {}
@@ -112,9 +111,11 @@
   ],
   "motors": [
     {
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "charging_time": 390,
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "charging_time": 390
+      },
       "rated_power": 750,
       "max_torque": 50,
       "operating_modes": [
@@ -129,6 +130,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

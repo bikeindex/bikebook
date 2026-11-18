@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2025/moterra_4",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Moterra Neo",
+  "model_group": "Moterra Neo",
   "model": "Moterra 4",
   "model_configuration": "complete",
   "markets": [
@@ -273,9 +273,13 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "certification": "UL 2849",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,

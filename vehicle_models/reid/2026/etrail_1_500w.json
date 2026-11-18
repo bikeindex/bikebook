@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2026/etrail_1_500w",
   "manufacturer": "Reid",
-  "vehicle_model_group": "eTrail",
+  "model_group": "eTrail",
   "model": "eTrail 1 500W",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,8 +54,7 @@
       "spindle": "square taper"
     },
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 110
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -113,8 +112,12 @@
       "manufacturer": "Ananda",
       "model": "R520",
       "kind": "hub_drive",
-      "certification": "UL 2271",
-      "battery_size": 672,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 672
+      },
       "rated_power": 500,
       "peak_power": 768,
       "max_torque": 65,
@@ -131,6 +134,12 @@
           "max_speed": 32
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
     }
   ],
   "sizes": [

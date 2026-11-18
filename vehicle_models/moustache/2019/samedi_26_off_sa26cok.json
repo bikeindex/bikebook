@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2019/samedi_26_off_sa26cok",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Samedi 27 Off",
+  "model_group": "Samedi 27 Off",
   "model": "Samedi 26 Off SA26COK",
   "model_configuration": "complete",
   "type": "bike",
@@ -57,9 +57,7 @@
       "spindle": "BNI"
     },
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 99,
-    "gross_weight_rating": 120
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -125,8 +123,10 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,
@@ -141,6 +141,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 99
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

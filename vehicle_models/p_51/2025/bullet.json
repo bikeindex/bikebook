@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/p_51/2025/bullet",
   "manufacturer": "P-51",
   "model": "Bullet",
@@ -86,10 +86,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "This bike does not need to be registered and is Class 2 compliant",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG 21700 cell",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "LG 21700"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -112,6 +113,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -122,7 +129,6 @@
           "length": 1829
         },
         "total_weight": 41.7,
-        "max_weight_rider": 125,
         "rider_height_min": 1549,
         "rider_height_max": 1905,
         "rider_age_min": 13

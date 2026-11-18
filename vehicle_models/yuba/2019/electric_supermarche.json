@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/yuba/2019/electric_supermarche",
   "manufacturer": "Yuba",
-  "vehicle_model_group": "Electric",
+  "model_group": "Electric",
   "model": "Electric Supermarché",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -74,8 +74,7 @@
       }
     ],
     "headset": "ZS44/28.6 | ZS56/40",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 136
+    "seatpost_diameter": 30.9
   },
   "wheels": [
     {
@@ -129,7 +128,9 @@
       "model": "BDU450CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 500,
+      "battery": {
+        "capacity": 500
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -143,6 +144,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

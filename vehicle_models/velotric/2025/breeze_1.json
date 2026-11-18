@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velotric/2025/breeze_1",
   "manufacturer": "Velotric",
   "model": "Breeze 1",
@@ -243,11 +243,14 @@
         "type": "fender"
       },
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 150
+    "seatpost_diameter": 30.9
   },
   "wheels": [
     {
@@ -295,11 +298,20 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849, UL 2271, ISO 4210, UL 2580",
+      "certifications": [
+        "UL 2849",
+        "UL 2271",
+        "UL 2580",
+        "ISO 4210"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 627,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 cell, UL 2580 Certified",
+      "battery": {
+        "capacity": 627,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "18650",
+        "weight": 3.3
+      },
       "rated_power": 750,
       "max_torque": 65,
       "operating_modes": [
@@ -336,6 +348,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

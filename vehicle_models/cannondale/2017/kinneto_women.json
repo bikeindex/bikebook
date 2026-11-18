@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2017/kinneto_women",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Kinneto",
+  "model_group": "Kinneto",
   "model": "Kinneto Women",
   "model_configuration": "complete",
   "markets": [
@@ -117,8 +117,10 @@
       "manufacturer": "Shimano",
       "model": "Steps DU-E6001",
       "kind": "mid_drive",
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

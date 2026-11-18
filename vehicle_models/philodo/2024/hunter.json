@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/philodo/2024/hunter",
   "manufacturer": "Philodo",
   "model": "Hunter",
@@ -25,8 +25,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 181
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -66,8 +65,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 1196,
-      "charging_time": 600,
+      "battery": {
+        "capacity": 1196,
+        "charging_time": 600
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 90,
@@ -91,6 +92,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [
@@ -149,12 +156,25 @@
       "description": "2.8 inch multifunctional color display"
     },
     {
+      "type": "fender",
+      "description": "fenders"
+    },
+    {
       "type": "fork",
       "type_detail": "Front fork with lockout",
       "position": [
         "front"
       ],
       "description": "Front fork with lockout"
+    },
+    {
+      "type": "included_not_installed",
+      "type_detail": "Tools",
+      "description": "assembly toolset"
+    },
+    {
+      "type": "kickstand",
+      "description": "kickstand"
     },
     {
       "type": "lights",
@@ -177,6 +197,17 @@
       "description": "Integrated Brake Light and Tailight"
     },
     {
+      "type": "mirror",
+      "description": "rearview mirrors"
+    },
+    {
+      "type": "rack",
+      "position": [
+        "rear"
+      ],
+      "description": "rear rack"
+    },
+    {
       "type": "saddle",
       "description": "Ergonomic soft saddle"
     },
@@ -195,11 +226,6 @@
         "width": 101.6,
         "diameter": 559
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Package Included",
-      "description": "Battery, charger, kickstand, fenders, rear rack, rearview mirrors, assembly toolset, user manual"
     }
   ]
 }

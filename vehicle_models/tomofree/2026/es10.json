@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tomofree/2026/es10",
   "manufacturer": "Tomofree",
   "model": "ES10",
@@ -58,9 +58,11 @@
     {
       "drive_wheel": "front",
       "water_rating": "IPX5",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 660,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 660
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "operating_modes": [
@@ -74,9 +76,11 @@
     {
       "drive_wheel": "rear",
       "water_rating": "IPX5",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 660,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 660
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "operating_modes": [
@@ -86,6 +90,12 @@
           "range_claimed": 53
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -98,7 +108,6 @@
           "height": 1220
         },
         "total_weight": 33.8,
-        "max_weight_rider": 120,
         "rider_height_min": 1520,
         "rider_height_max": 1900
       }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/coswheel/2026/r6000",
   "manufacturer": "Coswheel",
   "model": "R6000",
@@ -40,8 +40,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 150
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {
@@ -89,9 +88,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 1800,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1800,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "peak_power": 7000,
       "max_torque": 180,
       "operating_modes": [
@@ -115,6 +116,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -179,10 +186,6 @@
       "description": "3.5\" LCD high-brightness color screen"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "60V 70A"
-    },
-    {
       "type": "fork",
       "type_detail": "Front Suspension",
       "position": [
@@ -237,6 +240,11 @@
       "dimensions": {
         "diameter": 432
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "60V 70A"
     },
     {
       "type": "unknown",

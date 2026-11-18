@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/norco/2024/range_vlt_c1",
   "manufacturer": "Norco Bikes",
-  "vehicle_model_group": "Range VLT Gen 3",
+  "model_group": "Range VLT Gen 3",
   "model": "Range VLT C1",
   "model_configuration": "complete",
   "type": "bike",
@@ -136,8 +136,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

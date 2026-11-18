@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/addmotor/2023/triketan_m_350",
   "manufacturer": "Addmotor",
-  "vehicle_model_group": "Triketan",
+  "model_group": "Triketan",
   "model": "Triketan M-350",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -89,8 +89,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 204
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -141,9 +140,11 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cell",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -165,6 +166,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

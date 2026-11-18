@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velec/2023/fb48",
   "manufacturer": "Velec",
   "model": "FB48",
@@ -79,10 +79,12 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 480,
-      "battery_options": [
-        720
-      ],
+      "battery": {
+        "capacity": 480,
+        "capacity_options": [
+          720
+        ]
+      },
       "rated_power": 500,
       "max_torque": 70,
       "operating_modes": [

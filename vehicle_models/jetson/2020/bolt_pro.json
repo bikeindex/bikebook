@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2020/bolt_pro",
   "manufacturer": "Jetson",
-  "vehicle_model_group": "Bolt",
+  "model_group": "Bolt",
   "model": "Bolt Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -87,9 +87,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 216,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 216,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -115,6 +117,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -130,7 +138,6 @@
           "height": 584
         },
         "total_weight": 19.1,
-        "max_weight_rider": 120,
         "rider_age_min": 12
       }
     }

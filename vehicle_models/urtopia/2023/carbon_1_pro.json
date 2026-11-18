@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/urtopia/2023/carbon_1_pro",
   "manufacturer": "Urtopia",
-  "vehicle_model_group": "Carbon 1",
+  "model_group": "Carbon 1",
   "model": "Carbon 1 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -84,8 +84,7 @@
   },
   "frame": {
     "material": "carbon",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 109
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -129,11 +128,15 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
+      "certifications": [
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 353,
-      "battery_chemistry": "li-ion",
-      "charging_time": 150,
+      "battery": {
+        "capacity": 353,
+        "chemistry": "li-ion",
+        "charging_time": 150
+      },
       "rated_power": 350,
       "peak_power": 500,
       "max_torque": 45,
@@ -157,6 +160,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 109
     }
   ],
   "sizes": [

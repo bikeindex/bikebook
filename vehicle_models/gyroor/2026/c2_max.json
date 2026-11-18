@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gyroor/2026/c2_max",
   "manufacturer": "Gyroor",
   "model": "C2 Max",
@@ -61,10 +61,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IP54",
-      "battery_size": 648,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 648,
+        "charging_time": 300
+      },
       "rated_power": 850,
       "peak_power": 1200,
       "operating_modes": [
@@ -77,9 +81,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 31.75
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    },
+    {
+      "load": "cargo",
+      "weight": 31.75
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -92,7 +103,6 @@
           "height": 1110
         },
         "total_weight": 39.9,
-        "max_weight_rider": 159,
         "rider_height_min": 1448,
         "rider_height_max": 1956,
         "extra_measurements": {

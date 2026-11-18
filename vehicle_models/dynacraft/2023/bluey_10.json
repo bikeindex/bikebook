@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dynacraft/2023/bluey_10",
   "manufacturer": "Dynacraft",
-  "vehicle_model_group": "Bluey",
+  "model_group": "Bluey",
   "model": "Bluey 10",
   "model_configuration": "complete",
   "type": "balance_bike",
@@ -42,8 +42,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 20
+    "material": "steel"
   },
   "wheels": [
     {
@@ -52,6 +51,12 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 20
     }
   ],
   "sizes": [

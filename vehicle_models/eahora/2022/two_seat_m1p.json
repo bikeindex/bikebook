@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eahora/2022/two_seat_m1p",
   "manufacturer": "Eahora",
-  "vehicle_model_group": "M1P",
+  "model_group": "M1P",
   "model": "Two-Seat M1P",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -52,8 +52,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 200
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -90,8 +89,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 1800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 2000,
       "peak_power": 2700,
       "max_torque": 95,
@@ -104,6 +105,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

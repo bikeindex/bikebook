@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biktrix/2023/stunner_lt_7",
   "manufacturer": "Biktrix",
   "model": "Stunner LT 7",
@@ -131,8 +131,7 @@
     "bottom_bracket": {
       "spindle": "square taper"
     },
-    "seatpost_diameter": 28.6,
-    "max_weight_total": 150
+    "seatpost_diameter": 28.6
   },
   "suspension": {
     "front": {
@@ -222,7 +221,9 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 1008,
+      "battery": {
+        "capacity": 1008
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -241,6 +242,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

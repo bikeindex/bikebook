@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/liv/2027/embolden_e_plus_0",
   "manufacturer": "Liv",
-  "vehicle_model_group": "Embolden",
+  "model_group": "Embolden",
   "model": "Embolden E+ 0",
   "model_configuration": "complete",
   "type": "bike",
@@ -59,8 +59,7 @@
       "spindle": "ISIS"
     },
     "headset": "ZS62/38.1 | ZS72/45.7",
-    "derailleur_hanger": "SRAM UDH",
-    "gross_weight_rating": 140
+    "derailleur_hanger": "SRAM UDH"
   },
   "suspension": {
     "front": {
@@ -179,8 +178,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "water_rating": "IPX6",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "peak_power": 800,
       "max_torque": 100,
       "operating_modes": [
@@ -190,6 +191,12 @@
           "range_claimed": 245
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

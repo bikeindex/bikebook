@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/raev/2023/bullet_se",
   "manufacturer": "Raev",
-  "vehicle_model_group": "Bullet",
+  "model_group": "Bullet",
   "model": "Bullet SE",
   "model_configuration": "complete",
   "type": "bike",
@@ -52,8 +52,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "Q235 Steel",
-    "max_weight_total": 150
+    "material_detail": "Q235 Steel"
   },
   "suspension": {
     "front": {
@@ -95,8 +94,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 624,
-      "charging_time": 390,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 390
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -116,6 +117,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

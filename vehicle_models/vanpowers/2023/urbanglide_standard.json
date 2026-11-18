@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vanpowers/2023/urbanglide_standard",
   "manufacturer": "VanPowers",
-  "vehicle_model_group": "UrbanGlide",
+  "model_group": "UrbanGlide",
   "model": "UrbanGlide-Standard",
   "model_configuration": "complete",
   "type": "bike",
@@ -108,10 +108,12 @@
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
       "water_rating": "IP65",
-      "battery_size": 692,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG Cells",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 692,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 300
+      },
       "rated_power": 500,
       "peak_power": 725,
       "max_torque": 65,

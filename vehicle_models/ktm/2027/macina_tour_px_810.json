@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/macina_tour_px_810",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Macina Tour",
+  "model_group": "Macina Tour",
   "model": "Macina Tour PX 810",
   "model_configuration": "complete",
   "type": "bike",
@@ -44,9 +44,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "headset": "ZS44/28.6 | ZS56/40",
-    "max_weight_total": 118,
-    "gross_weight_rating": 146
+    "headset": "ZS44/28.6 | ZS56/40"
   },
   "suspension": {
     "front": {
@@ -82,8 +80,10 @@
       "model_group": "Performance Line PX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 700,
       "max_torque": 90,
@@ -97,6 +97,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 118
+    },
+    {
+      "load": "gross",
+      "weight": 146
     }
   ],
   "sizes": [

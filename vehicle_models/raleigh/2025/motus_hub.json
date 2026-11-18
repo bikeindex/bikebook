@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/raleigh/2025/motus_hub",
   "manufacturer": "Raleigh",
-  "vehicle_model_group": "Motus",
+  "model_group": "Motus",
   "model": "Motus Hub",
   "model_configuration": "complete",
   "markets": [
@@ -151,8 +151,10 @@
       "model": "BDU336Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,

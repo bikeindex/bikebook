@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/andsky/2025/rover_x",
   "manufacturer": "Andsky",
   "model": "Rover X",
@@ -61,8 +61,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 204
+    ]
   },
   "suspension": {
     "front": {},
@@ -117,13 +116,14 @@
     {
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 1500,
-      "battery_options": [
-        3000,
-        3000
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 21700 cells",
+      "battery": {
+        "capacity": 1500,
+        "capacity_options": [
+          3000
+        ],
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700"
+      },
       "rated_power": 1500,
       "peak_power": 3200,
       "max_torque": 150,
@@ -146,6 +146,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

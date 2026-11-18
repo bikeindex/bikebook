@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hjm/2023/warrior_pro",
   "manufacturer": "HJM",
-  "vehicle_model_group": "Warrior",
+  "model_group": "Warrior",
   "model": "Warrior Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -89,8 +89,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 31.8,
-    "max_weight_total": 159
+    "seatpost_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -141,9 +140,11 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 1000,
       "peak_power": 1270,
       "operating_modes": [
@@ -166,6 +167,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

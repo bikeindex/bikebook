@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2025/turbo_levo_sl_2_ohlins_coil",
   "manufacturer": "Specialized",
-  "vehicle_model_group": "Turbo Levo",
+  "model_group": "Turbo Levo",
   "model": "Turbo Levo SL 2 Öhlins Coil",
   "model_configuration": "complete",
   "type": "bike",
@@ -190,10 +190,15 @@
       "kind": "mid_drive",
       "spindle": "DUB",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP67",
-      "battery_size": 320,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 320,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 320,
       "max_torque": 50,

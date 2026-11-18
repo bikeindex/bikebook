@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freego/2022/f1",
   "manufacturer": "Freego",
-  "vehicle_model_group": "F1",
+  "model_group": "F1",
   "model": "F1",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,8 +40,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -77,7 +76,9 @@
   ],
   "motors": [
     {
-      "battery_size": 960,
+      "battery": {
+        "capacity": 960
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -98,6 +99,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

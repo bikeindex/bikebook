@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/acid_240_hybrid_rookie_pro_400x",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Acid Hybrid",
+  "model_group": "Acid Hybrid",
   "model": "Acid 240 Hybrid Rookie Pro 400X",
   "model_configuration": "complete",
   "type": "bike",
@@ -50,9 +50,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 62,
-    "gross_weight_rating": 80
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -121,8 +119,10 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 55,
@@ -136,6 +136,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 50
+    },
+    {
+      "load": "gross",
+      "weight": 80
     }
   ],
   "sizes": [
@@ -152,7 +162,6 @@
         "chainstay": 420,
         "wheelbase": 1032,
         "total_weight": 17.6,
-        "max_weight_rider": 50,
         "extra_measurements": {
           "bb_height_to_hub": -50,
           "protrusion_height_80mm": 668

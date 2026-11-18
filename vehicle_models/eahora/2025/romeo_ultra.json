@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eahora/2025/romeo_ultra",
   "manufacturer": "Eahora",
-  "vehicle_model_group": "Romeo",
+  "model_group": "Romeo",
   "model": "Romeo Ultra",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,8 +54,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 150
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {
@@ -111,9 +110,12 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IPX6",
-      "battery_size": 4200,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A",
+      "battery": {
+        "capacity": 4200,
+        "voltage": 60,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A"
+      },
       "rated_power": 3000,
       "peak_power": 3800,
       "max_torque": 120,
@@ -139,6 +141,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

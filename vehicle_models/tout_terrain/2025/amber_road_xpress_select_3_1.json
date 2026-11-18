@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tout_terrain/2025/amber_road_xpress_select_3_1",
   "manufacturer": "Tout Terrain",
-  "vehicle_model_group": "Amber Road",
+  "model_group": "Amber Road",
   "model": "Amber Road Xpress Select 3.1",
   "model_configuration": "complete",
   "type": "bike",
@@ -49,12 +49,17 @@
       {
         "type": "bottle",
         "location": "downtube_2"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
       }
     ],
     "headset": "EC34/28.6 | EC34/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 143,
-    "gross_weight_rating": 160
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -114,6 +119,16 @@
       ],
       "rotor_diameter": 160,
       "caliper_mount": "Disc IS"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 143
+    },
+    {
+      "load": "gross",
+      "weight": 160
     }
   ],
   "sizes": [
@@ -353,11 +368,6 @@
         "width": 47,
         "diameter": 622
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Terrain",
-      "description": "Allroad"
     },
     {
       "type": "unknown",

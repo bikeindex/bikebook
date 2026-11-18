@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/paselec/2026/m7",
   "manufacturer": "Paselec",
   "model": "M7",
@@ -55,8 +55,10 @@
   ],
   "motors": [
     {
-      "battery_size": 1620,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1620,
+        "chemistry": "li-ion"
+      },
       "peak_power": 5000,
       "operating_modes": [
         {

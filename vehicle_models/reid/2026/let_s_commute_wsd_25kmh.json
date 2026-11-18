@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2026/let_s_commute_wsd_25kmh",
   "manufacturer": "Reid",
-  "vehicle_model_group": "Let's Commute",
+  "model_group": "Let's Commute",
   "model": "Let's Commute WSD 25KMH",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,8 +54,7 @@
       "spindle": "square taper"
     },
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 110
+    "seatpost_clamp_diameter": 34.9
   },
   "wheels": [
     {
@@ -115,8 +114,12 @@
       "manufacturer": "Ananda",
       "model": "M131",
       "kind": "hub_drive",
-      "certification": "EN50604",
-      "battery_size": 352,
+      "certifications": [
+        "EN 50604"
+      ],
+      "battery": {
+        "capacity": 352
+      },
       "rated_power": 250,
       "peak_power": 430,
       "max_torque": 40,
@@ -131,6 +134,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
     }
   ],
   "sizes": [

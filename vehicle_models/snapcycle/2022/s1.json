@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/snapcycle/2022/s1",
   "manufacturer": "Snapcycle",
   "model": "S1",
@@ -27,8 +27,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "folding": "half_fold",
-    "seatpost_diameter": 33.9,
-    "max_weight_total": 136
+    "seatpost_diameter": 33.9
   },
   "suspension": {
     "front": {
@@ -79,9 +78,11 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 85,
@@ -101,6 +102,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [
@@ -266,6 +273,7 @@
       "type": "seatpost",
       "description": "Aluminum Alloy, 350mm x 33.9mm Dia",
       "dimensions": {
+        "length": 350,
         "diameter": 33.9
       }
     },

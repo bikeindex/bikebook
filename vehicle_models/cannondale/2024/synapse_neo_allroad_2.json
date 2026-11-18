@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2024/synapse_neo_allroad_2",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Synapse Neo Allroad",
+  "model_group": "Synapse Neo Allroad",
   "model": "Synapse Neo Allroad 2",
   "model_configuration": "complete",
   "markets": [
@@ -189,9 +189,13 @@
       "model_group": "Performance Line Sprint",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "certification": "UL 2849",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,

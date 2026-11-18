@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jamis/2014/aurora",
   "manufacturer": "Jamis",
   "model": "Aurora",
@@ -87,9 +87,12 @@
       "caliper_mount": "Brake Bosses"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 18
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 18
+    }
+  ],
   "components": [
     {
       "type": "bottom_bracket",

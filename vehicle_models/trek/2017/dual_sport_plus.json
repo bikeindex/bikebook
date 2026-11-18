@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2017/dual_sport_plus",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Dual",
+  "model_group": "Dual",
   "model": "Dual Sport+",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,9 +54,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "Alpha Gold Aluminum",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 116,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -109,8 +107,10 @@
       "manufacturer": "Shimano",
       "model": "STEPS",
       "kind": "mid_drive",
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 50,
       "operating_modes": [
@@ -123,6 +123,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 116
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

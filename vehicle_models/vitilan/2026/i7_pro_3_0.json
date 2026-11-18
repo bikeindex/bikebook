@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vitilan/2026/i7_pro_3_0",
   "manufacturer": "Vitilan",
   "model": "I7 Pro 3.0",
@@ -74,8 +74,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {
@@ -116,9 +115,11 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 80,
@@ -139,6 +140,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -200,10 +207,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V / 25A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "I7PRO 3.0: 48V Multi-function Intelligent Display"
     },
     {
@@ -258,6 +261,11 @@
         "width": 101.6,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V / 25A"
     },
     {
       "type": "unknown",

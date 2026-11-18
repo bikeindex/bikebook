@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2019/k1",
   "manufacturer": "Inmotion",
   "model": "K1",
@@ -19,8 +19,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 90
+    "material": "steel"
   },
   "brakes": [
     {
@@ -33,9 +32,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 56,
-      "battery_info": "25.9 V 2.15 Ah",
-      "charging_time": 120,
+      "battery": {
+        "capacity": 56,
+        "voltage": 25.9,
+        "charging_time": 120
+      },
       "rated_power": 150,
       "operating_modes": [
         {
@@ -45,6 +46,12 @@
           "range_claimed": 8
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 90
     }
   ],
   "sizes": [

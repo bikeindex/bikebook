@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2023/charger4_mixte_gt_automatic_us",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Charger4 Mixte",
+  "model_group": "Charger4 Mixte",
   "model": "Charger4 Mixte GT automatic",
   "model_configuration": "complete",
   "markets": [
@@ -108,14 +108,16 @@
         "type": "fender"
       },
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
     ],
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 129,
-    "gross_weight_rating": 160
+    }
   },
   "suspension": {
     "front": {
@@ -176,8 +178,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -190,6 +194,28 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    },
+    {
+      "load": "gross",
+      "weight": 160
+    },
+    {
+      "load": "rear_rack",
+      "weight": 27
+    },
+    {
+      "load": "front_rack",
+      "weight": 5
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 5
     }
   ],
   "sizes": [
@@ -211,15 +237,11 @@
           "length": 1840
         },
         "total_weight": 30.1,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "yes",
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     },
@@ -241,15 +263,11 @@
           "length": 1870
         },
         "total_weight": 30.2,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "yes",
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     },
@@ -271,15 +289,11 @@
           "length": 1900
         },
         "total_weight": 30.3,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "yes",
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     },

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/polygon/2023/kalosi_klunker",
   "manufacturer": "Polygon",
-  "vehicle_model_group": "Kalosi",
+  "model_group": "Kalosi",
   "model": "Kalosi Klunker",
   "model_configuration": "complete",
   "type": "bike",
@@ -92,9 +92,11 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "battery_size": 252,
-      "battery_chemistry": "li-ion",
-      "battery_info": "SAMSUNG CELL",
+      "battery": {
+        "capacity": 252,
+        "chemistry": "li-ion",
+        "cells": "SAMSUNG"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

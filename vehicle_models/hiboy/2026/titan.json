@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hiboy/2026/titan",
   "manufacturer": "Hiboy",
-  "vehicle_model_group": "TITAN",
+  "model_group": "TITAN",
   "model": "TITAN",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -63,9 +63,11 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX4",
-      "battery_size": 864,
-      "battery_chemistry": "li-ion",
-      "charging_time": 450,
+      "battery": {
+        "capacity": 864,
+        "chemistry": "li-ion",
+        "charging_time": 450
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "operating_modes": [
@@ -79,6 +81,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -89,7 +97,6 @@
           "height": 1306
         },
         "total_weight": 35,
-        "max_weight_rider": 120,
         "rider_height_min": 1600,
         "rider_height_max": 1930
       }

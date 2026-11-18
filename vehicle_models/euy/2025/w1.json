@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/euy/2025/w1",
   "manufacturer": "Euy",
   "model": "W1",
@@ -55,8 +55,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 204
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {}
@@ -89,9 +88,13 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 2880,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 2880,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "max_torque": 96,
       "operating_modes": [
@@ -114,6 +117,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [
@@ -197,10 +206,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V/25A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LCD display"
     },
     {
@@ -248,6 +253,11 @@
         "width": 101.6,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V/25A"
     },
     {
       "type": "wheel",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/batavus/2024/altura_power_sport_low",
   "manufacturer": "Batavus",
-  "vehicle_model_group": "Altura",
+  "model_group": "Altura",
   "model": "Altura Power Sport LOW",
   "model_configuration": "complete",
   "type": "bike",
@@ -55,8 +55,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 130
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -92,8 +91,10 @@
       "model": "BDU336Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -107,6 +108,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 130
     }
   ],
   "sizes": [

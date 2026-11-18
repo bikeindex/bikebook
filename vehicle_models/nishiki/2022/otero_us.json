@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/nishiki/2022/otero_us",
   "manufacturer": "Nishiki",
   "model": "Otero",
@@ -27,13 +27,13 @@
             "silver",
             "black"
           ],
+          "stock_photo": "https://bikebook.bikeindex.org/nishiki/2022/otero_us.jpg",
           "variants": [
             {
               "sku": "24278402",
               "size": "One Size"
             }
-          ],
-          "stock_photo": "https://bikebook.bikeindex.org/nishiki/2022/otero_us.jpg"
+          ]
         }
       ],
       "url": "https://globalpreview.dickssportinggoods.com/p/nishiki-otero-adult-electric-mountain-bike-22nisunshktrbkxxxbik/22nisunshktrbkxxxbik",
@@ -84,8 +84,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 50,
       "operating_modes": [

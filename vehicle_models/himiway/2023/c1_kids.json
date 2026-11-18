@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/himiway/2023/c1_kids",
   "manufacturer": "Himiway",
   "model": "C1 Kids",
@@ -72,8 +72,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 75
+    "material_detail": "6061 Aluminum"
   },
   "wheels": [
     {
@@ -97,7 +96,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 360,
+      "battery": {
+        "capacity": 360
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -114,6 +115,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 75
     }
   ],
   "sizes": [

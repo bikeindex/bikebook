@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2020/ams_100_c_68_tm_29",
   "manufacturer": "Cube",
-  "vehicle_model_group": "AMS",
+  "model_group": "AMS",
   "model": "AMS 100 C:68 TM 29",
   "model_configuration": "complete",
   "type": "bike",
@@ -33,9 +33,7 @@
     "material": "carbon",
     "headset": "IS42/28.6 | IS42/30",
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 103,
-    "gross_weight_rating": 115
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -84,6 +82,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 103
+    },
+    {
+      "load": "gross",
+      "weight": 115
     }
   ],
   "sizes": [

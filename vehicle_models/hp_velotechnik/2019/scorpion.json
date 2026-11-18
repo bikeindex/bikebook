@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hp_velotechnik/2019/scorpion",
   "manufacturer": "HP Velotechnik",
-  "vehicle_model_group": "Scorpion",
+  "model_group": "Scorpion",
   "model": "Scorpion",
   "model_configuration": "complete",
   "type": "recumbent",
@@ -52,8 +52,7 @@
       "shell": "BSA",
       "width": 68
     },
-    "coil_compatible": true,
-    "max_weight_total": 150
+    "coil_compatible": true
   },
   "suspension": {
     "rear": {
@@ -103,6 +102,12 @@
       "position": [
         "front"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

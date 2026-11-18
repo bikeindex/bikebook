@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rize/2024/bolt_x",
   "manufacturer": "Rize",
-  "vehicle_model_group": "Bolt",
+  "model_group": "Bolt",
   "model": "Bolt X",
   "model_configuration": "complete",
   "type": "bike",
@@ -17,7 +17,7 @@
   "first_year": 2024,
   "years": {
     "2026": {
-      "original_msrp": 179900,
+      "original_msrp": 209900,
       "original_msrp_currency": "USD",
       "colorways": [
         {
@@ -47,8 +47,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 125
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -97,13 +96,15 @@
     {
       "manufacturer": "Bafang",
       "sensor_cadence": true,
-      "battery_size": 672,
-      "battery_options": [
-        1152
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 21700 50E Cell",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 672,
+        "capacity_options": [
+          1152
+        ],
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700 50E",
+        "charging_time": 300
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -133,6 +134,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

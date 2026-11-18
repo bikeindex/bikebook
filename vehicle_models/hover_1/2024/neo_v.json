@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hover_1/2024/neo_v",
   "manufacturer": "Hover-1",
-  "vehicle_model_group": "Neo",
+  "model_group": "Neo",
   "model": "Neo V",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -89,7 +89,9 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 144,
+      "battery": {
+        "capacity": 144
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -99,6 +101,12 @@
           "range_claimed": 14
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
     }
   ],
   "sizes": [
@@ -116,7 +124,6 @@
           "height": 541
         },
         "total_weight": 13,
-        "max_weight_rider": 100,
         "rider_age_min": 12
       }
     }

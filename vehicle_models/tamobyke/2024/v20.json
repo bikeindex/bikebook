@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tamobyke/2024/v20",
   "manufacturer": "Tamobyke",
-  "vehicle_model_group": "V20",
+  "model_group": "V20",
   "model": "V20",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,8 +54,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -94,10 +93,14 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 749,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 749,
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "max_torque": 83,
@@ -122,6 +125,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

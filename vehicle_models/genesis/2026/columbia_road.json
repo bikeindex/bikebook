@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/genesis/2026/columbia_road",
   "manufacturer": "Genesis",
   "model": "Columbia Road",
@@ -40,7 +40,18 @@
     "top_tube": "step_through",
     "mounts": [
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "front"
+        ],
+        "interface": "atranvelo_avs"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "atranvelo_avs"
       }
     ],
     "bottom_bracket": {
@@ -97,8 +108,10 @@
       "kind": "mid_drive",
       "spindle": "Shimano E8000",
       "sensor_cadence": true,
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 60,
       "operating_modes": [

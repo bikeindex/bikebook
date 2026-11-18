@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2023/k2",
   "manufacturer": "GOTRAX",
   "model": "K2",
@@ -71,8 +71,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 160
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -98,9 +97,11 @@
   ],
   "motors": [
     {
-      "battery_size": 2400,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 2400,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 4000,
       "peak_power": 8000,
       "operating_modes": [
@@ -116,6 +117,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 160
+    },
+    {
+      "load": "payload",
+      "weight": 160
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -125,8 +136,7 @@
           "width": 787,
           "height": 1069
         },
-        "total_weight": 83.8,
-        "max_weight_rider": 160
+        "total_weight": 83.8
       }
     }
   ],

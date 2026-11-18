@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rad_power/2024/radkick_7_speed",
   "manufacturer": "Rad Power Bikes",
-  "vehicle_model_group": "RadKick",
+  "model_group": "RadKick",
   "model": "RadKick 7-Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -72,8 +72,7 @@
       }
     ],
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 136
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -129,9 +128,14 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 40,
       "operating_modes": [
@@ -152,9 +156,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 24.95
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 24.95
+    },
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

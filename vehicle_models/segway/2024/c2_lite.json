@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/segway/2024/c2_lite",
   "manufacturer": "Segway",
-  "vehicle_model_group": "C Series",
+  "model_group": "C Series",
   "model": "C2 Lite",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -52,8 +52,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX4",
-      "battery_size": 56,
-      "charging_time": 330,
+      "battery": {
+        "capacity": 56,
+        "charging_time": 330
+      },
       "rated_power": 120,
       "peak_power": 130,
       "operating_modes": [
@@ -67,6 +69,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 50
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -77,7 +85,6 @@
           "height": 950
         },
         "total_weight": 7.8,
-        "max_weight_rider": 50,
         "rider_height_min": 1150,
         "rider_height_max": 1450,
         "rider_age_min": 6,

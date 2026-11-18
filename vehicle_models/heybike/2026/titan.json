@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/heybike/2026/titan",
   "manufacturer": "Heybike",
   "model": "Titan",
@@ -67,8 +67,7 @@
   },
   "frame": {
     "material": "steel",
-    "coil_compatible": true,
-    "max_weight_total": 150
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -100,14 +99,18 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
-      "water_rating": "IPX4",
-      "battery_size": 720,
-      "battery_options": [
-        1440
+      "certifications": [
+        "UL 2849"
       ],
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "water_rating": "IPX4",
+      "battery": {
+        "capacity": 720,
+        "capacity_options": [
+          1440
+        ],
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 65,
@@ -129,6 +132,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

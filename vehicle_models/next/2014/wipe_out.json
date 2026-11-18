@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/next/2014/wipe_out",
   "manufacturer": "Next",
   "model": "Wipe Out",
@@ -39,8 +39,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 48
+    "material": "steel"
   },
   "wheels": [
     {
@@ -69,11 +68,19 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 48
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 13.7
+        "total_weight": 13.7,
+        "rider_age_min": 8,
+        "rider_age_max": 12
       }
     }
   ],
@@ -86,11 +93,6 @@
         "rear"
       ],
       "description": "This bike also features a front caliper brake and rear coaster brake"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Frame size field",
-      "description": "20\" (Age 8-12), 20\""
     }
   ]
 }

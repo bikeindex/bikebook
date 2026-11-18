@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/two_front_wheel_750w_electric_w_hydraulic_brakes",
   "manufacturer": "sixthreezero",
-  "vehicle_model_group": "Two Front Wheel",
+  "model_group": "Two Front Wheel",
   "model": "Two Front Wheel 750w Electric w/ Hydraulic Brakes",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -36,8 +36,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 159
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -80,8 +79,11 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
+      "kind": "hub_drive",
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -93,6 +95,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

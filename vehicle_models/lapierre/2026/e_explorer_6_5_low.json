@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lapierre/2026/e_explorer_6_5_low",
   "manufacturer": "Lapierre",
-  "vehicle_model_group": "E-Explorer",
+  "model_group": "E-Explorer",
   "model": "E-Explorer 6.5 LOW",
   "model_configuration": "complete",
   "type": "bike",
@@ -61,8 +61,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 130
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -114,8 +113,10 @@
       "model_group": "Performance Line PX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 700,
       "max_torque": 90,
@@ -129,6 +130,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 130
     }
   ],
   "sizes": [

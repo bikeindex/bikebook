@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/super73/2023/super73_k1d",
   "manufacturer": "Super73",
   "model": "SUPER73-K1D",
@@ -114,9 +114,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 93,
-      "battery_info": "32V, 2.9Ah",
-      "charging_time": 45,
+      "battery": {
+        "capacity": 93,
+        "voltage": 32,
+        "charging_time": 45
+      },
       "peak_power": 750,
       "operating_modes": [
         {
@@ -131,6 +133,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 34
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -142,8 +150,7 @@
           "width": 559,
           "height": 686
         },
-        "total_weight": 12.2,
-        "max_weight_rider": 34
+        "total_weight": 12.2
       }
     }
   ],

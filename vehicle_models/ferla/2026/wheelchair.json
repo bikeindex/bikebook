@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ferla/2026/wheelchair",
   "manufacturer": "Ferla",
   "model": "Wheelchair",
@@ -36,8 +36,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "gross_weight_rating": 211
+    "material": "steel"
   },
   "wheels": [
     {
@@ -78,9 +77,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG Cell",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -93,14 +94,23 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "payload",
+      "weight": 211
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "dimensions": {
           "width": 1150
-        },
-        "max_weight_rider": 120
+        }
       }
     }
   ],

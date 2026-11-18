@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ncm/2022/m7",
   "manufacturer": "NCM eBikes",
   "model": "M7",
@@ -33,8 +33,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "aluminum",
-    "gross_weight_rating": 125
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -98,7 +97,9 @@
       "manufacturer": "Das-Kit",
       "model": "X15S",
       "kind": "hub_drive",
-      "battery_size": 912,
+      "battery": {
+        "capacity": 912
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -118,6 +119,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

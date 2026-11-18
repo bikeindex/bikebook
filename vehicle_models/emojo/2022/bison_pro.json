@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/emojo/2022/bison_pro",
   "manufacturer": "Emojo",
-  "vehicle_model_group": "Bison",
+  "model_group": "Bison",
   "model": "Bison Pro",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -84,8 +84,7 @@
   "frame": {
     "material": "aluminum",
     "top_tube": "step_through",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -122,10 +121,14 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "certification": "UL 2849",
-      "battery_size": 1344,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 1344,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -146,6 +149,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

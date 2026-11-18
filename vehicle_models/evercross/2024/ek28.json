@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2024/ek28",
   "manufacturer": "Evercross",
   "model": "EK28",
@@ -67,8 +67,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -98,10 +97,12 @@
   "motors": [
     {
       "water_rating": "IP54",
-      "battery_size": 468,
-      "battery_chemistry": "li-ion",
-      "battery_info": "13 Ah, 36 V",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 468,
+        "voltage": 36,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -115,6 +116,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

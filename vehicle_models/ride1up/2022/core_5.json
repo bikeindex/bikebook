@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ride1up/2022/core_5",
   "manufacturer": "Ride1Up",
-  "vehicle_model_group": "Core-5",
+  "model_group": "Core-5",
   "model": "Core-5",
   "model_configuration": "complete",
   "type": "bike",
@@ -104,9 +104,11 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 614,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG Cells",
+      "battery": {
+        "capacity": 614,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 750,
       "max_torque": 60,
       "operating_modes": [

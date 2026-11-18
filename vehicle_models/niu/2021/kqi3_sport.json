@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/niu/2021/kqi3_sport",
   "manufacturer": "Niu",
-  "vehicle_model_group": "KQi3",
+  "model_group": "KQi3",
   "model": "KQi3 Sport",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -79,8 +79,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "stem_fold",
-    "max_weight_total": 100
+    "folding": "stem_fold"
   },
   "wheels": [
     {
@@ -111,9 +110,11 @@
   "motors": [
     {
       "water_rating": "IP54",
-      "battery_size": 365,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 365,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 300,
       "peak_power": 600,
       "operating_modes": [
@@ -125,6 +126,16 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [
@@ -143,7 +154,6 @@
           "height": 542
         },
         "total_weight": 18.4,
-        "max_weight_rider": 120,
         "rider_age_min": 14
       }
     }

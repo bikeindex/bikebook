@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/engwe/2024/ease_2_pro",
   "manufacturer": "ENGWE",
+  "model_group": "Ease",
   "model": "Ease 2 Pro",
   "model_configuration": "complete",
   "type": "epamd",
@@ -63,8 +64,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -86,9 +86,11 @@
   ],
   "motors": [
     {
-      "battery_size": 240,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 240,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 270,
       "operating_modes": [
         {
@@ -99,6 +101,12 @@
           "max_slope": 12
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

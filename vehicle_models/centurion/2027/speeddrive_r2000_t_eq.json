@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/centurion/2027/speeddrive_r2000_t_eq",
   "manufacturer": "Centurion",
-  "vehicle_model_group": "Speeddrive",
+  "model_group": "Speeddrive",
   "model": "Speeddrive R2000 T EQ",
   "model_configuration": "complete",
   "type": "bike",
@@ -30,13 +30,20 @@
   },
   "frame": {
     "material": "aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
+      }
+    ],
     "bottom_bracket": {
       "spindle": "ISIS"
     },
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 132,
-    "gross_weight_rating": 150
+    "seatpost_clamp_diameter": 34.9
   },
   "wheels": [
     {
@@ -101,8 +108,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,
@@ -118,9 +127,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 20
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 20
+    },
+    {
+      "load": "payload",
+      "weight": 132
+    },
+    {
+      "load": "gross",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "S",

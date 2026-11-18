@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freego/2024/x2_pro",
   "manufacturer": "Freego",
   "model": "X2 Pro",
@@ -99,8 +99,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -133,13 +132,17 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2271",
-      "battery_size": 1800,
-      "battery_options": [
-        2400
+      "certifications": [
+        "UL 2271"
       ],
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 1800,
+        "capacity_options": [
+          2400
+        ],
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 3000,
       "peak_power": 6000,
       "max_torque": 200,
@@ -163,6 +166,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

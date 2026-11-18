@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/isinwheel/2026/m10pro",
   "manufacturer": "iSinwheel",
   "model": "M10Pro",
@@ -36,8 +36,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -56,8 +55,10 @@
   "motors": [
     {
       "water_rating": "IP65",
-      "battery_size": 374,
-      "charging_time": 240,
+      "battery": {
+        "capacity": 374,
+        "charging_time": 240
+      },
       "peak_power": 1000,
       "operating_modes": [
         {
@@ -74,6 +75,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

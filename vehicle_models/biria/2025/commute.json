@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biria/2025/commute",
   "manufacturer": "Biria",
   "model": "Commute",
@@ -113,11 +113,15 @@
     {
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "certification": "UL 2271",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG 21700 Cell",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "LG 21700",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "max_torque": 85,
       "operating_modes": [
@@ -133,11 +137,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "38 cm",
       "geometry": {
-        "max_weight_rider": 136,
         "rider_height_min": 1626,
         "rider_height_max": 1880
       }
@@ -146,7 +155,6 @@
       "name": "44 cm",
       "geometry": {
         "total_weight": 30.8,
-        "max_weight_rider": 136,
         "rider_height_min": 1626,
         "rider_height_max": 1880
       }

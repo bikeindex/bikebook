@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/whyte/2026/rheo_2",
   "manufacturer": "Whyte",
-  "vehicle_model_group": "RHeO",
+  "model_group": "RHeO",
   "model": "RHeO 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -125,8 +125,10 @@
       "model": "BDU306Y",
       "model_group": "Hub Line",
       "kind": "hub_drive",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 400,
       "max_torque": 45,

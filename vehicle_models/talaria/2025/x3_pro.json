@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/talaria/2025/x3_pro",
   "manufacturer": "Talaria",
-  "vehicle_model_group": "X3",
+  "model_group": "X3",
   "model": "X3 Pro",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -92,10 +92,13 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 2400,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 Lithium-Ion",
-      "charging_time": 180,
+      "battery": {
+        "capacity": 2400,
+        "voltage": 60,
+        "chemistry": "li-ion",
+        "cells": "21700",
+        "charging_time": 180
+      },
       "peak_power": 5500,
       "max_torque": 33,
       "operating_modes": [

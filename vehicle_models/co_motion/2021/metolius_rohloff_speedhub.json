@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/co_motion/2021/metolius_rohloff_speedhub",
   "manufacturer": "Co-Motion",
-  "vehicle_model_group": "Metolius",
+  "model_group": "Metolius",
   "model": "Metolius Rohloff Speedhub",
   "model_configuration": "complete",
   "type": "tandem",
@@ -83,8 +83,10 @@
       "model": "BDU490P",
       "model_group": "Performance Line Speed",
       "kind": "mid_drive",
-      "battery_size": 1200,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1200,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

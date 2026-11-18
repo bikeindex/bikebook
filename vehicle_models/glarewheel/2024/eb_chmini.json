@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/glarewheel/2024/eb_chmini",
   "manufacturer": "Glarewheel",
-  "vehicle_model_group": "EB-CH",
+  "model_group": "EB-CH",
   "model": "EB-CHMINI",
   "model_configuration": "complete",
   "type": "bike",
@@ -70,9 +70,11 @@
   ],
   "motors": [
     {
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -91,11 +93,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "max_weight_rider": 136,
         "rider_height_min": 1626,
         "rider_height_max": 1956
       }

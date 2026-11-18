@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/felt/2015/sport_e_95_step_thru",
   "manufacturer": "Felt",
-  "vehicle_model_group": "Sport-e",
+  "model_group": "Sport-e",
   "model": "Sport-e 95 Step-Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -97,8 +97,10 @@
       "manufacturer": "Bosch",
       "model": "Performance",
       "kind": "mid_drive",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {

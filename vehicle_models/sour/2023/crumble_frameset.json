@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sour/2023/crumble_frameset",
   "manufacturer": "Sour Bicycles",
-  "vehicle_model_group": "Crumble",
+  "model_group": "Crumble",
   "model": "Crumble Frameset",
   "model_configuration": "frame",
   "type": "bike",
@@ -47,6 +47,24 @@
   "frame": {
     "material": "steel",
     "material_detail": "Chromoly Steel",
+    "mounts": [
+      {
+        "type": "bottle",
+        "location": "downtube"
+      },
+      {
+        "type": "bottle",
+        "location": "seat_tube"
+      },
+      {
+        "type": "bottle",
+        "sizes": [
+          "L",
+          "XL"
+        ],
+        "location": "under_downtube"
+      }
+    ],
     "cable_routing": "dropper",
     "bottom_bracket": {
       "shell": "BSA",
@@ -237,16 +255,6 @@
       "type": "unknown",
       "type_detail": "Yoke",
       "description": "gusset, and post mount designed in-house specifically for the Crumble"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Size S & M",
-      "description": "2 water bottle options"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Size L & XL",
-      "description": "3 water bottle options"
     },
     {
       "type": "unknown",

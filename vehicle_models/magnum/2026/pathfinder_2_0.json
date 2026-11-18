@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/magnum/2026/pathfinder_2_0",
   "manufacturer": "Magnum Bikes",
-  "vehicle_model_group": "Pathfinder",
+  "model_group": "Pathfinder",
   "model": "Pathfinder 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -96,9 +96,15 @@
       {
         "type": "accessory",
         "location": "downtube"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {
@@ -151,11 +157,14 @@
     {
       "manufacturer": "Sutto",
       "kind": "hub_drive",
-      "certification": "UL 2271",
-      "battery_size": 691,
-      "battery_chemistry": "li-ion",
-      "battery_info": "14.4Ah",
-      "charging_time": 450,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 691,
+        "chemistry": "li-ion",
+        "charging_time": 450
+      },
       "rated_power": 500,
       "peak_power": 800,
       "operating_modes": [
@@ -176,6 +185,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

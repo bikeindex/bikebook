@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/volt/2023/mariner_v2",
   "manufacturer": "Volt Bike",
-  "vehicle_model_group": "Mariner",
+  "model_group": "Mariner",
   "model": "Mariner V2",
   "model_configuration": "complete",
   "type": "bike",
@@ -63,8 +63,7 @@
     "material": "steel",
     "top_tube": "step_through",
     "folding": "half_fold",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 127
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -120,9 +119,13 @@
       "manufacturer": "Bafang",
       "model": "G06",
       "kind": "hub_drive",
-      "certification": "UL 2271",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 80,
@@ -148,6 +151,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 127
+    },
+    {
+      "load": "payload",
+      "weight": 127
+    }
+  ],
   "sizes": [
     {
       "name": "16\"",
@@ -167,7 +180,6 @@
           "height": 787
         },
         "total_weight": 29.5,
-        "max_weight_rider": 127,
         "extra_measurements": {
           "handlebar_height_max": 1270,
           "handlebar_height_min": 1118

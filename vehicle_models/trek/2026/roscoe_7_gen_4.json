@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2026/roscoe_7_gen_4",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Roscoe",
+  "model_group": "Roscoe",
   "model": "Roscoe 7 Gen 4",
   "model_configuration": "complete",
   "type": "bike",
@@ -104,9 +104,7 @@
       "shell": "BSA",
       "spindle": "24mm"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 121,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -212,6 +210,16 @@
         "rear"
       ],
       "rotor_diameter": 180
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 121
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

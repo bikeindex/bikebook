@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/stone_mountain/2022/yonah_600",
   "manufacturer": "Stone Mountain",
   "model": "Yonah 600",
@@ -94,8 +94,10 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 461,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 461,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "operating_modes": [
         {

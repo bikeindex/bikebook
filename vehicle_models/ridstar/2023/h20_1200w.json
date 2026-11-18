@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ridstar/2023/h20_1200w",
   "manufacturer": "Ridstar",
-  "vehicle_model_group": "H20",
+  "model_group": "H20",
   "model": "H20 1200W",
   "model_configuration": "complete",
   "type": "bike",
@@ -25,8 +25,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {},
@@ -64,7 +63,9 @@
   ],
   "motors": [
     {
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "operating_modes": [
@@ -79,6 +80,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -88,8 +99,7 @@
           "width": 729,
           "height": 1021
         },
-        "total_weight": 28.6,
-        "max_weight_rider": 150
+        "total_weight": 28.6
       }
     }
   ],

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2025/roo_rev",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Roo Rev",
+  "model_group": "Roo Rev",
   "model": "Roo Rev",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -119,11 +119,16 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 700,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 cells",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 700,
+        "chemistry": "li-ion",
+        "cells": "21700",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1150,
       "max_torque": 85,
@@ -148,16 +153,22 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27.22
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 181
+    },
+    {
+      "load": "cargo",
+      "weight": 27.22
+    }
+  ],
   "sizes": [
     {
       "name": "17\"",
       "geometry": {
         "standover": 381,
         "total_weight": 32.2,
-        "max_weight_rider": 181,
         "rider_height_min": 1651,
         "rider_height_max": 1956
       }

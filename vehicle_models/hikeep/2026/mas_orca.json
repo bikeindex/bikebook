@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hikeep/2026/mas_orca",
   "manufacturer": "Hikeep",
-  "vehicle_model_group": "MA",
+  "model_group": "MA",
   "model": "MAS Orca",
   "model_configuration": "complete",
   "type": "bike",
@@ -38,9 +38,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 227,
-    "gross_weight_rating": 226
+    "material": "steel"
   },
   "wheels": [
     {
@@ -67,8 +65,10 @@
   ],
   "motors": [
     {
-      "battery_size": 2400,
-      "battery_info": "LG cells",
+      "battery": {
+        "capacity": 2400,
+        "cells": "LG"
+      },
       "rated_power": 3500,
       "peak_power": 5000,
       "max_torque": 280,
@@ -90,6 +90,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
+    },
+    {
+      "load": "gross",
+      "weight": 226
     }
   ],
   "sizes": [

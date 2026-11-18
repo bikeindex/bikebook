@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/flying_circus",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Flying Circus",
+  "model_group": "Flying Circus",
   "model": "Flying Circus",
   "model_configuration": "complete",
   "type": "bike",
@@ -30,9 +30,7 @@
   "frame": {
     "material": "aluminum",
     "headset": "IS42/28.6 | IS42/30",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 102,
-    "gross_weight_rating": 115
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -88,6 +86,16 @@
       "rotor_diameter": 180
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 115
+    }
+  ],
   "sizes": [
     {
       "name": "M",
@@ -105,7 +113,6 @@
         "stem_length": 50,
         "crank_length": 170,
         "total_weight": 12.6,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 20,
           "protrusion_height_80mm": 684
@@ -127,7 +134,6 @@
         "handlebar_width": 720,
         "stem_length": 50,
         "crank_length": 170,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 20,
           "protrusion_height_80mm": 682

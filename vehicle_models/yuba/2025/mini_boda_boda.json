@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/yuba/2025/mini_boda_boda",
   "manufacturer": "Yuba",
-  "vehicle_model_group": "Boda Boda",
+  "model_group": "Boda Boda",
   "model": "mini Boda Boda",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -38,8 +38,7 @@
     "top_tube": "step_through",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 200
+    }
   },
   "wheels": [
     {
@@ -84,9 +83,13 @@
       "model_group": "Cargo Line",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "certification": "EN 15194",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "EN 15194"
+      ],
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -100,6 +103,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

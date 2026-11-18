@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2022/silence_eride_evo_speed_us",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Silence",
+  "model_group": "Silence",
   "model": "Silence eRIDE EVO Speed",
   "model_configuration": "complete",
   "markets": [
@@ -71,9 +71,16 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "cable_routing": "internal",
-    "max_weight_total": 102,
-    "gross_weight_rating": 130
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
+      }
+    ],
+    "cable_routing": "internal"
   },
   "wheels": [
     {
@@ -129,7 +136,9 @@
       "manufacturer": "Bosch",
       "model": "Performance Speed",
       "kind": "mid_drive",
-      "battery_size": 625,
+      "battery": {
+        "capacity": 625
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -142,6 +151,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 102
+    },
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [
@@ -310,7 +329,6 @@
     },
     {
       "type": "hub",
-      "type_detail": "Rear Derailleur",
       "position": [
         "rear"
       ],

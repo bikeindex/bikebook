@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/silence_eride_10_men_speed",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Silence",
+  "model_group": "Silence",
   "model": "Silence eRIDE 10 Men Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -49,9 +49,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "cable_routing": "internal",
-    "max_weight_total": 98,
-    "gross_weight_rating": 130
+    "cable_routing": "internal"
   },
   "suspension": {
     "front": {
@@ -125,7 +123,9 @@
       "manufacturer": "Bosch",
       "model": "Performance Speed",
       "kind": "mid_drive",
-      "battery_size": 625,
+      "battery": {
+        "capacity": 625
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -138,9 +138,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 15
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 15
+    },
+    {
+      "load": "payload",
+      "weight": 98
+    },
+    {
+      "load": "gross",
+      "weight": 130
+    }
+  ],
   "sizes": [
     {
       "name": "S",

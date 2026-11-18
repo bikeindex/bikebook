@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ado/2026/air_20_lidar",
   "manufacturer": "ADO",
-  "vehicle_model_group": "Air 20",
+  "model_group": "Air 20",
   "model": "Air 20 LiDAR",
   "model_configuration": "complete",
   "type": "bike",
@@ -44,7 +44,16 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold"
+    "folding": "half_fold",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ]
   },
   "suspension": {
     "front": {
@@ -84,10 +93,14 @@
     {
       "manufacturer": "Bafang",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "SGS CE",
+      "certifications": [
+        "CE"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 370,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 370,
+        "charging_time": 360
+      },
       "rated_power": 250,
       "max_torque": 50,
       "operating_modes": [
@@ -108,15 +121,21 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 22,
-        "max_weight_rider": 120,
         "rider_height_min": 1500,
         "rider_height_max": 2000
       }

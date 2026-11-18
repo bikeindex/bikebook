@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tern/2026/hsd_p00_gen_3_us",
   "manufacturer": "Tern",
-  "vehicle_model_group": "HSD",
+  "model_group": "HSD",
   "model": "HSD P00 Gen 3",
   "model_configuration": "complete",
   "markets": [
@@ -46,9 +46,7 @@
         "description": "Luggage Socket: Tern Combo Mount"
       }
     ],
-    "headset": "IS42/28.6 | IS52/40",
-    "max_weight_total": 161,
-    "gross_weight_rating": 190
+    "headset": "IS42/28.6 | IS52/40"
   },
   "suspension": {
     "front": {}
@@ -99,9 +97,13 @@
       "model": "BDU346Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "certification": "UL 2849",
-      "battery_size": 545,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 545,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -140,9 +142,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 80
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 130
+    },
+    {
+      "load": "cargo",
+      "weight": 80
+    },
+    {
+      "load": "gross",
+      "weight": 190
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -160,7 +173,6 @@
           "height": 870
         },
         "total_weight": 28.9,
-        "max_weight_rider": 130,
         "rider_height_min": 1500,
         "rider_height_max": 2000,
         "extra_measurements": {

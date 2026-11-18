@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eahora/2024/ft_01_max",
   "manufacturer": "Eahora",
-  "vehicle_model_group": "FT-01",
+  "model_group": "FT-01",
   "model": "FT-01 Max",
   "model_configuration": "complete",
   "type": "bike",
@@ -93,8 +93,7 @@
   },
   "frame": {
     "material": "steel",
-    "coil_compatible": true,
-    "max_weight_total": 150
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -136,8 +135,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 1440,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1440,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1500,
       "max_torque": 70,
       "operating_modes": [
@@ -161,6 +162,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

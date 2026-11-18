@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/touring_one_trapeze",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Touring",
+  "model_group": "Touring",
   "model": "Touring ONE Trapeze",
   "model_configuration": "complete",
   "type": "bike",
@@ -33,9 +33,7 @@
       "shell": "BSA",
       "width": 68
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 122,
-    "gross_weight_rating": 140
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -88,9 +86,20 @@
       "caliper_mount": "Disc Flat Mount"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 140
+    }
+  ],
   "sizes": [
     {
       "name": "46 cm",
@@ -104,7 +113,6 @@
         "head_tube": 144,
         "chainstay": 455,
         "wheelbase": 1090,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": -70,
           "protrusion_height_80mm": 674
@@ -124,7 +132,6 @@
         "chainstay": 455,
         "wheelbase": 1074,
         "total_weight": 17.9,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": -70,
           "protrusion_height_80mm": 668
@@ -143,7 +150,6 @@
         "head_tube": 185,
         "chainstay": 455,
         "wheelbase": 1089,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": -70,
           "protrusion_height_80mm": 688

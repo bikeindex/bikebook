@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2025/257_al_amp_two",
   "manufacturer": "BMC",
-  "vehicle_model_group": "257 AMP",
+  "model_group": "257 AMP",
   "model": "257 AL AMP TWO",
   "model_configuration": "complete",
   "markets": [
@@ -85,8 +85,7 @@
     "cable_routing": "internal",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -149,8 +148,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -194,6 +195,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wave/2020/wave_2_0",
   "manufacturer": "Wave",
-  "vehicle_model_group": "Wave",
+  "model_group": "Wave",
   "model": "Wave 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -110,10 +110,12 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung cells",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 300
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -145,12 +147,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 122
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 27.2,
-        "max_weight_rider": 122,
         "rider_height_min": 1575,
         "rider_height_max": 2007
       }

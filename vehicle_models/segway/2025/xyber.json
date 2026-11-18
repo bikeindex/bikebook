@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/segway/2025/xyber",
   "manufacturer": "Segway",
   "model": "Xyber",
@@ -50,8 +50,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Cast Aluminum",
-    "max_weight_total": 180
+    "material_detail": "Cast Aluminum"
   },
   "suspension": {
     "front": {
@@ -90,8 +89,10 @@
   "motors": [
     {
       "water_rating": "IPX5",
-      "battery_size": 1440,
-      "charging_time": 222,
+      "battery": {
+        "capacity": 1440,
+        "charging_time": 222
+      },
       "rated_power": 6000,
       "peak_power": 6000,
       "max_torque": 175,
@@ -113,6 +114,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [

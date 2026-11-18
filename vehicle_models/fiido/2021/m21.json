@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fiido/2021/m21",
   "manufacturer": "Fiido",
   "model": "M21",
@@ -40,8 +40,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -59,8 +58,10 @@
   ],
   "motors": [
     {
-      "battery_size": 557,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 557,
+        "charging_time": 420
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -81,6 +82,12 @@
           "range_claimed": 100
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2023/g2_plus",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "G2",
+  "model_group": "G2",
   "model": "G2 Plus",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -90,10 +90,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 130,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 130,
+        "charging_time": 300
+      },
       "rated_power": 200,
       "operating_modes": [
         {
@@ -105,6 +109,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -114,8 +124,7 @@
           "width": 434,
           "height": 1039
         },
-        "total_weight": 9.5,
-        "max_weight_rider": 100
+        "total_weight": 9.5
       }
     }
   ],

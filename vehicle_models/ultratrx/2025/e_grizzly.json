@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ultratrx/2025/e_grizzly",
   "manufacturer": "UltraTRX",
-  "vehicle_model_group": "Grizzly",
+  "model_group": "Grizzly",
   "model": "E-Grizzly",
   "model_configuration": "complete",
   "type": "bike",
@@ -38,8 +38,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 179
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -85,10 +84,12 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "battery_info": "SONY® or Panasonic® Cells",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "cells": "SONY or Panasonic",
+        "charging_time": 240
+      },
       "rated_power": 1250,
       "max_torque": 90,
       "operating_modes": [
@@ -110,6 +111,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 179
     }
   ],
   "sizes": [

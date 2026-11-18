@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/helokeep/2026/k6_l",
   "manufacturer": "Helokeep",
-  "vehicle_model_group": "K6",
+  "model_group": "K6",
   "model": "K6-L",
   "model_configuration": "complete",
   "type": "bike",
@@ -35,8 +35,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 150
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {
@@ -69,10 +68,13 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 749,
-      "battery_info": "15.6 Ah",
-      "charging_time": 480,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 749,
+        "charging_time": 480
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "operating_modes": [
@@ -96,6 +98,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -106,7 +118,6 @@
           "height": 869
         },
         "total_weight": 34.5,
-        "max_weight_rider": 150,
         "rider_height_min": 1650,
         "rider_height_max": 1930,
         "rider_age_min": 18,
@@ -140,6 +151,10 @@
     {
       "type": "e_vehicle_battery",
       "description": "Battery life: 2 years"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48 V"
     },
     {
       "type": "e_vehicle_charger",
@@ -187,11 +202,6 @@
       "type": "unknown",
       "type_detail": "Features",
       "description": "Waterproof"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Volts",
-      "description": "48 V"
     },
     {
       "type": "unknown",

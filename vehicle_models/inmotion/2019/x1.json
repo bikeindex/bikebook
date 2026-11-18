@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2019/x1",
   "manufacturer": "Inmotion",
   "model": "X1",
@@ -20,8 +20,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 80
+    "material": "steel"
   },
   "brakes": [
     {
@@ -34,8 +33,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 96,
-      "charging_time": 90,
+      "battery": {
+        "capacity": 96,
+        "charging_time": 90
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -50,6 +51,12 @@
           }
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 80
     }
   ],
   "sizes": [

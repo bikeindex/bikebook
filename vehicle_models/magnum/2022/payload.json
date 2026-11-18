@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/magnum/2022/payload",
   "manufacturer": "Magnum Bikes",
   "model": "Payload",
@@ -41,8 +41,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 180
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -80,10 +79,11 @@
     {
       "manufacturer": "Das-Kit",
       "kind": "hub_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "15ah",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -107,9 +107,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 81
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 81
+    },
+    {
+      "load": "payload",
+      "weight": 180
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

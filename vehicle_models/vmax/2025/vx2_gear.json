@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vmax/2025/vx2_gear",
   "manufacturer": "VMAX",
-  "vehicle_model_group": "VX2",
+  "model_group": "VX2",
   "model": "VX2 Gear",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -59,8 +59,10 @@
   "motors": [
     {
       "water_rating": "IPX6",
-      "battery_size": 500,
-      "charging_time": 150,
+      "battery": {
+        "capacity": 500,
+        "charging_time": 150
+      },
       "operating_modes": [
         {
           "mode": "throttle",
@@ -70,6 +72,12 @@
           "max_slope": 21
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 130
     }
   ],
   "sizes": [
@@ -89,7 +97,6 @@
           "height": 535
         },
         "total_weight": 22.2,
-        "max_weight_rider": 130,
         "extra_measurements": {
           "deck_height": 230,
           "deck_length": 456,

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2026/domane_plus_alr_6_axs",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Domane+",
+  "model_group": "Domane+",
   "model": "Domane+ ALR 6 AXS",
   "model_configuration": "complete",
   "type": "bike",
@@ -115,9 +115,7 @@
       "spindle": "ISIS",
       "spindle_length": 135
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 110,
-    "gross_weight_rating": 125
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -183,9 +181,13 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 135,
-      "certification": "UL 2849",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 350,
       "max_torque": 60,
@@ -198,6 +200,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

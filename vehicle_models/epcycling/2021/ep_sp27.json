@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/epcycling/2021/ep_sp27",
   "manufacturer": "EPcycling",
   "model": "EP-SP27",
@@ -34,8 +34,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 100
+    "seatpost_clamp_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -93,10 +92,12 @@
     {
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 696,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 2900mA Cell",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 696,
+        "chemistry": "li-ion",
+        "cells": "Samsung 2900mA",
+        "charging_time": 480
+      },
       "rated_power": 350,
       "max_torque": 80,
       "operating_modes": [
@@ -113,6 +114,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

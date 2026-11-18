@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/haibike/2025/allmtn_7",
   "manufacturer": "Haibike",
-  "vehicle_model_group": "ALLMTN",
+  "model_group": "ALLMTN",
   "model": "ALLMTN 7",
   "model_configuration": "complete",
   "type": "bike",
@@ -89,8 +89,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 120
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -141,8 +140,10 @@
       "manufacturer": "Yamaha",
       "model": "PW-X3",
       "kind": "mid_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [
@@ -155,6 +156,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

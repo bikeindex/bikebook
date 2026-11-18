@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tripper/2024/falcon_ii_sport_s",
   "manufacturer": "Tripper",
-  "vehicle_model_group": "Falcon II",
+  "model_group": "Falcon II",
   "model": "Falcon II Sport S",
   "model_configuration": "complete",
   "type": "bike",
@@ -56,8 +56,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Aluminum Alloy6061",
-    "max_weight_total": 227
+    "material_detail": "Aluminum Alloy6061"
   },
   "suspension": {
     "front": {}
@@ -94,8 +93,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 910,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 910,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1100,
       "operating_modes": [
@@ -117,9 +118,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 45.36
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 45.36
+    },
+    {
+      "load": "payload",
+      "weight": 227
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

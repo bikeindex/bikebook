@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bike_friday/2025/pocket_rocket",
   "manufacturer": "Bike Friday",
-  "vehicle_model_group": "Pocket Rocket",
+  "model_group": "Pocket Rocket",
   "model": "Pocket Rocket",
   "model_configuration": "complete",
   "type": "bike",
@@ -149,6 +149,12 @@
       "caliper_mount": "Center Bolt"
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -158,8 +164,7 @@
           "width": 838,
           "height": 305
         },
-        "total_weight": 10.7,
-        "max_weight_rider": 100
+        "total_weight": 10.7
       }
     }
   ],

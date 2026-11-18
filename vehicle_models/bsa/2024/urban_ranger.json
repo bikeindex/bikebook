@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bsa/2024/urban_ranger",
   "manufacturer": "BSA",
   "model": "Urban Ranger",
@@ -89,9 +89,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 209,
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 209,
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 250,
       "operating_modes": [
         {

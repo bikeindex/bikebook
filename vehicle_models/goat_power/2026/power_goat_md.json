@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/goat_power/2026/power_goat_md",
   "manufacturer": "Goat Power Bikes",
-  "vehicle_model_group": "Power Goat",
+  "model_group": "Power Goat",
   "model": "Power Goat MD",
   "model_configuration": "complete",
   "type": "bike",
@@ -39,8 +39,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 249
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -74,7 +73,9 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "charging_time": 240,
+      "battery": {
+        "charging_time": 240
+      },
       "rated_power": 5000,
       "peak_power": 12000,
       "max_torque": 380,
@@ -97,6 +98,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 249
     }
   ],
   "sizes": [

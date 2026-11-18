@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/amyet/2026/k10",
   "manufacturer": "Amyet",
   "model": "K10",
@@ -67,8 +67,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {}
@@ -98,9 +97,13 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "operating_modes": [
@@ -115,6 +118,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -150,11 +159,6 @@
         "width": 101.6,
         "diameter": 406
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Speed Quantity",
-      "description": "28mph (7-speed adjustable)"
     },
     {
       "type": "wheel",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/g_force/2024/t42_ca",
   "manufacturer": "G-Force",
   "model": "T42",
@@ -28,8 +28,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 150
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -64,11 +63,13 @@
   ],
   "motors": [
     {
-      "battery_size": 624,
-      "battery_options": [
-        768
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 624,
+        "capacity_options": [
+          768
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -90,6 +91,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

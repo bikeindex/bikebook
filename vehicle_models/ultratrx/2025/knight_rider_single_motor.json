@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ultratrx/2025/knight_rider_single_motor",
   "manufacturer": "UltraTRX",
-  "vehicle_model_group": "Knight Rider",
+  "model_group": "Knight Rider",
   "model": "Knight Rider Single Motor",
   "model_configuration": "complete",
   "type": "bike",
@@ -82,7 +82,9 @@
       "manufacturer": "UltraTRX",
       "model": "Bafang Single or Dual Motors Full Suspension",
       "kind": "hub_drive",
-      "battery_size": 840,
+      "battery": {
+        "capacity": 840
+      },
       "rated_power": 1560,
       "max_torque": 190,
       "operating_modes": [
@@ -106,13 +108,18 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "standover": 508,
-        "total_weight": 31.8,
-        "max_weight_rider": 181
+        "total_weight": 31.8
       }
     }
   ],

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/macina_multi_urban_uni",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Macina Multi",
+  "model_group": "Macina Multi",
   "model": "Macina Multi Urban UNI",
   "model_configuration": "complete",
   "type": "bike",
@@ -44,9 +44,7 @@
     "bottom_bracket": {
       "spindle": "BNI"
     },
-    "headset": "ZS44/28.6 | ZS56/40",
-    "max_weight_total": 170,
-    "gross_weight_rating": 200
+    "headset": "ZS44/28.6 | ZS56/40"
   },
   "wheels": [
     {
@@ -95,8 +93,10 @@
       "model_group": "Performance Line",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 65,
@@ -110,6 +110,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 170
+    },
+    {
+      "load": "gross",
+      "weight": 200
     }
   ],
   "sizes": [

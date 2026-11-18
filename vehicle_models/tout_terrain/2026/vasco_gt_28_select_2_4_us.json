@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tout_terrain/2026/vasco_gt_28_select_2_4_us",
   "manufacturer": "Tout Terrain",
-  "vehicle_model_group": "Vasco",
+  "model_group": "Vasco",
   "model": "Vasco GT 28 Select 2.4",
   "model_configuration": "complete",
   "markets": [
@@ -146,9 +146,12 @@
       "caliper_mount": "Disc Flat Mount"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 120
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "S",

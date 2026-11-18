@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ridley/2022/kanzo_e_fazua_fb_microshift_advantx",
   "manufacturer": "Ridley",
   "model": "Kanzo-E Fazua FB MicroShift AdvantX",
@@ -85,9 +85,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 94,
-    "gross_weight_rating": 110
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -141,7 +139,9 @@
   ],
   "motors": [
     {
-      "battery_size": 252,
+      "battery": {
+        "capacity": 252
+      },
       "max_torque": 60,
       "operating_modes": [
         {
@@ -155,6 +155,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 94
+    },
+    {
+      "load": "gross",
+      "weight": 110
     }
   ],
   "sizes": [

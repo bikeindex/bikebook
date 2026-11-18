@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kalkhoff/2027/endeavour_l_season",
   "manufacturer": "Kalkhoff",
-  "vehicle_model_group": "Endeavour",
+  "model_group": "Endeavour",
   "model": "Endeavour L Season",
   "model_configuration": "complete",
   "type": "bike",
@@ -92,11 +92,18 @@
   },
   "frame": {
     "material": "steel",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ],
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 105,
-    "gross_weight_rating": 130
+    }
   },
   "suspension": {
     "front": {
@@ -150,8 +157,10 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,
@@ -167,9 +176,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 27
+    },
+    {
+      "load": "payload",
+      "weight": 105
+    },
+    {
+      "load": "gross",
+      "weight": 130
+    }
+  ],
   "sizes": [
     {
       "name": "Wave S",

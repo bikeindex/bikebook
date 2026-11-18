@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hiboy/2026/u3",
   "manufacturer": "Hiboy",
   "model": "U3",
@@ -68,10 +68,14 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 374,
-      "charging_time": 390,
+      "battery": {
+        "capacity": 374,
+        "charging_time": 390
+      },
       "rated_power": 411,
       "operating_modes": [
         {
@@ -84,6 +88,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -94,7 +104,6 @@
           "height": 1199
         },
         "total_weight": 27.9,
-        "max_weight_rider": 100,
         "rider_age_min": 16,
         "rider_age_max": 60
       }

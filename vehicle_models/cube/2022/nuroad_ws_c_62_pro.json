@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2022/nuroad_ws_c_62_pro",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Nuroad",
+  "model_group": "Nuroad",
   "model": "Nuroad WS C:62 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,9 +54,7 @@
       "shell": "press fit",
       "spindle": "24mm"
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 105,
-    "gross_weight_rating": 115
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -104,6 +102,16 @@
         "rear"
       ],
       "caliper_mount": "Disc Flat Mount"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 105
+    },
+    {
+      "load": "gross",
+      "weight": 115
     }
   ],
   "sizes": [

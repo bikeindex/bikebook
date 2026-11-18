@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biria/2024/electric_chopper",
   "manufacturer": "Biria",
   "model": "Electric Chopper",
@@ -71,9 +71,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 768,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 768,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -100,8 +102,8 @@
       "name": "One Size",
       "geometry": {
         "total_weight": 33.1,
-        "rider_height_max": 1930,
-        "rider_height_min": 1626
+        "rider_height_min": 1626,
+        "rider_height_max": 1930
       }
     }
   ],

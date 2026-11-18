@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/nishiki/2027/poseidon",
   "manufacturer": "Nishiki",
-  "vehicle_model_group": "Poseidon",
+  "model_group": "Poseidon",
   "model": "Poseidon",
   "model_configuration": "complete",
   "type": "bike",
@@ -69,7 +69,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 360,
+      "battery": {
+        "capacity": 360
+      },
       "max_torque": 40,
       "operating_modes": [
         {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/macina_team_750_lfc_ltd",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Macina Team",
+  "model_group": "Macina Team",
   "model": "Macina Team 750 LFC LTD",
   "model_configuration": "complete",
   "type": "bike",
@@ -46,9 +46,7 @@
     "material_detail": "Alloy6061 Aluminum",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 118,
-    "gross_weight_rating": 147
+    }
   },
   "suspension": {
     "front": {
@@ -92,8 +90,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -107,6 +107,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 118
+    },
+    {
+      "load": "gross",
+      "weight": 147
     }
   ],
   "sizes": [

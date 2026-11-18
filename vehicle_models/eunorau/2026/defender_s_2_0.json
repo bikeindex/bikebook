@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2026/defender_s_2_0",
   "manufacturer": "Eunorau",
-  "vehicle_model_group": "Defender",
+  "model_group": "Defender",
   "model": "Defender S 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -79,8 +79,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 136
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -135,10 +134,11 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "certification": "Yes",
-      "battery_size": 816,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 816,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 750,
       "max_torque": 85,
       "operating_modes": [
@@ -171,10 +171,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "Yes",
-      "battery_size": 816,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 816,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 750,
       "max_torque": 85,
       "operating_modes": [
@@ -203,6 +204,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

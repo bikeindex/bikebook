@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mukkpet/2024/stepwagon",
   "manufacturer": "Mukkpet",
   "model": "Stepwagon",
@@ -30,8 +30,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 200
+    ]
   },
   "suspension": {
     "front": {
@@ -65,7 +64,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 1440,
+      "battery": {
+        "capacity": 1440
+      },
       "peak_power": 1500,
       "operating_modes": [
         {
@@ -88,6 +89,12 @@
   "cargo": {
     "length": 860
   },
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

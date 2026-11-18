@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hitway/2025/bk10s",
   "manufacturer": "Hitway",
-  "vehicle_model_group": "BK10",
+  "model_group": "BK10",
   "model": "BK10S",
   "model_configuration": "complete",
   "type": "bike",
@@ -96,9 +96,11 @@
     {
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "charging_time": 390,
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "charging_time": 390
+      },
       "rated_power": 250,
       "max_torque": 70,
       "operating_modes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aostir/2025/s07_max",
   "manufacturer": "Aostir",
   "model": "S07-MAX",
@@ -32,8 +32,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 136
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -68,8 +67,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 960,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 960,
+        "charging_time": 360
+      },
       "rated_power": 1000,
       "peak_power": 1000,
       "max_torque": 120,
@@ -83,6 +84,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [
@@ -124,10 +131,6 @@
       "description": "Rear Hub Motor"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "48V 25A"
-    },
-    {
       "type": "lights",
       "description": "With Front Light"
     },
@@ -146,6 +149,11 @@
         "width": 101.6,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V 25A"
     },
     {
       "type": "unknown",

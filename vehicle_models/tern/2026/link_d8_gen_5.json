@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tern/2026/link_d8_gen_5",
   "manufacturer": "Tern",
-  "vehicle_model_group": "Link",
+  "model_group": "Link",
   "model": "Link D8 Gen 5",
   "model_configuration": "complete",
   "markets": [
@@ -58,9 +58,7 @@
         "type": "accessory",
         "description": "Luggage Socket"
       }
-    ],
-    "max_weight_total": 107,
-    "gross_weight_rating": 120
+    ]
   },
   "wheels": [
     {
@@ -96,6 +94,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 105
+    },
+    {
+      "load": "gross",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -106,7 +114,6 @@
           "height": 720
         },
         "total_weight": 12.1,
-        "max_weight_rider": 105,
         "rider_height_min": 1420,
         "rider_height_max": 1900,
         "extra_measurements": {

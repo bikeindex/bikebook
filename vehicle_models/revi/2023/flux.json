@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/revi/2023/flux",
   "manufacturer": "Revi",
   "model": "Flux",
@@ -83,8 +83,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 200
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -125,13 +124,16 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "battery_size": 720,
-      "battery_options": [
-        1200
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 720,
+        "capacity_options": [
+          1200
+        ],
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "operating_modes": [
@@ -153,9 +155,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 81.65
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 81.65
+    },
+    {
+      "load": "payload",
+      "weight": 200
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

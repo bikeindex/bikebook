@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2021/mavaro_5",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Mavaro Neo",
+  "model_group": "Mavaro Neo",
   "model": "Mavaro 5",
   "model_configuration": "complete",
   "type": "bike",
@@ -122,6 +122,15 @@
     "material": "aluminum",
     "material_detail": "SmartForm C1 Aluminum",
     "top_tube": "step_through",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "atranvelo_avs"
+      }
+    ],
     "cable_routing": "stealth",
     "bottom_bracket": {
       "spindle": "BNI"
@@ -198,8 +207,10 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,

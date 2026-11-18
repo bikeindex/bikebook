@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/x_treme/2023/catalina_beach_cruiser_48_volt",
   "manufacturer": "X-Treme",
   "model": "Catalina Beach Cruiser 48 Volt",
@@ -103,9 +103,11 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
-      "charging_time": 180,
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion",
+        "charging_time": 180
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -129,6 +131,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -136,7 +144,6 @@
         "seat_height_min": 813,
         "seat_height_max": 978,
         "total_weight": 27,
-        "max_weight_rider": 159,
         "extra_measurements": {
           "handlebar_height": 1099
         }
@@ -175,6 +182,10 @@
       "type": "derailleur",
       "manufacturer": "Shimano",
       "description": "Shimano® 9-Speed Atlus Gears & Shifter"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48 Volts"
     },
     {
       "type": "e_vehicle_battery",
@@ -274,11 +285,6 @@
       "type": "unknown",
       "type_detail": "Amps",
       "description": "10.4 AH Integrated Lithium Battery"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Volts",
-      "description": "48 Volts"
     },
     {
       "type": "unknown",

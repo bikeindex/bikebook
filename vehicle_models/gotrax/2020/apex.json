@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2020/apex",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "Apex",
+  "model_group": "Apex",
   "model": "Apex",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -96,10 +96,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 216,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 216,
+        "charging_time": 300
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -112,6 +116,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -121,8 +131,7 @@
           "width": 470,
           "height": 1232
         },
-        "total_weight": 14.5,
-        "max_weight_rider": 100
+        "total_weight": 14.5
       }
     }
   ],

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2020/access_hybrid_ex_625_allroad_29",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Access Hybrid",
+  "model_group": "Access Hybrid",
   "model": "Access Hybrid EX 625 Allroad 29",
   "model_configuration": "complete",
   "type": "bike",
@@ -31,9 +31,7 @@
   "frame": {
     "material": "aluminum",
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 114,
-    "gross_weight_rating": 140
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -96,7 +94,9 @@
       "model": "BDU450CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 625,
+      "battery": {
+        "capacity": 625
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -110,6 +110,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 114
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

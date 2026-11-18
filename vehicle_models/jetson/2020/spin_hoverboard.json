@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2020/spin_hoverboard",
   "manufacturer": "Jetson",
   "model": "Spin Hoverboard",
@@ -66,9 +66,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 72,
-      "battery_chemistry": "li-ion",
-      "charging_time": 180,
+      "battery": {
+        "capacity": 72,
+        "chemistry": "li-ion",
+        "charging_time": 180
+      },
       "rated_power": 300,
       "operating_modes": [
         {
@@ -81,12 +83,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 6.8,
-        "max_weight_rider": 100,
         "rider_age_min": 12
       }
     }

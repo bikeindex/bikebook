@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/priority/2026/folder_8",
   "manufacturer": "Priority Bicycles",
-  "vehicle_model_group": "Folder",
+  "model_group": "Folder",
   "model": "Folder 8",
   "model_configuration": "complete",
   "type": "bike",
@@ -36,8 +36,7 @@
   "frame": {
     "material": "aluminum",
     "folding": "half_fold",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 104
+    "seatpost_diameter": 33.9
   },
   "wheels": [
     {
@@ -74,9 +73,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 104
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -158,7 +164,7 @@
       "type": "seatpost",
       "description": "33.9mm Telescoping Aluminum, 27.2mm upper",
       "dimensions": {
-        "diameter": 27.2
+        "diameter": 33.9
       }
     },
     {

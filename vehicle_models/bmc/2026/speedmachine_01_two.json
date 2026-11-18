@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2026/speedmachine_01_two",
   "manufacturer": "BMC",
-  "vehicle_model_group": "Speedmachine",
+  "model_group": "Speedmachine",
   "model": "Speedmachine 01 TWO",
   "model_configuration": "complete",
   "markets": [
@@ -72,10 +72,10 @@
   "frame": {
     "material": "carbon",
     "bottom_bracket": {
+      "shell": "T47",
       "width": 68,
       "spindle": "DUB"
-    },
-    "gross_weight_rating": 110
+    }
   },
   "wheels": [
     {
@@ -128,6 +128,12 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 110
     }
   ],
   "sizes": [

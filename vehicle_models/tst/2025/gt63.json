@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tst/2025/gt63",
   "manufacturer": "TST",
   "model": "GT63",
@@ -49,8 +49,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 127
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -81,7 +80,9 @@
   ],
   "motors": [
     {
-      "battery_size": 1104,
+      "battery": {
+        "capacity": 1104
+      },
       "peak_power": 2600,
       "max_torque": 135,
       "operating_modes": [
@@ -95,6 +96,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 127
     }
   ],
   "sizes": [

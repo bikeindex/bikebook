@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ancheer/2026/fbdan11",
   "manufacturer": "Ancheer",
   "model": "Fbdan11",
@@ -91,8 +91,7 @@
   },
   "frame": {
     "material": "steel",
-    "top_tube": "step_through",
-    "max_weight_total": 136
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {}
@@ -114,9 +113,13 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 864,
+      "battery": {
+        "capacity": 864
+      },
       "peak_power": 1000,
       "max_torque": 60,
       "operating_modes": [
@@ -131,6 +134,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

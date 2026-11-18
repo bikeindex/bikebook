@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/xtracycle/2018/estoker_bosch_cx",
   "manufacturer": "Xtracycle",
-  "vehicle_model_group": "Stoker",
+  "model_group": "Stoker",
   "model": "eStoker Bosch CX",
   "model_configuration": "complete",
   "type": "cargo_bike_rear",
@@ -92,8 +92,10 @@
       "model": "CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

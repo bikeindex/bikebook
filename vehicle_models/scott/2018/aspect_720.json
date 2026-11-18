@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2018/aspect_720",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Aspect",
+  "model_group": "Aspect",
   "model": "Aspect 720",
   "model_configuration": "complete",
   "markets": [
@@ -78,9 +78,7 @@
       "width": 68,
       "spindle": "24mm"
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 114,
-    "gross_weight_rating": 128
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -127,6 +125,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 114
+    },
+    {
+      "load": "gross",
+      "weight": 128
     }
   ],
   "sizes": [

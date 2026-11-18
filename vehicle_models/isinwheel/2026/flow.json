@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/isinwheel/2026/flow",
   "manufacturer": "iSinwheel",
   "model": "Flow",
@@ -32,8 +32,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -52,8 +51,10 @@
   "motors": [
     {
       "water_rating": "IPX4",
-      "battery_size": 960,
-      "charging_time": 540,
+      "battery": {
+        "capacity": 960,
+        "charging_time": 540
+      },
       "peak_power": 4000,
       "operating_modes": [
         {
@@ -70,6 +71,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

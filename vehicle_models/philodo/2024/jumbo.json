@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/philodo/2024/jumbo",
   "manufacturer": "Philodo",
+  "model_group": "Jumbo",
   "model": "Jumbo",
   "model_configuration": "complete",
   "type": "bike",
@@ -34,8 +35,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 150
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -76,8 +76,10 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "water_rating": "IP56",
-      "battery_size": 2208,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 2208,
+        "charging_time": 480
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "max_torque": 87,
@@ -105,8 +107,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IP56",
-      "battery_size": 2208,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 2208,
+        "charging_time": 480
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "max_torque": 87,
@@ -129,6 +133,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -187,12 +197,25 @@
       "description": "2.8 inch multifunctional color display"
     },
     {
+      "type": "fender",
+      "description": "fenders"
+    },
+    {
       "type": "fork",
       "type_detail": "Front fork with lockout",
       "position": [
         "front"
       ],
       "description": "Front fork with lockout"
+    },
+    {
+      "type": "included_not_installed",
+      "type_detail": "Tools",
+      "description": "assembly toolset"
+    },
+    {
+      "type": "kickstand",
+      "description": "kickstand"
     },
     {
       "type": "lights",
@@ -210,12 +233,15 @@
       "description": "Rear light with brake light"
     },
     {
+      "type": "mirror",
+      "description": "rearview mirrors"
+    },
+    {
       "type": "rack",
-      "type_detail": "Sturdy Rear Rack",
       "position": [
         "rear"
       ],
-      "description": "Sturdy Rear Rack"
+      "description": "rear rack"
     },
     {
       "type": "saddle",
@@ -236,11 +262,6 @@
         "width": 101.6,
         "diameter": 559
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Package Included",
-      "description": "Battery, charger, kickstand, fenders, rear rack, rearview mirrors, assembly toolset, user manual"
     }
   ]
 }

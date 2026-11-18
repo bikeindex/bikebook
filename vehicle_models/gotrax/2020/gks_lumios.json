@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2020/gks_lumios",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "GKS",
+  "model_group": "GKS",
   "model": "GKS Lumios",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -152,8 +152,12 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
-      "battery_size": 66,
+      "certifications": [
+        "UL 2272"
+      ],
+      "battery": {
+        "capacity": 66
+      },
       "rated_power": 200,
       "operating_modes": [
         {
@@ -165,12 +169,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 70
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 6.7,
-        "max_weight_rider": 70
+        "total_weight": 6.7
       }
     }
   ],

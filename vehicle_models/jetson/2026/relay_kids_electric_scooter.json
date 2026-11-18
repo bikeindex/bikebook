@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2026/relay_kids_electric_scooter",
   "manufacturer": "Jetson",
   "model": "Relay Kids' Electric Scooter",
@@ -53,9 +53,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 57,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 57,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 100,
       "operating_modes": [
         {
@@ -66,6 +68,12 @@
           "max_slope": 10
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 54
     }
   ],
   "sizes": [
@@ -83,7 +91,6 @@
           "height": 264
         },
         "total_weight": 7,
-        "max_weight_rider": 54,
         "rider_age_min": 8,
         "extra_measurements": {
           "handlebar_height_max": 953,

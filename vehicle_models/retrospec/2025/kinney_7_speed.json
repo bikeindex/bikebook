@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2025/kinney_7_speed",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Kinney",
+  "model_group": "Kinney",
   "model": "Kinney 7 Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -95,16 +95,22 @@
       "caliper_mount": "Brake Bosses"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 18.14
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    },
+    {
+      "load": "cargo",
+      "weight": 18.14
+    }
+  ],
   "sizes": [
     {
       "name": "42cm",
       "geometry": {
         "standover": 648,
         "crank_length": 170,
-        "max_weight_rider": 113,
         "rider_height_min": 1524,
         "rider_height_max": 1930
       }

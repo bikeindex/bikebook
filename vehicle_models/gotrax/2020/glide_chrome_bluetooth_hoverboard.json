@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2020/glide_chrome_bluetooth_hoverboard",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "Glide",
+  "model_group": "Glide",
   "model": "Glide Chrome Bluetooth Hoverboard",
   "model_configuration": "complete",
   "type": "epamd",
@@ -109,8 +109,7 @@
       {
         "type": "fender"
       }
-    ],
-    "max_weight_total": 80
+    ]
   },
   "wheels": [
     {
@@ -123,7 +122,9 @@
   ],
   "motors": [
     {
-      "charging_time": 300,
+      "battery": {
+        "charging_time": 300
+      },
       "rated_power": 200,
       "operating_modes": [
         {
@@ -144,6 +145,12 @@
           "range_claimed": 5
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 80
     }
   ],
   "sizes": [

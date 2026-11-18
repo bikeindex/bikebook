@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/serial_1/2023/mosh_cty_eu",
   "manufacturer": "Serial 1",
-  "vehicle_model_group": "Mosh",
+  "model_group": "Mosh",
   "model": "Mosh/CTY",
   "model_configuration": "complete",
   "markets": [
@@ -47,9 +47,7 @@
     "bottom_bracket": {
       "spindle": "ISIS",
       "spindle_length": 150
-    },
-    "max_weight_total": 105,
-    "gross_weight_rating": 127
+    }
   },
   "wheels": [
     {
@@ -84,8 +82,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 150,
-      "battery_size": 529,
-      "charging_time": 282,
+      "battery": {
+        "capacity": 529,
+        "charging_time": 282
+      },
       "max_torque": 90,
       "operating_modes": [
         {
@@ -98,6 +98,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 105
+    },
+    {
+      "load": "gross",
+      "weight": 127
     }
   ],
   "sizes": [

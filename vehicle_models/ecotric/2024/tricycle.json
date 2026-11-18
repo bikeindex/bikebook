@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ecotric/2024/tricycle",
   "manufacturer": "Ecotric",
   "model": "Tricycle",
@@ -77,9 +77,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 1075,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1075,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -93,6 +95,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -102,8 +110,7 @@
           "width": 830,
           "height": 1200
         },
-        "total_weight": 66.7,
-        "max_weight_rider": 120
+        "total_weight": 66.7
       }
     }
   ],

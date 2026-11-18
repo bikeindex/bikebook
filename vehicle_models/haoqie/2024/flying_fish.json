@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/haoqie/2024/flying_fish",
   "manufacturer": "Haoqie",
   "model": "Flying Fish",
@@ -85,9 +85,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IP55",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 500,
       "peak_power": 700,
       "max_torque": 18,
@@ -103,6 +105,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -116,7 +124,6 @@
           "height": 521
         },
         "total_weight": 18.1,
-        "max_weight_rider": 120,
         "rider_height_min": 1346,
         "rider_height_max": 2108,
         "extra_measurements": {

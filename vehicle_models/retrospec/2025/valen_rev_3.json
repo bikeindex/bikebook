@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2025/valen_rev_3",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Valen Rev",
+  "model_group": "Valen Rev",
   "model": "Valen Rev 3",
   "model_configuration": "complete",
   "type": "bike",
@@ -99,10 +99,15 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 Cells",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion",
+        "cells": "21700"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -121,13 +126,18 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "standover": 826,
         "total_weight": 30.4,
-        "max_weight_rider": 159,
         "rider_height_min": 1702,
         "rider_height_max": 1880
       }

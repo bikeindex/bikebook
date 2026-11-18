@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tern/2026/orox_r14_gen_1_gb",
   "manufacturer": "Tern",
-  "vehicle_model_group": "Orox",
+  "model_group": "Orox",
   "model": "Orox R14 (29\") Gen 1",
   "model_configuration": "complete",
   "markets": [
@@ -38,9 +38,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 175,
-    "gross_weight_rating": 210
+    "seatpost_diameter": 34.9
   },
   "wheels": [
     {
@@ -89,8 +87,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -109,9 +109,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 100
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 130
+    },
+    {
+      "load": "cargo",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 210
+    }
+  ],
   "sizes": [
     {
       "name": "M",
@@ -128,7 +139,6 @@
           "height": 1075
         },
         "total_weight": 34.9,
-        "max_weight_rider": 130,
         "rider_height_min": 1550,
         "rider_height_max": 1850,
         "extra_measurements": {
@@ -153,7 +163,6 @@
           "width": 820,
           "height": 1095
         },
-        "max_weight_rider": 130,
         "rider_height_min": 1650,
         "rider_height_max": 1950,
         "extra_measurements": {

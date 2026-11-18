@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2022/checkpoint_slr_9_axs",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Checkpoint",
+  "model_group": "Checkpoint",
   "model": "Checkpoint SLR 9 AXS",
   "model_configuration": "complete",
   "type": "bike",
@@ -234,9 +234,7 @@
     "bottom_bracket": {
       "shell": "T47",
       "spindle": "DUB"
-    },
-    "max_weight_total": 116,
-    "gross_weight_rating": 125
+    }
   },
   "wheels": [
     {
@@ -291,6 +289,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 116
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

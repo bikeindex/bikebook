@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moon_cool/2024/tk_pro",
   "manufacturer": "Moon Cool",
-  "vehicle_model_group": "TK",
+  "model_group": "TK",
   "model": "TK Pro",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -115,8 +115,7 @@
     "material": "aluminum",
     "top_tube": "step_through",
     "folding": "half_fold",
-    "seatpost_diameter": 31.8,
-    "max_weight_total": 204
+    "seatpost_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -177,8 +176,14 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "2849&2271 by SGS;CFR1512",
-      "battery_size": 960,
+      "certifications": [
+        "UL 2849",
+        "UL 2271",
+        "16 CFR 1512"
+      ],
+      "battery": {
+        "capacity": 960
+      },
       "rated_power": 750,
       "peak_power": 1310,
       "max_torque": 90,
@@ -204,6 +209,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -212,7 +223,7 @@
         "wheelbase": 1120,
         "standover": 310,
         "handlebar_width": 690,
-        "seat_height_min": 1069,
+        "seat_height_min": 770,
         "seat_height_max": 1069,
         "dimensions": {
           "length": 1650,

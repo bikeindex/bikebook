@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ariel_rider/2026/x_class_60v_ppb",
   "manufacturer": "Ariel Rider",
-  "vehicle_model_group": "X-Class",
+  "model_group": "X-Class",
   "model": "X-Class 60V PPB",
   "model_configuration": "complete",
   "type": "bike",
@@ -34,8 +34,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 159
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -83,7 +82,9 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IP65",
-      "battery_size": 2100,
+      "battery": {
+        "capacity": 2100
+      },
       "rated_power": 1500,
       "peak_power": 2700,
       "max_torque": 132,
@@ -106,6 +107,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

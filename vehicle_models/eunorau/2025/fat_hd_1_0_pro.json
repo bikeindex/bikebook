@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2025/fat_hd_1_0_pro",
   "manufacturer": "Eunorau",
-  "vehicle_model_group": "Fat-HD",
+  "model_group": "Fat-HD",
   "model": "Fat-HD 1.0 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -65,8 +65,7 @@
     ],
     "bottom_bracket": {
       "spindle": "square taper"
-    },
-    "max_weight_total": 170
+    }
   },
   "suspension": {
     "front": {
@@ -120,9 +119,15 @@
       "kind": "mid_drive",
       "spindle": "square taper",
       "sensor_cadence": true,
-      "certification": "Yes",
+      "certifications": [
+        "EN 14764",
+        "CE",
+        "RoHS"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 1200,
+      "battery": {
+        "capacity": 1200
+      },
       "rated_power": 1000,
       "max_torque": 160,
       "operating_modes": [
@@ -145,6 +150,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 170
     }
   ],
   "sizes": [
@@ -220,10 +231,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "48V1000W BAFANG brushless mid motor with 160 N.m torque"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V"
     },
     {
       "type": "e_vehicle_remote",
@@ -315,6 +322,11 @@
         "width": 101.6,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V"
     },
     {
       "type": "unknown",

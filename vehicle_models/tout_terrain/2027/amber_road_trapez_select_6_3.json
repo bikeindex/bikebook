@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tout_terrain/2027/amber_road_trapez_select_6_3",
   "manufacturer": "Tout Terrain",
-  "vehicle_model_group": "Amber Road",
+  "model_group": "Amber Road",
   "model": "Amber Road Trapez Select 6.3",
   "model_configuration": "complete",
   "type": "bike",
@@ -45,14 +45,20 @@
       {
         "type": "bottle",
         "location": "under_downtube"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
       }
     ],
     "bottom_bracket": {
       "shell": "BSA",
       "width": 68
     },
-    "headset": "EC34/28.6 | EC34/30",
-    "gross_weight_rating": 160
+    "headset": "EC34/28.6 | EC34/30"
   },
   "wheels": [
     {
@@ -108,6 +114,12 @@
       ],
       "rotor_diameter": 160,
       "caliper_mount": "Disc IS"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 160
     }
   ],
   "sizes": [

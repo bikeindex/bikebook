@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/easy_transit_750w_fat_tire_electric",
   "manufacturer": "sixthreezero",
-  "vehicle_model_group": "Easy Transit",
+  "model_group": "Easy Transit",
   "model": "Easy Transit 750W Fat Tire Electric",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -42,8 +42,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 159
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -78,8 +77,10 @@
   ],
   "motors": [
     {
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -95,6 +96,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

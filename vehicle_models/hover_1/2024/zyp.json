@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hover_1/2024/zyp",
   "manufacturer": "Hover-1",
   "model": "Zyp",
@@ -35,8 +35,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 125
+    "folding": "half_fold"
   },
   "suspension": {
     "rear": {}
@@ -61,7 +60,9 @@
   ],
   "motors": [
     {
-      "battery_size": 346,
+      "battery": {
+        "capacity": 346
+      },
       "rated_power": 450,
       "operating_modes": [
         {
@@ -72,6 +73,16 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [
@@ -89,7 +100,6 @@
           "height": 762
         },
         "total_weight": 20.9,
-        "max_weight_rider": 120,
         "rider_age_min": 14
       }
     }

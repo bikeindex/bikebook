@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/isinwheel/2026/r6_mini",
   "manufacturer": "iSinwheel",
-  "vehicle_model_group": "R6",
+  "model_group": "R6",
   "model": "R6 Mini",
   "model_configuration": "complete",
   "type": "bike",
@@ -48,8 +48,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "wheels": [
     {
@@ -64,8 +63,10 @@
   "motors": [
     {
       "water_rating": "IPX4",
-      "battery_size": 624,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 480
+      },
       "peak_power": 1000,
       "operating_modes": [
         {
@@ -84,6 +85,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -93,8 +104,7 @@
           "width": 68,
           "height": 1050
         },
-        "total_weight": 37.6,
-        "max_weight_rider": 150
+        "total_weight": 37.6
       }
     }
   ],

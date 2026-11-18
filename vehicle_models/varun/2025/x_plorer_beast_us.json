@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/varun/2025/x_plorer_beast_us",
   "manufacturer": "Varun",
-  "vehicle_model_group": "X-Plorer",
+  "model_group": "X-Plorer",
   "model": "X-Plorer Beast",
   "model_configuration": "complete",
   "markets": [
@@ -56,8 +56,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -102,7 +101,9 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 1512,
+      "battery": {
+        "capacity": 1512
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 65,
@@ -135,6 +136,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

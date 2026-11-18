@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/likebike/2025/um1_plus",
   "manufacturer": "Likebike",
-  "vehicle_model_group": "UM1",
+  "model_group": "UM1",
   "model": "UM1 Plus",
   "model_configuration": "complete",
   "type": "bike",
@@ -79,8 +79,10 @@
   ],
   "motors": [
     {
-      "battery_size": 1104,
-      "charging_time": 450,
+      "battery": {
+        "capacity": 1104,
+        "charging_time": 450
+      },
       "rated_power": 1000,
       "operating_modes": [
         {

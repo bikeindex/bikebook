@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/woom/2026/explore_e_6",
   "manufacturer": "Woom",
-  "vehicle_model_group": "Explore e",
+  "model_group": "Explore e",
   "model": "Explore e 6",
   "model_configuration": "complete",
   "markets": [
@@ -105,8 +105,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 171,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 171,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 45,
       "operating_modes": [
@@ -122,6 +124,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 77
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -135,7 +143,6 @@
         "seat_height_min": 755,
         "seat_height_max": 961,
         "total_weight": 13.2,
-        "max_weight_rider": 77,
         "rider_height_min": 1400,
         "rider_height_max": 1650,
         "extra_measurements": {

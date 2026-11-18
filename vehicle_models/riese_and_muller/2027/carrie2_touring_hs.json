@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2027/carrie2_touring_hs",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Carrie2",
+  "model_group": "Carrie2",
   "model": "Carrie2 touring HS",
   "model_configuration": "complete",
   "markets": [
@@ -62,9 +62,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_clamp_diameter": 40,
-    "max_weight_total": 162,
-    "gross_weight_rating": 200
+    "seatpost_clamp_diameter": 40
   },
   "suspension": {
     "front": {
@@ -125,8 +123,10 @@
       "model_group": "Performance Line Speed",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 100,
@@ -140,6 +140,20 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 200
+    },
+    {
+      "load": "rear_rack",
+      "weight": 27
     }
   ],
   "sizes": [
@@ -160,15 +174,13 @@
           "length": 2090
         },
         "total_weight": 37.5,
-        "max_weight_rider": 110,
         "rider_height_min": 1500,
         "rider_height_max": 2000,
         "extra_measurements": {
           "childseat_compatibility_carrier": "no",
           "compatibility_tagalong_trailer_bike": "no",
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_luggage_rack_kg": 27
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     }

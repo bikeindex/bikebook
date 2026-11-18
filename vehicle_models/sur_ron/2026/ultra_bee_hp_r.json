@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sur_ron/2026/ultra_bee_hp_r",
   "manufacturer": "Sur-Ron",
-  "vehicle_model_group": "Ultra Bee",
+  "model_group": "Ultra Bee",
   "model": "Ultra Bee HP R",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -35,8 +35,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Forged Aluminum",
-    "max_weight_total": 150
+    "material_detail": "Forged Aluminum"
   },
   "suspension": {
     "front": {
@@ -73,8 +72,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 4440,
-      "charging_time": 270,
+      "battery": {
+        "capacity": 4440,
+        "charging_time": 270
+      },
       "peak_power": 24500,
       "max_torque": 520,
       "operating_modes": [
@@ -85,6 +86,12 @@
           "range_claimed": 115
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

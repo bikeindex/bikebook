@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2020/nature_hybrid_one_500_allroad_men",
   "manufacturer": "Cube",
   "model": "Nature Hybrid ONE 500 Allroad Men",
@@ -34,9 +34,7 @@
     },
     "headset": "ZS44/28.6 | ZS56/40",
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 117,
-    "gross_weight_rating": 140
+    "seatpost_clamp_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -91,7 +89,9 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 500,
+      "battery": {
+        "capacity": 500
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,
@@ -105,6 +105,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 117
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

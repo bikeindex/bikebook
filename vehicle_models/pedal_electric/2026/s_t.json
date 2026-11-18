@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pedal_electric/2026/s_t",
   "manufacturer": "Pedal Electric",
   "model": "S/T",
@@ -82,7 +82,9 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 768,
+      "battery": {
+        "capacity": 768
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -103,6 +105,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 191
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -110,7 +118,6 @@
         "seat_height_min": 813,
         "seat_height_max": 813,
         "total_weight": 34,
-        "max_weight_rider": 191,
         "extra_measurements": {
           "handlebar_height": 1209
         }

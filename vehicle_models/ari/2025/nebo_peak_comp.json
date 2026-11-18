@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ari/2025/nebo_peak_comp",
   "manufacturer": "Ari",
-  "vehicle_model_group": "Nebo Peak",
+  "model_group": "Nebo Peak",
   "model": "Nebo Peak Comp",
   "model_configuration": "complete",
   "type": "bike",
@@ -155,8 +155,10 @@
       "kind": "mid_drive",
       "spindle": "ETOR Drive",
       "spindle_length": 135,
-      "battery_size": 480,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 480,
+        "chemistry": "li-ion"
+      },
       "peak_power": 450,
       "max_torque": 60,
       "operating_modes": [

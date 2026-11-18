@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/marin/2025/rift_zone_el1_eu_gb",
   "manufacturer": "Marin Bikes",
-  "vehicle_model_group": "Rift Zone",
+  "model_group": "Rift Zone",
   "model": "Rift Zone EL1 - EU",
   "model_configuration": "complete",
   "markets": [
@@ -149,8 +149,10 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 55,

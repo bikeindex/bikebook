@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/helokeep/2026/26m",
   "manufacturer": "Helokeep",
   "model": "26M",
@@ -51,8 +51,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 249
+    "material": "steel"
   },
   "wheels": [
     {
@@ -79,7 +78,9 @@
   ],
   "motors": [
     {
-      "battery_size": 1200,
+      "battery": {
+        "capacity": 1200
+      },
       "peak_power": 3000,
       "max_torque": 220,
       "operating_modes": [
@@ -100,6 +101,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 249
     }
   ],
   "sizes": [

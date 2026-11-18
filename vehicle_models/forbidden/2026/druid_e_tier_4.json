@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/forbidden/2026/druid_e_tier_4",
   "manufacturer": "Forbidden Bikes",
-  "vehicle_model_group": "Druid E",
+  "model_group": "Druid E",
   "model": "Druid E Tier 4",
   "model_configuration": "complete",
   "type": "bike",
@@ -122,11 +122,13 @@
       "manufacturer": "DJI",
       "model": "Avinox M2",
       "kind": "mid_drive",
-      "battery_size": 600,
-      "battery_options": [
-        800
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "capacity_options": [
+          800
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 1100,
       "max_torque": 110,

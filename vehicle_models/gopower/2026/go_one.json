@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gopower/2026/go_one",
   "manufacturer": "Gopower",
   "model": "Go One",
@@ -65,8 +65,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 216,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 216,
+        "chemistry": "li-ion"
+      },
       "rated_power": 400,
       "operating_modes": [
         {
@@ -78,6 +80,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -85,7 +93,6 @@
         "dimensions": {
           "length": 1100.074
         },
-        "max_weight_rider": 120,
         "extra_measurements": {
           "deck_width": 590.042,
           "handlebar_height": 1199.896

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebycco/2024/eb10_us",
   "manufacturer": "Ebycco",
   "model": "EB10",
@@ -17,9 +17,10 @@
   "stock_photo": "https://bikebook.bikeindex.org/ebycco/2024/eb10_us.png",
   "description": "E·BYCCO 24'' EB10 Peak 6000W/8000W 52V 32Ah Dual Motors Electric Bike for Women and Men",
   "first_year": 2024,
+  "final_year": 2026,
   "years": {
     "2026": {
-      "original_msrp": 100900,
+      "original_msrp": 174900,
       "original_msrp_currency": "USD",
       "colorways": [
         {
@@ -43,8 +44,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -79,11 +79,16 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 1664,
-      "battery_chemistry": "li-ion",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1664,
+        "chemistry": "li-ion",
+        "charging_time": 540
+      },
       "peak_power": 3000,
       "max_torque": 110,
       "operating_modes": [
@@ -108,11 +113,16 @@
     },
     {
       "drive_wheel": "rear",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 1664,
-      "battery_chemistry": "li-ion",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1664,
+        "chemistry": "li-ion",
+        "charging_time": 540
+      },
       "peak_power": 3000,
       "max_torque": 110,
       "operating_modes": [
@@ -134,6 +144,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -190,10 +206,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "52V, 6000W"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LCD display, Waterproof"
     },
     {
@@ -242,6 +254,11 @@
       "type": "unknown",
       "type_detail": "Riding Modes",
       "description": "5-Level Throttle/5-Level Pedal Assist/Cruising/Walking Assist/Manual"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "52V, 6000W"
     }
   ]
 }

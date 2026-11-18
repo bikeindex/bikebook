@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/huffy/2023/green_machine_20in",
   "manufacturer": "Huffy",
-  "vehicle_model_group": "Green Machine",
+  "model_group": "Green Machine",
   "model": "Green Machine 20in",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -65,11 +65,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 82
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "max_weight_rider": 82,
         "rider_age_min": 8
       }
     }

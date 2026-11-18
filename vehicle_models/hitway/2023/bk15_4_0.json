@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hitway/2023/bk15_4_0",
   "manufacturer": "Hitway",
-  "vehicle_model_group": "BK15",
+  "model_group": "BK15",
   "model": "BK15 4.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -81,9 +81,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 749,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 749,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 250,
       "max_torque": 70,
       "operating_modes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/magnum/2024/navigator_s",
   "manufacturer": "Magnum Bikes",
-  "vehicle_model_group": "Navigator",
+  "model_group": "Navigator",
   "model": "Navigator S",
   "model_configuration": "complete",
   "type": "bike",
@@ -67,8 +67,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 140
+    ]
   },
   "suspension": {
     "front": {}
@@ -104,10 +103,12 @@
     {
       "manufacturer": "Das-Kit",
       "kind": "hub_drive",
-      "battery_size": 480,
-      "battery_chemistry": "li-ion",
-      "battery_info": "10Ah, 48V",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 480,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -129,6 +130,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 140
     }
   ],
   "sizes": [

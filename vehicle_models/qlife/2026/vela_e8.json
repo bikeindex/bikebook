@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/qlife/2026/vela_e8",
   "manufacturer": "Qlife",
-  "vehicle_model_group": "Vela",
+  "model_group": "Vela",
   "model": "Vela E8",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -51,8 +51,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -96,8 +95,10 @@
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
       "water_rating": "IPX5",
-      "battery_size": 1200,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1200,
+        "charging_time": 480
+      },
       "peak_power": 4000,
       "max_torque": 230,
       "operating_modes": [
@@ -112,6 +113,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

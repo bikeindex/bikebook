@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/norco/2024/fluid_vlt_c3_140",
   "manufacturer": "Norco Bikes",
-  "vehicle_model_group": "Fluid VLT Carbon",
+  "model_group": "Fluid VLT Carbon",
   "model": "Fluid VLT C3 140",
   "model_configuration": "complete",
   "type": "bike",
@@ -123,8 +123,10 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,

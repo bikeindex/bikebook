@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aventon/2026/level_4_rec_step_through",
   "manufacturer": "Aventón",
-  "vehicle_model_group": "Level",
+  "model_group": "Level",
   "model": "Level 4 REC Step-Through",
   "model_configuration": "complete",
   "type": "bike",
@@ -82,8 +82,7 @@
       "spindle_length": 158.5
     },
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 136
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -153,12 +152,18 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 733,
-      "battery_chemistry": "li-ion",
-      "battery_info": "36V, 20Ah, LG 21700 cells",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 733,
+        "voltage": 36,
+        "chemistry": "li-ion",
+        "cells": "LG 21700",
+        "charging_time": 300
+      },
       "rated_power": 750,
       "peak_power": 1188,
       "max_torque": 80,
@@ -188,6 +193,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

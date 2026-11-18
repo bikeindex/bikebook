@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/raev/2023/bullet_gt_v2",
   "manufacturer": "Raev",
-  "vehicle_model_group": "Bullet",
+  "model_group": "Bullet",
   "model": "Bullet GT V2",
   "model_configuration": "complete",
   "type": "bike",
@@ -52,8 +52,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 150
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -95,10 +94,12 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 1456,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 21700 cells",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1456,
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700",
+        "charging_time": 420
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -122,6 +123,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aipas/2026/x3_max",
   "manufacturer": "Aipas",
   "model": "X3 Max",
@@ -39,8 +39,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 159
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -76,8 +75,10 @@
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
       "water_rating": "IP65",
-      "battery_size": 1680,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1680,
+        "chemistry": "li-ion"
+      },
       "rated_power": 6500,
       "max_torque": 260,
       "operating_modes": [
@@ -92,6 +93,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

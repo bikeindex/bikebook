@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/postjoy/2026/f26",
   "manufacturer": "PostJoy",
   "model": "F26",
@@ -22,8 +22,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 159
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -55,7 +54,9 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 480,
+      "battery": {
+        "capacity": 480
+      },
       "peak_power": 1500,
       "max_torque": 28,
       "operating_modes": [
@@ -71,6 +72,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -83,7 +90,6 @@
           "height": 1049
         },
         "total_weight": 22.5,
-        "max_weight_rider": 159,
         "rider_height_min": 1549,
         "rider_height_max": 1930,
         "extra_measurements": {

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/decathlon/2026/riverside_540_e",
   "manufacturer": "Decathlon",
   "model": "Riverside 540 E",
@@ -43,8 +43,7 @@
         "location": "downtube"
       }
     ],
-    "seatpost_diameter": 28.6,
-    "max_weight_total": 120
+    "seatpost_diameter": 28.6
   },
   "suspension": {
     "front": {
@@ -94,8 +93,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "max_torque": 58,
       "operating_modes": [
         {
@@ -107,6 +108,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

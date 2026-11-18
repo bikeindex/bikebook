@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/volt/2025/kodiak_v2",
   "manufacturer": "Volt Bike",
-  "vehicle_model_group": "Kodiak",
+  "model_group": "Kodiak",
   "model": "Kodiak V2",
   "model_configuration": "complete",
   "type": "bike",
@@ -47,8 +47,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 136
+    ]
   },
   "suspension": {
     "front": {
@@ -100,8 +99,10 @@
     {
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 80,
@@ -124,6 +125,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

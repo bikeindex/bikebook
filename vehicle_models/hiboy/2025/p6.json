@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hiboy/2025/p6",
   "manufacturer": "Hiboy",
   "model": "P6",
@@ -56,8 +56,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 120
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -90,8 +89,10 @@
   "motors": [
     {
       "water_rating": "IPX4",
-      "battery_size": 557,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 557,
+        "charging_time": 420
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "operating_modes": [
@@ -111,6 +112,12 @@
           "range_claimed": 50
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

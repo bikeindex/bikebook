@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/addict_gravel_20_gb",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Addict",
+  "model_group": "Addict",
   "model": "Addict Gravel 20",
   "model_configuration": "complete",
   "markets": [
@@ -64,9 +64,7 @@
       "shell": "BSA",
       "spindle": "24mm"
     },
-    "headset": "IS42/28.6 | IS52/40",
-    "max_weight_total": 111,
-    "gross_weight_rating": 120
+    "headset": "IS42/28.6 | IS52/40"
   },
   "wheels": [
     {
@@ -105,6 +103,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 111
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

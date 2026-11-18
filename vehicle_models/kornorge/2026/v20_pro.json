@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kornorge/2026/v20_pro",
   "manufacturer": "Kornorge",
-  "vehicle_model_group": "V20",
+  "model_group": "V20",
   "model": "V20 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -57,8 +57,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {},
@@ -95,11 +94,15 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 874,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 874,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "max_torque": 90,
@@ -126,9 +129,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 22.7
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 22.7
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

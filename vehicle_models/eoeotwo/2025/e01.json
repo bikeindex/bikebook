@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eoeotwo/2025/e01",
   "manufacturer": "EOEOTWO",
-  "vehicle_model_group": "E01",
+  "model_group": "E01",
   "model": "E01",
   "model_configuration": "complete",
   "type": "bike",
@@ -56,8 +56,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 180
+    ]
   },
   "suspension": {
     "front": {}
@@ -87,9 +86,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 720,
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "operating_modes": [
@@ -110,6 +114,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [

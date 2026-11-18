@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/revi/2025/cheetah_pro",
   "manufacturer": "Revi",
-  "vehicle_model_group": "Cheetah",
+  "model_group": "Cheetah",
   "model": "Cheetah Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,8 +42,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 181
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -88,11 +87,17 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 1440,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 1440,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 360
+      },
       "rated_power": 1700,
       "peak_power": 1700,
       "operating_modes": [
@@ -118,9 +123,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 20.41
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 20.41
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

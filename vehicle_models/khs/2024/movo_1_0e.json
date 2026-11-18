@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/khs/2024/movo_1_0e",
   "manufacturer": "KHS Bicycles",
-  "vehicle_model_group": "Movo",
+  "model_group": "Movo",
   "model": "Movo 1.0E",
   "model_configuration": "complete",
   "type": "bike",
@@ -142,10 +142,15 @@
       "model": "RM G020.250/350/500.D/DC",
       "model_group": "RMG020",
       "kind": "hub_drive",
-      "certification": "ROHS / CE",
+      "certifications": [
+        "CE",
+        "RoHS"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 45,
       "operating_modes": [

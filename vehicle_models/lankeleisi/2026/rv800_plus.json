@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lankeleisi/2026/rv800_plus",
   "manufacturer": "Lankeleisi",
-  "vehicle_model_group": "RV",
+  "model_group": "RV",
   "model": "RV800 Plus",
   "model_configuration": "complete",
   "type": "bike",
@@ -60,8 +60,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 180
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -112,9 +111,11 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1130,
       "max_torque": 100,
@@ -134,6 +135,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [

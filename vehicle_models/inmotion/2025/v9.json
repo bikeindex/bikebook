@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2025/v9",
   "manufacturer": "Inmotion",
   "model": "V9",
@@ -34,8 +34,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -63,10 +62,12 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
-      "battery_info": "20S2P Samsung 21700 50GB",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion",
+        "cells": "20S2P Samsung 21700 50GB",
+        "charging_time": 300
+      },
       "rated_power": 1000,
       "peak_power": 2000,
       "max_torque": 90,
@@ -79,6 +80,12 @@
           "max_slope": 30
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

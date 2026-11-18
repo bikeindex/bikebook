@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/meelod/2026/talon",
   "manufacturer": "Meelod",
   "model": "Talon",
@@ -49,8 +49,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 200
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -86,8 +85,10 @@
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
       "water_rating": "IPX5",
-      "battery_size": 1248,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1248,
+        "chemistry": "li-ion"
+      },
       "peak_power": 3000,
       "max_torque": 140,
       "operating_modes": [
@@ -101,6 +102,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

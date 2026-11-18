@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velec/2026/r48_plus",
   "manufacturer": "Velec",
-  "vehicle_model_group": "R48",
+  "model_group": "R48",
   "model": "R48+",
   "model_configuration": "complete",
   "type": "bike",
@@ -96,7 +96,9 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 672,
+      "battery": {
+        "capacity": 672
+      },
       "rated_power": 500,
       "max_torque": 65,
       "operating_modes": [

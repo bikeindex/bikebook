@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2023/g_pro",
   "manufacturer": "GOTRAX",
   "model": "G Pro",
@@ -82,11 +82,15 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 378,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 378,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 300,
       "operating_modes": [
         {
@@ -99,6 +103,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -108,8 +118,7 @@
           "width": 467,
           "height": 1237
         },
-        "total_weight": 23.8,
-        "max_weight_rider": 120
+        "total_weight": 23.8
       }
     }
   ],

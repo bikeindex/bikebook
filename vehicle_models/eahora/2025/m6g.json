@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eahora/2025/m6g",
   "manufacturer": "Eahora",
-  "vehicle_model_group": "M6G",
+  "model_group": "M6G",
   "model": "M6G",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -39,8 +39,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 200
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -77,8 +76,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 1500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 2000,
       "peak_power": 2700,
       "max_torque": 119,
@@ -90,6 +91,12 @@
           "max_slope": 30
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

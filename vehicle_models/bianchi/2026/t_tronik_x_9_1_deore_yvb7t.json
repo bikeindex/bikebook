@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bianchi/2026/t_tronik_x_9_1_deore_yvb7t",
   "manufacturer": "Bianchi",
-  "vehicle_model_group": "T-Tronik",
+  "model_group": "T-Tronik",
   "model": "T-Tronik X 9.1 Deore YVB7T",
   "model_configuration": "complete",
   "type": "bike",
@@ -117,12 +117,14 @@
       "id": "c/bosch/2024/performance_line_cx_bdu384y",
       "drive_wheel": "rear",
       "manufacturer": "Bosch",
-      "model": "Performance Line CX BDU3840",
+      "model": "BDU384Y",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,

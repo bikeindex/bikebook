@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tst/2025/r9",
   "manufacturer": "TST",
   "model": "R9",
@@ -60,8 +60,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 204
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -102,11 +101,13 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 720,
-      "battery_options": [
-        1440
-      ],
-      "charging_time": 360,
+      "battery": {
+        "capacity": 720,
+        "capacity_options": [
+          1440
+        ],
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 90,
@@ -121,6 +122,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

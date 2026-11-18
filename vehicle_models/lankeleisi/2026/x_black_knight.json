@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lankeleisi/2026/x_black_knight",
   "manufacturer": "Lankeleisi",
   "model": "X-Black Knight",
@@ -39,8 +39,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 200
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -87,8 +86,10 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 2160,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 2160,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "max_torque": 95,
       "operating_modes": [
@@ -115,8 +116,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 2160,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 2160,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "max_torque": 95,
       "operating_modes": [
@@ -138,6 +141,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

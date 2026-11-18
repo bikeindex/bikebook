@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2022/x10_hoverboard",
   "manufacturer": "Jetson",
   "model": "X10 Hoverboard",
@@ -76,10 +76,14 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2272",
-      "battery_size": 104,
-      "battery_chemistry": "li-ion",
-      "charging_time": 180,
+      "certifications": [
+        "UL 2272"
+      ],
+      "battery": {
+        "capacity": 104,
+        "chemistry": "li-ion",
+        "charging_time": 180
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -92,6 +96,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -102,7 +112,6 @@
           "height": 191
         },
         "total_weight": 8.9,
-        "max_weight_rider": 120,
         "rider_age_min": 12
       }
     }

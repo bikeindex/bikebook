@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2022/alpha_xl",
   "manufacturer": "GOTRAX",
   "model": "Alpha XL",
@@ -81,8 +81,10 @@
   "motors": [
     {
       "water_rating": "IPX4",
-      "battery_size": 270,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 270,
+        "charging_time": 300
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -104,6 +106,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -113,8 +121,7 @@
           "width": 650,
           "height": 1140
         },
-        "total_weight": 23,
-        "max_weight_rider": 120
+        "total_weight": 23
       }
     }
   ],

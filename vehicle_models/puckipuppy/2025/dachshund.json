@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/puckipuppy/2025/dachshund",
   "manufacturer": "Puckipuppy",
-  "vehicle_model_group": "Dachshund",
+  "model_group": "Dachshund",
   "model": "Dachshund",
   "model_configuration": "complete",
   "type": "bike",
@@ -68,8 +68,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 204
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -107,7 +106,9 @@
     {
       "sensor_cadence": true,
       "water_rating": "IPX6",
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 500,
       "peak_power": 960,
       "operating_modes": [
@@ -130,6 +131,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/simple_glide_fat_tire_750w_recumbent_e_trike_w_footrest_and_hitch_connector",
   "manufacturer": "sixthreezero",
-  "vehicle_model_group": "Simple Glide",
+  "model_group": "Simple Glide",
   "model": "Simple Glide Fat Tire 750W Recumbent E Trike w/ Footrest & Hitch Connector",
   "model_configuration": "complete",
   "type": "recumbent",
@@ -35,8 +35,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 159
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -76,9 +75,13 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "certification": "UL 2271",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -96,6 +99,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

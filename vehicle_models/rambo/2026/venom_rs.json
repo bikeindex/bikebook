@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rambo/2026/venom_rs",
   "manufacturer": "Rambo",
   "model": "Venom RS",
@@ -38,8 +38,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Forged 6061-T6 Aluminum",
-    "max_weight_total": 100
+    "material_detail": "Forged 6061-T6 Aluminum"
   },
   "suspension": {
     "rear": {}
@@ -60,8 +59,10 @@
   ],
   "motors": [
     {
-      "battery_size": 2520,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 2520,
+        "chemistry": "li-ion"
+      },
       "rated_power": 4000,
       "peak_power": 10000,
       "max_torque": 390,
@@ -77,6 +78,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

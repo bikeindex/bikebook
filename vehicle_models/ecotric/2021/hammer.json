@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ecotric/2021/hammer",
   "manufacturer": "Ecotric",
   "model": "Hammer",
@@ -54,8 +54,7 @@
       {
         "type": "fender"
       }
-    ],
-    "max_weight_total": 120
+    ]
   },
   "wheels": [
     {
@@ -89,8 +88,10 @@
     {
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 624,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 480
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -101,6 +102,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

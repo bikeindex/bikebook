@@ -1,107 +1,20 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rocky_mountain/2024/instinct_carbon_50_29_us",
-  "manufacturer": "Rocky Mountain Bicycles",
-  "vehicle_model_group": "Instinct",
-  "model": "Instinct Carbon 50 29",
-  "model_configuration": "complete",
+  "base": "m/rocky_mountain/2024/instinct_carbon_50_29",
   "markets": [
     "US"
   ],
-  "type": "bike",
-  "propulsion": [
-    "pedal"
-  ],
-  "primary_activity": "mtb_trail_all_mountain",
-  "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/rocky_mountain/2024/instinct_carbon_50_29_us.jpg",
-  "description": "The Instinct Carbon is at home on technical trails, but still allows you to push the distance and crush the climbs. Our most versatile platform just got more adventure-ready with updated the frame features, geometry, and suspension kinematics to make sure you feel confident on the up’s, down’s, and everything in between. Meet the Instinct Carbon.",
-  "first_year": 2024,
-  "final_year": 2024,
   "years": {
     "2024": {
       "original_msrp": 549900,
       "original_msrp_currency": "USD",
-      "colorways": [
-        {
-          "name": "We Are the Champions / Platinum Blonde / Black Dog",
-          "colors": [
-            "silver",
-            "black"
-          ],
-          "variants": [
-            {
-              "sku": "B0320SM91",
-              "gtin": "770416480672",
-              "size": "SM"
-            },
-            {
-              "sku": "B0320MD1",
-              "gtin": "770416480757",
-              "size": "MD"
-            },
-            {
-              "sku": "B0320LG1",
-              "gtin": "770416480832",
-              "size": "LG"
-            },
-            {
-              "sku": "B0320XL1",
-              "gtin": "770416480917",
-              "size": "XL"
-            }
-          ]
-        },
-        {
-          "name": "Smokin' in the Boys Room / Bad to the Bone",
-          "variants": [
-            {
-              "sku": "B0320SM92",
-              "gtin": "770416480719",
-              "size": "SM"
-            },
-            {
-              "sku": "B0320MD2",
-              "gtin": "770416480795",
-              "size": "MD"
-            },
-            {
-              "sku": "B0320LG2",
-              "gtin": "770416480870",
-              "size": "LG"
-            },
-            {
-              "sku": "B0320XL2",
-              "gtin": "770416480955",
-              "size": "XL"
-            }
-          ]
-        }
-      ],
-      "url": "https://index.commoncrawl.org/CC-MAIN-2024-18/20240412124350/https://bikes.com/products/instinct-c50-24",
-      "url_live": false
+      "url": "https://index.commoncrawl.org/CC-MAIN-2024-18/20240412124350/https://bikes.com/products/instinct-c50-24"
     }
   },
-  "frame": {
-    "material": "carbon",
-    "cable_routing": "internal",
-    "bottom_bracket": {
-      "shell": "BSA",
-      "spindle": "24mm"
-    },
-    "seatpost_diameter": 30.9
-  },
-  "suspension": {
-    "front": {
-      "travel": 150
-    },
-    "rear": {
-      "travel": 140,
-      "spring": "air"
-    }
-  },
-  "wheels": [
-    {
+  "wheels": {
+    "front+rear 622": {
       "bsd": 622,
       "position": [
         "front",
@@ -109,122 +22,22 @@
       ],
       "tire_width": 61,
       "tire_system": "tubeless_ready"
-    }
-  ],
-  "drivetrain": [
-    "1_front",
-    "12_rear"
-  ],
-  "gearing": {
-    "front": [
-      32
-    ],
-    "rear": [
-      10,
-      51
-    ]
+    },
+    "front 622": false,
+    "rear 622": false
   },
-  "groupset": {
-    "manufacturer": "Shimano",
-    "series": "Deore XT",
-    "electronic": false
+  "sizes": {
+    "MD": {
+      "geometry": {
+        "total_weight": 14.1
+      }
+    },
+    "LG": {
+      "geometry": {
+        "dropper_travel": 170
+      }
+    }
   },
-  "brakes": [
-    {
-      "type": "disc_hydraulic",
-      "position": [
-        "front",
-        "rear"
-      ]
-    }
-  ],
-  "sizes": [
-    {
-      "name": "SM",
-      "geometry": {
-        "reach": 423,
-        "stack": 572,
-        "top_tube_effective": 572,
-        "seat_tube_ct": 365,
-        "head_angle": 63.5,
-        "seat_angle": 76.5,
-        "head_tube": 100,
-        "chainstay": 440,
-        "wheelbase": 1198,
-        "standover": 760,
-        "bb_drop": 44,
-        "crank_length": 165,
-        "dropper_travel": 150,
-        "extra_measurements": {
-          "chainstay_max": 450
-        }
-      }
-    },
-    {
-      "name": "MD",
-      "geometry": {
-        "reach": 449,
-        "stack": 599,
-        "top_tube_effective": 621,
-        "seat_tube_ct": 410,
-        "head_angle": 63.5,
-        "seat_angle": 76.5,
-        "head_tube": 110,
-        "chainstay": 440,
-        "wheelbase": 1227,
-        "standover": 798,
-        "bb_drop": 44,
-        "crank_length": 170,
-        "dropper_travel": 170,
-        "total_weight": 14.1,
-        "extra_measurements": {
-          "chainstay_max": 450
-        }
-      }
-    },
-    {
-      "name": "LG",
-      "geometry": {
-        "reach": 474,
-        "stack": 628,
-        "top_tube_effective": 640,
-        "seat_tube_ct": 440,
-        "head_angle": 63.5,
-        "seat_angle": 76.5,
-        "head_tube": 125,
-        "chainstay": 440,
-        "wheelbase": 1259,
-        "standover": 796,
-        "bb_drop": 44,
-        "crank_length": 170,
-        "dropper_travel": 170,
-        "extra_measurements": {
-          "chainstay_max": 450
-        }
-      }
-    },
-    {
-      "name": "XL",
-      "geometry": {
-        "reach": 504,
-        "stack": 659,
-        "top_tube_effective": 649,
-        "seat_tube_ct": 470,
-        "head_angle": 63.5,
-        "seat_angle": 76.5,
-        "head_tube": 135,
-        "chainstay": 440,
-        "wheelbase": 1293,
-        "standover": 792,
-        "bb_drop": 44,
-        "crank_length": 170,
-        "dropper_travel": 200,
-        "extra_measurements": {
-          "chainstay_max": 450
-        }
-      }
-    }
-  ],
   "components": [
     {
       "type": "bottom_bracket",

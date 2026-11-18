@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/scarp_mt_exonic",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Scarp MT",
+  "model_group": "Scarp MT",
   "model": "Scarp MT Exonic",
   "model_configuration": "complete",
   "type": "bike",
@@ -45,9 +45,7 @@
     "bottom_bracket": {
       "spindle": "DUB"
     },
-    "headset": "ZS44/28.6 | ZS56/40",
-    "max_weight_total": 99,
-    "gross_weight_rating": 110
+    "headset": "ZS44/28.6 | ZS56/40"
   },
   "suspension": {
     "front": {
@@ -106,6 +104,16 @@
         "rear"
       ],
       "rotor_diameter": 180
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 99
+    },
+    {
+      "load": "gross",
+      "weight": 110
     }
   ],
   "sizes": [

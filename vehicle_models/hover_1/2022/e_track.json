@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hover_1/2022/e_track",
   "manufacturer": "Hover-1",
   "model": "E-Track",
@@ -29,7 +29,6 @@
           "variants": [
             {
               "sku": "H1-TRAK-BLK",
-              "gtin": "888255261670",
               "size": "One Size"
             }
           ]
@@ -42,7 +41,6 @@
           "variants": [
             {
               "sku": "H1-TRAK-BLU",
-              "gtin": "888255261670",
               "size": "One Size"
             }
           ]
@@ -55,7 +53,6 @@
           "variants": [
             {
               "sku": "H1-TRAK-RED",
-              "gtin": "888255261670",
               "size": "One Size"
             }
           ]
@@ -93,8 +90,10 @@
   ],
   "motors": [
     {
-      "battery_size": 144,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 144,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -109,6 +108,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 55
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -118,8 +123,7 @@
           "width": 305,
           "height": 635
         },
-        "total_weight": 15.4,
-        "max_weight_rider": 55
+        "total_weight": 15.4
       }
     }
   ],

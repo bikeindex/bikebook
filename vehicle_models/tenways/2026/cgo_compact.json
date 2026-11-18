@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tenways/2026/cgo_compact",
   "manufacturer": "Tenways",
   "model": "CGO Compact",
@@ -39,7 +39,16 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum"
+    "material_detail": "6061 Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ]
   },
   "wheels": [
     {
@@ -70,8 +79,10 @@
       "model": "C9",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 45,
       "operating_modes": [
@@ -87,9 +98,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 145
+    },
+    {
+      "load": "cargo",
+      "weight": 27
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -101,8 +119,7 @@
         "chainstay": 442,
         "wheelbase": 1081,
         "standover": 449,
-        "total_weight": 19.8,
-        "max_weight_rider": 145
+        "total_weight": 19.8
       }
     }
   ],

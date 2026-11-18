@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2026/machete_r_2",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Machete",
+  "model_group": "Machete",
   "model": "Machete R 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -50,9 +50,7 @@
   },
   "frame": {
     "material": "carbon",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 116,
-    "gross_weight_rating": 125
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -100,6 +98,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 116
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

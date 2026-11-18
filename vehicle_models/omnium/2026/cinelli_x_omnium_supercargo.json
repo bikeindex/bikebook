@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/omnium/2026/cinelli_x_omnium_supercargo",
   "manufacturer": "Omnium",
-  "vehicle_model_group": "Supercargo",
+  "model_group": "Supercargo",
   "model": "Cinelli x Omnium Supercargo",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -33,8 +33,7 @@
     "headset": "IS42/28.6-26tpi | IS42/30",
     "seatpost_diameter": 31.6,
     "seatpost_clamp_diameter": 34,
-    "front_derailleur_mount": "none",
-    "max_weight_total": 175
+    "front_derailleur_mount": "none"
   },
   "wheels": [
     {
@@ -93,9 +92,16 @@
       "caliper_mount": "Disc IS"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 75
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 75
+    },
+    {
+      "load": "payload",
+      "weight": 175
+    }
+  ],
   "sizes": [
     {
       "name": "S"

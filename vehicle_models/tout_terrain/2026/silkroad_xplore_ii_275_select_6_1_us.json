@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tout_terrain/2026/silkroad_xplore_ii_275_select_6_1_us",
   "manufacturer": "Tout Terrain",
-  "vehicle_model_group": "Silkroad",
+  "model_group": "Silkroad",
   "model": "Silkroad Xplore II 275 Select 6.1",
   "model_configuration": "complete",
   "markets": [
@@ -91,8 +91,7 @@
       }
     ],
     "headset": "EC34/28.6 | EC34/30",
-    "seatpost_diameter": 27.2,
-    "gross_weight_rating": 180
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -112,6 +111,25 @@
         "rear"
       ],
       "tire_width": 50,
+      "axle": "thru_axle",
+      "axle_diameter": 12,
+      "axle_spacing": 142
+    },
+    {
+      "bsd": 127,
+      "position": [
+        "front"
+      ],
+      "axle": "thru_axle",
+      "axle_diameter": 12,
+      "axle_spacing": 100,
+      "axle_thread_pitch": 1.5
+    },
+    {
+      "bsd": 127,
+      "position": [
+        "rear"
+      ],
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 142
@@ -151,6 +169,12 @@
       ],
       "rotor_diameter": 160,
       "caliper_mount": "Disc IS"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 180
     }
   ],
   "sizes": [

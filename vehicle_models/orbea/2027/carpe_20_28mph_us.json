@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/orbea/2027/carpe_20_28mph_us",
   "manufacturer": "Orbea",
-  "vehicle_model_group": "Carpe",
+  "model_group": "Carpe",
   "model": "Carpe 20 28mph",
   "model_configuration": "complete",
   "markets": [
@@ -47,6 +47,15 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
     "bottom_bracket": {
       "spindle": "Shimano EP8"
     },
@@ -99,8 +108,12 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 420,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 420
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [
@@ -115,9 +128,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 20
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 20
+    }
+  ],
   "sizes": [
     {
       "name": "S",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/centurion/2026/no_pogo_r76",
   "manufacturer": "Centurion",
-  "vehicle_model_group": "No Pogo",
+  "model_group": "No Pogo",
   "model": "No Pogo R76",
   "model_configuration": "complete",
   "type": "bike",
@@ -35,9 +35,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 34.9,
-    "seatpost_clamp_diameter": 38.9,
-    "max_weight_total": 115,
-    "gross_weight_rating": 140
+    "seatpost_clamp_diameter": 38.9
   },
   "suspension": {
     "front": {
@@ -116,8 +114,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -131,6 +131,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 115
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

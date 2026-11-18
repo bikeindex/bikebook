@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cyberbike/2026/raptor_pro",
   "manufacturer": "Cyberbike",
-  "vehicle_model_group": "Raptor",
+  "model_group": "Raptor",
   "model": "Raptor Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -58,8 +58,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 170
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -127,9 +126,11 @@
       "manufacturer": "Ananda",
       "model": "M100",
       "kind": "mid_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 cells",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "21700"
+      },
       "peak_power": 1000,
       "max_torque": 130,
       "operating_modes": [
@@ -143,6 +144,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 170
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/yt/2024/decoy_shimano_core_3_mx",
   "manufacturer": "YT",
-  "vehicle_model_group": "Decoy",
+  "model_group": "Decoy",
   "model": "Decoy Shimano Core 3 MX",
   "model_configuration": "complete",
   "markets": [
@@ -123,8 +123,12 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 720,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [

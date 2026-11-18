@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/firmstrong/2014/urban_girl",
   "manufacturer": "Firmstrong",
-  "vehicle_model_group": "Urban",
+  "model_group": "Urban",
   "model": "Urban Girl",
   "model_configuration": "complete",
   "type": "bike",
@@ -141,12 +141,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 91
+    }
+  ],
   "sizes": [
     {
       "name": "13\"",
       "geometry": {
         "total_weight": 10.4,
-        "max_weight_rider": 91,
         "rider_height_min": 965,
         "rider_height_max": 1321
       }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biktrix/2024/juggernaut_xd_founders_edition_27_5",
   "manufacturer": "Biktrix",
-  "vehicle_model_group": "Juggernaut XD",
+  "model_group": "Juggernaut XD",
   "model": "Juggernaut XD Founders Edition 27.5",
   "model_configuration": "complete",
   "type": "bike",
@@ -107,8 +107,7 @@
     "bottom_bracket": {
       "spindle": "square taper"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 172
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -175,7 +174,9 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 1200,
+      "battery": {
+        "capacity": 1200
+      },
       "rated_power": 3000,
       "operating_modes": [
         {
@@ -195,6 +196,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 172
     }
   ],
   "sizes": [

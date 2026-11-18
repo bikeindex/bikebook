@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/asomtom/2025/whale_2_0",
   "manufacturer": "Asomtom",
-  "vehicle_model_group": "Whale",
+  "model_group": "Whale",
   "model": "Whale 2.0",
   "model_configuration": "complete",
   "type": "cargo_tricycle",
@@ -42,8 +42,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 227
+    "material": "steel"
   },
   "wheels": [
     {
@@ -70,8 +69,10 @@
   ],
   "motors": [
     {
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "operating_modes": [
@@ -90,6 +91,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [

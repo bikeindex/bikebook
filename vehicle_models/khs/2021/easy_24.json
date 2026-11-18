@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/khs/2021/easy_24",
   "manufacturer": "KHS Bicycles",
   "model": "Easy 24",
@@ -90,8 +90,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 460,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 460,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 45,
       "operating_modes": [

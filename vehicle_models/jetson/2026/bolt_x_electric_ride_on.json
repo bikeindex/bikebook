@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2026/bolt_x_electric_ride_on",
   "manufacturer": "Jetson",
-  "vehicle_model_group": "Bolt Ride-On",
+  "model_group": "Bolt Ride-On",
   "model": "Bolt X Electric Ride-On",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -54,9 +54,11 @@
   ],
   "motors": [
     {
-      "battery_size": 216,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 216,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -68,6 +70,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
     }
   ],
   "sizes": [
@@ -85,7 +93,6 @@
           "height": 681
         },
         "total_weight": 18.4,
-        "max_weight_rider": 100,
         "rider_age_min": 12
       }
     }

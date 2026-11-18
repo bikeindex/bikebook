@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/khs/2020/extended_2_0",
   "manufacturer": "KHS Bicycles",
   "model": "Extended 2.0",
@@ -98,11 +98,16 @@
       "model": "RM G020.250/350/500.D/DC",
       "model_group": "RMG020",
       "kind": "hub_drive",
-      "certification": "ROHS / CE",
+      "certifications": [
+        "CE",
+        "RoHS"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "max_torque": 45,
       "operating_modes": [

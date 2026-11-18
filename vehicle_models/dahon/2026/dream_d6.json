@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dahon/2026/dream_d6",
   "manufacturer": "Dahon",
   "model": "Dream D6",
@@ -91,7 +91,8 @@
   "frame": {
     "material": "steel",
     "material_detail": "Hi-Tensile Steel",
-    "folding": "half_fold"
+    "folding": "half_fold",
+    "seatpost_diameter": 33.9
   },
   "wheels": [
     {
@@ -131,6 +132,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 105
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -141,7 +148,6 @@
           "height": 665
         },
         "total_weight": 12.5,
-        "max_weight_rider": 105,
         "rider_height_min": 1450,
         "rider_height_max": 1900
       }
@@ -229,7 +235,11 @@
     {
       "type": "seatpost",
       "manufacturer": "Dahon",
-      "description": "Dahon 33.9*580mm"
+      "description": "Dahon 33.9*580mm",
+      "dimensions": {
+        "length": 580,
+        "diameter": 33.9
+      }
     },
     {
       "type": "shifter",

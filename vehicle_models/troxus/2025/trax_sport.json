@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/troxus/2025/trax_sport",
   "manufacturer": "Troxus",
   "model": "Trax Sport",
@@ -65,14 +65,22 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061-T6 Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
     "cable_routing": "stealth",
     "bottom_bracket": {
       "spindle": "square taper"
     },
     "headset": "ZS44/28.6 | ZS56/40",
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 35,
-    "max_weight_total": 136
+    "seatpost_clamp_diameter": 35
   },
   "wheels": [
     {
@@ -130,10 +138,14 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung® Cells",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "peak_power": 500,
       "max_torque": 50,
       "operating_modes": [
@@ -159,6 +171,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 111
+    },
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "Small (Mid-Step)",
@@ -176,8 +198,7 @@
         "bb_height": 285,
         "fork_rake": 45,
         "fork_length_a2c": 420,
-        "travel_front": 0,
-        "max_weight_rider": 111
+        "travel_front": 0
       }
     },
     {
@@ -197,8 +218,7 @@
         "fork_rake": 45,
         "fork_length_a2c": 420,
         "travel_front": 0,
-        "total_weight": 21.3,
-        "max_weight_rider": 111
+        "total_weight": 21.3
       }
     },
     {
@@ -217,8 +237,7 @@
         "bb_height": 285,
         "fork_rake": 45,
         "fork_length_a2c": 420,
-        "travel_front": 0,
-        "max_weight_rider": 111
+        "travel_front": 0
       }
     }
   ],

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fairlight/2025/faran_3_0_frameset",
   "manufacturer": "Fairlight",
-  "vehicle_model_group": "Faran",
+  "model_group": "Faran",
   "model": "Faran 3.0 Frameset",
   "model_configuration": "frame_fork",
   "type": "bike",
@@ -13,6 +13,7 @@
   "stock_photo": "https://bikebook.bikeindex.org/fairlight/2025/faran_3_0_frameset.jpg",
   "description": "Faran. Road plus, commuting, gravel, audax, or randonneuring. The Faran is your versatile companion.\n\nThe Faran is all about function and utility. Whether it’s commuting, gravel, audax, randonneuring with a small front rack, or with front panniers, the Faran’s true strength lies in its versatility. It’s the kind of bike you’ll grow deeply attached to as you rack up the miles together. As the seasons and years pass, racks and cages will be added or removed, wheel and tyre sizes will be experimented with – its form, capability, and carrying capacity continually evolving to match your riding style. On some level, every cyclist shares a desire for self-sufficiency and escape – and it’s this idea that drives the utilitarian design ethos of the Faran.\n\nFaran – Function, Utility, Versatility.",
   "first_year": 2025,
+  "final_year": 2026,
   "years": {
     "2026": {
       "original_msrp": 83000,
@@ -59,8 +60,7 @@
     },
     "seatpost_diameter": 27.2,
     "front_derailleur_mount": "28.6mm clamp",
-    "max_chainring": 48,
-    "max_weight_total": 125
+    "max_chainring": 48
   },
   "wheels": [
     {
@@ -115,9 +115,20 @@
       "rotor_diameter_max": 180
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
       "name": "51T",
@@ -136,8 +147,7 @@
         "bb_drop": 77,
         "fork_rake": 60,
         "trail": 55,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -157,8 +167,7 @@
         "bb_drop": 77,
         "fork_rake": 60,
         "trail": 51.8,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -178,8 +187,7 @@
         "bb_drop": 77,
         "fork_rake": 60,
         "trail": 51.8,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -199,8 +207,7 @@
         "bb_drop": 75,
         "fork_rake": 60,
         "trail": 51.8,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -220,8 +227,7 @@
         "bb_drop": 75,
         "fork_rake": 60,
         "trail": 51.8,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -241,8 +247,7 @@
         "bb_drop": 75,
         "fork_rake": 60,
         "trail": 48.5,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -262,8 +267,7 @@
         "bb_drop": 75,
         "fork_rake": 60,
         "trail": 48.5,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     },
     {
@@ -283,8 +287,7 @@
         "bb_drop": 75,
         "fork_rake": 60,
         "trail": 48.5,
-        "fork_length_a2c": 408,
-        "max_weight_rider": 125
+        "fork_length_a2c": 408
       }
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/himiway/2024/c3",
   "manufacturer": "Himiway",
   "model": "C3",
@@ -56,8 +56,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 200
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -118,8 +117,10 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "max_torque": 86,
       "operating_modes": [
@@ -137,6 +138,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [
@@ -221,10 +228,6 @@
       "type": "e_vehicle_remote",
       "manufacturer": "Himiway",
       "description": "Himiway C2 LCD Display"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V/22A"
     },
     {
       "type": "fork",
@@ -323,6 +326,11 @@
         "width": 76.2,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V/22A"
     },
     {
       "type": "wheel",

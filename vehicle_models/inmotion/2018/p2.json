@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2018/p2",
   "manufacturer": "Inmotion",
-  "vehicle_model_group": "P2",
+  "model_group": "P2",
   "model": "P2",
   "model_configuration": "complete",
   "type": "bike",
@@ -23,8 +23,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "drivetrain": [
     "1_front",
@@ -34,8 +33,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 281,
-      "battery_info": "36V 7.8Ah",
+      "battery": {
+        "capacity": 281,
+        "voltage": 36
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -46,6 +47,12 @@
           "max_slope": 12
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

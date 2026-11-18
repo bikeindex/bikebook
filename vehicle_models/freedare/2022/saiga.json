@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freedare/2022/saiga",
   "manufacturer": "Freedare",
   "model": "Saiga",
@@ -53,8 +53,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 150
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -98,11 +97,16 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271, UL 2849",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 21700 Battery Cells",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700"
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "max_torque": 80,
@@ -127,6 +131,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -270,6 +280,11 @@
       "type": "unknown",
       "type_detail": "Charging method",
       "description": "Charge directly on the bike ; Remove the battery to charge"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "SGS certification",
+      "description": "UL 2271 & UL 2849"
     }
   ]
 }

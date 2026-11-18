@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bee_cool/2024/bee_tracer",
   "manufacturer": "Bee Cool",
   "model": "Bee Tracer",
@@ -102,10 +102,14 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 480,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 Cells",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 480,
+        "chemistry": "li-ion",
+        "cells": "21700"
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -224,10 +228,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V, 22A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "Color LCD with charge indicator, speedometer, odometer, trip odometer, pedal assist level and more"
     },
     {
@@ -329,6 +329,11 @@
         "width": 101.6,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V, 22A"
     },
     {
       "type": "unknown",

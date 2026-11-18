@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/momentum/2027/vida_e_plus_ex_ca",
   "manufacturer": "Momentum",
-  "vehicle_model_group": "VIDA",
+  "model_group": "VIDA",
   "model": "VIDA E+ EX",
   "model_configuration": "complete",
   "markets": [
@@ -83,7 +83,15 @@
     "material": "aluminum",
     "material_detail": "ALUXX-Grade Aluminum",
     "top_tube": "step_through",
-    "gross_weight_rating": 136
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ]
   },
   "suspension": {
     "front": {
@@ -145,8 +153,12 @@
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "ISO 4210",
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "ISO 4210"
+      ],
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 60,
       "operating_modes": [
@@ -160,9 +172,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 27
+    },
+    {
+      "load": "gross",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "S",

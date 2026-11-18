@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/greenworks/2023/60v_stealth_mini_bike",
   "manufacturer": "Greenworks",
-  "vehicle_model_group": "STEALTH",
+  "model_group": "STEALTH",
   "model": "60V STEALTH Mini-Bike",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -62,12 +62,14 @@
   ],
   "motors": [
     {
-      "battery_size": 960,
-      "battery_options": [
-        480
-      ],
-      "battery_chemistry": "li-ion",
-      "charging_time": 50,
+      "battery": {
+        "capacity": 960,
+        "capacity_options": [
+          480
+        ],
+        "chemistry": "li-ion",
+        "charging_time": 50
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -80,12 +82,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 65.3,
-        "max_weight_rider": 100
+        "total_weight": 65.3
       }
     }
   ],

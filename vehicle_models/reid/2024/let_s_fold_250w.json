@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2024/let_s_fold_250w",
   "manufacturer": "Reid",
-  "vehicle_model_group": "Let's Fold",
+  "model_group": "Let's Fold",
   "model": "Let's Fold 250W",
   "model_configuration": "complete",
   "type": "bike",
@@ -45,7 +45,8 @@
       {
         "type": "rack"
       }
-    ]
+    ],
+    "seatpost_diameter": 33.9
   },
   "wheels": [
     {
@@ -97,7 +98,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 375,
+      "battery": {
+        "capacity": 375
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -217,7 +220,11 @@
     {
       "type": "seatpost",
       "manufacturer": "Reid",
-      "description": "Reid alloy 33.9mm x 550mm"
+      "description": "Reid alloy 33.9mm x 550mm",
+      "dimensions": {
+        "length": 550,
+        "diameter": 33.9
+      }
     },
     {
       "type": "shifter",

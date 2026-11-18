@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biria/2024/electric_hybrid",
   "manufacturer": "Biria",
   "model": "Electric Hybrid",
@@ -15,7 +15,7 @@
   "first_year": 2024,
   "years": {
     "2026": {
-      "original_msrp": 149900,
+      "original_msrp": 199500,
       "original_msrp_currency": "USD",
       "colorways": [
         {
@@ -76,9 +76,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 252,
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 252,
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -93,12 +95,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "46",
       "geometry": {
         "total_weight": 18.1,
-        "max_weight_rider": 120,
         "rider_height_min": 1626,
         "rider_height_max": 1829
       }
@@ -106,7 +113,6 @@
     {
       "name": "48",
       "geometry": {
-        "max_weight_rider": 120,
         "rider_height_min": 1626,
         "rider_height_max": 1829
       }

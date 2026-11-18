@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eskute/2026/m300f",
   "manufacturer": "Eskute",
   "model": "M300F",
@@ -95,8 +95,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 163
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -129,8 +128,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX4",
-      "battery_size": 1082,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1082,
+        "charging_time": 480
+      },
       "peak_power": 1200,
       "operating_modes": [
         {
@@ -153,9 +154,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.43
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.43
+    },
+    {
+      "load": "payload",
+      "weight": 163
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

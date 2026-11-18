@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/giant/2023/explore_e_plus_1_dd_28mph",
   "manufacturer": "Giant",
-  "vehicle_model_group": "Explore",
+  "model_group": "Explore",
   "model": "Explore E+ 1 DD 28MPH",
   "model_configuration": "complete",
   "type": "bike",
@@ -51,6 +51,15 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "ALUXX-Grade Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
     "bottom_bracket": {
       "spindle": "ISIS"
     },
@@ -118,7 +127,9 @@
       "model": "SyncDrive Sport 2",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "max_torque": 75,
       "operating_modes": [
         {

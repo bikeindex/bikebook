@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/brompton/2026/electric_t_line_with_superroll_plus_e_motiq_system_4_speed_us",
   "manufacturer": "Brompton Bicycle",
-  "vehicle_model_group": "Electric T Line",
+  "model_group": "Electric T Line",
   "model": "Electric T Line with SuperRoll+ - e-Motiq system - 4-speed",
   "model_configuration": "complete",
   "markets": [
@@ -87,8 +87,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 345,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 345,
+        "charging_time": 300
+      },
       "operating_modes": [
         {
           "mode": "assist",

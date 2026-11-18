@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bh/2022/atoms_diamond_pro",
   "manufacturer": "BH Bikes",
   "model": "ATOMs DIAMOND PRO",
@@ -91,7 +91,9 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 150,
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "max_torque": 90,
       "operating_modes": [
         {
@@ -155,14 +157,6 @@
       }
     },
     {
-      "type": "derailleur",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Nexus 8sp"
-    },
-    {
       "type": "e_vehicle_battery",
       "description": "720Wh"
     },
@@ -206,6 +200,14 @@
       "type": "headset",
       "manufacturer": "Acros",
       "description": "Acros AIF-544 ICR IPS"
+    },
+    {
+      "type": "hub",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Nexus 8sp"
     },
     {
       "type": "hub",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2023/ev06c",
   "manufacturer": "Evercross",
   "model": "EV06C",
@@ -70,7 +70,9 @@
   ],
   "motors": [
     {
-      "battery_size": 63,
+      "battery": {
+        "capacity": 63
+      },
       "rated_power": 150,
       "operating_modes": [
         {
@@ -80,6 +82,12 @@
           "range_claimed": 8
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 60
     }
   ],
   "sizes": [
@@ -94,7 +102,6 @@
           "width": 390,
           "height": 300
         },
-        "max_weight_rider": 60,
         "extra_measurements": {
           "handlebar_height": 760,
           "handlebar_height_max": 960

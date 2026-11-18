@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ridstar/2023/dc26_2000w",
   "manufacturer": "Ridstar",
   "model": "DC26 2000W",
@@ -36,8 +36,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {},
@@ -71,8 +70,10 @@
   ],
   "motors": [
     {
-      "battery_size": 960,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 960,
+        "charging_time": 360
+      },
       "rated_power": 2000,
       "operating_modes": [
         {
@@ -96,6 +97,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -106,7 +117,6 @@
           "height": 1199
         },
         "total_weight": 31.8,
-        "max_weight_rider": 150,
         "rider_height_min": 1702,
         "rider_height_max": 2007
       }

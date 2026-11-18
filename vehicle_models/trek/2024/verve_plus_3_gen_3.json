@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2024/verve_plus_3_gen_3",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Verve+",
+  "model_group": "Verve+",
   "model": "Verve+ 3 Gen 3",
   "model_configuration": "complete",
   "type": "bike",
@@ -55,9 +55,7 @@
         "type": "fender"
       }
     ],
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 108,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -116,9 +114,13 @@
       "model": "BDU336Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "certification": "UL 2849",
-      "battery_size": 545,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 545,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -134,9 +136,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 108
+    },
+    {
+      "load": "gross",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "M",

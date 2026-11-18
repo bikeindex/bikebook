@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2026/charger5_touring_us",
   "base": "m/riese_and_muller/2026/charger5_touring",
   "markets": [
@@ -38,9 +38,6 @@
       "url": "https://www.r-m.de/en-en/bikes/charger5/"
     }
   },
-  "frame": {
-    "max_weight_total": 128
-  },
   "suspension": {
     "front": {
       "spring": null
@@ -58,6 +55,33 @@
       }
     }
   },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    },
+    {
+      "load": "gross",
+      "weight": 160
+    },
+    {
+      "load": "rear_rack",
+      "weight": 27
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 5
+    },
+    {
+      "load": "pannier_per_side",
+      "weight": 7.5,
+      "sizes": [
+        "45 cm",
+        "49 cm",
+        "53 cm"
+      ]
+    }
+  ],
   "sizes": {
     "45 cm": {
       "geometry": {

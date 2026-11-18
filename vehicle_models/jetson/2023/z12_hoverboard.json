@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2023/z12_hoverboard",
   "manufacturer": "Jetson",
   "model": "Z12 Hoverboard",
@@ -38,10 +38,14 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2272",
-      "battery_size": 101,
-      "battery_chemistry": "li-ion",
-      "charging_time": 120,
+      "certifications": [
+        "UL 2272"
+      ],
+      "battery": {
+        "capacity": 101,
+        "chemistry": "li-ion",
+        "charging_time": 120
+      },
       "rated_power": 400,
       "operating_modes": [
         {
@@ -54,6 +58,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -64,7 +74,6 @@
           "height": 191
         },
         "total_weight": 9.1,
-        "max_weight_rider": 113,
         "rider_age_min": 13
       }
     }

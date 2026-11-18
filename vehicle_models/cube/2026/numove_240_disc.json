@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/numove_240_disc",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Numove",
+  "model_group": "Numove",
   "model": "Numove 240 Disc",
   "model_configuration": "complete",
   "type": "bike",
@@ -35,9 +35,7 @@
     "bottom_bracket": {
       "width": 68
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 70,
-    "gross_weight_rating": 80
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -77,6 +75,16 @@
       "caliper_mount": "Disc Flat Mount"
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 65
+    },
+    {
+      "load": "gross",
+      "weight": 80
+    }
+  ],
   "sizes": [
     {
       "name": "24\"",
@@ -91,7 +99,6 @@
         "chainstay": 393,
         "wheelbase": 926,
         "total_weight": 9.2,
-        "max_weight_rider": 65,
         "extra_measurements": {
           "bb_height_to_hub": 50
         }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2018/kathmandu_hybrid_exc_500_men",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Kathmandu Hybrid",
+  "model_group": "Kathmandu Hybrid",
   "model": "Kathmandu Hybrid EXC 500 Men",
   "model_configuration": "complete",
   "type": "bike",
@@ -29,6 +29,15 @@
   },
   "frame": {
     "material": "aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
+      }
+    ],
     "seatpost_diameter": 27.2,
     "seatpost_clamp_diameter": 31.8
   },
@@ -88,8 +97,10 @@
       "model": "Performance CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 75,
       "operating_modes": [

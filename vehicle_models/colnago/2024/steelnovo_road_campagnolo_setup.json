@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/colnago/2024/steelnovo_road_campagnolo_setup",
   "manufacturer": "Colnago",
-  "vehicle_model_group": "Steelnovo",
+  "model_group": "Steelnovo",
   "model": "Steelnovo Road Campagnolo Setup",
   "model_configuration": "complete",
   "markets": [
@@ -64,10 +64,10 @@
     "material": "steel",
     "material_detail": "Columbus Steel",
     "bottom_bracket": {
-      "shell": "T47"
+      "shell": "T47",
+      "width": 86.5
     },
-    "seatpost_diameter": 27.2,
-    "gross_weight_rating": 110
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -116,6 +116,12 @@
       ],
       "rotor_diameter": 140,
       "caliper_mount": "Disc Flat Mount"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 110
     }
   ],
   "sizes": [

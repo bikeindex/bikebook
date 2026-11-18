@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kingbull/2026/dual_battery_voyager_2_0",
   "manufacturer": "KingBull",
-  "vehicle_model_group": "Voyager",
+  "model_group": "Voyager",
   "model": "Dual Battery Voyager 2.0",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -44,7 +44,7 @@
     "material": "aluminum",
     "top_tube": "step_through",
     "cable_routing": "internal",
-    "max_weight_total": 204
+    "seatpost_diameter": 33.9
   },
   "suspension": {
     "front": {
@@ -95,11 +95,16 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2580",
+      "certifications": [
+        "UL 2580"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 1440,
-      "battery_chemistry": "li-ion",
-      "battery_info": "SAMSUNG INR21700-50G/18650 cell, Certificated by UL 2580",
+      "battery": {
+        "capacity": 1440,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "SAMSUNG INR21700-50G/18650"
+      },
       "rated_power": 750,
       "max_torque": 85,
       "operating_modes": [
@@ -125,9 +130,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 90.72
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 90.72
+    },
+    {
+      "load": "payload",
+      "weight": 204
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -215,10 +227,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V/25A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "4.0\" full color multi-function display display"
     },
     {
@@ -286,7 +294,11 @@
     },
     {
       "type": "seatpost",
-      "description": "SP-801, aluminum alloy, 33.9*300mm, with scale lines"
+      "description": "SP-801, aluminum alloy, 33.9*300mm, with scale lines",
+      "dimensions": {
+        "length": 300,
+        "diameter": 33.9
+      }
     },
     {
       "type": "sensor",
@@ -329,6 +341,11 @@
       "type_detail": "Inner Tubes",
       "manufacturer": "CST",
       "description": "CST 20\"*4.0\", Schrader"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V/25A"
     },
     {
       "type": "unknown",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gopower/2026/go_line_pro",
   "manufacturer": "Gopower",
-  "vehicle_model_group": "Go Line",
+  "model_group": "Go Line",
   "model": "Go Line Pro",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -69,8 +69,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 281,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 281,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -80,6 +82,12 @@
           "range_claimed": 29
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
     }
   ],
   "sizes": [
@@ -95,8 +103,7 @@
           "length": 1092.2,
           "width": 508,
           "height": 508
-        },
-        "max_weight_rider": 100
+        }
       }
     }
   ],
@@ -132,10 +139,6 @@
     {
       "type": "e_vehicle_remote",
       "description": "Display indicator, Speed, Light"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "36V 350W"
     },
     {
       "type": "e_vehicle_wiring_harness",
@@ -181,6 +184,11 @@
       "dimensions": {
         "diameter": 152
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "36V 350W"
     }
   ]
 }

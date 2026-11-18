@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mokwheel/2024/basalt",
   "manufacturer": "Mokwheel",
-  "vehicle_model_group": "Basalt",
+  "model_group": "Basalt",
   "model": "Basalt",
   "model_configuration": "complete",
   "type": "bike",
@@ -53,8 +53,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 204
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -100,9 +99,13 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 941,
+      "battery": {
+        "capacity": 941
+      },
       "rated_power": 750,
       "peak_power": 1100,
       "max_torque": 90,
@@ -135,6 +138,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/segway/2026/max_g3_plus",
   "manufacturer": "Segway",
-  "vehicle_model_group": "MAX Series",
+  "model_group": "MAX Series",
   "model": "MAX G3 Plus",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -70,8 +70,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 717,
-      "charging_time": 240,
+      "battery": {
+        "capacity": 717,
+        "charging_time": 240
+      },
       "rated_power": 850,
       "peak_power": 2200,
       "operating_modes": [
@@ -83,6 +85,12 @@
           "max_slope": 17
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 130
     }
   ],
   "sizes": [
@@ -99,8 +107,7 @@
           "width": 590,
           "height": 592
         },
-        "total_weight": 25.2,
-        "max_weight_rider": 130
+        "total_weight": 25.2
       }
     }
   ],

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/orbea/2021/vibe_mid_h10_mud_20mph_us",
   "manufacturer": "Orbea",
-  "vehicle_model_group": "Vibe",
+  "model_group": "Vibe",
   "model": "Vibe MID H10 MUD 20mph",
   "model_configuration": "complete",
   "markets": [
@@ -118,8 +118,10 @@
     {
       "manufacturer": "Mahle",
       "kind": "hub_drive",
-      "battery_size": 248,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 248,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

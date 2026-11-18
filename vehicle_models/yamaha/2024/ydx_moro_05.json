@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/yamaha/2024/ydx_moro_05",
   "manufacturer": "Yamaha",
-  "vehicle_model_group": "YDX-Moro",
+  "model_group": "YDX-Moro",
   "model": "YDX-Moro 05",
   "model_configuration": "complete",
   "type": "bike",
@@ -112,8 +112,10 @@
       "manufacturer": "Yamaha",
       "model": "PW-X3",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 500,
       "max_torque": 85,

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/decathlon/2026/rockrider_e_actv_500_low_step",
   "manufacturer": "Decathlon",
-  "vehicle_model_group": "Rockrider E-ACTV",
+  "model_group": "Rockrider E-ACTV",
   "model": "Rockrider E-ACTV 500 Low Step",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,8 +42,7 @@
         "type": "bottle",
         "location": "downtube"
       }
-    ],
-    "max_weight_total": 120
+    ]
   },
   "suspension": {
     "front": {
@@ -92,8 +91,10 @@
   ],
   "motors": [
     {
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "peak_power": 250,
       "max_torque": 55,
       "operating_modes": [
@@ -107,6 +108,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

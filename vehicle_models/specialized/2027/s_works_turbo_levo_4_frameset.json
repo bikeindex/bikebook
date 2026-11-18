@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2027/s_works_turbo_levo_4_frameset",
   "manufacturer": "Specialized",
-  "vehicle_model_group": "Turbo Levo",
+  "model_group": "Turbo Levo",
   "model": "S-Works Turbo Levo 4 Frameset",
   "model_configuration": "frame",
   "type": "bike",
@@ -95,10 +95,15 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP66 / IP67",
-      "battery_size": 900,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 900,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 850,
       "max_torque": 111,

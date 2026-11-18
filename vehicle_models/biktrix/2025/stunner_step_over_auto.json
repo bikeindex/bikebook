@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biktrix/2025/stunner_step_over_auto",
   "manufacturer": "Biktrix",
-  "vehicle_model_group": "Stunner",
+  "model_group": "Stunner",
   "model": "Stunner Step-Over Auto",
   "model_configuration": "complete",
   "type": "bike",
@@ -123,7 +123,9 @@
       "model": "bbs02",
       "kind": "mid_drive",
       "sensor_cadence": true,
-      "battery_size": 960,
+      "battery": {
+        "capacity": 960
+      },
       "rated_power": 750,
       "max_torque": 120,
       "operating_modes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/5th_wheel/2025/v40_pro",
   "manufacturer": "5th Wheel",
   "model": "V40 Pro",
@@ -58,8 +58,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 278,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 278,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -69,6 +71,12 @@
           "max_slope": 9
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -86,7 +94,6 @@
           "height": 457
         },
         "total_weight": 14.6,
-        "max_weight_rider": 120,
         "extra_measurements": {
           "handlebar_height": 760
         }

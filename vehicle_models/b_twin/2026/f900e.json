@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/b_twin/2026/f900e",
   "manufacturer": "b'Twin",
-  "vehicle_model_group": "F900E",
+  "model_group": "F900E",
   "model": "F900E",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -39,8 +39,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 250
+    ]
   },
   "suspension": {
     "front": {
@@ -78,9 +77,11 @@
   ],
   "motors": [
     {
-      "battery_size": 630,
-      "battery_chemistry": "li-ion",
-      "battery_info": "36 V, 17.5 Ah",
+      "battery": {
+        "capacity": 630,
+        "voltage": 36,
+        "chemistry": "li-ion"
+      },
       "max_torque": 90,
       "operating_modes": [
         {
@@ -94,9 +95,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 27
+    },
+    {
+      "load": "payload",
+      "weight": 250
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

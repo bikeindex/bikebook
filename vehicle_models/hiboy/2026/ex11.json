@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hiboy/2026/ex11",
   "manufacturer": "Hiboy",
   "model": "EX11",
@@ -53,8 +53,7 @@
       {
         "type": "fender"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {
@@ -85,8 +84,10 @@
   "motors": [
     {
       "water_rating": "IP65",
-      "battery_size": 864,
-      "charging_time": 600,
+      "battery": {
+        "capacity": 864,
+        "charging_time": 600
+      },
       "rated_power": 750,
       "peak_power": 880,
       "max_torque": 90,
@@ -110,6 +111,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

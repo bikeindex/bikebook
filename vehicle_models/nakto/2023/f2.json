@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/nakto/2023/f2",
   "manufacturer": "Nakto",
-  "vehicle_model_group": "F2",
+  "model_group": "F2",
   "model": "F2",
   "model_configuration": "complete",
   "type": "bike",
@@ -72,9 +72,11 @@
     {
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 768,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 768,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {

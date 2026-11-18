@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2025/iconic_s",
   "manufacturer": "BULLS Bikes",
   "model": "Iconic S",
@@ -105,10 +105,14 @@
       "manufacturer": "Bosch",
       "model": "Performance Speed",
       "kind": "mid_drive",
-      "certification": "UL 2849",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "max_torque": 85,
       "operating_modes": [
         {

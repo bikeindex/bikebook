@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eg/2025/maui_500mx",
   "manufacturer": "EG Bikes",
-  "vehicle_model_group": "Maui",
+  "model_group": "Maui",
   "model": "Maui 500MX",
   "model_configuration": "complete",
   "type": "bike",
@@ -85,8 +85,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "operating_modes": [
         {

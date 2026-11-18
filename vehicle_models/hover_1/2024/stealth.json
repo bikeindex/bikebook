@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hover_1/2024/stealth",
   "manufacturer": "Hover-1",
   "model": "Stealth",
@@ -61,7 +61,9 @@
   ],
   "motors": [
     {
-      "battery_size": 468,
+      "battery": {
+        "capacity": 468
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -71,6 +73,12 @@
           "range_claimed": 48
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
     }
   ],
   "sizes": [
@@ -87,8 +95,7 @@
           "width": 457,
           "height": 546
         },
-        "total_weight": 18.2,
-        "max_weight_rider": 100
+        "total_weight": 18.2
       }
     }
   ],

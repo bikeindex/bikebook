@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wooken/2026/x_77_premium",
   "manufacturer": "Wooken",
   "model": "X-77 Premium",
@@ -51,8 +51,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "wheels": [
     {
@@ -73,8 +72,10 @@
   ],
   "motors": [
     {
-      "battery_size": 288,
-      "battery_chemistry": "lead-acid",
+      "battery": {
+        "capacity": 288,
+        "chemistry": "lead-acid"
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -84,6 +85,12 @@
           "range_claimed": 19
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

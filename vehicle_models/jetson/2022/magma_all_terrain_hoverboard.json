@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2022/magma_all_terrain_hoverboard",
   "manufacturer": "Jetson",
   "model": "Magma All-Terrain Hoverboard",
@@ -54,9 +54,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 72,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 72,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 400,
       "operating_modes": [
         {
@@ -69,6 +71,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 91
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -79,7 +87,6 @@
           "height": 185
         },
         "total_weight": 7.3,
-        "max_weight_rider": 91,
         "rider_age_min": 12
       }
     }

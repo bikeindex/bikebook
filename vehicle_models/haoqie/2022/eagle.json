@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/haoqie/2022/eagle",
   "manufacturer": "Haoqie",
   "model": "Eagle",
@@ -54,8 +54,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 181
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {
@@ -100,10 +99,12 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung / LG 21700 cell",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "Samsung / LG 21700",
+        "charging_time": 480
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 90,
@@ -123,6 +124,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mokwheel/2025/tarmac",
   "manufacturer": "Mokwheel",
-  "vehicle_model_group": "Tarmac",
+  "model_group": "Tarmac",
   "model": "Tarmac",
   "model_configuration": "complete",
   "type": "bike",
@@ -70,8 +70,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 159
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -117,7 +116,9 @@
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX6",
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 750,
       "peak_power": 920,
       "max_torque": 75,
@@ -142,6 +143,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

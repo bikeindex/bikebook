@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/5th_wheel/2024/tide_2",
   "manufacturer": "5th Wheel",
   "model": "Tide 2",
@@ -36,8 +36,10 @@
   ],
   "motors": [
     {
-      "battery_size": 270,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 270,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

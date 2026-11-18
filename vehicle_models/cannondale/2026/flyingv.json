@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2026/flyingv",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "FlyingV",
+  "model_group": "FlyingV",
   "model": "FlyingV",
   "model_configuration": "complete",
   "markets": [
@@ -119,6 +119,7 @@
     ]
   },
   "groupset": {
+    "manufacturer": "MicroShift",
     "series": "Nexus",
     "electronic": false
   },
@@ -141,9 +142,13 @@
       "model_group": "Performance Line Sprint",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "certification": "UL 2849",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,
@@ -159,9 +164,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 18.14
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 18.14
+    }
+  ],
   "sizes": [
     {
       "name": "SM",
@@ -289,14 +297,6 @@
       }
     },
     {
-      "type": "derailleur",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Nexus Inter-5E, 5-speed internal gear hub"
-    },
-    {
       "type": "drive_belt",
       "type_detail": "Belt",
       "manufacturer": "Gates Carbon Drive",
@@ -359,6 +359,14 @@
     {
       "type": "headset",
       "description": "SP-Connect SPC+ top cap mount for Cannondale Conceal stem"
+    },
+    {
+      "type": "hub",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Nexus Inter-5E, 5-speed internal gear hub"
     },
     {
       "type": "hub",

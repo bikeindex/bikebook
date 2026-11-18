@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/opus/2023/e_big_city_lrt",
   "manufacturer": "Opus",
-  "vehicle_model_group": "E-Big City",
+  "model_group": "E-Big City",
   "model": "E-Big City LRT",
   "model_configuration": "complete",
   "type": "bike",
@@ -86,9 +86,13 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [

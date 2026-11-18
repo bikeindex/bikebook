@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2018/kickster",
   "manufacturer": "Trek",
   "model": "Kickster",
@@ -69,9 +69,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Alpha Silver Aluminum",
-    "max_weight_total": 19,
-    "gross_weight_rating": 23
+    "material_detail": "Alpha Silver Aluminum"
   },
   "wheels": [
     {
@@ -81,6 +79,16 @@
         "rear"
       ],
       "tire_width": 44
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 19
+    },
+    {
+      "load": "gross",
+      "weight": 23
     }
   ],
   "sizes": [

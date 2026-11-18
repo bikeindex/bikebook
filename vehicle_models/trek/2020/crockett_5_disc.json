@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2020/crockett_5_disc",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Crockett",
+  "model_group": "Crockett",
   "model": "Crockett 5 Disc",
   "model_configuration": "complete",
   "type": "bike",
@@ -107,9 +107,7 @@
       "shell": "T47",
       "spindle": "30mm"
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 116,
-    "gross_weight_rating": 125
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -165,6 +163,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 116
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

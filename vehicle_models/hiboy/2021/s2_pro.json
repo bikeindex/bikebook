@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hiboy/2021/s2_pro",
   "manufacturer": "Hiboy",
-  "vehicle_model_group": "S2",
+  "model_group": "S2",
   "model": "S2 pro",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -69,9 +69,11 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX4",
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 600,
       "operating_modes": [
@@ -83,6 +85,12 @@
           "max_slope": 15
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
     }
   ],
   "sizes": [
@@ -100,7 +108,6 @@
           "height": 490
         },
         "total_weight": 17,
-        "max_weight_rider": 100,
         "rider_height_min": 1550,
         "rider_height_max": 1900,
         "rider_age_min": 16,

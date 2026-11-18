@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/omnium/2025/e_cargo_v3_cues",
   "manufacturer": "Omnium",
-  "vehicle_model_group": "E-Cargo",
+  "model_group": "E-Cargo",
   "model": "E-Cargo V3 CUES",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -86,8 +86,7 @@
     ],
     "headset": "IS42/28.6-26tpi | IS42/30",
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34,
-    "max_weight_total": 178
+    "seatpost_clamp_diameter": 34
   },
   "wheels": [
     {
@@ -152,8 +151,10 @@
       "manufacturer": "Shimano",
       "model": "Steps EP801 CRG",
       "kind": "mid_drive",
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -166,9 +167,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 75
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 75
+    },
+    {
+      "load": "payload",
+      "weight": 178
+    }
+  ],
   "sizes": [
     {
       "name": "XS (49.5)",

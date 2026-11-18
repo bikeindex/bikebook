@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/goat_power/2024/hulk_goat_5kw_v2",
   "manufacturer": "Goat Power Bikes",
-  "vehicle_model_group": "Hulk Goat",
+  "model_group": "Hulk Goat",
   "model": "Hulk Goat 5KW V2",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -59,7 +59,9 @@
   ],
   "motors": [
     {
-      "battery_size": 3000,
+      "battery": {
+        "capacity": 3000
+      },
       "rated_power": 5000,
       "peak_power": 10000,
       "max_torque": 230,

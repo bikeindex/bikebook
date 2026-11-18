@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ridstar/2026/h20pro_2000w",
   "manufacturer": "Ridstar",
-  "vehicle_model_group": "H20",
+  "model_group": "H20",
   "model": "H20Pro 2000W",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,8 +40,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {},
@@ -78,8 +77,10 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "battery_size": 1104,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 1104,
+        "charging_time": 360
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -105,8 +106,10 @@
     },
     {
       "drive_wheel": "rear",
-      "battery_size": 1104,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 1104,
+        "charging_time": 360
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -131,12 +134,21 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 31.8,
-        "max_weight_rider": 150,
         "rider_height_min": 1600,
         "rider_height_max": 1905
       }

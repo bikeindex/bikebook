@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/yuba/2023/mundo_ep8_10s",
   "manufacturer": "Yuba",
-  "vehicle_model_group": "Mundo",
+  "model_group": "Mundo",
   "model": "Mundo EP8 10S",
   "model_configuration": "complete",
   "type": "cargo_bike_rear",
@@ -81,8 +81,7 @@
     "material": "steel",
     "bottom_bracket": {
       "spindle": "Shimano EP8"
-    },
-    "max_weight_total": 249
+    }
   },
   "wheels": [
     {
@@ -127,9 +126,13 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "EN 15194",
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "EN 15194"
+      ],
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [
@@ -142,6 +145,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 249
     }
   ],
   "sizes": [

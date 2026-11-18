@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/swft/2024/v_x",
   "manufacturer": "SWFT",
   "model": "V.X",
@@ -54,9 +54,11 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "battery_size": 491,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 491,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -78,12 +80,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 24.9,
-        "max_weight_rider": 120,
         "rider_height_min": 1600
       }
     }

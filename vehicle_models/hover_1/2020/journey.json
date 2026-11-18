@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hover_1/2020/journey",
   "manufacturer": "Hover-1",
-  "vehicle_model_group": "Journey",
+  "model_group": "Journey",
   "model": "Journey",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -113,8 +113,10 @@
   ],
   "motors": [
     {
-      "battery_size": 216,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 216,
+        "chemistry": "li-ion"
+      },
       "rated_power": 300,
       "operating_modes": [
         {
@@ -124,6 +126,12 @@
           "range_claimed": 26
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -140,8 +148,7 @@
           "width": 429,
           "height": 488
         },
-        "total_weight": 14,
-        "max_weight_rider": 120
+        "total_weight": 14
       }
     }
   ],

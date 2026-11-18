@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/denago/2025/city_1_high_step",
   "manufacturer": "Denago",
-  "vehicle_model_group": "City",
+  "model_group": "City",
   "model": "City 1 High Step",
   "model_configuration": "complete",
   "type": "bike",
@@ -146,8 +146,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 653,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 653,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 50,
       "operating_modes": [
@@ -167,6 +169,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
     }
   ],
   "sizes": [
@@ -191,8 +199,7 @@
         "dimensions": {
           "height": 1615
         },
-        "total_weight": 24,
-        "max_weight_rider": 136
+        "total_weight": 24
       }
     }
   ],

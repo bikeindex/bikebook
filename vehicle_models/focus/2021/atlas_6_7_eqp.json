@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/focus/2021/atlas_6_7_eqp",
   "manufacturer": "Focus",
-  "vehicle_model_group": "Atlas",
+  "model_group": "Atlas",
   "model": "Atlas 6.7 Eqp",
   "model_configuration": "complete",
   "type": "bike",
@@ -43,8 +43,7 @@
     "bottom_bracket": {
       "shell": "BSA"
     },
-    "seatpost_diameter": 27.2,
-    "gross_weight_rating": 120
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -89,9 +88,16 @@
       "rotor_diameter": 160
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 20
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 20
+    },
+    {
+      "load": "gross",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "XS",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rambo/2025/megatron_5_0_step_thru_all_wheel_drive",
   "manufacturer": "Rambo",
   "model": "Megatron 5.0 Step-Thru All-Wheel Drive",
@@ -49,8 +49,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061-T6 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 159
+    "top_tube": "step_through"
   },
   "wheels": [
     {
@@ -87,7 +86,9 @@
       "drive_wheel": "front",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 1300,
+      "battery": {
+        "capacity": 1300
+      },
       "rated_power": 1000,
       "peak_power": 1250,
       "max_torque": 90,
@@ -115,7 +116,9 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 1300,
+      "battery": {
+        "capacity": 1300
+      },
       "rated_power": 1000,
       "peak_power": 1250,
       "max_torque": 90,
@@ -138,6 +141,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

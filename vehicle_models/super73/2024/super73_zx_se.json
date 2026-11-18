@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/super73/2024/super73_zx_se",
   "manufacturer": "Super73",
-  "vehicle_model_group": "ZX",
+  "model_group": "ZX",
   "model": "SUPER73-ZX SE",
   "model_configuration": "complete",
   "type": "bike",
@@ -84,11 +84,15 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2271",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "48V 15Ah",
-      "charging_time": 480,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 600,
       "operating_modes": [
         {
@@ -111,6 +115,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 147
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -123,7 +133,6 @@
           "height": 1067
         },
         "total_weight": 29,
-        "max_weight_rider": 147,
         "rider_height_min": 1549,
         "rider_height_max": 2032
       }

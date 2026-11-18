@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/devinci/2025/e_milano_e5000_8s",
   "manufacturer": "Devinci",
+  "model_group": "E-Milano",
   "model": "E-Milano E5000 8s",
   "model_configuration": "complete",
   "markets": [
@@ -133,8 +134,10 @@
       "kind": "mid_drive",
       "spindle": "square taper",
       "sensor_cadence": false,
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [

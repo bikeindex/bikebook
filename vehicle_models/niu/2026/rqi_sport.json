@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/niu/2026/rqi_sport",
   "manufacturer": "Niu",
   "model": "RQi Sport",
@@ -20,8 +20,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "wheels": [
     {
@@ -61,10 +60,12 @@
   "motors": [
     {
       "manufacturer": "Niu",
-      "battery_size": 5184,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 Lithium Ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 5184,
+        "chemistry": "li-ion",
+        "cells": "18650",
+        "charging_time": 420
+      },
       "rated_power": 7500,
       "peak_power": 7500,
       "operating_modes": [
@@ -78,6 +79,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

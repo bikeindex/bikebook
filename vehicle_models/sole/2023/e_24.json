@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sole/2023/e_24",
   "manufacturer": "Solé",
   "model": "e-24",
@@ -95,8 +95,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 113
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -131,9 +130,13 @@
   ],
   "motors": [
     {
-      "certification": "UL 2771",
-      "battery_size": 720,
-      "charging_time": 240,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "charging_time": 240
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -146,6 +149,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
     }
   ],
   "sizes": [

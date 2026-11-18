@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/isinwheel/2026/gt1_dual_motor",
   "manufacturer": "iSinwheel",
-  "vehicle_model_group": "GT1",
+  "model_group": "GT1",
   "model": "GT1 Dual Motor",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -74,8 +74,10 @@
     {
       "drive_wheel": "front",
       "water_rating": "IPX4",
-      "battery_size": 624,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 420
+      },
       "rated_power": 800,
       "operating_modes": [
         {
@@ -94,8 +96,10 @@
     {
       "drive_wheel": "rear",
       "water_rating": "IPX4",
-      "battery_size": 624,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 420
+      },
       "rated_power": 800,
       "operating_modes": [
         {
@@ -110,6 +114,12 @@
           }
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -128,7 +138,6 @@
           "height": 580
         },
         "total_weight": 33.1,
-        "max_weight_rider": 150,
         "rider_height_min": 1200,
         "rider_height_max": 2000,
         "extra_measurements": {

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/troxus/2025/lynx_2_up",
   "manufacturer": "Troxus",
   "model": "Lynx 2-Up",
@@ -53,8 +53,7 @@
     },
     "headset": "ZS44/28.6 | ZS44/30",
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 38.5,
-    "max_weight_total": 163
+    "seatpost_clamp_diameter": 38.5
   },
   "suspension": {
     "front": {
@@ -114,10 +113,14 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung® Cells",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "max_torque": 85,
       "operating_modes": [
@@ -143,6 +146,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 109
+    },
+    {
+      "load": "payload",
+      "weight": 163
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -161,8 +174,7 @@
         "fork_rake": 46,
         "fork_length_a2c": 440,
         "travel_front": 80,
-        "total_weight": 33.4,
-        "max_weight_rider": 109
+        "total_weight": 33.4
       }
     }
   ],

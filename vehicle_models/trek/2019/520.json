@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2019/520",
   "manufacturer": "Trek",
-  "vehicle_model_group": "520",
+  "model_group": "520",
   "model": "520",
   "model_configuration": "complete",
   "type": "bike",
@@ -119,9 +119,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "Chromoly Steel",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 110,
-    "gross_weight_rating": 125
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -173,9 +171,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
       "name": "48 cm",

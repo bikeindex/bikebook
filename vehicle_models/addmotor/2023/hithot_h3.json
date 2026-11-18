@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/addmotor/2023/hithot_h3",
   "manufacturer": "Addmotor",
   "model": "Hithot H3",
@@ -82,8 +82,10 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "mid_drive",
-      "battery_size": 672,
-      "battery_info": "Samsung Cell",
+      "battery": {
+        "capacity": 672,
+        "cells": "Samsung"
+      },
       "rated_power": 500,
       "operating_modes": [
         {

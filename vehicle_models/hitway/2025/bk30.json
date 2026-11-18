@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hitway/2025/bk30",
   "manufacturer": "Hitway",
   "model": "BK30",
@@ -35,8 +35,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -73,9 +72,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 1123,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1123,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 250,
       "max_torque": 70,
       "operating_modes": [
@@ -92,6 +93,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "payload",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -103,7 +114,6 @@
           "length": 1600
         },
         "total_weight": 54.5,
-        "max_weight_rider": 120,
         "rider_height_min": 1650,
         "rider_height_max": 1900,
         "extra_measurements": {

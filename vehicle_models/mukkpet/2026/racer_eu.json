@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mukkpet/2026/racer_eu",
   "manufacturer": "Mukkpet",
   "model": "Racer",
@@ -26,8 +26,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -59,7 +58,9 @@
   ],
   "motors": [
     {
-      "battery_size": 864,
+      "battery": {
+        "capacity": 864
+      },
       "rated_power": 250,
       "max_torque": 120,
       "operating_modes": [
@@ -73,6 +74,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

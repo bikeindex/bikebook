@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/orbea/2027/rallon_rs_ltd_20mph_us",
   "manufacturer": "Orbea",
-  "vehicle_model_group": "Rallon RS",
+  "model_group": "Rallon RS",
   "model": "Rallon RS-LTD 20mph",
   "model_configuration": "complete",
   "markets": [
@@ -104,8 +104,10 @@
       "manufacturer": "TQ",
       "model": "HPR40",
       "kind": "mid_drive",
-      "battery_size": 290,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 290,
+        "chemistry": "li-ion"
+      },
       "peak_power": 200,
       "max_torque": 40,
       "operating_modes": [

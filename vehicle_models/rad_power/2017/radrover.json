@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rad_power/2017/radrover",
   "manufacturer": "Rad Power Bikes",
-  "vehicle_model_group": "RadRover",
+  "model_group": "RadRover",
   "model": "RadRover",
   "model_configuration": "complete",
   "type": "bike",
@@ -66,8 +66,7 @@
     "bottom_bracket": {
       "width": 103
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 125
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -125,10 +124,12 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 557,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Panasonic 2900 mAh Cells",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 557,
+        "chemistry": "li-ion",
+        "cells": "Panasonic 2900 mAh",
+        "charging_time": 300
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -150,6 +151,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

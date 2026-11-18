@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2025/packster2_70_ct_vario",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Packster2 70 CT",
+  "model_group": "Packster2 70 CT",
   "model": "Packster2 70 CT vario",
   "model_configuration": "complete",
   "markets": [
@@ -86,9 +86,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 34.9,
-    "seatpost_clamp_diameter": 40,
-    "max_weight_total": 158,
-    "gross_weight_rating": 200
+    "seatpost_clamp_diameter": 40
   },
   "suspension": {
     "front": {
@@ -154,8 +152,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -173,6 +173,20 @@
   "cargo": {
     "length": 700
   },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 200
+    },
+    {
+      "load": "rear_rack",
+      "weight": 15
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -190,7 +204,6 @@
           "length": 2515
         },
         "total_weight": 42,
-        "max_weight_rider": 110,
         "rider_height_min": 1500,
         "rider_height_max": 2000,
         "extra_measurements": {
@@ -199,8 +212,7 @@
           "headset_size": 28.6,
           "rear_suspension_ratio": 2.2,
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_luggage_rack_kg": 15
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     }

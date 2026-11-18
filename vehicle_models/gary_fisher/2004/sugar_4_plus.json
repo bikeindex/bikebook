@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gary_fisher/2004/sugar_4_plus",
   "manufacturer": "Gary Fisher",
-  "vehicle_model_group": "Sugar",
+  "model_group": "Sugar",
   "model": "Sugar 4+",
   "model_configuration": "complete",
   "type": "bike",
@@ -44,7 +44,8 @@
     "material": "aluminum",
     "bottom_bracket": {
       "spindle": "ISIS"
-    }
+    },
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -266,7 +267,10 @@
     {
       "type": "seatpost",
       "manufacturer": "Bontrager",
-      "description": "Bontrager Sport, 31.6mm"
+      "description": "Bontrager Sport, 31.6mm",
+      "dimensions": {
+        "diameter": 31.6
+      }
     },
     {
       "type": "shifter",
@@ -276,7 +280,13 @@
     {
       "type": "stem",
       "manufacturer": "Bontrager",
-      "description": "Bontrager Sport, 31.8mm clamp, 7 degree rise"
+      "description": "Bontrager Sport, 31.8mm clamp, 7 degree rise",
+      "dimensions": {
+        "diameter": 31.8
+      },
+      "angles": {
+        "angle": 7
+      }
     },
     {
       "type": "tire",

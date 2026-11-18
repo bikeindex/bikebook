@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2026/rb250_20",
   "manufacturer": "Reid",
-  "vehicle_model_group": "RB",
+  "model_group": "RB",
   "model": "RB250 20",
   "model_configuration": "complete",
   "type": "bike",
@@ -105,8 +105,13 @@
       "manufacturer": "Ananda",
       "model": "R210",
       "kind": "hub_drive",
-      "certification": "EN50604 / IEC62133",
-      "battery_size": 720,
+      "certifications": [
+        "EN 50604",
+        "IEC 62133"
+      ],
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 250,
       "peak_power": 350,
       "max_torque": 42,

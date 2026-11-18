@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/urban_arrow/2025/cargo_rohloff",
   "manufacturer": "Urban Arrow",
-  "vehicle_model_group": "Cargo",
+  "model_group": "Cargo",
   "model": "Cargo Rohloff",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -40,9 +40,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 198,
-    "gross_weight_rating": 250
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {}
@@ -102,8 +100,10 @@
       "model": "BDU450CX",
       "model_group": "Cargo Line",
       "kind": "mid_drive",
-      "battery_size": 540,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 540,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -120,22 +120,31 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 125
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    },
+    {
+      "load": "cargo",
+      "weight": 125
+    },
+    {
+      "load": "gross",
+      "weight": 250
+    }
+  ],
   "sizes": [
     {
       "name": "L",
       "geometry": {
-        "total_weight": 50,
-        "max_weight_rider": 125
+        "total_weight": 50
       }
     },
     {
       "name": "XL",
       "geometry": {
-        "total_weight": 52,
-        "max_weight_rider": 125
+        "total_weight": 52
       }
     }
   ],

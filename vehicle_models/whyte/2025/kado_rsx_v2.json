@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/whyte/2025/kado_rsx_v2",
   "manufacturer": "Whyte",
-  "vehicle_model_group": "Kado",
+  "model_group": "Kado",
   "model": "Kado RSX v2",
   "model_configuration": "complete",
   "type": "bike",
@@ -165,8 +165,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,

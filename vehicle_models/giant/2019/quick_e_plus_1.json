@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/giant/2019/quick_e_plus_1",
   "manufacturer": "Giant",
   "model": "Quick E+ 1",
@@ -55,6 +55,15 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "ALUXX SL-Grade Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
     "seatpost_diameter": 30.9
   },
   "wheels": [
@@ -115,8 +124,10 @@
       "manufacturer": "Giant",
       "model": "SyncDrive Sport",
       "kind": "mid_drive",
-      "battery_size": 497,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 497,
+        "chemistry": "li-ion"
+      },
       "max_torque": 80,
       "operating_modes": [
         {

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freesky/2022/alaska_pro_m_520",
   "manufacturer": "Freesky",
   "model": "Alaska Pro M-520",
@@ -55,8 +55,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 181
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -97,11 +96,16 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX7",
-      "battery_size": 2160,
-      "battery_chemistry": "li-ion",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 2160,
+        "chemistry": "li-ion",
+        "charging_time": 600
+      },
       "peak_power": 4500,
       "max_torque": 170,
       "operating_modes": [
@@ -125,6 +129,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

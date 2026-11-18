@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2025/flyingv_1",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "FlyingV",
+  "model_group": "FlyingV",
   "model": "FlyingV 1",
   "model_configuration": "complete",
   "type": "bike",
@@ -113,9 +113,13 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "certification": "UL 2849",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,
@@ -131,9 +135,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 18
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 18
+    }
+  ],
   "sizes": [
     {
       "name": "SM",
@@ -191,14 +198,6 @@
       "dimensions": {
         "offset": 13
       }
-    },
-    {
-      "type": "derailleur",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Nexus Inter-5E Di2 electronic 5-speed internal gear hub"
     },
     {
       "type": "drive_belt",
@@ -263,6 +262,14 @@
     {
       "type": "headset",
       "description": "SP-Connect SPC+ top cap mount for Cannondale Conceal stem"
+    },
+    {
+      "type": "hub",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Nexus Inter-5E Di2 electronic 5-speed internal gear hub"
     },
     {
       "type": "hub",

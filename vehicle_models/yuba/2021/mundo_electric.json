@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/yuba/2021/mundo_electric",
   "manufacturer": "Yuba",
-  "vehicle_model_group": "Mundo",
+  "model_group": "Mundo",
   "model": "Mundo Electric",
   "model_configuration": "complete",
   "type": "cargo_bike_rear",
@@ -75,8 +75,10 @@
       "manufacturer": "Shimano",
       "model": "Steps",
       "kind": "mid_drive",
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

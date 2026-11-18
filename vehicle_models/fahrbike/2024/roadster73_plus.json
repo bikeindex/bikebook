@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fahrbike/2024/roadster73_plus",
   "manufacturer": "Fahrbike",
-  "vehicle_model_group": "Roadster73",
+  "model_group": "Roadster73",
   "model": "Roadster73 Plus",
   "model_configuration": "complete",
   "type": "bike",
@@ -37,8 +37,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 150
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -88,9 +87,11 @@
     {
       "sensor_cadence": true,
       "water_rating": "IPX5",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 600
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -113,6 +114,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

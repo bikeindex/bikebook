@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/decathlon/2026/rockrider_e_expl_140",
   "manufacturer": "Decathlon",
-  "vehicle_model_group": "Rockrider E-EXPL",
+  "model_group": "Rockrider E-EXPL",
   "model": "Rockrider E-EXPL 140",
   "model_configuration": "complete",
   "type": "bike",
@@ -37,8 +37,7 @@
         "location": "seat_tube"
       }
     ],
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 100
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -93,7 +92,9 @@
   ],
   "motors": [
     {
-      "battery_size": 499,
+      "battery": {
+        "capacity": 499
+      },
       "max_torque": 80,
       "operating_modes": [
         {
@@ -105,6 +106,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

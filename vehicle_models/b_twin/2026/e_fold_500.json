@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/b_twin/2026/e_fold_500",
   "manufacturer": "b'Twin",
-  "vehicle_model_group": "E-Fold",
+  "model_group": "E-Fold",
   "model": "E-Fold 500",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,8 +40,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 110
+    ]
   },
   "wheels": [
     {
@@ -74,7 +73,9 @@
   ],
   "motors": [
     {
-      "battery_size": 252,
+      "battery": {
+        "capacity": 252
+      },
       "rated_power": 250,
       "max_torque": 35,
       "operating_modes": [
@@ -87,6 +88,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/znh/2026/17sr",
   "manufacturer": "Znh",
-  "vehicle_model_group": "17",
+  "model_group": "17",
   "model": "17SR",
   "model_configuration": "complete",
   "type": "bike",
@@ -47,8 +47,7 @@
       {
         "type": "fender"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {}
@@ -64,8 +63,11 @@
   ],
   "motors": [
     {
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -86,6 +88,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/surface604/2023/boar_explorer",
   "manufacturer": "Surface604",
-  "vehicle_model_group": "Boar",
+  "model_group": "Boar",
   "model": "Boar Explorer",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,8 +42,7 @@
       }
     ],
     "cable_routing": "internal",
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 210
+    "seatpost_diameter": 30.4
   },
   "wheels": [
     {
@@ -89,10 +88,12 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_torque": "dropout",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung lithium-ion 21X700mm cells",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "Samsung 21X700mm",
+        "charging_time": 240
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -123,13 +124,22 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 160
+    },
+    {
+      "load": "payload",
+      "weight": 210
+    }
+  ],
   "sizes": [
     {
       "name": "S/M",
       "geometry": {
         "standover": 724,
         "total_weight": 34.5,
-        "max_weight_rider": 160,
         "rider_height_min": 1575,
         "rider_height_max": 1702
       }
@@ -138,7 +148,6 @@
       "name": "M/L",
       "geometry": {
         "standover": 762,
-        "max_weight_rider": 160,
         "rider_height_min": 1727,
         "rider_height_max": 1981
       }

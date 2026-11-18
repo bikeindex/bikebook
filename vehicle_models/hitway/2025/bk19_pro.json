@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hitway/2025/bk19_pro",
   "manufacturer": "Hitway",
-  "vehicle_model_group": "BK19",
+  "model_group": "BK19",
   "model": "BK19 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -74,9 +74,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 374,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 374,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 250,
       "operating_modes": [
         {

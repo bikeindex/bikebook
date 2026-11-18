@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tracer/2023/omega_women_s",
   "manufacturer": "Tracer",
-  "vehicle_model_group": "Omega",
+  "model_group": "Omega",
   "model": "Omega Women's",
   "model_configuration": "complete",
   "type": "bike",
@@ -130,9 +130,11 @@
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {

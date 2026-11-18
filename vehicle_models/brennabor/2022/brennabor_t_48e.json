@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/brennabor/2022/brennabor_t_48e",
   "manufacturer": "Brennabor",
   "model": "BRENNABOR T-48e",
@@ -45,12 +45,20 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
     "bottom_bracket": {
       "spindle": "BNI"
     },
     "seatpost_diameter": 27.2,
-    "derailleur_hanger": "Slider Dropout",
-    "gross_weight_rating": 140
+    "derailleur_hanger": "Slider Dropout"
   },
   "suspension": {
     "front": {
@@ -105,8 +113,10 @@
       "kind": "mid_drive",
       "spindle": "BNI",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 65,
@@ -120,6 +130,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

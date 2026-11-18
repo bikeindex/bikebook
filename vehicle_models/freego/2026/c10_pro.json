@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freego/2026/c10_pro",
   "manufacturer": "Freego",
   "model": "C10 Pro",
@@ -62,8 +62,10 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "battery_size": 1081,
-      "charging_time": 600,
+      "battery": {
+        "capacity": 1081,
+        "charging_time": 600
+      },
       "rated_power": 1650,
       "operating_modes": [
         {
@@ -77,8 +79,10 @@
     },
     {
       "drive_wheel": "rear",
-      "battery_size": 1081,
-      "charging_time": 600,
+      "battery": {
+        "capacity": 1081,
+        "charging_time": 600
+      },
       "rated_power": 1650,
       "operating_modes": [
         {
@@ -91,6 +95,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -101,7 +111,6 @@
           "height": 1090
         },
         "total_weight": 31,
-        "max_weight_rider": 120,
         "rider_height_min": 1600,
         "rider_height_max": 1905,
         "extra_measurements": {

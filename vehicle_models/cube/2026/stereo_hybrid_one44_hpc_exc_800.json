@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/stereo_hybrid_one44_hpc_exc_800",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Stereo Hybrid",
+  "model_group": "Stereo Hybrid",
   "model": "Stereo Hybrid ONE44 HPC EXC 800",
   "model_configuration": "complete",
   "type": "bike",
@@ -33,9 +33,7 @@
   "frame": {
     "material": "carbon",
     "cable_routing": "stealth",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 135,
-    "gross_weight_rating": 160
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -132,7 +130,9 @@
       "manufacturer": "DJI",
       "model": "Avinox M2S",
       "kind": "mid_drive",
-      "battery_size": 800,
+      "battery": {
+        "capacity": 800
+      },
       "rated_power": 250,
       "peak_power": 1300,
       "max_torque": 130,
@@ -145,6 +145,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    },
+    {
+      "load": "gross",
+      "weight": 160
     }
   ],
   "sizes": [
@@ -163,7 +173,6 @@
         "handlebar_width": 790,
         "stem_length": 40,
         "crank_length": 165,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": 11,
           "protrusion_height_80mm": 738
@@ -186,7 +195,6 @@
         "stem_length": 50,
         "crank_length": 165,
         "total_weight": 24.6,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": 30,
           "protrusion_height_80mm": 750
@@ -208,7 +216,6 @@
         "handlebar_width": 790,
         "stem_length": 50,
         "crank_length": 165,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": 30,
           "protrusion_height_80mm": 750
@@ -230,7 +237,6 @@
         "handlebar_width": 790,
         "stem_length": 50,
         "crank_length": 165,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": 30,
           "protrusion_height_80mm": 750

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/macina_style_820_xl_di2",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Macina Style",
+  "model_group": "Macina Style",
   "model": "Macina Style 820 XL DI2",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,9 +42,7 @@
     "material_detail": "6061 Aluminum",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 149,
-    "gross_weight_rating": 179
+    }
   },
   "wheels": [
     {
@@ -74,8 +72,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -89,6 +89,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 149
+    },
+    {
+      "load": "gross",
+      "weight": 179
     }
   ],
   "sizes": [

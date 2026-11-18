@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2022/v12_electra_light_hoverboard",
   "manufacturer": "Jetson",
   "model": "V12 Electra-Light Hoverboard",
@@ -64,10 +64,14 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2272",
-      "battery_size": 106,
-      "battery_chemistry": "li-ion",
-      "charging_time": 120,
+      "certifications": [
+        "UL 2272"
+      ],
+      "battery": {
+        "capacity": 106,
+        "chemistry": "li-ion",
+        "charging_time": 120
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -80,6 +84,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 104
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -90,7 +100,6 @@
           "height": 203
         },
         "total_weight": 10,
-        "max_weight_rider": 104,
         "rider_age_min": 13
       }
     }

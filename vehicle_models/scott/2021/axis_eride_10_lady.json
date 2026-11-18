@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/axis_eride_10_lady",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Axis",
+  "model_group": "Axis",
   "model": "Axis eRIDE 10 Lady",
   "model_configuration": "complete",
   "type": "bike",
@@ -62,9 +62,7 @@
         "type": "rack"
       }
     ],
-    "cable_routing": "internal",
-    "max_weight_total": 102,
-    "gross_weight_rating": 128
+    "cable_routing": "internal"
   },
   "suspension": {
     "front": {
@@ -131,7 +129,9 @@
       "model": "BDU450CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 625,
+      "battery": {
+        "capacity": 625
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -144,9 +144,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 102
+    },
+    {
+      "load": "gross",
+      "weight": 128
+    }
+  ],
   "sizes": [
     {
       "name": "XS",

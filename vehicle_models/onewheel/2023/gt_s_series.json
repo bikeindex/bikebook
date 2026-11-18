@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/onewheel/2023/gt_s_series",
   "manufacturer": "OneWheel",
-  "vehicle_model_group": "GT",
+  "model_group": "GT",
   "model": "GT S-Series",
   "model_configuration": "complete",
   "type": "epamd",
@@ -51,9 +51,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_chemistry": "li-ion",
-      "battery_info": "Nickel Manganese Cobalt Oxide (NMC)",
-      "charging_time": 150,
+      "battery": {
+        "chemistry": "li-ion",
+        "charging_time": 150
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -65,6 +66,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -74,8 +81,7 @@
           "width": 241,
           "height": 292
         },
-        "total_weight": 15,
-        "max_weight_rider": 125
+        "total_weight": 15
       }
     }
   ],

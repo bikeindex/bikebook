@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/surface604/2022/twist",
   "manufacturer": "Surface604",
   "model": "Twist",
@@ -61,8 +61,7 @@
       }
     ],
     "cable_routing": "internal",
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 136
+    "seatpost_diameter": 30.4
   },
   "wheels": [
     {
@@ -108,10 +107,12 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_torque": "dropout",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Lithium-Ion 18650 Cells",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "cells": "Samsung 18650",
+        "charging_time": 240
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -140,6 +141,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

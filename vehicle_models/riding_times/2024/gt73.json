@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riding_times/2024/gt73",
   "manufacturer": "Riding Times",
-  "vehicle_model_group": "GT73",
+  "model_group": "GT73",
   "model": "GT73",
   "model_configuration": "complete",
   "type": "bike",
@@ -25,8 +25,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -62,11 +61,15 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 1747,
-      "battery_chemistry": "li-ion",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 1747,
+        "chemistry": "li-ion",
+        "charging_time": 600
+      },
       "peak_power": 2400,
       "max_torque": 126,
       "operating_modes": [
@@ -89,6 +92,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

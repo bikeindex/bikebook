@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eahora/2023/m1p_trike",
   "manufacturer": "Eahora",
-  "vehicle_model_group": "M1P",
+  "model_group": "M1P",
   "model": "M1P Trike",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -39,8 +39,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -77,8 +76,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 1800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 2000,
       "peak_power": 2700,
       "max_torque": 207,
@@ -92,6 +93,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

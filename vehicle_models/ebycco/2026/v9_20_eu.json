@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebycco/2026/v9_20_eu",
   "manufacturer": "Ebycco",
-  "vehicle_model_group": "V9",
+  "model_group": "V9",
   "model": "V9 20",
   "model_configuration": "complete",
   "markets": [
@@ -20,7 +20,7 @@
   "first_year": 2026,
   "years": {
     "2026": {
-      "original_msrp": 139900,
+      "original_msrp": 189900,
       "original_msrp_currency": "EUR",
       "colorways": [
         {
@@ -43,8 +43,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -79,11 +78,16 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP67",
-      "battery_size": 922,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 922,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "peak_power": 1000,
       "max_torque": 90,
       "operating_modes": [
@@ -99,6 +103,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

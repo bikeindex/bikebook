@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2026/samedi_27_x2_trk_sa27ctr",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Samedi 27 X2",
+  "model_group": "Samedi 27 X2",
   "model": "Samedi 27 X2 TRK SA27CTR",
   "model_configuration": "complete",
   "type": "tandem",
@@ -52,9 +52,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 167,
-    "gross_weight_rating": 200
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -121,8 +119,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 545,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 545,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -137,6 +137,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 167
+    },
+    {
+      "load": "gross",
+      "weight": 200
     }
   ],
   "sizes": [

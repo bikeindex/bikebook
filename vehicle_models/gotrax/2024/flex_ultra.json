@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2024/flex_ultra",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "Flex",
+  "model_group": "Flex",
   "model": "Flex Ultra",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -57,8 +57,12 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
-      "battery_size": 480,
+      "certifications": [
+        "UL 2272"
+      ],
+      "battery": {
+        "capacity": 480
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -70,12 +74,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 27.4,
-        "max_weight_rider": 120
+        "total_weight": 27.4
       }
     }
   ],

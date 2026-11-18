@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hase/2021/pino_tour",
   "manufacturer": "Hase bikes",
-  "vehicle_model_group": "PINO",
+  "model_group": "PINO",
   "model": "PINO TOUR",
   "model_configuration": "complete",
   "type": "tandem",
@@ -31,8 +31,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 225
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -77,9 +76,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 39.92
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 39.92
+    },
+    {
+      "load": "payload",
+      "weight": 225
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

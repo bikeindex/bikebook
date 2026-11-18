@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2024/trackmachine_al_one",
   "manufacturer": "BMC",
-  "vehicle_model_group": "Trackmachine",
+  "model_group": "Trackmachine",
   "model": "Trackmachine AL ONE",
   "model_configuration": "complete",
   "markets": [
@@ -102,9 +102,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 102,
-    "gross_weight_rating": 110
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -129,6 +127,16 @@
       15
     ]
   },
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 102
+    },
+    {
+      "load": "gross",
+      "weight": 110
+    }
+  ],
   "sizes": [
     {
       "name": "S",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tern/2026/gsd_p10_smart_system_gen_3_eu",
   "manufacturer": "Tern",
-  "vehicle_model_group": "GSD",
+  "model_group": "GSD",
   "model": "GSD P10 Smart System Gen 3",
   "model_configuration": "complete",
   "markets": [
@@ -53,9 +53,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "headset": "IS42/28.6 | IS52/40",
-    "max_weight_total": 175,
-    "gross_weight_rating": 210
+    "headset": "IS42/28.6 | IS52/40"
   },
   "suspension": {
     "front": {
@@ -115,11 +113,13 @@
       "model_group": "Cargo Line",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 540,
-      "battery_options": [
-        545
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 540,
+        "capacity_options": [
+          545
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -136,9 +136,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 100
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 130
+    },
+    {
+      "load": "cargo",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 210
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -156,7 +167,6 @@
           "height": 870
         },
         "total_weight": 34.7,
-        "max_weight_rider": 130,
         "rider_height_min": 1500,
         "rider_height_max": 2000,
         "extra_measurements": {
@@ -310,7 +320,6 @@
     {
       "type": "lock",
       "type_detail": "Frame Lock",
-      "manufacturer": "Abus",
       "description": "ABUS or AXA, keyed-alike with Bosch battery"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vanpowers/2026/urbanfold",
   "manufacturer": "VanPowers",
   "model": "UrbanFold",
@@ -50,8 +50,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {},
@@ -84,8 +83,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 499,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 499,
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 1000,
       "max_torque": 55,
@@ -105,6 +106,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

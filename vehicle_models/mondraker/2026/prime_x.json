@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mondraker/2026/prime_x",
   "manufacturer": "Mondraker",
-  "vehicle_model_group": "Prime",
+  "model_group": "Prime",
   "model": "Prime X",
   "model_configuration": "complete",
   "type": "bike",
@@ -52,7 +52,11 @@
         "type": "fender"
       },
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
     ],
     "cable_routing": "stealth",
@@ -135,8 +139,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,

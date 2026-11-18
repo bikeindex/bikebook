@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2021/reaction_hybrid_performance_500",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Reaction Hybrid",
+  "model_group": "Reaction Hybrid",
   "model": "Reaction Hybrid Performance 500",
   "model_configuration": "complete",
   "type": "bike",
@@ -36,9 +36,7 @@
     },
     "headset": "ZS44/28.6 | ZS44/30",
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 116,
-    "gross_weight_rating": 140
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -112,7 +110,9 @@
       "model_group": "Performance Line",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 500,
+      "battery": {
+        "capacity": 500
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 65,
@@ -126,6 +126,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 116
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

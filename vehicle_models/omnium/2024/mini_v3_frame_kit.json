@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/omnium/2024/mini_v3_frame_kit",
   "manufacturer": "Omnium",
-  "vehicle_model_group": "Mini",
+  "model_group": "Mini",
   "model": "Mini V3 Frame Kit",
   "model_configuration": "frame_fork",
   "type": "cargo_bike",
@@ -77,8 +77,7 @@
     },
     "seatpost_diameter": 31.6,
     "seatpost_clamp_diameter": 34,
-    "front_derailleur_mount": "none",
-    "max_weight_total": 125
+    "front_derailleur_mount": "none"
   },
   "wheels": [
     {
@@ -107,6 +106,12 @@
       "axle_thread_pitch": 1.5,
       "axle_thread_length": 17,
       "tire_width_max": 55
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

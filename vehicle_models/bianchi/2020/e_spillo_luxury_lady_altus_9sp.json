@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bianchi/2020/e_spillo_luxury_lady_altus_9sp",
   "manufacturer": "Bianchi",
-  "vehicle_model_group": "E-Spillo",
+  "model_group": "E-Spillo",
   "model": "E-Spillo Luxury Lady Altus 9sp",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,6 +41,15 @@
   },
   "frame": {
     "material": "aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "atranvelo_avs"
+      }
+    ],
     "bottom_bracket": {
       "spindle": "square taper"
     },
@@ -101,8 +110,10 @@
       "kind": "mid_drive",
       "spindle": "square taper",
       "sensor_cadence": false,
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [

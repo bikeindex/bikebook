@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aipas/2026/f3_max_adventurer",
   "manufacturer": "Aipas",
-  "vehicle_model_group": "F3",
+  "model_group": "F3",
   "model": "F3 Max Adventurer",
   "model_configuration": "complete",
   "type": "bike",
@@ -90,8 +90,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 227
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -135,7 +134,9 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP65",
-      "battery_size": 864,
+      "battery": {
+        "capacity": 864
+      },
       "rated_power": 1800,
       "max_torque": 110,
       "operating_modes": [
@@ -159,6 +160,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [

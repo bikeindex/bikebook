@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/postjoy/2026/k10",
   "manufacturer": "PostJoy",
   "model": "K10",
@@ -51,8 +51,10 @@
   ],
   "motors": [
     {
-      "battery_size": 624,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 360
+      },
       "peak_power": 1000,
       "operating_modes": [
         {
@@ -62,6 +64,12 @@
           "range_claimed": 40
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
     }
   ],
   "sizes": [
@@ -76,7 +84,6 @@
           "width": 450
         },
         "total_weight": 20.4,
-        "max_weight_rider": 136,
         "rider_height_min": 1626,
         "rider_height_max": 1880,
         "extra_measurements": {

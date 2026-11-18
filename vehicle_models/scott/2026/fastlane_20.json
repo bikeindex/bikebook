@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2026/fastlane_20",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Fastlane",
+  "model_group": "Fastlane",
   "model": "Fastlane 20",
   "model_configuration": "complete",
   "type": "bike",
@@ -63,9 +63,7 @@
   "frame": {
     "material": "carbon",
     "material_detail": "HMX Carbon",
-    "derailleur_hanger": "SRAM UDH",
-    "max_weight_total": 108,
-    "gross_weight_rating": 120
+    "derailleur_hanger": "SRAM UDH"
   },
   "wheels": [
     {
@@ -120,8 +118,10 @@
       "manufacturer": "TQ",
       "model": "HPR40",
       "kind": "mid_drive",
-      "battery_size": 290,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 290,
+        "chemistry": "li-ion"
+      },
       "peak_power": 200,
       "max_torque": 40,
       "operating_modes": [
@@ -134,6 +134,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 108
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

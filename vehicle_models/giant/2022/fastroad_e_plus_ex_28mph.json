@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/giant/2022/fastroad_e_plus_ex_28mph",
   "manufacturer": "Giant",
-  "vehicle_model_group": "FastRoad",
+  "model_group": "FastRoad",
   "model": "FastRoad E+ EX 28MPH",
   "model_configuration": "complete",
   "type": "bike",
@@ -55,7 +55,16 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "ALUXX-Grade Aluminum"
+    "material_detail": "ALUXX-Grade Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ]
   },
   "wheels": [
     {
@@ -114,8 +123,10 @@
       "manufacturer": "Giant",
       "model": "SyncDrive Pro",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "max_torque": 80,
       "operating_modes": [
         {

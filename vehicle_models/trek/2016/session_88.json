@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2016/session_88",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Session",
+  "model_group": "Session",
   "model": "Session 88",
   "model_configuration": "complete",
   "type": "bike",
@@ -51,9 +51,7 @@
     "material": "aluminum",
     "material_detail": "Alpha Platinum Aluminum",
     "seatpost_diameter": 31.6,
-    "coil_compatible": true,
-    "max_weight_total": 118,
-    "gross_weight_rating": 136
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -111,6 +109,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 118
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/heybike/2026/ranger_s_2_0",
   "manufacturer": "Heybike",
-  "vehicle_model_group": "Ranger",
+  "model_group": "Ranger",
   "model": "Ranger S 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -68,11 +68,15 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 692,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 692,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "peak_power": 1400,
       "max_torque": 80,

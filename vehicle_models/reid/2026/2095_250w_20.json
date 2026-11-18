@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2026/2095_250w_20",
   "manufacturer": "Reid",
-  "vehicle_model_group": "2095",
+  "model_group": "2095",
   "model": "2095 250W 20",
   "model_configuration": "complete",
   "type": "bike",
@@ -48,8 +48,7 @@
     ],
     "bottom_bracket": {
       "spindle": "square taper"
-    },
-    "max_weight_total": 150
+    }
   },
   "suspension": {
     "front": {
@@ -109,8 +108,13 @@
       "manufacturer": "Ananda",
       "model": "R210",
       "kind": "hub_drive",
-      "certification": "EN50604 / IEC62133",
-      "battery_size": 612,
+      "certifications": [
+        "EN 50604",
+        "IEC 62133"
+      ],
+      "battery": {
+        "capacity": 612
+      },
       "rated_power": 250,
       "peak_power": 350,
       "max_torque": 42,
@@ -125,6 +129,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

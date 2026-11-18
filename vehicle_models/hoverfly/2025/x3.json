@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hoverfly/2025/x3",
   "manufacturer": "Hoverfly",
   "model": "X3",
@@ -63,9 +63,13 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
-      "battery_size": 281,
-      "charging_time": 330,
+      "certifications": [
+        "UL 2272"
+      ],
+      "battery": {
+        "capacity": 281,
+        "charging_time": 330
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -77,6 +81,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -86,8 +96,7 @@
           "width": 533,
           "height": 1219
         },
-        "total_weight": 17.7,
-        "max_weight_rider": 120
+        "total_weight": 17.7
       }
     }
   ],

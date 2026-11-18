@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/heybike/2026/cityscape_2_0",
   "manufacturer": "Heybike",
   "model": "Cityscape 2.0",
@@ -95,7 +95,9 @@
   "motors": [
     {
       "water_rating": "IPX6",
-      "battery_size": 468,
+      "battery": {
+        "capacity": 468
+      },
       "rated_power": 500,
       "peak_power": 1200,
       "operating_modes": [
@@ -138,11 +140,6 @@
         "width": 49.53,
         "diameter": 559
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Riding Modes",
-      "description": "Throttle Assist & Pedal Assist"
     },
     {
       "type": "wheel",

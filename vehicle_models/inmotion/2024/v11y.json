@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2024/v11y",
   "manufacturer": "Inmotion",
   "model": "V11Y",
@@ -35,8 +35,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 120
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -64,10 +63,12 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 1500,
-      "battery_chemistry": "li-ion",
-      "battery_info": "20S4P Samsung 21700 50E",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1500,
+        "chemistry": "li-ion",
+        "cells": "20S4P Samsung 21700 50E",
+        "charging_time": 480
+      },
       "rated_power": 2500,
       "peak_power": 7000,
       "max_torque": 100,
@@ -80,6 +81,12 @@
           "max_slope": 40
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

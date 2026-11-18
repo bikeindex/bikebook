@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eg/2015/maui",
   "manufacturer": "EG Bikes",
-  "vehicle_model_group": "Maui",
+  "model_group": "Maui",
   "model": "Maui",
   "model_configuration": "complete",
   "type": "bike",
@@ -78,8 +78,10 @@
   ],
   "motors": [
     {
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {

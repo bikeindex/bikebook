@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freego/2025/nova_3",
   "manufacturer": "Freego",
-  "vehicle_model_group": "Nova",
+  "model_group": "Nova",
   "model": "Nova 3",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -50,8 +50,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -80,8 +79,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 1500,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1500,
+        "charging_time": 480
+      },
       "peak_power": 3000,
       "max_torque": 200,
       "operating_modes": [
@@ -96,6 +97,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

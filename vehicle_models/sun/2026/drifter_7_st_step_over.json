@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sun/2026/drifter_7_st_step_over",
   "manufacturer": "Sun",
-  "vehicle_model_group": "Drifter",
+  "model_group": "Drifter",
   "model": "Drifter 7 ST Step-Over",
   "model_configuration": "complete",
   "type": "bike",
@@ -110,12 +110,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "19\"",
       "geometry": {
         "total_weight": 16.3,
-        "max_weight_rider": 113,
         "rider_height_min": 1524,
         "rider_height_max": 1626
       }

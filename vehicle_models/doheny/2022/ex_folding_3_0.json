@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/doheny/2022/ex_folding_3_0",
   "manufacturer": "Doheny",
   "model": "EX Folding 3.0",
@@ -53,8 +53,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 159
+    ]
   },
   "suspension": {
     "front": {}
@@ -83,7 +82,9 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "operating_modes": [
@@ -102,6 +103,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

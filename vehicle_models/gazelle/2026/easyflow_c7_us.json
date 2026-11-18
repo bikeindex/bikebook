@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gazelle/2026/easyflow_c7_us",
   "manufacturer": "Gazelle",
   "model": "Easyflow C7",
@@ -54,7 +54,16 @@
   },
   "frame": {
     "material": "aluminum",
-    "top_tube": "step_through"
+    "top_tube": "step_through",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ]
   },
   "wheels": [
     {
@@ -99,8 +108,10 @@
       "manufacturer": "Shimano",
       "model": "EP5",
       "kind": "mid_drive",
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "max_torque": 50,
       "operating_modes": [
         {

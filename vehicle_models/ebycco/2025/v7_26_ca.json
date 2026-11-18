@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebycco/2025/v7_26_ca",
   "manufacturer": "Ebycco",
-  "vehicle_model_group": "V7",
+  "model_group": "V7",
   "model": "V7 26",
   "model_configuration": "complete",
   "markets": [
@@ -20,7 +20,7 @@
   "first_year": 2025,
   "years": {
     "2026": {
-      "original_msrp": 142900,
+      "original_msrp": 192900,
       "original_msrp_currency": "CAD",
       "colorways": [
         {
@@ -44,8 +44,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -79,11 +78,16 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 1664,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1664,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "peak_power": 3000,
       "max_torque": 90,
       "operating_modes": [
@@ -99,6 +103,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -156,10 +166,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "52V, 3000W"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LCD color display, Waterproof"
     },
     {
@@ -195,6 +201,11 @@
       "type": "unknown",
       "type_detail": "5 Pedal Assist Speed",
       "description": "17/26/35/45/58 KM/H"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "52V, 3000W"
     },
     {
       "type": "unknown",

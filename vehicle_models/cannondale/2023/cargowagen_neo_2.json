@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2023/cargowagen_neo_2",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Cargowagen Neo",
+  "model_group": "Cargowagen Neo",
   "model": "Cargowagen Neo 2",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -144,8 +144,10 @@
       "model_group": "Cargo Line",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 545,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 545,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vitus/2021/e_sommet_vrs",
   "manufacturer": "Vitus",
-  "vehicle_model_group": "E-Sommet",
+  "model_group": "E-Sommet",
   "model": "E-Sommet VRS",
   "model_configuration": "complete",
   "type": "bike",
@@ -125,7 +125,9 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "battery_size": 630,
+      "battery": {
+        "capacity": 630
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [

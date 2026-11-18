@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/emojo/2022/caddy_pro",
   "manufacturer": "Emojo",
-  "vehicle_model_group": "Caddy",
+  "model_group": "Caddy",
   "model": "Caddy Pro",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -86,8 +86,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 181
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -124,10 +123,14 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "certification": "UL 2849",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -150,6 +153,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 181
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -166,7 +179,6 @@
           "height": 1168
         },
         "total_weight": 40.8,
-        "max_weight_rider": 181,
         "rider_height_min": 1473,
         "rider_height_max": 2083,
         "extra_measurements": {

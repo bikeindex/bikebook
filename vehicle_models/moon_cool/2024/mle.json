@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moon_cool/2024/mle",
   "manufacturer": "Moon Cool",
-  "vehicle_model_group": "ML",
+  "model_group": "ML",
   "model": "MLE",
   "model_configuration": "complete",
   "type": "bike",
@@ -24,8 +24,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 159
+    "seatpost_clamp_diameter": 31.8
   },
   "wheels": [
     {
@@ -81,8 +80,10 @@
   ],
   "motors": [
     {
-      "battery_size": 374,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 374,
+        "charging_time": 300
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -105,6 +106,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "24\"",
@@ -113,7 +120,7 @@
         "wheelbase": 1120,
         "standover": 470,
         "handlebar_width": 650,
-        "seat_height_min": 1000,
+        "seat_height_min": 850,
         "seat_height_max": 1000,
         "dimensions": {
           "length": 1720
@@ -130,7 +137,7 @@
         "wheelbase": 1120,
         "standover": 470,
         "handlebar_width": 650,
-        "seat_height_min": 1000,
+        "seat_height_min": 850,
         "seat_height_max": 1000,
         "dimensions": {
           "length": 1720

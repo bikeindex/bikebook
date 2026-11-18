@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/super73/2026/super73_m1d_se",
   "manufacturer": "Super73",
-  "vehicle_model_group": "M1D",
+  "model_group": "M1D",
   "model": "SUPER73-M1D SE",
   "model_configuration": "complete",
   "type": "bike",
@@ -89,11 +89,15 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2271",
-      "battery_size": 780,
-      "battery_chemistry": "li-ion",
-      "battery_info": "52V 15Ah",
-      "charging_time": 420,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 780,
+        "voltage": 52,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -116,6 +120,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -128,7 +138,6 @@
           "height": 1041
         },
         "total_weight": 39.9,
-        "max_weight_rider": 113,
         "rider_height_min": 1575,
         "rider_height_max": 1880
       }

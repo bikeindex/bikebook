@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hoverfly/2024/t4",
   "manufacturer": "Hoverfly",
-  "vehicle_model_group": "T4",
+  "model_group": "T4",
   "model": "T4",
   "model_configuration": "complete",
   "type": "epamd",
@@ -55,8 +55,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -79,9 +78,11 @@
   ],
   "motors": [
     {
-      "battery_size": 288,
-      "battery_chemistry": "lead-acid",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 288,
+        "chemistry": "lead-acid",
+        "charging_time": 360
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -92,6 +93,12 @@
           "max_slope": 10
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

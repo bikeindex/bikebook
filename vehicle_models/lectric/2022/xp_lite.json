@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lectric/2022/xp_lite",
   "manufacturer": "Lectric eBikes",
   "model": "XP Lite",
@@ -67,8 +67,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 125
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -98,8 +97,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP65",
-      "battery_size": 374,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 374,
+        "chemistry": "li-ion"
+      },
       "rated_power": 300,
       "peak_power": 720,
       "operating_modes": [
@@ -117,6 +118,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
+    },
+    {
+      "load": "rear_rack",
+      "weight": 24.95
     }
   ],
   "sizes": [
@@ -143,8 +154,7 @@
         "extra_measurements": {
           "handlebar_height_max": 1168,
           "handlebar_height_min": 1041,
-          "handlebar_reach": 508,
-          "rear_rack_capacity_kg": 24.95
+          "handlebar_reach": 508
         }
       }
     }

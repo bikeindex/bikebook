@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/andsky/2023/e300",
   "manufacturer": "Andsky",
   "model": "E300",
@@ -43,8 +43,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "folding": "half_fold",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 159
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {}
@@ -87,9 +86,13 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 643,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 643,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 70,
@@ -112,6 +115,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

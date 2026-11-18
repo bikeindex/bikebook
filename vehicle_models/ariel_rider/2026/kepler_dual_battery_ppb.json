@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ariel_rider/2026/kepler_dual_battery_ppb",
   "manufacturer": "Ariel Rider",
-  "vehicle_model_group": "Kepler",
+  "model_group": "Kepler",
   "model": "Kepler Dual Battery PPB",
   "model_configuration": "complete",
   "type": "bike",
@@ -62,8 +62,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 181
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -101,9 +100,14 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 1820,
+      "battery": {
+        "capacity": 1820
+      },
       "rated_power": 1000,
       "peak_power": 1600,
       "max_torque": 110,
@@ -126,6 +130,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

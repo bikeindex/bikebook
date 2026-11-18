@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2025/fat_hd_2_0",
   "manufacturer": "Eunorau",
-  "vehicle_model_group": "Fat-HD",
+  "model_group": "Fat-HD",
   "model": "Fat-HD 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -67,8 +67,7 @@
     "material_detail": "6061 Aluminum",
     "bottom_bracket": {
       "spindle": "square taper"
-    },
-    "max_weight_total": 170
+    }
   },
   "suspension": {
     "front": {}
@@ -120,11 +119,17 @@
       "kind": "mid_drive",
       "spindle": "square taper",
       "sensor_cadence": true,
-      "certification": "Yes",
+      "certifications": [
+        "EN 14764",
+        "CE",
+        "RoHS"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Battery Cells",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 1000,
       "max_torque": 160,
       "operating_modes": [
@@ -147,6 +152,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 170
     }
   ],
   "sizes": [

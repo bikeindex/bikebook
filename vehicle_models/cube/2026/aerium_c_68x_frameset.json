@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/aerium_c_68x_frameset",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Aerium",
+  "model_group": "Aerium",
   "model": "Aerium C:68X Frameset",
   "model_configuration": "frame",
   "type": "bike",
@@ -34,8 +34,7 @@
   },
   "frame": {
     "material": "carbon",
-    "cable_routing": "internal",
-    "gross_weight_rating": 115
+    "cable_routing": "internal"
   },
   "wheels": [
     {
@@ -62,6 +61,16 @@
       "tire_width_max": 30
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 115
+    }
+  ],
   "sizes": [
     {
       "name": "XS",
@@ -75,7 +84,6 @@
         "head_tube": 74,
         "chainstay": 410,
         "wheelbase": 979,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": -78,
           "protrusion_height_80mm": 790
@@ -95,7 +103,6 @@
         "chainstay": 410,
         "wheelbase": 992,
         "total_weight": 5.1,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": -78,
           "protrusion_height_80mm": 801
@@ -114,7 +121,6 @@
         "head_tube": 106,
         "chainstay": 410,
         "wheelbase": 1015,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": -78,
           "protrusion_height_80mm": 821
@@ -133,7 +139,6 @@
         "head_tube": 129,
         "chainstay": 410,
         "wheelbase": 1043,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": -78,
           "protrusion_height_80mm": 824

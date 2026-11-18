@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fairlight/2024/holt_1_0_frameset",
   "manufacturer": "Fairlight",
-  "vehicle_model_group": "Holt",
+  "model_group": "Holt",
   "model": "Holt 1.0 Frameset",
   "model_configuration": "frame",
   "type": "bike",
@@ -53,8 +53,7 @@
     "seatpost_diameter": 27.2,
     "front_derailleur_mount": "none",
     "max_chainring": 36,
-    "max_fork_travel": 120,
-    "max_weight_total": 125
+    "max_fork_travel": 120
   },
   "wheels": [
     {
@@ -93,6 +92,16 @@
       "caliper_mount": "Disc Post Mount"
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    },
+    {
+      "load": "payload",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
       "name": "Small",
@@ -110,7 +119,6 @@
         "fork_rake": 44,
         "fork_length_a2c": 499,
         "stem_length": 40,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "stem_length_max": 60
         }
@@ -132,7 +140,6 @@
         "fork_rake": 44,
         "fork_length_a2c": 499,
         "stem_length": 50,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "stem_length_max": 70
         }
@@ -154,7 +161,6 @@
         "fork_rake": 44,
         "fork_length_a2c": 499,
         "stem_length": 50,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "stem_length_max": 70
         }
@@ -176,7 +182,6 @@
         "fork_rake": 44,
         "fork_length_a2c": 499,
         "stem_length": 60,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "stem_length_max": 80
         }

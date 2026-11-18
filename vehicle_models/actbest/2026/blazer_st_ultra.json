@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/actbest/2026/blazer_st_ultra",
   "manufacturer": "Actbest",
-  "vehicle_model_group": "Blazer",
+  "model_group": "Blazer",
   "model": "Blazer ST Ultra",
   "model_configuration": "complete",
   "type": "bike",
@@ -138,8 +138,7 @@
   },
   "frame": {
     "material": "steel",
-    "top_tube": "step_through",
-    "max_weight_total": 227
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {},
@@ -176,9 +175,11 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "peak_power": 1800,
       "max_torque": 110,
       "operating_modes": [
@@ -200,6 +201,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [

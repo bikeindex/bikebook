@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2026/blacktop_2_so",
   "manufacturer": "Reid",
-  "vehicle_model_group": "Blacktop",
+  "model_group": "Blacktop",
   "model": "Blacktop 2 SO",
   "model_configuration": "complete",
   "type": "bike",
@@ -39,8 +39,7 @@
     "material_detail": "6061 Aluminum",
     "cable_routing": "internal",
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 137
+    "seatpost_clamp_diameter": 34.9
   },
   "wheels": [
     {
@@ -87,8 +86,12 @@
       "manufacturer": "Ananda",
       "model": "M60",
       "kind": "mid_drive",
-      "certification": "EN50604",
-      "battery_size": 418,
+      "certifications": [
+        "EN 50604"
+      ],
+      "battery": {
+        "capacity": 418
+      },
       "rated_power": 250,
       "max_torque": 70,
       "operating_modes": [
@@ -104,9 +107,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 27
+    },
+    {
+      "load": "payload",
+      "weight": 137
+    }
+  ],
   "sizes": [
     {
       "name": "S - 42cm",
@@ -121,8 +131,8 @@
         "bb_drop": 45,
         "fork_rake": 45,
         "fork_length_a2c": 415,
-        "rider_height_max": 1680,
-        "rider_height_min": 1570
+        "rider_height_min": 1570,
+        "rider_height_max": 1680
       }
     },
     {
@@ -139,8 +149,8 @@
         "fork_rake": 45,
         "fork_length_a2c": 415,
         "total_weight": 21,
-        "rider_height_max": 1780,
-        "rider_height_min": 1680
+        "rider_height_min": 1680,
+        "rider_height_max": 1780
       }
     },
     {
@@ -156,8 +166,8 @@
         "bb_drop": 45,
         "fork_rake": 45,
         "fork_length_a2c": 415,
-        "rider_height_max": 1930,
-        "rider_height_min": 1780
+        "rider_height_min": 1780,
+        "rider_height_max": 1930
       }
     }
   ],

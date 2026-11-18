@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/haven/2021/power_fold",
   "manufacturer": "Haven",
   "model": "Power Fold",
@@ -84,9 +84,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
-      "battery_info": "SAMSUNG CELL",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion",
+        "cells": "SAMSUNG"
+      },
       "rated_power": 350,
       "operating_modes": [
         {

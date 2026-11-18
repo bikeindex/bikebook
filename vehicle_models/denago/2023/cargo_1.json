@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/denago/2023/cargo_1",
   "manufacturer": "Denago",
-  "vehicle_model_group": "Cargo",
+  "model_group": "Cargo",
   "model": "Cargo 1",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -85,8 +85,10 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -109,6 +111,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -126,8 +134,7 @@
         "fork_rake": 40,
         "fork_length_a2c": 363,
         "crank_length": 170,
-        "total_weight": 33.6,
-        "max_weight_rider": 136
+        "total_weight": 33.6
       }
     }
   ],

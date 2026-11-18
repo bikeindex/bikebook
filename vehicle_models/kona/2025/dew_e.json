@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kona/2025/dew_e",
   "manufacturer": "Kona",
-  "vehicle_model_group": "Dew-E",
+  "model_group": "Dew-E",
   "model": "Dew-E",
   "model_configuration": "complete",
   "type": "bike",
@@ -28,18 +28,22 @@
           "variants": [
             {
               "sku": "B36EDWBLSHIN01",
+              "gtin": "841073185184",
               "size": "S"
             },
             {
               "sku": "B36EDWBLSHIN03",
+              "gtin": "841073185191",
               "size": "M"
             },
             {
               "sku": "B36EDWBLSHIN05",
+              "gtin": "841073185245",
               "size": "L"
             },
             {
               "sku": "B36EDWBLSHIN06",
+              "gtin": "841073185252",
               "size": "XL"
             }
           ]
@@ -120,8 +124,10 @@
       "kind": "mid_drive",
       "spindle": "Shimano E8000",
       "sensor_cadence": true,
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 60,
       "operating_modes": [

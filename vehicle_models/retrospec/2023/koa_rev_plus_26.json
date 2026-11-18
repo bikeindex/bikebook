@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2023/koa_rev_plus_26",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Koa Rev+",
+  "model_group": "Koa Rev+",
   "model": "Koa Rev+ 26",
   "model_configuration": "complete",
   "type": "bike",
@@ -118,8 +118,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 720,
-      "battery_info": "LG 21700 cells",
+      "battery": {
+        "capacity": 720,
+        "cells": "LG 21700"
+      },
       "rated_power": 750,
       "max_torque": 65,
       "operating_modes": [
@@ -141,14 +143,19 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "18\" Step Over",
       "geometry": {
         "standover": 889,
-        "max_weight_rider": 159,
-        "rider_height_max": 1905,
-        "rider_height_min": 1778
+        "rider_height_min": 1778,
+        "rider_height_max": 1905
       }
     }
   ],

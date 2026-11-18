@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2021/wahoo_26",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Wahoo",
+  "model_group": "Wahoo",
   "model": "Wahoo 26",
   "model_configuration": "complete",
   "type": "bike",
@@ -92,9 +92,7 @@
     "bottom_bracket": {
       "width": 73
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 66,
-    "gross_weight_rating": 77
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -139,6 +137,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 66
+    },
+    {
+      "load": "gross",
+      "weight": 77
     }
   ],
   "sizes": [

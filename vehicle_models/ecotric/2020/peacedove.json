@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ecotric/2020/peacedove",
   "manufacturer": "Ecotric",
   "model": "Peacedove",
@@ -44,8 +44,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 120
+    ]
   },
   "wheels": [
     {
@@ -84,9 +83,11 @@
     {
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -102,6 +103,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

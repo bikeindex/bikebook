@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/3t/2024/racemax_boost_flatbar_x_automobili_lamborghini_us",
   "manufacturer": "3T",
-  "vehicle_model_group": "RaceMax Boost",
+  "model_group": "RaceMax Boost",
   "model": "RaceMax Boost Flatbar X Automobili Lamborghini",
   "model_configuration": "complete",
   "markets": [
@@ -101,8 +101,10 @@
       "manufacturer": "Mahle",
       "model": "X20",
       "kind": "hub_drive",
-      "battery_size": 236,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 236,
+        "chemistry": "li-ion"
+      },
       "peak_power": 275,
       "max_torque": 65,
       "operating_modes": [

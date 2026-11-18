@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2023/tracer_hoverboard",
   "manufacturer": "Jetson",
   "model": "Tracer Hoverboard",
@@ -37,8 +37,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 72,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 72,
+        "chemistry": "li-ion"
+      },
       "rated_power": 300,
       "operating_modes": [
         {
@@ -51,6 +53,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -61,7 +69,6 @@
           "height": 178
         },
         "total_weight": 8.6,
-        "max_weight_rider": 100,
         "rider_age_min": 12
       }
     }

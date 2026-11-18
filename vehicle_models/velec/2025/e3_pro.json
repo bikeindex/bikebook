@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velec/2025/e3_pro",
   "manufacturer": "Velec",
-  "vehicle_model_group": "E3",
+  "model_group": "E3",
   "model": "E3 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -95,8 +95,13 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2271, UL 2849",
-      "battery_size": 504,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 504
+      },
       "rated_power": 250,
       "max_torque": 60,
       "operating_modes": [

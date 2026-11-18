@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2024/barron_7_speed",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Barron",
+  "model_group": "Barron",
   "model": "Barron 7 Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -137,12 +137,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "S: 16in",
       "geometry": {
         "standover": 767,
-        "max_weight_rider": 113,
         "rider_height_min": 1549,
         "rider_height_max": 1626
       }
@@ -151,7 +156,6 @@
       "name": "M: 18in",
       "geometry": {
         "standover": 798,
-        "max_weight_rider": 113,
         "rider_height_min": 1626,
         "rider_height_max": 1727
       }
@@ -160,7 +164,6 @@
       "name": "L: 20in",
       "geometry": {
         "standover": 826,
-        "max_weight_rider": 113,
         "rider_height_min": 1753,
         "rider_height_max": 1829
       }
@@ -169,7 +172,6 @@
       "name": "XL: 22in",
       "geometry": {
         "standover": 859,
-        "max_weight_rider": 113,
         "rider_height_min": 1829,
         "rider_height_max": 1905
       }

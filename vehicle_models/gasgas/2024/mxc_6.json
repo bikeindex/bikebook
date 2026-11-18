@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gasgas/2024/mxc_6",
   "manufacturer": "GASGAS",
-  "vehicle_model_group": "MXC",
+  "model_group": "MXC",
   "model": "MXC 6",
   "model_configuration": "complete",
   "markets": [
@@ -37,9 +37,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "carbon",
-    "max_weight_total": 106,
-    "gross_weight_rating": 130
+    "material": "carbon"
   },
   "suspension": {
     "front": {
@@ -116,7 +114,9 @@
     {
       "manufacturer": "SRAM",
       "model": "Eagle Powertrain",
-      "battery_size": 630,
+      "battery": {
+        "capacity": 630
+      },
       "rated_power": 250,
       "max_torque": 90,
       "operating_modes": [
@@ -128,6 +128,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 106
+    },
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [

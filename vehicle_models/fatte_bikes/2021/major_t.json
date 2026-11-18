@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fatte_bikes/2021/major_t",
   "manufacturer": "FattE-Bikes",
   "model": "Major-T",
@@ -55,11 +55,13 @@
   "motors": [
     {
       "sensor_speed": "spoke_magnet",
-      "battery_size": 840,
-      "battery_options": [
-        1008
-      ],
-      "charging_time": 360,
+      "battery": {
+        "capacity": 840,
+        "capacity_options": [
+          1008
+        ],
+        "charging_time": 360
+      },
       "rated_power": 750,
       "operating_modes": [
         {

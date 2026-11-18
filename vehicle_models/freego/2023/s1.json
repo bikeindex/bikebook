@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freego/2023/s1",
   "manufacturer": "Freego",
   "model": "S1",
@@ -35,8 +35,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -73,9 +72,13 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 1080,
-      "charging_time": 720,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 1080,
+        "charging_time": 720
+      },
       "rated_power": 750,
       "peak_power": 1400,
       "operating_modes": [
@@ -107,6 +110,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -134,10 +143,6 @@
     {
       "type": "e_vehicle_charger",
       "description": "Output: 42V, 2A, Input: 100-230V, 50-60Hz"
-    },
-    {
-      "type": "e_vehicle_motor",
-      "description": "750W Rear Hub (1400W Peak)"
     },
     {
       "type": "e_vehicle_remote",

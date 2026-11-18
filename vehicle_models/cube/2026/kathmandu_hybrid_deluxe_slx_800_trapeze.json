@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/kathmandu_hybrid_deluxe_slx_800_trapeze",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Kathmandu Hybrid",
+  "model_group": "Kathmandu Hybrid",
   "model": "Kathmandu Hybrid Deluxe SLX 800 Trapeze",
   "model_configuration": "complete",
   "type": "bike",
@@ -104,8 +104,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 100,
@@ -119,6 +121,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
     }
   ],
   "sizes": [
@@ -138,7 +146,6 @@
         "stem_length": 65,
         "crank_length": 175,
         "max_seatpost_insertion": 270,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": -68,
           "protrusion_height_80mm": 769
@@ -162,7 +169,6 @@
         "crank_length": 175,
         "max_seatpost_insertion": 300,
         "total_weight": 30.1,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": -68,
           "protrusion_height_80mm": 777
@@ -185,7 +191,6 @@
         "stem_length": 80,
         "crank_length": 175,
         "max_seatpost_insertion": 300,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": -68,
           "protrusion_height_80mm": 817
@@ -208,7 +213,6 @@
         "stem_length": 80,
         "crank_length": 175,
         "max_seatpost_insertion": 300,
-        "max_weight_rider": 125,
         "extra_measurements": {
           "bb_height_to_hub": -68,
           "protrusion_height_80mm": 850

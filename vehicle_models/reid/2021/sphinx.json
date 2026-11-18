@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2021/sphinx",
   "manufacturer": "Reid",
   "model": "Sphinx",
@@ -106,7 +106,9 @@
       "manufacturer": "Ananda",
       "model": "M100",
       "kind": "mid_drive",
-      "battery_size": 540,
+      "battery": {
+        "capacity": 540
+      },
       "max_torque": 110,
       "operating_modes": [
         {
@@ -121,6 +123,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "M - 43cm",
@@ -132,8 +140,7 @@
         "head_tube": 133,
         "chainstay": 490,
         "bb_drop": 30,
-        "fork_rake": 51,
-        "max_weight_rider": 120
+        "fork_rake": 51
       }
     },
     {
@@ -146,8 +153,7 @@
         "head_tube": 140,
         "chainstay": 490,
         "bb_drop": 34,
-        "fork_rake": 51,
-        "max_weight_rider": 120
+        "fork_rake": 51
       }
     }
   ],

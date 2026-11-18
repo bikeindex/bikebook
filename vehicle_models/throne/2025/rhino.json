@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/throne/2025/rhino",
   "manufacturer": "Throne Cycles",
-  "vehicle_model_group": "Rhino",
+  "model_group": "Rhino",
   "model": "Rhino",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -74,8 +74,10 @@
   ],
   "motors": [
     {
-      "battery_size": 960,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 960,
+        "charging_time": 360
+      },
       "rated_power": 750,
       "operating_modes": [
         {

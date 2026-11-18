@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mihogo/2023/nx",
   "manufacturer": "Mihogo",
   "model": "NX",
@@ -62,8 +62,7 @@
   "frame": {
     "material": "magnesium",
     "seatpost_diameter": 31.6,
-    "coil_compatible": true,
-    "max_weight_total": 249
+    "coil_compatible": true
   },
   "suspension": {
     "front": {},
@@ -105,8 +104,10 @@
   ],
   "motors": [
     {
-      "battery_size": 614,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 614,
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "max_torque": 85,
@@ -121,6 +122,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 249
     }
   ],
   "sizes": [
@@ -179,6 +186,11 @@
       }
     },
     {
+      "type": "included_not_installed",
+      "type_detail": "Tools",
+      "description": "3mm 4mm 5mm and 6mm Allen keys,and Spanner(13-15)"
+    },
+    {
       "type": "rear_suspension",
       "type_detail": "Rear Shock",
       "position": [
@@ -229,11 +241,6 @@
       "type": "unknown",
       "type_detail": "Mobile app",
       "description": "iOS and Android. Secure, digital-key lock and unlock via personal app"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Included in box",
-      "description": "3mm 4mm 5mm and 6mm Allen keys,and Spanner(13-15)"
     },
     {
       "type": "unknown",

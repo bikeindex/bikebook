@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/xtracycle/2018/rfa_bosch_speed",
   "manufacturer": "Xtracycle",
-  "vehicle_model_group": "RFA",
+  "model_group": "RFA",
   "model": "RFA Bosch Speed",
   "model_configuration": "complete",
   "type": "cargo_bike_rear",
@@ -96,8 +96,10 @@
       "manufacturer": "Bosch",
       "model": "Speed",
       "kind": "mid_drive",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

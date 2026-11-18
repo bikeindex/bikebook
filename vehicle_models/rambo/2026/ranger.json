@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rambo/2026/ranger",
   "manufacturer": "Rambo",
   "model": "Ranger",
@@ -42,8 +42,7 @@
     "material": "aluminum",
     "material_detail": "6061-T6 Aluminum",
     "top_tube": "step_through",
-    "folding": "half_fold",
-    "max_weight_total": 136
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -73,9 +72,11 @@
     {
       "manufacturer": "Rambo",
       "kind": "hub_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 cells",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion",
+        "cells": "18650"
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -97,6 +98,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

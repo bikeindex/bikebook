@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2024/e_scape",
   "manufacturer": "Reid",
   "model": "E-Scape",
@@ -121,8 +121,10 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
+      "battery": {
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 250,
       "max_torque": 45,
       "operating_modes": [
@@ -138,6 +140,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "S - 43cm",
@@ -150,8 +158,7 @@
         "chainstay": 455,
         "wheelbase": 1219.2,
         "bb_drop": 45,
-        "fork_rake": 40,
-        "max_weight_rider": 100
+        "fork_rake": 40
       }
     },
     {
@@ -165,8 +172,7 @@
         "chainstay": 455,
         "wheelbase": 1219.2,
         "bb_drop": 45,
-        "fork_rake": 40,
-        "max_weight_rider": 100
+        "fork_rake": 40
       }
     },
     {
@@ -180,8 +186,7 @@
         "chainstay": 455,
         "wheelbase": 1219.2,
         "bb_drop": 45,
-        "fork_rake": 40,
-        "max_weight_rider": 100
+        "fork_rake": 40
       }
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebycco/2026/s9_eu",
   "manufacturer": "Ebycco",
   "model": "S9",
@@ -17,7 +17,7 @@
   "first_year": 2026,
   "years": {
     "2026": {
-      "original_msrp": 89900,
+      "original_msrp": 149900,
       "original_msrp_currency": "EUR",
       "colorways": [
         {
@@ -41,8 +41,7 @@
   },
   "frame": {
     "material": "magnesium",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -73,11 +72,16 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 367,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 367,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 250,
       "max_torque": 45,
       "operating_modes": [
@@ -91,6 +95,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

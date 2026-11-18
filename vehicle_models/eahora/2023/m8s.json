@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eahora/2023/m8s",
   "manufacturer": "Eahora",
   "model": "M8S",
@@ -48,8 +48,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 181
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -85,8 +84,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 2520,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 2520,
+        "chemistry": "li-ion"
+      },
       "rated_power": 4000,
       "max_torque": 170,
       "operating_modes": [
@@ -101,6 +102,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/brennabor/2022/brennabor_t_38e",
   "manufacturer": "Brennabor",
   "model": "BRENNABOR T-38e",
@@ -57,13 +57,20 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
     "bottom_bracket": {
       "spindle": "BNI"
     },
     "seatpost_diameter": 31.6,
-    "derailleur_hanger": "Slider Dropout",
-    "max_weight_total": 114,
-    "gross_weight_rating": 140
+    "derailleur_hanger": "Slider Dropout"
   },
   "suspension": {
     "front": {
@@ -118,8 +125,10 @@
       "kind": "mid_drive",
       "spindle": "BNI",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,
@@ -133,6 +142,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 114
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

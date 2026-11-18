@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bianchi/2020/t_tronik_rebel_9_2_nx_sx_eagle_12sp",
   "manufacturer": "Bianchi",
-  "vehicle_model_group": "T-Tronik",
+  "model_group": "T-Tronik",
   "model": "T-Tronik Rebel 9.2 - NX/SX Eagle 12sp",
   "model_configuration": "complete",
   "type": "bike",
@@ -99,8 +99,10 @@
   "motors": [
     {
       "manufacturer": "Bianchi",
-      "battery_size": 630,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 630,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [

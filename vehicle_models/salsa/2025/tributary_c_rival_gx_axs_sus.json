@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/salsa/2025/tributary_c_rival_gx_axs_sus",
   "manufacturer": "Salsa",
-  "vehicle_model_group": "Tributary",
+  "model_group": "Tributary",
   "model": "Tributary C Rival GX AXS SUS",
   "model_configuration": "complete",
   "type": "bike",
@@ -180,10 +180,12 @@
       "model": "BDU378Y",
       "model_group": "Performance Line Speed",
       "kind": "mid_drive",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
-      "battery_info": "36V, 16.7Ah",
-      "charging_time": 324,
+      "battery": {
+        "capacity": 625,
+        "voltage": 36,
+        "chemistry": "li-ion",
+        "charging_time": 324
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

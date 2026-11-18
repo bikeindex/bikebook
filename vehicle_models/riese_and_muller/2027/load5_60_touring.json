@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2027/load5_60_touring",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Load5 60",
+  "model_group": "Load5 60",
   "model": "Load5 60 touring",
   "model_configuration": "complete",
   "markets": [
@@ -64,9 +64,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 34.9,
-    "seatpost_clamp_diameter": 40,
-    "max_weight_total": 164,
-    "gross_weight_rating": 200
+    "seatpost_clamp_diameter": 40
   },
   "suspension": {
     "front": {
@@ -131,8 +129,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -151,6 +151,20 @@
   "cargo": {
     "length": 600
   },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 200
+    },
+    {
+      "load": "rear_rack",
+      "weight": 15
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -169,7 +183,6 @@
           "length": 2480
         },
         "total_weight": 35.5,
-        "max_weight_rider": 110,
         "rider_height_min": 1500,
         "rider_height_max": 2000,
         "extra_measurements": {
@@ -178,8 +191,7 @@
           "headset_size": "38.1/28.6",
           "top_tube_length_range": "590-770",
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_luggage_rack_kg": 15
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     }

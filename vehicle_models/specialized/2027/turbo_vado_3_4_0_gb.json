@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2027/turbo_vado_3_4_0_gb",
   "manufacturer": "Specialized",
-  "vehicle_model_group": "Turbo Vado",
+  "model_group": "Turbo Vado",
   "model": "Turbo Vado 3 4.0",
   "model_configuration": "complete",
   "markets": [
@@ -88,6 +88,15 @@
   },
   "frame": {
     "material": "aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ],
     "bottom_bracket": {
       "spindle": "ISIS"
     },
@@ -156,10 +165,15 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP66 / IP67",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 810,
       "max_torque": 105,
@@ -176,12 +190,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27.5,
-    "attributes": [
-      "MIK HD interface"
-    ]
-  },
+  "weight_limits": [
+    {
+      "load": "rear_rack",
+      "weight": 27.5
+    }
+  ],
   "sizes": [
     {
       "name": "S",

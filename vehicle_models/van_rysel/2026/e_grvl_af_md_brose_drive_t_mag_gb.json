@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/van_rysel/2026/e_grvl_af_md_brose_drive_t_mag_gb",
   "manufacturer": "Van Rysel",
-  "vehicle_model_group": "E-GRVL",
+  "model_group": "E-GRVL",
   "model": "E-GRVL AF MD Brose Drive T Mag",
   "model_configuration": "complete",
   "markets": [
@@ -38,9 +38,7 @@
     "material": "aluminum",
     "material_detail": "6061-T6 Aluminum",
     "cable_routing": "internal",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 102,
-    "gross_weight_rating": 120
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -98,8 +96,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 70,
       "operating_modes": [
@@ -111,6 +111,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 102
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/yuba/2017/elboda_boda_v3",
   "manufacturer": "Yuba",
-  "vehicle_model_group": "elBoda",
+  "model_group": "elBoda",
   "model": "elBoda Boda V3",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -63,8 +63,10 @@
   "motors": [
     {
       "manufacturer": "BionX",
-      "battery_size": 557,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 557,
+        "chemistry": "li-ion"
+      },
       "max_torque": 40,
       "operating_modes": [
         {

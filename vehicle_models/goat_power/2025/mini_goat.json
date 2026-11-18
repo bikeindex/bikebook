@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/goat_power/2025/mini_goat",
   "manufacturer": "Goat Power Bikes",
   "model": "Mini Goat",
@@ -102,7 +102,9 @@
   ],
   "motors": [
     {
-      "battery_size": 2160,
+      "battery": {
+        "capacity": 2160
+      },
       "peak_power": 5300,
       "max_torque": 175,
       "operating_modes": [
@@ -126,6 +128,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -137,8 +145,7 @@
           "width": 724,
           "height": 1054
         },
-        "total_weight": 59,
-        "max_weight_rider": 181
+        "total_weight": 59
       }
     }
   ],

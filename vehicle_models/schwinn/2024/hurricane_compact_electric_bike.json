@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/schwinn/2024/hurricane_compact_electric_bike",
   "manufacturer": "Schwinn",
-  "vehicle_model_group": "Hurricane",
+  "model_group": "Hurricane",
   "model": "Hurricane Compact Electric Bike",
   "model_configuration": "complete",
   "type": "bike",
@@ -125,10 +125,14 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 281,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 281,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 250,
       "operating_modes": [
         {

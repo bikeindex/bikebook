@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/micargi/2025/twenty5_800w",
   "manufacturer": "Micargi",
-  "vehicle_model_group": "Twenty5",
+  "model_group": "Twenty5",
   "model": "Twenty5 800W",
   "model_configuration": "complete",
   "type": "bike",
@@ -125,8 +125,10 @@
     {
       "sensor_speed": "spoke_magnet",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion"
+      },
       "rated_power": 800,
       "operating_modes": [
         {

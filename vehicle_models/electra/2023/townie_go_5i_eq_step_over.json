@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/electra/2023/townie_go_5i_eq_step_over",
   "manufacturer": "Electra",
-  "vehicle_model_group": "Townie",
+  "model_group": "Townie",
   "model": "Townie Go! 5i EQ Step-Over",
   "model_configuration": "complete",
   "type": "bike",
@@ -92,9 +92,7 @@
       "spindle": "BNI"
     },
     "headset": "ZS44/28.6-26tpi | ZS44/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 111,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -149,8 +147,10 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,
@@ -164,6 +164,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 111
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

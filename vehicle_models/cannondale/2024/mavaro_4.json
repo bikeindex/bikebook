@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2024/mavaro_4",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Mavaro Neo",
+  "model_group": "Mavaro Neo",
   "model": "Mavaro 4",
   "model_configuration": "complete",
   "type": "bike",
@@ -52,6 +52,15 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "SmartForm C2 Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
+      }
+    ],
     "cable_routing": "internal",
     "headset": "ZS44/28.6 | ZS56/40"
   },
@@ -116,8 +125,10 @@
       "model": "BDU334Y",
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 50,
@@ -133,9 +144,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    }
+  ],
   "sizes": [
     {
       "name": "SM",
@@ -193,14 +207,6 @@
       "description": "FSA for Bosch"
     },
     {
-      "type": "derailleur",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Nexus 5, internal gear hub"
-    },
-    {
       "type": "drive_belt",
       "type_detail": "Belt",
       "manufacturer": "Gates Carbon Drive",
@@ -256,6 +262,14 @@
     {
       "type": "headset",
       "description": "Semi-Integrated, Tapered; 1-1/8\"-1-1/2\""
+    },
+    {
+      "type": "hub",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Nexus 5, internal gear hub"
     },
     {
       "type": "hub",

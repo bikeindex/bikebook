@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2017/superfly_26",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Superfly",
+  "model_group": "Superfly",
   "model": "Superfly 26",
   "model_configuration": "complete",
   "type": "bike",
@@ -50,9 +50,7 @@
     "material": "aluminum",
     "material_detail": "Alpha Gold Aluminum",
     "headset": "IS42/28.6 | IS52/40",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 64,
-    "gross_weight_rating": 77
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -96,6 +94,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 64
+    },
+    {
+      "load": "gross",
+      "weight": 77
     }
   ],
   "sizes": [

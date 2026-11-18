@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2021/acid_240_disc",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Acid",
+  "model_group": "Acid",
   "model": "Acid 240 Disc",
   "model_configuration": "complete",
   "type": "bike",
@@ -34,9 +34,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 138,
-    "gross_weight_rating": 150
+    "seatpost_clamp_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -78,6 +76,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 138
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

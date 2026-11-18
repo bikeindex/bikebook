@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jasion/2026/patrol",
   "manufacturer": "Jasion",
   "model": "Patrol",
@@ -52,8 +52,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -91,8 +90,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 1560,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1560,
+        "charging_time": 480
+      },
       "peak_power": 4000,
       "max_torque": 145,
       "operating_modes": [
@@ -104,6 +105,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -151,10 +158,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "52V 70A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LCD with NFC Unlock"
     },
     {
@@ -186,6 +189,11 @@
         "rear"
       ],
       "description": "70/100-17Extra-thick dirtbike tire"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "52V 70A"
     }
   ]
 }

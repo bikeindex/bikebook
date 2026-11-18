@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2024/charger4_gt_touring_hs",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Charger4",
+  "model_group": "Charger4",
   "model": "Charger4 GT touring HS",
   "model_configuration": "complete",
   "markets": [
@@ -107,11 +107,13 @@
         "type": "fender"
       },
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
-    ],
-    "max_weight_total": 110,
-    "gross_weight_rating": 140
+    ]
   },
   "suspension": {
     "front": {
@@ -171,8 +173,10 @@
       "model": "BDU378Y",
       "model_group": "Performance Line Speed",
       "kind": "mid_drive",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -186,6 +190,28 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 140
+    },
+    {
+      "load": "rear_rack",
+      "weight": 27
+    },
+    {
+      "load": "front_rack",
+      "weight": 5
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 5
     }
   ],
   "sizes": [
@@ -207,15 +233,11 @@
           "length": 1855
         },
         "total_weight": 29.3,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "no",
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     },
@@ -237,15 +259,11 @@
           "length": 1885
         },
         "total_weight": 29.5,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "no",
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     },
@@ -267,15 +285,11 @@
           "length": 1915
         },
         "total_weight": 29.7,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "no",
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     },
@@ -297,15 +311,11 @@
           "length": 1935
         },
         "total_weight": 29.9,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "no",
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2027/foil_rc_team_replica_us",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Foil",
+  "model_group": "Foil",
   "model": "Foil RC Team Replica",
   "model_configuration": "complete",
   "markets": [
@@ -75,9 +75,7 @@
       "shell": "press fit",
       "width": 86.5,
       "spindle": "DUB"
-    },
-    "max_weight_total": 113,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -123,6 +121,16 @@
         "rear"
       ],
       "rotor_diameter": 140
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

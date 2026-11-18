@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/surface604/2022/quad",
   "manufacturer": "Surface604",
   "model": "Quad",
@@ -41,8 +41,7 @@
       }
     ],
     "cable_routing": "internal",
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 136
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {
@@ -93,10 +92,12 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_torque": "dropout",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung lithium-ion 21700 cells",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700",
+        "charging_time": 240
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 65,
@@ -126,6 +127,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

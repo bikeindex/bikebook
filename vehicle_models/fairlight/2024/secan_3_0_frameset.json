@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fairlight/2024/secan_3_0_frameset",
   "manufacturer": "Fairlight",
-  "vehicle_model_group": "Secan",
+  "model_group": "Secan",
   "model": "Secan 3.0 Frameset",
   "model_configuration": "frame_fork",
   "type": "bike",
@@ -13,6 +13,7 @@
   "stock_photo": "https://bikebook.bikeindex.org/fairlight/2024/secan_3_0_frameset.jpg",
   "description": "Secan 3.0. Endlessly versatile; Gravel, tarmac, everywhere….. Its design revolves around the simple idea that you can transition between road and off-road and still ride fast.\n\nReal-world riding drives the design of this bike. A performance tube set that feels lively and eager, not over-built. A custom-formed and shaped rear triangle for maximum comfort. A light-weight and confidence-inspiring carbon fork with cage mounts, rando rack compatibility and internally sleeved dynamo routing.\n\nA geometry and ride position that feels familiar and efficient on the road but stable and predictable off-road. A more sloping top tube to aid maneuverability and increase comfort when things get rough.\n\nHuge tyre clearance. The frame features ports for dynamo rear lighting, with clever solutions for every type of configuration; representing a level of care and detailing that you would normally only see in the custom world.\n\nModular design solutions across the frameset – helping us to future-proof your investment.\n\nVersatility. Designed to be your most used bike.",
   "first_year": 2024,
+  "final_year": 2026,
   "years": {
     "2026": {
       "original_msrp": 124500,
@@ -106,8 +107,7 @@
     "headset": "ZS44/28.6 | EC44/40",
     "seatpost_diameter": 27.2,
     "front_derailleur_mount": "28.6mm clamp",
-    "max_chainring": 48,
-    "max_weight_total": 115
+    "max_chainring": 48
   },
   "wheels": [
     {
@@ -162,9 +162,20 @@
       "rotor_diameter_max": 180
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 115
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 115
+    }
+  ],
   "sizes": [
     {
       "name": "51R",
@@ -183,8 +194,7 @@
         "bb_drop": 77,
         "fork_rake": 50,
         "trail": 74.5,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     },
     {
@@ -204,8 +214,7 @@
         "bb_drop": 77,
         "fork_rake": 50,
         "trail": 74.5,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     },
     {
@@ -225,8 +234,7 @@
         "bb_drop": 77,
         "fork_rake": 50,
         "trail": 71.3,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     },
     {
@@ -246,8 +254,7 @@
         "bb_drop": 77,
         "fork_rake": 50,
         "trail": 71.3,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     },
     {
@@ -267,8 +274,7 @@
         "bb_drop": 75,
         "fork_rake": 50,
         "trail": 66.3,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     },
     {
@@ -288,8 +294,7 @@
         "bb_drop": 75,
         "fork_rake": 50,
         "trail": 66.3,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     },
     {
@@ -309,8 +314,7 @@
         "bb_drop": 75,
         "fork_rake": 50,
         "trail": 63.1,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     },
     {
@@ -330,8 +334,7 @@
         "bb_drop": 75,
         "fork_rake": 50,
         "trail": 63.1,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     },
     {
@@ -351,8 +354,7 @@
         "bb_drop": 75,
         "fork_rake": 50,
         "trail": 63.1,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     },
     {
@@ -372,8 +374,7 @@
         "bb_drop": 75,
         "fork_rake": 50,
         "trail": 63.1,
-        "fork_length_a2c": 398,
-        "max_weight_rider": 115
+        "fork_length_a2c": 398
       }
     }
   ],

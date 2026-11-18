@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/3t/2025/ultra_boost_eagle_axs_1x12_fb_650b_us",
   "manufacturer": "3T",
-  "vehicle_model_group": "Ultra Boost",
+  "model_group": "Ultra Boost",
   "model": "Ultra Boost Eagle AXS 1X12 FB 650b",
   "model_configuration": "complete",
   "markets": [
@@ -109,8 +109,10 @@
       "manufacturer": "Mahle",
       "model": "X20",
       "kind": "hub_drive",
-      "battery_size": 350,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 350,
+        "chemistry": "li-ion"
+      },
       "peak_power": 275,
       "max_torque": 65,
       "operating_modes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2020/domane_plus_hp_7",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Domane+",
+  "model_group": "Domane+",
   "model": "Domane+ HP 7",
   "model_configuration": "complete",
   "type": "bike",
@@ -132,9 +132,7 @@
   "frame": {
     "material": "carbon",
     "material_detail": "500 Series OCLV Carbon",
-    "cable_routing": "dropper",
-    "max_weight_total": 108,
-    "gross_weight_rating": 125
+    "cable_routing": "dropper"
   },
   "wheels": [
     {
@@ -200,8 +198,10 @@
       "manufacturer": "Bosch",
       "model": "Performance Speed",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "max_torque": 85,
       "operating_modes": [
         {
@@ -213,6 +213,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 108
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

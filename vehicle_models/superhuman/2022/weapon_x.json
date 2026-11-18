@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/superhuman/2022/weapon_x",
   "manufacturer": "Superhuman Bikes",
-  "vehicle_model_group": "Weapon",
+  "model_group": "Weapon",
   "model": "Weapon X",
   "model_configuration": "complete",
   "type": "bike",
@@ -51,8 +51,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 125
+    ]
   },
   "suspension": {
     "front": {
@@ -95,15 +94,25 @@
   ],
   "motors": [
     {
+      "id": "c/bafang/m560_mm_g5300_750_c_750w",
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
-      "model": "M560",
+      "model": "MM G5300.750.C",
+      "model_group": "M560",
       "kind": "mid_drive",
+      "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Lithium Ion Cells",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849",
+        "CE"
+      ],
+      "water_rating": "IPX6",
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "max_torque": 140,
@@ -122,6 +131,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

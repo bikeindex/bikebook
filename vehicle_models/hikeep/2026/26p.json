@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hikeep/2026/26p",
   "manufacturer": "Hikeep",
   "model": "26P",
@@ -48,8 +48,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 181
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -84,7 +83,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 768,
+      "battery": {
+        "capacity": 768
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 80,
@@ -99,6 +100,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

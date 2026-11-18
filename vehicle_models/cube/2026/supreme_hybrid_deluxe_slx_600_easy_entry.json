@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/supreme_hybrid_deluxe_slx_600_easy_entry",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Supreme Hybrid",
+  "model_group": "Supreme Hybrid",
   "model": "Supreme Hybrid Deluxe SLX 600 Easy Entry",
   "model_configuration": "complete",
   "type": "bike",
@@ -36,9 +36,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 110,
-    "gross_weight_rating": 140
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -106,8 +104,10 @@
       "model_group": "Performance Line PX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 700,
       "max_torque": 90,
@@ -123,9 +123,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 140
+    }
+  ],
   "sizes": [
     {
       "name": "46 cm",
@@ -143,7 +154,6 @@
         "stem_length": 65,
         "crank_length": 165,
         "max_seatpost_insertion": 210,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "bb_height_to_hub": 75
         }
@@ -166,7 +176,6 @@
         "crank_length": 165,
         "max_seatpost_insertion": 185,
         "total_weight": 29.9,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "bb_height_to_hub": 75
         }
@@ -188,7 +197,6 @@
         "stem_length": 80,
         "crank_length": 165,
         "max_seatpost_insertion": 235,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "bb_height_to_hub": 75
         }
@@ -210,7 +218,6 @@
         "stem_length": 80,
         "crank_length": 165,
         "max_seatpost_insertion": 285,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "bb_height_to_hub": 75
         }

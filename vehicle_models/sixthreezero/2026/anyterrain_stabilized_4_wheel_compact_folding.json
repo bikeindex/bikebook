@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/anyterrain_stabilized_4_wheel_compact_folding",
   "manufacturer": "sixthreezero",
-  "vehicle_model_group": "ANYterrain Stabilized",
+  "model_group": "ANYterrain Stabilized",
   "model": "ANYterrain Stabilized 4 Wheel Compact Folding",
   "model_configuration": "complete",
   "type": "bike",
@@ -34,8 +34,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 159
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -70,9 +69,11 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung cells",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -93,6 +94,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

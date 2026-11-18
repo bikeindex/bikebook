@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velowave/2022/grace_2_0_step_thru",
   "manufacturer": "Velowave",
   "model": "Grace 2.0 Step-Thru",
@@ -73,8 +73,7 @@
     "material_detail": "6061 Aluminum",
     "top_tube": "step_through",
     "cable_routing": "internal",
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 150
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {}
@@ -117,10 +116,12 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG 21700 Cells",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "LG 21700",
+        "charging_time": 480
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "max_torque": 80,
@@ -145,6 +146,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

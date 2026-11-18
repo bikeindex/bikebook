@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2027/xroad_fs_2_xr2f27",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Xroad",
+  "model_group": "Xroad",
   "model": "Xroad FS 2 XR2F27",
   "model_configuration": "complete",
   "type": "bike",
@@ -57,9 +57,7 @@
     ],
     "cable_routing": "stealth",
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 107,
-    "gross_weight_rating": 135
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -131,8 +129,10 @@
       "model": "BDU346Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 540,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 540,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -147,6 +147,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 107
+    },
+    {
+      "load": "gross",
+      "weight": 135
     }
   ],
   "sizes": [

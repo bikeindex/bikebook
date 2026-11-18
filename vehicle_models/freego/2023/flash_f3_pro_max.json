@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freego/2023/flash_f3_pro_max",
   "manufacturer": "Freego",
   "model": "Flash F3 Pro Max",
@@ -40,8 +40,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 100
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -74,8 +73,10 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 2640,
-      "charging_time": 720,
+      "battery": {
+        "capacity": 2640,
+        "charging_time": 720
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "operating_modes": [
@@ -108,8 +109,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 2640,
-      "charging_time": 720,
+      "battery": {
+        "capacity": 2640,
+        "charging_time": 720
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "operating_modes": [
@@ -138,6 +141,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

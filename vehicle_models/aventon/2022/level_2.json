@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aventon/2022/level_2",
   "manufacturer": "Aventón",
-  "vehicle_model_group": "Level",
+  "model_group": "Level",
   "model": "Level 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -72,8 +72,7 @@
       "spindle": "square taper"
     },
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 136
+    "seatpost_clamp_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -131,10 +130,15 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "battery_info": "48V, 14Ah",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 672,
+        "voltage": 48,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 864,
       "operating_modes": [
@@ -156,6 +160,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

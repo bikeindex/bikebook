@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aniioki/2026/aq177_pro_max_dual_motor",
   "manufacturer": "Aniioki",
-  "vehicle_model_group": "AQ177 Pro Max",
+  "model_group": "AQ177 Pro Max",
   "model": "AQ177 Pro Max Dual Motor",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,8 +54,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "High-Carbon Steel",
-    "top_tube": "step_through",
-    "max_weight_total": 181
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -107,10 +106,13 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 3640,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 3640,
+        "voltage": 52,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A",
+        "charging_time": 600
+      },
       "rated_power": 1000,
       "peak_power": 1300,
       "max_torque": 240,
@@ -141,10 +143,13 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 3640,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 3640,
+        "voltage": 52,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A",
+        "charging_time": 600
+      },
       "rated_power": 1200,
       "peak_power": 1500,
       "max_torque": 240,
@@ -170,6 +175,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/engwe/2026/m20_3_0",
   "manufacturer": "ENGWE",
-  "vehicle_model_group": "M20",
+  "model_group": "M20",
   "model": "M20 3.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,8 +41,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -80,8 +79,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX4",
-      "battery_size": 1200,
-      "charging_time": 180,
+      "battery": {
+        "capacity": 1200,
+        "charging_time": 180
+      },
       "rated_power": 750,
       "peak_power": 3300,
       "max_torque": 120,
@@ -105,6 +106,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

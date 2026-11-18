@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2024/l1ne_mid_drive_emtb",
   "manufacturer": "GOTRAX",
   "model": "L1NE Mid Drive eMTB",
@@ -85,8 +85,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 120
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -123,8 +122,10 @@
       "kind": "mid_drive",
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX4",
-      "battery_size": 374,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 374,
+        "charging_time": 300
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -140,6 +141,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "payload",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -149,8 +160,7 @@
           "width": 279,
           "height": 762
         },
-        "total_weight": 24.6,
-        "max_weight_rider": 120
+        "total_weight": 24.6
       }
     }
   ],

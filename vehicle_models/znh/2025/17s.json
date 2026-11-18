@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/znh/2025/17s",
   "manufacturer": "Znh",
-  "vehicle_model_group": "17",
+  "model_group": "17",
   "model": "17S",
   "model_configuration": "complete",
   "type": "bike",
@@ -59,8 +59,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {}
@@ -80,8 +79,10 @@
   ],
   "motors": [
     {
-      "battery_size": 624,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -90,11 +91,18 @@
           "availability": "stock",
           "max_speed": 32,
           "range_claimed": 113,
+          "max_slope": 30,
           "e_vehicle_classifications": [
             "evc/us/class_1"
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

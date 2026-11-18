@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eahora/2026/romeo_pro_ii",
   "manufacturer": "Eahora",
-  "vehicle_model_group": "Romeo",
+  "model_group": "Romeo",
   "model": "Romeo Pro II",
   "model_configuration": "complete",
   "type": "bike",
@@ -66,8 +66,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 227
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {
@@ -123,9 +122,12 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IPX6",
-      "battery_size": 3640,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A",
+      "battery": {
+        "capacity": 3640,
+        "voltage": 52,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A"
+      },
       "rated_power": 2000,
       "max_torque": 120,
       "operating_modes": [
@@ -156,9 +158,12 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IPX6",
-      "battery_size": 3640,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A",
+      "battery": {
+        "capacity": 3640,
+        "voltage": 52,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A"
+      },
       "rated_power": 2000,
       "max_torque": 120,
       "operating_modes": [
@@ -183,6 +188,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [

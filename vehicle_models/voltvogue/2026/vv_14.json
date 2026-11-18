@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/voltvogue/2026/vv_14",
   "manufacturer": "Voltvogue",
-  "vehicle_model_group": "VV",
+  "model_group": "VV",
   "model": "VV-14",
   "model_configuration": "complete",
   "type": "bike",
@@ -39,8 +39,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 120
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {},
@@ -62,9 +61,13 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
-      "battery_size": 432,
-      "charging_time": 300,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 432,
+        "charging_time": 300
+      },
       "peak_power": 500,
       "operating_modes": [
         {
@@ -84,6 +87,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -115,6 +124,10 @@
       "description": "Battery life: 5 years"
     },
     {
+      "type": "e_vehicle_battery",
+      "description": "42 Volts"
+    },
+    {
       "type": "rim",
       "type_detail": "Rim material",
       "description": "Alloy Steel"
@@ -131,16 +144,6 @@
         "width": 53.98,
         "diameter": 254
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Volts",
-      "description": "42 Volts"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Amps",
-      "description": "9 A"
     }
   ]
 }

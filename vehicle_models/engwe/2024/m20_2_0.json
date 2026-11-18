@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/engwe/2024/m20_2_0",
   "manufacturer": "ENGWE",
-  "vehicle_model_group": "M20",
+  "model_group": "M20",
   "model": "M20 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -75,8 +75,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 811,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 811,
+        "charging_time": 300
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 75,

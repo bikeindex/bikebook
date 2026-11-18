@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/heybike/2024/brawn",
   "manufacturer": "Heybike",
   "model": "Brawn",
@@ -67,8 +67,7 @@
           "rear"
         ]
       }
-    ],
-    "max_weight_total": 181
+    ]
   },
   "suspension": {
     "front": {}
@@ -103,10 +102,14 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2271",
-      "battery_size": 864,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 864,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 750,
       "peak_power": 1400,
       "max_torque": 80,
@@ -121,6 +124,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

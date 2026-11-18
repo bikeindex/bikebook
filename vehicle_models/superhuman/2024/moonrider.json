@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/superhuman/2024/moonrider",
   "manufacturer": "Superhuman Bikes",
   "model": "Moonrider",
@@ -68,8 +68,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 125
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -93,7 +92,6 @@
   "groupset": {
     "manufacturer": "Shimano",
     "series": "Deore",
-    "description": "Shimano Deore 10-Speed Derailleur",
     "electronic": false
   },
   "brakes": [
@@ -115,12 +113,18 @@
       "kind": "mid_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / EN 14766 / ROHS",
+      "certifications": [
+        "EN 14766",
+        "CE",
+        "RoHS"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 557,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG Lithium Ion Cells",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 557,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 240
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 120,
@@ -135,6 +139,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [
@@ -153,6 +163,12 @@
         "rear"
       ],
       "description": "MT30 Magura Hydraulic Disc Brakes"
+    },
+    {
+      "type": "derailleur",
+      "type_detail": "Drivetrain",
+      "manufacturer": "Shimano",
+      "description": "Shimano Deore 10-Speed Derailleur"
     },
     {
       "type": "e_vehicle_battery",

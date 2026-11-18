@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wildeway/2025/orca",
   "manufacturer": "Wildeway",
   "model": "Orca",
@@ -67,8 +67,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -119,8 +118,10 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IPX65",
-      "battery_size": 960,
-      "battery_info": "LG cells",
+      "battery": {
+        "capacity": 960,
+        "cells": "LG"
+      },
       "rated_power": 500,
       "peak_power": 1000,
       "max_torque": 50,
@@ -156,8 +157,10 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IPX65",
-      "battery_size": 960,
-      "battery_info": "LG cells",
+      "battery": {
+        "capacity": 960,
+        "cells": "LG"
+      },
       "rated_power": 750,
       "peak_power": 1300,
       "max_torque": 68,
@@ -189,9 +192,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 40
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 40
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

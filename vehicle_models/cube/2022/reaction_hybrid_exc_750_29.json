@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2022/reaction_hybrid_exc_750_29",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Reaction Hybrid",
+  "model_group": "Reaction Hybrid",
   "model": "Reaction Hybrid EXC 750 29",
   "model_configuration": "complete",
   "type": "bike",
@@ -50,9 +50,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 36,
-    "max_weight_total": 125,
-    "gross_weight_rating": 150
+    "seatpost_clamp_diameter": 36
   },
   "suspension": {
     "front": {
@@ -117,8 +115,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -132,6 +132,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

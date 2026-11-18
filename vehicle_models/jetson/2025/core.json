@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2025/core",
   "manufacturer": "Jetson",
   "model": "Core",
@@ -62,9 +62,11 @@
   "motors": [
     {
       "water_rating": "IPX5",
-      "battery_size": 374,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 374,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -89,6 +91,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -104,7 +112,6 @@
           "height": 919
         },
         "total_weight": 27.4,
-        "max_weight_rider": 136,
         "rider_age_min": 14
       }
     }

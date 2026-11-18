@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/motobecane/2025/emulekick_exp",
   "manufacturer": "Motobecane",
-  "vehicle_model_group": "eMulekick",
+  "model_group": "eMulekick",
   "model": "eMulekick Exp",
   "model_configuration": "complete",
   "type": "bike",
@@ -102,8 +102,10 @@
       "drive_wheel": "rear",
       "kind": "mid_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 200,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 200,
+        "chemistry": "li-ion"
+      },
       "rated_power": 200,
       "max_torque": 55,
       "operating_modes": [

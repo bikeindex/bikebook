@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2025/lundi_27_1_2025_lu27o0125",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Lundi 27",
+  "model_group": "Lundi 27",
   "model": "Lundi 27.1 2025 LU27O0125",
   "model_configuration": "complete",
   "type": "bike",
@@ -48,16 +48,22 @@
         "type": "rack",
         "position": [
           "front"
-        ]
+        ],
+        "interface": "mik"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
     "bottom_bracket": {
       "spindle": "BNI"
     },
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 124,
-    "gross_weight_rating": 150
+    "seatpost_clamp_diameter": 34.9
   },
   "wheels": [
     {
@@ -124,8 +130,10 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,
@@ -140,6 +148,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 124
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

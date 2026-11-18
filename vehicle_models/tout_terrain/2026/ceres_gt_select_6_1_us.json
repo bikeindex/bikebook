@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tout_terrain/2026/ceres_gt_select_6_1_us",
   "manufacturer": "Tout Terrain",
-  "vehicle_model_group": "Ceres",
+  "model_group": "Ceres",
   "model": "Ceres GT Select 6.1",
   "model_configuration": "complete",
   "markets": [
@@ -71,9 +71,7 @@
       }
     ],
     "headset": "EC34/28.6 | EC34/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 108,
-    "gross_weight_rating": 120
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -126,6 +124,16 @@
       ],
       "rotor_diameter_max": 180,
       "caliper_mount": "Disc Flat Mount"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 108
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

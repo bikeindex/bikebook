@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tout_terrain/2026/appia_mixte_custom",
   "manufacturer": "Tout Terrain",
-  "vehicle_model_group": "Appia",
+  "model_group": "Appia",
   "model": "Appia Mixte Custom",
   "model_configuration": "frame_fork",
   "type": "bike",
@@ -29,8 +29,7 @@
       }
     ],
     "headset": "ZS44/28.6 | ZS56/40",
-    "seatpost_diameter": 30.9,
-    "gross_weight_rating": 150
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -76,6 +75,12 @@
       ],
       "rotor_diameter_max": 180,
       "caliper_mount": "Disc Flat Mount"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -160,11 +165,6 @@
       "type": "rack",
       "type_detail": "Rack type",
       "description": "Semi-integrated"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Terrain",
-      "description": "Allroad"
     },
     {
       "type": "unknown",

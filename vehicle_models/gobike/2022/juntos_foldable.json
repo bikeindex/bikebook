@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gobike/2022/juntos_foldable",
   "manufacturer": "GOBike",
   "model": "JUNTOS Foldable",
@@ -16,7 +16,7 @@
   "first_year": 2022,
   "years": {
     "2026": {
-      "original_msrp": 159900,
+      "original_msrp": 229900,
       "original_msrp_currency": "USD",
       "colorways": [
         {
@@ -100,9 +100,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "battery_info": "14AH",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 900,
       "operating_modes": [
@@ -124,6 +125,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -133,8 +140,7 @@
           "width": 711,
           "height": 1270
         },
-        "total_weight": 27.7,
-        "max_weight_rider": 150
+        "total_weight": 27.7
       }
     }
   ],

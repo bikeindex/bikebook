@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vmax/2024/vx2_pro",
   "manufacturer": "VMAX",
-  "vehicle_model_group": "VX2",
+  "model_group": "VX2",
   "model": "VX2 Pro",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -54,12 +54,14 @@
   "motors": [
     {
       "water_rating": "IPX6",
-      "battery_size": 499,
-      "battery_options": [
-        624,
-        792
-      ],
-      "charging_time": 480,
+      "battery": {
+        "capacity": 499,
+        "capacity_options": [
+          624,
+          792
+        ],
+        "charging_time": 480
+      },
       "rated_power": 500,
       "peak_power": 1300,
       "operating_modes": [
@@ -71,6 +73,12 @@
           "max_slope": 16
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 130
     }
   ],
   "sizes": [
@@ -88,7 +96,6 @@
           "height": 490
         },
         "total_weight": 19.4,
-        "max_weight_rider": 130,
         "extra_measurements": {
           "deck_length": 440,
           "deck_to_handlebar_height": 980,

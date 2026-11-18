@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/small_town_co/2023/fat_tire",
   "manufacturer": "Small Town Bike Co",
   "model": "Fat Tire",
@@ -64,7 +64,10 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720,
+        "weight": 4.6
+      },
       "rated_power": 750,
       "operating_modes": [
         {

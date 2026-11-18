@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/felt/2026/breed_race_sram_apex_s_1000_mullet",
   "manufacturer": "Felt",
-  "vehicle_model_group": "Breed",
+  "model_group": "Breed",
   "model": "BREED Race SRAM Apex S-1000 Mullet",
   "model_configuration": "complete",
   "type": "bike",
@@ -36,9 +36,7 @@
       "shell": "BSA",
       "width": 68,
       "spindle": "DUB"
-    },
-    "max_weight_total": 110,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -76,6 +74,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

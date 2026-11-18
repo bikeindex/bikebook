@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rattan/2023/sequoia_us",
   "manufacturer": "Rattan",
   "model": "Sequoia",
@@ -56,8 +56,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 204
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -95,10 +94,14 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849",
-      "battery_size": 960,
-      "battery_info": "SAMSUNG Cells",
-      "charging_time": 300,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 960,
+        "cells": "SAMSUNG",
+        "charging_time": 300
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 80,
@@ -118,6 +121,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

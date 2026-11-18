@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2026/sa_1",
   "manufacturer": "GOTRAX",
   "model": "SA-1",
@@ -51,7 +51,9 @@
   ],
   "motors": [
     {
-      "battery_size": 187,
+      "battery": {
+        "capacity": 187
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -64,12 +66,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 15.1,
-        "max_weight_rider": 100
+        "total_weight": 15.1
       }
     }
   ],

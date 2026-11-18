@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fatte_bikes/2023/strada_cruiser",
   "manufacturer": "FattE-Bikes",
   "model": "Strada Cruiser",
@@ -161,12 +161,14 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 768,
-      "battery_options": [
-        1008
-      ],
-      "battery_info": "Panasonic cell",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 768,
+        "capacity_options": [
+          1008
+        ],
+        "cells": "Panasonic",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "operating_modes": [
         {

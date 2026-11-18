@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ridstar/2025/q20luxe_lite_1000w",
   "manufacturer": "Ridstar",
   "model": "Q20Luxe Lite 1000W",
@@ -24,8 +24,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -63,8 +62,10 @@
   ],
   "motors": [
     {
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -85,12 +86,21 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "20\"",
       "geometry": {
-        "total_weight": 29.9,
-        "max_weight_rider": 150
+        "total_weight": 29.9
       }
     }
   ],

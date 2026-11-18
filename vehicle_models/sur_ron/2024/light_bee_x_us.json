@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sur_ron/2024/light_bee_x_us",
   "manufacturer": "Sur-Ron",
-  "vehicle_model_group": "Light Bee",
+  "model_group": "Light Bee",
   "model": "Light Bee X",
   "model_configuration": "complete",
   "markets": [
@@ -46,8 +46,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Forged Aluminum",
-    "max_weight_total": 103
+    "material_detail": "Forged Aluminum"
   },
   "suspension": {
     "front": {
@@ -78,9 +77,11 @@
   ],
   "motors": [
     {
-      "battery_size": 2400,
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 2400,
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "peak_power": 6000,
       "max_torque": 250,
       "operating_modes": [
@@ -94,6 +95,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 103
     }
   ],
   "sizes": [

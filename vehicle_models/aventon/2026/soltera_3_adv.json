@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aventon/2026/soltera_3_adv",
   "manufacturer": "Aventón",
-  "vehicle_model_group": "Soltera",
+  "model_group": "Soltera",
   "model": "Soltera 3 ADV",
   "model_configuration": "complete",
   "type": "bike",
@@ -120,8 +120,7 @@
       "spindle": "square taper",
       "spindle_length": 158.5
     },
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 136
+    "seatpost_clamp_diameter": 31.8
   },
   "wheels": [
     {
@@ -170,12 +169,13 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "TUV Certified",
       "water_rating": "IPX6",
-      "battery_size": 367,
-      "battery_chemistry": "li-ion",
-      "battery_info": "36.9V, 9.94Ah",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 367,
+        "voltage": 36.9,
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [
@@ -189,6 +189,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

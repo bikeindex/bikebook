@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2026/game_150_6_g56",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Game",
+  "model_group": "Game",
   "model": "Game 150.6 G56",
   "model_configuration": "complete",
   "type": "bike",
@@ -161,9 +161,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 38.6,
-    "max_weight_total": 115,
-    "gross_weight_rating": 140
+    "seatpost_clamp_diameter": 38.6
   },
   "suspension": {
     "front": {
@@ -238,12 +236,13 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_options": [
-        750
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "750 Wh: +£200",
+      "battery": {
+        "capacity": 600,
+        "capacity_options": [
+          750
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -258,6 +257,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 115
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

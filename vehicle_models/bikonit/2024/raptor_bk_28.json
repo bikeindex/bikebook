@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bikonit/2024/raptor_bk_28",
   "manufacturer": "Bikonit",
   "model": "Raptor BK-28",
@@ -40,8 +40,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -69,8 +68,10 @@
   ],
   "motors": [
     {
-      "battery_size": 2160,
-      "battery_info": "72 V",
+      "battery": {
+        "capacity": 2160,
+        "voltage": 72
+      },
       "rated_power": 13000,
       "peak_power": 21000,
       "max_torque": 390,
@@ -93,6 +94,12 @@
           "max_slope": 45
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

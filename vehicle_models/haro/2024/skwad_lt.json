@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/haro/2024/skwad_lt",
   "manufacturer": "Haro",
-  "vehicle_model_group": "Skwad",
+  "model_group": "Skwad",
   "model": "Skwad LT",
   "model_configuration": "complete",
   "type": "bike",
@@ -55,6 +55,22 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061-T6 Heat-Treated Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "front"
+        ],
+        "interface": "atranvelo_avs"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "atranvelo_avs"
+      }
+    ],
     "bottom_bracket": {
       "shell": "BSA"
     },
@@ -110,8 +126,13 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, EN 15194",
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849",
+        "EN 15194"
+      ],
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

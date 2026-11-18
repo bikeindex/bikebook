@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hp_velotechnik/2019/speedmachine",
   "manufacturer": "HP Velotechnik",
+  "model_group": "Speedmachine",
   "model": "Speedmachine",
   "model_configuration": "complete",
   "type": "recumbent",
@@ -50,8 +51,7 @@
       "shell": "BSA",
       "width": 68
     },
-    "coil_compatible": true,
-    "max_weight_total": 130
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -95,6 +95,12 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 130
     }
   ],
   "sizes": [

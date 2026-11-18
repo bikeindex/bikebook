@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2024/dimanche_29_gravel_2_di29cg2",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Dimanche 29 Gravel",
+  "model_group": "Dimanche 29 Gravel",
   "model": "Dimanche 29 Gravel 2 DI29CG2",
   "model_configuration": "complete",
   "type": "bike",
@@ -85,9 +85,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 102,
-    "gross_weight_rating": 120
+    "seatpost_clamp_diameter": 34.9
   },
   "wheels": [
     {
@@ -155,8 +153,10 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,
@@ -187,9 +187,22 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 102
+    },
+    {
+      "load": "gross",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
-      "name": "XS"
+      "name": "XS",
+      "geometry": {
+        "fork_rake": 50
+      }
     },
     {
       "name": "S",

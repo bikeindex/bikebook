@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kalkhoff/2027/image_5_season",
   "manufacturer": "Kalkhoff",
-  "vehicle_model_group": "Image",
+  "model_group": "Image",
   "model": "Image 5 Season",
   "model_configuration": "complete",
   "type": "bike",
@@ -162,11 +162,18 @@
   },
   "frame": {
     "material": "steel",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ],
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 117,
-    "gross_weight_rating": 150
+    }
   },
   "suspension": {
     "front": {
@@ -220,8 +227,10 @@
       "model_group": "Performance Line PX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 700,
       "max_torque": 90,
@@ -237,9 +246,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 27
+    },
+    {
+      "load": "payload",
+      "weight": 117
+    },
+    {
+      "load": "gross",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "Diamond M",

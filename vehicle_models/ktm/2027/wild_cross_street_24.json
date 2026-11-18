@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/wild_cross_street_24",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Wild Cross",
+  "model_group": "Wild Cross",
   "model": "Wild Cross Street 24",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,9 +41,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 49,
-    "gross_weight_rating": 60
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -81,6 +79,16 @@
         "rear"
       ],
       "caliper_mount": "Brake Bosses"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 49
+    },
+    {
+      "load": "gross",
+      "weight": 60
     }
   ],
   "sizes": [

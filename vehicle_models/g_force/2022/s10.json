@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/g_force/2022/s10",
   "manufacturer": "G-Force",
   "model": "S10",
@@ -52,8 +52,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 576,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 576,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 65,
       "operating_modes": [
@@ -66,6 +68,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -76,7 +84,6 @@
           "length": 1158
         },
         "total_weight": 20.9,
-        "max_weight_rider": 113,
         "rider_height_min": 1549,
         "rider_height_max": 1930,
         "extra_measurements": {

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/swagtron/2025/urbancruise",
   "manufacturer": "Swagtron",
   "model": "UrbanCruise",
@@ -33,8 +33,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "coil_compatible": true,
-    "max_weight_total": 150
+    "coil_compatible": true
   },
   "suspension": {
     "front": {},
@@ -69,10 +68,15 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 749,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 749,
+        "charging_time": 480
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "operating_modes": [
@@ -86,6 +90,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

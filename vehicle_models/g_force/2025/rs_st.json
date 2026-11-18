@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/g_force/2025/rs_st",
   "manufacturer": "G-Force",
-  "vehicle_model_group": "RS",
+  "model_group": "RS",
   "model": "RS ST",
   "model_configuration": "complete",
   "type": "bike",
@@ -29,8 +29,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "cable_routing": "internal",
-    "coil_compatible": true,
-    "max_weight_total": 181
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -92,11 +91,13 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 748,
-      "battery_options": [
-        1200
-      ],
-      "charging_time": 480,
+      "battery": {
+        "capacity": 748,
+        "capacity_options": [
+          1200
+        ],
+        "charging_time": 480
+      },
       "rated_power": 750,
       "peak_power": 1300,
       "max_torque": 85,
@@ -117,6 +118,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

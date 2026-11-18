@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/marin/2025/alpine_trail_e1_bosch_6_bolt_eu_gb",
   "manufacturer": "Marin Bikes",
-  "vehicle_model_group": "Alpine Trail",
+  "model_group": "Alpine Trail",
   "model": "Alpine Trail E1 - Bosch 6-Bolt EU",
   "model_configuration": "complete",
   "markets": [
@@ -145,8 +145,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

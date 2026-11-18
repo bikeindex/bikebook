@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/porsche/2023/cross_performance",
   "manufacturer": "Porsche",
-  "vehicle_model_group": "Cross Performance",
+  "model_group": "Cross Performance",
   "model": "Cross Performance",
   "model_configuration": "complete",
   "type": "bike",
@@ -128,9 +128,13 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 630,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 630,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [
@@ -145,12 +149,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "S",
       "geometry": {
         "crank_length": 160,
-        "max_weight_rider": 120,
         "rider_height_min": 1560,
         "rider_height_max": 1700
       }
@@ -160,7 +169,6 @@
       "geometry": {
         "crank_length": 165,
         "total_weight": 21,
-        "max_weight_rider": 120,
         "rider_height_min": 1680,
         "rider_height_max": 1820
       }
@@ -169,7 +177,6 @@
       "name": "L",
       "geometry": {
         "crank_length": 165,
-        "max_weight_rider": 120,
         "rider_height_min": 1800,
         "rider_height_max": 1940
       }

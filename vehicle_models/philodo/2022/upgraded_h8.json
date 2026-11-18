@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/philodo/2022/upgraded_h8",
   "manufacturer": "Philodo",
+  "model_group": "H8",
   "model": "Upgraded H8",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,8 +42,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 204
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -82,10 +82,12 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "battery_size": 1500,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG Cells",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1500,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 540
+      },
       "rated_power": 2000,
       "peak_power": 2500,
       "max_torque": 105,
@@ -112,10 +114,12 @@
     },
     {
       "drive_wheel": "rear",
-      "battery_size": 1500,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG Cells",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1500,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 540
+      },
       "rated_power": 2000,
       "peak_power": 2500,
       "max_torque": 105,
@@ -139,6 +143,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [
@@ -197,12 +207,25 @@
       "description": "Color multifunctional display"
     },
     {
+      "type": "fender",
+      "description": "fenders"
+    },
+    {
       "type": "fork",
       "type_detail": "Front Suspension",
       "position": [
         "front"
       ],
       "description": "Aluminum alloy suspension fork with lock"
+    },
+    {
+      "type": "included_not_installed",
+      "type_detail": "Tools",
+      "description": "assembly toolset"
+    },
+    {
+      "type": "kickstand",
+      "description": "kickstand"
     },
     {
       "type": "lights",
@@ -218,6 +241,13 @@
         "rear"
       ],
       "description": "rear light with brake light"
+    },
+    {
+      "type": "rack",
+      "position": [
+        "rear"
+      ],
+      "description": "rear rack"
     },
     {
       "type": "saddle",
@@ -238,11 +268,6 @@
         "width": 101.6,
         "diameter": 559
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Package Included",
-      "description": "Battery, charger, kickstand, fenders, rear rack, assembly toolset, user manual"
     }
   ]
 }

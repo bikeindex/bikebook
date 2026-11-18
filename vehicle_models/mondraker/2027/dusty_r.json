@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mondraker/2027/dusty_r",
   "manufacturer": "Mondraker",
-  "vehicle_model_group": "Dusty",
+  "model_group": "Dusty",
   "model": "Dusty R",
   "model_configuration": "complete",
   "type": "bike",
@@ -106,8 +106,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 135,
-      "battery_size": 580,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 580,
+        "chemistry": "li-ion"
+      },
       "peak_power": 350,
       "max_torque": 60,
       "operating_modes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hikeep/2025/k6",
   "manufacturer": "Hikeep",
-  "vehicle_model_group": "K6",
+  "model_group": "K6",
   "model": "K6",
   "model_configuration": "complete",
   "type": "bike",
@@ -38,8 +38,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -75,7 +74,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 749,
+      "battery": {
+        "capacity": 749
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 90,
@@ -90,6 +91,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

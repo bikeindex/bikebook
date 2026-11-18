@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gio/2023/phoenix_pr",
   "manufacturer": "GIO",
   "model": "Phoenix PR",
@@ -64,8 +64,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "wheels": [
     {
@@ -89,9 +88,11 @@
   ],
   "motors": [
     {
-      "battery_size": 1440,
-      "battery_chemistry": "lead-acid",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1440,
+        "chemistry": "lead-acid",
+        "charging_time": 480
+      },
       "rated_power": 1500,
       "operating_modes": [
         {
@@ -103,6 +104,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -112,8 +123,7 @@
           "width": 690,
           "height": 1120
         },
-        "total_weight": 115,
-        "max_weight_rider": 150
+        "total_weight": 115
       }
     }
   ],

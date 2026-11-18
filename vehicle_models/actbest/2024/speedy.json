@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/actbest/2024/speedy",
   "manufacturer": "Actbest",
-  "vehicle_model_group": "Speedy",
+  "model_group": "Speedy",
   "model": "Speedy",
   "model_configuration": "complete",
   "type": "bike",
@@ -187,8 +187,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 159
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -223,10 +222,14 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IP54",
-      "battery_size": 499,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 499,
+        "charging_time": 300
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "max_torque": 70,
@@ -254,9 +257,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.43
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.43
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/syndyt/2023/syr_160",
   "manufacturer": "Syndyt",
-  "vehicle_model_group": "SYR",
+  "model_group": "SYR",
   "model": "SYR 160",
   "model_configuration": "complete",
   "type": "balance_bike",
@@ -50,7 +50,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 360,
+      "battery": {
+        "capacity": 360
+      },
       "rated_power": 350,
       "operating_modes": [
         {

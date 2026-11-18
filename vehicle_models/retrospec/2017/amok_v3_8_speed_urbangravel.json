@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2017/amok_v3_8_speed_urbangravel",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Amok",
+  "model_group": "Amok",
   "model": "Amok V3 8-Speed UrbanGravel",
   "model_configuration": "complete",
   "type": "bike",
@@ -201,12 +201,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "50CM - S",
       "geometry": {
         "standover": 787,
-        "max_weight_rider": 113,
         "rider_height_min": 1575,
         "rider_height_max": 1676
       }
@@ -215,7 +220,6 @@
       "name": "54CM - M",
       "geometry": {
         "standover": 826,
-        "max_weight_rider": 113,
         "rider_height_min": 1676,
         "rider_height_max": 1753
       }
@@ -223,15 +227,13 @@
     {
       "name": "58CM - L",
       "geometry": {
-        "standover": 851,
-        "max_weight_rider": 113
+        "standover": 851
       }
     },
     {
       "name": "60CM - XL",
       "geometry": {
-        "standover": 876,
-        "max_weight_rider": 113
+        "standover": 876
       }
     }
   ],

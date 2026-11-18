@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/haro/2025/escondido_1",
   "manufacturer": "Haro",
+  "model_group": "Escondido",
   "model": "Escondido 1",
   "model_configuration": "complete",
   "type": "bike",
@@ -76,7 +77,18 @@
     "top_tube": "step_through",
     "mounts": [
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "front"
+        ],
+        "interface": "atranvelo_avs"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "atranvelo_avs"
       }
     ],
     "cable_routing": "stealth",
@@ -151,8 +163,10 @@
       "model_group": "Performance Line",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 65,
@@ -259,7 +273,6 @@
     },
     {
       "type": "hub",
-      "type_detail": "Rear Derailleur",
       "position": [
         "rear"
       ],

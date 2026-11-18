@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sun/2025/boardwalk_7_step_over",
   "manufacturer": "Sun",
-  "vehicle_model_group": "Boardwalk",
+  "model_group": "Boardwalk",
   "model": "Boardwalk 7 Step-Over",
   "model_configuration": "complete",
   "type": "bike",
@@ -112,19 +112,21 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "20\"",
       "geometry": {
-        "total_weight": 15,
-        "max_weight_rider": 113
+        "total_weight": 15
       }
     },
     {
-      "name": "23\"",
-      "geometry": {
-        "max_weight_rider": 113
-      }
+      "name": "23\""
     }
   ],
   "components": [

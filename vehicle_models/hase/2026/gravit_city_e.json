@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hase/2026/gravit_city_e",
   "manufacturer": "Hase bikes",
+  "model_group": "GRAVIT",
   "model": "GRAVIT CITY E",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -29,7 +30,15 @@
   },
   "frame": {
     "material": "aluminum",
-    "max_weight_total": 200
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "atranvelo_avs"
+      }
+    ]
   },
   "suspension": {
     "front": {}
@@ -80,7 +89,9 @@
       "manufacturer": "Shimano",
       "model": "Steps 6100",
       "kind": "mid_drive",
-      "battery_size": 504,
+      "battery": {
+        "capacity": 504
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -94,9 +105,18 @@
   ],
   "cargo": {
     "length": 850,
-    "width": 500,
-    "max_weight_cargo": 40
+    "width": 500
   },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 40
+    },
+    {
+      "load": "payload",
+      "weight": 200
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

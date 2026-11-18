@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/schwinn/2022/healy_ridge_electric_bike_26in",
   "manufacturer": "Schwinn",
-  "vehicle_model_group": "Healy Ridge",
+  "model_group": "Healy Ridge",
   "model": "Healy Ridge Electric Bike 26in",
   "model_configuration": "complete",
   "type": "bike",
@@ -97,8 +97,7 @@
       "spindle": "square taper"
     },
     "seatpost_diameter": 27.2,
-    "front_derailleur_mount": "31.8mm clamp",
-    "max_weight_total": 91
+    "front_derailleur_mount": "31.8mm clamp"
   },
   "suspension": {
     "front": {
@@ -153,8 +152,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "battery": {
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -174,6 +175,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 91
     }
   ],
   "sizes": [

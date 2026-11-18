@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2024/apex_pro",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "Apex",
+  "model_group": "Apex",
   "model": "Apex PRO",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -71,8 +71,12 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
-      "battery_size": 216,
+      "certifications": [
+        "UL 2272"
+      ],
+      "battery": {
+        "capacity": 216
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -85,12 +89,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 14.5,
-        "max_weight_rider": 100
+        "total_weight": 14.5
       }
     }
   ],

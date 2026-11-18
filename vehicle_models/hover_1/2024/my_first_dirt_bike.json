@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hover_1/2024/my_first_dirt_bike",
   "manufacturer": "Hover-1",
   "model": "My First Dirt Bike",
@@ -100,7 +100,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 144,
+      "battery": {
+        "capacity": 144
+      },
       "rated_power": 300,
       "operating_modes": [
         {
@@ -116,6 +118,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 55
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -126,7 +134,6 @@
           "height": 622
         },
         "total_weight": 15.4,
-        "max_weight_rider": 55,
         "rider_age_min": 5
       }
     }

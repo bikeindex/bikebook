@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2024/jumbo",
   "manufacturer": "Eunorau",
   "model": "Jumbo",
@@ -53,8 +53,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 120
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -86,9 +85,10 @@
   ],
   "motors": [
     {
-      "certification": "Yes",
-      "battery_size": 749,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 749,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "max_torque": 70,
       "operating_modes": [
@@ -110,6 +110,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -162,10 +168,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "48V1000W Rear Motor with max 70N.m torque"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V"
     },
     {
       "type": "e_vehicle_remote",
@@ -231,6 +233,11 @@
       "dimensions": {
         "width": 76.2
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V"
     },
     {
       "type": "unknown",

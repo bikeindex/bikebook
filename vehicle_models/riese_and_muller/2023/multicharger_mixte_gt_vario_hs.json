@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2023/multicharger_mixte_gt_vario_hs",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Multicharger Mixte GT",
+  "model_group": "Multicharger Mixte GT",
   "model": "Multicharger Mixte GT vario HS",
   "model_configuration": "complete",
   "markets": [
@@ -61,8 +61,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_clamp_diameter": 40,
-    "gross_weight_rating": 175
+    "seatpost_clamp_diameter": 40
   },
   "suspension": {
     "front": {
@@ -121,7 +120,9 @@
       "model": "BDU490P",
       "model_group": "Performance Line Speed",
       "kind": "mid_drive",
-      "battery_size": 625,
+      "battery": {
+        "capacity": 625
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -135,6 +136,24 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 175
+    },
+    {
+      "load": "rear_rack",
+      "weight": 65
+    },
+    {
+      "load": "front_rack",
+      "weight": 5
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 5
     }
   ],
   "sizes": [
@@ -161,10 +180,7 @@
           "compatibility_tagalong_trailer_bike": "yes",
           "top_tube_height": 575,
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 65
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     },
@@ -191,10 +207,7 @@
           "compatibility_tagalong_trailer_bike": "yes",
           "top_tube_height": 580,
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 65
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     }

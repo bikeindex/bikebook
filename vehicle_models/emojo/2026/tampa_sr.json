@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/emojo/2026/tampa_sr",
   "manufacturer": "Emojo",
-  "vehicle_model_group": "Tampa",
+  "model_group": "Tampa",
   "model": "Tampa SR",
   "model_configuration": "complete",
   "type": "bike",
@@ -46,8 +46,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 147
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -81,11 +80,16 @@
     {
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX7",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -98,6 +102,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 147
     }
   ],
   "sizes": [

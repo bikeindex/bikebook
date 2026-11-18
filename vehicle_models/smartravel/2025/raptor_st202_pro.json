@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/smartravel/2025/raptor_st202_pro",
   "manufacturer": "Smartravel",
-  "vehicle_model_group": "Raptor",
+  "model_group": "Raptor",
   "model": "Raptor ST202 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -44,8 +44,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 159
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -81,7 +80,9 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 2600,
+      "battery": {
+        "capacity": 2600
+      },
       "rated_power": 1200,
       "peak_power": 1500,
       "max_torque": 86,
@@ -99,7 +100,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 2600,
+      "battery": {
+        "capacity": 2600
+      },
       "rated_power": 1200,
       "peak_power": 1500,
       "max_torque": 86,
@@ -115,9 +118,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 158.76
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 158.76
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2024/joe_rev",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Joe Rev",
+  "model_group": "Joe Rev",
   "model": "Joe Rev",
   "model_configuration": "complete",
   "type": "bike",
@@ -81,10 +81,15 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 cells",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion",
+        "cells": "21700"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -103,12 +108,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "standover": 787,
-        "max_weight_rider": 159
+        "standover": 787
       }
     }
   ],

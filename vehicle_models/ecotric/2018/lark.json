@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ecotric/2018/lark",
   "manufacturer": "Ecotric",
   "model": "Lark",
@@ -49,8 +49,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 91
+    ]
   },
   "wheels": [
     {
@@ -84,8 +83,10 @@
     {
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 360,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 360,
+        "charging_time": 480
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -101,6 +102,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 91
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2024/z4_pro",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "Z4",
+  "model_group": "Z4",
   "model": "Z4 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -61,8 +61,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -90,8 +89,12 @@
     {
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -111,6 +114,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "payload",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -120,8 +133,7 @@
           "width": 579,
           "height": 1199
         },
-        "total_weight": 29.9,
-        "max_weight_rider": 120
+        "total_weight": 29.9
       }
     }
   ],

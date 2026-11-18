@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/nulane_hybrid_c_62_slx_400x",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Nulane Hybrid",
+  "model_group": "Nulane Hybrid",
   "model": "Nulane Hybrid C:62 SLX 400X",
   "model_configuration": "complete",
   "type": "bike",
@@ -50,9 +50,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 116,
-    "gross_weight_rating": 130
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -118,8 +116,10 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,
@@ -133,6 +133,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [
@@ -151,7 +161,6 @@
         "handlebar_width": 720,
         "stem_length": 80,
         "crank_length": 160,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 740
@@ -173,7 +182,6 @@
         "handlebar_width": 720,
         "stem_length": 80,
         "crank_length": 160,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 773
@@ -196,7 +204,6 @@
         "stem_length": 80,
         "crank_length": 165,
         "total_weight": 14,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 804
@@ -218,7 +225,6 @@
         "handlebar_width": 720,
         "stem_length": 90,
         "crank_length": 165,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 825
@@ -240,7 +246,6 @@
         "handlebar_width": 720,
         "stem_length": 100,
         "crank_length": 170,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 857

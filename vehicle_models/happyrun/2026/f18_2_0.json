@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/happyrun/2026/f18_2_0",
   "manufacturer": "HappyRun",
-  "vehicle_model_group": "F18",
+  "model_group": "F18",
   "model": "F18 2.0",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -54,8 +54,7 @@
   },
   "frame": {
     "material": "steel",
-    "coil_compatible": true,
-    "max_weight_total": 136
+    "coil_compatible": true
   },
   "suspension": {
     "front": {},
@@ -94,9 +93,11 @@
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
       "water_rating": "IPX5",
-      "battery_size": 1620,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1620,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "peak_power": 6000,
       "max_torque": 245,
       "operating_modes": [
@@ -111,6 +112,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

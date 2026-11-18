@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/volt/2024/outback_v2",
   "manufacturer": "Volt Bike",
-  "vehicle_model_group": "Outback",
+  "model_group": "Outback",
   "model": "Outback V2",
   "model_configuration": "complete",
   "type": "bike",
@@ -35,8 +35,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 127
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -79,8 +78,10 @@
       "manufacturer": "Bafang",
       "model": "G07",
       "kind": "hub_drive",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 65,
@@ -103,6 +104,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 127
     }
   ],
   "sizes": [

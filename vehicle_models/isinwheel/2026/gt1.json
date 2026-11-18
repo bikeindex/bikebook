@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/isinwheel/2026/gt1",
   "manufacturer": "iSinwheel",
-  "vehicle_model_group": "GT1",
+  "model_group": "GT1",
   "model": "GT1",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -52,10 +52,12 @@
   "motors": [
     {
       "water_rating": "IPX4",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 Cells",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion",
+        "cells": "21700",
+        "charging_time": 360
+      },
       "peak_power": 800,
       "operating_modes": [
         {
@@ -69,6 +71,12 @@
           }
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -86,7 +94,6 @@
           "height": 579
         },
         "total_weight": 26.8,
-        "max_weight_rider": 150,
         "rider_age_min": 14
       }
     }

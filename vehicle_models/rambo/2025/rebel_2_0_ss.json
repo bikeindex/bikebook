@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rambo/2025/rebel_2_0_ss",
   "manufacturer": "Rambo",
-  "vehicle_model_group": "Rebel",
+  "model_group": "Rebel",
   "model": "Rebel 2.0 SS (Single Speed)",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,8 +41,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061-T6 Aluminum",
-    "max_weight_total": 136
+    "material_detail": "6061-T6 Aluminum"
   },
   "wheels": [
     {
@@ -85,9 +84,11 @@
       "manufacturer": "Bafang",
       "model": "BBSHD",
       "kind": "mid_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG branded cells",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 1000,
       "peak_power": 1632,
       "max_torque": 160,
@@ -110,6 +111,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

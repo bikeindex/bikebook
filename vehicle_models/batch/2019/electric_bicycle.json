@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/batch/2019/electric_bicycle",
   "manufacturer": "Batch Bicycles",
   "model": "Electric Bicycle",
@@ -94,9 +94,11 @@
       "model_group": "Active Line",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
-      "charging_time": 390,
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion",
+        "charging_time": 390
+      },
       "rated_power": 250,
       "peak_power": 290,
       "max_torque": 40,
@@ -113,9 +115,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    }
+  ],
   "sizes": [
     {
       "name": "Small",

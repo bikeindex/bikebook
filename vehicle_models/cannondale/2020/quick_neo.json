@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2020/quick_neo",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Quick",
+  "model_group": "Quick",
   "model": "Quick Neo",
   "model_configuration": "complete",
   "type": "bike",
@@ -81,8 +81,10 @@
   ],
   "motors": [
     {
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

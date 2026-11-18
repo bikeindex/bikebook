@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vivi/2024/ace07",
   "manufacturer": "Vivi",
-  "vehicle_model_group": "ACE",
+  "model_group": "ACE",
   "model": "ACE07",
   "model_configuration": "complete",
   "type": "bike",
@@ -97,8 +97,7 @@
     "material_detail": "6061 Aluminum",
     "top_tube": "step_through",
     "seatpost_diameter": 30.4,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 150
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -157,11 +156,16 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP54",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 90,
@@ -188,9 +192,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

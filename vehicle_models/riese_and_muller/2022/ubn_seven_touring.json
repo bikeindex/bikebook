@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2022/ubn_seven_touring",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "UBN Seven",
+  "model_group": "UBN Seven",
   "model": "UBN Seven touring",
   "model_configuration": "complete",
   "markets": [
@@ -73,9 +73,7 @@
       "spindle": "ETOR Drive",
       "spindle_length": 135
     },
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 115,
-    "gross_weight_rating": 135
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -129,8 +127,10 @@
       "kind": "mid_drive",
       "spindle": "ETOR Drive",
       "spindle_length": 135,
-      "battery_size": 430,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 430,
+        "chemistry": "li-ion"
+      },
       "peak_power": 450,
       "max_torque": 60,
       "operating_modes": [
@@ -141,6 +141,28 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 135
+    },
+    {
+      "load": "rear_rack",
+      "weight": 27
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 5
+    },
+    {
+      "load": "pannier_per_side",
+      "weight": 7.5
     }
   ],
   "sizes": [
@@ -162,17 +184,13 @@
           "length": 1832
         },
         "total_weight": 19.5,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "childseat_compatibility": "no",
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "yes",
           "top_tube_height": 303,
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27,
-          "weight_rating_pannier_rack_per_side_kg": 7.5
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     },
@@ -194,17 +212,13 @@
           "length": 1858
         },
         "total_weight": 19.7,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "childseat_compatibility": "no",
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "yes",
           "top_tube_height": 314,
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27,
-          "weight_rating_pannier_rack_per_side_kg": 7.5
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     },
@@ -226,17 +240,13 @@
           "length": 1894
         },
         "total_weight": 19.9,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "childseat_compatibility": "no",
           "childseat_compatibility_carrier": "yes",
           "compatibility_tagalong_trailer_bike": "yes",
           "top_tube_height": 336,
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27,
-          "weight_rating_pannier_rack_per_side_kg": 7.5
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     }

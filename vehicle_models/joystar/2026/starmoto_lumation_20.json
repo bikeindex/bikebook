@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/joystar/2026/starmoto_lumation_20",
   "manufacturer": "Joystar",
-  "vehicle_model_group": "Starmoto",
+  "model_group": "Starmoto",
   "model": "Starmoto Lumation 20",
   "model_configuration": "complete",
   "type": "bike",
@@ -60,8 +60,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 100
+    ]
   },
   "wheels": [
     {
@@ -89,9 +88,11 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 468,
-      "battery_chemistry": "li-ion",
-      "charging_time": 270,
+      "battery": {
+        "capacity": 468,
+        "chemistry": "li-ion",
+        "charging_time": 270
+      },
       "rated_power": 750,
       "max_torque": 46,
       "operating_modes": [
@@ -109,6 +110,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

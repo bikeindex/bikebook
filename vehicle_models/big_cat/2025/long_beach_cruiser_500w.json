@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/big_cat/2025/long_beach_cruiser_500w",
   "manufacturer": "Big Cat Bikes",
-  "vehicle_model_group": "Long Beach Cruiser",
+  "model_group": "Long Beach Cruiser",
   "model": "Long Beach Cruiser 500W",
   "model_configuration": "complete",
   "type": "bike",
@@ -74,8 +74,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 134
+    ]
   },
   "suspension": {
     "front": {
@@ -116,9 +115,11 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -136,6 +137,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 134
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/movcan/2021/v30_pro_max",
   "manufacturer": "Movcan",
-  "vehicle_model_group": "V30",
+  "model_group": "V30",
   "model": "V30 Pro Max",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,8 +54,7 @@
     "2021": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -93,8 +92,10 @@
       "drive_wheel": "front",
       "sensor_cadence": true,
       "water_rating": "IPX5",
-      "battery_size": 1920,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1920,
+        "charging_time": 420
+      },
       "rated_power": 1500,
       "max_torque": 90,
       "operating_modes": [
@@ -123,8 +124,10 @@
       "drive_wheel": "rear",
       "sensor_cadence": true,
       "water_rating": "IPX5",
-      "battery_size": 1920,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1920,
+        "charging_time": 420
+      },
       "rated_power": 1500,
       "max_torque": 90,
       "operating_modes": [
@@ -148,6 +151,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

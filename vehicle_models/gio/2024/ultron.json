@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gio/2024/ultron",
   "manufacturer": "GIO",
   "model": "Ultron",
@@ -64,8 +64,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "wheels": [
     {
@@ -88,9 +87,11 @@
   ],
   "motors": [
     {
-      "battery_size": 1200,
-      "battery_chemistry": "lead-acid",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1200,
+        "chemistry": "lead-acid",
+        "charging_time": 480
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -100,6 +101,12 @@
           "range_claimed": 56
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

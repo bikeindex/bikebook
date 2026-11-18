@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moon_cool/2024/mc_mt",
   "manufacturer": "Moon Cool",
-  "vehicle_model_group": "MC",
+  "model_group": "MC",
   "model": "MC MT",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -22,8 +22,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "Hi-Tensile Steel",
-    "max_weight_total": 181
+    "material_detail": "Hi-Tensile Steel"
   },
   "wheels": [
     {
@@ -77,6 +76,12 @@
       "caliper_mount": "Brake Bosses"
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "24\""
@@ -86,7 +91,7 @@
       "geometry": {
         "top_tube_effective": 549,
         "wheelbase": 1140,
-        "seat_height_min": 960,
+        "seat_height_min": 841,
         "seat_height_max": 960,
         "dimensions": {
           "length": 1801

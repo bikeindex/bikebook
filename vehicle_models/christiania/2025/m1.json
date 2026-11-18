@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/christiania/2025/m1",
   "manufacturer": "Christiania Bikes",
   "model": "M1",
@@ -76,9 +76,11 @@
       "manufacturer": "Shimano",
       "model": "EP600 Cargo",
       "kind": "mid_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung/LG cells",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "Samsung/LG"
+      },
       "peak_power": 500,
       "max_torque": 85,
       "operating_modes": [

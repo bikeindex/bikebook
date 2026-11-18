@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebgo/2026/modal_sport_tb",
   "manufacturer": "Ebgo",
-  "vehicle_model_group": "Modal Sport",
+  "model_group": "Modal Sport",
   "model": "Modal Sport TB",
   "model_configuration": "complete",
   "type": "bike",
@@ -76,8 +76,7 @@
     "material": "aluminum",
     "material_detail": "Aerospace-Grade 6061 Aluminum",
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 35,
-    "max_weight_total": 125
+    "seatpost_clamp_diameter": 35
   },
   "wheels": [
     {
@@ -127,10 +126,14 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG 21700",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion",
+        "cells": "LG 21700"
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -141,6 +144,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

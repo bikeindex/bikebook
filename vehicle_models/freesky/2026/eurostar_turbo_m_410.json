@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freesky/2026/eurostar_turbo_m_410",
   "manufacturer": "Freesky",
   "model": "Eurostar Turbo M-410",
@@ -57,8 +57,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "seatpost_diameter": 30.9,
-    "coil_compatible": true,
-    "max_weight_total": 181
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -100,11 +99,16 @@
     {
       "drive_wheel": "front",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX7",
-      "battery_size": 1200,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1200,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "peak_power": 2000,
       "max_torque": 105,
       "operating_modes": [
@@ -132,11 +136,16 @@
     {
       "drive_wheel": "rear",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX7",
-      "battery_size": 1200,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1200,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "peak_power": 2000,
       "max_torque": 105,
       "operating_modes": [
@@ -160,6 +169,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

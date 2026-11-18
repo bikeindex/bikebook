@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/raleigh/2025/one",
   "manufacturer": "Raleigh",
-  "vehicle_model_group": "One",
+  "model_group": "One",
   "model": "One",
   "model_configuration": "complete",
   "markets": [
@@ -90,8 +90,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

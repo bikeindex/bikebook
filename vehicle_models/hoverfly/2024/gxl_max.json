@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hoverfly/2024/gxl_max",
   "manufacturer": "Hoverfly",
   "model": "GXL Max",
@@ -67,9 +67,13 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
-      "battery_size": 281,
-      "charging_time": 240,
+      "certifications": [
+        "UL 2272"
+      ],
+      "battery": {
+        "capacity": 281,
+        "charging_time": 240
+      },
       "rated_power": 300,
       "operating_modes": [
         {
@@ -81,6 +85,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -90,8 +100,7 @@
           "width": 203,
           "height": 381
         },
-        "total_weight": 14.5,
-        "max_weight_rider": 100
+        "total_weight": 14.5
       }
     }
   ],

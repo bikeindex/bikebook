@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hyper/2023/jet_fuel_e_ride_bmx",
   "manufacturer": "Hyper",
   "model": "Jet Fuel E-Ride BMX",
@@ -63,8 +63,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 374,
-      "charging_time": 240,
+      "battery": {
+        "capacity": 374,
+        "charging_time": 240
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -78,12 +80,15 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
-      "name": "One Size",
-      "geometry": {
-        "max_weight_rider": 125
-      }
+      "name": "One Size"
     }
   ],
   "components": [

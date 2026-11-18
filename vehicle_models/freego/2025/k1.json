@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freego/2025/k1",
   "manufacturer": "Freego",
   "model": "K1",
@@ -36,8 +36,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 64
+    "material_detail": "High-Carbon Steel"
   },
   "wheels": [
     {
@@ -60,9 +59,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 131,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 131,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 250,
       "peak_power": 350,
       "operating_modes": [
@@ -77,6 +78,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 64
     }
   ],
   "sizes": [

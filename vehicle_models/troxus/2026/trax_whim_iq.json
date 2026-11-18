@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/troxus/2026/trax_whim_iq",
   "manufacturer": "Troxus",
   "model": "Trax Whim iQ",
@@ -67,8 +67,7 @@
     },
     "headset": "ZS44/28.6 | ZS44/30",
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 35,
-    "max_weight_total": 136
+    "seatpost_clamp_diameter": 35
   },
   "wheels": [
     {
@@ -127,10 +126,14 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung® Cells",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 500,
       "max_torque": 50,
       "operating_modes": [
@@ -156,6 +159,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "Small",
@@ -174,8 +187,7 @@
         "fork_rake": 42,
         "fork_length_a2c": 420,
         "travel_front": 0,
-        "total_weight": 25.9,
-        "max_weight_rider": 120
+        "total_weight": 25.9
       }
     },
     {
@@ -194,8 +206,7 @@
         "bb_height": 307,
         "fork_rake": 42,
         "fork_length_a2c": 420,
-        "travel_front": 0,
-        "max_weight_rider": 120
+        "travel_front": 0
       }
     }
   ],

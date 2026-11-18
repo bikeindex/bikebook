@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lectric/2025/xp_trike2",
   "manufacturer": "Lectric eBikes",
-  "vehicle_model_group": "XP Trike2",
+  "model_group": "XP Trike2",
   "model": "XP Trike2",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -97,8 +97,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 188
+    ]
   },
   "suspension": {
     "front": {
@@ -154,11 +153,16 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2271, UL 2849",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 500,
       "peak_power": 1092,
       "max_torque": 65,
@@ -179,9 +183,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 34.02
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    },
+    {
+      "load": "cargo",
+      "weight": 34.02
+    },
+    {
+      "load": "payload",
+      "weight": 188
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -203,7 +218,6 @@
           "height": 660
         },
         "total_weight": 35.83,
-        "max_weight_rider": 150,
         "rider_height_min": 1473,
         "rider_height_max": 1880,
         "rider_inseam_min": 559,

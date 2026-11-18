@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rocky_mountain/2021/growler_powerplay_30_us",
   "manufacturer": "Rocky Mountain Bicycles",
-  "vehicle_model_group": "Growler Powerplay",
+  "model_group": "Growler Powerplay",
   "model": "Growler Powerplay 30",
   "model_configuration": "complete",
   "markets": [
@@ -110,8 +110,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 108,
       "operating_modes": [

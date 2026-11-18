@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/smlro/2025/xdc600_plus",
   "manufacturer": "Smlro",
-  "vehicle_model_group": "XDC600",
+  "model_group": "XDC600",
   "model": "XDC600 Plus",
   "model_configuration": "complete",
   "type": "bike",
@@ -24,7 +24,8 @@
           "name": "All Black",
           "colors": [
             "black"
-          ]
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/smlro/2025/xdc600_plus.jpg"
         }
       ],
       "url": "https://smlrobicycle.com/products/smlro-xdc600-plus-dual-motors-2000w-black",
@@ -41,8 +42,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 180
+    ]
   },
   "suspension": {
     "front": {}
@@ -73,8 +73,10 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "battery_size": 1075,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1075,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "max_torque": 82,
       "operating_modes": [
@@ -98,8 +100,10 @@
     },
     {
       "drive_wheel": "rear",
-      "battery_size": 1075,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1075,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "max_torque": 82,
       "operating_modes": [
@@ -120,6 +124,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [

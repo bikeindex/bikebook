@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/helokeep/2026/ma_l",
   "manufacturer": "Helokeep",
   "model": "MA-L",
@@ -32,8 +32,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -66,9 +65,13 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 960,
-      "charging_time": 480,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 960,
+        "charging_time": 480
+      },
       "peak_power": 750,
       "operating_modes": [
         {
@@ -81,6 +84,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -118,6 +127,10 @@
       "description": "Battery life: 1 years"
     },
     {
+      "type": "e_vehicle_battery",
+      "description": "48 V"
+    },
+    {
       "type": "e_vehicle_motor",
       "description": "Geared Hub"
     },
@@ -141,23 +154,8 @@
     },
     {
       "type": "unknown",
-      "type_detail": "Frame size field",
-      "description": "64.17 in"
-    },
-    {
-      "type": "unknown",
       "type_detail": "Features",
       "description": "Adjustable Speed, Waterproof, Multi-Speed"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Volts",
-      "description": "48 V"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Amps",
-      "description": "20 A"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/addmotor/2023/citytri_e_310",
   "manufacturer": "Addmotor",
   "model": "Citytri E-310",
@@ -125,8 +125,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 163
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -188,7 +187,9 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 960,
+      "battery": {
+        "capacity": 960
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -210,6 +211,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 163
     }
   ],
   "sizes": [

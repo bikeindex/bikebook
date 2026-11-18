@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ouxi/2025/gt2000",
   "manufacturer": "OUXI",
   "model": "GT2000",
@@ -55,8 +55,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 159
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {},
@@ -94,9 +93,11 @@
     {
       "sensor_cadence": true,
       "water_rating": "IP54",
-      "battery_size": 1440,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1440,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "peak_power": 3000,
       "operating_modes": [
         {
@@ -119,6 +120,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/surface604/2024/trio",
   "manufacturer": "Surface604",
   "model": "Trio",
@@ -41,8 +41,7 @@
       }
     ],
     "cable_routing": "internal",
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 204
+    "seatpost_diameter": 30.4
   },
   "wheels": [
     {
@@ -86,10 +85,12 @@
       "manufacturer": "Bafang",
       "kind": "mid_drive",
       "sensor_cadence": true,
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung lithium-ion 21700 cells",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700",
+        "charging_time": 240
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 80,
@@ -119,6 +120,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

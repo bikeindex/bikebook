@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2022/g5",
   "manufacturer": "GOTRAX",
   "model": "G5",
@@ -96,11 +96,15 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IP54",
-      "battery_size": 461,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 461,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -113,6 +117,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -122,8 +132,7 @@
           "width": 470,
           "height": 1242
         },
-        "total_weight": 20,
-        "max_weight_rider": 120
+        "total_weight": 20
       }
     }
   ],

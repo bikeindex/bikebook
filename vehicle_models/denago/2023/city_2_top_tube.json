@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/denago/2023/city_2_top_tube",
   "manufacturer": "Denago",
-  "vehicle_model_group": "City",
+  "model_group": "City",
   "model": "City 2 Top Tube",
   "model_configuration": "complete",
   "type": "bike",
@@ -86,9 +86,14 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "certification": "UL 2271, UL 2849",
-      "battery_size": 653,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 653,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 50,
       "operating_modes": [
@@ -113,6 +118,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "S/M",
@@ -132,8 +143,7 @@
         "fork_length_a2c": 505,
         "stem_length": 90,
         "crank_length": 170,
-        "total_weight": 26.3,
-        "max_weight_rider": 136
+        "total_weight": 26.3
       }
     },
     {
@@ -153,8 +163,7 @@
         "fork_rake": 50,
         "fork_length_a2c": 500,
         "stem_length": 90,
-        "crank_length": 170,
-        "max_weight_rider": 136
+        "crank_length": 170
       }
     }
   ],

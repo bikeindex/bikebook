@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2022/ebe2",
   "manufacturer": "GOTRAX",
   "model": "EBE2",
@@ -80,8 +80,10 @@
   "motors": [
     {
       "water_rating": "IPX4",
-      "battery_size": 450,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 450,
+        "charging_time": 300
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -104,6 +106,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -113,8 +121,7 @@
           "width": 630,
           "height": 1069
         },
-        "total_weight": 20.7,
-        "max_weight_rider": 120
+        "total_weight": 20.7
       }
     }
   ],

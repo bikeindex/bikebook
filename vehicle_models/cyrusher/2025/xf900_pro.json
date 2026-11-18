@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cyrusher/2025/xf900_pro",
   "manufacturer": "Cyrusher",
   "model": "XF900 Pro",
@@ -70,8 +70,7 @@
   },
   "frame": {
     "material": "steel",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 159
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -125,10 +124,12 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 Cells",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "cells": "18650",
+        "charging_time": 480
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -148,6 +149,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

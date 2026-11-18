@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/haoqie/2022/antelope_cargo",
   "manufacturer": "Haoqie",
-  "vehicle_model_group": "Antelope",
+  "model_group": "Antelope",
   "model": "Antelope Cargo",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -42,8 +42,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 181
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -82,9 +81,11 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "battery_size": 1157,
-      "battery_chemistry": "li-ion",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1157,
+        "chemistry": "li-ion",
+        "charging_time": 540
+      },
       "rated_power": 500,
       "max_torque": 90,
       "operating_modes": [
@@ -104,6 +105,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

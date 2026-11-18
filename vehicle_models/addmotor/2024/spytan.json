@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/addmotor/2024/spytan",
   "manufacturer": "Addmotor",
-  "vehicle_model_group": "Spytan",
+  "model_group": "Spytan",
   "model": "Spytan",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -43,8 +43,7 @@
     "material": "aluminum",
     "material_detail": "7020 Aluminum",
     "folding": "half_fold",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 172
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -85,9 +84,13 @@
     {
       "drive_wheel": "rear",
       "sensor_speed": "spoke_magnet",
-      "certification": "UL 2849",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -109,6 +112,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 172
     }
   ],
   "sizes": [

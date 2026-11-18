@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/linus/2023/edutchi",
   "manufacturer": "Linus",
   "model": "eDutchi",
@@ -140,10 +140,14 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 250,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung cells",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 250,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

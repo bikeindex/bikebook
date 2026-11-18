@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2021/acid_240_sl",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Acid",
+  "model_group": "Acid",
   "model": "Acid 240 SL",
   "model_configuration": "complete",
   "type": "bike",
@@ -29,9 +29,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 140,
-    "gross_weight_rating": 150
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -69,6 +67,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 140
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

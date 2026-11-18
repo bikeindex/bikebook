@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cyrusher/2024/kommoda_3_0_step_through",
   "manufacturer": "Cyrusher",
-  "vehicle_model_group": "Kommoda",
+  "model_group": "Kommoda",
   "model": "Kommoda 3.0 Step-Through",
   "model_configuration": "complete",
   "type": "bike",
@@ -99,7 +99,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "top_tube": "step_through",
-    "max_weight_total": 159
+    "seatpost_diameter": 33.9
   },
   "suspension": {
     "front": {
@@ -147,8 +147,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 960,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 960,
+        "charging_time": 420
+      },
       "rated_power": 750,
       "max_torque": 85,
       "operating_modes": [
@@ -170,6 +172,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [
@@ -280,7 +288,10 @@
     {
       "type": "seatpost",
       "type_detail": "Seat post",
-      "description": "33.9mm /Adjustable height"
+      "description": "33.9mm /Adjustable height",
+      "dimensions": {
+        "diameter": 33.9
+      }
     },
     {
       "type": "spokes",

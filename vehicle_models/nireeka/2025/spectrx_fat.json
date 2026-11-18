@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/nireeka/2025/spectrx_fat",
   "manufacturer": "Nireeka",
-  "vehicle_model_group": "Spectrx",
+  "model_group": "Spectrx",
   "model": "Spectrx Fat",
   "model_configuration": "complete",
   "type": "bike",
@@ -239,12 +239,15 @@
       "model": "X1 Pro Gen 4",
       "kind": "mid_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 1260,
-      "battery_options": [
-        1800
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG / Samsung 21700",
+      "battery": {
+        "capacity": 1260,
+        "capacity_options": [
+          1800
+        ],
+        "voltage": 60,
+        "chemistry": "li-ion",
+        "cells": "LG / Samsung 21700"
+      },
       "rated_power": 5000,
       "peak_power": 6000,
       "max_torque": 280,

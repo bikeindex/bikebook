@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/talaria/2025/komodo",
   "manufacturer": "Talaria",
   "model": "Komodo",
@@ -24,8 +24,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Forged Aluminum",
-    "max_weight_total": 160
+    "material_detail": "Forged Aluminum"
   },
   "suspension": {
     "front": {
@@ -72,9 +71,12 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 4374,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 50S 21700 / LG H51",
+      "battery": {
+        "capacity": 4374,
+        "voltage": 97.2,
+        "chemistry": "li-ion",
+        "cells": "Samsung 50S 21700 / LG H51"
+      },
       "rated_power": 8600,
       "peak_power": 32000,
       "max_torque": 90,
@@ -86,6 +88,12 @@
           "range_claimed": 115
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 160
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/addmotor/2023/chopptan_m_70",
   "manufacturer": "Addmotor",
   "model": "Chopptan M-70",
@@ -52,8 +52,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 136
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -87,9 +86,11 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Battery Cells",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -106,6 +107,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

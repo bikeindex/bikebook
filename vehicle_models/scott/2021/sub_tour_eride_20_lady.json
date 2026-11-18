@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/sub_tour_eride_20_lady",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Sub Tour",
+  "model_group": "Sub Tour",
   "model": "Sub Tour eRIDE 20 Lady",
   "model_configuration": "complete",
   "type": "bike",
@@ -58,9 +58,7 @@
       }
     ],
     "headset": "ZS44/28.6 | ZS56/40",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 101,
-    "gross_weight_rating": 128
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -111,14 +109,26 @@
       "manufacturer": "Bosch",
       "model": "Perfomance",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 101
+    },
+    {
+      "load": "gross",
+      "weight": 128
     }
   ],
   "sizes": [

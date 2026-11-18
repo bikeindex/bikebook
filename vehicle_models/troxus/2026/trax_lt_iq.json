@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/troxus/2026/trax_lt_iq",
   "manufacturer": "Troxus",
-  "vehicle_model_group": "Trax LT",
+  "model_group": "Trax LT",
   "model": "Trax LT iQ",
   "model_configuration": "complete",
   "type": "bike",
@@ -74,13 +74,21 @@
   "frame": {
     "material": "aluminum",
     "top_tube": "step_through",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
     "cable_routing": "stealth",
     "bottom_bracket": {
       "spindle": "square taper"
     },
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 35,
-    "max_weight_total": 129
+    "seatpost_clamp_diameter": 35
   },
   "suspension": {
     "front": {
@@ -137,10 +145,14 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
-      "battery_size": 480,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung® Cells",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 480,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 500,
       "max_torque": 50,
       "operating_modes": [
@@ -164,6 +176,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 129
     }
   ],
   "sizes": [

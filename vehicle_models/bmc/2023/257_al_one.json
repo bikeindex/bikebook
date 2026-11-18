@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2023/257_al_one",
   "manufacturer": "BMC",
-  "vehicle_model_group": "257",
+  "model_group": "257",
   "model": "257 AL ONE",
   "model_configuration": "complete",
   "markets": [
@@ -85,9 +85,7 @@
     "cable_routing": "internal",
     "bottom_bracket": {
       "shell": "BSA"
-    },
-    "max_weight_total": 106,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -130,6 +128,16 @@
         "rear"
       ],
       "rotor_diameter": 180
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 106
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

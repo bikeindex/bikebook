@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ancheer/2026/fbdan12",
   "manufacturer": "Ancheer",
   "model": "Fbdan12",
@@ -65,8 +65,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 249
+    "material": "steel"
   },
   "wheels": [
     {
@@ -85,9 +84,13 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 864,
+      "battery": {
+        "capacity": 864
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 80,
@@ -103,6 +106,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 249
     }
   ],
   "sizes": [

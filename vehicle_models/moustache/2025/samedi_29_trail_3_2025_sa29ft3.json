@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2025/samedi_29_trail_3_2025_sa29ft3",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Samedi 29 Trail",
+  "model_group": "Samedi 29 Trail",
   "model": "Samedi 29 Trail 3 2025 SA29FT3",
   "model_configuration": "complete",
   "type": "bike",
@@ -55,9 +55,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 38.6,
-    "max_weight_total": 115,
-    "gross_weight_rating": 140
+    "seatpost_clamp_diameter": 38.6
   },
   "suspension": {
     "front": {
@@ -132,8 +130,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -148,6 +148,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 115
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/roll_road/2026/shark_3_0",
   "manufacturer": "Roll Road",
   "model": "Shark 3.0",
@@ -40,8 +40,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 204
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -78,10 +77,11 @@
       "model": "SUTTO",
       "sensor_speed": "spoke_magnet",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "In accordance with UL standards",
-      "battery_size": 1040,
-      "battery_chemistry": "li-ion",
-      "battery_info": "EVE 21700 CELLS",
+      "battery": {
+        "capacity": 1040,
+        "chemistry": "li-ion",
+        "cells": "EVE 21700"
+      },
       "rated_power": 1500,
       "peak_power": 2200,
       "max_torque": 110,
@@ -115,6 +115,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

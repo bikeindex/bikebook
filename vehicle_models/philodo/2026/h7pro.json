@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/philodo/2026/h7pro",
   "manufacturer": "Philodo",
-  "vehicle_model_group": "H7",
+  "model_group": "H7",
   "model": "H7Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -39,8 +39,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 150
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -81,8 +80,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 840,
-      "charging_time": 540,
+      "battery": {
+        "capacity": 840,
+        "charging_time": 540
+      },
       "rated_power": 1500,
       "operating_modes": [
         {
@@ -105,12 +106,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 29.9,
-        "max_weight_rider": 150,
         "rider_height_min": 1585,
         "rider_height_max": 1951
       }
@@ -151,6 +157,10 @@
       "description": "Input 100~240V, output 54.6V 2A，smart protection"
     },
     {
+      "type": "e_vehicle_charger",
+      "description": "charger,kickstand"
+    },
+    {
       "type": "e_vehicle_motor",
       "description": "Rear drive 1500W high speed, brushless, geared hub motor"
     },
@@ -163,6 +173,13 @@
       "description": "3.7 inch multifunctional Display"
     },
     {
+      "type": "fender",
+      "position": [
+        "rear"
+      ],
+      "description": "fenders,rear rack"
+    },
+    {
       "type": "fork",
       "type_detail": "Front Suspension",
       "position": [
@@ -171,11 +188,23 @@
       "description": "Aluminum alloy suspension fork with lock"
     },
     {
+      "type": "included_not_installed",
+      "type_detail": "Tools",
+      "description": "assembly toolset"
+    },
+    {
       "type": "lights",
       "position": [
         "front"
       ],
       "description": "Integrated LED headlight & horn"
+    },
+    {
+      "type": "mirror",
+      "position": [
+        "rear"
+      ],
+      "description": "rear mirrors"
     },
     {
       "type": "rack",
@@ -204,11 +233,6 @@
         "width": 101.6,
         "diameter": 559
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Package Included",
-      "description": "battery, charger,kickstand, fenders,rear rack, rear mirrors, assembly toolset, user manual"
     },
     {
       "type": "unknown",

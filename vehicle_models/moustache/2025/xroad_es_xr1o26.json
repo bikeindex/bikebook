@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2025/xroad_es_xr1o26",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Xroad",
+  "model_group": "Xroad",
   "model": "Xroad ES XR1O26",
   "model_configuration": "complete",
   "type": "bike",
@@ -31,50 +31,6 @@
             },
             {
               "sku": "XR1O26"
-            }
-          ]
-        },
-        {
-          "name": "Titanium Glossy",
-          "colors": [
-            "silver"
-          ],
-          "variants": [
-            {
-              "sku": "XR1CGS500260",
-              "size": "S",
-              "original_msrp": 229900
-            },
-            {
-              "sku": "XR1CGX500260",
-              "size": "XL",
-              "original_msrp": 229900
-            },
-            {
-              "sku": "XR1CGL500260",
-              "size": "L",
-              "original_msrp": 229900
-            },
-            {
-              "sku": "XR1CGM500260",
-              "size": "M",
-              "original_msrp": 229900
-            },
-            {
-              "sku": "XR1CGL5P0260",
-              "size": "L"
-            },
-            {
-              "sku": "XR1CGM5P0260",
-              "size": "M"
-            },
-            {
-              "sku": "XR1CGS5P0260",
-              "size": "S"
-            },
-            {
-              "sku": "XR1CGX5P0260",
-              "size": "XL"
             }
           ]
         },
@@ -119,6 +75,50 @@
             },
             {
               "sku": "XR1CBX5P0260",
+              "size": "XL"
+            }
+          ]
+        },
+        {
+          "name": "Titanium Glossy",
+          "colors": [
+            "silver"
+          ],
+          "variants": [
+            {
+              "sku": "XR1CGS500260",
+              "size": "S",
+              "original_msrp": 229900
+            },
+            {
+              "sku": "XR1CGX500260",
+              "size": "XL",
+              "original_msrp": 229900
+            },
+            {
+              "sku": "XR1CGL500260",
+              "size": "L",
+              "original_msrp": 229900
+            },
+            {
+              "sku": "XR1CGM500260",
+              "size": "M",
+              "original_msrp": 229900
+            },
+            {
+              "sku": "XR1CGL5P0260",
+              "size": "L"
+            },
+            {
+              "sku": "XR1CGM5P0260",
+              "size": "M"
+            },
+            {
+              "sku": "XR1CGS5P0260",
+              "size": "S"
+            },
+            {
+              "sku": "XR1CGX5P0260",
               "size": "XL"
             }
           ]
@@ -203,13 +203,18 @@
       {
         "type": "bottle",
         "location": "seat_tube"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
     "headset": "ZS44/28.6 | ZS56/40",
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 108,
-    "gross_weight_rating": 135
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -281,8 +286,10 @@
       "model": "BDU334Y",
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 50,
@@ -298,6 +305,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 108
+    },
+    {
+      "load": "gross",
+      "weight": 135
     }
   ],
   "sizes": [

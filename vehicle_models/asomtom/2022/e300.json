@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/asomtom/2022/e300",
   "manufacturer": "Asomtom",
-  "vehicle_model_group": "E300",
+  "model_group": "E300",
   "model": "E300",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,8 +41,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 181
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -77,8 +76,10 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "battery_size": 749,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 749,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 85,
@@ -98,6 +99,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

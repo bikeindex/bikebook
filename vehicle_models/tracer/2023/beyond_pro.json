@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tracer/2023/beyond_pro",
   "manufacturer": "Tracer",
   "model": "Beyond Pro",
@@ -81,8 +81,7 @@
       }
     ],
     "seatpost_diameter": 25.4,
-    "coil_compatible": true,
-    "max_weight_total": 113
+    "coil_compatible": true
   },
   "suspension": {
     "rear": {
@@ -138,9 +137,11 @@
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 800,
       "operating_modes": [
         {
@@ -162,6 +163,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
     }
   ],
   "sizes": [

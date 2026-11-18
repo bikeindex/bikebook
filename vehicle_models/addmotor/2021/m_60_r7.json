@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/addmotor/2021/m_60_r7",
   "manufacturer": "Addmotor",
   "model": "M-60 R7",
@@ -37,8 +37,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "headset": "IS42/28.6 | IS42/30",
-    "max_weight_total": 136
+    "headset": "IS42/28.6 | IS42/30"
   },
   "suspension": {
     "front": {
@@ -86,8 +85,10 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 768,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 768,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -106,6 +107,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

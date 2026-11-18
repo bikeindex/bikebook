@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gyroor/2026/c5_pro",
   "manufacturer": "Gyroor",
-  "vehicle_model_group": "C5",
+  "model_group": "C5",
   "model": "C5 Pro",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -55,8 +55,12 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
-      "battery_size": 648,
+      "certifications": [
+        "UL 2272"
+      ],
+      "battery": {
+        "capacity": 648
+      },
       "rated_power": 650,
       "peak_power": 1000,
       "operating_modes": [
@@ -69,15 +73,19 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 39.92
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    },
+    {
+      "load": "cargo",
+      "weight": 39.92
+    }
+  ],
   "sizes": [
     {
-      "name": "One Size",
-      "geometry": {
-        "max_weight_rider": 136
-      }
+      "name": "One Size"
     }
   ],
   "components": [

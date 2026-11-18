@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2022/domane_plus_lt_9_gen_2",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Domane+",
+  "model_group": "Domane+",
   "model": "Domane+ LT 9 Gen 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -114,9 +114,7 @@
   "frame": {
     "material": "carbon",
     "material_detail": "500 Series OCLV Carbon",
-    "cable_routing": "dropper",
-    "max_weight_total": 111,
-    "gross_weight_rating": 125
+    "cable_routing": "dropper"
   },
   "wheels": [
     {
@@ -183,8 +181,10 @@
       "manufacturer": "Fazua",
       "model": "Exo10 Drive Pack",
       "kind": "mid_drive",
-      "battery_size": 250,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 250,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -195,6 +195,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 111
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vitilan/2026/u7_2_0",
   "manufacturer": "Vitilan",
   "model": "U7 2.0",
@@ -69,8 +69,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -106,11 +105,15 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2271",
+      "certifications": [
+        "UL 2271"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 80,
@@ -131,6 +134,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -196,10 +205,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V / 25A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "48V LCD Display"
     },
     {
@@ -251,6 +256,11 @@
         "width": 101.6,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V / 25A"
     },
     {
       "type": "unknown",

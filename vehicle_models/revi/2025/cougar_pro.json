@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/revi/2025/cougar_pro",
   "manufacturer": "Revi",
-  "vehicle_model_group": "Cougar",
+  "model_group": "Cougar",
   "model": "Cougar Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -91,8 +91,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 159
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -135,11 +134,16 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 1200,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 1200,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1600,
       "max_torque": 110,
@@ -162,6 +166,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

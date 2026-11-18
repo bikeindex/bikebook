@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pure/2024/adventure_al",
   "manufacturer": "Pure Cycles",
-  "vehicle_model_group": "Adventure",
+  "model_group": "Adventure",
   "model": "Adventure AL",
   "model_configuration": "complete",
   "type": "bike",
@@ -82,9 +82,7 @@
     "headset": "IS42/28.6 | IS52/40",
     "seatpost_diameter": 27.2,
     "seatpost_clamp_diameter": 31.8,
-    "max_chainring": 44,
-    "max_weight_total": 114,
-    "gross_weight_rating": 125
+    "max_chainring": 44
   },
   "wheels": [
     {
@@ -148,6 +146,16 @@
       ],
       "rotor_diameter": 160,
       "caliper_mount": "Disc Flat Mount"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 114
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

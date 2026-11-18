@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/engwe/2026/eagle",
   "manufacturer": "ENGWE",
   "model": "Eagle",
@@ -56,8 +56,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 120
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {},
@@ -92,9 +91,11 @@
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
       "water_rating": "IPX4",
-      "battery_size": 1404,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 1404,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "peak_power": 3200,
       "max_torque": 220,
       "operating_modes": [
@@ -109,6 +110,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

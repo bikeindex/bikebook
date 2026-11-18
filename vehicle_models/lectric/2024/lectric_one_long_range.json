@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lectric/2024/lectric_one_long_range",
   "manufacturer": "Lectric eBikes",
-  "vehicle_model_group": "Lectric ONE",
+  "model_group": "Lectric ONE",
   "model": "Lectric ONE Long-Range",
   "model_configuration": "complete",
   "type": "bike",
@@ -90,9 +90,14 @@
       "model": "Sutto",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2271, UL 2849",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1310,
       "max_torque": 85,

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/christiania/2025/model_t_mid_drive_us",
   "manufacturer": "Christiania Bikes",
-  "vehicle_model_group": "Model T",
+  "model_group": "Model T",
   "model": "Model T Mid Drive",
   "model_configuration": "complete",
   "markets": [
@@ -43,7 +43,9 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 630,
+      "battery": {
+        "capacity": 630
+      },
       "max_torque": 85,
       "operating_modes": [
         {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/yuba/2018/electric_boda_boda",
   "manufacturer": "Yuba",
-  "vehicle_model_group": "Electric",
+  "model_group": "Electric",
   "model": "Electric Boda Boda",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -101,8 +101,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 100
+    "seatpost_diameter": 30.9
   },
   "wheels": [
     {
@@ -152,9 +151,11 @@
       "manufacturer": "Shimano",
       "model": "Steps E6000",
       "kind": "mid_drive",
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 250,
       "max_torque": 50,
       "operating_modes": [
@@ -169,6 +170,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

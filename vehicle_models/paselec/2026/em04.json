@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/paselec/2026/em04",
   "manufacturer": "Paselec",
-  "vehicle_model_group": "EM04",
+  "model_group": "EM04",
   "model": "EM04",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -41,8 +41,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -88,9 +87,11 @@
   "motors": [
     {
       "water_rating": "IPX6",
-      "battery_size": 998,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 998,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "peak_power": 2600,
       "max_torque": 140,
       "operating_modes": [
@@ -104,6 +105,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

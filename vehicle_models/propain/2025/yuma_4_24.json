@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/propain/2025/yuma_4_24",
   "manufacturer": "Propain",
-  "vehicle_model_group": "Yuma",
+  "model_group": "Yuma",
   "model": "Yuma 4 24",
   "model_configuration": "complete",
   "type": "bike",
@@ -60,8 +60,7 @@
     "seatpost_clamp_diameter": 34.9,
     "derailleur_hanger": "UDH",
     "chainguide_mount": "ISCG05",
-    "max_fork_travel": 130,
-    "gross_weight_rating": 60
+    "max_fork_travel": 130
   },
   "suspension": {
     "front": {
@@ -90,6 +89,12 @@
   "drivetrain": [
     "1_front",
     "11_rear"
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 60
+    }
   ],
   "sizes": [
     {

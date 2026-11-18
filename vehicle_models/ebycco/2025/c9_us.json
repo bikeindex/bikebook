@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebycco/2025/c9_us",
   "manufacturer": "Ebycco",
   "model": "C9",
@@ -19,7 +19,7 @@
   "first_year": 2025,
   "years": {
     "2026": {
-      "original_msrp": 79900,
+      "original_msrp": 149900,
       "original_msrp_currency": "USD",
       "url": "https://ebycco.com/products/ebycco-dahon-c9-peak-1500w-48v-20ah-step-through-electric-bike",
       "url_live": true
@@ -27,8 +27,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -61,11 +60,16 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "peak_power": 2000,
       "max_torque": 90,
       "operating_modes": [
@@ -86,6 +90,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -134,10 +144,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V, 1500W"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "3.5\" LCD Color display, Waterproof"
     },
     {
@@ -182,6 +188,11 @@
       "type": "unknown",
       "type_detail": "Riding Modes",
       "description": "Throttle/Pedal Assist/Cruising/Walking Assist/Manual"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V, 1500W"
     }
   ]
 }

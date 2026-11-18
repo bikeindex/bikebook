@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/black_rock/2023/island_vibe",
   "manufacturer": "Black Rock Bikes",
   "model": "Island Vibe",
@@ -70,7 +70,9 @@
   ],
   "motors": [
     {
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -89,6 +91,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 191
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -99,7 +107,6 @@
           "length": 1896
         },
         "total_weight": 26.3,
-        "max_weight_rider": 191,
         "rider_height_min": 1524,
         "rider_height_max": 2083,
         "extra_measurements": {

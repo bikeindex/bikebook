@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rattan/2025/pathfinder_pro_eu",
   "manufacturer": "Rattan",
-  "vehicle_model_group": "Pathfinder",
+  "model_group": "Pathfinder",
   "model": "Pathfinder Pro",
   "model_configuration": "complete",
   "markets": [
@@ -58,8 +58,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 180
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -96,8 +95,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 864,
-      "charging_time": 540,
+      "battery": {
+        "capacity": 864,
+        "charging_time": 540
+      },
       "max_torque": 120,
       "operating_modes": [
         {
@@ -119,6 +120,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [

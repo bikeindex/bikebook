@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2021/moterra_5",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Moterra Neo",
+  "model_group": "Moterra Neo",
   "model": "Moterra 5",
   "model_configuration": "complete",
   "markets": [
@@ -171,8 +171,10 @@
       "kind": "mid_drive",
       "spindle": "Shimano E8000",
       "sensor_cadence": true,
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 60,
       "operating_modes": [

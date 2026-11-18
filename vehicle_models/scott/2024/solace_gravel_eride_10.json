@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2024/solace_gravel_eride_10",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Solace",
+  "model_group": "Solace",
   "model": "Solace Gravel eRIDE 10",
   "model_configuration": "complete",
   "type": "bike",
@@ -64,9 +64,7 @@
     "bottom_bracket": {
       "spindle": "ISIS",
       "spindle_length": 135
-    },
-    "max_weight_total": 107,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -117,8 +115,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 135,
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "peak_power": 300,
       "max_torque": 50,
       "operating_modes": [
@@ -131,6 +131,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 107
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moon_cool/2023/tk1_fat_tire",
   "manufacturer": "Moon Cool",
-  "vehicle_model_group": "TK",
+  "model_group": "TK",
   "model": "TK1 Fat Tire",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -116,8 +116,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum+Hiten Aluminum",
     "folding": "half_fold",
-    "seatpost_clamp_diameter": 34.8,
-    "max_weight_total": 181
+    "seatpost_clamp_diameter": 34.8
   },
   "suspension": {
     "front": {
@@ -166,9 +165,11 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 696,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 696,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 500,
       "peak_power": 1092,
       "max_torque": 85,
@@ -193,6 +194,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -201,7 +208,7 @@
         "wheelbase": 1199,
         "standover": 424,
         "handlebar_width": 676,
-        "seat_height_min": 991,
+        "seat_height_min": 787,
         "seat_height_max": 991,
         "dimensions": {
           "length": 1720,
@@ -211,7 +218,8 @@
         "rider_height_min": 1524,
         "rider_height_max": 1905,
         "extra_measurements": {
-          "handlebar_height": 1245
+          "handlebar_height_max": 1245,
+          "handlebar_height_min": 1168
         }
       }
     }

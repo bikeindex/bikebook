@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pedego/2025/latch",
   "manufacturer": "Pedego",
-  "vehicle_model_group": "Latch",
+  "model_group": "Latch",
   "model": "Latch",
   "model_configuration": "complete",
   "type": "bike",
@@ -123,12 +123,14 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 910,
-      "battery_options": [
-        546
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 CELLS",
+      "battery": {
+        "capacity": 910,
+        "capacity_options": [
+          546
+        ],
+        "chemistry": "li-ion",
+        "cells": "18650"
+      },
       "rated_power": 500,
       "max_torque": 45,
       "operating_modes": [
@@ -145,12 +147,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "crank_length": 170,
-        "max_weight_rider": 113,
         "rider_height_min": 1499,
         "extra_measurements": {
           "total_weight_without_battery_kg": 21.4

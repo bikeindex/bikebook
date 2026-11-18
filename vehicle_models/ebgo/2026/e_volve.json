@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebgo/2026/e_volve",
   "manufacturer": "Ebgo",
   "model": "E-Volve",
@@ -79,10 +79,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2271",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 210,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 210
+      },
       "rated_power": 500,
       "operating_modes": [
         {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/canyon/2024/precede_on_comfort_5",
   "manufacturer": "Canyon bicycles",
-  "vehicle_model_group": "Precede:ON",
+  "model_group": "Precede:ON",
   "model": "Precede:ON Comfort 5",
   "model_configuration": "complete",
   "type": "bike",
@@ -118,8 +118,10 @@
       "model": "BDU338Y",
       "model_group": "Performance Line Sport",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freesky/2026/cheetah_ultra_mt_380",
   "manufacturer": "Freesky",
-  "vehicle_model_group": "Cheetah",
+  "model_group": "Cheetah",
   "model": "Cheetah Ultra MT-380",
   "model_configuration": "complete",
   "type": "bike",
@@ -36,8 +36,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "coil_compatible": true,
-    "max_weight_total": 181
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -80,8 +79,10 @@
       "drive_wheel": "front",
       "sensor_cadence": true,
       "water_rating": "IPX7",
-      "battery_size": 3000,
-      "charging_time": 600,
+      "battery": {
+        "capacity": 3000,
+        "charging_time": 600
+      },
       "peak_power": 3000,
       "max_torque": 130,
       "operating_modes": [
@@ -110,8 +111,10 @@
       "drive_wheel": "rear",
       "sensor_cadence": true,
       "water_rating": "IPX7",
-      "battery_size": 3000,
-      "charging_time": 600,
+      "battery": {
+        "capacity": 3000,
+        "charging_time": 600
+      },
       "peak_power": 3000,
       "max_torque": 130,
       "operating_modes": [
@@ -135,6 +138,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

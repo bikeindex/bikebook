@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biktrix/2024/swift_step_over_3",
   "manufacturer": "Biktrix",
-  "vehicle_model_group": "Swift",
+  "model_group": "Swift",
   "model": "Swift Step-Over 3",
   "model_configuration": "complete",
   "type": "bike",
@@ -72,8 +72,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 150
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -132,7 +131,9 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 1008,
+      "battery": {
+        "capacity": 1008
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -150,6 +151,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

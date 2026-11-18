@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ridstar/2026/q30luxe_lite_1500w",
   "manufacturer": "Ridstar",
-  "vehicle_model_group": "Q30",
+  "model_group": "Q30",
   "model": "Q30Luxe Lite 1500W",
   "model_configuration": "complete",
   "type": "bike",
@@ -24,8 +24,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -63,8 +62,11 @@
   ],
   "motors": [
     {
-      "battery_size": 749,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 749,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 1500,
       "operating_modes": [
         {
@@ -84,6 +86,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2024/one_trike_2_0",
   "manufacturer": "Eunorau",
   "model": "ONE-Trike 2.0",
@@ -69,8 +69,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 200
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -113,8 +112,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "Yes",
-      "battery_size": 696,
+      "battery": {
+        "capacity": 696
+      },
       "rated_power": 500,
       "max_torque": 80,
       "operating_modes": [
@@ -136,6 +136,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [
@@ -204,10 +210,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "48V / 500W Rear-Drive Motor with 80 N.m Torque"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V / 20A"
     },
     {
       "type": "e_vehicle_remote",
@@ -287,6 +289,11 @@
         "width": 66.04,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V / 20A"
     },
     {
       "type": "unknown",

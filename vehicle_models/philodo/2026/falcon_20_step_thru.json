@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/philodo/2026/falcon_20_step_thru",
   "manufacturer": "Philodo",
-  "vehicle_model_group": "Falcon",
+  "model_group": "Falcon",
   "model": "Falcon 20 Step-Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -46,8 +46,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 204
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -87,9 +86,11 @@
     {
       "drive_wheel": "front",
       "water_rating": "IPX6",
-      "battery_size": 1920,
-      "battery_info": "LG cells",
-      "charging_time": 720,
+      "battery": {
+        "capacity": 1920,
+        "cells": "LG",
+        "charging_time": 720
+      },
       "rated_power": 2000,
       "peak_power": 2500,
       "max_torque": 105,
@@ -115,9 +116,11 @@
     {
       "drive_wheel": "rear",
       "water_rating": "IPX6",
-      "battery_size": 1920,
-      "battery_info": "LG cells",
-      "charging_time": 720,
+      "battery": {
+        "capacity": 1920,
+        "cells": "LG",
+        "charging_time": 720
+      },
       "rated_power": 2000,
       "peak_power": 2500,
       "max_torque": 105,
@@ -139,6 +142,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [
@@ -206,6 +215,10 @@
       "description": "Color multifunctional Display"
     },
     {
+      "type": "fender",
+      "description": "fenders"
+    },
+    {
       "type": "fork",
       "type_detail": "Aluminum alloy front fork with lock",
       "position": [
@@ -217,6 +230,15 @@
       "type": "handlebar",
       "type_detail": "Freestyle BMX Handlebar",
       "description": "Freestyle BMX Handlebar"
+    },
+    {
+      "type": "included_not_installed",
+      "type_detail": "Tools",
+      "description": "assembly toolset"
+    },
+    {
+      "type": "kickstand",
+      "description": "kickstand"
     },
     {
       "type": "lights",
@@ -234,12 +256,18 @@
       "description": "Rear light with brake light"
     },
     {
-      "type": "rack",
-      "type_detail": "Heavy Duty Rear Rack",
+      "type": "mirror",
       "position": [
         "rear"
       ],
-      "description": "Heavy Duty Rear Rack"
+      "description": "rear mirrors"
+    },
+    {
+      "type": "rack",
+      "position": [
+        "rear"
+      ],
+      "description": "rear rack"
     },
     {
       "type": "saddle",
@@ -264,11 +292,6 @@
         "width": 101.6,
         "diameter": 406
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Package Included",
-      "description": "Battery, charger, kickstand, fenders, rear rack, rear mirrors, assembly toolset, user manual"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/decathlon/2026/rockrider_e_expl_500",
   "manufacturer": "Decathlon",
-  "vehicle_model_group": "Rockrider E-EXPL",
+  "model_group": "Rockrider E-EXPL",
   "model": "Rockrider E-EXPL 500",
   "model_configuration": "complete",
   "type": "bike",
@@ -48,8 +48,7 @@
       }
     ],
     "headset": "ZS44/28.6",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 110
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -107,8 +106,10 @@
   ],
   "motors": [
     {
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "max_torque": 55,
       "operating_modes": [
         {
@@ -120,6 +121,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
     }
   ],
   "sizes": [

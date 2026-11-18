@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hiboy/2026/u2",
   "manufacturer": "Hiboy",
-  "vehicle_model_group": "U2",
+  "model_group": "U2",
   "model": "U2",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -98,10 +98,14 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 374,
-      "charging_time": 390,
+      "battery": {
+        "capacity": 374,
+        "charging_time": 390
+      },
       "rated_power": 422,
       "operating_modes": [
         {
@@ -114,12 +118,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 27.9,
-        "max_weight_rider": 100,
         "rider_age_min": 16,
         "rider_age_max": 60
       }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freesky/2024/swift_horse_ultra_x_6e",
   "manufacturer": "Freesky",
   "model": "Swift Horse Ultra X-6E",
@@ -51,8 +51,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 181
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -94,12 +93,17 @@
     {
       "manufacturer": "Bafang",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX7",
-      "battery_size": 1680,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG Cells",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 1680,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 600
+      },
       "peak_power": 4000,
       "max_torque": 150,
       "operating_modes": [
@@ -123,6 +127,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

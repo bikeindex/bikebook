@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ferla/2021/inspire",
   "manufacturer": "Ferla",
   "model": "Inspire",
@@ -115,8 +115,7 @@
     "2021": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 113
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -155,7 +154,9 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -181,6 +182,12 @@
     "length": 978,
     "width": 724
   },
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2025/copperhead_evo_29",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Copperhead EVO",
+  "model_group": "Copperhead EVO",
   "model": "Copperhead EVO 29",
   "model_configuration": "complete",
   "type": "bike",
@@ -55,8 +55,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 34.9,
-    "gross_weight_rating": 130
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -109,8 +108,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 85,
@@ -124,6 +125,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [

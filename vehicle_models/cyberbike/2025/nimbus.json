@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cyberbike/2025/nimbus",
   "manufacturer": "Cyberbike",
   "model": "Nimbus",
@@ -45,8 +45,7 @@
       {
         "type": "fender"
       }
-    ],
-    "max_weight_total": 140
+    ]
   },
   "suspension": {
     "front": {}
@@ -84,7 +83,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 576,
+      "battery": {
+        "capacity": 576
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -104,6 +105,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 140
     }
   ],
   "sizes": [

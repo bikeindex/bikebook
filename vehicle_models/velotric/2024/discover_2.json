@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velotric/2024/discover_2",
   "manufacturer": "Velotric",
-  "vehicle_model_group": "Discover",
+  "model_group": "Discover",
   "model": "Discover 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -191,11 +191,14 @@
         "type": "fender"
       },
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
       }
     ],
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 200
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -255,11 +258,19 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, ISO 4210, UL 2580, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271",
+        "UL 2580",
+        "ISO 4210"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 706,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 cells, UL 2580 Certified",
+      "battery": {
+        "capacity": 706,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "21700"
+      },
       "rated_power": 750,
       "max_torque": 75,
       "operating_modes": [
@@ -296,6 +307,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

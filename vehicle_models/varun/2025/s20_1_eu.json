@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/varun/2025/s20_1_eu",
   "manufacturer": "Varun",
-  "vehicle_model_group": "S20",
+  "model_group": "S20",
   "model": "S20-1",
   "model_configuration": "complete",
   "markets": [
@@ -58,8 +58,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -94,10 +93,14 @@
   ],
   "motors": [
     {
-      "certification": "EN 15194",
+      "certifications": [
+        "EN 15194"
+      ],
       "water_rating": "IP65",
-      "battery_size": 624,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 300
+      },
       "rated_power": 250,
       "max_torque": 55,
       "operating_modes": [
@@ -111,6 +114,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

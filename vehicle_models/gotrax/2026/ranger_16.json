@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2026/ranger_16",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "Ranger",
+  "model_group": "Ranger",
   "model": "Ranger 16",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,8 +41,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 75
+    "material_detail": "High-Carbon Steel"
   },
   "wheels": [
     {
@@ -66,10 +65,14 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 281,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 281,
+        "charging_time": 360
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -93,6 +96,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 75
+    },
+    {
+      "load": "payload",
+      "weight": 75
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -102,8 +115,7 @@
           "width": 630,
           "height": 1010
         },
-        "total_weight": 25.8,
-        "max_weight_rider": 75
+        "total_weight": 25.8
       }
     }
   ],

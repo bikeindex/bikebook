@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dengfu/2025/e98_e_gravel_professional",
   "manufacturer": "Dengfu",
-  "vehicle_model_group": "E98",
+  "model_group": "E98",
   "model": "E98 E-Gravel Professional",
   "model_configuration": "complete",
   "type": "bike",
@@ -108,9 +108,11 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung cells",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

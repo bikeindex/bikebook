@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lankeleisi/2026/x3000plus_up",
   "manufacturer": "Lankeleisi",
-  "vehicle_model_group": "X3000",
+  "model_group": "X3000",
   "model": "X3000Plus-UP",
   "model_configuration": "complete",
   "type": "bike",
@@ -88,8 +88,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 180
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -136,9 +135,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -162,9 +163,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 13
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 13
+    },
+    {
+      "load": "payload",
+      "weight": 180
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ride1up/2020/core_5_st",
   "manufacturer": "Ride1Up",
-  "vehicle_model_group": "Core-5",
+  "model_group": "Core-5",
   "model": "Core-5 ST",
   "model_configuration": "complete",
   "type": "bike",
@@ -34,7 +34,6 @@
         {
           "name": "Slate Blue",
           "colors": [
-            "silver",
             "blue"
           ],
           "variants": [
@@ -101,9 +100,11 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG Cells",
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 52,

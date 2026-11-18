@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2020/atlas_21_speed",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Atlas",
+  "model_group": "Atlas",
   "model": "Atlas 21-Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -139,12 +139,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "16in - S",
       "geometry": {
         "standover": 749,
-        "max_weight_rider": 113,
         "rider_height_min": 1651,
         "rider_height_max": 1727
       }
@@ -153,7 +158,6 @@
       "name": "19in - M",
       "geometry": {
         "standover": 787,
-        "max_weight_rider": 113,
         "rider_height_min": 1753,
         "rider_height_max": 1803
       }
@@ -162,7 +166,6 @@
       "name": "22in - L",
       "geometry": {
         "standover": 813,
-        "max_weight_rider": 113,
         "rider_height_min": 1829
       }
     }

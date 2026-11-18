@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebkarocy/2026/400w_folding",
   "manufacturer": "Ebkarocy",
-  "vehicle_model_group": "400W Folding",
+  "model_group": "400W Folding",
   "model": "400W Folding",
   "model_configuration": "complete",
   "type": "bike",
@@ -45,8 +45,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "High-Carbon Steel",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -74,9 +73,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 400,
       "operating_modes": [
         {
@@ -89,6 +90,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

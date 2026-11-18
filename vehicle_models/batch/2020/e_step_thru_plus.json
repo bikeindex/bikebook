@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/batch/2020/e_step_thru_plus",
   "manufacturer": "Batch Bicycles",
-  "vehicle_model_group": "E-Step-Thru",
+  "model_group": "E-Step-Thru",
   "model": "E-Step-Thru Plus",
   "model_configuration": "complete",
   "type": "bike",
@@ -98,8 +98,10 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,

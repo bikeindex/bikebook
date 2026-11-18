@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eskute/2026/m200f",
   "manufacturer": "Eskute",
-  "vehicle_model_group": "M200",
+  "model_group": "M200",
   "model": "M200F",
   "model_configuration": "complete",
   "type": "bike",
@@ -165,8 +165,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 159
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -205,8 +204,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 998,
-      "charging_time": 510,
+      "battery": {
+        "capacity": 998,
+        "charging_time": 510
+      },
       "peak_power": 1500,
       "operating_modes": [
         {
@@ -229,9 +230,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.43
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.43
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

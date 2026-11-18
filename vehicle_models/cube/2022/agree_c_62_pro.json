@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2022/agree_c_62_pro",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Agree",
+  "model_group": "Agree",
   "model": "Agree C:62 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -36,9 +36,7 @@
     "bottom_bracket": {
       "shell": "press fit",
       "spindle": "DUB"
-    },
-    "max_weight_total": 105,
-    "gross_weight_rating": 115
+    }
   },
   "wheels": [
     {
@@ -86,6 +84,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 105
+    },
+    {
+      "load": "gross",
+      "weight": 115
     }
   ],
   "sizes": [

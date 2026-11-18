@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/greenworks/2023/48v_stealth_scooter",
   "manufacturer": "Greenworks",
-  "vehicle_model_group": "STEALTH",
+  "model_group": "STEALTH",
   "model": "48V STEALTH Scooter",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -58,11 +58,13 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 384,
-      "battery_options": [
-        192
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 384,
+        "capacity_options": [
+          192
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -74,12 +76,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 17.4,
-        "max_weight_rider": 120
+        "total_weight": 17.4
       }
     }
   ],

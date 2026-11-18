@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2026/copperhead_3",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Copperhead",
+  "model_group": "Copperhead",
   "model": "Copperhead 3",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,9 +54,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 111,
-    "gross_weight_rating": 125
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -99,6 +97,16 @@
         "rear"
       ],
       "rotor_diameter": 180
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 111
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/droyd/2024/fury",
   "manufacturer": "Droyd",
   "model": "Fury",
@@ -70,8 +70,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 65
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -108,10 +107,17 @@
   ],
   "motors": [
     {
-      "certification": "ANSI/SVIA 1-2017, EN IEC 55014-1:2021, UL2272, UN38.3",
-      "battery_size": 288,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "certifications": [
+        "UL 2272",
+        "EN 55014-1",
+        "UN 38.3",
+        "ANSI/SVIA 1"
+      ],
+      "battery": {
+        "capacity": 288,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -124,6 +130,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 65
     }
   ],
   "sizes": [

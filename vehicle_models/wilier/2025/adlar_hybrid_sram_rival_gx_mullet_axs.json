@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wilier/2025/adlar_hybrid_sram_rival_gx_mullet_axs",
   "manufacturer": "Wilier",
-  "vehicle_model_group": "Adlar Hybrid",
+  "model_group": "Adlar Hybrid",
   "model": "Adlar Hybrid SRAM RIVAL/GX Mullet AXS",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,6 +41,10 @@
   },
   "frame": {
     "material": "carbon",
+    "bottom_bracket": {
+      "spindle": "ISIS",
+      "spindle_length": 135
+    },
     "seatpost_diameter": 27.2
   },
   "wheels": [
@@ -85,9 +89,17 @@
   ],
   "motors": [
     {
+      "id": "c/tq/2022/hpr50",
       "drive_wheel": "rear",
+      "manufacturer": "TQ",
+      "model": "HPR50",
       "kind": "mid_drive",
-      "battery_size": 359,
+      "spindle": "ISIS",
+      "spindle_length": 135,
+      "battery": {
+        "capacity": 359
+      },
+      "peak_power": 300,
       "max_torque": 50,
       "operating_modes": [
         {
@@ -294,11 +306,6 @@
         "width": 47,
         "diameter": 622
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Electric system",
-      "description": "TQ-HPR50"
     },
     {
       "type": "wheel",

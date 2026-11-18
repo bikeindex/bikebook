@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lectric/2021/xp_step_thru_2_0",
   "manufacturer": "Lectric eBikes",
   "model": "XP Step-Thru 2.0",
@@ -64,8 +64,7 @@
   "frame": {
     "material": "aluminum",
     "top_tube": "step_through",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -99,8 +98,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 461,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 461,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 800,
       "operating_modes": [
@@ -121,6 +122,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
+    },
+    {
+      "load": "rear_rack",
+      "weight": 34.02
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -135,10 +146,7 @@
           "width": 457,
           "height": 686
         },
-        "total_weight": 28.58,
-        "extra_measurements": {
-          "rear_rack_capacity_kg": 34.02
-        }
+        "total_weight": 28.58
       }
     }
   ],

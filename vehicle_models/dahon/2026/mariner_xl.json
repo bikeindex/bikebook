@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dahon/2026/mariner_xl",
   "manufacturer": "Dahon",
-  "vehicle_model_group": "Mariner",
+  "model_group": "Mariner",
   "model": "Mariner XL",
   "model_configuration": "complete",
   "type": "bike",
@@ -76,7 +76,7 @@
   "frame": {
     "material": "aluminum",
     "folding": "half_fold",
-    "max_weight_total": 150
+    "seatpost_diameter": 33.9
   },
   "wheels": [
     {
@@ -113,6 +113,12 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -217,7 +223,10 @@
     {
       "type": "seatpost",
       "manufacturer": "Dahon",
-      "description": "Dahon Aluminum, 33.9mm"
+      "description": "Dahon Aluminum, 33.9mm",
+      "dimensions": {
+        "diameter": 33.9
+      }
     },
     {
       "type": "shifter",

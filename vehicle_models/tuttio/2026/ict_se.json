@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tuttio/2026/ict_se",
   "manufacturer": "Tuttio",
-  "vehicle_model_group": "ICT",
+  "model_group": "ICT",
   "model": "ICT SE",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,8 +40,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 150
+    "material_detail": "6061 Aluminum"
   },
   "wheels": [
     {
@@ -55,10 +54,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 1500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "max_torque": 220,
       "operating_modes": [
@@ -81,6 +84,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

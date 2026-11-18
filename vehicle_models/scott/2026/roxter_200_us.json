@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2026/roxter_200_us",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Roxter",
+  "model_group": "Roxter",
   "model": "Roxter 200",
   "model_configuration": "complete",
   "markets": [
@@ -69,9 +69,7 @@
       "shell": "BSA",
       "width": 68,
       "spindle": "square taper"
-    },
-    "max_weight_total": 40,
-    "gross_weight_rating": 50
+    }
   },
   "suspension": {
     "front": {
@@ -124,6 +122,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 40
+    },
+    {
+      "load": "gross",
+      "weight": 50
     }
   ],
   "sizes": [

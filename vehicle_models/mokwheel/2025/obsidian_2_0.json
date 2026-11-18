@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mokwheel/2025/obsidian_2_0",
   "manufacturer": "Mokwheel",
-  "vehicle_model_group": "Obsidian",
+  "model_group": "Obsidian",
   "model": "Obsidian 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -71,8 +71,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 254
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -121,7 +120,9 @@
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX6",
-      "battery_size": 941,
+      "battery": {
+        "capacity": 941
+      },
       "rated_power": 750,
       "peak_power": 1300,
       "max_torque": 105,
@@ -146,6 +147,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 254
     }
   ],
   "sizes": [

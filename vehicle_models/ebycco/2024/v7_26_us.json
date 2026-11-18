@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebycco/2024/v7_26_us",
   "manufacturer": "Ebycco",
-  "vehicle_model_group": "V7",
+  "model_group": "V7",
   "model": "V7 26",
   "model_configuration": "complete",
   "markets": [
@@ -42,8 +42,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -76,10 +75,15 @@
   ],
   "motors": [
     {
-      "certification": "UL 2271, UL 2849",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 1664,
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1664,
+        "charging_time": 540
+      },
       "peak_power": 3000,
       "max_torque": 95,
       "operating_modes": [
@@ -100,6 +104,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -156,10 +166,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "52V"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LCD color display, Waterproof"
     },
     {
@@ -196,6 +202,11 @@
       "type": "unknown",
       "type_detail": "Riding Modes",
       "description": "Throttle /5-Level Pedal Assist /Cruising/Walking Assist/Manual"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "52V"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vivi/2026/fam01",
   "manufacturer": "Vivi",
   "model": "FAM01",
@@ -82,8 +82,7 @@
     "material_detail": "High-Carbon Steel",
     "top_tube": "step_through",
     "seatpost_diameter": 30.4,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 250
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -133,11 +132,16 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 864,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 864,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "max_torque": 80,
@@ -162,6 +166,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 250
     }
   ],
   "sizes": [

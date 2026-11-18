@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eg/2025/athens_350md",
   "manufacturer": "EG Bikes",
-  "vehicle_model_group": "Athens",
+  "model_group": "Athens",
   "model": "Athens 350MD",
   "model_configuration": "complete",
   "type": "bike",
@@ -84,9 +84,11 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 374,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG Cell",
+      "battery": {
+        "capacity": 374,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 350,
       "operating_modes": [
         {

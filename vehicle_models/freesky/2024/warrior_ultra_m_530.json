@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freesky/2024/warrior_ultra_m_530",
   "manufacturer": "Freesky",
   "model": "Warrior Ultra M-530",
@@ -55,8 +55,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 181
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -96,12 +95,16 @@
     {
       "drive_wheel": "front",
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX7",
-      "battery_size": 1800,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG Cell",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 1800,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 600
+      },
       "peak_power": 3000,
       "max_torque": 130,
       "operating_modes": [
@@ -129,12 +132,16 @@
     {
       "drive_wheel": "rear",
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX7",
-      "battery_size": 1800,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG Cell",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 1800,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 600
+      },
       "peak_power": 3000,
       "max_torque": 130,
       "operating_modes": [
@@ -158,6 +165,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

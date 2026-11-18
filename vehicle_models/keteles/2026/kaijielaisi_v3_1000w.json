@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/keteles/2026/kaijielaisi_v3_1000w",
   "manufacturer": "Keteles",
-  "vehicle_model_group": "Kaijielaisi V3",
+  "model_group": "Kaijielaisi V3",
   "model": "Kaijielaisi V3 1000W",
   "model_configuration": "complete",
   "type": "bike",
@@ -91,8 +91,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "operating_modes": [
         {

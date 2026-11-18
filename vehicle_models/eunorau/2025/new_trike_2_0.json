@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2025/new_trike_2_0",
   "manufacturer": "Eunorau",
   "model": "New-Trike 2.0",
@@ -77,8 +77,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 200
+    ]
   },
   "wheels": [
     {
@@ -120,11 +119,12 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "Yes",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "max_torque": 80,
       "operating_modes": [
@@ -147,6 +147,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

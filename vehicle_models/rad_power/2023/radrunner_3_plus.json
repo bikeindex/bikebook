@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rad_power/2023/radrunner_3_plus",
   "manufacturer": "Rad Power Bikes",
-  "vehicle_model_group": "RadRunner",
+  "model_group": "RadRunner",
   "model": "RadRunner 3 Plus",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -118,8 +118,7 @@
       "spindle_length": 159
     },
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 159
+    "seatpost_clamp_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -178,9 +177,14 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "max_torque": 64,
       "operating_modes": [
@@ -201,9 +205,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

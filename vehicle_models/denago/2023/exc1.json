@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/denago/2023/exc1",
   "manufacturer": "Denago",
-  "vehicle_model_group": "eXC",
+  "model_group": "eXC",
   "model": "eXC1",
   "model_configuration": "complete",
   "type": "bike",
@@ -98,8 +98,10 @@
       "model": "M410",
       "kind": "mid_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 499,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 499,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 80,
       "operating_modes": [
@@ -114,6 +116,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
     }
   ],
   "sizes": [
@@ -138,8 +146,7 @@
         "stem_length": 50,
         "crank_length": 170,
         "seat_height_min": 805,
-        "seat_height_max": 990,
-        "max_weight_rider": 136
+        "seat_height_max": 990
       }
     },
     {
@@ -164,8 +171,7 @@
         "crank_length": 170,
         "seat_height_min": 805,
         "seat_height_max": 990,
-        "total_weight": 25.4,
-        "max_weight_rider": 136
+        "total_weight": 25.4
       }
     },
     {
@@ -189,8 +195,7 @@
         "stem_length": 50,
         "crank_length": 170,
         "seat_height_min": 805,
-        "seat_height_max": 990,
-        "max_weight_rider": 136
+        "seat_height_max": 990
       }
     }
   ],

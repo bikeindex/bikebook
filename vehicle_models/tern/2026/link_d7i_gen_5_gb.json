@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tern/2026/link_d7i_gen_5_gb",
   "manufacturer": "Tern",
-  "vehicle_model_group": "Link",
+  "model_group": "Link",
   "model": "Link D7i Gen 5",
   "model_configuration": "complete",
   "markets": [
@@ -44,8 +44,7 @@
         "type": "accessory",
         "description": "Luggage Socket"
       }
-    ],
-    "gross_weight_rating": 120
+    ]
   },
   "wheels": [
     {
@@ -87,9 +86,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 105
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -99,7 +109,6 @@
           "width": 380,
           "height": 720
         },
-        "max_weight_rider": 105,
         "rider_height_min": 1420,
         "rider_height_max": 1900,
         "extra_measurements": {

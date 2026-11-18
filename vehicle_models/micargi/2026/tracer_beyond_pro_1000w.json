@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/micargi/2026/tracer_beyond_pro_1000w",
   "manufacturer": "Micargi",
   "model": "Tracer Beyond Pro 1000W",
@@ -119,9 +119,11 @@
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 800,
       "operating_modes": [
         {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2019/roscoe_24",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Roscoe",
+  "model_group": "Roscoe",
   "model": "Roscoe 24",
   "model_configuration": "complete",
   "type": "bike",
@@ -87,9 +87,7 @@
     "material": "aluminum",
     "material_detail": "Alpha Aluminum",
     "headset": "ZS44/28.6 | ZS44/30",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 65,
-    "gross_weight_rating": 77
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -135,6 +133,16 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 65
+    },
+    {
+      "load": "gross",
+      "weight": 77
     }
   ],
   "sizes": [

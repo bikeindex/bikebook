@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/actbest/2026/triker",
   "manufacturer": "Actbest",
-  "vehicle_model_group": "Triker",
+  "model_group": "Triker",
   "model": "Triker",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -124,8 +124,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 181
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -153,8 +152,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 499,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 499,
+        "charging_time": 360
+      },
       "peak_power": 1200,
       "operating_modes": [
         {
@@ -180,9 +181,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.43
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.43
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

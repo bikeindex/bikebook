@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/quietkat/2023/jeep_rubicon",
   "manufacturer": "QuietKat",
   "model": "Jeep Rubicon",
@@ -22,8 +22,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "cable_routing": "internal",
-    "max_weight_total": 136
+    "cable_routing": "internal"
   },
   "suspension": {
     "front": {
@@ -70,7 +69,9 @@
       "manufacturer": "Bafang",
       "model": "Ultra",
       "kind": "mid_drive",
-      "battery_size": 1008,
+      "battery": {
+        "capacity": 1008
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "max_torque": 160,
@@ -84,6 +85,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

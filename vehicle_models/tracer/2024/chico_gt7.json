@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tracer/2024/chico_gt7",
   "manufacturer": "Tracer",
   "model": "Chico GT7",
@@ -51,13 +51,16 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 159
+    "material": "steel"
   },
   "motors": [
     {
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "sensor_speed": "spoke_magnet",
+      "sensor_torque": "bottom_bracket_spindle",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -70,6 +73,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

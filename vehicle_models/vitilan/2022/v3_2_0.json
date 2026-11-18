@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vitilan/2022/v3_2_0",
   "manufacturer": "Vitilan",
   "model": "V3 2.0",
@@ -83,8 +83,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -118,9 +117,11 @@
   ],
   "motors": [
     {
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 80,
@@ -145,6 +146,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -208,10 +215,6 @@
       "description": "750W (Peak 1200w)"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "48V / 25A"
-    },
-    {
       "type": "fork",
       "position": [
         "front"
@@ -270,6 +273,11 @@
         "width": 101.6,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V / 25A"
     },
     {
       "type": "unknown",

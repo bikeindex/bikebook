@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/coswheel/2025/r19",
   "manufacturer": "Coswheel",
   "model": "R19",
@@ -25,8 +25,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061-T6 Aluminum",
-    "max_weight_total": 200
+    "material_detail": "6061-T6 Aluminum"
   },
   "suspension": {
     "front": {
@@ -80,9 +79,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 2880,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 2880,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "peak_power": 9000,
       "max_torque": 240,
       "operating_modes": [
@@ -106,6 +107,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [
@@ -174,10 +181,6 @@
       "description": "4.58\" HD Full-Color Horizontal Screen"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "72V 90A"
-    },
-    {
       "type": "fork",
       "type_detail": "Front Suspension",
       "position": [
@@ -240,6 +243,11 @@
       "dimensions": {
         "diameter": 483
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "72V 90A"
     },
     {
       "type": "unknown",

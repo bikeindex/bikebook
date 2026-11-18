@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/c_inverter/2024/aries",
   "manufacturer": "C Inverter",
   "model": "Aries",
@@ -84,8 +84,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -114,7 +113,9 @@
   ],
   "motors": [
     {
-      "battery_size": 557,
+      "battery": {
+        "capacity": 557
+      },
       "rated_power": 500,
       "peak_power": 1000,
       "operating_modes": [
@@ -135,6 +136,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

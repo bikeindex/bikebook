@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/asomtom/2023/mammoth",
   "manufacturer": "Asomtom",
   "model": "Mammoth",
@@ -49,8 +49,7 @@
   },
   "frame": {
     "material": "steel",
-    "top_tube": "step_through",
-    "max_weight_total": 227
+    "top_tube": "step_through"
   },
   "wheels": [
     {
@@ -83,7 +82,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 1440,
+      "battery": {
+        "capacity": 1440
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "operating_modes": [
@@ -102,6 +103,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [

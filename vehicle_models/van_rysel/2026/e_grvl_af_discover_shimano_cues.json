@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/van_rysel/2026/e_grvl_af_discover_shimano_cues",
   "manufacturer": "Van Rysel",
-  "vehicle_model_group": "E-GRVL",
+  "model_group": "E-GRVL",
   "model": "E-GRVL AF DISCOVER Shimano Cues",
   "model_configuration": "complete",
   "type": "bike",
@@ -46,9 +46,7 @@
       }
     ],
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 120,
-    "gross_weight_rating": 120
+    "seatpost_clamp_diameter": 31.8
   },
   "wheels": [
     {
@@ -111,9 +109,11 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX4",
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
-      "battery_info": "36 V, 10 Ah",
+      "battery": {
+        "capacity": 360,
+        "voltage": 36,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 35,
       "operating_modes": [
@@ -126,6 +126,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

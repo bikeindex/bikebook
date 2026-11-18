@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/contessa_active_50",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Active",
+  "model_group": "Active",
   "model": "Contessa Active 50",
   "model_configuration": "complete",
   "type": "bike",
@@ -32,7 +32,8 @@
           "stock_photo": "https://bikebook.bikeindex.org/scott/2021/contessa_active_50.jpg",
           "variants": [
             {
-              "sku": "280687"
+              "sku": "280687",
+              "gtin": "7615523130566"
             },
             {
               "sku": "280687266",
@@ -70,9 +71,7 @@
       "width": 73,
       "spindle": "square taper"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 113,
-    "gross_weight_rating": 128
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -132,6 +131,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
+    },
+    {
+      "load": "gross",
+      "weight": 128
     }
   ],
   "sizes": [

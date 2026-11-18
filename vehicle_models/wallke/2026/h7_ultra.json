@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wallke/2026/h7_ultra",
   "manufacturer": "Wallke",
-  "vehicle_model_group": "H7",
+  "model_group": "H7",
   "model": "H7 Ultra",
   "model_configuration": "complete",
   "type": "bike",
@@ -87,8 +87,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 181
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -142,10 +141,14 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UN38.3 / MSDS / UL",
-      "battery_size": 2640,
-      "battery_chemistry": "li-ion",
-      "charging_time": 600,
+      "certifications": [
+        "UN 38.3"
+      ],
+      "battery": {
+        "capacity": 2640,
+        "chemistry": "li-ion",
+        "charging_time": 600
+      },
       "rated_power": 2000,
       "peak_power": 4000,
       "max_torque": 105,
@@ -169,6 +172,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/syndyt/2023/syr_200",
   "manufacturer": "Syndyt",
-  "vehicle_model_group": "SYR",
+  "model_group": "SYR",
   "model": "SYR 200",
   "model_configuration": "complete",
   "type": "balance_bike",
@@ -51,7 +51,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 500,
       "operating_modes": [
         {

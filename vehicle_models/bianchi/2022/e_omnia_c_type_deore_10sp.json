@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bianchi/2022/e_omnia_c_type_deore_10sp",
   "manufacturer": "Bianchi",
-  "vehicle_model_group": "E-Omnia",
+  "model_group": "E-Omnia",
   "model": "e-Omnia C Type DEORE 10SP",
   "model_configuration": "complete",
   "type": "bike",
@@ -98,8 +98,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

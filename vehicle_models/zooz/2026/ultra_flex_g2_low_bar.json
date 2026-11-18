@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/zooz/2026/ultra_flex_g2_low_bar",
   "manufacturer": "Zooz",
   "model": "Ultra Flex G2 Low Bar",
@@ -66,8 +66,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "4130 Chromoly Steel",
-    "max_weight_total": 159
+    "material_detail": "4130 Chromoly Steel"
   },
   "suspension": {
     "front": {},
@@ -102,10 +101,13 @@
       "manufacturer": "Zooz",
       "model": "Thrillmatic",
       "sensor_cadence": true,
-      "battery_size": 1300,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 1300,
+        "voltage": 52,
+        "chemistry": "li-ion",
+        "cells": "21700",
+        "charging_time": 300
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -126,6 +128,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

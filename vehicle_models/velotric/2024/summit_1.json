@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velotric/2024/summit_1",
   "manufacturer": "Velotric",
-  "vehicle_model_group": "Summit",
+  "model_group": "Summit",
   "model": "Summit 1",
   "model_configuration": "complete",
   "type": "bike",
@@ -157,8 +157,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 200
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -217,11 +216,19 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, ISO 4210, UL 2580, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271",
+        "UL 2580",
+        "ISO 4210"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 706,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung/LG 21700 cell, UL 2580 Certified",
+      "battery": {
+        "capacity": 706,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "Samsung/LG 21700"
+      },
       "rated_power": 750,
       "peak_power": 1300,
       "max_torque": 90,
@@ -259,6 +266,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

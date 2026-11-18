@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/firmstrong/2014/urban_lrd_single_speed",
   "manufacturer": "Firmstrong",
-  "vehicle_model_group": "Urban",
+  "model_group": "Urban",
   "model": "Urban LRD Single Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -83,12 +83,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "17\"",
       "geometry": {
         "total_weight": 20.4,
-        "max_weight_rider": 136,
         "rider_height_min": 1626,
         "rider_height_max": 1930
       }

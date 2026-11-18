@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2026/let_s_roll",
   "manufacturer": "Reid",
-  "vehicle_model_group": "Let's Roll",
+  "model_group": "Let's Roll",
   "model": "Let's Roll",
   "model_configuration": "complete",
   "markets": [
@@ -51,8 +51,7 @@
       "spindle": "square taper"
     },
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 110
+    "seatpost_clamp_diameter": 31.8
   },
   "wheels": [
     {
@@ -104,9 +103,13 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "IEC62133",
-      "battery_size": 374,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "IEC 62133"
+      ],
+      "battery": {
+        "capacity": 374,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 350,
       "max_torque": 42,
@@ -123,9 +126,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 110
+    }
+  ],
   "sizes": [
     {
       "name": "S/M - 43cm",

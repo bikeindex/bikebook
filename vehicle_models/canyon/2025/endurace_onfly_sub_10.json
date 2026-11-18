@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/canyon/2025/endurace_onfly_sub_10",
   "manufacturer": "Canyon bicycles",
-  "vehicle_model_group": "Endurace:ONfly",
+  "model_group": "Endurace:ONfly",
   "model": "Endurace:ONfly SUB-10",
   "model_configuration": "complete",
   "markets": [
@@ -116,8 +116,10 @@
       "manufacturer": "TQ",
       "model": "HPR40",
       "kind": "mid_drive",
-      "battery_size": 292,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 292,
+        "chemistry": "li-ion"
+      },
       "peak_power": 200,
       "max_torque": 40,
       "operating_modes": [

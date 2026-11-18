@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/myroon_prime",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Myroon",
+  "model_group": "Myroon",
   "model": "Myroon Prime",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,9 +40,7 @@
   },
   "frame": {
     "material": "carbon",
-    "cable_routing": "stealth",
-    "max_weight_total": 100,
-    "gross_weight_rating": 110
+    "cable_routing": "stealth"
   },
   "suspension": {
     "front": {
@@ -96,6 +94,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 110
     }
   ],
   "sizes": [

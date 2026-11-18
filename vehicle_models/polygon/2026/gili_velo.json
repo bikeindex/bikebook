@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/polygon/2026/gili_velo",
   "manufacturer": "Polygon",
-  "vehicle_model_group": "Gili",
+  "model_group": "Gili",
   "model": "Gili Velo",
   "model_configuration": "complete",
   "type": "bike",
@@ -132,9 +132,11 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "battery_size": 252,
-      "battery_chemistry": "li-ion",
-      "battery_info": "SAMSUNG CELL",
+      "battery": {
+        "capacity": 252,
+        "chemistry": "li-ion",
+        "cells": "SAMSUNG"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

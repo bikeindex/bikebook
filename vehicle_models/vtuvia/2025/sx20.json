@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vtuvia/2025/sx20",
   "manufacturer": "Vtuvia",
   "model": "SX20",
@@ -70,8 +70,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {}
@@ -116,9 +115,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 85,
@@ -145,6 +146,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -165,7 +172,6 @@
           "height": 720
         },
         "total_weight": 31.8,
-        "max_weight_rider": 150,
         "rider_height_min": 1524,
         "rider_height_max": 1880,
         "extra_measurements": {
@@ -225,10 +231,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "48V 750W (PEAK 1200W) Rear Brushless Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V 25A"
     },
     {
       "type": "e_vehicle_remote",
@@ -308,6 +310,11 @@
       "type": "unknown",
       "type_detail": "Recommend rider inseam",
       "description": "26\" – 34\""
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V 25A"
     }
   ]
 }

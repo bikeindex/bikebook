@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hiboy/2022/dk1",
   "manufacturer": "Hiboy",
   "model": "DK1",
@@ -87,8 +87,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 64
+    "material": "steel"
   },
   "wheels": [
     {
@@ -111,9 +110,11 @@
   "motors": [
     {
       "water_rating": "IPX4",
-      "battery_size": 187,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 187,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 300,
       "operating_modes": [
         {
@@ -127,6 +128,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 64
     }
   ],
   "sizes": [

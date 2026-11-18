@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/postjoy/2026/gt30",
   "manufacturer": "PostJoy",
   "model": "GT30",
@@ -24,8 +24,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 166
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {},
@@ -58,8 +57,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 960,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 960,
+        "charging_time": 480
+      },
       "peak_power": 1500,
       "max_torque": 50,
       "operating_modes": [
@@ -82,6 +83,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 166
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -93,8 +100,7 @@
           "length": 1753,
           "height": 1250
         },
-        "total_weight": 37,
-        "max_weight_rider": 166
+        "total_weight": 37
       }
     }
   ],

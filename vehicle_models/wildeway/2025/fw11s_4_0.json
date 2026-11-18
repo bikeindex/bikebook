@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wildeway/2025/fw11s_4_0",
   "manufacturer": "Wildeway",
-  "vehicle_model_group": "FW11",
+  "model_group": "FW11",
   "model": "FW11S 4.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -65,8 +65,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "folding": "half_fold",
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 150
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {
@@ -122,7 +121,9 @@
   "motors": [
     {
       "sensor_speed": "spoke_magnet",
-      "battery_size": 1536,
+      "battery": {
+        "capacity": 1536
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "operating_modes": [
@@ -146,6 +147,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -159,7 +170,6 @@
           "height": 1313
         },
         "total_weight": 34.9,
-        "max_weight_rider": 150,
         "rider_height_min": 1626,
         "rider_height_max": 1930,
         "extra_measurements": {

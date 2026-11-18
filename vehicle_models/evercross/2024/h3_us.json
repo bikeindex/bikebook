@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2024/h3_us",
   "manufacturer": "Evercross",
   "model": "H3",
@@ -56,8 +56,10 @@
   ],
   "motors": [
     {
-      "battery_size": 499,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 499,
+        "charging_time": 480
+      },
       "rated_power": 800,
       "operating_modes": [
         {
@@ -70,12 +72,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 24.7,
-        "max_weight_rider": 150
+        "total_weight": 24.7
       }
     }
   ],

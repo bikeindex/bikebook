@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2025/tesoro_3_plus_eu",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Tesoro",
+  "model_group": "Tesoro",
   "model": "Tesoro 3+",
   "model_configuration": "complete",
   "markets": [
@@ -57,6 +57,15 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "SmartForm C2 Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
+      }
+    ],
     "cable_routing": "internal",
     "headset": "ZS44/28.6 | ZS56/40"
   },
@@ -121,8 +130,10 @@
       "model": "BDU336Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -138,9 +149,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    }
+  ],
   "sizes": [
     {
       "name": "SM",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/blix/2026/vika_x",
   "manufacturer": "Blix",
   "model": "Vika X",
@@ -51,8 +51,16 @@
   "frame": {
     "material": "aluminum",
     "folding": "half_fold",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 142
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -87,7 +95,9 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 614,
+      "battery": {
+        "capacity": 614
+      },
       "rated_power": 500,
       "max_torque": 55,
       "operating_modes": [
@@ -119,9 +129,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27.22
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 122
+    },
+    {
+      "load": "cargo",
+      "weight": 27.22
+    },
+    {
+      "load": "payload",
+      "weight": 142
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -141,7 +162,6 @@
           "height": 737
         },
         "total_weight": 24.9,
-        "max_weight_rider": 122,
         "rider_height_min": 1473,
         "rider_height_max": 1880,
         "extra_measurements": {

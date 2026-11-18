@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hikeep/2026/26f",
   "manufacturer": "Hikeep",
   "model": "26F",
@@ -43,8 +43,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 249
+    ]
   },
   "suspension": {
     "front": {},
@@ -76,11 +75,17 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2580, UL 2271",
+      "certifications": [
+        "UL 2271",
+        "UL 2580"
+      ],
       "water_rating": "IPX65",
-      "battery_size": 1200,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG Cell",
+      "battery": {
+        "capacity": 1200,
+        "voltage": 48.0,
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
       "rated_power": 2000,
       "peak_power": 3000,
       "max_torque": 220,
@@ -107,9 +112,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 50
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 50
+    },
+    {
+      "load": "payload",
+      "weight": 249
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

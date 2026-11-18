@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/next/2014/surge",
   "manufacturer": "Next",
   "model": "Surge",
@@ -32,6 +32,30 @@
               "size": "One Size"
             }
           ]
+        },
+        {
+          "name": "Blue",
+          "colors": [
+            "blue"
+          ],
+          "variants": [
+            {
+              "gtin": "087876091578",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Red",
+          "colors": [
+            "red"
+          ],
+          "variants": [
+            {
+              "gtin": "087876094395",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://www.walmart.com/ip/38021789",
@@ -40,8 +64,7 @@
     "2014": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 41
+    "material": "steel"
   },
   "wheels": [
     {
@@ -49,7 +72,8 @@
       "position": [
         "front",
         "rear"
-      ]
+      ],
+      "tire_width": 50
     }
   ],
   "drivetrain": [
@@ -70,11 +94,19 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 41
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 14.7
+        "total_weight": 14.7,
+        "rider_age_min": 6,
+        "rider_age_max": 9
       }
     }
   ],
@@ -108,11 +140,6 @@
     {
       "type": "training_wheels",
       "description": "Training wheels"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Frame size field",
-      "description": "18\", 18\" (Age 6 - 9)"
     },
     {
       "type": "unknown",

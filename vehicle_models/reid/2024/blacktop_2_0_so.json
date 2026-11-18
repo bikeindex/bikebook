@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2024/blacktop_2_0_so",
   "manufacturer": "Reid",
-  "vehicle_model_group": "Blacktop",
+  "model_group": "Blacktop",
   "model": "Blacktop 2.0 SO",
   "model_configuration": "complete",
   "type": "bike",
@@ -21,7 +21,6 @@
         {
           "name": "Slate Blue",
           "colors": [
-            "silver",
             "blue"
           ],
           "stock_photo": "https://bikebook.bikeindex.org/reid/2024/blacktop_2_0_so.png",
@@ -62,8 +61,7 @@
     ],
     "cable_routing": "internal",
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 137
+    "seatpost_clamp_diameter": 34.9
   },
   "wheels": [
     {
@@ -110,8 +108,12 @@
       "manufacturer": "Ananda",
       "model": "M81",
       "kind": "mid_drive",
-      "certification": "IEC62133",
-      "battery_size": 643,
+      "certifications": [
+        "IEC 62133"
+      ],
+      "battery": {
+        "capacity": 643
+      },
       "rated_power": 350,
       "max_torque": 100,
       "operating_modes": [
@@ -129,9 +131,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 27
+    },
+    {
+      "load": "payload",
+      "weight": 137
+    }
+  ],
   "sizes": [
     {
       "name": "S - 42cm",

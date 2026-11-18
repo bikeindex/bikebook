@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/life_space",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Life",
+  "model_group": "Life",
   "model": "Life Space",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,9 +41,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 100,
-    "gross_weight_rating": 118
+    "material_detail": "6061 Aluminum"
   },
   "wheels": [
     {
@@ -82,6 +80,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 118
     }
   ],
   "sizes": [

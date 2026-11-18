@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bh/2024/atome_jet_pro",
   "manufacturer": "BH Bikes",
-  "vehicle_model_group": "ATOMe",
+  "model_group": "ATOMe",
   "model": "ATOMe JET PRO",
   "model_configuration": "complete",
   "type": "bike",
@@ -103,8 +103,12 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 720,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [

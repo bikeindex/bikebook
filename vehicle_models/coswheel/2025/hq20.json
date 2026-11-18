@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/coswheel/2025/hq20",
   "manufacturer": "Coswheel",
   "model": "HQ20",
@@ -25,8 +25,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061-T6 Aluminum",
-    "max_weight_total": 200
+    "material_detail": "6061-T6 Aluminum"
   },
   "suspension": {
     "front": {
@@ -66,10 +65,12 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 922,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 Cells",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 922,
+        "chemistry": "li-ion",
+        "cells": "18650",
+        "charging_time": 600
+      },
       "rated_power": 750,
       "peak_power": 1300,
       "max_torque": 60,
@@ -91,6 +92,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

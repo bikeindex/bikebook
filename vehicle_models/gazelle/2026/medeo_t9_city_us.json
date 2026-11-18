@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gazelle/2026/medeo_t9_city_us",
   "manufacturer": "Gazelle",
-  "vehicle_model_group": "Medeo",
+  "model_group": "Medeo",
   "model": "Medeo T9 City",
   "model_configuration": "complete",
   "markets": [
@@ -111,7 +111,16 @@
   },
   "frame": {
     "material": "aluminum",
-    "top_tube": "sloping"
+    "top_tube": "sloping",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ]
   },
   "suspension": {
     "front": {
@@ -162,9 +171,11 @@
       "model": "BDU332Y",
       "model_group": "Active Line",
       "kind": "mid_drive",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
-      "charging_time": 390,
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion",
+        "charging_time": 390
+      },
       "rated_power": 250,
       "peak_power": 586,
       "max_torque": 40,

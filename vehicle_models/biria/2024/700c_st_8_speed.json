@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biria/2024/700c_st_8_speed",
   "manufacturer": "Biria",
-  "vehicle_model_group": "700C",
+  "model_group": "700C",
   "model": "700C ST 8-Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -164,18 +164,20 @@
       "caliper_mount": "Brake Bosses"
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
-      "name": "42cm",
-      "geometry": {
-        "max_weight_rider": 120
-      }
+      "name": "42cm"
     },
     {
       "name": "48cm",
       "geometry": {
-        "total_weight": 16.3,
-        "max_weight_rider": 120
+        "total_weight": 16.3
       }
     }
   ],

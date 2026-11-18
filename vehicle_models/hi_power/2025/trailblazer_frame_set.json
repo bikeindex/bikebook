@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hi_power/2025/trailblazer_frame_set",
   "manufacturer": "Hi Power Cycles",
-  "vehicle_model_group": "Trailblazer",
+  "model_group": "Trailblazer",
   "model": "Trailblazer Frame Set",
   "model_configuration": "frame",
   "type": "bike",
@@ -62,11 +62,13 @@
   },
   "motors": [
     {
-      "battery_size": 520,
-      "battery_options": [
-        728,
-        910
-      ],
+      "battery": {
+        "capacity": 520,
+        "capacity_options": [
+          728,
+          910
+        ]
+      },
       "rated_power": 750,
       "max_torque": 100,
       "operating_modes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2023/zephyr_cruiser",
   "manufacturer": "Jetson",
   "model": "Zephyr Cruiser",
@@ -48,6 +48,12 @@
     "1_front",
     "1_rear"
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -58,7 +64,6 @@
           "height": 1090
         },
         "total_weight": 16.3,
-        "max_weight_rider": 100,
         "rider_age_min": 12,
         "extra_measurements": {
           "handlebar_height": 1090

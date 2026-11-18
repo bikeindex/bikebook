@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jasion/2025/x_hunter_st",
   "manufacturer": "Jasion",
-  "vehicle_model_group": "X-Hunter",
+  "model_group": "X-Hunter",
   "model": "X-Hunter ST",
   "model_configuration": "complete",
   "type": "bike",
@@ -68,8 +68,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 218
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {},
@@ -106,8 +105,10 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 624,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1400,
       "max_torque": 85,
@@ -131,6 +132,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 218
     }
   ],
   "sizes": [
@@ -177,10 +184,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V / 13A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "Color Display"
     },
     {
@@ -208,6 +211,11 @@
         "width": 101.6,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V / 13A"
     }
   ]
 }

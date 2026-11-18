@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/yuba/2016/mundo_v5",
   "manufacturer": "Yuba",
-  "vehicle_model_group": "Mundo",
+  "model_group": "Mundo",
   "model": "Mundo V5",
   "model_configuration": "complete",
   "type": "cargo_bike_rear",
@@ -117,8 +117,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "Chromoly Steel",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 200
+    "seatpost_diameter": 30.9
   },
   "wheels": [
     {
@@ -159,6 +158,12 @@
         "rear"
       ],
       "rotor_diameter": 180
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

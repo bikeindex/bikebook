@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/frey/2024/ht1000_v2_27_5",
   "manufacturer": "FREY",
-  "vehicle_model_group": "HT1000",
+  "model_group": "HT1000",
   "model": "HT1000-V2 27.5",
   "model_configuration": "complete",
   "type": "bike",
@@ -14,6 +14,7 @@
   "stock_photo": "https://bikebook.bikeindex.org/frey/2024/ht1000_v2_27_5.jpg",
   "description": "HT1000 V2 :\nFeatures fully upgraded\n\nEBike Battery Upgrade: Ultra-Large Capacity\nIntroducing the all-new HT1000 V2 eBike with redesigned upgrades, featuring an expanded battery capacity!\nThe upgraded HT1000 V2 now supports belt drive compatibility.\nEnjoy smooth rides with quiet operation and enhanced durability.\nSupports large chainrings, up to 46T.\n\nCompatible with both 27.5-inch and 29-inch wheel sizes.\nFreedom to choose the wheel diameter that suits you best.",
   "first_year": 2024,
+  "final_year": 2026,
   "years": {
     "2026": {
       "original_msrp": 389900,
@@ -40,8 +41,7 @@
     "material": "steel",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 150
+    }
   },
   "suspension": {
     "front": {}
@@ -95,12 +95,17 @@
       "spindle": "ISIS",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / UL 2849",
-      "water_rating": "IPX5",
-      "battery_size": 1200,
-      "battery_options": [
-        1440
+      "certifications": [
+        "UL 2849",
+        "CE"
       ],
+      "water_rating": "IPX5",
+      "battery": {
+        "capacity": 1200,
+        "capacity_options": [
+          1440
+        ]
+      },
       "rated_power": 1000,
       "peak_power": 1440,
       "max_torque": 160,
@@ -113,6 +118,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

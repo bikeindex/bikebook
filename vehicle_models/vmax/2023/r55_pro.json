@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vmax/2023/r55_pro",
   "manufacturer": "VMAX",
   "model": "R55 Pro",
@@ -59,8 +59,10 @@
   "motors": [
     {
       "water_rating": "IPX5",
-      "battery_size": 874,
-      "charging_time": 540,
+      "battery": {
+        "capacity": 874,
+        "charging_time": 540
+      },
       "rated_power": 2100,
       "operating_modes": [
         {
@@ -71,6 +73,12 @@
           "max_slope": 22
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -88,7 +96,6 @@
           "height": 525
         },
         "total_weight": 29.3,
-        "max_weight_rider": 150,
         "extra_measurements": {
           "deck_length": 520,
           "deck_to_handlebar_height": 890,

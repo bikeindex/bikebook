@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/niu/2026/fqix_300",
   "manufacturer": "Niu",
-  "vehicle_model_group": "FQiX",
+  "model_group": "FQiX",
   "model": "FQiX 300",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -59,9 +59,11 @@
   ],
   "motors": [
     {
-      "battery_size": 2016,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 2016,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 4000,
       "peak_power": 4100,
       "operating_modes": [

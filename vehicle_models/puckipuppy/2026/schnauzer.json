@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/puckipuppy/2026/schnauzer",
   "manufacturer": "Puckipuppy",
-  "vehicle_model_group": "Schnauzer",
+  "model_group": "Schnauzer",
   "model": "Schnauzer",
   "model_configuration": "complete",
   "type": "bike",
@@ -38,8 +38,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 204
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -76,9 +75,13 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 750,
       "peak_power": 960,
       "operating_modes": [
@@ -101,6 +104,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

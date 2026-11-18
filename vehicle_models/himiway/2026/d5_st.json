@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/himiway/2026/d5_st",
   "manufacturer": "Himiway",
-  "vehicle_model_group": "D5",
+  "model_group": "D5",
   "model": "D5 ST",
   "model_configuration": "complete",
   "type": "bike",
@@ -69,8 +69,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 181
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -132,8 +131,10 @@
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "max_torque": 86,
       "operating_modes": [
@@ -151,6 +152,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [
@@ -239,10 +246,6 @@
     {
       "type": "e_vehicle_remote",
       "description": "KD718-P LCD display with Type-c charger"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V/22A"
     },
     {
       "type": "fender",
@@ -359,6 +362,11 @@
         "width": 101.6,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V/22A"
     }
   ]
 }

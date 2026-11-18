@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pedal_electric/2025/h_t",
   "manufacturer": "Pedal Electric",
   "model": "H/T",
@@ -85,7 +85,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 768,
+      "battery": {
+        "capacity": 768
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -105,6 +107,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -112,7 +120,6 @@
         "seat_height_min": 711,
         "seat_height_max": 711,
         "total_weight": 27.2,
-        "max_weight_rider": 159,
         "extra_measurements": {
           "handlebar_height": 1054
         }

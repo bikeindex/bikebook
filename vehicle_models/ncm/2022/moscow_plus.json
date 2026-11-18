@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ncm/2022/moscow_plus",
   "manufacturer": "NCM eBikes",
   "model": "Moscow Plus",
@@ -37,9 +37,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 99,
-    "gross_weight_rating": 125
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -102,7 +100,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 768,
+      "battery": {
+        "capacity": 768
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -111,6 +111,16 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 99
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

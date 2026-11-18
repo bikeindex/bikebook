@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/brompton/2026/electric_g_line_with_superroll_plus_and_handlebar_control_e_motiq_system_4_speed",
   "manufacturer": "Brompton Bicycle",
-  "vehicle_model_group": "Electric G Line",
+  "model_group": "Electric G Line",
   "model": "Electric G Line with SuperRoll+ and Handlebar Control - e-Motiq system - 4-speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -203,8 +203,11 @@
   ],
   "motors": [
     {
-      "battery_size": 345,
-      "charging_time": 240,
+      "battery": {
+        "capacity": 345,
+        "weight": 3.9,
+        "charging_time": 240
+      },
       "operating_modes": [
         {
           "mode": "assist",

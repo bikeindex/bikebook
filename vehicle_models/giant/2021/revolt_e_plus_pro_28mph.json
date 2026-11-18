@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/giant/2021/revolt_e_plus_pro_28mph",
   "manufacturer": "Giant",
-  "vehicle_model_group": "Revolt",
+  "model_group": "Revolt",
   "model": "Revolt E+ Pro 28mph",
   "model_configuration": "complete",
   "type": "bike",
@@ -119,8 +119,10 @@
       "manufacturer": "Giant",
       "model": "SyncDrive Pro",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "max_torque": 80,
       "operating_modes": [
         {

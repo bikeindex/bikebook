@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lapierre/2026/overvolt_am_cf_7_8",
   "manufacturer": "Lapierre",
-  "vehicle_model_group": "Overvolt AM",
+  "model_group": "Overvolt AM",
   "model": "Overvolt AM CF 7.8",
   "model_configuration": "complete",
   "type": "bike",
@@ -60,8 +60,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 120
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -123,8 +122,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -138,6 +139,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

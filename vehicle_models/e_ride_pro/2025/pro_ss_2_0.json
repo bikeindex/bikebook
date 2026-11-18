@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/e_ride_pro/2025/pro_ss_2_0",
   "manufacturer": "E Ride Pro",
-  "vehicle_model_group": "Pro SS",
+  "model_group": "Pro SS",
   "model": "Pro SS 2.0",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -50,9 +50,11 @@
   ],
   "motors": [
     {
-      "battery_size": 2880,
-      "battery_chemistry": "li-ion",
-      "charging_time": 120,
+      "battery": {
+        "capacity": 2880,
+        "chemistry": "li-ion",
+        "charging_time": 120
+      },
       "rated_power": 5000,
       "peak_power": 12000,
       "operating_modes": [
@@ -68,14 +70,19 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "seat_height_min": 830,
         "seat_height_max": 830,
-        "total_weight": 68.9,
-        "max_weight_rider": 136
+        "total_weight": 68.9
       }
     }
   ],

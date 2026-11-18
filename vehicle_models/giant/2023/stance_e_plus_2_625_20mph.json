@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/giant/2023/stance_e_plus_2_625_20mph",
   "manufacturer": "Giant",
-  "vehicle_model_group": "Stance",
+  "model_group": "Stance",
   "model": "Stance E+ 2 625 20MPH",
   "model_configuration": "complete",
   "type": "bike",
@@ -130,8 +130,10 @@
       "model": "SyncDrive Sport 2",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "max_torque": 75,
       "operating_modes": [
         {

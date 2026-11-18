@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2024/vuca_evo_speed_fsx_1",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Vuca EVO",
+  "model_group": "Vuca EVO",
   "model": "Vuca EVO Speed FSX 1",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,8 +54,7 @@
     "material": "aluminum",
     "bottom_bracket": {
       "spindle": "Pinion Standard"
-    },
-    "gross_weight_rating": 150
+    }
   },
   "suspension": {
     "front": {
@@ -107,10 +106,12 @@
       "id": "c/pinion/2023/mgu",
       "drive_wheel": "rear",
       "manufacturer": "Pinion",
-      "model": "MGU E1.12S 45",
+      "model": "MGU",
       "kind": "mid_drive",
       "spindle": "Pinion Standard",
-      "battery_size": 960,
+      "battery": {
+        "capacity": 960
+      },
       "rated_power": 250,
       "peak_power": 800,
       "max_torque": 85,
@@ -125,6 +126,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

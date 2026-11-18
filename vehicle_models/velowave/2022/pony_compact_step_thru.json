@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velowave/2022/pony_compact_step_thru",
   "manufacturer": "Velowave",
   "model": "Pony Compact Step-Thru",
@@ -60,8 +60,7 @@
     "material_detail": "6061 Aluminum",
     "top_tube": "step_through",
     "cable_routing": "internal",
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 150
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {}
@@ -104,9 +103,11 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG 21700 Cells",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "LG 21700"
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "max_torque": 80,
@@ -131,6 +132,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

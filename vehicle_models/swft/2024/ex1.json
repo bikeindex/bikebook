@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/swft/2024/ex1",
   "manufacturer": "SWFT",
   "model": "EX1",
@@ -37,9 +37,11 @@
   ],
   "motors": [
     {
-      "battery_size": 187,
-      "battery_chemistry": "li-ion",
-      "charging_time": 270,
+      "battery": {
+        "capacity": 187,
+        "chemistry": "li-ion",
+        "charging_time": 270
+      },
       "rated_power": 300,
       "operating_modes": [
         {
@@ -51,6 +53,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -60,8 +68,7 @@
           "width": 480,
           "height": 1115
         },
-        "total_weight": 15,
-        "max_weight_rider": 100
+        "total_weight": 15
       }
     }
   ],

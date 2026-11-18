@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2022/v12ht",
   "manufacturer": "Inmotion",
-  "vehicle_model_group": "V12",
+  "model_group": "V12",
   "model": "V12HT",
   "model_configuration": "complete",
   "type": "epamd",
@@ -25,8 +25,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "brakes": [
     {
@@ -39,8 +38,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 1750,
-      "battery_info": "1750(875*2)",
+      "battery": {
+        "capacity": 1750,
+        "cells": "1750(875*2)"
+      },
       "rated_power": 2800,
       "operating_modes": [
         {
@@ -51,6 +52,12 @@
           "max_slope": 45
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

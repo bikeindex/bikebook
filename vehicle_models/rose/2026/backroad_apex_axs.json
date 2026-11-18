@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rose/2026/backroad_apex_axs",
   "manufacturer": "ROSE",
-  "vehicle_model_group": "Backroad",
+  "model_group": "Backroad",
   "model": "Backroad Apex AXS",
   "model_configuration": "complete",
   "type": "bike",
@@ -88,8 +88,7 @@
     "material": "carbon",
     "bottom_bracket": {
       "spindle": "DUB"
-    },
-    "max_weight_total": 120
+    }
   },
   "wheels": [
     {
@@ -107,6 +106,9 @@
     "12_rear"
   ],
   "gearing": {
+    "front": [
+      40
+    ],
     "rear": [
       11,
       44
@@ -124,6 +126,12 @@
         "front",
         "rear"
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tern/2026/quick_haul_long_d9_gen_1_us",
   "manufacturer": "Tern",
   "model": "Quick Haul Long D9 Gen 1",
@@ -72,9 +72,7 @@
         "description": "Luggage Socket: Combo Mount"
       }
     ],
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 160,
-    "gross_weight_rating": 190
+    "seatpost_diameter": 34.9
   },
   "wheels": [
     {
@@ -116,8 +114,10 @@
       "model": "BDU450CX",
       "model_group": "Cargo Line",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -154,9 +154,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 90
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "cargo",
+      "weight": 90
+    },
+    {
+      "load": "gross",
+      "weight": 190
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -169,7 +180,6 @@
           "height": 1025
         },
         "total_weight": 29.3,
-        "max_weight_rider": 120,
         "rider_height_min": 1550,
         "rider_height_max": 1900,
         "extra_measurements": {
@@ -314,7 +324,6 @@
     {
       "type": "lock",
       "type_detail": "Frame Lock",
-      "manufacturer": "Abus",
       "description": "ABUS or AXA, keyed-alike with Bosch battery"
     },
     {

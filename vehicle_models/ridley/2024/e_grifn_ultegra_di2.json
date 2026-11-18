@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ridley/2024/e_grifn_ultegra_di2",
   "manufacturer": "Ridley",
-  "vehicle_model_group": "E-Grifn",
+  "model_group": "E-Grifn",
   "model": "E-Grifn Ultegra DI2",
   "model_configuration": "complete",
   "markets": [
@@ -95,8 +95,7 @@
       "shell": "BB86",
       "width": 86.5
     },
-    "derailleur_hanger": "SRAM UDH",
-    "gross_weight_rating": 110
+    "derailleur_hanger": "SRAM UDH"
   },
   "wheels": [
     {
@@ -165,8 +164,10 @@
       "manufacturer": "Mahle",
       "model": "X20",
       "kind": "hub_drive",
-      "battery_size": 350,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 350,
+        "chemistry": "li-ion"
+      },
       "peak_power": 275,
       "max_torque": 65,
       "operating_modes": [
@@ -181,6 +182,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 110
     }
   ],
   "sizes": [

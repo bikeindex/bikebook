@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/qlife/2024/spark",
   "manufacturer": "Qlife",
-  "vehicle_model_group": "Spark",
+  "model_group": "Spark",
   "model": "Spark",
   "model_configuration": "complete",
   "type": "bike",
@@ -147,8 +147,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 163
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -180,8 +179,11 @@
   "motors": [
     {
       "water_rating": "IPX5",
-      "battery_size": 749,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 749,
+        "charging_time": 360
+      },
+      "rated_power": 750,
       "peak_power": 1800,
       "max_torque": 110,
       "operating_modes": [
@@ -203,6 +205,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 163
     }
   ],
   "sizes": [

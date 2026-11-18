@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bakcou/2020/mule",
   "manufacturer": "Bakcou",
-  "vehicle_model_group": "Mule",
+  "model_group": "Mule",
   "model": "Mule",
   "model_configuration": "complete",
   "type": "bike",
@@ -15,6 +15,7 @@
   "stock_photo": "https://bikebook.bikeindex.org/bakcou/2020/mule.png",
   "description": "The Mule was designed and engineered around the unparalleled power and performance of Bafangs ULTRA mid-drive motor. The Ultra motor is widely recognized as the “diesel engine” of fat tire electric bike mid-drive motors! In addition, the Ultra motor has all metal, heavy-duty gearing, combined with the intelligence of an integrated torque sensor. As a result, the Ultra motor is the most capable, durable, and efficient motor on the planet.",
   "first_year": 2020,
+  "final_year": 2026,
   "years": {
     "2026": {
       "original_msrp": 479900,
@@ -204,8 +205,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "Grade 6061 Aluminum",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 159
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -276,12 +276,14 @@
       "model": "M620 Ultra",
       "kind": "mid_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 840,
-      "battery_options": [
-        1008,
-        1200
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 840,
+        "capacity_options": [
+          1008,
+          1200
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "max_torque": 160,
@@ -304,6 +306,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

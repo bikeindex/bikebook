@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fuji/2022/e_jari",
   "manufacturer": "Fuji",
   "model": "E-Jari",
@@ -119,8 +119,10 @@
       "manufacturer": "Fazua",
       "model": "Evation",
       "kind": "mid_drive",
-      "battery_size": 250,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 250,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

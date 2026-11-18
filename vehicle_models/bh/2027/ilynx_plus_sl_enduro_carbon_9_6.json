@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bh/2027/ilynx_plus_sl_enduro_carbon_9_6",
   "manufacturer": "BH Bikes",
-  "vehicle_model_group": "iLYNX+ SL ENDURO",
+  "model_group": "iLYNX+ SL ENDURO",
   "model": "iLYNX+ SL ENDURO CARBON 9.6",
   "model_configuration": "complete",
   "type": "bike",
@@ -119,8 +119,12 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 810,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 810
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [

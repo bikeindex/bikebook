@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/paselec/2026/stk_02",
   "manufacturer": "Paselec",
   "model": "STK 02",
@@ -39,8 +39,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -74,9 +73,11 @@
   "motors": [
     {
       "water_rating": "IPX6",
-      "battery_size": 1000,
-      "battery_chemistry": "li-ion",
-      "charging_time": 390,
+      "battery": {
+        "capacity": 1000,
+        "chemistry": "li-ion",
+        "charging_time": 390
+      },
       "peak_power": 3000,
       "operating_modes": [
         {
@@ -89,6 +90,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -133,10 +140,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "3000W Peak"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "60V 70A"
     },
     {
       "type": "e_vehicle_remote",
@@ -196,6 +199,11 @@
       "dimensions": {
         "diameter": 356
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "60V 70A"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/transition/2026/repeater_pt_axs",
   "manufacturer": "Transition Bikes",
   "model": "Repeater PT AXS",
@@ -100,8 +100,10 @@
     {
       "manufacturer": "SRAM",
       "model": "Eagle Powertrain",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

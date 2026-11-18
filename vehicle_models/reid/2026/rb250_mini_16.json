@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2026/rb250_mini_16",
   "manufacturer": "Reid",
-  "vehicle_model_group": "RB",
+  "model_group": "RB",
   "model": "RB250 Mini 16",
   "model_configuration": "complete",
   "type": "bike",
@@ -48,8 +48,7 @@
     "cable_routing": "internal",
     "bottom_bracket": {
       "spindle": "square taper"
-    },
-    "max_weight_total": 100
+    }
   },
   "wheels": [
     {
@@ -94,8 +93,12 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "EN50604",
-      "battery_size": 468,
+      "certifications": [
+        "EN 50604"
+      ],
+      "battery": {
+        "capacity": 468
+      },
       "rated_power": 250,
       "peak_power": 350,
       "max_torque": 40,
@@ -110,6 +113,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

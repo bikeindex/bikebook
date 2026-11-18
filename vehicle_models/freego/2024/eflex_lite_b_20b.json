@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freego/2024/eflex_lite_b_20b",
   "manufacturer": "Freego",
-  "vehicle_model_group": "eFlex",
+  "model_group": "eFlex",
   "model": "eFlex Lite B-20B",
   "model_configuration": "complete",
   "type": "bike",
@@ -35,8 +35,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -71,9 +70,11 @@
   ],
   "motors": [
     {
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 500,
       "peak_power": 800,
       "operating_modes": [
@@ -87,6 +88,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fission/2023/xp_500_carbon",
   "manufacturer": "Fission",
   "model": "XP 500 Carbon",
@@ -88,10 +88,16 @@
       "kind": "mid_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / EN 14766 / ROHS",
+      "certifications": [
+        "EN 14766",
+        "CE",
+        "RoHS"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 120,
@@ -202,6 +208,12 @@
     },
     {
       "type": "shifter",
+      "type_detail": "Gearing Array",
+      "manufacturer": "SRAM",
+      "description": "SRAM SX Eagle 12-Speed Mountain System"
+    },
+    {
+      "type": "shifter",
       "type_detail": "Shifter Mechanism",
       "manufacturer": "SRAM",
       "description": "SRAM SX Eagle Trigger Shifter"
@@ -219,12 +231,6 @@
         "width": 121.92,
         "diameter": 559
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Gearing Array",
-      "manufacturer": "SRAM",
-      "description": "SRAM SX Eagle 12-Speed Mountain System"
     }
   ]
 }

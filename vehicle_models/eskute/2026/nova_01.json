@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eskute/2026/nova_01",
   "manufacturer": "Eskute",
-  "vehicle_model_group": "Nova",
+  "model_group": "Nova",
   "model": "Nova 01",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -53,8 +53,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 163
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -82,9 +81,11 @@
   "motors": [
     {
       "water_rating": "IP54",
-      "battery_size": 1560,
-      "battery_chemistry": "li-ion",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1560,
+        "chemistry": "li-ion",
+        "charging_time": 540
+      },
       "peak_power": 2500,
       "max_torque": 135,
       "operating_modes": [
@@ -98,6 +99,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 163
     }
   ],
   "sizes": [

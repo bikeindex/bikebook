@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/marin/2024/alpine_trail_e_shimano_eu_gb",
   "manufacturer": "Marin Bikes",
-  "vehicle_model_group": "Alpine Trail",
+  "model_group": "Alpine Trail",
   "model": "Alpine Trail E - Shimano EU",
   "model_configuration": "complete",
   "markets": [
@@ -144,9 +144,13 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [

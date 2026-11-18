@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2021/flash_hoverboard_for_kids",
   "manufacturer": "GOTRAX",
   "model": "Flash Hoverboard for Kids",
@@ -143,8 +143,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 40
+    "material": "steel"
   },
   "wheels": [
     {
@@ -157,8 +156,10 @@
   ],
   "motors": [
     {
-      "battery_info": "25.2V",
-      "charging_time": 240,
+      "battery": {
+        "voltage": 25.2,
+        "charging_time": 240
+      },
       "rated_power": 150,
       "operating_modes": [
         {
@@ -170,8 +171,10 @@
       ]
     },
     {
-      "battery_info": "25.2V",
-      "charging_time": 240,
+      "battery": {
+        "voltage": 25.2,
+        "charging_time": 240
+      },
       "rated_power": 150,
       "operating_modes": [
         {
@@ -183,6 +186,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 40
+    },
+    {
+      "load": "payload",
+      "weight": 40
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -192,8 +205,7 @@
           "width": 168,
           "height": 173
         },
-        "total_weight": 5.5,
-        "max_weight_rider": 40
+        "total_weight": 5.5
       }
     }
   ],

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rose/2026/file_plus_xt",
   "manufacturer": "ROSE",
-  "vehicle_model_group": "File Plus",
+  "model_group": "File Plus",
   "model": "File Plus XT",
   "model_configuration": "complete",
   "type": "bike",
@@ -73,8 +73,7 @@
     "bottom_bracket": {
       "spindle": "ISIS",
       "spindle_length": 135
-    },
-    "max_weight_total": 130
+    }
   },
   "suspension": {
     "front": {
@@ -129,8 +128,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 135,
-      "battery_size": 580,
-      "charging_time": 180,
+      "battery": {
+        "capacity": 580,
+        "charging_time": 180
+      },
       "peak_power": 350,
       "max_torque": 60,
       "operating_modes": [
@@ -142,6 +143,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 130
     }
   ],
   "sizes": [

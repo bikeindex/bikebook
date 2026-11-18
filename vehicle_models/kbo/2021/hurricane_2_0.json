@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kbo/2021/hurricane_2_0",
   "manufacturer": "KBO",
   "model": "Hurricane 2.0",
@@ -25,8 +25,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 125
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -56,9 +55,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "battery_size": 378,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung/LG cells",
+      "battery": {
+        "capacity": 378,
+        "chemistry": "li-ion",
+        "cells": "Samsung/LG"
+      },
       "rated_power": 350,
       "peak_power": 350,
       "operating_modes": [
@@ -69,6 +70,12 @@
           "levels": 3
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

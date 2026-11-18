@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jasion/2025/retrovolt_pro",
   "manufacturer": "Jasion",
-  "vehicle_model_group": "RetroVolt",
+  "model_group": "RetroVolt",
   "model": "RetroVolt Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -53,8 +53,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -91,8 +90,10 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 1040,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 1040,
+        "charging_time": 360
+      },
       "peak_power": 2000,
       "max_torque": 99,
       "operating_modes": [
@@ -115,6 +116,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -161,10 +168,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "52V / 30A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "Color Display"
     },
     {
@@ -192,6 +195,11 @@
         "width": 101.6,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "52V / 30A"
     },
     {
       "type": "unknown",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/brompton/2023/electric_c_line_explore",
   "manufacturer": "Brompton Bicycle",
-  "vehicle_model_group": "Electric C Line",
+  "model_group": "Electric C Line",
   "model": "Electric C Line Explore",
   "model_configuration": "complete",
   "type": "bike",
@@ -67,8 +67,10 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 300,
-      "charging_time": 240,
+      "battery": {
+        "capacity": 300,
+        "charging_time": 240
+      },
       "rated_power": 250,
       "operating_modes": [
         {

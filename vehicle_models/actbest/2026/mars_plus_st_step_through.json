@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/actbest/2026/mars_plus_st_step_through",
   "manufacturer": "Actbest",
-  "vehicle_model_group": "Mars",
+  "model_group": "Mars",
   "model": "Mars Plus ST Step-Through",
   "model_configuration": "complete",
   "type": "bike",
@@ -124,8 +124,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 200
+    ]
   },
   "suspension": {
     "front": {}
@@ -168,8 +167,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 960,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 960,
+        "charging_time": 480
+      },
       "peak_power": 1800,
       "max_torque": 110,
       "operating_modes": [
@@ -191,6 +192,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

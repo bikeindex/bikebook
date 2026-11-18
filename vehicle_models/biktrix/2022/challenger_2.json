@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biktrix/2022/challenger_2",
   "manufacturer": "Biktrix",
-  "vehicle_model_group": "Challenger",
+  "model_group": "Challenger",
   "model": "Challenger 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -175,7 +175,9 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 840,
+      "battery": {
+        "capacity": 840
+      },
       "rated_power": 750,
       "operating_modes": [
         {

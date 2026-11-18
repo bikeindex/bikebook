@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moon_cool/2024/mlc",
   "manufacturer": "Moon Cool",
-  "vehicle_model_group": "ML",
+  "model_group": "ML",
   "model": "MLC",
   "model_configuration": "complete",
   "type": "bike",
@@ -22,8 +22,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "Hi-Tensile Steel",
-    "seatpost_diameter": 25.4,
-    "max_weight_total": 159
+    "seatpost_diameter": 25.4
   },
   "wheels": [
     {
@@ -75,6 +74,12 @@
       "caliper_mount": "Brake Bosses"
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "24\"",
@@ -83,7 +88,7 @@
         "wheelbase": 1080,
         "standover": 425,
         "handlebar_width": 600,
-        "seat_height_min": 940,
+        "seat_height_min": 800,
         "seat_height_max": 940,
         "dimensions": {
           "length": 1700
@@ -100,7 +105,7 @@
         "wheelbase": 1080,
         "standover": 425,
         "handlebar_width": 600,
-        "seat_height_min": 940,
+        "seat_height_min": 800,
         "seat_height_max": 940,
         "dimensions": {
           "length": 1700

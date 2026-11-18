@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/6ku/2026/sail_11_m",
   "manufacturer": "6KU",
   "model": "Sail 11 M",
@@ -60,8 +60,10 @@
   "motors": [
     {
       "water_rating": "IPX4",
-      "battery_size": 28,
-      "charging_time": 120,
+      "battery": {
+        "capacity": 28,
+        "charging_time": 120
+      },
       "rated_power": 40,
       "peak_power": 80,
       "operating_modes": [
@@ -79,6 +81,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 50
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -89,7 +97,6 @@
           "height": 896
         },
         "total_weight": 3.5,
-        "max_weight_rider": 50,
         "rider_height_min": 1100,
         "rider_height_max": 1500,
         "rider_age_min": 5,

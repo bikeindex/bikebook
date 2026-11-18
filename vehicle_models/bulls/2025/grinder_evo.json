@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2025/grinder_evo",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Grinder EVO",
+  "model_group": "Grinder EVO",
   "model": "Grinder EVO",
   "model_configuration": "complete",
   "type": "bike",
@@ -96,9 +96,11 @@
       "model": "Performance Line Speed Gen2",
       "model_group": "Performance Line Speed",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
-      "charging_time": 270,
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion",
+        "charging_time": 270
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -244,7 +246,7 @@
     {
       "type": "handlebar",
       "type_detail": "The Class-3 Drop-Bar eBike is an agile, high-performance ride that blends road-style geometry with robust electric assist.",
-      "description": "With a whisper-quiet BOSCH motor and seamlessly integrated PowerTube battery, this bike delivers speed, range, and confidence — empowering you to conquer hills and long distances without sacrificing the pure feel of pedaling.; Motor & Battery"
+      "description": "With a whisper-quiet BOSCH motor and seamlessly integrated PowerTube battery, this bike delivers speed, range, and confidence — empowering you to conquer hills and long distances without sacrificing the pure feel of pedaling."
     },
     {
       "type": "hub",
@@ -284,7 +286,7 @@
     {
       "type": "seatpost",
       "type_detail": "Seatpost & Saddle",
-      "description": "BULLS Aluminum seatpost with matching saddle; Weight & Extras"
+      "description": "BULLS Aluminum seatpost with matching saddle"
     },
     {
       "type": "shifter",

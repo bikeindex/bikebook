@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biktrix/2024/juggernaut_xd_duo_step_thru_26",
   "manufacturer": "Biktrix",
-  "vehicle_model_group": "Juggernaut XD",
+  "model_group": "Juggernaut XD",
   "model": "Juggernaut XD Duo Step-Thru 26",
   "model_configuration": "complete",
   "type": "bike",
@@ -152,8 +152,7 @@
     "bottom_bracket": {
       "spindle": "square taper"
     },
-    "seatpost_diameter": 28.6,
-    "max_weight_total": 150
+    "seatpost_diameter": 28.6
   },
   "suspension": {
     "front": {
@@ -218,7 +217,9 @@
     {
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 1898,
+      "battery": {
+        "capacity": 1898
+      },
       "rated_power": 2300,
       "max_torque": 85,
       "operating_modes": [
@@ -239,6 +240,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

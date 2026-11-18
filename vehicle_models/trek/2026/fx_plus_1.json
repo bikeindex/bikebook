@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2026/fx_plus_1",
   "manufacturer": "Trek",
-  "vehicle_model_group": "FX+",
+  "model_group": "FX+",
   "model": "FX+ 1",
   "model_configuration": "complete",
   "type": "bike",
@@ -89,9 +89,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "Alpha Gold Aluminum",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 113,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -142,8 +140,12 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 520,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 520
+      },
       "rated_power": 500,
       "max_torque": 60,
       "operating_modes": [
@@ -162,6 +164,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
+    },
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

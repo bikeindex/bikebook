@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/samebike/2026/cy20_pro",
   "manufacturer": "samebike",
-  "vehicle_model_group": "CY20",
+  "model_group": "CY20",
   "model": "CY20 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -67,8 +67,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "High-Carbon Steel",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -102,8 +101,10 @@
   ],
   "motors": [
     {
-      "battery_size": 624,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 360
+      },
       "rated_power": 250,
       "max_torque": 50,
       "operating_modes": [
@@ -125,6 +126,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

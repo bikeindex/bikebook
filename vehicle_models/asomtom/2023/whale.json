@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/asomtom/2023/whale",
   "manufacturer": "Asomtom",
-  "vehicle_model_group": "Whale",
+  "model_group": "Whale",
   "model": "Whale",
   "model_configuration": "complete",
   "type": "cargo_tricycle",
@@ -43,8 +43,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 249
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -80,7 +79,9 @@
   ],
   "motors": [
     {
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -98,6 +99,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 249
     }
   ],
   "sizes": [

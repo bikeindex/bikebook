@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/voltvogue/2026/vv_4",
   "manufacturer": "Voltvogue",
   "model": "VV-4",
@@ -52,8 +52,10 @@
   ],
   "motors": [
     {
-      "battery_size": 111,
-      "charging_time": 180,
+      "battery": {
+        "capacity": 111,
+        "charging_time": 180
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -63,6 +65,12 @@
           "range_claimed": 16
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 70
     }
   ],
   "sizes": [
@@ -75,7 +83,6 @@
           "height": 810
         },
         "total_weight": 7.3,
-        "max_weight_rider": 70,
         "rider_age_min": 7
       }
     }
@@ -84,6 +91,10 @@
     {
       "type": "e_vehicle_battery",
       "description": "Battery life: 10 years"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Battery amps: 9.92 A"
     },
     {
       "type": "e_vehicle_motor",
@@ -115,11 +126,6 @@
       "type": "unknown",
       "type_detail": "Electric scooter type",
       "description": "Self Balancing"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Amps",
-      "description": "9.92 A"
     }
   ]
 }

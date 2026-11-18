@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fiido/2024/t2",
   "manufacturer": "Fiido",
   "model": "T2",
@@ -85,8 +85,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "seatpost_diameter": 33.9,
-    "max_weight_total": 200
+    "seatpost_diameter": 33.9
   },
   "suspension": {
     "front": {
@@ -133,7 +132,9 @@
   "motors": [
     {
       "sensor_speed": "spoke_magnet",
-      "battery_size": 998,
+      "battery": {
+        "capacity": 998
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -155,9 +156,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 200
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 200
+    },
+    {
+      "load": "payload",
+      "weight": 200
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

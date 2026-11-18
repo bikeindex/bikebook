@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2023/superdelite_gt_rohloff_hs_gx",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Superdelite GT",
+  "model_group": "Superdelite GT",
   "model": "Superdelite GT rohloff HS GX",
   "model_configuration": "complete",
   "markets": [
@@ -71,9 +71,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 116,
-    "gross_weight_rating": 150
+    ]
   },
   "suspension": {
     "front": {
@@ -132,7 +130,9 @@
       "model_group": "Performance Line Speed",
       "kind": "mid_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 500,
+      "battery": {
+        "capacity": 500
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -146,6 +146,32 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 150
+    },
+    {
+      "load": "rear_rack",
+      "weight": 20
+    },
+    {
+      "load": "front_rack",
+      "weight": 5
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 5
+    },
+    {
+      "load": "pannier_per_side",
+      "weight": 7.5
     }
   ],
   "sizes": [
@@ -167,7 +193,6 @@
           "length": 1930
         },
         "total_weight": 32.3,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "childseat_compatibility_carrier": "no",
           "compatibility_tagalong_trailer_bike": "no",
@@ -175,11 +200,7 @@
           "rear_dropout_width": 148,
           "rear_suspension_ratio": 2.8,
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 20,
-          "weight_rating_pannier_rack_per_side_kg": 7.5
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     },
@@ -201,7 +222,6 @@
           "length": 1930
         },
         "total_weight": 32.5,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "childseat_compatibility_carrier": "no",
           "compatibility_tagalong_trailer_bike": "no",
@@ -209,11 +229,7 @@
           "rear_dropout_width": 135,
           "rear_suspension_ratio": 2.8,
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 20,
-          "weight_rating_pannier_rack_per_side_kg": 7.5
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     },
@@ -235,7 +251,6 @@
           "length": 1960
         },
         "total_weight": 33.3,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "childseat_compatibility_carrier": "no",
           "compatibility_tagalong_trailer_bike": "no",
@@ -243,11 +258,7 @@
           "rear_dropout_width": 148,
           "rear_suspension_ratio": 2.8,
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 20,
-          "weight_rating_pannier_rack_per_side_kg": 7.5
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     }

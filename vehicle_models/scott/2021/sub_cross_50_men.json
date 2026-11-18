@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/sub_cross_50_men",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Sub Cross",
+  "model_group": "Sub Cross",
   "model": "Sub Cross 50 Men",
   "model_configuration": "complete",
   "type": "bike",
@@ -59,9 +59,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 115,
-    "gross_weight_rating": 128
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -101,6 +99,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 115
+    },
+    {
+      "load": "gross",
+      "weight": 128
     }
   ],
   "sizes": [

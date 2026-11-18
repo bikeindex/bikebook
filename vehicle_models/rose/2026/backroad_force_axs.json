@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rose/2026/backroad_force_axs",
   "manufacturer": "ROSE",
-  "vehicle_model_group": "Backroad",
+  "model_group": "Backroad",
   "model": "Backroad Force AXS",
   "model_configuration": "complete",
   "type": "bike",
@@ -88,8 +88,7 @@
     "material": "carbon",
     "bottom_bracket": {
       "spindle": "DUB"
-    },
-    "max_weight_total": 120
+    }
   },
   "wheels": [
     {
@@ -107,6 +106,9 @@
     "13_rear"
   ],
   "gearing": {
+    "front": [
+      40
+    ],
     "rear": [
       10,
       46
@@ -117,6 +119,12 @@
     "series": "Force",
     "electronic": true
   },
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "XS",

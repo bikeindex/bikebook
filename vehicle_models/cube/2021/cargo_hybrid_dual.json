@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2021/cargo_hybrid_dual",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Cargo Hybrid",
+  "model_group": "Cargo Hybrid",
   "model": "Cargo Hybrid Dual",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -29,9 +29,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 171,
-    "gross_weight_rating": 220
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -92,7 +90,9 @@
       "model": "BDU450CX",
       "model_group": "Cargo Line",
       "kind": "mid_drive",
-      "battery_size": 500,
+      "battery": {
+        "capacity": 500
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -108,9 +108,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 60
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 60
+    },
+    {
+      "load": "payload",
+      "weight": 171
+    },
+    {
+      "load": "gross",
+      "weight": 220
+    }
+  ],
   "sizes": [
     {
       "name": "48cm",

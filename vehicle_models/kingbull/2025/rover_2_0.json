@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kingbull/2025/rover_2_0",
   "manufacturer": "KingBull",
   "model": "Rover 2.0",
@@ -43,8 +43,7 @@
   "frame": {
     "material": "aluminum",
     "cable_routing": "internal",
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 181
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {
@@ -105,11 +104,17 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2580, UL 2271",
+      "certifications": [
+        "UL 2271",
+        "UL 2580"
+      ],
       "water_rating": "IPX6",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "SAMSUNG INR21700-50G cell, Certificated by UL 2580",
+      "battery": {
+        "capacity": 720,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "SAMSUNG INR21700-50G"
+      },
       "rated_power": 750,
       "peak_power": 1300,
       "max_torque": 80,
@@ -134,6 +139,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [
@@ -221,10 +232,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "Custom bafang 750W brushless hub motor"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V/25A"
     },
     {
       "type": "e_vehicle_remote",
@@ -345,6 +352,11 @@
       "type_detail": "Inner Tubes",
       "manufacturer": "CST",
       "description": "CST 26\"*4.0\", Schrader"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V/25A"
     },
     {
       "type": "unknown",

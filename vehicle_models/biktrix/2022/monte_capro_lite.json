@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/biktrix/2022/monte_capro_lite",
   "manufacturer": "Biktrix",
-  "vehicle_model_group": "Monte Capro",
+  "model_group": "Monte Capro",
   "model": "Monte Capro Lite",
   "model_configuration": "complete",
   "type": "bike",
@@ -170,8 +170,7 @@
   "frame": {
     "material": "carbon",
     "seatpost_diameter": 31.6,
-    "coil_compatible": true,
-    "max_weight_total": 120
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -240,7 +239,9 @@
       "kind": "mid_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 840,
+      "battery": {
+        "capacity": 840
+      },
       "max_torque": 120,
       "operating_modes": [
         {
@@ -257,6 +258,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

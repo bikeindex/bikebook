@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/voltvogue/2026/vv_16",
   "manufacturer": "Voltvogue",
-  "vehicle_model_group": "VV",
+  "model_group": "VV",
   "model": "VV-16",
   "model_configuration": "complete",
   "type": "bike",
@@ -39,8 +39,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 150
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {},
@@ -63,10 +62,14 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 748,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 748,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -86,6 +89,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -116,6 +125,10 @@
     },
     {
       "type": "e_vehicle_battery",
+      "description": "42 Volts"
+    },
+    {
+      "type": "e_vehicle_battery",
       "description": "Battery life: 5 years"
     },
     {
@@ -142,18 +155,8 @@
     },
     {
       "type": "unknown",
-      "type_detail": "Volts",
-      "description": "42 Volts"
-    },
-    {
-      "type": "unknown",
       "type_detail": "Watts field",
       "description": "800 Watts"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Amps",
-      "description": "15.6 A"
     },
     {
       "type": "unknown",

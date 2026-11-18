@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2023/everest",
   "manufacturer": "GOTRAX",
   "model": "Everest",
@@ -58,8 +58,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 160
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -90,10 +89,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
-      "battery_size": 2304,
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 2304,
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 4000,
       "operating_modes": [
         {
@@ -108,6 +111,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 160
+    },
+    {
+      "load": "payload",
+      "weight": 160
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -117,8 +130,7 @@
           "width": 787,
           "height": 1069
         },
-        "total_weight": 83.8,
-        "max_weight_rider": 160
+        "total_weight": 83.8
       }
     }
   ],

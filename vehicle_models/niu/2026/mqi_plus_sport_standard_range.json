@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/niu/2026/mqi_plus_sport_standard_range",
   "manufacturer": "Niu",
-  "vehicle_model_group": "MQi+ Sport",
+  "model_group": "MQi+ Sport",
   "model": "MQi+ Sport Standard Range",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -21,8 +21,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 221
+    "material": "steel"
   },
   "wheels": [
     {
@@ -47,10 +46,12 @@
   "motors": [
     {
       "manufacturer": "Bosch",
-      "battery_size": 1488,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 Lithium Ion",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1488,
+        "chemistry": "li-ion",
+        "cells": "18650",
+        "charging_time": 420
+      },
       "rated_power": 1400,
       "peak_power": 1400,
       "operating_modes": [
@@ -64,6 +65,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 221
     }
   ],
   "sizes": [

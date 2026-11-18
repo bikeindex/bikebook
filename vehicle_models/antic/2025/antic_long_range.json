@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/antic/2025/antic_long_range",
   "manufacturer": "Antic",
-  "vehicle_model_group": "Antic",
+  "model_group": "Antic",
   "model": "Antic Long Range",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -65,8 +65,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -78,6 +80,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -86,7 +94,6 @@
         "seat_height_min": 648,
         "seat_height_max": 648,
         "total_weight": 31.8,
-        "max_weight_rider": 125,
         "rider_height_min": 1400,
         "rider_height_max": 2000
       }

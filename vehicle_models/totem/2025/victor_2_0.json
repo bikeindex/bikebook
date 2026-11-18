@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/totem/2025/victor_2_0",
   "manufacturer": "Totem",
   "model": "Victor 2.0",
@@ -57,8 +57,7 @@
     "bottom_bracket": {
       "spindle": "square taper"
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 113
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {}
@@ -108,10 +107,12 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "battery_size": 374,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 cells",
-      "charging_time": 180,
+      "battery": {
+        "capacity": 374,
+        "chemistry": "li-ion",
+        "cells": "18650",
+        "charging_time": 180
+      },
       "rated_power": 350,
       "max_torque": 55,
       "operating_modes": [
@@ -133,6 +134,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
     }
   ],
   "sizes": [

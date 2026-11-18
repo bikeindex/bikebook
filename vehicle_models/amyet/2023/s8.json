@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/amyet/2023/s8",
   "manufacturer": "Amyet",
   "model": "S8",
@@ -52,8 +52,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 150
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {},
@@ -85,8 +84,9 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "battery_size": 1200,
-      "battery_info": "25AH",
+      "battery": {
+        "capacity": 1200
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "operating_modes": [
@@ -103,8 +103,9 @@
     },
     {
       "drive_wheel": "rear",
-      "battery_size": 1200,
-      "battery_info": "25AH",
+      "battery": {
+        "capacity": 1200
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "operating_modes": [
@@ -118,6 +119,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

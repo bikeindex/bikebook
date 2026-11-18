@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aniioki/2024/a9_pro_max_dual_motor_2_0",
   "manufacturer": "Aniioki",
-  "vehicle_model_group": "A9 Pro Max",
+  "model_group": "A9 Pro Max",
   "model": "A9 Pro Max Dual Motor 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -118,8 +118,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 227
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -161,13 +160,16 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 4200,
-      "battery_options": [
-        4800
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 4200,
+        "capacity_options": [
+          4800
+        ],
+        "voltage": 60,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A",
+        "charging_time": 600
+      },
       "rated_power": 2500,
       "peak_power": 3000,
       "max_torque": 125,
@@ -198,13 +200,16 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 4200,
-      "battery_options": [
-        4800
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium-ion pouch cells, Grade A",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 4200,
+        "capacity_options": [
+          4800
+        ],
+        "voltage": 60,
+        "chemistry": "li-ion",
+        "cells": "pouch, Grade A",
+        "charging_time": 600
+      },
       "rated_power": 2500,
       "peak_power": 3000,
       "max_torque": 125,
@@ -232,6 +237,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 227
+    },
+    {
+      "load": "payload",
+      "weight": 227
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -245,7 +260,6 @@
           "length": 2140
         },
         "total_weight": 85.4,
-        "max_weight_rider": 227,
         "rider_height_min": 1803,
         "rider_height_max": 1930,
         "extra_measurements": {

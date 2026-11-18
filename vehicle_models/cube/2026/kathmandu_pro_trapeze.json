@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/kathmandu_pro_trapeze",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Kathmandu",
+  "model_group": "Kathmandu",
   "model": "Kathmandu Pro Trapeze",
   "model_configuration": "complete",
   "type": "bike",
@@ -37,9 +37,7 @@
       "width": 68,
       "spindle": "24mm"
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 122,
-    "gross_weight_rating": 140
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -101,9 +99,20 @@
       "caliper_mount": "Disc Flat Mount"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "cargo",
+      "weight": 27
+    },
+    {
+      "load": "gross",
+      "weight": 140
+    }
+  ],
   "sizes": [
     {
       "name": "46 cm",
@@ -120,7 +129,6 @@
         "handlebar_width": 680,
         "stem_length": 70,
         "crank_length": 70,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 60,
           "protrusion_height_80mm": 684
@@ -143,7 +151,6 @@
         "stem_length": 70,
         "crank_length": 170,
         "total_weight": 17.2,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 60,
           "protrusion_height_80mm": 681
@@ -165,7 +172,6 @@
         "handlebar_width": 680,
         "stem_length": 90,
         "crank_length": 175,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 60,
           "protrusion_height_80mm": 693

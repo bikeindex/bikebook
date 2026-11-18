@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2024/quest_1",
   "manufacturer": "Reid",
-  "vehicle_model_group": "Quest",
+  "model_group": "Quest",
   "model": "Quest 1",
   "model_configuration": "complete",
   "type": "bike",
@@ -123,9 +123,11 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 374,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 CELL",
+      "battery": {
+        "capacity": 374,
+        "chemistry": "li-ion",
+        "cells": "18650"
+      },
       "rated_power": 250,
       "max_torque": 45,
       "operating_modes": [
@@ -139,6 +141,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -155,7 +163,6 @@
         "bb_drop": 45,
         "fork_rake": 40,
         "fork_length_a2c": 480,
-        "max_weight_rider": 120,
         "rider_height_min": 1600,
         "rider_height_max": 1720
       }
@@ -173,7 +180,6 @@
         "bb_drop": 45,
         "fork_rake": 40,
         "fork_length_a2c": 480,
-        "max_weight_rider": 120,
         "rider_height_min": 1720,
         "rider_height_max": 1820
       }
@@ -188,8 +194,7 @@
         "head_tube": 160,
         "chainstay": 470,
         "bb_drop": 45,
-        "fork_rake": 40,
-        "max_weight_rider": 120
+        "fork_rake": 40
       }
     }
   ],

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/liv/2021/amiti_e_plus_2_28_mph",
   "manufacturer": "Liv",
-  "vehicle_model_group": "Amiti",
+  "model_group": "Amiti",
   "model": "Amiti E+ 2 28 mph",
   "model_configuration": "complete",
   "type": "bike",
@@ -33,6 +33,15 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "ALUXX SL-Grade Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
     "bottom_bracket": {
       "spindle": "square taper"
     },
@@ -90,7 +99,9 @@
       "model": "SyncDrive Life",
       "kind": "mid_drive",
       "spindle": "square taper",
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "max_torque": 60,
       "operating_modes": [
         {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2021/aspect_eride_930",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Aspect",
+  "model_group": "Aspect",
   "model": "Aspect eRIDE 930",
   "model_configuration": "complete",
   "type": "bike",
@@ -65,9 +65,7 @@
     "bottom_bracket": {
       "spindle": "BNI"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 104,
-    "gross_weight_rating": 128
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -135,7 +133,9 @@
       "model_group": "Performance Line",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 625,
+      "battery": {
+        "capacity": 625
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 65,
@@ -146,6 +146,16 @@
           "max_speed": 25
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 104
+    },
+    {
+      "load": "gross",
+      "weight": 128
     }
   ],
   "sizes": [

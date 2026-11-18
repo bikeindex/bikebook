@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/orbea/2026/gain_m30i_20mph_us",
   "manufacturer": "Orbea",
-  "vehicle_model_group": "Gain",
+  "model_group": "Gain",
   "model": "Gain M30i 20mph",
   "model_configuration": "complete",
   "markets": [
@@ -111,8 +111,10 @@
       "manufacturer": "Mahle",
       "model": "X20",
       "kind": "hub_drive",
-      "battery_size": 353,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 353,
+        "chemistry": "li-ion"
+      },
       "peak_power": 275,
       "max_torque": 65,
       "operating_modes": [

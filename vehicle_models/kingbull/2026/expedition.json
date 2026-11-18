@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kingbull/2026/expedition",
   "manufacturer": "KingBull",
   "model": "Expedition",
@@ -38,8 +38,7 @@
     "bottom_bracket": {
       "spindle": "square taper"
     },
-    "coil_compatible": true,
-    "max_weight_total": 159
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -91,8 +90,10 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IPX6",
-      "battery_size": 1512,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1512,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1300,
       "operating_modes": [
@@ -112,6 +113,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [
@@ -187,10 +194,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "750W brushless hub motor"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V/22A"
     },
     {
       "type": "e_vehicle_remote",
@@ -300,6 +303,11 @@
       "type": "tube",
       "type_detail": "Inner Tubes",
       "description": "20\"*4.0\", Schrader"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V/22A"
     },
     {
       "type": "unknown",

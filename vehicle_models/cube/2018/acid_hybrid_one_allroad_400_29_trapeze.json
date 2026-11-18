@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2018/acid_hybrid_one_allroad_400_29_trapeze",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Acid Hybrid",
+  "model_group": "Acid Hybrid",
   "model": "Acid Hybrid ONE Allroad 400 29 Trapeze",
   "model_configuration": "complete",
   "type": "bike",
@@ -92,8 +92,10 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,

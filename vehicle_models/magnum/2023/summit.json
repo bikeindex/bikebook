@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/magnum/2023/summit",
   "manufacturer": "Magnum Bikes",
   "model": "Summit",
@@ -94,8 +94,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 140
+    ]
   },
   "suspension": {
     "front": {
@@ -133,10 +132,11 @@
       "drive_wheel": "rear",
       "manufacturer": "Das-Kit",
       "kind": "hub_drive",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "battery_info": "13Ah",
-      "charging_time": 390,
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "charging_time": 390
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 95,
@@ -159,6 +159,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 140
     }
   ],
   "sizes": [

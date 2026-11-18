@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jasion/2026/eb5_roamer_st",
   "manufacturer": "Jasion",
   "model": "EB5 Roamer ST",
@@ -53,8 +53,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -99,9 +98,11 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 528,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 528,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 1100,
       "peak_power": 1200,
       "max_torque": 60,
@@ -125,6 +126,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -173,10 +180,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V / 11A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LCD Display"
     },
     {
@@ -215,6 +218,11 @@
         "width": 49.53,
         "diameter": 559
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V / 11A"
     }
   ]
 }

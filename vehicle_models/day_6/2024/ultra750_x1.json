@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/day_6/2024/ultra750_x1",
   "manufacturer": "Day 6",
-  "vehicle_model_group": "Ultra750",
+  "model_group": "Ultra750",
   "model": "Ultra750 X1",
   "model_configuration": "complete",
   "type": "bike",
@@ -63,8 +63,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 113
+    "top_tube": "step_through"
   },
   "wheels": [
     {
@@ -106,9 +105,11 @@
       "manufacturer": "CYC",
       "model": "X1 Gen 4",
       "kind": "mid_drive",
-      "battery_size": 1092,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 1092,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 2400,
       "operating_modes": [
@@ -132,6 +133,12 @@
           "availability": "app_update"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
     }
   ],
   "sizes": [

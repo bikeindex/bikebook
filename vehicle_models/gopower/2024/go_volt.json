@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gopower/2024/go_volt",
   "manufacturer": "Gopower",
   "model": "Go Volt",
@@ -70,8 +70,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 125
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -110,8 +109,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 374,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 374,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -132,6 +133,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

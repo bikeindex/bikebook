@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wildeway/2023/fw11_3_0_32ah",
   "manufacturer": "Wildeway",
-  "vehicle_model_group": "FW11",
+  "model_group": "FW11",
   "model": "FW11 3.0 32Ah",
   "model_configuration": "complete",
   "type": "bike",
@@ -120,8 +120,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -172,10 +171,14 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX65",
-      "battery_size": 1536,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1536,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "max_torque": 68,
@@ -210,9 +213,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 40
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 40
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

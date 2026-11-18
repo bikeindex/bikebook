@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cyke/2023/grizzly",
   "manufacturer": "Cyke",
   "model": "Grizzly",
@@ -104,10 +104,12 @@
       "model": "SUTTO",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG cells",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 420
+      },
       "rated_power": 750,
       "max_torque": 85,
       "operating_modes": [
@@ -133,6 +135,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 204
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -143,7 +151,6 @@
           "height": 940
         },
         "total_weight": 42,
-        "max_weight_rider": 204,
         "rider_height_min": 1549,
         "rider_height_max": 1956
       }

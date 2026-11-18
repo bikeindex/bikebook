@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/zooz/2026/zooper",
   "manufacturer": "Zooz",
   "model": "ZOOPER",
@@ -82,8 +82,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 159
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -125,10 +124,13 @@
       "manufacturer": "Zooz",
       "model": "Thrillmatic",
       "sensor_cadence": true,
-      "battery_size": 1040,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 1040,
+        "voltage": 52,
+        "chemistry": "li-ion",
+        "cells": "21700",
+        "charging_time": 300
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -140,6 +142,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pedal_electric/2022/all_wheel_drive_s",
   "manufacturer": "Pedal Electric",
   "model": "All Wheel Drive [ S ]",
@@ -91,7 +91,9 @@
       "drive_wheel": "front",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 1200,
+      "battery": {
+        "capacity": 1200
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -119,7 +121,9 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 1200,
+      "battery": {
+        "capacity": 1200
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -144,14 +148,19 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "47\"",
       "geometry": {
         "seat_height_min": 889,
         "seat_height_max": 889,
-        "total_weight": 38.6,
-        "max_weight_rider": 159
+        "total_weight": 38.6
       }
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/isinwheel/2024/s2",
   "manufacturer": "iSinwheel",
   "model": "S2",
@@ -96,8 +96,10 @@
   "motors": [
     {
       "water_rating": "IP54",
-      "battery_size": 47,
-      "charging_time": 180,
+      "battery": {
+        "capacity": 47,
+        "charging_time": 180
+      },
       "rated_power": 150,
       "operating_modes": [
         {
@@ -114,6 +116,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 70
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -124,7 +132,6 @@
           "height": 930
         },
         "total_weight": 6.5,
-        "max_weight_rider": 70,
         "rider_age_min": 6,
         "rider_age_max": 14
       }

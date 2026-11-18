@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/joystar/2025/starmoto_20_24",
   "manufacturer": "Joystar",
-  "vehicle_model_group": "Starmoto",
+  "model_group": "Starmoto",
   "model": "Starmoto 20 24",
   "model_configuration": "complete",
   "type": "bike",
@@ -173,8 +173,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 125,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 125,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

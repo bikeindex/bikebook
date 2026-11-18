@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/glarewheel/2021/eb_x12",
   "manufacturer": "Glarewheel",
   "model": "EB-X12",
@@ -43,8 +43,7 @@
     "2021": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 113
+    "material": "steel"
   },
   "wheels": [
     {
@@ -62,8 +61,10 @@
   ],
   "motors": [
     {
-      "battery_size": 360,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -76,6 +77,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
     }
   ],
   "sizes": [

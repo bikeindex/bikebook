@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fucare/2024/gemini_x_sport",
   "manufacturer": "Fucare",
-  "vehicle_model_group": "Gemini X",
+  "model_group": "Gemini X",
   "model": "Gemini X Sport",
   "model_configuration": "complete",
   "type": "bike",
@@ -35,8 +35,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 181
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -80,9 +79,11 @@
       "drive_wheel": "front",
       "manufacturer": "Shengyi",
       "sensor_cadence": true,
-      "battery_size": 1440,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung cells",
+      "battery": {
+        "capacity": 1440,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 160,
@@ -111,9 +112,11 @@
       "drive_wheel": "rear",
       "manufacturer": "Shengyi",
       "sensor_cadence": true,
-      "battery_size": 1440,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung cells",
+      "battery": {
+        "capacity": 1440,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 160,
@@ -139,9 +142,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 45.36
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 45.36
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

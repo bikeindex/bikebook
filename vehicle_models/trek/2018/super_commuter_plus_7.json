@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2018/super_commuter_plus_7",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Super",
+  "model_group": "Super",
   "model": "Super Commuter+ 7",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,8 +54,7 @@
   "frame": {
     "material": "steel",
     "headset": "IS42/28.6 | IS52/40",
-    "seatpost_diameter": 31.6,
-    "gross_weight_rating": 136
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -110,8 +109,10 @@
       "model": "Performance Line",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 63,
@@ -125,6 +126,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

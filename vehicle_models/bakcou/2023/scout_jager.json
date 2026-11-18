@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bakcou/2023/scout_jager",
   "manufacturer": "Bakcou",
-  "vehicle_model_group": "Scout",
+  "model_group": "Scout",
   "model": "Scout Jäger",
   "model_configuration": "complete",
   "type": "bike",
@@ -123,10 +123,15 @@
       "spindle": "ISIS",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / UL 2849",
+      "certifications": [
+        "UL 2849",
+        "CE"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 1008,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1008,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "peak_power": 1440,
       "max_torque": 160,

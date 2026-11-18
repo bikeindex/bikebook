@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wildsyde/2026/beast_750w_class_1",
   "manufacturer": "Wildsyde",
-  "vehicle_model_group": "Beast",
+  "model_group": "Beast",
   "model": "Beast 750W Class 1",
   "model_configuration": "complete",
   "type": "bike",
@@ -34,8 +34,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 136
+    "material_detail": "6061 Aluminum"
   },
   "wheels": [
     {
@@ -88,9 +87,11 @@
       "model": "H550",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -113,6 +114,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2022/reaction_hybrid_sl_750_allroad_29",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Reaction Hybrid",
+  "model_group": "Reaction Hybrid",
   "model": "Reaction Hybrid SL 750 Allroad 29",
   "model_configuration": "complete",
   "type": "bike",
@@ -50,9 +50,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 36,
-    "max_weight_total": 135,
-    "gross_weight_rating": 160
+    "seatpost_clamp_diameter": 36
   },
   "suspension": {
     "front": {
@@ -116,8 +114,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -133,9 +133,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 135
+    },
+    {
+      "load": "gross",
+      "weight": 160
+    }
+  ],
   "sizes": [
     {
       "name": "17\" / 29 / M",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gyroor/2024/x2",
   "manufacturer": "Gyroor",
   "model": "X2",
@@ -61,10 +61,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 281,
-      "charging_time": 300,
+      "battery": {
+        "capacity": 281,
+        "charging_time": 300
+      },
       "rated_power": 550,
       "peak_power": 800,
       "operating_modes": [
@@ -81,6 +85,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -91,7 +101,6 @@
           "height": 570
         },
         "total_weight": 22.5,
-        "max_weight_rider": 100,
         "rider_height_min": 1600,
         "rider_height_max": 1854,
         "rider_age_min": 12

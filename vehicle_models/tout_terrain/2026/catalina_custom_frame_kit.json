@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tout_terrain/2026/catalina_custom_frame_kit",
   "manufacturer": "Tout Terrain",
-  "vehicle_model_group": "Catalina",
+  "model_group": "Catalina",
   "model": "Catalina Custom Frame Kit",
   "model_configuration": "frame",
   "type": "bike",
@@ -35,8 +35,7 @@
         "holes": 3
       }
     ],
-    "seatpost_diameter": 30.9,
-    "gross_weight_rating": 120
+    "seatpost_diameter": 30.9
   },
   "wheels": [
     {
@@ -64,6 +63,12 @@
       ],
       "rotor_diameter_max": 180,
       "caliper_mount": "Disc Flat Mount"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -154,11 +159,6 @@
       "type": "unknown",
       "type_detail": "Frame Type",
       "description": "Diamond"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Terrain",
-      "description": "Off-road"
     }
   ]
 }

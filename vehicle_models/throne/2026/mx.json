@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/throne/2026/mx",
   "manufacturer": "Throne Cycles",
   "model": "MX",
@@ -78,10 +78,12 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 2160,
-      "battery_chemistry": "li-ion",
-      "battery_info": "SAMSUNG Cells",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 2160,
+        "chemistry": "li-ion",
+        "cells": "SAMSUNG",
+        "charging_time": 300
+      },
       "rated_power": 10000,
       "operating_modes": [
         {

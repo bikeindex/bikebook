@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tout_terrain/2023/tribeca_xpress_gt_select_3_1_us",
   "manufacturer": "Tout Terrain",
-  "vehicle_model_group": "Tribeca",
+  "model_group": "Tribeca",
   "model": "Tribeca Xpress GT Select 3.1",
   "model_configuration": "complete",
   "markets": [
@@ -144,9 +144,12 @@
       "caliper_mount": "Disc Flat Mount"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 130
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 130
+    }
+  ],
   "sizes": [
     {
       "name": "S",

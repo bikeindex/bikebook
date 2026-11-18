@@ -1,7 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/qlife/2026/triker_2_0",
   "manufacturer": "Qlife",
+  "model_group": "Triker",
   "model": "Triker 2.0",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -108,8 +109,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 181
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -141,9 +141,13 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 499,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 499,
+        "charging_time": 360
+      },
+      "rated_power": 500,
       "peak_power": 1200,
+      "max_torque": 70,
       "operating_modes": [
         {
           "mode": "assist",
@@ -157,6 +161,7 @@
         {
           "mode": "throttle",
           "availability": "stock",
+          "throttle_type": "Twist",
           "e_vehicle_classifications": [
             "evc/us/class_2"
           ]
@@ -164,9 +169,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.43
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.43
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

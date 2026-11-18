@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cyberbike/2026/scamp",
   "manufacturer": "Cyberbike",
   "model": "Scamp",
@@ -37,8 +37,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 70
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -56,7 +55,9 @@
   ],
   "motors": [
     {
-      "battery_size": 270,
+      "battery": {
+        "capacity": 270
+      },
       "rated_power": 300,
       "operating_modes": [
         {
@@ -69,6 +70,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 70
     }
   ],
   "sizes": [

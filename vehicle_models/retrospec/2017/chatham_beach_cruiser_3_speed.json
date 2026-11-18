@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2017/chatham_beach_cruiser_3_speed",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Chatham",
+  "model_group": "Chatham",
   "model": "Chatham Beach Cruiser 3-Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -155,12 +155,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "OSFM",
       "geometry": {
-        "crank_length": 165,
-        "max_weight_rider": 113
+        "crank_length": 165
       }
     }
   ],

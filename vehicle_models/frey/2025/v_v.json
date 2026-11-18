@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/frey/2025/v_v",
   "manufacturer": "FREY",
   "model": "V V",
@@ -32,8 +32,7 @@
     "top_tube": "step_through",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 150
+    }
   },
   "suspension": {
     "front": {
@@ -89,12 +88,17 @@
       "spindle": "ISIS",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "CE / UL 2849",
-      "water_rating": "IPX5",
-      "battery_size": 1200,
-      "battery_options": [
-        1440
+      "certifications": [
+        "UL 2849",
+        "CE"
       ],
+      "water_rating": "IPX5",
+      "battery": {
+        "capacity": 1200,
+        "capacity_options": [
+          1440
+        ]
+      },
       "rated_power": 1000,
       "peak_power": 1440,
       "max_torque": 160,
@@ -107,6 +111,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

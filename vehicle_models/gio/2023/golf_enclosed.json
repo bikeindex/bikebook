@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gio/2023/golf_enclosed",
   "manufacturer": "GIO",
   "model": "Golf Enclosed",
@@ -92,8 +92,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 225
+    "material": "steel"
   },
   "wheels": [
     {
@@ -123,8 +122,10 @@
   ],
   "motors": [
     {
-      "battery_size": 3480,
-      "charging_time": 600,
+      "battery": {
+        "capacity": 3480,
+        "charging_time": 600
+      },
       "rated_power": 1200,
       "operating_modes": [
         {
@@ -135,6 +136,12 @@
           "max_slope": 17
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 225
     }
   ],
   "sizes": [

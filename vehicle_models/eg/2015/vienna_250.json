@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eg/2015/vienna_250",
   "manufacturer": "EG Bikes",
   "model": "Vienna 250",
@@ -88,8 +88,10 @@
   ],
   "motors": [
     {
-      "battery_size": 240,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 240,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

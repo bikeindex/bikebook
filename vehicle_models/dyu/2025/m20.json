@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dyu/2025/m20",
   "manufacturer": "DYU",
-  "vehicle_model_group": "M20",
+  "model_group": "M20",
   "model": "M20",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,8 +40,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 120
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -64,9 +63,10 @@
   "motors": [
     {
       "water_rating": "IP54",
-      "battery_size": 874,
-      "battery_info": "18.2 Ah",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 874,
+        "charging_time": 480
+      },
       "rated_power": 750,
       "peak_power": 1500,
       "operating_modes": [
@@ -89,6 +89,12 @@
           "range_claimed": 113
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

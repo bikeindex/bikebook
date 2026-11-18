@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/isinwheel/2025/r8",
   "manufacturer": "iSinwheel",
   "model": "R8",
@@ -61,8 +61,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -90,8 +89,10 @@
   "motors": [
     {
       "water_rating": "IPX4",
-      "battery_size": 1296,
-      "charging_time": 600,
+      "battery": {
+        "capacity": 1296,
+        "charging_time": 600
+      },
       "peak_power": 3000,
       "operating_modes": [
         {
@@ -109,6 +110,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

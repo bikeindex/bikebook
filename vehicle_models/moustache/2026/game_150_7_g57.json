@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/moustache/2026/game_150_7_g57",
   "manufacturer": "Moustache bikes",
-  "vehicle_model_group": "Game",
+  "model_group": "Game",
   "model": "Game 150.7 G57",
   "model_configuration": "complete",
   "type": "bike",
@@ -64,6 +64,47 @@
           ]
         },
         {
+          "name": "Moon Landing Glossy",
+          "variants": [
+            {
+              "sku": "G57FGL600250",
+              "size": "L"
+            },
+            {
+              "sku": "G57FGM600250",
+              "size": "M"
+            },
+            {
+              "sku": "G57FGX600250",
+              "size": "XL"
+            },
+            {
+              "sku": "G57FGX700250",
+              "size": "XL",
+              "original_msrp": 569900
+            },
+            {
+              "sku": "G57FGL700250",
+              "size": "L",
+              "original_msrp": 569900
+            },
+            {
+              "sku": "G57FGM700250",
+              "size": "M",
+              "original_msrp": 569900
+            },
+            {
+              "sku": "G57FGS600250",
+              "size": "S"
+            },
+            {
+              "sku": "G57FGS700250",
+              "size": "S",
+              "original_msrp": 569900
+            }
+          ]
+        },
+        {
           "name": "Dusty Mauve Glossy",
           "colors": [
             "purple"
@@ -106,47 +147,6 @@
               "size": "S"
             }
           ]
-        },
-        {
-          "name": "Moon Landing Glossy",
-          "variants": [
-            {
-              "sku": "G57FGL600250",
-              "size": "L"
-            },
-            {
-              "sku": "G57FGM600250",
-              "size": "M"
-            },
-            {
-              "sku": "G57FGX600250",
-              "size": "XL"
-            },
-            {
-              "sku": "G57FGX700250",
-              "size": "XL",
-              "original_msrp": 569900
-            },
-            {
-              "sku": "G57FGL700250",
-              "size": "L",
-              "original_msrp": 569900
-            },
-            {
-              "sku": "G57FGM700250",
-              "size": "M",
-              "original_msrp": 569900
-            },
-            {
-              "sku": "G57FGS600250",
-              "size": "S"
-            },
-            {
-              "sku": "G57FGS700250",
-              "size": "S",
-              "original_msrp": 569900
-            }
-          ]
         }
       ],
       "url": "https://moustachebikes.com/en-UK/electric-bikes/samedi-29-game/game-150-7",
@@ -161,9 +161,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 38.6,
-    "max_weight_total": 115,
-    "gross_weight_rating": 140
+    "seatpost_clamp_diameter": 38.6
   },
   "suspension": {
     "front": {
@@ -238,12 +236,13 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_options": [
-        750
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "750 Wh: +£300",
+      "battery": {
+        "capacity": 600,
+        "capacity_options": [
+          750
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -258,6 +257,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 115
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

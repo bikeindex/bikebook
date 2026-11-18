@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2021/moterra_lt_carbon_2",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Moterra Neo LT",
+  "model_group": "Moterra Neo LT",
   "model": "Moterra LT Carbon 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -276,9 +276,13 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "certification": "UL 2849",
-      "battery_size": 750,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 750,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

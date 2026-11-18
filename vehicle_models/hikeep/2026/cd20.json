@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hikeep/2026/cd20",
   "manufacturer": "Hikeep",
   "model": "CD20",
@@ -49,8 +49,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 250
+    "material": "steel"
   },
   "wheels": [
     {
@@ -79,7 +78,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 1589,
+      "battery": {
+        "capacity": 1589
+      },
       "rated_power": 1500,
       "peak_power": 3000,
       "max_torque": 220,
@@ -102,6 +103,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 250
     }
   ],
   "sizes": [

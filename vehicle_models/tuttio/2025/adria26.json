@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tuttio/2025/adria26",
   "manufacturer": "Tuttio",
   "model": "Adria26",
@@ -68,8 +68,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -100,10 +99,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 1300,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1300,
+        "chemistry": "li-ion"
+      },
       "peak_power": 6000,
       "max_torque": 210,
       "operating_modes": [
@@ -125,6 +128,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -232,6 +241,18 @@
       }
     },
     {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "26*4 Inch Fat Tire",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 559
+      }
+    },
+    {
       "type": "unknown",
       "type_detail": "Package weight",
       "description": "113.54 lbs(51.5kg)"
@@ -245,10 +266,6 @@
       "type": "unknown",
       "type_detail": "Ride Mode",
       "description": "Electric, Bicycle, PAS"
-    },
-    {
-      "type": "unknown",
-      "description": "26*4 Inch Fat Tire"
     },
     {
       "type": "unknown",

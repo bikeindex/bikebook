@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/whyte/2023/e_506",
   "manufacturer": "Whyte",
-  "vehicle_model_group": "E-500",
+  "model_group": "E-500",
   "model": "E-506",
   "model_configuration": "complete",
   "type": "bike",
@@ -140,8 +140,10 @@
       "model": "BDU450CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

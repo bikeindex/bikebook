@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/urtopia/2025/carbon_fold_step_thru",
   "manufacturer": "Urtopia",
-  "vehicle_model_group": "Carbon Fold",
+  "model_group": "Carbon Fold",
   "model": "Carbon Fold Step-Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -63,8 +63,7 @@
     "material": "carbon",
     "top_tube": "step_through",
     "folding": "half_fold",
-    "seatpost_diameter": 46,
-    "max_weight_total": 100
+    "seatpost_diameter": 46
   },
   "wheels": [
     {
@@ -108,11 +107,15 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
+      "certifications": [
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 252,
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 252,
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 250,
       "peak_power": 470,
       "max_torque": 26,
@@ -136,6 +139,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

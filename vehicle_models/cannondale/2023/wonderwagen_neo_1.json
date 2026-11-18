@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2023/wonderwagen_neo_1",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Wonderwagen Neo",
+  "model_group": "Wonderwagen Neo",
   "model": "Wonderwagen Neo 1",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -133,8 +133,10 @@
       "model_group": "Cargo Line",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 725,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 725,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

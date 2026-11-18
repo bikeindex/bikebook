@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hi_power/2026/revolution_x",
   "manufacturer": "Hi Power Cycles",
-  "vehicle_model_group": "Revolution",
+  "model_group": "Revolution",
   "model": "Revolution X",
   "model_configuration": "complete",
   "type": "bike",
@@ -127,7 +127,9 @@
     {
       "model": "DC Gearless",
       "kind": "hub_drive",
-      "battery_size": 2400,
+      "battery": {
+        "capacity": 2400
+      },
       "rated_power": 8000,
       "peak_power": 10000,
       "operating_modes": [
@@ -151,6 +153,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -168,8 +176,7 @@
         "bb_height": 375,
         "travel_front": 203,
         "travel_rear": 240,
-        "total_weight": 39,
-        "max_weight_rider": 159
+        "total_weight": 39
       }
     }
   ],
@@ -196,7 +203,7 @@
         "rear"
       ],
       "manufacturer": "Magura",
-      "description": "(x2); Magura MDR-C, 203mmDrivetrain",
+      "description": "(x2); Magura MDR-C, 203mm",
       "dimensions": {
         "diameter": 203
       }

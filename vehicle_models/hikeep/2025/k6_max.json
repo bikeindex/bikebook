@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hikeep/2025/k6_max",
   "manufacturer": "Hikeep",
-  "vehicle_model_group": "K6",
+  "model_group": "K6",
   "model": "K6 Max",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,8 +41,7 @@
   },
   "frame": {
     "material": "steel",
-    "coil_compatible": true,
-    "max_weight_total": 181
+    "coil_compatible": true
   },
   "suspension": {
     "front": {},
@@ -81,9 +80,13 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 840,
+      "battery": {
+        "capacity": 840
+      },
       "peak_power": 1500,
       "max_torque": 90,
       "operating_modes": [
@@ -105,6 +108,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

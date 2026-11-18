@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2024/harper_plus_7_speed",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Harper",
+  "model_group": "Harper",
   "model": "Harper Plus 7 Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -177,12 +177,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "S: 48cm",
       "geometry": {
         "standover": 754,
-        "max_weight_rider": 113,
         "rider_height_min": 1600,
         "rider_height_max": 1676
       }
@@ -191,7 +196,6 @@
       "name": "M: 52cm",
       "geometry": {
         "standover": 782,
-        "max_weight_rider": 113,
         "rider_height_min": 1651,
         "rider_height_max": 1727
       }
@@ -200,7 +204,6 @@
       "name": "L: 56cm",
       "geometry": {
         "standover": 815,
-        "max_weight_rider": 113,
         "rider_height_min": 1702,
         "rider_height_max": 1829
       }
@@ -209,7 +212,6 @@
       "name": "XL: 60cm",
       "geometry": {
         "standover": 843,
-        "max_weight_rider": 113,
         "rider_height_min": 1753,
         "rider_height_max": 1880
       }

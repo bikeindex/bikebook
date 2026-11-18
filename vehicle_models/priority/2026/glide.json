@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/priority/2026/glide",
   "manufacturer": "Priority Bicycles",
   "model": "Glide",
@@ -122,8 +122,13 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 374,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 374
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -140,6 +145,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
     }
   ],
   "sizes": [
@@ -160,7 +171,6 @@
         "fork_rake": 45,
         "crank_length": 170,
         "total_weight": 22.2,
-        "max_weight_rider": 136,
         "rider_height_min": 1575,
         "rider_height_max": 1778,
         "rider_inseam_min": 673
@@ -182,7 +192,6 @@
         "bb_drop": 70,
         "fork_rake": 45,
         "crank_length": 170,
-        "max_weight_rider": 136,
         "rider_height_min": 1753,
         "rider_height_max": 1880,
         "rider_inseam_min": 762

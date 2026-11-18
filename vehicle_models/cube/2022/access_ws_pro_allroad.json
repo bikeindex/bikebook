@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2022/access_ws_pro_allroad",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Access",
+  "model_group": "Access",
   "model": "Access WS Pro Allroad",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,9 +42,7 @@
     },
     "headset": "ZS44/28.6 | ZS44/30",
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 133,
-    "gross_weight_rating": 150
+    "seatpost_clamp_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -106,9 +104,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "payload",
+      "weight": 133
+    },
+    {
+      "load": "gross",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "14\" / 27.5 / XS",

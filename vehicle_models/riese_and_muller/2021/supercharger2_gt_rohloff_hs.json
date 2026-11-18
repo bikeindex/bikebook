@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2021/supercharger2_gt_rohloff_hs",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Supercharger2 GT",
+  "model_group": "Supercharger2 GT",
   "model": "Supercharger2 GT rohloff HS",
   "model_configuration": "complete",
   "markets": [
@@ -44,10 +44,13 @@
         "type": "fender"
       },
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
-    ],
-    "gross_weight_rating": 140
+    ]
   },
   "suspension": {
     "front": {
@@ -108,7 +111,9 @@
       "model": "BDU490P",
       "model_group": "Performance Line Speed",
       "kind": "mid_drive",
-      "battery_size": 500,
+      "battery": {
+        "capacity": 500
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -122,6 +127,20 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 140
+    },
+    {
+      "load": "rear_rack",
+      "weight": 27.5
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 5
     }
   ],
   "sizes": [
@@ -148,9 +167,7 @@
           "headset_size": 38.1,
           "top_tube_height": 740,
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27.5
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     },
@@ -177,9 +194,7 @@
           "headset_size": 38.1,
           "top_tube_height": 765,
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27.5
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     },
@@ -206,9 +221,7 @@
           "headset_size": 38.1,
           "top_tube_height": 785,
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27.5
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     },
@@ -235,9 +248,7 @@
           "headset_size": 38.1,
           "top_tube_height": 785,
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 27.5
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kalkhoff/2026/endeavour_5_plus_advance",
   "manufacturer": "Kalkhoff",
-  "vehicle_model_group": "Endeavour",
+  "model_group": "Endeavour",
   "model": "Endeavour 5+ Advance",
   "model_configuration": "complete",
   "type": "bike",
@@ -150,11 +150,18 @@
   },
   "frame": {
     "material": "steel",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ],
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 147,
-    "gross_weight_rating": 180
+    }
   },
   "suspension": {
     "front": {
@@ -218,8 +225,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 120,
@@ -235,9 +244,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 27
+    },
+    {
+      "load": "payload",
+      "weight": 147
+    },
+    {
+      "load": "gross",
+      "weight": 180
+    }
+  ],
   "sizes": [
     {
       "name": "Diamond M",

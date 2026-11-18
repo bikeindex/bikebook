@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/orbea/2022/rise_h15_20mph",
   "manufacturer": "Orbea",
-  "vehicle_model_group": "Rise",
+  "model_group": "Rise",
   "model": "Rise H15 20mph",
   "model_configuration": "complete",
   "type": "bike",
@@ -120,7 +120,9 @@
       "manufacturer": "Shimano",
       "model": "EP8-RS",
       "kind": "mid_drive",
-      "battery_size": 540,
+      "battery": {
+        "capacity": 540
+      },
       "operating_modes": [
         {
           "mode": "assist",

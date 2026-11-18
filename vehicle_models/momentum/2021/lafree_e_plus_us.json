@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/momentum/2021/lafree_e_plus_us",
   "manufacturer": "Momentum",
   "model": "LaFree E+",
@@ -127,8 +127,10 @@
       "model": "SyncDrive Life",
       "kind": "mid_drive",
       "spindle": "square taper",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "max_torque": 60,
       "operating_modes": [
         {

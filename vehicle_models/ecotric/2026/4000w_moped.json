@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ecotric/2026/4000w_moped",
   "manufacturer": "Ecotric",
   "model": "4000W Moped",
@@ -55,8 +55,10 @@
   ],
   "motors": [
     {
-      "battery_size": 2100,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 2100,
+        "chemistry": "li-ion"
+      },
       "rated_power": 4000,
       "operating_modes": [
         {

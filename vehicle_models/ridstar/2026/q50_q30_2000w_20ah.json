@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ridstar/2026/q50_q30_2000w_20ah",
   "manufacturer": "Ridstar",
-  "vehicle_model_group": "Q50",
+  "model_group": "Q50",
   "model": "Q50/Q30 2000W 20AH",
   "model_configuration": "complete",
   "type": "bike",
@@ -34,8 +34,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -70,9 +69,11 @@
   ],
   "motors": [
     {
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 2000,
       "max_torque": 85,
       "operating_modes": [
@@ -94,6 +95,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

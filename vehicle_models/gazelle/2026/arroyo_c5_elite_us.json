@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gazelle/2026/arroyo_c5_elite_us",
   "manufacturer": "Gazelle",
-  "vehicle_model_group": "Arroyo",
+  "model_group": "Arroyo",
   "model": "Arroyo C5 Elite",
   "model_configuration": "complete",
   "markets": [
@@ -71,7 +71,16 @@
   },
   "frame": {
     "material": "aluminum",
-    "top_tube": "step_through"
+    "top_tube": "step_through",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ]
   },
   "suspension": {
     "front": {
@@ -132,9 +141,11 @@
       "model": "BDU346Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 540,
-      "battery_chemistry": "li-ion",
-      "charging_time": 462,
+      "battery": {
+        "capacity": 540,
+        "chemistry": "li-ion",
+        "charging_time": 462
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,

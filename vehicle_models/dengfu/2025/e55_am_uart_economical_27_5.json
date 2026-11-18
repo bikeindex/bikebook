@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dengfu/2025/e55_am_uart_economical_27_5",
   "manufacturer": "Dengfu",
-  "vehicle_model_group": "E55",
+  "model_group": "E55",
   "model": "E55 AM UART Economical 27.5",
   "model_configuration": "complete",
   "type": "bike",
@@ -128,8 +128,10 @@
     {
       "manufacturer": "Bafang",
       "model": "M620 UART",
-      "battery_size": 1040,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1040,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "operating_modes": [
         {

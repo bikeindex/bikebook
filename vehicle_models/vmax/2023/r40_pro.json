@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vmax/2023/r40_pro",
   "manufacturer": "VMAX",
   "model": "R40 Pro",
@@ -58,8 +58,10 @@
   "motors": [
     {
       "water_rating": "IPX5",
-      "battery_size": 624,
-      "charging_time": 390,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 390
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -70,6 +72,12 @@
           "max_slope": 16
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 130
     }
   ],
   "sizes": [
@@ -87,7 +95,6 @@
           "height": 515
         },
         "total_weight": 23.5,
-        "max_weight_rider": 130,
         "extra_measurements": {
           "deck_length": 520,
           "deck_to_handlebar_height": 900,

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/giant/2024/trance_x_advanced_e_plus_elite_0",
   "manufacturer": "Giant",
-  "vehicle_model_group": "Trance",
+  "model_group": "Trance",
   "model": "Trance X Advanced E+ Elite 0",
   "model_configuration": "complete",
   "markets": [
@@ -130,8 +130,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "water_rating": "IPX6",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "max_torque": 85,
       "operating_modes": [
         {

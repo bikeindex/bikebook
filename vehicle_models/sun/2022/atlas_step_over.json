@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sun/2022/atlas_step_over",
   "manufacturer": "Sun",
-  "vehicle_model_group": "Atlas",
+  "model_group": "Atlas",
   "model": "Atlas Step-Over",
   "model_configuration": "complete",
   "type": "bike",
@@ -88,12 +88,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "18\"",
       "geometry": {
-        "total_weight": 18.1,
-        "max_weight_rider": 113
+        "total_weight": 18.1
       }
     }
   ],

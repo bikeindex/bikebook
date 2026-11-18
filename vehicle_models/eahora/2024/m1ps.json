@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eahora/2024/m1ps",
   "manufacturer": "Eahora",
-  "vehicle_model_group": "M1P",
+  "model_group": "M1P",
   "model": "M1PS",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -110,8 +110,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 200
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -147,8 +146,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 2880,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 2880,
+        "chemistry": "li-ion"
+      },
       "rated_power": 4000,
       "max_torque": 170,
       "operating_modes": [
@@ -163,6 +164,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

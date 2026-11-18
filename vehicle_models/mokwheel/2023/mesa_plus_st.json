@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mokwheel/2023/mesa_plus_st",
   "manufacturer": "Mokwheel",
-  "vehicle_model_group": "Mesa",
+  "model_group": "Mesa",
   "model": "Mesa Plus ST",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,8 +54,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 181
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -100,7 +99,9 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IPX6",
-      "battery_size": 768,
+      "battery": {
+        "capacity": 768
+      },
       "rated_power": 750,
       "peak_power": 1100,
       "max_torque": 90,
@@ -125,6 +126,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

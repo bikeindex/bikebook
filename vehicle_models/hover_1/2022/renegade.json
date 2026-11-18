@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hover_1/2022/renegade",
   "manufacturer": "Hover-1",
   "model": "Renegade",
@@ -57,8 +57,10 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "battery_size": 626,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 626,
+        "chemistry": "li-ion"
+      },
       "rated_power": 450,
       "operating_modes": [
         {
@@ -71,8 +73,10 @@
     },
     {
       "drive_wheel": "rear",
-      "battery_size": 626,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 626,
+        "chemistry": "li-ion"
+      },
       "rated_power": 450,
       "operating_modes": [
         {
@@ -82,6 +86,12 @@
           "range_claimed": 53
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -99,7 +109,6 @@
           "height": 305
         },
         "total_weight": 21,
-        "max_weight_rider": 120,
         "rider_age_min": 16
       }
     }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eskute/2025/m200_plus",
   "manufacturer": "Eskute",
-  "vehicle_model_group": "M200",
+  "model_group": "M200",
   "model": "M200 Plus",
   "model_configuration": "complete",
   "type": "bike",
@@ -105,8 +105,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 159
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -137,10 +136,14 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IP54",
-      "battery_size": 624,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 624,
+        "charging_time": 480
+      },
       "peak_power": 1200,
       "max_torque": 65,
       "operating_modes": [
@@ -161,9 +164,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.43
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.43
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

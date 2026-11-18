@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2019/max_cargo_2_0",
   "manufacturer": "Eunorau",
   "model": "Max-Cargo 2.0",
@@ -63,8 +63,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 200
+    ]
   },
   "wheels": [
     {
@@ -106,10 +105,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "Yes",
-      "battery_size": 672,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "max_torque": 70,
       "operating_modes": [
@@ -129,6 +129,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [
@@ -205,10 +211,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "48V/750W ENA hub motor with max 70 N.m torque"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V / 28A"
     },
     {
       "type": "e_vehicle_remote",
@@ -293,6 +295,11 @@
         "width": 60.96,
         "diameter": 507
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V / 28A"
     },
     {
       "type": "unknown",

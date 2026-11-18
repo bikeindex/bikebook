@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mondraker/2027/f_play_24",
   "manufacturer": "Mondraker",
-  "vehicle_model_group": "F-Play",
+  "model_group": "F-Play",
   "model": "F-Play 24",
   "model_configuration": "complete",
   "type": "bike",
@@ -121,8 +121,10 @@
       "manufacturer": "Mahle",
       "model": "X30",
       "kind": "hub_drive",
-      "battery_size": 250,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 250,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 45,
       "operating_modes": [

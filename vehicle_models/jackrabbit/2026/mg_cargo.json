@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jackrabbit/2026/mg_cargo",
   "manufacturer": "JackRabbit",
-  "vehicle_model_group": "MG",
+  "model_group": "MG",
   "model": "MG Cargo",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -46,8 +46,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 227
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -77,11 +76,16 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2271, UL 2272",
+      "certifications": [
+        "UL 2271",
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 749,
       "operating_modes": [
         {
@@ -100,6 +104,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [

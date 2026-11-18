@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bianchi/2020/t_tronik_sport_9_1_sx_eagle_1x12sp_e7000",
   "manufacturer": "Bianchi",
-  "vehicle_model_group": "T-Tronik",
+  "model_group": "T-Tronik",
   "model": "T-Tronik Sport 9.1 - SX Eagle 1x12sp - E7000",
   "model_configuration": "complete",
   "type": "bike",
@@ -85,8 +85,10 @@
       "kind": "mid_drive",
       "spindle": "Shimano E8000",
       "sensor_cadence": true,
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 60,
       "operating_modes": [

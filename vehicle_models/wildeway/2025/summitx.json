@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wildeway/2025/summitx",
   "manufacturer": "Wildeway",
   "model": "SummitX",
@@ -91,8 +91,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 160
+    ]
   },
   "suspension": {
     "front": {
@@ -198,9 +197,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 50
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 50
+    },
+    {
+      "load": "payload",
+      "weight": 160
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

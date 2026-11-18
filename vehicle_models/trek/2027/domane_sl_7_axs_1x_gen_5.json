@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2027/domane_sl_7_axs_1x_gen_5",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Domane",
+  "model_group": "Domane",
   "model": "Domane SL 7 AXS 1x Gen 5",
   "model_configuration": "complete",
   "type": "bike",
@@ -109,9 +109,7 @@
       "shell": "T47",
       "spindle": "DUB"
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 116,
-    "gross_weight_rating": 125
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -169,6 +167,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 116
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

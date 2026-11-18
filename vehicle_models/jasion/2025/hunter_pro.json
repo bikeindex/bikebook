@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jasion/2025/hunter_pro",
   "manufacturer": "Jasion",
   "model": "Hunter Pro",
@@ -66,8 +66,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 181
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {},
@@ -104,8 +103,10 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 720,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 720,
+        "charging_time": 480
+      },
       "peak_power": 1800,
       "max_torque": 95,
       "operating_modes": [
@@ -128,6 +129,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

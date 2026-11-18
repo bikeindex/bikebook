@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/motiv/2017/stout",
   "manufacturer": "Motiv",
   "model": "Stout",
@@ -105,11 +105,13 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 749,
-      "battery_options": [
-        1008
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 749,
+        "capacity_options": [
+          1008
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "operating_modes": [
         {

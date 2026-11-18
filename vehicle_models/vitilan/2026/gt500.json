@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vitilan/2026/gt500",
   "manufacturer": "Vitilan",
   "model": "GT500",
@@ -32,8 +32,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -76,9 +75,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 1800,
-      "battery_chemistry": "li-ion",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 1800,
+        "chemistry": "li-ion",
+        "charging_time": 600
+      },
       "rated_power": 3000,
       "peak_power": 7000,
       "max_torque": 180,
@@ -102,6 +103,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

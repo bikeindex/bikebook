@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/himiway/2024/a7_pro",
   "manufacturer": "Himiway",
-  "vehicle_model_group": "A7",
+  "model_group": "A7",
   "model": "A7 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -77,8 +77,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 136
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -141,8 +140,10 @@
       "model": "M100",
       "kind": "mid_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 130,
       "operating_modes": [
@@ -152,6 +153,12 @@
           "range_claimed": 80
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [
@@ -244,10 +251,6 @@
     {
       "type": "e_vehicle_remote",
       "description": "BIGSTONE M300C-TFT"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V/22A"
     },
     {
       "type": "fender",
@@ -386,6 +389,11 @@
         "width": 60.96,
         "diameter": 584
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V/22A"
     }
   ]
 }

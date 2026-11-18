@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2021/topstone_neo_carbon_2",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Topstone Neo",
+  "model_group": "Topstone Neo",
   "model": "Topstone Neo Carbon 2",
   "model_configuration": "complete",
   "markets": [
@@ -209,8 +209,10 @@
       "model": "BDU490P",
       "model_group": "Performance Line Speed",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

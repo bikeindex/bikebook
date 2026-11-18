@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/happyrun/2023/g100",
   "manufacturer": "HappyRun",
-  "vehicle_model_group": "G100",
+  "model_group": "G100",
   "model": "G100",
   "model_configuration": "complete",
   "type": "bike",
@@ -236,8 +236,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "#45 Environmentally Friendly Steel",
-    "max_weight_total": 181
+    "material_detail": "#45 Environmentally Friendly Steel"
   },
   "suspension": {
     "front": {},
@@ -275,9 +274,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 1824,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 1824,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 1000,
       "peak_power": 2000,
       "max_torque": 95,
@@ -309,9 +310,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 14.97
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 180
+    },
+    {
+      "load": "cargo",
+      "weight": 14.97
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -325,7 +337,6 @@
           "height": 1187
         },
         "total_weight": 48.5,
-        "max_weight_rider": 180,
         "rider_height_min": 1620,
         "rider_height_max": 1980,
         "extra_measurements": {

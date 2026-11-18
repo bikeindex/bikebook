@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vivi/2023/gopina",
   "manufacturer": "Vivi",
   "model": "Gopina",
@@ -69,8 +69,7 @@
       "width": 132
     },
     "seatpost_diameter": 28.6,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 150
+    "seatpost_clamp_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -128,11 +127,16 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP54",
-      "battery_size": 374,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 374,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 350,
       "peak_power": 700,
       "max_torque": 50,
@@ -159,9 +163,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 45
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 45
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

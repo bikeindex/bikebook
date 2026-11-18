@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/espin/2019/flow",
   "manufacturer": "Espin",
   "model": "Flow",
@@ -112,10 +112,12 @@
       "manufacturer": "Espin",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 653,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 653,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "peak_power": 800,
       "max_torque": 65,
@@ -139,9 +141,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    }
+  ],
   "sizes": [
     {
       "name": "18\"",
@@ -181,6 +186,10 @@
       "description": "Locking Removable Battery Pack & Fenders"
     },
     {
+      "type": "e_vehicle_charger",
+      "description": "2 Amp Charger"
+    },
+    {
       "type": "e_vehicle_motor",
       "manufacturer": "Espin",
       "description": "Espin"
@@ -213,6 +222,11 @@
       "dimensions": {
         "diameter": 25.4
       }
+    },
+    {
+      "type": "included_not_installed",
+      "type_detail": "Tools",
+      "description": "Tool Box"
     },
     {
       "type": "lights",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/doheny/2024/ez_folding_3_0",
   "manufacturer": "Doheny",
   "model": "EZ Folding 3.0",
@@ -47,8 +47,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 159
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -77,8 +76,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 720,
-      "battery_info": "LG cell",
+      "battery": {
+        "capacity": 720,
+        "cells": "LG"
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 80,
@@ -98,6 +99,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

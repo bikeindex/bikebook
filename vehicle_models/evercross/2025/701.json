@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2025/701",
   "manufacturer": "Evercross",
   "model": "701",
@@ -38,8 +38,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 281
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -47,9 +46,15 @@
   },
   "wheels": [
     {
-      "bsd": 508,
+      "bsd": 152,
       "position": [
-        "front",
+        "front"
+      ],
+      "tire_width": 152
+    },
+    {
+      "bsd": 203,
+      "position": [
         "rear"
       ],
       "tire_width": 152
@@ -72,8 +77,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 1200,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1200,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1500,
       "operating_modes": [
         {
@@ -84,6 +91,12 @@
           "max_slope": 9
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 281
     }
   ],
   "sizes": [
@@ -156,7 +169,7 @@
       ],
       "description": "20\"",
       "dimensions": {
-        "diameter": 508
+        "diameter": 406
       }
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2026/beaumont_rev_plus_step_through",
   "manufacturer": "Retrospec",
   "model": "Beaumont Rev+ Step Through",
@@ -131,8 +131,13 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 500,
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 500
+      },
       "rated_power": 500,
       "max_torque": 65,
       "operating_modes": [
@@ -152,16 +157,22 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    }
+  ],
   "sizes": [
     {
       "name": "Small 16\"",
       "geometry": {
         "standover": 620,
         "total_weight": 26.6,
-        "max_weight_rider": 159,
         "rider_height_min": 1600,
         "rider_height_max": 1829
       }

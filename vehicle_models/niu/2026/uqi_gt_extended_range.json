@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/niu/2026/uqi_gt_extended_range",
   "manufacturer": "Niu",
-  "vehicle_model_group": "UQi GT",
+  "model_group": "UQi GT",
   "model": "UQi GT Extended Range",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -20,8 +20,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 227
+    "material": "steel"
   },
   "wheels": [
     {
@@ -42,10 +41,12 @@
   "motors": [
     {
       "manufacturer": "Bosch",
-      "battery_size": 2016,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 Lithium Ion",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 2016,
+        "chemistry": "li-ion",
+        "cells": "18650",
+        "charging_time": 540
+      },
       "rated_power": 1500,
       "peak_power": 1500,
       "operating_modes": [
@@ -59,6 +60,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2026/ora_pro",
   "manufacturer": "Jetson",
   "model": "Ora Pro",
@@ -36,8 +36,10 @@
   ],
   "motors": [
     {
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "battery": {
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -49,6 +51,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
     }
   ],
   "sizes": [
@@ -66,7 +74,6 @@
           "height": 409
         },
         "total_weight": 12.2,
-        "max_weight_rider": 100,
         "rider_age_min": 12,
         "extra_measurements": {
           "handlebar_height": 1016

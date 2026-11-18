@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jamis/2014/aurora_elite",
   "manufacturer": "Jamis",
   "model": "Aurora Elite",
@@ -83,9 +83,12 @@
       "rotor_diameter": 160
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    }
+  ],
   "components": [
     {
       "type": "bottom_bracket",

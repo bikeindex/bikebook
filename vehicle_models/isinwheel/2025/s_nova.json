@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/isinwheel/2025/s_nova",
   "manufacturer": "iSinwheel",
-  "vehicle_model_group": "S Nova",
+  "model_group": "S Nova",
   "model": "S Nova",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -79,8 +79,10 @@
   "motors": [
     {
       "water_rating": "IPX4",
-      "battery_size": 281,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 281,
+        "charging_time": 420
+      },
       "rated_power": 500,
       "peak_power": 600,
       "operating_modes": [
@@ -98,6 +100,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -107,8 +115,7 @@
           "width": 610,
           "height": 1240
         },
-        "total_weight": 22.3,
-        "max_weight_rider": 120
+        "total_weight": 22.3
       }
     }
   ],

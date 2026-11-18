@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/aerium_c_68x_pro",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Aerium",
+  "model_group": "Aerium",
   "model": "Aerium C:68X Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -37,9 +37,7 @@
     "bottom_bracket": {
       "shell": "press fit",
       "spindle": "DUB"
-    },
-    "max_weight_total": 104,
-    "gross_weight_rating": 115
+    }
   },
   "wheels": [
     {
@@ -96,6 +94,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 115
+    }
+  ],
   "sizes": [
     {
       "name": "XS",
@@ -112,7 +120,6 @@
         "handlebar_width": 400,
         "stem_length": 81,
         "crank_length": 160,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": -78,
           "protrusion_height_80mm": 790
@@ -135,7 +142,6 @@
         "stem_length": 81,
         "crank_length": 165,
         "total_weight": 10.4,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": -78,
           "protrusion_height_80mm": 801
@@ -157,7 +163,6 @@
         "handlebar_width": 400,
         "stem_length": 81,
         "crank_length": 165,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": -78,
           "protrusion_height_80mm": 821
@@ -179,7 +184,6 @@
         "handlebar_width": 400,
         "stem_length": 81,
         "crank_length": 170,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": -78,
           "protrusion_height_80mm": 824

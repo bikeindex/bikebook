@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/euy/2022/s4",
   "manufacturer": "Euy",
-  "vehicle_model_group": "S4",
+  "model_group": "S4",
   "model": "S4",
   "model_configuration": "complete",
   "type": "bike",
@@ -60,8 +60,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 181
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -94,10 +93,14 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 750,
       "peak_power": 1000,
       "max_torque": 96,
@@ -118,6 +121,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [
@@ -192,10 +201,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V/25A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LCD display"
     },
     {
@@ -253,6 +258,11 @@
       "type": "tube",
       "type_detail": "Height of lower tube",
       "description": "22\""
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V/25A"
     },
     {
       "type": "unknown",

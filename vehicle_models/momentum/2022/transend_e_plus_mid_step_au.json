@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/momentum/2022/transend_e_plus_mid_step_au",
   "manufacturer": "Momentum",
-  "vehicle_model_group": "Transend",
+  "model_group": "Transend",
   "model": "Transend E+ Mid-Step",
   "model_configuration": "complete",
   "markets": [
@@ -117,8 +117,10 @@
       "model": "SyncDrive Life",
       "kind": "mid_drive",
       "spindle": "square taper",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 60,
       "operating_modes": [

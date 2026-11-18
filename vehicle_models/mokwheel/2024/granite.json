@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mokwheel/2024/granite",
   "manufacturer": "Mokwheel",
   "model": "Granite",
@@ -47,8 +47,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 159
+    ]
   },
   "suspension": {
     "front": {
@@ -93,7 +92,9 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IPX6",
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 500,
       "peak_power": 860,
       "max_torque": 70,
@@ -118,6 +119,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2022/nevo3_vario",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Nevo3",
+  "model_group": "Nevo3",
   "model": "Nevo3 vario",
   "model_configuration": "complete",
   "markets": [
@@ -55,11 +55,14 @@
         "type": "fender"
       },
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
     ],
-    "seatpost_clamp_diameter": 40,
-    "gross_weight_rating": 140
+    "seatpost_clamp_diameter": 40
   },
   "suspension": {
     "front": {
@@ -117,7 +120,9 @@
       "model": "BDU450CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 500,
+      "battery": {
+        "capacity": 500
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,
@@ -130,6 +135,20 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 140
+    },
+    {
+      "load": "rear_rack",
+      "weight": 20
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 5
     }
   ],
   "sizes": [
@@ -154,9 +173,7 @@
           "compatibility_bike_trailer_through_hub_quick_release_attachment": "yes",
           "top_tube_height": 440,
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 20
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     },
@@ -181,9 +198,7 @@
           "compatibility_bike_trailer_through_hub_quick_release_attachment": "yes",
           "top_tube_height": 440,
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 20
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     },
@@ -208,9 +223,7 @@
           "compatibility_bike_trailer_through_hub_quick_release_attachment": "yes",
           "top_tube_height": 440,
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 20
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     }

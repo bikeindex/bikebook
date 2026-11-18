@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evelo/2020/compass",
   "manufacturer": "Evelo",
   "model": "Compass",
@@ -74,8 +74,10 @@
       "manufacturer": "Bafang",
       "model": "BBS02",
       "kind": "mid_drive",
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 105,
       "operating_modes": [
@@ -99,6 +101,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -111,7 +119,6 @@
           "length": 1816,
           "width": 749
         },
-        "max_weight_rider": 159,
         "rider_height_min": 1473,
         "rider_height_max": 1880,
         "extra_measurements": {

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2023/ebe1",
   "manufacturer": "GOTRAX",
   "model": "EBE1",
@@ -64,8 +64,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "suspension": {
     "rear": {}
@@ -90,10 +89,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 270,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 270,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -116,6 +119,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "payload",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -125,8 +138,7 @@
           "width": 381,
           "height": 650
         },
-        "total_weight": 25.4,
-        "max_weight_rider": 120
+        "total_weight": 25.4
       }
     }
   ],

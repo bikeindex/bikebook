@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bee_cool/2025/jupiter_x1_max",
   "manufacturer": "Bee Cool",
-  "vehicle_model_group": "Jupiter X1",
+  "model_group": "Jupiter X1",
   "model": "Jupiter X1 Max",
   "model_configuration": "complete",
   "type": "bike",
@@ -103,10 +103,14 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 2160,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 Cells",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 2160,
+        "chemistry": "li-ion",
+        "cells": "21700"
+      },
       "rated_power": 2000,
       "peak_power": 3582,
       "max_torque": 180,
@@ -320,7 +324,11 @@
     {
       "type": "seatpost",
       "type_detail": "Seat Post",
-      "description": "210mmX33.9mm"
+      "description": "210mmX33.9mm",
+      "dimensions": {
+        "length": 210,
+        "diameter": 33.9
+      }
     },
     {
       "type": "seatpost_clamp",

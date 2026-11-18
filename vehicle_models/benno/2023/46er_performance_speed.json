@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/benno/2023/46er_performance_speed",
   "manufacturer": "Benno",
-  "vehicle_model_group": "46er",
+  "model_group": "46er",
   "model": "46er Performance Speed",
   "model_configuration": "complete",
   "markets": [
@@ -70,6 +70,13 @@
       {
         "type": "accessory",
         "description": "Rail System"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "thule_yepp_easyfit"
       }
     ],
     "seatpost_diameter": 30.9,
@@ -135,9 +142,11 @@
       "manufacturer": "Bosch",
       "model": "Performance Speed",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
-      "charging_time": 270,
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion",
+        "charging_time": 270
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [
@@ -158,9 +167,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 60
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 60
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2024/quest_pro_hoverboard",
   "manufacturer": "GOTRAX",
   "model": "Quest Pro Hoverboard",
@@ -85,8 +85,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 91
+    "material": "steel"
   },
   "wheels": [
     {
@@ -99,7 +98,9 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "rated_power": 250,
       "operating_modes": [
         {
@@ -111,7 +112,9 @@
       ]
     },
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "rated_power": 250,
       "operating_modes": [
         {
@@ -123,12 +126,21 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "payload",
+      "weight": 91
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": null,
-        "max_weight_rider": 100
+        "total_weight": null
       }
     }
   ],

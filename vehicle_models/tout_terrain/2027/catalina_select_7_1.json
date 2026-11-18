@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tout_terrain/2027/catalina_select_7_1",
   "manufacturer": "Tout Terrain",
-  "vehicle_model_group": "Catalina",
+  "model_group": "Catalina",
   "model": "Catalina Select 7.1",
   "model_configuration": "complete",
   "type": "bike",
@@ -37,9 +37,7 @@
       "spindle": "24mm"
     },
     "headset": "ZS44/28.6 | EC44/40",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 105,
-    "gross_weight_rating": 120
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -131,6 +129,16 @@
       "rotor_diameter": 180,
       "rotor_diameter_max": 180,
       "caliper_mount": "Disc Flat Mount"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 105
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -375,11 +383,6 @@
         "width": 60,
         "diameter": 622
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Terrain",
-      "description": "Offroad"
     },
     {
       "type": "unknown",

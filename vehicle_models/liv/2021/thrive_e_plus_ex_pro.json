@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/liv/2021/thrive_e_plus_ex_pro",
   "manufacturer": "Liv",
-  "vehicle_model_group": "Thrive",
+  "model_group": "Thrive",
   "model": "Thrive E+ EX Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -61,7 +61,11 @@
     "material_detail": "ALUXX SL-Grade Aluminum",
     "mounts": [
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
       }
     ]
   },
@@ -112,8 +116,10 @@
       "manufacturer": "Giant",
       "model": "SyncDrive Pro",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "max_torque": 80,
       "operating_modes": [
         {

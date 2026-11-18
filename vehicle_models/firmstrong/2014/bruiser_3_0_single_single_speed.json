@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/firmstrong/2014/bruiser_3_0_single_single_speed",
   "manufacturer": "Firmstrong",
-  "vehicle_model_group": "Bruiser",
+  "model_group": "Bruiser",
   "model": "Bruiser 3.0 Single Single Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -75,11 +75,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "19\"",
       "geometry": {
-        "max_weight_rider": 136,
         "rider_height_min": 1626,
         "rider_height_max": 1930
       }

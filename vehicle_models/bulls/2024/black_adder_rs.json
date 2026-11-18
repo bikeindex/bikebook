@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2024/black_adder_rs",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Black Adder",
+  "model_group": "Black Adder",
   "model": "Black Adder RS",
   "model_configuration": "complete",
   "type": "bike",
@@ -52,9 +52,7 @@
   "frame": {
     "material": "carbon",
     "headset": "IS52/28.6 | ZS56/40",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 114,
-    "gross_weight_rating": 125
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -97,6 +95,16 @@
         "rear"
       ],
       "rotor_diameter": 180
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 114
+    },
+    {
+      "load": "gross",
+      "weight": 125
     }
   ],
   "sizes": [

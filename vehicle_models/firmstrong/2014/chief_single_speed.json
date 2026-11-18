@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/firmstrong/2014/chief_single_speed",
   "manufacturer": "Firmstrong",
-  "vehicle_model_group": "Chief",
+  "model_group": "Chief",
   "model": "Chief Single Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -107,12 +107,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "19\"",
       "geometry": {
         "total_weight": 18.1,
-        "max_weight_rider": 136,
         "rider_height_min": 1626,
         "rider_height_max": 1930
       }

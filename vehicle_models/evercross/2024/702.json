@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2024/702",
   "manufacturer": "Evercross",
   "model": "702",
@@ -44,8 +44,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 180
+    "material": "steel"
   },
   "wheels": [
     {
@@ -65,7 +64,9 @@
   ],
   "motors": [
     {
-      "battery_size": 1800,
+      "battery": {
+        "capacity": 1800
+      },
       "rated_power": 2000,
       "operating_modes": [
         {
@@ -76,6 +77,12 @@
           "max_slope": 20
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [

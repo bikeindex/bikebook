@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gio/2023/lightning",
   "manufacturer": "GIO",
   "model": "Lightning",
@@ -87,8 +87,10 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 576,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 576,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 100,
       "operating_modes": [

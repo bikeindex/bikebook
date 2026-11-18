@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/lankeleisi/2026/mg600plus_step_thru",
   "manufacturer": "Lankeleisi",
-  "vehicle_model_group": "MG",
+  "model_group": "MG",
   "model": "MG600PLUS Step-Thru",
   "model_configuration": "complete",
   "type": "bike",
@@ -53,8 +53,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 200
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -100,10 +99,12 @@
     {
       "drive_wheel": "front",
       "water_rating": "IP54",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cell",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 420
+      },
       "rated_power": 1000,
       "max_torque": 70,
       "operating_modes": [
@@ -130,10 +131,12 @@
     {
       "drive_wheel": "rear",
       "water_rating": "IP54",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cell",
-      "charging_time": 420,
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 420
+      },
       "rated_power": 1000,
       "max_torque": 70,
       "operating_modes": [
@@ -156,6 +159,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

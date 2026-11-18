@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/keteles/2024/k800_1000w_m5",
   "manufacturer": "Keteles",
-  "vehicle_model_group": "K800",
+  "model_group": "K800",
   "model": "K800 1000W M5",
   "model_configuration": "complete",
   "type": "bike",
@@ -57,8 +57,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 180
+    ]
   },
   "suspension": {
     "front": {
@@ -104,9 +103,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 864,
-      "battery_chemistry": "li-ion",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 864,
+        "chemistry": "li-ion",
+        "charging_time": 540
+      },
       "rated_power": 1000,
       "max_torque": 82,
       "operating_modes": [
@@ -129,6 +130,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [

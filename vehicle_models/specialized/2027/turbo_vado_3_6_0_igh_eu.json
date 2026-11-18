@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2027/turbo_vado_3_6_0_igh_eu",
   "manufacturer": "Specialized",
-  "vehicle_model_group": "Turbo Vado",
+  "model_group": "Turbo Vado",
   "model": "Turbo Vado 3 6.0 IGH",
   "model_configuration": "complete",
   "markets": [
@@ -88,6 +88,15 @@
   },
   "frame": {
     "material": "aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ],
     "seatpost_diameter": 34.9,
     "seatpost_clamp_diameter": 38.6
   },
@@ -150,10 +159,15 @@
       "kind": "hub_drive",
       "spindle": "ISIS",
       "sensor_cadence": true,
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP66 / IP67",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 810,
       "max_torque": 100,
@@ -170,12 +184,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27.5,
-    "attributes": [
-      "MIK HD interface"
-    ]
-  },
+  "weight_limits": [
+    {
+      "load": "rear_rack",
+      "weight": 27.5
+    }
+  ],
   "sizes": [
     {
       "name": "S",
@@ -376,7 +390,6 @@
     },
     {
       "type": "hub",
-      "type_detail": "Derailleur",
       "position": [
         "rear"
       ],

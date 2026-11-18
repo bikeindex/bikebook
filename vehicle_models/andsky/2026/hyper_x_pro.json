@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/andsky/2026/hyper_x_pro",
   "manufacturer": "Andsky",
-  "vehicle_model_group": "Hyper X",
+  "model_group": "Hyper X",
   "model": "Hyper X Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -61,8 +61,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 204
+    ]
   },
   "suspension": {
     "front": {
@@ -112,12 +111,14 @@
       "drive_wheel": "front",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 1500,
-      "battery_options": [
-        3000
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700",
+      "battery": {
+        "capacity": 1500,
+        "capacity_options": [
+          3000
+        ],
+        "chemistry": "li-ion",
+        "cells": "21700"
+      },
       "rated_power": 1500,
       "max_torque": 350,
       "operating_modes": [
@@ -144,12 +145,14 @@
       "drive_wheel": "rear",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 1500,
-      "battery_options": [
-        3000
-      ],
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700",
+      "battery": {
+        "capacity": 1500,
+        "capacity_options": [
+          3000
+        ],
+        "chemistry": "li-ion",
+        "cells": "21700"
+      },
       "rated_power": 1500,
       "max_torque": 350,
       "operating_modes": [
@@ -171,6 +174,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [

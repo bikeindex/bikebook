@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2025/speedster_gravel_10",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Speedster",
+  "model_group": "Speedster",
   "model": "Speedster Gravel 10",
   "model_configuration": "complete",
   "markets": [
@@ -59,9 +59,7 @@
     "bottom_bracket": {
       "shell": "BSA",
       "spindle": "24mm"
-    },
-    "max_weight_total": 109,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -100,6 +98,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 109
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

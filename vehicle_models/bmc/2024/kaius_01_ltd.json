@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2024/kaius_01_ltd",
   "manufacturer": "BMC",
-  "vehicle_model_group": "Kaius",
+  "model_group": "Kaius",
   "model": "Kaius 01 LTD",
   "model_configuration": "complete",
   "markets": [
@@ -128,9 +128,7 @@
       "shell": "BB86",
       "width": 86.5,
       "spindle": "DUB"
-    },
-    "max_weight_total": 112,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -182,6 +180,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 112
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

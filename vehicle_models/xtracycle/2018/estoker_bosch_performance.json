@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/xtracycle/2018/estoker_bosch_performance",
   "manufacturer": "Xtracycle",
-  "vehicle_model_group": "Stoker",
+  "model_group": "Stoker",
   "model": "eStoker Bosch Performance",
   "model_configuration": "complete",
   "type": "cargo_bike_rear",
@@ -92,8 +92,10 @@
       "model": "Performance",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "operating_modes": [

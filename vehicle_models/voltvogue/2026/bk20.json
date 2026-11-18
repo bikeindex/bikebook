@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/voltvogue/2026/bk20",
   "manufacturer": "Voltvogue",
-  "vehicle_model_group": "BK",
+  "model_group": "BK",
   "model": "BK20",
   "model_configuration": "complete",
   "type": "bike",
@@ -38,8 +38,7 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel",
-    "max_weight_total": 150
+    "material_detail": "High-Carbon Steel"
   },
   "suspension": {
     "front": {},
@@ -66,9 +65,13 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849",
-      "battery_size": 960,
-      "charging_time": 300,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 960,
+        "charging_time": 300
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -81,6 +84,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -106,6 +115,10 @@
     {
       "type": "e_vehicle_battery",
       "description": "Battery capacity: 20 Amp Hours"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48 Volts"
     },
     {
       "type": "e_vehicle_battery",
@@ -136,26 +149,6 @@
         "width": 101.6,
         "diameter": 406
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Volts",
-      "description": "48 Volts"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Speeds field",
-      "description": "20"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Frame size field",
-      "description": "64.9 in"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Amps",
-      "description": "20 Amps"
     },
     {
       "type": "unknown",

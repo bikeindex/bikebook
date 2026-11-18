@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ultratrx/2025/e_cheetah",
   "manufacturer": "UltraTRX",
-  "vehicle_model_group": "Cheetah",
+  "model_group": "Cheetah",
   "model": "E-Cheetah",
   "model_configuration": "complete",
   "type": "bike",
@@ -48,8 +48,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "Steel Chromoly",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 181
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -104,8 +103,10 @@
   "motors": [
     {
       "manufacturer": "UltraTRX",
-      "battery_size": 4320,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 4320,
+        "chemistry": "li-ion"
+      },
       "rated_power": 5000,
       "peak_power": 7200,
       "operating_modes": [
@@ -125,6 +126,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

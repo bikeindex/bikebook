@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/evryjourney_family_cargo_1000w",
   "manufacturer": "sixthreezero",
   "model": "EVRYjourney Family Cargo 1000w",
@@ -35,8 +35,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 227
+    "top_tube": "step_through"
   },
   "wheels": [
     {
@@ -72,9 +71,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 1092,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
+      "battery": {
+        "capacity": 1092,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 1000,
       "operating_modes": [
         {
@@ -94,6 +95,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 227
     }
   ],
   "sizes": [
@@ -121,10 +128,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "Rear Hub 1000 watt"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "52v 30a"
     },
     {
       "type": "e_vehicle_remote",
@@ -166,6 +169,11 @@
       "type_detail": "GEARS",
       "manufacturer": "Shimano",
       "description": "7 Speed Shimano Tourney Gear System"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "52v 30a"
     }
   ]
 }

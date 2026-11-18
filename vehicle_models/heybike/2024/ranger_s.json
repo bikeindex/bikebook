@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/heybike/2024/ranger_s",
   "manufacturer": "Heybike",
-  "vehicle_model_group": "Ranger",
+  "model_group": "Ranger",
   "model": "Ranger S",
   "model_configuration": "complete",
   "type": "bike",
@@ -121,8 +121,7 @@
           "front"
         ]
       }
-    ],
-    "max_weight_total": 54
+    ]
   },
   "suspension": {
     "front": {}
@@ -147,7 +146,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 692,
+      "battery": {
+        "capacity": 692
+      },
       "rated_power": 750,
       "peak_power": 1800,
       "max_torque": 80,
@@ -161,6 +162,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 54
     }
   ],
   "sizes": [

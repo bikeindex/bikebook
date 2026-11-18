@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/postjoy/2026/t20",
   "manufacturer": "PostJoy",
   "model": "T20",
@@ -23,8 +23,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 166
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -57,8 +56,10 @@
     {
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 960,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 960,
+        "charging_time": 480
+      },
       "peak_power": 2500,
       "max_torque": 50,
       "operating_modes": [
@@ -79,6 +80,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 166
     }
   ],
   "sizes": [

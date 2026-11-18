@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/momentum/2022/pakyak_e_plus_us",
   "manufacturer": "Momentum",
-  "vehicle_model_group": "Pakyak",
+  "model_group": "Pakyak",
   "model": "Pakyak E+",
   "model_configuration": "complete",
   "markets": [
@@ -60,8 +60,7 @@
     "material_detail": "ALUXX-Grade Aluminum",
     "top_tube": "step_through",
     "headset": "ZS44/28.6",
-    "seatpost_diameter": 30.9,
-    "gross_weight_rating": 164
+    "seatpost_diameter": 30.9
   },
   "wheels": [
     {
@@ -107,8 +106,10 @@
       "manufacturer": "Giant",
       "model": "SyncDrive Pro",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 80,
       "operating_modes": [
@@ -125,9 +126,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 46
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 46
+    },
+    {
+      "load": "gross",
+      "weight": 164
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

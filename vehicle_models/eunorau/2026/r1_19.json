@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2026/r1_19",
   "manufacturer": "Eunorau",
-  "vehicle_model_group": "R1",
+  "model_group": "R1",
   "model": "R1-19",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -104,12 +104,13 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "certification": "Yes",
       "water_rating": "IP65",
-      "battery_size": 2520,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG Cell",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 2520,
+        "chemistry": "li-ion",
+        "cells": "LG",
+        "charging_time": 240
+      },
       "rated_power": 4000,
       "peak_power": 8000,
       "max_torque": 390,

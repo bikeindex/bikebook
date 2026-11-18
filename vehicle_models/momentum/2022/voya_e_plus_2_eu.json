@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/momentum/2022/voya_e_plus_2_eu",
   "manufacturer": "Momentum",
-  "vehicle_model_group": "Voya",
+  "model_group": "Voya",
   "model": "Voya E+ 2",
   "model_configuration": "complete",
   "markets": [
@@ -118,8 +118,10 @@
       "manufacturer": "Giant",
       "model": "SyncDrive Move",
       "kind": "hub_drive",
-      "battery_size": 250,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 250,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 30,
       "operating_modes": [

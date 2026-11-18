@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2027/sweep_20_wave_us",
   "manufacturer": "SCOTT",
   "model": "Sweep 20 Wave",
@@ -72,9 +72,7 @@
         "type": "rack"
       }
     ],
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 105,
-    "gross_weight_rating": 130
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -120,7 +118,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 360,
+      "battery": {
+        "capacity": 360
+      },
       "max_torque": 45,
       "operating_modes": [
         {
@@ -132,6 +132,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 105
+    },
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [

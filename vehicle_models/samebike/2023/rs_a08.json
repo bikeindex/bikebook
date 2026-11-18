@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/samebike/2023/rs_a08",
   "manufacturer": "samebike",
-  "vehicle_model_group": "RS-A08",
+  "model_group": "RS-A08",
   "model": "RS-A08",
   "model_configuration": "complete",
   "type": "bike",
@@ -56,8 +56,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "cable_routing": "internal",
-    "max_weight_total": 150
+    "cable_routing": "internal"
   },
   "suspension": {
     "front": {
@@ -119,9 +118,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "water_rating": "IP54",
-      "battery_size": 816,
-      "battery_chemistry": "li-ion",
-      "battery_info": "SAMSUNG 21700 battery cells",
+      "battery": {
+        "capacity": 816,
+        "chemistry": "li-ion",
+        "cells": "SAMSUNG 21700"
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -153,6 +154,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

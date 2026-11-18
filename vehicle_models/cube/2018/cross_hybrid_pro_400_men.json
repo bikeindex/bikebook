@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2018/cross_hybrid_pro_400_men",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Cross Hybrid",
+  "model_group": "Cross Hybrid",
   "model": "Cross Hybrid Pro 400 Men",
   "model_configuration": "complete",
   "type": "bike",
@@ -86,8 +86,10 @@
       "model": "Performance CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 75,
       "operating_modes": [

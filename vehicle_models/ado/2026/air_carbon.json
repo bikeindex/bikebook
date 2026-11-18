@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ado/2026/air_carbon",
   "manufacturer": "ADO",
-  "vehicle_model_group": "Air Carbon",
+  "model_group": "Air Carbon",
   "model": "Air Carbon",
   "model_configuration": "complete",
   "type": "bike",
@@ -66,10 +66,14 @@
     {
       "manufacturer": "Bafang",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "SGS CE",
+      "certifications": [
+        "CE"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 370,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 370,
+        "charging_time": 360
+      },
       "rated_power": 250,
       "max_torque": 35,
       "operating_modes": [
@@ -84,6 +88,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
     }
   ],
   "sizes": [
@@ -102,7 +112,6 @@
           "length": 1480
         },
         "total_weight": 15.9,
-        "max_weight_rider": 120,
         "rider_height_min": 1550,
         "rider_height_max": 1900,
         "extra_measurements": {

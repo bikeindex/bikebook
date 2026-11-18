@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/eunorau/2025/flash_lite_2_0",
   "manufacturer": "Eunorau",
-  "vehicle_model_group": "Flash",
+  "model_group": "Flash",
   "model": "Flash Lite 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -59,8 +59,7 @@
       {
         "type": "fender"
       }
-    ],
-    "max_weight_total": 200
+    ]
   },
   "suspension": {
     "front": {
@@ -105,8 +104,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "Yes",
-      "battery_size": 832,
+      "battery": {
+        "capacity": 832
+      },
       "rated_power": 750,
       "max_torque": 92,
       "operating_modes": [
@@ -128,6 +128,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [
@@ -206,10 +212,6 @@
     {
       "type": "e_vehicle_motor",
       "description": "52V750W Rear Motor with 92N.m Torque"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "52V"
     },
     {
       "type": "e_vehicle_remote",
@@ -296,6 +298,11 @@
         "width": 101.6,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "52V"
     },
     {
       "type": "unknown",

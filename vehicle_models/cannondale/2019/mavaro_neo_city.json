@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2019/mavaro_neo_city",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Mavaro",
+  "model_group": "Mavaro",
   "model": "Mavaro Neo City",
   "model_configuration": "complete",
   "markets": [
@@ -142,8 +142,10 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,

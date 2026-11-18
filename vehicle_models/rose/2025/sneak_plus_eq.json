@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rose/2025/sneak_plus_eq",
   "manufacturer": "ROSE",
-  "vehicle_model_group": "Sneak Plus",
+  "model_group": "Sneak Plus",
   "model": "Sneak Plus EQ",
   "model_configuration": "complete",
   "type": "bike",
@@ -111,8 +111,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 120
+    "seatpost_diameter": 30.9
   },
   "wheels": [
     {
@@ -150,8 +149,10 @@
       "manufacturer": "Mahle",
       "model": "X35",
       "kind": "hub_drive",
-      "battery_size": 250,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 250,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [
@@ -163,6 +164,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

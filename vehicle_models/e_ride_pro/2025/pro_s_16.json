@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/e_ride_pro/2025/pro_s_16",
   "manufacturer": "E Ride Pro",
-  "vehicle_model_group": "Pro-S",
+  "model_group": "Pro-S",
   "model": "Pro-S 16",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -42,9 +42,11 @@
   ],
   "motors": [
     {
-      "battery_size": 2160,
-      "battery_chemistry": "li-ion",
-      "charging_time": 120,
+      "battery": {
+        "capacity": 2160,
+        "chemistry": "li-ion",
+        "charging_time": 120
+      },
       "rated_power": 3000,
       "peak_power": 8000,
       "operating_modes": [
@@ -60,14 +62,19 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 122
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "seat_height_min": 790,
         "seat_height_max": 790,
-        "total_weight": 58.1,
-        "max_weight_rider": 122
+        "total_weight": 58.1
       }
     }
   ],

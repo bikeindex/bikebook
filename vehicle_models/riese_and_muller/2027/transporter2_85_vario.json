@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2027/transporter2_85_vario",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Transporter2 85",
+  "model_group": "Transporter2 85",
   "model": "Transporter2 85 vario",
   "model_configuration": "complete",
   "markets": [
@@ -51,9 +51,7 @@
       }
     ],
     "seatpost_diameter": 34.9,
-    "seatpost_clamp_diameter": 40,
-    "max_weight_total": 170,
-    "gross_weight_rating": 220
+    "seatpost_clamp_diameter": 40
   },
   "suspension": {
     "front": {
@@ -113,8 +111,10 @@
       "model_group": "Performance Line",
       "kind": "mid_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 545,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 545,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -132,6 +132,20 @@
   "cargo": {
     "length": 850
   },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 220
+    },
+    {
+      "load": "rear_rack",
+      "weight": 20
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -149,7 +163,6 @@
           "length": 2640
         },
         "total_weight": 50,
-        "max_weight_rider": 110,
         "rider_height_min": 1500,
         "rider_height_max": 2000,
         "extra_measurements": {
@@ -159,8 +172,7 @@
           "top_tube_height": 587,
           "top_tube_length_range": "640-710",
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_luggage_rack_kg": 20
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     }

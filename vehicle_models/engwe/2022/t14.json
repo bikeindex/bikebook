@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/engwe/2022/t14",
   "manufacturer": "ENGWE",
   "model": "T14",
@@ -83,8 +83,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 100
+    "folding": "half_fold"
   },
   "brakes": [
     {
@@ -98,8 +97,10 @@
   "motors": [
     {
       "water_rating": "IP2",
-      "battery_size": 480,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 480,
+        "charging_time": 480
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -122,6 +123,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [
@@ -172,7 +179,7 @@
     },
     {
       "type": "handlebar",
-      "description": "Minimum height above ground (91 CM); Maximum height above ground (106 CM); Packing list; T14 Ebike *1; 10AH Battery *1; Battery Charger *1; Assembly Tools *1; Pedals *2; Handle Bars Shipped Installed On Bike *1; English User Manual *1; You can also download the manual here; Highlights; -Foldable and portable, saving storage space; -Triple shock absorber for comfortable riding; -Smooth lines and beautiful appearance; Note; - The phone mount is Not Included; Product Service; 1、US FREE shipping & Tax; 2、FREE 1 Year Warranty"
+      "description": "Minimum height above ground (91 CM); Maximum height above ground (106 CM)"
     },
     {
       "type": "lights",

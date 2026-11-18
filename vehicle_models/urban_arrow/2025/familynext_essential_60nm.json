@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/urban_arrow/2025/familynext_essential_60nm",
   "manufacturer": "Urban Arrow",
-  "vehicle_model_group": "FamilyNext",
+  "model_group": "FamilyNext",
   "model": "FamilyNext Essential 60Nm",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -41,9 +41,7 @@
     "material": "aluminum",
     "bottom_bracket": {
       "spindle": "BNI"
-    },
-    "max_weight_total": 202,
-    "gross_weight_rating": 250
+    }
   },
   "suspension": {
     "front": {}
@@ -89,12 +87,14 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 400,
-      "battery_options": [
-        540,
-        800
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "capacity_options": [
+          540,
+          800
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,
@@ -110,6 +110,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 125
+    },
+    {
+      "load": "gross",
+      "weight": 250
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -120,8 +130,7 @@
           "width": 690,
           "height": 1200
         },
-        "total_weight": 48,
-        "max_weight_rider": 125
+        "total_weight": 48
       }
     }
   ],

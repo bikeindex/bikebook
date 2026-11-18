@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2023/flex_campus_pro",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "Flex",
+  "model_group": "Flex",
   "model": "Flex Campus Pro",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -57,10 +57,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
-      "battery_size": 288,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2272"
+      ],
+      "battery": {
+        "capacity": 288,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -73,12 +77,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 27.7,
-        "max_weight_rider": 120
+        "total_weight": 27.7
       }
     }
   ],

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bmc/2023/roadmachine_amp_two",
   "manufacturer": "BMC",
-  "vehicle_model_group": "Roadmachine AMP",
+  "model_group": "Roadmachine AMP",
   "model": "Roadmachine AMP TWO",
   "model_configuration": "complete",
   "markets": [
@@ -89,9 +89,7 @@
     "bottom_bracket": {
       "shell": "BB86",
       "width": 86.5
-    },
-    "max_weight_total": 107,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -152,8 +150,10 @@
       "manufacturer": "Mahle",
       "model": "X20",
       "kind": "hub_drive",
-      "battery_size": 172,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 172,
+        "chemistry": "li-ion"
+      },
       "peak_power": 275,
       "max_torque": 65,
       "operating_modes": [
@@ -167,6 +167,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 107
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

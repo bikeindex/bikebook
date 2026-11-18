@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/roll_road/2022/emma_2_0",
   "manufacturer": "Roll Road",
-  "vehicle_model_group": "Emma",
+  "model_group": "Emma",
   "model": "Emma 2.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -38,8 +38,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 204
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -79,7 +78,9 @@
       "model": "SUTTO",
       "sensor_speed": "spoke_magnet",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 960,
+      "battery": {
+        "capacity": 960
+      },
       "rated_power": 1000,
       "peak_power": 1800,
       "operating_modes": [
@@ -112,9 +113,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 24.95
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 24.95
+    },
+    {
+      "load": "payload",
+      "weight": 204
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -179,10 +187,6 @@
     {
       "type": "e_vehicle_remote",
       "description": "5.3\"Color LED"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "48V 28A"
     },
     {
       "type": "fender",
@@ -277,6 +281,11 @@
       "type": "unknown",
       "type_detail": "USB",
       "description": "1A USB Port"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V 28A"
     },
     {
       "type": "wheel",

@@ -1,23 +1,16 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ford/2025/mustang_60th_anniversary_edition_ca",
-  "manufacturer": "Ford",
-  "vehicle_model_group": "Mustang",
-  "model": "Mustang 60th Anniversary Edition",
-  "model_configuration": "complete",
+  "base": "m/ford/2025/mustang_60th_anniversary_edition",
   "markets": [
     "CA"
   ],
-  "type": "bike",
   "propulsion": [
     "pedal_assist",
     "throttle"
   ],
-  "primary_activity": "commuting",
-  "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/ford/2025/mustang_60th_anniversary_edition_ca.png",
   "description": "The Limited-Edition Ford Mustang eBike celebrates 60 years of the legendary Mustang. True to history, the eBike features the original Rangoon Red paintwork of 1964.5 and period-correct badges and decals from Ford’s archives – complimented with a 60th anniversary plaque.\nChromed-look finished wheels and a power unit complete this very special eBike which is limited to just 500 units.\nOne for the collector.\n\nThe Mustang electric bike generates one horsepower (500W*) of electric boost that easily accelerates to 32 KM/H** (in pedal assist, Class 3 mode with the rider pedaling) with plenty of torque on-demand.\nThe eBike features the iconic Mustang LED Sequential Taillights and an integrated one-piece cockpit cradles a full color display with telemetry graphics inspired by Ford's digital infotainment system.\nDesigned for the street and tuned for fast rides with semi-slick Pirelli Angel tires and dual suspension designed to keep the bike firmly planted over surface imperfections.\nPowered by a 48V, 15Ah | 720Wh battery, the Mustang electric bike can cruise up to 60 miles ***, and riders can take advantage of four power power modes – Eco, Normal, Sport, and Track.",
-  "first_year": 2025,
   "years": {
     "2026": {
       "original_msrp": 567100,
@@ -30,10 +23,8 @@
           ]
         }
       ],
-      "url": "https://ford-bikes.ca/products/ford-mustang-ebike-60th-anniversary-edition-ca",
-      "url_live": true
-    },
-    "2025": {}
+      "url": "https://ford-bikes.ca/products/ford-mustang-ebike-60th-anniversary-edition-ca"
+    }
   },
   "frame": {
     "material": "aluminum",
@@ -80,21 +71,19 @@
       "rotor_diameter": 203
     }
   ],
-  "motors": [
-    {
-      "battery_size": 720,
+  "motors": {
+    "0": {
       "rated_power": 500,
       "max_torque": 85,
-      "operating_modes": [
-        {
-          "mode": "assist",
-          "availability": "stock",
+      "operating_modes": {
+        "assist stock": {
           "max_speed": 32,
           "e_vehicle_classifications": [
             "evc/ca/power_assisted_bicycle"
-          ]
+          ],
+          "range_claimed": null
         },
-        {
+        "throttle stock": {
           "mode": "throttle",
           "availability": "stock",
           "max_speed": 32,
@@ -102,23 +91,16 @@
             "evc/ca/power_assisted_bicycle"
           ]
         }
-      ]
+      }
     }
-  ],
-  "sizes": [
-    {
-      "name": "Small"
-    },
-    {
-      "name": "Medium",
+  },
+  "sizes": {
+    "Medium": {
       "geometry": {
         "total_weight": 30.8
       }
-    },
-    {
-      "name": "Large"
     }
-  ],
+  },
   "components": [
     {
       "type": "brake",

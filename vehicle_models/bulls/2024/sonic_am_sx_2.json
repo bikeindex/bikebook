@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2024/sonic_am_sx_2",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Sonic SX",
+  "model_group": "Sonic SX",
   "model": "Sonic AM-SX 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,9 +54,7 @@
     "material": "carbon",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 110,
-    "gross_weight_rating": 130
+    }
   },
   "suspension": {
     "front": {
@@ -110,8 +108,11 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion",
+        "weight": 3.6
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 55,
@@ -125,6 +126,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [

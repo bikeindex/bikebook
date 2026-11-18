@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/e_lux/2023/sierra_gt",
   "manufacturer": "E-Lux",
-  "vehicle_model_group": "Sierra",
+  "model_group": "Sierra",
   "model": "Sierra GT",
   "model_configuration": "complete",
   "type": "bike",
@@ -101,10 +101,12 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung/Panasonic Cells",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion",
+        "cells": "Samsung/Panasonic",
+        "charging_time": 360
+      },
       "rated_power": 750,
       "peak_power": 1100,
       "operating_modes": [

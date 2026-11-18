@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebycco/2026/g20_eu",
   "manufacturer": "Ebycco",
   "model": "G20",
@@ -18,15 +18,14 @@
   "first_year": 2026,
   "years": {
     "2026": {
-      "original_msrp": 79900,
+      "original_msrp": 125900,
       "original_msrp_currency": "EUR",
       "url": "https://ebycco.com/products/ebycco-g20-250w-electric-snow-bike",
       "url_live": true
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -61,11 +60,16 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 749,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 749,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 250,
       "peak_power": 800,
       "operating_modes": [
@@ -80,6 +84,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/stark_future/2023/varg_mx_19_us",
   "manufacturer": "Stark Future",
-  "vehicle_model_group": "VARG",
+  "model_group": "VARG",
   "model": "VARG MX 19",
   "model_configuration": "complete",
   "markets": [
@@ -79,8 +79,10 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
-      "battery_size": 6500,
-      "charging_time": 210,
+      "battery": {
+        "capacity": 6500,
+        "charging_time": 210
+      },
       "peak_power": 59656,
       "operating_modes": [
         {

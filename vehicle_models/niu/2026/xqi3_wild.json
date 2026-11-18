@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/niu/2026/xqi3_wild",
   "manufacturer": "Niu",
-  "vehicle_model_group": "XQi3",
+  "model_group": "XQi3",
   "model": "XQi3 Wild",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -21,8 +21,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 100
+    "material": "steel"
   },
   "wheels": [
     {
@@ -53,10 +52,13 @@
   "motors": [
     {
       "manufacturer": "Niu",
-      "battery_size": 2304,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 Lithium-Ion",
-      "charging_time": 318,
+      "battery": {
+        "capacity": 2304,
+        "voltage": 72,
+        "chemistry": "li-ion",
+        "cells": "21700",
+        "charging_time": 318
+      },
       "rated_power": 3500,
       "peak_power": 11200,
       "operating_modes": [
@@ -70,6 +72,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

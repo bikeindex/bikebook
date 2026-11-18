@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bee_cool/2025/bee_defender",
   "manufacturer": "Bee Cool",
-  "vehicle_model_group": "Bee Defender",
+  "model_group": "Bee Defender",
   "model": "Bee Defender",
   "model_configuration": "complete",
   "type": "bike",
@@ -106,10 +106,14 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 Cells",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "cells": "21700"
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "max_torque": 110,

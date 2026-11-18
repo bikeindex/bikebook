@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ghostcat/2026/f3x_2_pro",
   "manufacturer": "GhostCat",
-  "vehicle_model_group": "F3X",
+  "model_group": "F3X",
   "model": "F3X.2 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -39,8 +39,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 125
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -76,11 +75,16 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2271",
-      "battery_size": 1300,
-      "battery_chemistry": "li-ion",
-      "battery_info": "LG 21700",
-      "charging_time": 420,
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 1300,
+        "voltage": 52,
+        "chemistry": "li-ion",
+        "cells": "LG 21700",
+        "charging_time": 420
+      },
       "rated_power": 1500,
       "peak_power": 2340,
       "max_torque": 140,
@@ -104,6 +108,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

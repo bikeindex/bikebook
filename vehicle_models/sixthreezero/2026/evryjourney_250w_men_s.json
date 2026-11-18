@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/sixthreezero/2026/evryjourney_250w_men_s",
   "manufacturer": "sixthreezero",
-  "vehicle_model_group": "EVRYjourney Electric",
+  "model_group": "EVRYjourney Electric",
   "model": "EVRYjourney 250W Men's",
   "model_configuration": "complete",
   "type": "bike",
@@ -114,7 +114,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 374,
+      "battery": {
+        "capacity": 374
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -136,6 +138,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -150,7 +158,6 @@
           "height": 50
         },
         "total_weight": 28.3,
-        "max_weight_rider": 136,
         "extra_measurements": {
           "bottom_tube_length": 610,
           "front_wheel_hub_height": 330,

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/polygon/2021/gili_velo",
   "manufacturer": "Polygon",
-  "vehicle_model_group": "Gili",
+  "model_group": "Gili",
   "model": "Gili Velo",
   "model_configuration": "complete",
   "type": "bike",
@@ -187,7 +187,9 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/flypkin/2025/electric_scooter_with_seat",
   "manufacturer": "FLYPKIN",
   "model": "Electric Scooter with Seat",
@@ -46,9 +46,11 @@
   ],
   "motors": [
     {
-      "battery_size": 187,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 187,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -61,12 +63,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 15.4,
-        "max_weight_rider": 120
+        "total_weight": 15.4
       }
     }
   ],

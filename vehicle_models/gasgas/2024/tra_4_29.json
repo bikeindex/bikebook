@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gasgas/2024/tra_4_29",
   "manufacturer": "GASGAS",
-  "vehicle_model_group": "TRA",
+  "model_group": "TRA",
   "model": "TRA 4 29",
   "model_configuration": "complete",
   "markets": [
@@ -51,8 +51,7 @@
       "spindle": "ISIS"
     },
     "headset": "ZS44/28.6 | ZS56/40",
-    "seatpost_diameter": 31.6,
-    "gross_weight_rating": 130
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -116,7 +115,9 @@
       "manufacturer": "Yamaha",
       "model": "PW-ST",
       "kind": "mid_drive",
-      "battery_size": 630,
+      "battery": {
+        "capacity": 630
+      },
       "rated_power": 250,
       "max_torque": 70,
       "operating_modes": [
@@ -129,6 +130,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [

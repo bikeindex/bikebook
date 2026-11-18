@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pescroa/2026/electric_bike",
   "manufacturer": "Pescroa",
   "model": "Electric Bike",
@@ -43,8 +43,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 204
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -67,10 +66,13 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 720,
-      "battery_info": "15 Ah",
-      "charging_time": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 720,
+        "charging_time": 360
+      },
       "rated_power": 750,
       "max_torque": 90,
       "operating_modes": [
@@ -92,6 +94,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 204
     }
   ],
   "sizes": [
@@ -121,6 +129,10 @@
     },
     {
       "type": "e_vehicle_battery",
+      "description": "48 V"
+    },
+    {
+      "type": "e_vehicle_battery",
       "description": "Battery life: 12 hr"
     },
     {
@@ -147,18 +159,8 @@
     },
     {
       "type": "unknown",
-      "type_detail": "Volts",
-      "description": "48 V"
-    },
-    {
-      "type": "unknown",
       "type_detail": "Frame size field",
       "description": "40 in"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Amps",
-      "description": "15 Amps"
     },
     {
       "type": "unknown",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2026/harbour_250w",
   "manufacturer": "Reid",
-  "vehicle_model_group": "Harbour",
+  "model_group": "Harbour",
   "model": "Harbour 250W",
   "model_configuration": "complete",
   "type": "bike",
@@ -45,8 +45,7 @@
       "spindle": "square taper"
     },
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 35,
-    "max_weight_total": 150
+    "seatpost_clamp_diameter": 35
   },
   "suspension": {
     "front": {
@@ -106,8 +105,12 @@
       "manufacturer": "Ananda",
       "model": "R210",
       "kind": "hub_drive",
-      "certification": "EN50604",
-      "battery_size": 530,
+      "certifications": [
+        "EN 50604"
+      ],
+      "battery": {
+        "capacity": 530
+      },
       "rated_power": 250,
       "max_torque": 42,
       "operating_modes": [
@@ -123,9 +126,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 40
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 40
+    },
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "20\"",

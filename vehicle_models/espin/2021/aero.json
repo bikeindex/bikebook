@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/espin/2021/aero",
   "manufacturer": "Espin",
   "model": "Aero",
@@ -72,10 +72,12 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 245,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
-      "charging_time": 180,
+      "battery": {
+        "capacity": 245,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 180
+      },
       "rated_power": 350,
       "max_torque": 65,
       "operating_modes": [
@@ -121,6 +123,10 @@
       "description": "Lithium-ion 36V, 6.8Ah (244.8Wh) Samsung Cells"
     },
     {
+      "type": "e_vehicle_charger",
+      "description": "2 Amp Charger"
+    },
+    {
       "type": "e_vehicle_motor",
       "description": "SY"
     },
@@ -136,6 +142,11 @@
     {
       "type": "fork",
       "description": "Aluminum front fork"
+    },
+    {
+      "type": "included_not_installed",
+      "type_detail": "Tools",
+      "description": "Tool Box"
     },
     {
       "type": "pedals",

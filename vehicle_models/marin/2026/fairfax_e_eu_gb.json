@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/marin/2026/fairfax_e_eu_gb",
   "manufacturer": "Marin Bikes",
-  "vehicle_model_group": "Fairfax",
+  "model_group": "Fairfax",
   "model": "Fairfax E - EU",
   "model_configuration": "complete",
   "markets": [
@@ -149,8 +149,10 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 340,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 340,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2027/scale_pro_400",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Scale",
+  "model_group": "Scale",
   "model": "Scale Pro 400",
   "model_configuration": "complete",
   "markets": [
@@ -71,9 +71,7 @@
       "shell": "BSA",
       "width": 68,
       "spindle": "square taper"
-    },
-    "max_weight_total": 59,
-    "gross_weight_rating": 70
+    }
   },
   "suspension": {
     "front": {
@@ -126,6 +124,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 59
+    },
+    {
+      "load": "gross",
+      "weight": 70
     }
   ],
   "sizes": [

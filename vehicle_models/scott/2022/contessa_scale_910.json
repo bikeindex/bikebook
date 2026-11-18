@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2022/contessa_scale_910",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Scale",
+  "model_group": "Scale",
   "model": "Contessa Scale 910",
   "model_configuration": "complete",
   "markets": [
@@ -76,9 +76,7 @@
       "width": 92,
       "spindle": "24mm"
     },
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 116,
-    "gross_weight_rating": 128
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -144,6 +142,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 116
+    },
+    {
+      "load": "gross",
+      "weight": 128
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/revi/2023/rebel_1_0",
   "manufacturer": "Revi",
-  "vehicle_model_group": "Rebel",
+  "model_group": "Rebel",
   "model": "Rebel 1.0",
   "model_configuration": "complete",
   "type": "bike",
@@ -92,8 +92,10 @@
     {
       "manufacturer": "Bafang",
       "model": "GEAR",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "peak_power": 800,
       "operating_modes": [

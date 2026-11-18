@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/samebike/2026/m20_iii",
   "manufacturer": "samebike",
-  "vehicle_model_group": "M20",
+  "model_group": "M20",
   "model": "M20-III",
   "model_configuration": "complete",
   "type": "bike",
@@ -71,8 +71,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 180
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -107,8 +106,10 @@
   ],
   "motors": [
     {
-      "battery_size": 1728,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 1728,
+        "charging_time": 360
+      },
       "rated_power": 2000,
       "operating_modes": [
         {
@@ -130,6 +131,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 180
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2025/roadster4_mixte_vario_hs",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Roadster4 Mixte",
+  "model_group": "Roadster4 Mixte",
   "model": "Roadster4 Mixte vario HS",
   "model_configuration": "complete",
   "markets": [
@@ -56,9 +56,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 34.9,
-    "seatpost_clamp_diameter": 40,
-    "max_weight_total": 115,
-    "gross_weight_rating": 140
+    "seatpost_clamp_diameter": 40
   },
   "suspension": {
     "front": {
@@ -119,8 +117,10 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 100,
@@ -134,6 +134,28 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
+    },
+    {
+      "load": "gross",
+      "weight": 140
+    },
+    {
+      "load": "rear_rack",
+      "weight": 20
+    },
+    {
+      "load": "front_rack",
+      "weight": 5
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 5
     }
   ],
   "sizes": [
@@ -155,15 +177,11 @@
           "length": 1780
         },
         "total_weight": 24.5,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "childseat_compatibility_carrier": "no",
           "compatibility_tagalong_trailer_bike": "no",
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 20
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     },
@@ -185,15 +203,11 @@
           "length": 1795
         },
         "total_weight": 24.8,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "childseat_compatibility_carrier": "no",
           "compatibility_tagalong_trailer_bike": "no",
           "trailer_compatibility_single_wheel_single_attachment_point": "no",
-          "trailer_compatibility_two_wheel_single_attachment_point": "no",
-          "weight_rating_front_carrier_kg": 5,
-          "weight_rating_handlebar_bag_basket_kg": 5,
-          "weight_rating_luggage_rack_kg": 20
+          "trailer_compatibility_two_wheel_single_attachment_point": "no"
         }
       }
     }

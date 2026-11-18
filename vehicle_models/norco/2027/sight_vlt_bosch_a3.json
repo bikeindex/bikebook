@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/norco/2027/sight_vlt_bosch_a3",
   "manufacturer": "Norco Bikes",
-  "vehicle_model_group": "Sight VLT Bosch A",
+  "model_group": "Sight VLT Bosch A",
   "model": "Sight VLT Bosch A3",
   "model_configuration": "complete",
   "type": "bike",
@@ -124,8 +124,10 @@
       "model_group": "Performance Line PX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 700,
       "max_torque": 90,

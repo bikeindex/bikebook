@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bigniu/2026/bgx_electroplated_edition",
   "manufacturer": "Bigniu",
-  "vehicle_model_group": "BG-X",
+  "model_group": "BG-X",
   "model": "BGX Electroplated Edition",
   "model_configuration": "complete",
   "type": "bike",
@@ -61,8 +61,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 150
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -70,11 +69,19 @@
   },
   "wheels": [
     {
+      "bsd": 127,
+      "position": [
+        "front",
+        "rear"
+      ]
+    },
+    {
       "bsd": 406,
       "position": [
         "front",
         "rear"
       ],
+      "configured": false,
       "tire_width": 127
     }
   ],
@@ -92,9 +99,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL Certification",
-      "battery_size": 1500,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 1500,
+        "charging_time": 420
+      },
       "rated_power": 2000,
       "peak_power": 5000,
       "max_torque": 150,
@@ -119,6 +127,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

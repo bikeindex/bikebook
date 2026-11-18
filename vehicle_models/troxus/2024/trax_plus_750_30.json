@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/troxus/2024/trax_plus_750_30",
   "manufacturer": "Troxus",
-  "vehicle_model_group": "Trax Plus",
+  "model_group": "Trax Plus",
   "model": "Trax Plus 750/30",
   "model_configuration": "complete",
   "type": "bike",
@@ -94,8 +94,7 @@
     },
     "headset": "ZS44/28.6 | ZS44/30",
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 35,
-    "max_weight_total": 159
+    "seatpost_clamp_diameter": 35
   },
   "suspension": {
     "front": {
@@ -153,10 +152,14 @@
       "manufacturer": "Bafang",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "certification": "UL 2271",
-      "battery_size": 1440,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung® Cells",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 1440,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "max_torque": 86,
       "operating_modes": [
@@ -180,6 +183,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

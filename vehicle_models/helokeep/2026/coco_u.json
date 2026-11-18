@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/helokeep/2026/coco_u",
   "manufacturer": "Helokeep",
   "model": "Coco U",
@@ -51,8 +51,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "wheels": [
     {
@@ -79,7 +78,9 @@
   ],
   "motors": [
     {
-      "battery_size": 480,
+      "battery": {
+        "capacity": 480
+      },
       "peak_power": 750,
       "operating_modes": [
         {
@@ -92,6 +93,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

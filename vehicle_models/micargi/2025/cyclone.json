@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/micargi/2025/cyclone",
   "manufacturer": "Micargi",
   "model": "Cyclone",
@@ -89,8 +89,10 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "battery_size": 557,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 557,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "operating_modes": [
         {

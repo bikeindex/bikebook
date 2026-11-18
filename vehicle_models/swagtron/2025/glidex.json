@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/swagtron/2025/glidex",
   "manufacturer": "Swagtron",
-  "vehicle_model_group": "GlideX",
+  "model_group": "GlideX",
   "model": "GlideX",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -56,10 +56,14 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IPX4",
-      "battery_size": 183,
-      "charging_time": 240,
+      "battery": {
+        "capacity": 183,
+        "charging_time": 240
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -72,12 +76,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 13,
-        "max_weight_rider": 100
+        "total_weight": 13
       }
     }
   ],

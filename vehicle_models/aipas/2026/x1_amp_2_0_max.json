@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/aipas/2026/x1_amp_2_0_max",
   "manufacturer": "Aipas",
   "model": "X1 AMP 2.0 Max",
@@ -47,8 +47,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 159
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -84,8 +83,10 @@
       "drive_wheel": "rear",
       "kind": "mid_drive_dedicated",
       "water_rating": "IP65",
-      "battery_size": 1800,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1800,
+        "chemistry": "li-ion"
+      },
       "rated_power": 7000,
       "max_torque": 300,
       "operating_modes": [
@@ -100,6 +101,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

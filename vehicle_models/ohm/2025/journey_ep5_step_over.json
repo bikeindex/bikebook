@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ohm/2025/journey_ep5_step_over",
   "manufacturer": "OHM",
-  "vehicle_model_group": "Journey",
+  "model_group": "Journey",
   "model": "Journey EP5 Step-Over",
   "model_configuration": "complete",
   "type": "bike",
@@ -98,12 +98,16 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "certification": "UL 2849",
-      "battery_size": 531,
-      "battery_options": [
-        708
+      "certifications": [
+        "UL 2849"
       ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 531,
+        "capacity_options": [
+          708
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 500,
       "max_torque": 60,
@@ -119,9 +123,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 25
+    }
+  ],
   "sizes": [
     {
       "name": "S",

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/scott/2023/sub_active_eride_20_lady_us",
   "manufacturer": "SCOTT",
-  "vehicle_model_group": "Sub Active",
+  "model_group": "Sub Active",
   "model": "Sub Active eRIDE 20 Lady",
   "model_configuration": "complete",
   "markets": [
@@ -57,13 +57,15 @@
         "type": "fender"
       },
       {
-        "type": "rack"
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "racktime_snapit"
       }
     ],
     "headset": "ZS44/28.6 | ZS56/40",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 101,
-    "gross_weight_rating": 128
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -121,7 +123,9 @@
       "manufacturer": "Bosch",
       "model": "Active BES2",
       "kind": "mid_drive",
-      "battery_size": 400,
+      "battery": {
+        "capacity": 400
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -133,6 +137,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 101
+    },
+    {
+      "load": "gross",
+      "weight": 128
     }
   ],
   "sizes": [

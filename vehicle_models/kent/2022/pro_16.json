@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kent/2022/pro_16",
   "manufacturer": "Kent",
-  "vehicle_model_group": "Pro",
+  "model_group": "Pro",
   "model": "Pro 16",
   "model_configuration": "complete",
   "type": "bike",
@@ -65,12 +65,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 34
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
         "total_weight": 9.1,
-        "max_weight_rider": 34,
         "rider_height_min": 1118,
         "rider_height_max": 1270,
         "rider_age_min": 4,

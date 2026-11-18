@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/velec/2023/citi_350_step_over",
   "manufacturer": "Velec",
-  "vehicle_model_group": "Citi",
+  "model_group": "Citi",
   "model": "Citi 350 Step Over",
   "model_configuration": "complete",
   "type": "bike",
@@ -88,7 +88,9 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 360,
+      "battery": {
+        "capacity": 360
+      },
       "rated_power": 350,
       "max_torque": 50,
       "operating_modes": [

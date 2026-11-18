@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/envo/2023/stax_pro",
   "manufacturer": "Envo",
-  "vehicle_model_group": "Stax",
+  "model_group": "Stax",
   "model": "Stax Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -77,10 +77,15 @@
   "motors": [
     {
       "drive_wheel": "rear",
+      "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "certification": "UL 2271",
-      "battery_size": 461,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 461,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "max_torque": 80,
       "operating_modes": [

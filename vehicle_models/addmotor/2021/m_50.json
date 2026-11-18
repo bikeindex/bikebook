@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/addmotor/2021/m_50",
   "manufacturer": "Addmotor",
   "model": "M-50",
@@ -35,8 +35,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum-Alloy Aluminum",
-    "max_weight_total": 127
+    "material_detail": "6061 Aluminum-Alloy Aluminum"
   },
   "suspension": {
     "front": {
@@ -85,8 +84,10 @@
       "manufacturer": "Addmotor",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 768,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 768,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -103,6 +104,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 127
     }
   ],
   "sizes": [

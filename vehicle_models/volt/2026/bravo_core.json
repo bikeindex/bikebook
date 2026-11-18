@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/volt/2026/bravo_core",
   "manufacturer": "Volt Bike",
-  "vehicle_model_group": "Bravo",
+  "model_group": "Bravo",
   "model": "Bravo Core",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,8 +41,7 @@
   },
   "frame": {
     "material": "steel",
-    "seatpost_diameter": 30.4,
-    "max_weight_total": 127
+    "seatpost_diameter": 30.4
   },
   "suspension": {
     "front": {}
@@ -94,11 +93,15 @@
       "kind": "mid_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
+      "certifications": [
+        "UL 2271"
+      ],
       "water_rating": "IPX5",
-      "battery_size": 950,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
+      "battery": {
+        "capacity": 950,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 500,
       "max_torque": 120,
       "operating_modes": [
@@ -122,6 +125,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 127
+    },
+    {
+      "load": "payload",
+      "weight": 127
+    }
+  ],
   "sizes": [
     {
       "name": "19\"",
@@ -136,7 +149,6 @@
           "length": 1854
         },
         "total_weight": 29.5,
-        "max_weight_rider": 127,
         "extra_measurements": {
           "handlebar_height_max": 1168,
           "handlebar_height_min": 1118

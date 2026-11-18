@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/nuride_hybrid_performance_720_easy_entry",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Nuride Hybrid",
+  "model_group": "Nuride Hybrid",
   "model": "Nuride Hybrid Performance 720 Easy Entry",
   "model_configuration": "complete",
   "type": "bike",
@@ -33,9 +33,7 @@
   "frame": {
     "material": "aluminum",
     "cable_routing": "stealth",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 121,
-    "gross_weight_rating": 150
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -102,8 +100,10 @@
       "model": "BDU346Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -119,9 +119,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 110
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "46 cm",
@@ -139,7 +150,6 @@
         "stem_length": 65,
         "crank_length": 170,
         "max_seatpost_insertion": 150,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "bb_height_to_hub": 75
         }
@@ -161,7 +171,6 @@
         "stem_length": 65,
         "crank_length": 170,
         "max_seatpost_insertion": 200,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "bb_height_to_hub": 75
         }
@@ -184,7 +193,6 @@
         "crank_length": 170,
         "max_seatpost_insertion": 250,
         "total_weight": 29,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "bb_height_to_hub": 75
         }
@@ -206,7 +214,6 @@
         "stem_length": 90,
         "crank_length": 170,
         "max_seatpost_insertion": 300,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "bb_height_to_hub": 75
         }
@@ -228,7 +235,6 @@
         "stem_length": 90,
         "crank_length": 170,
         "max_seatpost_insertion": 300,
-        "max_weight_rider": 110,
         "extra_measurements": {
           "bb_height_to_hub": 75
         }

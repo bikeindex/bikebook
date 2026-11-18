@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pure/2017/city_classic_3_speed",
   "manufacturer": "Pure Cycles",
-  "vehicle_model_group": "City",
+  "model_group": "City",
   "model": "City Classic 3-Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -24,6 +24,7 @@
           "colors": [
             "black"
           ],
+          "stock_photo": "https://bikebook.bikeindex.org/pure/2017/city_classic_3_speed_black.jpg",
           "variants": [
             {
               "sku": "670957",
@@ -40,8 +41,7 @@
               "gtin": "888571079829",
               "size": "Large"
             }
-          ],
-          "stock_photo": "https://bikebook.bikeindex.org/pure/2017/city_classic_3_speed_black.jpg"
+          ]
         }
       ],
       "url": "https://purecycles.com/products/pure-city-classic-bike",
@@ -110,21 +110,25 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113,
+      "sizes": [
+        "Medium",
+        "Large"
+      ]
+    }
+  ],
   "sizes": [
     {
       "name": "Small"
     },
     {
-      "name": "Medium",
-      "geometry": {
-        "max_weight_rider": 113
-      }
+      "name": "Medium"
     },
     {
-      "name": "Large",
-      "geometry": {
-        "max_weight_rider": 113
-      }
+      "name": "Large"
     }
   ],
   "components": [

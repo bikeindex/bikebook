@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/qlife/2026/spark_max",
   "manufacturer": "Qlife",
-  "vehicle_model_group": "Spark",
+  "model_group": "Spark",
   "model": "Spark Max",
   "model_configuration": "complete",
   "type": "bike",
@@ -71,8 +71,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 163
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -106,8 +105,10 @@
       "drive_wheel": "front",
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 1040,
-      "charging_time": 600,
+      "battery": {
+        "capacity": 1040,
+        "charging_time": 600
+      },
       "peak_power": 1500,
       "max_torque": 200,
       "operating_modes": [
@@ -126,8 +127,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IPX5",
-      "battery_size": 1040,
-      "charging_time": 600,
+      "battery": {
+        "capacity": 1040,
+        "charging_time": 600
+      },
       "peak_power": 1500,
       "max_torque": 200,
       "operating_modes": [
@@ -143,9 +146,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.43
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.43
+    },
+    {
+      "load": "payload",
+      "weight": 163
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

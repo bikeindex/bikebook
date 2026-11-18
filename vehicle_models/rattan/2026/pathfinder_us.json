@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rattan/2026/pathfinder_us",
   "manufacturer": "Rattan",
-  "vehicle_model_group": "Pathfinder",
+  "model_group": "Pathfinder",
   "model": "Pathfinder",
   "model_configuration": "complete",
   "markets": [
@@ -71,8 +71,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 181
+    "material": "aluminum"
   },
   "suspension": {
     "front": {
@@ -109,9 +108,13 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 720,
-      "charging_time": 300,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 720,
+        "charging_time": 300
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 80,
@@ -132,6 +135,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

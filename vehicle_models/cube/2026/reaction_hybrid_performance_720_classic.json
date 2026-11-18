@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/reaction_hybrid_performance_720_classic",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Reaction Hybrid",
+  "model_group": "Reaction Hybrid",
   "model": "Reaction Hybrid Performance 720 Classic",
   "model_configuration": "complete",
   "type": "bike",
@@ -44,9 +44,7 @@
       }
     ],
     "cable_routing": "stealth",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 124,
-    "gross_weight_rating": 150
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -137,8 +135,10 @@
       "model": "BDU346Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -152,6 +152,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -171,7 +181,6 @@
         "stem_length": 60,
         "crank_length": 165,
         "max_seatpost_insertion": 205,
-        "max_weight_rider": 120,
         "extra_measurements": {
           "bb_height_to_hub": 46,
           "protrusion_height_80mm": 755
@@ -194,7 +203,6 @@
         "stem_length": 60,
         "crank_length": 175,
         "max_seatpost_insertion": 250,
-        "max_weight_rider": 120,
         "extra_measurements": {
           "bb_height_to_hub": 65,
           "protrusion_height_80mm": 778
@@ -218,7 +226,6 @@
         "crank_length": 175,
         "max_seatpost_insertion": 280,
         "total_weight": 25.1,
-        "max_weight_rider": 120,
         "extra_measurements": {
           "bb_height_to_hub": 65,
           "protrusion_height_80mm": 782
@@ -241,7 +248,6 @@
         "stem_length": 60,
         "crank_length": 175,
         "max_seatpost_insertion": 230,
-        "max_weight_rider": 120,
         "extra_measurements": {
           "bb_height_to_hub": 65,
           "protrusion_height_80mm": 787
@@ -264,7 +270,6 @@
         "stem_length": 60,
         "crank_length": 175,
         "max_seatpost_insertion": 270,
-        "max_weight_rider": 120,
         "extra_measurements": {
           "bb_height_to_hub": 65,
           "protrusion_height_80mm": 824

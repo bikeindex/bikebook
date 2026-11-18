@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2020/quick_neo_sl_1",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Quick",
+  "model_group": "Quick",
   "model": "Quick Neo SL 1",
   "model_configuration": "complete",
   "markets": [
@@ -61,7 +61,24 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/cannondale/2020/quick_neo_sl_1.png"
+          "stock_photo": "https://bikebook.bikeindex.org/cannondale/2020/quick_neo_sl_1.png",
+          "variants": [
+            {
+              "sku": "C63300M10SM",
+              "gtin": "884603794920",
+              "size": "SM"
+            },
+            {
+              "sku": "C63300M10MD",
+              "gtin": "884603794937",
+              "size": "MD"
+            },
+            {
+              "sku": "C63300M10LG",
+              "gtin": "884603794944",
+              "size": "LG"
+            }
+          ]
         }
       ],
       "url": "https://index.commoncrawl.org/CC-MAIN-2021-49/20211202153752/https://www.cannondale.com/en-us/bikes/electric/e-fitness/quick-neo-sl/quick-neo-sl-1",
@@ -151,8 +168,10 @@
       "manufacturer": "Mahle",
       "model": "X35",
       "kind": "hub_drive",
-      "battery_size": 250,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 250,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 40,
       "operating_modes": [

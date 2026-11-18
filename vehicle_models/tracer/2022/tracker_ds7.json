@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tracer/2022/tracker_ds7",
   "manufacturer": "Tracer",
-  "vehicle_model_group": "Tracker",
+  "model_group": "Tracker",
   "model": "Tracker DS7",
   "model_configuration": "complete",
   "type": "bike",
@@ -106,8 +106,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion"
+      },
       "rated_power": 800,
       "operating_modes": [
         {

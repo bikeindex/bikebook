@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/b_twin/2026/ld_920_e_high_step",
   "manufacturer": "b'Twin",
-  "vehicle_model_group": "LD E",
+  "model_group": "LD E",
   "model": "LD 920 E High Step",
   "model_configuration": "complete",
   "type": "bike",
@@ -24,8 +24,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 140
+    "seatpost_diameter": 31.6
   },
   "wheels": [
     {
@@ -53,8 +52,10 @@
   ],
   "motors": [
     {
-      "battery_size": 694,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 694,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 65,
       "operating_modes": [
@@ -67,6 +68,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 140
     }
   ],
   "sizes": [

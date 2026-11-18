@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/macina_gravelator_sx_elite",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Macina Gravelator",
+  "model_group": "Macina Gravelator",
   "model": "Macina Gravelator SX Elite",
   "model_configuration": "complete",
   "type": "bike",
@@ -42,9 +42,7 @@
     "cable_routing": "stealth",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 100,
-    "gross_weight_rating": 115
+    }
   },
   "wheels": [
     {
@@ -75,8 +73,10 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,
@@ -90,6 +90,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 115
     }
   ],
   "sizes": [

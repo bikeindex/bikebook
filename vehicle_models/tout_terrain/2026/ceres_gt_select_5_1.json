@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tout_terrain/2026/ceres_gt_select_5_1",
   "manufacturer": "Tout Terrain",
-  "vehicle_model_group": "Ceres",
+  "model_group": "Ceres",
   "model": "Ceres GT Select 5.1",
   "model_configuration": "complete",
   "type": "bike",
@@ -66,9 +66,7 @@
       "spindle": "DUB"
     },
     "headset": "ZS44/28.6 | EC44/40",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 118,
-    "gross_weight_rating": 130
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -154,6 +152,16 @@
       "rotor_diameter": 160,
       "rotor_diameter_max": 180,
       "caliper_mount": "Disc Flat Mount"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 118
+    },
+    {
+      "load": "gross",
+      "weight": 130
     }
   ],
   "sizes": [
@@ -396,11 +404,6 @@
         "width": 44,
         "diameter": 622
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Terrain",
-      "description": "Allroad, Gravel"
     },
     {
       "type": "unknown",

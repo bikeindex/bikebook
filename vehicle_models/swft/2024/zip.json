@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/swft/2024/zip",
   "manufacturer": "SWFT",
-  "vehicle_model_group": "ZIP",
+  "model_group": "ZIP",
   "model": "ZIP",
   "model_configuration": "complete",
   "type": "bike",
@@ -87,9 +87,11 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
-      "battery_size": 468,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 468,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -112,6 +114,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -123,7 +131,6 @@
           "height": 1150
         },
         "total_weight": 26,
-        "max_weight_rider": 120,
         "rider_height_min": 1650
       }
     }

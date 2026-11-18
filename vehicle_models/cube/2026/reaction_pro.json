@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/reaction_pro",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Reaction",
+  "model_group": "Reaction",
   "model": "Reaction Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -38,9 +38,7 @@
       "shell": "BSA",
       "width": 68
     },
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 126,
-    "gross_weight_rating": 140
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -131,6 +129,16 @@
       "rotor_diameter": 160
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 140
+    }
+  ],
   "sizes": [
     {
       "name": "XS",
@@ -147,7 +155,6 @@
         "handlebar_width": 680,
         "stem_length": 50,
         "crank_length": 165,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 52,
           "protrusion_height_80mm": 703
@@ -169,7 +176,6 @@
         "handlebar_width": 680,
         "stem_length": 50,
         "crank_length": 170,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 52,
           "protrusion_height_80mm": 727
@@ -192,7 +198,6 @@
         "stem_length": 60,
         "crank_length": 170,
         "total_weight": 14,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 65,
           "protrusion_height_80mm": 771
@@ -214,7 +219,6 @@
         "handlebar_width": 720,
         "stem_length": 60,
         "crank_length": 175,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 65,
           "protrusion_height_80mm": 809
@@ -236,7 +240,6 @@
         "handlebar_width": 720,
         "stem_length": 70,
         "crank_length": 175,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 65,
           "protrusion_height_80mm": 843

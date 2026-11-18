@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cannondale/2021/mavaro_neo_4_eu",
   "manufacturer": "Cannondale",
-  "vehicle_model_group": "Mavaro Neo",
+  "model_group": "Mavaro Neo",
   "model": "Mavaro Neo 4",
   "model_configuration": "complete",
   "markets": [
@@ -179,8 +179,10 @@
       "model_group": "Performance Line",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 625,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 65,
@@ -244,14 +246,6 @@
       "description": "Gates Bosch E-bike, w/ 46T sprocket"
     },
     {
-      "type": "derailleur",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Nexus, 8-speed internal gear hub"
-    },
-    {
       "type": "drive_belt",
       "type_detail": "Belt",
       "manufacturer": "Gates Carbon Drive",
@@ -307,14 +301,10 @@
     {
       "type": "hub",
       "position": [
-        "front"
+        "rear"
       ],
       "manufacturer": "Shimano",
-      "description": "Shimano MT400, 15x100mm thru-axle",
-      "dimensions": {
-        "axle_diameter": 15,
-        "axle_spacing": 100
-      }
+      "description": "Shimano Nexus, 8-speed internal gear hub"
     },
     {
       "type": "hub",
@@ -323,6 +313,18 @@
       ],
       "manufacturer": "Shimano",
       "description": "Shimano Nexus, 8-speed internal gear hub"
+    },
+    {
+      "type": "hub",
+      "position": [
+        "front"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano MT400, 15x100mm thru-axle",
+      "dimensions": {
+        "axle_diameter": 15,
+        "axle_spacing": 100
+      }
     },
     {
       "type": "lights",

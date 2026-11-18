@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hase/2026/pino_cargo",
   "manufacturer": "Hase bikes",
   "model": "PINO CARGO",
@@ -31,8 +31,7 @@
     "material": "aluminum",
     "bottom_bracket": {
       "spindle": "Shimano EP8"
-    },
-    "max_weight_total": 225
+    }
   },
   "suspension": {
     "front": {}
@@ -88,10 +87,12 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "battery_size": 504,
-      "battery_options": [
-        630
-      ],
+      "battery": {
+        "capacity": 504,
+        "capacity_options": [
+          630
+        ]
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [
@@ -106,9 +107,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 40
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 40
+    },
+    {
+      "load": "payload",
+      "weight": 225
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

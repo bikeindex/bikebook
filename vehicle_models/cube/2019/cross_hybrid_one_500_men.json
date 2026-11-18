@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2019/cross_hybrid_one_500_men",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Cross Hybrid",
+  "model_group": "Cross Hybrid",
   "model": "Cross Hybrid ONE 500 Men",
   "model_configuration": "complete",
   "type": "bike",
@@ -34,9 +34,7 @@
     },
     "headset": "ZS44/28.6 | ZS56/40",
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 119,
-    "gross_weight_rating": 140
+    "seatpost_clamp_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -97,11 +95,13 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 500,
-      "battery_options": [
-        400
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "capacity_options": [
+          400
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,
@@ -115,6 +115,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 119
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

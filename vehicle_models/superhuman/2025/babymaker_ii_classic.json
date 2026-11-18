@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/superhuman/2025/babymaker_ii_classic",
   "manufacturer": "Superhuman Bikes",
-  "vehicle_model_group": "Babymaker",
+  "model_group": "Babymaker",
   "model": "Babymaker II Classic",
   "model_configuration": "complete",
   "type": "bike",
@@ -64,8 +64,7 @@
       }
     ],
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 38.1,
-    "max_weight_total": 125
+    "seatpost_clamp_diameter": 38.1
   },
   "wheels": [
     {
@@ -94,10 +93,12 @@
     {
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 252,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Lithium Ion Cells",
-      "charging_time": 180,
+      "battery": {
+        "capacity": 252,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 180
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -110,6 +111,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/riese_and_muller/2022/tinker_silent_us",
   "manufacturer": "Riese & Müller",
-  "vehicle_model_group": "Tinker",
+  "model_group": "Tinker",
   "model": "Tinker silent",
   "model_configuration": "complete",
   "markets": [
@@ -56,8 +56,7 @@
       "spindle": "BNI"
     },
     "seatpost_diameter": 34.9,
-    "seatpost_clamp_diameter": 40,
-    "gross_weight_rating": 135
+    "seatpost_clamp_diameter": 40
   },
   "suspension": {
     "front": {
@@ -116,7 +115,9 @@
       "model_group": "Active Line Plus",
       "kind": "mid_drive",
       "spindle": "BNI",
-      "battery_size": 500,
+      "battery": {
+        "capacity": 500
+      },
       "rated_power": 250,
       "peak_power": 415,
       "max_torque": 50,
@@ -129,6 +130,20 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 135
+    },
+    {
+      "load": "rear_rack",
+      "weight": 25
+    },
+    {
+      "load": "handlebar_basket",
+      "weight": 3
     }
   ],
   "sizes": [
@@ -155,9 +170,7 @@
           "headset_size": 28.6,
           "top_tube_height": 605,
           "trailer_compatibility_single_wheel_single_attachment_point": "yes",
-          "trailer_compatibility_two_wheel_single_attachment_point": "yes",
-          "weight_rating_handlebar_bag_basket_kg": 3,
-          "weight_rating_luggage_rack_kg": 25
+          "trailer_compatibility_two_wheel_single_attachment_point": "yes"
         }
       }
     }

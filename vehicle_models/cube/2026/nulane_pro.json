@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/nulane_pro",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Nulane",
+  "model_group": "Nulane",
   "model": "Nulane Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -52,9 +52,7 @@
       "shell": "BSA",
       "width": 68
     },
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 103,
-    "gross_weight_rating": 115
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -97,6 +95,16 @@
       "caliper_mount": "Disc Flat Mount"
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 115
+    }
+  ],
   "sizes": [
     {
       "name": "XS",
@@ -113,7 +121,6 @@
         "handlebar_width": 660,
         "stem_length": 70,
         "crank_length": 170,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 755
@@ -135,7 +142,6 @@
         "handlebar_width": 660,
         "stem_length": 70,
         "crank_length": 170,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 786
@@ -158,7 +164,6 @@
         "stem_length": 90,
         "crank_length": 175,
         "total_weight": 11.6,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 809
@@ -180,7 +185,6 @@
         "handlebar_width": 660,
         "stem_length": 90,
         "crank_length": 175,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 830
@@ -202,7 +206,6 @@
         "handlebar_width": 660,
         "stem_length": 90,
         "crank_length": 175,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 70,
           "protrusion_height_80mm": 857

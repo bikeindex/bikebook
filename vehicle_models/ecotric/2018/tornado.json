@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ecotric/2018/tornado",
   "manufacturer": "Ecotric",
   "model": "Tornado",
@@ -28,12 +28,10 @@
           "variants": [
             {
               "sku": "TOR26LCD-MB",
-              "gtin": "6974718200288",
               "size": "One Size"
             },
             {
               "sku": "NS-TOR26LCD-MB",
-              "gtin": "6974718200288",
               "size": "One Size"
             }
           ]
@@ -45,8 +43,7 @@
     "2018": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 120
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -84,8 +81,10 @@
     {
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 576,
-      "charging_time": 480,
+      "battery": {
+        "capacity": 576,
+        "charging_time": 480
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -96,6 +95,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

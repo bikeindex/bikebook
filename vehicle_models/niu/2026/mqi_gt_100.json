@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/niu/2026/mqi_gt_100",
   "manufacturer": "Niu",
-  "vehicle_model_group": "MQi GT",
+  "model_group": "MQi GT",
   "model": "MQi GT 100",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -21,8 +21,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 269
+    "material": "steel"
   },
   "wheels": [
     {
@@ -59,10 +58,12 @@
   "motors": [
     {
       "manufacturer": "Niu",
-      "battery_size": 3744,
-      "battery_chemistry": "li-ion",
-      "battery_info": "18650 Lithium Ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 3744,
+        "chemistry": "li-ion",
+        "cells": "18650",
+        "charging_time": 300
+      },
       "rated_power": 6000,
       "peak_power": 6500,
       "operating_modes": [
@@ -76,6 +77,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 269
     }
   ],
   "sizes": [

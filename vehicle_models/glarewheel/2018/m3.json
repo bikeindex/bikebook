@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/glarewheel/2018/m3",
   "manufacturer": "Glarewheel",
   "model": "M3",
@@ -95,7 +95,9 @@
   ],
   "motors": [
     {
-      "charging_time": 120,
+      "battery": {
+        "charging_time": 120
+      },
       "rated_power": 150,
       "operating_modes": [
         {
@@ -107,12 +109,15 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 91
+    }
+  ],
   "sizes": [
     {
-      "name": "One Size",
-      "geometry": {
-        "max_weight_rider": 91
-      }
+      "name": "One Size"
     }
   ],
   "components": [

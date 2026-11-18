@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gopower/2026/go_ray",
   "manufacturer": "Gopower",
   "model": "Go Ray",
@@ -39,8 +39,7 @@
       {
         "type": "fender"
       }
-    ],
-    "max_weight_total": 120
+    ]
   },
   "wheels": [
     {
@@ -63,8 +62,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 281,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 281,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -84,6 +85,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

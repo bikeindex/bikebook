@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/goat_power/2023/power_goat_v3",
   "manufacturer": "Goat Power Bikes",
-  "vehicle_model_group": "Power Goat",
+  "model_group": "Power Goat",
   "model": "Power Goat V3",
   "model_configuration": "complete",
   "type": "bike",
@@ -98,7 +98,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 1200,
+      "battery": {
+        "capacity": 1200
+      },
       "rated_power": 2000,
       "peak_power": 3000,
       "max_torque": 170,
@@ -125,6 +127,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 204
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -136,8 +144,7 @@
           "width": 724,
           "height": 1194
         },
-        "total_weight": 43.1,
-        "max_weight_rider": 204
+        "total_weight": 43.1
       }
     }
   ],

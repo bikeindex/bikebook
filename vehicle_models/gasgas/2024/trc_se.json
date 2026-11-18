@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gasgas/2024/trc_se",
   "manufacturer": "GASGAS",
   "model": "TRC SE",
@@ -40,9 +40,7 @@
     "material": "carbon",
     "material_detail": "Carbon/Alloy 6061 Carbon",
     "headset": "ZS44/28.6 | ZS56/40",
-    "seatpost_diameter": 31.6,
-    "max_weight_total": 95,
-    "gross_weight_rating": 120
+    "seatpost_diameter": 31.6
   },
   "suspension": {
     "front": {
@@ -122,7 +120,9 @@
       "manufacturer": "Yamaha",
       "model": "PW-ST",
       "kind": "mid_drive",
-      "battery_size": 630,
+      "battery": {
+        "capacity": 630
+      },
       "rated_power": 250,
       "max_torque": 70,
       "operating_modes": [
@@ -135,6 +135,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 95
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

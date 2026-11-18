@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/nakto/2020/pony",
   "manufacturer": "Nakto",
   "model": "Pony",
@@ -51,8 +51,7 @@
     "2020": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 113
+    "material": "aluminum"
   },
   "wheels": [
     {
@@ -86,8 +85,10 @@
     {
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 360,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 360,
+        "charging_time": 360
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -109,6 +110,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -126,8 +133,7 @@
         "rider_height_min": 1524,
         "rider_height_max": 1829,
         "extra_measurements": {
-          "handlebar_height": 965,
-          "seat_height": 711.2
+          "handlebar_height": 965
         }
       }
     }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hitway/2025/bk6s_plus",
   "manufacturer": "Hitway",
-  "vehicle_model_group": "BK6",
+  "model_group": "BK6",
   "model": "BK6S Plus",
   "model_configuration": "complete",
   "type": "cargo_bike",
@@ -54,8 +54,7 @@
   },
   "frame": {
     "material": "steel",
-    "top_tube": "step_through",
-    "max_weight_total": 175
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -93,9 +92,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 1296,
-      "battery_chemistry": "li-ion",
-      "charging_time": 540,
+      "battery": {
+        "capacity": 1296,
+        "chemistry": "li-ion",
+        "charging_time": 540
+      },
       "rated_power": 250,
       "max_torque": 80,
       "operating_modes": [
@@ -109,6 +110,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 175
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/addmotor/2021/m_150_p7",
   "manufacturer": "Addmotor",
-  "vehicle_model_group": "M-150",
+  "model_group": "M-150",
   "model": "M-150 P7",
   "model_configuration": "complete",
   "type": "bike",
@@ -79,8 +79,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 127
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {
@@ -129,9 +128,11 @@
       "manufacturer": "Addmotor",
       "kind": "hub_drive",
       "sensor_cadence": true,
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -149,6 +150,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 127
     }
   ],
   "sizes": [

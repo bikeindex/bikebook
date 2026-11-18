@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bsa/2025/maeve",
   "manufacturer": "BSA",
   "model": "Maeve",
@@ -102,8 +102,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 288,
-      "battery_chemistry": "lifepo4",
+      "battery": {
+        "capacity": 288,
+        "chemistry": "lifepo4"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

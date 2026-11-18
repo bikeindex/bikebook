@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tomofree/2026/ms10",
   "manufacturer": "Tomofree",
   "model": "MS10",
@@ -58,9 +58,11 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IPX4",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "peak_power": 1000,
       "operating_modes": [
         {
@@ -70,6 +72,12 @@
           "max_slope": 15
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
     }
   ],
   "sizes": [
@@ -87,7 +95,6 @@
           "height": 500
         },
         "total_weight": 23.6,
-        "max_weight_rider": 136,
         "rider_height_min": 1520,
         "rider_height_max": 1900
       }

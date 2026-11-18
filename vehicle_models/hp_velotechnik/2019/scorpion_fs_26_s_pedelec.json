@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hp_velotechnik/2019/scorpion_fs_26_s_pedelec",
   "manufacturer": "HP Velotechnik",
-  "vehicle_model_group": "Scorpion",
+  "model_group": "Scorpion",
   "model": "Scorpion fs 26 S-Pedelec",
   "model_configuration": "complete",
   "type": "recumbent",
@@ -70,8 +70,7 @@
     "bottom_bracket": {
       "shell": "BSA",
       "width": 68
-    },
-    "max_weight_total": 140
+    }
   },
   "suspension": {
     "front": {
@@ -153,9 +152,11 @@
       "manufacturer": "Neodrives",
       "model": "Z20 RS",
       "kind": "hub_drive",
-      "battery_size": 627,
-      "battery_chemistry": "li-ion",
-      "charging_time": 270,
+      "battery": {
+        "capacity": 627,
+        "chemistry": "li-ion",
+        "charging_time": 270
+      },
       "peak_power": 1000,
       "max_torque": 40,
       "operating_modes": [
@@ -169,6 +170,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 140
     }
   ],
   "sizes": [

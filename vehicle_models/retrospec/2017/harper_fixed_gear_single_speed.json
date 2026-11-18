@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/retrospec/2017/harper_fixed_gear_single_speed",
   "manufacturer": "Retrospec",
-  "vehicle_model_group": "Harper",
+  "model_group": "Harper",
   "model": "Harper Fixed-Gear / Single-Speed",
   "model_configuration": "complete",
   "type": "bike",
@@ -334,12 +334,17 @@
       16
     ]
   },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "43CM - XS",
       "geometry": {
         "standover": 775,
-        "max_weight_rider": 113,
         "rider_height_min": 1448,
         "rider_height_max": 1575
       }
@@ -348,7 +353,6 @@
       "name": "49CM - S",
       "geometry": {
         "standover": 787,
-        "max_weight_rider": 113,
         "rider_height_min": 1575,
         "rider_height_max": 1676
       }
@@ -357,7 +361,6 @@
       "name": "53CM - M",
       "geometry": {
         "standover": 826,
-        "max_weight_rider": 113,
         "rider_height_min": 1676,
         "rider_height_max": 1753
       }
@@ -366,7 +369,6 @@
       "name": "57CM - L",
       "geometry": {
         "standover": 864,
-        "max_weight_rider": 113,
         "rider_height_min": 1753,
         "rider_height_max": 1829
       }
@@ -375,7 +377,6 @@
       "name": "60CM - XL",
       "geometry": {
         "standover": 889,
-        "max_weight_rider": 113,
         "rider_height_min": 1829
       }
     }

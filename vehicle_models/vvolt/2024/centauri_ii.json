@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vvolt/2024/centauri_ii",
   "manufacturer": "Vvolt",
-  "vehicle_model_group": "Centauri",
+  "model_group": "Centauri",
   "model": "Centauri II",
   "model_configuration": "complete",
   "type": "bike",
@@ -143,9 +143,13 @@
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
-      "battery_size": 490,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 490,
+        "chemistry": "li-ion"
+      },
       "rated_power": 350,
       "peak_power": 650,
       "max_torque": 120,

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/orbea/2027/muga_30_28mph_us",
   "manufacturer": "Orbea",
-  "vehicle_model_group": "Muga",
+  "model_group": "Muga",
   "model": "Muga 30 28mph",
   "model_configuration": "complete",
   "markets": [
@@ -54,7 +54,8 @@
         "type": "rack",
         "position": [
           "rear"
-        ]
+        ],
+        "interface": "mik_hd"
       }
     ]
   },
@@ -139,8 +140,10 @@
       "manufacturer": "Bosch",
       "model": "Performance Line Speed CX BDU3883",
       "kind": "mid_drive",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -153,9 +156,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 30
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 30
+    }
+  ],
   "sizes": [
     {
       "name": "S",

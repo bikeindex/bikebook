@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/b_twin/2026/learn_500",
   "manufacturer": "b'Twin",
-  "vehicle_model_group": "Learn",
+  "model_group": "Learn",
   "model": "Learn 500",
   "model_configuration": "complete",
   "type": "balance_bike",
@@ -34,8 +34,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 20
+    "material": "steel"
   },
   "wheels": [
     {
@@ -54,6 +53,12 @@
         "rear"
       ],
       "caliper_mount": "Brake Bosses"
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 20
     }
   ],
   "sizes": [

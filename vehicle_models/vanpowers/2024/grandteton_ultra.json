@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/vanpowers/2024/grandteton_ultra",
   "manufacturer": "VanPowers",
-  "vehicle_model_group": "GrandTeton",
+  "model_group": "GrandTeton",
   "model": "GrandTeton-Ultra",
   "model_configuration": "complete",
   "type": "bike",
@@ -53,8 +53,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "seatpost_diameter": 30.9,
-    "max_weight_total": 181
+    "seatpost_diameter": 30.9
   },
   "suspension": {
     "front": {
@@ -119,9 +118,11 @@
       "kind": "mid_drive",
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IP67",
-      "battery_size": 706,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
+      "battery": {
+        "capacity": 706,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 130,
@@ -136,6 +137,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

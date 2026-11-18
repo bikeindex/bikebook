@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/happyrun/2024/g300_pro",
   "manufacturer": "HappyRun",
-  "vehicle_model_group": "G300",
+  "model_group": "G300",
   "model": "G300 Pro",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -79,8 +79,7 @@
   },
   "frame": {
     "material": "steel",
-    "coil_compatible": true,
-    "max_weight_total": 159
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -129,9 +128,11 @@
   "motors": [
     {
       "water_rating": "IPX5",
-      "battery_size": 2160,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 2160,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "peak_power": 6500,
       "max_torque": 120,
       "operating_modes": [
@@ -146,6 +147,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

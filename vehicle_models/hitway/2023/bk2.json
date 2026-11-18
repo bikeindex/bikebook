@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hitway/2023/bk2",
   "manufacturer": "Hitway",
   "model": "BK2",
@@ -28,7 +28,6 @@
           "variants": [
             {
               "sku": "HW-EU-BK2-BLACK",
-              "gtin": "8714864795515",
               "size": "One Size"
             }
           ]
@@ -42,7 +41,6 @@
           "variants": [
             {
               "sku": "HW-EU-BK2-GREY",
-              "gtin": "8714864795515",
               "size": "One Size"
             }
           ]
@@ -60,8 +58,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 100
+    ]
   },
   "suspension": {
     "front": {},
@@ -94,9 +91,11 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 281,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 281,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -111,6 +110,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

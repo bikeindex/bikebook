@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/magnum/2024/metro_s",
   "manufacturer": "Magnum Bikes",
-  "vehicle_model_group": "Metro",
+  "model_group": "Metro",
   "model": "Metro S",
   "model_configuration": "complete",
   "type": "bike",
@@ -126,8 +126,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 150
+    ]
   },
   "suspension": {
     "front": {
@@ -170,10 +169,11 @@
     {
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "battery_info": "13Ah",
-      "charging_time": 390,
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "charging_time": 390
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -195,6 +195,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

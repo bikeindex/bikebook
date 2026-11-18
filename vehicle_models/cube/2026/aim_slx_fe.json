@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/aim_slx_fe",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Aim",
+  "model_group": "Aim",
   "model": "Aim SLX FE",
   "model_configuration": "complete",
   "type": "bike",
@@ -22,8 +22,8 @@
         {
           "name": "Slateblack´N´Chrome",
           "colors": [
-            "silver",
-            "black"
+            "black",
+            "silver"
           ]
         }
       ],
@@ -39,9 +39,7 @@
       "width": 68
     },
     "headset": "ZS44/28.6 | ZS56/40",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 121,
-    "gross_weight_rating": 140
+    "seatpost_diameter": 27.2
   },
   "suspension": {
     "front": {
@@ -105,9 +103,20 @@
       "caliper_mount": "Disc Flat Mount"
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 140
+    }
+  ],
   "sizes": [
     {
       "name": "XS",
@@ -124,7 +133,6 @@
         "handlebar_width": 680,
         "stem_length": 50,
         "crank_length": 165,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 52,
           "protrusion_height_80mm": 710
@@ -146,7 +154,6 @@
         "handlebar_width": 680,
         "stem_length": 50,
         "crank_length": 170,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 52,
           "protrusion_height_80mm": 734
@@ -169,7 +176,6 @@
         "stem_length": 60,
         "crank_length": 170,
         "total_weight": 18.2,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 65,
           "protrusion_height_80mm": 786
@@ -191,7 +197,6 @@
         "handlebar_width": 720,
         "stem_length": 60,
         "crank_length": 175,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 65,
           "protrusion_height_80mm": 823
@@ -213,7 +218,6 @@
         "handlebar_width": 720,
         "stem_length": 70,
         "crank_length": 175,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 65,
           "protrusion_height_80mm": 862

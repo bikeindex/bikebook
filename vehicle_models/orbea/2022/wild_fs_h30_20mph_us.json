@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/orbea/2022/wild_fs_h30_20mph_us",
   "manufacturer": "Orbea",
-  "vehicle_model_group": "Wild",
+  "model_group": "Wild",
   "model": "Wild FS H30 20mph",
   "model_configuration": "complete",
   "markets": [
@@ -107,8 +107,10 @@
       "model": "BDU450CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 85,

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/meelod/2026/xt600dl",
   "manufacturer": "Meelod",
   "model": "XT600DL",
@@ -52,8 +52,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 200
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {},
@@ -90,9 +89,11 @@
     {
       "drive_wheel": "front",
       "water_rating": "IP65",
-      "battery_size": 1300,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 1300,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "peak_power": 1200,
       "operating_modes": [
         {
@@ -113,9 +114,11 @@
     {
       "drive_wheel": "rear",
       "water_rating": "IP65",
-      "battery_size": 1300,
-      "battery_chemistry": "li-ion",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 1300,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "peak_power": 1200,
       "operating_modes": [
         {
@@ -132,6 +135,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
     }
   ],
   "sizes": [

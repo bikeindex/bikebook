@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/addmotor/2024/arisetan_ii_m_360_mini",
   "manufacturer": "Addmotor",
-  "vehicle_model_group": "Arisetan",
+  "model_group": "Arisetan",
   "model": "Arisetan II M-360 Mini",
   "model_configuration": "complete",
   "type": "tricycle",
@@ -77,8 +77,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 172
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -119,8 +118,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -142,6 +143,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 172
     }
   ],
   "sizes": [

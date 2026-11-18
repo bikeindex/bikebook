@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/samebike/2025/rs_a01_plus",
   "manufacturer": "samebike",
-  "vehicle_model_group": "RS-A01",
+  "model_group": "RS-A01",
   "model": "RS-A01 Plus",
   "model_configuration": "complete",
   "type": "bike",
@@ -53,8 +53,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 150
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {}
@@ -88,8 +87,10 @@
   ],
   "motors": [
     {
-      "battery_size": 672,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 672,
+        "charging_time": 360
+      },
       "rated_power": 250,
       "max_torque": 70,
       "operating_modes": [
@@ -105,6 +106,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

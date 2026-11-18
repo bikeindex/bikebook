@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ecotric/2020/fat20850c",
   "manufacturer": "Ecotric",
-  "vehicle_model_group": "FAT20",
+  "model_group": "FAT20",
   "model": "FAT20850C",
   "model_configuration": "complete",
   "type": "bike",
@@ -29,7 +29,6 @@
           "variants": [
             {
               "sku": "NS-NFAT20850C-G+SH-HHJ850-G",
-              "gtin": "6974718200028",
               "size": "One Size"
             }
           ]
@@ -43,7 +42,6 @@
           "variants": [
             {
               "sku": "NS-NFAT20850C-RD+HHJ850-RD",
-              "gtin": "6974718200028",
               "size": "One Size"
             }
           ]
@@ -61,8 +59,7 @@
       {
         "type": "rack"
       }
-    ],
-    "max_weight_total": 91
+    ]
   },
   "wheels": [
     {
@@ -96,9 +93,11 @@
     {
       "kind": "hub_drive",
       "sensor_speed": "spoke_magnet",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -109,6 +108,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 91
     }
   ],
   "sizes": [

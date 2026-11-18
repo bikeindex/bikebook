@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2023/v14_adventure",
   "manufacturer": "Inmotion",
-  "vehicle_model_group": "V14",
+  "model_group": "V14",
   "model": "V14 Adventure",
   "model_configuration": "complete",
   "type": "epamd",
@@ -26,8 +26,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 140
+    "material": "steel"
   },
   "brakes": [
     {
@@ -50,6 +49,12 @@
           "max_slope": 50
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 140
     }
   ],
   "sizes": [

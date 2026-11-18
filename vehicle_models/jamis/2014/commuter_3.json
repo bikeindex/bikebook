@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jamis/2014/commuter_3",
   "manufacturer": "Jamis",
   "model": "Commuter 3",
@@ -97,9 +97,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 18
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 18
+    }
+  ],
   "components": [
     {
       "type": "bell_noisemaker",

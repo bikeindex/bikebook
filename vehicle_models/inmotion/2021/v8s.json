@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2021/v8s",
   "manufacturer": "Inmotion",
-  "vehicle_model_group": "V8",
+  "model_group": "V8",
   "model": "V8S",
   "model_configuration": "complete",
   "type": "epamd",
@@ -35,8 +35,7 @@
     "2021": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 120
+    "material": "steel"
   },
   "wheels": [
     {
@@ -59,10 +58,12 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP54",
-      "battery_size": 728,
-      "battery_chemistry": "li-ion",
-      "battery_info": "20S2P BAK 21700, 5000mAh",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 728,
+        "chemistry": "li-ion",
+        "cells": "20S2P BAK 21700, 5000mAh",
+        "charging_time": 360
+      },
       "rated_power": 1000,
       "peak_power": 2000,
       "max_torque": 65,
@@ -75,6 +76,12 @@
           "max_slope": 30
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/evercross/2024/ek6",
   "manufacturer": "Evercross",
-  "vehicle_model_group": "EK6",
+  "model_group": "EK6",
   "model": "EK6",
   "model_configuration": "complete",
   "type": "bike",
@@ -54,8 +54,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "wheels": [
     {
@@ -72,7 +71,9 @@
   ],
   "motors": [
     {
-      "battery_size": 720,
+      "battery": {
+        "capacity": 720
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -85,6 +86,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

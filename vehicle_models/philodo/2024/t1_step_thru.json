@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/philodo/2024/t1_step_thru",
   "manufacturer": "Philodo",
   "model": "T1 Step-Thru",
@@ -40,8 +40,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 150
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -81,8 +80,10 @@
       "drive_wheel": "rear",
       "kind": "hub_drive",
       "water_rating": "IPX6",
-      "battery_size": 960,
-      "charging_time": 540,
+      "battery": {
+        "capacity": 960,
+        "charging_time": 540
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -100,6 +101,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -158,12 +165,25 @@
       "description": "3.7 inch multifunctional display"
     },
     {
+      "type": "fender",
+      "description": "fenders"
+    },
+    {
       "type": "fork",
       "type_detail": "Front Suspension",
       "position": [
         "front"
       ],
       "description": "Aluminum alloy suspension fork with lock"
+    },
+    {
+      "type": "included_not_installed",
+      "type_detail": "Tools",
+      "description": "assembly toolset"
+    },
+    {
+      "type": "kickstand",
+      "description": "kickstand"
     },
     {
       "type": "lights",
@@ -173,12 +193,15 @@
       "description": "Integrated LED headlight & horn"
     },
     {
+      "type": "mirror",
+      "description": "rearview mirrors"
+    },
+    {
       "type": "rack",
-      "type_detail": "Integrated Rear Rack",
       "position": [
         "rear"
       ],
-      "description": "Integrated Rear Rack"
+      "description": "rear rack"
     },
     {
       "type": "saddle",
@@ -199,11 +222,6 @@
         "width": 101.6,
         "diameter": 406
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Package Included",
-      "description": "Battery, charger, kickstand, fenders, rearview mirrors, rear rack, assembly toolset, user manual"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/decathlon/2026/riverside_500_e",
   "manufacturer": "Decathlon",
   "model": "Riverside 500 E",
@@ -43,8 +43,7 @@
         "location": "downtube"
       }
     ],
-    "seatpost_diameter": 28.6,
-    "max_weight_total": 120
+    "seatpost_diameter": 28.6
   },
   "suspension": {
     "front": {
@@ -98,8 +97,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 418,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 418,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 42,
       "operating_modes": [
@@ -112,6 +113,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

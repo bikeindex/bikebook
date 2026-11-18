@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/euy/2023/k6_plus",
   "manufacturer": "Euy",
-  "vehicle_model_group": "K6",
+  "model_group": "K6",
   "model": "K6 Plus",
   "model_configuration": "complete",
   "type": "bike",
@@ -37,8 +37,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "magnesium",
-    "max_weight_total": 181
+    "material": "magnesium"
   },
   "suspension": {
     "front": {}
@@ -71,10 +70,14 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
-      "charging_time": 420,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion",
+        "charging_time": 420
+      },
       "rated_power": 1000,
       "max_torque": 96,
       "operating_modes": [
@@ -97,6 +100,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [
@@ -176,10 +185,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V/25A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LCD display"
     },
     {
@@ -233,6 +238,11 @@
         "width": 101.6,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V/25A"
     },
     {
       "type": "unknown",

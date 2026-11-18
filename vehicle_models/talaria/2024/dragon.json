@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/talaria/2024/dragon",
   "manufacturer": "Talaria",
   "model": "Dragon",
@@ -20,8 +20,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -63,8 +62,10 @@
   ],
   "motors": [
     {
-      "battery_size": 5195,
-      "charging_time": 240,
+      "battery": {
+        "capacity": 5195,
+        "charging_time": 240
+      },
       "rated_power": 10000,
       "peak_power": 28000,
       "operating_modes": [
@@ -74,6 +75,12 @@
           "range_claimed": 150
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

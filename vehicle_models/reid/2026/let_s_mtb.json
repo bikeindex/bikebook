@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/reid/2026/let_s_mtb",
   "manufacturer": "Reid",
   "model": "Let's MTB",
@@ -53,8 +53,7 @@
       "spindle": "square taper"
     },
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9,
-    "max_weight_total": 110
+    "seatpost_clamp_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -120,8 +119,12 @@
       "manufacturer": "Ananda",
       "model": "M131",
       "kind": "hub_drive",
-      "certification": "EN50604",
-      "battery_size": 352,
+      "certifications": [
+        "EN 50604"
+      ],
+      "battery": {
+        "capacity": 352
+      },
       "rated_power": 250,
       "peak_power": 430,
       "max_torque": 40,
@@ -136,6 +139,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 110
     }
   ],
   "sizes": [

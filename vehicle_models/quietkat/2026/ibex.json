@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/quietkat/2026/ibex",
   "manufacturer": "QuietKat",
   "model": "Ibex",
@@ -51,8 +51,7 @@
   "frame": {
     "material": "aluminum",
     "cable_routing": "internal",
-    "coil_compatible": true,
-    "max_weight_total": 136
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -101,7 +100,9 @@
     {
       "drive_wheel": "rear",
       "kind": "mid_drive",
-      "battery_size": 1008,
+      "battery": {
+        "capacity": 1008
+      },
       "rated_power": 1000,
       "peak_power": 1500,
       "max_torque": 160,
@@ -124,6 +125,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 136
     }
   ],
   "sizes": [

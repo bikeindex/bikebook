@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/keteles/2024/kaijielaisi_v3_2000w",
   "manufacturer": "Keteles",
-  "vehicle_model_group": "Kaijielaisi V3",
+  "model_group": "Kaijielaisi V3",
   "model": "Kaijielaisi V3 2000W",
   "model_configuration": "complete",
   "type": "bike",
@@ -80,9 +80,11 @@
     {
       "drive_wheel": "front",
       "kind": "hub_drive",
-      "battery_size": 1104,
-      "battery_chemistry": "li-ion",
-      "charging_time": 180,
+      "battery": {
+        "capacity": 1104,
+        "chemistry": "li-ion",
+        "charging_time": 180
+      },
       "rated_power": 1000,
       "max_torque": 70,
       "operating_modes": [
@@ -108,9 +110,11 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 1104,
-      "battery_chemistry": "li-ion",
-      "charging_time": 180,
+      "battery": {
+        "capacity": 1104,
+        "chemistry": "li-ion",
+        "charging_time": 180
+      },
       "rated_power": 1000,
       "max_torque": 70,
       "operating_modes": [

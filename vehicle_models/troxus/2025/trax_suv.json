@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/troxus/2025/trax_suv",
   "manufacturer": "Troxus",
   "model": "Trax SUV",
@@ -54,13 +54,21 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061-T6 Aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
     "cable_routing": "stealth",
     "bottom_bracket": {
       "spindle": "square taper"
     },
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 35,
-    "max_weight_total": 136
+    "seatpost_clamp_diameter": 35
   },
   "suspension": {
     "front": {
@@ -126,10 +134,14 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung® Cells",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 750,
       "max_torque": 85,
       "operating_modes": [
@@ -155,6 +167,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 111
+    },
+    {
+      "load": "payload",
+      "weight": 136
+    }
+  ],
   "sizes": [
     {
       "name": "Medium (Step Thru)",
@@ -172,8 +194,7 @@
         "bb_height": 321,
         "fork_rake": 44,
         "fork_length_a2c": 476,
-        "total_weight": 34,
-        "max_weight_rider": 111
+        "total_weight": 34
       }
     },
     {
@@ -191,8 +212,7 @@
         "bb_drop": 35,
         "bb_height": 321,
         "fork_rake": 44,
-        "fork_length_a2c": 476,
-        "max_weight_rider": 111
+        "fork_length_a2c": 476
       }
     }
   ],

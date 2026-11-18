@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wave/2020/folding_wave",
   "manufacturer": "Wave",
   "model": "Folding Wave",
@@ -100,10 +100,12 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 281,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 281,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 240
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -127,6 +129,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 122
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -142,7 +150,6 @@
           "height": 711
         },
         "total_weight": 22.7,
-        "max_weight_rider": 122,
         "rider_height_min": 1575,
         "rider_height_max": 2007
       }

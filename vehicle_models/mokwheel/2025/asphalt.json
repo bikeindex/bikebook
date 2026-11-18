@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/mokwheel/2025/asphalt",
   "manufacturer": "Mokwheel",
-  "vehicle_model_group": "Asphalt",
+  "model_group": "Asphalt",
   "model": "Asphalt",
   "model_configuration": "complete",
   "type": "bike",
@@ -70,8 +70,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "6061 Aluminum",
-    "max_weight_total": 159
+    "material_detail": "6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -117,7 +116,9 @@
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX6",
-      "battery_size": 706,
+      "battery": {
+        "capacity": 706
+      },
       "rated_power": 500,
       "peak_power": 860,
       "max_torque": 70,
@@ -142,6 +143,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

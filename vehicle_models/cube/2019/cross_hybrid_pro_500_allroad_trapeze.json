@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2019/cross_hybrid_pro_500_allroad_trapeze",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Cross Hybrid",
+  "model_group": "Cross Hybrid",
   "model": "Cross Hybrid Pro 500 Allroad Trapeze",
   "model_configuration": "complete",
   "type": "bike",
@@ -30,9 +30,7 @@
   "frame": {
     "material": "aluminum",
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8,
-    "max_weight_total": 117,
-    "gross_weight_rating": 140
+    "seatpost_clamp_diameter": 31.8
   },
   "suspension": {
     "front": {
@@ -90,11 +88,13 @@
       "model": "BDU450CX",
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
-      "battery_size": 500,
-      "battery_options": [
-        400
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 500,
+        "capacity_options": [
+          400
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -108,6 +108,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 117
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/euy/2025/k6_pro_max",
   "manufacturer": "Euy",
-  "vehicle_model_group": "K6",
+  "model_group": "K6",
   "model": "K6 Pro Max",
   "model_configuration": "complete",
   "type": "bike",
@@ -55,8 +55,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 181
+    "material": "steel"
   },
   "suspension": {
     "front": {
@@ -90,9 +89,13 @@
     {
       "drive_wheel": "front",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849",
-      "battery_size": 1560,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 1560,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1000,
       "max_torque": 96,
       "operating_modes": [
@@ -119,9 +122,13 @@
     {
       "drive_wheel": "rear",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849",
-      "battery_size": 1560,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 1560,
+        "chemistry": "li-ion"
+      },
       "rated_power": 1500,
       "max_torque": 96,
       "operating_modes": [
@@ -144,6 +151,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [
@@ -218,10 +231,6 @@
     },
     {
       "type": "e_vehicle_remote",
-      "description": "48V/25A"
-    },
-    {
-      "type": "e_vehicle_remote",
       "description": "LCD display"
     },
     {
@@ -272,6 +281,11 @@
         "width": 101.6,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V/25A"
     },
     {
       "type": "unknown",

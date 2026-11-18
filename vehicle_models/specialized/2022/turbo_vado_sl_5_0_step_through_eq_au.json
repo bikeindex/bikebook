@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/specialized/2022/turbo_vado_sl_5_0_step_through_eq_au",
   "manufacturer": "Specialized",
-  "vehicle_model_group": "Turbo Vado",
+  "model_group": "Turbo Vado",
   "model": "Turbo Vado SL 5.0 Step-Through EQ",
   "model_configuration": "complete",
   "markets": [
@@ -133,7 +133,9 @@
       "spindle": "Praxis M30",
       "sensor_cadence": true,
       "water_rating": "IP67",
-      "battery_size": 320,
+      "battery": {
+        "capacity": 320
+      },
       "rated_power": 240,
       "peak_power": 240,
       "max_torque": 35,
@@ -148,9 +150,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 15
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 15
+    }
+  ],
   "sizes": [
     {
       "name": "S",

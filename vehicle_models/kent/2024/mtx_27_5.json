@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kent/2024/mtx_27_5",
   "manufacturer": "Kent",
-  "vehicle_model_group": "MTX",
+  "model_group": "MTX",
   "model": "MTX 27.5",
   "model_configuration": "complete",
   "type": "bike",
@@ -122,11 +122,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "Medium",
       "geometry": {
-        "max_weight_rider": 113,
         "rider_height_min": 1676,
         "rider_height_max": 1778,
         "rider_age_min": 14
@@ -136,7 +141,6 @@
       "name": "Large",
       "geometry": {
         "total_weight": 13.2,
-        "max_weight_rider": 113,
         "rider_height_min": 1727,
         "rider_height_max": 1829,
         "rider_age_min": 14
@@ -145,7 +149,6 @@
     {
       "name": "Extra Large",
       "geometry": {
-        "max_weight_rider": 113,
         "rider_height_min": 1778,
         "rider_height_max": 1880,
         "rider_age_min": 14

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/onewheel/2019/pint",
   "manufacturer": "OneWheel",
-  "vehicle_model_group": "Pint",
+  "model_group": "Pint",
   "model": "Pint",
   "model_configuration": "complete",
   "type": "epamd",
@@ -66,9 +66,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_chemistry": "li-ion",
-      "battery_info": "Nickel Manganese Cobalt Oxide (NMC)",
-      "charging_time": 120,
+      "battery": {
+        "chemistry": "li-ion",
+        "charging_time": 120
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -80,6 +81,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -89,8 +96,7 @@
           "width": 222,
           "height": 266
         },
-        "total_weight": 10.4,
-        "max_weight_rider": 113
+        "total_weight": 10.4
       }
     }
   ],

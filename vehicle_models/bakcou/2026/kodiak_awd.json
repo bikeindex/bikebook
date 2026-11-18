@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bakcou/2026/kodiak_awd",
   "manufacturer": "Bakcou",
-  "vehicle_model_group": "Kodiak",
+  "model_group": "Kodiak",
   "model": "Kodiak AWD",
   "model_configuration": "complete",
   "type": "bike",
@@ -84,8 +84,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "material_detail": "Grade 6061 Aluminum",
-    "max_weight_total": 159
+    "material_detail": "Grade 6061 Aluminum"
   },
   "suspension": {
     "front": {
@@ -134,8 +133,10 @@
       "drive_wheel": "front",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 1200,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1200,
+        "chemistry": "li-ion"
+      },
       "peak_power": 500,
       "max_torque": 85,
       "operating_modes": [
@@ -158,8 +159,10 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "kind": "hub_drive",
-      "battery_size": 1200,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 1200,
+        "chemistry": "li-ion"
+      },
       "peak_power": 500,
       "max_torque": 85,
       "operating_modes": [
@@ -177,6 +180,12 @@
           "throttle_type": "Thumb"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
     }
   ],
   "sizes": [

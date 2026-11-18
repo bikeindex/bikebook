@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/editor_hybrid_slx_400x_fe_trapeze",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Editor Hybrid",
+  "model_group": "Editor Hybrid",
   "model": "Editor Hybrid SLX 400X FE Trapeze",
   "model_configuration": "complete",
   "type": "bike",
@@ -35,9 +35,7 @@
     "cable_routing": "stealth",
     "bottom_bracket": {
       "spindle": "ISIS"
-    },
-    "max_weight_total": 115,
-    "gross_weight_rating": 135
+    }
   },
   "wheels": [
     {
@@ -93,8 +91,10 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,
@@ -110,9 +110,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    },
+    {
+      "load": "gross",
+      "weight": 135
+    }
+  ],
   "sizes": [
     {
       "name": "50 cm",
@@ -130,7 +141,6 @@
         "stem_length": 60,
         "crank_length": 170,
         "max_seatpost_insertion": 290,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": -70,
           "protrusion_height_80mm": 640
@@ -154,7 +164,6 @@
         "crank_length": 170,
         "max_seatpost_insertion": 300,
         "total_weight": 19.8,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": -70,
           "protrusion_height_80mm": 656
@@ -177,7 +186,6 @@
         "stem_length": 80,
         "crank_length": 170,
         "max_seatpost_insertion": 300,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": -70,
           "protrusion_height_80mm": 671

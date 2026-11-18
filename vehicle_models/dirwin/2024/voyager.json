@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/dirwin/2024/voyager",
   "manufacturer": "Dirwin",
   "model": "Voyager",
@@ -49,8 +49,7 @@
       }
     ],
     "seatpost_diameter": 30.4,
-    "seatpost_clamp_diameter": 35,
-    "max_weight_total": 113
+    "seatpost_clamp_diameter": 35
   },
   "suspension": {
     "front": {}
@@ -91,9 +90,11 @@
   ],
   "motors": [
     {
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -112,6 +113,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
     }
   ],
   "sizes": [
@@ -184,10 +191,6 @@
       "description": "LCD Display with USB-C Charging Port"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "48V 20A"
-    },
-    {
       "type": "fork",
       "position": [
         "front"
@@ -249,6 +252,11 @@
         "width": 53.98,
         "diameter": 406
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V 20A"
     }
   ]
 }

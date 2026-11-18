@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/liv/2022/tempt_e_plus_3_20mph",
   "manufacturer": "Liv",
-  "vehicle_model_group": "Tempt",
+  "model_group": "Tempt",
   "model": "Tempt E+ 3 20MPH",
   "model_configuration": "complete",
   "type": "bike",
@@ -133,8 +133,10 @@
       "model": "SyncDrive Core",
       "kind": "mid_drive",
       "spindle": "square taper",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "max_torque": 50,
       "operating_modes": [
         {

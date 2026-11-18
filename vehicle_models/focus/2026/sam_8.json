@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/focus/2026/sam_8",
   "manufacturer": "Focus",
-  "vehicle_model_group": "Sam",
+  "model_group": "Sam",
   "model": "Sam 8",
   "model_configuration": "complete",
   "type": "bike",
@@ -136,9 +136,7 @@
       "spindle": "ISIS"
     },
     "seatpost_diameter": 34.9,
-    "coil_compatible": true,
-    "max_weight_total": 124,
-    "gross_weight_rating": 150
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -202,8 +200,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 85,
@@ -217,6 +217,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 124
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

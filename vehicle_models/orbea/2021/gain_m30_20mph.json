@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/orbea/2021/gain_m30_20mph",
   "manufacturer": "Orbea",
-  "vehicle_model_group": "Gain",
+  "model_group": "Gain",
   "model": "Gain M30 20mph",
   "model_configuration": "complete",
   "type": "bike",
@@ -100,8 +100,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 248,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 248,
+        "chemistry": "li-ion"
+      },
       "operating_modes": [
         {
           "mode": "assist",

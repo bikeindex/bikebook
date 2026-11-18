@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/actbest/2026/core_2_0_plus",
   "manufacturer": "Actbest",
-  "vehicle_model_group": "Core",
+  "model_group": "Core",
   "model": "Core 2.0 Plus",
   "model_configuration": "complete",
   "type": "bike",
@@ -98,8 +98,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 159
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -131,8 +130,10 @@
     {
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX5",
-      "battery_size": 576,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 576,
+        "charging_time": 360
+      },
       "peak_power": 1200,
       "max_torque": 80,
       "operating_modes": [
@@ -159,9 +160,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.43
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.43
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

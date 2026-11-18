@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ktm/2027/scarp_master",
   "manufacturer": "KTM",
-  "vehicle_model_group": "Scarp",
+  "model_group": "Scarp",
   "model": "Scarp Master",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,9 +40,7 @@
   },
   "frame": {
     "material": "carbon",
-    "cable_routing": "dropper",
-    "max_weight_total": 109,
-    "gross_weight_rating": 120
+    "cable_routing": "dropper"
   },
   "suspension": {
     "front": {
@@ -93,6 +91,16 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 109
+    },
+    {
+      "load": "gross",
+      "weight": 120
     }
   ],
   "sizes": [

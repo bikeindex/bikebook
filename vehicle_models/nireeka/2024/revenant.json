@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/nireeka/2024/revenant",
   "manufacturer": "Nireeka",
   "model": "Revenant",
@@ -221,9 +221,12 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 840,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung",
+      "battery": {
+        "capacity": 840,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "rated_power": 1000,
       "peak_power": 1300,
       "operating_modes": [

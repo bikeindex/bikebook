@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freego/2026/x3_pro",
   "manufacturer": "Freego",
-  "vehicle_model_group": "X3",
+  "model_group": "X3",
   "model": "X3 Pro",
   "model_configuration": "complete",
   "type": "bike",
@@ -34,8 +34,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -67,9 +66,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 3600,
-      "battery_chemistry": "li-ion",
-      "charging_time": 480,
+      "battery": {
+        "capacity": 3600,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
       "rated_power": 4500,
       "peak_power": 8000,
       "max_torque": 230,
@@ -100,6 +101,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/rad_power/2024/radwagon_5",
   "manufacturer": "Rad Power Bikes",
-  "vehicle_model_group": "RadWagon",
+  "model_group": "RadWagon",
   "model": "RadWagon 5",
   "model_configuration": "complete",
   "type": "cargo_bike_rear",
@@ -99,8 +99,7 @@
       }
     ],
     "seatpost_diameter": 34.9,
-    "seatpost_clamp_diameter": 40,
-    "max_weight_total": 170
+    "seatpost_clamp_diameter": 40
   },
   "suspension": {
     "front": {
@@ -157,10 +156,15 @@
     {
       "kind": "hub_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2849, UL 2271",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 50GB or LG M50LT cells",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "Samsung 50GB or LG M50LT"
+      },
       "rated_power": 750,
       "max_torque": 90,
       "operating_modes": [
@@ -184,9 +188,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 54.4
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 54.4
+    },
+    {
+      "load": "payload",
+      "weight": 170
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bike_friday/2025/all_day",
   "manufacturer": "Bike Friday",
   "model": "All-Day",
@@ -144,8 +144,10 @@
       "model_group": "Performance Line SX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 400,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 400,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 60,
@@ -161,6 +163,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 118
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -171,7 +179,6 @@
           "height": 356
         },
         "total_weight": 16.3,
-        "max_weight_rider": 118,
         "rider_height_min": 1372,
         "rider_height_max": 1880
       }

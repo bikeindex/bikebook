@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fission/2022/fm_750x",
   "manufacturer": "Fission",
   "model": "FM 750x",
@@ -69,6 +69,10 @@
       44
     ]
   },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "electronic": false
+  },
   "brakes": [
     {
       "type": "disc_hydraulic",
@@ -81,8 +85,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 960,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "peak_power": 1200,
       "max_torque": 90,
@@ -158,6 +164,12 @@
       "description": "High-Resolution, Rapid-Response Cadence Sensing"
     },
     {
+      "type": "shifter",
+      "type_detail": "Gearing Array",
+      "manufacturer": "Shimano",
+      "description": "Shimano 8-Speed Rapid-Fire Indexed Drivetrain"
+    },
+    {
       "type": "tire",
       "type_detail": "Tire Profile",
       "position": [
@@ -166,12 +178,6 @@
       ],
       "manufacturer": "Kenda",
       "description": "Kenda Anti-Puncture High-Volume All-Terrain Tires"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Gearing Array",
-      "manufacturer": "Shimano",
-      "description": "Shimano 8-Speed Rapid-Fire Indexed Drivetrain"
     }
   ]
 }

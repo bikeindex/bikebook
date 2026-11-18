@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/schwinn/2025/elise_16in",
   "manufacturer": "Schwinn",
-  "vehicle_model_group": "Elise",
+  "model_group": "Elise",
   "model": "Elise 16in",
   "model_configuration": "complete",
   "type": "bike",
@@ -104,12 +104,17 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 34
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 10,
-        "max_weight_rider": 34
+        "total_weight": 10
       }
     }
   ],

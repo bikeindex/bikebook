@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/cube/2026/compact_hybrid_deluxe_540",
   "manufacturer": "Cube",
-  "vehicle_model_group": "Compact Hybrid",
+  "model_group": "Compact Hybrid",
   "model": "Compact Hybrid Deluxe 540",
   "model_configuration": "complete",
   "type": "bike",
@@ -32,9 +32,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "seatpost_diameter": 27.2,
-    "max_weight_total": 126,
-    "gross_weight_rating": 150
+    "seatpost_diameter": 27.2
   },
   "wheels": [
     {
@@ -98,8 +96,10 @@
       "model": "BDU346Y",
       "model_group": "Performance Line",
       "kind": "mid_drive",
-      "battery_size": 540,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 540,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 600,
       "max_torque": 75,
@@ -115,9 +115,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 15
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    },
+    {
+      "load": "cargo",
+      "weight": 15
+    },
+    {
+      "load": "gross",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -135,7 +146,6 @@
         "stem_length": 80,
         "crank_length": 165,
         "total_weight": 23.4,
-        "max_weight_rider": 100,
         "extra_measurements": {
           "bb_height_to_hub": 21,
           "bike_length_max": 1700,

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/gotrax/2024/g7",
   "manufacturer": "GOTRAX",
-  "vehicle_model_group": "G7",
+  "model_group": "G7",
   "model": "G7",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -118,10 +118,14 @@
   ],
   "motors": [
     {
-      "certification": "UL 2272",
+      "certifications": [
+        "UL 2272"
+      ],
       "water_rating": "IP54",
-      "battery_size": 720,
-      "charging_time": 360,
+      "battery": {
+        "capacity": 720,
+        "charging_time": 360
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -134,6 +138,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -143,8 +153,7 @@
           "width": 470,
           "height": 1242
         },
-        "total_weight": 20.4,
-        "max_weight_rider": 120
+        "total_weight": 20.4
       }
     }
   ],

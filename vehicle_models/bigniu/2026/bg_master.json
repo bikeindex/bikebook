@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bigniu/2026/bg_master",
   "manufacturer": "Bigniu",
   "model": "BG-Master",
@@ -46,8 +46,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 118
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -82,10 +81,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL Certification",
-      "battery_size": 1920,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 1920,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 2000,
       "peak_power": 5000,
       "max_torque": 145,
@@ -110,6 +110,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 118
     }
   ],
   "sizes": [

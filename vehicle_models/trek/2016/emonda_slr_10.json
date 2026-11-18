@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2016/emonda_slr_10",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Émonda",
+  "model_group": "Émonda",
   "model": "Émonda SLR 10",
   "model_configuration": "complete",
   "type": "bike",
@@ -65,9 +65,7 @@
     "material_detail": "700 Series OCLV Carbon",
     "bottom_bracket": {
       "shell": "BB90"
-    },
-    "max_weight_total": 85,
-    "gross_weight_rating": 90
+    }
   },
   "wheels": [
     {
@@ -99,6 +97,16 @@
     "series": "Red",
     "electronic": false
   },
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 85
+    },
+    {
+      "load": "gross",
+      "weight": 90
+    }
+  ],
   "sizes": [
     {
       "name": "50cm",

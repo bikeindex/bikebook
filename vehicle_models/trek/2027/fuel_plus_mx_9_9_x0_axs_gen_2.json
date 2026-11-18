@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/trek/2027/fuel_plus_mx_9_9_x0_axs_gen_2",
   "manufacturer": "Trek",
-  "vehicle_model_group": "Fuel+",
+  "model_group": "Fuel+",
   "model": "Fuel+ MX 9.9 X0 AXS Gen 2",
   "model_configuration": "complete",
   "type": "bike",
@@ -98,8 +98,7 @@
     "bottom_bracket": {
       "spindle": "ISIS",
       "spindle_length": 135
-    },
-    "gross_weight_rating": 136
+    }
   },
   "suspension": {
     "front": {
@@ -187,9 +186,13 @@
       "kind": "mid_drive",
       "spindle": "ISIS",
       "spindle_length": 135,
-      "certification": "UL 2849",
-      "battery_size": 580,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 580,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 350,
       "max_torque": 60,
@@ -203,6 +206,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 136
     }
   ],
   "sizes": [

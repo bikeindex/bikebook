@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/fahrbike/2022/roadster73",
   "manufacturer": "Fahrbike",
-  "vehicle_model_group": "Roadster73",
+  "model_group": "Roadster73",
   "model": "Roadster73",
   "model_configuration": "complete",
   "type": "bike",
@@ -49,8 +49,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "top_tube": "step_through",
-    "max_weight_total": 150
+    "top_tube": "step_through"
   },
   "suspension": {
     "front": {
@@ -100,10 +99,12 @@
     {
       "sensor_cadence": true,
       "water_rating": "IPX5",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung 21700 50E Cell",
-      "charging_time": 600,
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700 50E",
+        "charging_time": 600
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -126,6 +127,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

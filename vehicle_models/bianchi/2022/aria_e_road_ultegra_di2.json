@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bianchi/2022/aria_e_road_ultegra_di2",
   "manufacturer": "Bianchi",
-  "vehicle_model_group": "Aria e-Road",
+  "model_group": "Aria e-Road",
   "model": "Aria e-Road Ultegra Di2",
   "model_configuration": "complete",
   "type": "bike",
@@ -83,8 +83,10 @@
     {
       "manufacturer": "Mahle",
       "model": "X35 Plus",
-      "battery_size": 250,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 250,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

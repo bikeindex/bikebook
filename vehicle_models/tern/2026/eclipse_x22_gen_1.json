@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tern/2026/eclipse_x22_gen_1",
   "manufacturer": "Tern",
-  "vehicle_model_group": "Eclipse",
+  "model_group": "Eclipse",
   "model": "Eclipse X22 Gen 1",
   "model_configuration": "complete",
   "markets": [
@@ -59,9 +59,7 @@
       "shell": "BB386",
       "width": 86.5,
       "spindle": "30mm"
-    },
-    "max_weight_total": 108,
-    "gross_weight_rating": 120
+    }
   },
   "wheels": [
     {
@@ -101,6 +99,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 105
+    },
+    {
+      "load": "gross",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -111,7 +119,6 @@
           "height": 810
         },
         "total_weight": 11.3,
-        "max_weight_rider": 105,
         "rider_height_min": 1480,
         "rider_height_max": 1950,
         "extra_measurements": {

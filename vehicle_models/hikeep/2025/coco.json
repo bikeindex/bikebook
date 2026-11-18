@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/hikeep/2025/coco",
   "manufacturer": "Hikeep",
   "model": "Coco",
@@ -52,8 +52,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
-    "max_weight_total": 120
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -87,8 +86,12 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 653,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 653
+      },
       "rated_power": 500,
       "peak_power": 750,
       "max_torque": 80,
@@ -103,6 +106,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

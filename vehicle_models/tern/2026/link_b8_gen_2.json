@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tern/2026/link_b8_gen_2",
   "manufacturer": "Tern",
-  "vehicle_model_group": "Link",
+  "model_group": "Link",
   "model": "Link B8 Gen 2",
   "model_configuration": "complete",
   "markets": [
@@ -59,9 +59,7 @@
         "type": "accessory",
         "description": "Luggage Socket"
       }
-    ],
-    "max_weight_total": 106,
-    "gross_weight_rating": 120
+    ]
   },
   "wheels": [
     {
@@ -100,6 +98,16 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 105
+    },
+    {
+      "load": "gross",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -110,7 +118,6 @@
           "height": 680
         },
         "total_weight": 13.6,
-        "max_weight_rider": 105,
         "rider_height_min": 1420,
         "rider_height_max": 1900,
         "extra_measurements": {

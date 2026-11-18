@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/black_rock/2022/aloha",
   "manufacturer": "Black Rock Bikes",
   "model": "Aloha (Fold n Go)",
@@ -41,7 +41,8 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold"
+    "folding": "half_fold",
+    "seatpost_diameter": 33.9
   },
   "wheels": [
     {
@@ -74,9 +75,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 624,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung/LG cells",
+      "battery": {
+        "capacity": 624,
+        "chemistry": "li-ion",
+        "cells": "Samsung/LG"
+      },
       "rated_power": 750,
       "operating_modes": [
         {
@@ -93,6 +96,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
     }
   ],
   "sizes": [
@@ -113,7 +122,6 @@
           "height": 762
         },
         "total_weight": 27.2,
-        "max_weight_rider": 136,
         "rider_height_min": 1600,
         "rider_height_max": 1880,
         "extra_measurements": {
@@ -244,7 +252,10 @@
       "type": "seatpost",
       "type_detail": "Seat Post",
       "manufacturer": "Promax",
-      "description": "PROMAX Alloy Post, 33.9 mm"
+      "description": "PROMAX Alloy Post, 33.9 mm",
+      "dimensions": {
+        "diameter": 33.9
+      }
     },
     {
       "type": "seatpost_clamp",

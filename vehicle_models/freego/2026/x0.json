@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freego/2026/x0",
   "manufacturer": "Freego",
   "model": "X0",
@@ -32,8 +32,7 @@
     }
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 100
+    "material": "steel"
   },
   "suspension": {
     "front": {},
@@ -66,10 +65,12 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 1380,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 cells",
-      "charging_time": 360,
+      "battery": {
+        "capacity": 1380,
+        "chemistry": "li-ion",
+        "cells": "21700",
+        "charging_time": 360
+      },
       "rated_power": 2000,
       "peak_power": 3600,
       "operating_modes": [
@@ -84,6 +85,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 100
     }
   ],
   "sizes": [

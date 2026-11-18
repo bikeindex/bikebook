@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tout_terrain/2026/pamir_one",
   "manufacturer": "Tout Terrain",
-  "vehicle_model_group": "Pamir",
+  "model_group": "Pamir",
   "model": "Pamir One",
   "model_configuration": "complete",
   "type": "bike",
@@ -60,8 +60,7 @@
       }
     ],
     "headset": "ZS44/28.6 | ZS56/40",
-    "seatpost_diameter": 30.9,
-    "gross_weight_rating": 160
+    "seatpost_diameter": 30.9
   },
   "wheels": [
     {
@@ -132,7 +131,9 @@
       "manufacturer": "Pinion",
       "model": "E1.12",
       "kind": "mid_drive",
-      "battery_size": 700,
+      "battery": {
+        "capacity": 700
+      },
       "operating_modes": [
         {
           "mode": "assist",
@@ -142,6 +143,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 160
     }
   ],
   "sizes": [
@@ -400,11 +407,6 @@
       "type": "unknown",
       "type_detail": "Frame Type",
       "description": "Unisex"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Terrain",
-      "description": "Allroad"
     },
     {
       "type": "unknown",

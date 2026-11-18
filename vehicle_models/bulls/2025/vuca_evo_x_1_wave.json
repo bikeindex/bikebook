@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bulls/2025/vuca_evo_x_1_wave",
   "manufacturer": "BULLS Bikes",
-  "vehicle_model_group": "Vuca EVO",
+  "model_group": "Vuca EVO",
   "model": "Vuca EVO X 1 Wave",
   "model_configuration": "complete",
   "type": "bike",
@@ -43,9 +43,7 @@
     "top_tube": "step_through",
     "bottom_bracket": {
       "spindle": "Pinion Standard"
-    },
-    "max_weight_total": 121,
-    "gross_weight_rating": 150
+    }
   },
   "suspension": {
     "front": {
@@ -98,10 +96,12 @@
       "id": "c/pinion/2023/mgu",
       "drive_wheel": "rear",
       "manufacturer": "Pinion",
-      "model": "MGU E1.12",
+      "model": "MGU",
       "kind": "mid_drive",
       "spindle": "Pinion Standard",
-      "battery_size": 1055,
+      "battery": {
+        "capacity": 1055
+      },
       "rated_power": 250,
       "peak_power": 800,
       "max_torque": 85,
@@ -116,6 +116,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 121
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

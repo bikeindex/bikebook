@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/inmotion/2024/rs_lite",
   "manufacturer": "Inmotion",
-  "vehicle_model_group": "RS",
+  "model_group": "RS",
   "model": "RS Lite",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -57,10 +57,12 @@
     {
       "kind": "hub_drive",
       "water_rating": "IP56",
-      "battery_size": 2160,
-      "battery_chemistry": "li-ion",
-      "battery_info": "21700 lithium battery",
-      "charging_time": 390,
+      "battery": {
+        "capacity": 2160,
+        "chemistry": "li-ion",
+        "cells": "21700",
+        "charging_time": 390
+      },
       "rated_power": 3000,
       "peak_power": 6000,
       "operating_modes": [
@@ -72,6 +74,12 @@
           "max_slope": 27
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 150
     }
   ],
   "sizes": [
@@ -88,8 +96,7 @@
           "width": 711,
           "height": 1448
         },
-        "total_weight": 52.9,
-        "max_weight_rider": 150
+        "total_weight": 52.9
       }
     }
   ],

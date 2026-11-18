@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/wooken/2023/t_276",
   "manufacturer": "Wooken",
   "model": "T-276",
@@ -78,8 +78,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 135
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -109,7 +108,9 @@
   ],
   "motors": [
     {
-      "battery_size": 499,
+      "battery": {
+        "capacity": 499
+      },
       "rated_power": 500,
       "peak_power": 1000,
       "operating_modes": [
@@ -128,6 +129,12 @@
           "range_claimed": 56
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 135
     }
   ],
   "sizes": [

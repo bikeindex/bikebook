@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/decathlon/2026/rockrider_e_feel_700_s",
   "manufacturer": "Decathlon",
-  "vehicle_model_group": "Rockrider E-FEEL",
+  "model_group": "Rockrider E-FEEL",
   "model": "Rockrider E-FEEL 700 S",
   "model_configuration": "complete",
   "type": "bike",
@@ -41,8 +41,7 @@
       }
     ],
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 36,
-    "max_weight_total": 120
+    "seatpost_clamp_diameter": 36
   },
   "suspension": {
     "front": {
@@ -109,9 +108,11 @@
       "drive_wheel": "rear",
       "kind": "mid_drive",
       "water_rating": "IPX5",
-      "battery_size": 630,
-      "battery_chemistry": "li-ion",
-      "battery_info": "36 V, 17.5 Ah",
+      "battery": {
+        "capacity": 630,
+        "voltage": 36,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [
@@ -125,6 +126,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
     }
   ],
   "sizes": [

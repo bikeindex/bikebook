@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/glarewheel/2020/es_s10x",
   "manufacturer": "Glarewheel",
-  "vehicle_model_group": "ES-S10",
+  "model_group": "ES-S10",
   "model": "ES-S10X",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -64,8 +64,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 288,
-      "charging_time": 240,
+      "battery": {
+        "capacity": 288,
+        "charging_time": 240
+      },
       "rated_power": 350,
       "operating_modes": [
         {
@@ -77,12 +79,15 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 100
+    }
+  ],
   "sizes": [
     {
-      "name": "One Size",
-      "geometry": {
-        "max_weight_rider": 100
-      }
+      "name": "One Size"
     }
   ],
   "components": [

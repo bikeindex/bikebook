@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/khs/2025/epony",
   "manufacturer": "KHS Bicycles",
   "model": "ePONY",
@@ -113,8 +113,10 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 370,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 370,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ncm/2022/aspen",
   "manufacturer": "NCM eBikes",
-  "vehicle_model_group": "Aspen",
+  "model_group": "Aspen",
   "model": "Aspen",
   "model_configuration": "complete",
   "type": "bike",
@@ -34,9 +34,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 113,
-    "gross_weight_rating": 140
+    "material": "aluminum"
   },
   "suspension": {
     "front": {}
@@ -83,7 +81,9 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 624,
+      "battery": {
+        "capacity": 624
+      },
       "rated_power": 500,
       "peak_power": 750,
       "operating_modes": [
@@ -101,6 +101,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 113
+    },
+    {
+      "load": "gross",
+      "weight": 140
     }
   ],
   "sizes": [

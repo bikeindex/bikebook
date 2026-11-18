@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/znh/2025/02",
   "manufacturer": "Znh",
-  "vehicle_model_group": "02",
+  "model_group": "02",
   "model": "02",
   "model_configuration": "complete",
   "type": "bike",
@@ -40,8 +40,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "suspension": {
     "front": {}
@@ -63,8 +62,13 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "certification": "UL 2849",
-      "battery_size": 360,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 360,
+        "charging_time": 240
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -84,6 +88,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

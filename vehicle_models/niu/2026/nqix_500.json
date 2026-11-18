@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/niu/2026/nqix_500",
   "manufacturer": "Niu",
-  "vehicle_model_group": "NQiX",
+  "model_group": "NQiX",
   "model": "NQiX 500",
   "model_configuration": "complete",
   "type": "e_motorcycle",
@@ -57,9 +57,10 @@
   ],
   "motors": [
     {
-      "battery_chemistry": "li-ion",
-      "battery_info": "Lithium Ion",
-      "charging_time": 360,
+      "battery": {
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
       "rated_power": 5000,
       "peak_power": 9000,
       "operating_modes": [

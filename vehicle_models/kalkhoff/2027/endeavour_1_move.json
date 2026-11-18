@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/kalkhoff/2027/endeavour_1_move",
   "manufacturer": "Kalkhoff",
-  "vehicle_model_group": "Endeavour",
+  "model_group": "Endeavour",
   "model": "Endeavour 1 Move",
   "model_configuration": "complete",
   "type": "bike",
@@ -165,8 +165,15 @@
   },
   "frame": {
     "material": "steel",
-    "max_weight_total": 122,
-    "gross_weight_rating": 150
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ]
   },
   "suspension": {
     "front": {
@@ -241,11 +248,13 @@
       "model": "BDU306Y",
       "model_group": "Hub Line",
       "kind": "hub_drive",
-      "battery_size": 360,
-      "battery_options": [
-        540
-      ],
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 360,
+        "capacity_options": [
+          540
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 400,
       "max_torque": 45,
@@ -261,9 +270,20 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 27
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 27
+    },
+    {
+      "load": "payload",
+      "weight": 122
+    },
+    {
+      "load": "gross",
+      "weight": 150
+    }
+  ],
   "sizes": [
     {
       "name": "Wave XS",

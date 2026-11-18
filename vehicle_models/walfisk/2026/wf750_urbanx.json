@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/walfisk/2026/wf750_urbanx",
   "manufacturer": "Walfisk",
   "model": "WF750 Urbanx",
@@ -25,8 +25,7 @@
   },
   "frame": {
     "material": "steel",
-    "coil_compatible": true,
-    "max_weight_total": 150
+    "coil_compatible": true
   },
   "suspension": {
     "front": {
@@ -73,13 +72,17 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "certification": "UL 2271",
-      "water_rating": "IPX6",
-      "battery_size": 1680,
-      "battery_options": [
-        2880
+      "certifications": [
+        "UL 2271"
       ],
-      "battery_chemistry": "li-ion",
+      "water_rating": "IPX6",
+      "battery": {
+        "capacity": 1680,
+        "capacity_options": [
+          2880
+        ],
+        "chemistry": "li-ion"
+      },
       "rated_power": 750,
       "max_torque": 80,
       "operating_modes": [
@@ -97,6 +100,12 @@
           "throttle_type": "Twist"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ride1up/2023/prodigy_v2_st",
   "manufacturer": "Ride1Up",
-  "vehicle_model_group": "Prodigy",
+  "model_group": "Prodigy",
   "model": "Prodigy v2 ST",
   "model_configuration": "complete",
   "type": "bike",
@@ -113,9 +113,11 @@
       "model": "TF Sprinter",
       "kind": "mid_drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 504,
-      "battery_chemistry": "li-ion",
-      "battery_info": "Samsung Cells",
+      "battery": {
+        "capacity": 504,
+        "chemistry": "li-ion",
+        "cells": "Samsung"
+      },
       "max_torque": 90,
       "operating_modes": [
         {
@@ -130,9 +132,12 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 18.14
-  },
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 18.14
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",

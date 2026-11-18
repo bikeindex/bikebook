@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/pedego/2026/element_core",
   "manufacturer": "Pedego",
-  "vehicle_model_group": "Element",
+  "model_group": "Element",
   "model": "Element Core",
   "model_configuration": "complete",
   "type": "bike",
@@ -96,9 +96,13 @@
       "kind": "hub_drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certification": "UL 2271",
-      "battery_size": 461,
-      "battery_chemistry": "li-ion",
+      "certifications": [
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 461,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -121,9 +125,16 @@
       ]
     }
   ],
-  "cargo": {
-    "max_weight_cargo": 25
-  },
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    },
+    {
+      "load": "cargo",
+      "weight": 25
+    }
+  ],
   "sizes": [
     {
       "name": "20” - One Size",
@@ -133,7 +144,6 @@
         "dimensions": {
           "length": 1600
         },
-        "max_weight_rider": 113,
         "extra_measurements": {
           "rear_height": 584,
           "seat_clamp_to_crank": 445,

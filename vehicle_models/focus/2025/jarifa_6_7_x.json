@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/focus/2025/jarifa_6_7_x",
   "manufacturer": "Focus",
-  "vehicle_model_group": "Jarifa²",
+  "model_group": "Jarifa²",
   "model": "Jarifa² 6.7 X",
   "model_configuration": "complete",
   "type": "bike",
@@ -158,9 +158,7 @@
     "bottom_bracket": {
       "spindle": "ISIS"
     },
-    "seatpost_diameter": 34.9,
-    "max_weight_total": 125,
-    "gross_weight_rating": 150
+    "seatpost_diameter": 34.9
   },
   "suspension": {
     "front": {
@@ -215,8 +213,10 @@
       "model_group": "Performance Line CX",
       "kind": "mid_drive",
       "spindle": "ISIS",
-      "battery_size": 600,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 600,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "peak_power": 750,
       "max_torque": 85,
@@ -230,6 +230,16 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
+    },
+    {
+      "load": "gross",
+      "weight": 150
     }
   ],
   "sizes": [

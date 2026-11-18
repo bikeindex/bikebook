@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jetson/2019/element_pro",
   "manufacturer": "Jetson",
-  "vehicle_model_group": "Element",
+  "model_group": "Element",
   "model": "Element Pro",
   "model_configuration": "complete",
   "type": "e_scooter",
@@ -56,9 +56,11 @@
   "motors": [
     {
       "kind": "hub_drive",
-      "battery_size": 180,
-      "battery_chemistry": "li-ion",
-      "charging_time": 240,
+      "battery": {
+        "capacity": 180,
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
       "rated_power": 250,
       "operating_modes": [
         {
@@ -72,6 +74,12 @@
       ]
     }
   ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 107
+    }
+  ],
   "sizes": [
     {
       "name": "One Size",
@@ -82,7 +90,6 @@
           "height": 1102
         },
         "total_weight": 12.7,
-        "max_weight_rider": 107,
         "rider_age_min": 12
       }
     }

@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/felt/2026/nexar_frd_framekit",
   "manufacturer": "Felt",
-  "vehicle_model_group": "Nexar",
+  "model_group": "Nexar",
   "model": "NEXAR FRD Framekit",
   "model_configuration": "frame_fork",
   "type": "bike",
@@ -28,9 +28,14 @@
     }
   },
   "frame": {
-    "material": "carbon",
-    "gross_weight_rating": 120
+    "material": "carbon"
   },
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 120
+    }
+  ],
   "sizes": [
     {
       "name": "44",

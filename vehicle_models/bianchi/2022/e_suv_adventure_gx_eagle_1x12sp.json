@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/bianchi/2022/e_suv_adventure_gx_eagle_1x12sp",
   "manufacturer": "Bianchi",
-  "vehicle_model_group": "e-SUV",
+  "model_group": "e-SUV",
   "model": "e-SUV Adventure GX Eagle 1x12sp",
   "model_configuration": "complete",
   "type": "bike",
@@ -89,8 +89,10 @@
       "kind": "mid_drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "max_torque": 85,
       "operating_modes": [

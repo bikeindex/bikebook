@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/freego/2023/x60_plus",
   "manufacturer": "Freego",
   "model": "X60 Plus",
@@ -53,8 +53,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "steel",
-    "max_weight_total": 150
+    "material": "steel"
   },
   "wheels": [
     {
@@ -76,8 +75,10 @@
   ],
   "motors": [
     {
-      "battery_size": 899,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 899,
+        "charging_time": 420
+      },
       "peak_power": 1500,
       "operating_modes": [
         {
@@ -88,8 +89,10 @@
       ]
     },
     {
-      "battery_size": 899,
-      "charging_time": 420,
+      "battery": {
+        "capacity": 899,
+        "charging_time": 420
+      },
       "peak_power": 1500,
       "operating_modes": [
         {
@@ -98,6 +101,12 @@
           "range_claimed": 80
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [

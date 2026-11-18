@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/jamis/2021/hudson_e2",
   "manufacturer": "Jamis",
-  "vehicle_model_group": "Hudson",
+  "model_group": "Hudson",
   "model": "Hudson E2",
   "model_configuration": "complete",
   "type": "bike",
@@ -116,8 +116,10 @@
     {
       "drive_wheel": "rear",
       "kind": "hub_drive",
-      "battery_size": 309,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 309,
+        "chemistry": "li-ion"
+      },
       "rated_power": 250,
       "operating_modes": [
         {

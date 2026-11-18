@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/tomofree/2026/xt200",
   "manufacturer": "Tomofree",
   "model": "XT200",
@@ -24,8 +24,7 @@
     }
   },
   "frame": {
-    "material": "aluminum",
-    "max_weight_total": 181
+    "material": "aluminum"
   },
   "suspension": {
     "front": {},
@@ -59,8 +58,10 @@
   ],
   "motors": [
     {
-      "battery_size": 1664,
-      "charging_time": 720,
+      "battery": {
+        "capacity": 1664,
+        "charging_time": 720
+      },
       "peak_power": 5800,
       "operating_modes": [
         {
@@ -81,6 +82,12 @@
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 181
     }
   ],
   "sizes": [

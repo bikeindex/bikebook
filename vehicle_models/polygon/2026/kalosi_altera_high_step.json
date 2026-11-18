@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/polygon/2026/kalosi_altera_high_step",
   "manufacturer": "Polygon",
-  "vehicle_model_group": "Kalosi",
+  "model_group": "Kalosi",
   "model": "Kalosi Altera High Step",
   "model_configuration": "complete",
   "type": "bike",
@@ -120,8 +120,10 @@
     {
       "manufacturer": "Bafang",
       "sensor_torque": "bottom_bracket_spindle",
-      "battery_size": 720,
-      "battery_chemistry": "li-ion",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion"
+      },
       "rated_power": 500,
       "operating_modes": [
         {

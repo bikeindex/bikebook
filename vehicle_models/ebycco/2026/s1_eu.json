@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.28.0",
+  "schema_version": "1.0.0",
   "id": "m/ebycco/2026/s1_eu",
   "manufacturer": "Ebycco",
   "model": "S1",
@@ -18,7 +18,7 @@
   "first_year": 2026,
   "years": {
     "2026": {
-      "original_msrp": 73900,
+      "original_msrp": 113900,
       "original_msrp_currency": "EUR",
       "url": "https://ebycco.com/products/ebycco-s1-foldable-electric-bike-500w-36v",
       "url_live": true
@@ -26,8 +26,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
-    "max_weight_total": 150
+    "folding": "half_fold"
   },
   "suspension": {
     "front": {}
@@ -61,11 +60,16 @@
   ],
   "motors": [
     {
-      "certification": "UL 2849, UL 2271",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
       "water_rating": "IP65",
-      "battery_size": 374,
-      "battery_chemistry": "li-ion",
-      "charging_time": 300,
+      "battery": {
+        "capacity": 374,
+        "chemistry": "li-ion",
+        "charging_time": 300
+      },
       "rated_power": 500,
       "operating_modes": [
         {
@@ -81,6 +85,12 @@
           "availability": "stock"
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
     }
   ],
   "sizes": [
