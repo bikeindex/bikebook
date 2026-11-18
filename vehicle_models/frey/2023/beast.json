@@ -1,0 +1,283 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/frey/2023/beast",
+  "manufacturer": "FREY",
+  "model": "Beast",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "mtb_enduro",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/frey/2023/beast.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/frey/2023/beast_geometry.jpg",
+  "description": "FREY Beast is a super powerful and lightweight all-mountain enduro ebike made with carbon fiber and aluminum alloy.It boasts a 1800W 60V mid drive motor and full suspension with front 160MM and rear 150MM frame travel, making it perfect for aggressive off-road adventures. With a huge 1470WH battery, it has a max speed of 38mph and the longest range of up to 110 miles. Designed for advanced riders who want the fastest and most powerful electric mountain bike, it's sure to impress.",
+  "first_year": 2023,
+  "years": {
+    "2026": {
+      "original_msrp": 748000,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Army Green",
+          "colors": [
+            "green"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/frey/2023/beast_army_green.jpg"
+        },
+        {
+          "name": "Golden Orange",
+          "colors": [
+            "yellow",
+            "orange"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/frey/2023/beast.jpg"
+        }
+      ],
+      "url": "https://www.frey-bike.com/e-bikes/full-suspension-ebikes/electric-motor-bike-beast/",
+      "url_live": true
+    },
+    "2023": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "bottom_bracket": {
+      "spindle": "ISIS"
+    },
+    "coil_compatible": true
+  },
+  "suspension": {
+    "front": {
+      "travel": 160
+    },
+    "rear": {
+      "travel": 150,
+      "shock_length": 205,
+      "shock_stroke": 65,
+      "spring": "coil"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 622,
+      "position": [
+        "front"
+      ],
+      "tire_width": 66,
+      "axle_diameter": 15,
+      "axle_spacing": 110
+    },
+    {
+      "bsd": 622,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 66
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "12_rear"
+  ],
+  "groupset": {
+    "manufacturer": "SRAM",
+    "series": "GX",
+    "description": "SRAM GX Eagle 12S",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 203
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/bafang/m620_mm_g510_1000_c",
+      "drive_wheel": "rear",
+      "manufacturer": "Bafang",
+      "model": "MM G510.1000.C",
+      "model_group": "M620",
+      "kind": "mid_drive",
+      "spindle": "ISIS",
+      "sensor_cadence": true,
+      "sensor_torque": "bottom_bracket_spindle",
+      "certifications": [
+        "UL 2849",
+        "CE"
+      ],
+      "water_rating": "IPX5",
+      "battery": {
+        "capacity": 1470
+      },
+      "rated_power": 1000,
+      "peak_power": 1440,
+      "max_torque": 170,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 61,
+          "range_claimed": 161,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
+    }
+  ],
+  "sizes": [
+    {
+      "name": "M",
+      "geometry": {
+        "reach": 433.2,
+        "stack": 630.9,
+        "top_tube_effective": 602.3,
+        "seat_tube_ctc": 428.6,
+        "head_angle": 64.2,
+        "seat_angle": 75,
+        "head_tube": 120,
+        "chainstay": 465.2,
+        "wheelbase": 1238.5,
+        "standover": 752.5,
+        "bb_drop": 24.5,
+        "rider_height_min": 1650,
+        "rider_height_max": 1750
+      }
+    },
+    {
+      "name": "L",
+      "geometry": {
+        "reach": 440.5,
+        "stack": 640,
+        "top_tube_effective": 612,
+        "seat_tube_ctc": 457.7,
+        "head_angle": 64.2,
+        "seat_angle": 75,
+        "head_tube": 130,
+        "chainstay": 465.2,
+        "wheelbase": 1250,
+        "standover": 773.2,
+        "bb_drop": 24.5,
+        "total_weight": 33.5,
+        "rider_height_min": 1700,
+        "rider_height_max": 1850
+      }
+    },
+    {
+      "name": "XL",
+      "geometry": {
+        "reach": 448.1,
+        "stack": 648.9,
+        "top_tube_effective": 622,
+        "seat_tube_ctc": 477.4,
+        "head_angle": 64.2,
+        "seat_angle": 75,
+        "head_tube": 140,
+        "chainstay": 465.2,
+        "wheelbase": 1261.9,
+        "standover": 785.9,
+        "bb_drop": 24.5,
+        "rider_height_min": 1800,
+        "rider_height_max": 1950
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Magura",
+      "description": "Magura MT5e 4-piston 203/203mm"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Downtube integrated 60V24.5AH(1470WH)"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "Output 67.2V/5A, AC100-240V"
+    },
+    {
+      "type": "fork",
+      "manufacturer": "RockShox",
+      "description": "Rockshox 29″ZEB Boost 110*15mm, 160mm",
+      "dimensions": {
+        "travel": 160,
+        "axle_diameter": 15,
+        "axle_spacing": 110
+      }
+    },
+    {
+      "type": "handlebar",
+      "description": "Alloy, 25mm rise, 780mm, 31.8mm clamp",
+      "dimensions": {
+        "width": 780,
+        "diameter": 31.8,
+        "rise": 25
+      }
+    },
+    {
+      "type": "rear_suspension",
+      "type_detail": "Rear Shock",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "RockShox",
+      "description": "Rockshox Super Deluxe Coil 205*65mm",
+      "dimensions": {
+        "length": 205,
+        "travel": 65
+      }
+    },
+    {
+      "type": "seatpost",
+      "type_detail": "Seat post",
+      "manufacturer": "KS",
+      "description": "KS 900i 31.6/125-150mm dropper"
+    },
+    {
+      "type": "stem",
+      "description": "Alloy, 50mm length",
+      "dimensions": {
+        "length": 50
+      }
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Maxxis",
+      "description": "Maxxis Rekon+ 29*2.6″/27.5*2.8″ Rekon+"
+    },
+    {
+      "type": "wheel",
+      "type_detail": "wheelset",
+      "description": "29/27.5″ double-wall alloy rims"
+    }
+  ]
+}

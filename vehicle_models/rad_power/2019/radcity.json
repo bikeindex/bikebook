@@ -1,0 +1,405 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/rad_power/2019/radcity",
+  "manufacturer": "Rad Power Bikes",
+  "model_group": "RadCity",
+  "model": "RadCity",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "description": "The RadCity electric commuter bike from Rad Power Bikes is the ebike that lets you get around your city like never before! Powerful 750W motor, 48V battery.",
+  "first_year": 2019,
+  "final_year": 2019,
+  "years": {
+    "2019": {
+      "original_msrp": 149900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "104-00014",
+              "size": "16\""
+            },
+            {
+              "sku": "104-00016",
+              "size": "19\""
+            }
+          ]
+        }
+      ],
+      "url": "https://web.archive.org/web/20190717181407/https://www.radpowerbikes.com/products/radcity-electric-commuter-bike",
+      "url_live": false
+    }
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum",
+    "mounts": [
+      {
+        "type": "fender"
+      },
+      {
+        "type": "rack"
+      }
+    ],
+    "bottom_bracket": {
+      "width": 68,
+      "spindle": "square taper"
+    },
+    "headset": "ZS44/28.6 | ZS44/30",
+    "seatpost_diameter": 27.2
+  },
+  "suspension": {
+    "front": {
+      "travel": 80,
+      "spring": "coil",
+      "lockout": true
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 559,
+      "position": [
+        "front"
+      ],
+      "tire_width": 58,
+      "axle": "quick_release",
+      "axle_diameter": 9,
+      "axle_spacing": 100,
+      "tire_width_max": 58
+    },
+    {
+      "bsd": 559,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 58,
+      "axle_spacing": 135,
+      "cassette_interface": "freewheel",
+      "tire_width_max": 58
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "7_rear"
+  ],
+  "gearing": {
+    "front": [
+      46
+    ],
+    "rear": [
+      11,
+      34
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Acera",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_mechanical",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "kind": "hub_drive",
+      "sensor_cadence": true,
+      "battery": {
+        "capacity": 672,
+        "chemistry": "li-ion",
+        "cells": "Samsung 35E"
+      },
+      "rated_power": 750,
+      "max_torque": 40,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "levels": 5
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Twist",
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 27.22
+    },
+    {
+      "load": "payload",
+      "weight": 125
+    }
+  ],
+  "sizes": [
+    {
+      "name": "16\"",
+      "geometry": {
+        "top_tube_effective": 584,
+        "seat_tube_ct": 406,
+        "head_tube": 178,
+        "chainstay": 457,
+        "wheelbase": 1118,
+        "standover": 737,
+        "handlebar_width": 711,
+        "crank_length": 170,
+        "seat_height_min": 660,
+        "seat_height_max": 876,
+        "dimensions": {
+          "length": 1829
+        },
+        "total_weight": 28.6,
+        "rider_height_min": 1626,
+        "rider_height_max": 1803,
+        "extra_measurements": {
+          "handlebar_height": 1181,
+          "handlebar_reach": 356
+        }
+      }
+    },
+    {
+      "name": "19\"",
+      "geometry": {
+        "top_tube_effective": 584,
+        "seat_tube_ct": 483,
+        "head_tube": 178,
+        "chainstay": 457,
+        "wheelbase": 1118,
+        "standover": 787,
+        "handlebar_width": 711,
+        "crank_length": 170,
+        "seat_height_min": 737,
+        "seat_height_max": 965,
+        "dimensions": {
+          "length": 1829
+        },
+        "total_weight": 28.6,
+        "rider_height_min": 1829,
+        "rider_height_max": 1981,
+        "extra_measurements": {
+          "handlebar_height": 1194,
+          "handlebar_reach": 356
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "type_detail": "BRAKE CALIPERS",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Tektro",
+      "description": "Tektro Aries (MD-M300)"
+    },
+    {
+      "type": "brake_lever",
+      "description": "Aluminum Alloy Comfort Grip Levers with Motor Cutoff Switch, Integrated Bell"
+    },
+    {
+      "type": "brake_pad",
+      "type_detail": "BRAKE PAD MATERIAL",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Sintered Metal"
+    },
+    {
+      "type": "brake_rotor",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Tektro",
+      "description": "Tektro 180mm Front and Rear",
+      "dimensions": {
+        "diameter": 180
+      }
+    },
+    {
+      "type": "cassette",
+      "type_detail": "FREEWHEEL",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "DNP",
+      "description": "DNP 7-Speed Freewheel, 11-34T"
+    },
+    {
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z7"
+    },
+    {
+      "type": "crankset",
+      "type_detail": "CRANK SET",
+      "description": "46T, 170mm ProWheel Pioneer Forged Alloy, Dual-Sided Aluminum Bashguard",
+      "dimensions": {
+        "length": 170
+      }
+    },
+    {
+      "type": "derailleur",
+      "manufacturer": "Shimano",
+      "description": "7-Speed Shimano Acera"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48V 14Ah (672Wh) with Lithium NCA 18650 Samsung 35E Cells, Rated for 800 Charge Cycles"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "48V 2 Amp Rad Power Bikes Smart Charger, Operates On Both 110V and 230V AC Power Outlets"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "750W Brushless Shengyi Direct Drive Hub Motor with 40Nm of Torque"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "Backlit LCD with Charge Indicator, Speedometer, Odometer, Trip Odometer, Pedal Assist Level, Wattmeter, and More"
+    },
+    {
+      "type": "e_vehicle_wiring_harness",
+      "description": "Water Resistant Connectors and Wiring Harness"
+    },
+    {
+      "type": "fender",
+      "description": "Included, Black Plastic Front and Rear, Full Coverage"
+    },
+    {
+      "type": "fork",
+      "manufacturer": "SR Suntour",
+      "description": "Suntour Spring Fork with Lockout and Preload Adjustment, 80mm Travel, 100mm Hub Width, 9mm Quick Release",
+      "dimensions": {
+        "travel": 80
+      }
+    },
+    {
+      "type": "grips_tape",
+      "type_detail": "GRIPS",
+      "manufacturer": "Velo",
+      "description": "Velo Comfort Rubber Ergo Grips"
+    },
+    {
+      "type": "handlebar",
+      "description": "Custom Formed Aluminum"
+    },
+    {
+      "type": "headset",
+      "description": "Semi-Integrated, 1-1/8\" Straight Steerer Tube"
+    },
+    {
+      "type": "kickstand",
+      "description": "Heavy Duty Aluminum with Wide Plastic Foot"
+    },
+    {
+      "type": "lights",
+      "description": "Front: Spanninga PR60 48V with Ambient Light Sensor Option Rear: Integrated Taillight with Brake Light Indicator Functionality"
+    },
+    {
+      "type": "pedals",
+      "manufacturer": "Wellgo",
+      "description": "Wellgo B087 CrMo Axle, Forged Aluminum Platform with Reflectors, Standard 9/16\" x 20 TPI Threading"
+    },
+    {
+      "type": "rack",
+      "description": "Front: Optional / Rear: Integrated, 60 lbs Carrying Capacity, 16mm Tubing Diameter"
+    },
+    {
+      "type": "rim",
+      "manufacturer": "Weinmann",
+      "description": "Weinmann Goliath, Alloy, Double Wall, 36H"
+    },
+    {
+      "type": "saddle",
+      "manufacturer": "Velo",
+      "description": "Velo Plush with Lifting Handle"
+    },
+    {
+      "type": "seatpost",
+      "type_detail": "SEAT POST",
+      "manufacturer": "Promax",
+      "description": "Promax, 350mm x 27.2mm",
+      "dimensions": {
+        "length": 350,
+        "diameter": 27.2
+      }
+    },
+    {
+      "type": "seatpost_clamp",
+      "type_detail": "SEAT POST CLAMP",
+      "description": "Quick Release"
+    },
+    {
+      "type": "shifter",
+      "manufacturer": "Shimano",
+      "description": "Shimano SL-TX50-7R Thumb Shifter, 7-Speed"
+    },
+    {
+      "type": "spokes",
+      "description": "12 Gauge, Stainless Steel"
+    },
+    {
+      "type": "stem",
+      "description": "Zoom, 60º Angle Adjustment, 100mm Length, 88mm Height Adjustment",
+      "dimensions": {
+        "length": 100,
+        "height": 88
+      },
+      "angles": {
+        "angle": 60
+      }
+    },
+    {
+      "type": "throttle",
+      "description": "Half Twist Throttle with On/Off Button"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Rad Power Bikes",
+      "description": "Rad Power Bikes by Kenda K-Rad 26\" x 2.3\", K-Shield Puncture-Resistant Liner",
+      "dimensions": {
+        "width": 58.42,
+        "diameter": 559
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "CONTROLLER",
+      "description": "48V, 750W"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "USB PORTS",
+      "description": "Display: 5V, .5 Amp"
+    }
+  ]
+}

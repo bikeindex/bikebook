@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/gotrax/2022/gx1",
+  "manufacturer": "GOTRAX",
+  "model": "GX1",
+  "model_configuration": "complete",
+  "type": "e_scooter",
+  "propulsion": [
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/gotrax/2022/gx1.jpg",
+  "description": "The GX1 is the ultimate ride. With a high max speed, full suspension, and all-terrain capabilities, this dual motor electric scooter is the perfect gateway to high performance rides.",
+  "first_year": 2022,
+  "years": {
+    "2026": {
+      "original_msrp": 149900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "variants": [
+            {
+              "sku": "GT-GXONE-BLACK",
+              "gtin": "810066086821",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://gotrax.com/products/gx1-electric-scooter",
+      "url_live": true
+    },
+    "2022": {
+      "original_msrp": 99900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Gunmetal Grey",
+          "colors": [
+            "silver"
+          ],
+          "variants": [
+            {
+              "sku": "GT-GXONE-BLACK",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://web.archive.org/web/20221204110950/https://gotrax.com/products/gx1-electric-scooter",
+      "url_live": false
+    }
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum",
+    "folding": "stem_fold"
+  },
+  "suspension": {
+    "front": {},
+    "rear": {}
+  },
+  "wheels": [
+    {
+      "bsd": 152,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 76
+    }
+  ],
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    },
+    {
+      "type": "motor_brake",
+      "position": [
+        "motor"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "front",
+      "certifications": [
+        "UL 2272"
+      ],
+      "water_rating": "IPX4",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
+      "rated_power": 600,
+      "operating_modes": [
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 48,
+          "range_claimed": 56,
+          "throttle_type": "Thumb"
+        }
+      ]
+    },
+    {
+      "drive_wheel": "rear",
+      "certifications": [
+        "UL 2272"
+      ],
+      "water_rating": "IPX4",
+      "battery": {
+        "capacity": 720,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
+      "rated_power": 600,
+      "operating_modes": [
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 48,
+          "range_claimed": 56,
+          "throttle_type": "Thumb"
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 136
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "dimensions": {
+          "length": 1161,
+          "width": 681,
+          "height": 1316
+        },
+        "total_weight": 34.5
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "(Front & Rear) Disc Brake + Electromagnetic Brake"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48V 15aH (720Wh) UL2272 Compliant"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "54.6V 3.0A"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "Dual 600W"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "LCD"
+    },
+    {
+      "type": "lights",
+      "type_detail": "Headlight",
+      "position": [
+        "front"
+      ],
+      "description": "LED"
+    },
+    {
+      "type": "lights",
+      "type_detail": "Front & Rear Lights",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Front & Rear Lights"
+    },
+    {
+      "type": "throttle",
+      "description": "Thumb"
+    },
+    {
+      "type": "tire",
+      "type_detail": "Tire Size",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "10\" x 3\"",
+      "dimensions": {
+        "width": 76.2,
+        "diameter": 152
+      }
+    },
+    {
+      "type": "tube",
+      "type_detail": "Inner Tubes",
+      "description": "10\" x 3\""
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Speed Levels",
+      "description": "3 Speeds(M/D/S)"
+    }
+  ]
+}

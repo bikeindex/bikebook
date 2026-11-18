@@ -1,0 +1,374 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/hjm/2026/trihauler_terra_dual_drive",
+  "manufacturer": "HJM",
+  "model": "TriHauler Terra Dual Drive",
+  "model_configuration": "complete",
+  "type": "tricycle",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "cargo",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/hjm/2026/trihauler_terra_dual_drive.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/hjm/2026/trihauler_terra_dual_drive_geometry.jpg",
+  "description": "The TriHauler Terra Dual Drive T5 is a heavy-duty fat tire electric tricycle for adults with two 750W Bafang motors, torque-sensing pedal assist and a 550 lb total payload. Choose Black or White with a single 20Ah battery or dual 40Ah batteries. A low-step frame, upright riding position, front suspension and front and rear baskets support everyday errands, cargo trips and outdoor riding. Hydraulic disc brakes, parking locks, reverse and cruise control add ways to manage your ride.\nDual drive: one front-hub motor and one rear-drive motor, 1,500W combined continuous-rated power.\nBattery options: one 48V 20Ah battery (960Wh), or two 48V 20Ah batteries totaling 40Ah (1,920Wh).\nFat tires: 24 × 4-inch front and 20 × 4-inch rear Kenda tires with reflective sidewalls and puncture protection.\nPayload: 550 lb total, including the rider, cargo and added accessories. Front basket limit: 60 lb. Rear basket or rack limit: 220 lb. Individual limits apply within the total payload.\nFit and storage: recommended rider height 5'0\" (152 cm) and above; overall length 75 inches, overall width 30.7 inches and saddle-height adjustment 35–42 inches.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 409900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/hjm/2026/trihauler_terra_dual_drive.png",
+          "variants": [
+            {
+              "sku": "T5LA1",
+              "size": "One Size"
+            },
+            {
+              "sku": "T5LA1-YBT26",
+              "size": "One Size",
+              "original_msrp": 479900
+            }
+          ]
+        },
+        {
+          "name": "White",
+          "colors": [
+            "white"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/hjm/2026/trihauler_terra_dual_drive_white.png",
+          "variants": [
+            {
+              "sku": "T5LA5",
+              "size": "One Size"
+            },
+            {
+              "sku": "T5LA5-YBT26",
+              "size": "One Size",
+              "original_msrp": 479900
+            }
+          ]
+        }
+      ],
+      "url": "https://hjmbike.com/products/trihauler-terra-dual-drive-heavy-duty-fat-tire-utility-electric-trike",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum",
+    "top_tube": "step_through",
+    "mounts": [
+      {
+        "type": "rack"
+      }
+    ],
+    "seatpost_diameter": 30.4
+  },
+  "suspension": {
+    "front": {}
+  },
+  "wheels": [
+    {
+      "bsd": 507,
+      "position": [
+        "front"
+      ],
+      "tire_width": 102
+    },
+    {
+      "bsd": 406,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 102,
+      "cassette_interface": "freewheel"
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "6_rear"
+  ],
+  "gearing": {
+    "rear": [
+      14,
+      34
+    ]
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 160
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "front",
+      "manufacturer": "Bafang",
+      "kind": "hub_drive",
+      "sensor_torque": "bottom_bracket_spindle",
+      "battery": {
+        "capacity": 960,
+        "capacity_options": [
+          1920
+        ],
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
+      "rated_power": 750,
+      "peak_power": 1026,
+      "max_torque": 76,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 129,
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Thumb",
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        }
+      ]
+    },
+    {
+      "drive_wheel": "rear",
+      "manufacturer": "Bafang",
+      "kind": "hub_drive",
+      "sensor_torque": "bottom_bracket_spindle",
+      "battery": {
+        "capacity": 960,
+        "capacity_options": [
+          1920
+        ],
+        "chemistry": "li-ion",
+        "cells": "LG"
+      },
+      "rated_power": 750,
+      "peak_power": 1026,
+      "max_torque": 76,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 129,
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Thumb",
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 249
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "seat_tube_ct": 439,
+        "head_tube": 165,
+        "chainstay": 500,
+        "wheelbase": 1130,
+        "standover": 429,
+        "seat_height_min": 889,
+        "seat_height_max": 1067,
+        "dimensions": {
+          "length": 1905,
+          "width": 780
+        },
+        "total_weight": 49.9,
+        "rider_height_min": 1520,
+        "extra_measurements": {
+          "handlebar_height": 1140,
+          "handlebar_reach": 439
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "basket",
+      "type_detail": "Rear basket size (inner)",
+      "position": [
+        "rear"
+      ],
+      "description": "17.2\" x 14.2\" x 7.9\""
+    },
+    {
+      "type": "basket",
+      "type_detail": "Front basket size",
+      "position": [
+        "front"
+      ],
+      "description": "14.9\" x 14.2\" x 6.2\""
+    },
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "GEMMA GA-2000-5 Hydraulic Disc Brakes with Three Hydraulic Calipers; 160mm Front and Rear Rotors; Parking Locks"
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Gearing",
+      "manufacturer": "Shimano",
+      "description": "Shimano 6-Speed Freewheel (14–34T)"
+    },
+    {
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC C7NP Chain"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Single: UL-Certified 48V 20Ah (960Wh) Battery with LG Cells; Dual: Two 48V 20Ah Batteries, 40Ah Total (1920Wh)"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "54.6V DC, 3.0A output (for the 48V battery)"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "Dual 48V 750W Bafang Motors (Front Hub + Rear Drive)"
+    },
+    {
+      "type": "fender",
+      "description": "Color-Matched Aluminum Alloy Front and Rear Fenders"
+    },
+    {
+      "type": "fork",
+      "description": "Aluminum Alloy Suspension Fork"
+    },
+    {
+      "type": "handlebar",
+      "description": "Custom-Formed Aluminum Alloy Handlebar"
+    },
+    {
+      "type": "lights",
+      "type_detail": "Headlight",
+      "position": [
+        "front"
+      ],
+      "description": "High-Brightness LED Headlight — 226 Lux at 5 Meters"
+    },
+    {
+      "type": "lights",
+      "type_detail": "Rear Brake Light",
+      "position": [
+        "rear"
+      ],
+      "description": "Rear Basket-Mounted Taillight with Integrated Brake Light"
+    },
+    {
+      "type": "lights",
+      "type_detail": "Turn Signals",
+      "description": "Turn Signals Integrated in the Central Rear Light"
+    },
+    {
+      "type": "pedals",
+      "description": "VP Aluminum Alloy Platform Pedals"
+    },
+    {
+      "type": "rack",
+      "position": [
+        "rear"
+      ],
+      "description": "15.3\""
+    },
+    {
+      "type": "rim",
+      "description": "Star Circle Alloy Rims, 36H"
+    },
+    {
+      "type": "saddle",
+      "description": "Leather Comfort Saddle"
+    },
+    {
+      "type": "seatpost",
+      "type_detail": "Seat Post",
+      "manufacturer": "Promax",
+      "description": "Promax 30.4 × 350mm Seatpost",
+      "dimensions": {
+        "length": 350,
+        "diameter": 30.4
+      }
+    },
+    {
+      "type": "spokes",
+      "description": "13-Gauge Stainless Steel Spokes"
+    },
+    {
+      "type": "throttle",
+      "description": "Thumb Throttle"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Front: 24\" × 4.0\" / Rear: 20\" × 4.0\" Kenda All-Terrain Tires with Reflective Sidewalls and Puncture Protection",
+      "dimensions": {
+        "width": 101.6
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "USB Port",
+      "description": "5V / 1A USB Charging Port"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Cruise Control",
+      "description": "Yes"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Reverse Function",
+      "description": "Yes"
+    },
+    {
+      "type": "wheel",
+      "type_detail": "Rear wheel track",
+      "position": [
+        "rear"
+      ],
+      "description": "25.6\" (tire center to center)"
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/eunorau/2023/flash_2_0",
+  "manufacturer": "Eunorau",
+  "model_group": "Flash",
+  "model": "Flash 2.0",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/eunorau/2023/flash_2_0.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/eunorau/2023/flash_2_0_geometry.jpg",
+  "description": "Specs FLASH 2.0 MOTOR: 52V1000W Truckrun Mid Drive Motor with 220N.m Torque FRAME: Aluminum alloy 6061 20inch SUSPENSION: Full-Suspension SHOCK: KZ-209, 290mm, 1000 lbs MAXIMUM SPEED: 20 MPH BATTERY RANGE: 220 Miles （With three batteries) BATTERY CAPACITY: 52V/16Ah LG+ Top Tube Second Battery 21Ah + Down Tube Third bat",
+  "first_year": 2023,
+  "years": {
+    "2026": {
+      "original_msrp": 249900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Moon Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/eunorau/2023/flash_2_0.jpg",
+          "variants": [
+            {
+              "sku": "FLSHMM2019GB2US",
+              "gtin": "795847389448",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Lunar Dust",
+          "stock_photo": "https://bikebook.bikeindex.org/eunorau/2023/flash_2_0_lunar_dust.jpg",
+          "variants": [
+            {
+              "sku": "FLSHMM2019PG2US",
+              "gtin": "795847389431",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://eunorau-ebike.com/products/flash-2",
+      "url_live": true
+    },
+    "2023": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum",
+    "mounts": [
+      {
+        "type": "fender"
+      }
+    ],
+    "coil_compatible": true
+  },
+  "suspension": {
+    "front": {
+      "travel": 80
+    },
+    "rear": {
+      "travel": 45,
+      "spring": "coil"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 102
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "8_rear"
+  ],
+  "gearing": {
+    "rear": [
+      36,
+      44
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "rear",
+      "kind": "mid_drive",
+      "battery": {
+        "capacity": 832
+      },
+      "rated_power": 1000,
+      "max_torque": 220,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 105,
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Thumb",
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "reach": 280,
+        "head_tube": 160,
+        "wheelbase": 1090,
+        "standover": 780,
+        "crank_length": 170,
+        "seat_height_min": 840,
+        "seat_height_max": 840,
+        "dimensions": {
+          "length": 1740
+        },
+        "total_weight": 41.7,
+        "rider_height_min": 1575,
+        "rider_height_max": 1930,
+        "extra_measurements": {
+          "handlebar_height": 108
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Hydraulic Disc Brakes"
+    },
+    {
+      "type": "brake_lever",
+      "manufacturer": "Eunorau",
+      "description": "Eunorau Brake Lever with Motor Cutoff Switch"
+    },
+    {
+      "type": "brake_rotor",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Eunorau",
+      "description": "Eunorau 180mm Front and Rear",
+      "dimensions": {
+        "diameter": 180
+      }
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Cassette",
+      "position": [
+        "rear"
+      ],
+      "description": "44T / 36T"
+    },
+    {
+      "type": "crankset",
+      "type_detail": "Crank",
+      "description": "170mm forged alloy",
+      "dimensions": {
+        "length": 170
+      }
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "52V16Ah Standard (Optional: Top Tube 52V21Ah / Down Tube 52V17Ah)"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "US standard 4.0 A smart charger"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "52V1000W Truckrun Mid Drive Motor with 220N.m Torque"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "BC281 LCD Display"
+    },
+    {
+      "type": "fork",
+      "position": [
+        "front"
+      ],
+      "description": "EXSHO STRONG-DH 80mm Travel Fork",
+      "dimensions": {
+        "travel": 80
+      }
+    },
+    {
+      "type": "included_not_installed",
+      "type_detail": "Tool",
+      "description": "Included"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "front",
+        "rear"
+      ]
+    },
+    {
+      "type": "pedals",
+      "description": "High Quality Aluminum Pedals"
+    },
+    {
+      "type": "rear_suspension",
+      "type_detail": "Rear Shock",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Eunorau",
+      "description": "Eunorau 45 mm travel Double Rear Spring Suspension"
+    },
+    {
+      "type": "rim",
+      "description": "20 inch Black Alloy wheels",
+      "dimensions": {
+        "diameter": 406
+      }
+    },
+    {
+      "type": "saddle",
+      "description": "JUSTGK Saddle"
+    },
+    {
+      "type": "shifter",
+      "manufacturer": "Shimano",
+      "description": "SHIMANO 8-Speed Thumb Shifter"
+    },
+    {
+      "type": "spokes",
+      "description": "Stainless Steel"
+    },
+    {
+      "type": "throttle",
+      "description": "Thumb throttle"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "20*4\"",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 406
+      }
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "CST",
+      "description": "CST 20\" x 4.0\"",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 406
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "52V"
+    }
+  ]
+}

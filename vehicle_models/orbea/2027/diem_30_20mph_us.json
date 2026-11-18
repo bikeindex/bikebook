@@ -1,0 +1,411 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/orbea/2027/diem_30_20mph_us",
+  "manufacturer": "Orbea",
+  "model_group": "Diem",
+  "model": "Diem 30 20mph",
+  "model_configuration": "complete",
+  "markets": [
+    "US",
+    "CA"
+  ],
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/orbea/2027/diem_30_20mph_us.webp",
+  "first_year": 2027,
+  "years": {
+    "2027": {
+      "original_msrp": 385800,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Spaceship Green (Matt)",
+          "colors": [
+            "green"
+          ]
+        },
+        {
+          "name": "Ivory White (Gloss)",
+          "colors": [
+            "white"
+          ]
+        },
+        {
+          "name": "Anthracite Glitter (Gloss)",
+          "colors": [
+            "silver"
+          ]
+        }
+      ],
+      "url": "https://www.orbea.com/en-us/diem-30-20mph",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum",
+    "mounts": [
+      {
+        "type": "fender",
+        "position": [
+          "front"
+        ]
+      },
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
+    "bottom_bracket": {
+      "spindle": "Shimano EP8"
+    },
+    "seatpost_diameter": 31.6
+  },
+  "wheels": [
+    {
+      "bsd": 622,
+      "position": [
+        "front"
+      ],
+      "tire_width": 50,
+      "axle": "thru_axle",
+      "axle_diameter": 12,
+      "axle_spacing": 100,
+      "axle_thread_pitch": 1.5
+    },
+    {
+      "bsd": 622,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 50
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "9_rear"
+  ],
+  "gearing": {
+    "front": [
+      40
+    ],
+    "rear": [
+      11,
+      46
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Cues",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/shimano/2022/ep600_du_ep600",
+      "drive_wheel": "rear",
+      "manufacturer": "Shimano",
+      "model": "DU-EP600",
+      "model_group": "EP600",
+      "kind": "mid_drive",
+      "spindle": "Shimano EP8",
+      "sensor_cadence": true,
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 540
+      },
+      "rated_power": 250,
+      "max_torque": 85,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "e_vehicle_classifications": [
+            "evc/us/class_1",
+            "evc/ca/power_assisted_bicycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 20
+    }
+  ],
+  "sizes": [
+    {
+      "name": "S",
+      "geometry": {
+        "reach": 422,
+        "stack": 601,
+        "top_tube_effective": 586,
+        "seat_tube_ct": 442,
+        "head_angle": 69,
+        "seat_angle": 74.7,
+        "head_tube": 164.1,
+        "chainstay": 435,
+        "wheelbase": 1102,
+        "standover": 672,
+        "bb_drop": 82,
+        "bb_height": 279,
+        "fork_rake": 50,
+        "fork_length_a2c": 410
+      }
+    },
+    {
+      "name": "M",
+      "geometry": {
+        "reach": 438,
+        "stack": 625,
+        "top_tube_effective": 610,
+        "seat_tube_ct": 468,
+        "head_angle": 69.5,
+        "seat_angle": 74.3,
+        "head_tube": 187.4,
+        "chainstay": 435,
+        "wheelbase": 1121.6,
+        "standover": 686,
+        "bb_drop": 82,
+        "bb_height": 279,
+        "fork_rake": 50,
+        "fork_length_a2c": 410
+      }
+    },
+    {
+      "name": "L",
+      "geometry": {
+        "reach": 454,
+        "stack": 649,
+        "top_tube_effective": 634,
+        "seat_tube_ct": 490,
+        "head_angle": 70,
+        "seat_angle": 74,
+        "head_tube": 210.6,
+        "chainstay": 435,
+        "wheelbase": 1140.8,
+        "standover": 700,
+        "bb_drop": 82,
+        "bb_height": 279,
+        "fork_rake": 50,
+        "fork_length_a2c": 410
+      }
+    },
+    {
+      "name": "XL",
+      "geometry": {
+        "reach": 470,
+        "stack": 673,
+        "top_tube_effective": 659,
+        "seat_tube_ct": 540,
+        "head_angle": 70.5,
+        "seat_angle": 73.7,
+        "head_tube": 233.7,
+        "chainstay": 435,
+        "wheelbase": 1159.5,
+        "standover": 713,
+        "bb_drop": 82,
+        "bb_height": 279,
+        "fork_rake": 50,
+        "fork_length_a2c": 410
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "bell_noisemaker",
+      "type_detail": "Bell",
+      "manufacturer": "Knog",
+      "description": "Knog Oi Small Flat"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano MT200 Hydraulic Disc"
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Cassette",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano CS-LG300 11-46t 9-Speed"
+    },
+    {
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC eGlide"
+    },
+    {
+      "type": "chainrings",
+      "description": "Alloy 40t w/chainguard"
+    },
+    {
+      "type": "crankset",
+      "type_detail": "Crank",
+      "manufacturer": "Shimano",
+      "description": "Shimano Steps EM600"
+    },
+    {
+      "type": "derailleur",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Cues U4000 GS Shadow"
+    },
+    {
+      "type": "device_mount",
+      "type_detail": "Computer Mount",
+      "description": "Smartphone mount SP Connect SPC+"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "manufacturer": "Orbea",
+      "description": "Orbea 540 Wh Battery"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "manufacturer": "Orbea",
+      "description": "Orbea 2.Generation eBike Smart charger 42V/2-4A"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "manufacturer": "Shimano",
+      "description": "Shimano EN500"
+    },
+    {
+      "type": "fender",
+      "type_detail": "Mudguard",
+      "description": "Curana Apollo Orbit 60mm"
+    },
+    {
+      "type": "fork",
+      "manufacturer": "Orbea",
+      "description": "Orbea Diem carbon fork, full carbon, 1\" 1/8 - 1\" 1/5 , post mount disc mount, Thru Axle 12x100mm, thread M12x1. Long mudguards compatible.",
+      "dimensions": {
+        "axle_diameter": 12,
+        "axle_spacing": 100
+      }
+    },
+    {
+      "type": "handlebar",
+      "manufacturer": "Orbea",
+      "description": "Orbea Urban, Integrated Light, Backsweep 30, Rise 50, Width 720"
+    },
+    {
+      "type": "headset",
+      "manufacturer": "FSA",
+      "description": "FSA 1-1/2\" Integrated Aluminium Cup"
+    },
+    {
+      "type": "kickstand",
+      "type_detail": "Quick stand",
+      "manufacturer": "Orbea",
+      "description": "Orbea Diem Integrated"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Orbea",
+      "description": "Orbea Fender integrated, with alert light"
+    },
+    {
+      "type": "lights",
+      "type_detail": "Front Position Light",
+      "position": [
+        "front"
+      ],
+      "manufacturer": "Orbea",
+      "description": "Orbea integrated, USB-C charging point"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "front"
+      ],
+      "manufacturer": "Supernova Lights",
+      "description": "SUPERNOVA STARSTREAM PRO low beam"
+    },
+    {
+      "type": "pedals",
+      "description": "VP-836"
+    },
+    {
+      "type": "rack",
+      "type_detail": "Rear carrier",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Orbea",
+      "description": "Orbea RR-01 Alloy, with Mik & Mik Side and Ortlieb QL3.1 system. Max. 20Kg"
+    },
+    {
+      "type": "saddle",
+      "manufacturer": "Selle Royal",
+      "description": "Selle Royal Essenza 271x185mm",
+      "dimensions": {
+        "length": 271,
+        "width": 185
+      }
+    },
+    {
+      "type": "seatpost",
+      "description": "Alloy, 31.6mm, Setback 0",
+      "dimensions": {
+        "diameter": 31.6
+      }
+    },
+    {
+      "type": "shifter",
+      "manufacturer": "Shimano",
+      "description": "Shimano Cues SL-U4000"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Schwalbe",
+      "description": "Schwalbe Marathon, 50-622, Reflective Tape",
+      "dimensions": {
+        "width": 50,
+        "diameter": 622
+      }
+    },
+    {
+      "type": "wheel",
+      "description": "Alloy, 26c, 32H",
+      "dimensions": {
+        "diameter": 622
+      }
+    }
+  ]
+}

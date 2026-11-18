@@ -1,0 +1,346 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/himiway/2024/c3",
+  "manufacturer": "Himiway",
+  "model": "C3",
+  "model_configuration": "complete",
+  "type": "cargo_bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "cargo",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/himiway/2024/c3.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/himiway/2024/c3_geometry.svg",
+  "description": "Meet the Himiway C3 cargo ebike – built to haul 440 lbs with 960w batteries. Perfect for families, delivering, and adventures.",
+  "first_year": 2024,
+  "years": {
+    "2026": {
+      "original_msrp": 219900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Ocean Blue",
+          "colors": [
+            "blue"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/himiway/2024/c3.jpg",
+          "variants": [
+            {
+              "sku": "HMW-C3-BU-US",
+              "gtin": "749734965802",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Orange",
+          "colors": [
+            "orange"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/himiway/2024/c3_orange.jpg",
+          "variants": [
+            {
+              "sku": "HMW-C3-OR-US",
+              "gtin": "749734965826",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://himiwaybike.com/products/c3cargo-ebike",
+      "url_live": true
+    },
+    "2024": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum"
+  },
+  "suspension": {
+    "front": {
+      "travel": 60,
+      "spring": "coil"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front"
+      ],
+      "tire_width": 76,
+      "axle": "thru_axle",
+      "axle_diameter": 15,
+      "axle_spacing": 135,
+      "axle_thread_pitch": 1.5
+    },
+    {
+      "bsd": 406,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 76
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "7_rear"
+  ],
+  "gearing": {
+    "front": [
+      44
+    ],
+    "rear": [
+      14,
+      28
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Tourney",
+    "description": "Shimano altus M310 7 speed",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "kind": "hub_drive",
+      "sensor_torque": "bottom_bracket_spindle",
+      "battery": {
+        "capacity": 960,
+        "chemistry": "li-ion"
+      },
+      "rated_power": 750,
+      "max_torque": 86,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "range_claimed": 129
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Thumb",
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "stack": 810,
+        "top_tube_effective": 432,
+        "head_tube": 206,
+        "chainstay": 584,
+        "wheelbase": 1199,
+        "standover": 483,
+        "seat_height_min": 864,
+        "seat_height_max": 1016,
+        "dimensions": {
+          "length": 1788
+        },
+        "total_weight": 36.3,
+        "rider_height_min": 1575,
+        "rider_height_max": 1905,
+        "extra_measurements": {
+          "handlebar_height": 1067
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Tektro",
+      "description": "Tektro HD-E3520 hydraulic brake"
+    },
+    {
+      "type": "brake_rotor",
+      "type_detail": "Rotors",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "F:180mm R:180mm",
+      "dimensions": {
+        "diameter": 180
+      }
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano MF-TZ500-7 14-28T"
+    },
+    {
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z8.3 EPT 120L"
+    },
+    {
+      "type": "crankset",
+      "description": "44T BCD104 6061-T6 145mm",
+      "dimensions": {
+        "length": 145
+      }
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Samsung/LG 48V 20Ah"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "U.S. standard 3.0 A fast charger"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "750W brushless gear motor"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "manufacturer": "Himiway",
+      "description": "Himiway C2 LCD Display"
+    },
+    {
+      "type": "fork",
+      "description": "TRAMA coil suspension 60mm travel 135mm thru axle",
+      "dimensions": {
+        "travel": 60
+      }
+    },
+    {
+      "type": "handlebar",
+      "description": "YC-B086 22.2*31.8*720mm"
+    },
+    {
+      "type": "headset",
+      "description": "Neco H114 28.6*44*30"
+    },
+    {
+      "type": "hub",
+      "position": [
+        "front"
+      ],
+      "description": "MB016F-92-T 15*135mm 12G*36H",
+      "dimensions": {
+        "axle_diameter": 15,
+        "axle_spacing": 135
+      }
+    },
+    {
+      "type": "hub",
+      "position": [
+        "rear"
+      ],
+      "description": "48v 750w Himiway Hub Motor"
+    },
+    {
+      "type": "kickstand",
+      "description": "Heavy-duty aluminum kickstand"
+    },
+    {
+      "type": "pedals",
+      "description": "Aluminum pedal"
+    },
+    {
+      "type": "rim",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "J57SA 20*12G*36H A/V",
+      "dimensions": {
+        "diameter": 406
+      }
+    },
+    {
+      "type": "saddle",
+      "description": "Himwiay saddle"
+    },
+    {
+      "type": "sensor",
+      "description": "Torque sensor丨speed sensor丨brake sensor"
+    },
+    {
+      "type": "spokes",
+      "position": [
+        "front"
+      ],
+      "description": "12G 172mm"
+    },
+    {
+      "type": "spokes",
+      "position": [
+        "rear"
+      ],
+      "description": "12G 127mm/128mm"
+    },
+    {
+      "type": "stem",
+      "description": "3D forged alloy Ext:40mm",
+      "dimensions": {
+        "length": 40
+      }
+    },
+    {
+      "type": "throttle",
+      "description": "Thumb throttle"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "CST",
+      "description": "CST 20\"x3\"",
+      "dimensions": {
+        "width": 76.2,
+        "diameter": 406
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V/22A"
+    },
+    {
+      "type": "wheel",
+      "position": [
+        "rear"
+      ],
+      "description": "Rim: MD-147 20*4.0\"\"*36H*12G A/V | Spoke: 12G 126mm/127mm Hub: 48v 750w | Himiway Hub Motor",
+      "dimensions": {
+        "diameter": 406
+      }
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/jasion/2026/kago",
+  "manufacturer": "Jasion",
+  "model": "Kago",
+  "model_configuration": "complete",
+  "type": "cargo_bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "cargo",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/jasion/2026/kago.png",
+  "description": "Meet the Kago Cargo Electric Bike, a powerful and versatile dual battery electric bike built for commuting, family rides, grocery runs, and everyday hauling. Equipped with a 52V 20Ah ×2 dual battery system, Kago delivers up to 120 miles of range, helping you ride farther with fewer stops to recharge.\nA 1200W peak motor with 80 Nm of torque provides strong acceleration and dependable climbing power, making it easier to tackle hills and carry heavy loads. With a 350 lbs payload capacity, Kago is ready for groceries, gear, daily essentials, and more.\nFor a smoother and more controlled ride, Kago features a front suspension fork, 20\" × 3\" fat tires, and responsive 2-piston hydraulic disc brakes. Integrated safety lighting enhances visibility on daily commutes and evening rides.\nWhether you're looking for a long-range cargo electric bike, a practical eBike for everyday errands, or an alternative to short car trips, Kago combines extended range, cargo capacity, comfort, and reliable power in one versatile ride.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 219900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Pearl White",
+          "colors": [
+            "white"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/jasion/2026/kago.png",
+          "variants": [
+            {
+              "sku": "JS1KagoUSWH1A",
+              "gtin": "767711927025",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Obsidian Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/jasion/2026/kago_obsidian_black.png",
+          "variants": [
+            {
+              "sku": "JS1KagoUSBK1A",
+              "gtin": "767711927032",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://www.jasionbike.com/products/kago",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "steel"
+  },
+  "suspension": {
+    "front": {}
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 76
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "7_rear"
+  ],
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "kind": "hub_drive",
+      "battery": {
+        "capacity": 2080
+      },
+      "peak_power": 1200,
+      "max_torque": 80,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 45,
+          "range_claimed": 193,
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/us/class_3"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Twist"
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "cargo",
+      "weight": 158.76
+    },
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "top_tube_effective": 500,
+        "seat_tube_ctc": 480,
+        "head_tube": 160,
+        "chainstay": 465,
+        "wheelbase": 1140,
+        "seat_height_max": 861,
+        "dimensions": {
+          "length": 1730,
+          "width": 711,
+          "height": 1130
+        },
+        "total_weight": 42.6,
+        "rider_height_min": 1626,
+        "rider_height_max": 1880,
+        "extra_measurements": {
+          "handlebar_height": 1130
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "e_vehicle_battery",
+      "description": "52V 20Ah*2"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "Standard 2.0 A"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "1200W Brushless Hub Motor"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "LCD Display"
+    },
+    {
+      "type": "lights",
+      "description": "LED Headlight & Brake Lights&Turn Signals"
+    },
+    {
+      "type": "throttle",
+      "description": "Twist Throttle"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "20'' x 3'' Fat Tire",
+      "dimensions": {
+        "width": 76.2,
+        "diameter": 406
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "52V/25A"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Package Dimensions",
+      "description": "55.1\" (L) × 10.2\" (W) × 23.2\" (H)"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "id": "c/shimano/2022/ep600_du_ep600",
+  "type": "e_vehicle_motor",
+  "manufacturer": "Shimano",
+  "model": "DU-EP600",
+  "model_group": "EP600",
+  "aliases": [
+    "EP6"
+  ],
+  "markets": [
+    "US"
+  ],
+  "first_year": 2022,
+  "motor": {
+    "kind": "mid_drive",
+    "spindle": "Shimano EP8",
+    "sensor_cadence": true,
+    "certifications": [
+      "UL 2849"
+    ],
+    "rated_power": 250,
+    "max_torque": 85,
+    "operating_modes": [
+      {
+        "mode": "assist",
+        "availability": "stock",
+        "max_speed": 32
+      },
+      {
+        "mode": "assist",
+        "availability": "stock",
+        "max_speed": 45,
+        "e_vehicle_classifications": [
+          "evc/us/class_3"
+        ]
+      }
+    ]
+  }
+}

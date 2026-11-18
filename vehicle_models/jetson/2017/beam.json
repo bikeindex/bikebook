@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/jetson/2017/beam",
+  "manufacturer": "Jetson",
+  "model": "Beam",
+  "model_configuration": "complete",
+  "type": "e_scooter",
+  "propulsion": [
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/jetson/2017/beam.png",
+  "first_year": 2017,
+  "years": {
+    "2026": {
+      "original_msrp": 29999,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black/Green",
+          "colors": [
+            "black",
+            "green"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2017/beam_black_green.png"
+        },
+        {
+          "name": "Black/Blue",
+          "colors": [
+            "black",
+            "blue"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2017/beam.png"
+        }
+      ],
+      "url": "https://ridejetson.com/products/beam-folding-electric-scooter",
+      "url_live": true
+    },
+    "2017": {}
+  },
+  "frame": {
+    "material": "steel",
+    "folding": "stem_fold"
+  },
+  "wheels": [
+    {
+      "bsd": 93,
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "brakes": [
+    {
+      "type": "spoon_brake",
+      "position": [
+        "rear"
+      ]
+    },
+    {
+      "type": "motor_brake",
+      "position": [
+        "motor"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "kind": "hub_drive",
+      "battery": {
+        "capacity": 106,
+        "chemistry": "li-ion",
+        "charging_time": 180
+      },
+      "rated_power": 250,
+      "operating_modes": [
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 23,
+          "range_claimed": 24,
+          "max_slope": 10,
+          "throttle_type": "Thumb"
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 113
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "dimensions": {
+          "length": 921,
+          "width": 432,
+          "height": 1130
+        },
+        "dimensions_folded": {
+          "length": 921,
+          "width": 351,
+          "height": 165
+        },
+        "total_weight": 10.9,
+        "rider_age_min": 13,
+        "extra_measurements": {
+          "handlebar_height_max": 902,
+          "handlebar_height_min": 686
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "E-brake & rear foot brake"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "24V, 4.4Ah rechargeable lithium-ion"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Removable Battery: No"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "250 watt brushless hub motor"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "LCD display"
+    },
+    {
+      "type": "kickstand"
+    },
+    {
+      "type": "lights",
+      "description": "LED headlight & stem light"
+    },
+    {
+      "type": "throttle",
+      "type_detail": "Throttle Type",
+      "description": "Thumb throttle"
+    },
+    {
+      "type": "tire",
+      "type_detail": "Tire Type",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Pneumatic"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Bluetooth",
+      "description": "Yes"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Deck Size",
+      "description": "19\" x 5.75\""
+    },
+    {
+      "type": "unknown",
+      "type_detail": "SKU",
+      "description": "JBEAM-BKG"
+    },
+    {
+      "type": "wheel",
+      "type_detail": "Wheel Size",
+      "description": "8 in."
+    }
+  ]
+}

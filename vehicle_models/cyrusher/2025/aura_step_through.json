@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/cyrusher/2025/aura_step_through",
+  "manufacturer": "Cyrusher",
+  "model": "Aura Step-Through",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/cyrusher/2025/aura_step_through.jpg",
+  "description": "The Cyrusher Aura blends everyday comfort with real-world capability. A responsive torque sensor pairs with a 750W rear-hub motor for smooth, natural assist, while a 52V 15Ah Samsung (780Wh) battery supports up to 60 miles per charge. Upright geometry and fat tires keep you confident on pavement, gravel, and paths, and the bright 1.7\" TFT display makes ride stats easy to read. With 28 mph (throttle) top speed, 350 lb payload, and both step-through and step-over frame choices, Aura is built for commutes, errands, and weekend exploring—without sacrificing comfort.\nQuick specs\n\nMotor: 750W hub (up to 1050W peak) with torque-sensing assist.\n\nRange: Up to 60 miles (≈35+ miles throttle-only).\n\nFit & carry: 350 lb payload; rider height 5'1\"–6'4\"; step-through or step-over frames.",
+  "first_year": 2025,
+  "years": {
+    "2026": {
+      "original_msrp": 159900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Blue",
+          "colors": [
+            "blue"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/cyrusher/2025/aura_step_through.jpg",
+          "variants": [
+            {
+              "sku": "US-Aura-Blue",
+              "gtin": "762221250892",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/cyrusher/2025/aura_step_through_black.jpg",
+          "variants": [
+            {
+              "sku": "US-Aura-Black",
+              "gtin": "762221250915",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "White",
+          "colors": [
+            "white"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/cyrusher/2025/aura_step_through_white.jpg",
+          "variants": [
+            {
+              "sku": "US-Aura-White",
+              "gtin": "762221250908",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://www.cyrusher.com/products/aura",
+      "url_live": true
+    },
+    "2025": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "top_tube": "step_through"
+  },
+  "suspension": {
+    "front": {}
+  },
+  "wheels": [
+    {
+      "bsd": 559,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 102
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "7_rear"
+  ],
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "rear",
+      "kind": "hub_drive",
+      "sensor_cadence": true,
+      "sensor_torque": "bottom_bracket_spindle",
+      "battery": {
+        "capacity": 780,
+        "chemistry": "li-ion",
+        "cells": "Samsung 21700",
+        "charging_time": 480
+      },
+      "rated_power": 750,
+      "peak_power": 1050,
+      "max_torque": 95,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 45,
+          "range_claimed": 97,
+          "e_vehicle_classifications": [
+            "evc/us/class_3"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Thumb",
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "stack": 625,
+        "top_tube_effective": 673,
+        "head_angle": 68.5,
+        "chainstay": 500,
+        "wheelbase": 1214,
+        "standover": 495,
+        "seat_height_min": 856,
+        "seat_height_max": 1059,
+        "total_weight": 29.9
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "e_vehicle_battery",
+      "description": "Samsung 21700, 52V/15Ah(780Wh)"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Battery Capacity: 780 Wh"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "52V 750W(1050W peak, torque 95Nm)"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "3.7\" LCD display, Colorful Smart Computer"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "1.7\" TFT"
+    },
+    {
+      "type": "throttle",
+      "description": "Thumb Throttle"
+    }
+  ]
+}

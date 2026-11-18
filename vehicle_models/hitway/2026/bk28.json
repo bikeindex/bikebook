@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/hitway/2026/bk28",
+  "manufacturer": "Hitway",
+  "model": "BK28",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "mtb",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/hitway/2026/bk28.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/hitway/2026/bk28_geometry.png",
+  "description": "Range Confidence That Supports Real Use\nThe BK28 is built for riders who want fewer limitations in everyday riding. With its 48V 25Ah removable battery (1200Wh), it provides the capacity needed for longer distances, varied terrain and higher assist levels. Instead of planning every ride around battery range, riders can focus more on where they want to go. This makes it suitable for commuting, longer trips and mixed-use scenarios without constant charging concerns.\nDesigned for Slopes and Mixed Terrain\nMany e-bikes perform well on flat roads but feel less stable on slopes or uneven surfaces. The BK28 is designed to handle hills, rough roads and changing terrain with more consistency. It provides a more controlled ride when climbing or navigating less predictable routes, making it a practical option for riders who do not want to limit themselves to smooth urban environments.\nStable and Controlled Riding Experience\nThe combination of fat tires, suspension and a solid aluminium frame results in a more stable ride. Road vibrations and impacts are reduced, helping the rider stay balanced and comfortable. This improves control on longer rides and reduces fatigue, especially when riding on imperfect road surfaces.\nReliable Braking for Everyday Safety\nTektro hydraulic disc brakes provide more predictable and responsive braking performance. This is particularly important on wet surfaces, downhill sections or in urban traffic situations. The system allows smoother braking control and requires less effort, improving overall safety and rider confidence.\nPractical Features That Improve Usability\nThe BK28 integrates features that make everyday use more convenient. A removable battery allows flexible charging, while NFC unlock and app connectivity simplify operation. The integrated front light improves visibility, and fast charging reduces downtime. Together, these features make the bike easier to use on a daily basis.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 179999,
+      "original_msrp_currency": "EUR",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "HW-BK28",
+              "gtin": "7792932493618",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://hitway.eu/products/bk28-fat-tyre-electric-bike",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "aluminum"
+  },
+  "suspension": {
+    "front": {},
+    "rear": {}
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 114
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "7_rear"
+  ],
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "kind": "hub_drive",
+      "water_rating": "IP54",
+      "battery": {
+        "capacity": 1200,
+        "chemistry": "li-ion",
+        "charging_time": 360
+      },
+      "rated_power": 250,
+      "max_torque": 70,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 25,
+          "range_claimed": 100,
+          "max_slope": 25,
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/eu/epac"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 6,
+          "throttle_type": "Twist",
+          "e_vehicle_classifications": [
+            "evc/eu/epac"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 120
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "wheelbase": 1220,
+        "standover": 880,
+        "handlebar_width": 730,
+        "dimensions": {
+          "length": 1840
+        },
+        "total_weight": 47.8,
+        "rider_height_min": 1730,
+        "rider_height_max": 1950,
+        "extra_measurements": {
+          "handlebar_height": 1190,
+          "saddle_length": 440
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Tektro",
+      "description": "Tektro Hydraulic Disc Brakes"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48V 25Ah (1200Wh) Lithium-ion Battery"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "250W Hub Motor (70 Nm Torque)"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "Multifunctional Display with NFC Unlock & App Connectivity"
+    },
+    {
+      "type": "throttle",
+      "description": "Twist Throttle with 6 km/h Walk Assist (Limit Cannot Be Removed)"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "20 × 4.5 inches Puncture-Resistant Fat Tires",
+      "dimensions": {
+        "width": 114.3,
+        "diameter": 406
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Gross Weight",
+      "description": "58 kg(127.9 lbs)"
+    }
+  ]
+}

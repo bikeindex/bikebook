@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/mukkpet/2024/stepwagon",
+  "manufacturer": "Mukkpet",
+  "model": "Stepwagon",
+  "model_configuration": "complete",
+  "type": "cargo_bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "cargo",
+  "handlebar_type": "horizontal",
+  "geometry_photo": "https://bikebook.bikeindex.org/mukkpet/2024/stepwagon_geometry.jpg",
+  "description": "30Ah Dual-Battery(Single Battery 15AH) Cargo eBike\nExtended rear rack- can accommodate two children",
+  "first_year": 2024,
+  "years": {
+    "2026": {
+      "original_msrp": 99800,
+      "original_msrp_currency": "USD",
+      "url": "https://www.mukkpetbike.com/products/mukkpet-stepwagon-dual-battery-cargo-ebike",
+      "url_live": true
+    },
+    "2024": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum",
+    "mounts": [
+      {
+        "type": "rack"
+      }
+    ]
+  },
+  "suspension": {
+    "front": {
+      "lockout": true
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 76
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "7_rear"
+  ],
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "kind": "hub_drive",
+      "battery": {
+        "capacity": 1440
+      },
+      "peak_power": 1500,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 45,
+          "range_claimed": 193,
+          "e_vehicle_classifications": [
+            "evc/us/class_3"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Twist"
+        }
+      ]
+    }
+  ],
+  "cargo": {
+    "length": 860
+  },
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 200
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "reach": 540,
+        "seat_height_min": 870,
+        "seat_height_max": 1030,
+        "dimensions": {
+          "length": 1940
+        },
+        "total_weight": 32.7,
+        "rider_height_min": 1651,
+        "rider_height_max": 1930,
+        "extra_measurements": {
+          "handlebar_height": 1070
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Hydraulic Brake"
+    },
+    {
+      "type": "brake_rotor",
+      "type_detail": "Rotors",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "180MM Brake Disc.",
+      "dimensions": {
+        "diameter": 180
+      }
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48V 30Ah"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "Standard 3.0 A Smart Charger"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "1500W Peak Motor"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "48V25A"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "LCD Display"
+    },
+    {
+      "type": "fork",
+      "type_detail": "front suspension",
+      "position": [
+        "front"
+      ],
+      "description": "Front Suspension, With locking function."
+    },
+    {
+      "type": "lights",
+      "position": [
+        "rear"
+      ],
+      "description": "Left and right turn signals, brake light"
+    },
+    {
+      "type": "throttle",
+      "description": "Twist throttle"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "20\" x 3.0 Tires",
+      "dimensions": {
+        "width": 76.2,
+        "diameter": 406
+      }
+    }
+  ]
+}

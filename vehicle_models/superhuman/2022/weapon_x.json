@@ -1,0 +1,256 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/superhuman/2022/weapon_x",
+  "manufacturer": "Superhuman Bikes",
+  "model_group": "Weapon",
+  "model": "Weapon X",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "mtb_trail_all_mountain",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/superhuman/2022/weapon_x.jpg",
+  "description": "Take your mountain biking to the next level with the most POWERFUL carbon fiber electric mountain bike of it's class!\nThe best of both worlds—it rallies the trail like a traditional bike on descents but rips back to the top with 750W (1000W Peak) of optimized power assists on climbs.\nMake climbs the best part of your ride!",
+  "first_year": 2022,
+  "years": {
+    "2026": {
+      "original_msrp": 619900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/superhuman/2022/weapon_x.jpg"
+        },
+        {
+          "name": "Red",
+          "colors": [
+            "red"
+          ]
+        },
+        {
+          "name": "White",
+          "colors": [
+            "white"
+          ]
+        }
+      ],
+      "url": "https://superhumanbikes.com/products/the-weapon",
+      "url_live": true
+    },
+    "2022": {}
+  },
+  "frame": {
+    "material": "carbon",
+    "mounts": [
+      {
+        "type": "rack"
+      }
+    ]
+  },
+  "suspension": {
+    "front": {
+      "travel": 160
+    },
+    "rear": {
+      "travel": 150,
+      "spring": "air"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 622,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 60
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "12_rear"
+  ],
+  "groupset": {
+    "manufacturer": "SRAM",
+    "series": "GX",
+    "description": "SRAM GX Eagle 12-Speed",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 203
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/bafang/m560_mm_g5300_750_c_750w",
+      "drive_wheel": "rear",
+      "manufacturer": "Bafang",
+      "model": "MM G5300.750.C",
+      "model_group": "M560",
+      "kind": "mid_drive",
+      "sensor_cadence": true,
+      "sensor_torque": "bottom_bracket_spindle",
+      "certifications": [
+        "UL 2849",
+        "CE"
+      ],
+      "water_rating": "IPX6",
+      "battery": {
+        "capacity": 840,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "charging_time": 360
+      },
+      "rated_power": 750,
+      "peak_power": 1000,
+      "max_torque": 140,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 45,
+          "range_claimed": 113,
+          "e_vehicle_classifications": [
+            "evc/us/class_3"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock"
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
+    }
+  ],
+  "sizes": [
+    {
+      "name": "Small",
+      "geometry": {
+        "reach": 420,
+        "seat_tube_ct": 432,
+        "head_angle": 66,
+        "seat_angle": 76.8,
+        "head_tube": 116,
+        "chainstay": 465,
+        "wheelbase": 1280,
+        "standover": 813,
+        "bb_height": 355,
+        "total_weight": 24.5,
+        "rider_height_min": 1575,
+        "rider_height_max": 1702
+      }
+    },
+    {
+      "name": "Medium",
+      "geometry": {
+        "total_weight": 24.9
+      }
+    },
+    {
+      "name": "Large",
+      "geometry": {
+        "total_weight": 25.4
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Magura",
+      "description": "Magura MT5 Hydraulic Disc (203 mm rotors)"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "48V 17.5AH Samsung Lithium Ion Cells"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "description": "Battery Weight: 10.5 lb (4.8 kg)"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "description": "1000W Peak Power / 750W Rated Power / Custom Tuned Bafang M560 Mid-Drive Motor"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "Smart Display with Speed Odometer, 5 Pedal Assist Levels, Battery Life"
+    },
+    {
+      "type": "fork",
+      "description": "DVO Onyx SC D1 29\", (160mm Travel)",
+      "dimensions": {
+        "travel": 160
+      }
+    },
+    {
+      "type": "rear_suspension",
+      "type_detail": "Rear Shock",
+      "position": [
+        "rear"
+      ],
+      "description": "DVO Topaz T3 Air Shock, (150mm Travel)"
+    },
+    {
+      "type": "saddle",
+      "description": "SR 8067"
+    },
+    {
+      "type": "seatpost",
+      "type_detail": "Dropper Post",
+      "manufacturer": "SDG",
+      "description": "SDG Tellis V2 55mm - 230mm Travel Range",
+      "dimensions": {
+        "travel": 230
+      }
+    },
+    {
+      "type": "throttle"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Maxxis",
+      "description": "Maxxis Forekaster 29\" x 2.35\"",
+      "dimensions": {
+        "width": 59.69,
+        "diameter": 622
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Walk Assist",
+      "description": "Press and Hold"
+    },
+    {
+      "type": "wheel",
+      "description": "Aluminum Alloy 29\"",
+      "dimensions": {
+        "diameter": 622
+      }
+    }
+  ]
+}

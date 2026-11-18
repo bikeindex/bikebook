@@ -1,0 +1,418 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/tern/2026/gsd_p00_gen_3_us",
+  "manufacturer": "Tern",
+  "model_group": "GSD",
+  "model": "GSD P00 Gen 3",
+  "model_configuration": "complete",
+  "markets": [
+    "US",
+    "AU",
+    "CA",
+    "CH",
+    "EU",
+    "GB",
+    "NO"
+  ],
+  "type": "cargo_bike",
+  "propulsion": [
+    "pedal_assist"
+  ],
+  "primary_activity": "cargo",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/tern/2026/gsd_p00_gen_3_us.webp",
+  "description": "The GSD P00 is a smooth, belt drive electric cargo bike with max load capacity of 210 kg, UL-certified & third-party tested to meet major cargo bike standards.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "colorways": [
+        {
+          "name": "Pearl White",
+          "colors": [
+            "white"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/tern/2026/gsd_p00_gen_3_us_pearl_white.webp"
+        },
+        {
+          "name": "Satin Midnight Blue",
+          "colors": [
+            "blue"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/tern/2026/gsd_p00_gen_3_us_satin_midnight_blue.webp"
+        },
+        {
+          "name": "School Bus Yellow",
+          "colors": [
+            "yellow"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/tern/2026/gsd_p00_gen_3_us.webp"
+        }
+      ],
+      "url": "https://www.ternbicycles.com/us/bikes/473/gsd-p00",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum",
+    "mounts": [
+      {
+        "type": "accessory",
+        "description": "Luggage Socket: Combo Mount"
+      }
+    ],
+    "headset": "IS42/28.6 | IS52/40"
+  },
+  "suspension": {
+    "front": {
+      "travel": 50
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front"
+      ],
+      "axle": "thru_axle",
+      "axle_thread_pitch": 1.5
+    },
+    {
+      "bsd": 406,
+      "position": [
+        "rear"
+      ]
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "continuously_variable",
+    "belt_drive"
+  ],
+  "groupset": {
+    "manufacturer": "Enviolo",
+    "series": "Heavy Duty",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/bosch/2019/cargo_line_bdu450cx_us",
+      "drive_wheel": "rear",
+      "manufacturer": "Bosch",
+      "model": "BDU450CX",
+      "model_group": "Cargo Line",
+      "kind": "mid_drive",
+      "battery": {
+        "capacity": 500,
+        "chemistry": "li-ion"
+      },
+      "rated_power": 250,
+      "peak_power": 600,
+      "max_torque": 85,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 102,
+          "e_vehicle_classifications": [
+            "evc/us/class_1"
+          ],
+          "markets": [
+            "US"
+          ]
+        },
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 25,
+          "e_vehicle_classifications": [
+            "evc/au/pedalec",
+            "evc/ca/power_assisted_bicycle",
+            "evc/eu/epac",
+            "evc/gb/electrically_assisted_pedal_cycle"
+          ],
+          "markets": [
+            "AU",
+            "CA",
+            "CH",
+            "EU",
+            "GB",
+            "NO"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 130
+    },
+    {
+      "load": "cargo",
+      "weight": 100
+    },
+    {
+      "load": "gross",
+      "weight": 210
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "wheelbase": 1350,
+        "standover": 490,
+        "dimensions": {
+          "length": 1910,
+          "width": 680,
+          "height": 1160
+        },
+        "dimensions_folded": {
+          "length": 1820,
+          "width": 460,
+          "height": 870
+        },
+        "total_weight": 35.8,
+        "rider_height_min": 1500,
+        "rider_height_max": 2000,
+        "extra_measurements": {
+          "saddle_to_pedal_max": 1050,
+          "saddle_to_pedal_min": 690,
+          "seatpost_to_handlebar_max": 590,
+          "seatpost_to_handlebar_min": 490
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "bell_noisemaker",
+      "type_detail": "Bell",
+      "description": "Pitch Plus, brass"
+    },
+    {
+      "type": "bottom_bracket",
+      "description": "Motor integrated"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Magura",
+      "description": "Magura MT5, 4-piston hydraulic disc, 180 mm rotor, Sport pads"
+    },
+    {
+      "type": "brake_cable",
+      "type_detail": "Brake Cable & Housing",
+      "manufacturer": "Magura",
+      "description": "Magura, hydraulic"
+    },
+    {
+      "type": "brake_lever",
+      "manufacturer": "Magura",
+      "description": "Magura MT5 e-stop, hydraulic, with brake light sensor"
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Cassette/Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Gates Carbon Drive",
+      "description": "Gates CDX, precision CNC machined cog"
+    },
+    {
+      "type": "chain_guide",
+      "type_detail": "Chainguard",
+      "manufacturer": "Tern",
+      "description": "Tern GSD, full chain cover"
+    },
+    {
+      "type": "crankset",
+      "manufacturer": "Tern",
+      "description": "Tern GSD, Gates CDX CNC machined beltring"
+    },
+    {
+      "type": "drive_belt",
+      "type_detail": "Belt",
+      "manufacturer": "Gates Carbon Drive",
+      "description": "Gates Carbon Drive CDX belt"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "manufacturer": "Bosch",
+      "description": "Bosch 500 PowerPack, Fast Swap, Dual Battery bays, optional 2 x 500 Wh max capacity"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "100-240V, 4A (US)"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "manufacturer": "Bosch",
+      "description": "Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 20 mph (US)"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "manufacturer": "Bosch",
+      "description": "Bosch Purion"
+    },
+    {
+      "type": "fender",
+      "description": "F: Aluminum R: GSD wheel guard"
+    },
+    {
+      "type": "fork",
+      "manufacturer": "SR Suntour",
+      "description": "Suntour custom for Tern, 1.5\" tapered Chromoly steerer, 32 mm stanchions, Thru-axle, 50 mm travel, EFBE approved: 210 kg",
+      "dimensions": {
+        "travel": 50
+      }
+    },
+    {
+      "type": "grips_tape",
+      "type_detail": "Grips/Bar Tape",
+      "manufacturer": "Ergon",
+      "description": "Ergon"
+    },
+    {
+      "type": "handlebar",
+      "manufacturer": "Tern",
+      "description": "Tern Sweep, 6061-AL, Tern Andros adapted"
+    },
+    {
+      "type": "headset",
+      "manufacturer": "Tern",
+      "description": "Tern Flux Pro Taper by FSA, 1.5\", angular contact bearings, Physis integrated"
+    },
+    {
+      "type": "hub",
+      "position": [
+        "front"
+      ],
+      "manufacturer": "Tern",
+      "description": "Tern Atlas, Cooling Fins, Boost Thru-Axle, sealed cartridge bearings"
+    },
+    {
+      "type": "hub",
+      "position": [
+        "rear"
+      ],
+      "description": "Enviolo Heavy Duty, 380% continuously variable range, Boost"
+    },
+    {
+      "type": "kickstand",
+      "description": "Atlas Lockstand Gen 2, AutoLock w/ remote unlock, patented technology"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "front"
+      ],
+      "description": "Ignis Headlight, Ultra wide low beam"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "rear"
+      ],
+      "description": "RearStop Brake Light, Always on"
+    },
+    {
+      "type": "lock",
+      "type_detail": "Frame Lock",
+      "description": "ABUS or AXA, keyed-alike with Bosch battery"
+    },
+    {
+      "type": "pedals",
+      "description": "Urban with non-slip surface, sealed bearings"
+    },
+    {
+      "type": "rack",
+      "description": "Atlas G, 100 kg (220 lb) capacity"
+    },
+    {
+      "type": "rim",
+      "manufacturer": "Tern",
+      "description": "Tern Atlas, ultra wide 36 mm, dual reinforced joint",
+      "dimensions": {
+        "width": 36
+      }
+    },
+    {
+      "type": "saddle",
+      "manufacturer": "Tern",
+      "description": "Tern GSD by Velo"
+    },
+    {
+      "type": "seatpost",
+      "manufacturer": "Tern",
+      "description": "Tern VLT 41/34.9 mm, with LightAction levers"
+    },
+    {
+      "type": "seatpost_clamp",
+      "manufacturer": "Tern",
+      "description": "Tern Collar"
+    },
+    {
+      "type": "shift_cable",
+      "type_detail": "Shifter Cable & Housing",
+      "manufacturer": "Jagwire",
+      "description": "Jagwire LEX-SL, slick treatment, alloy ferrules"
+    },
+    {
+      "type": "shifter",
+      "description": "Enviolo, Twist"
+    },
+    {
+      "type": "spokes",
+      "type_detail": "Spokes & Nipples",
+      "description": "Stainless steel"
+    },
+    {
+      "type": "stem",
+      "type_detail": "Handlepost",
+      "manufacturer": "Tern",
+      "description": "Tern Physis 3D, 3D forged, 5 patented technologies, 12°, 290 mm",
+      "angles": {
+        "angle": 12
+      }
+    },
+    {
+      "type": "stem",
+      "manufacturer": "Tern",
+      "description": "Tern Andros, adjustable, forged construction, patented technology"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "F: Schwalbe Big Ben Plus, Green Guard puncture protection, Reflex R: Tern x Schwalbe Super Moto-X, Green Guard puncture protection, Reflex"
+    },
+    {
+      "type": "wheel",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Tern",
+      "description": "Tern Atlas, heavy duty cargo wheel"
+    }
+  ]
+}
