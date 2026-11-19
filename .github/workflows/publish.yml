@@ -1,0 +1,14 @@
+name: Publish
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  catalog:
+    uses: bikeindex/bikebook_ci/.github/workflows/start_publish.yml@main
+    secrets:
+      catalog_publish_token: ${{ secrets.CATALOG_PUBLISH_TOKEN }}

@@ -14,7 +14,7 @@ BikeBook's open data: vehicle models, components, e-vehicle classifications and 
 
 # Checks
 
-bikebook_ci's tests check the data files themselves: every file pretty-printed with two spaces and a trailing newline, its keys in its schema's property order, valid against the schema its `schema_version` names (an overlay both as stored and resolved), its `id` matching its path, an overlay's base and a model's motors present, its photos keyed by its id, and every image on our R2 bucket's `https://bikebook.bikeindex.org/`. CI (`.github/workflows/ci.yml`) runs them from bikebook_ci's `main`.
+bikebook_ci's tests check the data files themselves: every file pretty-printed with two spaces and a trailing newline, its keys in its schema's property order, valid against the schema its `schema_version` names (an overlay both as stored and resolved), its `id` matching its path, an overlay's base and a model's motors present, its photos keyed by its id, and every image on our R2 bucket's `https://bikebook.bikeindex.org/`. CI (`.github/workflows/ci.yml`) runs them from bikebook_ci's `main`. On a push to `main`, `.github/workflows/publish.yml` publishes the catalog through bikebook_ci, and fails if the catalog doesn't publish.
 
 **Run them from a bikebook_ci checkout beside the main checkout** (clone it there if there's none), from anywhere in this repo or its worktrees:
 
