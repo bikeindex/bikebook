@@ -14,12 +14,18 @@ BikeBook's open data: vehicle models, components, e-vehicle classifications and 
 
 # Checks
 
-bikebook_ci's tests check the data files themselves: every file pretty-printed with two spaces and a trailing newline, its keys in its schema's property order, valid against the schema its `schema_version` names (an overlay both as stored and resolved), its `id` matching its path, an overlay's base and a model's motors present, its photos keyed by its id, and every image on our R2 bucket's `https://bikebook.bikeindex.org/`. CI (`.github/workflows/ci.yml`) runs them from bikebook_ci's `main`. On a push to `main`, `.github/workflows/publish.yml` publishes the catalog through bikebook_ci, and fails if the catalog doesn't publish.
+bikebook_ci's tests check the data files themselves: every file pretty-printed with two spaces and a trailing newline, its keys in its schema's property order, valid against the schema its `schema_version` names (an overlay both as stored and resolved), its `id` matching its path, an overlay's base and a model's motors present, its photos keyed by its id, every image on our R2 bucket's `https://bikebook.bikeindex.org/`, and `representative_vehicles.csv` naming vehicle models, alphabetically. CI (`.github/workflows/ci.yml`) runs them from bikebook_ci's `main`. On a push to `main`, `.github/workflows/publish.yml` publishes the catalog through bikebook_ci, and fails if the catalog doesn't publish.
 
 **Run them from a bikebook_ci checkout beside the main checkout** (clone it there if there's none), from anywhere in this repo or its worktrees:
 
 ```bash
 BIKEBOOK_DATA="$(git rev-parse --show-toplevel)" cargo test --locked --no-fail-fast --manifest-path "$(git rev-parse --path-format=absolute --git-common-dir)/../../bikebook_ci/Cargo.toml"
+```
+
+**A schema change edits only the representative vehicles**: the models `representative_vehicles.csv` lists, the components they link and those components' bases. The rest of the catalog moves to the new shape in a later PR. CI's `schema_changes` check, a separate one, fails a branch that changes `schemas/` and edits any other data file. It reads the list as the branch's base has it, so a change to the list is a PR of its own. Run it from the same bikebook_ci checkout:
+
+```bash
+git fetch -q origin main && "$(git rev-parse --path-format=absolute --git-common-dir)/../../bikebook_ci/bin/check_schema_change" "$(git rev-parse --show-toplevel)" origin/main HEAD
 ```
 
 **A failing check on a data file is fixed in that file**, the same as any other wrong value. Loosening a check to let a file through is a change to what the catalog promises, so it's the user's call.
