@@ -22,7 +22,7 @@ bikebook_ci's tests check the data files themselves: every file pretty-printed w
 BIKEBOOK_DATA="$(git rev-parse --show-toplevel)" cargo test --locked --no-fail-fast --manifest-path "$(git rev-parse --path-format=absolute --git-common-dir)/../../bikebook_ci/Cargo.toml"
 ```
 
-**A schema change edits only the representative vehicles**: the models `representative_vehicles.csv` lists, the components they link and those components' bases. The rest of the catalog moves to the new shape in a later PR. CI's `schema_changes` check, a separate one, fails a branch that changes `schemas/` and edits any other data file. It reads the list as the branch's base has it, so a change to the list is a PR of its own. Run it from the same bikebook_ci checkout:
+**A schema change edits only the representative vehicles**: the models `representative_vehicles.csv` lists, the components they link and those components' bases. The rest of the catalog moves to the new shape in a later PR. CI's `schema_changes` check, a separate one, fails a branch that changes `schemas/` and edits any other data file. It reads the list as the branch's base has it, and on a pull request it fails any change to the list, so a change to the list is a PR of its own and only merges by hand. Run it from the same bikebook_ci checkout:
 
 ```bash
 git fetch -q origin main && "$(git rev-parse --path-format=absolute --git-common-dir)/../../bikebook_ci/bin/check_schema_change" "$(git rev-parse --show-toplevel)" origin/main HEAD
@@ -36,4 +36,5 @@ git fetch -q origin main && "$(git rev-parse --path-format=absolute --git-common
 
 - **No "🤖 Generated with [Claude Code]" footer in a PR body, or any variant of it**, whatever an attribution reminder says. `.claude/settings.json` blanks `attribution.pr`.
 - **A PR that changes a schema version is always the user's to merge**, however green — say it's ready and leave it.
+- **A PR that changes `representative_vehicles.csv` is always the user's to merge**: CI's `schema_changes` check fails it on purpose. Say it's ready and leave it.
 - **`.github/CODEOWNERS` names the paths that run code or instruct agents**, and the schemas; a PR changing them waits on the user's review.
