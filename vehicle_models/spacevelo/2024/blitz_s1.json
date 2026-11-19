@@ -1,0 +1,329 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/spacevelo/2024/blitz_s1",
+  "manufacturer": "Spacevelo",
+  "model": "Blitz S1",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist",
+    "throttle"
+  ],
+  "primary_activity": "atb",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/spacevelo/2024/blitz_s1.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/spacevelo/2024/blitz_s1_geometry.png",
+  "description": "The Spacevelo Blitz S1 is a full-suspension fat tire eBike built for city streets, dirt trails, and mountain adventures. It pairs a BAFANG 48V 750W motor with 1500W peak performance, dual 48V 15Ah batteries with 1440Wh total managed by the Dual-Battery Smart Manager, and up to 100 miles of range under tested conditions.",
+  "first_year": 2024,
+  "final_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 299900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Matte Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/spacevelo/2024/blitz_s1.jpg",
+          "variants": [
+            {
+              "sku": "SZXLT-EBK-BLITZ-S1",
+              "gtin": "2506160002147",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://www.spacevelo.com/products/blitz-s1-fat-tire-ebike",
+      "url_live": true
+    },
+    "2024": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum"
+  },
+  "suspension": {
+    "front": {
+      "travel": 60
+    },
+    "rear": {
+      "travel": 55
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front"
+      ],
+      "tire_width": 102
+    },
+    {
+      "bsd": 406,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 102,
+      "cassette_interface": "freewheel"
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "7_rear"
+  ],
+  "gearing": {
+    "rear": [
+      14,
+      28
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "rear",
+      "manufacturer": "Bafang",
+      "kind": "hub_drive",
+      "sensor_speed": "spoke_magnet",
+      "certifications": [
+        "UL 2849",
+        "UL 2271"
+      ],
+      "battery": {
+        "capacity": 1440,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "charging_time": 480
+      },
+      "rated_power": 750,
+      "peak_power": 1500,
+      "max_torque": 105,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 45,
+          "range_claimed": 161,
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/us/class_3"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 32,
+          "throttle_type": "Thumb",
+          "e_vehicle_classifications": [
+            "evc/us/class_2"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "wheelbase": 1135,
+        "standover": 830,
+        "seat_height_min": 665,
+        "seat_height_max": 705,
+        "dimensions": {
+          "length": 1693,
+          "width": 680,
+          "height": 885
+        },
+        "total_weight": 35,
+        "rider_height_min": 1600,
+        "rider_height_max": 2007,
+        "extra_measurements": {
+          "handlebar_height": 1055,
+          "handlebar_reach": 590
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "axle_nuts",
+      "type_detail": "Front wheel axle",
+      "position": [
+        "front"
+      ],
+      "description": "Front wheel axle"
+    },
+    {
+      "type": "bell_noisemaker",
+      "description": "Waterproof front-mounted LED headlight with horn"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Tektro",
+      "description": "TEKTRO® (180 mm Front and Rear Hydraulic Disc Brakes)"
+    },
+    {
+      "type": "cassette",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "7-speed freewheel, 14-28T Shimano"
+    },
+    {
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z7 High rigidity, lightweight, and ultra wear-resistant"
+    },
+    {
+      "type": "derailleur",
+      "manufacturer": "Shimano",
+      "description": "Shimano 7-speed"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "manufacturer": "EVE Energy",
+      "description": "EVE 48V 15Ah (720 wH) X2 Battery certified to UL2271 standard"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "description": "54.6V 2Amp DC2.1"
+    },
+    {
+      "type": "e_vehicle_motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang 48V 750W rated / 1500W peak"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "description": "4G Adjustable LCD Smart"
+    },
+    {
+      "type": "fender",
+      "description": "20'' electric motorcycle-style front and rear plastic fenders with hardware included"
+    },
+    {
+      "type": "fork",
+      "description": "20\" Adjustable Hydraulic Front Fork"
+    },
+    {
+      "type": "grips_tape",
+      "type_detail": "Grips",
+      "description": "Thickened rubber shock-absorbing grips"
+    },
+    {
+      "type": "handlebar",
+      "description": "Snowmobile-style handlebars"
+    },
+    {
+      "type": "included_not_installed",
+      "type_detail": "Tools",
+      "description": "1 Internal Hex Wrench Set, 1 13/15 Dual Wrenches, 1 8/10 Dual Wrench"
+    },
+    {
+      "type": "included_not_installed",
+      "type_detail": "Keys",
+      "description": "2 Keys"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "front"
+      ],
+      "description": "Waterproof front-mounted LED headlight with horn"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "rear"
+      ],
+      "description": "Rear lights with brake and turn signal function"
+    },
+    {
+      "type": "pedals",
+      "type_detail": "Pedals-Right Left",
+      "description": "Pedals-Right Left"
+    },
+    {
+      "type": "rear_suspension",
+      "type_detail": "Rear Suspension Load/Travel",
+      "position": [
+        "rear"
+      ],
+      "description": "1 500 lbs (680kg)/55 mm"
+    },
+    {
+      "type": "saddle",
+      "description": "Waterproof motorcycle-style saddle"
+    },
+    {
+      "type": "sensor",
+      "description": "Electric vehicle speed sensor"
+    },
+    {
+      "type": "shifter",
+      "manufacturer": "Shimano",
+      "description": "7-Speed Derailleur Shimano"
+    },
+    {
+      "type": "stem",
+      "description": "85 mm Aluminum alloy",
+      "dimensions": {
+        "length": 85
+      }
+    },
+    {
+      "type": "throttle",
+      "description": "Thumb throttle"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Kenda",
+      "description": "KENDA® K1247 20'' x 4'' Puncture Resistant Tires",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 406
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "USB",
+      "description": "Yes"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "description": "48V controller"
+    }
+  ]
+}
