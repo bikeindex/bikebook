@@ -14,6 +14,38 @@ This repository is a flat file database. The data is stored in JSON files.
 
 **A file is at `<maker>/<year>/<slug>.json`, and its `id` repeats that path behind a type prefix** — `m/trek/2026/fuel_plus_mx_9_9_x0_axs_gen_2` is [vehicle_models/trek/2026/fuel_plus_mx_9_9_x0_axs_gen_2.json](vehicle_models/trek/2026/fuel_plus_mx_9_9_x0_axs_gen_2.json)
 
+The `<maker>` and `<slug>` come from the names like this:
+
+```js
+// Parentheticals drop, & and + become words, accents fold, and every other run of non-alphanumerics becomes one _
+const FOLDS = { ß: "ss", æ: "ae", œ: "oe", ø: "o", đ: "d", ð: "d", ł: "l", þ: "th" };
+const ENTITIES = { amp: "&", lt: "<", gt: ">", quot: '"', "#39": "'", apos: "'" };
+
+function slugify(string) {
+  const s = String(string ?? "").replace(/\([^)]*\)/g, "").replaceAll("%20", " ")
+    .replace(/&(amp|lt|gt|quot|#39|apos);/g, (_, e) => ENTITIES[e])
+    .toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .replace(/[ßæœøđðłþ]/g, (c) => FOLDS[c]);
+  return (s.replaceAll("&", " and ").replaceAll("+", " plus ").match(/[a-z0-9]+/g) || []).join("_");
+}
+
+// A maker drops its bikes/cycles/co./works words, unless that leaves only digits
+const COMPANY_FILLER = /\sco(\.|mpany)|\s(frame)?works/gi;
+const MANUFACTURER_FILLER = /\s(e(lectric)?.?)?((bi)?cycles?|bikes?)|\sco(\.|mpany)|\s(frame)?works/gi;
+
+function manufacturerSlug(name) {
+  const slug = slugify(String(name ?? "").replace(MANUFACTURER_FILLER, " "));
+  return /\D/.test(slug) ? slug : slugify(String(name ?? "").replace(COMPANY_FILLER, " "));
+}
+
+// A model sold outside its maker's primary market takes its first market as a suffix, unless its name already ends in it
+function vehicleModelSlug(name, markets = [], primaryMarket) {
+  const slug = slugify(name);
+  const suffix = markets.length ? `_${markets[0].toLowerCase()}` : null;
+  return suffix && !markets.includes(primaryMarket) && !slug.endsWith(suffix) ? slug + suffix : slug;
+}
+```
+
 The manifest lists all the files, the catalog is published by [bikebook_ci](https://github.com/bikeindex/bikebook_ci) (which also is where the tests are).
 
 ---
