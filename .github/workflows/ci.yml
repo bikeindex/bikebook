@@ -11,3 +11,5 @@ permissions:
 jobs:
   checks:
     uses: bikeindex/bikebook_ci/.github/workflows/ci.yml@main
+    secrets:
+      catalog_publish_token: ${{ secrets.CATALOG_PUBLISH_TOKEN }}
