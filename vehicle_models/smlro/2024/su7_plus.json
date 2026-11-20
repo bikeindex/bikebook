@@ -6,7 +6,8 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal_assist",
+    "throttle"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -84,7 +85,8 @@
       "battery": {
         "capacity": 1075,
         "voltage": 48,
-        "chemistry": "li-ion"
+        "chemistry": "li-ion",
+        "charging_time": 660
       },
       "rated_power": 1000,
       "operating_modes": [
@@ -92,6 +94,14 @@
           "mode": "assist",
           "availability": "stock",
           "max_speed": 50,
+          "range_claimed": 90,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
           "range_claimed": 50,
           "e_vehicle_classifications": [
             "evc/off_highway_motorcycle"
@@ -104,7 +114,8 @@
       "battery": {
         "capacity": 1075,
         "voltage": 48,
-        "chemistry": "li-ion"
+        "chemistry": "li-ion",
+        "charging_time": 660
       },
       "rated_power": 1000,
       "operating_modes": [
@@ -112,6 +123,14 @@
           "mode": "assist",
           "availability": "stock",
           "max_speed": 50,
+          "range_claimed": 90,
+          "e_vehicle_classifications": [
+            "evc/off_highway_motorcycle"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
           "range_claimed": 50,
           "e_vehicle_classifications": [
             "evc/off_highway_motorcycle"

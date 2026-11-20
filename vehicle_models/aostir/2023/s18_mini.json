@@ -46,26 +46,27 @@
       "kind": "hub_drive",
       "battery": {
         "capacity": 720,
-        "voltage": 48
+        "voltage": 48,
+        "charging_time": 360
       },
       "rated_power": 500,
       "max_torque": 80,
       "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 45,
+          "range_claimed": 64,
+          "e_vehicle_classifications": [
+            "evc/us/class_3"
+          ]
+        },
         {
           "mode": "throttle",
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
             "evc/us/class_2"
-          ]
-        },
-        {
-          "mode": "assist",
-          "availability": "stock",
-          "max_speed": 45,
-          "range_claimed": 40,
-          "e_vehicle_classifications": [
-            "evc/us/class_3"
           ]
         }
       ]

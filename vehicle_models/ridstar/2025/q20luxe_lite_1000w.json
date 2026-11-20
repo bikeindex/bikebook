@@ -62,6 +62,7 @@
   ],
   "motors": [
     {
+      "water_rating": "IP5",
       "battery": {
         "capacity": 720,
         "voltage": 48,
@@ -73,6 +74,7 @@
           "mode": "assist",
           "availability": "stock",
           "max_speed": 45,
+          "range_claimed": 80,
           "e_vehicle_classifications": [
             "evc/off_highway_motorcycle"
           ]
@@ -80,6 +82,7 @@
         {
           "mode": "throttle",
           "availability": "stock",
+          "range_claimed": 48,
           "e_vehicle_classifications": [
             "evc/off_highway_motorcycle"
           ]
@@ -90,10 +93,6 @@
   "weight_limits": [
     {
       "load": "rider",
-      "weight": 150
-    },
-    {
-      "load": "payload",
       "weight": 150
     }
   ],

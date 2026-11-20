@@ -180,6 +180,7 @@
         "UL 2849",
         "UL 2271"
       ],
+      "water_rating": "IP65",
       "battery": {
         "capacity": 624,
         "charging_time": 420
@@ -189,19 +190,20 @@
       "max_torque": 95,
       "operating_modes": [
         {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 45,
+          "range_claimed": 105,
+          "e_vehicle_classifications": [
+            "evc/us/class_3"
+          ]
+        },
+        {
           "mode": "throttle",
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
             "evc/us/class_2"
-          ]
-        },
-        {
-          "mode": "assist",
-          "availability": "stock",
-          "max_speed": 45,
-          "e_vehicle_classifications": [
-            "evc/us/class_3"
           ]
         }
       ]
