@@ -1,0 +1,388 @@
+{
+  "schema_version": "1.0.0",
+  "id": "m/moustache_bikes/2023/j_all",
+  "manufacturer": "Moustache bikes",
+  "model_group": "J",
+  "model": "J. all",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal_assist"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/moustache_bikes/2023/j_all.jpg",
+  "first_year": 2023,
+  "final_year": 2026,
+  "years": {
+    "2026": {
+      "colorways": [
+        {
+          "name": "Olive",
+          "colors": [
+            "green"
+          ]
+        },
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ]
+        },
+        {
+          "name": "Grey",
+          "colors": [
+            "silver"
+          ]
+        }
+      ],
+      "url": "https://moustachebikes.com/gb/en/electric-bikes/j/j-all/",
+      "url_live": true
+    },
+    "2023": {
+      "url": "https://web.archive.org/web/20231031170231/https://moustachebikes.com/nl/en/electric-bikes/j/j-all/",
+      "url_live": false
+    }
+  },
+  "frame": {
+    "material": "aluminum",
+    "mounts": [
+      {
+        "type": "bottle",
+        "location": "seat_tube"
+      }
+    ],
+    "cable_routing": "stealth",
+    "seatpost_diameter": 31.6
+  },
+  "suspension": {
+    "front": {
+      "travel": 120,
+      "spring": "air",
+      "lockout": true
+    },
+    "rear": {
+      "travel": 100,
+      "shock_length": 165,
+      "shock_stroke": 38,
+      "spring": "air"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 584,
+      "position": [
+        "front"
+      ],
+      "tire_width": 66,
+      "axle": "thru_axle",
+      "axle_diameter": 15,
+      "axle_spacing": 110,
+      "axle_thread_pitch": 1.5
+    },
+    {
+      "bsd": 584,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 66,
+      "axle_diameter": 10,
+      "axle_spacing": 135
+    }
+  ],
+  "drivetrain": [
+    "1_front",
+    "continuously_variable",
+    "belt_drive"
+  ],
+  "gearing": {
+    "front": [
+      50
+    ],
+    "rear": [
+      22
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Enviolo",
+    "series": "Trekking",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc_hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/bosch/2022/performance_line_bdu336y_gb",
+      "drive_wheel": "rear",
+      "manufacturer": "Bosch",
+      "model": "BDU336Y",
+      "model_group": "Performance Line",
+      "kind": "mid_drive",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 625,
+        "chemistry": "li-ion"
+      },
+      "rated_power": 250,
+      "peak_power": 600,
+      "max_torque": 75,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "max_speed": 25,
+          "e_vehicle_classifications": [
+            "evc/gb/electrically_assisted_pedal_cycle",
+            "evc/eu/epac"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "gross",
+      "weight": 135
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "reach": 361,
+        "stack": 661,
+        "top_tube_effective": 600,
+        "seat_tube_ctc": 460,
+        "head_angle": 66,
+        "seat_angle": 69.6,
+        "head_tube": 180,
+        "chainstay": 515,
+        "wheelbase": 1210,
+        "standover": 522,
+        "bb_height": 327,
+        "fork_length_a2c": 527.5
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Alhonga, HJ-472, hydraulic disc"
+    },
+    {
+      "type": "brake_rotor",
+      "type_detail": "Front Rotor",
+      "position": [
+        "front"
+      ],
+      "description": "Alhonga, 180mm",
+      "dimensions": {
+        "diameter": 180
+      }
+    },
+    {
+      "type": "brake_rotor",
+      "type_detail": "Rear Rotor",
+      "position": [
+        "rear"
+      ],
+      "description": "Alhonga, 180mm",
+      "dimensions": {
+        "diameter": 180
+      }
+    },
+    {
+      "type": "cassette",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Gates Carbon Drive",
+      "description": "Gates, 22T"
+    },
+    {
+      "type": "chainrings",
+      "manufacturer": "Gates Carbon Drive",
+      "description": "Gates, 50T"
+    },
+    {
+      "type": "crankset",
+      "type_detail": "Cranks",
+      "manufacturer": "Moustache bikes",
+      "description": "Moustache, aluminium, 170mm",
+      "dimensions": {
+        "length": 170
+      }
+    },
+    {
+      "type": "drive_belt",
+      "type_detail": "Belt",
+      "manufacturer": "Gates Carbon Drive",
+      "description": "Gates, CDX belt, clean, smooth and resistant"
+    },
+    {
+      "type": "e_vehicle_battery",
+      "manufacturer": "Bosch",
+      "description": "Bosch, PowerTube 625Wh, vertical, Smart System"
+    },
+    {
+      "type": "e_vehicle_charger",
+      "manufacturer": "Bosch",
+      "description": "Bosch, 4Ah"
+    },
+    {
+      "type": "e_vehicle_remote",
+      "manufacturer": "Bosch",
+      "description": "Bosch, Kiox 500, Smart System, color screen, customizable screens, sounds, Lock function (optional), « Walk assist », LED Remote bluetooth Modes: Eco, Tour, Auto, Turbo"
+    },
+    {
+      "type": "fender",
+      "type_detail": "Mudguard",
+      "manufacturer": "Moustache bikes",
+      "description": "Moustache, alloy, double wall design, w/alloy stays"
+    },
+    {
+      "type": "fork",
+      "manufacturer": "SR Suntour",
+      "description": "SR Suntour, XCR 34 Air Boost 2CR LOR, rebound adjustment & lockout function, 120mm travel",
+      "dimensions": {
+        "travel": 120
+      }
+    },
+    {
+      "type": "gps_connectivity_module",
+      "type_detail": "Lock",
+      "manufacturer": "Bosch",
+      "description": "- / Bosch Connect Module (BCM)"
+    },
+    {
+      "type": "grips_tape",
+      "type_detail": "Grips",
+      "description": "SB3, Ergonomic"
+    },
+    {
+      "type": "handlebar",
+      "manufacturer": "Moustache bikes",
+      "description": "Moustache, ergonomic, alloy, 680mm, 25° backsweep",
+      "dimensions": {
+        "width": 680
+      },
+      "angles": {
+        "backsweep": 25
+      }
+    },
+    {
+      "type": "headset",
+      "manufacturer": "Acros",
+      "description": "Acros, AZF-699, sealed bearings, internal routing, blocklock"
+    },
+    {
+      "type": "hub",
+      "description": "Front: Moustache, 32H, 15x110mm, thru axle / Rear: Enviolo, TRK 380%, 32H, 10x135mm, nut"
+    },
+    {
+      "type": "kickstand",
+      "manufacturer": "Moustache bikes",
+      "description": "Moustache, adjustable"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "front"
+      ],
+      "description": "Trelock, Lighthammer, 100 lux, powered by main battery"
+    },
+    {
+      "type": "lights",
+      "position": [
+        "rear"
+      ],
+      "description": "Spanninga, Presto2Guard, powered by main battery"
+    },
+    {
+      "type": "pedals",
+      "description": "alloy platform with reflectors"
+    },
+    {
+      "type": "rack",
+      "type_detail": "Carrier",
+      "manufacturer": "Moustache bikes",
+      "description": "Moustache, alloy, removable QL3 lateral fixation"
+    },
+    {
+      "type": "rear_suspension",
+      "type_detail": "Shock",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Moustache bikes",
+      "description": "Moustache, Magic Grip Control 100, specific Air Shock with 2-position platform and dynamic control of rebound, build-in 165x38mm, 100mm travel",
+      "dimensions": {
+        "length": 165,
+        "travel": 38
+      }
+    },
+    {
+      "type": "remote",
+      "description": "EXA, 900i, dropper-post w/remote lever, 31.6mm"
+    },
+    {
+      "type": "rim",
+      "manufacturer": "Moustache bikes",
+      "description": "Moustache, asymmetric, alloy 6061E, welded, 32 holes, 27.5\", internal width 23mm",
+      "dimensions": {
+        "diameter": 584,
+        "inner_width": 23
+      }
+    },
+    {
+      "type": "saddle",
+      "manufacturer": "Selle Royal",
+      "description": "Selle Royal, Essenza Moderate Men"
+    },
+    {
+      "type": "seatpost",
+      "description": "EXA, 900i, dropper-post w/remote lever, 31.6mm",
+      "dimensions": {
+        "diameter": 31.6
+      }
+    },
+    {
+      "type": "shifter",
+      "description": "Enviolo, PURE, rotating handle with visual indicator"
+    },
+    {
+      "type": "stem",
+      "manufacturer": "Moustache bikes",
+      "description": "Moustache, alloy, adjustable, 65mm",
+      "dimensions": {
+        "length": 65
+      }
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Schwalbe",
+      "description": "Schwalbe, Johnny Watts, 27.5x2.60",
+      "dimensions": {
+        "width": 66.04,
+        "diameter": 584
+      }
+    }
+  ]
+}
