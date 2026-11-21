@@ -22,12 +22,7 @@ Some things that missing or improvements to make in upcoming schema versions:
 - Capturing more measurements of components and interfaces, so it can be used as a reference for repair (e.g. replacement bearing sizes)
 
 
----
-
-This repository contains the data that is used to render that.
-
-
-## Technical info
+## But the files
 
 This repository is a flat file database. The data is stored in JSON files.
 
@@ -37,7 +32,18 @@ Which is in this repository at [vehicle_models/trek/2026/fuel-plus-mx-9-9-x0-axs
 
 **The model IDs are at `<maker>/<year>/<model name>.json`** and the files are at that path in `vehicle_models/`
 
-`<maker>` and `<model>` are converted to slugs following this path:
+You can convert `<maker>` and `<model>` to slugs with this JS:
+
+
+```js
+const slugify = (s) => Array.from(String(s ?? "").replace(/\([^)]*\)/g, "").replaceAll("%20", " ").replace(/&(apos|amp|quot|gt|lt|#[0-9]+|#[xX][0-9A-Fa-f]+);/g, (m, e) => e[0] !== "#" ? { amp: "&", quot: '"', apos: "'", lt: "<", gt: ">" }[e] : ((n) => n < 0x10ffff ? String.fromCodePoint(n) : m)(/x/i.test(e[1]) ? parseInt(e.slice(2), 16) : parseInt(e.slice(1), 10))).replace(/['’‘`´]/g, "").toLowerCase(), (c) => c < "\x80" ? c : (" àa áa âa ãa äa åa æae çc èe ée êe ëe ìi íi îi ïi ðd ñn òo óo ôo õo öo øo ùu úu ûu üu ýy þth ßss ÿy āa ăa ąa ćc ĉc ċc čc ďd đd ēe ĕe ėe ęe ěe ĝg ğg ġg ģg ĥh ħh ĩi īi ĭi įi ıi ĳij ĵj ķk ĸk ĺl ļl ľl ŀl łl ńn ņn ňn ŉ'n ŋng ōo ŏo őo œoe ŕr ŗr řr śs ŝs şs šs ţt ťt ŧt ũu ūu ŭu ůu űu ųu ŵw ŷy źz żz žz ǫo ǭo ×x ".match(` ${c}(\\S+) `) ?? [, "?"])[1]).join("").replaceAll("&", " and ").replaceAll("+", " plus ").match(/[a-z0-9]+/g)?.join("-") ?? ""
+
+slugify('Fuel+ MX 9.9 X0 AXS Gen 2')
+// 'fuel-plus-mx-9-9-x0-axs-gen-2'
+```
+
+
+Full explanation:
 
 1. Drops parentheticals and turn `%20` into a space
 2. Decodes HTML entities like `&amp;`
