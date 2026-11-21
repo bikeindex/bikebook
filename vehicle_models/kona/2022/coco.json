@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2022/coco",
   "manufacturer": "Kona",
   "model_group": "Coco",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -60,8 +60,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -79,7 +79,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -191,7 +191,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "B/B",
       "description": "Feimin 68mm"
     },
@@ -206,12 +206,12 @@
       "description": "Tektro HDM275 Hydraulic"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro HDM275 Hydraulic"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -223,14 +223,6 @@
       }
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano HG200 11-32t 9spd"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC X9"
@@ -238,6 +230,14 @@
     {
       "type": "chainrings",
       "description": "39t/Guard"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano HG200 11-32t 9spd"
     },
     {
       "type": "crankset",
@@ -263,7 +263,7 @@
       "description": "Kona Project Two Aluminum Disc"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Velo",
       "description": "Velo Ergo"
@@ -328,7 +328,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Kona",
       "description": "Kona Clamp"

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/trek/2012/belleville",
   "manufacturer": "Trek",
   "model": "Belleville",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -51,8 +51,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "3_internal_rear"
+    "1-front",
+    "3-internal-rear"
   ],
   "gearing": {
     "front": [
@@ -78,6 +78,10 @@
   ],
   "components": [
     {
+      "type": "bashguardchain-guide",
+      "description": "chainguard"
+    },
+    {
       "type": "brake",
       "position": [
         "front",
@@ -87,15 +91,11 @@
       "description": "Tektro alloy caliper brakes"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "description": "19T cog"
-    },
-    {
-      "type": "chain_guide",
-      "description": "chainguard"
     },
     {
       "type": "crankset",
@@ -118,7 +118,7 @@
       "description": "Semi-cartridge bearings, sealed"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front",
         "rear"

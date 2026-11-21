@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jamis/2012/sputnik",
   "manufacturer": "Jamis",
   "model": "Sputnik",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "drop_bar",
@@ -55,8 +55,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -68,17 +68,17 @@
   },
   "components": [
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z510HX"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Formula",
       "description": "Formula 16T Fixed and 16T Freewheel"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Z510HX"
     },
     {
       "type": "crankset",

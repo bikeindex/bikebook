@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/wired/2026/freedom",
   "manufacturer": "Wired",
   "model": "Freedom",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/wired/2026/freedom.png",
-  "geometry_photo": "https://bikebook.bikeindex.org/wired/2026/freedom_geometry.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/wired/2026/freedom-geometry.png",
   "description": "Introducing the WIRED Freedom - UL2849 certified electric bike with UL2271 certified batteries, the ultimate combination of power, safety, and performance.\n\nThe Freedom features a powerful 3200W motor and dual 60V batteries (2100Wh total capacity) that deliver up to 90 miles of range on a single charge.\n\n3200W Peak Power Motor: Exceptional performance for any terrain\n\nPerfect For\n\nThe Freedom is ideal for riders who demand the best in power, range, and safety. Whether you're commuting long distances, exploring trails, or need a reliable daily rider with exceptional capability, the Freedom delivers uncompromising performance with the peace of mind that comes from UL2849 and UL2271 certifications.\n\nIndustry-Leading Safety\n\nThe WIRED Freedom is UL2849 certified with UL2271 certified batteries. These certifications mean our bike and batteries have been rigorously tested and meet the highest safety standards for electric bikes, giving you confidence and peace of mind with every ride.",
   "first_year": 2026,
   "years": {
@@ -38,7 +38,7 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/freedom_lime_green.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/freedom-lime-green.png",
           "variants": [
             {
               "sku": "FLG07-26",
@@ -51,7 +51,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/freedom_black.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/freedom-black.png",
           "variants": [
             {
               "sku": "FBK09-26",
@@ -64,7 +64,7 @@
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/freedom_titian.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/freedom-titian.png",
           "variants": [
             {
               "sku": "FT07-26",
@@ -77,7 +77,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/freedom_white.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/freedom-white.png",
           "variants": [
             {
               "sku": "FW09-26",
@@ -90,7 +90,7 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/freedom_hunter.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/freedom-hunter.png",
           "variants": [
             {
               "sku": "FHG07-26",
@@ -137,8 +137,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -156,7 +156,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -167,18 +167,20 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "battery": {
         "capacity": 2100,
         "voltage": 60,
         "chemistry": "li-ion",
-        "cells": "Samsung 21700"
+        "cells": "Samsung 21700",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 1500,
       "peak_power": 3200,
@@ -190,7 +192,7 @@
           "max_speed": 32,
           "range_claimed": 145,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -198,7 +200,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -206,7 +208,7 @@
           "availability": "app_update",
           "max_speed": 56,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -246,7 +248,7 @@
       "description": "4-piston Gemma hydraulic brakes with large 203mm rotors offer confident stopping power at high speeds. Be confident at any speed."
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
@@ -262,16 +264,16 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "60V 20Ah front + 60V 15Ah rear batteries (total ~35Ah). Samsung 21700 lithium cells for reliable, long-life performance (2100Wh total)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "60V 1500W Hentach brushless geared hub motor that peaks at 3200W. High-torque design (~153Nm) for strong acceleration and steep hill capability"
+      "type": "ebike-displayremote",
+      "description": "Full color customizable display screen. Select class mode, cadence/torque selection, power output and much more; USB phone charger conveniently located on power button cluster"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Full color customizable display screen. Select class mode, cadence/torque selection, power output and much more; USB phone charger conveniently located on power button cluster"
+      "type": "ebike-motor",
+      "description": "60V 1500W Hentach brushless geared hub motor that peaks at 3200W. High-torque design (~153Nm) for strong acceleration and steep hill capability"
     },
     {
       "type": "fork",
@@ -282,7 +284,7 @@
       }
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Rear shock",
       "position": [
         "rear"
@@ -315,5 +317,84 @@
       "type_detail": "Controller",
       "description": "Our exclusive Patriot System Controller produces an output of over 45 amps and 3200W"
     }
-  ]
+  ],
+  "market_variants": {
+    "AU": {
+      "markets": [
+        "AU"
+      ],
+      "years": {
+        "2026": {
+          "original_msrp": 339900,
+          "original_msrp_currency": "AUD",
+          "colorways": {
+            "Blue": {
+              "variants": [
+                {
+                  "sku": "FB09-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Lime Green": {
+              "variants": [
+                {
+                  "sku": "FLG07-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Black": {
+              "variants": [
+                {
+                  "sku": "FBK09-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Titian": {
+              "variants": [
+                {
+                  "sku": "FT07-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "White": {
+              "variants": [
+                {
+                  "sku": "FW09-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Hunter": {
+              "variants": [
+                {
+                  "sku": "FHG07-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            }
+          },
+          "url": "https://wiredebikes.com/en-au/products/wired-freedom-au"
+        }
+      },
+      "motors": {
+        "0": {
+          "operating_modes": {
+            "assist stock": {
+              "e_vehicle_classifications": null
+            },
+            "throttle stock": {
+              "e_vehicle_classifications": null
+            },
+            "assist app_update": {
+              "e_vehicle_classifications": null
+            }
+          }
+        }
+      }
+    }
+  }
 }

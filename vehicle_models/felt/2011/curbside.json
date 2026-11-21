@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2011/curbside",
   "manufacturer": "Felt",
   "model": "Curbside",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -73,8 +73,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -223,12 +223,12 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "description": "Michael Bolt-in 32mm oversize end plugs"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "FSA",
       "description": "FSA 68mm w/ Forged Chromoly Square Taper"
     },
@@ -242,22 +242,14 @@
       "description": "Tektro Long Reach Dual Pivot Caliper for Fender Clearance w/ removable cartridge brake pads, Stainless Hardware, Teflon Bushings"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Felt",
       "description": "Felt Slick Brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro 31.8mm top mount 'cross type Front & Rear brake levers"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "F/W: 18T x 1/2 pitch x 3/32 width Chrome Freewheel Fixed Cog: 18T x 1/2 pitch x 3/32 width fixed sprocket w/ lock ring"
     },
     {
       "type": "chain",
@@ -270,6 +262,14 @@
       "description": "46t"
     },
     {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "F/W: 18T x 1/2 pitch x 3/32 width Chrome Freewheel Fixed Cog: 18T x 1/2 pitch x 3/32 width fixed sprocket w/ lock ring"
+    },
+    {
       "type": "crankset",
       "description": "URBAN Single, 3-PC, Forged Aluminum, 130mm B.C.D., 46T x 3/32; 51cm=170mm, 54cm=170mm, 56cm-58cm=170mm, 61cm=175mm."
     },
@@ -279,7 +279,7 @@
       "description": "Felt UHC Performance Carbon Fiber Design w/ 3KP Weave, Carbon Blades, Aluminum Crown & 1.125 Steerer, and Dropouts"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt deeper Suede Brown Tape"
@@ -340,7 +340,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "Ø30.6 6061-AL Forged Aluminum, Cr-Mo 5mm x 0.8mm Bolt, Stainless Steel Nut-Bar. 16 Grams"
     },

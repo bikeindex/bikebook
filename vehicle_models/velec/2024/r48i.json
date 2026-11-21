@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/velec/2024/r48i",
   "manufacturer": "Velec",
   "model_group": "R48",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -75,8 +75,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -94,7 +94,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -103,18 +103,18 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certifications": [
-        "UL 2271"
-      ],
       "battery": {
         "capacity": 480,
         "capacity_options": [
           672
         ],
-        "voltage": 48
+        "voltage": 48,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 500,
       "max_torque": 65,
@@ -124,7 +124,7 @@
           "availability": "stock",
           "range_claimed": 140,
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         },
         {
@@ -132,7 +132,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         }
       ]
@@ -160,21 +160,21 @@
       "description": "Front and rear Tektro hydraulic disks"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro hydraulic with motor cut-offs sensor"
     },
     {
-      "type": "cassette",
+      "type": "chainrings",
+      "description": "48T"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano 11-32T 9 speed"
-    },
-    {
-      "type": "chainrings",
-      "description": "48T"
     },
     {
       "type": "derailleur",
@@ -185,16 +185,16 @@
       "description": "Shimano Alivio M3100 9 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V/10Ah (480Wh) or 48V/14Ah (672Wh)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Rear wheel High Torque 500W motor (65Nm of torque)"
+      "type": "ebike-displayremote",
+      "description": "Larger Color LCD Control panel, centered on the handlebar"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Larger Color LCD Control panel, centered on the handlebar"
+      "type": "ebike-motor",
+      "description": "Rear wheel High Torque 500W motor (65Nm of torque)"
     },
     {
       "type": "fork",
@@ -202,7 +202,7 @@
       "description": "Suntour suspension fork for ebikes"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Comfort plus with screw lock"
     },
@@ -211,7 +211,7 @@
       "description": "Adjustable kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"
@@ -219,7 +219,7 @@
       "description": "Front light powered by bicycle battery"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Tailight",
       "description": "Rear light powered by bicycle battery + brake indicator"
     },

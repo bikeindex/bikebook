@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/cyberbike/2026/raptor",
   "manufacturer": "Cyberbike",
   "model_group": "Raptor",
@@ -7,12 +7,12 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/cyberbike/2026/raptor.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/cyberbike/2026/raptor_geometry.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/cyberbike/2026/raptor-geometry.png",
   "description": "All new for 1000 watt 2026 Raptor is a full suspension electric mountain bike built for real trail riding. A powerful mid-drive motor, long-range battery, inverted fork, and durable trail components combine to create a bike that feels confident on dirt roads, forest trails, and technical trails. There's a moment on every ride where the trail tilts upward and you wonder how much you have left in the tank. With the Cyberbike Raptor, those moments change. Hills that used to drain yo",
   "first_year": 2026,
   "years": {
@@ -94,8 +94,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "10_rear"
+    "1-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -113,7 +113,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -126,7 +126,7 @@
       "drive_wheel": "rear",
       "manufacturer": "Ananda",
       "model": "M100",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "battery": {
         "capacity": 720,
         "voltage": 48,
@@ -142,7 +142,7 @@
           "max_speed": 45,
           "range_claimed": 113,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -208,7 +208,7 @@
       "description": "Tektro HD-E3120 hydraulic disc, 2-piston"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotor Size",
       "position": [
         "front",
@@ -220,14 +220,6 @@
       }
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano CUES 11-48T (10-speed)"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC 10-speed"
@@ -235,6 +227,14 @@
     {
       "type": "chainrings",
       "description": "36T narrow-wide"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano CUES 11-48T (10-speed)"
     },
     {
       "type": "crankset",
@@ -249,24 +249,24 @@
       "description": "Shimano CUES RD-U6000"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 15Ah (21700 cells)"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Ananda",
-      "description": "Ananda M100 Mid-Drive"
+      "type": "ebike-displayremote",
+      "description": "Color LCD, Bluetooth connectivity"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Color LCD, Bluetooth connectivity"
+      "type": "ebike-motor",
+      "manufacturer": "Ananda",
+      "description": "Ananda M100 Mid-Drive"
     },
     {
       "type": "fork",
       "description": "WOLF Prodigy Inverted Air"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Lock-on"
     },
@@ -286,7 +286,7 @@
       "description": "Integrated sealed cartridge bearings"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Rear Shock",
       "position": [
         "rear"
@@ -312,7 +312,7 @@
       "description": "Alloy (Electric Dropper Compatible)"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "Single bolt"
     },
     {

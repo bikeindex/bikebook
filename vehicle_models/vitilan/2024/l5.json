@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/vitilan/2024/l5",
   "manufacturer": "Vitilan",
   "model": "L5",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -31,21 +31,21 @@
           "colors": [
             "yellow"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/vitilan/2024/l5_yellow.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/vitilan/2024/l5-yellow.jpg"
         },
         {
           "name": "Blue",
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/vitilan/2024/l5_blue.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/vitilan/2024/l5-blue.jpg"
         },
         {
           "name": "Black",
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/vitilan/2024/l5_black.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/vitilan/2024/l5-black.jpg"
         }
       ],
       "url": "https://www.vitilanebike.com/products/vitilan-l5-electric-bike",
@@ -72,8 +72,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -91,7 +91,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -101,7 +101,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX6",
       "battery": {
@@ -120,7 +120,7 @@
           "range_claimed": 97,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -129,7 +129,7 @@
           "range_claimed": 72,
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -174,16 +174,16 @@
       "description": "180mm front and rear Hydraulic disc brakes"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC C8"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "description": "7 Speeds, 14-28T"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC C8"
     },
     {
       "type": "crankset",
@@ -201,27 +201,27 @@
       "description": "SHIMANO RD-TY300"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V, 15Ah, 720Wh SAM-SUNG Li-ion Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V 2.0A, Operates on 110V-240V AC, 50-60Hz"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V, 500W (peak 960W) Motor, max torque 65Nm"
+      "type": "ebike-displayremote",
+      "description": "48V Multi-function Intelligent Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "48V Multi-function Intelligent Display"
+      "type": "ebike-motor",
+      "description": "48V, 500W (peak 960W) Motor, max torque 65Nm"
     },
     {
       "type": "fork",
       "description": "Adjustable Spring Suspension Fork"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"
@@ -229,14 +229,14 @@
       "description": "High output integrated LED, IPX6"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
       "description": "Signal Turn Light/48V LED Light"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Taillight",
       "position": [
         "rear"

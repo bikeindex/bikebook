@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2014/breed",
   "manufacturer": "Felt",
   "model_group": "Breed",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "atb_cyclocross",
+  "primary_activity": "atb-cyclocross",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2014/breed.png",
   "first_year": 2014,
@@ -74,8 +74,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -262,18 +262,18 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "manufacturer": "Felt",
       "description": "Felt Bubble-Tech \"F Wing\""
     },
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "manufacturer": "Felt",
       "description": "Felt CxR cowbell"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "SRAM",
       "description": "SRAM BB30"
     },
@@ -287,22 +287,14 @@
       "description": "Avid Shorty 4 cantilever"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Felt",
       "description": "Felt All-Weather sealed Slick brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "SRAM Single Speed Brake Lever"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "16T"
     },
     {
       "type": "chain",
@@ -316,6 +308,14 @@
       "description": "SRAM 36T"
     },
     {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "16T"
+    },
+    {
       "type": "crankset",
       "manufacturer": "SRAM",
       "description": "SRAM S350 BB30 47cm = 165mm 50cm = 170mm 53cm = 172.5mm 55 - 60cm = 175mm"
@@ -326,7 +326,7 @@
       "description": "Felt Cyclocross UHC Advanced carbon fiber blades, ControlTaper 1.125\" - 1.5\" aluminum steerer tube"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt SuperGel Tape"
@@ -381,7 +381,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "Single bolt w/ cable hanger, Ø30.6mm",
       "dimensions": {

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/bombtrack/2026/hook",
   "manufacturer": "Bombtrack",
   "model_group": "Hook",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "atb_gravel",
+  "primary_activity": "atb-gravel",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/bombtrack/2026/hook.jpg",
   "description": "Naturally, our steel Hook is something special, being built from double-butted Columbus Cromor tubing, with a tapered headtube and a T47 bottom bracket. XS and S sizes feature 650B wheels, M - XL have 700C options and both run WTB tubeless rims and tires on sealed hubs. A Shimano GRX groupset with a subcompact 46 / 30T crankset, combined with an 11 – 36 T cassette helps to keep you spinning up and over the hills, and GRX 400 callipers deliver powerful braking on the descents. The frameset is bedecked with mounts for every scenario, including a top tube bag, triple cage mounts and bottle mount options, as well as internal dynamo routing on the full carbon fork.",
@@ -58,7 +58,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/bombtrack/2026/hook_metallic_red.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/bombtrack/2026/hook-metallic-red.jpg",
           "variants": [
             {
               "sku": "4055822531467",
@@ -93,7 +93,7 @@
             "teal",
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/bombtrack/2026/hook_metallic_teal_black_fade.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/bombtrack/2026/hook-metallic-teal-black-fade.jpg",
           "variants": [
             {
               "sku": "4055822549103",
@@ -160,7 +160,8 @@
     "seatpost_clamp_diameter": 29.8,
     "front_derailleur_mount": "28.6mm clamp",
     "derailleur_hanger": "BT-DH-008",
-    "max_chainring": 48
+    "max_chainring": 48,
+    "en_17406": 2
   },
   "wheels": [
     {
@@ -237,8 +238,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "10_rear"
+    "1-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -256,7 +257,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -429,7 +430,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Through axles",
       "description": "12 x 100 mm / 12 x 142 mm",
       "dimensions": {
@@ -437,7 +438,7 @@
       }
     },
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Front through axle",
       "position": [
         "front"
@@ -449,7 +450,7 @@
       }
     },
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Rear through axle",
       "position": [
         "rear"
@@ -461,7 +462,7 @@
       }
     },
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Through axle front",
       "position": [
         "front"
@@ -469,7 +470,7 @@
       "description": "BT-TA-F-601"
     },
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Through axle rear",
       "position": [
         "rear"
@@ -477,7 +478,7 @@
       "description": "BT-TA-R-602"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Bombtrack",
       "description": "Bombtrack T47 internal sealed BB for 24 mm spindle"
     },
@@ -499,12 +500,12 @@
       "description": "10 mm"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano GRX ST-RX400 STI Hydraulic"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -515,22 +516,6 @@
       "dimensions": {
         "diameter": 160
       }
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano CS-HG50 10-speed, 11 - 36 T"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Cassette body",
-      "position": [
-        "rear"
-      ],
-      "description": "BT-CB-006"
     },
     {
       "type": "chain",
@@ -546,6 +531,22 @@
       "type": "chainrings",
       "type_detail": "Chainring offset",
       "description": "0 mm"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano CS-HG50 10-speed, 11 - 36 T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Cassette body",
+      "position": [
+        "rear"
+      ],
+      "description": "BT-CB-006"
     },
     {
       "type": "crankset",
@@ -590,7 +591,7 @@
       "description": "23.6 mm"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bar Tape",
       "manufacturer": "Bombtrack",
       "description": "Bombtrack Escape bar tape"
@@ -724,7 +725,7 @@
       "description": "size XS - L 315 mm size XL 415 mm"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat clamp",
       "manufacturer": "Bombtrack",
       "description": "Bombtrack Origin 29.8 mm",
@@ -785,11 +786,6 @@
         "rear"
       ],
       "description": "XS - S WTB Resolute 42-584 M - XL WTB Venture 40-622, tubeless ready"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "ASTM riding condition",
-      "description": "2"
     },
     {
       "type": "unknown",

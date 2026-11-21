@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fairdale/2014/coaster",
   "manufacturer": "Fairdale",
   "model_group": "Coaster",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -89,8 +89,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -102,7 +102,7 @@
   },
   "brakes": [
     {
-      "type": "coaster_brake",
+      "type": "coaster-brake",
       "position": [
         "rear"
       ]
@@ -180,17 +180,9 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "BB",
       "description": "Mid, 19mm, Press-fit, Sealed"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Cog",
-      "position": [
-        "rear"
-      ],
-      "description": "18T"
     },
     {
       "type": "chain",
@@ -204,6 +196,14 @@
       "description": "Fairdale, 44T"
     },
     {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Cog",
+      "position": [
+        "rear"
+      ],
+      "description": "18T"
+    },
+    {
       "type": "crankset",
       "type_detail": "Cranks",
       "description": "BMX-style, 3-piece (S&M=170mm,L&XL=175mm)"
@@ -213,7 +213,7 @@
       "description": "Hi-Ten with Rack/Fender mounts"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Odyssey",
       "description": "Odyssey Terry Adams"
@@ -283,7 +283,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Fairdale",
       "description": "Fairdale, 30mm",

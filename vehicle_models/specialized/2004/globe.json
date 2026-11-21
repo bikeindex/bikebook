@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/specialized/2004/globe",
   "manufacturer": "Specialized",
   "model": "Globe",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -62,8 +62,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "8_rear"
+    "3-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -83,7 +83,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -92,11 +92,16 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bashguardchain-guide",
+      "type_detail": "Chain Protector",
+      "description": "Full length integrated, high impact resin"
+    },
+    {
+      "type": "bellnoisemaker",
       "description": "Full alloy with alloy ringer"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Shimano",
       "description": "Shimano BB-UN-25, 68mm shell, 113mm spindle, sealed bearing cartridge"
     },
@@ -110,17 +115,9 @@
       "description": "Specialized linear pull, forged, w/ modulator"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano EF-29 Integrated"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano HG-50, 8-speed, Mega Range 11x34t"
     },
     {
       "type": "chain",
@@ -128,13 +125,16 @@
       "description": "Shimano IG-31"
     },
     {
-      "type": "chain_guide",
-      "type_detail": "Chain Protector",
-      "description": "Full length integrated, high impact resin"
-    },
-    {
       "type": "chainrings",
       "description": "48Sx38Sx28S, hyperglide, w/ chainguard"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano HG-50, 8-speed, Mega Range 11x34t"
     },
     {
       "type": "crankset",
@@ -171,11 +171,11 @@
       }
     },
     {
-      "type": "frame_protection",
+      "type": "frame-protection",
       "description": "Chain stay cover"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "description": "Body Geometry, triple density gel"
     },
     {
@@ -215,14 +215,14 @@
       "description": "Pletscher full alloy with black boot"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "Lumotech 170di Plus w/o switch"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
@@ -264,7 +264,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "manufacturer": "Specialized",
       "description": "Specialized forged alloy w/ allen head binder"
     },

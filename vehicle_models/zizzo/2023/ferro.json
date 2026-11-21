@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/zizzo/2023/ferro",
   "manufacturer": "Zizzo",
   "model": "Ferro",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -62,7 +62,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "seatpost_clamp_diameter": 40
   },
   "wheels": [
@@ -83,8 +83,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -102,7 +102,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -141,21 +141,21 @@
       "description": "110mm V-brakes"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Jagwire",
       "description": "Jagwire cables"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "13-34T Freewheel Gears"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC chain"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "13-34T Freewheel Gears"
     },
     {
       "type": "crankset",
@@ -174,7 +174,7 @@
       "description": "Steel fork and steer tube"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "description": "Ergonomic grips"
     },
     {
@@ -216,7 +216,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "40mm clip w/ screws; quick release",
       "dimensions": {
         "diameter": 40

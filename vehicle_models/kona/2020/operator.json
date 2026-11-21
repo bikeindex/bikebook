@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2020/operator",
   "manufacturer": "Kona",
   "model_group": "Operator",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "mtb_downhill",
+  "primary_activity": "mtb-downhill",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/kona/2020/operator.jpg",
   "first_year": 2020,
@@ -85,8 +85,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -104,7 +104,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -176,7 +176,13 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bashguardchain-guide",
+      "type_detail": "Chainguide",
+      "manufacturer": "MRP",
+      "description": "MRP G3 Steel"
+    },
+    {
+      "type": "bottom-bracket",
       "type_detail": "B/B",
       "manufacturer": "Shimano",
       "description": "Shimano PF107"
@@ -192,12 +198,12 @@
       "description": "SRAM Guide T"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "SRAM Guide T"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -209,28 +215,22 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC X9"
+    },
+    {
+      "type": "chainrings",
+      "description": "36t"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "SRAM",
       "description": "SRAM PG950 11-28t 9spd"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC X9"
-    },
-    {
-      "type": "chain_guide",
-      "type_detail": "Chainguide",
-      "manufacturer": "MRP",
-      "description": "MRP G3 Steel"
-    },
-    {
-      "type": "chainrings",
-      "description": "36t"
     },
     {
       "type": "crankset",
@@ -256,7 +256,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Kona",
       "description": "Kona Key Grip"
@@ -299,7 +299,7 @@
       }
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Rear Shock",
       "position": [
         "rear"
@@ -326,7 +326,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Kona",
       "description": "Kona Clamp"

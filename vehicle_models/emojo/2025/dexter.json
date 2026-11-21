@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/emojo/2025/dexter",
   "manufacturer": "Emojo",
   "model_group": "Dexter",
@@ -7,12 +7,12 @@
   "model_configuration": "complete",
   "type": "tricycle",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/emojo/2025/dexter.webp",
-  "geometry_photo": "https://bikebook.bikeindex.org/emojo/2025/dexter_geometry.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/emojo/2025/dexter-geometry.png",
   "description": "Experience Everyday Freedom with Dexter – Your Ultimate Portable Emojo Electric Trike\nMeet the Dexter, the Emojo electric trike that redefines convenience and comfort in your daily commute. Designed with a low step-through frame and Harley-style handlebars, the Dexter makes riding a breeze, whether you're navigating through the city streets or enjoying a leisurely cruise. With an impressive battery range of up to 60 miles on a single charge, your journeys are no longer limited by distance.\nThis innovative electric bike is perfect for those seeking a blend of style and functionality. Its 500W DC brushless motor allows you to reach speeds of up to 20 MPH, ensuring you arrive at your destination quickly. Plus, the built-in differential and hydraulic brakes provide superior stability and control for a safe and enjoyable ride.\n\nAvailable in 4 stylish colors to match your personality\nArrives 95% assembled for hassle-free setup\nLightweight aluminum alloy frame at only 93 lbs (with battery)\n7-speed transmission for versatile riding experiences\nMax user weight capacity of 300 lbs – ideal for various riders\n\nWhether you want to conquer steep hills or enjoy a relaxed ride, the Dexter is your reliable partner for everyday adventures. Don’t wait – embrace the freedom of effortless travel today with Dexter!",
   "first_year": 2025,
   "years": {
@@ -53,7 +53,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/emojo/2025/dexter_electric_blue.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/emojo/2025/dexter-electric-blue.webp",
           "variants": [
             {
               "sku": "EBK49-01",
@@ -81,7 +81,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/emojo/2025/dexter_candy_apple_red.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/emojo/2025/dexter-candy-apple-red.webp",
           "variants": [
             {
               "sku": "EBK49-03",
@@ -109,7 +109,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/emojo/2025/dexter_ivory.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/emojo/2025/dexter-ivory.webp",
           "variants": [
             {
               "sku": "EBK49-04",
@@ -141,7 +141,7 @@
   "frame": {
     "material": "aluminum",
     "top_tube": "step_through",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "wheels": [
     {
@@ -154,12 +154,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -170,15 +170,17 @@
     {
       "drive_wheel": "rear",
       "manufacturer": "Emojo",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "battery": {
         "capacity": 672,
         "chemistry": "li-ion",
-        "charging_time": 480
+        "charging_time": 480,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 500,
       "operating_modes": [
@@ -188,7 +190,7 @@
           "max_speed": 32,
           "range_claimed": 97,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -252,37 +254,37 @@
       "description": "Hydraulic Disc Brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Capacity: 48V/14Ah"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Type: Lithium-Ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "672Wh (Lithium-ion)"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "Color LCD Display"
+    },
+    {
+      "type": "ebike-motor",
       "description": "500W"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "DC Brushless"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "manufacturer": "Emojo",
       "description": "Emojo"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "500W Rear Brushless Motor Drive"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "Color LCD Display"
     },
     {
       "type": "tire",

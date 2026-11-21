@@ -1,10 +1,10 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/yadea/2026/kemper",
   "manufacturer": "Yadea",
   "model": "Kemper",
   "model_configuration": "complete",
-  "type": "e_motorcycle",
+  "type": "e-motorcycle",
   "propulsion": [
     "throttle"
   ],
@@ -43,7 +43,7 @@
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -54,7 +54,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "mid_drive_dedicated",
+      "kind": "mid-drive-dedicated",
       "battery": {
         "capacity": 6400,
         "voltage": 320,
@@ -101,16 +101,16 @@
       "description": "Bosch ABS+TCS, Brembo Caliper (2 Pistons Caliper)"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "320 V 20 Ah Lithium Iron Phosphate Battery"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Mid-drive Motor"
+      "type": "ebike-displayremote",
+      "description": "7-inch TFT Smart Dashboard"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "7-inch TFT Smart Dashboard"
+      "type": "ebike-motor",
+      "description": "Mid-drive Motor"
     },
     {
       "type": "fork",
@@ -121,12 +121,12 @@
       "description": "KYB Inverted Shock Absorption"
     },
     {
-      "type": "gps_connectivity_module",
+      "type": "gpsconnectivity-module",
       "type_detail": "Connectivity Module",
       "description": "Unlocking System: Remote / Bluetooth / Voice, Mobile Control: YADEA APP Control"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlights",
       "position": [
         "front"
@@ -134,7 +134,7 @@
       "description": "Class D LED Lamp, 50.000 cd brightness"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Rear Suspension System",
       "position": [
         "rear"

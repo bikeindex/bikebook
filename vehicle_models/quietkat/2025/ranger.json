@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/quietkat/2025/ranger",
   "manufacturer": "QuietKat",
   "model_group": "Ranger",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -23,7 +23,7 @@
       "colorways": [
         {
           "name": "Veil Cumbre Camo",
-          "stock_photo": "https://bikebook.bikeindex.org/quietkat/2025/ranger_veil_cumbre_camo.png",
+          "stock_photo": "https://bikebook.bikeindex.org/quietkat/2025/ranger-veil-cumbre-camo.png",
           "variants": [
             {
               "sku": "23-RAN-VPO-BRE-15",
@@ -44,7 +44,7 @@
         },
         {
           "name": "Firstlite Spectre Camo",
-          "stock_photo": "https://bikebook.bikeindex.org/quietkat/2025/ranger_firstlite_spectre_camo.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/quietkat/2025/ranger-firstlite-spectre-camo.jpg",
           "variants": [
             {
               "sku": "17.25-23-RAN-VPO-FLS-17",
@@ -136,8 +136,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "SRAM",
@@ -146,7 +146,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -155,7 +155,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 768,
         "voltage": 48
@@ -167,13 +167,13 @@
           "availability": "stock",
           "range_claimed": 77,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
           "mode": "throttle",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -247,7 +247,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Rear Axle",
       "position": [
         "rear"
@@ -264,16 +264,16 @@
       "description": "Tektro 2-Piston Hydraulic Brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "16AH/48V 768Wh 10 lbs"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "1000W Hub-Drive (VP0™)"
+      "type": "ebike-displayremote",
+      "description": "Customizable LED"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Customizable LED"
+      "type": "ebike-motor",
+      "description": "1000W Hub-Drive (VP0™)"
     },
     {
       "type": "fork",

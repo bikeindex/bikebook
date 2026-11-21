@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/eunorau/2026/s1",
   "manufacturer": "Eunorau",
   "model": "S1",
   "model_configuration": "complete",
-  "type": "e_motorcycle",
+  "type": "e-motorcycle",
   "propulsion": [
     "throttle"
   ],
-  "primary_activity": "dirt_travel",
+  "primary_activity": "dirt-travel",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/eunorau/2026/s1.jpg",
   "target_riders": [
@@ -37,7 +37,7 @@
         },
         {
           "name": "Camouflage",
-          "stock_photo": "https://bikebook.bikeindex.org/eunorau/2026/s1_camouflage.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/eunorau/2026/s1-camouflage.jpg",
           "variants": [
             {
               "sku": "DBS11CMWD",
@@ -77,8 +77,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "rear": [
@@ -87,7 +87,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -98,7 +98,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "mid_drive_dedicated",
+      "kind": "mid-drive-dedicated",
       "battery": {
         "capacity": 1800,
         "voltage": 60,
@@ -115,7 +115,7 @@
           "range_claimed": 40,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -152,7 +152,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Horn",
       "description": "Electric Horn"
     },
@@ -165,7 +165,7 @@
       "description": "Hydraulic Disc Brakes"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -174,14 +174,6 @@
       "dimensions": {
         "diameter": 190
       }
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Rear Sprocket",
-      "position": [
-        "rear"
-      ],
-      "description": "60T"
     },
     {
       "type": "chain",
@@ -196,16 +188,24 @@
       "description": "11T"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "cogcassettefreewheel",
+      "type_detail": "Rear Sprocket",
+      "position": [
+        "rear"
+      ],
+      "description": "60T"
+    },
+    {
+      "type": "ebike-battery",
       "description": "60V 30Ah Lithium"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "60V 4,800W Peak Mid Motor"
+      "type": "ebike-displayremote",
+      "description": "4.58\" Digital Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "4.58\" Digital Display"
+      "type": "ebike-motor",
+      "description": "60V 4,800W Peak Mid Motor"
     },
     {
       "type": "fork",
@@ -215,26 +215,26 @@
       "description": "Inverted Aluminum Suspension Fork"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "LED Headlight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
       "description": "Integrated Tail Light"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Turn Signals",
       "description": "Integrated Indicators"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Rear Shock",
       "position": [
         "rear"

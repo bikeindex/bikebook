@@ -1,0 +1,229 @@
+{
+  "schema_version": "2.0.0",
+  "id": "m/zen/2026/photon-pro",
+  "manufacturer": "Zen",
+  "model_group": "Photon",
+  "model": "Photon Pro",
+  "model_configuration": "complete",
+  "markets": [
+    "CA",
+    "US"
+  ],
+  "type": "bike",
+  "propulsion": [
+    "pedal-assist",
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/zen/2026/photon-pro.webp",
+  "description": "The Photon Pro is our flagship all-rounder. A premium mid-drive motor delivers confident power up the steepest hills, while a long-range, UL-certified battery keeps you going all day. The Gates Carbon Belt runs clean and near-silent with almost no maintenance, and integrated lighting keeps you visible in any conditions. Assembled and supported right here in North America.\nIt’s the bike you reach for whether you’re commuting, running errands or heading out the long way home — smooth, powerful and beautifully finished.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 449900,
+      "original_msrp_currency": "CAD",
+      "colorways": [
+        {
+          "name": "Aurora Blue",
+          "color_code": "#2f4d6e",
+          "colors": [
+            "blue"
+          ]
+        },
+        {
+          "name": "Earthstone Brown",
+          "color_code": "#6d5a45",
+          "colors": [
+            "brown"
+          ]
+        },
+        {
+          "name": "Zen Ivory",
+          "color_code": "#ece7db",
+          "colors": [
+            "white"
+          ]
+        }
+      ],
+      "url": "https://www.zenebikes.com/shop/photon-pro-9",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum"
+  },
+  "suspension": {
+    "front": {
+      "travel": 120
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 584,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 61
+    }
+  ],
+  "drivetrain": [
+    "1-front",
+    "continuously-variable",
+    "belt-drive"
+  ],
+  "groupset": {
+    "manufacturer": "Enviolo",
+    "series": "Heavy Duty",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc-hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "rear",
+      "manufacturer": "Ananda",
+      "kind": "mid-drive",
+      "sensor_torque": "bottom_bracket_spindle",
+      "battery": {
+        "capacity": 1040,
+        "voltage": 52,
+        "chemistry": "li-ion",
+        "certifications": [
+          "UL 2271"
+        ]
+      },
+      "rated_power": 500,
+      "max_torque": 160,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 140,
+          "e_vehicle_classifications": [
+            "evc/ca/power-assisted-bicycle"
+          ],
+          "markets": [
+            "CA"
+          ]
+        },
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 45,
+          "range_claimed": 140,
+          "e_vehicle_classifications": [
+            "evc/us/class-3"
+          ],
+          "markets": [
+            "US"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 70,
+          "e_vehicle_classifications": [
+            "evc/us/class-2",
+            "evc/ca/power-assisted-bicycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 250
+    }
+  ],
+  "sizes": [
+    {
+      "name": "17 in (S/M)",
+      "geometry": {
+        "total_weight": 32.5
+      }
+    },
+    {
+      "name": "19 in (L/XL)"
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Tektro",
+      "description": "Tektro E3940 hydraulic disc, 4-piston front and rear"
+    },
+    {
+      "type": "drive-belt",
+      "type_detail": "Drivetrain",
+      "manufacturer": "Gates Carbon Drive",
+      "description": "Gates Carbon Belt Drive"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "UL 2271 certified 1040 Wh (52V 20Ah)"
+    },
+    {
+      "type": "ebike-displayremote",
+      "description": "3.5 in colour LCD with USB-C"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "52V 500W Ananda with torque sensor, custom for Zen"
+    },
+    {
+      "type": "fork",
+      "manufacturer": "RST",
+      "description": "RST fork, 120 mm travel",
+      "dimensions": {
+        "travel": 120
+      }
+    },
+    {
+      "type": "hub",
+      "description": "Enviolo Heavy-Duty CVT"
+    },
+    {
+      "type": "light",
+      "description": "Integrated lighting"
+    },
+    {
+      "type": "throttle",
+      "description": "Up to 32 km/h"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Schwalbe",
+      "description": "Schwalbe Super Moto-X 27.5 x 2.4 in",
+      "dimensions": {
+        "width": 60.96,
+        "diameter": 584
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Warranty",
+      "description": "3 yr battery, 2 yr electronics, lifetime frame"
+    }
+  ]
+}

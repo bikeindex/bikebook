@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/reid/2021/transit",
   "manufacturer": "Reid",
   "model_group": "Transit",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -58,7 +58,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/reid/2021/transit_red.png",
+          "stock_photo": "https://bikebook.bikeindex.org/reid/2021/transit-red.png",
           "variants": [
             {
               "sku": "1214485045",
@@ -118,8 +118,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "7_rear"
+    "3-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -139,7 +139,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -176,7 +176,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed bearing"
     },
     {
@@ -189,23 +189,23 @@
       "description": "Promax alloy V-brakes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano EF41 integrated"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z8.3"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano 7-speed freewheel (14-28T)"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Z8.3"
     },
     {
       "type": "crankset",
@@ -234,7 +234,7 @@
       "description": "Reid steel commuter"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Reid",
       "description": "Reid rubber"

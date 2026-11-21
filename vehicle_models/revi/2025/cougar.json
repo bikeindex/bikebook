@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/revi/2025/cougar",
   "manufacturer": "Revi",
   "model_group": "Cougar",
   "model": "Cougar",
   "model_configuration": "complete",
   "type": "bike",
-  "type_detail": "bench_seat",
+  "type_detail": "bench-seat",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -113,8 +113,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -123,7 +123,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -133,16 +133,18 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "battery": {
         "capacity": 1040,
         "voltage": 52,
         "chemistry": "li-ion",
-        "charging_time": 360
+        "charging_time": 360,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "peak_power": 1000,
@@ -155,14 +157,14 @@
           "range_claimed": 129,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -194,7 +196,7 @@
       "description": "F/R Hydraulic Brake"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -215,24 +217,24 @@
       "description": "48T"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Capacity: 20AH"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Type: Lithium-ion"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "52V 80N.m"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Full Color"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "PAS Level, Battery Level, Current Speed, Mode, Odometer, Trip, Class Mode Selection"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "52V 80N.m"
     },
     {
       "type": "fender",
@@ -251,11 +253,11 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front & Rear, Turn Signals"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],

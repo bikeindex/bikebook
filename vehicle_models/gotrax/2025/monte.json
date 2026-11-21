@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/gotrax/2025/monte",
   "manufacturer": "GOTRAX",
   "model": "Monte",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -125,8 +125,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -135,7 +135,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -163,7 +163,7 @@
           "max_speed": 32,
           "range_claimed": 40,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -171,7 +171,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -205,23 +205,23 @@
       "description": "Mechanical"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V 7.8Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "42V 1.4A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "350W"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Handlebar Console"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "350W"
+    },
+    {
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"

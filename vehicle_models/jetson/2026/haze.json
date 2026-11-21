@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2026/haze",
   "manufacturer": "Jetson",
   "model": "Haze",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -39,7 +39,7 @@
   },
   "frame": {
     "material": "magnesium",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "wheels": [
     {
@@ -51,12 +51,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -81,7 +81,7 @@
           "max_slope": 15,
           "levels": 3,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -91,7 +91,7 @@
           "range_claimed": 24,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -124,7 +124,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell"
     },
     {
@@ -136,16 +136,16 @@
       "description": "Front & Rear Disc Brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V, 7.5Ah Lithium Ion"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "350 W"
+      "type": "ebike-displayremote",
+      "description": "LED"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LED"
+      "type": "ebike-motor",
+      "description": "350 W"
     },
     {
       "type": "kickstand"

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/trek/2011/cruiseliner",
   "manufacturer": "Trek",
   "model_group": "Cruiseliner",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -38,7 +38,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/trek/2011/cruiseliner_gray.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/trek/2011/cruiseliner-gray.jpg",
           "variants": [
             {
               "sku": "13866000311",
@@ -52,7 +52,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/trek/2011/cruiseliner_warm_charcoal_satin_nickel.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/trek/2011/cruiseliner-warm-charcoal-satin-nickel.jpg",
           "variants": [
             {
               "sku": "13866000111",
@@ -95,8 +95,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "3_rear"
+    "1-front",
+    "3-rear"
   ],
   "gearing": {
     "front": [
@@ -112,7 +112,7 @@
   },
   "brakes": [
     {
-      "type": "coaster_brake",
+      "type": "coaster-brake",
       "position": [
         "rear"
       ]
@@ -137,7 +137,11 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bashguardchain-guide",
+      "description": "chainguard"
+    },
+    {
+      "type": "bottom-bracket",
       "description": "Cartridge"
     },
     {
@@ -149,15 +153,11 @@
       "description": "Coaster"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "description": "18T cog"
-    },
-    {
-      "type": "chain_guide",
-      "description": "chainguard"
     },
     {
       "type": "crankset",
@@ -181,7 +181,7 @@
       "description": "Cruiser steel"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Trek",
       "description": "Trek Cruiser, Kraton"

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/civia/2012/bryant",
   "manufacturer": "Civia",
   "model": "Bryant",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "drop_bar",
@@ -35,9 +35,9 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_internal_rear",
-    "belt_drive"
+    "1-front",
+    "8-internal-rear",
+    "belt-drive"
   ],
   "gearing": {
     "front": [
@@ -53,7 +53,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -61,6 +61,12 @@
     }
   ],
   "components": [
+    {
+      "type": "bashguardchain-guide",
+      "type_detail": "Chain Protector",
+      "manufacturer": "Civia",
+      "description": "Civia Chainguard"
+    },
     {
       "type": "brake",
       "position": [
@@ -71,23 +77,17 @@
       "description": "Avid BB5 Road"
     },
     {
-      "type": "cassette",
+      "type": "chainrings",
+      "manufacturer": "Gates Carbon Drive",
+      "description": "Gates Carbon Drive System 50t 5arm"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Gates Carbon Drive",
       "description": "Gates Carbon Drive 24t"
-    },
-    {
-      "type": "chain_guide",
-      "type_detail": "Chain Protector",
-      "manufacturer": "Civia",
-      "description": "Civia Chainguard"
-    },
-    {
-      "type": "chainrings",
-      "manufacturer": "Gates Carbon Drive",
-      "description": "Gates Carbon Drive System 50t 5arm"
     },
     {
       "type": "crankset",
@@ -98,13 +98,13 @@
       }
     },
     {
-      "type": "drive_belt",
+      "type": "drive-belt",
       "type_detail": "Belt",
       "manufacturer": "Gates Carbon Drive",
       "description": "Gates Carbon Drive 118 Belt"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "description": "Black Handlebar Tape"
     },
     {

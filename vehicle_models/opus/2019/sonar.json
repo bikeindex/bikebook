@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/opus/2019/sonar",
   "manufacturer": "Opus",
   "model_group": "Sonar",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -53,8 +53,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "7_rear"
+    "3-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -74,7 +74,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -187,7 +187,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "FP-B907"
     },
     {
@@ -199,17 +199,9 @@
       "description": "Leechi V-Brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano EF41"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Tourney 14-28"
     },
     {
       "type": "chain",
@@ -219,6 +211,14 @@
     {
       "type": "chainrings",
       "description": "42-34-24"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Tourney 14-28"
     },
     {
       "type": "crankset",
@@ -251,7 +251,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips tape",
       "manufacturer": "Velo",
       "description": "Velo Kraton"

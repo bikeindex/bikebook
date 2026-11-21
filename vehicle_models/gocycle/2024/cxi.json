@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/gocycle/2024/cxi",
   "manufacturer": "Gocycle",
   "model_group": "CX",
   "model": "CXi",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "cargo",
   "handlebar_type": "horizontal",
@@ -40,7 +40,7 @@
             "green",
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/gocycle/2024/cxi_green_white.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/gocycle/2024/cxi-green-white.jpg",
           "variants": [
             {
               "sku": "KKL-6816-4929-01",
@@ -55,7 +55,7 @@
             "silver",
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/gocycle/2024/cxi_grey_black.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/gocycle/2024/cxi-grey-black.jpg",
           "variants": [
             {
               "sku": "KKL-6814-4929-01",
@@ -70,7 +70,7 @@
             "orange",
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/gocycle/2024/cxi_orange_white.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/gocycle/2024/cxi-orange-white.jpg",
           "variants": [
             {
               "sku": "KKL-6815-4929-01",
@@ -85,7 +85,7 @@
             "white",
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/gocycle/2024/cxi_white_black.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/gocycle/2024/cxi-white-black.jpg",
           "variants": [
             {
               "sku": "KKL-6813-4929-01",
@@ -100,7 +100,7 @@
             "yellow",
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/gocycle/2024/cxi_yellow_white.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/gocycle/2024/cxi-yellow-white.jpg",
           "variants": [
             {
               "sku": "KKL-6817-4929-01",
@@ -118,7 +118,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061-T6 Aluminum",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "seatpost_diameter": 34.9
   },
   "wheels": [
@@ -132,9 +132,9 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "5_internal_rear",
-    "belt_drive"
+    "1-front",
+    "5-internal-rear",
+    "belt-drive"
   ],
   "groupset": {
     "manufacturer": "Gocycle",
@@ -142,7 +142,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -153,7 +153,7 @@
     {
       "drive_wheel": "front",
       "manufacturer": "Gocycle",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 375,
         "voltage": 36,
@@ -168,7 +168,7 @@
           "max_speed": 32,
           "range_claimed": 80,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -212,32 +212,32 @@
       "description": "Hydraulic disk, front and rear"
     },
     {
-      "type": "drive_belt",
+      "type": "drive-belt",
       "type_detail": "Transmission",
       "manufacturer": "Gates Carbon Drive",
       "description": "Patented Cleandrive® Shimano Nexus 5-speed w Gates Belt drive"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Quick removable lithium ion: 10.4Ah, 36V, approx 375 Wh"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Pedal Torque Sensing"
-    },
-    {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Gocycle",
-      "description": "Gocycle proprietary front hub motor, G4drive with traction control 500 watt US / 250 watt EU continuous"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Gocycle",
       "description": "Gocycle proprietary"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Integrated dashboard display with fuel gauge, speed, gear, efficiency or Smart Device and GocycleConnect™ App"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "Pedal Torque Sensing"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Gocycle",
+      "description": "Gocycle proprietary front hub motor, G4drive with traction control 500 watt US / 250 watt EU continuous"
     },
     {
       "type": "fork",
@@ -249,7 +249,7 @@
       "description": "Gocycle proprietary, single-sided, Carbon Fibre, fixed"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Gocycle",
       "description": "Gocycle Ergo Comfort"
@@ -259,7 +259,7 @@
       "description": "Integrated Daytime Running Light (DRL) enabled, adjustable height"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Daytime Running Light (DRL)",
       "manufacturer": "Gocycle",
       "description": "Gocycle Proprietary Light Pipe Technology, 4 running modes, user selectable"

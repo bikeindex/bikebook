@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2016/f1",
   "manufacturer": "Felt",
   "model_group": "F",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_biking",
+  "primary_activity": "road-biking",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2016/f1.jpg",
   "first_year": 2016,
@@ -58,7 +58,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "bottom_bracket": {
       "shell": "BB30",
@@ -80,8 +80,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "11_rear"
+    "2-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -280,13 +280,13 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "manufacturer": "Felt",
       "description": "Felt Bubble-Tech \"F Wing\""
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Rotor",
       "description": "Rotor BB30"
     },
@@ -299,23 +299,14 @@
       "description": "Front Brake: Shimano Dura Ace dual pivot caliper w/carbon fiber rim brake pads/Rear Brake: Shimano Dura Ace dual pivot caliper w/carbon fiber rim brake pads"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Shimano",
       "description": "Shimano Dura Ace brake cable & Shimano Dura Ace derailleur wire w/ Jagwire Compressionless Housing"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano Dura Ace"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 11-speed, 12-25T"
     },
     {
       "type": "chain",
@@ -331,6 +322,15 @@
       "type_detail": "Chainwheel",
       "manufacturer": "Rotor",
       "description": "Rotor NOQ 52T/36T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 11-speed, 12-25T"
     },
     {
       "type": "crankset",
@@ -359,7 +359,7 @@
       "description": "Felt Race Road UHC Ultimate + TeXtreme carbon fiber monocoque construction, ControlTaper 1.125\" - 1.5\" carbon fiber steer tube w/ integrated compression device & crown race, crown, blades & dropouts"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt Gel Tape"
@@ -394,7 +394,7 @@
       "description": "Fulcrum Racing Zero, 11-speed"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Assembly Paste",
       "description": "Carbon assembly paste"
     },
@@ -418,7 +418,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "manufacturer": "Felt",
       "description": "Felt double bolt, Ø30.6mm",
@@ -427,7 +427,7 @@
       }
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "Shimano",
       "description": "Shimano Dura Ace brake cable & Shimano Dura Ace derailleur wire w/ Jagwire Compressionless Housing"
     },

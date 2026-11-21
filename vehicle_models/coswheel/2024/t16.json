@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/coswheel/2024/t16",
   "manufacturer": "Coswheel",
   "model": "T16",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -54,8 +54,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -68,7 +68,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -79,7 +79,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_speed": "spoke_magnet",
       "battery": {
         "capacity": 960,
@@ -99,7 +99,7 @@
           "range_claimed": 113,
           "levels": 3,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -108,7 +108,7 @@
           "range_claimed": 64,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -166,20 +166,20 @@
       "description": "Shimano 7-Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 20Ah Battery (Lithium 18650 Cells)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V3A Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V Peak 1000W (Rated 750W) Brushless Rear Hub Motor 50N.m"
+      "type": "ebike-displayremote",
+      "description": "Easy Read LCD Display, Equipped with UDE remote control + 2 NFC cards"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Easy Read LCD Display, Equipped with UDE remote control + 2 NFC cards"
+      "type": "ebike-motor",
+      "description": "48V Peak 1000W (Rated 750W) Brushless Rear Hub Motor 50N.m"
     },
     {
       "type": "fork",
@@ -202,14 +202,14 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "Round retro headlights with daytime running lights"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
@@ -220,7 +220,7 @@
       "description": "Aluminum Alloy Pedal, with Reflect-light, Axis 9/16 x2"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],

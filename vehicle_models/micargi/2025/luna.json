@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/micargi/2025/luna",
   "manufacturer": "Micargi",
   "model": "Luna",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -23,7 +23,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/micargi/2025/luna_sky_blue.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/micargi/2025/luna-sky-blue.jpg",
           "variants": [
             {
               "sku": "EB-LUNA-F-SBL",
@@ -65,8 +65,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -75,7 +75,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -86,7 +86,7 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 499,
         "voltage": 48,
@@ -118,17 +118,17 @@
       "description": "F&R V Brake"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC 7-Speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "SHIMANO TOURNEY 7SP"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC 7-Speed"
     },
     {
       "type": "crankset",
@@ -140,16 +140,16 @@
       "description": "SHIMANO TOURNEY 7SP"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "SAMSUNG 48V 10.4Ah"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "350W Speed Sensor"
+      "type": "ebike-displayremote",
+      "description": "LCD"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD"
+      "type": "ebike-motor",
+      "description": "350W Speed Sensor"
     },
     {
       "type": "fork",

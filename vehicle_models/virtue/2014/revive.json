@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/virtue/2014/revive",
   "manufacturer": "Virtue",
   "model": "Revive",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "bmx",
   "handlebar_type": "horizontal",
@@ -113,8 +113,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -142,7 +142,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed Bearings, Square-Taper Cartridge"
     },
     {
@@ -160,11 +160,16 @@
       "description": "comes with front interrupter brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Front Interrupter Lever, Black"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z410, Black"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "SPROCKET",
       "position": [
         "rear"
@@ -172,17 +177,12 @@
       "description": "16T, Black"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "COG",
       "position": [
         "rear"
       ],
       "description": "16T, Black"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Z410, Black"
     },
     {
       "type": "crankset",
@@ -196,7 +196,7 @@
       "description": "Hi-Tensile Steel, Double End Fork"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "description": "Flanged, White"
     },

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/opus/2020/mondano",
   "manufacturer": "Opus",
   "model_group": "Mondano",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -48,8 +48,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "7_rear"
+    "3-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -69,7 +69,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -157,7 +157,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Neco cartridge"
     },
     {
@@ -169,17 +169,9 @@
       "description": "ALHONGA HJ-811AD7"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 12-28t"
     },
     {
       "type": "chain",
@@ -188,6 +180,14 @@
     {
       "type": "chainrings",
       "description": "42-34-24"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 12-28t"
     },
     {
       "type": "crankset",
@@ -209,7 +209,7 @@
       "description": "Steel 1 1/8 in"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips tape",
       "manufacturer": "Velo",
       "description": "Velo ERGO dual density"

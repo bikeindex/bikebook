@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/evelo/2021/omega",
   "manufacturer": "Evelo",
   "model": "Omega",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -49,9 +49,9 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "continuously_variable",
-    "belt_drive"
+    "1-front",
+    "continuously-variable",
+    "belt-drive"
   ],
   "groupset": {
     "manufacturer": "Enviolo",
@@ -60,7 +60,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -72,7 +72,7 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "model": "M410HD",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
@@ -90,14 +90,14 @@
           "max_speed": 32,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -143,35 +143,35 @@
       "description": "Tektro Auriga E-Comp Hydraulic Brakes"
     },
     {
-      "type": "drive_belt",
+      "type": "drive-belt",
       "manufacturer": "Gates Carbon Drive",
       "description": "Gates Carbon Drive CDX"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 15AH Samsung In Frame Battery - Optional 14.5AH Rear Rack Battery Add-On"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Primary Battery Weight: 8.5 lbs"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Secondary Battery Weight: 9.6 lbs w/ Rack"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 3A Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bafang",
-      "description": "Bafang M410HD 600 W, 980 W Peak, 105 Nm Cadence and Torque Sensors"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Bafang",
       "description": "Bafang C-010 Full-Color 4.7\" Display"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang M410HD 600 W, 980 W Peak, 105 Nm Cadence and Torque Sensors"
     },
     {
       "type": "fender",
@@ -190,7 +190,7 @@
       "description": "Enviolo Trekking CVT"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Fully integrated high-power CREE LED headlght and integrated LED trail light"
     },
     {

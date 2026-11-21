@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/vanpowers/2026/cycanon",
   "manufacturer": "VanPowers",
   "model": "Cycanon",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -89,8 +89,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -108,7 +108,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -118,16 +118,18 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "water_rating": "IPX5",
       "battery": {
         "capacity": 624,
-        "voltage": 48
+        "voltage": 48,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "peak_power": 900,
@@ -139,7 +141,7 @@
           "max_speed": 40,
           "range_claimed": 135,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -193,7 +195,7 @@
       "description": "Tektro® Hydraulic Disc Brakes, 180mm Rotor"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
@@ -215,24 +217,24 @@
       "description": "Shimano Tourney 7-Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Battery, Capacity 624Wh (48V - 13Ah), With BMS Safety System"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V 3A Fast Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Hub-Motor, 48V Output 750W (900 Peak), Torque 60N.m"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "3.5\" LCD Display With USB Charging"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Left Switch Control Button"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "Hub-Motor, 48V Output 750W (900 Peak), Torque 60N.m"
     },
     {
       "type": "fender",
@@ -249,7 +251,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Ergonomic Grips"
     },
@@ -277,14 +279,14 @@
       "description": "Aluminum Alloy, included, Rear Mount"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "120Lux Moped-Style Front Light"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Tail Light",
       "position": [
         "rear"

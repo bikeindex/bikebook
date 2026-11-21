@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2026/atlas",
   "manufacturer": "Jetson",
   "model_group": "Atlas",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -40,7 +40,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "stem_fold"
+    "folding": "stem-fold"
   },
   "wheels": [
     {
@@ -52,12 +52,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -82,7 +82,7 @@
           "max_slope": 15,
           "levels": 1,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -90,7 +90,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -118,7 +118,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell"
     },
     {
@@ -130,20 +130,20 @@
       "description": "Front & Rear Disc Brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 6.0Ah Lithium Ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Battery: No"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "350 W"
+      "type": "ebike-displayremote",
+      "description": "LED"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LED"
+      "type": "ebike-motor",
+      "description": "350 W"
     },
     {
       "type": "kickstand"

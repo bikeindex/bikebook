@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/hjm/2023/apex",
   "manufacturer": "HJM",
   "model": "Apex",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/hjm/2023/apex.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/hjm/2023/apex_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/hjm/2023/apex-geometry.jpg",
   "description": "Electric mountain bike for adults with full suspension, fat tires and torque-sensing assist. Explore all-terrain and off-road routes with the HJM Apex.",
   "first_year": 2023,
   "years": {
@@ -167,8 +167,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "rear": [
@@ -178,7 +178,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -189,7 +189,7 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
         "capacity": 960,
@@ -207,7 +207,7 @@
           "range_claimed": 227,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -215,7 +215,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -262,7 +262,12 @@
       "description": "Tektro Hydraulic brakes, 180mm rotors"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC C7NP"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
@@ -271,20 +276,15 @@
       "description": "Shimano 7-speed freewheel 14-34T"
     },
     {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC C7NP"
-    },
-    {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 20Ah (960Wh) LG cells"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V3A"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "48V 1000W Bafang Geared Hub Motor"
     },
     {
@@ -300,7 +300,7 @@
       "description": "Single-leg aluminum alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"
@@ -308,7 +308,7 @@
       "description": "45LUX"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Tail Light",
       "position": [
         "rear"

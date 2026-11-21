@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/tenways/2025/wayfarer",
   "manufacturer": "Tenways",
   "model": "Wayfarer",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -37,7 +37,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/tenways/2025/wayfarer_meteor_gray.png",
+          "stock_photo": "https://bikebook.bikeindex.org/tenways/2025/wayfarer-meteor-gray.png",
           "variants": [
             {
               "sku": "081102430002",
@@ -69,8 +69,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -79,7 +79,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -89,18 +89,18 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certifications": [
-        "UL 2580"
-      ],
       "water_rating": "IPX6",
       "battery": {
         "capacity": 720,
         "voltage": 48,
         "chemistry": "li-ion",
         "cells": "LG 21700",
-        "charging_time": 330
+        "charging_time": 330,
+        "certifications": [
+          "UL 2580"
+        ]
       },
       "peak_power": 750,
       "max_torque": 65,
@@ -111,7 +111,7 @@
           "max_speed": 32,
           "range_claimed": 137,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -119,7 +119,7 @@
           "availability": "stock",
           "range_claimed": 56,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -127,7 +127,7 @@
           "availability": "app_update",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -160,7 +160,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Integrated with Torque Sensor"
     },
     {
@@ -176,24 +176,24 @@
       "description": "Aluminum Alloy Crankset"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V, 720Wh, IPX6 Lithium-ion Battery with LG 21700 cells, Certificated by UL 2580"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W Peak Rear Hub Motor (65 Nm Torque)"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Bafang",
       "description": "Bafang Controller"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "4.3\" TFT, LCD Display"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "750W Peak Rear Hub Motor (65 Nm Torque)"
+    },
+    {
+      "type": "light",
       "description": "55 Lux LED Head Light"
     },
     {

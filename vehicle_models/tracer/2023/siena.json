@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/tracer/2023/siena",
   "manufacturer": "Tracer",
   "model_group": "Siena",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -142,8 +142,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -160,7 +160,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -178,7 +178,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "BMX Cranks set Bottom Bracket Cr-Mo axle."
     },
     {
@@ -189,20 +189,20 @@
       "description": "1 Speed: Coaster 7 Speed: Mechanical disc, 160mm rotor"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Alloy"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "KT 22T"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC S1 1/2”x1/8” Rust-proof"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "KT 22T"
     },
     {
       "type": "crankset",

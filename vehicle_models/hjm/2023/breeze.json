@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/hjm/2023/breeze",
   "manufacturer": "HJM",
   "model": "Breeze",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
@@ -37,7 +37,7 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/hjm/2023/breeze_moss_green.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/hjm/2023/breeze-moss-green.jpg",
           "variants": [
             {
               "sku": "S3LJ2",
@@ -50,7 +50,7 @@
           "colors": [
             "brown"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/hjm/2023/breeze_antique_bronze.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/hjm/2023/breeze-antique-bronze.jpg",
           "variants": [
             {
               "sku": "S3LJ4",
@@ -63,7 +63,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/hjm/2023/breeze_mist_blue.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/hjm/2023/breeze-mist-blue.jpg",
           "variants": [
             {
               "sku": "S3LJ6",
@@ -76,7 +76,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/hjm/2023/breeze_persian_red.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/hjm/2023/breeze-persian-red.jpg",
           "variants": [
             {
               "sku": "S3LJ9",
@@ -89,7 +89,7 @@
           "colors": [
             "pink"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/hjm/2023/breeze_dark_magenta.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/hjm/2023/breeze-dark-magenta.jpg",
           "variants": [
             {
               "sku": "S3LJD",
@@ -138,8 +138,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "rear": [
@@ -149,7 +149,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -160,7 +160,7 @@
     {
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 960,
         "voltage": 48,
@@ -177,7 +177,7 @@
           "range_claimed": 129,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -228,7 +228,12 @@
       "description": "Logan hydraulic brakes"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC C7NP"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
@@ -237,20 +242,15 @@
       "description": "Shimano 7-speed freewheel 14-34T"
     },
     {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC C7NP"
-    },
-    {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 20Ah (960Wh) LG cells."
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V3A"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "48V 750W Bafang Geared Hub Motor"
     },
     {
@@ -270,7 +270,7 @@
       "description": "Single-leg aluminum alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"
@@ -278,7 +278,7 @@
       "description": "45LUX"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Tail Light",
       "position": [
         "rear"

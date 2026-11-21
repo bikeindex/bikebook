@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/inmotion/2024/e20",
   "manufacturer": "Inmotion",
   "model_group": "E20",
   "model": "E20",
   "model_configuration": "complete",
-  "type": "epamd",
-  "type_detail": "electric_unicycle",
+  "type": "personal-mobility",
+  "type_detail": "electric-unicycle",
   "propulsion": [
     "throttle"
   ],
@@ -39,7 +39,7 @@
   },
   "brakes": [
     {
-      "type": "motor_brake",
+      "type": "motor-brake",
       "position": [
         "motor"
       ]
@@ -47,7 +47,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IPX5",
       "battery": {
         "capacity": 240,
@@ -91,23 +91,23 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "13S2P EVE 18650, 26V"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.8 V, 1.5 A"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "450W rated, 900 W peak"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Brake lights"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlights"
     },
     {

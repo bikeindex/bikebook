@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/specialized/2003/vegas",
   "manufacturer": "Specialized",
   "model": "Vegas",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "bmx_freestyle",
+  "primary_activity": "bmx-freestyle",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/specialized/2003/vegas.jpg",
   "description": "Cr-Mo main frame jumping frame, No Oval head tube, integrated rotor plate, X-Wire brake routing, 6mm D.O.",
@@ -51,8 +51,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -71,7 +71,7 @@
       "caliper_mount": "Brake Bosses"
     },
     {
-      "type": "u_brake",
+      "type": "u-brake",
       "position": [
         "rear"
       ],
@@ -80,7 +80,11 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bashguardchain-guide",
+      "description": "chainguard cover"
+    },
+    {
+      "type": "bottom-bracket",
       "description": "Heat treated Cro-Mo 8 spline 19mm spindle, sealed loose ball bearings"
     },
     {
@@ -92,17 +96,9 @@
       "description": "Front: Rush single pivot caliper, Rear: Tektro U-Brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro, for U-brake, front & rear"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano SFMX-30, 1/2x1/8x16t"
     },
     {
       "type": "chain",
@@ -110,17 +106,21 @@
       "description": "KMC Z-510"
     },
     {
-      "type": "chain_guide",
-      "description": "chainguard cover"
-    },
-    {
-      "type": "chain_tensioners",
+      "type": "chain-tensioners",
       "description": "38mm OD alloy chain tensioners"
     },
     {
       "type": "chainrings",
       "manufacturer": "Specialized",
       "description": "Specialized 44t alloy solid disc type with CNC center/drive hole and teeth"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano SFMX-30, 1/2x1/8x16t"
     },
     {
       "type": "crankset",
@@ -145,7 +145,7 @@
       "description": "Specialized alloy fork cap"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Specialized",
       "description": "Specialized no-flange Kraton, 130mm",
       "dimensions": {
@@ -183,7 +183,7 @@
       "description": "36 hole, \"Flip Side\" (right and left F/W thread), loose ball, alloy shell, solid 14mm Cro-Mo axle"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "reflectors"
     },
     {
@@ -212,7 +212,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "Forged alloy single bolt design 33.3 x 31.3mm"
     },
     {

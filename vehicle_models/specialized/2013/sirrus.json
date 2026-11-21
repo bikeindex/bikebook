@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/specialized/2013/sirrus",
   "manufacturer": "Specialized",
   "model": "Sirrus",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -78,8 +78,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "8_rear"
+    "3-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -99,7 +99,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -108,7 +108,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Cartridge bearing, square spindle w/ crank stop right side, capless bolts"
     },
     {
@@ -120,14 +120,6 @@
       "description": "Die cast alloy, linear pull"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 8-speed, 11-32"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC X-8, reusable Missing Link"
@@ -135,6 +127,14 @@
     {
       "type": "chainrings",
       "description": "48/38/28, w/ chainguard"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 8-speed, 11-32"
     },
     {
       "type": "crankset",
@@ -163,7 +163,7 @@
       "description": "Specialized Hi-Ten steel fork"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "description": "Body Geometry Targa, dual compound"
     },
     {
@@ -216,14 +216,14 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "Alloy clamp, 31.8mm",
       "dimensions": {
         "diameter": 31.8
       }
     },
     {
-      "type": "shift_and_brake_lever",
+      "type": "shift-and-brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano EF-51 2-finger, brake & shift Lever"
     },

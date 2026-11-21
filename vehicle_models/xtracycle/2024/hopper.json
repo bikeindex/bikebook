@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/xtracycle/2024/hopper",
   "manufacturer": "Xtracycle",
   "model": "Hopper",
   "model_configuration": "complete",
-  "type": "cargo_bike_rear",
-  "type_detail": "long_tail",
+  "type": "cargo-rear",
+  "type_detail": "long-tail",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
@@ -74,8 +74,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -93,7 +93,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -105,16 +105,18 @@
     {
       "drive_wheel": "rear",
       "manufacturer": "Xtracycle",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "hub",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "battery": {
         "capacity": 720,
         "voltage": 48,
-        "chemistry": "li-ion"
+        "chemistry": "li-ion",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "operating_modes": [
@@ -123,7 +125,7 @@
           "availability": "stock",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -131,7 +133,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -177,7 +179,7 @@
       "description": "174 Hudson, 2-piston hydraulic disc w/cutoff sensor"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Front/Rear rotor",
       "position": [
         "front",
@@ -186,17 +188,9 @@
       "description": "180mm x 2.3mm"
     },
     {
-      "type": "cargo_bike_side_rails",
+      "type": "cargo-bike-side-rails",
       "type_detail": "Hooptie",
       "description": "Hooptie"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano, CS-HG31-8 11/34t 8 speed"
     },
     {
       "type": "chain",
@@ -206,6 +200,14 @@
     {
       "type": "chainrings",
       "description": "Samox 46t chainring, 104 BCD"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano, CS-HG31-8 11/34t 8 speed"
     },
     {
       "type": "crankset",
@@ -224,12 +226,12 @@
       "description": "Shimano Altus RD-M310"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Xtracycle",
       "description": "Xtracycle 720 watt hour integrated downtube, UL 2271 certified by SGS"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "manufacturer": "Xtracycle",
       "description": "Xtracycle rear hub motor, 48V 750W, w/ integrated torque sensor, UL 2849 certified by SGS"
     },
@@ -268,7 +270,7 @@
       "description": "KickBack 4 (Hopper)"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front",
         "rear"
@@ -332,7 +334,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat clamp (collar)",
       "manufacturer": "Xtracycle",
       "description": "Xtracycle (quick release)"

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/gio/2021/peak",
   "manufacturer": "GIO",
   "model": "Peak",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -64,8 +64,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -82,7 +82,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -93,7 +93,7 @@
     {
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
         "capacity": 576,
@@ -110,14 +110,14 @@
           "max_speed": 32,
           "range_claimed": 60,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -149,7 +149,7 @@
       "description": "hydraulic auriga"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
@@ -170,17 +170,17 @@
       "description": "Shimano TourneyTX 8 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "12Ah, lithium 48V battery"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bafang",
-      "description": "BAFANG 48V/500W 50Nm(70Nm max) rear drive"
+      "type": "ebike-displayremote",
+      "description": "LCD, Multifunctional, (Miles/KM)"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD, Multifunctional, (Miles/KM)"
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "BAFANG 48V/500W 50Nm(70Nm max) rear drive"
     },
     {
       "type": "fender",
@@ -201,7 +201,7 @@
       "description": "Handlebar cable wraps"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "front - Spanninga light"
     },
     {

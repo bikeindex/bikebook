@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/heybike/2024/brawn",
   "manufacturer": "Heybike",
   "model": "Brawn",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -24,7 +24,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/heybike/2024/brawn_ebony_black.png",
+          "stock_photo": "https://bikebook.bikeindex.org/heybike/2024/brawn-ebony-black.png",
           "variants": [
             {
               "sku": "EB-BRAWN-B",
@@ -83,8 +83,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -92,7 +92,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -101,15 +101,15 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
-      "certifications": [
-        "UL 2271"
-      ],
+      "kind": "hub-drive",
       "battery": {
         "capacity": 864,
         "voltage": 48,
         "chemistry": "li-ion",
-        "charging_time": 300
+        "charging_time": 300,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "peak_power": 1400,
@@ -121,7 +121,7 @@
           "max_speed": 45,
           "range_claimed": 105,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -169,15 +169,15 @@
       "description": "Shimano 7 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "UL 2271 Recognized 48V/18Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 4A"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Smart LCD Display"
     },
     {
@@ -196,11 +196,11 @@
       "description": "Alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "LED, headlight and taillight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Light; LED, headlight and taillight",
       "description": "Kickstand; Alloy"
     },

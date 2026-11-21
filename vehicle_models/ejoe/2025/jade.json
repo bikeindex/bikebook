@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ejoe/2025/jade",
   "manufacturer": "Ejoe",
   "model": "JADE",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -65,8 +65,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -80,7 +80,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -92,7 +92,7 @@
     {
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 672,
         "voltage": 48,
@@ -110,7 +110,7 @@
           "max_slope": 6,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -143,7 +143,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "description": "Bell"
     },
     {
@@ -183,21 +183,21 @@
       "description": "7-speed Shimano Altus Derailleur with Rapid Fire Shifter"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 14AH Lithium-ion battery with Samsung/LG"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "110-240"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bafang",
-      "description": "BAFANG 750W Rated Rear Hub Motor"
+      "type": "ebike-displayremote",
+      "description": "LCD backlight"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD backlight"
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "BAFANG 750W Rated Rear Hub Motor"
     },
     {
       "type": "fender",
@@ -208,25 +208,25 @@
       "description": "Kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "Headlight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
       "description": "Taillight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Wheel Reflectors"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],

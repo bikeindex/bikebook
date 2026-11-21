@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/breezer/2025/downtown",
   "manufacturer": "Breezer",
   "model_group": "Downtown",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -92,8 +92,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -111,7 +111,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -203,11 +203,15 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bashguardchain-guide",
+      "description": "chainguard"
+    },
+    {
+      "type": "bellnoisemaker",
       "description": "bell"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "BB",
       "description": "VP-BC73C cartridge-style"
     },
@@ -221,16 +225,8 @@
       "description": "Breezer aluminum linear pull, stainless hardware"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum, 4-finger ergonomic"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SunRace",
-      "description": "Sunrace 13-34T, 8-speed"
     },
     {
       "type": "chain",
@@ -238,8 +234,12 @@
       "description": "KMC XGlide EPT Anti Rust, Cues"
     },
     {
-      "type": "chain_guide",
-      "description": "chainguard"
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SunRace",
+      "description": "Sunrace 13-34T, 8-speed"
     },
     {
       "type": "crankset",
@@ -263,7 +263,7 @@
       "description": "Breezer chromoly"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Breezer",
       "description": "Breezer Perforated Comfort"
@@ -325,7 +325,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "Alloy, 29.8mm",
       "dimensions": {
         "diameter": 29.8

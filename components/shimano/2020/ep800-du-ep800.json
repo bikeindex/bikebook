@@ -1,0 +1,43 @@
+{
+  "schema_version": "2.0.0",
+  "id": "c/shimano/2020/ep800-du-ep800",
+  "type": "ebike-motor",
+  "manufacturer": "Shimano",
+  "model": "DU-EP800",
+  "model_group": "EP800",
+  "aliases": [
+    "EP8"
+  ],
+  "markets": [
+    "US"
+  ],
+  "first_year": 2020,
+  "motor": {
+    "kind": "mid-drive",
+    "spindle": "Shimano EP8",
+    "sensor_cadence": true,
+    "rated_power": 250,
+    "max_torque": 85,
+    "operating_modes": [
+      {
+        "mode": "assist",
+        "availability": "stock",
+        "max_speed": 32
+      }
+    ]
+  },
+  "market_variants": {
+    "EU": {
+      "markets": [
+        "EU"
+      ],
+      "motor": {
+        "operating_modes": {
+          "assist stock": {
+            "max_speed": 25
+          }
+        }
+      }
+    }
+  }
+}

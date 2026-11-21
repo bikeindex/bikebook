@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/philodo/2024/traveller",
   "manufacturer": "Philodo",
   "model": "Traveller",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
@@ -54,8 +54,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -64,7 +64,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -74,7 +74,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IPX6",
       "battery": {
         "capacity": 840,
@@ -90,7 +90,7 @@
           "max_speed": 51,
           "range_claimed": 113,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -98,7 +98,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -128,7 +128,7 @@
       "description": "front basket"
     },
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "description": "Integrated LED headlight & horn"
     },
     {
@@ -140,7 +140,7 @@
       "description": "Front and rear hydraulic brkes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum alloy, with brake sensor, cut off the power to the motor when braking"
     },
     {
@@ -148,24 +148,24 @@
       "description": "Prowheel, aluminum alloy, 46T"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Single Battery 48 Volt 17.5Ah(840Wh) Dual Battery 48 Volt 35Ah(1680Wh)"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Lifetime: 1000 cycles"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Input 100~240V, output 54.6V 2A，smart protection"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Rear drive 750W (1000W peak output) brushless geared hub motor"
+      "type": "ebike-displayremote",
+      "description": "3.7 inch multifunctional display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "3.7 inch multifunctional display"
+      "type": "ebike-motor",
+      "description": "Rear drive 750W (1000W peak output) brushless geared hub motor"
     },
     {
       "type": "fender",
@@ -180,17 +180,17 @@
       "description": "Aluminum alloy suspension fork with lock"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "board",
       "description": "board"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "soft cushion",
       "description": "soft cushion"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "assembly toolset"
     },
@@ -200,14 +200,14 @@
       "description": "Dual-Leg Kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "Integrated LED headlight & horn"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Integrated Brake and Tail Lights",
       "position": [
         "rear"

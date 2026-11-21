@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/thomus/2026/oberrider",
   "manufacturer": "Thömus",
   "model_group": "Oberrider",
@@ -7,12 +7,12 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "mtb_enduro",
+  "primary_activity": "mtb-enduro",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/thomus/2026/oberrider.png",
-  "geometry_photo": "https://bikebook.bikeindex.org/thomus/2026/oberrider_geometry.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/thomus/2026/oberrider-geometry.png",
   "description": "Der Thömus Oberrider wurde für Trail- und Enduro-Rider entwickelt, die mehr erwarten – mehr Leistung, mehr Kontrolle, mehr Reserven im Gelände. Mit zwei klar definierten Setups bietet er maximale Vielseitigkeit: Superlight (SL) mit 150/140 mm Federweg für effiziente Trail-Performance und flowige Lines. Supertrail (ST) mit 170 mm Federweg für anspruchsvolle Enduro-Einsätze und technischstes Terrain. Im Zentrum steht das revolutionäre AVINOX Drive System, kombiniert mit Schweizer Präzision in Entwicklung und Fertigung. Das Ergebnis: direkte Kraftentfaltung, präzises Handling und ein natürliches Fahrgefühl. Individuell konfigurierbar – abgestimmt auf dich und dein Terrain.",
   "first_year": 2026,
   "years": {
@@ -76,8 +76,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "11_rear"
+    "1-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -95,7 +95,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -190,7 +190,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "thru axle",
       "manufacturer": "DT Swiss",
       "description": "DT Swiss RWS 148/M12x1 173.7 UDH"
@@ -205,7 +205,7 @@
       "description": "Shimano Deore 4-piston front 61201JNFPR100"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "rotor",
       "position": [
         "front",
@@ -218,14 +218,6 @@
       }
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano CUES 11-50Z 11-speed CS-LG700"
-    },
-    {
       "type": "chain",
       "manufacturer": "Shimano",
       "description": "Shimano CUES/XT 11-speed CN-LG500 132 links"
@@ -233,6 +225,14 @@
     {
       "type": "chainrings",
       "description": "Montagekit chainring 34z Oberrider-S"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano CUES 11-50Z 11-speed CS-LG700"
     },
     {
       "type": "crankset",
@@ -250,24 +250,24 @@
       "description": "Shimano CUES RD-U6000-GS 11-speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Avinox 600Wh fix rund"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Avinox 12A rund"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Motor Avinox M2S"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Avinox BC100 links"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Display Avinox DP-100 Flach (Global)"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "Motor Avinox M2S"
     },
     {
       "type": "fork",
@@ -278,7 +278,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "grips",
       "manufacturer": "Thömus",
       "description": "Thömus geschraubt schwarz"
@@ -299,7 +299,7 @@
       "description": "Acros non TIC OR_S/LR R3 WC"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "rear shock",
       "position": [
         "rear"
@@ -327,7 +327,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "manufacturer": "Thömus",
       "description": "Thömus Alu geschraubt LR E3 Ø38mm",
       "dimensions": {

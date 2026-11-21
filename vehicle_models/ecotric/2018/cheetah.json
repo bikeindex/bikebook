@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ecotric/2018/cheetah",
   "manufacturer": "Ecotric",
   "model": "Cheetah",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -58,8 +58,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -67,7 +67,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -77,7 +77,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_speed": "spoke_magnet",
       "battery": {
         "capacity": 450,
@@ -92,7 +92,7 @@
           "availability": "stock",
           "max_speed": 40,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -145,21 +145,21 @@
       "description": "7Speed SHIMANO"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36v 12.5AH"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "BATTERY LIFE: 400-600 Cycles"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Rear Hub 36V 500W"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Ecotric",
       "description": "Ecotric Smart LCD"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "Rear Hub 36V 500W"
     },
     {
       "type": "tire",

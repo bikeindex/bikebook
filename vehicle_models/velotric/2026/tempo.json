@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/velotric/2026/tempo",
   "manufacturer": "Velotric",
   "model": "Tempo",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -53,7 +53,7 @@
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/velotric/2026/tempo_sunset_tangerine.png",
+          "stock_photo": "https://bikebook.bikeindex.org/velotric/2026/tempo-sunset-tangerine.png",
           "variants": [
             {
               "sku": "VT200003A",
@@ -72,7 +72,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/velotric/2026/tempo_lightning_silver.png",
+          "stock_photo": "https://bikebook.bikeindex.org/velotric/2026/tempo-lightning-silver.png",
           "variants": [
             {
               "sku": "VT210003A",
@@ -117,8 +117,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -135,7 +135,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -145,13 +145,11 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
         "UL 2849",
-        "UL 2271",
-        "UL 2580",
         "ISO 4210"
       ],
       "water_rating": "IPX6",
@@ -160,7 +158,11 @@
         "voltage": 36,
         "chemistry": "li-ion",
         "cells": "Samsung/LG 21700",
-        "weight": 2.3
+        "weight": 2.3,
+        "certifications": [
+          "UL 2271",
+          "UL 2580"
+        ]
       },
       "rated_power": 350,
       "peak_power": 650,
@@ -173,7 +175,7 @@
           "range_claimed": 97,
           "levels": 4,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -182,7 +184,7 @@
           "range_claimed": 64,
           "throttle_type": "Trigger",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -190,7 +192,7 @@
           "availability": "app_update",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -286,11 +288,11 @@
       "description": "SHIMANO Hydraulic Disc Brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum Alloy, with Power Cutoff"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -302,14 +304,6 @@
       }
     },
     {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "8-speed,11-40T"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC 8-speed"
@@ -317,6 +311,14 @@
     {
       "type": "chainrings",
       "description": "46T Narrow-Wide Chainring"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "8-speed,11-40T"
     },
     {
       "type": "crankset",
@@ -334,20 +336,20 @@
       "description": "SHIMANO 8-speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 10.14Ah(374Wh), IPX7, Certificated by UL2271"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "36V, 2A Fast Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "36V, 350W, 650W(Peak Power), 45Nm"
+      "type": "ebike-displayremote",
+      "description": "2.0\" Left-mounted Full-color Display with High Brightness, Bluetooth，NFC"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "2.0\" Left-mounted Full-color Display with High Brightness, Bluetooth，NFC"
+      "type": "ebike-motor",
+      "description": "36V, 350W, 650W(Peak Power), 45Nm"
     },
     {
       "type": "fork",
@@ -358,7 +360,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Durable Ergonomic Grips, Lockable"
     },
@@ -386,14 +388,14 @@
       "description": "Aluminum Alloy, Included, Rear Mount"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "500LM High-output Integrated LED, Adjustable Angle"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
@@ -421,7 +423,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "Aluminum Alloy, Quick Release"
     },
     {

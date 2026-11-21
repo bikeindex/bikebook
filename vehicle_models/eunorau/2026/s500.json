@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/eunorau/2026/s500",
   "manufacturer": "Eunorau",
   "model": "S500",
   "model_configuration": "complete",
-  "type": "e_atv",
+  "type": "e-atv",
   "propulsion": [
     "throttle"
   ],
-  "primary_activity": "dirt_travel",
+  "primary_activity": "dirt-travel",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/eunorau/2026/s500.jpg",
   "description": "This Electric Utility Quad is a versatile and powerful vehicle designed for adults who need a reliable ride for work or outdoor adventures. Perfect for carrying cargo, exploring trails, or handling daily utility tasks, it combines strong off-road performance, comfort, and safety features. Equipped with a 500W motor and a 48V 27Ah battery, it delivers smooth power across varied terrains. The adjustable seat, dual suspension, and spacious cargo area ensure a comfortable and practical experience, while advanced features like hydraulic brakes, turn signals, hill hold, and electronic parking lock provide secure operation.\n\nHill Hold Control (Anti-Rollback)\n\nParking Mode (Electronic Parking Lock)",
@@ -45,7 +45,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front_left",
         "front_right",
@@ -57,7 +57,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "mid_drive_dedicated",
+      "kind": "mid-drive-dedicated",
       "battery": {
         "capacity": 1296,
         "voltage": 48
@@ -71,7 +71,7 @@
           "max_speed": 24,
           "range_claimed": 50,
           "e_vehicle_classifications": [
-            "evc/us/ca/off_highway_motor_vehicle"
+            "evc/us/ca/off-highway-motor-vehicle"
           ]
         }
       ]
@@ -93,7 +93,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Electric Horn",
       "description": "Equipped"
     },
@@ -106,19 +106,19 @@
       "description": "Hydraulic Brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 27Ah"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W Mid Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LED Display"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "500W Mid Motor"
+    },
+    {
+      "type": "light",
       "type_detail": "Front / Rear Lights",
       "position": [
         "front",
@@ -127,7 +127,7 @@
       "description": "Equipped"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Turn Signals",
       "description": "Front & Rear (Amber)"
     },

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/borealis/2023/keystone",
   "manufacturer": "Borealis",
   "model": "Keystone",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -156,8 +156,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "12_rear"
+    "1-front",
+    "12-rear"
   ],
   "gearing": {
     "front": [
@@ -175,14 +175,14 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
       "rotor_diameter": 200
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -193,12 +193,12 @@
   ],
   "motors": [
     {
-      "id": "c/shimano/2020/ep800_du_ep800",
+      "id": "c/shimano/2020/ep800-du-ep800",
       "drive_wheel": "rear",
       "manufacturer": "Shimano",
       "model": "DU-EP800",
       "model_group": "EP800",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
@@ -214,7 +214,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -297,7 +297,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "position": [
         "rear"
       ],
@@ -314,7 +314,7 @@
       "description": "SRAM G2 RS"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -322,14 +322,6 @@
       ],
       "manufacturer": "SRAM",
       "description": "SRAM HS2 200mm front / 180mm rear"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM GX Eagle Transmission Cassette 10-52T"
     },
     {
       "type": "chain",
@@ -347,6 +339,14 @@
       "description": "SRAM Eagle Transmission E-Bike MTB Chainring 104 BCD 36T Steel"
     },
     {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM GX Eagle Transmission Cassette 10-52T"
+    },
+    {
       "type": "crankset",
       "type_detail": "Crank Arms",
       "description": "Samox 170mm",
@@ -360,31 +360,31 @@
       "description": "SRAM GX Eagle Transmission Derailleur"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Shimano",
       "description": "Shimano BT-E8036 (630Wh)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "manufacturer": "Shimano",
       "description": "Shimano ECE80042 Battery Charger"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Remote Battery Charging Adapter"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Shimano",
       "description": "Shimano SC-EM800"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Shimano",
       "description": "Shimano SW-EM800L"
     },
     {
-      "type": "electronic_shifting_component",
+      "type": "electronic-shifting-part",
       "description": "AXS Power Pack"
     },
     {
@@ -397,7 +397,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Ergon",
       "description": "Ergon GP1"
@@ -418,7 +418,7 @@
       "description": "Borealis Gen 4 15x150 / 12x197"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Battery Keys",
       "description": "Key for battery release"
     },
@@ -445,7 +445,7 @@
       "description": "KS Lev Integra 125mm (SM, MD) / 150mm (LG, XL)"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Collar",
       "manufacturer": "Borealis",
       "description": "Borealis Bolt-On"

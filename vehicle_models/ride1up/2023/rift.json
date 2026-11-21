@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ride1up/2023/rift",
   "manufacturer": "Ride1Up",
   "model_group": "Rift",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -39,7 +39,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2023/rift_arctic_white.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2023/rift-arctic-white.jpg",
           "variants": [
             {
               "sku": "RIFT-XR-WHI",
@@ -52,7 +52,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2023/rift_graphite_gray.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2023/rift-graphite-gray.jpg",
           "variants": [
             {
               "sku": "FT-XR-GRAY-1.2",
@@ -86,8 +86,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -105,7 +105,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -115,7 +115,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "battery": {
         "capacity": 960,
@@ -132,7 +132,7 @@
           "max_speed": 45,
           "range_claimed": 97,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -141,7 +141,7 @@
           "max_speed": 32,
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -172,14 +172,6 @@
       "description": "180mm 4-piston Hydraulic Disc Brakes w/ Cut-Off Sensor"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 11-32T"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z8.3 8-speed chain"
@@ -189,21 +181,29 @@
       "description": "44T Prowheel Alloy Chainring"
     },
     {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 11-32T"
+    },
+    {
       "type": "derailleur",
       "manufacturer": "Shimano",
       "description": "Shimano RD Altus"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 20ah Reention Mammoth LG Cells, Smart BMS"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V Geared Hub, AKM Angled Gears, 750w Sustained"
+      "type": "ebike-displayremote",
+      "description": "KD218 Adjustable Speed Color Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "KD218 Adjustable Speed Color Display"
+      "type": "ebike-motor",
+      "description": "48V Geared Hub, AKM Angled Gears, 750w Sustained"
     },
     {
       "type": "fork",
@@ -213,7 +213,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Ergonomic Locking Rubber Grips"
     },
@@ -225,14 +225,14 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "Buchel Shiny 80, Ultra-bright 80 lux headlight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],

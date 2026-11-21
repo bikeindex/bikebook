@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/totem/2023/volcano",
   "manufacturer": "Totem",
   "model_group": "Volcano",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -25,7 +25,7 @@
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/totem/2023/volcano_orange.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/totem/2023/volcano-orange.jpg",
           "variants": [
             {
               "sku": "VOLCANO-ORANGE",
@@ -70,15 +70,15 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "7_rear"
+    "3-front",
+    "7-rear"
   ],
   "groupset": {
     "electronic": false
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -88,7 +88,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 557,
         "voltage": 48,
@@ -104,7 +104,7 @@
           "range_claimed": 80,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -112,7 +112,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -134,19 +134,19 @@
       "description": "The dual disc brakes ensure safe and reliable stopping power in any conditions, providing improved riding safety and maneuverability on bumpy and muddy surfaces."
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "The removable 48V 11.6AH Lithium-ion battery provides up to 40+ miles of range and can be fully charged in just 2-4 hours with the included 3A fast charger."
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "The color TFT display informs you of essential ride information, including speed, distance, battery, and pedal assist level."
+    },
+    {
+      "type": "ebike-motor",
       "position": [
         "rear"
       ],
       "description": "The Volcano's 500W rear hub motor provides effortless hill climbing and acceleration, allowing you to reach speeds of up to 20mph with ease."
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "The color TFT display informs you of essential ride information, including speed, distance, battery, and pedal assist level."
     },
     {
       "type": "fork",

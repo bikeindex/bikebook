@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2021/libre",
   "manufacturer": "Kona",
   "model_group": "Libre",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "atb_gravel",
+  "primary_activity": "atb-gravel",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/kona/2021/libre.jpg",
   "first_year": 2021,
@@ -70,8 +70,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "11_rear"
+    "1-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -89,7 +89,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -201,7 +201,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "B/B",
       "manufacturer": "SRAM",
       "description": "SRAM GXP 68mm"
@@ -217,12 +217,12 @@
       "description": "TRP Spyre C"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "SRAM Apex"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -234,15 +234,6 @@
       }
     },
     {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM PG1130 11-42t 11spd"
-    },
-    {
       "type": "chain",
       "manufacturer": "SRAM",
       "description": "SRAM PC1110"
@@ -250,6 +241,15 @@
     {
       "type": "chainrings",
       "description": "40t X-Sync"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM PG1130 11-42t 11spd"
     },
     {
       "type": "crankset",
@@ -272,7 +272,7 @@
       "description": "Kona Verso Full Carbon Flat Mount Disc"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Kona",
       "description": "Kona Cork Tape"
@@ -330,7 +330,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Kona",
       "description": "Kona Clamp"

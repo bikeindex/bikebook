@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/civia/2013/halsted",
   "manufacturer": "Civia",
   "model": "Halsted",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "cargo",
   "handlebar_type": "horizontal",
@@ -62,8 +62,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -81,7 +81,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front"
       ],
@@ -89,7 +89,7 @@
       "caliper_mount": "Disc IS"
     },
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "rear"
       ],
@@ -98,7 +98,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Tien Hsin, Square 68 X 113mm"
     },
     {
@@ -118,22 +118,22 @@
       "description": "Tektro CL530-RS V-Brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro CL530-RS, 4-Finger"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Cassette Sprocket, Cs-Hg30-9 9-Speed 11-34T(Ar) Bulk"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z99, 116Length, Silver"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Cassette Sprocket, Cs-Hg30-9 9-Speed 11-34T(Ar) Bulk"
     },
     {
       "type": "crankset",
@@ -156,7 +156,7 @@
       "description": "Halsted , 100% CroMoly, 1-1/8\" threadless steerer. Uncut"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Civia",
       "description": "Civia Linden Ergonomic Dual Cushion, 130mm",
       "dimensions": {
@@ -243,7 +243,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "30.0 Seat Clamp, Alloy Silver"
     },
     {

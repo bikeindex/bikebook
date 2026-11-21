@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/bmc/2022/timemachine",
   "manufacturer": "BMC",
   "model_group": "Timemachine",
@@ -25,9 +25,9 @@
   ],
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_triathlon",
+  "primary_activity": "road-triathlon",
   "handlebar_type": "forward",
   "stock_photo": "https://bikebook.bikeindex.org/bmc/2022/timemachine.jpg",
   "description": "The Timemachine ONE benefits from our Vmax Aero Design and incredible positional adjustment, in a less complex package. Its carbon frame includes sliding dropouts, dual-position aero seatpost and a rear storage box, while the fork has a Hinge design. There’s a conventional stem with Profile base bar and Sonic extensions, Fizik’s Mistica saddle, and a Shimano 105 groupset with direct mount caliper brakes and Dura-Ace bar end shifters, all rolling on Shimano’s 24mm deep RS100 wheels.",
@@ -70,12 +70,13 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "bottom_bracket": {
       "shell": "BB86",
       "width": 86.5
-    }
+    },
+    "en_17406": 1
   },
   "wheels": [
     {
@@ -97,8 +98,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "11_rear"
+    "2-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -236,30 +237,14 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "PF86 Bottom Bracket"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "type_detail": "Brake Levers / Calipers",
       "manufacturer": "Shimano",
       "description": "SHIMANO 105 (BR-R7010) Direct Mount"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "SHIMANO 105 (CS-R7000)"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Cassette Size",
-      "position": [
-        "rear"
-      ],
-      "description": "11-30T"
     },
     {
       "type": "chain",
@@ -269,6 +254,22 @@
     {
       "type": "chainrings",
       "description": "53-39T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "SHIMANO 105 (CS-R7000)"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Cassette Size",
+      "position": [
+        "rear"
+      ],
+      "description": "11-30T"
     },
     {
       "type": "crankset",
@@ -344,12 +345,7 @@
       }
     },
     {
-      "type": "unknown",
-      "type_detail": "ASTM Classification",
-      "description": "Level 1"
-    },
-    {
-      "type": "water_bottle_cage",
+      "type": "water-bottle-cage",
       "description": "Aerocore Bottle Cages"
     }
   ]

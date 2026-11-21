@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2021/woo",
   "manufacturer": "Kona",
   "model": "Woo",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -75,8 +75,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "12_rear"
+    "1-front",
+    "12-rear"
   ],
   "gearing": {
     "front": [
@@ -94,14 +94,14 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
       "rotor_diameter": 180
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -192,7 +192,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "B/B",
       "manufacturer": "SRAM",
       "description": "SRAM DUB PF121"
@@ -208,12 +208,12 @@
       "description": "Shimano MT410 Hydraulic"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano MT410 Hydraulic"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front"
       ],
@@ -224,7 +224,7 @@
       }
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "rear"
       ],
@@ -235,15 +235,6 @@
       }
     },
     {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM SX-Eagle 11-50t 12spd"
-    },
-    {
       "type": "chain",
       "manufacturer": "SRAM",
       "description": "SRAM SX-Eagle"
@@ -251,6 +242,15 @@
     {
       "type": "chainrings",
       "description": "30t X-Sync Eagle"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM SX-Eagle 11-50t 12spd"
     },
     {
       "type": "crankset",
@@ -273,7 +273,7 @@
       "description": "Kona Wo Fat Carbon Disc"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Kona",
       "description": "Kona Key Grip"
@@ -331,7 +331,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Kona",
       "description": "Kona QR"

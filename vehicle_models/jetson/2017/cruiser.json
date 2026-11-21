@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2017/cruiser",
   "manufacturer": "Jetson",
   "model": "Cruiser",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -22,7 +22,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jetson/2017/cruiser_white.png",
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2017/cruiser-white.png",
           "variants": [
             {
               "sku": "JERO16-WHT",
@@ -50,7 +50,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jetson/2017/cruiser_gunmetal.png",
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2017/cruiser-gunmetal.png",
           "variants": [
             {
               "sku": "JERO16-GUN",
@@ -81,12 +81,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -96,7 +96,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 374,
         "voltage": 36,
@@ -112,7 +112,7 @@
           "range_claimed": 80,
           "max_slope": 10,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -148,26 +148,26 @@
       "description": "Front & rear v-brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 10.4Ah rechargeable lithium-ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Battery: Yes"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "250 watt hub motor"
+      "type": "ebike-displayremote",
+      "description": "LCD display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD display"
+      "type": "ebike-motor",
+      "description": "250 watt hub motor"
     },
     {
       "type": "kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "LED back light"
     },
     {

@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/nireeka/2025/gravel",
   "manufacturer": "Nireeka",
   "model": "Gravel",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "atb_gravel",
+  "primary_activity": "atb-gravel",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/nireeka/2025/gravel.jpg",
   "description": "The Nireeka Gravel is a versatile, high-performance bike built for both road and off-road adventures. Featuring a full carbon disc road gravel frame and fork for lightweight durability, it comes with a Shimano 105 3x11-speed groupset for precise shifting. The bike is equipped with carbon fiber handlebars and a seatpost, along with 26 × 1.95 Semi-slick / urban-hybrid tread. With 7075 aluminum alloy hubs and a comfortable PU saddle, the Nireeka Gravel offers a perfect balance of performance, comfort, and control across various terrains.",
@@ -31,7 +31,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "bottom_bracket": {
       "shell": "BSA"
     },
@@ -56,8 +56,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "11_rear"
+    "2-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -76,7 +76,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -94,7 +94,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Front Axle",
       "position": [
         "front"
@@ -105,7 +105,7 @@
       }
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Shimano",
       "description": "BSA Thread Shimano"
     },
@@ -118,7 +118,7 @@
       "description": "Pro XTR Pads Cable Brake, Disc Brakes"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotor Size",
       "position": [
         "front",
@@ -130,17 +130,17 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "Shimano",
+      "description": "Shimano multi-speed chain (road-compatible)"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano 105 11-28 11-Speed"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "Shimano",
-      "description": "Shimano multi-speed chain (road-compatible)"
     },
     {
       "type": "crankset",
@@ -178,7 +178,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "2-Bolt"
     },

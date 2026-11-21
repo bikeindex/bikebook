@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2012/b16w",
   "manufacturer": "Felt",
   "model_group": "B",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_triathlon",
+  "primary_activity": "road-triathlon",
   "handlebar_type": "forward",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2012/b16w.jpg",
   "target_riders": [
@@ -35,7 +35,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "bottom_bracket": {
       "spindle": "24mm"
@@ -61,8 +61,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "10_rear"
+    "2-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -206,7 +206,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "FSA",
       "description": "FSA MegaExo"
     },
@@ -219,22 +219,14 @@
       "description": "Dual pivot w/ stainless hardware & cartridge brake pads"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Felt",
       "description": "Felt Slick Brake & PTFE Coated Derailleur"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "TRP",
       "description": "TRP aero aluminum"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "10 speed 11-25T"
     },
     {
       "type": "chain",
@@ -245,6 +237,14 @@
       "type": "chainrings",
       "type_detail": "Chainwheel",
       "description": "50T/34T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "10 speed 11-25T"
     },
     {
       "type": "crankset",
@@ -273,7 +273,7 @@
       "description": "Felt Aero TT/Tri UHC Performance carbon fiber crown, blades, & dropouts w/ 1\"\" aluminum steerer tube"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Devox Tri-tip ergonomic base bar grip w/ Felt Gel Velvet tape wrapped extensions"
     },
@@ -330,12 +330,12 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "AR Aero 3D forged aluminum, 2 x 5mm x 0.8mm Cr-Mo bolts, 23g"
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "Felt",
       "description": "Felt Slick Brake & PTFE Coated Derailleur"
     },

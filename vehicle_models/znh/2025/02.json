@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/znh/2025/02",
   "manufacturer": "Znh",
   "model_group": "02",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -56,12 +56,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "certifications": [
         "UL 2849"
       ],
@@ -78,14 +78,14 @@
           "max_speed": 32,
           "range_claimed": 97,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -109,11 +109,11 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V 10Ah"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LED"
     },
     {

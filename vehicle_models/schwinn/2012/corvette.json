@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/schwinn/2012/corvette",
   "manufacturer": "Schwinn",
   "model": "Corvette",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -80,8 +80,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -93,7 +93,7 @@
   },
   "brakes": [
     {
-      "type": "coaster_brake",
+      "type": "coaster-brake",
       "position": [
         "rear"
       ]
@@ -101,7 +101,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "One Piece"
     },
     {
@@ -112,16 +112,16 @@
       "description": "Coaster"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z510"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "description": "22t"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Z510"
     },
     {
       "type": "crankset",
@@ -133,7 +133,7 @@
       "description": "Schwinn Rigid Steel, 1 1/8\""
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Schwinn",
       "description": "Schwinn Cruiser Air Grips (Also includes kickstand)"
     },

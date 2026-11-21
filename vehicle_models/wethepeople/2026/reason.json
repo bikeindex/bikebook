@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/wethepeople/2026/reason",
   "manufacturer": "WeThePeople",
   "model": "Reason",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "bmx_freestyle",
+  "primary_activity": "bmx-freestyle",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/wethepeople/2026/reason.jpg",
   "description": "The Reason is a serious heavy-hitter, dripping with premium quality from front to back. Built around a full 4130 chromoly frame, it features a steep 76-degree headtube and a snappy 12.75” chainstay for effortless front-wheel control. We’ve shortened the cranks to 160mm and paired them with a tight 15mm offset fork, mimicking the exact, ultra-responsive feel that WTP PRO Felix Prangenberg and the team demand. To top it off, it features the innovative Éclat SHIFT freecoaster hub with Hybrid SYSTEM tech, giving you the power to switch between cassette and freecoaster in minutes.",
@@ -61,8 +61,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -74,7 +74,7 @@
   },
   "brakes": [
     {
-      "type": "u_brake",
+      "type": "u-brake",
       "position": [
         "rear"
       ],
@@ -98,7 +98,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "BB",
       "description": "SALT \"MID\" bb, 19mm, press fit, sealed bearing"
     },
@@ -110,17 +110,9 @@
       "description": "SALTPLUS “GEO XL” alloy u-brake rear"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "type_detail": "LEVER",
       "description": "SALT \"AM\" brake lever, alloy"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "DRIVER",
-      "position": [
-        "rear"
-      ],
-      "description": "1pc freecoaster driver, 9t, sealed bearing"
     },
     {
       "type": "chain",
@@ -131,6 +123,14 @@
       "type_detail": "SPROCKET",
       "manufacturer": "WeThePeople",
       "description": "WETHEPEOPLE \"PARAGON\" sprocket & nylon guard, 6061-T6 alloy, 25t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "DRIVER",
+      "position": [
+        "rear"
+      ],
+      "description": "1pc freecoaster driver, 9t, sealed bearing"
     },
     {
       "type": "crankset",
@@ -153,7 +153,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "WeThePeople",
       "description": "WETHEPEOPLE \"PERFECT\" grips, 165mm, flangeless",
@@ -196,7 +196,7 @@
       }
     },
     {
-      "type": "hub_guard",
+      "type": "hub-guard",
       "type_detail": "HUBGUARDS",
       "description": "SALT \"PRO\" hub guards - nylon/fiberglass front (x2), nylon/fiberglass rear (x2)"
     },
@@ -238,7 +238,7 @@
       "description": "SALT \"AM\" pivotal seat post"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "SEAT CLAMP",
       "description": "integrated seat clamp"
     },

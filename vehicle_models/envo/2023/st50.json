@@ -1,17 +1,17 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/envo/2023/st50",
   "manufacturer": "Envo",
   "model": "ST50",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "cargo",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/envo/2023/st50.png",
-  "geometry_photo": "https://bikebook.bikeindex.org/envo/2023/st50_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/envo/2023/st50-geometry.jpg",
   "description": "ENVO ST50 is an e-bike that functions as a commuter and cargo carrier. Its rugged frame coupled with suspension fork allows for smooth rides on any terrain. Powered by a 750W motor, the bike's cargo rack and basket can easily transport tools, groceries, or even second passenger.",
   "first_year": 2023,
   "years": {
@@ -37,7 +37,7 @@
         },
         {
           "name": "Pearl",
-          "stock_photo": "https://bikebook.bikeindex.org/envo/2023/st50_pearl.png",
+          "stock_photo": "https://bikebook.bikeindex.org/envo/2023/st50-pearl.png",
           "variants": [
             {
               "sku": "ENST50R14C17E",
@@ -54,7 +54,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/envo/2023/st50_maroon.png",
+          "stock_photo": "https://bikebook.bikeindex.org/envo/2023/st50-maroon.png",
           "variants": [
             {
               "sku": "ENST50R14C17C",
@@ -104,8 +104,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -120,7 +120,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -130,7 +130,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
@@ -151,7 +151,7 @@
           "max_speed": 45,
           "range_claimed": 150,
           "e_vehicle_classifications": [
-            "evc/pedal_moped"
+            "evc/pedal-moped"
           ]
         }
       ]
@@ -195,7 +195,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "BB Sets",
       "description": "68mm LDS torque sensor"
     },
@@ -222,20 +222,20 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V/15AH 5000 LGLithium battery, CAN"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54V 2A CC-CV 240/120V ULc"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Brushless 48V/750W max/ Geared rear motor"
+      "type": "ebike-displayremote",
+      "description": "Color Display with Bluetooth App connectivity, CAN"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Color Display with Bluetooth App connectivity, CAN"
+      "type": "ebike-motor",
+      "description": "Brushless 48V/750W max/ Geared rear motor"
     },
     {
       "type": "fender",
@@ -249,7 +249,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grip",
       "description": "TPR Grip"
     },

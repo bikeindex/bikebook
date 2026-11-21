@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fairdale/2013/coaster",
   "manufacturer": "Fairdale",
   "model_group": "Coaster",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -92,8 +92,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "rear": [
@@ -102,7 +102,7 @@
   },
   "brakes": [
     {
-      "type": "coaster_brake",
+      "type": "coaster-brake",
       "position": [
         "rear"
       ]
@@ -162,22 +162,22 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed Mid 19mm"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC 410"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Sprocket",
       "position": [
         "rear"
       ],
       "manufacturer": "Fairdale",
       "description": "Fairdale 44t"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC 410"
     },
     {
       "type": "crankset",
@@ -189,7 +189,7 @@
       "description": "Hi-ten fork with rack/ fender mounts."
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Odyssey",
       "description": "Odyssey Terry Adams"
@@ -221,7 +221,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seatclamp",
       "description": "30mm alloy",
       "dimensions": {

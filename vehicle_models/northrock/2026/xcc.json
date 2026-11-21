@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/northrock/2026/xcc",
   "manufacturer": "Northrock",
   "model_group": "XC",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -30,7 +30,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "seatpost_diameter": 30.9
   },
@@ -51,8 +51,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "12_rear"
+    "1-front",
+    "12-rear"
   ],
   "gearing": {
     "front": [
@@ -66,7 +66,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -99,21 +99,21 @@
       "description": "Tektro TXD143 hydraulic dual disc"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano Altus EF-500 integrated with shifter"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "description": "KMC-Z50"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "SHIMANO DEORE (CS-M6100) 12-speed cassette reduces weight while increasing gearing range"
-    },
-    {
-      "type": "chain",
-      "description": "KMC-Z50"
     },
     {
       "type": "crankset",
@@ -135,7 +135,7 @@
       "description": "SR Suntour XCR 32 LO R AIR air spring front suspension with externally adjustable rebound. Selected for higher-end features and reputation."
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Velo",
       "description": "Velo ergonomic dual density comfort grip"
@@ -160,7 +160,7 @@
       "description": "32H alloy with quick-release"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Assembly tools",
       "description": "Included"
     },

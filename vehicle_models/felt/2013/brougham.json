@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2013/brougham",
   "manufacturer": "Felt",
   "model_group": "Brougham",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -59,8 +59,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -192,12 +192,12 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "description": "FB bar end plugs"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "FSA",
       "description": "FSA 68mm w/ forged cr-mo square taper"
     },
@@ -211,22 +211,14 @@
       "description": "Tektro dual pivot caliper, stainless hardware, teflon bushings"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Felt",
       "description": "Felt Slick Brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro front & rear brake levers"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "freewheel - 17T x 3/32\", fixed cog - 17T x 3/32\" w/ lock ring"
     },
     {
       "type": "chain",
@@ -237,6 +229,14 @@
       "type": "chainrings",
       "type_detail": "Chainwheel",
       "description": "47t x 3/32\", aluminum"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "freewheel - 17T x 3/32\", fixed cog - 17T x 3/32\" w/ lock ring"
     },
     {
       "type": "crankset",
@@ -251,7 +251,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt FB BMX flange grips"
@@ -311,7 +311,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "Ø30.0mm forged aluminum single bolt, cr-mo 5mm x 0.8mm bolt w/nutbar",
       "dimensions": {

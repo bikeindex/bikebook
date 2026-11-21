@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/miyata/2026/pavea",
   "manufacturer": "Miyata",
   "model": "Pavea",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -29,7 +29,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/miyata/2026/pavea_half_matte_light_grey.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/miyata/2026/pavea-half-matte-light-grey.jpg"
         }
       ],
       "url": "https://www.miyatabike.com/miyata/lineup/pavea/pavea.html",
@@ -51,8 +51,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -70,7 +70,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -101,7 +101,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "description": "bell"
     },
     {
@@ -119,17 +119,8 @@
       "description": "V brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "aluminum レバー resin bracket"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "SHIMANO MF-TZ500-7 14-28T"
     },
     {
       "type": "chain",
@@ -138,6 +129,15 @@
     {
       "type": "chainrings",
       "description": "steel 52T with double guard"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "SHIMANO MF-TZ500-7 14-28T"
     },
     {
       "type": "crankset",
@@ -159,7 +159,7 @@
       "description": "steel"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "elastomer grips L125"
     },
@@ -183,7 +183,7 @@
       "description": "steel"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"
@@ -191,7 +191,7 @@
       "description": "battery light"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "reflector"
     },
     {
@@ -221,7 +221,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "description": "aluminum quick release"
     },

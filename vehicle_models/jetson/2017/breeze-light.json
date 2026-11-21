@@ -1,0 +1,183 @@
+{
+  "schema_version": "2.0.0",
+  "id": "m/jetson/2017/breeze-light",
+  "manufacturer": "Jetson",
+  "model_group": "Breeze",
+  "model": "Breeze Light",
+  "model_configuration": "complete",
+  "type": "e-scooter",
+  "propulsion": [
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/jetson/2017/breeze-light.png",
+  "first_year": 2017,
+  "years": {
+    "2026": {
+      "original_msrp": 95999,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2017/breeze-light-black.png",
+          "variants": [
+            {
+              "sku": "JBZL17-BK",
+              "gtin": "851231007357",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "White",
+          "colors": [
+            "white"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2017/breeze-light.png",
+          "variants": [
+            {
+              "sku": "JBZL17-WH",
+              "gtin": "851231007364",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://ridejetson.com/products/breeze-light-folding-electric-scooter",
+      "url_live": true
+    },
+    "2017": {}
+  },
+  "frame": {
+    "material": "aluminum",
+    "folding": "stem-fold"
+  },
+  "wheels": [
+    {
+      "bsd": 134,
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "brakes": [
+    {
+      "type": "drum-brake",
+      "position": [
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "kind": "hub-drive",
+      "battery": {
+        "capacity": 281,
+        "voltage": 36,
+        "chemistry": "li-ion",
+        "charging_time": 240
+      },
+      "rated_power": 300,
+      "operating_modes": [
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 29,
+          "range_claimed": 24,
+          "max_slope": 20,
+          "throttle_type": "Thumb"
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 120
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "dimensions": {
+          "length": 953,
+          "width": 483,
+          "height": 1092
+        },
+        "dimensions_folded": {
+          "length": 960,
+          "width": 203,
+          "height": 356
+        },
+        "total_weight": 12.7,
+        "rider_age_min": 13,
+        "extra_measurements": {
+          "handlebar_height_max": 1067,
+          "handlebar_height_min": 889
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "rear"
+      ],
+      "description": "Rear drum brake"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "36V, 7.8Ah rechargeable lithium-ion"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "Removable Battery: No"
+    },
+    {
+      "type": "ebike-displayremote",
+      "description": "Backlit LCD with speed odometer & battery meter"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "300 watt brushless hub motor"
+    },
+    {
+      "type": "kickstand"
+    },
+    {
+      "type": "light",
+      "description": "LED headlight & brake light"
+    },
+    {
+      "type": "throttle",
+      "type_detail": "Throttle Type",
+      "description": "Thumb throttle"
+    },
+    {
+      "type": "tire",
+      "type_detail": "Tire Type",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Rubber"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Deck Size",
+      "description": "26\" x 7\""
+    },
+    {
+      "type": "wheel",
+      "type_detail": "Wheel Size",
+      "description": "8.5 in."
+    }
+  ]
+}

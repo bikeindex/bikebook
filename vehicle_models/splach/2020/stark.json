@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/splach/2020/stark",
   "manufacturer": "Splach",
   "model": "Stark",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -24,7 +24,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/splach/2020/stark_all_black.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/splach/2020/stark-all-black.jpg",
           "variants": [
             {
               "sku": "Stark-750K-S",
@@ -77,8 +77,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -87,7 +87,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -98,7 +98,7 @@
     {
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_speed": "spoke_magnet",
       "battery": {
         "capacity": 720,
@@ -119,7 +119,7 @@
           "range_claimed": 50,
           "levels": 6,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -129,7 +129,7 @@
           "range_claimed": 48,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -169,17 +169,17 @@
       "description": "Chain Drive"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 15Ah"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bafang",
-      "description": "Bafang / Rear Hub Motor"
+      "type": "ebike-displayremote",
+      "description": "SW-LCD"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "SW-LCD"
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang / Rear Hub Motor"
     },
     {
       "type": "fender"
@@ -197,16 +197,16 @@
       "description": "Upright"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front&Rear"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Brake Light",
       "description": "With"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],

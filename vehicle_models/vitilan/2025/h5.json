@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/vitilan/2025/h5",
   "manufacturer": "Vitilan",
   "model": "H5",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -51,8 +51,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "7_rear"
+    "3-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -67,7 +67,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -78,7 +78,7 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IPX6",
       "battery": {
         "capacity": 1300,
@@ -95,7 +95,7 @@
           "range_claimed": 105,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -104,14 +104,14 @@
           "max_speed": 64,
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
     },
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IPX6",
       "battery": {
         "capacity": 1300,
@@ -129,7 +129,7 @@
           "range_claimed": 105,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -137,7 +137,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -172,7 +172,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell/Horn",
       "description": "Electric Horn"
     },
@@ -189,24 +189,24 @@
       "description": "24*34*42T"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "52V 25Ah(1300Wh)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "58.8V 2.8A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "1000W*2 Brushless Gear Motor(1500W*2 peak)"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "2-in-1 Controller: 52V 26ah &52V 28ah"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "52V LCD Display"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "1000W*2 Brushless Gear Motor(1500W*2 peak)"
     },
     {
       "type": "fender",
@@ -224,14 +224,14 @@
       "description": "Included"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
       "description": "52V LED Light"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"

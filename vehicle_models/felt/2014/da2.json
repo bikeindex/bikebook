@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2014/da2",
   "manufacturer": "Felt",
   "model_group": "DA",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_triathlon",
+  "primary_activity": "road-triathlon",
   "handlebar_type": "forward",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2014/da2.jpeg",
   "first_year": 2014,
@@ -53,7 +53,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "bottom_bracket": {
       "shell": "BB30",
@@ -78,8 +78,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "11_rear"
+    "2-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -98,7 +98,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -243,7 +243,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Vision",
       "description": "Vision BB30"
     },
@@ -257,23 +257,14 @@
       "description": "Felt Aero TT / Tri, integrated"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Felt",
       "description": "Felt Slick brake & derailleur"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano Dura-Ace TT Di2"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Ultegra 11-speed, 11-25T"
     },
     {
       "type": "chain",
@@ -285,6 +276,15 @@
       "type_detail": "Chainwheel",
       "manufacturer": "Vision",
       "description": "Vision 53/39T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Ultegra 11-speed, 11-25T"
     },
     {
       "type": "crankset",
@@ -308,11 +308,11 @@
       "description": "Shimano Dura-Ace Di2"
     },
     {
-      "type": "electronic_shifting_component",
+      "type": "electronic-shifting-part",
       "description": "Di2 Battery Cover"
     },
     {
-      "type": "electronic_shifting_component",
+      "type": "electronic-shifting-part",
       "description": "Di2 battery charging cables"
     },
     {
@@ -321,7 +321,7 @@
       "description": "Felt Bayonet 4 UHC Ulitmate carbon fiber monocoque construction, cabon fiber brake cover, blades, dropouts, crown w/ Felt compression device"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Devox VelvetGel Tapes & Dimpled Gel Pads"
     },
@@ -354,7 +354,7 @@
       "description": "Felt TTR1, sealed bearing, 20H, 11-speed"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Assembly Paste",
       "description": "Carbon assembly paste"
     },
@@ -378,13 +378,13 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "manufacturer": "Felt",
       "description": "Felt Aero Integrated DA/B"
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "Felt",
       "description": "Felt Slick brake & derailleur"
     },
@@ -431,7 +431,7 @@
       "description": "touch-up paint"
     },
     {
-      "type": "water_bottle_cage",
+      "type": "water-bottle-cage",
       "description": "DA Aero Bottle System by TorHans™"
     }
   ]

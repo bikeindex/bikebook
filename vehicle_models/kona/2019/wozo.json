@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2019/wozo",
   "manufacturer": "Kona",
   "model": "Wozo",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -67,8 +67,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "11_rear"
+    "1-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -86,14 +86,14 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
       "rotor_diameter": 180
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -184,7 +184,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "B/B",
       "manufacturer": "SRAM",
       "description": "SRAM GXP PF121"
@@ -200,12 +200,12 @@
       "description": "SRAM Level T"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "SRAM Level T"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front"
       ],
@@ -216,7 +216,7 @@
       }
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "rear"
       ],
@@ -227,15 +227,6 @@
       }
     },
     {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM PG1130 11-42t 11spd"
-    },
-    {
       "type": "chain",
       "manufacturer": "SRAM",
       "description": "SRAM PC1110"
@@ -243,6 +234,15 @@
     {
       "type": "chainrings",
       "description": "30t Narrow/Wide"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM PG1130 11-42t 11spd"
     },
     {
       "type": "crankset",
@@ -268,7 +268,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Kona",
       "description": "Kona Key Grip"
@@ -325,7 +325,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Kona",
       "description": "Kona QR"

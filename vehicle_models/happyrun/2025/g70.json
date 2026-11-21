@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/happyrun/2025/g70",
   "manufacturer": "HappyRun",
   "model_group": "G70",
   "model": "G70",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
@@ -82,15 +82,15 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "electronic": false
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -118,7 +118,7 @@
           "range_claimed": 129,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -126,7 +126,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -175,11 +175,11 @@
       "description": "Hydraulic"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum Alloy, with Power Cutoff"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -199,20 +199,20 @@
       "description": "7 Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 18Ah (Top)+20Ah (Bottom)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "7-8 Hours, 2A Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "1000W/ 2000W Peak Power"
+      "type": "ebike-displayremote",
+      "description": "Large LED Display + NFC Unlocking"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Large LED Display + NFC Unlocking"
+      "type": "ebike-motor",
+      "description": "1000W/ 2000W Peak Power"
     },
     {
       "type": "fork",
@@ -222,14 +222,14 @@
       "description": "Adjustable Aluminum Alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "160 Lumens LED Light"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Taillight",
       "position": [
         "rear"
@@ -237,7 +237,7 @@
       "description": "Braking Indicator, Rear Light Steady/Flash"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Turn Signal",
       "description": "Front and Rear Sequential Turn Signal Lights"
     },

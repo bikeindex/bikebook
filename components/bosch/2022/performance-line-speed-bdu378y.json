@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0.0",
+  "id": "c/bosch/2022/performance-line-speed-bdu378y",
+  "type": "ebike-motor",
+  "manufacturer": "Bosch",
+  "model": "BDU378Y",
+  "model_group": "Performance Line Speed",
+  "aliases": [
+    "Performance Line Speed smart system"
+  ],
+  "markets": [
+    "EU"
+  ],
+  "first_year": 2022,
+  "motor": {
+    "kind": "mid-drive",
+    "certifications": [
+      "UL 2849"
+    ],
+    "rated_power": 250,
+    "peak_power": 600,
+    "max_torque": 85,
+    "operating_modes": [
+      {
+        "mode": "assist",
+        "availability": "stock",
+        "max_speed": 45
+      }
+    ]
+  },
+  "market_variants": {
+    "CH": {
+      "markets": [
+        "CH"
+      ]
+    },
+    "GB": {
+      "markets": [
+        "GB"
+      ]
+    },
+    "NO": {
+      "markets": [
+        "NO"
+      ]
+    },
+    "NZ": {
+      "markets": [
+        "NZ"
+      ]
+    },
+    "US": {
+      "markets": [
+        "US"
+      ],
+      "motor": {
+        "operating_modes": {
+          "assist stock": {
+            "e_vehicle_classifications": [
+              "evc/us/class-3"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/opus/2019/sprint",
   "manufacturer": "Opus",
   "model": "Sprint",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -37,7 +37,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/opus/2019/sprint_silver_fade.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/opus/2019/sprint-silver-fade.jpg"
         }
       ],
       "url": "https://www.opusbike.com/en/bikes/kids/sprint-op-sprintzg-en/",
@@ -50,7 +50,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/opus/2019/sprint_zinc_graphite.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/opus/2019/sprint-zinc-graphite.jpg"
         }
       ],
       "url": "https://www.opusbike.com/en/bikes/kids/sprint-op-sprintsgr-en/",
@@ -89,8 +89,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -102,7 +102,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -135,7 +135,11 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bashguardchain-guide",
+      "description": "Chainguard"
+    },
+    {
+      "type": "bottom-bracket",
       "description": "9 pc steel"
     },
     {
@@ -147,15 +151,8 @@
       "description": "HJ V-brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "HJ short reach"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "18"
     },
     {
       "type": "chain",
@@ -163,12 +160,15 @@
       "description": "KMC Z410A"
     },
     {
-      "type": "chain_guide",
-      "description": "Chainguard"
-    },
-    {
       "type": "chainrings",
       "description": "28"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "18"
     },
     {
       "type": "crankset",
@@ -181,11 +181,11 @@
       "description": "Opus 6061 aluminum"
     },
     {
-      "type": "frame_protection",
+      "type": "frame-protection",
       "description": "Stem protector"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips tape",
       "manufacturer": "Opus",
       "description": "Opus Kraton"
@@ -249,7 +249,7 @@
       }
     },
     {
-      "type": "training_wheels",
+      "type": "training-wheels",
       "description": "Adjustable/Removable training wheels"
     }
   ]

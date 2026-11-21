@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/catrike/2026/700",
   "manufacturer": "Catrike",
   "model": "700",
@@ -7,7 +7,7 @@
   "type": "recumbent",
   "type_detail": "tadpole",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "forward",
@@ -101,8 +101,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "10_rear"
+    "3-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -121,7 +121,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -159,14 +159,25 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "description": "12mm Thru Axle",
       "dimensions": {
         "axle_diameter": 12
       }
     },
     {
-      "type": "bottom_bracket",
+      "type": "bashguardchain-guide",
+      "type_detail": "Chain Guard",
+      "manufacturer": "FSA",
+      "description": "FSA Guard"
+    },
+    {
+      "type": "bashguardchain-guide",
+      "type_detail": "Idler",
+      "description": "TerraCycle Sport Power Idler 15T"
+    },
+    {
+      "type": "bottom-bracket",
       "manufacturer": "FSA",
       "description": "FSA Road MegaExo"
     },
@@ -213,17 +224,9 @@
       "description": "No Brake Stee"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Avid",
       "description": "Avid FR-5"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM 11/36 10 Speed"
     },
     {
       "type": "chain",
@@ -235,19 +238,16 @@
       "description": "Low Friction PTFE Flared Chain Tube"
     },
     {
-      "type": "chain_guide",
-      "type_detail": "Chain Guard",
-      "manufacturer": "FSA",
-      "description": "FSA Guard"
-    },
-    {
-      "type": "chain_guide",
-      "type_detail": "Idler",
-      "description": "TerraCycle Sport Power Idler 15T"
-    },
-    {
       "type": "chainrings",
       "description": "30/39/52"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM 11/36 10 Speed"
     },
     {
       "type": "crankset",

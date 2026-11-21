@@ -1,16 +1,16 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/pedego/2024/moto",
   "manufacturer": "Pedego",
   "model": "Moto",
   "model_configuration": "complete",
   "type": "bike",
-  "type_detail": "bench_seat",
+  "type_detail": "bench-seat",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/moto.jpg",
   "description": "The Moto is your adventure-ready e-bike for exploring trails, beaches, camping trips, or city commutes—ride solo or with a companion and embrace the open road.",
@@ -39,7 +39,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/moto_matte_blue.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/moto-matte-blue.jpg",
           "variants": [
             {
               "sku": "BK520004SBM",
@@ -92,8 +92,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "10_rear"
+    "1-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -111,7 +111,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -125,15 +125,17 @@
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
         "UL 2849",
-        "UL 2271",
-        "UL 2580",
         "UL 1446",
         "ISO 4210"
       ],
       "water_rating": "IPX6",
       "battery": {
         "capacity": 922,
-        "chemistry": "li-ion"
+        "chemistry": "li-ion",
+        "certifications": [
+          "UL 2271",
+          "UL 2580"
+        ]
       },
       "rated_power": 750,
       "peak_power": 1500,
@@ -145,7 +147,7 @@
           "range_claimed": 121,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         },
         {
@@ -153,7 +155,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -161,7 +163,7 @@
           "availability": "app_update",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -189,13 +191,6 @@
       "description": "Tektro E395 Two Piston Calipers w/ 5mm Brake Pads, 203mm Front and Rear 2.3mm Rotors, Class 3 Ready"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "PG1030 11/32T Rear Cassette"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC E10S eBike Chain"
@@ -206,6 +201,13 @@
         "front"
       ],
       "description": "52T Front Chainring w/ Aluminum Double Chainguard (C3 Ready)"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "PG1030 11/32T Rear Cassette"
     },
     {
       "type": "crankset",
@@ -223,15 +225,15 @@
       "description": "SRAM GX 10S Rear Derailleur"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "UL2271 Certified, 48V19.2Ah w/ Resin Potting, IPX6, Sleep and Deep Sleep, 6A Charging Compatible"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 2A FANLESS SMART CHARGER WITH CHARGE INDICATOR LIGHT."
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "UL Certified Components: UL1446, UL94, UL746C, UL758, UL796, UL224 750 Watt Nominal Rated, 1500 Watt Peak, 1 Piece Aluminum Wheel"
     },
     {
@@ -252,11 +254,11 @@
       "description": "Classic Freestyle Low-Rise Handlebars, Pedego Custom Ribbed Design Grips"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front: Daytime Running w/ Pedego Logo, Low Beam 100Lux, High Beam 170Lux, 350 Lumen Low, 350 Lumen High, Combined 700 Lumen Rear: Radiant Rear Light w/ Turn Signal, Brake Light and Running Light"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Underglow LED Light Strip",
       "description": "9 LEDS per Side, 7 Colors, 15 Modes Sissy Bar w"
     },
@@ -268,7 +270,7 @@
       "description": "XX Cushion, 6061 Aluminum Rear Rack w/ MOLLE Paneling, Adaptor for Radiant Rear Light, Pedego Bag Compatible, Yepp Seat Compatible and Adjustable for 1 or 2 Riders,"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Compression Rear Suspension: 2 x Coil Over Shocks w/ 45mm Travel",
       "position": [
         "rear"

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/wethepeople/2026/revolver",
   "manufacturer": "WeThePeople",
   "model_group": "Revolver",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "bmx_freestyle",
+  "primary_activity": "bmx-freestyle",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/wethepeople/2026/revolver.jpg",
   "description": "Built from our “do-it-all” Revolver frame and premium aftermarket parts, this is a balanced, high-end bike for riders who want everything in one setup. With a 21” top tube, all-round geometry, 28–9 gearing, and full Éclat peg and guard setup, it’s ready for any terrain. Finished with a lifetime-guaranteed Éclat Storm fork, the Revolver delivers a complete no-compromise build straight out of the box. INCLUDES LIFETIME GUARANTEE ON THE FRAME & FORK The harder 28-9 gearing gives this rig plenty of juice when the time for pedalling fast comes into play, and the and full assortment of ECLAT Dura chromoly pegs and hub guards allow you to gun it down any rail in sight. Wrap it up with a lifetime guaranteed ECLAT Storm fork and a mesmerising Skipper Green paint finish, the need to build a custom bike really doesn't exist any more when you could be riding on a bike like this fresh out of the box. INCLUDES LIFETIME GUARANTEE ON THE FRAME & FORK",
@@ -63,8 +63,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -76,7 +76,7 @@
   },
   "brakes": [
     {
-      "type": "u_brake",
+      "type": "u-brake",
       "position": [
         "rear"
       ],
@@ -100,7 +100,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "BB",
       "manufacturer": "WeThePeople",
       "description": "WETHEPEOPLE \"COMPACT\" bb, 22mm, press fit, sealed bearing"
@@ -113,17 +113,9 @@
       "description": "ÉCLAT \"TALON\" u-brake rear, alloy"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "type_detail": "LEVER",
       "description": "SALT \"MOTO\" brake lever, alloy"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "DRIVER",
-      "position": [
-        "rear"
-      ],
-      "description": "1pc cassette driver, 9t, full bushing, SDS (RSD/LSD switchable)"
     },
     {
       "type": "chain",
@@ -133,6 +125,14 @@
       "type": "chainrings",
       "type_detail": "SPROCKET",
       "description": "ÉCLAT \"ABYSS\" sprocket, cnc, 6061-T6 alloy, 28t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "DRIVER",
+      "position": [
+        "rear"
+      ],
+      "description": "1pc cassette driver, 9t, full bushing, SDS (RSD/LSD switchable)"
     },
     {
       "type": "crankset",
@@ -156,7 +156,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "ÉCLAT \"FILTER\" grips, flangeless, with ÉCLAT \"TECH-BOLT\" barends"
     },
@@ -195,7 +195,7 @@
       }
     },
     {
-      "type": "hub_guard",
+      "type": "hub-guard",
       "type_detail": "HUBGUARDS",
       "description": "ÉCLAT \"PULSE\" hub guards - 4140 crmo front (1x), 4140 crmo rear (1x)"
     },
@@ -235,7 +235,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "SEAT CLAMP",
       "manufacturer": "WeThePeople",
       "description": "WETHEPEOPLE \"SUPREME\" seat clamp, cnc alloy"

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/wethepeople/2026/battleship",
   "manufacturer": "WeThePeople",
   "model_group": "Battleship",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "bmx_freestyle",
+  "primary_activity": "bmx-freestyle",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/wethepeople/2026/battleship.jpg",
   "description": "BATTLESHIP defines new-school street riding—strength, durability, and control. Built on a proven technical street frame and upgraded with a full Wethepeople/Éclat PRO parts package, including the new 15mm offset Battleship fork, it’s a no-compromise complete our team could ride straight away. Backed by a Lifetime Guarantee on frame and fork, and available in RSD and LSD options, the Battleship is built to perform at the highest level.",
@@ -44,8 +44,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -57,7 +57,7 @@
   },
   "brakes": [
     {
-      "type": "u_brake",
+      "type": "u-brake",
       "position": [
         "rear"
       ],
@@ -81,7 +81,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "BB",
       "manufacturer": "WeThePeople",
       "description": "WETHEPEOPLE \"COMPACT\" bb, 22mm, press fit, sealed bearing"
@@ -94,17 +94,9 @@
       "description": "ECLAT “TALON” alloy u-brake rear"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "type_detail": "LEVER",
       "description": "SALT \"MOTO\" brake lever, alloy"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "DRIVER",
-      "position": [
-        "rear"
-      ],
-      "description": "1pc driver, 9t, sealed bearing, setup as freecoaster"
     },
     {
       "type": "chain",
@@ -114,6 +106,14 @@
       "type": "chainrings",
       "type_detail": "SPROCKET",
       "description": "ÉCLAT \"ELEVATE\" sprocket & nylon guard, 6061-T6 alloy, 25t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "DRIVER",
+      "position": [
+        "rear"
+      ],
+      "description": "1pc driver, 9t, sealed bearing, setup as freecoaster"
     },
     {
       "type": "crankset",
@@ -133,7 +133,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "ÉCLAT \"SHOGUN\" grips, flangeless, with ÉCLAT \"TECH-BOLT\" barends"
     },
@@ -171,7 +171,7 @@
       "description": "WETHEPEOPLE \"HELIX\" freecoaster hub / ÉCLAT \"SHIFT\" freecoaster hub (RAW LSD MODEL)"
     },
     {
-      "type": "hub_guard",
+      "type": "hub-guard",
       "type_detail": "HUBGUARDS",
       "manufacturer": "WeThePeople",
       "description": "WETHEPEOPLE hub guards - nylon/fiberglass front (x4) / ÉCLAT x4 hub guards (RAW LSD MODEL)"
@@ -211,7 +211,7 @@
       "description": "WETHEPEOPLE \"TEAM\" pivotal seat post, 200mm, 6061-T6 alloy,"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "SEAT CLAMP",
       "manufacturer": "WeThePeople",
       "description": "WETHEPEOPLE \"LOGIC\" seat clamp, 4130 crmo"

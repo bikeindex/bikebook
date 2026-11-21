@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/sava/2021/folding",
   "manufacturer": "Sava",
   "model": "Folding",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -51,9 +51,9 @@
     "2021": {}
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "material_detail": "TORAY T800 Carbon",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "wheels": [
     {
@@ -67,8 +67,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -86,7 +86,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -123,14 +123,6 @@
       "description": "Left-hand control front brake, Right-hand control rear brake, if you want to change, please let us know."
     },
     {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "R42-9 11-25T 9S CP"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z99/GY/BR/110 L/PPO,brown"
@@ -139,6 +131,14 @@
       "type": "chainrings",
       "type_detail": "Chainwheel",
       "description": "Prowheel 53T*170 9S"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "R42-9 11-25T 9S CP"
     },
     {
       "type": "derailleur",

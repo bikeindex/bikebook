@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/sun/2025/electrolite",
   "manufacturer": "Sun",
   "model": "Electrolite",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -71,8 +71,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -90,7 +90,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -100,7 +100,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 360,
         "voltage": 36
@@ -113,14 +113,14 @@
           "max_speed": 28,
           "range_claimed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -142,7 +142,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed Cartridge, 68 x 118mm"
     },
     {
@@ -154,14 +154,6 @@
       "description": "Linear Pull with Motor Cutout Switch, Blk/Sil"
     },
     {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "13-28 8-Speed, CP"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "K.M.C. 1/2\" x 3/32\", Sil/Gry"
@@ -169,6 +161,14 @@
     {
       "type": "chainrings",
       "description": "Steel, 38T x 1/2\" x 3/32\", Black"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "13-28 8-Speed, CP"
     },
     {
       "type": "crankset",
@@ -186,7 +186,7 @@
       "description": "Shimano RD-M360 Acera, Black"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V 10AH Lithium Polymer Battery for ElectroLite"
     },
     {
@@ -197,7 +197,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Kraton Rubber-Gel, L-130mm/R-92mm, 2-Tone Black/Grey"
     },
@@ -264,7 +264,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "description": "Alloy, 31.8mm I.D., with Q/R, Black",
       "dimensions": {

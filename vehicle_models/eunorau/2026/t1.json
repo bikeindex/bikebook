@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/eunorau/2026/t1",
   "manufacturer": "Eunorau",
   "model": "T1",
@@ -7,13 +7,13 @@
   "type": "recumbent",
   "type_detail": "tadpole",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
-  "primary_activity": "road_bike_touring",
+  "primary_activity": "road-bike-touring",
   "handlebar_type": "forward",
   "stock_photo": "https://bikebook.bikeindex.org/eunorau/2026/t1.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/eunorau/2026/t1_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/eunorau/2026/t1-geometry.jpg",
   "description": "EUNORAU T1 – 52V 750W Rear Hub Motor Full Hydraulic-Brake Electric Recumbent Trike\n\nThe EUNORAU T1 is a comfort-first, three-wheel electric recumbent trike engineered for riders who want stability, ease, and all-day riding comfort — no balancing required. Equipped with a torque-sensing 750W rear hub motor and full hydraulic disc brakes with a parking-brake hold, it delivers smooth, intuitive power and confident stopping control on every ride. Whether you are cruising the neighborhood, touring long distances with gear in tow, or getting back on three wheels after years away from two, the T1 provides the low, reclined riding position and effortless handling that make every mile easy.\n\nPEDAL ASSIST: Torque Sensor – power delivered in proportion to your pedaling effort\n\nPARKING BRAKE: Integrated hydraulic lock holds the trike stationary for safe mounting and dismounting\n\nSEAT: Reclined mesh sling seat with adjustable backrest and padded headrest",
   "first_year": 2026,
   "years": {
@@ -39,7 +39,7 @@
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/eunorau/2026/t1_orange.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/eunorau/2026/t1-orange.jpg",
           "variants": [
             {
               "sku": "RTT11ORWD",
@@ -81,8 +81,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -100,7 +100,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front_left",
         "front_right",
@@ -112,7 +112,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
         "capacity": 832,
@@ -128,7 +128,7 @@
           "max_speed": 32,
           "range_claimed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -136,7 +136,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -170,7 +170,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "description": "LED Headlight with Integrated Horn"
     },
     {
@@ -187,7 +187,7 @@
       "description": "Integrated Hydraulic Lock"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -198,17 +198,17 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z8.3"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
       ],
       "description": "7-Speed, 14-28T"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Z8.3"
     },
     {
       "type": "crankset",
@@ -220,42 +220,42 @@
       "description": "SHIMANO Altus RD-M310-L"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "52V 16Ah Lithium-Ion (LG Cells)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "52V 750W Rear Hub Motor"
+      "type": "ebike-displayremote",
+      "description": "DPC0820CB Color LCD (CAN-Bus Protocol) with Turn-Signal Controls"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "DPC0820CB Color LCD (CAN-Bus Protocol) with Turn-Signal Controls"
+      "type": "ebike-motor",
+      "description": "52V 750W Rear Hub Motor"
     },
     {
       "type": "fender",
       "description": "Front & Rear — Included"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools & Manual",
       "description": "Included"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "LED Headlight with Integrated Horn"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
       "description": "Battery-Powered Rear Light with Brake-Light Function and Integrated Left/Right Turn Signals"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Reflectors",
       "description": "BS-Certified, Front & Rear"
     },
@@ -335,7 +335,7 @@
       "description": "Built-In Trailer Hook"
     },
     {
-      "type": "water_bottle_cage",
+      "type": "water-bottle-cage",
       "type_detail": "Water Bottle Holder",
       "description": "Included"
     },

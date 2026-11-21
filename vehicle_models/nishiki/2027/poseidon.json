@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/nishiki/2027/poseidon",
   "manufacturer": "Nishiki",
   "model_group": "Poseidon",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -52,13 +52,13 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear",
-    "belt_drive"
+    "1-front",
+    "1-rear",
+    "belt-drive"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -68,7 +68,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 360
       },
@@ -106,28 +106,28 @@
       "description": "Tektro HD-T275 hydraulic disc brake"
     },
     {
-      "type": "drive_belt",
+      "type": "drive-belt",
       "type_detail": "Belt",
       "description": "belt drive"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Downtube battery, 360Wh/10Ah (removable)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Mivice M080 40Nm rear hub motor"
+      "type": "ebike-displayremote",
+      "description": "Mivice D101 LED display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Mivice D101 LED display"
+      "type": "ebike-motor",
+      "description": "Mivice M080 40Nm rear hub motor"
     },
     {
       "type": "fork",
       "description": "aluminum"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Nishiki",
       "description": "Nishiki grips"

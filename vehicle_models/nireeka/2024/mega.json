@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/nireeka/2024/mega",
   "manufacturer": "Nireeka",
   "model_group": "Mega",
@@ -7,13 +7,13 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/nireeka/2024/mega.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/nireeka/2024/mega_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/nireeka/2024/mega-geometry.jpg",
   "description": "Lightweight carbon fiber frame, Mid-drive powertrain layout, Internal removable battery, 26\"x4\" fat tires front and rear, 160nm of torque, Front and rear suspension.",
   "first_year": 2024,
   "years": {
@@ -163,7 +163,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "seatpost_diameter": 31.6
   },
   "suspension": {
@@ -197,8 +197,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -213,14 +213,14 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
       "rotor_diameter": 160
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -232,7 +232,7 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "model": "Ultra",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
@@ -256,7 +256,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -296,7 +296,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Front Axle",
       "position": [
         "front"
@@ -307,7 +307,7 @@
       }
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Motor Integrated"
     },
     {
@@ -320,7 +320,7 @@
       "description": "Shimano Deore M6100 (2-Piston)"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -330,7 +330,12 @@
       "description": "Shimano RT56 (160mm Front / 180mm Rear)"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC E-Bike Chain"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
@@ -338,38 +343,33 @@
       "description": "Sram 9-Speed"
     },
     {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC E-Bike Chain"
-    },
-    {
       "type": "crankset",
       "type_detail": "Crank Set",
       "description": "46T Chainring Bafang Crank Arms"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "480Wh Battery or 840Wh Battery (Extend range by 75%)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Normal Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bafang",
-      "description": "Bafang Ultra 750W (MM G510.750.C)"
+      "type": "ebike-displayremote",
+      "description": "DP C221 Display (Bafang LCD Matrix)"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "DP C221 Display (Bafang LCD Matrix)"
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang Ultra 750W (MM G510.750.C)"
     },
     {
       "type": "fork",
       "description": "Aluminum Air Fork / Rebound & Lockout"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Slide On Comfort Grips"
     },
@@ -401,7 +401,7 @@
       "description": "197 mm"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Taillight",
       "position": [
         "rear"
@@ -430,7 +430,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "QR"
     },

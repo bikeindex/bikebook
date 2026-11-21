@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/gocycle/2024/g4i",
   "manufacturer": "Gocycle",
   "model_group": "G4",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -38,7 +38,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/gocycle/2024/g4i_matte_black.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/gocycle/2024/g4i-matte-black.jpg",
           "variants": [
             {
               "sku": "KKL-6728-4878-01",
@@ -52,7 +52,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/gocycle/2024/g4i_white.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/gocycle/2024/g4i-white.jpg",
           "variants": [
             {
               "sku": "KKL-6731-4878-01",
@@ -70,7 +70,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061-T6 Aluminum",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "mounts": [
       {
         "type": "fender"
@@ -94,8 +94,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "3_internal_rear"
+    "1-front",
+    "3-internal-rear"
   ],
   "groupset": {
     "manufacturer": "Gocycle",
@@ -104,7 +104,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -115,7 +115,7 @@
     {
       "drive_wheel": "front",
       "manufacturer": "Gocycle",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 375,
         "voltage": 36,
@@ -130,7 +130,7 @@
           "max_speed": 32,
           "range_claimed": 80,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -170,26 +170,26 @@
       "description": "Hydraulic disk, front and rear"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Quick removable lithium ion: 10.4Ah, 36V, approx 375 Wh"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Pedal Torque Sensing"
-    },
-    {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Gocycle",
-      "description": "Gocycle proprietary front hub motor, G4drive with traction control 500 watt US / 250 watt EU continuous"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Gocycle",
       "description": "Gocycle proprietary"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Integrated dashboard display with fuel gauge, speed, gear, efficiency or Smart Device and GocycleConnect App"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "Pedal Torque Sensing"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Gocycle",
+      "description": "Gocycle proprietary front hub motor, G4drive with traction control 500 watt US / 250 watt EU continuous"
     },
     {
       "type": "fork",
@@ -201,7 +201,7 @@
       "description": "Gocycle proprietary, single-sided, Carbon Fibre, fixed"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Gocycle",
       "description": "Gocycle Ergo Comfort"
@@ -211,7 +211,7 @@
       "description": "Patented Cleandrive® Shimano Nexus 3-speed"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Daytime Running Light (DRL)",
       "manufacturer": "Gocycle",
       "description": "Gocycle Proprietary Light Pipe Technology, 4 running modes, user selectable"
@@ -222,7 +222,7 @@
       "description": "MKS UX-D, One side EZY Detachable Pedal"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],

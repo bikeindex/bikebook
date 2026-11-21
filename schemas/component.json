@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://bikebook.bikeindex.org/schemas/component/v1.1.0.json",
+  "$id": "https://bikebook.bikeindex.org/schemas/component/v2.0.0.json",
   "title": "Bikebook component",
   "description": "schema_version is semantic: a major version removes, renames or retypes a field or removes an enum value, a minor one adds an optional field or an enum value, and a patch changes only descriptions. The published catalog's format is versioned apart from it, one integer raised whenever the layout of its files changes.",
   "type": "object",
@@ -10,11 +10,11 @@
       "format": "uri"
     },
     "schema_version": {
-      "const": "1.1.0"
+      "const": "2.0.0"
     },
     "id": {
       "type": "string",
-      "pattern": "^c/[a-z0-9_/]+$",
+      "pattern": "^c/[a-z0-9/-]+$",
       "description": "Catalog path, prefixed c/: manufacturer slug/first year/model group and model slug"
     },
     "type": {
@@ -151,9 +151,9 @@
     },
     "market_variants": {
       "type": "object",
-      "description": "The models of this one's name and year sold in another market, keyed by the market, each as what differs from this one, its id this one's suffixed with _ and the market lower-cased: objects merge key by key, false removes an object and null any other value, and a list may be written as an object of the items that differ, keyed by what identifies each",
+      "description": "The models of this one's name and year sold in another market, keyed by the market, each as what differs from this one, its id this one's suffixed with - and the market lower-cased: objects merge key by key, false removes an object and null any other value, and a list may be written as an object of the items that differ, keyed by what identifies each",
       "propertyNames": {
-        "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v1.1.0.json#/$defs/market"
+        "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v2.0.0.json#/$defs/market"
       },
       "additionalProperties": {
         "type": "object",
@@ -580,7 +580,7 @@
   "additionalProperties": false,
   "$defs": {
     "type": {
-      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v1.1.0.json#/$defs/component_type"
+      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v2.0.0.json#/$defs/component_type"
     },
     "model": {
       "type": [
@@ -596,7 +596,7 @@
       "description": "Model family grouping sibling models/variants"
     },
     "markets": {
-      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v1.1.0.json#/$defs/market"
+      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v2.0.0.json#/$defs/market"
     },
     "first_year": {
       "type": [
@@ -611,10 +611,10 @@
         "null"
       ],
       "enum": [
-        "hub_drive",
-        "mid_drive",
-        "mid_drive_dedicated",
-        "friction_drive",
+        "hub-drive",
+        "mid-drive",
+        "mid-drive-dedicated",
+        "friction-drive",
         null
       ]
     },
@@ -673,6 +673,11 @@
         "EN 14764",
         "EN 14766",
         "EN 55014-1",
+        "EN 300328",
+        "EN 301908",
+        "EN 303413",
+        "EN 301489",
+        "EN IEC 62311",
         "IEC 62133",
         "ISO 4210",
         "UN 38.3",
@@ -797,7 +802,7 @@
       "description": "Throttle only"
     },
     "motor.operating_modes.e_vehicle_classifications": {
-      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v1.1.0.json#/$defs/e_vehicle_classification"
+      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v2.0.0.json#/$defs/e_vehicle_classification"
     }
   }
 }

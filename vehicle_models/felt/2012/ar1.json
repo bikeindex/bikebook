@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2012/ar1",
   "manufacturer": "Felt",
   "model_group": "AR",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_aero",
+  "primary_activity": "road-aero",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2012/ar1.jpg",
   "first_year": 2012,
@@ -31,7 +31,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "bottom_bracket": {
       "spindle": "24mm"
@@ -57,8 +57,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "10_rear"
+    "2-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -233,12 +233,12 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "description": "Devox carbon fiber composite end plugs w/ bubble-tech Devox logo"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Shimano",
       "description": "Shimano Hollowtech-II"
     },
@@ -252,23 +252,14 @@
       "description": "Shimano Dura-Ace Super SLR dual pivot w/ cartridge brake pads"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Shimano",
       "description": "Shimano Dura-Ace SLR brake & EW-7975 A1 Di2 derailleur wires & battery"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano Dura-Ace Di2 STI"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 11-25T"
     },
     {
       "type": "chain",
@@ -279,6 +270,15 @@
       "type": "chainrings",
       "type_detail": "Chainwheel",
       "description": "53T/39T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 11-25T"
     },
     {
       "type": "crankset",
@@ -302,7 +302,7 @@
       "description": "Shimano Dura-Ace Di2"
     },
     {
-      "type": "electronic_shifting_component",
+      "type": "electronic-shifting-part",
       "description": "Di2 battery & battery charger"
     },
     {
@@ -311,7 +311,7 @@
       "description": "Felt Aero Road UHC Ultimate + Nano monocoque fork, 100% carbon fiber 1.125\"\" steerer tube, crown, blades, & dropouts"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Devox gel velvet tape w/ Devox 3D logo"
     },
@@ -344,7 +344,7 @@
       "description": "Shimano Dura-Ace forged aluminum loose ball w/ 10 speed HG titanium freehub body w/ Shimano Dura-Ace quick release"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Shimano Di2 Charger",
       "description": "Di2 battery & battery charger"
     },
@@ -370,12 +370,12 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "AR Aero 3D forged aluminum, 2 x 5mm x 0.8mm Titanium Bolts, 16g"
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "Shimano",
       "description": "Shimano Dura-Ace SLR brake & EW-7975 A1 Di2 derailleur wires & battery"
     },

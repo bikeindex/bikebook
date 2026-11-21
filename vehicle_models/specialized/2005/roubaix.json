@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/specialized/2005/roubaix",
   "manufacturer": "Specialized",
   "model": "Roubaix",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_endurance",
+  "primary_activity": "road-endurance-sportive",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/specialized/2005/roubaix.jpg",
   "description": "Specialized compact design, SLX fully double-butted, heat-treated tubing, advanced composite seat stays with Zertz inserts",
@@ -32,7 +32,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "bottom_bracket": {
       "width": 68,
       "spindle": "Octalink",
@@ -52,8 +52,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "9_rear"
+    "3-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -82,7 +82,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Shimano",
       "description": "Shimano 105, Octalink spline, 68mm shell, 118.5mm spindle, pipe billet cartridge"
     },
@@ -96,14 +96,6 @@
       "description": "Shimano 105"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 105, 9-speed, 12x25t"
-    },
-    {
       "type": "chain",
       "manufacturer": "Shimano",
       "description": "Shimano HG 73"
@@ -115,6 +107,14 @@
     {
       "type": "chainrings",
       "description": "52Ax42Ax30A"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 105, 9-speed, 12x25t"
     },
     {
       "type": "crankset",
@@ -146,11 +146,11 @@
       "description": "Specialized Carbon Zertz, bonded carbon fiber legs, 7075 alloy threadless steerer"
     },
     {
-      "type": "frame_protection",
+      "type": "frame-protection",
       "description": "Chain stay protector"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "description": "Body Geometry, thin Bar Phat, cork ribbon"
     },
     {
@@ -183,7 +183,7 @@
       "description": "Alex ALX-290, 24 hole, sealed bearing freehub, black"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "reflectors"
     },
     {
@@ -212,11 +212,11 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "Forged alloy, with Cr-Mo binder bolt"
     },
     {
-      "type": "shift_and_brake_lever",
+      "type": "shift-and-brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano 105, STI"
     },

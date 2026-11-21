@@ -1,10 +1,10 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/droyd/2023/zypster",
   "manufacturer": "Droyd",
   "model": "Zypster",
   "model_configuration": "complete",
-  "type": "e_atv",
+  "type": "e-atv",
   "propulsion": [
     "throttle"
   ],
@@ -68,7 +68,7 @@
           "availability": "stock",
           "max_speed": 10,
           "e_vehicle_classifications": [
-            "evc/us/ca/off_highway_motor_vehicle"
+            "evc/us/ca/off-highway-motor-vehicle"
           ]
         }
       ]
@@ -95,19 +95,19 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "24v lithium-ion battery"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Dual Brushed DC Motors"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LED Tail light battery indicator"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "Dual Brushed DC Motors"
+    },
+    {
+      "type": "light",
       "description": "Automatic LED side lights"
     },
     {

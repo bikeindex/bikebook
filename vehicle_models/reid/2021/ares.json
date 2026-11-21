@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/reid/2021/ares",
   "manufacturer": "Reid",
   "model": "Ares",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -74,8 +74,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "10_rear"
+    "1-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -93,7 +93,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -177,7 +177,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "FSA",
       "description": "FSA Mega EXO external threaded BB"
     },
@@ -191,18 +191,18 @@
       "description": "Tektro HD-M285 hydraulic disc brakes, 180mm rotors"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC X10 10 speed chain"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Cassette/Freewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano Deore M4100 11-42T 10 speed cassette"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC X10 10 speed chain"
     },
     {
       "type": "crankset",
@@ -226,7 +226,7 @@
       "description": "Alloy fork QR dropout"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Reid",
       "description": "Reid MTB grips"
@@ -272,7 +272,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "Alloy quick release 34.9mm",
       "dimensions": {
         "diameter": 34.9

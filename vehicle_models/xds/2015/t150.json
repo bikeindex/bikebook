@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/xds/2015/t150",
   "manufacturer": "Xds",
   "model": "T150",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -64,8 +64,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "8_rear"
+    "3-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -85,7 +85,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -119,7 +119,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Cartridge Type"
     },
     {
@@ -132,18 +132,18 @@
       "description": "Tektro V Brake Alloy"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z72"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheels",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano CSHG200-8 12-32T"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Z72"
     },
     {
       "type": "crankset",
@@ -159,7 +159,7 @@
       "description": "Rigid Fork"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Rubber Grips"
     },
@@ -192,7 +192,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "description": "Alloy, QR Type"
     },

@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/talaria/2025/komodo",
   "manufacturer": "Talaria",
   "model": "Komodo",
   "model_configuration": "complete",
-  "type": "e_motorcycle",
+  "type": "e-motorcycle",
   "propulsion": [
     "throttle"
   ],
-  "primary_activity": "dirt_travel",
+  "primary_activity": "dirt-travel",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/talaria/2025/komodo.png",
   "description": "Introducing the Talaria Komodo — the next-generation electric performance bike built to challenge the limits. Designed for riders who demand power, control, and unrelenting thrill, the Komodo is not just a competitor — it’s a game changer. With a peak output of 32KW, the Komodo delivers instant torque and relentless acceleration. Powered by a 96V 45Ah lithium battery, this beast is built for serious riders who crave extended range and top-tier performance. The Talaria Komodo isn’t just an electric motorcycle. It’s a revolution in electric off-road power. Ride harder, faster, and further — and leave the competition in the dust. This bike is intended exclusively for off-road use and is restricted in speed and power.",
@@ -60,7 +60,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -70,7 +70,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "mid_drive_dedicated",
+      "kind": "mid-drive-dedicated",
       "battery": {
         "capacity": 4374,
         "voltage": 97.2,
@@ -118,6 +118,10 @@
   ],
   "components": [
     {
+      "type": "bashguardchain-guide",
+      "description": "520 Chain Guide Protection – Rugged drive protection for off-road abuse"
+    },
+    {
       "type": "brake",
       "position": [
         "front",
@@ -126,20 +130,8 @@
       "description": "Hydraulic Disc"
     },
     {
-      "type": "cassette",
-      "type_detail": "Rear Sprocket",
-      "position": [
-        "rear"
-      ],
-      "description": "50/53T"
-    },
-    {
       "type": "chain",
       "description": "Drive Transmission: 520 Chain"
-    },
-    {
-      "type": "chain_guide",
-      "description": "520 Chain Guide Protection – Rugged drive protection for off-road abuse"
     },
     {
       "type": "chainrings",
@@ -150,40 +142,48 @@
       "description": "14/15T"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "cogcassettefreewheel",
+      "type_detail": "Rear Sprocket",
+      "position": [
+        "rear"
+      ],
+      "description": "50/53T"
+    },
+    {
+      "type": "ebike-battery",
       "description": "97.2V 45AH"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Protection Level: IP67"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "96V 45Ah Greenway Lithium Battery – High-capacity power for extended range"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "DC Permanent Magnet Synchronous"
-    },
-    {
-      "type": "e_vehicle_motor",
-      "description": "Air-cooled"
-    },
-    {
-      "type": "e_vehicle_motor",
-      "description": ">14 n.m"
-    },
-    {
-      "type": "e_vehicle_motor",
-      "description": "8.6 Kw"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "TFT 320 DPI / 167° angle"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Komodo Controller – Precision-tuned for maximum throttle response"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "DC Permanent Magnet Synchronous"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "Air-cooled"
+    },
+    {
+      "type": "ebike-motor",
+      "description": ">14 n.m"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "8.6 Kw"
     },
     {
       "type": "fork",
@@ -204,7 +204,7 @@
       }
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Rear Shock",
       "position": [
         "rear"
@@ -215,7 +215,7 @@
       }
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],

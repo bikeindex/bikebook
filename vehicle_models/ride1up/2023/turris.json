@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ride1up/2023/turris",
   "manufacturer": "Ride1Up",
   "model": "Turris",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -88,8 +88,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -107,7 +107,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -117,16 +117,16 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
-      "certifications": [
-        "UL 2271"
-      ],
       "battery": {
         "capacity": 672,
         "voltage": 48,
         "chemistry": "li-ion",
-        "cells": "LG"
+        "cells": "LG",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "max_torque": 90,
@@ -137,7 +137,7 @@
           "max_speed": 45,
           "range_claimed": 80,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -146,7 +146,7 @@
           "max_speed": 32,
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -171,14 +171,6 @@
       "description": "LBN 180mm Hydraulic Disc Brakes w/ Cut-Off Sensor"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 12-32T"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z7.3 7-speed Chain"
@@ -188,21 +180,29 @@
       "description": "46T Prowheel Alloy Chainring"
     },
     {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 12-32T"
+    },
+    {
       "type": "derailleur",
       "manufacturer": "Shimano",
       "description": "Shimano RD Altus"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 14Ah Reention Prism LG Cells, Smart BMS. UL 2271 Certified"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V Angled-Gear Hub 90 Nm Torque AKM Motor 750w Sustained"
+      "type": "ebike-displayremote",
+      "description": "KD21C Adjustable Speed LCD"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "KD21C Adjustable Speed LCD"
+      "type": "ebike-motor",
+      "description": "48V Angled-Gear Hub 90 Nm Torque AKM Motor 750w Sustained"
     },
     {
       "type": "fork",
@@ -212,7 +212,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Ergonomic Locking Rubber Grips"
     },
@@ -226,14 +226,14 @@
       "description": "City/Cafe Upright Handlebars"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "60 Lux Front Light"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],

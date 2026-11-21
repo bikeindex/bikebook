@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fifield/2025/vortex",
   "manufacturer": "Fifield",
   "model": "Vortex",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "atb",
@@ -31,14 +31,14 @@
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/fifield/2025/vortex_orange.webp"
+          "stock_photo": "https://bikebook.bikeindex.org/fifield/2025/vortex-orange.webp"
         },
         {
           "name": "Sky Blue",
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/fifield/2025/vortex_sky_blue.webp"
+          "stock_photo": "https://bikebook.bikeindex.org/fifield/2025/vortex-sky-blue.webp"
         }
       ],
       "url": "https://www.fifieldebikes.com/products/vortex",
@@ -85,8 +85,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -104,7 +104,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -117,7 +117,7 @@
       "drive_wheel": "rear",
       "manufacturer": "Shengyi",
       "model": "DGW-25P",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX5",
       "battery": {
@@ -140,7 +140,7 @@
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -176,7 +176,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Square Taper, 100*167L"
     },
     {
@@ -188,7 +188,7 @@
       "description": "Logan HD-E620 Hydraulic disc brake w/o e-cutoff"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -197,13 +197,6 @@
       "dimensions": {
         "diameter": 180
       }
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "11-32T / 9 Speeds Shimano CS CS-HG201-9"
     },
     {
       "type": "chain",
@@ -218,6 +211,13 @@
     {
       "type": "chainrings",
       "description": "44T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "11-32T / 9 Speeds Shimano CS CS-HG201-9"
     },
     {
       "type": "crankset",
@@ -235,21 +235,21 @@
       "description": "Shimano ALIVIO RD-M3100, 9 Speeds"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V/25AH LG Battery Cell"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "52V, 2A"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Shengyi",
-      "description": "Shengyi DGW-25P 48V/750W"
+      "type": "ebike-displayremote",
+      "description": "Key-Disp KD-86 3.5\" TFT LCD"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Key-Disp KD-86 3.5\" TFT LCD"
+      "type": "ebike-motor",
+      "manufacturer": "Shengyi",
+      "description": "Shengyi DGW-25P 48V/750W"
     },
     {
       "type": "fender",
@@ -263,7 +263,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "TC-G107 L&R:135mm",
       "dimensions": {
@@ -283,7 +283,7 @@
       "description": "Adjustable 280-320MM, Alloy Black"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "front and rear light"
     },
     {
@@ -313,7 +313,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "description": "34.9, ALLOY"
     },

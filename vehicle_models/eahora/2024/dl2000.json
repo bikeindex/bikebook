@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/eahora/2024/dl2000",
   "manufacturer": "Eahora",
   "model": "DL2000",
   "model_configuration": "complete",
   "type": "bike",
-  "type_detail": "bench_seat",
+  "type_detail": "bench-seat",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -58,8 +58,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -74,7 +74,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -85,7 +85,7 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IPX6",
       "battery": {
         "capacity": 1560,
@@ -104,7 +104,7 @@
           "range_claimed": 80,
           "max_slope": 25,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -113,14 +113,14 @@
           "range_claimed": 80,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
     },
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IPX6",
       "battery": {
         "capacity": 1560,
@@ -139,7 +139,7 @@
           "range_claimed": 80,
           "max_slope": 25,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -148,7 +148,7 @@
           "range_claimed": 80,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -186,11 +186,11 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "description": "2,500 Lumens (25W) LED with built-in horn"
     },
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell",
       "description": "Electric horn built-in headlight"
     },
@@ -213,7 +213,7 @@
       "description": "2-Piston calipers with semi-metallic pads"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -221,7 +221,7 @@
       "description": "240mm (φ) x 3.0mm (t) steel rotors"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel / Cassette",
       "position": [
         "rear"
@@ -236,32 +236,32 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Capacity: 1,560 Watt·hour (52V 30Ah)"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Lifespan: ≥ 1,000 charge cycles to 80% of capacity"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "58.8V 4.5A Quick charger, 5.5-6.5H charge time"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "2 x 800 Watt (peak 2000W)"
-    },
-    {
-      "type": "e_vehicle_motor",
-      "description": "Rear hub motor, brushless, IPX6"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Color LCD"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Front/Rear Only, Dual-Drive"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "2 x 800 Watt (peak 2000W)"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "Rear hub motor, brushless, IPX6"
     },
     {
       "type": "fender",
@@ -278,7 +278,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "120mm x 22.2mm (φ) rubber, anti-slip"
     },
@@ -298,7 +298,7 @@
       "description": "Aluminum alloy heavy-duty"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Head Light",
       "position": [
         "front"
@@ -306,7 +306,7 @@
       "description": "2,500 Lumens (25W) LED with built-in horn"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Tail Light",
       "position": [
         "rear"
@@ -319,7 +319,7 @@
       "description": "WELLGO 16/9 aluminum alloy platform"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Shock Absorber",
       "position": [
         "rear"

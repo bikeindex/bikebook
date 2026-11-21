@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/wethepeople/2026/sinus",
   "manufacturer": "WeThePeople",
   "model_group": "Sinus",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "bmx_freestyle",
+  "primary_activity": "bmx-freestyle",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/wethepeople/2026/sinus.jpg",
   "target_riders": [
@@ -66,8 +66,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -79,7 +79,7 @@
   },
   "brakes": [
     {
-      "type": "u_brake",
+      "type": "u-brake",
       "position": [
         "front",
         "rear"
@@ -104,7 +104,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "BB",
       "description": "SALT \"SPANISH\" bb, 19mm, press fit, sealed bearing"
     },
@@ -117,17 +117,9 @@
       "description": "SALT \"ROOKIE\" alloy u-brake, front & rear"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "type_detail": "LEVER",
       "description": "SALT \"ROOKIE\" alloy brake lever, front & rear"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "DRIVER",
-      "position": [
-        "rear"
-      ],
-      "description": "1pc freecoaster driver, 9t, sealed bearing"
     },
     {
       "type": "chain",
@@ -137,6 +129,14 @@
       "type": "chainrings",
       "type_detail": "SPROCKET",
       "description": "SALT \"GATEWAY\" sprocket, alloy, 25t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "DRIVER",
+      "position": [
+        "rear"
+      ],
+      "description": "1pc freecoaster driver, 9t, sealed bearing"
     },
     {
       "type": "crankset",
@@ -159,7 +159,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "SALT \"EX\" grips, 154mm, flangless",
       "dimensions": {
@@ -230,7 +230,7 @@
       "description": "SALT \"AM\" pivotal seat post, alloy, 200mm"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "SEAT CLAMP",
       "description": "integrated seat clamp"
     },

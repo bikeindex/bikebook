@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/aostir/2022/a20",
   "manufacturer": "Aostir",
   "model": "A20",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -77,15 +77,15 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 600,
         "voltage": 48,
@@ -101,7 +101,7 @@
           "range_claimed": 45,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -138,20 +138,20 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 12.5Ah Lithium Battery"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Capacity: 48V 12.5Ah (468Wh) removable & upgradable lithium battery"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W Toothless Brush Motor"
+      "type": "ebike-displayremote",
+      "description": "Backlit LCD Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Backlit LCD Display"
+      "type": "ebike-motor",
+      "description": "500W Toothless Brush Motor"
     },
     {
       "type": "tire",

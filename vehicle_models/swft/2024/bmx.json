@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/swft/2024/bmx",
   "manufacturer": "SWFT",
   "model": "BMX",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -53,12 +53,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -68,7 +68,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
       "battery": {
@@ -86,14 +86,14 @@
           "range_claimed": 56,
           "levels": 3,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -129,38 +129,38 @@
       "description": "Disc Brakes"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "description": "S1 1/2*1/8*88L KMC"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "description": "Single-speed"
     },
     {
-      "type": "chain",
-      "description": "S1 1/2*1/8*88L KMC"
-    },
-    {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Integrated Lithium-ion 36V, 7.5Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "42V / 2.0A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "350W (Sustained), 36V Brushless Rear Hub Motor"
+      "type": "ebike-displayremote",
+      "description": "Smart Easy Read Display with Backlight"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Smart Easy Read Display with Backlight"
+      "type": "ebike-motor",
+      "description": "350W (Sustained), 36V Brushless Rear Hub Motor"
     },
     {
       "type": "fork",
       "description": "20\" (50.8 cm) Steel Fork"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "description": "Ergonomic Comfort"
     },
@@ -201,7 +201,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "SEAT CLAMP",
       "description": "Double Socket Hex Screws"
     },

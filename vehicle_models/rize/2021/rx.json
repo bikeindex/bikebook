@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/rize/2021/rx",
   "manufacturer": "Rize",
   "model_group": "RX",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -38,7 +38,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/rize/2021/rx_brushed_gray.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/rize/2021/rx-brushed-gray.jpg",
           "variants": [
             {
               "sku": "A31-083-15G",
@@ -51,7 +51,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/rize/2021/rx_gloss_red.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/rize/2021/rx-gloss-red.jpg",
           "variants": [
             {
               "sku": "A112-084-15R",
@@ -89,8 +89,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -108,7 +108,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -118,12 +118,12 @@
   ],
   "motors": [
     {
-      "id": "c/bafang/m620_mm_g510_1000_c",
+      "id": "c/bafang/m620-mm-g510-1000-c",
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "model": "MM G510.1000.C",
       "model_group": "M620",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "spindle": "ISIS",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
@@ -154,14 +154,14 @@
           "range_claimed": 64,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -200,11 +200,11 @@
       "description": "Tektro Hydraulic Disc 180mm"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Safety Motor Inhibitors"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
@@ -225,15 +225,15 @@
       "description": "Shimano Acera"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "52v 15Ah Samsung 21700 50E Cell (780Wh)"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "52v 30Ah Samsung 21700 50E Cell (1560Wh)"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "manufacturer": "Bafang",
       "description": "Bafang 1000w 160Nm"
     },
@@ -256,7 +256,7 @@
       "description": "Adjustable Handlebars"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Super Bright Headlight",
       "position": [
         "front"
@@ -264,7 +264,7 @@
       "description": "Super Bright Headlight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Taillight",
       "position": [
         "rear"

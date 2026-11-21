@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2019/remote",
   "manufacturer": "Kona",
   "model_group": "Remote",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "mtb_enduro",
+  "primary_activity": "mtb-enduro",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/kona/2019/remote.jpg",
   "first_year": 2019,
@@ -76,8 +76,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "11_rear"
+    "1-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -95,7 +95,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -105,12 +105,12 @@
   ],
   "motors": [
     {
-      "id": "c/shimano/2016/e8000_du_e8000",
+      "id": "c/shimano/2016/e8000-du-e8000",
       "drive_wheel": "rear",
       "manufacturer": "Shimano",
       "model": "DU-E8000",
       "model_group": "E8000",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "spindle": "Shimano E8000",
       "sensor_cadence": true,
       "battery": {
@@ -125,7 +125,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -205,12 +205,12 @@
       "description": "SRAM Level T"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "SRAM Level T"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -222,15 +222,6 @@
       }
     },
     {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM PG1130 11-42t 11spd"
-    },
-    {
       "type": "chain",
       "manufacturer": "SRAM",
       "description": "SRAM PC1110"
@@ -238,6 +229,15 @@
     {
       "type": "chainrings",
       "description": "34t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM PG1130 11-42t 11spd"
     },
     {
       "type": "crankset",
@@ -255,17 +255,17 @@
       "description": "SRAM NX"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Shimano",
       "description": "Shimano 504Wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "manufacturer": "Shimano",
       "description": "Shimano Steps"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Shimano",
       "description": "Shimano E8000 Cycle Computer"
     },
@@ -278,7 +278,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Kona",
       "description": "Kona Key Grip"
@@ -344,7 +344,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Kona",
       "description": "Kona Clamp"

@@ -1,15 +1,15 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/evelo/2021/atlas",
   "manufacturer": "Evelo",
   "model": "Atlas",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/evelo/2021/atlas.jpg",
   "description": "Power, range and performance - Atlas will help you conquer any road or trail with comfort and style.\nAtlas brings the perfect balance of performance, comfort, and style - offering a smooth ride, long range, and virtually no maintenance.\nThere's a reason why the Atlas holds a Guiness World Record for completing an 8,000+ mile transcontinental expedition with perfect performance.\nBuilt with top of the line components including a high powered mid-drive motor, a maintenance-free Gates Carbon Belt Drive, front suspension and integrated long-range battery, you'll find yourself looking forward to each and every ride.\nGet 60 miles of real-world range with the high-end battery that comes with the Atlas, or boost it to 100 miles with the optional Super Range Bundle.\nThe latest model updates include a Bafang C-010 Full-Color 4.7\" Display and upgraded Tektro Auriga E-Comp Hydraulic Brakes for enhanced stopping power and reliability.",
@@ -53,9 +53,9 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "continuously_variable",
-    "belt_drive"
+    "1-front",
+    "continuously-variable",
+    "belt-drive"
   ],
   "groupset": {
     "manufacturer": "Enviolo",
@@ -64,7 +64,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -77,7 +77,7 @@
       "manufacturer": "Bafang",
       "model": "M600",
       "model_group": "M600",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
@@ -101,14 +101,14 @@
           "max_speed": 32,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -154,41 +154,41 @@
       "description": "Tektro Auriga E-Comp Hydraulic Brakes"
     },
     {
-      "type": "drive_belt",
+      "type": "drive-belt",
       "type_detail": "Transmission",
       "manufacturer": "Gates Carbon Drive",
       "description": "Enviolo Trekking, twist shift (mechanical shifter) Gates CDX belt drive"
     },
     {
-      "type": "drive_belt",
+      "type": "drive-belt",
       "manufacturer": "Gates Carbon Drive",
       "description": "Gates Carbon Drive CDX"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 15AH Samsung In Frame Battery - Optional 14.5AH Rear Rack Battery Add-On"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Primary Battery Weight: 8.2 lbs"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Secondary Battery Weight: 9.6 lbs w/ Rack"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 3A Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bafang",
-      "description": "Bafang M600 600 W, 1200 W Peak, 120 Nm Cadence and Torque Sensors"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Bafang",
       "description": "Bafang C-010 Full-Color 4.7\" Display"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang M600 600 W, 1200 W Peak, 120 Nm Cadence and Torque Sensors"
     },
     {
       "type": "fender",
@@ -204,7 +204,7 @@
       "description": "Enviolo Trekking CVT"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Fully integrated high-power CREE LED headlght and integrated LED trail light"
     },
     {

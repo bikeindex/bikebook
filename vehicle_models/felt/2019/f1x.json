@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2019/f1x",
   "manufacturer": "Felt",
   "model_group": "FX",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "atb_cyclocross",
+  "primary_activity": "atb-cyclocross",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2019/f1x.jpg",
   "description": "Engineered for the most punishing conditions of cyclocross, the F1x is the pinnacle of the Fx family that won the Cyclocross World Championships two years in a row. By removing the seat-stay bridge, Felt engineers were able to increase tire clearance while maintaining lateral stiffness from a wider BB386 bottom bracket",
@@ -64,7 +64,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "bottom_bracket": {
       "shell": "BB386",
       "width": 86.5,
@@ -102,8 +102,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "11_rear"
+    "1-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -121,7 +121,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
@@ -129,7 +129,7 @@
       "caliper_mount": "Disc Flat Mount"
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -190,7 +190,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Thru Axles",
       "description": "Front: Devox leverless 12 x 100 x 123L, thread: M12 x 1.5 x 15L; Rear: Devox leverless 12 x 142 x 166L Syntace style, thread: M12 x 1.0 x 15L",
       "dimensions": {
@@ -198,7 +198,7 @@
       }
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Token",
       "description": "Token BB386 with 30mm bearings"
     },
@@ -221,18 +221,9 @@
       "description": "SRAM Force Cx1 hydraulic disc flat mount, 140mm Centerline rotor"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "SRAM Force Cx1, hydraulic"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel / Cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM 11-speed, 11-36T"
     },
     {
       "type": "chain",
@@ -242,6 +233,15 @@
     {
       "type": "chain",
       "description": "chain plate protector"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel / Cassette",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM 11-speed, 11-36T"
     },
     {
       "type": "crankset",
@@ -265,7 +265,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bar Tape",
       "manufacturer": "Felt",
       "description": "Felt CxGel tape with Felt Bubble-Tech F-Wing bar end plugs"
@@ -306,17 +306,17 @@
       }
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Assembly Paste",
       "description": "Carbon assembly paste"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Spare Chainring",
       "description": "extra SRAM 40T chainring"
     },
     {
-      "type": "power_meter",
+      "type": "power-meter",
       "description": "Quarq Prime Carbon, XSYNC 40T and 38T, 47cm: 165mm, 50cm: 170mm, 53cm: 172.5mm, 55 - 60cm: 175mm"
     },
     {
@@ -338,7 +338,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "7075 CNC aluminum, titanium bolt and scandium nut, Ø31.8mm",
       "dimensions": {
         "diameter": 31.8

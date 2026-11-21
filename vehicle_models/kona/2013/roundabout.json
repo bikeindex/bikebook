@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2013/roundabout",
   "manufacturer": "Kona",
   "model": "Roundabout",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -44,8 +44,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "rear": [
@@ -60,7 +60,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -69,12 +69,12 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "manufacturer": "Kona",
       "description": "Kona Bell"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "FSA",
       "description": "FSA 7420ST"
     },
@@ -88,17 +88,9 @@
       "description": "Hayes CX6"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro FL540"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Acera 11-32t 9 spd"
     },
     {
       "type": "chain",
@@ -108,6 +100,14 @@
     {
       "type": "chainrings",
       "description": "Bash/39t/Bash"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Acera 11-32t 9 spd"
     },
     {
       "type": "crankset",
@@ -132,7 +132,7 @@
       "description": "Kona Retro Road"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Velo",
       "description": "Velo Ergo"
     },
@@ -188,7 +188,7 @@
       "description": "Kona Double Clamp w/Offset"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "Integrated"
     },
     {

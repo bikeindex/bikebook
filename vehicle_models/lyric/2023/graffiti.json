@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/lyric/2023/graffiti",
   "manufacturer": "Lyric",
   "model": "Graffiti",
@@ -10,7 +10,7 @@
   ],
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -33,7 +33,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/lyric/2023/graffiti_sergeant.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/lyric/2023/graffiti-sergeant.jpg",
           "variants": [
             {
               "sku": "GRF01BIKE01GRY01",
@@ -53,7 +53,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/lyric/2023/graffiti_black_dog.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/lyric/2023/graffiti-black-dog.jpg",
           "variants": [
             {
               "sku": "GRF01BIKE01BLK06",
@@ -72,7 +72,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/lyric/2023/graffiti_vintage_vanilla.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/lyric/2023/graffiti-vintage-vanilla.jpg",
           "variants": [
             {
               "sku": "GRF01BIKE01CRE01",
@@ -114,13 +114,13 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear",
-    "belt_drive"
+    "1-front",
+    "1-rear",
+    "belt-drive"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -130,7 +130,7 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "battery": {
         "capacity": 910,
@@ -152,8 +152,8 @@
           "range_claimed": 64,
           "levels": 9,
           "e_vehicle_classifications": [
-            "evc/us/class_2",
-            "evc/pedal_moped"
+            "evc/us/class-2",
+            "evc/pedal-moped"
           ]
         },
         {
@@ -161,7 +161,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -177,7 +177,7 @@
           "availability": "app_update",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ],
           "markets": [
             "US"
@@ -208,7 +208,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Axle",
       "description": "10mm Threaded Axle with Nuts"
     },
@@ -221,42 +221,42 @@
       "description": "Logan 4-Piston Disc Brakes"
     },
     {
-      "type": "drive_belt",
+      "type": "drive-belt",
       "type_detail": "Drivetrain",
       "description": "Veer Belt Drive System; 64 Tooth Front Cog (comparable to 44 Tooth Chainring); Single Speed Freewheel"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "e-bike-wiring-harness",
+      "description": "IP54 rated, Internally run, water resistant connectors and wiring harness"
+    },
+    {
+      "type": "ebike-battery",
       "description": "52V, 17.5ah (910 Wh) with 21700 Samsung 50E cells, rated for 1000 charge cycles"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Options: Optional Dual Battery 52V 2 x 17.5ah"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Mount: Under seat mount (Single battery); Downtube mount (Dual battery)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "52V, 3 Amp with intelli-charger, 110v"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "10.2lbs (4.6kg)"
-    },
-    {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bafang",
-      "description": "Bafang 1000 watt geared hub"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "APT 860c Display."
     },
     {
-      "type": "e_vehicle_wiring_harness",
-      "description": "IP54 rated, Internally run, water resistant connectors and wiring harness"
+      "type": "ebike-motor",
+      "description": "10.2lbs (4.6kg)"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang 1000 watt geared hub"
     },
     {
       "type": "fork",
@@ -266,7 +266,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Mountain Bike Style Lock On Grips"
     },
@@ -286,7 +286,7 @@
       "description": "Side-mounted, adjustable length"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "6000 lumen 7” DOT Motorcycle headlight; Integrated Tail and brake light; Turn signals not included"
     },
     {

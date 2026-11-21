@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/reid/2020/osprey",
   "manufacturer": "Reid",
   "model_group": "Osprey",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_biking",
+  "primary_activity": "road-biking",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/reid/2020/osprey.png",
   "description": "Carefully balanced between lightweight components for speed and comfort, our Osprey drop bar gives you a unique road ride. Whether you’re climbing the winding country roads or commuting to your city job, you’ll be able to see over the traffic and get the best view of that next big hill.\nThe Reid Osprey drop bar bar offers a great balance of speed and comfort with the drop bar handlebars allowing you to ride hard when you want to.\nThe 6061 aluminium alloy frame is light yet has excellent lateral stiffness for power during sprints and climbs. The carbon fibre fork of our Reid Osprey drop bar provides a degree of vertical compliance to reduce road buzz while still gives precise handling.",
@@ -75,8 +75,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "8_rear"
+    "2-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -170,7 +170,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "VP sealed bearing"
     },
     {
@@ -183,22 +183,22 @@
       "description": "Tektro dual-pivot callipers"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano Claris STI"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 8-speed cassette (11-30T)"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z72"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 8-speed cassette (11-30T)"
     },
     {
       "type": "crankset",
@@ -220,7 +220,7 @@
       "description": "Reid carbon fibre"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bar Tape",
       "manufacturer": "Reid",
       "description": "Reid bar tape"

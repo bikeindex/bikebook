@@ -1,0 +1,185 @@
+{
+  "schema_version": "2.0.0",
+  "id": "m/zen/2026/photon-lite",
+  "manufacturer": "Zen",
+  "model_group": "Photon",
+  "model": "Photon Lite",
+  "model_configuration": "complete",
+  "markets": [
+    "CA",
+    "US"
+  ],
+  "type": "bike",
+  "propulsion": [
+    "pedal-assist",
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "description": "The Photon Lite keeps things light and simple. It’s the easy, approachable way to add electric assist to your day — nimble in traffic, comfortable on longer stretches and simple to live with.\nDependable braking and integrated lighting come standard, and it’s assembled and supported in North America. If you want the joy of an e-bike without any fuss, this is it.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 349900,
+      "original_msrp_currency": "CAD",
+      "colorways": [
+        {
+          "name": "Dune",
+          "color_code": "#b7906a",
+          "colors": [
+            "brown"
+          ]
+        }
+      ],
+      "url": "https://www.zenebikes.com/shop/photon-lite-10",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "aluminum",
+    "material_detail": "6061 Aluminum"
+  },
+  "suspension": {
+    "front": {
+      "travel": 100
+    }
+  },
+  "drivetrain": [
+    "1-front",
+    "continuously-variable",
+    "belt-drive"
+  ],
+  "groupset": {
+    "manufacturer": "Enviolo",
+    "series": "Trekking",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc-hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "manufacturer": "Bafang",
+      "model": "M410-HD",
+      "sensor_torque": "bottom_bracket_spindle",
+      "battery": {
+        "capacity": 720,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "certifications": [
+          "UL 2271"
+        ]
+      },
+      "rated_power": 350,
+      "max_torque": 85,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 100,
+          "e_vehicle_classifications": [
+            "evc/us/class-2",
+            "evc/ca/power-assisted-bicycle"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 50,
+          "e_vehicle_classifications": [
+            "evc/us/class-2",
+            "evc/ca/power-assisted-bicycle"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 160
+    }
+  ],
+  "sizes": [
+    {
+      "name": "16 in (XS/S)",
+      "geometry": {
+        "total_weight": 20.5
+      }
+    },
+    {
+      "name": "17 in (S/M)"
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Tektro",
+      "description": "Tektro E350 hydraulic disc, 2-piston front and rear"
+    },
+    {
+      "type": "drive-belt",
+      "type_detail": "Drivetrain",
+      "manufacturer": "Gates Carbon Drive",
+      "description": "Gates Carbon Belt Drive"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "UL 2271 certified 720 Wh (48V 15Ah)"
+    },
+    {
+      "type": "ebike-displayremote",
+      "description": "3.5 in colour LCD with USB-C"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "48V 350W Bafang M410-HD with torque sensor"
+    },
+    {
+      "type": "fork",
+      "manufacturer": "SR Suntour",
+      "description": "Suntour XCM fork, 100 mm travel",
+      "dimensions": {
+        "travel": 100
+      }
+    },
+    {
+      "type": "hub",
+      "description": "Enviolo Trekking CVT"
+    },
+    {
+      "type": "light",
+      "description": "Integrated lighting"
+    },
+    {
+      "type": "throttle",
+      "description": "Up to 32 km/h"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Kenda",
+      "description": "Kenda puncture-resistant"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Warranty",
+      "description": "3 yr battery, 2 yr electronics, lifetime frame"
+    }
+  ]
+}

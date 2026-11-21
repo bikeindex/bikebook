@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jasion/2026/kago",
   "manufacturer": "Jasion",
   "model": "Kago",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
@@ -38,7 +38,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jasion/2026/kago_obsidian_black.png",
+          "stock_photo": "https://bikebook.bikeindex.org/jasion/2026/kago-obsidian-black.png",
           "variants": [
             {
               "sku": "JS1KagoUSBK1A",
@@ -69,12 +69,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -83,7 +83,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 2080,
         "voltage": 52
@@ -98,7 +98,7 @@
           "range_claimed": 193,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -145,23 +145,23 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "52V 20Ah*2"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Standard 2.0 A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "1200W Brushless Hub Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LCD Display"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "1200W Brushless Hub Motor"
+    },
+    {
+      "type": "light",
       "description": "LED Headlight & Brake Lights&Turn Signals"
     },
     {

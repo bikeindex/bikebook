@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/puckipuppy/2025/poodle",
   "manufacturer": "Puckipuppy",
   "model_group": "Poodle",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -25,7 +25,7 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/puckipuppy/2025/poodle_sage_green.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/puckipuppy/2025/poodle-sage-green.jpg",
           "variants": [
             {
               "sku": "Poodle-green",
@@ -38,7 +38,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/puckipuppy/2025/poodle_white.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/puckipuppy/2025/poodle-white.jpg",
           "variants": [
             {
               "sku": "Poodle-white",
@@ -64,7 +64,7 @@
           "colors": [
             "purple"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/puckipuppy/2025/poodle_dusty_purple.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/puckipuppy/2025/poodle-dusty-purple.jpg",
           "variants": [
             {
               "sku": "Poodle-purple",
@@ -77,7 +77,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/puckipuppy/2025/poodle_red.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/puckipuppy/2025/poodle-red.jpg",
           "variants": [
             {
               "sku": "Poodle - Red",
@@ -112,8 +112,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -121,7 +121,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -131,14 +131,14 @@
   "motors": [
     {
       "sensor_cadence": true,
-      "certifications": [
-        "UL 2271"
-      ],
       "water_rating": "IPX6",
       "battery": {
         "capacity": 720,
         "voltage": 48,
-        "chemistry": "li-ion"
+        "chemistry": "li-ion",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "peak_power": 960,
@@ -149,7 +149,7 @@
           "max_speed": 45,
           "range_claimed": 121,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -158,7 +158,7 @@
           "max_speed": 32,
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -216,20 +216,20 @@
       "description": "7-speed Shimano"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 15Ah,IPX7 (UL 2271 by SGS)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V, 2.0A Fast Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W (960W Peak)"
+      "type": "ebike-displayremote",
+      "description": "LCD Color"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD Color"
+      "type": "ebike-motor",
+      "description": "750W (960W Peak)"
     },
     {
       "type": "fork",

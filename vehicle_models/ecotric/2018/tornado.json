@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ecotric/2018/tornado",
   "manufacturer": "Ecotric",
   "model": "Tornado",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -60,8 +60,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -69,7 +69,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -79,7 +79,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_speed": "spoke_magnet",
       "battery": {
         "capacity": 576,
@@ -92,7 +92,7 @@
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -141,21 +141,21 @@
       "description": "7 Speed SHIMANO"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 12AH"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "BATTERY LIFE: 400-600 Cycles"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Rear Hub 48V 750W"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Ecotric",
       "description": "Ecotric Smart LCD With USB Port"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "Rear Hub 48V 750W"
     },
     {
       "type": "tire",

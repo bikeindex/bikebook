@@ -1,17 +1,17 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/envo/2026/m50",
   "manufacturer": "Envo",
   "model": "M50",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/envo/2026/m50.png",
-  "geometry_photo": "https://bikebook.bikeindex.org/envo/2026/m50_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/envo/2026/m50-geometry.jpg",
   "description": "Meet the ENVO M50: a well-rounded, affordable e-MTB with dialed geometry, and the only full-suspension e-bike in the ENVO lineup.\nEngineered for riders who demand a all-mountain ride with no compromise, premium trail performance at a genuinely fair price. Its full-suspension frame keeps you comfortable and confident on rough, technical trails. The mid-drive motor adds smooth, controllable power when the climbs get steep. Available in two sizes to fit riders from 5'2\" to 6'4\".",
   "first_year": 2026,
   "years": {
@@ -33,7 +33,7 @@
         },
         {
           "name": "Aquatic",
-          "stock_photo": "https://bikebook.bikeindex.org/envo/2026/m50_aquatic.png",
+          "stock_photo": "https://bikebook.bikeindex.org/envo/2026/m50-aquatic.png",
           "variants": [
             {
               "sku": "M50-Blue"
@@ -77,8 +77,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -91,7 +91,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -101,16 +101,16 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certifications": [
-        "UL 2271"
-      ],
       "battery": {
         "capacity": 720,
         "voltage": 48,
-        "chemistry": "li-ion"
+        "chemistry": "li-ion",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 350,
       "max_torque": 100,
@@ -121,7 +121,7 @@
           "max_speed": 32,
           "range_claimed": 150,
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         }
       ]
@@ -165,7 +165,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "BB Sets",
       "description": "68mm LDS torque sensor"
     },
@@ -192,20 +192,20 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 15Ah lithium battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "UL-c-us 48V CAN"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "M230 with torque sensor, display DF130 with bluetooth"
+      "type": "ebike-displayremote",
+      "description": "Color Display with Bluetooth App connectivity, CAN"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Color Display with Bluetooth App connectivity, CAN"
+      "type": "ebike-motor",
+      "description": "M230 with torque sensor, display DF130 with bluetooth"
     },
     {
       "type": "fork",
@@ -216,7 +216,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grip",
       "description": "HL-G316"
     },
@@ -248,7 +248,7 @@
       "description": "WELLGO,LU-313"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Shock Absorber",
       "position": [
         "rear"

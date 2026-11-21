@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2015/outfitter",
   "manufacturer": "Felt",
   "model": "Outfitter",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -59,8 +59,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "11_rear"
+    "1-front",
+    "11-rear"
   ],
   "groupset": {
     "manufacturer": "SRAM",
@@ -69,7 +69,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -80,7 +80,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "battery": {
         "capacity": 400,
         "chemistry": "li-ion"
@@ -92,7 +92,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -120,7 +120,7 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "manufacturer": "Felt",
       "description": "Felt F-Wing end plugs"
@@ -135,21 +135,21 @@
       "description": "SRAM Guide R hydraulic w/ 4-piston caliper: 180mm Centerline rotors"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "SRAM GUIDE R hydraulic"
     },
     {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
+      "type": "chain",
       "manufacturer": "SRAM",
       "description": "SRAM PC-X1 X-Sync w/ Powerlock"
     },
     {
-      "type": "chain",
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
       "manufacturer": "SRAM",
       "description": "SRAM PC-X1 X-Sync w/ Powerlock"
     },
@@ -170,12 +170,12 @@
       "description": "SRAM X1 11-speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Bosch",
       "description": "Bosch 400Wh frame type battery pack"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "manufacturer": "Bosch",
       "description": "Bosch Performance eDrive Unit, 350W output, 20 mph"
     },
@@ -189,7 +189,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt XC trail single aluminum clamp lock-on, wing-style"
@@ -256,7 +256,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "Aluminum 6061 CNC cold-forged, w/ steel barrel nut, Ø34.9mm",
       "dimensions": {
@@ -264,7 +264,7 @@
       }
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "Felt",
       "description": "Custom Felt internally routed shift cables w/ CNC aluminum ferrules"
     },

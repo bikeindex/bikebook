@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/wired/2026/viper",
   "manufacturer": "Wired",
   "model": "Viper",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/wired/2026/viper.png",
-  "geometry_photo": "https://bikebook.bikeindex.org/wired/2026/viper_geometry.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/wired/2026/viper-geometry.png",
   "description": "Introducing the all-new WIRED Viper - our most innovative dual motor e-bike with UL2271 certified batteries! Featuring a compact 20\" x 4\" tire design with the convenience of a step-thru frame, the Viper is perfect for riders seeking power, accessibility, and safety.\n\nThe Viper is the first bike in our lineup to feature integrated turn signals for enhanced safety and visibility on every ride.\n\n8000W Peak Power: Geared front and rear motors deliver incredible acceleration\n\n430 N.m Combined Torque: Our most powerful torque output - conquers any terrain\n\n20\" x 4\" Fat Tires: Compact, agile wheels for superior maneuverability\n\nPerfect For\n\nWhether you're commuting through city streets, exploring off-road trails, or need a powerful bike that's easy to mount and maneuver, the Viper delivers unmatched performance in a rider-friendly package with UL2271 certified battery safety. The step-thru design makes it accessible for riders of all ages and abilities.",
   "first_year": 2026,
   "years": {
@@ -38,7 +38,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/viper_white.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/viper-white.png",
           "variants": [
             {
               "sku": "VW11-26",
@@ -51,7 +51,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/viper_graphite.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/viper-graphite.png",
           "variants": [
             {
               "sku": "VG08-26",
@@ -97,8 +97,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -116,7 +116,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -127,17 +127,17 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certifications": [
-        "UL 2271"
-      ],
       "battery": {
         "capacity": 2520,
         "voltage": 72,
         "chemistry": "li-ion",
-        "cells": "21700"
+        "cells": "21700",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 1500,
       "peak_power": 4000,
@@ -149,7 +149,7 @@
           "range_claimed": 145,
           "levels": 9,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -157,7 +157,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -165,24 +165,24 @@
           "availability": "app_update",
           "max_speed": 80,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
     },
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certifications": [
-        "UL 2271"
-      ],
       "battery": {
         "capacity": 2520,
         "voltage": 72,
         "chemistry": "li-ion",
-        "cells": "21700"
+        "cells": "21700",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 2000,
       "peak_power": 4000,
@@ -194,7 +194,7 @@
           "range_claimed": 145,
           "levels": 9,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -202,7 +202,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -210,7 +210,7 @@
           "availability": "app_update",
           "max_speed": 80,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -246,7 +246,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "turn signals & Horn",
       "description": "Extremely bright front and rear amber turn signals come standard. Remote cluster easily allows operation of the signals, hazards and a horn"
     },
@@ -259,7 +259,7 @@
       "description": "4-piston Gemma hydraulic brakes with large 203mm rotors offer confident stopping power at high speeds. Be confident at any speed."
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
@@ -275,16 +275,16 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "72V 20Ah front + 72V 15Ah rear batteries (total ~35Ah). Samsung High Discharge 21700 lithium cells (50-S 21700) for reliable, long-life performance (2520Wh total)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "72v Dual motor (AWD). Combined peak output of 8000W and ~430Nm of torque. Rear Hentach steel plated geared hub motor (2000W nominal). Front Hentach steel plated geared hub motor (1500w nominal); Wired Ebikes has sole exclusivity on the most powerful production geared hub motor in the world"
+      "type": "ebike-displayremote",
+      "description": "Full color customizable display screen. Select torque/cadence, class mode, power output, turn signal status, and much more; USB-C phone charger (Anroid and Apple iphone 14 or earlier) conveniently located on power button cluster"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Full color customizable display screen. Select torque/cadence, class mode, power output, turn signal status, and much more; USB-C phone charger (Anroid and Apple iphone 14 or earlier) conveniently located on power button cluster"
+      "type": "ebike-motor",
+      "description": "72v Dual motor (AWD). Combined peak output of 8000W and ~430Nm of torque. Rear Hentach steel plated geared hub motor (2000W nominal). Front Hentach steel plated geared hub motor (1500w nominal); Wired Ebikes has sole exclusivity on the most powerful production geared hub motor in the world"
     },
     {
       "type": "fork",
@@ -294,12 +294,12 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "turn signals & Horn",
       "description": "Extremely bright front and rear amber turn signals come standard. Remote cluster easily allows operation of the signals, hazards and a horn"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Rear shock",
       "position": [
         "rear"
@@ -332,5 +332,73 @@
       "type_detail": "Controller",
       "description": "Our exclusive dual Patriot System Controllers produce a combined output of over 110 amps; Rear Patriot System Controller peaks at over 65 amps; Front Patriot System Controller peaks at over 45 amps"
     }
-  ]
+  ],
+  "market_variants": {
+    "AU": {
+      "markets": [
+        "AU"
+      ],
+      "years": {
+        "2026": {
+          "original_msrp": 579900,
+          "original_msrp_currency": "AUD",
+          "colorways": {
+            "Wicked Red": {
+              "variants": [
+                {
+                  "sku": "VR11-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "White": {
+              "variants": [
+                {
+                  "sku": "VW11-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Graphite": {
+              "variants": [
+                {
+                  "sku": "VG08-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            }
+          },
+          "url": "https://wiredebikes.com/en-au/products/wired-viper-au"
+        }
+      },
+      "motors": {
+        "0": {
+          "operating_modes": {
+            "assist stock": {
+              "e_vehicle_classifications": null
+            },
+            "throttle stock": {
+              "e_vehicle_classifications": null
+            },
+            "assist app_update": {
+              "e_vehicle_classifications": null
+            }
+          }
+        },
+        "1": {
+          "operating_modes": {
+            "assist stock": {
+              "e_vehicle_classifications": null
+            },
+            "throttle stock": {
+              "e_vehicle_classifications": null
+            },
+            "assist app_update": {
+              "e_vehicle_classifications": null
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,78 @@
+{
+  "schema_version": "2.0.0",
+  "id": "c/bosch/2026/hub-line-bdu306y",
+  "type": "ebike-motor",
+  "manufacturer": "Bosch",
+  "model": "BDU306Y",
+  "model_group": "Hub Line",
+  "aliases": [
+    "Hub Line smart system"
+  ],
+  "markets": [
+    "EU"
+  ],
+  "first_year": 2026,
+  "motor": {
+    "kind": "hub-drive",
+    "certifications": [
+      "UL 2849"
+    ],
+    "rated_power": 250,
+    "peak_power": 400,
+    "max_torque": 45,
+    "operating_modes": [
+      {
+        "mode": "assist",
+        "availability": "stock",
+        "max_speed": 25
+      }
+    ]
+  },
+  "market_variants": {
+    "AU": {
+      "markets": [
+        "AU"
+      ]
+    },
+    "CA": {
+      "markets": [
+        "CA"
+      ]
+    },
+    "CH": {
+      "markets": [
+        "CH"
+      ]
+    },
+    "GB": {
+      "markets": [
+        "GB"
+      ]
+    },
+    "NO": {
+      "markets": [
+        "NO"
+      ]
+    },
+    "NZ": {
+      "markets": [
+        "NZ"
+      ]
+    },
+    "US": {
+      "markets": [
+        "US"
+      ],
+      "motor": {
+        "operating_modes": {
+          "assist stock": {
+            "max_speed": 45,
+            "e_vehicle_classifications": [
+              "evc/us/class-3"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

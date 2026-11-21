@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/velec/2025/e3",
   "manufacturer": "Velec",
   "model_group": "E3",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -62,8 +62,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -81,7 +81,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -92,10 +92,9 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "battery": {
         "capacity": 360,
@@ -103,7 +102,10 @@
           540
         ],
         "voltage": 36,
-        "charging_time": 210
+        "charging_time": 210,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 500,
       "max_torque": 60,
@@ -113,7 +115,7 @@
           "availability": "stock",
           "range_claimed": 100,
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         },
         {
@@ -121,7 +123,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         }
       ]
@@ -138,7 +140,11 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bashguardchain-guide",
+      "description": "chain guard"
+    },
+    {
+      "type": "bellnoisemaker",
       "description": "horn"
     },
     {
@@ -151,25 +157,21 @@
       "description": "Front and rear Tektro Hydraulic 180mm discs"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro with motor cut-offs"
     },
     {
-      "type": "cassette",
+      "type": "chainrings",
+      "description": "48T"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano 11-32T"
-    },
-    {
-      "type": "chain_guide",
-      "description": "chain guard"
-    },
-    {
-      "type": "chainrings",
-      "description": "48T"
     },
     {
       "type": "derailleur",
@@ -180,16 +182,16 @@
       "description": "Shimano Altus 8 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V 10Ah (360 Wh) or 15Ah (540 Wh)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Rear wheel 500W motor (60 Nm)"
+      "type": "ebike-displayremote",
+      "description": "Grayscale central, on the handlebars (6cm x 10cm)"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Grayscale central, on the handlebars (6cm x 10cm)"
+      "type": "ebike-motor",
+      "description": "Rear wheel 500W motor (60 Nm)"
     },
     {
       "type": "fender",
@@ -212,11 +214,11 @@
       "description": "Kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front and rear powered by the electrical system"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "reflectors & reflective logos"
     },
     {

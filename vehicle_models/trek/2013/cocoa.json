@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/trek/2013/cocoa",
   "manufacturer": "Trek",
   "model": "Cocoa",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -43,8 +43,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "3_internal_rear"
+    "1-front",
+    "3-internal-rear"
   ],
   "gearing": {
     "front": [
@@ -70,6 +70,10 @@
   ],
   "components": [
     {
+      "type": "bashguardchain-guide",
+      "description": "full-coverage chainguard"
+    },
+    {
       "type": "brake",
       "position": [
         "front",
@@ -78,15 +82,11 @@
       "description": "Long reach alloy caliper brakes w/alloy 4-finger levers"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "description": "20T cog"
-    },
-    {
-      "type": "chain_guide",
-      "description": "full-coverage chainguard"
     },
     {
       "type": "crankset",

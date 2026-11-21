@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2019/vr2",
   "manufacturer": "Felt",
   "model_group": "VR",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_endurance",
+  "primary_activity": "road-endurance-sportive",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2019/vr2.jpg",
   "description": "It's a great big world out there, and the modern endurance cyclist requires the most advanced equipment for exploring the open road and beyond. The VR2 is the flagship model in Felt's VR Series, and it's crafted from UHC Advanced + TeXtreme carbon fiber for a lightweight and durable chassis. It's built with top-of-the-",
@@ -69,7 +69,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "bottom_bracket": {
       "shell": "BB386",
       "width": 86.5,
@@ -107,8 +107,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "11_rear"
+    "2-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -127,14 +127,14 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
       "rotor_diameter": 160
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -202,7 +202,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Thru Axles",
       "description": "Front: Devox leverless 12 x 100 x 123L, thread: M12 x 1.5 x 15L; Rear: Devox leverless 12 x 142 x 166L Syntace style, thread: M12 x 1.0 x 15L",
       "dimensions": {
@@ -210,7 +210,7 @@
       }
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Token",
       "description": "Token BB386 with 24mm bearings"
     },
@@ -233,18 +233,9 @@
       "description": "Shimano R8070 hydraulic disc, 140mm rotor"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano Ultegra R8070, hydraulic"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel / Cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 11-speed, 11-34T"
     },
     {
       "type": "chain",
@@ -254,6 +245,15 @@
     {
       "type": "chain",
       "description": "chain plate protector"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel / Cassette",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 11-speed, 11-34T"
     },
     {
       "type": "crankset",
@@ -286,7 +286,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bar Tape",
       "manufacturer": "Felt",
       "description": "Felt VelvetGel tape with 3M reflective base with reflective Felt Bubble-Tech F-Wing bar end plugs"
@@ -328,12 +328,12 @@
       }
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Assembly Paste",
       "description": "Carbon assembly paste"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Shimano Di2 Charger",
       "description": "Di2 internal battery charger"
     },
@@ -361,7 +361,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "manufacturer": "Felt",
       "description": "Felt single bolt, Ø30.6mm",
       "dimensions": {

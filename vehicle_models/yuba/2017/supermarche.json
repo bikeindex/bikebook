@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/yuba/2017/supermarche",
   "manufacturer": "Yuba",
   "model": "Supermarché",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "cargo",
   "handlebar_type": "horizontal",
@@ -59,8 +59,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "8_rear"
+    "3-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -80,7 +80,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -123,7 +123,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "description": "Bell"
     },
     {
@@ -136,12 +136,12 @@
       "description": "Tektro Auriga Hydraulic"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro Auriga Hydraulic"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotor",
       "position": [
         "front",
@@ -154,17 +154,17 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC 8-Speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano 11-32T 8-Speed"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC 8-Speed"
     },
     {
       "type": "crankset",
@@ -196,7 +196,7 @@
       "description": "Supermarché Cr-Mo 1.5” Threadless w/Disc Tabs"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Yuba",
       "description": "Yuba Ergo Grip w/Clamp"

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2022/splice",
   "manufacturer": "Kona",
   "model_group": "Splice",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "mtb_cross_country",
+  "primary_activity": "mtb-cross-country",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/kona/2022/splice.jpg",
   "description": "The Splice strikes that coveted balance of bike path-cruiser and hybrid comfort. It’s the perfect complement to a camping trip, the perfect steed for rides through the local park, and it’s also a great commuter. It’s got modern geometry that provides an excellent fit with a shorter reach and the ability to run a dropper post. The Splice has just enough suspension up front that you can lock out for efficient pedaling, hydraulic disc brakes for powerful stopping, and sturdy wheels and tires. It may just tempt you to explore further than ever before.",
@@ -88,8 +88,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "8_rear"
+    "3-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -109,7 +109,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -201,7 +201,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "B/B",
       "manufacturer": "FSA",
       "description": "FSA 68mm"
@@ -217,12 +217,12 @@
       "description": "Tektro HDM275 Hydraulic"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro HDM275 Hydraulic"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -234,14 +234,6 @@
       }
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Altus 11-34t 8spd"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z8.3"
@@ -249,6 +241,14 @@
     {
       "type": "chainrings",
       "description": "22/32/42t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Altus 11-34t 8spd"
     },
     {
       "type": "crankset",
@@ -283,7 +283,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Kona",
       "description": "Kona Key Grip Slip on"
@@ -344,7 +344,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Kona",
       "description": "Kona Clamp"

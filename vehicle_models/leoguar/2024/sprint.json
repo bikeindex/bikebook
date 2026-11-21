@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/leoguar/2024/sprint",
   "manufacturer": "Leoguar",
   "model": "Sprint",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -37,7 +37,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/leoguar/2024/sprint_dark_blue.png",
+          "stock_photo": "https://bikebook.bikeindex.org/leoguar/2024/sprint-dark-blue.png",
           "variants": [
             {
               "sku": "BK0012402",
@@ -73,8 +73,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -91,7 +91,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -101,17 +101,17 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
-      "certifications": [
-        "UL 2271"
-      ],
       "battery": {
         "capacity": 614,
         "voltage": 48,
         "chemistry": "li-ion",
         "cells": "3300mah/18650",
-        "charging_time": 264
+        "charging_time": 264,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 350,
       "peak_power": 600,
@@ -124,7 +124,7 @@
           "range_claimed": 89,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -134,7 +134,7 @@
           "range_claimed": 41,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -175,12 +175,12 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell",
       "description": "Included"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "151mm Sealed"
     },
     {
@@ -192,11 +192,11 @@
       "description": "Mechanic"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Alloy with Power Cut Off"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Brake Rotor (Front)",
       "position": [
         "front"
@@ -207,7 +207,7 @@
       }
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Brake Rotor (Rear)",
       "position": [
         "rear"
@@ -218,13 +218,6 @@
       }
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "7sp 11-28T"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Rust-Proof EPT, 108 Links"
@@ -232,6 +225,13 @@
     {
       "type": "chainrings",
       "description": "52T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "7sp 11-28T"
     },
     {
       "type": "crankset",
@@ -250,20 +250,20 @@
       "description": "Shimano 7sp"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Powertube LF-6/48v 12.8Ah, 614Wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V 3A/100~240v, 50~60hz"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V 350W 40Nm"
+      "type": "ebike-displayremote",
+      "description": "48V LCD with Anti-theft Password Protection"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "48V LCD with Anti-theft Password Protection"
+      "type": "ebike-motor",
+      "description": "48V 350W 40Nm"
     },
     {
       "type": "fender",
@@ -280,7 +280,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Ergonomic Rubber Comfort Grips"
     },
@@ -296,12 +296,12 @@
       "description": "44mm Threadless Headset Made of Aluminum Alloy"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Passenger Cushion",
       "description": "Passenger Cushion"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "Toolkit"
     },
@@ -310,14 +310,14 @@
       "description": "Ursus Adjustable Alloy Kickstand, Black"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "LED Motorcycle Style Headlight for Clear Vision"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
@@ -356,7 +356,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "description": "31.8mm Alloy",
       "dimensions": {

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/shogun/2025/rockport",
   "manufacturer": "Shogun",
   "model": "Rockport",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -60,15 +60,15 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "electronic": false
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -78,7 +78,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "voltage": 36,
         "chemistry": "li-ion",
@@ -91,14 +91,14 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -132,24 +132,24 @@
       "description": "Front & Rear Tektro Mechanical Disc Brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Life: Up to 40 Miles Per Charge & Up to 1,000 Charge Cycles Lifetime"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable & Lockable 10.4Ah Lithium Ion Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Charger Included"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "36V / 350 Watt Rear Hub Motor (Pedal Assisted with Throttle)"
+      "type": "ebike-displayremote",
+      "description": "Handlebar Mounted Controller / Display with 3 Power Modes"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Handlebar Mounted Controller / Display with 3 Power Modes"
+      "type": "ebike-motor",
+      "description": "36V / 350 Watt Rear Hub Motor (Pedal Assisted with Throttle)"
     },
     {
       "type": "fender",
@@ -164,7 +164,7 @@
       "description": "Lightweight Aluminum Fork"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "description": "Soft Rubber Grips with Locking Ring"
     },
     {

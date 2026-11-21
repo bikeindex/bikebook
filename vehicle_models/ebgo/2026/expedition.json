@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ebgo/2026/expedition",
   "manufacturer": "Ebgo",
   "model": "Expedition",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -61,8 +61,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -80,7 +80,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -91,14 +91,14 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "certifications": [
-        "UL 2271"
-      ],
       "battery": {
         "capacity": 720,
         "voltage": 48,
         "chemistry": "li-ion",
-        "cells": "Samsung/LG 21700-5000 mah"
+        "cells": "Samsung/LG 21700-5000 mah",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 500,
       "operating_modes": [
@@ -106,7 +106,7 @@
           "mode": "assist",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         }
       ]
@@ -138,12 +138,12 @@
       "description": "Shimano B01S Hydraulic"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano B01S Hydraulic"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rear Disc",
       "position": [
         "rear"
@@ -155,7 +155,7 @@
       }
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Front Disc",
       "position": [
         "front"
@@ -165,14 +165,6 @@
       "dimensions": {
         "diameter": 180
       }
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 8-speed CSHG318132, 11-32T"
     },
     {
       "type": "chain",
@@ -187,6 +179,14 @@
       "description": "36T"
     },
     {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 8-speed CSHG318132, 11-32T"
+    },
+    {
       "type": "derailleur",
       "position": [
         "rear"
@@ -195,20 +195,20 @@
       "description": "Shimano Acera 8-speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 15Ah Samsung/LG 21700-5000 mah cell battery UL2271 Certified"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "D POWER 36V 3A Fast Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Dapu 500W"
+      "type": "ebike-displayremote",
+      "description": "Bigstone C610"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Bigstone C610"
+      "type": "ebike-motor",
+      "description": "Dapu 500W"
     },
     {
       "type": "fender",
@@ -223,7 +223,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Promax",
       "description": "Promax 35mm"
@@ -237,7 +237,7 @@
       "description": "Alloy Thru Axle for RST 36H"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front",
         "rear"
@@ -262,7 +262,7 @@
       "description": "Fixed Alloy 30.4 400L"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "Quick Release"
     },
     {

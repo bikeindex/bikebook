@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ford/2024/mustang",
   "manufacturer": "Ford",
   "model_group": "Mustang",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -349,8 +349,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -360,7 +360,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -382,7 +382,7 @@
           "availability": "stock",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -390,7 +390,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -421,11 +421,11 @@
       "description": "Tektro HD E-740 4-piston hydraulic caliper, 203mm front and rear rotors"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V, 15Ah | 720Wh"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "750W* Motor with four modes: Eco, Normal, Sport, and Track"
     },
     {
@@ -445,11 +445,11 @@
       "description": "Aluminium alloy 6061 integrated handlebar and stem with full color display and front light (2000 Lm output, 180 Lux)"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Headlight: 2000 Lm Output, 180Lux; Lumens: The total output of visible light from a light source is measured in lumens (Lm).; Lux: The amount of light that is cast on a surface is called illuminance, which is measured in lux.; Rear Light: Integrated Rear Light"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "200x53mm air-sprung rear shock",
       "position": [
         "rear"
@@ -476,5 +476,289 @@
         "diameter": 584
       }
     }
-  ]
+  ],
+  "market_variants": {
+    "CA": {
+      "markets": [
+        "CA"
+      ],
+      "description": "There's no mistaking the lineage of this bold, chiseled electric bike. Every line, curve, and angle has been inspired to evoke the sixty years of power and performance excellence you've come to expect from a Ford Mustang, America's best-selling sports car^.\nThe Mustang electric bike generates 500W* of electric boost that easily accelerates to 32 KM/H** (in pedal assist, Class 3 mode with the rider pedaling) with plenty of torque on-demand.\nThe eBike features the iconic Mustang LED Sequential Taillights and an integrated one-piece cockpit cradles a full color display with telemetry graphics inspired by Ford's digital infotainment system.\nDesigned for the street and tuned for fast rides with semi-slick Pirelli Angel tires and dual suspension designed to keep the bike firmly planted over surface imperfections.\nPowered by a 48V, 15Ah | 720Wh battery, the Mustang electric bike can cruise up to 100 KM ***, and riders can take advantage of four power power modes – Eco, Normal, Sport, and Track.",
+      "years": {
+        "2026": {
+          "original_msrp": 499000,
+          "original_msrp_currency": "CAD",
+          "colorways": {
+            "Carbonized Gray Metallic Standard": {
+              "variants": [
+                {
+                  "sku": "FM002-CA-SM-IU-01-CG-500-STD",
+                  "size": "Small"
+                },
+                {
+                  "sku": "FM002-CA-MD-IU-01-CG-500-STD",
+                  "size": "Medium"
+                },
+                {
+                  "sku": "FM002-CA-LG-IU-01-CG-500-STD",
+                  "size": "Large"
+                }
+              ]
+            },
+            "Atlas Blue": {
+              "variants": [
+                {
+                  "sku": "FM002-CA-SM-IU-01-AB-500-STD",
+                  "size": "Small",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-MD-IU-01-AB-500-STD",
+                  "size": "Medium",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-LG-IU-01-AB-500-STD",
+                  "size": "Large",
+                  "original_msrp": 548000
+                }
+              ]
+            },
+            "Grabber Blue Metallic": {
+              "variants": [
+                {
+                  "sku": "FM002-CA-SM-IU-01-GB-500-STD",
+                  "size": "Small",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-MD-IU-01-GB-500-STD",
+                  "size": "Medium",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-LG-IU-01-GB-500-STD",
+                  "size": "Large",
+                  "original_msrp": 548000
+                }
+              ]
+            },
+            "Yellow Splash Metallic Tri-Coat": {
+              "variants": [
+                {
+                  "sku": "FM002-CA-SM-IU-01-YS-500-STD",
+                  "size": "Small",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-MD-IU-01-YS-500-STD",
+                  "size": "Medium",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-LG-IU-01-YS-500-STD",
+                  "size": "Large",
+                  "original_msrp": 548000
+                }
+              ]
+            },
+            "Iconic Silver Metallic": {
+              "variants": [
+                {
+                  "sku": "FM002-CA-SM-IU-01-IS-500-STD",
+                  "size": "Small",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-MD-IU-01-IS-500-STD",
+                  "size": "Medium",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-LG-IU-01-IS-500-STD",
+                  "size": "Large",
+                  "original_msrp": 548000
+                }
+              ]
+            },
+            "Rapid Red": {
+              "variants": [
+                {
+                  "sku": "FM002-CA-SM-IU-01-RR-500-STD",
+                  "size": "Small",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-MD-IU-01-RR-500-STD",
+                  "size": "Medium",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-LG-IU-01-RR-500-STD",
+                  "size": "Large",
+                  "original_msrp": 548000
+                }
+              ]
+            },
+            "Oxford White": {
+              "variants": [
+                {
+                  "sku": "FM002-CA-SM-IU-01-OW-500-STD",
+                  "size": "Small",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-MD-IU-01-OW-500-STD",
+                  "size": "Medium",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-LG-IU-01-OW-500-STD",
+                  "size": "Large",
+                  "original_msrp": 548000
+                }
+              ]
+            },
+            "Vapor Blue Metallic": {
+              "variants": [
+                {
+                  "sku": "FM002-CA-SM-IU-01-VB-500-STD",
+                  "size": "Small",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-MD-IU-01-VB-500-STD",
+                  "size": "Medium",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-LG-IU-01-VB-500-STD",
+                  "size": "Large",
+                  "original_msrp": 548000
+                }
+              ]
+            },
+            "Dark Matter Gray": {
+              "variants": [
+                {
+                  "sku": "FM002-CA-SM-IU-01-DG-500-STD",
+                  "size": "Small",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-MD-IU-01-DG-500-STD",
+                  "size": "Medium",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-LG-IU-01-DG-500-STD",
+                  "size": "Large",
+                  "original_msrp": 548000
+                }
+              ]
+            },
+            "Shadow Black": {
+              "variants": [
+                {
+                  "sku": "FM002-CA-SM-IU-01-SB-500-STD",
+                  "size": "Small",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-MD-IU-01-SB-500-STD",
+                  "size": "Medium",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-LG-IU-01-SB-500-STD",
+                  "size": "Large",
+                  "original_msrp": 548000
+                }
+              ]
+            },
+            "Race Red": {
+              "variants": [
+                {
+                  "sku": "FM002-CA-SM-IU-01-RC-500-STD",
+                  "size": "Small",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-MD-IU-01-RC-500-STD",
+                  "size": "Medium",
+                  "original_msrp": 548000
+                },
+                {
+                  "sku": "FM002-CA-LG-IU-01-RC-500-STD",
+                  "size": "Large",
+                  "original_msrp": 548000
+                }
+              ]
+            },
+            "Molten Magenta": {
+              "variants": [
+                {
+                  "sku": "FM002-CA-SM-IU-01-MM-500-STD",
+                  "size": "Small",
+                  "original_msrp": 622400
+                },
+                {
+                  "sku": "FM002-CA-MD-IU-01-MM-500-STD",
+                  "size": "Medium",
+                  "original_msrp": 622400
+                },
+                {
+                  "sku": "FM002-CA-LG-IU-01-MM-500-STD",
+                  "size": "Large",
+                  "original_msrp": 622400
+                }
+              ]
+            },
+            "Lime Yellow": {
+              "variants": [
+                {
+                  "sku": "FM002-CA-SM-IU-01-LY-500-STD",
+                  "size": "Small",
+                  "original_msrp": 622400
+                },
+                {
+                  "sku": "FM002-CA-MD-IU-01-LY-500-STD",
+                  "size": "Medium",
+                  "original_msrp": 622400
+                },
+                {
+                  "sku": "FM002-CA-LG-IU-01-LY-500-STD",
+                  "size": "Large",
+                  "original_msrp": 622400
+                }
+              ]
+            }
+          },
+          "url": "https://ford-bikes.ca/products/mustang-ebike"
+        }
+      },
+      "motors": {
+        "0": {
+          "rated_power": 500,
+          "operating_modes": {
+            "assist stock": {
+              "max_speed": 32,
+              "e_vehicle_classifications": [
+                "evc/ca/power-assisted-bicycle"
+              ]
+            },
+            "throttle stock": {
+              "e_vehicle_classifications": [
+                "evc/ca/power-assisted-bicycle"
+              ]
+            }
+          }
+        }
+      },
+      "components": {
+        "ebike-motor": {
+          "description": "500W* Motor with four modes: Eco, Normal, Sport, and Track"
+        }
+      }
+    }
+  }
 }

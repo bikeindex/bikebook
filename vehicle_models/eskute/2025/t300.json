@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/eskute/2025/t300",
   "manufacturer": "Eskute",
   "model_group": "T300",
@@ -7,13 +7,13 @@
   "model_configuration": "complete",
   "type": "tricycle",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/eskute/2025/t300.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/eskute/2025/t300_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/eskute/2025/t300-geometry.jpg",
   "description": "Introducing the Eskute T300 Folding Electric Trike – a revolutionary blend of safety, comfort, and convenience, designed especially for seniors and first-time riders.\n\nEngineered with an advanced smart differential system, the T300 delivers superior stability, traction, and control—whether navigating sharp turns or uneven surfaces. Its ergonomic seat with backrest provides extra support, ensuring a safer and more comfortable ride for older adults.\n\nPowered by a removable TUV-certified battery, the T300 offers dependable performance for daily commutes, leisurely rides, or short errands. The compact folding design allows for easy storage in car trunks, elevators, or tight spaces, while its quick unfolding mechanism ensures a smooth transition to a stable, ready-to-ride trike.\n\nEquipped with a high-efficiency brushless motor, the Eskute T300 effortlessly handles uphill climbs and varied terrains, making every journey smooth, secure, and enjoyable.\n\nRide with confidence. Ride with Eskute T300.",
   "first_year": 2025,
   "years": {
@@ -162,7 +162,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "suspension": {
     "front": {}
@@ -178,12 +178,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -192,7 +192,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IP54",
       "battery": {
         "capacity": 624,
@@ -207,14 +207,14 @@
           "max_speed": 29,
           "range_claimed": 105,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -268,28 +268,28 @@
       "description": "Disc Brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 13Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V / 2A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Peak 1200W"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LCD Display Screen"
     },
     {
-      "type": "included_not_installed",
+      "type": "ebike-motor",
+      "description": "Peak 1200W"
+    },
+    {
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "1 Toolkit"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Keys",
       "description": "2 Keys"
     },
@@ -300,6 +300,14 @@
         "rear"
       ],
       "description": "120 lbs"
+    },
+    {
+      "type": "rack-bag",
+      "type_detail": "Rear Rack Bag",
+      "position": [
+        "rear"
+      ],
+      "description": "Rear Rack Bag"
     },
     {
       "type": "saddle",
@@ -317,14 +325,6 @@
         "width": 76.2,
         "diameter": 355
       }
-    },
-    {
-      "type": "top_of_rack_bag",
-      "type_detail": "Rear Rack Bag",
-      "position": [
-        "rear"
-      ],
-      "description": "Rear Rack Bag"
     },
     {
       "type": "unknown",

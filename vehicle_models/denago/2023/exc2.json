@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/denago/2023/exc2",
   "manufacturer": "Denago",
   "model_group": "eXC",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -25,7 +25,7 @@
             "black",
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/denago/2023/exc2_black_with_gray.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/denago/2023/exc2-black-with-gray.jpg",
           "variants": [
             {
               "sku": "DE-E08-BGR-M",
@@ -72,8 +72,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -85,7 +85,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -97,7 +97,7 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "model": "M510",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
         "capacity": 720,
@@ -113,7 +113,7 @@
           "range_claimed": 148,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -218,24 +218,24 @@
       "description": "Shimano-9 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "720Wh Bafang Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V3A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "250 Watt Bafang Mid-Drive Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Bafang",
       "description": "Bafang display"
     },
     {
-      "type": "grips_tape",
+      "type": "ebike-motor",
+      "description": "250 Watt Bafang Mid-Drive Motor"
+    },
+    {
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "130mm",
       "dimensions": {
@@ -263,7 +263,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "description": "φ35mm",
       "dimensions": {

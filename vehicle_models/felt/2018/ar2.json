@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2018/ar2",
   "manufacturer": "Felt",
   "model_group": "AR",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_biking",
+  "primary_activity": "road-biking",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2018/ar2.jpeg",
   "first_year": 2018,
@@ -31,7 +31,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "bottom_bracket": {
       "shell": "BB30",
@@ -60,8 +60,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "11_rear"
+    "2-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -254,7 +254,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Token",
       "description": "Token BB30 with 24mm bearings"
     },
@@ -277,18 +277,9 @@
       "description": "Shimano Ultegra R8000 direct mount caliper with brake pads for carbon rims"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano Ultegra R8050"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel / Cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 11-speed, 11-28T"
     },
     {
       "type": "chain",
@@ -298,6 +289,15 @@
       "type": "chain",
       "manufacturer": "Shimano",
       "description": "Shimano 11-speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel / Cassette",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 11-speed, 11-28T"
     },
     {
       "type": "crankset",
@@ -321,7 +321,7 @@
       "description": "Shimano Ultegra R8050 Di2 11-speed short cage"
     },
     {
-      "type": "electronic_shifting_component",
+      "type": "electronic-shifting-part",
       "description": "Di2 internal battery charging cables"
     },
     {
@@ -330,7 +330,7 @@
       "description": "Felt Aero Road UHC Ultimate + TeXtreme carbon fiber monocoque construction, AeroTaper 1.125\" - 1.25\" carbon fiber steerer tube, integrated crown race, crown, blades and dropouts"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt VelvetGel tape with 3M reflective base with reflective Felt Bubble-Tech F-Wing bar end plugs"
@@ -365,7 +365,7 @@
       "description": "DT Swiss 240 Spline, 11-speed, 130mm QR"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Assembly Paste",
       "description": "Carbon assembly paste"
     },
@@ -395,7 +395,7 @@
       "description": "Felt Vibration Reducing Aero Road flip position UHC Advanced + TeXtreme carbon fiber with 3T DiffLock Comfort Module internals, 48 - 51cm: 280mm length, 5mm offset --- 54 - 61cm: 350mm length, 25mm offset"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "manufacturer": "Felt",
       "description": "Felt Internaloc integrated with titanium bolts"

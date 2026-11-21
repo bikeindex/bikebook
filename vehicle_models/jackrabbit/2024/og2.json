@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jackrabbit/2024/og2",
   "manufacturer": "JackRabbit",
   "model_group": "OG2",
   "model": "OG2",
   "model_configuration": "complete",
-  "type": "e_motorcycle",
+  "type": "e-motorcycle",
   "propulsion": [
     "throttle"
   ],
@@ -37,7 +37,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jackrabbit/2024/og2_blue.png",
+          "stock_photo": "https://bikebook.bikeindex.org/jackrabbit/2024/og2-blue.png",
           "variants": [
             {
               "sku": "JR3BU-4",
@@ -50,7 +50,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jackrabbit/2024/og2_white.png",
+          "stock_photo": "https://bikebook.bikeindex.org/jackrabbit/2024/og2-white.png",
           "variants": [
             {
               "sku": "JR3WH-4",
@@ -63,7 +63,7 @@
           "colors": [
             "yellow"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jackrabbit/2024/og2_yellow.png",
+          "stock_photo": "https://bikebook.bikeindex.org/jackrabbit/2024/og2-yellow.png",
           "variants": [
             {
               "sku": "JR3YE-4",
@@ -94,7 +94,7 @@
   ],
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "rear"
       ],
@@ -103,9 +103,8 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "certifications": [
-        "UL 2271",
         "UL 2272"
       ],
       "water_rating": "IPX4",
@@ -113,7 +112,10 @@
         "capacity": 151,
         "voltage": 36,
         "chemistry": "li-ion",
-        "charging_time": 180
+        "charging_time": 180,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 300,
       "operating_modes": [
@@ -163,31 +165,31 @@
       "description": "Mechanical rear disc caliper with 160 mm rotor"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Li-Ion 36V 4.2Ah 151.2Wh"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Safety: Tested & compliant with UL2271 & UL2272"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Level: 5 level power indicator"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "110-240V input, 42V 1.7A output"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "300 Watt rear hub brushless electric motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Multi-function backlit speedometer"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "300 Watt rear hub brushless electric motor"
+    },
+    {
+      "type": "light",
       "type_detail": "Lights (optional)",
       "description": "Standard front and rear lights via light plug ports"
     },

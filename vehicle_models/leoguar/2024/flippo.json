@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/leoguar/2024/flippo",
   "manufacturer": "Leoguar",
   "model": "Flippo",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -37,7 +37,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/leoguar/2024/flippo_dark_gray.png",
+          "stock_photo": "https://bikebook.bikeindex.org/leoguar/2024/flippo-dark-gray.png",
           "variants": [
             {
               "sku": "BK0011606/0909046",
@@ -50,7 +50,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/leoguar/2024/flippo_burgundy.png",
+          "stock_photo": "https://bikebook.bikeindex.org/leoguar/2024/flippo-burgundy.png",
           "variants": [
             {
               "sku": "BK0011604/0909046",
@@ -63,7 +63,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/leoguar/2024/flippo_marine_blue.png",
+          "stock_photo": "https://bikebook.bikeindex.org/leoguar/2024/flippo-marine-blue.png",
           "variants": [
             {
               "sku": "BK0011602/0909046",
@@ -81,7 +81,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "top_tube": "step_through",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "wheels": [
     {
@@ -94,8 +94,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -113,7 +113,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -123,7 +123,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
         "capacity": 480,
@@ -143,7 +143,7 @@
           "range_claimed": 72,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -153,7 +153,7 @@
           "range_claimed": 32,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -161,7 +161,7 @@
           "availability": "app_update",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -208,7 +208,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell",
       "description": "Integrated with the left brake lever"
     },
@@ -222,12 +222,12 @@
       "description": "Tektro Mechanical Disc Brakes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro Brake Lever with Power Cut-Off Sensor"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -239,20 +239,20 @@
       }
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano MF-TZ500-7, 14-28T, threaded"
-    },
-    {
       "type": "chain",
       "description": "114 links, 7sp, KMC Rust-proof"
     },
     {
       "type": "chainrings",
       "description": "52T Alloy Forged"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano MF-TZ500-7, 14-28T, threaded"
     },
     {
       "type": "crankset",
@@ -270,20 +270,20 @@
       "description": "Shimano ARDTY500D/Altus"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 10Ah (480Wh) Canbus Protocol"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V DC, 3A smart charger, operates on 100V-240V AC power outlets"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V, 350W, 45Nm"
+      "type": "ebike-displayremote",
+      "description": "Color Display and 5 speed levels, Canbus protocol"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Color Display and 5 speed levels, Canbus protocol"
+      "type": "ebike-motor",
+      "description": "48V, 350W, 45Nm"
     },
     {
       "type": "fender",
@@ -304,7 +304,7 @@
       }
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "Toolkit"
     },
@@ -313,7 +313,7 @@
       "description": "Included, Aluminum Alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"
@@ -321,7 +321,7 @@
       "description": "48V LED with quick disconnect"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Tail Light",
       "position": [
         "rear"

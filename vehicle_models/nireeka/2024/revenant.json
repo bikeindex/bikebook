@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/nireeka/2024/revenant",
   "manufacturer": "Nireeka",
   "model": "Revenant",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/nireeka/2024/revenant.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/nireeka/2024/revenant_geometry.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/nireeka/2024/revenant-geometry.png",
   "description": "Nireeka Revenant is a full-suspension, carbon fiber, and powerful ebike with an optional 1000w motor and more than 50 miles (80 km) range with a single charge on the upgraded battery.",
   "first_year": 2024,
   "years": {
@@ -156,7 +156,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "bottom_bracket": {
       "spindle": "square taper"
     },
@@ -192,8 +192,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -207,7 +207,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -218,7 +218,7 @@
     {
       "manufacturer": "Bafang",
       "model": "RM G06A2.250/1000.D",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
@@ -237,7 +237,7 @@
           "range_claimed": 69,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -245,7 +245,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -298,7 +298,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Front Axle",
       "position": [
         "front"
@@ -309,7 +309,7 @@
       }
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Bafang",
       "description": "Bafang Square Taper"
     },
@@ -323,7 +323,12 @@
       "description": "Sram Level Hydraulic Disk Brake"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC E-Bike Chain"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
@@ -331,35 +336,30 @@
       "description": "Sram 9-Speed"
     },
     {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC E-Bike Chain"
-    },
-    {
       "type": "crankset",
       "type_detail": "Crank Set",
       "description": "46T Chainring Bafang Crank Arms"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Sizes: 48V 17.5Ah 840Wh"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bafang",
-      "description": "Bafang RM G06A2.250/1000.D, 1000W Nominal / 1300W Peak power"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Bafang",
       "description": "Bafang DP C07"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang RM G06A2.250/1000.D, 1000W Nominal / 1300W Peak power"
     },
     {
       "type": "fork",
       "description": "Aluminum Air Fork / Rebound & Lockout"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Slide On Comfort Grips"
     },
@@ -391,7 +391,7 @@
       "description": "Hub Motor"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Taillight",
       "position": [
         "rear"
@@ -420,7 +420,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "QR"
     },

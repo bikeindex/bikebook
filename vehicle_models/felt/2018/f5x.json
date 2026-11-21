@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2018/f5x",
   "manufacturer": "Felt",
   "model_group": "FX",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "atb_cyclocross",
+  "primary_activity": "atb-cyclocross",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2018/f5x.jpg",
   "description": "The F5x breaks the mold when it comes to performance and perception. The most value-laden carbon model in the Fx Series, the F5x features a UHC Advanced + TeXtreme carbon frame and fork, making for a stiff and efficient pedaling platform that also reduces the rough hits and chatter found on the roughest cyclocross race",
@@ -85,7 +85,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "bottom_bracket": {
       "shell": "BB386",
       "width": 86.5,
@@ -125,8 +125,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "11_rear"
+    "2-front",
+    "11-rear"
   ],
   "gearing": {
     "rear": [
@@ -140,7 +140,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -315,13 +315,13 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "manufacturer": "Shimano",
       "description": "Shimano RS505 11-speed"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "FSA",
       "description": "FSA BB386 with 30mm bearings"
     },
@@ -335,18 +335,9 @@
       "description": "Shimano RS505 hydraulic disc with 140mm rotor"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano RS505, hydraulic"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 11-speed, 11-28T"
     },
     {
       "type": "chain",
@@ -356,6 +347,15 @@
     {
       "type": "chain",
       "description": "chain plate protector"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 11-speed, 11-28T"
     },
     {
       "type": "derailleur",
@@ -386,7 +386,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt CxGel tape with Felt Bubble-Tech F-Wing bar end plugs"
@@ -429,7 +429,7 @@
       }
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Assembly Paste",
       "description": "Carbon assembly paste"
     },
@@ -458,7 +458,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "manufacturer": "Felt",
       "description": "Felt single bolt, Ø31.8mm",

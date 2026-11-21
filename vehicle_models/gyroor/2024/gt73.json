@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/gyroor/2024/gt73",
   "manufacturer": "Gyroor",
   "model_group": "GT73",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -54,8 +54,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -63,14 +63,14 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
       ]
     },
     {
-      "type": "motor_brake",
+      "type": "motor-brake",
       "position": [
         "motor"
       ]
@@ -78,7 +78,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "certifications": [
         "UL 2849"
@@ -99,7 +99,7 @@
           "range_claimed": 249,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -109,7 +109,7 @@
           "range_claimed": 137,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -146,7 +146,7 @@
       "description": "Front & Rear Hydraulic Brake and Electronic Brake"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "FREEWHEEL",
       "position": [
         "rear"
@@ -159,24 +159,24 @@
       "description": "Shimano 7-Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 18.2Ah*2 Removable Lithium Battery (UL 2849 Compliant)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 2A*2"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "LED Display with NFC card"
+    },
+    {
+      "type": "ebike-motor",
       "description": "1200W (Peak 2400W)"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Variable Speed Gear High Torque Hub Motor 1200W (Peak 2400W)"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "LED Display with NFC card"
     },
     {
       "type": "fork",
@@ -194,11 +194,11 @@
       "description": "Aluminum Hydraulic Suspension Fork"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front & Rear LED Light, Turn Signals, 2-in-1 Brake and Turn Signal Light (Ambient Light optional)Interface & Features"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],

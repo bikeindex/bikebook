@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/mondraker/2023/raze",
   "manufacturer": "Mondraker",
   "model_group": "Raze",
@@ -7,12 +7,12 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/mondraker/2023/raze.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/mondraker/2023/raze_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/mondraker/2023/raze-geometry.jpg",
   "first_year": 2023,
   "years": {
     "2026": {
@@ -88,8 +88,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "12_rear"
+    "1-front",
+    "12-rear"
   ],
   "gearing": {
     "front": [
@@ -107,7 +107,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -196,7 +196,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "SRAM",
       "description": "Sram DUB BSA, sealed bearings, 73mm"
     },
@@ -210,17 +210,9 @@
       "description": "Sram Level T, 2 piece caliper, Centerline 180mm IS 6 bolts one-piece rotor, steel-backed organic pad"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "Sram Level T, Direct Link actuation, tooled reach adjust, lever pivot bushings"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "Sram PG-1210, 11-50T, 12s"
     },
     {
       "type": "chain",
@@ -231,6 +223,14 @@
       "type": "chainrings",
       "type_detail": "Rings",
       "description": "32T, steel, X-Sync 2"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "Sram PG-1210, 11-50T, 12s"
     },
     {
       "type": "crankset",
@@ -257,7 +257,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "ONOFF Twin, 1lock-on, 135mm",
       "dimensions": {
@@ -306,7 +306,7 @@
       }
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Rear shock",
       "position": [
         "rear"

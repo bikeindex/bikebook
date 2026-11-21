@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/dengfu/2020/e10",
   "manufacturer": "Dengfu",
   "model_group": "E10",
@@ -7,12 +7,12 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/dengfu/2020/e10.png",
-  "geometry_photo": "https://bikebook.bikeindex.org/dengfu/2020/e10_geometry.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/dengfu/2020/e10-geometry.png",
   "description": "FRAMESET\n\nFrame\nTORAY T700 carbon fiber, internal cable routing, post mount disc brake, 148x12 thru axle\n\nFork\n\nSRAM FS YARI RC 27 UB 150 DFB 46 B2, air, 150mm travel, 1 1/8\"-1 1/2\" steer tube, 110x15 thru axle\n\nSeat post\n\nZOOM, suspension seat post, 31.6mm diameter, 100mm drop\n\nWHEELSET\n\nWheels\nAluminum Alloy, MTB hubs, 6-bolt, straight pull, 110x15 front, 148x12 rear, P14 spokes, 28/28 holes\n\nThe quotation is based on carbon matt finish, without any design.",
   "first_year": 2020,
   "final_year": 2020,
@@ -25,7 +25,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "material_detail": "TORAY T700 Carbon",
     "cable_routing": "internal",
     "seatpost_diameter": 31.6
@@ -62,8 +62,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "12_rear"
+    "1-front",
+    "12-rear"
   ],
   "gearing": {
     "front": [
@@ -81,7 +81,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -90,12 +90,12 @@
   ],
   "motors": [
     {
-      "id": "c/bafang/m600_mm_g521_250_500_c_500w",
+      "id": "c/bafang/m600-mm-g521-250-500-c-500w",
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "model": "MM G521.250/500.C",
       "model_group": "M600",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
@@ -196,17 +196,17 @@
       "description": "SRAM DB LVL"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "SRAM",
+      "description": "SRAM CN-SX EAGLE 12S"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "SRAM",
       "description": "SRAM CS-PG-1210 EAGLE 11-50T 12S"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "SRAM",
-      "description": "SRAM CN-SX EAGLE 12S"
     },
     {
       "type": "crankset",
@@ -232,11 +232,11 @@
       "description": "W/O"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "SONY Lithium-ion 48V 17Ah 816Wh"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "manufacturer": "Bafang",
       "description": "BAFANG M600 G521 500W 48V"
     },
@@ -266,7 +266,7 @@
       "description": "W/O"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Rear Shock",
       "position": [
         "rear"

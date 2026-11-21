@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/heybike/2026/venus",
   "manufacturer": "Heybike",
   "model": "Venus",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -39,7 +39,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/heybike/2026/venus_pearl_white.png",
+          "stock_photo": "https://bikebook.bikeindex.org/heybike/2026/venus-pearl-white.png",
           "variants": [
             {
               "sku": "HB1VenusUSWH1A",
@@ -53,7 +53,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/heybike/2026/venus_titanium_grey.png",
+          "stock_photo": "https://bikebook.bikeindex.org/heybike/2026/venus-titanium-grey.png",
           "variants": [
             {
               "sku": "HB1VenusUSGY1A",
@@ -82,8 +82,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -102,7 +102,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -112,16 +112,18 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "water_rating": "IP65",
       "battery": {
-        "capacity": 680
+        "capacity": 680,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "peak_power": 1400,
@@ -133,7 +135,7 @@
           "max_speed": 45,
           "range_claimed": 137,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -168,7 +170,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "description": "White Light with Horn"
     },
     {
@@ -180,7 +182,7 @@
       "description": "Hydraulic Disc Brakes"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotor",
       "position": [
         "front",
@@ -193,34 +195,34 @@
       "description": "48T"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "680Wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V / 2A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W Hub Motor (Galaxy eDrive System)"
+      "type": "ebike-displayremote",
+      "description": "LCD Color Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD Color Display"
+      "type": "ebike-motor",
+      "description": "750W Hub Motor (Galaxy eDrive System)"
     },
     {
       "type": "fork",
       "description": "Aluminum Rigid Fork"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "White Light with Horn"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],

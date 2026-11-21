@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/heybike/2024/cityrun",
   "manufacturer": "Heybike",
   "model": "Cityrun",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -38,7 +38,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/heybike/2024/cityrun_ebony_black.png",
+          "stock_photo": "https://bikebook.bikeindex.org/heybike/2024/cityrun-ebony-black.png",
           "variants": [
             {
               "sku": "Cityrun-B",
@@ -52,7 +52,7 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/heybike/2024/cityrun_emerald_green.png",
+          "stock_photo": "https://bikebook.bikeindex.org/heybike/2024/cityrun-emerald-green.png",
           "variants": [
             {
               "sku": "Cityrun-GN",
@@ -103,8 +103,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -112,7 +112,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -121,14 +121,14 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
-      "certifications": [
-        "UL 2271"
-      ],
+      "kind": "hub-drive",
       "battery": {
         "capacity": 720,
         "voltage": 48,
-        "chemistry": "li-ion"
+        "chemistry": "li-ion",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 500,
       "peak_power": 1000,
@@ -139,7 +139,7 @@
           "availability": "stock",
           "max_speed": 34,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -190,15 +190,15 @@
       "description": "Shimano 7 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "UL 2271 Recognized 48V/15Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V/4A"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Smart LCD display"
     },
     {
@@ -217,7 +217,7 @@
       "description": "Alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "LED, headlight & taillight with turn signals"
     },
     {

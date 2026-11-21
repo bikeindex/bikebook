@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/wired/2026/predator",
   "manufacturer": "Wired",
   "model": "Predator",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/wired/2026/predator.png",
-  "geometry_photo": "https://bikebook.bikeindex.org/wired/2026/predator_geometry.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/wired/2026/predator-geometry.png",
   "description": "Meet the completely redesigned WIRED Predator - our ultimate dual motor electric bike with UL2271 certified batteries, engineered for extreme performance and all-terrain domination.\n\nThe Predator features dual 72V batteries powering a geared 2000W rear hub motor and a geared 1500W front motor, delivering a massive 8000W peak power that conquers any terrain with ease.\n\n8000W Peak Power: Combined dual motor system for extreme performance\n\n330 N.m Combined Torque: 180Nm rear + 153Nm front = unstoppable climbing power\n\nPerfect For\n\nWhether you're tackling steep mountain trails, commuting through challenging terrain, or seeking the ultimate off-road adventure, the Predator delivers uncompromising power and performance with the safety assurance of UL2271 certified batteries. This is the bike for riders who demand the absolute best.\n\nWhat Makes It Special\n\nThe Predator's exclusive dual Hentach motor system provides superior torque distribution and traction control. With 330 N.m of combined torque and UL2271 certified batteries, this bike will conquer anything you throw at it - from steep inclines to loose terrain - with confidence and safety.",
   "first_year": 2026,
   "years": {
@@ -35,7 +35,7 @@
         },
         {
           "name": "Camo",
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/predator_camo.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/predator-camo.png",
           "variants": [
             {
               "sku": "PC11-26",
@@ -48,7 +48,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/predator_graphite.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/predator-graphite.png",
           "variants": [
             {
               "sku": "PG11-26",
@@ -61,7 +61,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/predator_white.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/predator-white.png",
           "variants": [
             {
               "sku": "PW11-26",
@@ -74,7 +74,7 @@
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/predator_titian.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/predator-titian.png",
           "variants": [
             {
               "sku": "PT11-26",
@@ -119,8 +119,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -138,7 +138,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -149,17 +149,17 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certifications": [
-        "UL 2271"
-      ],
       "battery": {
         "capacity": 2520,
         "voltage": 72,
         "chemistry": "li-ion",
-        "cells": "21700"
+        "cells": "21700",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 1500,
       "peak_power": 4000,
@@ -171,7 +171,7 @@
           "range_claimed": 145,
           "levels": 9,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -179,7 +179,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -187,24 +187,24 @@
           "availability": "app_update",
           "max_speed": 89,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
     },
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certifications": [
-        "UL 2271"
-      ],
       "battery": {
         "capacity": 2520,
         "voltage": 72,
         "chemistry": "li-ion",
-        "cells": "21700"
+        "cells": "21700",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 2000,
       "peak_power": 4000,
@@ -216,7 +216,7 @@
           "range_claimed": 145,
           "levels": 9,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -224,7 +224,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -232,7 +232,7 @@
           "availability": "app_update",
           "max_speed": 89,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -272,7 +272,7 @@
       "description": "4-piston Gemma hydraulic brakes with large 203mm rotors offer confident stopping power at high speeds. Be confident at any speed."
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
@@ -288,16 +288,16 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "72V 20Ah front + 72V 15Ah rear batteries (total ~35Ah). Samsung High Discharge 21700 lithium cells (50-S 21700) for reliable, long-life performance (2520Wh total)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "72v Dual motor (AWD). Combined peak output of 8000W and ~330Nm of torque. Rear Hentach steel plated geared hub motor (2000W nominal). Front Hentach steel plated geared hub motor (1500w nominal); Wired Ebikes has sole exclusivity on the most powerful production geared hub motor in the world"
+      "type": "ebike-displayremote",
+      "description": "Full color customizable display screen. Select torque/cadence, class mode, power output and much more; USB-C phone charger (Android and Apple iphone 14 or earlier) conveniently located on power button cluster"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Full color customizable display screen. Select torque/cadence, class mode, power output and much more; USB-C phone charger (Android and Apple iphone 14 or earlier) conveniently located on power button cluster"
+      "type": "ebike-motor",
+      "description": "72v Dual motor (AWD). Combined peak output of 8000W and ~330Nm of torque. Rear Hentach steel plated geared hub motor (2000W nominal). Front Hentach steel plated geared hub motor (1500w nominal); Wired Ebikes has sole exclusivity on the most powerful production geared hub motor in the world"
     },
     {
       "type": "fork",
@@ -307,7 +307,7 @@
       }
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Rear shock",
       "position": [
         "rear"
@@ -340,5 +340,89 @@
       "type_detail": "Controller",
       "description": "Our exclusive dual Patriot System Controllers produce a combined output of over 110 amps; Rear Patriot System Controller peaks at over 65 amps; Front Patriot System Controller peaks at over 45 amps"
     }
-  ]
+  ],
+  "market_variants": {
+    "AU": {
+      "markets": [
+        "AU"
+      ],
+      "years": {
+        "2026": {
+          "original_msrp": 579900,
+          "original_msrp_currency": "AUD",
+          "colorways": {
+            "Wicked Red": {
+              "variants": [
+                {
+                  "sku": "PR11-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Camo": {
+              "variants": [
+                {
+                  "sku": "PC11-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Graphite": {
+              "variants": [
+                {
+                  "sku": "PG11-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "White": {
+              "variants": [
+                {
+                  "sku": "PW11-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Titian": {
+              "variants": [
+                {
+                  "sku": "PT11-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            }
+          },
+          "url": "https://wiredebikes.com/en-au/products/wired-predator-au"
+        }
+      },
+      "motors": {
+        "0": {
+          "operating_modes": {
+            "assist stock": {
+              "e_vehicle_classifications": null
+            },
+            "throttle stock": {
+              "e_vehicle_classifications": null
+            },
+            "assist app_update": {
+              "e_vehicle_classifications": null
+            }
+          }
+        },
+        "1": {
+          "operating_modes": {
+            "assist stock": {
+              "e_vehicle_classifications": null
+            },
+            "throttle stock": {
+              "e_vehicle_classifications": null
+            },
+            "assist app_update": {
+              "e_vehicle_classifications": null
+            }
+          }
+        }
+      }
+    }
+  }
 }

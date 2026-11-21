@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2018/vr4",
   "manufacturer": "Felt",
   "model_group": "VR",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_endurance",
+  "primary_activity": "road-endurance-sportive",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2018/vr4.jpeg",
   "first_year": 2018,
@@ -59,7 +59,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "bottom_bracket": {
       "shell": "BB386",
@@ -96,8 +96,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "11_rear"
+    "1-front",
+    "11-rear"
   ],
   "gearing": {
     "rear": [
@@ -112,7 +112,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -287,13 +287,13 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "manufacturer": "Felt",
       "description": "Felt Bubble-Tech \"F Wing\""
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Token",
       "description": "Token For BB386 Frame with SRAM GXP Crankset"
     },
@@ -306,23 +306,14 @@
       "description": "Front: SRAM Rival Hydraulic Disc with SRAM Centerline 160mm 6-bolt rotor, Rear: SRAM Rival Hydraulic Disc with SRAM Centerline 160mm 6-bolt rotor"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "SRAM",
       "description": "SRAM Hydraulic brake and Felt Slick derailleur"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "SRAM Rival 1 Hydraulic DoubleTap (11 Rear, 1 Front)"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM PG1130 11-speed, 11-42T"
     },
     {
       "type": "chain",
@@ -343,6 +334,15 @@
       "type": "chainrings",
       "type_detail": "Accessories",
       "description": "38T Chainring"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM PG1130 11-speed, 11-42T"
     },
     {
       "type": "crankset",
@@ -367,7 +367,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt VelvetGel Tape with 3M Reflective Base"
@@ -407,12 +407,12 @@
       }
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tubeless Sealant",
       "description": "sealant"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Assembly Paste",
       "description": "carbon assembly paste"
     },
@@ -441,7 +441,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "manufacturer": "Felt",
       "description": "Felt, Ø30.6mm",
@@ -450,7 +450,7 @@
       }
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "SRAM",
       "description": "SRAM Hydraulic brake and Felt Slick derailleur"
     },

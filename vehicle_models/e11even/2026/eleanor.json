@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/e11even/2026/eleanor",
   "manufacturer": "E11even",
   "model": "ELEANOR",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -47,12 +47,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -64,12 +64,14 @@
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "battery": {
         "capacity": 720,
-        "voltage": 48
+        "voltage": 48,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 500,
       "max_torque": 65,
@@ -80,7 +82,7 @@
           "max_speed": 45,
           "range_claimed": 113,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -88,7 +90,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -137,20 +139,20 @@
       "description": "Hydraulic Disc Brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48 V 15 Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6 V, 2 A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500 W"
+      "type": "ebike-displayremote",
+      "description": "LED Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LED Display"
+      "type": "ebike-motor",
+      "description": "500 W"
     },
     {
       "type": "fork",

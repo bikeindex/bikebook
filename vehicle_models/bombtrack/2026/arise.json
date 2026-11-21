@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/bombtrack/2026/arise",
   "manufacturer": "Bombtrack",
   "model_group": "Arise",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "atb_gravel",
+  "primary_activity": "atb-gravel",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/bombtrack/2026/arise.jpg",
   "description": "It all starts here, Arise is our invitation to the Bombtrack family. Made from heat treated double butted 4130 crmo steel you cannot go wrong if you are looking for the simplest way to join the drop bar off-road riding scene. The singlespeed setup means no concerns about gearing, just hop on and pedal on wide, fast and comfortable tyres. Its contemporary design features 12 mm through axles and disc brakes, and both frame and fork have mounts for racks, fenders, and internal routing for dynamo lighting.",
@@ -97,7 +97,8 @@
     "seatpost_clamp_diameter": 29.8,
     "front_derailleur_mount": "28.6mm clamp",
     "derailleur_hanger": "BT-DH-022",
-    "max_chainring": 44
+    "max_chainring": 44,
+    "en_17406": 2
   },
   "wheels": [
     {
@@ -176,8 +177,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -192,7 +193,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front"
       ],
@@ -201,7 +202,7 @@
       "caliper_mount": "Disc Post Mount"
     },
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "rear"
       ],
@@ -368,7 +369,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Through axles",
       "description": "12 x 100 mm / 12 x 142 mm",
       "dimensions": {
@@ -376,7 +377,7 @@
       }
     },
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Front through axle",
       "position": [
         "front"
@@ -388,7 +389,7 @@
       }
     },
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Rear through axle",
       "position": [
         "rear"
@@ -400,7 +401,7 @@
       }
     },
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Through axle front",
       "position": [
         "front"
@@ -408,7 +409,7 @@
       "description": "BT-TA-F-603"
     },
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Through axle rear",
       "position": [
         "rear"
@@ -416,7 +417,7 @@
       "description": "BT-TA-R-603"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "BSA sealed BB, external cups"
     },
     {
@@ -429,12 +430,12 @@
       "description": "Tektro Mira post mount mechanic disc brakes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro RL-340 brake levers"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -442,21 +443,6 @@
       ],
       "manufacturer": "Tektro",
       "description": "Tektro 180 mm front and 160 mm rear rotor"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "16 T heat treated crmo, 1/2'' x 3/32''"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Cassette body",
-      "position": [
-        "rear"
-      ],
-      "description": "BT-CB-006"
     },
     {
       "type": "chain",
@@ -472,6 +458,21 @@
       "type": "chainrings",
       "type_detail": "Chainring offset",
       "description": "0 mm"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "16 T heat treated crmo, 1/2'' x 3/32''"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Cassette body",
+      "position": [
+        "rear"
+      ],
+      "description": "BT-CB-006"
     },
     {
       "type": "crankset",
@@ -505,7 +506,7 @@
       "description": "25.4 mm"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bar Tape",
       "manufacturer": "Bombtrack",
       "description": "Bombtrack Control bar tape"
@@ -647,7 +648,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat clamp",
       "manufacturer": "Bombtrack",
       "description": "Bombtrack Origin 29.8 mm",
@@ -703,11 +704,6 @@
         "rear"
       ],
       "description": "XS - S Vee Tire Speedster 38-584 M - XL Vee Tire Speedster 40-622"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "ASTM riding condition",
-      "description": "2"
     },
     {
       "type": "unknown",

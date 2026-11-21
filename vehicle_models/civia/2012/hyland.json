@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/civia/2012/hyland",
   "manufacturer": "Civia",
   "model": "Hyland",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -37,8 +37,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_internal_rear"
+    "1-front",
+    "8-internal-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -47,7 +47,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -55,6 +55,12 @@
     }
   ],
   "components": [
+    {
+      "type": "bashguardchain-guide",
+      "type_detail": "Chain Protector",
+      "manufacturer": "Civia",
+      "description": "Civia Aluminum Chainguard"
+    },
     {
       "type": "brake",
       "position": [
@@ -68,12 +74,6 @@
       "type": "chain",
       "manufacturer": "Shimano",
       "description": "Shimano"
-    },
-    {
-      "type": "chain_guide",
-      "type_detail": "Chain Protector",
-      "manufacturer": "Civia",
-      "description": "Civia Aluminum Chainguard"
     },
     {
       "type": "crankset",
@@ -91,7 +91,7 @@
       "description": "Civia Steel"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Velo",
       "description": "Velo Ergonomic"
     },
@@ -106,7 +106,7 @@
       "description": "Cane Creek S-8"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/wildeway/2025/summitx",
   "manufacturer": "Wildeway",
   "model": "SummitX",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -24,7 +24,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wildeway/2025/summitx_white.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/wildeway/2025/summitx-white.jpg",
           "variants": [
             {
               "sku": "SummitX-WHITE",
@@ -42,7 +42,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wildeway/2025/summitx_black.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/wildeway/2025/summitx-black.jpg",
           "variants": [
             {
               "sku": "SummitX-BLACK",
@@ -83,7 +83,7 @@
     "material": "steel",
     "material_detail": "High-Carbon Steel",
     "top_tube": "step_through",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "mounts": [
       {
         "type": "fender"
@@ -110,8 +110,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -129,7 +129,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -140,7 +140,7 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IPX65",
       "rated_power": 500,
       "peak_power": 1000,
@@ -153,7 +153,7 @@
           "range_claimed": 161,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -162,14 +162,14 @@
           "range_claimed": 97,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
     },
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IPX65",
       "rated_power": 750,
       "peak_power": 1300,
@@ -182,7 +182,7 @@
           "range_claimed": 161,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -191,7 +191,7 @@
           "range_claimed": 97,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -255,7 +255,7 @@
       "description": "Motor power cutoff"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -267,13 +267,6 @@
       }
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "14–28T"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC 7-speed"
@@ -281,6 +274,13 @@
     {
       "type": "chainrings",
       "description": "52T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "14–28T"
     },
     {
       "type": "crankset",
@@ -291,42 +291,42 @@
       }
     },
     {
-      "type": "device_mount",
+      "type": "device-mount",
       "description": "phone holder"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V, 32Ah, 1,536Wh, removable"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V, 60Ah, 2,880Wh, removable"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Selected Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "32Ah: 5A, 60Ah: 8A"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "Color LCD"
+    },
+    {
+      "type": "ebike-motor",
       "position": [
         "front"
       ],
       "description": "500W sustained / 1,000W peak / 50Nm"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "position": [
         "rear"
       ],
       "description": "750W sustained / 1,300W peak / 68Nm"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "Color LCD"
     },
     {
       "type": "fork",
@@ -339,27 +339,27 @@
       }
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Battery Keys",
       "description": "Battery Key"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "Toolkit"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Rear backrestcushion",
       "description": "Rear backrestcushion"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Lighting",
       "description": "Integrated front and rear lights"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],

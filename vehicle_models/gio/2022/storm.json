@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/gio/2022/storm",
   "manufacturer": "GIO",
   "model": "Storm",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -58,8 +58,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -76,7 +76,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -87,7 +87,7 @@
     {
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_speed": "spoke_magnet",
       "battery": {
         "capacity": 624,
@@ -104,14 +104,14 @@
           "max_speed": 32,
           "range_claimed": 75,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -143,7 +143,7 @@
       "description": "Adjustment Free Hydraulic Auriga"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
@@ -164,17 +164,17 @@
       "description": "Shimano TourneyTX 8 Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "13Ah, Lithium 48V Samsung Battery"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bafang",
-      "description": "BAFANG 48V/500W 50Nm(70Nm max) Rear-Drive"
+      "type": "ebike-displayremote",
+      "description": "LCD, Multifunctional, (Miles/KM)"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD, Multifunctional, (Miles/KM)"
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "BAFANG 48V/500W 50Nm(70Nm max) Rear-Drive"
     },
     {
       "type": "fender",
@@ -194,7 +194,7 @@
       "description": "Kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front and Rear - Spanninga Light"
     },
     {

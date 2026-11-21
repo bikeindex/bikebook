@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/quietkat/2025/villager",
   "manufacturer": "QuietKat",
   "model": "Villager",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -71,8 +71,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "SRAM",
@@ -81,7 +81,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -90,7 +90,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 696,
         "voltage": 48
@@ -104,7 +104,7 @@
           "range_claimed": 68,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         },
         {
@@ -144,7 +144,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Axle",
       "description": "Rear: 175mm Solid Axle, Front 135mm Solid Axle"
     },
@@ -158,16 +158,16 @@
       "description": "Tektro 350 2-Piston Hydraulic"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "12.8Ah/48V | 696Wh | 10 lbs"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W (Hub-Drive)"
+      "type": "ebike-displayremote",
+      "description": "Custom Color LED Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Custom Color LED Display"
+      "type": "ebike-motor",
+      "description": "500W (Hub-Drive)"
     },
     {
       "type": "fork",

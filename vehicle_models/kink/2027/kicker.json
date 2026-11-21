@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kink/2027/kicker",
   "manufacturer": "Kink",
   "model": "Kicker",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "bmx",
   "handlebar_type": "horizontal",
@@ -54,8 +54,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -67,7 +67,7 @@
   },
   "brakes": [
     {
-      "type": "u_brake",
+      "type": "u-brake",
       "position": [
         "rear"
       ]
@@ -90,7 +90,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed Mid 19mm"
     },
     {
@@ -101,20 +101,12 @@
       "description": "Mission Cease V2"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "description": "Mission L2 Linear"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Mission Token"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "DRIVER",
-      "position": [
-        "rear"
-      ],
-      "description": "9T"
     },
     {
       "type": "chain",
@@ -124,6 +116,14 @@
       "type": "chainrings",
       "type_detail": "SPROCKET",
       "description": "Mission Rank 25T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "DRIVER",
+      "position": [
+        "rear"
+      ],
+      "description": "9T"
     },
     {
       "type": "crankset",
@@ -139,7 +139,7 @@
       "description": "Kink Circuit 4130 Chromoly Steerer Tapered Fork Legs"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "manufacturer": "Kink",
       "description": "Kink Ace Grips"
@@ -188,7 +188,7 @@
       "description": "Mission Combo Steel Post"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "SEAT CLAMP",
       "description": "Mission Slim Clamp"
     },

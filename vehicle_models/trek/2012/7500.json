@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/trek/2012/7500",
   "manufacturer": "Trek",
   "model_group": "7500",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -58,8 +58,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "9_rear"
+    "3-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -79,7 +79,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -156,7 +156,7 @@
       "description": "Tektro linear-pull brakes w/Tektro alloy levers"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
@@ -195,7 +195,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Bontrager",
       "description": "Bontrager Satellite Elite, lock-on, ergonomic"
@@ -255,5 +255,142 @@
       "manufacturer": "Shimano",
       "description": "Shimano RM70 alloy hubs; Bontrager Camino 32-hole alloy rims"
     }
-  ]
+  ],
+  "market_variants": {
+    "EU": {
+      "markets": [
+        "EU"
+      ],
+      "primary_activity": "commuting",
+      "stock_photo": "https://bikebook.bikeindex.org/trek/2012/7500-eu.png",
+      "years": {
+        "2012": {
+          "colorways": {
+            "Matte Bright Silver/Matte Dark Silver": {
+              "name": "Matte Bright Silver/Matte Dark Silver",
+              "colors": [
+                "silver"
+              ]
+            },
+            "Satin Crystal Pearl White/Sati": false,
+            "Satin Crystal Pearl White/Satin Platinum": false
+          },
+          "url": "https://github.com/bikeindex/bikebook/blob/0898412f69d1c83f3aa448b68792d89c7dd9f77a/bike_data/trek/2012/7500_e.json",
+          "url_live": false
+        }
+      },
+      "frame": {
+        "bottom_bracket": {
+          "spindle": "Octalink"
+        },
+        "material_detail": null
+      },
+      "wheels": {
+        "front+rear 622": {
+          "tire_width": 38
+        }
+      },
+      "groupset": {
+        "series": "Deore"
+      },
+      "brakes": {
+        "front+rear": {
+          "type": "disc-hydraulic"
+        }
+      },
+      "components": [
+        {
+          "type": "brake",
+          "position": [
+            "front",
+            "rear"
+          ],
+          "manufacturer": "Shimano",
+          "description": "Shimano M446 hydraulic disc brakes w/Shimano hydraulic levers"
+        },
+        {
+          "type": "cogcassettefreewheel",
+          "position": [
+            "rear"
+          ],
+          "manufacturer": "Shimano",
+          "description": "Shimano HG50 11-32, 9 speed"
+        },
+        {
+          "type": "crankset",
+          "manufacturer": "Shimano",
+          "description": "Shimano M431 Octalink, 48/36/26 w/chainguard"
+        },
+        {
+          "type": "derailleur",
+          "position": [
+            "front",
+            "rear"
+          ],
+          "manufacturer": "Shimano",
+          "description": "Shimano Deore"
+        },
+        {
+          "type": "handlebar",
+          "manufacturer": "Bontrager",
+          "description": "Bontrager Low Riser, 25mm rise",
+          "dimensions": {
+            "rise": 25
+          }
+        },
+        {
+          "type": "headset",
+          "description": "Slimstak, semi-cartridge bearings, sealed"
+        },
+        {
+          "type": "pedals",
+          "description": "Alloy body w/alloy cage"
+        },
+        {
+          "type": "saddle",
+          "manufacturer": "Bontrager",
+          "description": "Bontrager Evoke 2, chromoly rails"
+        },
+        {
+          "type": "seatpost",
+          "manufacturer": "Bontrager",
+          "description": "Bontrager Race"
+        },
+        {
+          "type": "shifter",
+          "manufacturer": "Shimano",
+          "description": "Shimano M590 Deore, 9-speed trigger"
+        },
+        {
+          "type": "stem",
+          "manufacturer": "Bontrager",
+          "description": "Bontrager SSR, 10 degree",
+          "angles": {
+            "angle": 10
+          }
+        },
+        {
+          "type": "tire",
+          "position": [
+            "front",
+            "rear"
+          ],
+          "manufacturer": "Bontrager",
+          "description": "Bontrager LT2, 700x38c",
+          "dimensions": {
+            "width": 38,
+            "diameter": 622
+          }
+        },
+        {
+          "type": "wheel",
+          "manufacturer": "Shimano",
+          "description": "Shimano center lock disc hubs; Bontrager Nebula disc 32-hole alloy rims"
+        }
+      ],
+      "model_group": null,
+      "suspension": false,
+      "sizes": null
+    }
+  }
 }

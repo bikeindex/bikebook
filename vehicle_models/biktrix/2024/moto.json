@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/biktrix/2024/moto",
   "manufacturer": "Biktrix",
   "model": "Moto",
   "model_configuration": "complete",
   "type": "bike",
-  "type_detail": "bench_seat",
+  "type_detail": "bench-seat",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -26,7 +26,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/biktrix/2024/moto_charcoal.png",
+          "stock_photo": "https://bikebook.bikeindex.org/biktrix/2024/moto-charcoal.png",
           "variants": [
             {
               "sku": "MOTO-20-CC",
@@ -60,7 +60,7 @@
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/biktrix/2024/moto_lava_orange.png",
+          "stock_photo": "https://bikebook.bikeindex.org/biktrix/2024/moto-lava-orange.png",
           "variants": [
             {
               "sku": "MOTO-20-LOR",
@@ -93,7 +93,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/biktrix/2024/moto_white.png",
+          "stock_photo": "https://bikebook.bikeindex.org/biktrix/2024/moto-white.png",
           "variants": [
             {
               "sku": "MOTO-20-WH",
@@ -166,8 +166,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_internal_rear"
+    "1-front",
+    "1-internal-rear"
   ],
   "gearing": {
     "front": [
@@ -184,7 +184,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -195,7 +195,7 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "battery": {
         "capacity": 1032,
@@ -213,7 +213,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -277,7 +277,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Front axle",
       "position": [
         "front"
@@ -285,7 +285,7 @@
       "description": "5mm qr"
     },
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Rear axle",
       "position": [
         "rear"
@@ -293,7 +293,11 @@
       "description": "Bolt on"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bashguardchain-guide",
+      "description": "chainguard"
+    },
+    {
+      "type": "bottom-bracket",
       "description": "105mm"
     },
     {
@@ -306,16 +310,9 @@
       "description": "Tektro hd-e350 hydraulic w/ 200mm rotors"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro with adjustable reach and motor cutoffs"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "22t"
     },
     {
       "type": "chain",
@@ -323,8 +320,11 @@
       "description": "Kmc z"
     },
     {
-      "type": "chain_guide",
-      "description": "chainguard"
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "22t"
     },
     {
       "type": "crankset",
@@ -343,17 +343,17 @@
       "description": "Shimano alfine"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery sizes: 48v 21.5ah hailong removable"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bafang",
-      "description": "Bafang rear hub 750w"
+      "type": "ebike-displayremote",
+      "description": "Sw900"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Sw900"
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang rear hub 750w"
     },
     {
       "type": "fender",
@@ -368,7 +368,7 @@
       "description": "Spring suspension fork"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Slide on"
     },
@@ -399,7 +399,7 @@
       "description": "Motor"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Integrated headlight, integrated taillight"
     },
     {

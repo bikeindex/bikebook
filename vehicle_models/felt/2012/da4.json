@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2012/da4",
   "manufacturer": "Felt",
   "model_group": "DA",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_triathlon",
+  "primary_activity": "road-triathlon",
   "handlebar_type": "forward",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2012/da4.jpg",
   "first_year": 2012,
@@ -32,7 +32,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "bottom_bracket": {
       "shell": "BB30",
@@ -59,8 +59,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "10_rear"
+    "2-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -78,7 +78,7 @@
   },
   "brakes": [
     {
-      "type": "u_brake",
+      "type": "u-brake",
       "position": [
         "front",
         "rear"
@@ -224,7 +224,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "FSA",
       "description": "FSA BB30"
     },
@@ -238,23 +238,14 @@
       "description": "Felt integrated aerodynamic front U-brake & rear linerar pull w/ cartridge brake pads"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Felt",
       "description": "Felt Slick brake & derailleur"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "TRP",
       "description": "TRP aero aluminum"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 11-25T"
     },
     {
       "type": "chain",
@@ -265,6 +256,15 @@
       "type": "chainrings",
       "type_detail": "Chainwheel",
       "description": "52T/38T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 11-25T"
     },
     {
       "type": "crankset",
@@ -293,7 +293,7 @@
       "description": "Felt Bayonet3 UHC Advanced MMC carbon fiber monocoque w/ 3KP weave, 1 piece carbon blades, dropouts, crown & external steerer w/ Felt 19mm ACB compression device"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Devox Tri-tip ergonomic base bar grip w/ Felt Gel Velvet tape wrapped extensions"
     },
@@ -346,12 +346,12 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "Aero 3D forged aluminum, 1 x 6mm x 1mm stainless steel bolt"
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "Felt",
       "description": "Felt Slick brake & derailleur"
     },

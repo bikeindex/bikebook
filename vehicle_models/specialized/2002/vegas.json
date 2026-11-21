@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/specialized/2002/vegas",
   "manufacturer": "Specialized",
   "model": "Vegas",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "bmx_freestyle",
+  "primary_activity": "bmx-freestyle",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/specialized/2002/vegas.jpg",
   "description": "Cr-Mo main frame, internally relieved No Oval Head tube, weld on rotor plate, seat-stay mounted X-wire \"U\" brake bosses, w/ braze on cable stops, 6mm dropouts, Wrap gusset BB yoke, Tube seat-stay bridge",
@@ -57,8 +57,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -70,13 +70,13 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ]
     },
     {
-      "type": "u_brake",
+      "type": "u-brake",
       "position": [
         "rear"
       ],
@@ -85,7 +85,11 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bashguardchain-guide",
+      "description": "chainguard cover"
+    },
+    {
+      "type": "bottom-bracket",
       "manufacturer": "Specialized",
       "description": "Specialized , ball-retainer bearing"
     },
@@ -105,17 +109,9 @@
       "description": "Tektro SBB-06, u-brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro SBL-89, u-brake lever pair, 16mm cable pull"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano SFMX-30, 1/2\" x 1/8\", 16T, chrome plated"
     },
     {
       "type": "chain",
@@ -123,16 +119,20 @@
       "description": "KMC Z-510, 1/2\" x 1/8\", w/ Anti-drop inner links, 88 links"
     },
     {
-      "type": "chain_guide",
-      "description": "chainguard cover"
-    },
-    {
-      "type": "chain_tensioners",
+      "type": "chain-tensioners",
       "description": "38mm O.D. alloy chain tensioners"
     },
     {
       "type": "chainrings",
       "description": "Solid Alloy disc, 44t, 5mm thick, CNC'd center/drive hole and teeth"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano SFMX-30, 1/2\" x 1/8\", 16T, chrome plated"
     },
     {
       "type": "crankset",
@@ -153,7 +153,7 @@
       "description": "Specialized alloy fork cap"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Specialized",
       "description": "Specialized No-flange, Kraton, 140mm",
       "dimensions": {
@@ -194,7 +194,7 @@
       "description": "Specialized \"Flip Side\", alloy, 48h, 14mm Cr-Mo axle, right & left side F/W thread, loose ball"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "reflectors"
     },
     {
@@ -223,7 +223,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "manufacturer": "Specialized",
       "description": "Specialized forged alloy, 2-bolt"
     },

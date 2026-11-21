@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2013/york",
   "manufacturer": "Felt",
   "model_group": "York",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -51,8 +51,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "2_internal_rear"
+    "1-front",
+    "2-internal-rear"
   ],
   "gearing": {
     "front": [
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "type": "coaster_brake",
+      "type": "coaster-brake",
       "position": [
         "rear"
       ]
@@ -187,7 +187,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "FSA",
       "description": "FSA 68mm w/ forged cr-mo square taper"
     },
@@ -200,22 +200,14 @@
       "description": "Tektro dual pivot caliper, stainless hardware, teflon bushings"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Felt",
       "description": "Felt Slick Brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro front aluminum retro brake lever"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "coaster brake cog -22T x 1/8\""
     },
     {
       "type": "chain",
@@ -226,6 +218,14 @@
       "type": "chainrings",
       "type_detail": "Chainwheel",
       "description": "Skip-Tooth Hess Chainring, 24t x 1/8\", aluminum"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "coaster brake cog -22T x 1/8\""
     },
     {
       "type": "crankset",
@@ -245,7 +245,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "No flange Felt design with stiched cover"
     },
@@ -313,7 +313,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "integrated in frame"
     },

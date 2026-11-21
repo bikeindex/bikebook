@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2012/f2x",
   "manufacturer": "Felt",
   "model_group": "FX",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "atb_cyclocross",
+  "primary_activity": "atb-cyclocross",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2012/f2x.jpg",
   "first_year": 2012,
@@ -31,7 +31,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "dropper",
     "bottom_bracket": {
       "shell": "BB30",
@@ -63,8 +63,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "10_rear"
+    "2-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -83,7 +83,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -278,13 +278,13 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "manufacturer": "Felt",
       "description": "Felt bubble-tech \"\"F Wing\"\" icon end plugs"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "FSA",
       "description": "FSA BB30"
     },
@@ -298,23 +298,14 @@
       "description": "TRP CX8.4 front & rear cyclocross specific linear pull w/ road cartridge brake pads & inline cable adjuster/brake noodle"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Shimano",
       "description": "Shimano Dura-Ace SLR brake & EW-7975 A2 Di2 derailleur wires & battery"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano Dura-Ace Di2 STI"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 12-27T"
     },
     {
       "type": "chain",
@@ -325,6 +316,15 @@
       "type": "chainrings",
       "type_detail": "Chainwheel",
       "description": "46/36T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 12-27T"
     },
     {
       "type": "crankset",
@@ -351,7 +351,7 @@
       "description": "Shimano Dura-Ace Di2"
     },
     {
-      "type": "electronic_shifting_component",
+      "type": "electronic-shifting-part",
       "description": "Di2 battery & battery charger"
     },
     {
@@ -360,7 +360,7 @@
       "description": "Felt CXR UHC Advanced 3KP weave monocoque fork, carbon fiber Controltaper 1.125\"\" --> 1.5\"\" steerer tube, crown, & fork blades w/ cantilever brake pivots, & forged aluminum dropouts"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt All Weather tape w/ no-slip texture"
@@ -395,7 +395,7 @@
       "description": "Fulcrum Racing 3 CX aluminum 21H 2:1 w/ Shimano 10 speed compatible freehub body & Fulcrum quick release"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Shimano Di2 Charger",
       "description": "Di2 battery & battery charger"
     },
@@ -423,12 +423,12 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "Ø31.8 7075 CNC machined aluminum, titanium 5mm x 0.8mm bolt, scandium nut-bar, 16g"
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "Shimano",
       "description": "Shimano Dura-Ace SLR brake & EW-7975 A2 Di2 derailleur wires & battery"
     },

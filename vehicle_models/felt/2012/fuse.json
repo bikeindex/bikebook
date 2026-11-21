@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2012/fuse",
   "manufacturer": "Felt",
   "model_group": "Fuse",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "bmx_freestyle",
+  "primary_activity": "bmx-freestyle",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2012/fuse.jpg",
   "first_year": 2012,
@@ -53,8 +53,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -66,7 +66,7 @@
   },
   "brakes": [
     {
-      "type": "u_brake",
+      "type": "u-brake",
       "position": [
         "rear"
       ],
@@ -89,12 +89,12 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "description": "FB plastic barends"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "mid size, sealed bearing, 19mm spindle"
     },
     {
@@ -107,21 +107,13 @@
       "description": "Tektro 907 U-brake rear: (Tektro caliper front for INT only)"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Odyssey",
       "description": "Odyssey linear straight cable"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Salt Bodo hinged lever"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "9T 1-PC driver"
     },
     {
       "type": "chain",
@@ -129,7 +121,7 @@
       "description": "KMC HL710 half link, 1/8\"\""
     },
     {
-      "type": "chain_tensioners",
+      "type": "chain-tensioners",
       "description": "integrated chain tensioners"
     },
     {
@@ -137,6 +129,14 @@
       "type_detail": "Chainwheel",
       "manufacturer": "Felt",
       "description": "Felt Spacely design, CNC aluminum, 25t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "9T 1-PC driver"
     },
     {
       "type": "crankset",
@@ -151,7 +151,7 @@
       "description": "100% cr-mo, butted steer tube, tapered legs, 3/8\"\" axle slots:5mm dropouts w/ cutot window,"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "FB \"\"Gribble\"\" grip"
     },
@@ -209,7 +209,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "integrated in frame"
     },

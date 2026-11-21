@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fiido/2024/c11",
   "manufacturer": "Fiido",
   "model_group": "C11",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -44,7 +44,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/fiido/2024/c11_white.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/fiido/2024/c11-white.webp",
           "variants": [
             {
               "sku": "C11-104W1-US",
@@ -91,8 +91,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "6_rear"
+    "1-front",
+    "6-rear"
   ],
   "gearing": {
     "front": [
@@ -109,7 +109,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -134,7 +134,7 @@
           "range_claimed": 91,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -142,7 +142,7 @@
           "availability": "stock",
           "max_speed": 6,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -195,7 +195,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Brake Light & Loud Horn",
       "description": "The automatic brake light and clear horn help you stay visible and alert others in traffic."
     },
@@ -217,21 +217,21 @@
       "description": "Provide strong, controllable braking."
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Hydraulic disc brake"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Rear Cogs",
-      "position": [
-        "rear"
-      ],
-      "description": "6-speed (14-28T)"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z7"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Rear Cogs",
+      "position": [
+        "rear"
+      ],
+      "description": "6-speed (14-28T)"
     },
     {
       "type": "crankset",
@@ -247,20 +247,20 @@
       "description": "SHIMANO TY300D"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "DMEGC/EVE 499.2Wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V2A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W"
+      "type": "ebike-displayremote",
+      "description": "LCD 1.47 inch"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD 1.47 inch"
+      "type": "ebike-motor",
+      "description": "500W"
     },
     {
       "type": "fork",
@@ -270,7 +270,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "TPR non-slip handle grip (Length: about 130mm)",
       "dimensions": {
@@ -293,7 +293,7 @@
       "description": "Aluminum alloy double-bearing barrel axle hub (quick release front axle)"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Brake Light & Loud Horn",
       "description": "The automatic brake light and clear horn help you stay visible and alert others in traffic."
     },

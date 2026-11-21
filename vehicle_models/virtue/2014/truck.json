@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/virtue/2014/truck",
   "manufacturer": "Virtue",
   "model": "Truck",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -76,8 +76,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -106,7 +106,11 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bashguardchain-guide",
+      "description": "Chain Guard"
+    },
+    {
+      "type": "bottom-bracket",
       "description": "Sealed Bearings, Square-Taper"
     },
     {
@@ -118,16 +122,8 @@
       "description": "Alloy Dual Pivot Caliper, 55-72mm, Silver, Long Reach w/ Jagwire Cable Housing"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Classic Alloy Full Fingers, Silver"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "SPROCKET",
-      "position": [
-        "rear"
-      ],
-      "description": "18T"
     },
     {
       "type": "chain",
@@ -135,8 +131,12 @@
       "description": "KMC Z410, Silver"
     },
     {
-      "type": "chain_guide",
-      "description": "Chain Guard"
+      "type": "cogcassettefreewheel",
+      "type_detail": "SPROCKET",
+      "position": [
+        "rear"
+      ],
+      "description": "18T"
     },
     {
       "type": "crankset",
@@ -158,7 +158,7 @@
       "description": "Hi-Ten"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "manufacturer": "Virtue",
       "description": "VIRTUE Stitch Grips, Leatherette, Brown"

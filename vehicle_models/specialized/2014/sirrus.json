@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/specialized/2014/sirrus",
   "manufacturer": "Specialized",
   "model": "Sirrus",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -77,8 +77,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "8_rear"
+    "3-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -98,7 +98,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -108,7 +108,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Cartridge bearings, square spindle"
     },
     {
@@ -120,16 +120,8 @@
       "description": "Die-cast, alloy V-brake, 60mm 1pc. pad, linear pull"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Alloy V-brake, two-finger, linear pull"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano, 8-speed, 11-32"
     },
     {
       "type": "chain",
@@ -139,6 +131,14 @@
     {
       "type": "chainrings",
       "description": "48/38/28, w/ chainguard"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano, 8-speed, 11-32"
     },
     {
       "type": "crankset",
@@ -167,7 +167,7 @@
       "description": "Specialized steel"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Specialized",
       "description": "Specialized Body Geometry Targa, dual compound"
     },
@@ -224,7 +224,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "Alloy, 31.8mm",
       "dimensions": {
         "diameter": 31.8

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ride1up/2023/portola",
   "manufacturer": "Ride1Up",
   "model_group": "Portola",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -26,21 +26,21 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2023/portola_charcoal_gloss.webp"
+          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2023/portola-charcoal-gloss.webp"
         },
         {
           "name": "Sea Turquoise",
           "colors": [
             "teal"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2023/portola_sea_turquoise.webp"
+          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2023/portola-sea-turquoise.webp"
         },
         {
           "name": "Warm Gray",
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2023/portola_warm_gray.webp"
+          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2023/portola-warm-gray.webp"
         },
         {
           "name": "Indigo, Matte",
@@ -60,7 +60,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "mounts": [
       {
         "type": "bottle",
@@ -93,8 +93,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -112,7 +112,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -122,16 +122,18 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "battery": {
         "capacity": 500,
         "voltage": 48,
-        "chemistry": "li-ion"
+        "chemistry": "li-ion",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "max_torque": 65,
@@ -142,7 +144,7 @@
           "max_speed": 45,
           "range_claimed": 64,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -150,7 +152,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -181,14 +183,6 @@
       "description": "Dual Piston Hydraulic Brakes, Electric Cut-Off Sensor, 180mm Rotors"
     },
     {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "11-32T R1U Approved Freewheel"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Professional 8-Speed Chain"
@@ -198,25 +192,33 @@
       "description": "48T Front Alloy Chainring"
     },
     {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "11-32T R1U Approved Freewheel"
+    },
+    {
       "type": "derailleur",
       "manufacturer": "Shimano",
       "description": "Shimano Altus RD-M310"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 10.4Ah Reention Rhino - 500wh; TUV Certified to UL 2271"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 13.4Ah Reention Rhino - 643wh; TUV Certified to UL 2271"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V 750W Geared Hub Motor, 65nm torque"
+      "type": "ebike-displayremote",
+      "description": "KD21C Adjustable Speed Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "KD21C Adjustable Speed Display"
+      "type": "ebike-motor",
+      "description": "48V 750W Geared Hub Motor, 65nm torque"
     },
     {
       "type": "fender",
@@ -230,7 +232,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Ergonomic Rubber Grips"
     },
@@ -246,14 +248,14 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "100 Lux Front Light"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
