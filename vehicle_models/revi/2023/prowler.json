@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/revi/2023/prowler",
   "manufacturer": "Revi",
   "model": "Prowler",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -55,8 +55,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -69,7 +69,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -81,15 +81,17 @@
     {
       "sensor_cadence": true,
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "battery": {
         "capacity": 1040,
         "voltage": 52,
         "chemistry": "li-ion",
         "cells": "Samsung",
-        "charging_time": 360
+        "charging_time": 360,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "peak_power": 1500,
@@ -101,7 +103,7 @@
           "range_claimed": 113,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -159,7 +161,7 @@
       "description": "Tektro"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -183,24 +185,24 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Type: Lithium-ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Capacity: 52V 20AH"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "52V 750W (rated)"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Full Color with USB Port"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "PAS Level, Current Speed, Max Speed, Odometer, Trip, Model selection"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "52V 750W (rated)"
     },
     {
       "type": "handlebar",
@@ -208,14 +210,14 @@
       "description": "A Unique Handlebar Style"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "Included"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Integrated F/R Lights",
       "description": "Integrated F/R Lights"
     },

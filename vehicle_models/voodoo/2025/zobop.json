@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/voodoo/2025/zobop",
   "manufacturer": "Voodoo",
   "model_group": "Zobop",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -63,8 +63,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "10_rear"
+    "1-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -82,7 +82,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -171,7 +171,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Prowheel PW-BB73+"
     },
     {
@@ -193,18 +193,18 @@
       "description": "Hydraulic Disc Brakes"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC eGlide, 10 speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Cassette/Freewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano CUES CS-LG300, 10 speed, 11-48T"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC eGlide, 10 speed"
     },
     {
       "type": "crankset",
@@ -231,7 +231,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Voodoo",
       "description": "Voodoo, black, lock-on"
@@ -256,7 +256,7 @@
       "description": "Voodoo alloy, cage"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Rear Shock",
       "position": [
         "rear"

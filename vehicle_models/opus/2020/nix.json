@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/opus/2020/nix",
   "manufacturer": "Opus",
   "model": "NIX",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -48,7 +48,7 @@
     }
   ],
   "drivetrain": [
-    "1_front"
+    "1-front"
   ],
   "gearing": {
     "front": [
@@ -65,7 +65,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -98,7 +98,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "VP B32 5 pc steel"
     },
     {
@@ -111,17 +111,9 @@
       "description": "Tektro V-brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro Alloy"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano TZ31 14-34"
     },
     {
       "type": "chain",
@@ -131,6 +123,14 @@
     {
       "type": "chainrings",
       "description": "36"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano TZ31 14-34"
     },
     {
       "type": "crankset",
@@ -154,7 +154,7 @@
       "description": "Opus 6061 aluminum"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips tape",
       "manufacturer": "Opus",
       "description": "Opus Kraton"

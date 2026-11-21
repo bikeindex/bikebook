@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/cirq/2024/cougar",
   "manufacturer": "Cirq",
   "model": "Cougar",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -31,7 +31,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/cirq/2024/cougar_titanium_gray.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/cirq/2024/cougar-titanium-gray.jpg"
         }
       ],
       "url": "https://cirqbikes.com/products/cougar",
@@ -43,7 +43,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "top_tube": "step_through",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "suspension": {
     "front": {
@@ -61,8 +61,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -71,7 +71,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -81,7 +81,7 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "battery": {
         "capacity": 643,
@@ -100,7 +100,7 @@
           "range_claimed": 72,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -109,7 +109,7 @@
           "max_speed": 32,
           "range_claimed": 56,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -169,16 +169,16 @@
       "description": "Hydraulic Disc Brakes"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z7RB 116"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "description": "Megadrive 7 Speed"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Z7RB 116"
     },
     {
       "type": "derailleur",
@@ -186,24 +186,24 @@
       "description": "Shimano ALTUS RD-M370-L, 9 Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Lithium-ion 48V 13.4Ah, 643 Wh, Weight 9 lbs"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 3A Fast Charger, UL Certified"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "Color LCD Display"
+    },
+    {
+      "type": "ebike-motor",
       "description": "500W/750W Peak"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "500W Hub Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "Color LCD Display"
     },
     {
       "type": "fender",
@@ -214,7 +214,7 @@
       "description": "TRAMA Suspension Fork, with Lockout"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "1 Bike Tool Kit"
     },
@@ -223,7 +223,7 @@
       "description": "Aluminum Alloy, Rear Mount"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Auto On-Off Front Light, Tail Light"
     },
     {

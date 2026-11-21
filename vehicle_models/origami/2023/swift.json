@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/origami/2023/swift",
   "manufacturer": "Origami",
   "model": "Swift",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -59,7 +59,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "Chromoly Steel",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "mounts": [
       {
         "type": "rack"
@@ -78,8 +78,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "10_rear"
+    "1-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -95,7 +95,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -154,7 +154,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sunlane hollow BB with external bearings"
     },
     {
@@ -166,13 +166,6 @@
       "description": "Kamros Hydraulic disc"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "Sunshine SZ 11-40T"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC X 10"
@@ -181,6 +174,13 @@
       "type": "chainrings",
       "type_detail": "Chain ring",
       "description": "Sunlane 58T Aluminum"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "Sunshine SZ 11-40T"
     },
     {
       "type": "crankset",
@@ -196,7 +196,7 @@
       "description": "Chromoly"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Handlebar grip",
       "description": "22.2*120MM Rubber Black"
     },

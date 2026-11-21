@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/coswheel/2023/ct20s",
   "manufacturer": "Coswheel",
   "model_group": "CT20",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -47,8 +47,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -61,7 +61,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -72,7 +72,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_speed": "spoke_magnet",
       "battery": {
         "capacity": 1650,
@@ -91,7 +91,7 @@
           "max_speed": 72,
           "range_claimed": 161,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -100,7 +100,7 @@
           "range_claimed": 88,
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -158,20 +158,20 @@
       "description": "Shimano 7-Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "60V 27.5Ah Battery (Lithium 18650 Cells)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "60V5A Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "60V Peak 3000W (Rated 1500W) Brushless Rear Hub Motor 120N.m"
+      "type": "ebike-displayremote",
+      "description": "Easy Read LCD Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Easy Read LCD Display"
+      "type": "ebike-motor",
+      "description": "60V Peak 3000W (Rated 1500W) Brushless Rear Hub Motor 120N.m"
     },
     {
       "type": "fork",
@@ -193,14 +193,14 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "Classic Angel Eye Headlight, 120 LUX"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
@@ -211,7 +211,7 @@
       "description": "Aluminum Alloy Pedal, with Reflect-light, Axis 9/16 x2"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],

@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/vivi/2026/fatgo1",
   "manufacturer": "Vivi",
   "model": "FatGo1",
   "model_configuration": "complete",
   "type": "tricycle",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/vivi/2026/fatgo1.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/vivi/2026/fatgo1_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/vivi/2026/fatgo1-geometry.jpg",
   "description": "The VIVI FatGo1 is the ideal choice for riders who value stability, comfort, and exceptional practicality. Featuring a 750W peak-power motor, a 48V 13.5Ah removable battery, a differential, and a parking brake system, it is designed to enhance your modern lifestyle. It has passed the UL 2849 safety standard certification, providing you with a high-end functional experience and excellent cost performance. Whether you need a convenient way to run errands or commute in the city, or simply want a safe, effortless vehicle for outdoor excursions, the VIVI FatGo1 integrates seamlessly into your lifestyle—allowing you to fully enjoy the freedom of a stable ride and the convenience of urban living.\n\n750W peak powerful rear drive motor, 60Nm torque\nRemovable 48V 13.5Ah 648Wh lithium-ion battery\nSpeed differential mechanism and Parking brake\nIntelligent 5 level pedal assist and Digital LCD display\nBright headlight and rear reflector light\nAmple storage space & high load capacity\nwalking assist mode are more suitable for women & elder\n\nSGS certified to UL2849 & UL2271 safety standards",
   "first_year": 2026,
   "years": {
@@ -80,7 +80,7 @@
     "material": "steel",
     "material_detail": "High-Carbon Steel",
     "top_tube": "step_through",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "seatpost_diameter": 30.4,
     "seatpost_clamp_diameter": 34.9
   },
@@ -107,8 +107,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -120,7 +120,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -129,19 +129,21 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "water_rating": "IPX5",
       "battery": {
         "capacity": 648,
         "voltage": 48,
         "chemistry": "li-ion",
-        "charging_time": 300
+        "charging_time": 300,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 500,
       "peak_power": 750,
@@ -154,7 +156,7 @@
           "range_claimed": 96,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -163,7 +165,7 @@
           "range_claimed": 64,
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -217,7 +219,7 @@
       "description": "Integrated, Iron, Carrying 50kg/100lbs"
     },
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell/Horn",
       "description": "Integrated Handlebar Bell"
     },
@@ -238,11 +240,11 @@
       "description": "Front Mechanical Brake Caliper"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Alloy Levers with Motor Cutoff Switch"
     },
     {
-      "type": "brake_pad",
+      "type": "brake-pad",
       "position": [
         "front",
         "rear"
@@ -250,17 +252,17 @@
       "description": "SA 160mm Cassette, Semi-metallic"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Carbon Steel Chain, 118 links"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
       ],
       "description": "Aluminum Single-speed Freewheel, 24T"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Carbon Steel Chain, 118 links"
     },
     {
       "type": "crankset",
@@ -271,24 +273,24 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "e-bike-wiring-harness",
+      "description": "Waterproof Integration Cable"
+    },
+    {
+      "type": "ebike-battery",
       "description": "48V 13.5Ah 648Wh Lithium-ion Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "US Plug 54.6V 2A Smart Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W Peak Brushless Gear Motor, 60Nm"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "48V Intelligent Digital LCD Display"
     },
     {
-      "type": "e_vehicle_wiring_harness",
-      "description": "Waterproof Integration Cable"
+      "type": "ebike-motor",
+      "description": "750W Peak Brushless Gear Motor, 60Nm"
     },
     {
       "type": "fender",
@@ -302,7 +304,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Imitation Leather Ergonomic Grips"
     },
@@ -322,14 +324,14 @@
       "description": "Heavy-duty Iron, Side-mounted"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "48V Integrated LED Headlight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Tail Light",
       "position": [
         "rear"
@@ -364,7 +366,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "φ34.9mm Quick Release",
       "dimensions": {
         "diameter": 34.9

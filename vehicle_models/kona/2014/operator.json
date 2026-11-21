@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2014/operator",
   "manufacturer": "Kona",
   "model": "Operator",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "mtb_downhill",
+  "primary_activity": "mtb-downhill",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/kona/2014/operator.jpg",
   "description": "Kona DH Carbon w/6061 Aluminum Stays 200mm Travel",
@@ -30,7 +30,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "bottom_bracket": {
       "shell": "press fit"
     },
@@ -63,8 +63,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "10_rear"
+    "1-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -82,14 +82,14 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
       "rotor_diameter": 200
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -98,7 +98,12 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bashguardchain-guide",
+      "manufacturer": "The Hive",
+      "description": "The Hive SRS+"
+    },
+    {
+      "type": "bottom-bracket",
       "manufacturer": "Shimano",
       "description": "Shimano Press Fit 104.5mm"
     },
@@ -112,12 +117,12 @@
       "description": "Avid Code R"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Avid",
       "description": "Avid Code R"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front"
       ],
@@ -128,7 +133,7 @@
       }
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "rear"
       ],
@@ -139,26 +144,21 @@
       }
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM PG1050 11-28t 10 spd"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC X10"
     },
     {
-      "type": "chain_guide",
-      "manufacturer": "The Hive",
-      "description": "The Hive SRS+"
-    },
-    {
       "type": "chainrings",
       "description": "36t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM PG1050 11-28t 10 spd"
     },
     {
       "type": "crankset",
@@ -182,7 +182,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Kona",
       "description": "Kona S-LOG"
     },
@@ -222,7 +222,7 @@
       "description": "Kona Wah Wah"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],
@@ -245,7 +245,7 @@
       "description": "Kona DH"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "manufacturer": "Kona",
       "description": "Kona Clamp"
     },

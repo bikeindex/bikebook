@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/vanpowers/2026/urbanfold",
   "manufacturer": "VanPowers",
   "model": "UrbanFold",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -50,7 +50,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "suspension": {
     "front": {},
@@ -67,12 +67,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -82,7 +82,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 499,
         "voltage": 48,
@@ -99,7 +99,7 @@
           "range_claimed": 35,
           "levels": 3,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -138,23 +138,23 @@
       "description": "Front & rear disc brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V, 10.4Ah (499.2Wh)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "input 100–240V, output 54.6V / 2A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "1000W peak (500W rated) rear hub"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Backlit display for at-a-glance ride information"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "1000W peak (500W rated) rear hub"
+    },
+    {
+      "type": "light",
       "position": [
         "front"
       ],

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/himiway/2026/d5",
   "manufacturer": "Himiway",
   "model_group": "D5",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -39,7 +39,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/himiway/2026/d5_space_grey.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/himiway/2026/d5-space-grey.jpg",
           "variants": [
             {
               "sku": "HMW-D5-GY-SO-US",
@@ -53,7 +53,7 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/himiway/2026/d5_green.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/himiway/2026/d5-green.jpg",
           "variants": [
             {
               "sku": "HMW-D5-MG-SO-US",
@@ -97,8 +97,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -117,7 +117,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -127,7 +127,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
         "UL 2849"
@@ -146,7 +146,7 @@
           "max_speed": 32,
           "range_claimed": 129,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -154,7 +154,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -203,7 +203,7 @@
       "description": "Tektro HD-E3520 hydraulic brake"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -216,15 +216,6 @@
       }
     },
     {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano MF-TZ500-7 14-28T"
-    },
-    {
       "type": "chain",
       "description": "Anti-Rust KMC Z8.3 EPT 120L"
     },
@@ -232,6 +223,15 @@
       "type": "chainrings",
       "type_detail": "Chain ring",
       "description": "44T BCD104"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano MF-TZ500-7 14-28T"
     },
     {
       "type": "crankset",
@@ -242,20 +242,20 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Samsung/LG 48V 20Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "U.S. standard 3.0 A fast charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W brushless gear motor"
+      "type": "ebike-displayremote",
+      "description": "LCD display with USB charger"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD display with USB charger"
+      "type": "ebike-motor",
+      "description": "750W brushless gear motor"
     },
     {
       "type": "fender",
@@ -299,7 +299,7 @@
       "description": "Heavy-duty aluminum kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "48V LED light"
     },
     {

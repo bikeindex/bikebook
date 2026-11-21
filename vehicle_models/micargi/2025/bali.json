@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/micargi/2025/bali",
   "manufacturer": "Micargi",
   "model": "Bali",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -24,7 +24,7 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/micargi/2025/bali_green.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/micargi/2025/bali-green.jpg",
           "variants": [
             {
               "sku": "EB-BALI-F-GRN",
@@ -76,8 +76,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -87,7 +87,7 @@
   },
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 557,
         "voltage": 48,
@@ -102,14 +102,14 @@
           "max_speed": 25,
           "range_claimed": 40,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -125,7 +125,7 @@
   ],
   "components": [
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "The Bali includes a Shimano TZ500 7 Speed Freewheel",
       "position": [
         "rear"
@@ -133,16 +133,16 @@
       "description": "The Bali includes a Shimano TZ500 7 Speed Freewheel"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "556.8Wh Samsung lithium ion, 10.5 AH, 48V"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Brushless Direct Drive 350W"
+      "type": "ebike-displayremote",
+      "description": "Speedometer, Battery Indicator, Pedal Assist Level + Charge Time: 3 - 6 Hours"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Speedometer, Battery Indicator, Pedal Assist Level + Charge Time: 3 - 6 Hours"
+      "type": "ebike-motor",
+      "description": "Brushless Direct Drive 350W"
     },
     {
       "type": "throttle",

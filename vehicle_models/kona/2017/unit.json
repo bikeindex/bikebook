@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2017/unit",
   "manufacturer": "Kona",
   "model_group": "Unit",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/kona/2017/unit.jpg",
   "first_year": 2017,
@@ -59,8 +59,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -72,14 +72,14 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front"
       ],
       "rotor_diameter": 180
     },
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "rear"
       ],
@@ -170,7 +170,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "B/B",
       "manufacturer": "FSA",
       "description": "FSA 7100"
@@ -186,12 +186,12 @@
       "description": "TRP Spyke"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Avid",
       "description": "Avid FR5"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front"
       ],
@@ -202,7 +202,7 @@
       }
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "rear"
       ],
@@ -213,14 +213,6 @@
       }
     },
     {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "Joytech 18t"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z610"
@@ -228,6 +220,14 @@
     {
       "type": "chainrings",
       "description": "32t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "Joytech 18t"
     },
     {
       "type": "crankset",
@@ -241,7 +241,7 @@
       "description": "Kona Plus Fork"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Kona",
       "description": "Kona Race Light LOG"
@@ -301,7 +301,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Kona",
       "description": "Kona Clamp"

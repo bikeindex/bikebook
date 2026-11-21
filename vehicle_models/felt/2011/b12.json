@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2011/b12",
   "manufacturer": "Felt",
   "model_group": "B",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_triathlon",
+  "primary_activity": "road-triathlon",
   "handlebar_type": "forward",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2011/b12.jpg",
   "first_year": 2011,
@@ -31,7 +31,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "bottom_bracket": {
       "spindle": "GXP"
@@ -57,8 +57,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "10_rear"
+    "2-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -84,7 +84,7 @@
       "caliper_mount": "Brake Bosses"
     },
     {
-      "type": "u_brake",
+      "type": "u-brake",
       "position": [
         "rear"
       ],
@@ -309,7 +309,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "SRAM",
       "description": "SRAM GXP Team External Bearings"
     },
@@ -323,23 +323,14 @@
       "description": "SRAM Dual Pivot Front, TRP Custom SuperLight U-Brake w/ Stainless Hardware & Teflon Bushings Rear w/ Cartridge Brake Shoes"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Felt",
       "description": "Felt Slick Brake & Derailleur"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "SRAM TT500 Aero Brake Levers"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM Cassette, 11-26T (650C Models: SRAM Cassette, 11-23T)"
     },
     {
       "type": "chain",
@@ -350,6 +341,15 @@
       "type": "chainrings",
       "type_detail": "Chainwheel",
       "description": "53t/39t TT Type"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM Cassette, 11-26T (650C Models: SRAM Cassette, 11-23T)"
     },
     {
       "type": "crankset",
@@ -378,7 +378,7 @@
       "description": "Felt Aero UHC Performance TT/Tri Carbon Fiber Fork w/ 3KP Weave; 7005 Aluminum 1 Steerer tube, Carbon Fiber Crown, Blades, and Dropouts, 434g"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "DEVOX Tri-tip Ergonomic Base Bar grip w/ Felt Gel Ribbon Cork Tape w/ Felt 3D Logo wrapped extensions"
     },
@@ -431,12 +431,12 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "Aero 3D Forged Aluminum, 2 x 5mm x 0.8mm Cr-Mo Bolts, 18 Grams"
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "Felt",
       "description": "Felt Slick Brake & Derailleur"
     },

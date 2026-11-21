@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/hjm/2023/joyrider",
   "manufacturer": "HJM",
   "model_group": "Joyrider",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
@@ -38,7 +38,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/hjm/2023/joyrider_graphite_gray.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/hjm/2023/joyrider-graphite-gray.jpg",
           "variants": [
             {
               "sku": "A3HT7",
@@ -51,7 +51,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/hjm/2023/joyrider_charcoal_gray.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/hjm/2023/joyrider-charcoal-gray.jpg",
           "variants": [
             {
               "sku": "A3HT7H",
@@ -90,8 +90,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "rear": [
@@ -101,7 +101,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -112,7 +112,7 @@
     {
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 960,
         "voltage": 48,
@@ -129,7 +129,7 @@
           "range_claimed": 227,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -179,26 +179,26 @@
       "description": "Logan Hydraulic Disc Brakes"
     },
     {
-      "type": "cassette",
-      "type_detail": "Gearing",
-      "manufacturer": "Shimano",
-      "description": "Shimano 7-Speed (14-34T Freewheel)"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC C7NP Chain"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "cogcassettefreewheel",
+      "type_detail": "Gearing",
+      "manufacturer": "Shimano",
+      "description": "Shimano 7-Speed (14-34T Freewheel)"
+    },
+    {
+      "type": "ebike-battery",
       "description": "UL-Certified 48V 20Ah (960Wh) Battery with LG Cells"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 3A Smart Charger"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "48V 750W Bafang Rear Hub Motor"
     },
     {
@@ -218,7 +218,7 @@
       "description": "Aluminum Alloy Kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"
@@ -226,7 +226,7 @@
       "description": "45 Lux LED Front Headlight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Taillight",
       "position": [
         "rear"

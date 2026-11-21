@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/micargi/2025/aloha",
   "manufacturer": "Micargi",
   "model": "Aloha",
   "model_configuration": "complete",
   "type": "tandem",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -63,8 +63,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -82,7 +82,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -121,17 +121,17 @@
       "description": "F&R Disc Brake"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Single Speed (F)/ 7SP (R)Silver/Brown"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "SHIMANO TOURNEY-7SP 14-28T"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Single Speed (F)/ 7SP (R)Silver/Brown"
     },
     {
       "type": "crankset",
@@ -143,20 +143,20 @@
       "description": "SHIMANO TOURNEY-7 Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Samsung battery 48V 10.4Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Battery & charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W 48V Speed Sensor"
+      "type": "ebike-displayremote",
+      "description": "Upgraded Colorful LCD"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Upgraded Colorful LCD"
+      "type": "ebike-motor",
+      "description": "500W 48V Speed Sensor"
     },
     {
       "type": "fork",
@@ -170,7 +170,7 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],

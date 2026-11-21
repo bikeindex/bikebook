@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ride1up/2025/vorsa",
   "manufacturer": "Ride1Up",
   "model": "Vorsa",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -28,21 +28,21 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2025/vorsa_sage.webp"
+          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2025/vorsa-sage.webp"
         },
         {
           "name": "Slate",
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2025/vorsa_slate.webp"
+          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2025/vorsa-slate.webp"
         },
         {
           "name": "Snow",
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2025/vorsa_snow.webp"
+          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2025/vorsa-snow.webp"
         }
       ],
       "url": "https://ride1up.com/product/vorsa/",
@@ -99,8 +99,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -118,7 +118,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -128,17 +128,19 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "water_rating": "IPX6",
       "battery": {
         "chemistry": "li-ion",
-        "cells": "Samsung 50GB"
+        "cells": "Samsung 50GB",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "max_torque": 95,
@@ -149,7 +151,7 @@
           "max_speed": 45,
           "range_claimed": 97,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -157,7 +159,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -188,14 +190,6 @@
       "description": "Star Union hydraulic disc brakes with electric motor cutoff; 203mm R, 180mm F rotors"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Acera 11-32T"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC E8 8-speed chain"
@@ -205,22 +199,30 @@
       "description": "48T chainring for higher speeds"
     },
     {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Acera 11-32T"
+    },
+    {
       "type": "derailleur",
       "manufacturer": "Shimano",
       "description": "Shimano Acera 8-speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "15Ah Reention Flamingo with Samsung 50GB cells, 21700 cell formation with Precise CanBus protocol SOC. IPX6 TUV Certified to UL 2271"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W AKM hub motor with 95nm of torque - our strongest hill-climbing motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Ride1Up",
       "description": "Ride1Up 'most customizable PAS' color display with iOS FindMy tracking and USB-C accessory charging"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "750W AKM hub motor with 95nm of torque - our strongest hill-climbing motor"
     },
     {
       "type": "fender",
@@ -238,7 +240,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Velo",
       "description": "VELO ergonomic silicone grips"
@@ -256,21 +258,21 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "100 lux stem-integrated front light"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
       "description": "Removable Seat Clamp Tail-Light, USB C- Rechargeable"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],

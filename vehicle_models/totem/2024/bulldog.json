@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/totem/2024/bulldog",
   "manufacturer": "Totem",
   "model": "Bulldog",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -78,8 +78,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -88,7 +88,7 @@
   },
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 696,
         "chemistry": "li-ion"
@@ -102,7 +102,7 @@
           "range_claimed": 80,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         },
         {
@@ -110,7 +110,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -123,16 +123,16 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "This electric bicycle is equipped with a high capacity 48V 14.5Ah removable battery to power your long rides. Removable design allows you to bring the battery to your home or office for charging."
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W Motor Unleash the power with our robust 750W geared hub motor, delivering exceptional torque and acceleration for a thrilling ride."
+      "type": "ebike-displayremote",
+      "description": "Providing riders with real-time information at a glance, including speedometer, odometer, battery indicator and pedal assist level."
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Providing riders with real-time information at a glance, including speedometer, odometer, battery indicator and pedal assist level."
+      "type": "ebike-motor",
+      "description": "750W Motor Unleash the power with our robust 750W geared hub motor, delivering exceptional torque and acceleration for a thrilling ride."
     },
     {
       "type": "fork",

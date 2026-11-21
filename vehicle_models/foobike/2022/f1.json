@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/foobike/2022/f1",
   "manufacturer": "Foobike",
   "model_group": "F1",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -37,7 +37,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/foobike/2022/f1_black.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/foobike/2022/f1-black.jpg",
           "variants": [
             {
               "sku": "9041200027",
@@ -53,7 +53,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "suspension": {
     "front": {}
@@ -69,8 +69,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -88,7 +88,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -99,7 +99,7 @@
     {
       "manufacturer": "Bafang",
       "model": "RX2",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 624,
         "voltage": 48,
@@ -131,17 +131,17 @@
       "description": "Tektro, L: EL555-RT with brake sensor, R: CL530-TS, BK"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC, Z51NP, Silver"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
       ],
       "description": "7 Speed, 14-28T, Silver"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC, Z51NP, Silver"
     },
     {
       "type": "crankset",
@@ -157,24 +157,24 @@
       "description": "Shimano, Tourney, RD-FT35, 7 Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Das-Kit",
       "description": "Das-Kit, B1U-4813H, 48V 13AH, 624WH, with USB port"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "manufacturer": "Das-Kit",
       "description": "Das-Kit, 48V 2A"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bafang",
-      "description": "Bafang, RX2 Rear dirve motor, 48V 500W"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Das-Kit",
       "description": "Das-Kit, L7"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang, RX2 Rear dirve motor, 48V 500W"
     },
     {
       "type": "fork",

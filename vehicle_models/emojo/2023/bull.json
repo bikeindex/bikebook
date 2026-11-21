@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/emojo/2023/bull",
   "manufacturer": "Emojo",
   "model_group": "Bull",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "tricycle",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -38,7 +38,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/emojo/2023/bull_baby_blue.png",
+          "stock_photo": "https://bikebook.bikeindex.org/emojo/2023/bull-baby-blue.png",
           "variants": [
             {
               "sku": "EBK44-1",
@@ -51,7 +51,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/emojo/2023/bull_candy_red.png",
+          "stock_photo": "https://bikebook.bikeindex.org/emojo/2023/bull-candy-red.png",
           "variants": [
             {
               "sku": "EBK44-2",
@@ -80,12 +80,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -96,13 +96,15 @@
     {
       "manufacturer": "Bafang",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "battery": {
         "capacity": 672,
         "chemistry": "li-ion",
-        "charging_time": 360
+        "charging_time": 360,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 500,
       "operating_modes": [
@@ -112,7 +114,7 @@
           "max_speed": 32,
           "range_claimed": 105,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -120,7 +122,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -165,36 +167,36 @@
       "description": "Mechanical Disc"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Capacity: 48V /14Ah"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Type: Lithium-Ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Brand: XNW (with quality insurance)"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "672Wh (Lithium-ion)"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "500W"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "DC Brushless"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "manufacturer": "Bafang",
       "description": "Bafang"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "500W Brushless Motor"
     },
     {

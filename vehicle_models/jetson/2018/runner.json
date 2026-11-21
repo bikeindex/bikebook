@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2018/runner",
   "manufacturer": "Jetson",
   "model": "Runner",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -54,12 +54,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "chemistry": "li-ion",
         "charging_time": 180
@@ -74,7 +74,7 @@
           "max_slope": 20,
           "levels": 3,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -110,15 +110,15 @@
       "description": "Handbrake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "5.2Ah lithium-ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Battery: Yes"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "250 watt hub motor"
     },
     {

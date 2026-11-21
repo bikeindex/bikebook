@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/micargi/2025/cyclone",
   "manufacturer": "Micargi",
   "model": "Cyclone",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -68,8 +68,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -81,7 +81,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -120,7 +120,11 @@
       "description": "Disc brake (Radius)"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "description": "Heavy-duty brown"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
@@ -128,27 +132,23 @@
       "description": "Sprocket 22T"
     },
     {
-      "type": "chain",
-      "description": "Heavy-duty brown"
-    },
-    {
       "type": "crankset",
       "description": "Three piece steel chainrings 44T"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Panasonic",
       "description": "Panasonic 48V 11.6AH"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bafang",
-      "description": "Bafang 500W"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Bafang",
       "description": "Bafang LCD"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang 500W"
     },
     {
       "type": "fork",

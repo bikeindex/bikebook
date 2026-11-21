@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2017/f1x",
   "manufacturer": "Felt",
   "model_group": "FX",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "atb_cyclocross",
+  "primary_activity": "atb-cyclocross",
   "handlebar_type": "drop_bar",
   "first_year": 2017,
   "final_year": 2018,
@@ -28,7 +28,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "bottom_bracket": {
       "shell": "BB386",
       "width": 86.5,
@@ -66,8 +66,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "11_rear"
+    "1-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -85,7 +85,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
@@ -93,7 +93,7 @@
       "caliper_mount": "Disc Flat Mount"
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -268,7 +268,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Token",
       "description": "Token BB386 with 30mm bearings"
     },
@@ -281,18 +281,9 @@
       "description": "Front: SRAM Force Cx1 hydraulic disc flat mount with 160mm Centerline rotor, Rear: SRAM Force Cx1 hydraulic disc flat mount with 140mm Centerline rotor"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "SRAM Force Cx1, hydraulic"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM 11-speed, 11-32T"
     },
     {
       "type": "chain",
@@ -302,6 +293,15 @@
     {
       "type": "chain",
       "description": "chain plate protector"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM 11-speed, 11-32T"
     },
     {
       "type": "crankset",
@@ -325,7 +325,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt CxGel tape with Felt Bubble-Tech F-Wing bar end plugs"
@@ -368,22 +368,22 @@
       }
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Assembly Paste",
       "description": "Carbon assembly paste"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tubeless Valve Stems",
       "description": "tubeless valve stems"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Spare Chainring",
       "description": "extra chainring"
     },
     {
-      "type": "power_meter",
+      "type": "power-meter",
       "description": "Quarq Prime Carbon, XSYNC 40T and 38T, 47cm: 165mm -- 50cm: 170mm --- 53cm: 172.5mm --- 55 - 60cm: 175mm"
     },
     {
@@ -411,7 +411,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "7075 CNC aluminum, titanium bolt and scandium nut, Ø31.8mm",
       "dimensions": {

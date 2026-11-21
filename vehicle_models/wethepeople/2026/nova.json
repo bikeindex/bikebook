@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/wethepeople/2026/nova",
   "manufacturer": "WeThePeople",
   "model": "Nova",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "bmx",
   "handlebar_type": "horizontal",
@@ -67,8 +67,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -80,7 +80,7 @@
   },
   "brakes": [
     {
-      "type": "u_brake",
+      "type": "u-brake",
       "position": [
         "rear"
       ],
@@ -116,7 +116,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "BB",
       "description": "SALT \"MID\" bb, 19mm, press fit, sealed bearing"
     },
@@ -128,17 +128,9 @@
       "description": "SALTPLUS \"GEO XL\" alloy u-brake-rear"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "type_detail": "LEVER",
       "description": "SALT \"AM\" brake lever, alloy"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "DRIVER",
-      "position": [
-        "rear"
-      ],
-      "description": "1pc cassette driver, 9t, loose ball bearing"
     },
     {
       "type": "chain",
@@ -148,6 +140,14 @@
       "type": "chainrings",
       "type_detail": "SPROCKET",
       "description": "SALT \"GATEWAY\" sprocket, steel, 25t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "DRIVER",
+      "position": [
+        "rear"
+      ],
+      "description": "1pc cassette driver, 9t, loose ball bearing"
     },
     {
       "type": "crankset",
@@ -170,7 +170,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "SALT \"EX\" grips, 154mm, flangless",
       "dimensions": {
@@ -229,7 +229,7 @@
       "description": "WETHEPEOPLE \"NOVA\" combo seat, mid padded"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "SEAT CLAMP",
       "description": "ÉCLAT \"PURE\" seat clamp, 6061-T6 forged alloy"
     },

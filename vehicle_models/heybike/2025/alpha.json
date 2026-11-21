@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/heybike/2025/alpha",
   "manufacturer": "Heybike",
   "model": "Alpha",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -38,7 +38,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/heybike/2025/alpha_step_through_pearl_white.png",
+          "stock_photo": "https://bikebook.bikeindex.org/heybike/2025/alpha-step-through-pearl-white.png",
           "variants": [
             {
               "sku": "HB1ALPHALUSWH1A",
@@ -60,7 +60,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/heybike/2025/alpha_2025_step_through_pearl_white.png",
+          "stock_photo": "https://bikebook.bikeindex.org/heybike/2025/alpha-2025-step-through-pearl-white.png",
           "variants": [
             {
               "sku": "HB1ALPHALUSWH1A",
@@ -74,7 +74,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/heybike/2025/alpha_2025_step_over_galaxy_black.png",
+          "stock_photo": "https://bikebook.bikeindex.org/heybike/2025/alpha-2025-step-over-galaxy-black.png",
           "variants": [
             {
               "sku": "HB1ALPHAHUSBK1A",
@@ -120,8 +120,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -130,7 +130,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -140,13 +140,13 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "mid_drive",
-      "certifications": [
-        "UL 2271"
-      ],
+      "kind": "mid-drive",
       "battery": {
         "capacity": 680,
-        "chemistry": "li-ion"
+        "chemistry": "li-ion",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 500,
       "peak_power": 1000,
@@ -158,7 +158,7 @@
           "max_speed": 45,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -198,20 +198,20 @@
       "description": "Shimano Altus 8 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "UL 2271 certified, 680Wh, removable lithium-ion battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "2A, 54.6V output, 100V-220V AC input"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Mivice 500W mid drive motor, 105 N·m torque"
+      "type": "ebike-displayremote",
+      "description": "LCD Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD Display"
+      "type": "ebike-motor",
+      "description": "Mivice 500W mid drive motor, 105 N·m torque"
     },
     {
       "type": "fork",
@@ -222,11 +222,11 @@
       "description": "Alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "LED headlight with auto-on feature, and integrated taillight with brake light."
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Light; LED headlight with auto-on feature, and integrated taillight with brake light.",
       "description": "Kickstand; Alloy"
     },

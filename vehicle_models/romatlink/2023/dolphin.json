@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/romatlink/2023/dolphin",
   "manufacturer": "Romatlink",
   "model": "Dolphin",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/romatlink/2023/dolphin.png",
-  "geometry_photo": "https://bikebook.bikeindex.org/romatlink/2023/dolphin_geometry.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/romatlink/2023/dolphin-geometry.png",
   "description": "Romatlink Dolphin with a powerful 750W Hub Motor, a 30Ah Samsung 21700 battery. Equipped with a rear passenger seat, it's also a great kid hauler for the family. Ride farther, charge less with up to 100 miles per charge. Enjoy a smooth ride with full suspension.",
   "first_year": 2023,
   "years": {
@@ -41,7 +41,7 @@
             "silver",
             "yellow"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/romatlink/2023/dolphin_gray_and_yellow.png",
+          "stock_photo": "https://bikebook.bikeindex.org/romatlink/2023/dolphin-gray-and-yellow.png",
           "variants": [
             {
               "sku": "J16826001",
@@ -59,7 +59,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "High-Carbon Steel",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "seatpost_diameter": 31.8,
     "seatpost_clamp_diameter": 34.9
   },
@@ -80,8 +80,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -99,7 +99,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -109,11 +109,10 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "certifications": [
-        "UL 2849",
-        "UL 2580"
+        "UL 2849"
       ],
       "water_rating": "IPX6",
       "battery": {
@@ -122,7 +121,10 @@
         "chemistry": "li-ion",
         "cells": "Samsung 21700",
         "weight": 7.48,
-        "charging_time": 600
+        "charging_time": 600,
+        "certifications": [
+          "UL 2580"
+        ]
       },
       "rated_power": 750,
       "peak_power": 1000,
@@ -135,7 +137,7 @@
           "range_claimed": 161,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -144,7 +146,7 @@
           "range_claimed": 105,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -152,7 +154,7 @@
           "availability": "app_update",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -160,7 +162,7 @@
           "availability": "app_update",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -217,11 +219,11 @@
       "description": "Mechanical Disc"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum Alloy, with brake light"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -233,16 +235,16 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z7"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "description": "14-32T, 7-Speed"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Z7"
     },
     {
       "type": "crankset",
@@ -261,20 +263,20 @@
       "description": "Shimano RD-TZ31A"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V, 30Ah, 1440Wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V, 3A Fast Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V, 750W (1000W Peak) hub motor"
+      "type": "ebike-displayremote",
+      "description": "5\" Color LCD display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "5\" Color LCD display"
+      "type": "ebike-motor",
+      "description": "48V, 750W (1000W Peak) hub motor"
     },
     {
       "type": "fender",
@@ -289,11 +291,11 @@
       "description": "Alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Headlight and Taillight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Tail Light",
       "position": [
         "rear"
@@ -321,7 +323,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "description": "Ø34.9mm Quick Release",
       "dimensions": {

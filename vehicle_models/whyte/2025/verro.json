@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/whyte/2025/verro",
   "manufacturer": "Whyte",
   "model_group": "Verro",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "atb_gravel",
+  "primary_activity": "atb-gravel",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/whyte/2025/verro.jpg",
   "description": "Go wherever the trail leads\nWhether going far or going for fun, our adventure gravel bike is engineered and equipped for capability and confidence so you can ride and thrive through even the most demanding terrain. With a fully featured frame and fork loaded with mounting points, a dropper post for confidence when things get wild, and much more, Verro is ready for every adventure you can find.\n\nHighlights\n– Fully featured, multi-butted 6061 T6 hydroformed frame.\n– 1x12 SRAM Apex Eagle transmission (40T x 10-52T).\n– SRAM Apex hydraulic disc brakes (180mm rotor front, 160mm rear).\n– Wide, high-volume Maxxis 700x50mm tyres.\n– WTB ST i30 tubeless-ready rims.\n– Trans-X dropper seatpost with bar-mounted Rocker remote.",
@@ -96,8 +96,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "12_rear"
+    "1-front",
+    "12-rear"
   ],
   "gearing": {
     "front": [
@@ -115,7 +115,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
@@ -123,7 +123,7 @@
       "caliper_mount": "Disc Flat Mount"
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -225,7 +225,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "SRAM",
       "description": "SRAM DUB BSA 68/73mm road"
     },
@@ -248,22 +248,22 @@
       "description": "SRAM Apex D1 hydraulic disc brake, Flat Mount, internal routing, 160mm rotor"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "SRAM Apex D1 hydraulic"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM XG-1275, 10-52T, XD Driver"
     },
     {
       "type": "chain",
       "manufacturer": "SRAM",
       "description": "SRAM GX Eagle, Power Lock, 12 speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM XG-1275, 10-52T, XD Driver"
     },
     {
       "type": "crankset",
@@ -291,7 +291,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bar Tape",
       "manufacturer": "Whyte",
       "description": "Whyte anti-slip, ‘cross bar tape"

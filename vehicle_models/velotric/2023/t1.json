@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/velotric/2023/t1",
   "manufacturer": "Velotric",
   "model_group": "T1",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -43,7 +43,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/velotric/2023/t1_crystal_black.png",
+          "stock_photo": "https://bikebook.bikeindex.org/velotric/2023/t1-crystal-black.png",
           "variants": [
             {
               "sku": "VT010003D",
@@ -89,7 +89,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/velotric/2023/t1_crystal_black.png",
+          "stock_photo": "https://bikebook.bikeindex.org/velotric/2023/t1-crystal-black.png",
           "variants": [
             {
               "sku": "VT010003C",
@@ -142,8 +142,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -161,7 +161,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -171,7 +171,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX6",
       "battery": {
@@ -192,7 +192,7 @@
           "range_claimed": 113,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         },
         {
@@ -200,7 +200,7 @@
           "availability": "app_update",
           "max_speed": 40,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -234,12 +234,12 @@
       "description": "TEKTRO HD-R280 Hydraulic Disc Brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "TEKTRO HD-R280 Aluminum Alloy, with adjustable reach"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -251,14 +251,6 @@
       }
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "SHIMANO 8 Speeds, 12-32T"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z8.3"
@@ -266,6 +258,14 @@
     {
       "type": "chainrings",
       "description": "PROWHEEL Pro Aluminum Alloy, 40T Narrow Wide Chainring"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "SHIMANO 8 Speeds, 12-32T"
     },
     {
       "type": "crankset",
@@ -283,29 +283,29 @@
       "description": "SHIMANO M310-8"
     },
     {
-      "type": "device_mount",
+      "type": "device-mount",
       "type_detail": "Phone Mount",
       "description": "Adapt GoPro/Garmin"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 9.8Ah, 352.8Wh"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 4.9Ah, 176.4Wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "36V, 2.0A, Operates on 100V-240V AC, 50-60Hz"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "350W, Peak 600W, 45Nm"
+      "type": "ebike-displayremote",
+      "description": "Fingerprint Unlock, Automatic Rider Recognition, Battery Indicator, PAS Indicator, Auto Headlight, Auto Brightness Control"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Fingerprint Unlock, Automatic Rider Recognition, Battery Indicator, PAS Indicator, Auto Headlight, Auto Brightness Control"
+      "type": "ebike-motor",
+      "description": "350W, Peak 600W, 45Nm"
     },
     {
       "type": "fender",
@@ -320,7 +320,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Velotric",
       "description": "VELOTRIC Sports Grips"
@@ -349,7 +349,7 @@
       "description": "Aluminum Alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"

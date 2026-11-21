@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/dost/2023/crate",
   "manufacturer": "DOST",
   "model": "Crate",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
@@ -137,9 +137,9 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "continuously_variable",
-    "belt_drive"
+    "1-front",
+    "continuously-variable",
+    "belt-drive"
   ],
   "groupset": {
     "manufacturer": "Enviolo",
@@ -147,7 +147,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -157,12 +157,12 @@
   ],
   "motors": [
     {
-      "id": "c/bafang/m600_mm_g521_250_500_c_500w",
+      "id": "c/bafang/m600-mm-g521-250-500-c-500w",
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "model": "MM G521.250/500.C",
       "model_group": "M600",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
       "sensor_torque": "bottom_bracket_spindle",
@@ -188,7 +188,7 @@
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         },
         {
@@ -196,7 +196,7 @@
           "availability": "stock",
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         }
       ]
@@ -223,11 +223,11 @@
       "description": "4 piston hydraulic disc brakes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Forged aluminum, 2 finger levers with reach adjustment"
     },
     {
-      "type": "brake_pad",
+      "type": "brake-pad",
       "type_detail": "Brake Pad Material",
       "position": [
         "front",
@@ -236,7 +236,7 @@
       "description": "Metal ceramic compound"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -247,16 +247,16 @@
       }
     },
     {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
+      "type": "chainrings",
       "manufacturer": "Gates Carbon Drive",
       "description": "Gates"
     },
     {
-      "type": "chainrings",
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
       "manufacturer": "Gates Carbon Drive",
       "description": "Gates"
     },
@@ -269,27 +269,27 @@
       }
     },
     {
-      "type": "drive_belt",
+      "type": "drive-belt",
       "type_detail": "Belt",
       "manufacturer": "Gates Carbon Drive",
       "description": "Gates Carbon Belt Drive"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "25 Ah (1200 Wh) combined"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V, 2 Amp smart charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "M600 torque-sensing mid-drive motor, 500W mid-drive motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "DOST",
       "description": "DŌST 3.2\" multi-color, backlit LCD with USB charger (DCP-18)"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "M600 torque-sensing mid-drive motor, 500W mid-drive motor"
     },
     {
       "type": "fender",
@@ -324,7 +324,7 @@
       "description": "heavy-duty dual kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "integrated brake lights and high/low beam headlights"
     },
     {
@@ -353,7 +353,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "Zoom, 35mm",
       "dimensions": {

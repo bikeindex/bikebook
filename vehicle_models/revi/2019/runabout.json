@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/revi/2019/runabout",
   "manufacturer": "Revi",
   "model_group": "Runabout",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -39,7 +39,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/revi/2019/runabout_pearl_white.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/revi/2019/runabout-pearl-white.jpg",
           "variants": [
             {
               "sku": "680063969102",
@@ -76,8 +76,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -90,7 +90,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -116,7 +116,7 @@
           "range_claimed": 80,
           "levels": 9,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -124,7 +124,7 @@
           "availability": "stock",
           "max_speed": 40,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -148,7 +148,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell",
       "description": "Bell"
     },
@@ -181,32 +181,32 @@
       "description": "42T"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Type: Lithium-ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Capacity: 48V 14.5Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V 500W"
-    },
-    {
-      "type": "e_vehicle_motor",
-      "description": "≥80%"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Matrix LCD"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "PAS Level, Current Speed, Max Speed, Odometer, Trip"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "48V 500W"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "≥80%"
     },
     {
       "type": "kickstand",

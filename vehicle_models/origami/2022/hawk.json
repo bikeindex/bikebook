@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/origami/2022/hawk",
   "manufacturer": "Origami",
   "model": "Hawk",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -63,7 +63,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "Hi-Tensile Steel",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "bottom_bracket": {
       "spindle": "square taper"
     },
@@ -90,8 +90,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -109,7 +109,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -147,7 +147,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed Bearing; Square Taper"
     },
     {
@@ -159,13 +159,6 @@
       "description": "YZ Disc Brakes"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "12 – 32 tooth"
-    },
-    {
       "type": "chain",
       "description": "9 speed; silver"
     },
@@ -173,6 +166,13 @@
       "type": "chainrings",
       "type_detail": "Chain Ring",
       "description": "52 tooth; Steel"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "12 – 32 tooth"
     },
     {
       "type": "crankset",

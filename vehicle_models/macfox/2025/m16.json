@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/macfox/2025/m16",
   "manufacturer": "Macfox",
   "model": "M16",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -41,7 +41,7 @@
           "colors": [
             "brown"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/macfox/2025/m16_desert_beige.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/macfox/2025/m16-desert-beige.webp",
           "variants": [
             {
               "sku": "M16-Beige",
@@ -55,7 +55,7 @@
           "colors": [
             "purple"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/macfox/2025/m16_nebula_purple.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/macfox/2025/m16-nebula-purple.webp",
           "variants": [
             {
               "sku": "M16-violet",
@@ -68,7 +68,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/macfox/2025/m16_navy_blue.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/macfox/2025/m16-navy-blue.webp",
           "variants": [
             {
               "sku": "M16-Blue",
@@ -100,12 +100,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -131,7 +131,7 @@
           "max_speed": 32,
           "range_claimed": 40,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -139,7 +139,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -177,19 +177,19 @@
       "description": "Mechanical Disc Brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "499Wh (48V 10.4Ah)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500w"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Backlit LCD Panel"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "500w"
+    },
+    {
+      "type": "light",
       "type_detail": "Head Light",
       "position": [
         "front"
@@ -197,7 +197,7 @@
       "description": "LED"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Tail Light",
       "position": [
         "rear"

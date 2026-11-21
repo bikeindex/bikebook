@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/wired/2026/warrior",
   "manufacturer": "Wired",
   "model": "Warrior",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/wired/2026/warrior.png",
-  "geometry_photo": "https://bikebook.bikeindex.org/wired/2026/warrior_geometry.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/wired/2026/warrior-geometry.png",
   "description": "Introducing the Wired Warrior - our most powerful single-motor electric bike featuring an exclusive 72V 2000W Hentach geared motor that delivers an incredible 5000W at peak power. UL2849 certified with UL2271 certified batteries for ultimate performance and safety.\n\nThe Warrior combines raw power with premium features including dual 72V high-discharge Samsung batteries, full dual suspension, and industry-leading safety certifications for the ultimate riding experience.\n\nFull Dual Suspension: Front and rear suspension for smooth, comfortable rides on any terrain\n\n180 N.m Torque: Exceptional climbing power and acceleration\n\nPerfect For\n\nThe Warrior is designed for riders who demand serious power, performance, and safety. Whether you're conquering steep hills, exploring rugged trails, or need a reliable daily commuter with unmatched capability, the exclusive Hentach motor and dual 72V battery system deliver the performance you need with UL2849 and UL2271 certified peace of mind.\n\nWhy Choose the Warrior?\n\nThe Warrior's exclusive Hentach motor technology delivers uncompromising power and reliability. Combined with dual 72V Samsung batteries and UL2849/UL2271 certifications, you get a premium electric bike that's built to perform and built to last with industry-leading safety. This is the bike for riders who refuse to compromise on power, quality, or safety.",
   "first_year": 2026,
   "years": {
@@ -38,7 +38,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/warrior_graphite.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/warrior-graphite.png",
           "variants": [
             {
               "sku": "WG09-26",
@@ -51,7 +51,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/warrior_white.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/warrior-white.png",
           "variants": [
             {
               "sku": "WW08-26",
@@ -64,7 +64,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/warrior_blue.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/warrior-blue.png",
           "variants": [
             {
               "sku": "WB08-26",
@@ -74,7 +74,7 @@
         },
         {
           "name": "Camo",
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/warrior_camo.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/warrior-camo.png",
           "variants": [
             {
               "sku": "WC08-26",
@@ -121,8 +121,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -140,7 +140,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -151,18 +151,20 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "battery": {
         "capacity": 2520,
         "voltage": 72,
         "chemistry": "li-ion",
-        "cells": "21700"
+        "cells": "21700",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 2000,
       "peak_power": 5000,
@@ -175,7 +177,7 @@
           "range_claimed": 145,
           "levels": 9,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -183,7 +185,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -191,7 +193,7 @@
           "availability": "app_update",
           "max_speed": 72,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -235,7 +237,7 @@
       "description": "4-piston Gemma hydraulic brakes with large 203mm rotors offer confident stopping power at high speeds. Be confident at any speed."
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
@@ -251,16 +253,16 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "72V 20Ah front + 72V 15Ah rear batteries (total ~35Ah). Samsung High Discharge 21700 lithium cells (50-S 21700) for reliable, long-life performance (2520Wh total)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "72V Hentach 2000W nominal brushless geared hub motor that produces a peak output of 5000W and 180Nm of torque for incredible acceleration and climbing ability. Wired Ebikes has earned sole exclusivity on the most powerful geared hub motor available"
+      "type": "ebike-displayremote",
+      "description": "Full color customizable display screen. Select torque/cadence, class mode, power output and much more; USB-C phone charger (Android and Apple iphone 14 or earlier) conveniently located on power button cluster"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Full color customizable display screen. Select torque/cadence, class mode, power output and much more; USB-C phone charger (Android and Apple iphone 14 or earlier) conveniently located on power button cluster"
+      "type": "ebike-motor",
+      "description": "72V Hentach 2000W nominal brushless geared hub motor that produces a peak output of 5000W and 180Nm of torque for incredible acceleration and climbing ability. Wired Ebikes has earned sole exclusivity on the most powerful geared hub motor available"
     },
     {
       "type": "fork",
@@ -271,7 +273,7 @@
       }
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Rear shock",
       "position": [
         "rear"
@@ -304,5 +306,76 @@
       "type_detail": "Controller",
       "description": "Our exclusive Patriot System Controller produces an output of over 65 amps"
     }
-  ]
+  ],
+  "market_variants": {
+    "AU": {
+      "markets": [
+        "AU"
+      ],
+      "years": {
+        "2026": {
+          "original_msrp": 449900,
+          "original_msrp_currency": "AUD",
+          "colorways": {
+            "Wicked Red": {
+              "variants": [
+                {
+                  "sku": "WR08-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Graphite": {
+              "variants": [
+                {
+                  "sku": "WG09-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "White": {
+              "variants": [
+                {
+                  "sku": "WW08-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Blue": {
+              "variants": [
+                {
+                  "sku": "WB08-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Camo": {
+              "variants": [
+                {
+                  "sku": "WC08-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            }
+          },
+          "url": "https://wiredebikes.com/en-au/products/wired-warrior-au"
+        }
+      },
+      "motors": {
+        "0": {
+          "operating_modes": {
+            "assist stock": {
+              "e_vehicle_classifications": null
+            },
+            "throttle stock": {
+              "e_vehicle_classifications": null
+            },
+            "assist app_update": {
+              "e_vehicle_classifications": null
+            }
+          }
+        }
+      }
+    }
+  }
 }

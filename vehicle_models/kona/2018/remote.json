@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2018/remote",
   "manufacturer": "Kona",
   "model_group": "Remote",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "mtb_enduro",
+  "primary_activity": "mtb-enduro",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/kona/2018/remote.jpg",
   "first_year": 2018,
@@ -71,8 +71,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "11_rear"
+    "1-front",
+    "11-rear"
   ],
   "gearing": {
     "rear": [
@@ -87,7 +87,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -101,7 +101,7 @@
       "manufacturer": "Bosch",
       "model": "Performance Line CX",
       "model_group": "Performance Line CX",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "certifications": [
         "UL 2849"
       ],
@@ -115,7 +115,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -195,12 +195,12 @@
       "description": "SRAM Level T"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "SRAM Level T"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -212,15 +212,6 @@
       }
     },
     {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM PG1130 11-42t 11spd"
-    },
-    {
       "type": "chain",
       "manufacturer": "SRAM",
       "description": "SRAM PC1110"
@@ -228,6 +219,15 @@
     {
       "type": "chainrings",
       "description": "14t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM PG1130 11-42t 11spd"
     },
     {
       "type": "crankset",
@@ -245,23 +245,23 @@
       "description": "SRAM NX"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Bosch",
       "description": "Bosch 500W"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "2A Compact charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bosch",
-      "description": "Bosch Performance Line CX 20MPH"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Bosch",
       "description": "Bosch Purion"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Bosch",
+      "description": "Bosch Performance Line CX 20MPH"
     },
     {
       "type": "fork",
@@ -272,7 +272,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Kona",
       "description": "Kona Key Grip"
@@ -338,7 +338,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Kona",
       "description": "Kona Clamp"

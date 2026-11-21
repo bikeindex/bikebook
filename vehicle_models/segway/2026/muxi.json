@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/segway/2026/muxi",
   "manufacturer": "Segway",
   "model_group": "MUXI",
   "model": "MUXI",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
@@ -25,7 +25,7 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/segway/2026/muxi_dusty_sage.png",
+          "stock_photo": "https://bikebook.bikeindex.org/segway/2026/muxi-dusty-sage.png",
           "variants": [
             {
               "sku": "AA.21.05.01.0002",
@@ -65,8 +65,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -81,7 +81,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -91,7 +91,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "water_rating": "IPX5",
       "battery": {
@@ -107,14 +107,14 @@
           "max_speed": 37,
           "range_claimed": 129,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -171,14 +171,6 @@
       "description": "Segway Hydraulic Disc brake Front Two-piston, 180 mm rotor Segway Hydraulic Disc brake Rear Two-piston, 180 mm rotor"
     },
     {
-      "type": "cassette",
-      "type_detail": "Rear Gear Range",
-      "position": [
-        "rear"
-      ],
-      "description": "13T"
-    },
-    {
       "type": "chain",
       "description": "Single Speed Chain"
     },
@@ -191,15 +183,23 @@
       "description": "48T"
     },
     {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Rear Gear Range",
+      "position": [
+        "rear"
+      ],
+      "description": "13T"
+    },
+    {
       "type": "derailleur",
       "description": "No Derailleur, Just Chain Tensioner"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Nominal Voltage: 48V; Nominal Energy: 717Wh; Charger Current: Rate 1.3A, Max 3.9A; Battery Management System: Yes; Battery IP Rating: IPX7"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Rated Power: 750W"
     },
     {
@@ -211,21 +211,21 @@
       "description": "No, with Rigid Fork"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Front Position Light",
       "position": [
         "front"
       ]
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "19000CD, 600 lumens"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Tail Light",
       "description": "Yes, with Brake Signal Highlight"
     },

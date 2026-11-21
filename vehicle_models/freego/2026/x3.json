@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/freego/2026/x3",
   "manufacturer": "Freego",
   "model_group": "X3",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -50,12 +50,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -65,7 +65,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 2880,
         "voltage": 72,
@@ -81,7 +81,7 @@
           "max_speed": 45,
           "range_claimed": 177,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -89,7 +89,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -97,7 +97,7 @@
           "availability": "app_update",
           "max_speed": 90,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -142,24 +142,24 @@
       "description": "Front & Rear 4-Piston Hydraulic Disc Brakes, 203mm Rotors"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "72V 40Ah (2880Wh)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "84V, 6A"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "Color LCD Display"
+    },
+    {
+      "type": "ebike-motor",
       "description": "4500W Nominal / 8000W Peak Rear Brushless Hub Motor"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Throttle + Pedal Assist (PAS)"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "Color LCD Display"
     },
     {
       "type": "fork",
@@ -170,7 +170,7 @@
       "description": "Hydraulic Inverted Front Fork"
     },
     {
-      "type": "frame_bag",
+      "type": "frame-bag",
       "type_detail": "FRONT BAG",
       "position": [
         "front"
@@ -178,7 +178,7 @@
       "description": "FRONT BAG"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Lighting",
       "description": "LED headlight, rear brake light, and turn signals"
     },
@@ -189,7 +189,7 @@
       "description": "Freego X3 All-Terrain Dirt E-Bike with Pedals"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "KKE Rear Shock",
       "position": [
         "rear"

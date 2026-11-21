@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/cirq/2023/x1",
   "manufacturer": "Cirq",
   "model_group": "X1",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -53,8 +53,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -63,7 +63,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -72,7 +72,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_speed": "spoke_magnet",
       "battery": {
         "capacity": 874,
@@ -90,7 +90,7 @@
           "range_claimed": 105,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -99,7 +99,7 @@
           "max_speed": 32,
           "range_claimed": 80,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -142,7 +142,12 @@
       "description": "Tektro Hydraulic Disc Brakes"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Professional 8-Speed Chain"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
@@ -150,34 +155,29 @@
       "description": "Shimano MF-TZ500-7"
     },
     {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Professional 8-Speed Chain"
-    },
-    {
       "type": "derailleur",
       "manufacturer": "Shimano",
       "description": "Shimano ALTUS RD-M370-SGS, 9 Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "52V 16.8Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Battery Charger"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "LCD DISPLAY"
+    },
+    {
+      "type": "ebike-motor",
       "description": "750W/1200W Peak"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "750W Sustained"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "LCD DISPLAY"
     },
     {
       "type": "fender",
@@ -189,7 +189,7 @@
       "description": "RST GUIDE Suspension Fork with Lockout"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "1 Bike Tool Kit"
     },
@@ -198,7 +198,7 @@
       "description": "Aluminum Alloy, Rear Mount"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front Light, Tail Light"
     },
     {

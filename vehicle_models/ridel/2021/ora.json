@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ridel/2021/ora",
   "manufacturer": "Ridel",
   "model": "ORA",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -50,12 +50,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -66,7 +66,7 @@
     {
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 259,
         "voltage": 36,
@@ -80,7 +80,7 @@
           "max_speed": 39,
           "range_claimed": 61,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -125,29 +125,29 @@
       "description": "Mechanical Disc"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Panasonic",
       "description": "Panasonic 36V 7.2Ah Removable"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bafang",
-      "description": "Bafang 250W 36V Rear Hub"
+      "type": "ebike-displayremote",
+      "description": "LED Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LED Display"
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang 250W 36V Rear Hub"
     },
     {
       "type": "fender",
       "description": "Front & Back"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front & Back"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],

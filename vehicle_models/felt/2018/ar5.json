@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2018/ar5",
   "manufacturer": "Felt",
   "model_group": "AR",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_biking",
+  "primary_activity": "road-biking",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2018/ar5.jpg",
   "description": "The AR5 takes our wind tunnel designed AR frame and our UHC Performance carbon fiber to deliver aero performance with no compromises. The aerodynamic advantage of the AR5, plus the efficient Shimano 105 drivetrain, will help you gain speed and save precious energy whether completing a century or dropping your friends o",
@@ -88,7 +88,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "bottom_bracket": {
       "shell": "BSA",
@@ -115,8 +115,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "11_rear"
+    "2-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -309,7 +309,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Shimano",
       "description": "Shimano Hollowtech BSA threaded"
     },
@@ -332,18 +332,9 @@
       "description": "Shimano 105 direct mount caliper"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano 105"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel / Cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 11-speed, 11-28T"
     },
     {
       "type": "chain",
@@ -353,6 +344,15 @@
       "type": "chain",
       "manufacturer": "Shimano",
       "description": "Shimano 11-speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel / Cassette",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 11-speed, 11-28T"
     },
     {
       "type": "crankset",
@@ -381,7 +381,7 @@
       "description": "Felt Aero Road UHC Advanced carbon fiber monocoque construction, AeroTaper 1.125\" - 1.25\" carbon fiber steerer tube with integrated crown race, crown, blades and dropouts"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt VelvetGel tape with 3M reflective base with reflective Felt Bubble-Tech F-Wing bar end plugs"
@@ -413,7 +413,7 @@
       "description": "Devox ARH2, sealed cartridge bearing, 11-speed, 130mm QR, 28H"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Assembly Paste",
       "description": "Carbon assembly paste"
     },
@@ -441,7 +441,7 @@
       "description": "Felt Vibration Reducing Aero Road flip position UHC Advanced carbon fiber with 3T DiffLock Comfort Module internals, 48 - 51cm: 280mm length, 5mm offset --- 54 - 61cm: 350mm length, 25mm offset"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "manufacturer": "Felt",
       "description": "Felt Internaloc integrated with titanium bolts"

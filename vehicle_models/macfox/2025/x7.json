@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/macfox/2025/x7",
   "manufacturer": "Macfox",
   "model": "X7",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -53,7 +53,7 @@
           "colors": [
             "brown"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/macfox/2025/x7_desert_beige.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/macfox/2025/x7-desert-beige.webp",
           "variants": [
             {
               "sku": "X7-Beige-Single",
@@ -81,7 +81,7 @@
           "colors": [
             "purple"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/macfox/2025/x7_nebula_purple.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/macfox/2025/x7-nebula-purple.webp",
           "variants": [
             {
               "sku": "X7-violet-single",
@@ -108,7 +108,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/macfox/2025/x7_navy_blue.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/macfox/2025/x7-navy-blue.webp",
           "variants": [
             {
               "sku": "X7-Blue-Single",
@@ -160,12 +160,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -175,13 +175,15 @@
   "motors": [
     {
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "battery": {
         "capacity": 624,
         "voltage": 48,
-        "charging_time": 360
+        "charging_time": 360,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 500,
       "peak_power": 750,
@@ -192,7 +194,7 @@
           "max_speed": 32,
           "range_claimed": 56,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -200,7 +202,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -252,15 +254,15 @@
       "description": "Hydraulic Disc Brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "624Wh (48V 13Ah)"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "500w"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Head Light",
       "position": [
         "front"
@@ -268,7 +270,7 @@
       "description": "LED"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Tail Light",
       "position": [
         "rear"

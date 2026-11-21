@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/elliptigo/2022/e3c",
   "manufacturer": "Elliptigo",
   "model_group": "eC",
   "model": "e3C",
   "model_configuration": "complete",
-  "type": "elliptical_bike",
+  "type": "elliptical",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -42,8 +42,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "3_internal_rear"
+    "1-front",
+    "3-internal-rear"
   ],
   "gearing": {
     "front": [
@@ -59,7 +59,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -79,7 +79,7 @@
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -110,7 +110,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "ISIS drive, sealed bearings"
     },
     {
@@ -123,21 +123,21 @@
       "description": "Linear pull rim brakes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Avid",
       "description": "Avid FR5, two finger levers"
     },
     {
-      "type": "cassette",
+      "type": "chainrings",
+      "description": "52- tooth, 130 BCD, 6061-T6 aluminum"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Sprocket",
       "position": [
         "rear"
       ],
       "description": "13-tooth"
-    },
-    {
-      "type": "chainrings",
-      "description": "52- tooth, 130 BCD, 6061-T6 aluminum"
     },
     {
       "type": "crankset",
@@ -149,7 +149,7 @@
       "description": "20″ butted chro-moly with 1.5″ steerer"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Velo",
       "description": "Velo ergonomic grips"

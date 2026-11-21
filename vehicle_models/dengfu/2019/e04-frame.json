@@ -1,0 +1,180 @@
+{
+  "schema_version": "2.0.0",
+  "id": "m/dengfu/2019/e04-frame",
+  "manufacturer": "Dengfu",
+  "model_group": "E04",
+  "model": "E04 Frame",
+  "model_configuration": "frame",
+  "type": "bike",
+  "propulsion": [
+    "pedal-assist"
+  ],
+  "primary_activity": "mtb",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/dengfu/2019/e04-frame.png",
+  "description": "E04 frame is an E-MTB frame, carbon fiber, equipped with Shimano motor and Darfon battery.",
+  "first_year": 2019,
+  "years": {
+    "2026": {
+      "original_msrp": 87900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "UD Matt/Glossy"
+        }
+      ],
+      "url": "https://www.dengfubike.com/products/e04-frame",
+      "url_live": true
+    },
+    "2019": {}
+  },
+  "frame": {
+    "material": "composite",
+    "material_detail": "TORAY T700 Carbon",
+    "cable_routing": "internal",
+    "bottom_bracket": {
+      "spindle": "Shimano E8000"
+    }
+  },
+  "suspension": {
+    "rear": {
+      "travel": 120,
+      "shock_length": 184,
+      "shock_stroke": 44
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 584,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width_max": 71
+    },
+    {
+      "bsd": 622,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width_max": 58
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/shimano/2016/e8000-du-e8000",
+      "drive_wheel": "rear",
+      "manufacturer": "Shimano",
+      "model": "DU-E8000",
+      "model_group": "E8000",
+      "kind": "mid-drive",
+      "spindle": "Shimano E8000",
+      "sensor_cadence": true,
+      "battery": {
+        "chemistry": "li-ion"
+      },
+      "rated_power": 250,
+      "max_torque": 70,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "e_vehicle_classifications": [
+            "evc/us/class-1"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "16\"",
+      "geometry": {
+        "reach": 410,
+        "stack": 587,
+        "top_tube_effective": 578,
+        "seat_tube_ct": 406,
+        "head_angle": 67,
+        "seat_angle": 74,
+        "head_tube": 110,
+        "chainstay": 478,
+        "wheelbase": 1186,
+        "bb_drop": -15,
+        "fork_rake": 51,
+        "handlebar_width": 580,
+        "stem_length": 80
+      }
+    },
+    {
+      "name": "18\"",
+      "geometry": {
+        "reach": 445,
+        "stack": 620,
+        "top_tube_effective": 610,
+        "seat_tube_ct": 457,
+        "head_angle": 67,
+        "seat_angle": 74,
+        "head_tube": 120,
+        "chainstay": 478,
+        "wheelbase": 1215,
+        "bb_drop": -15,
+        "fork_rake": 51,
+        "handlebar_width": 640,
+        "stem_length": 90
+      }
+    },
+    {
+      "name": "20\"",
+      "geometry": {
+        "reach": 460,
+        "stack": 630,
+        "top_tube_effective": 630,
+        "seat_tube_ct": 508,
+        "head_angle": 67,
+        "seat_angle": 74,
+        "head_tube": 130,
+        "chainstay": 478,
+        "wheelbase": 1228,
+        "bb_drop": -15,
+        "fork_rake": 51,
+        "handlebar_width": 680,
+        "stem_length": 100
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "ebike-battery",
+      "description": "Darfon"
+    },
+    {
+      "type": "rear-suspension",
+      "type_detail": "Suitable rear shock",
+      "position": [
+        "rear"
+      ],
+      "description": "184*44mm SS",
+      "dimensions": {
+        "length": 184,
+        "travel": 44
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Type",
+      "description": "E-MTB (TRAIL)"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Headtube",
+      "description": "Tapered, 1 1/8\"-1 1/2\""
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Include",
+      "description": "frame, seat clamp, headset"
+    }
+  ]
+}

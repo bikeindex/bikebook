@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/pedego/2024/interceptor",
   "manufacturer": "Pedego",
   "model_group": "Interceptor",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -25,7 +25,7 @@
           "colors": [
             "teal"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor_seafoam.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor-seafoam.jpg",
           "variants": [
             {
               "sku": "BK315033SF",
@@ -70,7 +70,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor_white.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor-white.jpg",
           "variants": [
             {
               "sku": "BK315030WT",
@@ -95,7 +95,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor_black.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor-black.jpg",
           "variants": [
             {
               "sku": "BK315032BK",
@@ -137,7 +137,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor_mineral_blue.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor-mineral-blue.jpg",
           "variants": [
             {
               "sku": "BK315031MB",
@@ -157,7 +157,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor_red.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor-red.jpg",
           "variants": [
             {
               "sku": "BK315035RR",
@@ -193,7 +193,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor_periwinkle.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor-periwinkle.jpg",
           "variants": [
             {
               "sku": "BK315036PW",
@@ -213,7 +213,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor_stephanie_blue.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor-stephanie-blue.jpg",
           "variants": [
             {
               "sku": "BK315034SB",
@@ -234,7 +234,7 @@
             "brown",
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor_khaki.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor-khaki.jpg",
           "variants": [
             {
               "sku": "BK315038KH",
@@ -254,7 +254,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor_neon_blue.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor-neon-blue.jpg",
           "variants": [
             {
               "sku": "BK314009BL",
@@ -274,7 +274,7 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor_hunter_green.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/interceptor-hunter-green.jpg",
           "variants": [
             {
               "sku": "BK315130HN",
@@ -338,8 +338,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -356,7 +356,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -367,12 +367,8 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
-      "certifications": [
-        "UL 2271",
-        "UL 2580"
-      ],
       "battery": {
         "capacity": 910,
         "capacity_options": [
@@ -380,7 +376,11 @@
         ],
         "voltage": 52,
         "chemistry": "li-ion",
-        "cells": "18650"
+        "cells": "18650",
+        "certifications": [
+          "UL 2271",
+          "UL 2580"
+        ]
       },
       "rated_power": 749,
       "max_torque": 60,
@@ -392,14 +392,14 @@
           "range_claimed": 121,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -407,7 +407,7 @@
           "availability": "app_update",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -487,7 +487,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "68MM X 127.5MM SQUARE TAPER SPINDLE WITH SEALED CARTRIDGE BEARINGS; STEEL CUPS AND BODY."
     },
     {
@@ -500,11 +500,11 @@
       "description": "STAR UNION OR TEKTRO 2 PISTON FORGED ALUMINUM HYDRAULIC DISC BRAKE; MINERAL OIL BRAKE FLUID."
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "STAR UNION OR TEKTRO 3 FINGER LEVER; CAST ALUMINUM WITH MOTOR CUTOFF SWITCH FOR MAXIMUM SAFETY."
     },
     {
-      "type": "brake_pad",
+      "type": "brake-pad",
       "type_detail": "PADS",
       "position": [
         "front",
@@ -513,7 +513,7 @@
       "description": "CERAMIC OR ORGANIC MATERIAL WITH STEEL BACKING PLATE; OFFER SAFETY TOGETHER WITH EXCELLENT PERFORMANCE IN ALL SITUATIONS."
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "ROTORS",
       "position": [
         "front",
@@ -525,17 +525,17 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "Shimano",
+      "description": "SHIMANO HG40 1/2”x3/32” 122-128 LINKS WITH INNER PLATE CHAMFERING; 24”: 126 LINKS, 26”: 132 LINKS, 29”: 136 LINKS."
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "SHIMANO HYPERGLIDE HG200 8 SPEED 12-32T; SMOOTH, LIGHT AND RELIABLE SHIFTING PERFORMANCE."
-    },
-    {
-      "type": "chain",
-      "manufacturer": "Shimano",
-      "description": "SHIMANO HG40 1/2”x3/32” 122-128 LINKS WITH INNER PLATE CHAMFERING; 24”: 126 LINKS, 26”: 132 LINKS, 29”: 136 LINKS."
     },
     {
       "type": "crankset",
@@ -551,27 +551,27 @@
       "description": "SHIMANO ACERA RD-M360 8 SPEED, FULL METAL CONSTRUCTION AND TEFLON COATED BUSHINGS."
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "52 VOLT 17.5 OR 10.5 AMP HOUR WITH PREMIUM LITHIUM ION 18650 CELLS; SMART BIKE TECHNOLOGY WITH CANBUS COMMUNICATION; AUTO SLEEP FUNCTION."
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "52V 2 AMP PEDEGO FANLESS BATTERY CHARGER WITH CHARGE INDICATOR LIGHT."
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "BLACK 52V BRUSHLESS GEARED REAR HUB MOTOR; 749 WATT NOMINAL POWER RATING; 60NM TORQUE; QUICK DISCONNECT CABLE WITH WATERPROOF CONNECTION."
+      "type": "ebike-displayremote",
+      "description": "Controller"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Controller"
+      "type": "ebike-motor",
+      "description": "BLACK 52V BRUSHLESS GEARED REAR HUB MOTOR; 749 WATT NOMINAL POWER RATING; 60NM TORQUE; QUICK DISCONNECT CABLE WITH WATERPROOF CONNECTION."
     },
     {
       "type": "fork",
       "description": "24” OR 26” OR 29” CHROMOLY STEEL; 1 ⅛” THREADED STEERER TUBE; DISC BRAKE AND FENDER MOUNTS."
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "manufacturer": "Pedego",
       "description": "PEDEGO SYNTHETIC LEATHER GRIP WITH HAND STITCHING AND FOAM PADDING; COLOR MATCHED BALLOON PACKAGE."
@@ -588,7 +588,7 @@
       "description": "BLACK EXTERNAL CUP 1 ⅛” THREADLESS WITH SEALED BEARINGS; EC34/28.6 | EC34/30."
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "TOOLKIT",
       "manufacturer": "Pedego",
       "description": "CUSTOM PEDEGO TOOL KIT: 6” ADJUSTABLE WRENCH (UP TO 15MM), 12/13G SPOKE WRENCH, T25 TORX WRENCH, 6MM HEX WRENCH, 5MM HEX WRENCH WITH #2 PHILLIPS SCREWDRIVER, 4MM HEX WRENCH."
@@ -598,7 +598,7 @@
       "description": "BLACK ALUMINUM ALLOY CENTER KICKSTAND; ADJUSTABLE LENGTH COMPOSITE FOOT."
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "FRONT: LED WITH ADJUSTABLE MOUNT 60 LUX; REAR: LED BUILT INTO BATTERY WITH BRAKE LIGHT FUNCTION; POWERED BY MAIN BATTERY AND CONTROLLED BY LCD."
     },
     {

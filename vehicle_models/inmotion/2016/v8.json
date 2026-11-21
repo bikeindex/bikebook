@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/inmotion/2016/v8",
   "manufacturer": "Inmotion",
   "model_group": "V8",
   "model": "V8",
   "model_configuration": "complete",
-  "type": "epamd",
+  "type": "personal-mobility",
   "propulsion": [
     "throttle"
   ],
@@ -33,7 +33,7 @@
   },
   "brakes": [
     {
-      "type": "motor_brake",
+      "type": "motor-brake",
       "position": [
         "motor"
       ]
@@ -41,7 +41,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IP55",
       "battery": {
         "capacity": 480,
@@ -80,23 +80,23 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "480Wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "AC 100~240 V 50/60 Hz"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "84V * 1.5A"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "800W rated"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Decorated lamp",
       "description": "Support DIY via APP"
     },

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/higbee/2025/martini",
   "manufacturer": "Higbee",
   "model": "Martini",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -32,7 +32,7 @@
         },
         {
           "name": "Amaro",
-          "stock_photo": "https://bikebook.bikeindex.org/higbee/2025/martini_amaro.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/higbee/2025/martini-amaro.jpg",
           "variants": [
             {
               "sku": "M01-02-E-2",
@@ -42,7 +42,7 @@
         },
         {
           "name": "Maraschino",
-          "stock_photo": "https://bikebook.bikeindex.org/higbee/2025/martini_maraschino.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/higbee/2025/martini-maraschino.jpg",
           "variants": [
             {
               "sku": "M01-03-E-2",
@@ -72,9 +72,9 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear",
-    "belt_drive"
+    "1-front",
+    "1-rear",
+    "belt-drive"
   ],
   "gearing": {
     "front": [
@@ -86,7 +86,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -97,18 +97,20 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "battery": {
         "capacity": 672,
         "chemistry": "li-ion",
         "weight": 3.2,
         "removable": true,
-        "charging_time": 300
+        "charging_time": 300,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 500,
       "operating_modes": [
@@ -119,7 +121,7 @@
           "range_claimed": 80,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -127,7 +129,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -179,7 +181,7 @@
       "description": "Mechanical disc, Tektro 160mm"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Dia-Compe",
       "description": "Dia-Compe with power cutoff"
     },
@@ -188,28 +190,28 @@
       "description": "Front 60T / Rear 22T (2.73:1)"
     },
     {
-      "type": "drive_belt",
+      "type": "drive-belt",
       "manufacturer": "Gates",
       "description": "Gates Carbon Belt"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Bafang",
       "description": "Bafang BT F150.672.C 672 Wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "manufacturer": "Bafang",
       "description": "Bafang BC D301, 54.6V ~ 3A"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bafang",
-      "description": "Bafang 500W hub motor"
+      "type": "ebike-displayremote",
+      "description": "Full color, DP C080.CB"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Full color, DP C080.CB"
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang 500W hub motor"
     },
     {
       "type": "fork",

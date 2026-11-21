@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/swft/2023/apex",
   "manufacturer": "SWFT",
   "model": "Apex",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -38,15 +38,15 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "electronic": false
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -56,7 +56,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "battery": {
         "capacity": 499,
@@ -72,14 +72,14 @@
           "max_speed": 32,
           "range_claimed": 72,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -115,38 +115,38 @@
       "description": "Disc Brakes"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "description": "1/2\" x 3/32\" (1.27 x 0.24 cm) x 38T x 170L, with Alloy Crank"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "description": "7 speeds"
     },
     {
-      "type": "chain",
-      "description": "1/2\" x 3/32\" (1.27 x 0.24 cm) x 38T x 170L, with Alloy Crank"
-    },
-    {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Lithium-ion 48V, 10.4Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V / 2A UL-Listed"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W (Sustained), 48V Brushless Rear Hub Motor"
+      "type": "ebike-displayremote",
+      "description": "LCD Smart Easy Read Display with Backlight"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD Smart Easy Read Display with Backlight"
+      "type": "ebike-motor",
+      "description": "750W (Sustained), 48V Brushless Rear Hub Motor"
     },
     {
       "type": "fork",
       "description": "27.5\" (69.9 cm) Suspension Fork"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "description": "TPR"
     },
@@ -182,7 +182,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "SEAT CLAMP",
       "description": "Double Socket Hex Screws"
     },

@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/haoqie/2023/camel",
   "manufacturer": "Haoqie",
   "model": "Camel",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/haoqie/2023/camel.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/haoqie/2023/camel_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/haoqie/2023/camel-geometry.jpg",
   "description": "The Camel Cargo e-bike has dual batteries, perfect for transporting anything from groceries to your kids. Its adaptable step-thru frame lets you load, stack, and even bring your kids. Powered by a 750W rear hub motor, it effortlessly carries your cargo. Dual batteries, fat tires, and advanced suspension guarantee unparalleled utility. Illuminate your path with the built-in light and signal your intentions using the innovative turn signal function. With an impressive 450lbs(MAX) payload capacity, effortlessly transports heavy loads like groceries and gear, opening up new horizons and transforming each ride into a dynamic adventure.",
   "first_year": 2023,
   "years": {
@@ -25,7 +25,7 @@
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/haoqie/2023/camel_flame_orange.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/haoqie/2023/camel-flame-orange.jpg",
           "variants": [
             {
               "sku": "FNCM0820-O",
@@ -71,8 +71,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -80,7 +80,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -91,7 +91,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 1334,
         "voltage": 48,
@@ -107,7 +107,7 @@
           "range_claimed": 193,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -155,21 +155,21 @@
       "description": "180mm Hydraulic Disc Brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Hydraulic Brake Set"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 7 Gears"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC 7 Speed Bike Chain"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 7 Gears"
     },
     {
       "type": "crankset",
@@ -185,23 +185,23 @@
       "description": "7 Speed Shimano Derailleur"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 17.4A Main & 48V 10.4A Sub"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "US Standard 3.0A Smart Charger"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "GD06 LCD 48V ver"
+    },
+    {
+      "type": "ebike-motor",
       "position": [
         "rear"
       ],
       "description": "Peak 1200W Brushless Hub Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "GD06 LCD 48V ver"
     },
     {
       "type": "fork",
@@ -219,7 +219,7 @@
       "description": "Central Mount Kick Stand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"

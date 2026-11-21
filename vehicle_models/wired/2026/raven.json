@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/wired/2026/raven",
   "manufacturer": "Wired",
   "model": "Raven",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/wired/2026/raven.png",
-  "geometry_photo": "https://bikebook.bikeindex.org/wired/2026/raven_geometry.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/wired/2026/raven-geometry.png",
   "description": "Meet the completely WIRED Raven - our newest high-performance single motor electric bike with UL2271 certified batteries, engineered for powerful acceleration, long-range capability, and all-terrain versatility in a compact 20” platform.\nThe Raven features a powerful 72V dual battery system powering a geared 5000W rear hub motor, delivering an incredible 210 N.m of torque for aggressive acceleration, steep hill climbing, and confident off-road performance.\nKey Features\n\nUL2271 Certified Batteries: Dual battery system tested and certified for maximum safety and reliability\n5000W Peak Power: High-output geared rear hub motor for extreme performance\n210 N.m Torque: Massive torque for fast acceleration and superior climbing ability\n4 Piston Hydraulic Brakes: Powerful stopping performance and enhanced control\nDual Suspension System: Rear air shock and hydraulic front suspension for a smooth ride\n120mm Front Suspension Travel: Improved comfort and terrain absorption\n\nPerfect For\nWhether you're navigating city streets, climbing steep hills, cruising trails, or looking for a compact high-performance electric bike with incredible torque, the Raven delivers powerful acceleration, long-range capability, and confident handling with the safety assurance of UL2271 certified batteries. The Raven is designed for riders who want extreme performance in a more agile and compact platform.\nWhat Makes It Special\nThe Raven combines a powerful 5000W geared rear hub motor with a compact 20” wheel setup to maximize torque feel, traction, and responsiveness. With 210 N.m of torque, dual 72V batteries, premium dual suspension, and UL2271 certified batteries, the Raven delivers an aggressive yet refined riding experience that stands out from traditional electric bikes.",
   "first_year": 2026,
   "years": {
@@ -38,7 +38,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/raven_wicked_red.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/raven-wicked-red.png",
           "variants": [
             {
               "sku": "RR08-26",
@@ -51,7 +51,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/raven_graphite.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/raven-graphite.png",
           "variants": [
             {
               "sku": "RG08-26",
@@ -99,8 +99,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -118,7 +118,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -129,17 +129,17 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certifications": [
-        "UL 2271"
-      ],
       "battery": {
         "capacity": 2520,
         "voltage": 72,
         "chemistry": "li-ion",
-        "cells": "21700"
+        "cells": "21700",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 2000,
       "peak_power": 5000,
@@ -152,7 +152,7 @@
           "range_claimed": 145,
           "levels": 9,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -160,7 +160,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -168,7 +168,7 @@
           "availability": "app_update",
           "max_speed": 72,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -195,7 +195,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "turn signals & Horn",
       "description": "Extremely bright front and rear amber turn signals come standard. Remote cluster easily allows operation of the signals, hazards and a horn"
     },
@@ -208,7 +208,7 @@
       "description": "4-piston Gemma hydraulic brakes with large 203mm rotors offer confident stopping power at high speeds. Be confident at any speed."
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
@@ -224,16 +224,16 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "72V 20Ah front + 72V 15Ah rear batteries (total ~35Ah). Samsung High Discharge 21700 lithium cells (50-S 21700) for reliable, long-life performance (2520Wh total). CERTIFIED TO UL2271 STANDARDS"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "72v Single Rear Motor. Peak output of 5000W and ~210Nm of torque. Rear Hentach steel plated geared hub motor (2000W nominal); Wired Ebikes has sole exclusivity on the most powerful production geared hub motor in the world"
+      "type": "ebike-displayremote",
+      "description": "Full color customizable display screen. Select torque/cadence, class mode, power output, turn signal status, and much more; USB-C phone charger (Only for Android and Apple iphone 14 or earlier) conveniently located on power button cluster. 1-10 torque sensitivity setting"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Full color customizable display screen. Select torque/cadence, class mode, power output, turn signal status, and much more; USB-C phone charger (Only for Android and Apple iphone 14 or earlier) conveniently located on power button cluster. 1-10 torque sensitivity setting"
+      "type": "ebike-motor",
+      "description": "72v Single Rear Motor. Peak output of 5000W and ~210Nm of torque. Rear Hentach steel plated geared hub motor (2000W nominal); Wired Ebikes has sole exclusivity on the most powerful production geared hub motor in the world"
     },
     {
       "type": "fork",
@@ -244,12 +244,12 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "turn signals & Horn",
       "description": "Extremely bright front and rear amber turn signals come standard. Remote cluster easily allows operation of the signals, hazards and a horn"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Rear shock",
       "position": [
         "rear"
@@ -281,5 +281,60 @@
       "type_detail": "Controller",
       "description": "Our exclusive Patriot System Controllers produce a peak output of over 65 amps"
     }
-  ]
+  ],
+  "market_variants": {
+    "AU": {
+      "markets": [
+        "AU"
+      ],
+      "years": {
+        "2026": {
+          "original_msrp": 449900,
+          "original_msrp_currency": "AUD",
+          "colorways": {
+            "White": {
+              "variants": [
+                {
+                  "sku": "RW08-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Wicked Red": {
+              "variants": [
+                {
+                  "sku": "RR08-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Graphite": {
+              "variants": [
+                {
+                  "sku": "RG08-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            }
+          },
+          "url": "https://wiredebikes.com/en-au/products/wired-raven-au"
+        }
+      },
+      "motors": {
+        "0": {
+          "operating_modes": {
+            "assist stock": {
+              "e_vehicle_classifications": null
+            },
+            "throttle stock": {
+              "e_vehicle_classifications": null
+            },
+            "assist app_update": {
+              "e_vehicle_classifications": null
+            }
+          }
+        }
+      }
+    }
+  }
 }

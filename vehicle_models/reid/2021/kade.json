@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/reid/2021/kade",
   "manufacturer": "Reid",
   "model_group": "KADe",
   "model": "KADe",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "cargo",
   "handlebar_type": "horizontal",
@@ -36,7 +36,7 @@
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/reid/2021/kade_orange.png",
+          "stock_photo": "https://bikebook.bikeindex.org/reid/2021/kade-orange.png",
           "variants": [
             {
               "sku": "12143372",
@@ -76,8 +76,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -95,7 +95,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -108,7 +108,7 @@
       "drive_wheel": "rear",
       "manufacturer": "Ananda",
       "model": "M100",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "battery": {
         "capacity": 1037,
         "voltage": 48
@@ -147,7 +147,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed bearing"
     },
     {
@@ -160,22 +160,22 @@
       "description": "Shimano MT200 Hydraulic Disc Brakes with 160mm rotors"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano MT200"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano CS-HG201-9 9 speed 11-32T"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z9"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano CS-HG201-9 9 speed 11-32T"
     },
     {
       "type": "crankset",
@@ -195,18 +195,18 @@
       "description": "Shimano RD-M370 Altus 9 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Down Tube 48V 9.6AH"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Ananda",
-      "description": "Ananda M100 48V 250W ,110NM torque"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Ananda",
       "description": "Ananda D10 LCD"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Ananda",
+      "description": "Ananda M100 48V 250W ,110NM torque"
     },
     {
       "type": "fender",
@@ -217,7 +217,7 @@
       "description": "Steel 24\""
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Reid",
       "description": "Reid Ergo comfort"
@@ -242,7 +242,7 @@
       "description": "36H 6 bolt disc"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "lights"
     },
     {

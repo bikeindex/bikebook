@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/specialized/2003/enduro",
   "manufacturer": "Specialized",
   "model": "Enduro",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "mtb_enduro",
+  "primary_activity": "mtb-enduro",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/specialized/2003/enduro.jpg",
   "description": "Specialized FSR technology, A1 Premium Aluminum TransForm Monocoque frame, ORE technology down tube, full sealed cartridge bearing pivots, ITch Switch 100/130mm on the fly adjustable travel, replaceable derailleur hanger",
@@ -72,8 +72,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "9_rear"
+    "3-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -93,7 +93,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -103,7 +103,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Shimano",
       "description": "Shimano ES-30 Octalink spline, 68mm shell width, 113mm spindle length"
     },
@@ -117,17 +117,9 @@
       "description": "Hayes HFX-9 full hydraulic disc, 6\" rotor (Note: Some bikes appear with Shimano M-525 disc brakes)"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Hayes",
       "description": "Hayes HFX-9 (Note: Some bikes appear with Shimano M-525 disc)"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano HG-50, 11/34"
     },
     {
       "type": "chain",
@@ -137,6 +129,14 @@
     {
       "type": "chainrings",
       "description": "44Ax32Sx22S, 7050 alloy 4mm thick outer ring, 4 bolt 104/64mm pattern, Steel chainring bolts"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano HG-50, 11/34"
     },
     {
       "type": "crankset",
@@ -168,11 +168,11 @@
       }
     },
     {
-      "type": "frame_protection",
+      "type": "frame-protection",
       "description": "Chain stay/seat stay protector"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Specialized",
       "description": "Specialized MTB grip, black, double density Kraton"
     },
@@ -209,7 +209,7 @@
       "description": "Shimano M-525 Disc, 32 hole, loose ball bearings, alloy Q/R"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "reflectors"
     },
     {
@@ -218,7 +218,7 @@
       "description": "Shimano 515 clipless"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],
@@ -255,7 +255,7 @@
       "description": "seatpost water bottle mount"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "Alloy collar with Q/R, 34.9mm clamp I.D., black",
       "dimensions": {
         "diameter": 34.9

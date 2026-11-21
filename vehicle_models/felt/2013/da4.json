@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2013/da4",
   "manufacturer": "Felt",
   "model_group": "DA",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_triathlon",
+  "primary_activity": "road-triathlon",
   "handlebar_type": "forward",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2013/da4.png",
   "first_year": 2013,
@@ -31,7 +31,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "bottom_bracket": {
       "shell": "BB30",
@@ -49,8 +49,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "10_rear"
+    "2-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -68,7 +68,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -199,7 +199,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "FSA",
       "description": "FSA BB30"
     },
@@ -213,23 +213,14 @@
       "description": "Felt Integrated Aero w/ cartridge brake pads"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Felt",
       "description": "Felt slick brake & derailleur housing"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro Aero"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano, 11-25T"
     },
     {
       "type": "chain",
@@ -241,6 +232,15 @@
       "type_detail": "Chainwheel",
       "manufacturer": "FSA",
       "description": "FSA 52/38T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano, 11-25T"
     },
     {
       "type": "crankset",
@@ -269,7 +269,7 @@
       "description": "Felt Bayonet 3 UHC Advanced MMC Carbon Fiber monocoque fork; 100% Carbon Fiber 1-piece blades, dropouts, & crown w/ Felt compression device"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Devox Gel Velvet Tape w/ Felt Logos & Felt tri-tip grips"
     },
@@ -309,13 +309,13 @@
       "description": "Felt Aero DA/B UHC Advanced Carbon Fiber Forward Offset Bladed Monocoque Design"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "manufacturer": "Felt",
       "description": "Felt Integrated DA/B Aero aluminum w/steel bolts"
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "Felt",
       "description": "Felt slick brake & derailleur housing"
     },
@@ -350,7 +350,7 @@
       }
     },
     {
-      "type": "water_bottle_cage",
+      "type": "water-bottle-cage",
       "description": "DA/B Aero Bottle System by TorHans™"
     }
   ]

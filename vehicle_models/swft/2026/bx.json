@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/swft/2026/bx",
   "manufacturer": "SWFT",
   "model": "BX",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -32,7 +32,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "mounts": [
       {
         "type": "rack"
@@ -50,7 +50,7 @@
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -61,13 +61,15 @@
     {
       "certifications": [
         "UL 2849",
-        "UL 2271",
         "FCC"
       ],
       "battery": {
         "capacity": 281,
         "voltage": 36,
-        "chemistry": "li-ion"
+        "chemistry": "li-ion",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 350,
       "operating_modes": [
@@ -77,14 +79,14 @@
           "max_speed": 32,
           "range_claimed": 25,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -121,11 +123,11 @@
       "description": "F&R disc brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Internal Lithium-ion 36V 7.8Ah"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "350W"
     },
     {

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/romatlink/2023/rhino",
   "manufacturer": "Romatlink",
   "model": "Rhino",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -69,8 +69,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -87,7 +87,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -97,18 +97,18 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
-      "certifications": [
-        "UL 2580"
-      ],
       "water_rating": "IPX6",
       "battery": {
         "capacity": 960,
         "voltage": 48,
         "chemistry": "li-ion",
         "cells": "Samsung 21700",
-        "weight": 5.5
+        "weight": 5.5,
+        "certifications": [
+          "UL 2580"
+        ]
       },
       "rated_power": 750,
       "peak_power": 1200,
@@ -120,7 +120,7 @@
           "range_claimed": 129,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -129,7 +129,7 @@
           "range_claimed": 97,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -137,7 +137,7 @@
           "availability": "app_update",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -188,11 +188,11 @@
       "description": "Hydraulic Disc Brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum Alloy, with brake light"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -204,15 +204,15 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "description": "7-Speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "description": "14-32T, 7-Speed"
-    },
-    {
-      "type": "chain",
-      "description": "7-Speed"
     },
     {
       "type": "crankset",
@@ -231,20 +231,20 @@
       "description": "Shimano 7-Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V, 960Wh, Removeable Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V, 3A Fast Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V, 750W (1200W Peak) hub motor"
+      "type": "ebike-displayremote",
+      "description": "LCD Color Display (5\" Color LCD)"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD Color Display (5\" Color LCD)"
+      "type": "ebike-motor",
+      "description": "48V, 750W (1200W Peak) hub motor"
     },
     {
       "type": "fender",
@@ -264,7 +264,7 @@
       "description": "Alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Headlight and Taillight"
     },
     {

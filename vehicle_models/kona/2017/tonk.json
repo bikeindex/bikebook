@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2017/tonk",
   "manufacturer": "Kona",
   "model": "Tonk",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -61,8 +61,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "9_rear"
+    "2-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -212,7 +212,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "B/B",
       "description": "TH 7420"
     },
@@ -227,18 +227,9 @@
       "description": "Shimano R451"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano Sora"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano HG50 11-32t 9spd"
     },
     {
       "type": "chain",
@@ -248,6 +239,15 @@
     {
       "type": "chainrings",
       "description": "34/50t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano HG50 11-32t 9spd"
     },
     {
       "type": "crankset",
@@ -279,7 +279,7 @@
       "description": "Kona Classic Road"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Kona",
       "description": "Kona Cork Tape"
@@ -337,7 +337,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Kona",
       "description": "Kona Clamp"

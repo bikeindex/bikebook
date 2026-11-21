@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ancheer/2026/fawn",
   "manufacturer": "Ancheer",
   "model": "Fawn",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -64,8 +64,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -73,7 +73,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -99,7 +99,7 @@
           "max_speed": 35,
           "range_claimed": 80,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -144,19 +144,19 @@
       "description": "mechanical disc brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "374Wh"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Peak 750W Gear Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Integrated Color LCD Display"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "Peak 750W Gear Motor"
+    },
+    {
+      "type": "light",
       "type_detail": "Bright LED Headlight",
       "position": [
         "front"
@@ -164,7 +164,7 @@
       "description": "Bright LED Headlight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Integrated LED Taillight",
       "position": [
         "rear"

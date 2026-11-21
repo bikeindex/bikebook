@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2016/v100",
   "manufacturer": "Felt",
   "model_group": "V",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_all_road",
+  "primary_activity": "road-all-road",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2016/v100.jpg",
   "first_year": 2016,
@@ -133,8 +133,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "8_rear"
+    "2-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -153,7 +153,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -354,13 +354,13 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "manufacturer": "Felt",
       "description": "Felt Bubble-Tech \"F Wing\""
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "FSA",
       "description": "FSA Square Tapered, 68 x 110.5mm"
     },
@@ -373,23 +373,14 @@
       "description": "Front Brake: Tektro Mira w/ 160mm 6-bolt rotor/Rear Brake: Tektro Mira w/ 140mm 6-bolt rotor"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Felt",
       "description": "Felt Slick compressionless brake & derailleur"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano Claris w/ Tektro top mount levers"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 8-speed,11-32T"
     },
     {
       "type": "chain",
@@ -401,6 +392,15 @@
       "type_detail": "Chainwheel",
       "manufacturer": "FSA",
       "description": "FSA 50/34T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 8-speed,11-32T"
     },
     {
       "type": "crankset",
@@ -432,7 +432,7 @@
       "description": "Felt Adventure Road Disc UHC Advanced carbon fiber blades w/ IS mount disc tabs, ControlTaper 1.125\" - 1.5\" aluminum steer tube"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt CxGel Tape"
@@ -496,7 +496,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "manufacturer": "Felt",
       "description": "Felt single bolt, Ø31.8mm",
@@ -505,7 +505,7 @@
       }
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "Felt",
       "description": "Felt Slick compressionless brake & derailleur"
     },

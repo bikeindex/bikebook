@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jamis/2012/komodo",
   "manufacturer": "Jamis",
   "model": "Komodo",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -59,8 +59,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "8_rear"
+    "2-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -79,17 +79,17 @@
   },
   "components": [
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z82"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano HG40, 8-speed, 11-32"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Z82"
     },
     {
       "type": "crankset",
@@ -113,7 +113,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Velo",
       "description": "Velo Kraton, medium diameter"
     },

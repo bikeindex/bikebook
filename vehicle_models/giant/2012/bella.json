@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/giant/2012/bella",
   "manufacturer": "Giant",
   "model": "Bella",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -64,8 +64,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -77,13 +77,13 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front"
       ]
     },
     {
-      "type": "coaster_brake",
+      "type": "coaster-brake",
       "position": [
         "rear"
       ]
@@ -91,11 +91,15 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bashguardchain-guide",
+      "description": "Chainguard"
+    },
+    {
+      "type": "bellnoisemaker",
       "description": "Bell"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Loose Ball"
     },
     {
@@ -106,23 +110,19 @@
       "description": "[R] Alloy Direct Pull, [R] Coaster Brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Alloy Youth"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "18T"
     },
     {
       "type": "chain",
       "description": "F410"
     },
     {
-      "type": "chain_guide",
-      "description": "Chainguard"
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "18T"
     },
     {
       "type": "crankset",

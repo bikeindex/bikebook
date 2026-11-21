@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/haro/2024/expert",
   "manufacturer": "Haro",
   "model_group": "Expert",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "bmx_race",
+  "primary_activity": "bmx-race",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/haro/2024/expert.jpg",
   "description": "Moving up in the ranks? Whether you're racing in the expert class or not, the Haro Race Lite Expert is the perfect bike for riders that have outgrown a Mini but are not ready for a full-sized machine. A heat-treated alloy frame with a 19\" top tube length provides knee room and stability at full speed. The Expert is the smallest bike in the Haro lineup to feature a rear disc brake and has a sealed cassette rear hub and bottom bracket too. Looks fast, goes fast, stops easy.",
@@ -60,8 +60,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -73,7 +73,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "rear"
       ],
@@ -96,7 +96,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed Bearing Square Taper"
     },
     {
@@ -108,16 +108,9 @@
       "description": "Promax V-Brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Promax",
       "description": "Promax Two-finger"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "15t Cassette"
     },
     {
       "type": "chain",
@@ -127,6 +120,13 @@
     {
       "type": "chainrings",
       "description": "38T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "15t Cassette"
     },
     {
       "type": "crankset",
@@ -141,7 +141,7 @@
       "description": "Full chromoly 1\" Threadless Steerer"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Mini Micro-Knurl Grip"
     },
@@ -203,7 +203,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "Alloy, 25.4mm",
       "dimensions": {

@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/euy/2025/c3",
   "manufacturer": "Euy",
   "model": "C3",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/euy/2025/c3.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/euy/2025/c3_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/euy/2025/c3-geometry.jpg",
   "description": "The Euybike C3 full suspension ebike is engineered for the rider who demands it all. Equipped with a 48V 20Ah battery and 1000W motor, it meets your needs in terms of range and power. The C3 offers exceptional full-suspension performance, making it the key to effortless journeys.\nC3 is your ultimate partner for navigating city streets, tackling rugged trails, and everything in between. Experience the freedom of effortless power and all-day comfort.",
   "first_year": 2025,
   "years": {
@@ -39,7 +39,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/euy/2025/c3_black.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/euy/2025/c3-black.jpg",
           "variants": [
             {
               "sku": "EUYC3-Black",
@@ -53,7 +53,7 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/euy/2025/c3_green.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/euy/2025/c3-green.jpg",
           "variants": [
             {
               "sku": "EUYC3-Green",
@@ -87,12 +87,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -103,7 +103,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "certifications": [
         "UL 2849"
       ],
@@ -124,7 +124,7 @@
           "range_claimed": 109,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -175,11 +175,16 @@
       "description": "Mechanical Disc Brake with 180mm rotor"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Mechanical grip-style brake lever"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC chain"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
@@ -188,29 +193,24 @@
       "description": "Shimano 7 speed gear shift"
     },
     {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC chain"
-    },
-    {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 20Ah"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery size: 18*6.2*5.5(inch)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Fast charge"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W Rear Hub Motor"
+      "type": "ebike-displayremote",
+      "description": "Full Color LCD display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Full Color LCD display"
+      "type": "ebike-motor",
+      "description": "750W Rear Hub Motor"
     },
     {
       "type": "fender",
@@ -228,7 +228,7 @@
       "description": "BMX style handlebar"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],

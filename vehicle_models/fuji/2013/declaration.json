@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fuji/2013/declaration",
   "manufacturer": "Fuji",
   "model": "Declaration",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -62,8 +62,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -85,7 +85,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "FSA",
       "description": "FSA, sealed cartridge bearing"
     },
@@ -98,21 +98,21 @@
       "description": "Road calipers, alloy"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Fuji",
       "description": "Fuji alloy"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "17T fixed cog w/ lockring, 17T freewheel"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z-410, single-speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "17T fixed cog w/ lockring, 17T freewheel"
     },
     {
       "type": "crankset",
@@ -124,7 +124,7 @@
       "description": "Elios 2, straight blade"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Velo",
       "description": "Velo, Kraton"
     },

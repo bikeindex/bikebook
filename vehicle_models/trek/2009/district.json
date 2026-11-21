@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/trek/2009/district",
   "manufacturer": "Trek",
   "model": "District",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -43,9 +43,9 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear",
-    "belt_drive"
+    "1-front",
+    "1-rear",
+    "belt-drive"
   ],
   "gearing": {
     "front": [
@@ -86,6 +86,10 @@
   ],
   "components": [
     {
+      "type": "bashguardchain-guide",
+      "description": "Chainguard"
+    },
+    {
       "type": "brake",
       "type_detail": "Brakeset",
       "position": [
@@ -95,15 +99,11 @@
       "description": "Alloy dual pivot w/Tektro alloy levers"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "description": "C-Drive 22T alloy belt sprocket"
-    },
-    {
-      "type": "chain_guide",
-      "description": "Chainguard"
     },
     {
       "type": "crankset",
@@ -112,7 +112,7 @@
       "description": "Bontrager Satellite Nebula w/55T alloy C-Drive belt sprocket"
     },
     {
-      "type": "drive_belt",
+      "type": "drive-belt",
       "description": "belt drive"
     },
     {

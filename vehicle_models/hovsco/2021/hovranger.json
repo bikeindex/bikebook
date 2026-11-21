@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/hovsco/2021/hovranger",
   "manufacturer": "Hovsco",
   "model_group": "HovRanger",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -39,7 +39,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/hovsco/2021/hovranger_grey.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/hovsco/2021/hovranger-grey.jpg",
           "variants": [
             {
               "sku": "374-BKY11-T33Y1G+H4020DNB275C00001+H3560L18022H27501",
@@ -87,8 +87,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -104,7 +104,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -115,7 +115,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
         "capacity": 720,
@@ -137,7 +137,7 @@
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -145,7 +145,7 @@
           "availability": "app_update",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -169,12 +169,12 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Quick Release",
       "description": "Quick Release"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Square Taper, Sealed"
     },
     {
@@ -186,15 +186,15 @@
       "description": "Hydraulic Disc Brakes, 180mm Rotors"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "description": "7 Speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "description": "14-28T, 7 Speed Cassette"
-    },
-    {
-      "type": "chain",
-      "description": "7 Speed"
     },
     {
       "type": "crankset",
@@ -211,20 +211,20 @@
       "description": "7 Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Internal Lithium-ion 48V, 15Ah (720Wh)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Included is a 54.6V 3 Amp Fast Charger, 7 Hours Charging"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "970W (Peak) 500W (Sustained), 48V Brushless Rear Hub Motor"
+      "type": "ebike-displayremote",
+      "description": "BC280 LCD Smart Easy Read Display with Backlight screen with app"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "BC280 LCD Smart Easy Read Display with Backlight screen with app"
+      "type": "ebike-motor",
+      "description": "970W (Peak) 500W (Sustained), 48V Brushless Rear Hub Motor"
     },
     {
       "type": "fork",
@@ -234,7 +234,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "description": "Ergonomic Comfort"
     },
@@ -255,7 +255,7 @@
       "description": "36H Disc Thru-axle Front, Nutted Rear"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "2 Screwdrivers, 3 Wrenches, 4 Allen Key Wrenchs"
     },
@@ -292,7 +292,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "SEAT CLAMP",
       "description": "Quick Release"
     },

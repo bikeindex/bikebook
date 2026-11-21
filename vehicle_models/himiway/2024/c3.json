@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/himiway/2024/c3",
   "manufacturer": "Himiway",
   "model": "C3",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/himiway/2024/c3.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/himiway/2024/c3_geometry.svg",
+  "geometry_photo": "https://bikebook.bikeindex.org/himiway/2024/c3-geometry.svg",
   "description": "Meet the Himiway C3 cargo ebike – built to haul 440 lbs with 960w batteries. Perfect for families, delivering, and adventures.",
   "first_year": 2024,
   "years": {
@@ -39,7 +39,7 @@
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/himiway/2024/c3_orange.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/himiway/2024/c3-orange.jpg",
           "variants": [
             {
               "sku": "HMW-C3-OR-US",
@@ -85,8 +85,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -105,7 +105,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -115,7 +115,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
         "capacity": 960,
@@ -135,7 +135,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -181,7 +181,7 @@
       "description": "Tektro HD-E3520 hydraulic brake"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -193,18 +193,18 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z8.3 EPT 120L"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano MF-TZ500-7 14-28T"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Z8.3 EPT 120L"
     },
     {
       "type": "crankset",
@@ -214,21 +214,21 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Samsung/LG 48V 20Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "U.S. standard 3.0 A fast charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W brushless gear motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Himiway",
       "description": "Himiway C2 LCD Display"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "750W brushless gear motor"
     },
     {
       "type": "fork",

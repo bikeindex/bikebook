@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/schwinn/2010/panther",
   "manufacturer": "Schwinn",
   "model": "Panther",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -48,7 +48,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -56,6 +56,10 @@
     }
   ],
   "components": [
+    {
+      "type": "bashguardchain-guide",
+      "description": "Full wrap fenders set and chain guard"
+    },
     {
       "type": "brake",
       "position": [
@@ -71,10 +75,6 @@
       ],
       "manufacturer": "Promax",
       "description": "ProMax Alloy Linear Pull"
-    },
-    {
-      "type": "chain_guide",
-      "description": "Full wrap fenders set and chain guard"
     },
     {
       "type": "fork",

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/trek/2009/soho",
   "manufacturer": "Trek",
   "model": "Soho",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -51,9 +51,9 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_internal_rear",
-    "belt_drive"
+    "1-front",
+    "8-internal-rear",
+    "belt-drive"
   ],
   "gearing": {
     "front": [
@@ -70,7 +70,7 @@
   },
   "brakes": [
     {
-      "type": "roller_brake",
+      "type": "roller-brake",
       "position": [
         "front",
         "rear"
@@ -96,6 +96,10 @@
   ],
   "components": [
     {
+      "type": "bashguardchain-guide",
+      "description": "Chainguard"
+    },
+    {
       "type": "brake",
       "type_detail": "Brakeset",
       "position": [
@@ -106,15 +110,11 @@
       "description": "Shimano IM50, roller brake w/Tektro alloy levers"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "description": "C-Drive 24T alloy belt sprocket"
-    },
-    {
-      "type": "chain_guide",
-      "description": "Chainguard"
     },
     {
       "type": "crankset",
@@ -123,7 +123,7 @@
       "description": "Bontrager Satellite Nebula w/chainguard, 55T alloy C-Drive belt sprocket"
     },
     {
-      "type": "drive_belt",
+      "type": "drive-belt",
       "description": "belt drive"
     },
     {
@@ -189,7 +189,7 @@
       "description": "Soho mug"
     },
     {
-      "type": "water_bottle_cage",
+      "type": "water-bottle-cage",
       "description": "nylon cage"
     },
     {

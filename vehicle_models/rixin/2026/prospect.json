@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/rixin/2026/prospect",
   "manufacturer": "Rixin",
   "model": "Prospect",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "bmx",
   "handlebar_type": "horizontal",
@@ -84,8 +84,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -97,7 +97,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "rear"
       ],
@@ -121,7 +121,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "sealed american (19mm)"
     },
     {
@@ -132,16 +132,8 @@
       "description": "mechanical disc, 160mm rotor"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "alloy 2-finger"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "16t"
     },
     {
       "type": "chain",
@@ -151,6 +143,14 @@
       "type": "chainrings",
       "type_detail": "sprocket",
       "description": "theory stamped steel (32 tooth)"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "16t"
     },
     {
       "type": "crankset",
@@ -168,7 +168,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "grips",
       "description": "theory data flanged 150mm w/ theory bar ends",
       "dimensions": {
@@ -228,7 +228,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "seat clamp",
       "description": "alloy clamp"
     },

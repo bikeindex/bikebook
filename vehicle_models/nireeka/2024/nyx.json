@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/nireeka/2024/nyx",
   "manufacturer": "Nireeka",
   "model": "Nyx",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/nireeka/2024/nyx.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/nireeka/2024/nyx_geometry.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/nireeka/2024/nyx-geometry.png",
   "description": "The award-winner all-track full suspension trail Nyx offers you a perfect sense of professional riding together with a high level of safety. Equipped with the RockShox high-end suspension system, it gives you a significant travel range of 140mm on the front and rear.",
   "first_year": 2024,
   "years": {
@@ -89,7 +89,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "seatpost_diameter": 31.6
   },
   "suspension": {
@@ -122,8 +122,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -138,7 +138,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -150,7 +150,7 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "model": "MM G522.250.C",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
@@ -169,7 +169,7 @@
           "max_speed": 32,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         },
         {
@@ -177,7 +177,7 @@
           "availability": "upgrade",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -202,7 +202,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Front Axle",
       "position": [
         "front"
@@ -213,7 +213,7 @@
       }
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Motor Integrated"
     },
     {
@@ -226,7 +226,12 @@
       "description": "Shimano Deore M6100 Hydraulic Disk Brake"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC E-Bike Chain"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
@@ -234,30 +239,25 @@
       "description": "Sram X5 (9 Speed)"
     },
     {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC E-Bike Chain"
-    },
-    {
       "type": "crankset",
       "type_detail": "Crank Set",
       "description": "42T Chainring Bafang Crank Arms"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "480Wh Battery or 840Wh Battery (75% Bigger)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Normal Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "MM G522.250.C 250W Motor (Max Speed 20 mph / 32 Kph)"
+      "type": "ebike-displayremote",
+      "description": "DP C07 Display (LCD Display)"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "DP C07 Display (LCD Display)"
+      "type": "ebike-motor",
+      "description": "MM G522.250.C 250W Motor (Max Speed 20 mph / 32 Kph)"
     },
     {
       "type": "fork",
@@ -265,7 +265,7 @@
       "description": "Nireeka 36 Performance (Aluminum Air Fork)"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Slide On Comfort Grips"
     },
@@ -317,7 +317,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "QR"
     },

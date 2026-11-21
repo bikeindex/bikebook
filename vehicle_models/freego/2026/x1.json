@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/freego/2026/x1",
   "manufacturer": "Freego",
   "model_group": "X1",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -51,12 +51,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -66,7 +66,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 1620,
         "voltage": 60,
@@ -82,7 +82,7 @@
           "max_speed": 45,
           "range_claimed": 80,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -90,7 +90,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -98,7 +98,7 @@
           "availability": "app_update",
           "max_speed": 60,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -143,27 +143,27 @@
       "description": "Front & Rear 4-Piston Hydraulic Disc Brakes, 203mm Rotors"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "60V, 25Ah (1620Wh)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "67.2V, 3A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "1500W Nominal / 3000W Peak Rear Brushless Hub Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LCD Display"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "1500W Nominal / 3000W Peak Rear Brushless Hub Motor"
+    },
+    {
+      "type": "light",
       "type_detail": "Turn Signals"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Rear Brake Light",
       "position": [
         "rear"

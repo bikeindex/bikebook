@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fairdale/2027/lookfar",
   "manufacturer": "Fairdale",
   "model_group": "Lookfar",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -75,8 +75,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -215,7 +215,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "BB Parts",
       "manufacturer": "FSA",
       "description": "FSA"
@@ -229,17 +229,8 @@
       "description": "Aluminum, Dual Pivot, 55-75mm reach w/Quick Release"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum, Short Pull"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "MicroShift",
-      "description": "MicroShift, 11-34T, 8-Speed"
     },
     {
       "type": "chain",
@@ -250,6 +241,15 @@
       "type": "chainrings",
       "type_detail": "Chainwheel",
       "description": "42t w/ Guard"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "MicroShift",
+      "description": "MicroShift, 11-34T, 8-Speed"
     },
     {
       "type": "crankset",
@@ -271,7 +271,7 @@
       "description": "1020 Steel, with 1-1/8\" Steerer Tube"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Fairdale",
       "description": "Fairdale Swan"
@@ -320,7 +320,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Fairdale",
       "description": "Fairdale, 30mm",
@@ -329,7 +329,7 @@
       }
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "Fairdale",
       "description": "Fairdale"
     },

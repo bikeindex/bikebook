@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fiido/2025/nomads",
   "manufacturer": "Fiido",
   "model_group": "Nomads",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "road_bike_touring",
+  "primary_activity": "road-bike-touring",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/fiido/2025/nomads.webp",
   "description": "Long-range electric touring bike for comfortable, all-terrain travel and city exploration.",
@@ -66,8 +66,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -85,7 +85,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -143,22 +143,22 @@
       "description": "TEKTRO HD-M275 hydraulic disc brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "TEKTRO HD-M275 hydraulic disc brake"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Rear Cogs",
-      "position": [
-        "rear"
-      ],
-      "description": "9S(11-32 T)"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC X9"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Rear Cogs",
+      "position": [
+        "rear"
+      ],
+      "description": "9S(11-32 T)"
     },
     {
       "type": "crankset",
@@ -174,20 +174,20 @@
       "description": "SHIMANO M370"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "417.6 Wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "36V2A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "250W Permanent Magnet Brushless Geared Motor"
+      "type": "ebike-displayremote",
+      "description": "LCD 1.47 inch"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD 1.47 inch"
+      "type": "ebike-motor",
+      "description": "250W Permanent Magnet Brushless Geared Motor"
     },
     {
       "type": "fork",
@@ -197,7 +197,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "TPR non-slip grip (length: about 130mm)",
       "dimensions": {

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fuji/2011/sandblaster",
   "manufacturer": "Fuji",
   "model_group": "Sandblaster",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -50,8 +50,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -69,7 +69,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -78,7 +78,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "ATB, water resistant, w/replaceable bearings, 119mm"
     },
     {
@@ -91,21 +91,21 @@
       "description": "Promax Alloy linear pull"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Promax",
       "description": "Promax Alloy with reach adjust"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "13-28T 7-spd"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z-51"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "13-28T 7-spd"
     },
     {
       "type": "crankset",
@@ -125,7 +125,7 @@
       "description": "Fuji ATB Rigid"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Fuji",
       "description": "Fuji Custom Kraton"
     },

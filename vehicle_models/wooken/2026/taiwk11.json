@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/wooken/2026/taiwk11",
   "manufacturer": "Wooken",
   "model": "TAIWK11",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -89,12 +89,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -103,11 +103,11 @@
   ],
   "motors": [
     {
-      "certifications": [
-        "UL 2271"
-      ],
       "battery": {
-        "capacity": 499
+        "capacity": 499,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 500,
       "peak_power": 750,
@@ -118,7 +118,7 @@
           "max_speed": 32,
           "range_claimed": 80,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -126,7 +126,7 @@
           "availability": "stock",
           "range_claimed": 48,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -147,11 +147,11 @@
       "description": "Disc Brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "499Wh"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LCD Display"
     },
     {

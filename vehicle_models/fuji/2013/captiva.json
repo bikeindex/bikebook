@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fuji/2013/captiva",
   "manufacturer": "Fuji",
   "model_group": "Captiva",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -46,8 +46,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -59,7 +59,7 @@
   },
   "brakes": [
     {
-      "type": "coaster_brake",
+      "type": "coaster-brake",
       "position": [
         "rear"
       ]
@@ -67,7 +67,11 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bashguardchain-guide",
+      "description": "Chainguard"
+    },
+    {
+      "type": "bottom-bracket",
       "manufacturer": "FSA",
       "description": "FSA, sealed cartridge bearing"
     },
@@ -80,21 +84,17 @@
       "description": "Shimano coaster"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano, 20T"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z-410, single-speed"
     },
     {
-      "type": "chain_guide",
-      "description": "Chainguard"
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano, 20T"
     },
     {
       "type": "crankset",
@@ -106,7 +106,7 @@
       "description": "Elios 1"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Fuji",
       "description": "Fuji Comfort Kraton"
     },

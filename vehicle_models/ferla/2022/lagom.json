@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ferla/2022/lagom",
   "manufacturer": "Ferla",
   "model": "Lagom",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
@@ -85,13 +85,13 @@
     "front": {}
   },
   "drivetrain": [
-    "1_front",
-    "continuously_variable",
-    "belt_drive"
+    "1-front",
+    "continuously-variable",
+    "belt-drive"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -101,7 +101,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "battery": {
         "charging_time": 270
       },
@@ -115,7 +115,7 @@
           "range_claimed": 225,
           "levels": 4,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -176,22 +176,22 @@
       "description": "Lubricate the chain regularly to ensure smooth shifting and prevent rust."
     },
     {
-      "type": "drive_belt",
+      "type": "drive-belt",
       "type_detail": "Belt",
       "manufacturer": "Gates Carbon Drive",
       "description": "Gates™ CDN carbon belt"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "17.5 Ah or 35 Ah capacity (dual battery package)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Mid-Drive Engine 500 Watt 120Nm Torque 5 Pedal Assist Levels"
+      "type": "ebike-displayremote",
+      "description": "Rider Dashboard with USB Charger"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Rider Dashboard with USB Charger"
+      "type": "ebike-motor",
+      "description": "Mid-Drive Engine 500 Watt 120Nm Torque 5 Pedal Assist Levels"
     },
     {
       "type": "fork",
@@ -206,7 +206,7 @@
       "description": "handlebars for any issues."
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "Tool Kit, Charger, Keys"
     },

@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/surly/2013/krampus",
   "manufacturer": "Surly",
   "model": "Krampus",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/surly/2013/krampus.jpg",
   "description": "Surly Krampus, Surly 4130 CroMoly steel. Main Triangle TIG-welded, custom butted. Sweet CS Yoke.",
@@ -47,8 +47,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "10_rear"
+    "1-front",
+    "10-rear"
   ],
   "gearing": {
     "rear": [
@@ -70,14 +70,14 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front"
       ],
       "rotor_diameter": 180
     },
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "rear"
       ],
@@ -86,7 +86,11 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bashguardchain-guide",
+      "description": "Chain guide"
+    },
+    {
+      "type": "bottom-bracket",
       "manufacturer": "Shimano",
       "description": "Shimano ZEE, 175. 170 on small"
     },
@@ -100,17 +104,9 @@
       "description": "Avid BB7, 180/160 HS rotors"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Avid",
       "description": "Avid FR-5, Black"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM GG-1070, 10-speed. 11-12-14-16-18-21-24-28-32-36t"
     },
     {
       "type": "chain",
@@ -118,8 +114,12 @@
       "description": "KMC x10, Silver"
     },
     {
-      "type": "chain_guide",
-      "description": "Chain guide"
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM GG-1070, 10-speed. 11-12-14-16-18-21-24-28-32-36t"
     },
     {
       "type": "crankset",
@@ -195,7 +195,7 @@
       "description": "Kalloy SP-324,"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "manufacturer": "Surly",
       "description": "Surly Stainless, 30.0mm",
       "dimensions": {

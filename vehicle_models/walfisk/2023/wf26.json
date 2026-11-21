@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/walfisk/2023/wf26",
   "manufacturer": "Walfisk",
   "model": "WF26",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -55,7 +55,7 @@
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -71,17 +71,17 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Equipped with a 22.5AH battery, electric bicycles gain a substantial advantage in range and endurance. This higher capacity battery allows riders to embark on longer journeys, commute with confidence, and explore without the worry of running out of power. It's an excellent choice for those seeking extended riding experiences."
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bafang",
-      "description": "BAFANG electric bicycle motors outshine ordinary motors with their exceptional power, efficiency, and customization. They provide superior torque for conquering challenging terrains, offer advanced energy management.BAFANG's reliability, quiet operation, and innovative design set them apart for an elevated electric biking experience."
+      "type": "ebike-displayremote",
+      "description": "The Walfisk electric bicycle's intelligent instrument panel boasts five power-adjustment gears. Gear 0 engages pure electric mode, while gears 1-5 activate power assistance. This intuitive system empowers riders to seamlessly switch between electric and power modes, enhancing control and efficiency across diverse riding scenarios."
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "The Walfisk electric bicycle's intelligent instrument panel boasts five power-adjustment gears. Gear 0 engages pure electric mode, while gears 1-5 activate power assistance. This intuitive system empowers riders to seamlessly switch between electric and power modes, enhancing control and efficiency across diverse riding scenarios."
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "BAFANG electric bicycle motors outshine ordinary motors with their exceptional power, efficiency, and customization. They provide superior torque for conquering challenging terrains, offer advanced energy management.BAFANG's reliability, quiet operation, and innovative design set them apart for an elevated electric biking experience."
     },
     {
       "type": "fork",
@@ -92,7 +92,7 @@
       "description": "Full suspension enhances electric bicycles with improved comfort, traction, and control, making them well-suited for diverse terrains and smoother rides."
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],

@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/biktrix/2022/skycap",
   "manufacturer": "Biktrix",
   "model_group": "Skycap",
   "model": "Skycap",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
@@ -27,7 +27,7 @@
             "white",
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/biktrix/2022/skycap_white_green.png",
+          "stock_photo": "https://bikebook.bikeindex.org/biktrix/2022/skycap-white-green.png",
           "variants": [
             {
               "sku": "BIKT-SKCP-WHGR",
@@ -131,8 +131,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -150,7 +150,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -160,7 +160,7 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "battery": {
         "capacity": 816
@@ -177,7 +177,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -215,7 +215,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Front axle",
       "position": [
         "front"
@@ -223,7 +223,7 @@
       "description": "5mm quick release"
     },
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Rear axle",
       "position": [
         "rear"
@@ -231,7 +231,7 @@
       "description": "Bolt on"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Square taper"
     },
     {
@@ -244,22 +244,22 @@
       "description": "Tektro hd-e350"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro hydraulic with motor cutoff"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano cshg 31-8 (shimano 8-31t)"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "Kmc x8"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano cshg 31-8 (shimano 8-31t)"
     },
     {
       "type": "crankset",
@@ -278,23 +278,23 @@
       "description": "Shimano altus 8 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery sizes: 48v17ah, 48v19ah, 48v21ah, 48v25ah"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750w bafang geared hub"
+      "type": "ebike-displayremote",
+      "description": "800s"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "800s"
+      "type": "ebike-motor",
+      "description": "750w bafang geared hub"
     },
     {
       "type": "fork",
       "description": "Rigid"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Ergo slide on"
     },
@@ -324,7 +324,7 @@
       "description": "Motor"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Integrated headlight + tail light"
     },
     {
@@ -348,7 +348,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat post clamp",
       "description": "38.5mm qr",
       "dimensions": {

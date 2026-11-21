@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/gyroor/2024/c3",
   "manufacturer": "Gyroor",
   "model": "C3",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -24,7 +24,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/gyroor/2024/c3_white.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/gyroor/2024/c3-white.webp",
           "variants": [
             {
               "sku": "C3-white",
@@ -55,7 +55,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "wheels": [
     {
@@ -68,7 +68,7 @@
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -79,14 +79,16 @@
     {
       "certifications": [
         "UL 2849",
-        "UL 2271",
         "UL 2272"
       ],
       "water_rating": "IP54",
       "battery": {
         "capacity": 270,
         "voltage": 36,
-        "charging_time": 300
+        "charging_time": 300,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 450,
       "peak_power": 700,
@@ -98,14 +100,14 @@
           "range_claimed": 50,
           "max_slope": 9,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -134,28 +136,28 @@
   ],
   "components": [
     {
-      "type": "device_mount",
+      "type": "device-mount",
       "type_detail": "Phone Holder",
       "description": "Phone Holder"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V 7.5AH"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "450W(Peak 700W)"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LCD display showing battery level and speed"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "450W(Peak 700W)"
+    },
+    {
+      "type": "light",
       "description": "front lamp, rear lights"
     },
     {

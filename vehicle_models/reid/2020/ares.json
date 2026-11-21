@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/reid/2020/ares",
   "manufacturer": "Reid",
   "model": "Ares",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -76,8 +76,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "10_rear"
+    "1-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -95,7 +95,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -171,7 +171,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Integrated in crankset"
     },
     {
@@ -184,22 +184,22 @@
       "description": "Tektro HDC hydraulic disc with 180mm rotors"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro HDC"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SunRace",
-      "description": "Sunrace 10-speed cassette (11-40T)"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC X10"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SunRace",
+      "description": "Sunrace 10-speed cassette (11-40T)"
     },
     {
       "type": "crankset",
@@ -220,7 +220,7 @@
       "description": "Oversize alloy fatty pro. Tapered steerer"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Reid",
       "description": "Reid lock on rubber"

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2017/ransom",
   "manufacturer": "Felt",
   "model": "Ransom",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -70,8 +70,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -83,7 +83,7 @@
   },
   "brakes": [
     {
-      "type": "coaster_brake",
+      "type": "coaster-brake",
       "position": [
         "rear"
       ]
@@ -99,7 +99,12 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bashguardchain-guide",
+      "manufacturer": "Felt",
+      "description": "Felt steel chainguard"
+    },
+    {
+      "type": "bottom-bracket",
       "description": "USA size, looseball"
     },
     {
@@ -110,27 +115,22 @@
       "description": "Coaster brake"
     },
     {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "22T cog"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z410, 1/8\""
     },
     {
-      "type": "chain_guide",
-      "manufacturer": "Felt",
-      "description": "Felt steel chainguard"
-    },
-    {
       "type": "chainrings",
       "type_detail": "Chainwheel",
       "description": "Steel 44T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "22T cog"
     },
     {
       "type": "crankset",
@@ -144,7 +144,7 @@
       "description": "Unicrown steel, straight blades"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt Kraton rubber, vinyl wrapped & stitched"
@@ -207,7 +207,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "Single-bolt aluminum w/ nut bar, Ø31.8mm ID",
       "dimensions": {

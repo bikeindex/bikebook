@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ride1up/2025/trailrush",
   "manufacturer": "Ride1Up",
   "model": "TrailRush",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/ride1up/2025/trailrush.webp",
   "description": "Driven by a German-engineered Brose mid-drive motor and electrical system, the TrailRush eMTB delivers power and confidence across the rugged outdoors.",
@@ -20,7 +20,7 @@
       "colorways": [
         {
           "name": "Burnt Sunset",
-          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2025/trailrush_burnt_sunset.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2025/trailrush-burnt-sunset.webp",
           "variants": [
             {
               "sku": "TRAILRUSH-MED-ORG",
@@ -54,7 +54,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2025/trailrush_galaxy_gray.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/ride1up/2025/trailrush-galaxy-gray.webp",
           "variants": [
             {
               "sku": "TRAILRUSH-MED-GRY",
@@ -104,8 +104,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "10_rear"
+    "1-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -123,7 +123,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -135,7 +135,7 @@
       "drive_wheel": "rear",
       "manufacturer": "QORE",
       "model": "TF Sprinter",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
         "capacity": 504,
@@ -151,7 +151,7 @@
           "max_speed": 45,
           "range_claimed": 80,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -184,14 +184,6 @@
       "description": "Tektro Orion HD-M745 Quad-Piston Brakes"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano HG500-10 11-36T"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC e10 Mid-Drive Chain"
@@ -201,28 +193,36 @@
       "description": "38T Alloy Chainring"
     },
     {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano HG500-10 11-36T"
+    },
+    {
       "type": "derailleur",
       "manufacturer": "Shimano",
       "description": "Shimano 10-Speed Deore M6000"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V 14Ah Phylion BN21, Samsung Cells with smart BMS"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "QORE",
-      "description": "Brose TF Sprinter mid-drive motor with 90nm torque"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "QORE",
       "description": "Brose Frame Integrated Controller"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "QORE",
       "description": "Brose Display Allround, 1.5\" Color"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "QORE",
+      "description": "Brose TF Sprinter mid-drive motor with 90nm torque"
     },
     {
       "type": "fork",
@@ -232,7 +232,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Velo",
       "description": "Velo Silica Gel Ergonomic Grips"

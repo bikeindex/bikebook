@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/origami/2022/lotus",
   "manufacturer": "Origami",
   "model": "Lotus",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -63,7 +63,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "Chromoly Steel",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "seatpost_diameter": 33.9
   },
   "wheels": [
@@ -87,8 +87,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -104,7 +104,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -142,7 +142,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Exterior Bearing; Hollow; Splines"
     },
     {
@@ -154,13 +154,6 @@
       "description": "Kamros 2-piston Hydraulic Disc"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "11-25T"
-    },
-    {
       "type": "chain",
       "description": "9 speed; silver"
     },
@@ -168,6 +161,13 @@
       "type": "chainrings",
       "type_detail": "Chain Ring",
       "description": "58T w Aluminum 130 BCD and Guard"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "11-25T"
     },
     {
       "type": "crankset",

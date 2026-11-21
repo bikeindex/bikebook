@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/helokeep/2026/26f",
   "manufacturer": "Helokeep",
   "model_group": "26F",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -38,7 +38,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/helokeep/2026/26f_white.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/helokeep/2026/26f-white.webp",
           "variants": [
             {
               "sku": "Helokeep 26F White",
@@ -78,12 +78,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -92,18 +92,20 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "certifications": [
-        "UL 2849",
-        "UL 2271",
-        "UL 2580"
+        "UL 2849"
       ],
       "water_rating": "IPX65",
       "battery": {
         "capacity": 1200,
         "voltage": 48,
         "chemistry": "li-ion",
-        "charging_time": 480
+        "charging_time": 480,
+        "certifications": [
+          "UL 2271",
+          "UL 2580"
+        ]
       },
       "rated_power": 2000,
       "peak_power": 3000,
@@ -116,7 +118,7 @@
           "range_claimed": 129,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -125,7 +127,7 @@
           "range_claimed": 56,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -133,7 +135,7 @@
           "availability": "app_update",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -183,15 +185,15 @@
       "description": "230mm"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable 48V, 25Ah, Certificated by UL 2271"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V 3A Fast Charger"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LCD Color Display with NFC, Bluetooth & App Control"
     },
     {
@@ -214,21 +216,21 @@
       "description": "Alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "600LM LED, Adjustable angle"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
       "description": "Braking Indicator and Turn signal"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Headlight and Taillight"
     },
     {
@@ -247,7 +249,7 @@
       "description": "50 kg / 110 lbs"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Horst-link Rear Suspension",
       "position": [
         "rear"

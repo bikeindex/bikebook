@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/lemond/2022/prolog",
   "manufacturer": "LeMond",
   "model_group": "Prolog",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "drop_bar",
@@ -24,7 +24,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/lemond/2022/prolog_blanc.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/lemond/2022/prolog-blanc.jpg",
           "variants": [
             {
               "sku": "1ED10B0Z02",
@@ -60,7 +60,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/lemond/2022/prolog_noir.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/lemond/2022/prolog-noir.jpg",
           "variants": [
             {
               "sku": "1ED10B0Z01",
@@ -131,7 +131,7 @@
     "2022": {}
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "bottom_bracket": {
       "shell": "PF30"
     },
@@ -149,8 +149,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "12_rear"
+    "1-front",
+    "12-rear"
   ],
   "gearing": {
     "rear": [
@@ -165,7 +165,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -177,7 +177,7 @@
       "id": "c/mahle/2020/x35",
       "manufacturer": "Mahle",
       "model": "X35",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "voltage": 36
       },
@@ -190,7 +190,7 @@
           "max_speed": 32,
           "range_claimed": 113,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -267,17 +267,17 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Token",
       "description": "Token Ninja PF30"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "SRAM Apex"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -286,17 +286,17 @@
       "description": "SRAM Apex"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "SRAM",
+      "description": "SRAM Apex"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "SRAM",
       "description": "SRAM 11-44"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "SRAM",
-      "description": "SRAM Apex"
     },
     {
       "type": "crankset",
@@ -321,17 +321,17 @@
       "description": "Sram Apex"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Embedded/down tube; 36V, 250W Panasonic"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Mahle",
-      "description": "Mahle X35+; Rear hub; 250W Max. Torque: 40Nm"
+      "type": "ebike-displayremote",
+      "description": "Single button toggle; iWoc 1 by Mahle"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Single button toggle; iWoc 1 by Mahle"
+      "type": "ebike-motor",
+      "manufacturer": "Mahle",
+      "description": "Mahle X35+; Rear hub; 250W Max. Torque: 40Nm"
     },
     {
       "type": "fender",
@@ -342,7 +342,7 @@
       "description": "Carbon fiber; LeMond Design"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bar Tape",
       "manufacturer": "ESI",
       "description": "ESI Fit SG - black"
@@ -364,7 +364,7 @@
       "description": "Tune"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"
@@ -372,7 +372,7 @@
       "description": "LED; integrated tilt adjust Headlight powered by main battery"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Tail Lights",
       "position": [
         "rear"

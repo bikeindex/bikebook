@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/rundeer/2022/hummer",
   "manufacturer": "Rundeer",
   "model": "Hummer",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -37,7 +37,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "Forged Aluminum",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "suspension": {
     "front": {},
@@ -54,8 +54,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -64,7 +64,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -74,7 +74,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IP65",
       "battery": {
         "capacity": 720,
@@ -91,14 +91,14 @@
           "max_speed": 51,
           "range_claimed": 80,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -129,11 +129,11 @@
       "description": "Front & Rear Hydraulic Brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Samsung 720Wh"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "750–1200W Brushless Geared Rear hub motor"
     },
     {

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/buzz/2024/beekeeper",
   "manufacturer": "Buzz",
   "model": "Beekeeper",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
@@ -54,8 +54,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -72,7 +72,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -82,7 +82,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 500,
         "voltage": 48,
@@ -98,7 +98,7 @@
           "range_claimed": 64,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -106,7 +106,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -131,7 +131,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell"
     },
     {
@@ -143,16 +143,16 @@
       "description": "Front/Rear Mechanical Disc Brakes"
     },
     {
-      "type": "cassette",
+      "type": "chainrings",
+      "description": "48T"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano TZ 14-28T"
-    },
-    {
-      "type": "chainrings",
-      "description": "48T"
     },
     {
       "type": "crankset",
@@ -163,20 +163,20 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V, 10.4 amp hours, 500 watt hours"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "4-6 hours"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W Rear Hub Drive"
+      "type": "ebike-displayremote",
+      "description": "Center Mounted LCD"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Center Mounted LCD"
+      "type": "ebike-motor",
+      "description": "500W Rear Hub Drive"
     },
     {
       "type": "fender"
@@ -185,7 +185,7 @@
       "type": "kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front and Rear"
     },
     {

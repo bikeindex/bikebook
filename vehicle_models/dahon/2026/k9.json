@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/dahon/2026/k9",
   "manufacturer": "Dahon",
   "model": "k9",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -86,7 +86,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "seatpost_diameter": 33.9
   },
   "wheels": [
@@ -100,8 +100,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -118,7 +118,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -157,21 +157,21 @@
       "description": "Dahon custom disc brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Winzip WL-218D"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano CS-HG400 11-28T"
     },
     {
       "type": "chainrings",
       "manufacturer": "Dahon",
       "description": "Dahon MP-316G-PT 55T 170mm"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano CS-HG400 11-28T"
     },
     {
       "type": "derailleur",
@@ -182,7 +182,7 @@
       "description": "Dahon RD-M310 9S"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Dahon",
       "description": "Dahon XH-GN02BL"

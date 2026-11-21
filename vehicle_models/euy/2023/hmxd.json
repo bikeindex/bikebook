@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/euy/2023/hmxd",
   "manufacturer": "Euy",
   "model": "HMXD",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -38,7 +38,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "suspension": {
     "front": {}
@@ -54,12 +54,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -69,7 +69,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 499,
         "voltage": 48,
@@ -91,7 +91,7 @@
           "range_claimed": 40,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -131,11 +131,15 @@
       "description": "Disc Brakes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Grip-style brake lever"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "description": "48T"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
@@ -144,24 +148,20 @@
       "description": "Shimano 7 speed gear shift"
     },
     {
-      "type": "chain",
-      "description": "48T"
-    },
-    {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 10.4Ah lithium battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V/2A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "400W rear hub motor"
+      "type": "ebike-displayremote",
+      "description": "LCD"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD"
+      "type": "ebike-motor",
+      "description": "400W rear hub motor"
     },
     {
       "type": "fender",
@@ -175,7 +175,7 @@
       "description": "Alloy front suspension fork"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],

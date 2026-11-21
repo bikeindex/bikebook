@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/happyrun/2023/g60",
   "manufacturer": "HappyRun",
   "model_group": "G60",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -97,12 +97,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -112,7 +112,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 888,
         "voltage": 48
@@ -126,14 +126,14 @@
           "max_speed": 45,
           "range_claimed": 129,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -168,24 +168,24 @@
       "description": "Hydraulic Brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "UL 48V 18.5 Ah"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "864 Kilowatt Hours"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V 3.0A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V 750W Brushless Rear Hub Motor"
+      "type": "ebike-displayremote",
+      "description": "LCD DISPLAY"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD DISPLAY"
+      "type": "ebike-motor",
+      "description": "48V 750W Brushless Rear Hub Motor"
     },
     {
       "type": "fender",
@@ -210,7 +210,7 @@
       "description": "Alloy Steel"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tool kit",
       "description": "Tool kit"
     },

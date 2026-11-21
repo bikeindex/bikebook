@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/keteles/2026/k801",
   "manufacturer": "Keteles",
   "model": "K801",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/keteles/2026/k801.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/keteles/2026/k801_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/keteles/2026/k801-geometry.jpg",
   "description": "Model\nK801 ( Dual Motor Fat E-Bike )\n\nBattery\n\n60V 32Ah Lithium Battery .\n\nBrake\nHydraulic Disc Brake with power cut-off Feature\n\nDisplay\nSmart LCD display that shows speed, battery status, pedal assist level, etc.\n\nThrottle\nTwist Throttle on the Right side of Handlebar",
   "first_year": 2026,
   "years": {
@@ -34,7 +34,7 @@
             "black",
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/keteles/2026/k801_black_green.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/keteles/2026/k801-black-green.jpg"
         },
         {
           "name": "Black White",
@@ -42,7 +42,7 @@
             "black",
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/keteles/2026/k801_black_white.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/keteles/2026/k801-black-white.jpg"
         }
       ],
       "url": "https://keteles.us/products/keteles-k801-2-2000w-dual-motors-60v-35ah-26-inch-fat-tire-e-bike",
@@ -70,8 +70,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -81,7 +81,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -91,7 +91,7 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 1920,
         "voltage": 60,
@@ -105,7 +105,7 @@
           "max_speed": 55,
           "range_claimed": 100,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -114,14 +114,14 @@
           "range_claimed": 50,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
     },
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 1920,
         "voltage": 60,
@@ -135,7 +135,7 @@
           "max_speed": 55,
           "range_claimed": 100,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -144,7 +144,7 @@
           "range_claimed": 50,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -181,11 +181,15 @@
       "description": "Hydraulic Disc Brake with power cut-off Feature"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "60V 32Ah Lithium Battery ."
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "Smart LCD display that shows speed, battery status, pedal assist level, etc."
+    },
+    {
+      "type": "ebike-motor",
       "position": [
         "front",
         "rear"
@@ -193,15 +197,11 @@
       "description": "60V 2000W Brushless Geared Hub Motor"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Smart LCD display that shows speed, battery status, pedal assist level, etc."
-    },
-    {
       "type": "fork",
       "description": "Aluminum Alloy Suspension Fork with Lockout"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"

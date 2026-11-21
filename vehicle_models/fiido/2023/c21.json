@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fiido/2023/c21",
   "manufacturer": "Fiido",
   "model_group": "E-Gravel",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "atb_gravel",
+  "primary_activity": "atb-gravel",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/fiido/2023/c21.webp",
   "description": "Urban commuter and adventure electric bike with torque sensor, only 17.5kg.",
@@ -83,8 +83,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -100,7 +100,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -227,22 +227,22 @@
       "description": "TEKTRO HD-M275 Hydraulic Disc Brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "TEKTRO HD-M275"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Rear Cogs",
-      "position": [
-        "rear"
-      ],
-      "description": "L-TWOO 9S(11-32T)"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC X9"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Rear Cogs",
+      "position": [
+        "rear"
+      ],
+      "description": "L-TWOO 9S(11-32T)"
     },
     {
       "type": "crankset",
@@ -257,20 +257,20 @@
       "description": "L-TWOO RD-5009-M"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "DMEGC 208.8Wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "36V2A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Mivice M080 250W"
+      "type": "ebike-displayremote",
+      "description": "LCD 2.4 inch"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD 2.4 inch"
+      "type": "ebike-motor",
+      "description": "Mivice M080 250W"
     },
     {
       "type": "fork",
@@ -280,7 +280,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "TPR non-slip handle grip (Length: about 130mm)",
       "dimensions": {

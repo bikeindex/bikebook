@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/samebike/2021/lvhl26a",
   "manufacturer": "samebike",
   "model": "LVHL26A",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -41,7 +41,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "cable_routing": "internal",
     "seatpost_diameter": 30.4
   },
@@ -69,8 +69,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "7_rear"
+    "3-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -90,7 +90,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -100,7 +100,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "water_rating": "IP54",
       "battery": {
@@ -119,7 +119,7 @@
           "range_claimed": 100,
           "max_slope": 20,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -128,7 +128,7 @@
           "range_claimed": 51,
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -136,7 +136,7 @@
           "availability": "app_update",
           "max_speed": 40,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -158,7 +158,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "description": "5W LED headlight and tail light, with a built-in electric horn, no brake/steering lights"
     },
     {
@@ -180,11 +180,11 @@
       "description": "FILEL mechanical caliper, with copper-basis semi-metallic brake pads"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "WUXING mechanical, aluminum alloy brake lever with brake cut-off"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -195,17 +195,17 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC chain, stainless steel with a titanium nitride coating"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
       ],
       "description": "11-28T 7-speed, SHIMANO cast iron freewheel"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC chain, stainless steel with a titanium nitride coating"
     },
     {
       "type": "crankset",
@@ -220,28 +220,28 @@
       "description": "SHIMANO Tourney, 7-speed derailleur"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "e-bike-wiring-harness",
+      "description": "Waterproof wiring harness, semi-internal cable routing, circular connectors"
+    },
+    {
+      "type": "ebike-battery",
       "description": "48V 12.5Ah Lithium-ion, Battery ZN2500MAH Battery Cell"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V 2A DC 2.1mm, impulse-output charger with full-charge cut-off"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "5 levels assist, For both pedal-assist and throttle modes"
-    },
-    {
-      "type": "e_vehicle_motor",
-      "description": "Brushless 500W DC, geared hub motor, max torque 50N·m"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "S830 Back-light LCD, Custom M6T smart ebike display"
     },
     {
-      "type": "e_vehicle_wiring_harness",
-      "description": "Waterproof wiring harness, semi-internal cable routing, circular connectors"
+      "type": "ebike-motor",
+      "description": "5 levels assist, For both pedal-assist and throttle modes"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "Brushless 500W DC, geared hub motor, max torque 50N·m"
     },
     {
       "type": "fender",
@@ -259,7 +259,7 @@
       "description": "24.8\" flat-rise handlebar, aluminum alloy with rubber ergonomic grips"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tubeless Valve Stems",
       "description": "48mm AV, Schrader valve stems"
     },
@@ -268,11 +268,11 @@
       "description": "Standard kickstand, aluminum alloy with plastic foot"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "5W LED headlight and tail light, with a built-in electric horn, no brake/steering lights"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Reflectors",
       "description": "Spoke tire reflectors, pedal reflectors"
     },

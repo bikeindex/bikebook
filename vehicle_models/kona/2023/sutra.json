@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2023/sutra",
   "manufacturer": "Kona",
   "model_group": "Sutra",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_bike_touring",
+  "primary_activity": "road-bike-touring",
   "handlebar_type": "drop_bar",
   "description": "The Sutra is many things. It’s functional. It’s stylish. It’s incredibly versatile, and it comes ready for the long haul on the bike tour of your dreams. Our Kona Cromoly steel frame is outfitted with a Brooks saddle and matching microfiber bar tape, integrated shifter/brake levers, proper fenders, and a real Tubus Tara Big Apple low-rider front rack. It’s a modern take on the classic touring bike. It’s a grocery getter that’s easy on the eyes. It’s the feeling of steel across pavement that reminds you why you love turning the cranks on long rides. Just like its name suggests it’s the perfect guide for your every ride.",
   "first_year": 2023,
@@ -104,8 +104,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "10_rear"
+    "2-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -124,7 +124,7 @@
   },
   "brakes": [
     {
-      "type": "cable_actuated_hydraulic",
+      "type": "cable-actuated-hydraulic",
       "position": [
         "front",
         "rear"
@@ -256,7 +256,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "B/B",
       "manufacturer": "Shimano",
       "description": "Shimano 68mm or Prowheel BB68+"
@@ -272,12 +272,12 @@
       "description": "TRP HDC711C Mechanical / Hydraulic"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano Tiagra"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -289,14 +289,6 @@
       }
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Deore 11-36t 10spd or Sunrace 11-36t 10spd"
-    },
-    {
       "type": "chain",
       "manufacturer": "Shimano",
       "description": "Shimano Deore or KMC X10"
@@ -304,6 +296,14 @@
     {
       "type": "chainrings",
       "description": "30/46t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Deore 11-36t 10spd or Sunrace 11-36t 10spd"
     },
     {
       "type": "crankset",
@@ -339,7 +339,7 @@
       "description": "Kona Project Two Cromoly Disc Touring"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Brooks Microfiber Brown"
     },
@@ -403,7 +403,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Kona",
       "description": "Kona Clamp"

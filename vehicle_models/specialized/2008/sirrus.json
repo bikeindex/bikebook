@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/specialized/2008/sirrus",
   "manufacturer": "Specialized",
   "model": "Sirrus",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -82,8 +82,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "8_rear"
+    "3-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -103,7 +103,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -112,7 +112,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sport cartridge, square taper, 68 x 113mm"
     },
     {
@@ -122,14 +122,6 @@
         "rear"
       ],
       "description": "Cold-Forged 6061 alloy, 85mm linear pull w/ cartridge pads"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano HG-50, 8-speed 12-25t"
     },
     {
       "type": "chain",
@@ -143,6 +135,14 @@
     {
       "type": "chainrings",
       "description": "48x38x28T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano HG-50, 8-speed 12-25t"
     },
     {
       "type": "crankset",
@@ -171,11 +171,11 @@
       "description": "Specialized Comp, A1 Premium Aluminum legs, Cr-Mo steerer"
     },
     {
-      "type": "frame_protection",
+      "type": "frame-protection",
       "description": "Chain stay protector"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "description": "Body Geometry Comfort II, triple density gel, alloy lock-on feature"
     },
     {
@@ -226,7 +226,7 @@
       "description": "Alloy suspension, 27.2 w/ preload adjust"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "manufacturer": "Specialized",
       "description": "Specialized CNC, alloy, 31.8mm clamp",
       "dimensions": {
@@ -234,7 +234,7 @@
       }
     },
     {
-      "type": "shift_and_brake_lever",
+      "type": "shift-and-brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano EF-50, EZ Fire, integrated w/ shift lever"
     },
@@ -285,5 +285,466 @@
       "type": "unknown",
       "description": "owners manual"
     }
-  ]
+  ],
+  "market_variants": {
+    "CA": {
+      "model_group": "Bikes",
+      "markets": [
+        "CA"
+      ],
+      "stock_photo": "https://bikebook.bikeindex.org/specialized/2008/sirrus-ca.webp",
+      "final_year": 2011,
+      "years": {
+        "2008": {
+          "colorways": {
+            "Brown": {
+              "color_code": "#8c591d",
+              "stock_photo": "https://bikebook.bikeindex.org/specialized/2008/sirrus-ca.webp",
+              "variants": [
+                {
+                  "sku": "9285-5151",
+                  "gtin": "719676518480",
+                  "size": "S"
+                },
+                {
+                  "sku": "9285-5154",
+                  "gtin": "719676518497",
+                  "size": "M"
+                },
+                {
+                  "sku": "9285-5157",
+                  "gtin": "719676518473",
+                  "size": "L"
+                },
+                {
+                  "sku": "9285-5161",
+                  "gtin": "719676521343",
+                  "size": "XL"
+                }
+              ]
+            },
+            "Black": false,
+            "Burgundy": false,
+            "Silver": false,
+            "White": false
+          },
+          "url": "https://www.specialized.com/ca/en/sirrus/p/21815",
+          "url_live": true
+        }
+      },
+      "frame": {
+        "material_detail": "A1 Premium Aluminum"
+      },
+      "wheels": {
+        "front+rear 622": {
+          "bsd": 622,
+          "position": [
+            "front",
+            "rear"
+          ],
+          "tire_width": 28,
+          "axle": "quick_release"
+        },
+        "front 622": false,
+        "rear 622": false
+      },
+      "gearing": {
+        "rear": null
+      },
+      "brakes": {
+        "front+rear": {
+          "caliper_mount": "Brake Bosses"
+        }
+      },
+      "sizes": [
+        {
+          "name": "S"
+        },
+        {
+          "name": "M"
+        },
+        {
+          "name": "L"
+        },
+        {
+          "name": "XL"
+        }
+      ],
+      "components": [
+        {
+          "type": "bottom-bracket",
+          "description": "Sport cartridge, square taper, 68 x 113mm"
+        },
+        {
+          "type": "brake",
+          "position": [
+            "front",
+            "rear"
+          ],
+          "description": "Cold-Forged 6061 alloy, 85mm linear pull w/ cartridge pads"
+        },
+        {
+          "type": "brake-lever",
+          "position": [
+            "front",
+            "rear"
+          ],
+          "manufacturer": "Shimano",
+          "description": "Shimano EF-50, EZ Fire, integrated w/ shift lever"
+        },
+        {
+          "type": "chain",
+          "manufacturer": "KMC",
+          "description": "KMC Z-51, 8-speed"
+        },
+        {
+          "type": "chainrings",
+          "description": "48x38x28T"
+        },
+        {
+          "type": "crankset",
+          "manufacturer": "Sugino",
+          "description": "Sugino XD, five arm, polished arms w/ chainguard"
+        },
+        {
+          "type": "derailleur",
+          "position": [
+            "front"
+          ],
+          "manufacturer": "Shimano",
+          "description": "Shimano T301, 31.8 clamp, bottom pull"
+        },
+        {
+          "type": "derailleur",
+          "position": [
+            "rear"
+          ],
+          "manufacturer": "Shimano",
+          "description": "Shimano Sora, long cage"
+        },
+        {
+          "type": "fork",
+          "manufacturer": "Specialized",
+          "description": "Specialized Comp, A1 Premium Aluminum legs, Cr-Mo steerer"
+        },
+        {
+          "type": "handlebar",
+          "manufacturer": "Specialized",
+          "description": "Specialized Event, A1 Premium Aluminum alloy, 580mm width, 31.8mm",
+          "dimensions": {
+            "width": 580,
+            "diameter": 31.8
+          }
+        },
+        {
+          "type": "headset",
+          "manufacturer": "Specialized",
+          "description": "Specialized Mindset, 1 1/8\" integrated threadless, sealed bearings, alloy 40mm cone"
+        },
+        {
+          "type": "hub",
+          "position": [
+            "front",
+            "rear"
+          ],
+          "manufacturer": "Specialized",
+          "description": "Specialized forged alloy, 32 hole, double sealed bearings, QR"
+        },
+        {
+          "type": "pedals",
+          "description": "Composite body, alloy cage w/ toe clips and straps"
+        },
+        {
+          "type": "rim",
+          "manufacturer": "Alex",
+          "description": "Alex S500, 700c, alloy double wall, machined sidewalls",
+          "dimensions": {
+            "diameter": 622
+          }
+        },
+        {
+          "type": "saddle",
+          "manufacturer": "Specialized",
+          "description": "Specialized Sonoma, 155mm width",
+          "dimensions": {
+            "width": 155
+          }
+        },
+        {
+          "type": "seatpost-clamp",
+          "manufacturer": "Specialized",
+          "description": "Specialized CNC, alloy, 31.8mm clamp",
+          "dimensions": {
+            "diameter": 31.8
+          }
+        },
+        {
+          "type": "shifter",
+          "position": [
+            "front",
+            "rear"
+          ],
+          "manufacturer": "Shimano",
+          "description": "Shimano EF-50, EZ Fire"
+        },
+        {
+          "type": "spokes",
+          "description": "Stainless 14g"
+        },
+        {
+          "type": "stem",
+          "manufacturer": "Specialized",
+          "description": "Specialized 3D forged 6061 alloy, 31.8mm bar clamp",
+          "dimensions": {
+            "diameter": 31.8
+          }
+        },
+        {
+          "type": "tire",
+          "position": [
+            "front",
+            "rear"
+          ],
+          "manufacturer": "Specialized",
+          "description": "Specialized All Condition, 700x28c, wire bead, 60TPI w/ Flak Jacket",
+          "dimensions": {
+            "width": 28,
+            "diameter": 622
+          }
+        }
+      ]
+    },
+    "EU": {
+      "model_group": "Fahrräder",
+      "markets": [
+        "EU"
+      ],
+      "stock_photo": "https://bikebook.bikeindex.org/specialized/2008/sirrus-eu.webp",
+      "final_year": 2009,
+      "years": {
+        "2008": {
+          "colorways": {
+            "Braun": {
+              "name": "Braun",
+              "color_code": "#8c591d",
+              "colors": [
+                "orange"
+              ],
+              "stock_photo": "https://bikebook.bikeindex.org/specialized/2008/sirrus-eu.webp",
+              "variants": [
+                {
+                  "sku": "9285-5151",
+                  "gtin": "719676518480",
+                  "size": "S"
+                },
+                {
+                  "sku": "9285-5154",
+                  "gtin": "719676518497",
+                  "size": "M"
+                },
+                {
+                  "sku": "9285-5157",
+                  "gtin": "719676518473",
+                  "size": "L"
+                },
+                {
+                  "sku": "9285-5161",
+                  "gtin": "719676521343",
+                  "size": "XL"
+                }
+              ]
+            },
+            "Black": false,
+            "Brown": false,
+            "Burgundy": false,
+            "Silver": false,
+            "White": false
+          },
+          "url": "https://www.specialized.com/de/de/sirrus/p/21815",
+          "url_live": true
+        }
+      },
+      "frame": {
+        "material_detail": "A1 Premium Aluminum"
+      },
+      "wheels": {
+        "front+rear 622": {
+          "bsd": 622,
+          "position": [
+            "front",
+            "rear"
+          ],
+          "tire_width": 28,
+          "axle": "quick_release"
+        },
+        "front 622": false,
+        "rear 622": false
+      },
+      "gearing": {
+        "rear": null
+      },
+      "brakes": {
+        "front+rear": {
+          "caliper_mount": "Brake Bosses"
+        }
+      },
+      "sizes": [
+        {
+          "name": "S"
+        },
+        {
+          "name": "M"
+        },
+        {
+          "name": "L"
+        },
+        {
+          "name": "XL"
+        }
+      ],
+      "components": [
+        {
+          "type": "bottom-bracket",
+          "description": "Sport cartridge, square taper, 68 x 113mm"
+        },
+        {
+          "type": "brake",
+          "position": [
+            "front",
+            "rear"
+          ],
+          "description": "Cold-Forged 6061 alloy, 85mm linear pull w/ cartridge pads"
+        },
+        {
+          "type": "brake-lever",
+          "position": [
+            "front",
+            "rear"
+          ],
+          "manufacturer": "Shimano",
+          "description": "Shimano EF-50, EZ Fire, integrated w/ shift lever"
+        },
+        {
+          "type": "chain",
+          "manufacturer": "KMC",
+          "description": "KMC Z-51, 8-speed"
+        },
+        {
+          "type": "chainrings",
+          "description": "48x38x28T"
+        },
+        {
+          "type": "crankset",
+          "manufacturer": "Sugino",
+          "description": "Sugino XD, five arm, polished arms w/ chainguard"
+        },
+        {
+          "type": "derailleur",
+          "position": [
+            "front"
+          ],
+          "manufacturer": "Shimano",
+          "description": "Shimano T301, 31.8 clamp, bottom pull"
+        },
+        {
+          "type": "derailleur",
+          "position": [
+            "rear"
+          ],
+          "manufacturer": "Shimano",
+          "description": "Shimano Sora, long cage"
+        },
+        {
+          "type": "fork",
+          "manufacturer": "Specialized",
+          "description": "Specialized Comp, A1 Premium Aluminum legs, Cr-Mo steerer"
+        },
+        {
+          "type": "handlebar",
+          "manufacturer": "Specialized",
+          "description": "Specialized Event, A1 Premium Aluminum alloy, 580mm width, 31.8mm",
+          "dimensions": {
+            "width": 580,
+            "diameter": 31.8
+          }
+        },
+        {
+          "type": "headset",
+          "manufacturer": "Specialized",
+          "description": "Specialized Mindset, 1 1/8\" integrated threadless, sealed bearings, alloy 40mm cone"
+        },
+        {
+          "type": "hub",
+          "position": [
+            "front",
+            "rear"
+          ],
+          "manufacturer": "Specialized",
+          "description": "Specialized forged alloy, 32 hole, double sealed bearings, QR"
+        },
+        {
+          "type": "pedals",
+          "description": "Composite body, alloy cage w/ toe clips and straps"
+        },
+        {
+          "type": "rim",
+          "manufacturer": "Alex",
+          "description": "Alex S500, 700c, alloy double wall, machined sidewalls",
+          "dimensions": {
+            "diameter": 622
+          }
+        },
+        {
+          "type": "saddle",
+          "manufacturer": "Specialized",
+          "description": "Specialized Sonoma, 155mm width",
+          "dimensions": {
+            "width": 155
+          }
+        },
+        {
+          "type": "seatpost-clamp",
+          "manufacturer": "Specialized",
+          "description": "Specialized CNC, alloy, 31.8mm clamp",
+          "dimensions": {
+            "diameter": 31.8
+          }
+        },
+        {
+          "type": "shifter",
+          "position": [
+            "front",
+            "rear"
+          ],
+          "manufacturer": "Shimano",
+          "description": "Shimano EF-50, EZ Fire"
+        },
+        {
+          "type": "spokes",
+          "description": "Stainless 14g"
+        },
+        {
+          "type": "stem",
+          "manufacturer": "Specialized",
+          "description": "Specialized 3D forged 6061 alloy, 31.8mm bar clamp",
+          "dimensions": {
+            "diameter": 31.8
+          }
+        },
+        {
+          "type": "tire",
+          "position": [
+            "front",
+            "rear"
+          ],
+          "manufacturer": "Specialized",
+          "description": "Specialized All Condition, 700x28c, wire bead, 60TPI w/ Flak Jacket",
+          "dimensions": {
+            "width": 28,
+            "diameter": 622
+          }
+        }
+      ]
+    }
+  }
 }

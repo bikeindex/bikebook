@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/eunorau/2024/defender",
   "manufacturer": "Eunorau",
   "model_group": "Defender",
@@ -7,13 +7,13 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/eunorau/2024/defender.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/eunorau/2024/defender_geometry.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/eunorau/2024/defender-geometry.png",
   "first_year": 2024,
   "years": {
     "2026": {
@@ -41,7 +41,7 @@
         },
         {
           "name": "Safari",
-          "stock_photo": "https://bikebook.bikeindex.org/eunorau/2024/defender_safari.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/eunorau/2024/defender-safari.jpg",
           "variants": [
             {
               "sku": "DEFENDER-275-19-WS",
@@ -87,8 +87,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -105,7 +105,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -116,7 +116,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 720,
         "charging_time": 360
@@ -131,7 +131,7 @@
           "range_claimed": 129,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -139,7 +139,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -201,11 +201,11 @@
       "description": "EUNORAU Design Hydraulic disc Brakes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Hydraulic Brakes Lever with motor cutoff switch"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -216,15 +216,15 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chainrings",
+      "description": "44T aluminum chain wheel with protection"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "description": "14-28T"
-    },
-    {
-      "type": "chainrings",
-      "description": "44T aluminum chain wheel with protection"
     },
     {
       "type": "crankset",
@@ -235,24 +235,24 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V15Ah, Optional 15Ah/17Ah battery (Dual battery design)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "US standard 2.0 A smart charger"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "BC182 Display, EUNORAU APP Support"
+    },
+    {
+      "type": "ebike-motor",
       "description": "Rear Drive 500W"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "48V500W Rear Motor with 60N.m"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "BC182 Display, EUNORAU APP Support"
     },
     {
       "type": "fork",
@@ -262,19 +262,19 @@
       }
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tool",
       "description": "Included"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
       "description": "Taillight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
@@ -285,7 +285,7 @@
       "description": "High Quality Nylon Pedals"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Shock",
       "position": [
         "rear"

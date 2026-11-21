@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/opus/2018/connect",
   "manufacturer": "Opus",
   "model_group": "Connect",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -47,8 +47,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -66,7 +66,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -78,13 +78,13 @@
       "drive_wheel": "rear",
       "manufacturer": "Shimano",
       "model": "E6050",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "operating_modes": [
         {
           "mode": "assist",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         }
       ]
@@ -155,7 +155,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Shimano",
       "description": "Shimano STePS"
     },
@@ -169,17 +169,9 @@
       "description": "Shimano M365 Hydraulic Disc"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano M365"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 11-32"
     },
     {
       "type": "chain",
@@ -189,6 +181,14 @@
     {
       "type": "chainrings",
       "description": "38"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 11-32"
     },
     {
       "type": "crankset",
@@ -205,7 +205,7 @@
       "description": "Shimano Acera Shadow"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "manufacturer": "Shimano",
       "description": "Shimano STePS Motor E6050"
     },
@@ -214,7 +214,7 @@
       "description": "Aluminum Tapered 1-1/2 to 1-1/8 in"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips tape",
       "manufacturer": "Velo",
       "description": "Velo ERGO Dual Density"
@@ -237,7 +237,7 @@
       "description": "Formula/Shimano"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Integrated Headlight With USB And Taillight (select models only)"
     },
     {

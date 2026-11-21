@@ -1,0 +1,297 @@
+{
+  "schema_version": "2.0.0",
+  "id": "m/superhuman-bikes/2022/weapon",
+  "manufacturer": "Superhuman Bikes",
+  "model_group": "Weapon",
+  "model": "Weapon",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal-assist",
+    "throttle"
+  ],
+  "primary_activity": "mtb-trail-all-mountain",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/superhuman-bikes/2022/weapon.jpg",
+  "description": "Take your mountain biking to the next level with the most POWERFUL carbon fiber electric mountain bike of it's class!\nThe best of both worlds—it rallies the trail like a traditional bike on descents but rips back to the top with 750W (1000W Peak) of optimized power assists on climbs.\nMake climbs the best part of your ride!",
+  "first_year": 2022,
+  "years": {
+    "2026": {
+      "original_msrp": 549900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/superhuman-bikes/2022/weapon.jpg",
+          "variants": [
+            {
+              "sku": "SUPE-WPN-SM-BB",
+              "size": "Small"
+            },
+            {
+              "sku": "SUPE-WPN-MD-BB",
+              "size": "Medium"
+            },
+            {
+              "sku": "SUPE-WPN-LG-BB",
+              "size": "Large"
+            }
+          ]
+        },
+        {
+          "name": "Red",
+          "colors": [
+            "red"
+          ],
+          "variants": [
+            {
+              "sku": "SUPE-WPN-SM-RB",
+              "size": "Small"
+            },
+            {
+              "sku": "SUPE-WPN-MD-RB",
+              "size": "Medium"
+            },
+            {
+              "sku": "SUPE-WPN-LG-RB",
+              "size": "Large"
+            }
+          ]
+        },
+        {
+          "name": "White",
+          "colors": [
+            "white"
+          ],
+          "variants": [
+            {
+              "sku": "SUPE-WPN-SM-WB",
+              "size": "Small"
+            },
+            {
+              "sku": "SUPE-WPN-MD-WB",
+              "size": "Medium"
+            },
+            {
+              "sku": "SUPE-WPN-LG-WB",
+              "size": "Large"
+            }
+          ]
+        }
+      ],
+      "url": "https://superhumanbikes.com/products/the-weapon",
+      "url_live": true
+    },
+    "2022": {}
+  },
+  "frame": {
+    "material": "composite",
+    "mounts": [
+      {
+        "type": "rack"
+      }
+    ]
+  },
+  "suspension": {
+    "front": {
+      "travel": 160
+    },
+    "rear": {
+      "travel": 150,
+      "spring": "air"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 622,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 60
+    }
+  ],
+  "drivetrain": [
+    "1-front",
+    "11-rear"
+  ],
+  "groupset": {
+    "manufacturer": "SRAM",
+    "series": "NX",
+    "description": "SRAM NX Eagle 11-Speed",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc-hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 203
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/bafang/m600-mm-g521-250-500-c-500w",
+      "drive_wheel": "rear",
+      "manufacturer": "Bafang",
+      "model": "MM G521.250/500.C",
+      "model_group": "M600",
+      "kind": "mid-drive",
+      "sensor_cadence": true,
+      "sensor_torque": "bottom_bracket_spindle",
+      "certifications": [
+        "EN 14766",
+        "CE",
+        "RoHS"
+      ],
+      "water_rating": "IPX5",
+      "battery": {
+        "capacity": 840,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "Samsung",
+        "weight": 4.8,
+        "charging_time": 360
+      },
+      "rated_power": 500,
+      "peak_power": 750,
+      "max_torque": 120,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 45,
+          "range_claimed": 113,
+          "e_vehicle_classifications": [
+            "evc/us/class-3"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock"
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 125
+    }
+  ],
+  "sizes": [
+    {
+      "name": "Small",
+      "geometry": {
+        "reach": 420,
+        "seat_tube_ct": 432,
+        "head_angle": 66,
+        "seat_angle": 76.8,
+        "head_tube": 116,
+        "chainstay": 465,
+        "wheelbase": 1280,
+        "standover": 813,
+        "bb_height": 355,
+        "total_weight": 24.5,
+        "rider_height_min": 1575,
+        "rider_height_max": 1702
+      }
+    },
+    {
+      "name": "Medium",
+      "geometry": {
+        "total_weight": 24.9
+      }
+    },
+    {
+      "name": "Large",
+      "geometry": {
+        "total_weight": 25.4
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Magura",
+      "description": "Magura MT5 Hydraulic Disc (203 mm rotors)"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "48V 17.5AH Samsung Lithium Ion Cells"
+    },
+    {
+      "type": "ebike-displayremote",
+      "description": "Smart Display with Speed Odometer, 5 Pedal Assist Levels, Battery Life"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "750W Peak Power / 500W Rated Power / Bafang M600 Mid-Drive Motor"
+    },
+    {
+      "type": "fork",
+      "description": "DVO Onyx SC D2 29\", (160mm Travel)",
+      "dimensions": {
+        "travel": 160
+      }
+    },
+    {
+      "type": "rear-suspension",
+      "type_detail": "Rear Shock",
+      "position": [
+        "rear"
+      ],
+      "description": "DVO Topaz T3 Air Shock, (150mm Travel)"
+    },
+    {
+      "type": "saddle",
+      "description": "SR 8067"
+    },
+    {
+      "type": "seatpost",
+      "type_detail": "Dropper Post",
+      "manufacturer": "SDG",
+      "description": "SDG Tellis V2 55mm - 230mm Travel Range",
+      "dimensions": {
+        "travel": 230
+      }
+    },
+    {
+      "type": "throttle"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Maxxis",
+      "description": "Maxxis Forekaster 29\" x 2.35\"",
+      "dimensions": {
+        "width": 59.69,
+        "diameter": 622
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Walk Assist",
+      "description": "Press and Hold"
+    },
+    {
+      "type": "wheel",
+      "description": "Aluminum Alloy 29\"",
+      "dimensions": {
+        "diameter": 622
+      }
+    }
+  ]
+}

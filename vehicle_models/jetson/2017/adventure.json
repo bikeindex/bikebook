@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2017/adventure",
   "manufacturer": "Jetson",
   "model": "Adventure",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -82,12 +82,12 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "7_rear"
+    "3-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -96,7 +96,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 281,
         "voltage": 36,
@@ -113,7 +113,7 @@
           "max_slope": 15,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -141,7 +141,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell"
     },
     {
@@ -153,29 +153,29 @@
       "description": "Front & rear disc brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 7.8Ah rechargeable lithium-ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Battery: No"
     },
     {
-      "type": "e_vehicle_charger"
+      "type": "ebike-charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "250 watt hub motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LCD display"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "250 watt hub motor"
     },
     {
       "type": "kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front and back LED lights"
     },
     {

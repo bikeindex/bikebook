@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/opus/2018/grid",
   "manufacturer": "Opus",
   "model_group": "Grid",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -49,8 +49,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -62,7 +62,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -81,7 +81,7 @@
           "mode": "assist",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         }
       ]
@@ -152,7 +152,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "CH-46-E Cartridge"
     },
     {
@@ -164,16 +164,9 @@
       "description": "LeeChi V-Brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Promax",
       "description": "Promax Alloy"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "15"
     },
     {
       "type": "chain",
@@ -185,12 +178,19 @@
       "description": "38"
     },
     {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "15"
+    },
+    {
       "type": "crankset",
       "type_detail": "Crank",
       "description": "CW Alloy Single Ring"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Vittoria E- Wheel Motor 250W 30V"
     },
     {
@@ -198,7 +198,7 @@
       "description": "Straight Blade Alloy"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips tape",
       "manufacturer": "Velo",
       "description": "Velo ERGO Dual Density"

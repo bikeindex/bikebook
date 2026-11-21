@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/freego/2023/s1",
   "manufacturer": "Freego",
   "model": "S1",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -52,8 +52,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -62,7 +62,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -71,7 +71,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "certifications": [
         "UL 2849"
       ],
@@ -89,7 +89,7 @@
           "max_speed": 32,
           "range_claimed": 80,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -97,7 +97,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -105,7 +105,7 @@
           "availability": "app_update",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -138,15 +138,15 @@
       "description": "Front & Rear Hydraulic Disc Brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V, 22.5AH (1080Wh)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Output: 42V, 2A, Input: 100-230V, 50-60Hz"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LCD Display"
     },
     {
@@ -158,14 +158,14 @@
       "description": "Full Suspension for Front & Rear"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Rear Brake Light",
       "position": [
         "rear"
       ]
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Front and rear light",
       "position": [
         "front",
@@ -178,7 +178,7 @@
       "description": "Pedals"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],

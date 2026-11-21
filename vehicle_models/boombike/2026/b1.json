@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/boombike/2026/b1",
   "manufacturer": "Boombike",
   "model": "B1",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -30,14 +30,14 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/boombike/2026/b1_green.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/boombike/2026/b1-green.jpg"
         },
         {
           "name": "Khaki",
           "colors": [
             "brown"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/boombike/2026/b1_khaki.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/boombike/2026/b1-khaki.jpg"
         }
       ],
       "url": "https://www.bluvall.com/products/bluvall-b1-electric-bike",
@@ -64,8 +64,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -74,7 +74,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -86,14 +86,16 @@
     {
       "drive_wheel": "front",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "water_rating": "IP65",
       "battery": {
         "capacity": 1075,
         "chemistry": "li-ion",
-        "charging_time": 600
+        "charging_time": 600,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 1000,
       "max_torque": 180,
@@ -104,7 +106,7 @@
           "max_speed": 56,
           "range_claimed": 97,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -113,7 +115,7 @@
           "range_claimed": 80,
           "throttle_type": "Trigger",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -121,14 +123,16 @@
     {
       "drive_wheel": "rear",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "water_rating": "IP65",
       "battery": {
         "capacity": 1075,
         "chemistry": "li-ion",
-        "charging_time": 600
+        "charging_time": 600,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 1000,
       "max_torque": 180,
@@ -139,7 +143,7 @@
           "max_speed": 56,
           "range_claimed": 97,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -148,7 +152,7 @@
           "range_claimed": 80,
           "throttle_type": "Trigger",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -193,16 +197,16 @@
       "description": "Hydraulic Disc Brakes with 180mm Rotors for superior, all-weather stopping power"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Battery, 22.4Ah (1075Wh), for convenient charging anywhere"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "1000W + 1000W Dual Motor"
+      "type": "ebike-displayremote",
+      "description": "Backlit LCD Multifunctional Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Backlit LCD Multifunctional Display"
+      "type": "ebike-motor",
+      "description": "1000W + 1000W Dual Motor"
     },
     {
       "type": "fender",
@@ -219,7 +223,7 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Integrated 500LM Headlight & Rear Light with Turn Signals"
     },
     {

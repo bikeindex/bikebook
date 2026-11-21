@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/noko/2026/blaze",
   "manufacturer": "Noko",
   "model": "Blaze",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -40,7 +40,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/noko/2026/blaze_black_polvere.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/noko/2026/blaze-black-polvere.jpg",
           "variants": [
             {
               "sku": "TFMB001-811",
@@ -57,7 +57,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/noko/2026/blaze_white_polvere.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/noko/2026/blaze-white-polvere.jpg",
           "variants": [
             {
               "sku": "TFMB001-815",
@@ -112,8 +112,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "10_rear"
+    "1-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -132,14 +132,14 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
       "rotor_diameter": 180
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -150,7 +150,7 @@
     {
       "drive_wheel": "rear",
       "manufacturer": "TruckRun",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "battery": {
         "capacity": 670,
         "voltage": 36,
@@ -200,7 +200,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Front axle",
       "position": [
         "front"
@@ -220,7 +220,7 @@
       "description": "Ronglun hydraulic disc"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "FRONT ROTOR",
       "position": [
         "front"
@@ -231,7 +231,7 @@
       }
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "REAR ROTOR",
       "position": [
         "rear"
@@ -240,14 +240,6 @@
       "dimensions": {
         "diameter": 160
       }
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Deore M4100 10S / 11-42T"
     },
     {
       "type": "chain",
@@ -259,6 +251,14 @@
       "description": "38T with chain guide"
     },
     {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Deore M4100 10S / 11-42T"
+    },
+    {
       "type": "crankset",
       "type_detail": "CRANK ARMS",
       "description": "170 mm",
@@ -267,25 +267,25 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable battery - frame-integrated key lock system, 36V - 18,6Ah - 670Wh, security: Unique coded key per frame"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "42.0V 3.0A (included)"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "TruckRun",
-      "description": "Truckrun Mid Motor 250W 95Nm, Centrale (mid-drive)"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Integrated colour LED display"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Handlebar-mounted controls"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "TruckRun",
+      "description": "Truckrun Mid Motor 250W 95Nm, Centrale (mid-drive)"
     },
     {
       "type": "fender",
@@ -314,11 +314,11 @@
       "description": "Included"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Reflectors"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"
@@ -326,7 +326,7 @@
       "description": "Position lights, High beam, Low beam"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "integrated LED position lights on rear chaistay"
     },
     {

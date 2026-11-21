@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kbo/2021/ranger",
   "manufacturer": "KBO",
   "model": "Ranger",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/kbo/2021/ranger.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/kbo/2021/ranger_geometry.svg",
+  "geometry_photo": "https://bikebook.bikeindex.org/kbo/2021/ranger-geometry.svg",
   "description": "Meet the KBO Ranger, your gateway to a vibrant, active lifestyle! This e-bike excels with its multifunctionality, effortlessly transitioning from school runs to commuting, from family outdoor rides to cargo hauling... With its optional front basket, spacious rear rack, and adaptability to various rider heights, the Ranger becomes a transport powerhouse with a robust 400 lbs payload capacity. It's powered by a 750W motor and an 840Wh battery, delivering over 60 miles of freedom on a single charge. Jump on the KBO Ranger, savor the thrill of versatility, harness utility, and relish exceptional value.\nA KBO Bike battery life is one of its most significant advantages, rated for 900 complete charge cycles. With an 840Wh battery capacity, you can ride up to 60 miles on a single charge.\nPowered with a continuous 750W brushless geared hub motor, you won't have to worry about carrying heavy loads and climbing steep uphills.\nIt takes just 5 hours to fully charge the battery, reducing the time between rides and keeping up with the quick pace of your riding needs.\n48V LED Headlight\nTo turn on the light, press and hold the \"UP\" button for 3 seconds. This function makes cycling at night safer and allows vehicles to notice you.\nIntegrated Brake Rear Light\nThe rear light is an integrated LED light that is powered by the battery pack. When you apply the brakes during a ride, the rear brake light illuminates immediately.\nThe Shimano 7-speed Derailleur\nIt's designed for your riding experience and allows you to change the gears for adapting to different terrains on-demand.\nMechanical Disc Brakes\nThe front and rear 180 mm disc rotors give sufficient braking force even in the roughest of conditions.\nExtra-large, Adaptable Rear Rack\nThe sturdy aluminum rear rack can support loads of up to 120 pounds. You can take a ride with your loved ones, transport your children from school, or transfer some heavy equipment.\nErgonomic Half Twist Throttle\nWhen tired of pedaling, take a break and cruise. Gently twist the throttle on your right to accelerate.\nAdjustable Saddle\nThis bike seat is a durable and comfortable saddle that decreases the impact of road bumps. You may adjust your posture by moving the saddle up and down as well as back and forth.\n20\"*3.0\" CST Tires\nTo prevent punctures, the tires are manufactured with high-quality materials that resist punctures caused by sharp objects. Wider than typical commuter tires, it provides a more stable and smooth ride on your commute.\nIntelligent Installation Points\nFitted with an intelligent mounting bracket that can support up to 50 pounds. You can load it in any way you choose.\nLCD Backlight Display\nThe display provides you with a range of information to help you keep track of your riding conditions. A charge indicator, a speedometer, an odometer, a trip odometer, a pedal assist level, and more features.\nFull Fenders\nFenders on both the front and rear are complete with all of the necessary hardware. They're incredibly resilient and keep you dry and clean from water and mud.\nCenter Stand\nBuilt with rust-resistant, sturdy, and durable aluminum alloy. (A minority may not include rubber pads on the stand, slightly differing from the picture.)",
   "first_year": 2021,
   "years": {
@@ -76,8 +76,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -85,7 +85,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -95,7 +95,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
       "battery": {
@@ -113,7 +113,7 @@
           "range_claimed": 97,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -122,7 +122,7 @@
           "max_speed": 32,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -189,20 +189,20 @@
       "description": "Shimano 7 speed derailleur"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 17.5Ah Lithium-ion battery with LG cells"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "3.0 Amp Quick charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Sustained 750W brushless geared motor"
+      "type": "ebike-displayremote",
+      "description": "LCD backlight display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD backlight display"
+      "type": "ebike-motor",
+      "description": "Sustained 750W brushless geared motor"
     },
     {
       "type": "fender",
@@ -222,14 +222,14 @@
       "description": "Heavy-duty aluminum"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
       "description": "Integrated brake tail-light"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],

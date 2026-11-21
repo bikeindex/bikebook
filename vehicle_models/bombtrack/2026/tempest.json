@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/bombtrack/2026/tempest",
   "manufacturer": "Bombtrack",
   "model_group": "Tempest",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "atb_gravel",
+  "primary_activity": "atb-gravel",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/bombtrack/2026/tempest.jpg",
   "description": "The Tempest blends the lively comfort of a steel frame with modern performance. Its carbon fork ensures precise steering and vibration damping, while the Seido Sinus wheelset and tubeless ready Kenda 4titude tires enhance speed and grip. Equipped with a Shimano 105 2 x 12 hydraulic groupset and Seido Tau disc hubs, it’s built for efficiency, control, and all - day comfort. Whether you're chasing speed, enjoying a weekend escape, or exploring new routes, this is a road bike that delivers a smooth, confident, and rewarding ride - no matter the journey ahead.",
@@ -70,7 +70,8 @@
     "seatpost_clamp_diameter": 29.8,
     "front_derailleur_mount": "28.6mm clamp",
     "derailleur_hanger": "BT-DH-008",
-    "max_chainring": 53
+    "max_chainring": 53,
+    "en_17406": 1
   },
   "wheels": [
     {
@@ -101,8 +102,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "12_rear"
+    "2-front",
+    "12-rear"
   ],
   "gearing": {
     "front": [
@@ -121,7 +122,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -204,7 +205,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Through axles",
       "description": "12 x 100 mm / 12 x 142 mm",
       "dimensions": {
@@ -212,7 +213,7 @@
       }
     },
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Front through axle",
       "position": [
         "front"
@@ -224,7 +225,7 @@
       }
     },
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Rear through axle",
       "position": [
         "rear"
@@ -236,7 +237,7 @@
       }
     },
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Through axle front",
       "position": [
         "front"
@@ -244,7 +245,7 @@
       "description": "BT-TA-F-601"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Seido 85.5 mm T47 internal sealed BB for 24 mm spindle"
     },
     {
@@ -265,12 +266,12 @@
       "description": "10 mm"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano 105 ST-R7120 STI hydraulic"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -281,22 +282,6 @@
       "dimensions": {
         "diameter": 160
       }
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 105 CS-HG70012 12-speed, 11 - 36 T"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Cassette body",
-      "position": [
-        "rear"
-      ],
-      "description": "BT-CB-006"
     },
     {
       "type": "chain",
@@ -312,6 +297,22 @@
       "type": "chainrings",
       "type_detail": "Chainring offset",
       "description": "0 mm"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 105 CS-HG70012 12-speed, 11 - 36 T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Cassette body",
+      "position": [
+        "rear"
+      ],
+      "description": "BT-CB-006"
     },
     {
       "type": "crankset",
@@ -361,7 +362,7 @@
       "description": "23.6 mm"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bar Tape",
       "manufacturer": "Bombtrack",
       "description": "Bombtrack Command bar tape"
@@ -493,7 +494,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat clamp",
       "manufacturer": "Bombtrack",
       "description": "Bombtrack Prime 29.8 mm",
@@ -556,11 +557,6 @@
         "width": 32,
         "diameter": 622
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "ASTM riding condition",
-      "description": "1"
     },
     {
       "type": "unknown",

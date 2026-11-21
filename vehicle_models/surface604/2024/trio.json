@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/surface604/2024/trio",
   "manufacturer": "Surface604",
   "model": "Trio",
   "model_configuration": "complete",
   "type": "tricycle",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -56,8 +56,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "rear": [
@@ -72,7 +72,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -84,7 +84,7 @@
     {
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "sensor_cadence": true,
       "battery": {
         "capacity": 960,
@@ -104,14 +104,14 @@
           "max_speed": 21,
           "range_claimed": 105,
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         },
         {
@@ -119,7 +119,7 @@
           "availability": "app_update",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         }
       ]
@@ -176,7 +176,7 @@
       "description": "Front (removable) basket with metal mesh bottom - for extra storage"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "BBS02 Mid Drive 48v"
     },
     {
@@ -188,7 +188,7 @@
       "description": "Hydraulic Brakes Tektro Auriga Twin HD-T525; with Parking Lock, E-Trike Specific"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -200,17 +200,17 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC 9-Speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano Altus 7-Speed 12-28T Cassette"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC 9-Speed"
     },
     {
       "type": "crankset",
@@ -222,26 +222,26 @@
       "description": "Shimano Altus 7-Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "e-bike-wiring-harness",
+      "description": "30Ah, can handle up to 120C current"
+    },
+    {
+      "type": "ebike-battery",
       "description": "Included: 48V 20Ah / 960Wh; Samsung lithium-ion 21700 cells"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "High Torque 500W (Peaks At 750W) Fat Bike Specific Bafang MID DRIVE motor; Mid Drive position adds to the Trikes' stability"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Surface604",
       "description": "SURFACE604 Designed 12 MOS 48V 500W 25Ah, Smart Controller"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Surface604",
       "description": "SURFACE604 Color LCD Display with USB Jack; Bigger display: 3.5\""
     },
     {
-      "type": "e_vehicle_wiring_harness",
-      "description": "30Ah, can handle up to 120C current"
+      "type": "ebike-motor",
+      "description": "High Torque 500W (Peaks At 750W) Fat Bike Specific Bafang MID DRIVE motor; Mid Drive position adds to the Trikes' stability"
     },
     {
       "type": "fork",
@@ -268,7 +268,7 @@
       "description": "1-Piece Forged CNC with 2 Sealed Bearings, Cro-Mo Axle and Alloy QR"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "BÜCHEL \"SHINY 120\" LED headlight with 120 lumens; Pre-Wired, Front and Rear Stop Light"
     },
     {

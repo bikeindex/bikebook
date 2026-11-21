@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/reid/2021/sphinx",
   "manufacturer": "Reid",
   "model": "Sphinx",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/reid/2021/sphinx.png",
   "description": "Our first Full Suspension eBike comes fully loaded with everything you could need for a gnarly day out.\nIt’s far from our first rodeo though. We’ve packed the Sphinx with power and performance. To handle the downhills there’s 130mm of bump absorbing travel at both ends, you’ll be smooth sailing all the way down the black runs. Thanks to the high torque 110nm Ananda mid drive motor there’s no waiting for the uplift either, just pedal back up!\nWith a 15ah battery and clear LCD display you can keep rolling all day. More runs = More fun!\nTo keep you planted and gripped to those berms the Sphinx has 34mm stanchion SR Suntour oil damped forks front and a DNM AO-38RC air sprung oil damped rear shock to keep things under control. Both have a lockout function to stiffen up the suspension when not needed. You can even ride to the trails!\nControl is everything at speed, and to make sure the Sphinx handles as well as it looks we have installed 760mm bars, ergonomic grips, Shimano m200 hydraulic disc brakes, and 2.5” Maxxis Rekon tyres. It sticks as well as it shifts! Speaking of shifting…Shimano Deore 10 speed shifters and clutch mech ensure you never miss a gear. With a 34t no drop front chainring ring paired to an 11-42t cassette you have all the range you need for the ups and downs. Take our word for it, the Sphinx is monumental fun.\nPlease make sure to familiarise yourself with eBike and eScooter safety information before charging or using your new Reid. You can view and download user manuals and safety instructions here.",
@@ -76,8 +76,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "10_rear"
+    "1-front",
+    "10-rear"
   ],
   "gearing": {
     "rear": [
@@ -92,7 +92,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -105,7 +105,7 @@
       "drive_wheel": "rear",
       "manufacturer": "Ananda",
       "model": "M100",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "battery": {
         "capacity": 540,
         "voltage": 36
@@ -160,12 +160,12 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell",
       "description": "Included"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed bearing"
     },
     {
@@ -178,22 +178,22 @@
       "description": "Shimano MT200 180mm rotors"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano MT200"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Deore CS-M4100 10 speed (11-42T)"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z10"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Deore CS-M4100 10 speed (11-42T)"
     },
     {
       "type": "derailleur",
@@ -204,18 +204,18 @@
       "description": "Shimano RD-M4120 Deore 10 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V 15AH"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Ananda",
-      "description": "Ananda M100 mid-drive"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Ananda",
       "description": "Ananda D10 LCD"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Ananda",
+      "description": "Ananda M100 mid-drive"
     },
     {
       "type": "fork",
@@ -226,7 +226,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "ergo rubber"
     },
@@ -247,7 +247,7 @@
       "description": "36H thru axle 6 bolt disc"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Reflectors",
       "description": "Included"
     },
@@ -256,7 +256,7 @@
       "description": "Alloy platform with 9/16\" steel axle"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Rear Shock",
       "position": [
         "rear"

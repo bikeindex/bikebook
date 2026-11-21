@@ -1,0 +1,324 @@
+{
+  "schema_version": "2.0.0",
+  "id": "m/blix/2026/sol-x",
+  "manufacturer": "Blix",
+  "model": "Sol X",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal-assist",
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/blix/2026/sol-x.png",
+  "description": "The Sol X is a smart eBike with automatic gear shifting, intelligent lighting, and app connectivity for a seamless ride. With a 70-mile range and advanced safety features, it combines performance, comfort and cruising.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 189900,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Slate Gray",
+          "colors": [
+            "silver"
+          ],
+          "variants": [
+            {
+              "sku": "01-0016-007-018",
+              "gtin": "769947294346",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Nü Cream",
+          "colors": [
+            "white"
+          ],
+          "variants": [
+            {
+              "sku": "01-0016-007-016",
+              "gtin": "769947294339",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Sky Blue",
+          "colors": [
+            "blue"
+          ],
+          "variants": [
+            {
+              "sku": "01-0016-007-005",
+              "gtin": "769947294315",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "Seafoam",
+          "colors": [
+            "teal"
+          ],
+          "variants": [
+            {
+              "sku": "01-0016-007-006",
+              "gtin": "769947294322",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://blixbike.com/products/sol-x-cruiser-ebike",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "aluminum",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik"
+      }
+    ],
+    "seatpost_diameter": 27.2
+  },
+  "wheels": [
+    {
+      "bsd": 559,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 61
+    }
+  ],
+  "drivetrain": [
+    "1-front",
+    "8-rear"
+  ],
+  "groupset": {
+    "manufacturer": "MicroShift",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc-hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "rear",
+      "kind": "hub-drive",
+      "sensor_torque": "bottom_bracket_spindle",
+      "battery": {
+        "capacity": 614,
+        "voltage": 48
+      },
+      "rated_power": 750,
+      "max_torque": 70,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 113,
+          "levels": 3,
+          "e_vehicle_classifications": [
+            "evc/us/class-2"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "e_vehicle_classifications": [
+            "evc/us/class-2"
+          ]
+        },
+        {
+          "mode": "assist",
+          "availability": "app_update",
+          "max_speed": 45,
+          "e_vehicle_classifications": [
+            "evc/us/class-3"
+          ]
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 144
+    },
+    {
+      "load": "cargo",
+      "weight": 27.22
+    },
+    {
+      "load": "payload",
+      "weight": 181
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "reach": 395,
+        "top_tube_effective": 660,
+        "seat_tube_ct": 454,
+        "head_angle": 65,
+        "seat_angle": 66,
+        "head_tube": 180,
+        "chainstay": 598,
+        "seat_height_min": 810,
+        "seat_height_max": 1020,
+        "total_weight": 28.1,
+        "rider_height_min": 1549,
+        "rider_height_max": 1880,
+        "extra_measurements": {
+          "handlebar_height_max": 1210,
+          "handlebar_height_min": 1190,
+          "step_over_height": 433
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Hydraulic Disc, 180mm Rotors"
+    },
+    {
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC 8spd"
+    },
+    {
+      "type": "derailleur",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "MicroShift",
+      "description": "Microshift 8-speed"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "614.4Wh (48V)"
+    },
+    {
+      "type": "ebike-charger",
+      "description": "2A, AC 120V - 240V"
+    },
+    {
+      "type": "ebike-displayremote",
+      "description": "Color LCD"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "Rear Hub, Geared, 750W, 70Nm Torque"
+    },
+    {
+      "type": "fender",
+      "description": "Included, Plastic, PVC"
+    },
+    {
+      "type": "fork",
+      "description": "Steel"
+    },
+    {
+      "type": "gripstape",
+      "type_detail": "Grip",
+      "description": "Ergonomic, Rubber"
+    },
+    {
+      "type": "handlebar",
+      "description": "660mm Wide, 25.4mm Clamp",
+      "dimensions": {
+        "width": 660,
+        "diameter": 25.4
+      }
+    },
+    {
+      "type": "headset",
+      "description": "1 1/8\" Threadless"
+    },
+    {
+      "type": "hub",
+      "position": [
+        "rear"
+      ],
+      "description": "13-32T"
+    },
+    {
+      "type": "light",
+      "description": "Front: Integrated, Low-beam 70 lux, High-beam 120 lux; Rear: Integrated, Turn Signal, Break Light"
+    },
+    {
+      "type": "rack",
+      "type_detail": "Rear Rack Payload",
+      "position": [
+        "rear"
+      ],
+      "description": "60 lbs"
+    },
+    {
+      "type": "rack",
+      "position": [
+        "rear"
+      ],
+      "description": "Included, MIK compatible"
+    },
+    {
+      "type": "saddle",
+      "description": "Comfort Padded"
+    },
+    {
+      "type": "seatpost",
+      "description": "27.2mm x 350mm, Alloy",
+      "dimensions": {
+        "length": 350,
+        "diameter": 27.2
+      }
+    },
+    {
+      "type": "shifter",
+      "description": "Electric, Auto Function, 8-speed"
+    },
+    {
+      "type": "stem",
+      "description": "Easy Adjust"
+    },
+    {
+      "type": "throttle"
+    },
+    {
+      "type": "tire",
+      "type_detail": "Wheel & Tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "26” x 2.4”, Puncture Resistant, Reflective Strip",
+      "dimensions": {
+        "width": 60.96,
+        "diameter": 559
+      }
+    }
+  ]
+}

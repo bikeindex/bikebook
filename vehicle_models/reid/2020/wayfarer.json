@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/reid/2020/wayfarer",
   "manufacturer": "Reid",
   "model": "Wayfarer",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -68,8 +68,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -113,7 +113,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "VP sealed bearing"
     },
     {
@@ -126,22 +126,22 @@
       "description": "Tektro dual-pivot caliper brakes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro alloy"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "18t Freewheel / 18t Fixed Sprocket"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC HL710 gold half-link"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "18t Freewheel / 18t Fixed Sprocket"
     },
     {
       "type": "crankset",
@@ -153,7 +153,7 @@
       "description": "Hi-ten steel"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Velo",
       "description": "Velo leather style in brown"

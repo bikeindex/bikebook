@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/freedare/2022/eden",
   "manufacturer": "Freedare",
   "model": "Eden",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -24,7 +24,7 @@
           "colors": [
             "pink"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/freedare/2022/eden_gradient_pink.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/freedare/2022/eden-gradient-pink.jpg",
           "variants": [
             {
               "sku": "EDEN-GRADIENTPINK-MD-2403",
@@ -37,7 +37,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/freedare/2022/eden_red.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/freedare/2022/eden-red.jpg",
           "variants": [
             {
               "sku": "EDEN-RED-MD-2403",
@@ -82,8 +82,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -96,7 +96,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -106,17 +106,19 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "water_rating": "IPX5",
       "battery": {
         "capacity": 960,
         "chemistry": "li-ion",
-        "cells": "Samsung 21700"
+        "cells": "Samsung 21700",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "peak_power": 2000,
@@ -127,7 +129,7 @@
           "availability": "stock",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -135,7 +137,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -167,20 +169,20 @@
       "description": "SHIMANO 7-speed gear shift system"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "960wh/20ah, Samsung 21700 battery cells"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V 3A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W BAFANG Geared Hub Motor, Rated 750W, Peak 1000W, rated torque 20N.M, maximum torque 80N.M"
+      "type": "ebike-displayremote",
+      "description": "TFT Color screen with USB interface (with speedometer, odometer, pedal assist level, etc.)"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "TFT Color screen with USB interface (with speedometer, odometer, pedal assist level, etc.)"
+      "type": "ebike-motor",
+      "description": "750W BAFANG Geared Hub Motor, Rated 750W, Peak 1000W, rated torque 20N.M, maximum torque 80N.M"
     },
     {
       "type": "fork",
@@ -191,7 +193,7 @@
       "description": "Side kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],

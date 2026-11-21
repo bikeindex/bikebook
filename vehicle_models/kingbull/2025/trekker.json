@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kingbull/2025/trekker",
   "manufacturer": "KingBull",
   "model": "Trekker",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -68,8 +68,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -87,7 +87,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -99,17 +99,17 @@
     {
       "manufacturer": "Bafang",
       "model": "G062",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certifications": [
-        "UL 2580"
-      ],
       "water_rating": "IPX6",
       "battery": {
         "capacity": 960,
         "voltage": 48,
         "chemistry": "li-ion",
-        "cells": "SAMSUNG INR21700-50G"
+        "cells": "SAMSUNG INR21700-50G",
+        "certifications": [
+          "UL 2580"
+        ]
       },
       "rated_power": 750,
       "peak_power": 1400,
@@ -122,7 +122,7 @@
           "range_claimed": 129,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -131,7 +131,7 @@
           "max_speed": 32,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -169,7 +169,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "description": "48V LED headlight, horn ; 48V tail light, brake highlight"
     },
     {
@@ -189,14 +189,6 @@
       "description": "Tektro HD-E3940, hydraulic brakes, power-off brake lever, 4 pistons, 180mm*2.3mm disc, 2000mm oil pipe"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "DNP",
-      "description": "DNP LY-3008CHN, 13-32T, 8 speed"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z8, 114L, 8 speed"
@@ -204,6 +196,14 @@
     {
       "type": "chainrings",
       "description": "42T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "DNP",
+      "description": "DNP LY-3008CHN, 13-32T, 8 speed"
     },
     {
       "type": "crankset",
@@ -221,26 +221,26 @@
       "description": "SHIMANO RD-M310, 8-speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "e-bike-wiring-harness",
+      "manufacturer": "KingBull",
+      "description": "Custom Kingbull wiring harness"
+    },
+    {
+      "type": "ebike-battery",
       "description": "48V/960Wh(20 Ah) Lithium Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "US standard 3.0A smart charger, UL-certified"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bafang",
-      "description": "BAFANG G062 750W brushless hub motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "4.0\" full color multi-function display display"
     },
     {
-      "type": "e_vehicle_wiring_harness",
-      "manufacturer": "KingBull",
-      "description": "Custom Kingbull wiring harness"
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "BAFANG G062 750W brushless hub motor"
     },
     {
       "type": "fender",
@@ -254,7 +254,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "HT420 rubber, length 120mm",
       "dimensions": {
@@ -280,7 +280,7 @@
       "description": "Adjustable aluminum alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "48V LED headlight, horn ; 48V tail light, brake highlight"
     },
     {

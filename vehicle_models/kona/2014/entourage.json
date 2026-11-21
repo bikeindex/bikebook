@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2014/entourage",
   "manufacturer": "Kona",
   "model": "Entourage",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "mtb_freeride",
+  "primary_activity": "mtb-freeride",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/kona/2014/entourage.jpg",
   "description": "Kona DH 7005 Aluminum 170mm Travel",
@@ -64,8 +64,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -83,14 +83,14 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
       "rotor_diameter": 200
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -99,7 +99,12 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bashguardchain-guide",
+      "manufacturer": "The Hive",
+      "description": "The Hive FreeChucker"
+    },
+    {
+      "type": "bottom-bracket",
       "manufacturer": "TruVativ",
       "description": "Truvativ Howitzer 83mm"
     },
@@ -113,12 +118,12 @@
       "description": "Avid Code R"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Avid",
       "description": "Avid Code R"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front"
       ],
@@ -129,7 +134,7 @@
       }
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "rear"
       ],
@@ -140,26 +145,21 @@
       }
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM PG950 11-32t 9 spd"
-    },
-    {
       "type": "chain",
       "manufacturer": "Shimano",
       "description": "Shimano HG53"
     },
     {
-      "type": "chain_guide",
-      "manufacturer": "The Hive",
-      "description": "The Hive FreeChucker"
-    },
-    {
       "type": "chainrings",
       "description": "36t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM PG950 11-32t 9 spd"
     },
     {
       "type": "crankset",
@@ -180,7 +180,7 @@
       "description": "RockShox Domain R CL 170mm 20mm DO"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Kona",
       "description": "Kona S-LOG"
     },
@@ -220,7 +220,7 @@
       "description": "Kona Wah Wah"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],
@@ -243,7 +243,7 @@
       "description": "Kona DH"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "manufacturer": "Kona",
       "description": "Kona Clamp"
     },

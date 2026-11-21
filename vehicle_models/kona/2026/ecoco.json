@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2026/ecoco",
   "manufacturer": "Kona",
   "model": "Ecoco",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -80,8 +80,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -99,7 +99,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -109,12 +109,12 @@
   ],
   "motors": [
     {
-      "id": "c/shimano/2024/ep500_du_ep500",
+      "id": "c/shimano/2024/ep500-du-ep500",
       "drive_wheel": "rear",
       "manufacturer": "Shimano",
       "model": "DU-EP500",
       "model_group": "EP500",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
       "battery": {
@@ -129,7 +129,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -212,12 +212,12 @@
       "description": "Shimano MT401"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano MT410"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -229,14 +229,6 @@
       }
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano CUES LG300 11-36t 9spd"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC eGlide"
@@ -245,6 +237,14 @@
       "type": "chainrings",
       "manufacturer": "Shimano",
       "description": "Shimano 38t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano CUES LG300 11-36t 9spd"
     },
     {
       "type": "crankset",
@@ -261,17 +261,17 @@
       "description": "Shimano RDU4010"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Shimano",
       "description": "Shimano 504Wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "manufacturer": "Shimano",
       "description": "Shimano 1.8A (100-240V)"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Shimano",
       "description": "Shimano SC-EN600"
     },
@@ -285,7 +285,7 @@
       "description": "Kona 6061 Aluminum"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "manufacturer": "Kona",
       "description": "Kona Key Grip"
@@ -332,7 +332,7 @@
       "description": "Kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front",
         "rear"
@@ -362,7 +362,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "SEAT CLAMP",
       "manufacturer": "Kona",
       "description": "Kona Clamp 31.8mm",

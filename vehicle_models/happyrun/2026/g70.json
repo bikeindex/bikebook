@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/happyrun/2026/g70",
   "manufacturer": "HappyRun",
   "model_group": "G70",
   "model": "G70",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
@@ -39,7 +39,7 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/happyrun/2026/g70_green.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/happyrun/2026/g70-green.jpg",
           "variants": [
             {
               "sku": "G70-gr-ul",
@@ -71,15 +71,15 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "electronic": false
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -109,7 +109,7 @@
           "range_claimed": 137,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -117,7 +117,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -162,7 +162,7 @@
       "description": "Front and Rear Hydraulic"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -182,30 +182,30 @@
       "description": "7 Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 13Ah (Top) + 13Ah (Bottom) Lithium Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "2A Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Large LED Display + NFC Unlocking"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "750W"
+    },
+    {
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "160 Lumens LED Light"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Taillight",
       "position": [
         "rear"
@@ -213,7 +213,7 @@
       "description": "Braking Indicator, Rear Light Steady/Flash"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Turn Signal",
       "description": "Front and Rear Sequential Turn Signal Lights"
     },
@@ -226,7 +226,7 @@
       "description": "50 lbs"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],

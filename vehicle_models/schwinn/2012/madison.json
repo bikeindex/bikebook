@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/schwinn/2012/madison",
   "manufacturer": "Schwinn",
   "model": "Madison",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -86,8 +86,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -108,7 +108,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Cartridge"
     },
     {
@@ -120,21 +120,21 @@
       "description": "Alloy Caliper"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro Alloy"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "18t cog, 18t freewheel"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z410"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "18t cog, 18t freewheel"
     },
     {
       "type": "crankset",
@@ -146,7 +146,7 @@
       "description": "Schwinn Chromoly Track, 1\""
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Schwinn",
       "description": "Schwinn Phantom Grips"
     },

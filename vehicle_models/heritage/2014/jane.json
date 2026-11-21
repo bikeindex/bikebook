@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/heritage/2014/jane",
   "manufacturer": "Heritage",
   "model": "Jane",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -39,8 +39,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "11_internal_rear"
+    "1-front",
+    "11-internal-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -58,6 +58,11 @@
   ],
   "components": [
     {
+      "type": "bashguardchain-guide",
+      "manufacturer": "Velo Orange",
+      "description": "Velo-Orange handmade chaincase"
+    },
+    {
       "type": "basket",
       "description": "Painted Front basket"
     },
@@ -71,11 +76,6 @@
       "description": "Tektro caliper brakes"
     },
     {
-      "type": "chain_guide",
-      "manufacturer": "Velo Orange",
-      "description": "Velo-Orange handmade chaincase"
-    },
-    {
       "type": "crankset",
       "manufacturer": "FSA",
       "description": "FSA Gimondi crankset"
@@ -86,7 +86,7 @@
       "description": "Velo-Orange fenders"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips Tape",
       "description": "Natural Cork grips"
     },

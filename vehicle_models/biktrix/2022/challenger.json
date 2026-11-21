@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/biktrix/2022/challenger",
   "manufacturer": "Biktrix",
   "model_group": "Challenger",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -24,7 +24,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/biktrix/2022/challenger_white.png",
+          "stock_photo": "https://bikebook.bikeindex.org/biktrix/2022/challenger-white.png",
           "variants": [
             {
               "sku": "Biktrix-Challenger-White",
@@ -50,7 +50,7 @@
           "colors": [
             "brown"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/biktrix/2022/challenger_bronze.png",
+          "stock_photo": "https://bikebook.bikeindex.org/biktrix/2022/challenger-bronze.png",
           "variants": [
             {
               "sku": "Biktrix-Challenger-Bronze",
@@ -63,7 +63,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/biktrix/2022/challenger_red.png",
+          "stock_photo": "https://bikebook.bikeindex.org/biktrix/2022/challenger-red.png",
           "variants": [
             {
               "sku": "Biktrix-Challenger-Red",
@@ -76,7 +76,7 @@
           "colors": [
             "yellow"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/biktrix/2022/challenger_yellow.png",
+          "stock_photo": "https://bikebook.bikeindex.org/biktrix/2022/challenger-yellow.png",
           "variants": [
             {
               "sku": "Biktrix-Challenger-Yellow",
@@ -127,8 +127,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -146,7 +146,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -156,7 +156,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "battery": {
         "capacity": 696
@@ -168,7 +168,7 @@
           "availability": "stock",
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/pedal_moped"
+            "evc/pedal-moped"
           ]
         },
         {
@@ -176,7 +176,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/pedal_moped"
+            "evc/pedal-moped"
           ]
         }
       ]
@@ -213,7 +213,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Front axle",
       "position": [
         "front"
@@ -221,7 +221,7 @@
       "description": "Bolt-on"
     },
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Rear axle",
       "position": [
         "rear"
@@ -229,7 +229,7 @@
       "description": "Bolt-on"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "110mm square taper"
     },
     {
@@ -241,21 +241,21 @@
       "description": "Logan hydraulic disc brakes w/180mm rotors"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Logan adjustable w/ integrated brake cutoffs"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 14-28t"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "Kmc z7"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 14-28t"
     },
     {
       "type": "crankset",
@@ -274,16 +274,16 @@
       "description": "Shimano altus 7 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery sizes: 48v14.5ah removable"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750w geared hub motor"
+      "type": "ebike-displayremote",
+      "description": "Kd51c backlit lcd"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Kd51c backlit lcd"
+      "type": "ebike-motor",
+      "description": "750w geared hub motor"
     },
     {
       "type": "fender",
@@ -301,7 +301,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Leather slide-on"
     },
@@ -336,11 +336,11 @@
       "description": "kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Headlight and taillight"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],

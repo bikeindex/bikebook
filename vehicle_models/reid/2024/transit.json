@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/reid/2024/transit",
   "manufacturer": "Reid",
   "model_group": "Transit",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -51,7 +51,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/reid/2024/transit_red.png",
+          "stock_photo": "https://bikebook.bikeindex.org/reid/2024/transit-red.png",
           "variants": [
             {
               "sku": "1248325045",
@@ -116,8 +116,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "7_rear"
+    "2-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -136,7 +136,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -220,7 +220,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed square taper"
     },
     {
@@ -232,18 +232,18 @@
       "description": "Alloy V-brakes"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC 7 speed chain"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Cassette/Freewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano 7 speed freewheel 14-34T"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC 7 speed chain"
     },
     {
       "type": "crankset",
@@ -274,7 +274,7 @@
       "description": "Steel rigid fork"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Rubber grips"
     },
@@ -319,7 +319,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "Alloy clamp 31.8mm",
       "dimensions": {
         "diameter": 31.8

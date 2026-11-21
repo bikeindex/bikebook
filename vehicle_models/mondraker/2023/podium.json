@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/mondraker/2023/podium",
   "manufacturer": "Mondraker",
   "model_group": "Podium",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "mtb_cross_country",
+  "primary_activity": "mtb-cross-country",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/mondraker/2023/podium.jpg",
   "first_year": 2023,
@@ -40,7 +40,7 @@
     "2023": {}
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "bottom_bracket": {
       "shell": "BSA",
@@ -81,8 +81,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "12_rear"
+    "1-front",
+    "12-rear"
   ],
   "gearing": {
     "front": [
@@ -100,7 +100,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -193,7 +193,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "SRAM",
       "description": "Sram DUB BSA, sealed bearings, 73mm"
     },
@@ -207,17 +207,9 @@
       "description": "Sram Level TL, 2 piece caliper, Centerline 160mm IS 6 bolts one-piece rotor, steel-backed organic pad"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "Sram Level TL, Direct Link actuation, tooled reach adjust, lever pivot bushings"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "Sram XG-1275, 10-50T, 12s"
     },
     {
       "type": "chain",
@@ -228,6 +220,14 @@
       "type": "chainrings",
       "type_detail": "Rings",
       "description": "34T, CNC-machined alloy, X-SYNC 2"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "Sram XG-1275, 10-50T, 12s"
     },
     {
       "type": "crankset",
@@ -254,7 +254,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "ONOFF Twin, 1lock-on, 135mm",
       "dimensions": {

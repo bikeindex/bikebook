@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fuji/2010/classic",
   "manufacturer": "Fuji",
   "model_group": "Classic",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "drop_bar",
@@ -54,8 +54,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -75,7 +75,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed cartridge bearing ST"
     },
     {
@@ -87,21 +87,21 @@
       "description": "ProMax RC-453 Alloy Rear only"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Promax",
       "description": "ProMax 249A Top Mount Alloy"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "15T Fixed w/lockring"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z-410"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "15T Fixed w/lockring"
     },
     {
       "type": "crankset",
@@ -114,7 +114,7 @@
       "description": "Fuji 1 1/8\" Custom Triple Butted Cro-Moly, crown drilled for front brake"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Fuji",
       "description": "Fuji custom cork wrap"
     },
@@ -167,7 +167,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "manufacturer": "Fuji",
       "description": "Fuji Ultralite alloy, 28.6mm, Laser Etched",
       "dimensions": {

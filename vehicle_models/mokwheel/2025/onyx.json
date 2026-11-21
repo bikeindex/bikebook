@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/mokwheel/2025/onyx",
   "manufacturer": "Mokwheel",
   "model_group": "Onyx",
@@ -7,13 +7,13 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/mokwheel/2025/onyx.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/mokwheel/2025/onyx_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/mokwheel/2025/onyx-geometry.jpg",
   "description": "The Onyx is a 1300W mid-drive fat tire e-bike, equipped with full suspension and hydraulic brakes for a smooth and comfortable ride. With a range of 80 miles, it’s perfect for off-road adventures. The solar charging feature ensures you stay powered up throughout your journey.",
   "first_year": 2025,
   "years": {
@@ -86,8 +86,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "10_rear"
+    "1-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -101,7 +101,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -111,7 +111,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX6",
@@ -130,7 +130,7 @@
           "range_claimed": 129,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -139,7 +139,7 @@
           "max_speed": 32,
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -191,7 +191,7 @@
       "description": "TEKTRO HD-E3940 4-Piston Hydraulic Brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum Alloy, with power cutoff"
     },
     {
@@ -213,24 +213,24 @@
       "description": "10-speed Shimano"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 19.6Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 3.0A 100-240V"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "HD Stem Display"
+    },
+    {
+      "type": "ebike-motor",
       "description": "750W(Peak 1300W),210Nm+"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Mid-drive Motor Rated Power: 750W Continuous Power: 1000W Peak Power: 1300W Torque: 210Nm+"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "HD Stem Display"
     },
     {
       "type": "fork",
@@ -266,7 +266,7 @@
       "description": "Sturdy Aluminum Alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
@@ -277,7 +277,7 @@
       "description": "Anti-Slip"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Shock",
       "position": [
         "rear"

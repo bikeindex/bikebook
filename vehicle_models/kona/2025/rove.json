@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2025/rove",
   "manufacturer": "Kona",
   "model_group": "Rove",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "atb_gravel",
+  "primary_activity": "atb-gravel",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/kona/2025/rove.jpg",
   "description": "The Rove has become the go-to bike for people all over the world that are itching to just... go! It’s spec’d just right, is easy on the eyes, the Rove makes quick work of the commute, gravel trail, or the after-work fitness lap on your local hill. The Rove is the elusive 650x47c steel bike that you can afford. It’s at home in an alley cat race, on the commute, as a messenger rig, or as your only bike. It was cool before cool was cool. It is a bike that wants to ride anywhere YOU want to ride.",
@@ -89,8 +89,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "10_rear"
+    "1-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -108,7 +108,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -240,7 +240,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "B/B",
       "description": "Prowheel BB68+"
     },
@@ -255,12 +255,12 @@
       "description": "Tektro MDC550 Mechanical"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "MicroShift",
       "description": "Microshift Sword"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -272,14 +272,6 @@
       }
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "MicroShift",
-      "description": "Microshift Advent X 11-48t 10spd"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC X10"
@@ -287,6 +279,14 @@
     {
       "type": "chainrings",
       "description": "40t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "MicroShift",
+      "description": "Microshift Advent X 11-48t 10spd"
     },
     {
       "type": "crankset",
@@ -308,7 +308,7 @@
       "description": "Kona Project Two Cromoly Disc"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Kona",
       "description": "Kona Cork Tape"
@@ -366,7 +366,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Kona",
       "description": "Kona Clamp"

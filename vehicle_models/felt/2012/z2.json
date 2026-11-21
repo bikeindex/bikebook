@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2012/z2",
   "manufacturer": "Felt",
   "model_group": "Z",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_all_road",
+  "primary_activity": "road-all-road",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2012/z2.jpg",
   "first_year": 2012,
@@ -31,7 +31,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "bottom_bracket": {
       "spindle": "24mm"
@@ -59,8 +59,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "10_rear"
+    "2-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -225,13 +225,13 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "manufacturer": "Felt",
       "description": "Felt bubble-tech \"\"F Wing\"\" icon end plugs"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Shimano",
       "description": "Shimano Hollowtech-II"
     },
@@ -245,23 +245,14 @@
       "description": "Shimano Dura-Ace Super SLR dual pivot w/ cartridge brake pads"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Shimano",
       "description": "Shimano Dura-Ace SLR brake & EW-7972 Di2 derailleur wires & battery"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano Dura-Ace Di2 STI"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 11-25T"
     },
     {
       "type": "chain",
@@ -272,6 +263,15 @@
       "type": "chainrings",
       "type_detail": "Chainwheel",
       "description": "50/34T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 11-25T"
     },
     {
       "type": "crankset",
@@ -295,7 +295,7 @@
       "description": "Shimano Dura-Ace Di2"
     },
     {
-      "type": "electronic_shifting_component",
+      "type": "electronic-shifting-part",
       "description": "Di2 battery & battery charger"
     },
     {
@@ -304,7 +304,7 @@
       "description": "Felt UHC Advanced monocoque fork, carbon fiber steerer tube, crown, blades, & forged aluminum dropouts, 386g"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Devox gel velvet tape w/ Devox 3D logo"
     },
@@ -337,7 +337,7 @@
       "description": "Shimano RS80 forged aluminum loose ball 20H w/ 10 speed HG freehub body w/ Shimano quick release"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Shimano Di2 Charger",
       "description": "Di2 battery & battery charger"
     },
@@ -365,12 +365,12 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "Ø30.6 6061 forged aluminum, Cr-Mo 5mm x 0.8mm bolt, stainless steel nut-bar, 21g"
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "Shimano",
       "description": "Shimano Dura-Ace SLR brake & EW-7972 Di2 derailleur wires & battery"
     },

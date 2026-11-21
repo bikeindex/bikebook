@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fahrbike/2022/cruz",
   "manufacturer": "Fahrbike",
   "model": "Cruz",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -58,8 +58,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -76,7 +76,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -105,7 +105,7 @@
           "range_claimed": 97,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -113,7 +113,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -155,7 +155,7 @@
       "description": "Hydraulic Disc Brakes, 180mm Rotors"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "Free Wheel",
       "position": [
         "rear"
@@ -167,16 +167,16 @@
       "description": "42T Single Guard"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 15Ah Samsung 21700 50E Cell"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W Gear Brushless Motor"
+      "type": "ebike-displayremote",
+      "description": "LCD Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD Display"
+      "type": "ebike-motor",
+      "description": "500W Gear Brushless Motor"
     },
     {
       "type": "fork",
@@ -187,14 +187,14 @@
       "description": "SR Suntour with Lockout"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
       "description": "Integrated Taillight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],

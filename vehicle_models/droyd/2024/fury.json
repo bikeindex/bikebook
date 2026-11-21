@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/droyd/2024/fury",
   "manufacturer": "Droyd",
   "model": "Fury",
   "model_configuration": "complete",
-  "type": "e_atv",
+  "type": "e-atv",
   "propulsion": [
     "throttle"
   ],
-  "primary_activity": "dirt_travel",
+  "primary_activity": "dirt-travel",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/droyd/2024/fury.png",
   "target_riders": [
@@ -140,7 +140,7 @@
   ],
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -152,13 +152,15 @@
       "certifications": [
         "UL 2272",
         "EN 55014-1",
-        "UN 38.3",
         "ANSI/SVIA 1"
       ],
       "battery": {
         "capacity": 288,
         "chemistry": "li-ion",
-        "charging_time": 480
+        "charging_time": 480,
+        "certifications": [
+          "UN 38.3"
+        ]
       },
       "rated_power": 500,
       "operating_modes": [
@@ -168,7 +170,7 @@
           "max_speed": 24,
           "range_claimed": 15,
           "e_vehicle_classifications": [
-            "evc/us/ca/off_highway_motor_vehicle"
+            "evc/us/ca/off-highway-motor-vehicle"
           ]
         }
       ]
@@ -205,7 +207,7 @@
       "description": "Dual disc brakes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Dual hand brakes"
     },
     {
@@ -214,36 +216,36 @@
       "description": "Chain drive, 2WD (2 Wheel Drive)"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36 V 8 Ah Lithium-ion battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Charger model number: YLT-C420200"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Charger input: AC100-240V~ 50/60Hz 1.5A"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Charger output: 42.0V-- 2.0A"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Type of charging indicator: Charger light, (Solid red light = in progress), (Solid green light = charging completed)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Charger manufacturer: Shenzhen Yongletong Electronic Technology Co., Ltd."
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Brushless DC 36 V"
+      "type": "ebike-displayremote",
+      "description": "LED battery level indicator (on right handlebar)"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LED battery level indicator (on right handlebar)"
+      "type": "ebike-motor",
+      "description": "Brushless DC 36 V"
     },
     {
       "type": "throttle",

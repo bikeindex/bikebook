@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/favorite/2025/stormx",
   "manufacturer": "Favorite",
   "model": "StormX",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -60,8 +60,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -77,7 +77,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -86,7 +86,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 917,
         "voltage": 46.8,
@@ -101,14 +101,14 @@
           "max_speed": 32,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -143,16 +143,16 @@
       "description": "LBN LB-893 hydraulic disc with electric cut-off sensor"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z8.3, 8-speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "description": "LTWOO 8-speed, 11-32T"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Z8.3, 8-speed"
     },
     {
       "type": "crankset",
@@ -163,29 +163,29 @@
       "description": "LTWOO RD-V4008-M-2, 8-speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable 46.8V lithium-ion, 19.6Ah (917 Wh)"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery lifecycle: Up to 300 charge cycles or retains >=75% capacity"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Dpower DPLC165V55-M, 110/240V 50/60Hz"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V / 500W Favorite Smart System fat-tire hub motor with temperature sensor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "48V 500W-rated sine-wave controller"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Favorite",
       "description": "Favorite Smart System, built-in color LCD"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "48V / 500W Favorite Smart System fat-tire hub motor with temperature sensor"
     },
     {
       "type": "fender",
@@ -206,17 +206,17 @@
       "description": "Fat-tire hub"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "Y-wrench, 15mm wrench, Allen wrench"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Battery Keys",
       "description": "2 battery keys"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"
@@ -224,14 +224,14 @@
       "description": "1,600-lumen Cree/Osram smart headlight, high/low beam, dusk-to-dawn sensor"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
       "description": "Integrated rear light with brake-light function, controlled by display"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "spoke + F/R reflectors",
       "description": "spoke + F/R reflectors"
     },

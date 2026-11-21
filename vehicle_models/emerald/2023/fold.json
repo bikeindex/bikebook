@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/emerald/2023/fold",
   "manufacturer": "Emerald",
   "model": "Fold",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -53,7 +53,7 @@
     "material": "aluminum",
     "material_detail": "6061 Single-Butted Aluminum",
     "top_tube": "step_through",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "wheels": [
     {
@@ -66,8 +66,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -81,7 +81,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -91,7 +91,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 504,
         "voltage": 48,
@@ -111,7 +111,7 @@
           "range_claimed": 89,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -119,7 +119,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -162,12 +162,12 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell/horn",
       "description": "Integrated horn"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed Cartridge Bearing"
     },
     {
@@ -179,21 +179,21 @@
       "description": "XD-E610, 180 mm Hydraulic disc brakes 2.8mm calipers"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "XD-E610"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 7 speeds"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC 7 speeds"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 7 speeds"
     },
     {
       "type": "crankset",
@@ -208,23 +208,23 @@
       "description": "Shimano TX50-7 7 speeds"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V, 10.5AH(504WH), 18650 Samsung cell; Nominal Voltage: 48V, Nominal: 10.5Ah, Weight (Approx.): 8.6 lb, Cell: Samsung 35E 18650, Dimension (L*W*H): 135*90*45mm"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Input: AC110-240V-2A, Model: KYLC109V55N, Output: DC54 2A, 47-63Hz, 13. 15A 250V"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "YONGLIN Color LCD 5 classes display; LCD, 5 classes of display"
+    },
+    {
+      "type": "ebike-motor",
       "description": "XIONGFENG 500W (Peak750W) Brushless; Motor parameters: 500W hub-motor (750W peak), Speed: 20-25 MPH, Motor Parameters: 48v500W/380R (max.478R), Top Speed: 20 MPH, Maximum Torque: 52.91N.m, Noise Level: ≤ 55dB (measured at 1m axial), Weight: 12.8lbs, Mounting Width: 175mm, Max. Diameter of Wheel: 420mm, Model: CZJB104Y16L175",
       "dimensions": {
         "width": 175
       }
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "YONGLIN Color LCD 5 classes display; LCD, 5 classes of display"
     },
     {
       "type": "fork",
@@ -232,7 +232,7 @@
       "description": "6061 Single-Butted Aluminum Frame / AI 6061, Integrated Fork / Internal Battery"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Leather Grips"
     },
@@ -247,19 +247,19 @@
       "description": "PROMAX GH-825L"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "Toolkit"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "DH004/48vL:300mm"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],

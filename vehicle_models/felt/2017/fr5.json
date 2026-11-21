@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2017/fr5",
   "manufacturer": "Felt",
   "model_group": "FR",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_biking",
+  "primary_activity": "road-biking",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2017/fr5.jpeg",
   "description": "Featuring the same meticulously honed tube shapes and performance-oriented profiles as the other carbon models in the FR Series, the FR5’s tuned chassis provides the optimal balance of stiffness and suppleness. Built with an 11-speed Shimano 105 drivetrain for exceptional functionality, along with a selection of ergono",
@@ -113,7 +113,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "bottom_bracket": {
       "shell": "BB386",
@@ -133,8 +133,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "11_rear"
+    "2-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -315,13 +315,13 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "manufacturer": "Felt",
       "description": "Felt Bubble-Tech \"F Wing\""
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Token",
       "description": "Token For BB386 Frame with Shimano Crankset"
     },
@@ -335,23 +335,14 @@
       "description": "Shimano dual pivot caliper"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Felt",
       "description": "Felt Slick brake and derailleur"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano 105"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 11-speed, 11-28T"
     },
     {
       "type": "chain",
@@ -367,6 +358,15 @@
       "type_detail": "Chainwheel",
       "manufacturer": "Shimano",
       "description": "Shimano 50/34T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 11-speed, 11-28T"
     },
     {
       "type": "crankset",
@@ -395,7 +395,7 @@
       "description": "Felt Race Road UHC Advanced carbon fiber monocoque construction, ControlTaper 1.125\" - 1.5\" carbon fiber steer tube with integrated crown race, crown, blades and dropouts"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bar Tape",
       "manufacturer": "Felt",
       "description": "Felt Gel Tape"
@@ -430,7 +430,7 @@
       "description": "Felt R3, sealed cartridge bearing, 32H, 11-speed"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Assembly Paste",
       "description": "Carbon assembly paste"
     },
@@ -458,11 +458,11 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "6061 Forged Aluminum, Cr-mo 4mm Bolt"
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "Felt",
       "description": "Felt Slick brake and derailleur"
     },

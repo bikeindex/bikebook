@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2017/mtb",
   "manufacturer": "Jetson",
   "model": "MTB",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -37,7 +37,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jetson/2017/mtb_red.png",
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2017/mtb-red.png",
           "variants": [
             {
               "sku": "J2600-RED",
@@ -51,7 +51,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jetson/2017/mtb_white.png",
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2017/mtb-white.png",
           "variants": [
             {
               "sku": "J2600-WHT",
@@ -82,12 +82,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -96,7 +96,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 360,
         "voltage": 36,
@@ -112,7 +112,7 @@
           "range_claimed": 64,
           "max_slope": 15,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -120,7 +120,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -148,7 +148,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell"
     },
     {
@@ -160,20 +160,20 @@
       "description": "Front & rear disc brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 10Ah rechargeable lithium-ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Battery: No"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500 watt hub motor"
+      "type": "ebike-displayremote",
+      "description": "LCD display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD display"
+      "type": "ebike-motor",
+      "description": "500 watt hub motor"
     },
     {
       "type": "kickstand"

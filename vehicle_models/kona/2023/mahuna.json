@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2023/mahuna",
   "manufacturer": "Kona",
   "model": "Mahuna",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/kona/2023/mahuna.jpg",
   "description": "The Mahuna strikes that perfect balance of mountain bike and all-around fun rig. Its 29” wheels easily roll over obstacles and provide a smooth, predictable ride. The fork features 100mm of supple travel and together with the 29” wheels, helps keep bumps in check. You have complete control over stopping with powerful hydraulic disc brakes. An 11-speed drivetrain makes quick work of tough hills ensuring the Mahuna is as fun going up as it is going down.",
@@ -123,8 +123,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "11_rear"
+    "1-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -142,14 +142,14 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
       "rotor_diameter": 180
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -240,7 +240,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "B/B",
       "description": "Feimin or FSA BB7420 73mm"
     },
@@ -254,11 +254,11 @@
       "description": "Alhonga HT472 or Shimano MT201 Hydraulic"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Alhonga HT472 or Shimano MT201 Hydraulic"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front"
       ],
@@ -268,7 +268,7 @@
       }
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "rear"
       ],
@@ -278,14 +278,6 @@
       }
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Deore or Sunrace 11-51t 11spd"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC X11"
@@ -293,6 +285,14 @@
     {
       "type": "chainrings",
       "description": "28t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Deore or Sunrace 11-51t 11spd"
     },
     {
       "type": "crankset",
@@ -317,7 +317,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Kona",
       "description": "Kona Key Grip Slip on"
@@ -379,7 +379,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Kona",
       "description": "Kona QR"

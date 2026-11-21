@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/espin/2022/sport",
   "manufacturer": "Espin",
   "model": "Sport",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -81,8 +81,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -98,7 +98,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -109,7 +109,7 @@
   "motors": [
     {
       "manufacturer": "Espin",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "battery": {
         "capacity": 672,
@@ -129,7 +129,7 @@
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -173,7 +173,7 @@
       "description": "Zoom Dual Piston Hydraulic Disc Brake, Front/Rear w/ 180mm Rotor"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "Gearing Details",
       "description": "S-Ride (8 Speed) 13-32T"
     },
@@ -186,42 +186,42 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Brand: Samsung Cells"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Voltage: 48V"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Amp Hours: 14Ah"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Watt Hours: 672Wh"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Chemistry: Lithium-ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Locking Removable Battery Pack & Fenders"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "manufacturer": "Espin",
+      "description": "Espin Color display"
+    },
+    {
+      "type": "ebike-motor",
       "manufacturer": "Espin",
       "description": "Espin"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Rear Mounted Geared Hub"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "manufacturer": "Espin",
-      "description": "Espin Color display"
     },
     {
       "type": "fork",
@@ -231,7 +231,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Hand Grips",
       "manufacturer": "Velo",
       "description": "Velo"
@@ -244,7 +244,7 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"

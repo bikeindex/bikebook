@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/euy/2022/x6",
   "manufacturer": "Euy",
   "model": "X6",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -38,7 +38,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "suspension": {
     "front": {}
@@ -54,12 +54,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -69,7 +69,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IPX4",
       "battery": {
         "capacity": 480,
@@ -92,7 +92,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -140,11 +140,15 @@
       "description": "Disc Brakes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Grip-style brake lever"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "description": "48T"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
@@ -153,28 +157,24 @@
       "description": "Shimano 7 speed gear shift"
     },
     {
-      "type": "chain",
-      "description": "48T"
-    },
-    {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 10Ah Samsung battery"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery size: 19.48\"*3.14\"*4.17\""
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V/2A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W rear hub motor"
+      "type": "ebike-displayremote",
+      "description": "LCD display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD display"
+      "type": "ebike-motor",
+      "description": "500W rear hub motor"
     },
     {
       "type": "fender",
@@ -195,7 +195,7 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ferla/2024/agile",
   "manufacturer": "Ferla",
   "model": "Agile",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -100,8 +100,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -116,7 +116,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -144,7 +144,7 @@
           "max_speed": 40,
           "range_claimed": 113,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -152,7 +152,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -186,12 +186,12 @@
       "description": "TEKTRO HDE350 Hydraulic Disc"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "TEKTRO HDE350 with power cut off switch"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -220,16 +220,16 @@
       "description": "SHIMANO ALIVIO 9-speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Samsung 720 Wh · 70+ mi range"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "iGO Drive LS · 120 Nm · 48V"
+      "type": "ebike-displayremote",
+      "description": "High Brightness IPS Color LCD Display, IP65 Waterproof, Password protected power-on option, USB Charging Port. Light Auto On/Off Option (Ambient Light Detector)."
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "High Brightness IPS Color LCD Display, IP65 Waterproof, Password protected power-on option, USB Charging Port. Light Auto On/Off Option (Ambient Light Detector)."
+      "type": "ebike-motor",
+      "description": "iGO Drive LS · 120 Nm · 48V"
     },
     {
       "type": "fork",
@@ -240,7 +240,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Velo",
       "description": "VELO, Ergonomic, 135mm",
@@ -254,7 +254,7 @@
       "description": "+ Handlebar"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Front LED Light",
       "position": [
         "front"
@@ -262,7 +262,7 @@
       "description": "XC-259A (powered by main battery)"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Rear LED Light",
       "position": [
         "rear"

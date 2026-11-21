@@ -1,15 +1,15 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ghostcat/2026/f4x",
   "manufacturer": "GhostCat",
   "model": "F4X",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/ghostcat/2026/f4x.jpg",
   "description": "Serious trail power. The GhostCat F4X steps up to a 2,200W Hentach (Steel Geared) hub motor paired with a 55-amp controller generating 3,300W peak, 160 Nm+ of torque — for 40+ mph and 30–50 miles of range. Premium KKE 120mm front fork and rear suspension and 4-piston hydraulic brakes deliver the muscle and control to take on anything off-road.\nHighlights\n\n2,200W nominal · 3,300W peak\n160 Nm+ torque · 40+ mph\n60V/25Ah battery (30–50 mi)\n55-amp controller\nKKE 120mm front + adjustable rear\n4-pis...",
@@ -36,7 +36,7 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/ghostcat/2026/f4x_army_green.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/ghostcat/2026/f4x-army-green.jpg",
           "variants": [
             {
               "sku": "BKGC20053DAG",
@@ -108,12 +108,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -123,17 +123,17 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
-      "certifications": [
-        "UL 2271"
-      ],
       "battery": {
         "capacity": 1500,
         "voltage": 60,
         "chemistry": "li-ion",
         "cells": "LG",
-        "charging_time": 420
+        "charging_time": 420,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 2200,
       "peak_power": 3300,
@@ -146,7 +146,7 @@
           "range_claimed": 80,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -154,7 +154,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -183,6 +183,11 @@
   ],
   "components": [
     {
+      "type": "bashguardchain-guide",
+      "type_detail": "Chain Guard",
+      "description": "Enclosed inside chain guard."
+    },
+    {
       "type": "brake",
       "position": [
         "front",
@@ -191,25 +196,20 @@
       "description": "Hydraulic disc · 203mm · 4-piston"
     },
     {
-      "type": "chain_guide",
-      "type_detail": "Chain Guard",
-      "description": "Enclosed inside chain guard."
-    },
-    {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "60V / 25Ah · UL2271 Certified"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Battery: Yes"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Hentach 2,200 W (Steel Gears)"
+      "type": "ebike-displayremote",
+      "description": "Medium LCD backlight"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Medium LCD backlight"
+      "type": "ebike-motor",
+      "description": "Hentach 2,200 W (Steel Gears)"
     },
     {
       "type": "fork",
@@ -223,17 +223,17 @@
       }
     },
     {
-      "type": "frame_bag",
+      "type": "frame-bag",
       "type_detail": "Storage Bag",
       "description": "Water-resistant storage bag with a high-sensitivity TPU window for a phone and more."
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Anti-Skid Grips",
       "description": "Anti-skid handlebar cover."
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Front Headlight",
       "position": [
         "front"
@@ -241,14 +241,14 @@
       "description": "LED."
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
       "description": "Rear Brake Light"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],

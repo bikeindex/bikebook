@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/pedego/2022/boomerang",
   "manufacturer": "Pedego",
   "model_group": "Boomerang",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -62,8 +62,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -81,7 +81,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -92,7 +92,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 480,
         "capacity_options": [
@@ -110,14 +110,14 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -139,7 +139,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "68MM x 137MM SQUARE TAPER SPINDLE WITH SEALED CARTRIDGE BEARINGS; STEEL CUPS AND BODY."
     },
     {
@@ -152,11 +152,11 @@
       "description": "STAR UNION 2 PISTON FORGED ALUMINUM HYDRAULIC DISC BRAKE; MINERAL OIL BRAKE FLUID."
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "STAR UNION 3 FINGER LEVER; CAST ALUMINUM WITH MOTOR CUTOFF SWITCH FOR MAXIMUM SAFETY."
     },
     {
-      "type": "brake_pad",
+      "type": "brake-pad",
       "position": [
         "front",
         "rear"
@@ -164,7 +164,7 @@
       "description": "ORGANIC MATERIAL WITH STEEL BACKING PLATE; OFFER SAFETY TOGETHER WITH EXCELLENT PERFORMANCE IN ALL SITUATIONS."
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -175,17 +175,17 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "Shimano",
+      "description": "SHIMANO HG40 1/2”x3/32” 116 LINKS WITH INNER PLATE CHAMFERING."
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "SHIMANO HYPERGLIDE HG20 7 SPEED 12-32T; SMOOTH, LIGHT, AND RELIABLE SHIFTING PERFORMANCE."
-    },
-    {
-      "type": "chain",
-      "manufacturer": "Shimano",
-      "description": "SHIMANO HG40 1/2”x3/32” 116 LINKS WITH INNER PLATE CHAMFERING."
     },
     {
       "type": "crankset",
@@ -201,27 +201,27 @@
       "description": "SHIMANO ACERA RD-M360 7-SPEED, FULL METAL CONSTRUCTION, AND TEFLON COATED BUSHINGS."
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48 VOLT 10 OR 15 AMP HOUR WITH PREMIUM LITHIUM-ION 18650 CELLS."
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "3 AMP SMART CHARGER WITH INTERNAL FAN AND CHARGE INDICATOR LIGHT."
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "BLACK 48V BRUSHLESS GEARED REAR HUB MOTOR; 500 WATT NOMINAL POWER RATING; 45NM TORQUE; QUICK DISCONNECT CABLE WITH WATERPROOF CONNECTION."
+      "type": "ebike-displayremote",
+      "description": "3.5” BACKLIT LCD SCREEN; 4 BUTTONS TO CONTROL ELECTRONICS, TOGGLE INFO DISPLAYED, AND CUSTOMIZE SETTINGS; USB CHARGING PORT; WATERPROOF THREADED CONNECTION; CUSTOM PEDALSENSE® SOFTWARE."
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "3.5” BACKLIT LCD SCREEN; 4 BUTTONS TO CONTROL ELECTRONICS, TOGGLE INFO DISPLAYED, AND CUSTOMIZE SETTINGS; USB CHARGING PORT; WATERPROOF THREADED CONNECTION; CUSTOM PEDALSENSE® SOFTWARE."
+      "type": "ebike-motor",
+      "description": "BLACK 48V BRUSHLESS GEARED REAR HUB MOTOR; 500 WATT NOMINAL POWER RATING; 45NM TORQUE; QUICK DISCONNECT CABLE WITH WATERPROOF CONNECTION."
     },
     {
       "type": "fork",
       "description": "RIGID CHROMOLY STEEL; 1 ⅛” THREADED STEERER TUBE; DISC BRAKE AND FENDER MOUNTS."
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "manufacturer": "Pedego",
       "description": "PEDEGO SYNTHETIC LEATHER GRIP WITH HAND STITCHING AND FOAM PADDING; COLOR-MATCHED BALLOON PACKAGE."
@@ -239,7 +239,7 @@
       "description": "ZERO STACK SEMI-INTEGRATED 1 ⅛” THREADED; ZS44/28.6-26TPI | ZS44/30."
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "TOOLKIT",
       "manufacturer": "Pedego",
       "description": "CUSTOM PEDEGO TOOL KIT: 6” ADJUSTABLE WRENCH (UP TO 15MM), 12/13G SPOKE WRENCH, T25 TORX WRENCH, 6MM HEX WRENCH, 5MM HEX WRENCH WITH #2 PHILLIPS SCREWDRIVER, 4MM HEX WRENCH."
@@ -249,7 +249,7 @@
       "description": "BLACK ALUMINUM ALLOY CENTER KICKSTAND; ADJUSTABLE LENGTH COMPOSITE FOOT."
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "FRONT: LED WITH ADJUSTABLE MOUNT 40 LUX (200 LUMENS); REAR: LED BUILT INTO BATTERY; BOTH POWERED BY MAIN BATTERY AND CONTROLLED BY DISPLAY."
     },
     {

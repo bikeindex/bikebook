@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/happyrun/2023/g100",
   "manufacturer": "HappyRun",
   "model_group": "G100",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "atb",
@@ -26,7 +26,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/happyrun/2023/g100_black.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/happyrun/2023/g100-black.jpg",
           "variants": [
             {
               "sku": "G100-Black",
@@ -44,7 +44,7 @@
           "colors": [
             "yellow"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/happyrun/2023/g100_yellow.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/happyrun/2023/g100-yellow.jpg",
           "variants": [
             {
               "sku": "G100-Orange",
@@ -62,7 +62,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/happyrun/2023/g100_blue.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/happyrun/2023/g100-blue.jpg",
           "variants": [
             {
               "sku": "G100-blue",
@@ -102,7 +102,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/happyrun/2023/g100_blue.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/happyrun/2023/g100-blue.jpg",
           "variants": [
             {
               "sku": "G100-Blue",
@@ -125,7 +125,7 @@
           "colors": [
             "yellow"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/happyrun/2023/g100_yellow.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/happyrun/2023/g100-yellow.jpg",
           "variants": [
             {
               "sku": "G100-Orange",
@@ -143,7 +143,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/happyrun/2023/g100_black.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/happyrun/2023/g100-black.jpg",
           "variants": [
             {
               "sku": "G100-Black",
@@ -169,7 +169,7 @@
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/happyrun/2023/g100_2024_orange.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/happyrun/2023/g100-2024-orange.jpg",
           "variants": [
             {
               "sku": "G100-Orange",
@@ -220,7 +220,7 @@
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/happyrun/2023/g100_2023_orange.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/happyrun/2023/g100-2023-orange.jpg",
           "variants": [
             {
               "sku": "G100-Orange",
@@ -253,15 +253,15 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "electronic": false
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -272,7 +272,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IP54",
       "battery": {
         "capacity": 1824,
@@ -296,7 +296,7 @@
           },
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -305,7 +305,7 @@
           "range_claimed": 113,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -356,11 +356,11 @@
       "description": "Hydraulic Oil Braking"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum Alloy, with Power Cutoff"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -380,20 +380,20 @@
       "description": "7 Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V, 18 Ah*1PCS, 48V, 20 Ah*1PCS"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Parameters: 42V 3A, Voltage: 110V~240V 50-60Hz, Charging Time: 6 ~ 8 Hours"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Peak Motor Power：2000W, Rated Motor Power：1000W, Hall Type Brushless motor"
+      "type": "ebike-displayremote",
+      "description": "Large LED Display + NFC Unlocking"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Large LED Display + NFC Unlocking"
+      "type": "ebike-motor",
+      "description": "Peak Motor Power：2000W, Rated Motor Power：1000W, Hall Type Brushless motor"
     },
     {
       "type": "fork",
@@ -403,19 +403,19 @@
       "description": "Adjustable Aluminum Alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Light (LED)",
       "description": "Head light, Tail Warning Light, Atmosphere Light"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "160 Lumens LED Light"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Taillight",
       "position": [
         "rear"

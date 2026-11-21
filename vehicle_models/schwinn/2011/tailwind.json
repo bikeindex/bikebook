@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/schwinn/2011/tailwind",
   "manufacturer": "Schwinn",
   "model": "Tailwind",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -43,8 +43,8 @@
     }
   },
   "drivetrain": [
-    "1_front",
-    "8_internal_rear"
+    "1-front",
+    "8-internal-rear"
   ],
   "gearing": {
     "rear": [
@@ -58,7 +58,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -67,7 +67,11 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bashguardchain-guide",
+      "description": "full wrap CG"
+    },
+    {
+      "type": "bottom-bracket",
       "description": "VP cartridge square taper"
     },
     {
@@ -80,15 +84,8 @@
       "description": "Shimano Nexus roller rear and alloy LP front"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Alloy"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "20t cog"
     },
     {
       "type": "chain",
@@ -96,8 +93,11 @@
       "description": "KMC"
     },
     {
-      "type": "chain_guide",
-      "description": "full wrap CG"
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "20t cog"
     },
     {
       "type": "crankset",
@@ -124,7 +124,7 @@
       "description": "Suntour NEX with 1-piece alloy lower, preload adjust and lock-out"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Schwinn",
       "description": "Schwinn Comfort"
     },
@@ -145,7 +145,7 @@
       "description": "Shimano Nexus 8-Speed gear hub(F), Shimano Nexus 8-Speed gear hub(R)"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "head and tail lights"
     },
     {

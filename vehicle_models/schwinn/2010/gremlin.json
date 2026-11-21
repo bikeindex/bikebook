@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/schwinn/2010/gremlin",
   "manufacturer": "Schwinn",
   "model": "Gremlin",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -51,12 +51,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "brakes": [
     {
-      "type": "coaster_brake",
+      "type": "coaster-brake",
       "position": [
         "front",
         "rear"
@@ -64,6 +64,10 @@
     }
   ],
   "components": [
+    {
+      "type": "bashguardchain-guide",
+      "description": "Steel fenders and chain guard"
+    },
     {
       "type": "brake",
       "position": [
@@ -77,10 +81,6 @@
         "rear"
       ],
       "description": "coaster"
-    },
-    {
-      "type": "chain_guide",
-      "description": "Steel fenders and chain guard"
     },
     {
       "type": "headset",
@@ -132,7 +132,7 @@
       }
     },
     {
-      "type": "training_wheels",
+      "type": "training-wheels",
       "description": "Steel training wheels"
     },
     {
@@ -140,7 +140,7 @@
       "description": "Safety pad set."
     },
     {
-      "type": "water_bottle_cage",
+      "type": "water-bottle-cage",
       "description": "water bottle and holder"
     }
   ]

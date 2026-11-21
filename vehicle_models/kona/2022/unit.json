@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2022/unit",
   "manufacturer": "Kona",
   "model_group": "Unit",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/kona/2022/unit.jpg",
   "description": "If Leonard Smalls were to trade out his beefed-up Honda VT500 and pedal his way across the Arizona desert, we have no doubt it’d be aboard the Unit. Burly. Steel. Hardcore. Mean. Mean? Sure. The Unit does not mess around. Its single-speed design and Cromoly frame make its simplicity shine and keeps the moving parts long-lasting for those big excursions. Gear mounts on the fork legs and several options for mounting water bottles mean you won’t go without any of the necessary gear no matter where you’re traveling.",
@@ -89,8 +89,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -102,14 +102,14 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
       "rotor_diameter": 180
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -200,7 +200,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "B/B",
       "manufacturer": "FSA",
       "description": "FSA MegaExo 73mm"
@@ -216,12 +216,12 @@
       "description": "Tektro HDM275 Hydraulic"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro HDM275 Hydraulic"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front"
       ],
@@ -232,7 +232,7 @@
       }
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "rear"
       ],
@@ -243,13 +243,6 @@
       }
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "Joytech 18t"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z1 Narrow"
@@ -257,6 +250,13 @@
     {
       "type": "chainrings",
       "description": "32t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "Joytech 18t"
     },
     {
       "type": "crankset",
@@ -273,7 +273,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Kona",
       "description": "Kona Key Grip"
@@ -335,7 +335,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Kona",
       "description": "Kona Clamp"

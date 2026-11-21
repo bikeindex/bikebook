@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/lankeleisi/2026/g660",
   "manufacturer": "Lankeleisi",
   "model_group": "G",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -40,7 +40,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "suspension": {
     "front": {
@@ -59,8 +59,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -74,7 +74,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -84,7 +84,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IP54",
       "battery": {
         "capacity": 614,
@@ -106,7 +106,7 @@
           "range_claimed": 45,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -153,20 +153,20 @@
       "description": "Shimano TZ20"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 12.8AH Lithium Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 3A charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48v 500w rear drive brushless motor, max torque 45Nm"
+      "type": "ebike-displayremote",
+      "description": "S866 LCD meter with speed, trip, battery, assist level and more"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "S866 LCD meter with speed, trip, battery, assist level and more"
+      "type": "ebike-motor",
+      "description": "48v 500w rear drive brushless motor, max torque 45Nm"
     },
     {
       "type": "fork",
@@ -182,7 +182,7 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],

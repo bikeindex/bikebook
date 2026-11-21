@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/gotrax/2025/ranger",
   "manufacturer": "GOTRAX",
   "model_group": "Ranger",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -25,7 +25,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/gotrax/2025/ranger_gray.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/gotrax/2025/ranger-gray.jpg",
           "variants": [
             {
               "sku": "GT-RANGER-BLACK",
@@ -76,8 +76,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -86,7 +86,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -116,7 +116,7 @@
           "max_slope": 14,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -125,7 +125,7 @@
           "max_speed": 32,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -164,23 +164,23 @@
       "description": "Hydraulic"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 10.4Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 2A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W / 750W Peak"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Black and White Screen"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "500W / 750W Peak"
+    },
+    {
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"
@@ -188,7 +188,7 @@
       "description": "LED"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "LED Headlight and Taillight",
       "description": "LED Headlight and Taillight"
     },

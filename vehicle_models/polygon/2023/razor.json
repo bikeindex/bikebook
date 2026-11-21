@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/polygon/2023/razor",
   "manufacturer": "Polygon",
   "model_group": "Razor",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "bmx",
   "handlebar_type": "horizontal",
@@ -24,7 +24,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/polygon/2023/razor_blue.png",
+          "stock_photo": "https://bikebook.bikeindex.org/polygon/2023/razor-blue.png",
           "variants": [
             {
               "sku": "502870002",
@@ -86,8 +86,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -99,7 +99,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "rear"
       ],
@@ -148,7 +148,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "BB",
       "description": "ALLOY CARTRIDGE 68x113mm"
     },
@@ -161,21 +161,21 @@
       "description": "F:810C ALLOY CALIPER DUAL PIVOT R:J-310 ALLOY V-BRAKE"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "TEKTRO 319A ALLOY 2-FINGERS"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "FREEWHEEL SINGLE SPEED 16T"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC K1"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "FREEWHEEL SINGLE SPEED 16T"
     },
     {
       "type": "crankset",

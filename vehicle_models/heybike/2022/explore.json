@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/heybike/2022/explore",
   "manufacturer": "Heybike",
   "model": "Explore",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -52,7 +52,7 @@
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -61,7 +61,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 960,
         "voltage": 48,
@@ -81,7 +81,7 @@
           "availability": "stock",
           "range_claimed": 89,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -119,21 +119,21 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell/Horn",
       "description": "Electric Horn"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 20Ah Lithium battery"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W"
+      "type": "ebike-displayremote",
+      "description": "LCD display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD display"
+      "type": "ebike-motor",
+      "description": "750W"
     },
     {
       "type": "rack",

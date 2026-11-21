@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/puckipuppy/2026/bulldog",
   "manufacturer": "Puckipuppy",
   "model_group": "Bulldog",
@@ -7,13 +7,13 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/puckipuppy/2026/bulldog.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/puckipuppy/2026/bulldog_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/puckipuppy/2026/bulldog-geometry.jpg",
   "description": "The Bulldog redefines long-range riding with its revolutionary dual-battery system, made for those who set their own finish line. Powered by a 750W motor and full-suspension design, it turns challenging terrain into smooth progress. With confident hydraulic brakes and uninterrupted mileage, this electric bike doesn't just promise adventure-it delivers, mile after mile. PUCKIPUPPY Bulldog has been certified to UL 2271 & UL 2849 by SGS.",
   "first_year": 2026,
   "years": {
@@ -26,7 +26,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/puckipuppy/2026/bulldog_iron_gray.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/puckipuppy/2026/bulldog-iron-gray.jpg",
           "variants": [
             {
               "sku": "Bulldog-Gray",
@@ -74,8 +74,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -83,7 +83,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -94,14 +94,16 @@
     {
       "sensor_cadence": true,
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "water_rating": "IPX6",
       "battery": {
         "capacity": 1440,
         "voltage": 48,
-        "chemistry": "li-ion"
+        "chemistry": "li-ion",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "peak_power": 1350,
@@ -112,7 +114,7 @@
           "max_speed": 45,
           "range_claimed": 209,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -121,7 +123,7 @@
           "max_speed": 32,
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -178,20 +180,20 @@
       "description": "7-speed Shimano"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 15Ah + 48V 15Ah,IPX7 (UL 2271 by SGS)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V, 2.0A Fast Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W (1350W Peak)"
+      "type": "ebike-displayremote",
+      "description": "LCD Color"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD Color"
+      "type": "ebike-motor",
+      "description": "750W (1350W Peak)"
     },
     {
       "type": "fork",

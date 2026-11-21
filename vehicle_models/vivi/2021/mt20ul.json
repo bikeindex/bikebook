@@ -1,15 +1,15 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/vivi/2021/mt20ul",
   "manufacturer": "Vivi",
   "model": "MT20UL",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/vivi/2021/mt20ul.jpg",
   "description": "Discover leisure cruises! The VIVI MT20UL electric bike is an upgraded version of the small beach cruiser, equipped with a powerful 1000W peak hub motor and a 48V 499.2Wh high-capacity removable battery to power your daily commute, commuter cruising, or meandering along your favorite trails. High-strength suspension fork, Shimano 7-speed gear, 5-level pedal assist (throttle), LCD digital display and 3.0 inches wide Anti-puncture fat tires make the ride more comfortable and stable. Perfect for riders who are looking for a powered and progressive commuter for chic urban riding. For any woman who wants to feel relaxed and at ease on the go, it will be a reliable e-bike.",
@@ -55,7 +55,7 @@
     "material": "steel",
     "material_detail": "High-Carbon Steel",
     "top_tube": "step_through",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "seatpost_diameter": 28.6,
     "seatpost_clamp_diameter": 31.8
   },
@@ -83,8 +83,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -102,7 +102,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -112,19 +112,21 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "water_rating": "IP54",
       "battery": {
         "capacity": 499,
         "voltage": 48,
         "chemistry": "li-ion",
-        "charging_time": 360
+        "charging_time": 360,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 500,
       "peak_power": 1000,
@@ -137,7 +139,7 @@
           "range_claimed": 80,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -146,7 +148,7 @@
           "range_claimed": 40,
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -198,12 +200,12 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell/Horn",
       "description": "Integrated Handlebar Bell"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "140mm Integral Bottom Bracket"
     },
     {
@@ -224,11 +226,11 @@
       "description": "Front and Rear Mechanical Brake Calipers"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Alloy Levers with Motor Cutoff Switch"
     },
     {
-      "type": "brake_pad",
+      "type": "brake-pad",
       "position": [
         "front",
         "rear"
@@ -236,17 +238,17 @@
       "description": "SA 160mm Cassette, Semi-metallic"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Aluminum Alloy Chain, 116 links"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
       ],
       "description": "Aluminum 7-speed Freewheel, 14-28T"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Aluminum Alloy Chain, 116 links"
     },
     {
       "type": "crankset",
@@ -262,24 +264,24 @@
       "description": "Shimano RD-TZ500, 7-speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "e-bike-wiring-harness",
+      "description": "Waterproof Integration Cable"
+    },
+    {
+      "type": "ebike-battery",
       "description": "48V 10.4Ah 499.2Wh Lithium-ion Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "US Plug 54.6V 2A Smart Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "1000W Peak Brushless Hub Motor, 65Nm"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "48V Intelligent Digital LCD Display"
     },
     {
-      "type": "e_vehicle_wiring_harness",
-      "description": "Waterproof Integration Cable"
+      "type": "ebike-motor",
+      "description": "1000W Peak Brushless Hub Motor, 65Nm"
     },
     {
       "type": "fender",
@@ -293,7 +295,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Imitation Leather Ergonomic Grips"
     },
@@ -313,14 +315,14 @@
       "description": "Heavy-duty Aluminum, Side-mounted"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "48V Integrated LED Headlight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Tail Light",
       "position": [
         "rear"
@@ -355,7 +357,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "φ31.8mm Quick Release",
       "dimensions": {
         "diameter": 31.8

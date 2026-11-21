@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/elliptigo/2022/ersub",
   "manufacturer": "Elliptigo",
   "model_group": "eSUB",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -49,8 +49,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -66,7 +66,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -83,14 +83,14 @@
           "max_speed": 32,
           "range_claimed": 80,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -119,7 +119,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Oversized M48, ISIS spline, sealed bearings"
     },
     {
@@ -132,19 +132,19 @@
       "description": "Mechanical disc brakes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Two finger levers"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "8-speed 11-34 tooth range"
     },
     {
       "type": "chainrings",
       "description": "48-tooth, 130 BCD, 6061 – T6 aluminum"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "8-speed 11-34 tooth range"
     },
     {
       "type": "crankset",
@@ -156,7 +156,7 @@
       "description": "700C butted chro-moly with 1.5” steerer"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Clamp on anti-rotation, with ergonomic shelf"
     },

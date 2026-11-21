@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jansno/2025/x90",
   "manufacturer": "Jansno",
   "model": "X90",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -44,7 +44,7 @@
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jansno/2025/x90_orange.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/jansno/2025/x90-orange.jpg",
           "variants": [
             {
               "sku": "X90Y",
@@ -76,8 +76,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -86,7 +86,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -118,7 +118,7 @@
           "range_claimed": 70,
           "levels": 7,
           "e_vehicle_classifications": [
-            "evc/l1e_a_powered_cycle"
+            "evc/l1e-a-powered-cycle"
           ]
         },
         {
@@ -126,7 +126,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/l1e_b_moped"
+            "evc/l1e-b-moped"
           ]
         },
         {
@@ -134,7 +134,7 @@
           "availability": "app_update",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/l1e_b_moped"
+            "evc/l1e-b-moped"
           ]
         }
       ]
@@ -170,16 +170,8 @@
       "description": "Mechanical brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "comfort grip levers with motor cutoff switch"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "Shimano-MF-TZ500-7"
     },
     {
       "type": "chain",
@@ -187,25 +179,33 @@
       "description": "KMC chain"
     },
     {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "Shimano-MF-TZ500-7"
+    },
+    {
       "type": "crankset",
       "type_detail": "Crank",
       "description": "Forged alloy, dual-sided bashguard"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 14Ah/25Ah Lithium-lon Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Fast smart charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Motor Up to 1000w(peak)"
+      "type": "ebike-displayremote",
+      "description": "Color LCD Display with NFC Unlock"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Color LCD Display with NFC Unlock"
+      "type": "ebike-motor",
+      "description": "Motor Up to 1000w(peak)"
     },
     {
       "type": "fork",
@@ -219,14 +219,14 @@
       "description": "Heavy Duty Aluminum"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "6V LED light"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Integrated front and brake lights"
     },
     {

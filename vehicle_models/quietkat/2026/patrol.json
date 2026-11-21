@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/quietkat/2026/patrol",
   "manufacturer": "QuietKat",
   "model": "Patrol",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -58,8 +58,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "SRAM",
@@ -68,7 +68,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -78,12 +78,12 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
-      "certifications": [
-        "UL 2271"
-      ],
+      "kind": "hub-drive",
       "battery": {
-        "chemistry": "li-ion"
+        "chemistry": "li-ion",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 1000,
       "operating_modes": [
@@ -92,13 +92,13 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
           "mode": "throttle",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -128,16 +128,16 @@
       "description": "2-Piston Hydraulic Disc Brakes w/203mm Rotors"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "17.25Ah Battery (UL2271 Compliant)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "1000W (Hub-Drive)"
+      "type": "ebike-displayremote",
+      "description": "Custom Color LED Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Custom Color LED Display"
+      "type": "ebike-motor",
+      "description": "1000W (Hub-Drive)"
     },
     {
       "type": "fork",

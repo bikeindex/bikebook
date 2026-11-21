@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/reid/2024/terra",
   "manufacturer": "Reid",
   "model": "Terra",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "atb_gravel",
+  "primary_activity": "atb-gravel",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/reid/2024/terra.png",
   "description": "Introducing the Reid Terra, a revolution in gravel biking that seamlessly blends cutting-edge electric assist technology with high-performance design. Crafted for adventurers and explorers, the Reid Terra is more than just a bike—it's your ticket to boundless exploration and unforgettable experiences.\nAt the heart of the Terra lies its meticulously engineered frame, constructed from high-quality alloy and available in four versatile sizes. Designed with precision and attention to detail, the Terra features a fully integrated battery, flat chain stay yoke to shorten the rear end, and internal cable routing for a clean and streamlined aesthetic. Equipped with a rigid alloy fork the Terra ensures responsive handling and stability on any terrain.\nRide in comfort and control with the Terra's wide handlebar and comfy bar tape that provides a secure grip on rough terrain. Grip to the trail comes from double wall 700C rims, CST tires, and TEKTRO mechanical disc brakes, the Terra offers unmatched performance and confidence-inspiring handling and stopping power.\nBut what truly sets the Reid Terra apart is its advanced eBike system, seamlessly integrated into the frame to provide a powerful and intuitive riding experience. At the heart of this system is the Ananda motor, a 36V 250W 40NM powerhouse that delivers smooth and responsive assistance when you need it most. Powering the motor is a 10.4ah battery allowing you to stay on the road for longer and explore without limits.\nControl and monitor your eBike system with the top tube, offering intuitive interfaces for adjusting assistance levels and monitoring battery status. The Terra delivers a natural-feeling boost that complements your pedaling efforts, allowing you to conquer any terrain with confidence.\nCombining unparalleled versatility, performance, and innovation, the Reid Terra is more than just a bike—it's your ultimate companion for endless adventure and exploration. Experience the thrill of the ride like never before and unlock new possibilities with the Reid Terra eGravel bike.\nPlease make sure to familiarise yourself with eBike and eScooter safety information before charging or using your new Reid. You can view and download user manuals and safety instructions here.",
@@ -67,8 +67,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -86,7 +86,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -130,7 +130,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed bearing square tapper"
     },
     {
@@ -142,22 +142,22 @@
       "description": "Tektro MD-C510 Mechanical disc brake flatmount, 160MM rotor"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "MicroShift",
       "description": "Microshift Advent 1x9 speed STI"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "MicroShift",
-      "description": "Microshift Advent 9 speed 11-46T"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z8.3"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "MicroShift",
+      "description": "Microshift Advent 9 speed 11-46T"
     },
     {
       "type": "crankset",
@@ -176,17 +176,17 @@
       "description": "Microshift Advent 9 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V/10.4AH"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Ananda",
-      "description": "Ananda 36V 250W, 25KM/H"
+      "type": "ebike-displayremote",
+      "description": "D26 LED"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "D26 LED"
+      "type": "ebike-motor",
+      "manufacturer": "Ananda",
+      "description": "Ananda 36V 250W, 25KM/H"
     },
     {
       "type": "fork",
@@ -194,7 +194,7 @@
       "description": "Reid 12mm Alloy fork flatmount"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bar Tape",
       "manufacturer": "Reid",
       "description": "Reid bar tape"

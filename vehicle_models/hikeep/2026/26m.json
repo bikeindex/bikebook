@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/hikeep/2026/26m",
   "manufacturer": "Hikeep",
   "model": "26M",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -37,7 +37,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/hikeep/2026/26m_black.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/hikeep/2026/26m-black.webp",
           "variants": [
             {
               "sku": "26M Black",
@@ -74,8 +74,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -83,7 +83,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -92,17 +92,17 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
-      "certifications": [
-        "UL 2271",
-        "UL 2580"
-      ],
+      "kind": "hub-drive",
       "water_rating": "IPX65",
       "battery": {
         "capacity": 1200,
         "voltage": 48,
         "chemistry": "li-ion",
-        "cells": "LG"
+        "cells": "LG",
+        "certifications": [
+          "UL 2271",
+          "UL 2580"
+        ]
       },
       "rated_power": 2000,
       "peak_power": 3000,
@@ -115,7 +115,7 @@
           "range_claimed": 177,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -124,7 +124,7 @@
           "range_claimed": 56,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -132,7 +132,7 @@
           "availability": "app_update",
           "max_speed": 64,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -190,19 +190,19 @@
       "description": "Shimano 7 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V, 25Ah (1200Wh)"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable 48V, 25Ah, Certificated by UL 2271"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V 3A Fast Charger"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "4.0\" NFC & Smart APP LCD Display"
     },
     {
@@ -232,7 +232,7 @@
       "description": "2000W (sustained), 3000W (peak)"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tool",
       "description": "Tool kit * 1"
     },
@@ -241,18 +241,18 @@
       "description": "Alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "LED headlight and taillight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "600LM LED, Adjustable angle"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
@@ -274,7 +274,7 @@
       "description": "50 kg / 110 lbs"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Track-Tuned Mid-Mount Shock",
       "position": [
         "rear"
