@@ -10,7 +10,8 @@ BikeBook's open data: vehicle models, components, e-vehicle classifications and 
 
 - **A file is at `<maker>/<year>/<slug>.json`, and its `id` repeats that path behind a type prefix** — `m/specialized/2025/haul_st` is `vehicle_models/specialized/2025/haul_st.json`.
 - **A vehicle model with a `base` key is an overlay: it holds only what differs from that model.** Read the base and apply the overlay over it; reading the overlay alone gives a partial model. In an overlay, a list is written as an object of its items rather than an array.
-- **`schema_version` in each file names the schema it validates against** — `schemas/<name>.json`, whose `$id` carries the version.
+- **A file's `market_variants` are the models of its name and year sold in other markets**, each keyed by its market and written as an overlay over the file. A variant's id is the file's suffixed with `_` and the market lower-cased (`c/bosch/2022/cargo_line_bdu374y_us`), and names no file of its own.
+- **`schema_version` in each file names the schema it validates against** — `schemas/<name>.json`, whose `$id` carries the version, or an older version at `schemas/<name>/v<version>.json`, kept until no file names it.
 
 # Checks
 
@@ -22,7 +23,7 @@ bikebook_ci's tests check the data files themselves: every file pretty-printed w
 BIKEBOOK_DATA="$(git rev-parse --show-toplevel)" cargo test --locked --no-fail-fast --manifest-path "$(git rev-parse --path-format=absolute --git-common-dir)/../../bikebook_ci/Cargo.toml"
 ```
 
-**A schema change edits only the representative vehicles**: the models `representative_vehicles.csv` lists, the components they link and those components' bases. The rest of the catalog moves to the new shape in a later PR. CI's `schema_changes` check, a separate one, fails a branch that changes `schemas/` and edits any other data file. It reads the list as the branch's base has it, and on a pull request it fails any change to the list, so a change to the list is a PR of its own and only merges by hand. Run it from the same bikebook_ci checkout:
+**A schema change edits only the representative vehicles**: the models `representative_vehicles.csv` lists, the components they link, those components' bases and their market overlays. The rest of the catalog moves to the new shape in a later PR. CI's `schema_changes` check, a separate one, fails a branch that changes `schemas/` and edits any other data file. It reads the list as the branch's base has it, and on a pull request it fails any change to the list, so a change to the list is a PR of its own and only merges by hand. Run it from the same bikebook_ci checkout:
 
 ```bash
 git fetch -q origin main && "$(git rev-parse --path-format=absolute --git-common-dir)/../../bikebook_ci/bin/check_schema_change" "$(git rev-parse --show-toplevel)" origin/main HEAD
