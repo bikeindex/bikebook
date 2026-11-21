@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "id": "c/bosch/2025/performance_line_speed_bdu388y",
   "type": "e_vehicle_motor",
   "manufacturer": "Bosch",
@@ -28,5 +28,21 @@
         "max_speed": 45
       }
     ]
+  },
+  "market_variants": {
+    "US": {
+      "markets": [
+        "US"
+      ],
+      "motor": {
+        "operating_modes": {
+          "assist stock": {
+            "e_vehicle_classifications": [
+              "evc/us/class_3"
+            ]
+          }
+        }
+      }
+    }
   }
 }
