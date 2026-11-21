@@ -1,52 +1,106 @@
 # <img src="bikebook.svg" alt="Bike Book logo" height="32"> [Bike Book](https://bikeindex.org/bikebook)
 
-Compare bikes, e-bikes and e-Personal Mobility Devices (aka EPAMD).
+Compare bikes, e-bikes and e-Personal Mobility Devices (aka EPAMD). Check out the viewer at [bikeindex.org/bikebook](https://bikeindex.org/bikebook).
 
-Use the viewer at [bikeindex.org/bikebook](https://bikeindex.org/bikebook) to view the models.
+## What?
+
+Bike Index decided to create an open source repository of all the bike (and e-bike, trike, EPAMD, etc, hereafter just referred to as "bike") data.
+
+Bikes are surprising complex and have a myriad of conflicting options. So we needed a data format - explore the current JSON Schema at [bikeindex.org/bikebook/schema_viewer](https://bikeindex.org/bikebook/schema_viewer), which looks something like this:
+
+
+
+The schema viewer helps make sense of what things are captured by including comments and showing the number of matching bikes, and including sample bike IDs (which link to the [model viewer](https://bikeindex.org/bikebook)).
+
+---
+
+Some things that missing or improvements to make in upcoming schema versions:
+
+- Better handling of markets
+- Better handling of tandems
+- Better handling of non-bike things
+- Capturing more measurements of components and interfaces, so it can be used as a reference for repair (e.g. replacement bearing sizes)
+
+
+---
 
 This repository contains the data that is used to render that.
 
-Please submit any fixes that you have! See [CONTRIBUTING](CONTRIBUTING.md): contributors sign our [Contributor License Agreement](https://cla-assistant.io/bikeindex/bikebook) before their first pull request is merged.
 
 ## Technical info
 
 This repository is a flat file database. The data is stored in JSON files.
 
-**A file is at `<maker>/<year>/<slug>.json`, and its `id` repeats that path behind a type prefix** — `m/trek/2026/fuel_plus_mx_9_9_x0_axs_gen_2` is [vehicle_models/trek/2026/fuel_plus_mx_9_9_x0_axs_gen_2.json](vehicle_models/trek/2026/fuel_plus_mx_9_9_x0_axs_gen_2.json)
+The 2026 `Fuel+ MX 9.9 X0 AXS Gen 2` by Trek has this id: `m/trek/2026/fuel-plus-mx-9-9-x0-axs-gen-2`
 
-The `<maker>` and `<slug>` come from the names like this:
+Which is in this repository at [vehicle_models/trek/2026/fuel-plus-mx-9-9-x0-axs-gen-2.json](vehicle_models/trek/2026/fuel-plus-mx-9-9-x0-axs-gen-2.json)
+
+**The model IDs are at `<maker>/<year>/<model name>.json`** and the files are at that path in `vehicle_models/`
+
+`<maker>` and `<model>` are converted to slugs following this path:
+
+1. Drops parentheticals and turn `%20` into a space
+2. Decodes HTML entities like `&amp;`
+3. Deletes apostrophes, so "Bob’s" becomes bobs, not bob-s.
+4. Lowercases, then swaps accented letters for plain ones (ß → ss, æ → ae).
+5. Turns & into "and" and + into "plus".
+6. Joins the remaining runs of letters and digits with hyphens.
 
 ```js
-// Parentheticals drop, & and + become words, accents fold, and every other run of non-alphanumerics becomes one _
-const FOLDS = { ß: "ss", æ: "ae", œ: "oe", ø: "o", đ: "d", ð: "d", ł: "l", þ: "th" };
-const ENTITIES = { amp: "&", lt: "<", gt: ">", quot: '"', "#39": "'", apos: "'" };
+// I18n::Backend::Transliterator::HashTransliterator::DEFAULT_APPROXIMATIONS, lower-case entries only (the
+// text is downcased first). Any other non-ASCII character becomes "?" in Rails, so it separates words here too.
+const APPROXIMATIONS = Object.fromEntries(
+  ("àa áa âa ãa äa åa æae çc èe ée êe ëe ìi íi îi ïi ðd ñn òo óo ôo õo öo øo ùu úu ûu üu ýy þth ßss ÿy " +
+    "āa ăa ąa ćc ĉc ċc čc ďd đd ēe ĕe ėe ęe ěe ĝg ğg ġg ģg ĥh ħh ĩi īi ĭi įi ıi ĳij ĵj ķk ĸk ĺl ļl ľl ŀl łl " +
+    "ńn ņn ňn ŉ'n ŋng ōo ŏo őo œoe ŕr ŗr řr śs ŝs şs šs ţt ťt ŧt ũu ūu ŭu ůu űu ųu ŵw ŷy źz żz žz ǫo ǭo")
+    .split(" ")
+    .map((pair) => [pair[0], pair.slice(1)])
+)
+APPROXIMATIONS["×"] = "x"
 
-function slugify(string) {
-  const s = String(string ?? "").replace(/\([^)]*\)/g, "").replaceAll("%20", " ")
-    .replace(/&(amp|lt|gt|quot|#39|apos);/g, (_, e) => ENTITIES[e])
-    .toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
-    .replace(/[ßæœøđðłþ]/g, (c) => FOLDS[c]);
-  return (s.replaceAll("&", " and ").replaceAll("+", " plus ").match(/[a-z0-9]+/g) || []).join("_");
-}
+// CGI.unescapeHTML: the five named entities and numeric ones
+const ENTITIES = { amp: "&", quot: '"', apos: "'", lt: "<", gt: ">" }
+const unescapeHTML = (text) =>
+  text.replace(/&(amp|quot|apos|lt|gt|#\d+|#x[0-9a-f]+);/gi, (match, entity) => {
+    if (entity[0] !== "#") return ENTITIES[entity.toLowerCase()] ?? match
+    const code = entity[1].toLowerCase() === "x" ? parseInt(entity.slice(2), 16) : parseInt(entity.slice(1), 10)
+    return code <= 0x10ffff ? String.fromCodePoint(code) : match
+  })
 
-// A maker drops its bikes/cycles/co./works words, unless that leaves only digits
-const COMPANY_FILLER = /\sco(\.|mpany)|\s(frame)?works/gi;
-const MANUFACTURER_FILLER = /\s(e(lectric)?.?)?((bi)?cycles?|bikes?)|\sco(\.|mpany)|\s(frame)?works/gi;
+const transliterate = (text) =>
+  Array.from(text, (character) =>
+    character.charCodeAt(0) < 128 ? character : APPROXIMATIONS[character] ?? "?"
+  ).join("")
 
-function manufacturerSlug(name) {
-  const slug = slugify(String(name ?? "").replace(MANUFACTURER_FILLER, " "));
-  return /\D/.test(slug) ? slug : slugify(String(name ?? "").replace(COMPANY_FILLER, " "));
-}
-
-// A model sold outside its maker's primary market takes its first market as a suffix, unless its name already ends in it
-function vehicleModelSlug(name, markets = [], primaryMarket) {
-  const slug = slugify(name);
-  const suffix = markets.length ? `_${markets[0].toLowerCase()}` : null;
-  return suffix && !markets.includes(primaryMarket) && !slug.endsWith(suffix) ? slug + suffix : slug;
+export function slugify(string) {
+  const text = String(string ?? "")
+    .replace(/\([^)]*\)/g, "") // parentheticals are dropped
+    .replaceAll("%20", " ")
+  const words = transliterate(unescapeHTML(text).replace(/['’‘`´]/g, "").toLowerCase())
+    .replaceAll("&", " and ")
+    .replaceAll("+", " plus ")
+    .match(/[a-z0-9]+/g)
+  return (words ?? []).join("-")
 }
 ```
 
 The manifest lists all the files, the catalog is published by [bikebook_ci](https://github.com/bikeindex/bikebook_ci) (which also is where the tests are).
+
+
+---
+
+## Contributing
+
+Please submit any fixes that you have! See [CONTRIBUTING](CONTRIBUTING.md): contributors sign our [Contributor License Agreement](https://cla-assistant.io/bikeindex/bikebook) before their first pull request is merged.
+
+## Versioning
+
+schema_version is semantic:
+- Major versions remove, rename or retype a field or remove an enum value
+- Minor ones add an optional field or an enum value
+- Patches changes only descriptions.
+
+The published catalog's format is versioned apart from it, one integer raised whenever the layout of its files changes.
 
 ---
 
