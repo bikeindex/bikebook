@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/tracer/2021/coyote",
   "manufacturer": "Tracer",
   "model": "Coyote",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -63,7 +63,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "mounts": [
       {
         "type": "fender"
@@ -89,8 +89,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -108,7 +108,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -119,11 +119,12 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 600,
         "voltage": 48,
-        "chemistry": "li-ion"
+        "chemistry": "li-ion",
+        "charging_time": 360
       },
       "rated_power": 500,
       "operating_modes": [
@@ -133,7 +134,7 @@
           "max_speed": 32,
           "range_claimed": 40,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -146,7 +147,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "NECO Cartridge Steel 100x159.5mm"
     },
     {
@@ -158,21 +159,21 @@
       "description": "Disc 160mm"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Alloy"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano TZ500 14-28T 7-speed"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z7 1/2x3/32x120L"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano TZ500 14-28T 7-speed"
     },
     {
       "type": "crankset",
@@ -190,11 +191,11 @@
       "description": "Shimano RD-TY21-GS 7-Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 12.5AH Li-ion"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "position": [
         "rear"
       ],

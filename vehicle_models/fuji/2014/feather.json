@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fuji/2014/feather",
   "manufacturer": "Fuji",
   "model_group": "Feather",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -65,8 +65,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -88,7 +88,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed bearing"
     },
     {
@@ -101,19 +101,19 @@
       "description": "Tektro, road caliper, alloy"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Alloy, 2-finger"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "16T fixed cog w/ lockring, 16T freewheel"
     },
     {
       "type": "chain",
       "description": "F-410, single-speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "16T fixed cog w/ lockring, 16T freewheel"
     },
     {
       "type": "crankset",
@@ -124,7 +124,7 @@
       "description": "Elios 2, crowned"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "description": "Pavement, keirin style"
     },
     {

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ouxi/2025/r11",
   "manufacturer": "OUXI",
   "model": "R11",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -37,7 +37,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/ouxi/2025/r11_white.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/ouxi/2025/r11-white.webp",
           "variants": [
             {
               "sku": "R11-White",
@@ -50,7 +50,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/ouxi/2025/r11_silver.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/ouxi/2025/r11-silver.webp",
           "variants": [
             {
               "sku": "R11-Silver",
@@ -81,8 +81,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -91,7 +91,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -101,6 +101,9 @@
   "motors": [
     {
       "sensor_cadence": true,
+      "certifications": [
+        "UL 2849"
+      ],
       "water_rating": "IP54",
       "battery": {
         "capacity": 374,
@@ -117,7 +120,7 @@
           "range_claimed": 89,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -127,7 +130,7 @@
           "range_claimed": 69,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -179,11 +182,11 @@
       "description": "Shimano Tourney"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable 36V 10.4Ah lithium battery"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "500W brushless motor"
     },
     {

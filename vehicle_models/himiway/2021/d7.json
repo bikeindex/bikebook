@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/himiway/2021/d7",
   "manufacturer": "Himiway",
   "model_group": "D7",
@@ -7,13 +7,13 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/himiway/2021/d7.png",
-  "geometry_photo": "https://bikebook.bikeindex.org/himiway/2021/d7_geometry.svg",
+  "geometry_photo": "https://bikebook.bikeindex.org/himiway/2021/d7-geometry.svg",
   "description": "The Himiway D7 (formerly the Cobra) is a rugged, full-suspension electric hunting bike designed for outdoor adventurers, backcountry hunters, and off-road explorers. Built to survive extreme environments and haul heavy gear, this go-anywhere e-bike gives you the freedom, stealth, and power to access remote hunting stands, deep woods trails, and desert landscapes with absolute confidence.\nWhether you're traversing deep snow, muddy wetlands, or rocky mountain paths, the D7 delivers an incredibly stable ride. It is equipped with massive 26\" x 4.5\" CST all-terrain super fat tires featuring a hydroplaning-resistant tread pattern for superior grip. Combined with an advanced four-bar linkage rear suspension and an 80mm adjustable front coil fork, it effortlessly absorbs violent bumps and jarring impacts, ensuring a smooth ride even on the most punishing trails.\nPowering this beast is a heavily upgraded 1000W Brushless Geared Hub Motor producing 96Nm of torque, designed with advanced heat dissipation to conquer rugged terrain without overheating. Unlike standard hub-motor bikes, the D7 features an intuitive torque sensor that seamlessly amplifies your pedaling for a natural, responsive feel while conserving battery. Fueled by a massive 960Wh Samsung/LG integrated battery, it provides an astonishing range of up to 80 miles per charge—more than enough for a full weekend of off-grid exploring.\nEngineered for extreme utility and heavy lifting, the D7 boasts a massive 400 lb payload capacity, making it the perfect pack mule for hauling camping gear, hunting blinds, or harvested game. It features 180mm hydraulic disc brakes for reliable stopping power under heavy loads, a precise 8-speed Shimano drivetrain, and an upgraded 48V luminosity taillight for increased safety during early morning or late-night rides.\n\nBackcountry hunters accessing remote stands or hauling gear\nRV owners and campers seeking a heavy-duty off-road explorer\nOutdoor adventurers navigating sand, snow, mud, and rocky trails\nLarger riders requiring a robust 400 lb payload capacity\nRiders who want the raw power of a 1000W hub motor paired with a natural-feeling torque sensor\n\nWhy Choose the D7?",
   "first_year": 2021,
   "years": {
@@ -71,8 +71,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -91,7 +91,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -101,7 +101,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
         "UL 2849"
@@ -119,7 +119,7 @@
           "availability": "stock",
           "range_claimed": 129,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -127,7 +127,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -173,22 +173,13 @@
       "description": "Tektro HD-E350 hydraulic brake"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
         "rear"
       ],
       "description": "F:TR-203-52 R:TR-180-52"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano CS-HG41.8 11-34T"
     },
     {
       "type": "chain",
@@ -201,6 +192,15 @@
       "description": "40T 104BCD narrow wide chainring"
     },
     {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano CS-HG41.8 11-34T"
+    },
+    {
       "type": "crankset",
       "type_detail": "Crank arm",
       "description": "EB-01-242A-S1 170mm",
@@ -209,20 +209,20 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Samsung/LG 48V 20Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "U.S. standard 3.0 A fast charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "1000W brushless gear motor"
+      "type": "ebike-displayremote",
+      "description": "LCD display with Type-c charger"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD display with Type-c charger"
+      "type": "ebike-motor",
+      "description": "1000W brushless gear motor"
     },
     {
       "type": "fork",
@@ -245,7 +245,7 @@
       "description": "Heavy-duty aluminum kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "48V LED light"
     },
     {
@@ -253,7 +253,7 @@
       "description": "Aluminum pedal"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Shock",
       "position": [
         "rear"

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/nakto/2023/f6",
   "manufacturer": "Nakto",
   "model": "F6",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -48,8 +48,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "6_rear"
+    "1-front",
+    "6-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -57,7 +57,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -66,7 +66,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_speed": "spoke_magnet",
       "battery": {
         "capacity": 768,
@@ -81,14 +81,14 @@
           "max_speed": 32,
           "range_claimed": 97,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -129,31 +129,31 @@
       "description": "6 Speed SHIMANO"
     },
     {
-      "type": "e_vehicle_battery",
-      "description": "48v 16Ah Lithium Battery"
-    },
-    {
-      "type": "e_vehicle_battery",
-      "description": "BATTERY LIFE: Up to 1000 Cycles"
-    },
-    {
-      "type": "e_vehicle_motor",
-      "description": "750W"
-    },
-    {
-      "type": "e_vehicle_motor",
-      "description": "Rear Hub 750W"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "LCD displayer"
-    },
-    {
-      "type": "e_vehicle_wiring_harness",
+      "type": "e-bike-wiring-harness",
       "description": "Waterproof Connectors and Wiring Harness"
     },
     {
-      "type": "lights",
+      "type": "ebike-battery",
+      "description": "48v 16Ah Lithium Battery"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "BATTERY LIFE: Up to 1000 Cycles"
+    },
+    {
+      "type": "ebike-displayremote",
+      "description": "LCD displayer"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "750W"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "Rear Hub 750W"
+    },
+    {
+      "type": "light",
       "description": "Front LED light"
     },
     {

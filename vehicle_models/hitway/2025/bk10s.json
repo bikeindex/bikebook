@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/hitway/2025/bk10s",
   "manufacturer": "Hitway",
   "model_group": "BK10",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -38,7 +38,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/hitway/2025/bk10s_grey.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/hitway/2025/bk10s-grey.jpg",
           "variants": [
             {
               "sku": "HW-BK10S1-BLACKGREY",
@@ -54,7 +54,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "mounts": [
       {
         "type": "rack"
@@ -75,8 +75,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -85,7 +85,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -94,8 +94,9 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_speed": "spoke_magnet",
+      "water_rating": "IP54",
       "battery": {
         "capacity": 624,
         "voltage": 48,
@@ -156,16 +157,16 @@
       "description": "mechanical disc brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 13Ah Lithium-ion Battery"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "250W 70NM Hub Motor"
+      "type": "ebike-displayremote",
+      "description": "Multifunctional LCD Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Multifunctional LCD Display"
+      "type": "ebike-motor",
+      "description": "250W 70NM Hub Motor"
     },
     {
       "type": "tire",

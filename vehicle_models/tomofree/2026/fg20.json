@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/tomofree/2026/fg20",
   "manufacturer": "Tomofree",
   "model": "FG20",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -36,12 +36,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -51,11 +51,12 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IP5",
       "battery": {
         "capacity": 960,
-        "voltage": 48
+        "voltage": 48,
+        "charging_time": 360
       },
       "rated_power": 850,
       "peak_power": 1200,
@@ -66,14 +67,14 @@
           "range_claimed": 64,
           "max_slope": 30,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -109,11 +110,11 @@
       "description": "Dual hydraulic disc brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 20Ah"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "LED Light",
       "description": "Front and brake light"
     },

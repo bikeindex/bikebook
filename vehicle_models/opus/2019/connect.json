@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/opus/2019/connect",
   "manufacturer": "Opus",
   "model_group": "Connect",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -22,7 +22,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/opus/2019/connect_arctic_white.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/opus/2019/connect-arctic-white.jpg"
         }
       ],
       "url": "https://www.opusbike.com/en/bikes/connect/connect-op-con2aw-en/",
@@ -74,8 +74,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -93,7 +93,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -102,12 +102,12 @@
   ],
   "motors": [
     {
-      "id": "c/shimano/2018/e5000_du_e5000",
+      "id": "c/shimano/2018/e5000-du-e5000",
       "drive_wheel": "rear",
       "manufacturer": "Shimano",
       "model": "DU-E5000",
       "model_group": "E5000",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "spindle": "square taper",
       "sensor_cadence": false,
       "battery": {
@@ -123,7 +123,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         }
       ]
@@ -174,7 +174,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Shimano",
       "description": "Shimano STePS E-5000"
     },
@@ -188,17 +188,9 @@
       "description": "Shimano BR-MT200 hydraulic disc"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano BL-MT200"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 11-32"
     },
     {
       "type": "chain",
@@ -208,6 +200,14 @@
     {
       "type": "chainrings",
       "description": "38"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 11-32"
     },
     {
       "type": "crankset",
@@ -224,7 +224,7 @@
       "description": "Shimano Altus shadow"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Shimano",
       "description": "Shimano E-8014 418Wh 36V 11.6Ah battery"
     },
@@ -237,7 +237,7 @@
       "description": "Aluminum tapered 1-1/2 to 1-1/8 in"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips tape",
       "manufacturer": "Velo",
       "description": "Velo ERGO dual density"

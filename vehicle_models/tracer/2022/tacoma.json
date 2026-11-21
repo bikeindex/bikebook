@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/tracer/2022/tacoma",
   "manufacturer": "Tracer",
   "model": "Tacoma",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -94,8 +94,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -113,7 +113,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -124,7 +124,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_speed": "spoke_magnet",
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
@@ -141,7 +141,7 @@
           "max_speed": 35,
           "range_claimed": 48,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -149,7 +149,7 @@
           "availability": "stock",
           "range_claimed": 89,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -162,7 +162,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Cartridge Steel Speed Sensors"
     },
     {
@@ -174,21 +174,21 @@
       "description": "Disc F-160mm, R-160mm"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Alloy"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano TZ500 14-28T 7-Speed"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z7 1/2x3/32x118L"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano TZ500 14-28T 7-Speed"
     },
     {
       "type": "crankset",
@@ -206,20 +206,20 @@
       "description": "Shimano Tx300 7-Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Panasonic",
       "description": "Panasonic Lithium Battery 48V/12.8Ah"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "LCD"
+    },
+    {
+      "type": "ebike-motor",
       "position": [
         "rear"
       ],
       "description": "Alloy 3/8”x13Gx36Hx170mm 48V 800W"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "LCD"
     },
     {
       "type": "fork",

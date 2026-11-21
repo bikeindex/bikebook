@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/vitus/2026/sentier",
   "manufacturer": "Vitus",
   "model_group": "Sentier",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -99,8 +99,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "11_rear"
+    "1-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -127,14 +127,14 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
       "rotor_diameter": 180
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -206,7 +206,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Shimano",
       "description": "Shimano BB-MT500"
     },
@@ -220,7 +220,7 @@
       "description": "Shimano MT201; Hydraulic disc brake, F:180mm R:160mm rotors"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -229,17 +229,17 @@
       "description": "Shimano; F:180mm R:160mm rotors"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "Shimano",
+      "description": "Shimano LG-500 11 Speed, 114 Links"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano LG400; 11 speed, 11-50t, 11-13-15-17-20-23-26-30-36-43-50t"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "Shimano",
-      "description": "Shimano LG-500 11 Speed, 114 Links"
     },
     {
       "type": "crankset",
@@ -268,7 +268,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "manufacturer": "Velo",
       "description": "Velo Lock On"
@@ -338,7 +338,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "SEATCLAMP",
       "manufacturer": "Vitus",
       "description": "Vitus 34.9mm Diameter",

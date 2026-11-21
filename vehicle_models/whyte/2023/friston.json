@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/whyte/2023/friston",
   "manufacturer": "Whyte",
   "model_group": "Gisburn",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "atb_gravel",
+  "primary_activity": "atb-gravel",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/whyte/2023/friston.jpg",
   "description": "Find Your Fun — Everywhere\nOur Friston is perfect if you’re looking for a gravel bike that’s fun, versatile and will push the limits of what you can do off-road on a drop-barred bike. Load up and leave home or take the wild way to work and back, the Friston is designed to go the bike packing distance, and makes the journey the best part of the experience. Light yet tough, lively yet surefooted, fast on the road, fun in the woods, the Friston is more than just gravel.\n\nHighlights\n— Lightweight 6061 T6 hydroformed, multi-butted alloy Single Chain Ring (1X) specific frame\n— Full carbon tapered straight blade fork\n— SRAM Apex 11 speed mechanical transmission + hydraulic disc brakes\n— 1x11 transmission (38T chainring x 10-42T cassette)\n— Remote-controlled dropper post\n— Clearance for up to 700x50mm rear + 29x2.0in front tyres\n\nWhy Friston?\nLightweight and responsive, the Friston is perfect for fast-paced commutes – and with its proven trail-taming handling it has the edge when the road stops and the real fun begins. Contemporary mountain bike (MTB) influences include a longer reach, a short stem and a wider bar. We stopped short of a crazy-slack head angle because Whyte’s Total Geometry concept creates off-road control through fork geometry genius instead. That way you get the same confident MTB feel without the flop and wander of a slack head angle. The result isn’t just on-trail confidence, but a neutral and natural steering feel on road, too. That doesn’t change when you’re loaded up with bike-packing gear either. We even fitted a dropper post as standard so your saddle won’t get in the way of confident control and rider balance. Perfect for when chasing those singletrack thrills or when the rougher end of the gravel spectrum suddenly gets steep and techy.\n\nPlus, if you want to push your riding even further off-road – or tailor your ride for a variety of different uses – the frame will take up to a 700x50mm tyre in the rear and up to a 29x2.0in tyre up front for a massive grip, comfort and confidence boost through all weathers.\n\nFeatures & Equipment\nPractical, good looking and always ready for adventure, Friston is your ideal getaway partner. Wide-range SRAM Apex single ring 1x11 gearing makes climbing easy – whether summiting mountain passes with bike packing gear or making up for lost time after the morning alarm didn’t go off. The lightweight, rough-smoothing carbon fork boosts all-day comfort. SRAM Apex 1 hydraulic disc brakes with a larger 180mm front rotor give you maximum braking control and mean stopping is never an issue either. Sealing gussets and adding masses of mud clearance around 700x45mm tyres mean bad weather will never hold you back. And if that wasn’t enough, the alloy frame and carbon fork have mounts to take a full set of bike packing gear or conventional pannier racks, so the Friston can be ridden as far or fast as you like.",
@@ -110,8 +110,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "11_rear"
+    "1-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -129,7 +129,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
@@ -137,7 +137,7 @@
       "caliper_mount": "Disc Flat Mount"
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -244,7 +244,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "BSA 68mm"
     },
     {
@@ -266,22 +266,22 @@
       "description": "SRAM Apex 1 Hydraulic, Centre-Lock 160mm Disc, Flat Mount, Internal Routing"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "SRAM Apex 1, Hydraulic"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM XG-1150, 10-42, 11 Speed"
     },
     {
       "type": "chain",
       "manufacturer": "SRAM",
       "description": "SRAM PC-1110, 11 Speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM XG-1150, 10-42, 11 Speed"
     },
     {
       "type": "crankset",
@@ -307,7 +307,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bar Tape",
       "manufacturer": "Whyte",
       "description": "Whyte Anti Slip, Cross Bar Tape"

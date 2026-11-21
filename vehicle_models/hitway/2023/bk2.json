@@ -1,17 +1,17 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/hitway/2023/bk2",
   "manufacturer": "Hitway",
   "model": "BK2",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/hitway/2023/bk2.png",
-  "geometry_photo": "https://bikebook.bikeindex.org/hitway/2023/bk2_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/hitway/2023/bk2-geometry.jpg",
   "description": "Optimized Power for Effortless Commuting\nThe BK2 delivers a refined riding experience tailored for European cities. Its 250W hub motor provides a smooth, legal boost up to 25 km/h, while 5 pedal-assist modes allow you to customize your effort. Whether you are tackling a 25° incline or cruising to a café, the power delivery is intuitive, ensuring you arrive fresh and sweat-free.\nUltra-Portable Magnesium Alloy Design\nEngineered for the \"last mile,\" the BK2 features a durable magnesium-aluminium alloy frame that strikes the perfect balance between strength and portability. At just 22.7 kg, the quick-fold design is perfect for transitioning from the street to the metro, office, or car trunk. It supports a payload of up to 100 kg, making it a robust companion for daily errands.\nMaximum Comfort with Dual Shock Absorption\nDon't let cobblestones or rough bike paths ruin your ride. The BK2 sets itself apart with a dual suspension system (front fork and rear shock), providing superior cushioning that many compact e-bikes lack. This \"floating\" ride feel, paired with an ergonomic adjustable saddle, ensures that even longer trips across patchy city surfaces remain comfortable and stable.\nCertified Safety & STVZO Lighting\nSafety is non-negotiable. The BK2 is TÜV-certified and comes standard with STVZO-compliant LED lights for maximum visibility in European traffic. The front and rear disc brakes provide high-performance stopping power, while the integrated display keeps vital stats like speed and battery life clearly in view, allowing you to focus on the road ahead.\nRemovable Battery & Versatile Utility\nExperience the freedom of flexible charging. The 36V 7.8Ah lithium battery is seamlessly integrated into the frame for a sleek look but can be removed for indoor charging—perfect for shared buildings or offices. With a generous range of 35–70 km and a sturdy factory-installed rear rack, the BK2 is the ultimate value-for-money choice for sustainable urban mobility.",
   "first_year": 2023,
   "years": {
@@ -37,7 +37,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/hitway/2023/bk2_grey.png",
+          "stock_photo": "https://bikebook.bikeindex.org/hitway/2023/bk2-grey.png",
           "variants": [
             {
               "sku": "HW-EU-BK2-GREY",
@@ -53,7 +53,7 @@
   },
   "frame": {
     "material": "magnesium",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "mounts": [
       {
         "type": "rack"
@@ -75,12 +75,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -89,7 +89,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IP54",
       "battery": {
         "capacity": 281,
@@ -157,19 +157,19 @@
       "description": "Disc Brakes with Cut-Off"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V 7.8Ah Lithium Battery"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "250W Hub Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Smart LCD Display"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "250W Hub Motor"
+    },
+    {
+      "type": "light",
       "type_detail": "Certified Safety & STVZO Lighting",
       "description": "Certified Safety & STVZO Lighting"
     },
@@ -182,7 +182,7 @@
       "description": "Rear Rack Practicality"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Maximum Comfort with Dual Shock Absorption",
       "position": [
         "rear"

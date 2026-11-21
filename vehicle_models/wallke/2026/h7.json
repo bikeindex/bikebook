@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/wallke/2026/h7",
   "manufacturer": "Wallke",
   "model_group": "H7",
@@ -7,13 +7,13 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "atb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/wallke/2026/h7.webp",
-  "geometry_photo": "https://bikebook.bikeindex.org/wallke/2026/h7_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/wallke/2026/h7-geometry.jpg",
   "first_year": 2026,
   "years": {
     "2026": {
@@ -25,7 +25,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wallke/2026/h7_glossy_white.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/wallke/2026/h7-glossy-white.webp",
           "variants": [
             {
               "sku": "H7U-40A-WH-X",
@@ -51,7 +51,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wallke/2026/h7_matte_blue.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/wallke/2026/h7-matte-blue.webp",
           "variants": [
             {
               "sku": "H7U-40A-BL-X",
@@ -64,7 +64,7 @@
           "colors": [
             "brown"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wallke/2026/h7_glossy_beige.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/wallke/2026/h7-glossy-beige.webp",
           "variants": [
             {
               "sku": "H7U-40A-YL-X",
@@ -77,7 +77,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wallke/2026/h7_white.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/wallke/2026/h7-white.webp",
           "variants": [
             {
               "sku": "H7-40A-WH",
@@ -123,8 +123,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -133,7 +133,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -144,15 +144,15 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
-      "certifications": [
-        "UN 38.3"
-      ],
       "battery": {
         "capacity": 1920,
         "weight": 8.16,
-        "charging_time": 360
+        "charging_time": 360,
+        "certifications": [
+          "UN 38.3"
+        ]
       },
       "rated_power": 2000,
       "peak_power": 4000,
@@ -165,7 +165,7 @@
           "range_claimed": 209,
           "max_slope": 45,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -173,7 +173,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -218,7 +218,7 @@
       "description": "Dual-Piston Hydraulic Disc Brakes"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Brake disc",
       "position": [
         "front",
@@ -227,20 +227,20 @@
       "description": "203×2.8mm Oversized Heavy-Duty Brake Rotor"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery capacity: 1920Wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 6A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "2000W Rear Motor"
+      "type": "ebike-displayremote",
+      "description": "Yonlin 4\" LCD"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Yonlin 4\" LCD"
+      "type": "ebike-motor",
+      "description": "2000W Rear Motor"
     },
     {
       "type": "fender",
@@ -254,7 +254,7 @@
       "description": "Hydraulic Aluminum Alloy Suspension Fork"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "48V 10W LED Headlight & Brake Light"
     },
     {
@@ -266,7 +266,7 @@
       "description": "55 lbs (25 kg)"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Rear Shock",
       "position": [
         "rear"

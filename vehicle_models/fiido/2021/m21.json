@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fiido/2021/m21",
   "manufacturer": "Fiido",
   "model": "M21",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -40,7 +40,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "wheels": [
     {
@@ -53,8 +53,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "motors": [
     {
@@ -69,12 +69,13 @@
           "mode": "assist",
           "availability": "stock",
           "max_speed": 40,
+          "range_claimed": 100,
           "operating_temperature": {
             "min": -10,
             "max": 50
           },
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -103,15 +104,15 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "High quality 48V 11.6Ah battery"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery cycle times: 800 Times"
     },
     {

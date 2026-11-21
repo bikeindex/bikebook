@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/totem/2022/hauler",
   "manufacturer": "Totem",
   "model": "Hauler",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -81,8 +81,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -99,7 +99,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -108,7 +108,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
       "battery": {
@@ -127,15 +127,16 @@
           "range_claimed": 121,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
+          "max_speed": 32,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -175,7 +176,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Square Taper, Sealed"
     },
     {
@@ -187,17 +188,17 @@
       "description": "Front & Rear Mechanical Disc Brakes"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC 7-SPEED"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "SHIMANO 14-28T 7-SPEED"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC 7-SPEED"
     },
     {
       "type": "crankset",
@@ -215,27 +216,27 @@
       "description": "SHIMANO 7-SPEED"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Lithium-ion 48V, 15Ah, Samsung 21700 cells, 8.9lbs"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 3 Amp Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V 750W Geared Hub Motor"
+      "type": "ebike-displayremote",
+      "description": "TFT Smart Display with Easy Read Backlight"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "TFT Smart Display with Easy Read Backlight"
+      "type": "ebike-motor",
+      "description": "48V 750W Geared Hub Motor"
     },
     {
       "type": "fork",
       "description": "Suspension Fork with MLO"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "description": "Ergonomic Comfort, Leather Sewn"
     },
@@ -256,7 +257,7 @@
       "description": "36H Disc Front and Rear"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "LED Headlight",
       "position": [
         "front"
@@ -288,7 +289,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "SEAT CLAMP",
       "description": "Quick Release"
     },

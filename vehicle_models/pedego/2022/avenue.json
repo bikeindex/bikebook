@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/pedego/2022/avenue",
   "manufacturer": "Pedego",
   "model_group": "Avenue",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -58,8 +58,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -76,7 +76,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -87,7 +87,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 499,
         "capacity_options": [
@@ -106,14 +106,14 @@
           "range_claimed": 90,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -129,12 +129,12 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "BELL",
       "description": "INTEGRATED W/ LEFT BRAKE LEVER."
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "68MM x 127.5MM SQUARE TAPER SPINDLE W/ SEALED CARTRIDGE BEARINGS; STEEL CUPS & BODY."
     },
     {
@@ -147,11 +147,11 @@
       "description": "BENGAL MB-606R MECHANICAL DISC BRAKES; INTUITIVE EASY TO USE ADJUSTABILITY; 5MM HEX INBOARD PAD ADJUSTMENT; INTEGRATED CABLE STOP W/ BARREL ADJUSTER."
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "BLACK ERGONOMIC LEVER W/ RUBBER FINGER PADDING; INTEGRATED BELL & MOTOR CUT OFF SWITCH FOR MAXIMUM SAFETY."
     },
     {
-      "type": "brake_pad",
+      "type": "brake-pad",
       "position": [
         "front",
         "rear"
@@ -159,7 +159,7 @@
       "description": "BENGAL SEMI-METALLIC DISC BRAKE PAD W/ STEEL BACKING PLATE; OE QUALITY FOR NO- COMPROMISE DISC BRAKE PERFORMANCE."
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -170,17 +170,17 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "Shimano",
+      "description": "SHIMANO HG40 1/2”x3/32” 122 LINKS."
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "SHIMANO HYPERGLIDE HG20 7 SPEED 12-32T; SMOOTH, LIGHT & RELIABLE SHIFTING PERFORMANCE."
-    },
-    {
-      "type": "chain",
-      "manufacturer": "Shimano",
-      "description": "SHIMANO HG40 1/2”x3/32” 122 LINKS."
     },
     {
       "type": "crankset",
@@ -196,20 +196,20 @@
       "description": "MICROSHIFT RD-M26L 7-SPEED; RESIN BODY W/ ENGINEERING COMPOSITE PULLEYS."
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V/10.4Ah OR 48V/14Ah BATTERY W/ PREMIUM LI-ION CELLS."
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 2A FANLESS SMART CHARGER WITH CHARGE INDICATOR LIGHT."
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "BLACK 48V BRUSHLESS GEARED REAR HUB MOTOR; 500 WATT NOMINAL POWER RATING; 45NM NOMINAL TORQUE RATING / 60NM MAX TORQUE; QUICK DISCONNECT CABLE W/ WATERPROOF CONNECTION."
+      "type": "ebike-displayremote",
+      "description": "2.5” BACKLIT LCD SCREEN; 3 BUTTONS TO CONTROL ELECTRONICS, TOGGLE INFO DISPLAYED, AND CUSTOMIZE SETTINGS; USB CHARGING PORT; WATERPROOF THREADED CONNECTION; CUSTOM PEDALSENSE® SOFTWARE."
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "2.5” BACKLIT LCD SCREEN; 3 BUTTONS TO CONTROL ELECTRONICS, TOGGLE INFO DISPLAYED, AND CUSTOMIZE SETTINGS; USB CHARGING PORT; WATERPROOF THREADED CONNECTION; CUSTOM PEDALSENSE® SOFTWARE."
+      "type": "ebike-motor",
+      "description": "BLACK 48V BRUSHLESS GEARED REAR HUB MOTOR; 500 WATT NOMINAL POWER RATING; 45NM NOMINAL TORQUE RATING / 60NM MAX TORQUE; QUICK DISCONNECT CABLE W/ WATERPROOF CONNECTION."
     },
     {
       "type": "fender",
@@ -220,7 +220,7 @@
       "description": "28” RIGID FORK W/ ALUMINUM LEGS; 1 1⁄8” THREADLESS STEERER TUBE; DISC BRAKE, FENDER & FRONT RACK MOUNTS."
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "description": "BLACK CLASSIC MUSHROOM STYLE RIBBED RUBBER GRIPS; CUSTOM PEDEGO DESIGN."
     },
@@ -238,7 +238,7 @@
       "description": "ZERO STACK SEMI-INTEGRATED 1 1⁄8” THREADLESS; ZS44/28.6 | ZS56/40."
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "TOOL KIT",
       "manufacturer": "Pedego",
       "description": "CUSTOM PEDEGO TOOL KIT: 6” ADJUSTABLE WRENCH (UP TO 15MM), 12/13G SPOKE WRENCH, T25 TORX WRENCH, 6MM HEX WRENCH, 5MM HEX WRENCH W/ #2 PHILLIPS SCREWDRIVER, 4MM HEX WRENCH."
@@ -248,7 +248,7 @@
       "description": "BLACK ALUMINUM ALLOY REAR KICKSTAND; ADJUSTABLE LENGTH COMPOSITE FOOT."
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "HEADLIGHT & TAILLIGHT AVAILABLE AFTERMARKET."
     },
     {

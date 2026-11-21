@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/hikeep/2026/26f",
   "manufacturer": "Hikeep",
   "model": "26F",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -60,12 +60,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -74,17 +74,17 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
-      "certifications": [
-        "UL 2271",
-        "UL 2580"
-      ],
+      "kind": "hub-drive",
       "water_rating": "IPX65",
       "battery": {
         "capacity": 1200,
         "voltage": 48.0,
         "chemistry": "li-ion",
-        "cells": "LG"
+        "cells": "LG",
+        "certifications": [
+          "UL 2271",
+          "UL 2580"
+        ]
       },
       "rated_power": 2000,
       "peak_power": 3000,
@@ -97,7 +97,7 @@
           "range_claimed": 177,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -106,7 +106,7 @@
           "range_claimed": 56,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -156,15 +156,15 @@
       "description": "203mm"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable 48V, 25Ah, Certificated by UL 2271"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V 3A Fast Charger"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LCD Color Display"
     },
     {
@@ -187,21 +187,21 @@
       "description": "Alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "600LM LED, Adjustable angle"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
       "description": "Braking Indicator"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Headlight and Taillight"
     },
     {
@@ -220,7 +220,7 @@
       "description": "50 kg / 110 lbs"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Track-Tuned Mid-Mount Shock",
       "position": [
         "rear"

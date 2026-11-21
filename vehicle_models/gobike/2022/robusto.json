@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/gobike/2022/robusto",
   "manufacturer": "GOBike",
   "model": "ROBUSTO",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/gobike/2022/robusto.webp",
-  "geometry_photo": "https://bikebook.bikeindex.org/gobike/2022/robusto_geometry.webp",
+  "geometry_photo": "https://bikebook.bikeindex.org/gobike/2022/robusto-geometry.webp",
   "description": "ROBUSTO Electric Bike FeaturesThe GOBIKE ROBUSTO is a blast to ride on and off roads. It boasts a powerful 750w rear hub motor, full front and rear suspension, and large 26” x 3” tires. With its five levels of Pedal Assist, power is delivered to the ROBUSTO by simply pedaling or by using the thumb throttle. The upgraded Shimano Altus derailleur delivers smooth shifting through its seven gears. The ROBUSTO is made from high grade aluminum that is lightweight and robust. Purchase a ROBUSTO and prepare yourself for new adventures while exploring new destinations.We’ve selected a high grade aluminum alloy for the ROBUSTO which reduces its overall weight without sacrificing strength or toughness. The ROBUSTO weighs just 55lbs but can carry up to 330lbs. LCD Display The backlit LCD display is your communication center. Here, you will find your speed, power assist (PAS) level, battery level, and odometer. This multifunctional display is weather resistant and includes a USB charging port Speed Shifter We’ve designed our bikes to get you to your destination, no matter how difficult it is. The Shimano 7-speed shifter delivers smooth and reliable shifting performance that allows you to traverse all kinds of terrain. Choose the right gear then add pedal assist and you will blast your way up even the steepest hills. Motor Power The motor is the driving force! We’ve carefully paired the power of our lithium-ion batteries with the high-quality, brushless motors from BAFANG. The ROBUSTO comes with a BAFANG 750W (900W Peak) motor that delivers high torque and a maximum speed of 26mph. Range ROBUSTO includes a 10.4Ah Lithium-Ion battery that mounts inside the bike frame. It can deliver up to 40 miles on a single charge and the charging time is just 4-6 hours. You can charge your battery while in the bike or remove the battery to charge it independently. Accessories ROBUSTO has large 26″ x 3″ tires coupled with front and rear suspension for added off-road grip and stability.",
   "first_year": 2022,
   "years": {
@@ -24,18 +24,36 @@
           "name": "Black",
           "colors": [
             "black"
+          ],
+          "variants": [
+            {
+              "sku": "Robusto|Black",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "Blue",
           "colors": [
             "blue"
+          ],
+          "variants": [
+            {
+              "sku": "Robusto|Midnight-Blue",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "White",
           "colors": [
             "white"
+          ],
+          "variants": [
+            {
+              "sku": "Robusto|White",
+              "size": "One Size"
+            }
           ]
         }
       ],
@@ -62,8 +80,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -72,7 +90,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -83,11 +101,12 @@
     {
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 499,
         "voltage": 48,
-        "chemistry": "li-ion"
+        "chemistry": "li-ion",
+        "charging_time": 360
       },
       "rated_power": 750,
       "peak_power": 900,
@@ -99,7 +118,7 @@
           "range_claimed": 64,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -153,41 +172,41 @@
       "description": "Shimano Altus"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Charging Type: Pulse"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Type: Lithium-Ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Primary Battery Capacity: 10.4AH"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "LED with USB charger"
+    },
+    {
+      "type": "ebike-motor",
       "manufacturer": "Bafang",
       "description": "Bafang"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "48V"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "750W"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Rear Hub Motor"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Chain Driven"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "LED with USB charger"
     },
     {
       "type": "fork",
@@ -205,7 +224,7 @@
       ]
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"

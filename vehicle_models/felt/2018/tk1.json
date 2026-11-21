@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2018/tk1",
   "manufacturer": "Felt",
   "model_group": "TK",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "track_racing",
+  "primary_activity": "track-racing",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2018/tk1.jpg",
   "description": "The Tk1 is the ultimate track bike, and is ideal for endurance disciplines, sprints, and mass start competitions. Developed in conjunction with multi-time World Champion Sarah Hammer and other members of various Olympic teams, the Tk1 exceeds the demands of the world’s best track athletes. Featuring a Felt UHC Advanced",
@@ -70,7 +70,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "bottom_bracket": {
       "shell": "BSA",
       "spindle": "24mm"
@@ -97,7 +97,7 @@
     }
   ],
   "drivetrain": [
-    "1_front",
+    "1-front",
     "fixed"
   ],
   "gearing": {
@@ -137,22 +137,22 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Rotor",
       "description": "Rotor BSA Track with 24mm bearings"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel / Cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "15T x 1/8\" with lockring"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC X101 1-speed 1/8\""
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel / Cassette",
+      "position": [
+        "rear"
+      ],
+      "description": "15T x 1/8\" with lockring"
     },
     {
       "type": "crankset",
@@ -165,7 +165,7 @@
       "description": "Felt Aero Track UHC Advanced + Nano carbon fiber, MMC with InsideOut construction, BSA threaded bottom bracket shell, horizontal dropouts with titanium surfaces, integrated chain tensioners \"Felt Aero Track UHC Advanced carbon fiber monocoque construction, 1.125\"\" carbon fiber steerer tube, crown, blades and dropouts with aluminum steerer tube plug and integrated compression device\""
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt VelvetGel tape with Felt Bubble-Tech F-Wing bar end plugs"
@@ -200,7 +200,7 @@
       "description": "Felt TkR1, sealed cartridge bearing, double-threaded fixed / fixed, 120mm with track nuts, 24H"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Assembly Paste",
       "description": "Carbon assembly paste"
     },
@@ -225,7 +225,7 @@
       "description": "Felt Tk1 UHC Advanced carbon fiber with 3T DiffLock internals"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "manufacturer": "Felt",
       "description": "Felt Aero Integrated Tk1"

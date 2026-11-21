@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/helokeep/2026/26m",
   "manufacturer": "Helokeep",
   "model": "26M",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -37,7 +37,7 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/helokeep/2026/26m_green.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/helokeep/2026/26m-green.webp",
           "variants": [
             {
               "sku": "Helokeep 26M Green",
@@ -64,12 +64,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -78,6 +78,7 @@
   ],
   "motors": [
     {
+      "water_rating": "IPX5",
       "battery": {
         "capacity": 1200,
         "voltage": 48
@@ -91,14 +92,14 @@
           "max_speed": 64,
           "range_claimed": 177,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -135,8 +136,13 @@
       "description": "Hydraulic Disc Brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 25Ah"
+    },
+    {
+      "type": "included-not-installed",
+      "type_detail": "Tools",
+      "description": "Toolkit to help you assemble the bike"
     },
     {
       "type": "tire",

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/heybike/2026/hybrid",
   "manufacturer": "Heybike",
   "model": "Hybrid",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -37,7 +37,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/heybike/2026/hybrid_ruby_red.png",
+          "stock_photo": "https://bikebook.bikeindex.org/heybike/2026/hybrid-ruby-red.png",
           "variants": [
             {
               "sku": "HB1HybridUSRD1A",
@@ -51,7 +51,7 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/heybike/2026/hybrid_emerald_green.png",
+          "stock_photo": "https://bikebook.bikeindex.org/heybike/2026/hybrid-emerald-green.png",
           "variants": [
             {
               "sku": "HB1HybridUSGN1A",
@@ -85,8 +85,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -105,7 +105,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -115,15 +115,18 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
+      "water_rating": "IPX6",
       "battery": {
-        "capacity": 864
+        "capacity": 864,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "peak_power": 1200,
@@ -135,7 +138,7 @@
           "max_speed": 45,
           "range_claimed": 161,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -161,8 +164,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
-      "type_detail": "Front Light",
+      "type": "bellnoisemaker",
       "description": "White Light with Horn"
     },
     {
@@ -175,7 +177,7 @@
       "description": "Tektro Hydraulic Disc Brakes"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotor",
       "position": [
         "front",
@@ -188,20 +190,20 @@
       "description": "48T"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "864Wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V / 3A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W Hub Motor (Galaxy eDrive System)"
+      "type": "ebike-displayremote",
+      "description": "LCD Color Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD Color Display"
+      "type": "ebike-motor",
+      "description": "750W Hub Motor (Galaxy eDrive System)"
     },
     {
       "type": "fender",
@@ -219,14 +221,14 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "White Light with Horn"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],

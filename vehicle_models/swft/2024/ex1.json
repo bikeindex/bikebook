@@ -1,10 +1,10 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/swft/2024/ex1",
   "manufacturer": "SWFT",
   "model": "EX1",
   "model_configuration": "complete",
-  "type": "e_scooter",
+  "type": "e-scooter",
   "propulsion": [
     "throttle"
   ],
@@ -17,6 +17,21 @@
     "2026": {
       "original_msrp": 37900,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "variants": [
+            {
+              "sku": "SWFT-EX1-BLK",
+              "gtin": "00810159081498",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://www.rideswft.com/products/swft-ex1-electric-scooter",
       "url_live": true
     },
@@ -24,7 +39,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "stem_fold"
+    "folding": "stem-fold"
   },
   "wheels": [
     {
@@ -75,20 +90,20 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Integrated Lithium-ion 36V, 5.2Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "42V / 1.5A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "300W"
+      "type": "ebike-displayremote",
+      "description": "Digital"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Digital"
+      "type": "ebike-motor",
+      "description": "300W"
     },
     {
       "type": "kickstand",

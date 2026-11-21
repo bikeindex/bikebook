@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/hovsco/2026/hovbeta",
   "manufacturer": "Hovsco",
   "model": "HovBeta",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -23,6 +23,16 @@
           "name": "Red",
           "colors": [
             "red"
+          ],
+          "variants": [
+            {
+              "sku": "374-BHY09-N84C2G",
+              "size": "One Size"
+            },
+            {
+              "sku": "374-BHY09-N84C1G",
+              "size": "One Size"
+            }
           ]
         },
         {
@@ -30,7 +40,13 @@
           "colors": [
             "purple"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/hovsco/2026/hovbeta_purple.webp"
+          "stock_photo": "https://bikebook.bikeindex.org/hovsco/2026/hovbeta-purple.webp",
+          "variants": [
+            {
+              "sku": "374-BHY09-N83X1G",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://www.hovsco.com/products/hovbeta-foldable-fat-tire-ebike",
@@ -41,7 +57,7 @@
     "material": "aluminum",
     "material_detail": "6061 Single-Butted Aluminum",
     "top_tube": "step_through",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "bottom_bracket": {
       "spindle": "square taper"
     },
@@ -73,8 +89,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -90,7 +106,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -101,7 +117,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
         "capacity": 720,
@@ -123,7 +139,7 @@
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -131,7 +147,7 @@
           "availability": "app_update",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -155,12 +171,12 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Quick Release",
       "description": "Quick Release"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Square Taper, Sealed"
     },
     {
@@ -172,15 +188,15 @@
       "description": "Hydraulic Disc Brakes, 180mm Rotors"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "description": "7 Speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "description": "14-28T, 7 Speed Cassette"
-    },
-    {
-      "type": "chain",
-      "description": "7 Speed"
     },
     {
       "type": "crankset",
@@ -197,20 +213,20 @@
       "description": "7 Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Internal Lithium-ion 48V, 15Ah (720Wh)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Included is a 54.6V 3 Amp Fast Charger, 4 Hours Charging"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "1300W (Peak) 750W (Sustained), 48V Brushless Rear Hub Motor"
+      "type": "ebike-displayremote",
+      "description": "BC280 LCD Smart Easy Read Display with Backlight screen with app"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "BC280 LCD Smart Easy Read Display with Backlight screen with app"
+      "type": "ebike-motor",
+      "description": "1300W (Peak) 750W (Sustained), 48V Brushless Rear Hub Motor"
     },
     {
       "type": "fork",
@@ -220,7 +236,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "description": "Ergonomic Comfort"
     },
@@ -241,7 +257,7 @@
       "description": "36H Disc Thru-axle Front, Nutted Rear"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "2 Screwdrivers, 3 Wrenches, 4 Allen Key Wrenchs"
     },
@@ -270,7 +286,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "SEAT CLAMP",
       "description": "Quick Release"
     },

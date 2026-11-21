@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2016/esatto",
   "manufacturer": "Kona",
   "model_group": "Esatto",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_endurance",
+  "primary_activity": "road-endurance-sportive",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/kona/2016/esatto.jpg",
   "first_year": 2016,
@@ -50,8 +50,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "9_rear"
+    "2-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -195,7 +195,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "B/B",
       "description": "TH 7420"
     },
@@ -210,18 +210,9 @@
       "description": "Tektro R359"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano Sora"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano HG200 11-32t 9spd"
     },
     {
       "type": "chain",
@@ -231,6 +222,15 @@
     {
       "type": "chainrings",
       "description": "34/50t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano HG200 11-32t 9spd"
     },
     {
       "type": "crankset",
@@ -262,7 +262,7 @@
       "description": "Kona Carbon Race"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Kona",
       "description": "Kona Cork Tape"
@@ -302,7 +302,7 @@
       "description": "Kona Thumb w/Offset"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Kona",
       "description": "Kona Clamp"

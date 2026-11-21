@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/cycrown/2025/dremax",
   "manufacturer": "Cycrown",
   "model": "Dremax",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -24,7 +24,19 @@
           "colors": [
             "teal"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/cycrown/2025/dremax.png"
+          "stock_photo": "https://bikebook.bikeindex.org/cycrown/2025/dremax.png",
+          "variants": [
+            {
+              "sku": "5185561",
+              "gtin": "739017515213",
+              "size": "One Size"
+            },
+            {
+              "sku": "5185566",
+              "gtin": "739017515237",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Graphite Black",
@@ -32,14 +44,28 @@
             "silver",
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/cycrown/2025/dremax_graphite_black.png"
+          "stock_photo": "https://bikebook.bikeindex.org/cycrown/2025/dremax-graphite-black.png",
+          "variants": [
+            {
+              "sku": "5185563",
+              "gtin": "739017515220",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Lunar White",
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/cycrown/2025/dremax_lunar_white.png"
+          "stock_photo": "https://bikebook.bikeindex.org/cycrown/2025/dremax-lunar-white.png",
+          "variants": [
+            {
+              "sku": "5185567",
+              "gtin": "739017515244",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://www.cycrown.com/products/dremax-commuter-e-bike",
@@ -65,12 +91,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -79,7 +105,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
@@ -96,7 +122,7 @@
           "max_speed": 45,
           "range_claimed": 105,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -137,7 +163,7 @@
   ],
   "components": [
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
@@ -146,23 +172,23 @@
       "description": "Shimano 8-Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V15Ah Samsung Lithium Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V 3A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W/1000W(peak) Brushless Gear Hub Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Color LCD Display"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "500W/1000W(peak) Brushless Gear Hub Motor"
+    },
+    {
+      "type": "light",
       "description": "Headlight & Rear Lights"
     },
     {

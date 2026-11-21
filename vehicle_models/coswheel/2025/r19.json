@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/coswheel/2025/r19",
   "manufacturer": "Coswheel",
   "model": "R19",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -52,8 +52,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -66,7 +66,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -77,7 +77,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_speed": "spoke_magnet",
       "battery": {
         "capacity": 2880,
@@ -95,7 +95,7 @@
           "range_claimed": 200,
           "levels": 3,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -104,7 +104,7 @@
           "range_claimed": 120,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -162,24 +162,24 @@
       "description": "Shimano 7-Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "72V 40Ah Lithium Battery, BMS 100A"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "84V6A Charger"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "4.58\" HD Full-Color Horizontal Screen"
+    },
+    {
+      "type": "ebike-motor",
       "description": "72V Peak 9000W Brushless Rear Hub Motor, 240N·m"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Rear hub motor system. Best for fast acceleration, mixed-surface riding, dirt roads, and light-to-moderate off-road use. Not designed for continuous low-speed steep climbing like a mid-drive mountain bike."
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "4.58\" HD Full-Color Horizontal Screen"
     },
     {
       "type": "fork",
@@ -197,14 +197,14 @@
       "description": "Anodized sandblasted black Φ: 680*Φ31.8*9°, tilted upwards 15°"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "12V Headlight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
@@ -215,7 +215,7 @@
       "description": "Aluminum Alloy Pedal, with Reflect-light, Axis 9/16 x2"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],

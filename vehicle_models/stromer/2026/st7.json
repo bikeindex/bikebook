@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/stromer/2026/st7",
   "manufacturer": "Stromer",
   "model_group": "ST7",
@@ -12,7 +12,7 @@
   ],
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -50,9 +50,9 @@
     }
   ],
   "drivetrain": [
-    "12_speed_pinion",
-    "1_rear",
-    "belt_drive"
+    "12-speed-pinion-gearbox",
+    "1-rear",
+    "belt-drive"
   ],
   "groupset": {
     "manufacturer": "Pinion",
@@ -61,14 +61,14 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
       "rotor_diameter": 203
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
@@ -93,7 +93,7 @@
           "max_speed": 45,
           "range_claimed": 260,
           "e_vehicle_classifications": [
-            "evc/l1e_b_moped"
+            "evc/l1e-b-moped"
           ]
         }
       ]
@@ -140,7 +140,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Horn",
       "manufacturer": "Stromer",
       "description": "Stromer Piezo Horn"
@@ -155,7 +155,7 @@
       "description": "Stromer HD944 by TRP 4|4 Piston ABS"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Discs",
       "position": [
         "front",
@@ -172,29 +172,29 @@
       "description": "Pinion Forged-175"
     },
     {
-      "type": "drive_belt",
+      "type": "drive-belt",
       "type_detail": "Belt drive"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery included: BQ1440 | 48V | 1440 Wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "manufacturer": "Stromer",
       "description": "Stromer CR246"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Stromer",
-      "description": "Stromer SYNO Sport II, 940 W, 52 Nm"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "OMNI C"
     },
     {
-      "type": "e_vehicle_remote"
+      "type": "ebike-displayremote"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Stromer",
+      "description": "Stromer SYNO Sport II, 940 W, 52 Nm"
     },
     {
       "type": "fender",
@@ -202,11 +202,11 @@
       "description": "Custom Stromer Durable Fender"
     },
     {
-      "type": "gps_connectivity_module",
+      "type": "gpsconnectivity-module",
       "type_detail": "GPS tracking"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Brooks Cambium Ergonomic Rubber Grips"
     },
@@ -217,13 +217,13 @@
       "description": "Stromer Integrated Handlebar"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Signature light",
       "manufacturer": "Stromer",
       "description": "Stromer Daytime Cruise Light"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
@@ -231,7 +231,7 @@
       "description": "Supernova M99 Pro 2, 1200 lm, 1900 lm"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Rear light with brake light",
       "position": [
         "rear"
@@ -325,5 +325,218 @@
       "type_detail": "Cellphone mounting option",
       "description": "Yes"
     }
-  ]
+  ],
+  "market_variants": {
+    "US": {
+      "markets": [
+        "US"
+      ],
+      "years": {
+        "2026": {
+          "original_msrp": 1199900,
+          "original_msrp_currency": "USD"
+        }
+      },
+      "motors": {
+        "0": {
+          "rated_power": 750,
+          "operating_modes": {
+            "assist stock": {
+              "e_vehicle_classifications": [
+                "evc/us/class-3"
+              ]
+            }
+          }
+        }
+      },
+      "components": [
+        {
+          "type": "bellnoisemaker",
+          "type_detail": "Horn",
+          "manufacturer": "Stromer",
+          "description": "Stromer Piezo Horn"
+        },
+        {
+          "type": "brake",
+          "position": [
+            "front",
+            "rear"
+          ],
+          "manufacturer": "Stromer",
+          "description": "Stromer HD944 by TRP 4|4 Piston ABS"
+        },
+        {
+          "type": "brake-rotor",
+          "type_detail": "Discs",
+          "position": [
+            "front",
+            "rear"
+          ],
+          "description": "203 mm | 203 mm",
+          "dimensions": {
+            "diameter": 203
+          }
+        },
+        {
+          "type": "crankset",
+          "manufacturer": "Pinion",
+          "description": "Pinion Forged-175"
+        },
+        {
+          "type": "drive-belt",
+          "type_detail": "Belt drive"
+        },
+        {
+          "type": "ebike-battery",
+          "description": "Battery included: BQ1440 | 48V | 1440 Wh"
+        },
+        {
+          "type": "ebike-charger",
+          "manufacturer": "Stromer",
+          "description": "Stromer CR246 W"
+        },
+        {
+          "type": "ebike-displayremote",
+          "description": "OMNI C"
+        },
+        {
+          "type": "ebike-displayremote"
+        },
+        {
+          "type": "ebike-motor",
+          "manufacturer": "Stromer",
+          "description": "Stromer SYNO Sport II, 750 W, 52 Nm"
+        },
+        {
+          "type": "fender",
+          "manufacturer": "Stromer",
+          "description": "Custom Stromer Durable Fender"
+        },
+        {
+          "type": "gpsconnectivity-module",
+          "type_detail": "GPS tracking"
+        },
+        {
+          "type": "gripstape",
+          "type_detail": "Grips",
+          "description": "Brooks Cambium Ergonomic Rubber Grips"
+        },
+        {
+          "type": "handlebar",
+          "type_detail": "Bar",
+          "manufacturer": "Stromer",
+          "description": "Stromer Integrated Handlebar"
+        },
+        {
+          "type": "light",
+          "type_detail": "Signature light",
+          "manufacturer": "Stromer",
+          "description": "Stromer Daytime Cruise Light"
+        },
+        {
+          "type": "light",
+          "position": [
+            "front"
+          ],
+          "manufacturer": "Supernova Lights",
+          "description": "Supernova M99 Pro 2, 1200 lm, 1900 lm"
+        },
+        {
+          "type": "light",
+          "type_detail": "Rear light with brake light",
+          "position": [
+            "rear"
+          ],
+          "manufacturer": "Supernova Lights",
+          "description": "Supernova M99 Taillight"
+        },
+        {
+          "type": "rack",
+          "type_detail": "Rack ¦ max 22.5 kg",
+          "manufacturer": "Racktime",
+          "description": "Custom Racktime Rack"
+        },
+        {
+          "type": "rim",
+          "manufacturer": "Stromer",
+          "description": "Stromer 27.5 x 35 by DT Swiss",
+          "dimensions": {
+            "diameter": 584
+          }
+        },
+        {
+          "type": "saddle",
+          "description": "Brooks Cambium C17"
+        },
+        {
+          "type": "shifter",
+          "type_detail": "Shifting",
+          "manufacturer": "Pinion",
+          "description": "Pinion C1.12 Smart.Shift (600%)"
+        },
+        {
+          "type": "stem",
+          "manufacturer": "Stromer",
+          "description": "Stromer Integrated Handlebar w. SP Connect Smartphone mounting option"
+        },
+        {
+          "type": "tire",
+          "position": [
+            "front",
+            "rear"
+          ],
+          "description": "Pirelli Angel ST Sport | 57-584",
+          "dimensions": {
+            "width": 57,
+            "diameter": 584
+          }
+        },
+        {
+          "type": "unknown",
+          "type_detail": "Connectivity",
+          "description": "CAT M1 | Bluetooth"
+        },
+        {
+          "type": "unknown",
+          "type_detail": "App",
+          "description": "OMNI"
+        },
+        {
+          "type": "unknown",
+          "type_detail": "Keyless",
+          "description": "Yes"
+        },
+        {
+          "type": "unknown",
+          "type_detail": "Smartlock",
+          "description": "Yes"
+        },
+        {
+          "type": "unknown",
+          "type_detail": "Personal settings",
+          "description": "Yes"
+        },
+        {
+          "type": "unknown",
+          "type_detail": "Over-the-air updates",
+          "description": "Yes"
+        },
+        {
+          "type": "unknown",
+          "type_detail": "Ride statistics",
+          "description": "Yes"
+        },
+        {
+          "type": "unknown",
+          "type_detail": "Frame options",
+          "description": "Sport"
+        },
+        {
+          "type": "unknown",
+          "type_detail": "Cellphone mounting option",
+          "description": "Yes"
+        }
+      ]
+    }
+  }
 }

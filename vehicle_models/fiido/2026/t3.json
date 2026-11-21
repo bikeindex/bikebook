@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fiido/2026/t3",
   "manufacturer": "Fiido",
   "model_group": "T3",
   "model": "T3",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "cargo",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/fiido/2026/t3.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/fiido/2026/t3_geometry.webp",
+  "geometry_photo": "https://bikebook.bikeindex.org/fiido/2026/t3-geometry.webp",
   "description": "A versatile cargo e-bike for family life, daily commuting, and everyday journeys around the city.",
   "first_year": 2026,
   "years": {
@@ -53,8 +53,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -70,7 +70,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -80,7 +80,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "battery": {
         "capacity": 972
       },
@@ -89,7 +89,8 @@
       "operating_modes": [
         {
           "mode": "assist",
-          "availability": "stock"
+          "availability": "stock",
+          "range_claimed": 187
         }
       ]
     }
@@ -147,20 +148,20 @@
       "description": "HDM-5 Four-Piston Hydraulic Disc Brakes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "HDM-5 Four-Piston Hydraulic Disc Brakes"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "description": "e9 Sport"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Rear Cogs",
       "position": [
         "rear"
       ],
       "description": "9S(11-32 T)"
-    },
-    {
-      "type": "chain",
-      "description": "e9 Sport"
     },
     {
       "type": "crankset",
@@ -175,20 +176,20 @@
       "description": "RD-K500 rear derailleur"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "972 Wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "36V2A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "250W Mid-Drive Motor"
+      "type": "ebike-displayremote",
+      "description": "LCD 1.47 inch"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD 1.47 inch"
+      "type": "ebike-motor",
+      "description": "250W Mid-Drive Motor"
     },
     {
       "type": "fork",

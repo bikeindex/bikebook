@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/brodie/2019/torque",
   "manufacturer": "Brodie",
   "model": "Torque",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -52,8 +52,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "10_rear"
+    "1-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -71,7 +71,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -120,7 +120,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "AXLES",
       "description": "F&R Q/R"
     },
@@ -143,7 +143,7 @@
       "description": "Shimano M-315 Hydraulic Disc"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "ROTOR",
       "position": [
         "front",
@@ -156,18 +156,18 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC X-10"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "GEAR",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano Deore 10-Spd., 11-36T"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC X-10"
     },
     {
       "type": "crankset",
@@ -188,7 +188,7 @@
       "description": "4130 CroMo Steel, Fender eyelets"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "manufacturer": "Velo",
       "description": "Velo Dual Density Lock-On"

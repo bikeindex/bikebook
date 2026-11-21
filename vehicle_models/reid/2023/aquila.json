@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/reid/2023/aquila",
   "manufacturer": "Reid",
   "model_group": "Aquila",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_biking",
+  "primary_activity": "road-biking",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/reid/2023/aquila.png",
   "description": "The new Aquila is our full alloy road racing bike. The 6061 alloy frame features internal cable routing and internal headset for clean looks and increased reliability.\nShimano Claris shifters give precise and effortless gear changes whether riding on the hoods or the drops and provide superb braking control. Brakes are dual pivot calipers from Tektro and give impressive stopping power. The Reid compact 50/34t alloy chainset matches perfectly with the 12-32t cassette to flatten any climb, and with a sealed bottom bracket it’s made to last. With lightweight alloy wheels fitted with 28c tyres the Aquila is quick to pick up speed and holds the roads like a pro.\nThe Aquila is a great start for those wanting to ride road on the regular.",
@@ -79,8 +79,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "8_rear"
+    "2-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -170,7 +170,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed bearing square taper"
     },
     {
@@ -183,22 +183,22 @@
       "description": "Tektro R313 dual-pivot callipers"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano Claris STI"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 8-speed cassette 12-32T"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z7 8 speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 8-speed cassette 12-32T"
     },
     {
       "type": "crankset",
@@ -230,7 +230,7 @@
       "description": "Alloy A head road fork"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bar Tape",
       "manufacturer": "Reid",
       "description": "Reid bar tape"

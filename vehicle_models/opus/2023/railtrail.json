@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/opus/2023/railtrail",
   "manufacturer": "Opus",
   "model_group": "Railtrail",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/opus/2023/railtrail.jpg",
   "first_year": 2023,
@@ -61,8 +61,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "11_rear"
+    "1-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -80,7 +80,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -89,12 +89,12 @@
   ],
   "motors": [
     {
-      "id": "c/shimano/2018/e6100_du_e6100",
+      "id": "c/shimano/2018/e6100-du-e6100",
       "drive_wheel": "rear",
       "manufacturer": "Shimano",
       "model": "DU-E6100",
       "model_group": "E6100",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "spindle": "Shimano E8000",
       "sensor_cadence": true,
       "battery": {
@@ -110,7 +110,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         }
       ]
@@ -190,17 +190,9 @@
       "description": "Shimano BR-MT420 hydraulic disc"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano BL-MT401"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 11-42"
     },
     {
       "type": "chain",
@@ -210,6 +202,14 @@
     {
       "type": "chainrings",
       "description": "38"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 11-42"
     },
     {
       "type": "crankset",
@@ -226,12 +226,12 @@
       "description": "Shimano Deore 5100"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Shimano",
       "description": "Shimano E-8014 418Wh 36V 11.6Ah battery"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "SC-E5000 Switch with integrated display"
     },
     {
@@ -243,7 +243,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips tape",
       "manufacturer": "Velo",
       "description": "Velo ERGO dual density"

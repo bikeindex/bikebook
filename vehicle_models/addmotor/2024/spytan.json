@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/addmotor/2024/spytan",
   "manufacturer": "Addmotor",
   "model_group": "Spytan",
@@ -7,13 +7,13 @@
   "model_configuration": "complete",
   "type": "tricycle",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/addmotor/2024/spytan.webp",
-  "geometry_photo": "https://bikebook.bikeindex.org/addmotor/2024/spytan_geometry.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/addmotor/2024/spytan-geometry.png",
   "description": "Smooth Ride with Superior Stability and Control.",
   "first_year": 2024,
   "years": {
@@ -42,7 +42,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "7020 Aluminum",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "seatpost_diameter": 31.6
   },
   "wheels": [
@@ -62,8 +62,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -72,7 +72,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -84,13 +84,13 @@
     {
       "drive_wheel": "rear",
       "sensor_speed": "spoke_magnet",
-      "certifications": [
-        "UL 2849"
-      ],
       "battery": {
         "capacity": 960,
         "voltage": 48,
-        "chemistry": "li-ion"
+        "chemistry": "li-ion",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "operating_modes": [
@@ -101,7 +101,7 @@
           "range_claimed": 145,
           "levels": 7,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -109,7 +109,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -162,7 +162,7 @@
       "description": "Hydraulic Disc Brake"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -183,25 +183,25 @@
       "description": "SHIMANO TOURNEY TY300 Rear Derailleur;7-Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "e-bike-wiring-harness",
+      "description": "Water-Resistant Connectors and Wiring Harness"
+    },
+    {
+      "type": "ebike-battery",
       "description": "48V*20 Ah Samsung UL-certified Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V*2.0A 5 Pins US Standard DC Charger 5 Pins With Auto Magnetic Suction"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V*750W Rear-Mounted Brushless Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Addmotor",
       "description": "Addmotor EB 2.0 LCD Display"
     },
     {
-      "type": "e_vehicle_wiring_harness",
-      "description": "Water-Resistant Connectors and Wiring Harness"
+      "type": "ebike-motor",
+      "description": "48V*750W Rear-Mounted Brushless Motor"
     },
     {
       "type": "fender",
@@ -212,7 +212,7 @@
       "description": "Black Aluminum"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Latest EB 2.0 front lights and 5-in-1 taillight"
     },
     {

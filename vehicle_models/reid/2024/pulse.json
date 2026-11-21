@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/reid/2024/pulse",
   "manufacturer": "Reid",
   "model_group": "Pulse",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -78,8 +78,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -97,7 +97,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -108,7 +108,7 @@
     {
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "chemistry": "li-ion",
         "cells": "LG"
@@ -180,7 +180,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed bearing"
     },
     {
@@ -192,21 +192,21 @@
       "description": "Nutt Jak 7 mechanical disc brakes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Nutt alloy 3 finger"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 7-speed freewheel (14-28T)"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z8.3"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 7-speed freewheel (14-28T)"
     },
     {
       "type": "crankset",
@@ -222,17 +222,17 @@
       "description": "Shimano TY300"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "10.4Ah LG cells, with DIB technology"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bafang",
-      "description": "Bafang 250W rear hub"
+      "type": "ebike-displayremote",
+      "description": "LCD handlebar-mounted display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD handlebar-mounted display"
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang 250W rear hub"
     },
     {
       "type": "fork",
@@ -240,7 +240,7 @@
       "description": "Reid steel commuter"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Reid",
       "description": "Reid ergo rubber"

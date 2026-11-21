@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/intheair/2023/colts",
   "manufacturer": "InTheAir",
   "model": "Colts",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -24,14 +24,28 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/intheair/2023/colts.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/intheair/2023/colts.jpg",
+          "variants": [
+            {
+              "sku": "HM-ITA-13-F20-WHITE",
+              "gtin": "768689381055",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Gray",
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/intheair/2023/colts_gray.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/intheair/2023/colts-gray.jpg",
+          "variants": [
+            {
+              "sku": "HM-ITA-13-F20-GREY",
+              "gtin": "768689381321",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://www.intheairbike.com/products/intheair-colts",
@@ -41,7 +55,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "mounts": [
       {
         "type": "fender"
@@ -68,8 +82,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -77,7 +91,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -88,7 +102,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
       "battery": {
@@ -107,7 +121,7 @@
           "range_claimed": 89,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -181,20 +195,20 @@
       "description": "Shimano 7 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 13Ah Lithium-ion battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "2.0 Amp smart charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W brushless gear motor"
+      "type": "ebike-displayremote",
+      "description": "LCD backlight display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD backlight display"
+      "type": "ebike-motor",
+      "description": "750W brushless gear motor"
     },
     {
       "type": "fender",
@@ -217,14 +231,14 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
       "description": "48v led integrated taillight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/segway/2026/myon",
   "manufacturer": "Segway",
   "model": "Myon",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -41,7 +41,7 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/segway/2026/myon_green.png",
+          "stock_photo": "https://bikebook.bikeindex.org/segway/2026/myon-green.png",
           "variants": [
             {
               "sku": "AA000300",
@@ -58,7 +58,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/segway/2026/myon_silver.png",
+          "stock_photo": "https://bikebook.bikeindex.org/segway/2026/myon-silver.png",
           "variants": [
             {
               "sku": "AA.21.03.01.0001",
@@ -90,8 +90,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -109,7 +109,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -119,7 +119,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "water_rating": "IPX5",
       "battery": {
@@ -136,14 +136,14 @@
           "max_speed": 45,
           "range_claimed": 129,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -214,19 +214,6 @@
       "description": "Segway Hydraulic Disc brake Front Two-piston, 180 mm rotor Segway Hydraulic Disc brake Rear Two-piston, 180 mm rotor"
     },
     {
-      "type": "cassette",
-      "type_detail": "Rear Gear Range",
-      "position": [
-        "rear"
-      ],
-      "description": "11-39T"
-    },
-    {
-      "type": "cassette",
-      "manufacturer": "Shimano",
-      "description": "Shimano Cues"
-    },
-    {
       "type": "chain",
       "description": "KMC/CHOHO, 124links, Linkguide Available"
     },
@@ -239,16 +226,29 @@
       "description": "46T"
     },
     {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Rear Gear Range",
+      "position": [
+        "rear"
+      ],
+      "description": "11-39T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "manufacturer": "Shimano",
+      "description": "Shimano Cues"
+    },
+    {
       "type": "derailleur",
       "manufacturer": "Shimano",
       "description": "Shimano Cues 9 speed (E-shifting)"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Nominal Voltage: 48V; Nominal Energy: 722Wh; Charger Current: Rate 1.3A, Max 3.9A; Battery Management System: Yes; Battery IP Rating: IPX7"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Rated Power: 500W; Peak Power: 1500W"
     },
     {
@@ -263,26 +263,26 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Front Position Light",
       "position": [
         "front"
       ]
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "19000CD, 600 lumens"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Turn Indicator",
       "description": "Yes, Emark certificated"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Tail Light",
       "description": "Yes, with Brake Signal Highlight"
     },

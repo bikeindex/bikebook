@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/reid/2025/sphere",
   "manufacturer": "Reid",
   "model_group": "Sphere",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -74,8 +74,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "8_rear"
+    "2-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -94,7 +94,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -160,7 +160,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed square taper"
     },
     {
@@ -173,17 +173,17 @@
       "description": "Tektro HD-M275 hydraulic disc brake, 160mm rotors"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z8.3 8 speed chain"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Cassette/Freewheel",
       "position": [
         "rear"
       ],
       "description": "8 speed cassette 11-40T"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Z8.3 8 speed chain"
     },
     {
       "type": "crankset",
@@ -219,7 +219,7 @@
       "description": "Steel rigid fork"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Ergo grips"
     },
@@ -261,7 +261,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "Alloy clamp 31.8mm",
       "dimensions": {
         "diameter": 31.8

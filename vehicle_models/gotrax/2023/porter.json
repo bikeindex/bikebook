@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/gotrax/2023/porter",
   "manufacturer": "GOTRAX",
   "model": "Porter",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
@@ -38,7 +38,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/gotrax/2023/porter_grey.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/gotrax/2023/porter-grey.jpg",
           "variants": [
             {
               "sku": "GT-PORTER-GREY",
@@ -74,7 +74,7 @@
   ],
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -102,7 +102,7 @@
           "range_claimed": 95,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -110,7 +110,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -149,20 +149,20 @@
       "description": "Mechanical"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 10.4aH (499.2Wh)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V 2A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W"
+      "type": "ebike-displayremote",
+      "description": "Handlebar Console"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Handlebar Console"
+      "type": "ebike-motor",
+      "description": "500W"
     },
     {
       "type": "kickstand",
@@ -170,7 +170,7 @@
       "description": "Dual Leg Kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"
@@ -178,7 +178,7 @@
       "description": "LED"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Reactive Tail Light",
       "position": [
         "rear"

@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/mukkpet/2024/breeze",
   "manufacturer": "Mukkpet",
   "model": "Breeze",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/mukkpet/2024/breeze.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/mukkpet/2024/breeze_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/mukkpet/2024/breeze-geometry.jpg",
   "description": "【30AH Dual Batteries & 120Miles Range】The Mukkpet electric bike 30AH dual batteries (15AH per battery) equipped with automotive power cells, that can offer 60-120Miles ranges in pedal assist mode and 50-70Miles in pure throttle mode. Intelligent BMS battery system provide 14 types of protection to make our batteries safer and have a longer cycle life. Equipped with 54.6V two 3A chargers for 4 hours fast charging, you can set off again to explore the unknown after resting for a few hours.\n【750W (1500Peak) Motor Power】Benefited to the 750W powerful motor, the Mukkpet Breeze electric bike for adults can reach a maximum speed of 28MPH. In addition, the Mukkpet dual battery ebike has five modes, they are pedal assist mode, pure throttle mode, ordinary bicycle mode, cruise control mode, and walk mode. So that you can have multiple experiences and fun in one bike.\n【Support for Manned & loaded Items】The upgraded electric bike cargo is equipped with a high-quality wooden back seat for comfort and support for passengers. In addition, you can also remove the rear seat and replace it with a rear basket to load items, it is very convenient for your daily life and commuting needs. Additional basket order required.\n【Color Display & USB Charging Port】The upgraded adult ebike LCD display provides powerful data support, showing battery level, real-time speed, ODO, PAS level and etc.. Multi-functional display make riding data easy to see at a glance. With the USB charging port, you can charge your cell phone and use it to navigate with greater peace of mind.\n【20\" x 4.0 Integrated Alloy Wheel】Compared to spoke wheels, the integrated alloy wheel is more sturdy, easier to maintenance, and not easily damaged. Mukkpet Breeze 20” X 4.0 fat tire is suitable for any terrain, you can freely ride in the mountains, roads, beaches, snow and other terrain.\n【Safety First】The front and rear 180mm disc brakes ensure strong and responsive braking. When you brake, the safety system will activate the rear light to alert pedestrians or vehicles behind you. Bright front and rear lights allow you to ride safely and worry free in dark environments. LED front and rear lights and reflectors enhance visibility, ensuring safe riding at night as during the day. With these safety components, you can ride with confidence regardless of time or road conditions.\n【UL Verification & Security Assurance】 Mukkpet electric bikes have passed the General Certificate of Conformity (GCC) and 2849 UL bicycle safety certification, with safety and quality assurance, allowing you to ride with peace of mind and happiness.\n【Local Phone & Repair Service】 We have US local customer service phone and email, so you don't have to worry about maintenance issues caused by online shopping. With a 2 year repair service, you can get in touch with us at any time, and all questions will be responded within 24 hours.\n\n【Full Care & Return or Replace】 We have completed 90% pre-assembled of electric bicycles, you can refer to the unboxing video and user manual to finish the final. Don't hesitate, choose Mukkpet! If you need to return or replace the ebike within 14 days after receiving it, please keep the original box and contact us.",
   "first_year": 2024,
   "years": {
@@ -52,12 +52,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -67,7 +67,10 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
+      "certifications": [
+        "UL 2849"
+      ],
       "battery": {
         "capacity": 1440,
         "voltage": 48,
@@ -82,7 +85,7 @@
           "max_speed": 45,
           "range_claimed": 193,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -120,7 +123,7 @@
   ],
   "components": [
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -132,23 +135,23 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 30Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Standard 3.0 A Smart Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "1500W Peak Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Colorful LCD Display"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "1500W Peak Motor"
+    },
+    {
+      "type": "light",
       "position": [
         "rear"
       ],

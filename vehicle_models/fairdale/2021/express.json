@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fairdale/2021/express",
   "manufacturer": "Fairdale",
   "model": "Express",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -71,8 +71,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -151,7 +151,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "BB Parts",
       "manufacturer": "FSA",
       "description": "FSA"
@@ -165,16 +165,8 @@
       "description": "Aluminum, Dual Pivot, w/ Quick Release"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum, Short Pull"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Driver",
-      "position": [
-        "rear"
-      ],
-      "description": "16t Freewheel"
     },
     {
       "type": "chain",
@@ -187,6 +179,14 @@
       "description": "42t"
     },
     {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Driver",
+      "position": [
+        "rear"
+      ],
+      "description": "16t Freewheel"
+    },
+    {
       "type": "crankset",
       "type_detail": "Cranks",
       "manufacturer": "FSA",
@@ -197,7 +197,7 @@
       "description": "1020 Steel, 1 1/8”"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Fairdale",
       "description": "Fairdale Swan"
@@ -246,7 +246,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Fairdale",
       "description": "Fairdale, 30mm",

@@ -1,10 +1,10 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2023/racer",
   "manufacturer": "Jetson",
   "model": "Racer",
   "model_configuration": "complete",
-  "type": "e_scooter",
+  "type": "e-scooter",
   "propulsion": [
     "throttle"
   ],
@@ -18,13 +18,28 @@
     "2023": {
       "original_msrp": 49999,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "variants": [
+            {
+              "sku": "JRACER-BLK",
+              "gtin": "00811991036578",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://web.archive.org/web/20230603180227/https://ridejetson.com/products/racer-electric-scooter",
       "url_live": false
     }
   },
   "frame": {
     "material": "steel",
-    "folding": "stem_fold"
+    "folding": "stem-fold"
   },
   "wheels": [
     {
@@ -82,11 +97,11 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 7.5Ah lithium-ion battery"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "250 watt"
     },
     {

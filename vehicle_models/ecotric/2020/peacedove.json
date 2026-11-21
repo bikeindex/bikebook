@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ecotric/2020/peacedove",
   "manufacturer": "Ecotric",
   "model": "Peacedove",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -57,8 +57,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -66,14 +66,14 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front"
       ],
       "caliper_mount": "Brake Bosses"
     },
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "rear"
       ]
@@ -81,7 +81,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_speed": "spoke_magnet",
       "battery": {
         "capacity": 360,
@@ -96,7 +96,7 @@
           "availability": "stock",
           "max_speed": 40,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -155,21 +155,21 @@
       "description": "Shimano 7 Gears"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36v 10AH"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "BATTERY LIFE: 400-600 Cycles"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Rear Hub 36V 350W"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Ecotric",
       "description": "Ecotric Smart LED"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "Rear Hub 36V 350W"
     },
     {
       "type": "fender",

@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jackrabbit/2023/xg",
   "manufacturer": "JackRabbit",
   "model_group": "XG",
   "model": "XG",
   "model_configuration": "complete",
-  "type": "e_motorcycle",
+  "type": "e-motorcycle",
   "propulsion": [
     "throttle"
   ],
@@ -24,28 +24,52 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jackrabbit/2023/xg.png"
+          "stock_photo": "https://bikebook.bikeindex.org/jackrabbit/2023/xg.png",
+          "variants": [
+            {
+              "sku": "JRTBK",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Red",
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jackrabbit/2023/xg_red.png"
+          "stock_photo": "https://bikebook.bikeindex.org/jackrabbit/2023/xg-red.png",
+          "variants": [
+            {
+              "sku": "JRTRE",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "White",
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jackrabbit/2023/xg_white.png"
+          "stock_photo": "https://bikebook.bikeindex.org/jackrabbit/2023/xg-white.png",
+          "variants": [
+            {
+              "sku": "JRTWH",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Yellow",
           "colors": [
             "yellow"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jackrabbit/2023/xg_yellow.png"
+          "stock_photo": "https://bikebook.bikeindex.org/jackrabbit/2023/xg-yellow.png",
+          "variants": [
+            {
+              "sku": "JRTYE",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://jackrabbit.bike/products/jackrabbit-xg-black",
@@ -70,7 +94,7 @@
   ],
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -80,9 +104,8 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "certifications": [
-        "UL 2271",
         "UL 2272"
       ],
       "water_rating": "IPX4",
@@ -90,7 +113,10 @@
         "capacity": 151,
         "voltage": 36,
         "chemistry": "li-ion",
-        "charging_time": 180
+        "charging_time": 180,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 500,
       "operating_modes": [
@@ -141,31 +167,31 @@
       "description": "Mechanical front & rear disc calipers with 160 mm rotors"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Dual Li-Ion 36V 4.2Ah 151.2Wh (8.4Ah 302.4 Wh total)"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Safety: Tested & compliant with UL2271 & UL2272"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Level: 5 level power indicator"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "110-240V input, 42V 3A output"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500 watt rear hub brushless electric motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Multi-function backlit, speedometer & odometer"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "500 watt rear hub brushless electric motor"
+    },
+    {
+      "type": "light",
       "description": "Standard front and rear lights via light plug ports"
     },
     {

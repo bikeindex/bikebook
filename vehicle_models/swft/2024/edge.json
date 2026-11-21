@@ -1,15 +1,15 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/swft/2024/edge",
   "manufacturer": "SWFT",
   "model": "Edge",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/swft/2024/edge.png",
   "description": "The EDGE is our introductory mountain e-bike for the multi-use rider. From the streets to the trails, The Edge includes all the features you need to ride confidently like high-tread tires and disc brakes for extra stopping power. The frame construction provides higher clearance to traverse rocks, logs and ruts, and a single charge takes you 31 miles.",
@@ -18,6 +18,17 @@
     "2026": {
       "original_msrp": 99999,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "SWFT-EDGE-BLK",
+              "gtin": "00850023177971",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://www.rideswft.com/products/edge-e-bike",
       "url_live": true
     },
@@ -41,15 +52,15 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "6_rear"
+    "1-front",
+    "6-rear"
   ],
   "groupset": {
     "electronic": false
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -59,7 +70,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "battery": {
         "capacity": 270,
@@ -75,14 +86,14 @@
           "max_speed": 32,
           "range_claimed": 72,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -118,38 +129,38 @@
       "description": "Disc Brakes"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "description": "1/2\" x 3/32\" (1.27 x 0.24 cm) x 38T x 170L, with Alloy Crank"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "description": "6 speeds"
     },
     {
-      "type": "chain",
-      "description": "1/2\" x 3/32\" (1.27 x 0.24 cm) x 38T x 170L, with Alloy Crank"
-    },
-    {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Lithium-ion 36 V, 7.5 Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "42 V / 2 A, UL-listed"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "350W (Sustained), 36V Brushless Rear Hub Motor"
+      "type": "ebike-displayremote",
+      "description": "LCD Smart Easy Read Display with Backlight"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD Smart Easy Read Display with Backlight"
+      "type": "ebike-motor",
+      "description": "350W (Sustained), 36V Brushless Rear Hub Motor"
     },
     {
       "type": "fork",
       "description": "26\" (66.04 cm) Suspension Fork"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "description": "TPR"
     },
@@ -185,7 +196,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "SEAT CLAMP",
       "description": "Double Socket Hex Screws"
     },

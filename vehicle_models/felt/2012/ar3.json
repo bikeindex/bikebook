@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2012/ar3",
   "manufacturer": "Felt",
   "model_group": "AR",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_aero",
+  "primary_activity": "road-aero",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2012/ar3.jpg",
   "first_year": 2012,
@@ -32,7 +32,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "bottom_bracket": {
       "spindle": "24mm"
@@ -58,8 +58,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "10_rear"
+    "2-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -234,13 +234,13 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "manufacturer": "Felt",
       "description": "Felt bubble-tech \"\"F Wing\"\" icon end plugs"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Shimano",
       "description": "Shimano Hollowtech-II"
     },
@@ -254,23 +254,14 @@
       "description": "Shimano Ultegra Super SLR dual pivot w/ cartridge brake pads"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Shimano",
       "description": "Shimano SLR brake & EW-SD50 Di2 derailleur wires, battery & charger"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano Ultegra Di2 STI"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 11-25T"
     },
     {
       "type": "chain",
@@ -281,6 +272,15 @@
       "type": "chainrings",
       "type_detail": "Chainwheel",
       "description": "53T/39T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 11-25T"
     },
     {
       "type": "crankset",
@@ -304,7 +304,7 @@
       "description": "Shimano Ultegra Di2"
     },
     {
-      "type": "electronic_shifting_component",
+      "type": "electronic-shifting-part",
       "description": "Di2 battery & battery charger"
     },
     {
@@ -313,7 +313,7 @@
       "description": "Felt Aero Road UHC Performance monocoque fork, 100% carbon fiber 1.125\"\" steerer tube, crown, blades, & dropouts"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt gel tape w/ Felt logos"
@@ -348,7 +348,7 @@
       "description": "MAVIC QRM Aero aluminum 20H w/ FTS-L Shimano 10 speed compatible freehub body & BR101 quick release"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Shimano Di2 Charger",
       "description": "Di2 battery & battery charger"
     },
@@ -375,12 +375,12 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "AR Aero 3D forged aluminum, 2 x 5mm x 0.8mm Cr-Mo bolts, 23g"
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "Shimano",
       "description": "Shimano SLR brake & EW-SD50 Di2 derailleur wires, battery & charger"
     },

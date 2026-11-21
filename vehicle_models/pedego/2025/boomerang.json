@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/pedego/2025/boomerang",
   "manufacturer": "Pedego",
   "model_group": "Boomerang",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -58,7 +58,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/boomerang_red.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/boomerang-red.jpg",
           "variants": [
             {
               "sku": "BK354017RD",
@@ -85,7 +85,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/boomerang_white.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/boomerang-white.jpg",
           "variants": [
             {
               "sku": "BK354015WH",
@@ -112,7 +112,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/boomerang_stephanie_blue.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/boomerang-stephanie-blue.jpg",
           "variants": [
             {
               "sku": "BK350119SB",
@@ -133,7 +133,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/boomerang_black.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/boomerang-black.jpg",
           "variants": [
             {
               "sku": "BK350115BK",
@@ -150,7 +150,7 @@
         },
         {
           "name": "Shaded Spruce",
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/boomerang_shaded_spruce.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/boomerang-shaded-spruce.jpg",
           "variants": [
             {
               "sku": "BK350117SP",
@@ -214,8 +214,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -232,7 +232,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -243,11 +243,8 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
-      "certifications": [
-        "UL 2271"
-      ],
       "battery": {
         "capacity": 910,
         "capacity_options": [
@@ -255,7 +252,11 @@
         ],
         "voltage": 52,
         "chemistry": "li-ion",
-        "cells": "18650"
+        "cells": "18650",
+        "certifications": [
+          "UL 2271",
+          "UL 2580"
+        ]
       },
       "rated_power": 749,
       "max_torque": 60,
@@ -267,14 +268,14 @@
           "range_claimed": 121,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -282,7 +283,7 @@
           "availability": "app_update",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -330,7 +331,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "68MM x 137MM SQUARE TAPER SPINDLE WITH SEALED CARTRIDGE BEARINGS; STEEL CUPS AND BODY."
     },
     {
@@ -343,11 +344,11 @@
       "description": "STAR UNION 2 PISTON FORGED ALUMINUM HYDRAULIC DISC BRAKE; MINERAL OIL BRAKE FLUID."
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "STAR UNION 3 FINGER LEVER; CAST ALUMINUM WITH MOTOR CUTOFF SWITCH FOR MAXIMUM SAFETY."
     },
     {
-      "type": "brake_pad",
+      "type": "brake-pad",
       "type_detail": "PADS",
       "position": [
         "front",
@@ -356,7 +357,7 @@
       "description": "CERAMIC MATERIAL WITH STEEL BACKING PLATE; OFFER SAFETY TOGETHER WITH EXCELLENT PERFORMANCE IN ALL SITUATIONS."
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "ROTORS",
       "position": [
         "front",
@@ -368,17 +369,17 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "Shimano",
+      "description": "SHIMANO HG40 1/2”x3/32” 122-128 LINKS WITH INNER PLATE CHAMFERING; 24”: 120 LINKS, 26”: 124 LINKS."
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "SHIMANO HYPERGLIDE HG200 8 SPEED 12-32T; SMOOTH, LIGHT AND RELIABLE SHIFTING PERFORMANCE."
-    },
-    {
-      "type": "chain",
-      "manufacturer": "Shimano",
-      "description": "SHIMANO HG40 1/2”x3/32” 122-128 LINKS WITH INNER PLATE CHAMFERING; 24”: 120 LINKS, 26”: 124 LINKS."
     },
     {
       "type": "crankset",
@@ -394,27 +395,27 @@
       "description": "SHIMANO ACERA RD-M360 8 SPEED, FULL METAL CONSTRUCTION AND TEFLON COATED BUSHINGS."
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "52 VOLT 17.5 OR 10.5 AMP HOUR WITH PREMIUM LITHIUM ION 18650 CELLS; SMART BIKE TECHNOLOGY WITH CANBUS COMMUNICATION; AUTO SLEEP FUNCTION."
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "52V 2 AMP PEDEGO FANLESS BATTERY CHARGER WITH CHARGE INDICATOR LIGHT."
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "BLACK 52V BRUSHLESS GEARED REAR HUB MOTOR; 749 WATT NOMINAL POWER RATING; 60NM TORQUE; QUICK DISCONNECT CABLE WITH WATERPROOF CONNECTION."
+      "type": "ebike-displayremote",
+      "description": "Controller"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Controller"
+      "type": "ebike-motor",
+      "description": "BLACK 52V BRUSHLESS GEARED REAR HUB MOTOR; 749 WATT NOMINAL POWER RATING; 60NM TORQUE; QUICK DISCONNECT CABLE WITH WATERPROOF CONNECTION."
     },
     {
       "type": "fork",
       "description": "RIGID CHROMOLY STEEL; 1 ⅛” THREADED STEERER TUBE; DISC BRAKE AND FENDER MOUNTS."
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "manufacturer": "Pedego",
       "description": "PEDEGO SYNTHETIC LEATHER GRIP WITH HAND STITCHING AND FOAM PADDING; COLOR MATCHED BALLOON PACKAGE."
@@ -432,7 +433,7 @@
       "description": "ZERO STACK SEMI-INTEGRATED 1 ⅛” THREADED; ZS44/28.6-26TPI | ZS44/30."
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "TOOLKIT",
       "manufacturer": "Pedego",
       "description": "CUSTOM PEDEGO TOOL KIT: 6” ADJUSTABLE WRENCH (UP TO 15MM), 12/13G SPOKE WRENCH, T25 TORX WRENCH, 6MM HEX WRENCH, 5MM HEX WRENCH WITH #2 PHILLIPS SCREWDRIVER, 4MM HEX WRENCH."
@@ -442,7 +443,7 @@
       "description": "BLACK ALUMINUM ALLOY CENTER KICKSTAND; ADJUSTABLE LENGTH COMPOSITE FOOT."
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "FRONT: LED WITH ADJUSTABLE MOUNT 60 LUX; REAR: LED BUILT INTO BATTERY WITH BRAKE LIGHT FUNCTION; POWERED BY MAIN BATTERY AND CONTROLLED BY LCD."
     },
     {

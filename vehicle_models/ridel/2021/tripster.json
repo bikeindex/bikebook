@@ -1,17 +1,17 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ridel/2021/tripster",
   "manufacturer": "Ridel",
   "model": "Tripster",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "atb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/ridel/2021/tripster.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/ridel/2021/tripster_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/ridel/2021/tripster-geometry.jpg",
   "description": "Get our fastest, most durable eBike built for bold maneuvers and rapid acceleration. The suspension system and powerful 500w motor give you the freedom to ride wherever you want. Unfold your bike and go for a wild adventure!",
   "first_year": 2021,
   "years": {
@@ -51,7 +51,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "suspension": {
     "front": {
@@ -70,12 +70,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -85,7 +85,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 480,
         "voltage": 48,
@@ -137,20 +137,20 @@
       "description": "Mechanical Disc"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48v 10ah removable"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W 48V rear hub"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "3” LCD Matrix Display"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Odo, Trip, Speed, Motor Output, Battery Indicator,advanced settings"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "500W 48V rear hub"
     },
     {
       "type": "fender",
@@ -168,11 +168,11 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front & Back"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],

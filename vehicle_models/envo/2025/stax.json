@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/envo/2025/stax",
   "manufacturer": "Envo",
   "model_group": "Stax",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "road_biking",
+  "primary_activity": "road-biking",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/envo/2025/stax.png",
   "description": "Meet ENVO STAX, a sleek, smart e-bike built for riders who want everyday mobility with style, comfort, and confidence. Designed for city streets and beyond, STAX blends modern design with practical performance, offering a smooth, efficient, and enjoyable ride for commuting, errands, or spontaneous adventures. With its refined frame, thoughtful features, and effortless electric assist, ENVO STAX makes every trip feel easier, faster, and more fun.",
@@ -62,8 +62,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -79,7 +79,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -91,7 +91,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
         "UL 2849"
@@ -111,7 +111,7 @@
           "max_speed": 32,
           "range_claimed": 100,
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         }
       ]
@@ -139,12 +139,12 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell",
       "description": "SX99B-2BK, included"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "LDS torque sensor, 73mm"
     },
     {
@@ -157,14 +157,6 @@
       "description": "HD-E3110 hydraulic flat-mount calipers, 160mm rotors, with power cutoff"
     },
     {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "LTWOO 9-speed, 11-42T"
-    },
-    {
       "type": "chain",
       "description": "CT-9, 1/2″ x 3/128″ x 116L"
     },
@@ -174,6 +166,14 @@
       "description": "42T, 170mm crank, torque-sensor fit"
     },
     {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "LTWOO 9-speed, 11-42T"
+    },
+    {
       "type": "derailleur",
       "position": [
         "rear"
@@ -181,31 +181,31 @@
       "description": "LTWOO RD-GR5009, 9-speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V 12.8Ah LG cells (461 Wh), UL-certified"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "36V/2A, US DC2.1, UL certificate"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "XF08C brushless 36V rear hub"
+      "type": "ebike-displayremote",
+      "description": "KD386 Key-Disp LCD, 36V, Bluetooth"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "KD386 Key-Disp LCD, 36V, Bluetooth"
+      "type": "ebike-motor",
+      "description": "XF08C brushless 36V rear hub"
     },
     {
       "type": "fork",
       "description": "Rigid, thru-axle, painted"
     },
     {
-      "type": "frame_protection",
+      "type": "frame-protection",
       "description": "chainstay protector"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "G324 TPR, all black"
     },
@@ -239,7 +239,7 @@
       "description": "KW-108, included"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Lighting",
       "description": "LED headlight integrated into the frame; AA-battery tail light"
     },
@@ -264,7 +264,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat clamp",
       "description": "Locking, included"
     },

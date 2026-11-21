@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/velotric/2025/triker",
   "manufacturer": "Velotric",
   "model": "Triker",
   "model_configuration": "complete",
   "type": "tricycle",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -24,7 +24,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/velotric/2025/triker_pearl_white.png",
+          "stock_photo": "https://bikebook.bikeindex.org/velotric/2025/triker-pearl-white.png",
           "variants": [
             {
               "sku": "VTK10001C",
@@ -52,7 +52,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/velotric/2025/triker_cherry_crimson.png",
+          "stock_photo": "https://bikebook.bikeindex.org/velotric/2025/triker-cherry-crimson.png",
           "variants": [
             {
               "sku": "VTK10002C",
@@ -74,7 +74,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/velotric/2025/triker_cherry_crimson.png",
+          "stock_photo": "https://bikebook.bikeindex.org/velotric/2025/triker-cherry-crimson.png",
           "variants": [
             {
               "sku": "VTK10002A",
@@ -102,7 +102,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/velotric/2025/triker_pearl_white.png",
+          "stock_photo": "https://bikebook.bikeindex.org/velotric/2025/triker-pearl-white.png",
           "variants": [
             {
               "sku": "VTK10001A",
@@ -151,8 +151,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -169,7 +169,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -179,13 +179,11 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
         "UL 2849",
-        "UL 2271",
-        "UL 2580",
         "ISO 4210"
       ],
       "water_rating": "IPX7",
@@ -193,7 +191,11 @@
         "capacity": 804,
         "voltage": 48,
         "chemistry": "li-ion",
-        "cells": "18650"
+        "cells": "18650",
+        "certifications": [
+          "UL 2271",
+          "UL 2580"
+        ]
       },
       "rated_power": 750,
       "peak_power": 1300,
@@ -206,7 +208,7 @@
           "range_claimed": 97,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -215,7 +217,7 @@
           "range_claimed": 80,
           "throttle_type": "Trigger",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -223,7 +225,7 @@
           "availability": "app_update",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -247,7 +249,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Horn",
       "description": "Electric horn integrated with front light, 90 db"
     },
@@ -260,11 +262,11 @@
       "description": "Hydraulic Disc Brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum Alloy, with power cutoff and parking brake"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -276,14 +278,6 @@
       }
     },
     {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "7-speed, 11-28T"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC 7-speed"
@@ -291,6 +285,14 @@
     {
       "type": "chainrings",
       "description": "40T, narrow wide chainring"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "7-speed, 11-28T"
     },
     {
       "type": "crankset",
@@ -308,20 +310,20 @@
       "description": "SHIMANO 7-speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V, 16.75 Ah, IPX7, Certificated by UL 2271"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V, 3.0A Fast Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V, 750W,1300W Peak, 90Nm"
+      "type": "ebike-displayremote",
+      "description": "3.5\" Full color, High brightness, Bluetooth, Adjustable angle"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "3.5\" Full color, High brightness, Bluetooth, Adjustable angle"
+      "type": "ebike-motor",
+      "description": "48V, 750W,1300W Peak, 90Nm"
     },
     {
       "type": "fender",
@@ -335,7 +337,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Durable ergonomic grips, lockable"
     },
@@ -355,21 +357,21 @@
       "description": "Aluminum alloy, nutted"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "Light sensing 130 Lux /500 LM high-output integrated LED, adjustable angle"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
       "description": "Braking Indicator, turn signal, rear light steady/flash, integrated with rear rack"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Turn Light",
       "description": "Left/Right turn signal, with turn signal click"
     },
@@ -398,7 +400,7 @@
       "description": "Aluminum Alloy, φ30.9mm, 350mm/Aluminum Alloy, φ34.9mm, 260mm"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "Aluminum Alloy, quick release/Aluminum Alloy, nutted"
     },
     {

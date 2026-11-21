@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2025/core",
   "manufacturer": "Jetson",
   "model": "Core",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -18,19 +18,49 @@
     "2026": {
       "original_msrp": 199999,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "variants": [
+            {
+              "sku": "JCORE-BLK",
+              "gtin": "840290211249",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://ridejetson.com/products/core-folding-electric-mountain-bike",
       "url_live": true
     },
     "2025": {
       "original_msrp": 199999,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "variants": [
+            {
+              "sku": "JCORE-BLK",
+              "gtin": "840290211249",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://web.archive.org/web/20250810184436/https://ridejetson.com/products/core-folding-electric-mountain-bike",
       "url_live": false
     }
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "mounts": [
       {
         "type": "rack"
@@ -47,12 +77,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -77,7 +107,7 @@
           "range_claimed": 60,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -86,7 +116,7 @@
           "range_claimed": 32,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -119,7 +149,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell"
     },
     {
@@ -131,20 +161,20 @@
       "description": "Front & Rear Disc Brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 10.4Ah Lithium Ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Battery: Yes"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "350 W"
+      "type": "ebike-displayremote",
+      "description": "LED"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LED"
+      "type": "ebike-motor",
+      "description": "350 W"
     },
     {
       "type": "kickstand"
@@ -158,11 +188,6 @@
       "type": "unknown",
       "type_detail": "Warranty",
       "description": "1 year"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "SKU",
-      "description": "JCORE-BLK"
     },
     {
       "type": "unknown",

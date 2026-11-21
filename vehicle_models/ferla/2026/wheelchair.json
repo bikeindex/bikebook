@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ferla/2026/wheelchair",
   "manufacturer": "Ferla",
   "model": "Wheelchair",
   "model_configuration": "complete",
-  "type": "cargo_tricycle",
+  "type": "cargo-trike",
   "type_detail": "tadpole",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "cargo",
   "handlebar_type": "horizontal",
@@ -56,8 +56,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -66,7 +66,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -76,7 +76,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 960,
         "voltage": 48,
@@ -89,7 +89,7 @@
           "mode": "assist",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -117,7 +117,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell",
       "description": "YWX"
     },
@@ -131,18 +131,18 @@
       "description": "Custom Ferla Front & Rear Hydraulic Brakes Parking Brake Feature"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC E8 EPT Heavy-Duty Cargo Chain — 1/2\" x 3/32\", 106 Links"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "SHIMANO"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC E8 EPT Heavy-Duty Cargo Chain — 1/2\" x 3/32\", 106 Links"
     },
     {
       "type": "crankset",
@@ -155,28 +155,28 @@
       "description": "SHIMANO"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 20 Ah LG · UL-certified (upgradeable to 40 Ah)"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Specs: 48V 20Ah LG Cell — UL certified (upgradeble to 40 Ah)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 3A FAST CHARGER - UL Certified"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "Colorful TFT LCD Display with a type C charger"
+    },
+    {
+      "type": "ebike-motor",
       "description": "1,000 W rear hub · reverse assist"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "1,000W High Torque Rear Hub Motor - reverse speed assist"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "Colorful TFT LCD Display with a type C charger"
     },
     {
       "type": "fender",
@@ -189,7 +189,7 @@
       "description": "Adjustable Handlebar"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Lighting",
       "description": "LED Front & Rear Lighting including safety turning signals"
     },

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fairdale/2027/rockitship",
   "manufacturer": "Fairdale",
   "model_group": "Rockitship",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "atb_gravel",
+  "primary_activity": "atb-gravel",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/fairdale/2027/rockitship.jpg",
   "description": "The Rockitship returns as Fairdale’s top-of-the-line, Reynolds 725 steel, ENVE carbon forked, all-purpose gravel bike, with the comfort, resilience, and reliability chromoly is known for.\n\nBuilt with a performance-inspired geometry that retains Fairdale’s keepin’-it-simple-keeps-it-fun design sensibilities, the Rockitship is at home on gravel, long-distance touring, bike-packing, CX racing, or even charging around a city. This new modern reinterpretation of the popular Rockitship now comes with SRAM’s UDH, rack, fender, and accessory mounts, and compatibility with mechanical and electronic groupsets.\n\nAvailable in Gloss Blood Orange or Gloss Black.\n\nAll-purpose geometry for gravel, road, CX, bike-packing, and touring\n\nReynolds 725 tubing\n\nENVE gravel disc fork\n\nRitchey handlebars, stem and seat post\n\nShimano GRX 1x mechanical groupset\n\nShimano GRX tubeless ready wheels\n\nContinental Terra Adventure tires\n\nClearance for 650b x 54mm (27.5’x2.125”) or 700c x 47mm tires\n\nInternal routing starting behind the head tube (dropper compatible)\n\nCompatible with 1x electronic and mechanical groupsets\n\nUDH dropout\n\nT-47 bottom bracket\n\nRack and fender mounts\n\nAccessory/cage mounts on the top and down tube",
@@ -31,7 +31,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/fairdale/2027/rockitship_gloss_black.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/fairdale/2027/rockitship-gloss-black.jpg"
         }
       ],
       "url": "https://shop.fairdalebikes.com/products/fairdale-rockitship-blood-orange",
@@ -90,8 +90,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "12_rear"
+    "1-front",
+    "12-rear"
   ],
   "gearing": {
     "front": [
@@ -109,7 +109,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -240,7 +240,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "BB Parts",
       "manufacturer": "FSA",
       "description": "FSA, BB-6002, T47"
@@ -255,14 +255,6 @@
       "description": "Shimano GRX, Flat Mount"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano SLX, Hyperglide+, 12-Speed, Micro Spline, 10-51T"
-    },
-    {
       "type": "chain",
       "manufacturer": "Shimano",
       "description": "Shimano SLX, Hyperglide+, 12-Speed"
@@ -271,6 +263,14 @@
       "type": "chainrings",
       "type_detail": "Chainwheel",
       "description": "40T, Shimano GRX, 1x"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano SLX, Hyperglide+, 12-Speed, Micro Spline, 10-51T"
     },
     {
       "type": "crankset",
@@ -296,7 +296,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bar Tape",
       "manufacturer": "Velo",
       "description": "Velo Cork Handlebar tape"
@@ -354,7 +354,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Fairdale",
       "description": "Fairdale, 31.8mm",
@@ -363,13 +363,13 @@
       }
     },
     {
-      "type": "shift_and_brake_lever",
+      "type": "shift-and-brake-lever",
       "type_detail": "Brake Lever / Shifter",
       "manufacturer": "Shimano",
       "description": "Shimano GRX, RX610, 1x, 12-Speed"
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "Shimano",
       "description": "Shimano Optislick"
     },

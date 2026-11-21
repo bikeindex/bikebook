@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/swft/2022/fleet",
   "manufacturer": "SWFT",
   "model": "Fleet",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -24,7 +24,7 @@
   },
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "battery": {
         "capacity": 468,
@@ -39,14 +39,14 @@
           "range_claimed": 60,
           "levels": 3,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -54,26 +54,21 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "46.8V 10Ah"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "500W Hub"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Safety Lights",
       "description": "Headlights"
     },
     {
       "type": "saddle",
       "description": "COMFORT"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Class Type",
-      "description": "Class 2"
     }
   ]
 }

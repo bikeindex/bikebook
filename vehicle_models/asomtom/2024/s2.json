@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/asomtom/2024/s2",
   "manufacturer": "Asomtom",
   "model": "S2",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -21,14 +21,28 @@
       "colorways": [
         {
           "name": "Champagne",
-          "stock_photo": "https://bikebook.bikeindex.org/asomtom/2024/s2.png"
+          "stock_photo": "https://bikebook.bikeindex.org/asomtom/2024/s2.png",
+          "variants": [
+            {
+              "sku": "SP-S2-Champagne",
+              "gtin": "6949583404857",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Blue",
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/asomtom/2024/s2_blue.png"
+          "stock_photo": "https://bikebook.bikeindex.org/asomtom/2024/s2-blue.png",
+          "variants": [
+            {
+              "sku": "SP-S2-Blue",
+              "gtin": "6949583404864",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://www.asomtom.com/products/portable-city-folding-e-bike-s2",
@@ -38,7 +52,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "wheels": [
     {
@@ -51,8 +65,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -60,7 +74,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -82,7 +96,7 @@
           "max_speed": 32,
           "range_claimed": 56,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -90,7 +104,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -139,15 +153,15 @@
       "description": "Crank"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V 10Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "42V 2.0A 100-240V"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "36V 350W"
     },
     {
@@ -163,7 +177,7 @@
       "description": "Aluminum alloy shock"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "LED bright"
     },
     {

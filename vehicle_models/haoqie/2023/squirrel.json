@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/haoqie/2023/squirrel",
   "manufacturer": "Haoqie",
   "model": "Squirrel",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -59,7 +59,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "wheels": [
     {
@@ -72,8 +72,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "rear": [
@@ -87,7 +87,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -96,7 +96,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 499,
         "voltage": 48,
@@ -112,7 +112,7 @@
           "range_claimed": 113,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -162,17 +162,17 @@
       "description": "Mechanical Disc Brake"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC 7 Speed Bike Chain"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "SHIMANO 7 Speed 14-28T"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC 7 Speed Bike Chain"
     },
     {
       "type": "crankset",
@@ -188,20 +188,20 @@
       "description": "7 Speed Shimano Derailleur"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "High Capacity 48V 10.4AH Lithium Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "US Standard 48V 2A Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W Brushless Motor"
+      "type": "ebike-displayremote",
+      "description": "YL-61F LCD Multi-functional Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "YL-61F LCD Multi-functional Display"
+      "type": "ebike-motor",
+      "description": "500W Brushless Motor"
     },
     {
       "type": "fork",
@@ -219,7 +219,7 @@
       "description": "Side Mount Kick Stand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"

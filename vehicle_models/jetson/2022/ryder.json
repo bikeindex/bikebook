@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2022/ryder",
   "manufacturer": "Jetson",
   "model_group": "Ryder",
   "model": "Ryder",
   "model_configuration": "complete",
-  "type": "e_scooter",
+  "type": "e-scooter",
   "type_detail": "seated",
   "propulsion": [
     "throttle"
@@ -25,7 +25,14 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jetson/2022/ryder_gunmetal.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2022/ryder-gunmetal.jpg",
+          "variants": [
+            {
+              "sku": "JRYDER-GRY",
+              "gtin": "00811991031214",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://ridejetson.com/products/ryder-electric-scooter",
@@ -39,6 +46,13 @@
           "name": "Gunmetal",
           "colors": [
             "silver"
+          ],
+          "variants": [
+            {
+              "sku": "JRYDER-GRY",
+              "gtin": "00811991031214",
+              "size": "One Size"
+            }
           ]
         }
       ],
@@ -48,7 +62,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "stem_fold"
+    "folding": "stem-fold"
   },
   "wheels": [
     {
@@ -109,18 +123,18 @@
       "description": "Hand brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 6.0Ah, lithium-ion"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "250 watt"
     },
     {
       "type": "kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front LED headlights"
     },
     {
@@ -136,11 +150,6 @@
         "rear"
       ],
       "description": "Pneumatic"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "SKU",
-      "description": "JRYDER-GRY"
     }
   ]
 }

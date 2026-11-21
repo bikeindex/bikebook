@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/cyke/2024/kingfisher",
   "manufacturer": "Cyke",
   "model": "Kingfisher",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -23,7 +23,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/cyke/2024/kingfisher_black.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/cyke/2024/kingfisher-black.jpg",
           "variants": [
             {
               "sku": "BPAA1BK",
@@ -52,7 +52,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "triangle_fold"
+    "folding": "triangle-fold"
   },
   "wheels": [
     {
@@ -65,8 +65,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "3_rear"
+    "1-front",
+    "3-rear"
   ],
   "gearing": {
     "front": [
@@ -78,7 +78,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -89,7 +89,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
         "UL 2849"
@@ -113,7 +113,7 @@
           "range_claimed": 92,
           "levels": 3,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -161,7 +161,7 @@
       "description": "TEKTRO hydraulic disc brakes"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -186,23 +186,23 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 360Wh Lithium-ion battery with LG cells"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "36V 5A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "36V 250W Mid-Drived Motor, Torque: 65N·m"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "1.3\" OLED screen, Waterproof Rating: IPX6"
     },
     {
-      "type": "grips_tape",
+      "type": "ebike-motor",
+      "description": "36V 250W Mid-Drived Motor, Torque: 65N·m"
+    },
+    {
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Velo",
       "description": "Velo 32mm aluminum rim"
@@ -219,7 +219,7 @@
       "description": "205mm Aluminum Kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"
@@ -227,7 +227,7 @@
       "description": "Voltage Range: 6V-48V, 50 LUX, Power:1.5-1.8W"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Taillight",
       "position": [
         "rear"

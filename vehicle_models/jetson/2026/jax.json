@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2026/jax",
   "manufacturer": "Jetson",
   "model": "Jax",
   "model_configuration": "complete",
-  "type": "e_motorcycle",
+  "type": "e-motorcycle",
   "propulsion": [
     "throttle"
   ],
-  "primary_activity": "dirt_travel",
+  "primary_activity": "dirt-travel",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/jetson/2026/jax.jpg",
   "description": "Built for next-gen riders who want the full motocross experience.\n\n14-inch rugged air-filled tires eat up dirt trails and paved paths alike.\n\n3 speed modes from cruising to 14 mph — just like the pros, minus the dust in your face.",
@@ -17,6 +17,17 @@
     "2026": {
       "original_msrp": 49999,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "JJAX-BLK",
+              "gtin": "840290211034",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://ridejetson.com/products/jax-electric-dirt-bike",
       "url_live": true
     }
@@ -49,7 +60,7 @@
           "max_speed": 23,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -77,11 +88,11 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V 4.0Ah Lithium Ion"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "300 W"
     },
     {
@@ -91,11 +102,6 @@
       "type": "unknown",
       "type_detail": "Warranty",
       "description": "180 days"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "SKU",
-      "description": "JJAX-BLK"
     }
   ]
 }

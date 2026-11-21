@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ouxi/2024/r7",
   "manufacturer": "OUXI",
   "model": "R7",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -38,7 +38,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/ouxi/2024/r7_grey.png",
+          "stock_photo": "https://bikebook.bikeindex.org/ouxi/2024/r7-grey.png",
           "variants": [
             {
               "sku": "R7-Grey",
@@ -52,7 +52,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/ouxi/2024/r7_navy.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/ouxi/2024/r7-navy.jpg",
           "variants": [
             {
               "sku": "R7-blue",
@@ -86,8 +86,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -96,7 +96,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -113,6 +113,7 @@
         "charging_time": 420
       },
       "rated_power": 750,
+      "peak_power": 1000,
       "operating_modes": [
         {
           "mode": "assist",
@@ -121,7 +122,7 @@
           "range_claimed": 97,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -179,11 +180,11 @@
       "description": "Shimano Tourney"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 15Ah"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "High-speed 750W"
     },
     {
@@ -195,7 +196,7 @@
       "description": "Equipped with front and rear shock absorbers"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],

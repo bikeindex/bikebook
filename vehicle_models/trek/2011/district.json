@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/trek/2011/district",
   "manufacturer": "Trek",
   "model_group": "District",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -57,7 +57,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/trek/2011/district_matte_platinum.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/trek/2011/district-matte-platinum.jpg",
           "variants": [
             {
               "sku": "13610000211",
@@ -106,9 +106,9 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear",
-    "belt_drive"
+    "1-front",
+    "1-rear",
+    "belt-drive"
   ],
   "gearing": {
     "front": [
@@ -184,6 +184,10 @@
   ],
   "components": [
     {
+      "type": "bashguardchain-guide",
+      "description": "Chainguard"
+    },
+    {
       "type": "brake",
       "type_detail": "Brakeset",
       "position": [
@@ -193,15 +197,11 @@
       "description": "Alloy dual-pivot brakes w/Tektro alloy levers"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "description": "22T alloy Carbon Drive belt sprocket"
-    },
-    {
-      "type": "chain_guide",
-      "description": "Chainguard"
     },
     {
       "type": "crankset",
@@ -210,7 +210,7 @@
       "description": "Bontrager Satellite Nebula, 55T alloy Carbon Drive belt sprocket"
     },
     {
-      "type": "drive_belt",
+      "type": "drive-belt",
       "description": "belt drive"
     },
     {
@@ -219,7 +219,7 @@
       "description": "Bontrager Satellite Plus, carbon"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Custom District lock-on"
     },

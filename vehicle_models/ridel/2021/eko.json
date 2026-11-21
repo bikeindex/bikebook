@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ridel/2021/eko",
   "manufacturer": "Ridel",
   "model": "EKO",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -46,12 +46,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -61,7 +61,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
         "capacity": 422,
@@ -76,7 +76,7 @@
           "max_speed": 35,
           "range_claimed": 61,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -117,23 +117,23 @@
       "description": "Mechanical Disc"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 8.8Ah"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "250W 36V rear hub"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LCD 5 Level PAS Speed"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Odo, Trip, Speed, Motor Output, Battery Indicator,advanced settings"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "250W 36V rear hub"
+    },
+    {
+      "type": "light",
       "description": "Front & Back"
     },
     {

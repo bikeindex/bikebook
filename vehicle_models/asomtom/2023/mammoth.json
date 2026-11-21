@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/asomtom/2023/mammoth",
   "manufacturer": "Asomtom",
   "model": "Mammoth",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/asomtom/2023/mammoth.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/asomtom/2023/mammoth_geometry.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/asomtom/2023/mammoth-geometry.png",
   "description": "Revolutionize urban transport with the MAMMOTH E-Bike! Featuring a low-step frame for easy access, this cargo e-bike is ideal for city living. With a dual-battery system for extended range, it makes long commutes effortless. Whether it's groceries, work essentials, or your kids, this e-bike ensures stability, comfort, and efficiency. Join the green movement and conquer city streets with the MAMMOTH.",
   "first_year": 2023,
   "years": {
@@ -25,21 +25,81 @@
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/asomtom/2023/mammoth.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/asomtom/2023/mammoth.jpg",
+          "variants": [
+            {
+              "sku": "SP-Mammoth-CJ-Orange",
+              "gtin": "6949549832304",
+              "size": "One Size"
+            },
+            {
+              "sku": "SP-Mammoth-CJ-Orange-A",
+              "gtin": "6949549832311",
+              "size": "One Size",
+              "original_msrp": 213800
+            },
+            {
+              "sku": "SP-Mammoth-CJ-Orange-B",
+              "gtin": "6949549832328",
+              "size": "One Size",
+              "original_msrp": 226800
+            },
+            {
+              "sku": "SP-Mammoth-Orange",
+              "gtin": "6949549832236",
+              "size": "One Size"
+            },
+            {
+              "sku": "Mammoth-CJ-Orange",
+              "gtin": "6949583404819",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Gray",
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/asomtom/2023/mammoth_gray.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/asomtom/2023/mammoth-gray.jpg",
+          "variants": [
+            {
+              "sku": "SP-Mammoth-CJ-Gray",
+              "gtin": "6949549832335",
+              "size": "One Size"
+            },
+            {
+              "sku": "SP-Mammoth-CJ-Gray-A",
+              "gtin": "6949549832342",
+              "size": "One Size",
+              "original_msrp": 213800
+            },
+            {
+              "sku": "SP-Mammoth-CJ-Gray-B",
+              "gtin": "6949549832359",
+              "size": "One Size",
+              "original_msrp": 226800
+            },
+            {
+              "sku": "Mammoth-CJ-Gray",
+              "gtin": "6949583404826",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Light Gray",
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/asomtom/2023/mammoth_light_gray.png"
+          "stock_photo": "https://bikebook.bikeindex.org/asomtom/2023/mammoth-light-gray.png",
+          "variants": [
+            {
+              "sku": "SP-Mammoth-LightGray",
+              "gtin": "6949583405069",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://www.asomtom.com/products/low-step-dual-battery-cargo-ebike-mammoth",
@@ -62,8 +122,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -71,7 +131,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -81,7 +141,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 1440,
         "voltage": 48
@@ -95,7 +155,7 @@
           "max_speed": 45,
           "range_claimed": 161,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -156,20 +216,20 @@
       "description": "Shimano 7-speed rear derailleur"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Two 48V 15Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54V 2.0A 100-240V"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V 750W"
+      "type": "ebike-displayremote",
+      "description": "LED Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LED Display"
+      "type": "ebike-motor",
+      "description": "48V 750W"
     },
     {
       "type": "fender",
@@ -184,12 +244,12 @@
       "description": "Aluminum alloy shock"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bike Grips",
       "description": "Bike Grips"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "48V LED Bright"
     },
     {

@@ -1,16 +1,16 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/onewheel/2021/gt",
   "manufacturer": "OneWheel",
   "model_group": "GT",
   "model": "GT",
   "model_configuration": "complete",
-  "type": "epamd",
-  "type_detail": "one_wheel_board",
+  "type": "personal-mobility",
+  "type_detail": "one-wheel-board",
   "propulsion": [
     "throttle"
   ],
-  "primary_activity": "dirt_travel",
+  "primary_activity": "dirt-travel",
   "handlebar_type": "other",
   "stock_photo": "https://bikebook.bikeindex.org/onewheel/2021/gt.png",
   "description": "A totally redesigned flagship board with more range, more power, and more rideability. Uses higher voltage for more power, torque and dynamic performance at all speeds.",
@@ -19,12 +19,45 @@
     "2026": {
       "original_msrp": 230000,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "OW1-00009-02",
+              "gtin": "810019797194",
+              "original_msrp": 235000
+            },
+            {
+              "sku": "OW1-00009-00",
+              "gtin": "810019793639"
+            },
+            {
+              "sku": "OW1-00009-01",
+              "gtin": "810019793646",
+              "original_msrp": 235000
+            }
+          ]
+        }
+      ],
       "url": "https://onewheel.com/products/onewheel-gt",
       "url_live": true
     },
     "2021": {
       "original_msrp": 220000,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "OW1-00009-00"
+            },
+            {
+              "sku": "OW1-00009-01",
+              "original_msrp": 225000
+            }
+          ]
+        }
+      ],
       "url": "https://web.archive.org/web/20211027184820/https://onewheel.com/products/onewheel-gt",
       "url_live": false
     }
@@ -43,7 +76,7 @@
   ],
   "brakes": [
     {
-      "type": "motor_brake",
+      "type": "motor-brake",
       "position": [
         "motor"
       ]
@@ -51,7 +84,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "chemistry": "li-ion",
         "charging_time": 200
@@ -88,24 +121,24 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "75v"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "GT Home Charger; 200 min.* 90min.* with optional GT Hypercharger; 200 mins* (FY7562500 charger)"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "750W Hypercore® hub motor"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Highbeam Lighting",
       "description": "Highbeam Lighting"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Lightbar",
       "description": "Lightbar"
     },

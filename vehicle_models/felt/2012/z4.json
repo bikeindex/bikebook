@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2012/z4",
   "manufacturer": "Felt",
   "model_group": "Z",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_all_road",
+  "primary_activity": "road-all-road",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2012/z4.jpg",
   "first_year": 2012,
@@ -32,7 +32,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "external",
     "bottom_bracket": {
       "spindle": "24mm"
@@ -60,8 +60,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "10_rear"
+    "2-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -226,13 +226,13 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "manufacturer": "Felt",
       "description": "Felt bubble-tech \"\"F Wing\"\" icon end plugs"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "FSA",
       "description": "FSA MegaExo"
     },
@@ -246,23 +246,14 @@
       "description": "Shimano 105 Super SLR dual pivot w/ cartridge brake pads"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Shimano",
       "description": "Shimano SLR Brake & SP41 Derailleur"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano Ultegra STI"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 12-28T"
     },
     {
       "type": "chain",
@@ -273,6 +264,15 @@
       "type": "chainrings",
       "type_detail": "Chainwheel",
       "description": "50/34T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 12-28T"
     },
     {
       "type": "crankset",
@@ -301,7 +301,7 @@
       "description": "Felt UHC Performance fork, carbon fiber steerer tube, crown, blades, & forged aluminum dropouts, 434g"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt gel tape w/ Felt logos"
@@ -359,12 +359,12 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "Ø30.6 6061 forged aluminum, Cr-Mo 5mm x 0.8mm bolt, stainless steel nut-bar, 21g"
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "Shimano",
       "description": "Shimano SLR Brake & SP41 Derailleur"
     },

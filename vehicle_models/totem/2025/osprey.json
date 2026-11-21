@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/totem/2025/osprey",
   "manufacturer": "Totem",
   "model": "Osprey",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -56,15 +56,15 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "8_rear"
+    "3-front",
+    "8-rear"
   ],
   "groupset": {
     "electronic": false
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -74,7 +74,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 504,
         "voltage": 36,
@@ -87,9 +87,10 @@
           "mode": "assist",
           "availability": "stock",
           "max_speed": 32,
+          "range_claimed": 80,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -111,16 +112,16 @@
       "description": "Increased brake response & stopping power, with less wear and tear. Logan hydraulic disc brakes are the way to go for serious off-road riders who want the best brake performance and safety."
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Battery: Covering an average range of 50+ miles, this sleekly integrated 36V 14Ah Lithium-Ion battery features fast charging capability from 0 to 100% in 4-6 hours using the same proven battery management system as electric cars."
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "This Vinka 350W brushless rear hub motor features a responsive torque curve to deliver whisper-quiet power to your pedals, with perfect balance for traditional riding without resistance."
+      "type": "ebike-displayremote",
+      "description": "The Vinka DS20 Smart Display features speedometer, odometer, battery indicator, and backlighting. Easily switch from 5-level pedal assist, walk-assist, and traditional riding at your fingertips."
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "The Vinka DS20 Smart Display features speedometer, odometer, battery indicator, and backlighting. Easily switch from 5-level pedal assist, walk-assist, and traditional riding at your fingertips."
+      "type": "ebike-motor",
+      "description": "This Vinka 350W brushless rear hub motor features a responsive torque curve to deliver whisper-quiet power to your pedals, with perfect balance for traditional riding without resistance."
     },
     {
       "type": "fork",

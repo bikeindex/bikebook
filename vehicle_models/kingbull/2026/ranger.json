@@ -1,19 +1,19 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kingbull/2026/ranger",
   "manufacturer": "KingBull",
   "model": "Ranger",
   "model_configuration": "complete",
   "type": "bike",
-  "type_detail": "bench_seat",
+  "type_detail": "bench-seat",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/kingbull/2026/ranger.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/kingbull/2026/ranger_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/kingbull/2026/ranger-geometry.jpg",
   "description": "Experience the spirit of classic motorcycling with the Kingbull Ranger—a retro, vintage-inspired electric bike featuring a bold moped-style motorbike design for modern adventure. Blending the timeless look of a classic motorcycle with all-terrain eBike capability, the Ranger delivers style and performance in equal measure.\n\nIts robust build and full suspension smooths rough trails even for heavy riders, while 20\" × 4\" fat tires provide confident traction on dirt, gravel, sand, and uneven terrain. With pedal assist and throttle support, it offers the relaxed feel of a vintage motorbike with the comfort and efficiency of electric riding.\n\nFor optimal riding performance and safety, we recommend maintaining tire pressure within the range of 25–28 PSI, which helps ensure better comfort, grip, and stability across different terrains.\n\nPowered by a long-range 18Ah battery, the Ranger is ready for extended exploration, trail rides, or urban cruising—combining motorcycle-inspired attitude with versatile all-terrain performance.",
   "first_year": 2026,
   "years": {
@@ -26,7 +26,14 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/kingbull/2026/ranger.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/kingbull/2026/ranger.jpg",
+          "variants": [
+            {
+              "sku": "KRG-BLACK",
+              "gtin": "754137956791",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://www.kingbullbike.com/products/kingbull-ranger-vintage-off-road-electric-bike",
@@ -55,8 +62,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -65,7 +72,7 @@
   },
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "water_rating": "IPX6",
       "battery": {
@@ -84,7 +91,7 @@
           "range_claimed": 129,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -128,8 +135,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
-      "type_detail": "Light",
+      "type": "bellnoisemaker",
       "description": "48V LED headlights, Left-mounted 12V dual-tone horn ; 48V tail light, brake highlight, left/right turn signals"
     },
     {
@@ -141,26 +147,26 @@
       "description": "Left & right power cut-off brake levers"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "e-bike-wiring-harness",
+      "manufacturer": "KingBull",
+      "description": "Custom Kingbull wiring harness"
+    },
+    {
+      "type": "ebike-battery",
       "manufacturer": "KingBull",
       "description": "Kingbull 48V/864Wh(18Ah) Lithium Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "US standard 2.0A smart charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W brushless hub motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "full color multi-function display display"
     },
     {
-      "type": "e_vehicle_wiring_harness",
-      "manufacturer": "KingBull",
-      "description": "Custom Kingbull wiring harness"
+      "type": "ebike-motor",
+      "description": "750W brushless hub motor"
     },
     {
       "type": "fender",
@@ -178,7 +184,7 @@
       "description": "Adjustable aluminum alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "48V LED headlights, Left-mounted 12V dual-tone horn ; 48V tail light, brake highlight, left/right turn signals"
     },
     {

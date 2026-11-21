@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/cannondale/2026/flyingv",
   "manufacturer": "Cannondale",
   "model_group": "FlyingV",
@@ -10,7 +10,7 @@
   ],
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -52,7 +52,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/cannondale/2026/flyingv_tungsten_blue.png",
+          "stock_photo": "https://bikebook.bikeindex.org/cannondale/2026/flyingv-tungsten-blue.png",
           "variants": [
             {
               "sku": "C6401GU10LG",
@@ -78,7 +78,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "stealth",
     "bottom_bracket": {
       "spindle": "ISIS"
@@ -106,9 +106,9 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "5_internal_rear",
-    "belt_drive"
+    "1-front",
+    "5-internal-rear",
+    "belt-drive"
   ],
   "gearing": {
     "front": [
@@ -125,7 +125,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -135,12 +135,12 @@
   ],
   "motors": [
     {
-      "id": "c/bosch/2023/performance_line_sprint_bdu314y",
+      "id": "c/bosch/2023/performance-line-sprint-bdu314y",
       "drive_wheel": "rear",
       "manufacturer": "Bosch",
       "model": "BDU314Y",
       "model_group": "Performance Line Sprint",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "spindle": "ISIS",
       "certifications": [
         "UL 2849"
@@ -158,7 +158,7 @@
           "availability": "stock",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -275,12 +275,12 @@
       "description": "Shimano UR300 hydraulic disc, 180/180mm RT64 rotors"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano MT201 hydraulic disc"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "Rear Cogs",
       "position": [
         "rear"
@@ -297,30 +297,30 @@
       }
     },
     {
-      "type": "drive_belt",
+      "type": "drive-belt",
       "type_detail": "Belt",
       "manufacturer": "Gates Carbon Drive",
       "description": "Gates CDX, CenterTrack high-performance carbon belt, 132T"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Bosch",
       "description": "Bosch CompactTube, 400wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "manufacturer": "Bosch",
       "description": "Bosch 2A"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bosch",
-      "description": "Bosch Performance Line Sprint, Smart System, 60Nm, 600W max/250W nominal, 28mph"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Bosch",
       "description": "Bosch LED Remote"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Bosch",
+      "description": "Bosch Performance Line Sprint, Smart System, 60Nm, 600W max/250W nominal, 28mph"
     },
     {
       "type": "fender",
@@ -335,7 +335,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Ergon",
       "description": "Ergon GA3"
@@ -382,7 +382,7 @@
       "description": "kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "manufacturer": "Supernova Lights",
       "description": "Supernova Mini2 LDM front light and SuperNova TL3-Z rear light with integrated reflector"
     },

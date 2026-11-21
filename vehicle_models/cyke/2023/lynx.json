@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/cyke/2023/lynx",
   "manufacturer": "Cyke",
   "model": "Lynx",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -38,7 +38,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/cyke/2023/lynx_classic_blue.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/cyke/2023/lynx-classic-blue.jpg",
           "variants": [
             {
               "sku": "BUBA1BL",
@@ -73,8 +73,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -88,7 +88,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -101,7 +101,7 @@
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
       "model": "SUTTO",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "battery": {
         "capacity": 960,
@@ -120,7 +120,7 @@
           "range_claimed": 161,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -129,7 +129,7 @@
           "max_speed": 45,
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -143,10 +143,6 @@
     {
       "load": "cargo",
       "weight": 24.95
-    },
-    {
-      "load": "payload",
-      "weight": 204
     }
   ],
   "sizes": [
@@ -175,7 +171,7 @@
       "description": "TEKTRO hydraulic disc brake"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -186,7 +182,7 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
@@ -210,21 +206,21 @@
       "description": "SHIMANO ALTUS 8-speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V/20Ah, 960Wh Lithium-ion battery with LG cells"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Input: 100-240V AC, 2.0A; Output: 54.6V DC, 3.0A."
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bafang",
-      "description": "BAFANG SUTTO 750W rear hub motor, 85 Nm of torque"
+      "type": "ebike-displayremote",
+      "description": "3.5\" color matrix HMI display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "3.5\" color matrix HMI display"
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "BAFANG SUTTO 750W rear hub motor, 85 Nm of torque"
     },
     {
       "type": "fender",
@@ -239,7 +235,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "140mm black grips",
       "dimensions": {
@@ -266,14 +262,14 @@
       "description": "Side Kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "40 LUX headlight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Tail Light",
       "position": [
         "rear"

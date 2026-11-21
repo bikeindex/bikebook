@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2013/da1",
   "manufacturer": "Felt",
   "model_group": "DA",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_triathlon",
+  "primary_activity": "road-triathlon",
   "handlebar_type": "forward",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2013/da1.png",
   "first_year": 2013,
@@ -31,7 +31,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "bottom_bracket": {
       "shell": "BB30",
       "spindle": "24mm"
@@ -48,8 +48,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "11_rear"
+    "2-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -68,7 +68,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -203,7 +203,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "FSA",
       "description": "FSA BB30 w/ 24mm spindle reducers"
     },
@@ -217,23 +217,14 @@
       "description": "Felt Integrated Aero w/ cartridge brake pads"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Shimano",
       "description": "Shimano Dura-Ace SLR brake & Di2 derailleur cables"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano Dura-Ace Di2 TT"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Dura-Ace 12-25T"
     },
     {
       "type": "chain",
@@ -245,6 +236,15 @@
       "type_detail": "Chainwheel",
       "manufacturer": "Shimano",
       "description": "Shimano 53T/39T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Dura-Ace 12-25T"
     },
     {
       "type": "crankset",
@@ -268,7 +268,7 @@
       "description": "Shimano Dura-Ace Di2"
     },
     {
-      "type": "electronic_shifting_component",
+      "type": "electronic-shifting-part",
       "manufacturer": "Shimano",
       "description": "Shimano Di2 battery & battery charger"
     },
@@ -278,7 +278,7 @@
       "description": "Felt Bayonet 3 UHC Ultimate + Nano MMC Carbon Fiber monocoque fork; 100% Carbon Fiber 1-piece blades, dropouts, crown w/ Felt compression device"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Devox Gel Velvet Tape w/ Devox 3D Logos"
     },
@@ -302,7 +302,7 @@
       "description": "Shimano RS21"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Shimano Di2 Charger",
       "manufacturer": "Shimano",
       "description": "Shimano Di2 battery & battery charger"
@@ -324,13 +324,13 @@
       "description": "Felt Aero DA/B UHC Advanced Carbon Fiber Forward Offset Bladed Monocoque Design"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "manufacturer": "Felt",
       "description": "Felt Integrated DA/B Aero aluminum w/titanium bolts"
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "Shimano",
       "description": "Shimano Dura-Ace SLR brake & Di2 derailleur cables"
     },
@@ -370,7 +370,7 @@
       "description": "Aero battery Cover"
     },
     {
-      "type": "water_bottle_cage",
+      "type": "water-bottle-cage",
       "description": "DA/B Aero Bottle System by TorHans™"
     }
   ]

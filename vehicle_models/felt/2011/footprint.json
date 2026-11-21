@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2011/footprint",
   "manufacturer": "Felt",
   "model": "Footprint",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "drop_bar",
@@ -27,7 +27,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "external",
     "bottom_bracket": {
       "spindle": "GXP"
@@ -53,8 +53,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -190,12 +190,17 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "description": "Bubble-Tech F Icon End Plugs"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bashguardchain-guide",
+      "type_detail": "Chainguide",
+      "description": "Aluminum Guard to protect skinny jeans"
+    },
+    {
+      "type": "bottom-bracket",
       "manufacturer": "SRAM",
       "description": "SRAM GXP Team External Bearings"
     },
@@ -209,22 +214,14 @@
       "description": "SRAM Dual Pivot w/ Cartridge Brake Shoes"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Felt",
       "description": "Felt Slick Brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "SRAM Road Brake Levers"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "F/W - 18T x 1/2 pitch x 3/32 width Chrome Freewheel Fixed Cog - 17T x 1/2 pitch x 3/32 width fixed sprocket w/ lock ring"
     },
     {
       "type": "chain",
@@ -232,14 +229,17 @@
       "description": "KMC Z610RB Single Speed 1/2 Pitch x 3/32 Width RUSTBUSTER finish"
     },
     {
-      "type": "chain_guide",
-      "type_detail": "Chainguide",
-      "description": "Aluminum Guard to protect skinny jeans"
-    },
-    {
       "type": "chainrings",
       "type_detail": "Chainwheel",
       "description": "48t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "F/W - 18T x 1/2 pitch x 3/32 width Chrome Freewheel Fixed Cog - 17T x 1/2 pitch x 3/32 width fixed sprocket w/ lock ring"
     },
     {
       "type": "crankset",
@@ -252,7 +252,7 @@
       "description": "Felt UHC Performance Carbon Fiber Fork w/ 3KP Weave; Carbon Fiber 1.125 Steerer tube, Crown, Blades, and Aluminum Dropouts, 398g"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt Gel Ribbon Cork Tape w/ Felt 3D Logo"
@@ -311,7 +311,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "Ø30.6 6061-AL Forged Aluminum, Cr-Mo 5mm x 0.8mm Bolt, Stainless Steel Nut-Bar. 16 Grams"
     },

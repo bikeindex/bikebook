@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fairdale/2021/flyer",
   "manufacturer": "Fairdale",
   "model_group": "Flyer",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -60,8 +60,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -79,7 +79,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -147,7 +147,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "BB Parts",
       "manufacturer": "FSA",
       "description": "FSA"
@@ -161,16 +161,8 @@
       "description": "Aluminum V-Brakes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Driver",
-      "position": [
-        "rear"
-      ],
-      "description": "8-Speed, 13-34t"
     },
     {
       "type": "chain",
@@ -182,6 +174,14 @@
       "type_detail": "Chainwheel",
       "manufacturer": "Fairdale",
       "description": "Fairdale, 36T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Driver",
+      "position": [
+        "rear"
+      ],
+      "description": "8-Speed, 13-34t"
     },
     {
       "type": "crankset",
@@ -203,7 +203,7 @@
       "description": "1020 Steel 1-1/8” Steerer tube"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Fairdale",
       "description": "Fairdale Swan"
@@ -255,7 +255,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "description": "30mm Fairdale Clamp",
       "dimensions": {
@@ -263,7 +263,7 @@
       }
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "Fairdale",
       "description": "Fairdale"
     },

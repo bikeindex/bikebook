@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/hovsco/2025/hovgtrs",
   "manufacturer": "Hovsco",
   "model": "HovGtrs",
   "model_configuration": "complete",
   "type": "bike",
-  "type_detail": "bench_seat",
+  "type_detail": "bench-seat",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -25,14 +25,35 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/hovsco/2025/hovgtrs_black.webp"
+          "stock_photo": "https://bikebook.bikeindex.org/hovsco/2025/hovgtrs-black.webp",
+          "variants": [
+            {
+              "sku": "374-DFY44-G3023G",
+              "size": "One Size"
+            },
+            {
+              "sku": "374-DFY57-N8022G",
+              "size": "One Size",
+              "original_msrp": 239900
+            },
+            {
+              "sku": "374-DFY49-G3021G",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Yellow",
           "colors": [
             "yellow"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/hovsco/2025/hovgtrs.webp"
+          "stock_photo": "https://bikebook.bikeindex.org/hovsco/2025/hovgtrs.webp",
+          "variants": [
+            {
+              "sku": "374-DFY44-G30H4G",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://www.hovsco.com/products/hovgtrs-moped-style-electric-bike",
@@ -58,8 +79,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -67,7 +88,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -78,7 +99,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "battery": {
         "capacity": 720,
@@ -101,14 +122,14 @@
           "range_claimed": 241,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -116,7 +137,7 @@
           "availability": "app_update",
           "max_speed": 51,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -166,20 +187,20 @@
       "description": "7 Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Internal Lithium-ion 48V, 15Ah (720Wh)/25Ah (1200Wh) Evo - 48V/15AH; Pro - 48V/25AH; Ultra - 48V/15AH+48V/25AH"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Included is a 54.6V 3 Amp Fast Charger, 5-7 Hours Charging Evo - 54.6V/ 2A ; Pro - 54.6V/ 3A ; Ultra - 54.6V/ 3A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "1500W (Peak) 750W (Sustained), 48V Brushless Rear Hub Motor"
+      "type": "ebike-displayremote",
+      "description": "BC280 LCD Smart Easy Read Display with Backlight screen with app"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "BC280 LCD Smart Easy Read Display with Backlight screen with app"
+      "type": "ebike-motor",
+      "description": "1500W (Peak) 750W (Sustained), 48V Brushless Rear Hub Motor"
     },
     {
       "type": "fender",
@@ -187,17 +208,17 @@
       "description": "Fender Set"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "description": "Ergonomic Comfort"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "2 Wrenches, 3 Allen Key Wrenchs"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"

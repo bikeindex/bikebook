@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/inmotion/2022/v12ht",
   "manufacturer": "Inmotion",
   "model_group": "V12",
   "model": "V12HT",
   "model_configuration": "complete",
-  "type": "epamd",
+  "type": "personal-mobility",
   "propulsion": [
     "throttle"
   ],
@@ -28,7 +28,7 @@
   },
   "brakes": [
     {
-      "type": "motor_brake",
+      "type": "motor-brake",
       "position": [
         "motor"
       ]
@@ -36,7 +36,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 1750,
         "cells": "1750(875*2)"
@@ -69,11 +69,11 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "1750(875*2)"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "2,800W rated"
     },
     {

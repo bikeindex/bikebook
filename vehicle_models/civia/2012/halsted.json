@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/civia/2012/halsted",
   "manufacturer": "Civia",
   "model": "Halsted",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "cargo",
   "handlebar_type": "horizontal",
@@ -41,8 +41,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -60,13 +60,13 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front"
       ]
     },
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "rear"
       ]
@@ -89,17 +89,17 @@
       "description": "Tektro Aquila disc front, 855AL Linear Pull rear"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z99"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano HG30 11-34 9sp"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Z99"
     },
     {
       "type": "crankset",

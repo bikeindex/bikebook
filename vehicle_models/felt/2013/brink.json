@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2013/brink",
   "manufacturer": "Felt",
   "model": "Brink",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "bmx",
   "handlebar_type": "horizontal",
@@ -56,8 +56,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -69,7 +69,7 @@
   },
   "brakes": [
     {
-      "type": "u_brake",
+      "type": "u-brake",
       "position": [
         "rear"
       ],
@@ -93,12 +93,12 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "description": "FB plastic barends"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "mid size, sealed bearing, 19mm spindle"
     },
     {
@@ -110,23 +110,14 @@
       "description": "Tektro 907 U-brake rear"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Felt",
       "description": "Felt FB straight cable"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro aluminum, w/ reach adjust"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Odyssey",
-      "description": "Odyssey 13T FW"
     },
     {
       "type": "chain",
@@ -140,6 +131,15 @@
       "description": "Felt Spacely design, steel, 30t"
     },
     {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Odyssey",
+      "description": "Odyssey 13T FW"
+    },
+    {
       "type": "crankset",
       "description": "3-pc, 8-spline tubular heat-treated cr-mo, 175mm",
       "dimensions": {
@@ -151,7 +151,7 @@
       "description": "100% cr-mo, butted steer tube, tapered legs, 3/8\" axle slots:5mm dropouts w/ cutot window,"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "FB \"Gribble\" grip"
     },
@@ -209,7 +209,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "single-bolt aluminum: 28.6 ID"
     },

@@ -1,19 +1,19 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fiido/2024/t2",
   "manufacturer": "Fiido",
   "model": "T2",
   "model_configuration": "complete",
-  "type": "cargo_bike_rear",
-  "type_detail": "long_tail",
+  "type": "cargo-rear",
+  "type_detail": "long-tail",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/fiido/2024/t2.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/fiido/2024/t2_geometry.webp",
+  "geometry_photo": "https://bikebook.bikeindex.org/fiido/2024/t2-geometry.webp",
   "description": "The upgraded, versatile electric cargo bike with longer tail built for family hauling - groceries, pets, 1-2 kids, with a massive 440 lbs capacity. Engineered for safe, long rides across all terrains and in any weather.",
   "first_year": 2024,
   "years": {
@@ -54,7 +54,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/fiido/2024/t2_gray.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/fiido/2024/t2-gray.jpg",
           "variants": [
             {
               "sku": "T2-20B1-US",
@@ -103,8 +103,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -122,7 +122,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -131,8 +131,9 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_speed": "spoke_magnet",
+      "water_rating": "IP68",
       "battery": {
         "capacity": 998
       },
@@ -142,8 +143,9 @@
           "mode": "assist",
           "availability": "stock",
           "max_speed": 25,
+          "range_claimed": 137,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -151,7 +153,7 @@
           "availability": "stock",
           "max_speed": 6,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -213,22 +215,22 @@
       "description": "Four-piston hydraulic disc brake with power cut-off"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum alloy three-finger brake lever"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z7"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Rear Cogs",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "SHIMANO TZ500 7S (14-28T)"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Z7"
     },
     {
       "type": "crankset",
@@ -244,20 +246,20 @@
       "description": "SHIMANO TY300D"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "DMEGC 998.4Wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V3A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W integrated wheel brushless geared motor"
+      "type": "ebike-displayremote",
+      "description": "LCD 1.47 inch"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD 1.47 inch"
+      "type": "ebike-motor",
+      "description": "750W integrated wheel brushless geared motor"
     },
     {
       "type": "fork",
@@ -267,7 +269,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Leather handlebar grips (length: about 130mm)",
       "dimensions": {

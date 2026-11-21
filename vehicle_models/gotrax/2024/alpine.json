@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/gotrax/2024/alpine",
   "manufacturer": "GOTRAX",
   "model": "Alpine",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -38,7 +38,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/gotrax/2024/alpine_navy_blue.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/gotrax/2024/alpine-navy-blue.jpg",
           "variants": [
             {
               "sku": "GT-ALPINE-BLUE",
@@ -49,7 +49,7 @@
         },
         {
           "name": "Champagne",
-          "stock_photo": "https://bikebook.bikeindex.org/gotrax/2024/alpine_champagne.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/gotrax/2024/alpine-champagne.jpg",
           "variants": [
             {
               "sku": "GT-ALPINE-CHAMPAGNE",
@@ -63,7 +63,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/gotrax/2024/alpine_r8_black.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/gotrax/2024/alpine-r8-black.jpg",
           "variants": [
             {
               "sku": "GT-R8-BLACK",
@@ -136,8 +136,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -146,7 +146,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -174,7 +174,7 @@
           "range_claimed": 103,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -183,7 +183,7 @@
           "max_speed": 32,
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -231,23 +231,23 @@
       "description": "Hydraulic"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 13.5Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V 2A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500 Watts"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LCD Digital"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "500 Watts"
+    },
+    {
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"
@@ -255,7 +255,7 @@
       "description": "LED"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Reactive Tail Lights & Headlight",
       "description": "Reactive Tail Lights & Headlight"
     },

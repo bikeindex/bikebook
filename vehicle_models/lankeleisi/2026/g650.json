@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/lankeleisi/2026/g650",
   "manufacturer": "Lankeleisi",
   "model_group": "G",
@@ -7,13 +7,13 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/lankeleisi/2026/g650.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/lankeleisi/2026/g650_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/lankeleisi/2026/g650-geometry.jpg",
   "description": "500W Brushless Motor\n\nThe Lankeleisi G650 features a powerful 500W high-speed brushless motor that easily tackles 30° slopes and glides effortlessly through urban roads. Its brushless technology minimizes the friction and wear found in conventional brushed motors, delivering a smoother and quieter ride.\n\n48V 12.8Ah Lithium Battery\n\nThe Lankeleisi G650 features a removable 48V 12.8Ah lithium-ion battery built with 18650 cells. It can travel up to 45 km in pure electric mode and reach 110 km with pedal assist, making it perfect for everyday city commuting. The integrated battery is waterproof and dustproof, ensuring reliable performance even when riding in the rain.\n\nFull Suspension\n\nThe Lankeleisi G650 is fitted with a full suspension setup, including a lockable front fork and a rear shock absorber, enabling smooth and comfortable riding over speed bumps and rough urban terrain.\n\nLCD Color Display\n\nColour Backlight Display to keep track of speed, mileage, power and more.",
   "first_year": 2026,
   "years": {
@@ -53,7 +53,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "suspension": {
     "front": {
@@ -72,8 +72,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -91,7 +91,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -101,7 +101,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IP54",
       "battery": {
         "capacity": 614,
@@ -123,7 +123,7 @@
           "range_claimed": 45,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -153,18 +153,18 @@
       "description": "Hydraulic Brakes"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC 7s"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano 14-28T"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC 7s"
     },
     {
       "type": "crankset",
@@ -179,20 +179,20 @@
       "description": "Shimano TZ20"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 12.8AH Lithium Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 3A charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48v 500w rear drive brushless motor, max torque 45Nm"
+      "type": "ebike-displayremote",
+      "description": "S866 LCD meterwith speed, trip, battery, assist level and more"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "S866 LCD meterwith speed, trip, battery, assist level and more"
+      "type": "ebike-motor",
+      "description": "48v 500w rear drive brushless motor, max torque 45Nm"
     },
     {
       "type": "fork",
@@ -208,7 +208,7 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/eoeotwo/2026/e03",
   "manufacturer": "EOEOTWO",
   "model": "E03",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -22,18 +22,36 @@
           "name": "Red",
           "colors": [
             "red"
+          ],
+          "variants": [
+            {
+              "sku": "E03-48V 17.5AH-RED",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "Yellow",
           "colors": [
             "yellow"
+          ],
+          "variants": [
+            {
+              "sku": "E03-48V 17.5AH-YELLOW",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "Black",
           "colors": [
             "black"
+          ],
+          "variants": [
+            {
+              "sku": "E03-48V 17.5AH-BLACK",
+              "size": "One Size"
+            }
           ]
         }
       ],
@@ -59,12 +77,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -90,7 +108,7 @@
           "max_speed": 55,
           "max_slope": 30,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -131,7 +149,7 @@
       "description": "mechanical disc brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 17.5Ah"
     },
     {

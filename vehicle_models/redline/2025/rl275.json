@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/redline/2025/rl275",
   "manufacturer": "Redline",
   "model": "RL275",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "bmx_race",
+  "primary_activity": "bmx-race",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/redline/2025/rl275.png",
   "description": "In a world of ever more specific categories of bikes, the Redline RL-275 is in a category of its own. This BMX bike for adults looks like a classic BMX cruiser, until you take a gander at the Tektro mechanical disc brakes and those ultra fat 3-inch wide tires mounted on 27.5 Plus size rims. The Vee Speedster tires roll fast and grip the corners on both pavement and dirt. They also give you some float if you decide to take a short-cut down a staircase or cruise on the beach. With retro graphics and a V-style handlebar, the RL-275 gives you an old-school look with new-school spec.",
@@ -17,6 +17,16 @@
     "2026": {
       "original_msrp": 90000,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "06-0210034",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://www.diamondback.com/products/rl275",
       "url_live": true
     },
@@ -49,8 +59,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "rear": [
@@ -59,7 +69,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -73,26 +83,26 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed Euro BB"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro ML520"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "COG SET",
-      "position": [
-        "rear"
-      ],
-      "description": "16t"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z33"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "COG SET",
+      "position": [
+        "rear"
+      ],
+      "description": "16t"
     },
     {
       "type": "crankset",
@@ -107,7 +117,7 @@
       "description": "Full Chromo, Disc"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "description": "Monster 151, No Flange, Monster Plug"
     },

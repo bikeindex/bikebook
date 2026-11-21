@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/trek/2012/6900",
   "manufacturer": "Trek",
   "model": "6900",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -60,8 +60,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "10_rear"
+    "3-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -81,7 +81,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -99,7 +99,7 @@
       "description": "Shimano SLX M666 hydraulic disc brakes"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
@@ -193,5 +193,29 @@
       "manufacturer": "Shimano",
       "description": "Shimano Deore XT M785 alloy hubs; Bontrager AT-850 disc 32-hole rims"
     }
-  ]
+  ],
+  "market_variants": {
+    "EU": {
+      "markets": [
+        "EU"
+      ],
+      "stock_photo": "https://bikebook.bikeindex.org/trek/2012/6900-eu.png",
+      "years": {
+        "2012": {
+          "url": "https://github.com/bikeindex/bikebook/blob/0898412f69d1c83f3aa448b68792d89c7dd9f77a/bike_data/trek/2012/6900_e.json"
+        }
+      }
+    },
+    "GB": {
+      "markets": [
+        "GB"
+      ],
+      "stock_photo": "https://bikebook.bikeindex.org/trek/2012/6900-gb.png",
+      "years": {
+        "2012": {
+          "url": "https://github.com/bikeindex/bikebook/blob/0898412f69d1c83f3aa448b68792d89c7dd9f77a/bike_data/trek/2012/6900_uk.json"
+        }
+      }
+    }
+  }
 }

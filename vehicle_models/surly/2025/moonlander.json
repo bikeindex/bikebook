@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/surly/2025/moonlander",
   "manufacturer": "Surly",
   "model_group": "Moonlander",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -231,8 +231,8 @@
     }
   ],
   "drivetrain": [
-    "9_speed_pinion",
-    "1_rear"
+    "9-speed-pinion-gearbox",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -246,7 +246,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -359,22 +359,22 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Pinion",
       "description": "Pinion C1.9 XR 9spd Gearbox"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "FSA",
-      "description": "FSA Steel 36T Megatooth Chainring"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC X10 EPT Anti-Rust"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "FSA",
+      "description": "FSA Steel 36T Megatooth Chainring"
     },
     {
       "type": "crankset",
@@ -391,7 +391,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Velo",
       "description": "Velo Lock-on"
@@ -432,7 +432,7 @@
       "description": "TransX YSP15JL Dropper, 125mm travel (100mm travel on SM)"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "manufacturer": "Surly",
       "description": "Surly Stainless 33.1mm",
       "dimensions": {

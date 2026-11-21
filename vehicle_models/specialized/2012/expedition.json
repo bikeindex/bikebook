@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/specialized/2012/expedition",
   "manufacturer": "Specialized",
   "model": "Expedition",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -72,8 +72,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -91,7 +91,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -100,7 +100,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Cartridge bearing, square spindle w/ crank stop right side, capless bolts"
     },
     {
@@ -112,14 +112,6 @@
       "description": "Alloy linear pull, 1pc. pad"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Mega Range, 7-speed, 14-34t"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z7"
@@ -127,6 +119,14 @@
     {
       "type": "chainrings",
       "description": "42T, w/ double guard"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Mega Range, 7-speed, 14-34t"
     },
     {
       "type": "crankset",
@@ -149,11 +149,11 @@
       }
     },
     {
-      "type": "frame_protection",
+      "type": "frame-protection",
       "description": "Chain stay protector"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "description": "Body Geometry Comfort, closed end, 92mm",
       "dimensions": {
         "length": 92
@@ -212,11 +212,11 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "Forged alloy w/ QR"
     },
     {
-      "type": "shift_and_brake_lever",
+      "type": "shift-and-brake-lever",
       "description": "Alloy 4-finger, for twist shifter"
     },
     {

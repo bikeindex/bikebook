@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/swagtron/2025/glidex",
   "manufacturer": "Swagtron",
   "model_group": "GlideX",
   "model": "GlideX",
   "model_configuration": "complete",
-  "type": "e_scooter",
+  "type": "e-scooter",
   "propulsion": [
     "throttle"
   ],
@@ -23,6 +23,12 @@
           "name": "Black",
           "colors": [
             "black"
+          ],
+          "variants": [
+            {
+              "sku": "SES01",
+              "size": "One Size"
+            }
           ]
         }
       ],
@@ -33,7 +39,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "stem_fold"
+    "folding": "stem-fold"
   },
   "wheels": [
     {
@@ -46,7 +52,7 @@
   ],
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "rear"
       ]
@@ -55,7 +61,7 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "certifications": [
         "UL 2272"
       ],
@@ -100,19 +106,19 @@
       "description": "Mechanical disc, rear"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36.5V 5Ah, removable, self-locking"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "36V / 350W front-wheel drive"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LED"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "36V / 350W front-wheel drive"
+    },
+    {
+      "type": "light",
       "description": "Headlight and taillight"
     },
     {

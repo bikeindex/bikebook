@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/whyte/2023/glencoe",
   "manufacturer": "Whyte",
   "model": "Glencoe",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "atb_gravel",
+  "primary_activity": "atb-gravel",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/whyte/2023/glencoe.jpg",
   "description": "The All-Road All-Rounder\nLight, comfortable and responsive, Glencoe is our fattest gravel bike for riders who want a super versatile, smooth-riding all-roader that’s as playful as it is practical. Whether you’re looking to load up and head out for an adventure on rough country lanes and light gravel routes, or just cruise smoothly around your regular roads, the Glencoe’s 650x47mm high-volume tyres make it a true all-rounder for any ride.\n\nHighlights\n— 6061 T6 hydroformed, multi-butted alloy Single Chain Ring (1X) specific frame\n— Lightweight straight bladed 6061 alloy fork\n— SRAM Apex 11 speed mechanical transmission + hydraulic disc brakes\n— 1x11 transmission (42T chainring x 10-42T cassette)\n— 650bx47mm high volume Maxxis Receptor TR EXO Sidewall Protection tyres\n\nWhy Glencoe?\nOur signature Whyte Total geometry gives you a clear confidence and safety boost, too so the fun doesn’t stop when the road ends either. Contemporary mountain bike (MTB) influences include a longer reach, a short stem, and a wider bar. We stopped short of a crazy-slack head angle though because Whyte’s Total Geometry concept creates confident control through fork geometry genius instead. That way you get the same confident ‘drop bar MTB’ feel without the flop and wander of a slack head angle. The result isn’t just confidence on rougher surfaces, but a naturally neutral and natural steering feel on road, too. That doesn’t change when you’re loaded up with bike packing gear either and the fixed seat post is compatible with whatever bags you choose.\n\nFeatures & Equipment\nPractical, good-looking, and always ready for adventure, Glencoe is your ideal getaway partner. Wide-range SRAM Apex single-ring gearing makes climbing easy – whether loaded up with bike-packing gear or making up for lost time after the morning alarm didn’t go off. Hydraulic disc brakes with an oversize front rotor mean stopping is never an issue either. Sealed cable ports and masses of mud clearance, together with being fully mud-guard ready – just add our own Whyte mudguards – all combine to ensure that bad weather will never hold you back. And if that wasn’t enough, the alloy frame and fork have mounts to take a full set of bike packing gear or conventional pannier racks, so the Glencoe can be ridden as far or fast as you like.",
@@ -108,8 +108,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "11_rear"
+    "1-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -127,7 +127,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -230,7 +230,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "BSA, Cartridge Bearings, 73mm"
     },
     {
@@ -252,22 +252,22 @@
       "description": "SRAM Apex 1 Hydraulic, Centre-Lock 160mm Disc, Flat Mount, Internal Routing"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "SRAM Apex 1, Hydraulic"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SunRace",
-      "description": "SunRace CSMS8, 11-42, 11 Speed"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC X11, Black/Silver, 11 Speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SunRace",
+      "description": "SunRace CSMS8, 11-42, 11 Speed"
     },
     {
       "type": "crankset",
@@ -293,7 +293,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bar Tape",
       "manufacturer": "Whyte",
       "description": "Whyte Anti Slip, Cross Bar Tape"

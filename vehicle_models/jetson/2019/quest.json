@@ -1,10 +1,10 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2019/quest",
   "manufacturer": "Jetson",
   "model": "Quest",
   "model_configuration": "complete",
-  "type": "e_scooter",
+  "type": "e-scooter",
   "propulsion": [
     "throttle"
   ],
@@ -23,7 +23,14 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jetson/2019/quest.png"
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2019/quest.png",
+          "variants": [
+            {
+              "sku": "JQUEST-BLK",
+              "gtin": "811991030538",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Lilac White",
@@ -31,7 +38,14 @@
             "purple",
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jetson/2019/quest_lilac_white.png"
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2019/quest-lilac-white.png",
+          "variants": [
+            {
+              "sku": "JQUEST-WHT",
+              "gtin": "811991030743",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://ridejetson.com/products/quest-electric-scooter",
@@ -46,12 +60,26 @@
           "colors": [
             "purple",
             "white"
+          ],
+          "variants": [
+            {
+              "sku": "JQUEST-WHT",
+              "gtin": "811991030743",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "Black",
           "colors": [
             "black"
+          ],
+          "variants": [
+            {
+              "sku": "JQUEST-BLK-BB",
+              "gtin": "811991030538",
+              "size": "One Size"
+            }
           ]
         }
       ],
@@ -61,7 +89,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "stem_fold"
+    "folding": "stem-fold"
   },
   "wheels": [
     {
@@ -74,7 +102,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 270,
         "voltage": 36,
@@ -124,7 +152,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell"
     },
     {
@@ -136,26 +164,26 @@
       "description": "Manual hand brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 7.5Ah lithium-ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Battery: No"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "250 watt hub motor"
+      "type": "ebike-displayremote",
+      "description": "LCD display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD display"
+      "type": "ebike-motor",
+      "description": "250 watt hub motor"
     },
     {
       "type": "kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "LED headlight and deck lights"
     },
     {
@@ -186,11 +214,6 @@
       "type": "unknown",
       "type_detail": "Notes",
       "description": "Speedometer in KPH only; use app for MPH"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "SKU",
-      "description": "JQUEST-BLK"
     },
     {
       "type": "wheel",

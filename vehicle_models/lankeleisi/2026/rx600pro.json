@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/lankeleisi/2026/rx600pro",
   "manufacturer": "Lankeleisi",
   "model": "RX600PRO",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -67,8 +67,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -77,7 +77,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -101,7 +101,7 @@
           "max_speed": 25,
           "range_claimed": 150,
           "e_vehicle_classifications": [
-            "evc/l1e_a_powered_cycle"
+            "evc/l1e-a-powered-cycle"
           ]
         },
         {
@@ -110,7 +110,7 @@
           "range_claimed": 70,
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/l1e_a_powered_cycle"
+            "evc/l1e-a-powered-cycle"
           ]
         }
       ]
@@ -142,17 +142,17 @@
       "description": "Z00M HB875 hydraulic double-piston disc brake Power-off function"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "description": "8S"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano 8-speed"
-    },
-    {
-      "type": "chain",
-      "description": "8S"
     },
     {
       "type": "crankset",
@@ -166,20 +166,20 @@
       "description": "M310"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 20Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V3a fast charge"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "250W"
+      "type": "ebike-displayremote",
+      "description": "Colour screen LCD kilometer counters"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Colour screen LCD kilometer counters"
+      "type": "ebike-motor",
+      "description": "250W"
     },
     {
       "type": "fender",
@@ -196,12 +196,12 @@
       "description": "Height Angle adjustable /31.8 aluminum handlebars"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "Allen wrench tool"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
@@ -217,7 +217,7 @@
       "description": "Air pump"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "FOUR-LINK SOFT-TAIL FRAME",
       "position": [
         "rear"

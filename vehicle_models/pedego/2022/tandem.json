@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/pedego/2022/tandem",
   "manufacturer": "Pedego",
   "model": "Tandem",
   "model_configuration": "complete",
   "type": "tandem",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -31,8 +31,8 @@
     }
   },
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -50,7 +50,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -61,7 +61,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 480,
         "capacity_options": [
@@ -79,14 +79,14 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -99,7 +99,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "2 x 68MM x 137MM SQUARE TAPER SPINDLE WITH SEALED CARTRIDGE BEARINGS; STEEL CUPS AND BODY."
     },
     {
@@ -113,12 +113,12 @@
       "description": "TEKTRO 2 PISTON FORGED ALUMINUM HYDRAULIC DISC BRAKE CALIPER; MINERAL OIL BRAKE FLUID."
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "TEKTRO 3 FINGER LEVER; CAST ALUMINUM WITH MOTOR CUTOFF SWITCH FOR MAXIMUM SAFETY."
     },
     {
-      "type": "brake_pad",
+      "type": "brake-pad",
       "position": [
         "front",
         "rear"
@@ -126,7 +126,7 @@
       "description": "ORGANIC MATERIAL WITH STEEL BACKING PLATE; OFFER SAFETY TOGETHER WITH EXCELLENT PERFORMANCE IN ALL SITUATIONS."
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -138,17 +138,17 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "Shimano",
+      "description": "SHIMANO HG40 1/2”x3/32” WITH INNER PLATE CHAMFERING; FRONT: 146 LINKS; REAR: 128 LINKS."
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "SHIMANO HYPERGLIDE HG20 7 SPEED 12-32T; SMOOTH, LIGHT AND RELIABLE SHIFTING PERFORMANCE."
-    },
-    {
-      "type": "chain",
-      "manufacturer": "Shimano",
-      "description": "SHIMANO HG40 1/2”x3/32” WITH INNER PLATE CHAMFERING; FRONT: 146 LINKS; REAR: 128 LINKS."
     },
     {
       "type": "crankset",
@@ -164,15 +164,15 @@
       "description": "SHIMANO ACERA RD-M360 7-SPEED, FULL METAL CONSTRUCTION AND TEFLON COATED BUSHINGS."
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48 VOLT 10 OR 15 AMP HOUR WITH PREMIUM LITHIUM ION 18650 CELLS."
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "3 AMP SMART CHARGER WITH INTERNAL FAN AND CHARGE INDICATOR LIGHT."
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "SILVER 48V BRUSHLESS GEARED REAR HUB MOTOR; 500 WATT NOMINAL POWER RATING; 45NM TORQUE; QUICK DISCONNECT CABLE WITH WATERPROOF CONNECTION."
     },
     {

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/tracer/2022/loiter",
   "manufacturer": "Tracer",
   "model": "Loiter",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -36,7 +36,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/tracer/2022/loiter_m_matte_grey.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/tracer/2022/loiter-m-matte-grey.jpg",
           "variants": [
             {
               "sku": "EB-LOITER-M-MGRY/BK",
@@ -96,8 +96,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -115,7 +115,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -126,7 +126,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 840,
         "voltage": 48,
@@ -138,7 +138,7 @@
           "mode": "assist",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -151,7 +151,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Cartridge Stee Speed sensors"
     },
     {
@@ -163,21 +163,21 @@
       "description": "Disc 160mm"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Alloy"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 14-28T 7-Speed"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z7.1/2\"*3/32\"*130L"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 14-28T 7-Speed"
     },
     {
       "type": "crankset",
@@ -195,19 +195,19 @@
       "description": "Shimano TY300 7-Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Panasonic",
       "description": "Panasonic Lithium-ion Battery 48V/17.5Ah"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "position": [
         "rear"
       ],
       "description": "48V, 800W high speed brushless max speed at 25mile"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "manufacturer": "Tracer",
       "description": "Tracer 26\" Loiter Beach Cruiser E-bike Shimano 7-Speed Steel Frame Disc Brake Hi Rise Handlebars Alloy Black 3\"Rims 26x4.0 Black Tires Motor 800W Panasonic Lithium-ion Battery 48V/17.5 Ah Li-ion"
     },

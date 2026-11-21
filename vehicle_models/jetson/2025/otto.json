@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2025/otto",
   "manufacturer": "Jetson",
   "model": "Otto",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "atb",
@@ -18,12 +18,42 @@
     "2026": {
       "original_msrp": 199999,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "variants": [
+            {
+              "sku": "JOTTO-BLK",
+              "gtin": "840290211201",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://ridejetson.com/products/otto-all-terrain-electric-bike",
       "url_live": true
     },
     "2025": {
       "original_msrp": 199999,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "variants": [
+            {
+              "sku": "JOTTO-BLK",
+              "gtin": "840290211201",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://web.archive.org/web/20250810200232/https://ridejetson.com/products/otto-all-terrain-electric-bike",
       "url_live": false
     }
@@ -42,12 +72,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -72,7 +102,7 @@
           "range_claimed": 60,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -81,7 +111,7 @@
           "range_claimed": 43,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -109,7 +139,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell"
     },
     {
@@ -121,20 +151,20 @@
       "description": "Front & Rear Disc Brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V, 10.4Ah Lithium Ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Battery: Yes"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500 W"
+      "type": "ebike-displayremote",
+      "description": "LCD"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD"
+      "type": "ebike-motor",
+      "description": "500 W"
     },
     {
       "type": "kickstand"
@@ -153,11 +183,6 @@
       "type": "unknown",
       "type_detail": "Warranty",
       "description": "1 year"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "SKU",
-      "description": "JOTTO-BLK"
     },
     {
       "type": "unknown",

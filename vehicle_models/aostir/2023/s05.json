@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/aostir/2023/s05",
   "manufacturer": "Aostir",
   "model": "S05",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -16,6 +16,19 @@
     "2023": {
       "original_msrp": 159900,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "S05-CAN",
+              "gtin": "673143984188"
+            },
+            {
+              "sku": "S05-US"
+            }
+          ]
+        }
+      ],
       "url": "https://web.archive.org/web/20230209035321/https://www.aostirmotor.com/products/electric-mountain-bicycle-s05",
       "url_live": false
     }
@@ -79,23 +92,23 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 15Ah Lithium Battery"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Capacity: 48V 15Ah (720Wh) removable & upgradable lithium battery"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W Toothless Brush Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Backlit LCD Display"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "500W Toothless Brush Motor"
+    },
+    {
+      "type": "light",
       "description": "head-light and brake light"
     },
     {

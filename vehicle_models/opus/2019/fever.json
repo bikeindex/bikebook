@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/opus/2019/fever",
   "manufacturer": "Opus",
   "model_group": "Fever",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "atb",
   "handlebar_type": "horizontal",
@@ -57,8 +57,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "9_rear"
+    "2-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -76,7 +76,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -109,7 +109,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Samox"
     },
     {
@@ -121,16 +121,8 @@
       "description": "Jak-Y1 hydraulic disc brake - 160 mm"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Jak-Y1 hydraulic"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Alivio 12-36"
     },
     {
       "type": "chain",
@@ -140,6 +132,14 @@
     {
       "type": "chainrings",
       "description": "36-22"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Alivio 12-36"
     },
     {
       "type": "crankset",
@@ -167,7 +167,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips tape",
       "manufacturer": "Opus",
       "description": "Opus Kraton"

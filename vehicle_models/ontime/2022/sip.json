@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ontime/2022/sip",
   "manufacturer": "Ontime",
   "model": "SIP",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -40,7 +40,7 @@
           "colors": [
             "brown"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/ontime/2022/sip_desert_sand.png",
+          "stock_photo": "https://bikebook.bikeindex.org/ontime/2022/sip-desert-sand.png",
           "variants": [
             {
               "sku": "OTB-SIP-DS-S",
@@ -59,7 +59,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/ontime/2022/sip_white.png",
+          "stock_photo": "https://bikebook.bikeindex.org/ontime/2022/sip-white.png",
           "variants": [
             {
               "sku": "OTB-SIP-W-S",
@@ -94,8 +94,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -108,7 +108,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -120,7 +120,7 @@
     {
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_speed": "spoke_magnet",
       "battery": {
         "capacity": 624,
@@ -137,7 +137,7 @@
           "max_speed": 40,
           "range_claimed": 80,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -206,16 +206,16 @@
       "description": "7 Speed Shimano Rear Derailleur"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 12.8AH (624WH), Samsung Battery Cell (Lithium-ion)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Brushless Rear Hub Motor Bafang, 48V 500W Brushless Hub Motor"
+      "type": "ebike-displayremote",
+      "description": "TFT Color Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "TFT Color Display"
+      "type": "ebike-motor",
+      "description": "Brushless Rear Hub Motor Bafang, 48V 500W Brushless Hub Motor"
     },
     {
       "type": "pedals",

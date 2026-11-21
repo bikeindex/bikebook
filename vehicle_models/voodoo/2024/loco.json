@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/voodoo/2024/loco",
   "manufacturer": "Voodoo",
   "model": "Loco",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -61,8 +61,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "12_rear"
+    "1-front",
+    "12-rear"
   ],
   "gearing": {
     "front": [
@@ -80,7 +80,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -129,7 +129,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Shimano",
       "description": "Shimano BB-MT501"
     },
@@ -152,18 +152,18 @@
       "description": "Hydraulic Disc Brakes"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC X12"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Cassette/Freewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano Deore CS-M6100, 10-51T, 12 speed"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC X12"
     },
     {
       "type": "crankset",
@@ -191,7 +191,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Voodoo",
       "description": "Voodoo, lock-on"

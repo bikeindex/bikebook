@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2011/ar3",
   "manufacturer": "Felt",
   "model_group": "AR",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_aero",
+  "primary_activity": "road-aero",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2011/ar3.jpg",
   "first_year": 2011,
@@ -31,7 +31,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "bottom_bracket": {
       "spindle": "GXP"
@@ -49,8 +49,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "10_rear"
+    "2-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -216,12 +216,12 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "description": "Bubble-Tech F Icon End Plugs"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "SRAM",
       "description": "SRAM GXP compatible External Bearing"
     },
@@ -235,23 +235,14 @@
       "description": "SRAM Dual Pivot w/ Cartridge Brake Shoes"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "SRAM",
       "description": "SRAM RED by GORE Brake & Derailleur"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "SRAM RED"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM Cassette, 11-26T"
     },
     {
       "type": "chain",
@@ -262,6 +253,15 @@
       "type": "chainrings",
       "type_detail": "Chainwheel",
       "description": "53t/39t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM Cassette, 11-26T"
     },
     {
       "type": "crankset",
@@ -290,7 +290,7 @@
       "description": "Felt AR UHC Advanced 100% Carbon Fiber Monocoque Fork; Carbon 1.125 Steerer tube, Crown, Blades, and Dropouts"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt Gel Ribbon Cork Tape w/ Felt 3D Logo"
@@ -347,12 +347,12 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "AR Aero 3D Forged Aluminum, 2 x 5mm x 0.8mm CP Steel Bolts, 18 Grams"
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "SRAM",
       "description": "SRAM RED by GORE Brake & Derailleur"
     },

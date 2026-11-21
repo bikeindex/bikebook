@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/trek/2012/8000",
   "manufacturer": "Trek",
   "model": "8000",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -47,8 +47,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "10_rear"
+    "3-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -68,7 +68,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -86,7 +86,7 @@
       "description": "Shimano SLX M666 hydraulic disc brakes"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
@@ -179,5 +179,35 @@
       "manufacturer": "Shimano",
       "description": "Shimano Deore XT M785 alloy hubs; Bontrager Mustang Disc 32-hole rims, Tubeless Ready"
     }
-  ]
+  ],
+  "market_variants": {
+    "EU": {
+      "markets": [
+        "EU"
+      ],
+      "stock_photo": "https://bikebook.bikeindex.org/trek/2012/8000-eu.png",
+      "years": {
+        "2012": {
+          "url": "https://github.com/bikeindex/bikebook/blob/0898412f69d1c83f3aa448b68792d89c7dd9f77a/bike_data/trek/2012/8000_e.json"
+        }
+      },
+      "components": {
+        "fork": false
+      }
+    },
+    "GB": {
+      "markets": [
+        "GB"
+      ],
+      "stock_photo": "https://bikebook.bikeindex.org/trek/2012/8000-gb.png",
+      "years": {
+        "2012": {
+          "url": "https://github.com/bikeindex/bikebook/blob/0898412f69d1c83f3aa448b68792d89c7dd9f77a/bike_data/trek/2012/8000_uk.json"
+        }
+      },
+      "components": {
+        "fork": false
+      }
+    }
+  }
 }

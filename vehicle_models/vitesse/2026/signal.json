@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/vitesse/2026/signal",
   "manufacturer": "Vitesse",
   "model": "Signal",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -65,8 +65,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -94,7 +94,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 252,
         "voltage": 36,
@@ -106,8 +106,9 @@
           "mode": "assist",
           "availability": "stock",
           "max_speed": 32,
+          "range_claimed": 64,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -140,14 +141,6 @@
       "description": "Front & Rear Alloy Linear Side Pull Brakes"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SunRace",
-      "description": "Sunrace 11-32T Cassette/Freewheel"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z8.3 Chain"
@@ -155,6 +148,14 @@
     {
       "type": "chainrings",
       "description": "44T Steel Chainring"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SunRace",
+      "description": "Sunrace 11-32T Cassette/Freewheel"
     },
     {
       "type": "crankset",
@@ -172,24 +173,24 @@
       "description": "Microshift Mezzo 8 Speed Derailleur"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Life: Up to 40 Miles Per Charge & Up to 1,000 Charge Cycles Lifetime"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V 7Ah / 252 Wh Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Charger Included"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "250 Watt Rear Hub Motor"
+      "type": "ebike-displayremote",
+      "description": "Handlebar Mounted LED Display Controller with 5 Speed Settings"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Handlebar Mounted LED Display Controller with 5 Speed Settings"
+      "type": "ebike-motor",
+      "description": "250 Watt Rear Hub Motor"
     },
     {
       "type": "fork",
@@ -199,7 +200,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "description": "Rubber Grips with Locking Ring"
     },
     {

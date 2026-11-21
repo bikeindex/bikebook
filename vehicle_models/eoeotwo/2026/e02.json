@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/eoeotwo/2026/e02",
   "manufacturer": "EOEOTWO",
   "model": "E02",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -23,14 +23,26 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/eoeotwo/2026/e02.png"
+          "stock_photo": "https://bikebook.bikeindex.org/eoeotwo/2026/e02.png",
+          "variants": [
+            {
+              "sku": "E02-48V 20AH-Blue-1",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Green",
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/eoeotwo/2026/e02_green.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/eoeotwo/2026/e02-green.jpg",
+          "variants": [
+            {
+              "sku": "E02-48V 20AH-Green-1",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://eoeo2.com/products/electric-bike-adults-70-miles",
@@ -59,12 +71,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -85,7 +97,7 @@
           "max_speed": 48,
           "range_claimed": 113,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -128,7 +140,7 @@
       "description": "Dual disc brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 20Ah"
     },
     {

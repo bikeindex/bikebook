@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/isinwheel/2024/s10max",
   "manufacturer": "iSinwheel",
   "model_group": "S10",
   "model": "S10Max",
   "model_configuration": "complete",
-  "type": "e_scooter",
+  "type": "e-scooter",
   "propulsion": [
     "throttle"
   ],
@@ -36,7 +36,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "stem_fold"
+    "folding": "stem-fold"
   },
   "suspension": {
     "front": {},
@@ -53,14 +53,14 @@
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
       ]
     },
     {
-      "type": "motor_brake",
+      "type": "motor-brake",
       "position": [
         "motor"
       ]
@@ -126,23 +126,37 @@
       "description": "EABS Brake + Disk Brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Capacity: 48V 15Ah"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 15Ah"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Protection: Temperature, Overload, waterproof"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-charger",
+      "description": "Charger"
+    },
+    {
+      "type": "ebike-motor",
       "description": "1000W"
     },
     {
-      "type": "lights",
+      "type": "frame-bag",
+      "type_detail": "Scooter Bag",
+      "description": "Scooter Bag"
+    },
+    {
+      "type": "included-not-installed",
+      "type_detail": "Tools",
+      "description": "1 T-Handle Wrench"
+    },
+    {
+      "type": "light",
       "type_detail": "LED Lighting",
       "description": "Headlight, Turn Light, Rear Brake Light"
     },

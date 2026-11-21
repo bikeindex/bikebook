@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2018/f4x",
   "manufacturer": "Felt",
   "model_group": "FX",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "atb_cyclocross",
+  "primary_activity": "atb-cyclocross",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2018/f4x.jpg",
   "description": "Utilizing UHC Advanced + TeXtreme carbon fiber, Felt engineers created the F4x as a do-it-all race machine for tackling any environment, handling any conditions and besting any competition. With internally routed cabling and a SRAM Rival CX1 drivetrain, the F4x provides intuitive shifting so you can focus purely on giv",
@@ -106,7 +106,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "bottom_bracket": {
       "shell": "BB386",
@@ -145,8 +145,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "11_rear"
+    "1-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -164,7 +164,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
@@ -172,7 +172,7 @@
       "caliper_mount": "Disc Flat Mount"
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -347,7 +347,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Token",
       "description": "Token BB386 with 22/24mm bearings"
     },
@@ -360,18 +360,9 @@
       "description": "Front: SRAM Rival hydraulic disc flat mount with SRAM 160mm Centerline rotor, Rear: SRAM Rival hydraulic disc flat mount with SRAM 140mm Centerline rotor"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "SRAM Rival Cx1, hydraulic"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM 11-speed, 11-32T"
     },
     {
       "type": "chain",
@@ -381,6 +372,15 @@
     {
       "type": "chain",
       "description": "chain plate protector"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM 11-speed, 11-32T"
     },
     {
       "type": "crankset",
@@ -405,7 +405,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt CxGel tape with Felt Bubble-Tech F-Wing bar end plugs"
@@ -448,7 +448,7 @@
       }
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Assembly Paste",
       "description": "Carbon assembly paste"
     },
@@ -472,7 +472,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "manufacturer": "Felt",
       "description": "Felt single bolt, Ø31.8mm",

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/velec/2023/fb48",
   "manufacturer": "Velec",
   "model": "FB48",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -23,6 +23,17 @@
           "name": "Titanium",
           "colors": [
             "silver"
+          ],
+          "variants": [
+            {
+              "sku": "VFB4824MT10",
+              "size": "One Size"
+            },
+            {
+              "sku": "VFB4824MT15",
+              "size": "One Size",
+              "original_msrp": 289900
+            }
           ]
         }
       ],
@@ -34,7 +45,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "seatpost_diameter": 30.4
   },
   "wheels": [
@@ -48,8 +59,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -67,7 +78,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -78,7 +89,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 480,
         "capacity_options": [
@@ -94,7 +105,7 @@
           "availability": "stock",
           "range_claimed": 90,
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         },
         {
@@ -102,7 +113,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         }
       ]
@@ -133,21 +144,21 @@
       "description": "Tektro Hydraulic 180mm front and rear discs"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro with motor cut-offs"
     },
     {
-      "type": "cassette",
+      "type": "chainrings",
+      "description": "52T"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano 11-32T 8 speeds"
-    },
-    {
-      "type": "chainrings",
-      "description": "52T"
     },
     {
       "type": "derailleur",
@@ -158,16 +169,16 @@
       "description": "Shimano Acera RD-M360 8 speeds"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V/10Ah (480Wh) or 48V/15Ah (720Wh)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W HT Velec by AKM rear-hub (70 Nm)"
+      "type": "ebike-displayremote",
+      "description": "Grayscale LCD Control panel, centered on the handlebar"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Grayscale LCD Control panel, centered on the handlebar"
+      "type": "ebike-motor",
+      "description": "500W HT Velec by AKM rear-hub (70 Nm)"
     },
     {
       "type": "fender",
@@ -186,11 +197,11 @@
       "description": "Kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front light powered by electrical system. Rear light powered by 2x AA batteries."
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "reflectors"
     },
     {

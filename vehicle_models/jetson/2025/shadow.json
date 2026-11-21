@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2025/shadow",
   "manufacturer": "Jetson",
   "model": "Shadow",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -18,6 +18,17 @@
     "2026": {
       "original_msrp": 79999,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "JSHDW-GRY",
+              "gtin": "840290211096",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://ridejetson.com/products/shadow-fat-tire-electric-bike",
       "url_live": true
     },
@@ -25,7 +36,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "stem_fold",
+    "folding": "stem-fold",
     "mounts": [
       {
         "type": "rack"
@@ -43,12 +54,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -73,7 +84,7 @@
           "max_slope": 15,
           "levels": 1,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -81,7 +92,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -114,7 +125,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell"
     },
     {
@@ -126,20 +137,20 @@
       "description": "Front & Rear Disc Brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 7.8Ah Lithium Ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Battery: No"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "350 W"
+      "type": "ebike-displayremote",
+      "description": "LCD"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD"
+      "type": "ebike-motor",
+      "description": "350 W"
     },
     {
       "type": "kickstand"
@@ -153,11 +164,6 @@
       "type": "unknown",
       "type_detail": "Warranty",
       "description": "1 year"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "SKU",
-      "description": "JSHDW-GRY"
     },
     {
       "type": "unknown",

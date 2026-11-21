@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/freedare/2022/saiga",
   "manufacturer": "Freedare",
   "model": "Saiga",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -37,7 +37,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/freedare/2022/saiga_black.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/freedare/2022/saiga-black.jpg",
           "variants": [
             {
               "sku": "Saiga-Black-MD-2403",
@@ -71,8 +71,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -85,7 +85,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -95,17 +95,19 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "water_rating": "IPX5",
       "battery": {
         "capacity": 960,
         "chemistry": "li-ion",
-        "cells": "Samsung 21700"
+        "cells": "Samsung 21700",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "peak_power": 1000,
@@ -119,7 +121,7 @@
           "max_slope": 30,
           "levels": 3,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -127,7 +129,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -186,20 +188,20 @@
       "description": "SHIMANO 7-speed gear shift system"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "960wh, Samsung 21700 Battery Cells"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V 3A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W BAFANG Geared Hub Motor, Rated 750W, Peak 1000W, Rated torque 20N.M, Maximum torque 80N.M"
+      "type": "ebike-displayremote",
+      "description": "TFT Color screen with USB interface (with speedometer, odometer, pedal assist level, etc.)"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "TFT Color screen with USB interface (with speedometer, odometer, pedal assist level, etc.)"
+      "type": "ebike-motor",
+      "description": "750W BAFANG Geared Hub Motor, Rated 750W, Peak 1000W, Rated torque 20N.M, Maximum torque 80N.M"
     },
     {
       "type": "fender",
@@ -214,12 +216,12 @@
       "description": "Adjustable lockable aluminum alloy suspension Fork"
     },
     {
-      "type": "gps_connectivity_module",
+      "type": "gpsconnectivity-module",
       "type_detail": "GPS tracker",
       "description": "Whether near or far, you'll be able to locate your bike at all times with GPS tracking; 4G Qualcomm Chip; GPS Chip; Bluetooth Module"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "1PC Tool"
     },
@@ -228,14 +230,14 @@
       "description": "Side kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "APP control"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "1PC Tail Light",
       "position": [
         "rear"

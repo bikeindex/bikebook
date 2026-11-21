@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/bombtrack/2026/audax",
   "manufacturer": "Bombtrack",
   "model_group": "Audax",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "atb_gravel",
+  "primary_activity": "atb-gravel",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/bombtrack/2026/audax.jpg",
   "description": "This is our premium Audax machine built with Columbus’s Cromor double butted tubing. The svelte diameter tubing offers up images of steel Audax bikes of old but this is no retro machine. It's bang up to date with a tapered head tube, T47 BB, 12 mm through axles, a rear light mount, and even more cargo-carrying options with rack mounts on the frame if you prefer to use panniers. Shimano’s GRX 600 2x groupset provides the shifting and stopping duties with GRX 810 front and rear mechs shifting via sub-compact 2x crankset to keep your cadence silky smooth whatever the route you choose. Luxurious 650 x 47 mm Byway TCS tyres and Ritchey Comp finishing kit provide all-day riding comfort for those long adventures in the saddle.",
@@ -91,7 +91,8 @@
     "seatpost_clamp_diameter": 29.8,
     "front_derailleur_mount": "28.6mm clamp",
     "derailleur_hanger": "BT-DH-008",
-    "max_chainring": 53
+    "max_chainring": 53,
+    "en_17406": 2
   },
   "wheels": [
     {
@@ -150,8 +151,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "11_rear"
+    "2-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -170,7 +171,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -343,7 +344,7 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Through axles",
       "description": "12 x 100 mm / 12 x 142 mm",
       "dimensions": {
@@ -351,7 +352,7 @@
       }
     },
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Front through axle",
       "position": [
         "front"
@@ -363,7 +364,7 @@
       }
     },
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Rear through axle",
       "position": [
         "rear"
@@ -375,7 +376,7 @@
       }
     },
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Through axle front",
       "position": [
         "front"
@@ -383,7 +384,7 @@
       "description": "BT-TA-F-601"
     },
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "Through axle rear",
       "position": [
         "rear"
@@ -391,7 +392,7 @@
       "description": "BT-TA-R-602"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Bombtrack",
       "description": "Bombtrack T47 internal sealed BB for 30 mm spindle"
     },
@@ -413,12 +414,12 @@
       "description": "10 mm"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano GRX ST-RX600 STI hydraulic"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -429,22 +430,6 @@
       "dimensions": {
         "diameter": 160
       }
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 105 CS-HG70011 11-speed, 11 - 34 T"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Cassette body",
-      "position": [
-        "rear"
-      ],
-      "description": "BT-CB-006"
     },
     {
       "type": "chain",
@@ -459,6 +444,22 @@
       "type": "chainrings",
       "type_detail": "Chainring offset",
       "description": "small ring 0 mm / big ring -2 mm"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 105 CS-HG70011 11-speed, 11 - 34 T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Cassette body",
+      "position": [
+        "rear"
+      ],
+      "description": "BT-CB-006"
     },
     {
       "type": "crankset",
@@ -508,7 +509,7 @@
       "description": "23.6 mm"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bar Tape",
       "manufacturer": "Bombtrack",
       "description": "Bombtrack Command bar tape"
@@ -646,7 +647,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat clamp",
       "manufacturer": "Bombtrack",
       "description": "Bombtrack Origin 29.8 mm",
@@ -723,11 +724,6 @@
         "width": 47,
         "diameter": 584
       }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "ASTM riding condition",
-      "description": "2"
     },
     {
       "type": "unknown",

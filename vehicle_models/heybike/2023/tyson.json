@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/heybike/2023/tyson",
   "manufacturer": "Heybike",
   "model": "Tyson",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "description": "The Tyson electric bike is the epitome of versatility meeting ruggedness. With 4\" fat tires, a hydraulic front suspension fork, and a 750W motor, the Tyson can effortlessly take on both a relaxing cruise on pavement and a thrilling run on the trails!",
   "first_year": 2023,
@@ -65,14 +65,14 @@
   },
   "frame": {
     "material": "magnesium",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "suspension": {
     "front": {}
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -81,15 +81,15 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
-      "certifications": [
-        "UL 2271"
-      ],
+      "kind": "hub-drive",
       "battery": {
         "capacity": 720,
         "voltage": 48,
         "chemistry": "li-ion",
-        "charging_time": 300
+        "charging_time": 300,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "peak_power": 1200,
@@ -100,7 +100,7 @@
           "max_speed": 45,
           "range_claimed": 89,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -157,20 +157,20 @@
       "description": "Hydraulic Disc Brakes System"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "UL 2271 Recognized 48V 15Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 4A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "1200W Brushless Gear Motor"
+      "type": "ebike-displayremote",
+      "description": "4G Mobile App Sync"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "4G Mobile App Sync"
+      "type": "ebike-motor",
+      "description": "1200W Brushless Gear Motor"
     },
     {
       "type": "fork",

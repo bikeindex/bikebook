@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2021/j8",
   "manufacturer": "Jetson",
   "model": "J8",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -18,19 +18,41 @@
     "2026": {
       "original_msrp": 129999,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "JJ8-BLK",
+              "gtin": "811991035335",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://ridejetson.com/products/j8-electric-bike",
       "url_live": true
     },
     "2021": {
       "original_msrp": 99999,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "JJ8-BLK",
+              "gtin": "811991035335",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://web.archive.org/web/20211209134553/https://ridejetson.com/products/j8-electric-bike",
       "url_live": false
     }
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "wheels": [
     {
@@ -43,7 +65,7 @@
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -67,7 +89,7 @@
           "range_claimed": 48,
           "levels": 3,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -76,7 +98,7 @@
           "range_claimed": 24,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -117,11 +139,11 @@
       "description": "Hand and disc brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 7.8Ah Lithium-Ion Battery"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "350 watt"
     },
     {
@@ -131,11 +153,6 @@
       "type": "throttle",
       "type_detail": "Throttle Type",
       "description": "Twist throttle"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "SKU",
-      "description": "JJ8-BLK"
     },
     {
       "type": "unknown",

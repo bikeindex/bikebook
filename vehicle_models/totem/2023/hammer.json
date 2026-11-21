@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/totem/2023/hammer",
   "manufacturer": "Totem",
   "model": "Hammer",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -51,7 +51,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "wheels": [
     {
@@ -64,15 +64,15 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "electronic": false
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -89,13 +89,14 @@
         {
           "mode": "assist",
           "availability": "stock",
+          "range_claimed": 64,
           "levels": 5
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -123,16 +124,16 @@
       "description": "Provides instant responsiveness and increased stopping power, with less wear and tear to keep you safe in all riding conditions."
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Easily install and remove the battery using the security key. The 48V 10.4 Ah Lithium-ion battery provides up to 40 miles range on a single charge. Full recharges in 2-3 hours using the included 3 Amp fast charger."
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "The heart of the Hammer lies in the exceptional power and torque of the 500W motor, tackling the worst hill and toughest terrain, for an unrivaled riding experience."
+      "type": "ebike-displayremote",
+      "description": "The LCD Smart Display features a speedometer, odometer, battery indicator, and backlighting. Easily switch from 5-level pedal assist, throttle, and traditional cycling mode."
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "The LCD Smart Display features a speedometer, odometer, battery indicator, and backlighting. Easily switch from 5-level pedal assist, throttle, and traditional cycling mode."
+      "type": "ebike-motor",
+      "description": "The heart of the Hammer lies in the exceptional power and torque of the 500W motor, tackling the worst hill and toughest terrain, for an unrivaled riding experience."
     },
     {
       "type": "fender",

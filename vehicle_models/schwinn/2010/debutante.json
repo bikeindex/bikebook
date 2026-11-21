@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/schwinn/2010/debutante",
   "manufacturer": "Schwinn",
   "model": "Debutante",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -54,8 +54,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -63,7 +63,7 @@
   },
   "brakes": [
     {
-      "type": "coaster_brake",
+      "type": "coaster-brake",
       "position": [
         "rear"
       ]
@@ -71,15 +71,15 @@
   ],
   "components": [
     {
+      "type": "bashguardchain-guide",
+      "description": "Full wrap fenders set and chain guard"
+    },
+    {
       "type": "brake",
       "position": [
         "rear"
       ],
       "description": "Rear coaster brake"
-    },
-    {
-      "type": "chain_guide",
-      "description": "Full wrap fenders set and chain guard"
     },
     {
       "type": "headset",

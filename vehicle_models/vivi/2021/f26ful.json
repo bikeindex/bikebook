@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/vivi/2021/f26ful",
   "manufacturer": "Vivi",
   "model": "F26FUL",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -94,8 +94,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -113,7 +113,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -123,19 +123,21 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "water_rating": "IP54",
       "battery": {
         "capacity": 864,
         "voltage": 48,
         "chemistry": "li-ion",
-        "charging_time": 360
+        "charging_time": 360,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 500,
       "peak_power": 1000,
@@ -148,7 +150,7 @@
           "range_claimed": 80,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -157,7 +159,7 @@
           "range_claimed": 55,
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -198,7 +200,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell/Horn",
       "description": "Integrated Electric Horn"
     },
@@ -220,11 +222,11 @@
       "description": "Front and Rear Mechanical Brake Calipers"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Alloy Levers with Motor Cutoff Switch"
     },
     {
-      "type": "brake_pad",
+      "type": "brake-pad",
       "position": [
         "front",
         "rear"
@@ -232,17 +234,17 @@
       "description": "SA 160mm Cassette, Semi-metallic"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Aluminum Alloy Chain, 112 links"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
       ],
       "description": "Aluminum 7-speed Freewheel, 14-28T"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Aluminum Alloy Chain, 112 links"
     },
     {
       "type": "crankset",
@@ -258,24 +260,24 @@
       "description": "Shimano RD-TZ500, 7-speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "e-bike-wiring-harness",
+      "description": "Waterproof Integration Cable"
+    },
+    {
+      "type": "ebike-battery",
       "description": "48V 18Ah 864Wh Lithium-ion Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "US Plug 54.6V 2A Smart Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "1000W Peak Brushless Hub Motor, 75Nm"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "48V Intelligent Digital LCD Display"
     },
     {
-      "type": "e_vehicle_wiring_harness",
-      "description": "Waterproof Integration Cable"
+      "type": "ebike-motor",
+      "description": "1000W Peak Brushless Hub Motor, 75Nm"
     },
     {
       "type": "fender",
@@ -289,7 +291,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Imitation Leather Ergonomic Grips"
     },
@@ -309,14 +311,14 @@
       "description": "Heavy-duty Aluminum, Side-mounted"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "48V Integrated LED Headlight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Tail Light",
       "position": [
         "rear"
@@ -344,7 +346,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "φ31.8mm Quick Release",
       "dimensions": {
         "diameter": 31.8

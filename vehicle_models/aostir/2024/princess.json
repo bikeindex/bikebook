@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/aostir/2024/princess",
   "manufacturer": "Aostir",
   "model": "Princess",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -19,6 +19,15 @@
     "2024": {
       "original_msrp": 119900,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "Princess-US"
+            }
+          ]
+        }
+      ],
       "url": "https://web.archive.org/web/20240529021320/https://www.aostirmotor.com/products/52v-hydraulic-brake-adult-electric-bike-princess",
       "url_live": false
     }
@@ -41,8 +50,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -51,7 +60,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -73,7 +82,7 @@
           "availability": "stock",
           "max_speed": 48,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -81,7 +90,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -106,16 +115,16 @@
       "description": "Hydraulic Brakes Front & Rear"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "52V 15Ah"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W Motor"
+      "type": "ebike-displayremote",
+      "description": "YL81F Color Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "YL81F Color Display"
+      "type": "ebike-motor",
+      "description": "750W Motor"
     },
     {
       "type": "tire",

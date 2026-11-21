@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/trek/2010/t30",
   "manufacturer": "Trek",
   "model": "T30",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -41,8 +41,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "7_rear"
+    "3-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -62,7 +62,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -71,7 +71,11 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bashguardchain-guide",
+      "description": "chainguard"
+    },
+    {
+      "type": "bellnoisemaker",
       "description": "bell"
     },
     {
@@ -84,16 +88,12 @@
       "description": "Tektro V w/Tektro alloy levers, Kraton inserts, bell"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "SRAM",
       "description": "SRAM 12-32, 7 speed"
-    },
-    {
-      "type": "chain_guide",
-      "description": "chainguard"
     },
     {
       "type": "crankset",
@@ -140,7 +140,7 @@
       "description": "kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "optional lights"
     },
     {

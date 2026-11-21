@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/splach/2023/cross",
   "manufacturer": "Splach",
   "model": "Cross",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -64,8 +64,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -73,7 +73,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -81,7 +81,7 @@
       "rotor_diameter": 180
     },
     {
-      "type": "motor_brake",
+      "type": "motor-brake",
       "position": [
         "motor"
       ]
@@ -91,7 +91,7 @@
     {
       "drive_wheel": "rear",
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_speed": "spoke_magnet",
       "water_rating": "IP54",
       "battery": {
@@ -115,7 +115,7 @@
           "max_slope": 17,
           "levels": 4,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -125,7 +125,7 @@
           "range_claimed": 70,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -154,7 +154,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell",
       "description": "Electronic Horn"
     },
@@ -178,17 +178,17 @@
       "description": "Shimano 7-Speed Derailleur"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Li-lon 48V DC, 20Ah Swappable Battery"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Bafang",
-      "description": "Bafang / Rear Hub Motor"
+      "type": "ebike-displayremote",
+      "description": "Color LCD"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Color LCD"
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang / Rear Hub Motor"
     },
     {
       "type": "fork",
@@ -199,33 +199,33 @@
       "description": "Hydraulic Front Suspension"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "LED Security Lighting"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Ambient Light",
       "description": "Sequential Indicators on the Side work with the Turn Signals"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "5W LED Adjustable to a High or Low Beam"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Brake Light",
       "description": "LED Rear Light of Constant High Brightness"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Turn Signal",
       "description": "Airplane Wing Shape LED Lights"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],

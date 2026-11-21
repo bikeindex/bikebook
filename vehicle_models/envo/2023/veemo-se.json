@@ -1,0 +1,197 @@
+{
+  "schema_version": "2.0.0",
+  "id": "m/envo/2023/veemo-se",
+  "manufacturer": "Envo",
+  "model_group": "Veemo",
+  "model": "Veemo SE",
+  "model_configuration": "complete",
+  "type": "tricycle",
+  "propulsion": [
+    "pedal-assist",
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/envo/2023/veemo-se.png",
+  "description": "The Veemo, an innovative electric trike, boasts a lightweight design while offering a familiar cycling experience. With its functional windshield and robust roof, this vehicle provides excellent weather protection for various activities, from commuting and running errands to business fleet operations, ride-sharing, and leisurely rides. Additionally, the Veemo is equipped with Street Legal Power Boost, ensuring its compliance with legal standards and delivering a secure and smooth ride.",
+  "first_year": 2023,
+  "years": {
+    "2026": {
+      "original_msrp": 979900,
+      "original_msrp_currency": "CAD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "veemoC",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
+      "url": "https://envodrive.com/products/veemo",
+      "url_live": true
+    },
+    "2023": {}
+  },
+  "frame": {
+    "material": "steel",
+    "bottom_bracket": {
+      "width": 68
+    },
+    "coil_compatible": true
+  },
+  "suspension": {
+    "rear": {
+      "shock_length": 165,
+      "shock_stroke": 35,
+      "spring": "coil"
+    }
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 44
+    }
+  ],
+  "drivetrain": [
+    "1-front",
+    "8-rear"
+  ],
+  "gearing": {
+    "front": [
+      38
+    ]
+  },
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Altus",
+    "description": "SHIMANO ALTUS 8 speed",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc-hydraulic",
+      "position": [
+        "front"
+      ],
+      "rotor_diameter": 203
+    },
+    {
+      "type": "disc-hydraulic",
+      "position": [
+        "rear"
+      ],
+      "rotor_diameter": 180
+    }
+  ],
+  "motors": [
+    {
+      "sensor_speed": "spoke_magnet",
+      "battery": {
+        "capacity": 720,
+        "voltage": 48,
+        "chemistry": "li-ion",
+        "cells": "21700",
+        "certifications": [
+          "UL 2271"
+        ]
+      },
+      "rated_power": 750,
+      "max_torque": 80,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "range_claimed": 100,
+          "e_vehicle_classifications": [
+            "evc/pedal-moped"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "throttle_type": "Thumb",
+          "e_vehicle_classifications": [
+            "evc/pedal-moped"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "total_weight": 61
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "bottom-bracket",
+      "type_detail": "BB Sets",
+      "description": "Sealed 68mm B.B"
+    },
+    {
+      "type": "brake",
+      "type_detail": "Brake Set",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Dyisland Hydraulic Brakes (front 203mm OD, rear 180mm OD)"
+    },
+    {
+      "type": "crankset",
+      "type_detail": "Crank Set",
+      "description": "L145mm*38T",
+      "dimensions": {
+        "length": 145
+      }
+    },
+    {
+      "type": "ebike-battery",
+      "description": "48V/15AH 21700 LG/Panasonic Lithium battery UL2271"
+    },
+    {
+      "type": "ebike-charger",
+      "description": "54V 2A CC-CV 240/120V ULc"
+    },
+    {
+      "type": "ebike-displayremote",
+      "description": "LCD Display with speedometer, odometer, pedal-assist indicator, etc"
+    },
+    {
+      "type": "rear-suspension",
+      "position": [
+        "rear"
+      ],
+      "description": "Coil Spring Rear Shock - Eye to Eye x Travel (165mmx35mm)",
+      "dimensions": {
+        "length": 165,
+        "travel": 35
+      }
+    },
+    {
+      "type": "sensor",
+      "description": "PAS/thumb throttle, speed sensor"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "20in x 1.75 Tire, black, with AV butyle tube",
+      "dimensions": {
+        "diameter": 406
+      }
+    }
+  ]
+}

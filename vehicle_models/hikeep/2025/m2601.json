@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/hikeep/2025/m2601",
   "manufacturer": "Hikeep",
   "model": "M2601",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -36,7 +36,7 @@
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/hikeep/2025/m2601_orange.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/hikeep/2025/m2601-orange.webp",
           "variants": [
             {
               "sku": "M2601-Orange",
@@ -49,7 +49,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/hikeep/2025/m2601_white.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/hikeep/2025/m2601-white.webp",
           "variants": [
             {
               "sku": "M2601-Black",
@@ -65,7 +65,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "suspension": {
     "front": {}
@@ -81,15 +81,15 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "electronic": false
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -98,7 +98,8 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
+      "water_rating": "IPX5",
       "battery": {
         "capacity": 374
       },
@@ -112,7 +113,7 @@
           "max_speed": 40,
           "range_claimed": 97,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -146,23 +147,23 @@
       "description": "7 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V, 7.8Ah (374.4Wh)"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "374.4 Wh"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Hub rear:; 80N·m torque, 500W (sustained), 750W (peak)."
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Smart LCD Display"
     },
     {
-      "type": "included_not_installed",
+      "type": "ebike-motor",
+      "description": "Hub rear:; 80N·m torque, 500W (sustained), 750W (peak)."
+    },
+    {
+      "type": "included-not-installed",
       "type_detail": "Tool",
       "description": "Tool kit * 1"
     },
@@ -171,7 +172,7 @@
       "description": "Alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "LED headlight and taillight."
     },
     {

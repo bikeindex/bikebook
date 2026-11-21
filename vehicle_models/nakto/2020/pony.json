@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/nakto/2020/pony",
   "manufacturer": "Nakto",
   "model": "Pony",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -40,6 +40,7 @@
           "variants": [
             {
               "sku": "A020100024S",
+              "gtin": "6919609771409",
               "size": "One Size"
             }
           ]
@@ -64,8 +65,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -73,7 +74,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -83,7 +84,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_speed": "spoke_magnet",
       "battery": {
         "capacity": 360,
@@ -98,14 +99,14 @@
           "max_speed": 32,
           "range_claimed": 48,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -162,35 +163,35 @@
       "description": "single Speed SHIMANO"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "e-bike-wiring-harness",
+      "description": "Waterproof Connectors and Wiring Harness"
+    },
+    {
+      "type": "ebike-battery",
       "description": "36v 10Ah Lithium Battery"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "BATTERY LIFE: Up to 1000 Cycles"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "250W"
-    },
-    {
-      "type": "e_vehicle_motor",
-      "description": "Rear Hub 36V 250W"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LED displayer"
     },
     {
-      "type": "e_vehicle_wiring_harness",
-      "description": "Waterproof Connectors and Wiring Harness"
+      "type": "ebike-motor",
+      "description": "250W"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "Rear Hub 36V 250W"
     },
     {
       "type": "fork",
       "description": "Ordinary Fork"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "rear reflective light"
     },
     {

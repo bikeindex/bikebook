@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/addmotor/2023/graoopro",
   "manufacturer": "Addmotor",
   "model": "Graoopro",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
@@ -93,8 +93,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -103,7 +103,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -127,7 +127,7 @@
           "max_speed": 32,
           "range_claimed": 169,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -135,7 +135,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -186,29 +186,29 @@
       "description": "SHIMANO 7 Speed Pedal Assist"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Available with Single and Dual EB2.0 48V*20AH (21700-5000mah)"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Up to 105+ Miles Per Charge with PAS 1 (Estimate Miles)"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Up to 210+ Miles Per Charge with PAS 1 (Estimate Miles)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V*2.0AH 5 Pins US Standard DC Charger, 7-shaped Head Design"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W Rear Brushless Gear Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Addmotor",
       "description": "Addmotor 5-Inch LcD Display"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "750W Rear Brushless Gear Motor"
     },
     {
       "type": "fork",
@@ -226,7 +226,7 @@
       "description": "Centre Mount Kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"
@@ -234,7 +234,7 @@
       "description": "Supplies a brightness of 40 lumens, a visible distance of 200m, and a 180° side view"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Taillight",
       "position": [
         "rear"
@@ -242,7 +242,7 @@
       "description": "UL certificate, With driving light, left and right turn signals, danger light, flashlight, brake light"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "LED Light System",
       "description": "LED Light System"
     },

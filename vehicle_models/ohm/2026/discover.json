@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ohm/2026/discover",
   "manufacturer": "OHM",
   "model_group": "Discover",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -23,6 +23,21 @@
           "name": "Pacific Blue",
           "colors": [
             "blue"
+          ],
+          "variants": [
+            {
+              "sku": "DIS-PLU-45-ST",
+              "size": "S"
+            },
+            {
+              "sku": "DIS-PLU-50-ST",
+              "gtin": "628055162421",
+              "size": "M"
+            },
+            {
+              "sku": "DIS-PLU-55-ST",
+              "size": "L"
+            }
           ]
         }
       ],
@@ -54,8 +69,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "rear": [
@@ -70,7 +85,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -80,12 +95,12 @@
   ],
   "motors": [
     {
-      "id": "c/bosch/2023/active_line_plus_bdu334y_ca",
+      "id": "c/bosch/2023/active-line-plus-bdu334y-ca",
       "drive_wheel": "rear",
       "manufacturer": "Bosch",
       "model": "BDU334Y",
       "model_group": "Active Line Plus",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "certifications": [
         "UL 2849"
       ],
@@ -106,7 +121,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         }
       ]
@@ -153,7 +168,7 @@
       "description": "Shimano BL-MT200, Dual Piston, Hydraulic Disc Shimano"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -166,7 +181,7 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
@@ -179,21 +194,21 @@
       "description": "Shimano RD-U4000, CUES 9-Speed Shimano"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Bosch",
       "description": "Bosch PowerPack 400Wh, Frame Mount, External Bosch"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Options: Upgradable to 545Wh or 800Wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "manufacturer": "Bosch",
       "description": "Bosch 2A Standard Charger"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Bosch",
       "description": "Bosch LED Remote"
     },
@@ -223,7 +238,7 @@
       "description": "FSA CRII Dual (Internal Cable Routing)"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
@@ -231,7 +246,7 @@
       "description": "Infini I-610PS, STVZO, 80 LUX, 200 Lumen"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],

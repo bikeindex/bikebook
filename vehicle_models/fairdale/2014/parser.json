@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fairdale/2014/parser",
   "manufacturer": "Fairdale",
   "model_group": "Parser",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "drop_bar",
@@ -72,8 +72,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -181,22 +181,22 @@
       "description": "Cyclocross-style, cantilever"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Fairdale",
       "description": "Fairdale single-speed drop lever"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Cog",
-      "position": [
-        "rear"
-      ],
-      "description": "14T and 16T (Shimano compatible)"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC, 1/8\""
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Cog",
+      "position": [
+        "rear"
+      ],
+      "description": "14T and 16T (Shimano compatible)"
     },
     {
       "type": "crankset",
@@ -209,7 +209,7 @@
       "description": "100% Chromoly. One-piece machined steerer tube with built-in headset race"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bar Tape",
       "description": "Handlebar tape, cork"
     },
@@ -264,7 +264,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Fairdale",
       "description": "Fairdale, 30mm",

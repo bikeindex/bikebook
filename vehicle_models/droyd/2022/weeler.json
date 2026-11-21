@@ -1,10 +1,10 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/droyd/2022/weeler",
   "manufacturer": "Droyd",
   "model": "Weeler",
   "model_configuration": "complete",
-  "type": "e_motorcycle",
+  "type": "e-motorcycle",
   "propulsion": [
     "throttle"
   ],
@@ -18,25 +18,45 @@
   "first_year": 2022,
   "years": {
     "2026": {
-      "original_msrp": 24900,
+      "original_msrp": 29900,
       "original_msrp_currency": "USD",
       "colorways": [
         {
           "name": "Black",
           "colors": [
             "black"
+          ],
+          "variants": [
+            {
+              "sku": "DZ02-BK",
+              "gtin": "850044775675",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "White",
           "colors": [
             "white"
+          ],
+          "variants": [
+            {
+              "sku": "DZ02-WH",
+              "gtin": "850044775453",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "Blue",
           "colors": [
             "blue"
+          ],
+          "variants": [
+            {
+              "sku": "DZ02-BL",
+              "size": "One Size"
+            }
           ]
         }
       ],
@@ -59,7 +79,7 @@
   ],
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "rear"
       ]
@@ -114,27 +134,27 @@
       "description": "Rear disc brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Brake lever"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Lithium-ion battery pack (24V 8Ah)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Brushless DC motor (24V 200W)"
+      "type": "ebike-displayremote",
+      "description": "Battery level indicator"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Battery level indicator"
+      "type": "ebike-motor",
+      "description": "Brushless DC motor (24V 200W)"
     },
     {
       "type": "kickstand",
       "description": "Kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "LED headlight"
     },
     {

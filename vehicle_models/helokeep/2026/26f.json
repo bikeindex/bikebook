@@ -1,40 +1,61 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/helokeep/2026/26f",
   "manufacturer": "Helokeep",
+  "model_group": "26F",
   "model": "26F",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/helokeep/2026/26f.jpeg",
-  "description": "Top Speed 40MPH 3000W Peak Motor, 220N·m Torque Max stable climbing angle 30° Race-Grade Mid Shock , Full Suspenssion 26\"x4.0\" Fat Tire 48V/25Ah Max 110 Miles 4.0\" NFC & APP & Bluetooth ,Keyless Access & Ride Sharing Shimano 7-Speed Gear Shift System IPX5 waterproof — resists heavy rain and splashes.",
+  "description": "Peak 3000w Motor Fat Ebike",
   "first_year": 2026,
   "years": {
     "2026": {
-      "original_msrp": 169900,
+      "original_msrp": 119900,
       "original_msrp_currency": "USD",
       "colorways": [
-        {
-          "name": "White",
-          "colors": [
-            "white"
-          ],
-          "stock_photo": "https://bikebook.bikeindex.org/helokeep/2026/26f_white.webp"
-        },
         {
           "name": "Black",
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/helokeep/2026/26f.jpeg"
+          "stock_photo": "https://bikebook.bikeindex.org/helokeep/2026/26f.jpeg",
+          "variants": [
+            {
+              "sku": "Helokeep 26F Black",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "name": "White",
+          "colors": [
+            "white"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/helokeep/2026/26f-white.webp",
+          "variants": [
+            {
+              "sku": "Helokeep 26F White",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
+          "variants": [
+            {
+              "gtin": "673498998083",
+              "size": "One Size"
+            }
+          ]
         }
       ],
-      "url": "https://www.helokeep.com/products/helokeep-26f-step-through-electric-bike",
+      "url": "https://www.helokeep.com/products/helokeep-26f-all-terrain-fat-ebike",
       "url_live": true
     }
   },
@@ -57,12 +78,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -71,28 +92,33 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "certifications": [
         "UL 2849"
       ],
       "water_rating": "IPX65",
       "battery": {
         "capacity": 1200,
+        "voltage": 48,
         "chemistry": "li-ion",
-        "charging_time": 480
+        "charging_time": 480,
+        "certifications": [
+          "UL 2271",
+          "UL 2580"
+        ]
       },
       "rated_power": 2000,
       "peak_power": 3000,
-      "max_torque": 220,
+      "max_torque": 110,
       "operating_modes": [
         {
           "mode": "assist",
           "availability": "stock",
-          "max_speed": 64,
-          "range_claimed": 177,
+          "max_speed": 45,
+          "range_claimed": 129,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -101,7 +127,15 @@
           "range_claimed": 56,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
+          ]
+        },
+        {
+          "mode": "assist",
+          "availability": "app_update",
+          "max_speed": 45,
+          "e_vehicle_classifications": [
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -114,7 +148,7 @@
     },
     {
       "load": "payload",
-      "weight": 249
+      "weight": 225
     }
   ],
   "sizes": [
@@ -127,15 +161,109 @@
           "height": 1120
         },
         "total_weight": 44.8,
-        "rider_height_min": 1524,
+        "rider_height_min": 1651,
         "rider_height_max": 1956
       }
     }
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
-      "description": "48V 25Ah"
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Front and Rear Hydraulic Disc Brakes"
+    },
+    {
+      "type": "brake",
+      "type_detail": "Brakes Rotors",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "230mm"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "Removable 48V, 25Ah, Certificated by UL 2271"
+    },
+    {
+      "type": "ebike-charger",
+      "description": "54.6V 3A Fast Charger"
+    },
+    {
+      "type": "ebike-displayremote",
+      "description": "LCD Color Display with NFC, Bluetooth & App Control"
+    },
+    {
+      "type": "fork",
+      "type_detail": "80MM Front Fork",
+      "position": [
+        "front"
+      ],
+      "description": "80MM Front Fork"
+    },
+    {
+      "type": "hub",
+      "position": [
+        "rear"
+      ],
+      "description": "2000W (sustained), 3000W (peak)"
+    },
+    {
+      "type": "kickstand",
+      "description": "Alloy"
+    },
+    {
+      "type": "light",
+      "position": [
+        "front"
+      ],
+      "description": "600LM LED, Adjustable angle"
+    },
+    {
+      "type": "light",
+      "position": [
+        "rear"
+      ],
+      "description": "Braking Indicator and Turn signal"
+    },
+    {
+      "type": "light",
+      "description": "Headlight and Taillight"
+    },
+    {
+      "type": "rack",
+      "position": [
+        "rear"
+      ],
+      "description": "High carbon steel"
+    },
+    {
+      "type": "rack",
+      "type_detail": "Rear Rack Load",
+      "position": [
+        "rear"
+      ],
+      "description": "50 kg / 110 lbs"
+    },
+    {
+      "type": "rear-suspension",
+      "type_detail": "Horst-link Rear Suspension",
+      "position": [
+        "rear"
+      ],
+      "description": "Horst-link Rear Suspension"
+    },
+    {
+      "type": "rim",
+      "description": "Aluminum alloy"
+    },
+    {
+      "type": "throttle",
+      "type_detail": "Throttle Assist",
+      "description": "Half-twist"
     },
     {
       "type": "tire",
@@ -143,7 +271,32 @@
         "front",
         "rear"
       ],
-      "description": "26\"x4.0\" Fat Tire",
+      "description": "Puncture protection, 26\"x4.0\"-max tire size",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 559
+      }
+    },
+    {
+      "type": "tire",
+      "type_detail": "Fat Tires",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "26x4.0\"",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 559
+      }
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "26*4.0\" Fat Tire",
       "dimensions": {
         "width": 101.6,
         "diameter": 559
@@ -151,13 +304,13 @@
     },
     {
       "type": "unknown",
-      "type_detail": "Gross weight",
-      "description": "55 kg / 121.25lbs"
+      "type_detail": "material",
+      "description": "Aluminum, 金属"
     },
     {
       "type": "unknown",
-      "type_detail": "Keyless & Sharing",
-      "description": "APP&NFC"
+      "type_detail": "USB Port",
+      "description": "USB Type-C phone charge"
     }
   ]
 }

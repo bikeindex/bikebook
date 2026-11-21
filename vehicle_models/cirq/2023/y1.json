@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/cirq/2023/y1",
   "manufacturer": "Cirq",
   "model_group": "Y1",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -53,12 +53,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -68,7 +68,7 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_speed": "spoke_magnet",
       "battery": {
         "capacity": 874,
@@ -86,7 +86,7 @@
           "range_claimed": 105,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -95,7 +95,7 @@
           "max_speed": 32,
           "range_claimed": 56,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -138,7 +138,12 @@
       "description": "Tektro Hydraulic Disc Brakes"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Professional 8-Speed Chain"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
@@ -146,29 +151,28 @@
       "description": "Shimano MF-TZ500-7"
     },
     {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Professional 8-Speed Chain"
-    },
-    {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "52V 16.8Ah"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Lithium-ion 48V 13.4Ah, 643 Wh, Weight 9 lbs"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 3A Fast Charger, UL Certified"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "Color LCD Display"
+    },
+    {
+      "type": "ebike-motor",
       "description": "750W/1200W Peak"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Color LCD Display"
+      "type": "fender",
+      "description": "Fender"
     },
     {
       "type": "fork",
@@ -176,11 +180,16 @@
       "description": "RST GUIDE Suspension Fork with Lockout"
     },
     {
+      "type": "included-not-installed",
+      "type_detail": "Tools",
+      "description": "1 Bike Tool Kit"
+    },
+    {
       "type": "kickstand",
       "description": "Aluminum Alloy, Rear Mount"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front Light, Tail Light"
     },
     {

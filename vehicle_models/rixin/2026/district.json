@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/rixin/2026/district",
   "manufacturer": "Rixin",
   "model": "District",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "bmx",
   "handlebar_type": "horizontal",
@@ -23,12 +23,25 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/rixin/2026/district_white.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/rixin/2026/district-white.jpg",
+          "variants": [
+            {
+              "sku": "BIKRI200029WHI",
+              "gtin": "671716668701",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Teal Rain",
           "colors": [
             "teal"
+          ],
+          "variants": [
+            {
+              "sku": "BIKRI200029TRN",
+              "size": "One Size"
+            }
           ]
         }
       ],
@@ -72,8 +85,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -85,7 +98,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -109,7 +122,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "sealed mid (19mm)"
     },
     {
@@ -121,17 +134,9 @@
       "description": "shimano mt 200 hydraulic disc, 160mm rotor"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "shimano mt 201 hydraulic disc"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "cog",
-      "position": [
-        "rear"
-      ],
-      "description": "16t"
     },
     {
       "type": "chain",
@@ -141,6 +146,14 @@
       "type": "chainrings",
       "type_detail": "sprocket",
       "description": "theory legacy, 6061-t6 aluminum (32t)"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "cog",
+      "position": [
+        "rear"
+      ],
+      "description": "16t"
     },
     {
       "type": "crankset",
@@ -158,7 +171,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "grips",
       "description": "theory data flanged 150mm w/ theory bar ends",
       "dimensions": {
@@ -219,7 +232,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "seat clamp",
       "description": "alloy QR clamp"
     },

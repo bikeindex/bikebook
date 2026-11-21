@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/pedego/2022/trike",
   "manufacturer": "Pedego",
   "model": "Trike",
   "model_configuration": "complete",
   "type": "tricycle",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -51,8 +51,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "3_internal_rear"
+    "1-front",
+    "3-internal-rear"
   ],
   "gearing": {
     "front": [
@@ -69,7 +69,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -79,7 +79,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 396,
         "voltage": 36,
@@ -93,7 +93,7 @@
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -123,7 +123,7 @@
       }
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "84MM x 147MM SQUARE TAPER SPINDLE WITH SEALED CARTRIDGE BEARINGS; STEEL CUPS AND BODY."
     },
     {
@@ -137,11 +137,11 @@
       "description": "AVID BB7S MOUNTAIN MECHANICAL DISC BRAKES; INTUITIVE EASY TO USE ADJUSTABILITY; DUAL KNOB PAD ADJUSTMENT; TRI-ALIGN CALIPER-POSITIONING SYSTEM; INTEGRATED CABLE STOP SPRING TENSION ADJUSTMENT; STAINLESS STEEL HARDWARE."
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "ERGONOMIC BRAKE LEVER WITH INTEGRATED PARKING BRAKE; INTEGRATED MOTOR CUT-OFF SWITCH FOR MAXIMUM SAFETY."
     },
     {
-      "type": "brake_pad",
+      "type": "brake-pad",
       "position": [
         "front",
         "rear"
@@ -150,7 +150,7 @@
       "description": "AVID ORGANIC WITH STEEL BACKING PLATE; OE QUALITY FOR NO-COMPROMISE DISC BRAKE PERFORMANCE."
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -161,18 +161,18 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z510RB 1/2”x1/8” WITH RUSTBUSTER TREATMENT; FRONT: 110 LINKS; REAR: 52 LINKS."
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "REAR SPROCKET",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "SHIMANO 22T 3-LOBE STAINLESS STEEL SPROCKET."
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Z510RB 1/2”x1/8” WITH RUSTBUSTER TREATMENT; FRONT: 110 LINKS; REAR: 52 LINKS."
     },
     {
       "type": "crankset",
@@ -183,27 +183,27 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36 VOLT 11 AMP-HOUR WITH PREMIUM LITHIUM-ION 18650 CELLS; INTEGRATED FOLDING HANDLE FOR EASY REMOVAL; EXTERNAL LED STATE OF CHARGE INDICATOR."
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "3 AMP SMART CHARGER WITH INTERNAL FAN AND CHARGE INDICATOR LIGHT."
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "SILVER 36V BRUSHLESS GEARED HUB MOTOR; 250 WATT NOMINAL POWER RATING; 30NM TORQUE; QUICK DISCONNECT CABLE WITH WATERPROOF CONNECTION."
+      "type": "ebike-displayremote",
+      "description": "3.5” BACKLIT LCD SCREEN; 4 BUTTONS TO CONTROL ELECTRONICS, TOGGLE INFO DISPLAYED, AND CUSTOMIZE SETTINGS; USB CHARGING PORT; WATERPROOF THREADED CONNECTION; CUSTOM PEDALSENSE® SOFTWARE."
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "3.5” BACKLIT LCD SCREEN; 4 BUTTONS TO CONTROL ELECTRONICS, TOGGLE INFO DISPLAYED, AND CUSTOMIZE SETTINGS; USB CHARGING PORT; WATERPROOF THREADED CONNECTION; CUSTOM PEDALSENSE® SOFTWARE."
+      "type": "ebike-motor",
+      "description": "SILVER 36V BRUSHLESS GEARED HUB MOTOR; 250 WATT NOMINAL POWER RATING; 30NM TORQUE; QUICK DISCONNECT CABLE WITH WATERPROOF CONNECTION."
     },
     {
       "type": "fork",
       "description": "20” RIGID HIGH TENSILE STEEL; 1 ⅛” THREADLESS STEERER TUBE; DISC BRAKE AND FENDER MOUNTS."
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "manufacturer": "Pedego",
       "description": "PEDEGO BLACK SYNTHETIC LEATHER GRIP WITH HAND STITCHING AND FOAM PADDING."
@@ -228,13 +228,13 @@
       "description": "SHIMANO NEXUS 3 SPEED REAR HUB; ALUMINUM HUB SHELL; CENTER LOCK ROTOR MOUNT SYSTEM; GEAR 1 RATIO: 0.733, GEAR 2 RATIO: 1.000, GEAR 3 RATIO 1.360, 186% TOTAL GEAR RATIO."
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "TOOLKIT",
       "manufacturer": "Pedego",
       "description": "CUSTOM PEDEGO TOOL KIT: 6” ADJUSTABLE WRENCH (UP TO 15MM), 12/13G SPOKE WRENCH, T25 TORX WRENCH, 6MM HEX WRENCH, 5MM HEX WRENCH WITH #2 PHILLIPS SCREWDRIVER, 4MM HEX WRENCH."
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "FRONT: LED WITH ADJUSTABLE MOUNT 40 LUX (200 LUMENS); REAR: CARGO BUCKET MOUNTED LED; BOTH POWERED BY MAIN BATTERY AND CONTROLLED BY DISPLAY."
     },
     {

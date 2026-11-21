@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/revi/2022/cheetah",
   "manufacturer": "Revi",
   "model_group": "Cheetah",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -54,8 +54,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -68,7 +68,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -81,15 +81,17 @@
       "manufacturer": "Bafang",
       "sensor_cadence": true,
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "battery": {
         "capacity": 840,
         "voltage": 48,
         "chemistry": "li-ion",
         "cells": "Samsung",
-        "charging_time": 360
+        "charging_time": 360,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "peak_power": 1200,
@@ -101,7 +103,7 @@
           "range_claimed": 97,
           "levels": 9,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -162,7 +164,7 @@
       "description": "Bengal"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -187,27 +189,27 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Type: Lithium-ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Capacity: 48V 17.5AH"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V 750W Bafang™"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Full Color with USB Port"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "PAS Level, Current Speed, Max Speed, Odometer, Trip, Daylight and Night Model Selection, Class 1,2,3 model selection"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "48V 750W Bafang™"
+    },
+    {
+      "type": "light",
       "position": [
         "front"
       ],

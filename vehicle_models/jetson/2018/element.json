@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2018/element",
   "manufacturer": "Jetson",
   "model_group": "Element",
   "model": "Element",
   "model_configuration": "complete",
-  "type": "e_scooter",
+  "type": "e-scooter",
   "propulsion": [
     "throttle"
   ],
@@ -23,7 +23,14 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jetson/2018/element.png"
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2018/element.png",
+          "variants": [
+            {
+              "sku": "JELEM-BLK",
+              "gtin": "811991030552",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Black/Red",
@@ -31,7 +38,14 @@
             "black",
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jetson/2018/element_black_red.png"
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2018/element-black-red.png",
+          "variants": [
+            {
+              "sku": "JELEM-BKG",
+              "gtin": "811991030392",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://ridejetson.com/products/element-folding-electric-scooter",
@@ -41,7 +55,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "stem_fold"
+    "folding": "stem-fold"
   },
   "wheels": [
     {
@@ -54,7 +68,7 @@
   ],
   "brakes": [
     {
-      "type": "motor_brake",
+      "type": "motor-brake",
       "position": [
         "motor"
       ]
@@ -62,7 +76,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 120,
         "voltage": 24,
@@ -115,22 +129,22 @@
       "description": "Rear foot e-brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "24V, 5.0Ah rechargeable lithium-ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Battery: No"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "250 watt hub motor"
     },
     {
       "type": "kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "LED headlight and taillight"
     },
     {
@@ -146,11 +160,6 @@
         "rear"
       ],
       "description": "Solid"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "SKU",
-      "description": "JELEM-BLK"
     },
     {
       "type": "wheel",

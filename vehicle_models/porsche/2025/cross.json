@@ -1,17 +1,17 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/porsche/2025/cross",
   "manufacturer": "Porsche",
   "model": "Cross",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "mtb_enduro",
+  "primary_activity": "mtb-enduro",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/porsche/2025/cross.webp",
-  "geometry_photo": "https://bikebook.bikeindex.org/porsche/2025/cross_geometry.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/porsche/2025/cross-geometry.png",
   "description": "Performance on two wheels: the eBike Cross developed by Porsche in cooperation with ROTWILD with a full-suspension carbon frame, designed by Studio F. A. Porsche, is impressive in both design and performance. Sporty, elegant looks meet strong drive performance: the very latest powerful Shimano drive unit consisting of motor, battery and mechanical gears ensures effortless acceleration, while the hydraulic disc brakes from Magura bring you to a standstill quickly and safely. Suspension components from Fox ensure optimally tuned riding comfort while the robust wheels from Crankbrothers guarantee maximum directional stability - even off-road. See the PDF file for more information.\nBattery:\n504 Wh capacity\nSuitable frame size based on body height in centimetres:\nFrame size S (27 inch wheels): 156–170 cm\nFrame size M (29 inch wheels): 168–182 cm\nFrame size L (29 inch wheels): 180–194 cm\nCarbon frame with 100 mm spring deflection designed by Studio F. A. Porsche, developed in partnership with ROTWILD.\nFox 34 Float Performance suspension fork with 120 mm spring deflection\nFox Float DPS air damper.\nShimano EP801 motor with max. 85 Nm torque.\nShimano battery with 504 Wh.\nShimano XT 12-speed rear derailleur.\nMAGURA MT Trail disc brakes: four pistons at the front, two pistons at the rear.\nCrankbrothers Highline 3 telescopic seat post.\nCrankbrothers Synthesis Enduro wheels.",
   "first_year": 2025,
   "years": {
@@ -47,7 +47,7 @@
     "2025": {}
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "bottom_bracket": {
       "spindle": "Shimano EP8"
     }
@@ -90,8 +90,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "12_rear"
+    "1-front",
+    "12-rear"
   ],
   "gearing": {
     "front": [
@@ -109,7 +109,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -119,12 +119,12 @@
   ],
   "motors": [
     {
-      "id": "c/shimano/2022/ep801_du_ep801",
+      "id": "c/shimano/2022/ep801-du-ep801",
       "drive_wheel": "rear",
       "manufacturer": "Shimano",
       "model": "DU-EP801",
       "model_group": "EP801",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
       "certifications": [
@@ -142,7 +142,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -219,6 +219,10 @@
   ],
   "components": [
     {
+      "type": "bashguardchain-guide",
+      "description": "E13 TRS"
+    },
+    {
       "type": "brake",
       "position": [
         "front",
@@ -228,7 +232,7 @@
       "description": "Magura MT Trail HC1/ Shiftmix"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotor",
       "position": [
         "front",
@@ -238,21 +242,17 @@
       "description": "Magura MDR-P sensor 203/203"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano CS 6100 10-51T. 12-Speed"
-    },
-    {
       "type": "chain",
       "manufacturer": "Shimano",
       "description": "Shimano HG 7100 12-Speed"
     },
     {
-      "type": "chain_guide",
-      "description": "E13 TRS"
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano CS 6100 10-51T. 12-Speed"
     },
     {
       "type": "crankset",
@@ -265,12 +265,12 @@
       "description": "Shimano XT 8100 SGS Standard Plus"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Shimano",
       "description": "Shimano BT-EN805-L 504WH (EN805 504WH (S))"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Shimano",
       "description": "Shimano SC-EM800"
     },
@@ -280,7 +280,7 @@
       "description": "FOX Float 34 Performance"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Ergon",
       "description": "Ergon GA20"
@@ -300,7 +300,7 @@
       "description": "Crankbrothers stamp 2"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Rear shock",
       "position": [
         "rear"

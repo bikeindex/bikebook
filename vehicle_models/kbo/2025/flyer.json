@@ -1,10 +1,10 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kbo/2025/flyer",
   "manufacturer": "KBO",
   "model": "Flyer",
   "model_configuration": "complete",
-  "type": "balance_bike",
+  "type": "balance-bike",
   "propulsion": [
     "throttle"
   ],
@@ -19,6 +19,17 @@
     "2026": {
       "original_msrp": 29900,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "D-BIKE-FLYER-BK",
+              "gtin": "762716304628",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://kbobike.com/products/12-inch-kid-ebike-flyer",
       "url_live": true
     },
@@ -39,7 +50,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 70,
         "voltage": 22,
@@ -74,11 +85,11 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "22V 3.2Ah"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "120W rear motor"
     },
     {

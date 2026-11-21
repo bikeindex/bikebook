@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/wired/2026/scout",
   "manufacturer": "Wired",
   "model": "Scout",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/wired/2026/scout.png",
-  "geometry_photo": "https://bikebook.bikeindex.org/wired/2026/scout_geometry.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/wired/2026/scout-geometry.png",
   "description": "Introducing the Wired Scout - the step-thru version of our powerful Wired Warrior! UL2849 certified with UL2271 certified batteries, featuring the same exclusive 2000W Hengtai geared motor in an accessible, easy-to-mount frame design.\n\nThe Scout delivers approximately 5000W at peak power with dual 72V high-discharge Samsung batteries that provide exceptional range and performance when you need it most.\n\nStep-Thru Frame with Full Dual Suspension: Easy mounting with front and rear suspension for maximum comfort\n\nPerfect For\n\nThe Scout combines the accessibility of a step-thru frame with the raw power of our Warrior platform and the safety of UL2849/UL2271 certifications. Whether you're commuting daily or exploring off-road trails, the dual suspension system and powerful motor make every ride comfortable and exhilarating. The step-thru design makes it ideal for riders of all ages and abilities.\n\nWhy Choose the Scout?\n\nGet the same powerful performance as the Warrior in a more accessible step-thru package with industry-leading safety certifications. The exclusive Hengtai motor and dual 72V Samsung battery system deliver uncompromising power, while the step-thru frame, dual suspension, and UL2849/UL2271 certifications ensure comfort, ease of use, and peace of mind for every rider.",
   "first_year": 2026,
   "years": {
@@ -25,7 +25,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/scout_graphite.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/scout-graphite.png",
           "variants": [
             {
               "sku": "SG09-26",
@@ -38,7 +38,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/scout_white.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/scout-white.png",
           "variants": [
             {
               "sku": "SW08-26",
@@ -51,7 +51,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/scout_blue.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/scout-blue.png",
           "variants": [
             {
               "sku": "SB08-26",
@@ -61,7 +61,7 @@
         },
         {
           "name": "Camo",
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/scout_camo.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/scout-camo.png",
           "variants": [
             {
               "sku": "SC11-26",
@@ -122,8 +122,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -141,7 +141,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -152,18 +152,20 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "battery": {
         "capacity": 2520,
         "voltage": 72,
         "chemistry": "li-ion",
-        "cells": "21700"
+        "cells": "21700",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 2000,
       "peak_power": 5000,
@@ -176,7 +178,7 @@
           "range_claimed": 145,
           "levels": 9,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -184,7 +186,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -192,7 +194,7 @@
           "availability": "app_update",
           "max_speed": 72,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -236,7 +238,7 @@
       "description": "4-piston Gemma hydraulic brakes with large 203mm rotors offer confident stopping power at high speeds. Be confident at any speed."
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
@@ -252,16 +254,16 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "72V 20Ah front + 72V 15Ah rear batteries (total ~35Ah). Samsung High Discharge 21700 lithium cells (50-S 21700) for reliable, long-life performance (2520Wh total)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "72V Hentach 2000W nominal brushless geared hub motor that produces a peak output of over 5000W and 180Nm of torque for incredible acceleration and climbing ability. Wired Ebikes has earned sole exclusivity on the most powerful geared hub motor available"
+      "type": "ebike-displayremote",
+      "description": "Full color customizable display screen. Select class mode, power output and much more; USB-C phone charger (Android and Apple iphone 14 or earlier) conveniently located on power button cluster"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Full color customizable display screen. Select class mode, power output and much more; USB-C phone charger (Android and Apple iphone 14 or earlier) conveniently located on power button cluster"
+      "type": "ebike-motor",
+      "description": "72V Hentach 2000W nominal brushless geared hub motor that produces a peak output of over 5000W and 180Nm of torque for incredible acceleration and climbing ability. Wired Ebikes has earned sole exclusivity on the most powerful geared hub motor available"
     },
     {
       "type": "fork",
@@ -272,7 +274,7 @@
       }
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Rear shock",
       "position": [
         "rear"
@@ -305,5 +307,76 @@
       "type_detail": "Controller",
       "description": "Our exclusive Patriot System Controller produces an output of over 65 amps and 5000W"
     }
-  ]
+  ],
+  "market_variants": {
+    "AU": {
+      "markets": [
+        "AU"
+      ],
+      "years": {
+        "2026": {
+          "original_msrp": 449900,
+          "original_msrp_currency": "AUD",
+          "colorways": {
+            "Graphite": {
+              "variants": [
+                {
+                  "sku": "SG09-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "White": {
+              "variants": [
+                {
+                  "sku": "SW08-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Blue": {
+              "variants": [
+                {
+                  "sku": "SB08-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Camo": {
+              "variants": [
+                {
+                  "sku": "SC11-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Wicked Red": {
+              "variants": [
+                {
+                  "sku": "SR08-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            }
+          },
+          "url": "https://wiredebikes.com/en-au/products/wired-scout-au"
+        }
+      },
+      "motors": {
+        "0": {
+          "operating_modes": {
+            "assist stock": {
+              "e_vehicle_classifications": null
+            },
+            "throttle stock": {
+              "e_vehicle_classifications": null
+            },
+            "assist app_update": {
+              "e_vehicle_classifications": null
+            }
+          }
+        }
+      }
+    }
+  }
 }

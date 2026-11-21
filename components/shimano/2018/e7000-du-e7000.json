@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0.0",
+  "id": "c/shimano/2018/e7000-du-e7000",
+  "type": "ebike-motor",
+  "manufacturer": "Shimano",
+  "model": "DU-E7000",
+  "model_group": "E7000",
+  "markets": [
+    "US"
+  ],
+  "first_year": 2018,
+  "motor": {
+    "kind": "mid-drive",
+    "spindle": "Shimano E8000",
+    "sensor_cadence": true,
+    "rated_power": 250,
+    "max_torque": 60,
+    "operating_modes": [
+      {
+        "mode": "assist",
+        "availability": "stock",
+        "max_speed": 32
+      }
+    ]
+  },
+  "market_variants": {
+    "EU": {
+      "markets": [
+        "EU"
+      ],
+      "motor": {
+        "operating_modes": {
+          "assist stock": {
+            "max_speed": 25
+          }
+        }
+      }
+    },
+    "JP": {
+      "markets": [
+        "JP"
+      ],
+      "motor": {
+        "operating_modes": {
+          "assist stock": {
+            "max_speed": 24
+          }
+        }
+      }
+    }
+  }
+}

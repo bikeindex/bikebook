@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/zizzo/2019/urbano",
   "manufacturer": "Zizzo",
   "model": "Urbano",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -22,12 +22,24 @@
           "name": "Space Grey",
           "colors": [
             "silver"
+          ],
+          "variants": [
+            {
+              "sku": "16022",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "Red",
           "colors": [
             "red"
+          ],
+          "variants": [
+            {
+              "sku": "16021",
+              "size": "One Size"
+            }
           ]
         }
       ],
@@ -39,7 +51,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6066 Aluminum",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "bottom_bracket": {
       "spindle": "square taper",
       "spindle_length": 116
@@ -67,8 +79,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "rear": [
@@ -83,7 +95,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -113,7 +125,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "116mm lightweight square taper; Sealed unit"
     },
     {
@@ -127,28 +139,28 @@
       "description": "Promax 108mm aluminum black V-style"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "type_detail": "BRAKE CABLES & HOUSING",
       "manufacturer": "Jagwire",
       "description": "Jagwire CGX-XL cables & housing"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Promax",
       "description": "Promax origin aluminum alloy body and levers"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano HG 11-32T; 8 speed cassette"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC 8 speed \"rustbuster\" chain"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano HG 11-32T; 8 speed cassette"
     },
     {
       "type": "crankset",
@@ -167,7 +179,7 @@
       "description": "Aluminum alloy forks with steel steer tube"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "description": "Ergonomic PVC grip"
     },
@@ -220,7 +232,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "manufacturer": "Zizzo",
       "description": "ZiZZO Ergonomic Lever; 40mm clip w/ quick release",
       "dimensions": {

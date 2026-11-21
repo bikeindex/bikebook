@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/flypkin/2026/fk20",
   "manufacturer": "FLYPKIN",
   "model": "FK20",
   "model_configuration": "complete",
-  "type": "e_motorcycle",
+  "type": "e-motorcycle",
   "propulsion": [
     "throttle"
   ],
-  "primary_activity": "dirt_travel",
+  "primary_activity": "dirt-travel",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/flypkin/2026/fk20.png",
   "description": "Product details\n\nBuilt for power and comfort, this electric bike features a 750W motor with up to 1500W peak output, delivering speeds up to 31 MPH for confident longer trips. The 48V 18Ah lithium battery provides a reliable 40–70 mile range and includes advanced BMS protection for safe, consistent performance.\n\nA full dual-suspension system, 20×4” fat tires, and durable chromoly steel frame ensure a smooth and stable ride, even on rough roads. With disc brakes, a digital LCD display, integrated lighting, and a rear seat supporting up to 330 lbs, this e-bike is designed for experienced riders who want strength, control, and everyday practicality.\n\nStrong Power for Daily Riding\n\n750W brushless motor with copper winding delivers up to 1500W peak output and 80 Nm of torque. Provides smooth acceleration, stable hill climbing up to 30°, and a top speed of 31 MPH for Off-road riding.\n\nLong Range, Easy Charging\n\n48V 18Ah (864Wh) lithium battery supports rides up to 40 miles per charge. The removable battery design allows convenient charging at home, work, or outdoors, with a full charge in about 6 hours.\n\nFull Suspension for a Comfortable Ride\n\nEquipped with front suspension and rear quad shock absorbers to reduce vibration from uneven roads. Suitable for Diverse terrain, trails, snow, and beach paths, helping maintain comfort over longer rides.\n\nClear Display & Simple Controls\n\nLarge LCD screen clearly shows speed, battery level, and riding status. Includes 5 pedal-assist levels with adjustable speed settings via the app for flexible and controlled riding.\n\nBuilt for Comfort and Utility\n\nWide upgraded seat and rear seat provide added comfort and carrying options. 7-speed gear system with a reliable rear derailleur ensures smooth shifting across different road conditions.",
@@ -44,12 +44,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -58,6 +58,9 @@
   ],
   "motors": [
     {
+      "certifications": [
+        "UL 2849"
+      ],
       "battery": {
         "capacity": 864,
         "voltage": 48,
@@ -74,7 +77,7 @@
           "max_speed": 50,
           "range_claimed": 113,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -115,36 +118,36 @@
       "description": "With disc brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 18AH Lithium Ion Battery"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Protection: BMS, Short-Circuit, Overcharge, Overcurrent Protection"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Type: Lithium (864.8Wh)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W (Peak: 1500W)"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Digital LCD Display"
     },
     {
-      "type": "included_not_installed",
+      "type": "ebike-motor",
+      "description": "750W (Peak: 1500W)"
+    },
+    {
+      "type": "included-not-installed",
       "type_detail": "tool kit",
       "description": "tool kit"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Shock Absorption",
       "position": [
         "rear"

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/hikeep/2025/k6",
   "manufacturer": "Hikeep",
   "model_group": "K6",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -23,10 +23,6 @@
           "variants": [
             {
               "sku": "K6G (Integrated Wheel)",
-              "size": "One Size"
-            },
-            {
-              "sku": "K6-G-002",
               "size": "One Size"
             }
           ]
@@ -55,8 +51,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -64,7 +60,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -73,9 +69,14 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
+      "certifications": [
+        "UL 2849"
+      ],
+      "water_rating": "IPX5",
       "battery": {
-        "capacity": 749
+        "capacity": 749,
+        "charging_time": 360
       },
       "rated_power": 750,
       "peak_power": 1500,
@@ -87,7 +88,7 @@
           "max_speed": 45,
           "range_claimed": 97,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -126,11 +127,11 @@
       "description": "Shimano 7 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "748.8Wh"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Smart LCD Display"
     },
     {
@@ -145,7 +146,7 @@
       "description": "K6L/G:80Nm torque,750W (sustained), 1500W (peak)"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tool",
       "description": "Tool kit * 1"
     },
@@ -154,7 +155,7 @@
       "description": "Alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "LED headlight and taillight"
     },
     {

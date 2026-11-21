@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/beachman/2025/64",
   "manufacturer": "Beachman",
   "model_group": "'64",
   "model": "'64",
   "model_configuration": "complete",
-  "type": "e_motorcycle",
+  "type": "e-motorcycle",
   "propulsion": [
     "throttle"
   ],
@@ -76,7 +76,7 @@
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -85,13 +85,16 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 2800,
         "capacity_options": [
           3600
         ],
-        "voltage": 72
+        "voltage": 72,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "operating_modes": [
@@ -135,36 +138,36 @@
       "description": "Front & Back Hydraulic Disk Brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "40 AH | 2.8 Kwh or 50 AH | 3.6 Kwh"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable 50Ah Upgraded Battery (2025 Model Only)"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Up to 40,000 miles or 10 Years on a 50Ah Battery Lifetime Range"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Up to 30,000 miles or 10 Years on a 40Ah Battery Lifetime Range"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Our battery is lab certified to meet UL 2271 safety standards"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "120v Fast Charger, 3 Hours To 80% Charge"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "72v Brushless Hub Motor (Default Limited To 750w In E-Bike Mode)"
+      "type": "ebike-displayremote",
+      "description": "Turn Signals, Loud Horn, LED Headlight, And LED Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Turn Signals, Loud Horn, LED Headlight, And LED Display"
+      "type": "ebike-motor",
+      "description": "72v Brushless Hub Motor (Default Limited To 750w In E-Bike Mode)"
     },
     {
       "type": "pedals",

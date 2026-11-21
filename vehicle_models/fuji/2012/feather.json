@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fuji/2012/feather",
   "manufacturer": "Fuji",
   "model_group": "Feather",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -57,8 +57,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -79,7 +79,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed cartridge ST"
     },
     {
@@ -92,21 +92,21 @@
       "description": "Promax RC-452 alloy front and rear"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Promax",
       "description": "Promax 249A top mount alloy"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "16T fixed cog w/ lockring and Shimano 16T freewheel"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z-510"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "16T fixed cog w/ lockring and Shimano 16T freewheel"
     },
     {
       "type": "crankset",
@@ -118,7 +118,7 @@
       "description": "Elios 2 custom triple-butted CrMo, crown drilled for front brake"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Fuji",
       "description": "Fuji Keirin grips"
     },

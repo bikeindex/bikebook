@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/snapcycle/2022/s1",
   "manufacturer": "Snapcycle",
   "model": "S1",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -18,6 +18,16 @@
     "2026": {
       "original_msrp": 229900,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "SC-S1X",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://snapcycle.com/products/snapcycle-s1-electric-folding-bike",
       "url_live": true
     },
@@ -26,7 +36,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "seatpost_diameter": 33.9
   },
   "suspension": {
@@ -47,8 +57,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -66,7 +76,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -76,7 +86,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "battery": {
         "capacity": 672,
@@ -99,7 +109,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -153,11 +163,11 @@
       "description": "Hydraulic, Dual-Piston, HD-E500"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminium alloy comfort grip levers with motor cutoff switch"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -168,17 +178,17 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC chain with 112 chainlinks"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
       ],
       "description": "7 Speed 14-28T Cassette"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC chain with 112 chainlinks"
     },
     {
       "type": "crankset",
@@ -194,20 +204,20 @@
       "description": "7-Speed Shimano Tourney"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 14Ah Samsung 35E lithium battery, CE Certified"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "US standard 3.0 A smart charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W brushless geared motor (Peak 1200W)"
+      "type": "ebike-displayremote",
+      "description": "Adjustable-Angle, Backlit, Grayscale 3.2'' LCD"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Adjustable-Angle, Backlit, Grayscale 3.2'' LCD"
+      "type": "ebike-motor",
+      "description": "750W brushless geared motor (Peak 1200W)"
     },
     {
       "type": "fender",
@@ -221,7 +231,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Ergonomic, Synthetic Leather"
     },
@@ -242,7 +252,7 @@
       "description": "Heavy-duty aluminum stand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "LED Headlight",
       "position": [
         "front"
@@ -275,7 +285,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "Quick-Release type"
     },
     {

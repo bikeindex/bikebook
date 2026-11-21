@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jansno/2024/x60",
   "manufacturer": "Jansno",
   "model": "X60",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -24,7 +24,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jansno/2024/x60_navy_blue.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/jansno/2024/x60-navy-blue.jpg",
           "variants": [
             {
               "sku": "X60",
@@ -69,8 +69,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -79,7 +79,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -89,7 +89,7 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "certifications": [
         "UL 2849",
         "EN 15194"
@@ -119,7 +119,7 @@
     },
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "certifications": [
         "UL 2849",
         "EN 15194"
@@ -178,16 +178,8 @@
       "description": "Hydraulic brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum alloy comfort grip levers with motor cutoff switch"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "Shimano-MF-TZ500-7"
     },
     {
       "type": "chain",
@@ -195,29 +187,37 @@
       "description": "KMC chain"
     },
     {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "Shimano-MF-TZ500-7"
+    },
+    {
       "type": "crankset",
       "type_detail": "Crank",
       "description": "Forged alloy, dual-sided bashguard"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 23Ah Dual Lithium-lon Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Fast smart charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Dual Motor Up to 1500w(rated)"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Color LCD Display with NFC Unlock"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Dual 48V 750W smart controller"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "Dual Motor Up to 1500w(rated)"
     },
     {
       "type": "fork",
@@ -231,14 +231,14 @@
       "description": "Heavy Duty Aluminum"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "6V LED light"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Integrated front and brake lights"
     },
     {

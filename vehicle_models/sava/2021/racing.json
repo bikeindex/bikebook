@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/sava/2021/racing",
   "manufacturer": "Sava",
   "model": "Racing",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_biking",
+  "primary_activity": "road-biking",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/sava/2021/racing.jpg",
   "description": "SAVA Racing Bike is a high-performance road bike that is very comfy even for long distances. It boasts a lightweight Carbon frame with front and rear SHIMANO SORA, a full Shimano Ultegra drive train, high-quality wheels, and hydraulic disc brakes for confidence and braking power in any circumstance.",
@@ -65,7 +65,7 @@
     "2021": {}
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "material_detail": "T800 Carbon"
   },
   "wheels": [
@@ -87,8 +87,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "11_rear"
+    "2-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -107,7 +107,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -140,18 +140,18 @@
   ],
   "components": [
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC X11 110L,11-speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "SHIMANO 105 R7000-11 Speeds, 11-28T"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC X11 110L,11-speed"
     },
     {
       "type": "crankset",

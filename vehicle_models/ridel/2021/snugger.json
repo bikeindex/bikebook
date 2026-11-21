@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ridel/2021/snugger",
   "manufacturer": "Ridel",
   "model": "Snugger",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -68,12 +68,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -83,7 +83,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 749,
         "voltage": 48,
@@ -97,7 +97,7 @@
           "max_speed": 45,
           "range_claimed": 61,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -143,20 +143,20 @@
       "description": "Mechanical Disc"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 15.6Ah Removable (Top Feature: 48V 14AH BATTERY)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W 48V Rear Hub"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "4” LCD Matrix Display"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Odo, Trip, Speed, Motor Output, Battery Indicator,advanced settings"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "750W 48V Rear Hub"
     },
     {
       "type": "fender",
@@ -171,7 +171,7 @@
       "description": "Mozo (with lock)"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front & Back"
     },
     {

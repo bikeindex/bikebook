@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kona/2021/remote",
   "manufacturer": "Kona",
   "model_group": "Remote",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "mtb_enduro",
+  "primary_activity": "mtb-enduro",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/kona/2021/remote.jpg",
   "first_year": 2021,
@@ -69,8 +69,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "10_rear"
+    "1-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -88,14 +88,14 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
       "rotor_diameter": 203
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -104,12 +104,12 @@
   ],
   "motors": [
     {
-      "id": "c/shimano/2018/e7000_du_e7000",
+      "id": "c/shimano/2018/e7000-du-e7000",
       "drive_wheel": "rear",
       "manufacturer": "Shimano",
       "model": "DU-E7000",
       "model_group": "E7000",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "spindle": "Shimano E8000",
       "sensor_cadence": true,
       "battery": {
@@ -124,7 +124,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -224,12 +224,12 @@
       "description": "Shimano MT410 Hydrualic"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano MT410 Hydrualic"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front"
       ],
@@ -240,7 +240,7 @@
       }
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "rear"
       ],
@@ -251,15 +251,6 @@
       }
     },
     {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Deore 11-46t 10spd"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC X10"
@@ -267,6 +258,15 @@
     {
       "type": "chainrings",
       "description": "34t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano Deore 11-46t 10spd"
     },
     {
       "type": "crankset",
@@ -284,17 +284,17 @@
       "description": "Shimano Deore"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Shimano",
       "description": "Shimano 504Wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "manufacturer": "Shimano",
       "description": "Shimano STEPS 2A"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Shimano",
       "description": "Shimano SC-E7000 Display"
     },
@@ -307,7 +307,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Kona",
       "description": "Kona Key Grip"
@@ -365,7 +365,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "manufacturer": "Kona",
       "description": "Kona Clamp"

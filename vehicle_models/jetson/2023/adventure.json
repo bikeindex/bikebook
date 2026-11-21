@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2023/adventure",
   "manufacturer": "Jetson",
   "model": "Adventure",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -23,7 +23,14 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jetson/2023/adventure_black.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2023/adventure-black.jpg",
+          "variants": [
+            {
+              "sku": "JADV11-BLK",
+              "gtin": "811991035564",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://ridejetson.com/products/adventure-electric-bike-2-0",
@@ -38,7 +45,14 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jetson/2023/adventure_black.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2023/adventure-black.jpg",
+          "variants": [
+            {
+              "sku": "JADV11-BLK",
+              "gtin": "811991035564",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://web.archive.org/web/20230923121029/https://ridejetson.com/products/adventure-electric-bike-2-0",
@@ -61,12 +75,12 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "7_rear"
+    "3-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -75,7 +89,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 313,
         "voltage": 36,
@@ -92,7 +106,7 @@
           "max_slope": 15,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -120,7 +134,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell"
     },
     {
@@ -132,29 +146,29 @@
       "description": "Front & rear disc brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 8.7Ah rechargeable lithium-ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Battery: No"
     },
     {
-      "type": "e_vehicle_charger"
+      "type": "ebike-charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "250 watt hub motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LCD display"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "250 watt hub motor"
     },
     {
       "type": "kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front and back LED lights"
     },
     {
@@ -171,11 +185,6 @@
       "type": "unknown",
       "type_detail": "Assembly Required",
       "description": "Yes"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "SKU",
-      "description": "JADV11-BLK"
     },
     {
       "type": "unknown",

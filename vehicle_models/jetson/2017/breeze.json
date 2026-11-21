@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2017/breeze",
   "manufacturer": "Jetson",
   "model_group": "Breeze",
   "model": "Breeze",
   "model_configuration": "complete",
-  "type": "e_scooter",
+  "type": "e-scooter",
   "propulsion": [
     "throttle"
   ],
@@ -23,7 +23,14 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jetson/2017/breeze.png"
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2017/breeze.png",
+          "variants": [
+            {
+              "sku": "JMY3000-BLK",
+              "gtin": "851231007005",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://ridejetson.com/products/breeze-folding-electric-scooter",
@@ -33,7 +40,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "stem_fold"
+    "folding": "stem-fold"
   },
   "wheels": [
     {
@@ -46,14 +53,14 @@
   ],
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front"
       ],
       "caliper_mount": "Brake Bosses"
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ]
@@ -61,7 +68,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 317,
         "voltage": 36,
@@ -107,7 +114,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell"
     },
     {
@@ -119,26 +126,26 @@
       "description": "Front v-brake & rear disc brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 8.8Ah rechargeable lithium-ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Battery: No"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "250 watt brushless hub motor"
+      "type": "ebike-displayremote",
+      "description": "Backlit LCD with speed odometer & battery meter"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Backlit LCD with speed odometer & battery meter"
+      "type": "ebike-motor",
+      "description": "250 watt brushless hub motor"
     },
     {
       "type": "kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "LED headlight & brake light"
     },
     {
@@ -159,11 +166,6 @@
       "type": "unknown",
       "type_detail": "Deck Size",
       "description": "28\" x 9.5\""
-    },
-    {
-      "type": "unknown",
-      "type_detail": "SKU",
-      "description": "JMY3000-BLK"
     }
   ]
 }

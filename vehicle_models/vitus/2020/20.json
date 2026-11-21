@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/vitus/2020/20",
   "manufacturer": "Vitus",
   "model": "20",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -71,8 +71,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -91,7 +91,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -128,12 +128,12 @@
   ],
   "components": [
     {
-      "type": "axle_nuts",
+      "type": "axle-nuts",
       "type_detail": "AXLES",
       "description": "QRQR, Front: 100mm x 9mm axle. Rear 135mm x 10mm Axle"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Square Taper; BSA threaded, Sealed Cartridge"
     },
     {
@@ -146,22 +146,22 @@
       "description": "Tektro V Brake110mm Reach"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro JL350-RS; Cast alloy body, Short Reach Lever"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano HG200; 7 speed, 12-32t"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z77 Speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano HG200; 7 speed, 12-32t"
     },
     {
       "type": "crankset",
@@ -186,7 +186,7 @@
       "description": "Vitus kids 20\" 6061-T6 Fork; 20\" wheel 6061-T6 forks, V brake mounts, 9mm Dropouts"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "description": "VeloKrayton"
     },
@@ -250,7 +250,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "SEATCLAMP",
       "description": "Vitus31.8mm",
       "dimensions": {

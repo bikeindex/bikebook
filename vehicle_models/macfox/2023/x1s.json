@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/macfox/2023/x1s",
   "manufacturer": "Macfox",
   "model_group": "X1S",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -24,12 +24,36 @@
           "name": "Black",
           "colors": [
             "black"
+          ],
+          "variants": [
+            {
+              "sku": "10000B20",
+              "gtin": "662665453142",
+              "size": "One Size"
+            },
+            {
+              "sku": "10000B22",
+              "gtin": "765053618472",
+              "size": "One Size",
+              "original_msrp": 169800
+            }
           ]
         },
         {
           "name": "Nebula Purple",
           "colors": [
             "purple"
+          ],
+          "variants": [
+            {
+              "sku": "X1S-violet-single",
+              "size": "One Size"
+            },
+            {
+              "sku": "X1S-violet-dual",
+              "size": "One Size",
+              "original_msrp": 169800
+            }
           ]
         }
       ],
@@ -55,12 +79,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -70,13 +94,15 @@
   "motors": [
     {
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "battery": {
         "capacity": 500,
         "voltage": 48,
-        "charging_time": 360
+        "charging_time": 360,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 500,
       "peak_power": 750,
@@ -87,7 +113,7 @@
           "max_speed": 32,
           "range_claimed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -95,7 +121,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -133,15 +159,15 @@
       "description": "Hydraulic Disc Brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "500Wh (48V 10.4Ah)"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "500w"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Head Light",
       "position": [
         "front"

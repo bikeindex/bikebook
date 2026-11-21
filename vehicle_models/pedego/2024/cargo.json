@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/pedego/2024/cargo",
   "manufacturer": "Pedego",
   "model": "Cargo",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
@@ -37,7 +37,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/cargo_black.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2024/cargo-black.jpg",
           "variants": [
             {
               "sku": "BK510002BKM",
@@ -85,8 +85,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "10_rear"
+    "1-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -104,7 +104,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -118,14 +118,17 @@
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
         "UL 2849",
-        "UL 2271",
-        "UL 2580",
-        "UL 1446"
+        "UL 1446",
+        "ISO 4210"
       ],
       "water_rating": "IPX5",
       "battery": {
         "capacity": 672,
-        "chemistry": "li-ion"
+        "chemistry": "li-ion",
+        "certifications": [
+          "UL 2271",
+          "UL 2580"
+        ]
       },
       "rated_power": 750,
       "peak_power": 1500,
@@ -137,7 +140,7 @@
           "range_claimed": 212,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         },
         {
@@ -145,7 +148,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -153,7 +156,7 @@
           "availability": "app_update",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -191,13 +194,6 @@
       "description": "Tektro E395 Two Piston Calipers w/ 5mm Brake Pads, 203mm Front and Rear 2.3mm Rotors, Class 3 Ready"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "PG1030 11/32T Rear Cassette"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC E10S eBike Chain"
@@ -208,6 +204,13 @@
         "front"
       ],
       "description": "52T Front Chainring w/ Aluminum Double Chainguard (C3 Ready)"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "PG1030 11/32T Rear Cassette"
     },
     {
       "type": "crankset",
@@ -225,15 +228,15 @@
       "description": "SRAM GX 10S Rear Derailleur"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "UL2271 Certified, 48V14Ah w/ Resin Potting, IPX5, Sleep and Deep Sleep, 6A Charging Compatible and UL2771 Certified Aftermarket 48V20Ah Range Extender w/ Resin Potting, IPX5, Sleep and Deep Sleep, 6A Charging Compatible"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 2A FANLESS SMART CHARGER WITH CHARGE INDICATOR LIGHT."
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "UL Certified Components: UL1446, UL94, UL746C, UL758, UL796, UL224 750 Watt Nominal Rated, 1500 Watt Peak, 1 Piece Aluminum Wheel"
     },
     {
@@ -248,7 +251,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "description": "Folding Footplates w/ Wood Package and Grip Tape"
     },
     {
@@ -261,7 +264,7 @@
       "description": "Passenger Package (Passenger Bar, Passenger Cushion and Passenger Backrest)"
     },
     {
-      "type": "internal_frame_storage",
+      "type": "internal-frame-storage",
       "description": "Pannier Adaptor and Water Resistant Storage Compartment with 11.5L of space Aftermarket: Yepp Seat Adaptor"
     },
     {

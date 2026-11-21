@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/origami/2022/gazelle",
   "manufacturer": "Origami",
   "model": "Gazelle",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -63,7 +63,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "bottom_bracket": {
       "spindle": "square taper"
     },
@@ -90,8 +90,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -107,7 +107,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -145,7 +145,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed Bearing; Square Taper"
     },
     {
@@ -157,13 +157,6 @@
       "description": "YZ Disc Brakes"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "11 - 32t"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z50 1/2” x 3/32”"
@@ -172,6 +165,13 @@
       "type": "chainrings",
       "type_detail": "Chain Ring",
       "description": "52 tooth; 2-piece w aluminum guard"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "11 - 32t"
     },
     {
       "type": "crankset",

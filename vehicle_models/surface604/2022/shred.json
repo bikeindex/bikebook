@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/surface604/2022/shred",
   "manufacturer": "Surface604",
   "model_group": "Shred",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -53,8 +53,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -72,7 +72,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -84,7 +84,7 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "dropout",
       "battery": {
         "capacity": 960,
@@ -104,14 +104,14 @@
           "max_speed": 32,
           "range_claimed": 120,
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/pedal_moped"
+            "evc/pedal-moped"
           ]
         },
         {
@@ -119,7 +119,7 @@
           "availability": "app_update",
           "max_speed": 48,
           "e_vehicle_classifications": [
-            "evc/pedal_moped"
+            "evc/pedal-moped"
           ]
         }
       ]
@@ -152,7 +152,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "SAMOX Sealed Bottom Bracket"
     },
     {
@@ -165,7 +165,7 @@
       "description": "TEKTRO E500, MTB Specific Hydraulic Disc Brakes; Post Mount, with Motor Inhibitors"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -177,17 +177,17 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC 9-Speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "SRAM",
       "description": "SRAM 12-34T"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC 9-Speed"
     },
     {
       "type": "crankset",
@@ -202,26 +202,26 @@
       "description": "SRAM X5 9-Speed 1-Piece Forged CNC with 2 Sealed Bearings"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "e-bike-wiring-harness",
+      "description": "30Ah, can handle up to 120C current"
+    },
+    {
+      "type": "ebike-battery",
       "description": "Included: 48V 20Ah / 960Wh; Samsung lithium-ion 21700 cells"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "eMTB Specific 500W (Peaks At 750W) Bafang Geared Hub Brushless Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Surface604",
       "description": "SURFACE604 Designed 12 MOS 48V 500W 25Ah, Smart Controller"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Surface604",
       "description": "SURFACE604 Color LCD Display with USB Jack; Bigger display: 3.5\""
     },
     {
-      "type": "e_vehicle_wiring_harness",
-      "description": "30Ah, can handle up to 120C current"
+      "type": "ebike-motor",
+      "description": "eMTB Specific 500W (Peaks At 750W) Bafang Geared Hub Brushless Motor"
     },
     {
       "type": "fork",
@@ -256,7 +256,7 @@
       "description": "Adjustable Heavy-Duty Aluminum"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "BÜCHEL \"SHINY 120\" front headlight with 120 lumens; Pre-Wired To Connect Rear Stop Light"
     },
     {

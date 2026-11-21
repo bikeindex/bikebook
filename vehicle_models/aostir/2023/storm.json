@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/aostir/2023/storm",
   "manufacturer": "Aostir",
   "model": "Storm",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -19,18 +19,53 @@
     "2025": {
       "original_msrp": 99900,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "GW-Storm-US"
+            }
+          ]
+        }
+      ],
       "url": "https://web.archive.org/web/20250218032941/https://www.aostirmotor.com/products/super-cool-new-model-electric-bike-storm-1",
       "url_live": false
     },
     "2024": {
       "original_msrp": 104900,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "Storm-US"
+            },
+            {
+              "sku": "Storm-CAN",
+              "original_msrp": 117900
+            }
+          ]
+        }
+      ],
       "url": "https://web.archive.org/web/20240424051320/https://www.aostirmotor.com/products/super-cool-new-model-electric-bike-storm",
       "url_live": false
     },
     "2023": {
       "original_msrp": 129900,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "Storm-US"
+            },
+            {
+              "sku": "Storm-CAN",
+              "original_msrp": 149900
+            }
+          ]
+        }
+      ],
       "url": "https://web.archive.org/web/20230603103436/https://www.aostirmotor.com/products/super-cool-new-model-electric-bike-storm",
       "url_live": false
     }
@@ -53,8 +88,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -63,7 +98,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -87,7 +122,7 @@
           "max_speed": 45,
           "range_claimed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -95,7 +130,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -139,16 +174,16 @@
       "description": "Disc Brakes Front & Rear"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 12.5Ah"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W Motor"
+      "type": "ebike-displayremote",
+      "description": "SW-U-LCD Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "SW-U-LCD Display"
+      "type": "ebike-motor",
+      "description": "750W Motor"
     },
     {
       "type": "tire",

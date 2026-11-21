@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/cirq/2024/coyote",
   "manufacturer": "Cirq",
   "model_group": "Coyote",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -32,7 +32,7 @@
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/cirq/2024/coyote_orange.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/cirq/2024/coyote-orange.jpg"
         }
       ],
       "url": "https://cirqbikes.com/products/coyote",
@@ -43,7 +43,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "suspension": {
     "front": {
@@ -62,8 +62,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -72,7 +72,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -82,7 +82,7 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "battery": {
         "capacity": 643,
@@ -101,7 +101,7 @@
           "range_claimed": 105,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -109,7 +109,7 @@
           "availability": "stock",
           "range_claimed": 56,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -151,16 +151,16 @@
       "description": "Hydraulic Disc Brakes"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z7RB 124"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "description": "Megadrive 7 Speed"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Z7RB 124"
     },
     {
       "type": "derailleur",
@@ -168,28 +168,32 @@
       "description": "Shimano ALTUS RD-M370-L, 9 Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 13.4Ah Removable"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Lithium-ion 48V 13.4Ah, 643 Wh, Weight 9 lbs"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 3A Fast Charger, UL Certified"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "Color LCD Display"
+    },
+    {
+      "type": "ebike-motor",
       "description": "500W/750W Peak"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "500W Hub Motor"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Color LCD Display"
+      "type": "fender",
+      "description": "Fender"
     },
     {
       "type": "fork",
@@ -199,11 +203,16 @@
       }
     },
     {
+      "type": "included-not-installed",
+      "type_detail": "Tools",
+      "description": "1 Bike Tool Kit"
+    },
+    {
       "type": "kickstand",
       "description": "Aluminum Alloy, Rear Mount"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front Light, Tail Light"
     },
     {

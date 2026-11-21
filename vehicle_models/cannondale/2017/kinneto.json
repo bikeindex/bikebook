@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/cannondale/2017/kinneto",
   "manufacturer": "Cannondale",
   "model_group": "Kinneto",
@@ -10,9 +10,9 @@
   ],
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "road_bike_touring",
+  "primary_activity": "road-bike-touring",
   "handlebar_type": "horizontal",
   "description": "With rack and fender mounts, super capable tires and a nicely balanced rider position, the Kinneto opens up a world of cycling possibilities.",
   "first_year": 2017,
@@ -78,8 +78,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "rear": [
@@ -94,14 +94,14 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
       "rotor_diameter": 180
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -113,7 +113,7 @@
       "drive_wheel": "rear",
       "manufacturer": "Shimano",
       "model": "Steps DU-E6050",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "battery": {
         "capacity": 418,
         "chemistry": "li-ion"
@@ -149,23 +149,23 @@
       "description": "Shimano Disc M365 hydraulic disc, 180/160mm"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano Disc M365 hydraulic disc"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "Shimano",
+      "description": "Shimano HG-53-9"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Rear Cogs",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano HG300-9, 9-speed 36-12"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "Shimano",
-      "description": "Shimano HG-53-9"
     },
     {
       "type": "crankset",
@@ -185,24 +185,24 @@
       "description": "Shimano Deore M592 9-speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Shimano",
       "description": "Shimano BT-E6010, 418 Wh"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "manufacturer": "Shimano",
       "description": "Shimano EX-E6000-2"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Shimano",
-      "description": "Shimano Steps DU-E6050, 250W"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Shimano",
       "description": "Shimano SC-E6000"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Shimano",
+      "description": "Shimano Steps DU-E6050, 250W"
     },
     {
       "type": "fork",
@@ -213,7 +213,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Cannondale",
       "description": "Cannondale Locking Grips"

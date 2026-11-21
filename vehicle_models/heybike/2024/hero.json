@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/heybike/2024/hero",
   "manufacturer": "Heybike",
   "model": "Hero",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/heybike/2024/hero.png",
   "description": "Conquer all terrains with Heybike Hero, a full-suspension electric mountain bike crafted from carbon fiber. Enjoy long-range rides with its lightweight design. Built for rugged landscapes and epic trails, HERO is your go-to companion for exploring the great outdoors.",
@@ -45,7 +45,7 @@
             "green",
             "yellow"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/heybike/2024/hero_lime_yellow.png",
+          "stock_photo": "https://bikebook.bikeindex.org/heybike/2024/hero-lime-yellow.png",
           "variants": [
             {
               "sku": "HBK-Hero-H-M-GN",
@@ -66,7 +66,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "material_detail": "T800 Carbon",
     "mounts": [
       {
@@ -98,8 +98,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -107,7 +107,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -117,12 +117,13 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "battery": {
         "capacity": 864,
         "chemistry": "li-ion"
       },
       "rated_power": 750,
+      "peak_power": 1400,
       "max_torque": 160,
       "operating_modes": [
         {
@@ -131,7 +132,7 @@
           "max_speed": 56,
           "range_claimed": 97,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -176,27 +177,27 @@
       "description": "Shimano 9 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "864Wh, removable lithium-ion battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "4A, 54.6V output, 100V-220V AC input"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "Build-in LCD Display"
+    },
+    {
+      "type": "ebike-motor",
       "description": "160 N·m of torque, 1400W Peak"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "position": [
         "rear"
       ],
       "description": "100 N·m of torque, 1800W Peak"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "Build-in LCD Display"
     },
     {
       "type": "fork",
@@ -211,11 +212,11 @@
       "description": "Alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Integrated headlight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Light; Integrated headlight",
       "position": [
         "front"
@@ -223,7 +224,7 @@
       "description": "Kickstand; Alloy"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Horst-link suspension",
       "position": [
         "rear"

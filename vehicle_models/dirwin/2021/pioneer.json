@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/dirwin/2021/pioneer",
   "manufacturer": "Dirwin",
   "model_group": "Pioneer",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -25,14 +25,28 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/dirwin/2021/pioneer.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/dirwin/2021/pioneer.jpg",
+          "variants": [
+            {
+              "sku": "052102B",
+              "gtin": "768494834814",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Tundra White",
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/dirwin/2021/pioneer_tundra_white.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/dirwin/2021/pioneer-tundra-white.jpg",
+          "variants": [
+            {
+              "sku": "052102A",
+              "gtin": "768494834999",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://dirwinbike.com/products/pioneer-fat-tire-electric-bike",
@@ -41,6 +55,17 @@
     "2022": {
       "original_msrp": 229900,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "052102B",
+              "gtin": "766674869731",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://web.archive.org/web/20220521054015/https://dirwinbike.com/products/pioneer-fat-tire-electric-bike",
       "url_live": false
     },
@@ -66,8 +91,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -81,7 +106,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -91,18 +116,22 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
+      "water_rating": "IPX5",
       "battery": {
         "capacity": 720,
         "voltage": 48,
         "chemistry": "li-ion",
-        "charging_time": 480
+        "charging_time": 480,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
+      "peak_power": 1000,
       "max_torque": 80,
       "operating_modes": [
         {
@@ -112,7 +141,7 @@
           "range_claimed": 97,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -120,7 +149,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -167,18 +196,18 @@
       "description": "180mm Hydraulic"
     },
     {
-      "type": "cassette",
+      "type": "chainrings",
+      "type_detail": "Chain Ring",
+      "description": "48T"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano 7-Speed"
-    },
-    {
-      "type": "chainrings",
-      "type_detail": "Chain Ring",
-      "description": "48T"
     },
     {
       "type": "crankset",
@@ -191,20 +220,20 @@
       "description": "7-Speed Shimano Altus"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V/15Ah (720 Wh) Lithium Battery (12 lbs)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "US-Standard 2A Smart Charger (fits all Dirwin batteries)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W 80NM"
+      "type": "ebike-displayremote",
+      "description": "TFT LCD Color Display with USB-C Charging"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "TFT LCD Color Display with USB-C Charging"
+      "type": "ebike-motor",
+      "description": "750W 80NM"
     },
     {
       "type": "fork",
@@ -223,7 +252,7 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Bright 48V LED Headlight",
       "position": [
         "front"
@@ -231,7 +260,7 @@
       "description": "Bright 48V LED Headlight"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Electric Rear Brake light",
       "position": [
         "rear"
@@ -252,7 +281,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "Φ35.0"
     },

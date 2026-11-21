@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/pedego/2025/element",
   "manufacturer": "Pedego",
   "model_group": "Element",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/element.jpg",
   "description": "The Pedego Element is an affordable, high-performance e-bike with 20” x 4” fat tires, a 500W motor, a 48V battery, and 5 pedal-assist levels for versatile all-terrain adventures.",
@@ -44,7 +44,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/element_blue.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/element-blue.jpg",
           "variants": [
             {
               "sku": "BK500009BL",
@@ -64,7 +64,7 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/element_green.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/element-green.jpg",
           "variants": [
             {
               "sku": "BK500010GN",
@@ -84,7 +84,7 @@
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/element_orange.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/element-orange.jpg",
           "variants": [
             {
               "sku": "BK500012OR",
@@ -104,7 +104,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/element_red.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/element-red.jpg",
           "variants": [
             {
               "sku": "BK500008RD",
@@ -124,7 +124,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/element_white.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/pedego/2025/element-white.jpg",
           "variants": [
             {
               "sku": "BK500011WH",
@@ -175,8 +175,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -193,7 +193,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -204,11 +204,8 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
-      "certifications": [
-        "UL 2271"
-      ],
       "battery": {
         "capacity": 480,
         "capacity_options": [
@@ -216,7 +213,11 @@
         ],
         "voltage": 48,
         "chemistry": "li-ion",
-        "cells": "LG 21700"
+        "cells": "LG 21700",
+        "certifications": [
+          "UL 2271",
+          "UL 2580"
+        ]
       },
       "rated_power": 500,
       "max_torque": 45,
@@ -228,7 +229,7 @@
           "range_claimed": 90,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -261,12 +262,12 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "BELL",
       "description": "BLACK LEFT HAND MINI ALUMINUM BELL"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "120MM x 179.5MM SQUARE TAPER SPINDLE W/ SEALED CARTRIDGE BEARINGS; STEEL CUPS AND BODY"
     },
     {
@@ -280,11 +281,11 @@
       "description": "TEKTRO MD-M280 MECHANICAL DISC BRAKES; INTUITIVE EASY TO USE ADJUSTABILITY; 5MM HEX INBOARD PAD ADJUSTMENT; INTEGRATED CABLE STOP W/ BARREL ADJUSTER"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "BLACK ERGONOMIC LEVER W/ RUBBER FINGER PADDING; INTEGRATED MOTOR CUT OFF SWITCH FOR MAXIMUM SAFETY"
     },
     {
-      "type": "brake_pad",
+      "type": "brake-pad",
       "type_detail": "PADS",
       "position": [
         "front",
@@ -293,7 +294,7 @@
       "description": "TEKTROA10.11 METAL CERAMIC PAD W/ STEEL BACKING PLATE; OE QUALITY FOR NO- COMPROMISE DISC BRAKE PERFORMANCE"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "ROTORS",
       "position": [
         "front",
@@ -306,17 +307,17 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC Z7 1/2”x3/32” 110 LINKS"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "SHIMANO HYPERGLIDE HG20 7 SPEED 12-32T; SMOOTH, LIGHT AND RELIABLE SHIFTING PERFORMANCE"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC Z7 1/2”x3/32” 110 LINKS"
     },
     {
       "type": "crankset",
@@ -331,16 +332,16 @@
       "description": "MICROSHIFT RD-M26S-7 7-SPEED; RESIN BODY W/ ENGINEERING COMPOSITE PULLEYS; FRAME MOUNTED DERAILLEUR PROTECTOR"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 10Ah W/ LG 21700 LI-ION CELLS OR 48V 14Ah W/ LG 18650 LI-ION CELLS"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "manufacturer": "Pedego",
       "description": "PEDEGO FANLESS 48V 2.0A SMART CHARGER STANDARD; 48V 4.0A SUPERCHARGER AVAILABLE AFTERMARKET"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "BLACK 48V BRUSHLESS GEARED REAR HUB MOTOR; 500 WATT NOMINAL POWER RATING; 45NM TORQUE; QUICK DISCONNECT CABLE W/ WATERPROOF CONNECTION"
     },
     {
@@ -352,7 +353,7 @@
       "description": "20” FAT TIRE RIGID STEEL FORK; 1 1⁄8” THREADLESS STEERER TUBE; DISC BRAKE AND FENDER MOUNTS"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "description": "BLACK CLASSIC MUSHROOM STYLE RIBBED RUBBER GRIPS; CUSTOM PEDEGO DESIGN"
     },
@@ -370,7 +371,7 @@
       "description": "ZERO STACK SEMI-INTEGRATED 1-1/8” x 1-1/2 THREADLESS; ZS44/28.6 | ZS56/30"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "TOOL KIT",
       "manufacturer": "Pedego",
       "description": "CUSTOM PEDEGO TOOL KIT: 6” ADJUSTABLE WRENCH (UP TO 15MM), 12/13G SPOKE WRENCH, T25 TORX WRENCH, 6MM HEX WRENCH, 5MM HEX WRENCH W/ #2 PHILLIPS SCREWDRIVER, 4MM HEX WRENCH"
@@ -380,7 +381,7 @@
       "description": "BLACK ALUMINUM ALLOY REAR KICKSTAND; ADJUSTABLE LENGTH COMPOSITE FOOT"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "HEADLIGHT AVAILABLE AFTERMARKET"
     },
     {

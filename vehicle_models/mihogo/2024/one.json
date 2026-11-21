@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/mihogo/2024/one",
   "manufacturer": "Mihogo",
   "model": "ONE",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "atb",
@@ -24,7 +24,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/mihogo/2024/one_gray.png",
+          "stock_photo": "https://bikebook.bikeindex.org/mihogo/2024/one-gray.png",
           "variants": [
             {
               "sku": "one_max_gray",
@@ -54,7 +54,7 @@
   "frame": {
     "material": "magnesium",
     "top_tube": "step_through",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "bottom_bracket": {
       "spindle": "square taper"
     },
@@ -77,8 +77,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -96,14 +96,14 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
       "rotor_diameter": 180
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -112,8 +112,9 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
+      "water_rating": "IPX5",
       "battery": {
         "capacity": 1382,
         "voltage": 48,
@@ -129,7 +130,7 @@
           "range_claimed": 269,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -185,7 +186,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Square Taper, Sealed, Torque Sensor"
     },
     {
@@ -197,22 +198,22 @@
       "description": "Two-piston hydraulic disc brake with power cut-off, Oil Disc Brakes, F 180mm R160mm rotors"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum alloy three-finger brake lever"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC 134, 134 Link, 7Speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Rear Cogs",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "shimano 500-7speed, 14-28T, 7 Speed"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC 134, 134 Link, 7Speed"
     },
     {
       "type": "crankset",
@@ -231,20 +232,20 @@
       "description": "shimano M310, 7 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "lithium-ion 614.4Wh+768Wh (Total 1382 Wh)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V, 2 Amp Fast Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W integrated wheel brushless geared motor, 1000w (peak), 750w (sustained), 48v"
+      "type": "ebike-displayremote",
+      "description": "IPS 2.4\" Smart Easy Read Display with Color screen Can be connected by mobile phone"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "IPS 2.4\" Smart Easy Read Display with Color screen Can be connected by mobile phone"
+      "type": "ebike-motor",
+      "description": "750W integrated wheel brushless geared motor, 1000w (peak), 750w (sustained), 48v"
     },
     {
       "type": "fender",
@@ -258,7 +259,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "brown leather (Length: about 130mm)",
       "dimensions": {
@@ -285,7 +286,7 @@
       "description": "Included"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front and rear lights integrated"
     },
     {
@@ -329,7 +330,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "SEAT CLAMP",
       "description": "40.8mm Quick Release",
       "dimensions": {

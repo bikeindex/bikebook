@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/breezer/2025/thunder",
   "manufacturer": "Breezer",
   "model": "Thunder",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/breezer/2025/thunder.png",
   "description": "Thunder: A loud crashing heard after lightning, caused by the expansion of rapidly heated air.The trail get's no — \"heads up!\" By the time you hear it, the strike has already occurred. When you're blasting down a new stretch of single track, the sound is deafening. The only noise exists in the moment — your bike, the environment, and you. If you're tired of hearing a bunch of static nonsense, and need to turn the volume down before you crack, then listen up.",
@@ -19,7 +19,26 @@
       "original_msrp_currency": "USD",
       "colorways": [
         {
-          "name": "Heavy Skies"
+          "name": "Heavy Skies",
+          "variants": [
+            {
+              "sku": "49251101115",
+              "gtin": "785749258577",
+              "size": "S (15\")"
+            },
+            {
+              "sku": "49251101117",
+              "size": "M (17\")"
+            },
+            {
+              "sku": "49251101119",
+              "size": "L (19\")"
+            },
+            {
+              "sku": "49251101120",
+              "size": "XL (20.5\")"
+            }
+          ]
         }
       ],
       "url": "https://www.breezerbikes.com/products/thunder-25",
@@ -72,8 +91,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "12_rear"
+    "1-front",
+    "12-rear"
   ],
   "gearing": {
     "rear": [
@@ -88,7 +107,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -185,7 +204,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "BB",
       "manufacturer": "Shimano",
       "description": "Shimano Deore"
@@ -200,12 +219,12 @@
       "description": "TRP Slate EVO"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "TRP",
       "description": "TRP Slate EVO"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Front Rotor",
       "position": [
         "front"
@@ -217,7 +236,7 @@
       }
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rear Rotor",
       "position": [
         "rear"
@@ -229,17 +248,17 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC x12 EPT Anti Rust"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano Deore 10-51T"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC x12 EPT Anti Rust"
     },
     {
       "type": "crankset",
@@ -266,7 +285,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grip",
       "manufacturer": "WTB",
       "description": "WTB Burr, single sided lock on"
@@ -324,7 +343,7 @@
       "description": "KS Rage I dropper, small 100mm, M & L 125mm, XL 150mm. Westy 2.0 remote"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "Alloy quick release, 31.8mm",
       "dimensions": {
         "diameter": 31.8

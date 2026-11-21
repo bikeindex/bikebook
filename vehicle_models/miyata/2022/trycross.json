@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/miyata/2022/trycross",
   "manufacturer": "Miyata",
   "model": "Trycross",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -31,14 +31,14 @@
             "black",
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/miyata/2022/trycross_black_gunmetal.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/miyata/2022/trycross-black-gunmetal.jpg"
         },
         {
           "name": "White",
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/miyata/2022/trycross_white.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/miyata/2022/trycross-white.jpg"
         }
       ],
       "url": "https://www.miyatabike.com/miyata/lineup/trycross/trycross.html",
@@ -69,8 +69,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "7_rear"
+    "3-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -90,7 +90,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -162,7 +162,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "description": "bell"
     },
     {
@@ -174,17 +174,8 @@
       "description": "V brake with power modulator"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "aluminum"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "SHIMANO CS-HG200-7 12-32T"
     },
     {
       "type": "chain",
@@ -193,6 +184,15 @@
     {
       "type": "chainrings",
       "description": "aluminum 28/38/48T with chain guard MIYATA logo"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "SHIMANO CS-HG200-7 12-32T"
     },
     {
       "type": "crankset",
@@ -222,7 +222,7 @@
       "description": "steel"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "resin black"
     },
@@ -246,7 +246,7 @@
       "description": "steel kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"
@@ -254,7 +254,7 @@
       "description": "LED light"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "reflector"
     },
     {
@@ -286,7 +286,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "description": "aluminum 31.8mm",
       "dimensions": {

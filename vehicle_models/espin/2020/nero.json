@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/espin/2020/nero",
   "manufacturer": "Espin",
   "model": "Nero",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -70,8 +70,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -84,7 +84,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -95,7 +95,7 @@
   "motors": [
     {
       "manufacturer": "Espin",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "battery": {
         "capacity": 696,
@@ -114,7 +114,7 @@
           "max_speed": 40,
           "range_claimed": 80,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -149,7 +149,7 @@
       "description": "Zoom Hydraulic Disc Brake 180mm Zoom levers with Integrated Motor Cutoff"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "Gearing",
       "description": "S-Ride (8 Speed) 13-32T"
     },
@@ -162,26 +162,26 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Lithium-ion 48V, 14.5Ah (696Wh) Samsung Cells"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "2 Amp Charger"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "manufacturer": "Espin",
+      "description": "ESPIN Color LCD"
+    },
+    {
+      "type": "ebike-motor",
       "manufacturer": "Espin",
       "description": "Espin"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Rear Mounted Geared Hub"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "manufacturer": "Espin",
-      "description": "ESPIN Color LCD"
     },
     {
       "type": "fork",
@@ -198,7 +198,7 @@
       }
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "Tool Box"
     },

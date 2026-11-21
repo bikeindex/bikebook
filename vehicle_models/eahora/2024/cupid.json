@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/eahora/2024/cupid",
   "manufacturer": "Eahora",
   "model": "Cupid",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -37,7 +37,7 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/eahora/2024/cupid_dark_green.png",
+          "stock_photo": "https://bikebook.bikeindex.org/eahora/2024/cupid-dark-green.png",
           "variants": [
             {
               "sku": "ZD1023 ZD-Cupid-1005",
@@ -50,7 +50,7 @@
           "colors": [
             "pink"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/eahora/2024/cupid_pink.png",
+          "stock_photo": "https://bikebook.bikeindex.org/eahora/2024/cupid-pink.png",
           "variants": [
             {
               "sku": "ZD1024 ZD-Cupid-1005",
@@ -63,7 +63,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/eahora/2024/cupid_white.png",
+          "stock_photo": "https://bikebook.bikeindex.org/eahora/2024/cupid-white.png",
           "variants": [
             {
               "sku": "ZD1029 ZD-Cupid-1005",
@@ -101,8 +101,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -120,7 +120,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -131,7 +131,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "water_rating": "IPX6",
       "battery": {
@@ -152,7 +152,7 @@
           "max_slope": 30,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -161,7 +161,7 @@
           "range_claimed": 105,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -200,12 +200,11 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
-      "type_detail": "Head Light",
+      "type": "bellnoisemaker",
       "description": "1,100 Lumens (12W) LED with built-in horn"
     },
     {
-      "type": "bell_noisemaker",
+      "type": "bellnoisemaker",
       "type_detail": "Bell",
       "description": "Electric horn built-in headlight"
     },
@@ -228,7 +227,7 @@
       "description": "2-Piston calipers with semi-metallic pads"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -239,7 +238,7 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel / Cassette",
       "position": [
         "rear"
@@ -260,28 +259,28 @@
       "description": "SHIMANO RD-TY300 7 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Capacity: 1,440 Watt·hour (48V 30Ah)"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Lifespan: ≥ 1,000 charge cycles to 80% of capacity"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V 3A Quick charger, 8-10H charge time"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "4\" monochrome LCD, USB charge port"
+    },
+    {
+      "type": "ebike-motor",
       "description": "1,000W, or peak 1,200W"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Rear hub motor, brushless, IPX6"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "4\" monochrome LCD, USB charge port"
     },
     {
       "type": "fender",
@@ -295,7 +294,7 @@
       "description": "Adjustable coil suspension"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "120mm x 22.2mm (φ) rubber, anti-slip"
     },
@@ -316,7 +315,7 @@
       "description": "Aluminum alloy heavy-duty"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Head Light",
       "position": [
         "front"
@@ -324,7 +323,7 @@
       "description": "1,100 Lumens (12W) LED with built-in horn"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Tail Light",
       "position": [
         "rear"
@@ -342,7 +341,7 @@
       "description": "Frame basket. Optional racks & baskets available"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Shock Absorber",
       "position": [
         "rear"

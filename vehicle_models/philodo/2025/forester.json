@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/philodo/2025/forester",
   "manufacturer": "Philodo",
   "model_group": "Forester",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -25,21 +25,40 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/philodo/2025/forester_green.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/philodo/2025/forester-green.jpg",
+          "variants": [
+            {
+              "sku": "Forester Green",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Orange",
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/philodo/2025/forester.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/philodo/2025/forester.jpg",
+          "variants": [
+            {
+              "sku": "Forester Orange",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Black",
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/philodo/2025/forester_black.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/philodo/2025/forester-black.jpg",
+          "variants": [
+            {
+              "sku": "Forester Black",
+              "gtin": "6241189744802",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://philodobikes.com/products/philodo-forester-60v-dual-motor-electric-bike-full-suspension",
@@ -70,8 +89,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -80,7 +99,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -94,7 +113,10 @@
         "capacity": 1500,
         "voltage": 60,
         "chemistry": "li-ion",
-        "charging_time": 540
+        "charging_time": 540,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 2000,
       "peak_power": 2500,
@@ -107,7 +129,7 @@
           "range_claimed": 113,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -115,7 +137,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -126,7 +148,10 @@
         "capacity": 1500,
         "voltage": 60,
         "chemistry": "li-ion",
-        "charging_time": 540
+        "charging_time": 540,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 2000,
       "peak_power": 2500,
@@ -139,7 +164,7 @@
           "range_claimed": 113,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -147,7 +172,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -170,8 +195,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
-      "type_detail": "Front Light",
+      "type": "bellnoisemaker",
       "description": "Integrated LED headlight & horn 700 lumen"
     },
     {
@@ -183,7 +207,7 @@
       "description": "Front and rear hydraulic brakes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum alloy, with brake sensor, cut off the power to the motor when braking"
     },
     {
@@ -191,24 +215,24 @@
       "description": "Prowheel, aluminum alloy, 52T"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "60 Volt 25Ah"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Lifetime: 1000 Cycles"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Input 100~240V, output 67.2V 2.5A，smart protection"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "2*2000W rated power, 5000W Peak output. Torque: 2x105N.m"
+      "type": "ebike-displayremote",
+      "description": "Color multifunctional display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Color multifunctional display"
+      "type": "ebike-motor",
+      "description": "2*2000W rated power, 5000W Peak output. Torque: 2x105N.m"
     },
     {
       "type": "fender",
@@ -223,7 +247,7 @@
       "description": "Front fork with lockout"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "assembly toolset"
     },
@@ -232,14 +256,14 @@
       "description": "kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "Integrated LED headlight & horn 700 lumen"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Taillight",
       "position": [
         "rear"
@@ -258,7 +282,7 @@
       "description": "rear rack"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "rear air shock",
       "position": [
         "rear"

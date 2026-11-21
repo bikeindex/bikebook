@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/origami/2022/cobra",
   "manufacturer": "Origami",
   "model": "Cobra",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -61,7 +61,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "bottom_bracket": {
       "spindle": "square taper"
     },
@@ -86,8 +86,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -99,7 +99,7 @@
   },
   "brakes": [
     {
-      "type": "coaster_brake",
+      "type": "coaster-brake",
       "position": [
         "rear"
       ]
@@ -135,7 +135,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed bearing; Square Taper"
     },
     {
@@ -146,13 +146,6 @@
       "description": "Coaster brake"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "18T single speed"
-    },
-    {
       "type": "chain",
       "description": "Single speed"
     },
@@ -160,6 +153,13 @@
       "type": "chainrings",
       "type_detail": "Chain Ring",
       "description": "52T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "18T single speed"
     },
     {
       "type": "crankset",

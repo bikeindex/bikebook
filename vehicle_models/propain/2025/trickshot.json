@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/propain/2025/trickshot",
   "manufacturer": "Propain",
   "model_group": "Trickshot",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "dj",
   "handlebar_type": "horizontal",
@@ -77,8 +77,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -87,7 +87,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -147,7 +147,19 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "axle-nuts",
+      "type_detail": "Rear wheel axle",
+      "position": [
+        "rear"
+      ],
+      "description": "135 x 10 mm",
+      "dimensions": {
+        "axle_diameter": 10,
+        "axle_spacing": 135
+      }
+    },
+    {
+      "type": "bottom-bracket",
       "description": "BSA 73 mm"
     },
     {
@@ -190,7 +202,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Sixpack Ruso Signature Grips"
     },
@@ -244,18 +256,6 @@
       "type_detail": "Wheelset",
       "manufacturer": "DT Swiss",
       "description": "DT Swiss D1900"
-    },
-    {
-      "type": "wheel",
-      "type_detail": "Rear wheel axle",
-      "position": [
-        "rear"
-      ],
-      "description": "135 x 10 mm",
-      "dimensions": {
-        "axle_diameter": 10,
-        "axle_spacing": 135
-      }
     }
   ]
 }

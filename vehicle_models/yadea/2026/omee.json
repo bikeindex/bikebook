@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/yadea/2026/omee",
   "manufacturer": "Yadea",
   "model_group": "OMEE",
   "model": "OMEE",
   "model_configuration": "complete",
-  "type": "e_motorcycle",
+  "type": "e-motorcycle",
   "propulsion": [
     "throttle"
   ],
@@ -75,7 +75,7 @@
   ],
   "brakes": [
     {
-      "type": "drum_brake",
+      "type": "drum-brake",
       "position": [
         "front",
         "rear"
@@ -84,7 +84,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 1056,
         "voltage": 48
@@ -125,19 +125,19 @@
       "description": "Drum"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Graphene Battery, 48V 22Ah"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Wheel Hub"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LED"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "Wheel Hub"
+    },
+    {
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"
@@ -145,7 +145,7 @@
       "description": "LED"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Shock Absorption",
       "position": [
         "rear"

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/heybike/2024/hauler",
   "manufacturer": "Heybike",
   "model": "Hauler",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "cargo",
   "handlebar_type": "horizontal",
@@ -112,8 +112,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -121,7 +121,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -131,7 +131,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "certifications": [
         "UL 2849"
       ],
@@ -153,7 +153,7 @@
           "max_speed": 45,
           "range_claimed": 89,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -197,28 +197,28 @@
       "description": "Shimano 7 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable lithium-ion battery.; Single Battery: 48V, 18Ah(864Wh)-Embedded; Dual Battery: 48V, 18Ah(864Wh)-Embedded & 48V, 12.5Ah(600Wh)-External"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "88.2 lbs(40kg)"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Ebike with Dual Battery: 97 lbs(44kg)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "4A, 54.6V output, 100V-220V AC input"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Brushless 750W(1400W peak) geared hub motor, 80Nm torque"
+      "type": "ebike-displayremote",
+      "description": "LCD Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD Display"
+      "type": "ebike-motor",
+      "description": "Brushless 750W(1400W peak) geared hub motor, 80Nm torque"
     },
     {
       "type": "fork",
@@ -229,11 +229,11 @@
       "description": "Alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "LED headlight with auto-on feature, and integrated taillight with brake light."
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Light; LED headlight with auto-on feature, and integrated taillight with brake light.",
       "description": "Kickstand; Alloy"
     },

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2018/tk3",
   "manufacturer": "Felt",
   "model_group": "TK",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "track_racing",
+  "primary_activity": "track-racing",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2018/tk3.jpg",
   "description": "With its Aero Track UltraLite aluminum construction, the Tk3 frame boast terrific pedaling stiffness and durability. The Aero Track UHC Performance carbon fiber fork is lightweight, stiff, and ready for race day. The Tk3 comes complete and ready to roll on Felt’s TkR4 track wheels, making for a highly responsive bike a",
@@ -172,7 +172,7 @@
     }
   ],
   "drivetrain": [
-    "1_front",
+    "1-front",
     "fixed"
   ],
   "gearing": {
@@ -326,21 +326,21 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed cartridge, BSA threaded, square taper axle, 68 x 110mm"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel / Cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "15T x 3/32\" with lockring"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z610HX 1-speed 3/32\""
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel / Cassette",
+      "position": [
+        "rear"
+      ],
+      "description": "15T x 3/32\" with lockring"
     },
     {
       "type": "crankset",
@@ -353,7 +353,7 @@
       "description": "Felt Aero Track UHC Performance carbon fiber blades and dropouts, 1.125\" aluminum steerer tube"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt Gel tape with Felt Bubble-Tech F-Wing bar end plugs"
@@ -410,7 +410,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "manufacturer": "Felt",
       "description": "Felt single bolt, Ø30.6mm",

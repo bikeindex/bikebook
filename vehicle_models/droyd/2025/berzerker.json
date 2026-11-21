@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/droyd/2025/berzerker",
   "manufacturer": "Droyd",
   "model": "Berzerker",
   "model_configuration": "complete",
-  "type": "e_motorcycle",
+  "type": "e-motorcycle",
   "propulsion": [
     "throttle"
   ],
-  "primary_activity": "dirt_travel",
+  "primary_activity": "dirt-travel",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/droyd/2025/berzerker.png",
   "description": "Meet the Berzerker—a ferocious electric dirt bike engineered for thrill-seekers who crave speed and control. With a 3000W peak brushless motor and three speed modes topping out at 42 mph, it’s built to conquer any terrain. Dual hydraulic suspension and disc brakes deliver precision handling and stopping power when it matters most. Backed by a 48V 30Ah battery and a steel frame, the Berzerker powers through 50 miles of pure off-road mayhem.",
@@ -22,18 +22,38 @@
           "name": "Midnight Black",
           "colors": [
             "black"
+          ],
+          "variants": [
+            {
+              "sku": "DZ05-BK",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "Crimson Red",
           "colors": [
             "red"
+          ],
+          "variants": [
+            {
+              "sku": "DZ05-RD",
+              "gtin": "850072761138",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "Nitro Blue",
           "colors": [
             "blue"
+          ],
+          "variants": [
+            {
+              "sku": "DZ05-BL",
+              "gtin": "850072761121",
+              "size": "One Size"
+            }
           ]
         }
       ],
@@ -48,12 +68,26 @@
           "name": "Crimson Red",
           "colors": [
             "red"
+          ],
+          "variants": [
+            {
+              "sku": "DZ05-RD",
+              "gtin": "850072761138",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "Nitro Blue",
           "colors": [
             "blue"
+          ],
+          "variants": [
+            {
+              "sku": "DZ05-BL",
+              "gtin": "850072761121",
+              "size": "One Size"
+            }
           ]
         }
       ],
@@ -86,7 +120,7 @@
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -110,7 +144,7 @@
           "range_claimed": 80,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -158,7 +192,7 @@
       "description": "DOT 4 (glycol-based)"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Dual hand brakes"
     },
     {
@@ -167,23 +201,23 @@
       "description": "Chain drive"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48 V 30 Ah LFP (lithium iron phosphate)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Brushless 48V"
+      "type": "ebike-displayremote",
+      "description": "Battery level indicator (on LCD display)"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Battery level indicator (on LCD display)"
+      "type": "ebike-motor",
+      "description": "Brushless 48V"
     },
     {
       "type": "kickstand",
       "description": "Kickstand"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Suspension",
       "position": [
         "rear"

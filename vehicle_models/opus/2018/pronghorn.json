@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/opus/2018/pronghorn",
   "manufacturer": "Opus",
   "model": "Pronghorn",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -56,8 +56,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "11_rear"
+    "1-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -75,7 +75,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -84,12 +84,12 @@
   ],
   "motors": [
     {
-      "id": "c/shimano/2016/e8000_du_e8000",
+      "id": "c/shimano/2016/e8000-du-e8000",
       "drive_wheel": "rear",
       "manufacturer": "Shimano",
       "model": "DU-E8000",
       "model_group": "E8000",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "spindle": "Shimano E8000",
       "sensor_cadence": true,
       "rated_power": 250,
@@ -100,7 +100,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         }
       ]
@@ -191,7 +191,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Shimano",
       "description": "Shimano STePS"
     },
@@ -205,17 +205,9 @@
       "description": "Shimano M615 Hydraulic Disc"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano M615"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 11-42"
     },
     {
       "type": "chain",
@@ -225,6 +217,14 @@
     {
       "type": "chainrings",
       "description": "34"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 11-42"
     },
     {
       "type": "crankset",
@@ -249,7 +249,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips tape",
       "manufacturer": "Velo",
       "description": "Velo Lightweight Silicone"

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ridstar/2025/h20",
   "manufacturer": "Ridstar",
   "model_group": "H20",
@@ -7,10 +7,10 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/ridstar/2025/h20.jpg",
   "description": "About this item\n\n【Powerful 1000W Motor & Removable Battery】: Our adult electric bike has a 1000W (1500W) motor and a 48V 15Ah removable battery. It charges fully in 4-6 hours and reaches speeds up to 28++ mph, perfect for commuting and city cruising.\n【Fat Tire & Full Suspension】: The 20*4 inch fat tire electric bike provides stability and comfort on any terrain. The full suspension system with lockable and adjustable front and rear dual shock absorbers ensures a smooth ride.\n【Dual Disc Brakes & 7-Speed Gear】: Reliable dual disc brakes offer quick and easy stopping power, ensuring your safety. The 7-speed gear shift system allows for easy speed and torque adjustment.\n【Long Riding Range & High Load Capacity】: Our bike offers three riding modes and can travel up to 60-90km/37-56 miles in pure electric mode. It has a high load capacity of 330 lbs, suitable for riders of all sizes.\n【Compact & Convenient Design】: Made of high-quality 6061 aluminum alloy, the frame is sturdy, durable, and foldable for easy storage. It comes with a multi-function LCD, and high-brightness front light, and is 90% pre-assembled for quick setup.\n\nProduct Description\n\nLooking for a versatile way to commute, exercise, and have fun outdoors?\n\nLook no further than RIDSTAR H20 electric bike!\nWhether you're commuting to work, heading out for a weekend camping trip, or exploring the great outdoors with friends, the e-bike is the perfect way to get around.\nWith the ability to tackle any terrain, from mountain trails to sandy beaches, the e-bike is your constant companion.\nPlus, it's a great way to stay active and healthy while reducing your carbon footprint and saving money on gas.\nSo why not make e-biking a part of your lifestyle today?\n\nWHY CHOOSE RIDSTAR Ebike?\n\nFoldable & 90% Pre-assembled\nIntelligent LCD Display\nMax Load 330lbs\nHeight Recommended 5'3\" -6'3\"\nBright Headlight & Brake Light\nBuilt-in Horn\nExceptional after-sales service (1 year of freely replacing parts)\n\nBring Convenience to Urban Life\nDesigned for city life and outdoor exploration\nThis rugged and durable electric bike is equipped with a 1000W motor and a 48V 15Ah removable battery, providing enough power for a day of adventure or most commuting and weekend-round trips, allowing you to enjoy a seamless, exhilarating, and sustainable journey.\n\nDual Disc Brakes\nThe dual hydraulic disc brake system ensures quick and smooth stops even when riding at high speeds, shortening the braking distance, even on wet roads.\n\nIntelligent LCD Display\n\nOur fat tire electric bike has an LCD that shows important information like battery power, mileage, and speed.\nYou can choose from 3 modes (Bike Mode, Pedal Assist Mode, and Fully Electric Mode) to customize your ride.\n\nBright Headlight & Brake Light\n\nThe waterproof headlights and brake lights on our electric bike are great for safe night riding.\nYou can ride confidently and see clearly whether you're commuting after work or exploring new trails in the dark.\n\nDownload Manual Here",
@@ -26,7 +26,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "suspension": {
     "front": {},
@@ -43,12 +43,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -69,17 +69,28 @@
           "max_speed": 45,
           "range_claimed": 90,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 150
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size"
     }
   ],
   "components": [
@@ -92,7 +103,7 @@
       "description": "Dual Disc Brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 15Ah"
     },
     {

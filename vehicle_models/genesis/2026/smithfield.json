@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/genesis/2026/smithfield",
   "manufacturer": "Genesis",
   "model": "Smithfield",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -69,8 +69,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -89,7 +89,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -99,12 +99,12 @@
   ],
   "motors": [
     {
-      "id": "c/shimano/2018/e6100_du_e6100",
+      "id": "c/shimano/2018/e6100-du-e6100",
       "drive_wheel": "rear",
       "manufacturer": "Shimano",
       "model": "DU-E6100",
       "model_group": "E6100",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "spindle": "Shimano E8000",
       "sensor_cadence": true,
       "battery": {
@@ -120,7 +120,7 @@
           "max_speed": 25,
           "range_claimed": 150,
           "e_vehicle_classifications": [
-            "evc/gb/electrically_assisted_pedal_cycle"
+            "evc/gb/electrically-assisted-pedal-cycle"
           ]
         }
       ]
@@ -181,12 +181,12 @@
       "description": "Shimano MT200 Hydraulic Disc; Hydraulic Disc; Shimano MT-200 Hydraulic Disc"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano BL-MT200 Hydraulic"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -197,14 +197,6 @@
       }
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano CS-HG200 9-speed 11-36T; 11-36T Cassette"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC X9E"
@@ -212,6 +204,14 @@
     {
       "type": "chainrings",
       "description": "38T Chainring"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano CS-HG200 9-speed 11-36T; 11-36T Cassette"
     },
     {
       "type": "crankset",
@@ -231,17 +231,17 @@
       "description": "Shimano Acera M3100 SGS 9 Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "manufacturer": "Shimano",
       "description": "Shimano STEPS BT-E8014 418wh; External; Shimano 418Wh Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "manufacturer": "Shimano",
       "description": "Shimano STEPS 2AH"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "manufacturer": "Shimano",
       "description": "Shimano STEPS DU-E6100 250W 60Nm; Shimano STEPS E6100 250W 60Nm Drive Unit"
     },
@@ -275,7 +275,7 @@
       "description": "Chainstay Mounted Kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Trelock I-Vio 50 Front Light & Busch & Muller Toplight Rear Light"
     },
     {

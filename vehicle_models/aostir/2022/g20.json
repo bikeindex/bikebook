@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/aostir/2022/g20",
   "manufacturer": "Aostir",
   "model": "G20",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -17,12 +17,34 @@
     "2026": {
       "original_msrp": 69900,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "GW-G20-US"
+            }
+          ]
+        }
+      ],
       "url": "https://www.aostirmotor.com/products/500w-low-step-fat-tire-g20",
       "url_live": true
     },
     "2024": {
       "original_msrp": 64900,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "G20-US"
+            },
+            {
+              "sku": "G20-CAN",
+              "original_msrp": 74900
+            }
+          ]
+        }
+      ],
       "url": "https://web.archive.org/web/20240623022837/https://www.aostirmotor.com/products/500w-low-step-fat-tire-g20",
       "url_live": false
     },
@@ -43,12 +65,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -68,7 +90,7 @@
           "availability": "stock",
           "max_speed": 40,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -93,16 +115,16 @@
       "description": "Disc Brakes Front & Rear"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V 13Ah"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W Motor"
+      "type": "ebike-displayremote",
+      "description": "866-LCD"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "866-LCD"
+      "type": "ebike-motor",
+      "description": "500W Motor"
     },
     {
       "type": "fork",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/philodo/2026/h7pro",
   "manufacturer": "Philodo",
   "model_group": "H7",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -24,12 +24,24 @@
           "name": "Blue",
           "colors": [
             "blue"
+          ],
+          "variants": [
+            {
+              "gtin": "6241189740842",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "Green",
           "colors": [
             "green"
+          ],
+          "variants": [
+            {
+              "gtin": "6241189740910",
+              "size": "One Size"
+            }
           ]
         }
       ],
@@ -57,8 +69,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "7_rear"
+    "3-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -69,7 +81,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -79,7 +91,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 840,
         "voltage": 48,
@@ -93,7 +105,7 @@
           "max_speed": 50,
           "range_claimed": 56,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -101,7 +113,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -125,8 +137,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
-      "type_detail": "Front Light",
+      "type": "bellnoisemaker",
       "description": "Integrated LED headlight & horn"
     },
     {
@@ -138,7 +149,7 @@
       "description": "Front and rear hydraulic brkes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum alloy, with brake sensor, cut off the power to the motor when braking"
     },
     {
@@ -146,28 +157,28 @@
       "description": "Prowheel, aluminum alloy, 24*34*42T"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48 Volt 17.5Ah(840Wh)"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Lifetime: 1000 cycles"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Input 100~240V, output 54.6V 2A，smart protection"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "charger,kickstand"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Rear drive 1500W high speed, brushless, geared hub motor"
+      "type": "ebike-displayremote",
+      "description": "3.7 inch multifunctional Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "3.7 inch multifunctional Display"
+      "type": "ebike-motor",
+      "description": "Rear drive 1500W high speed, brushless, geared hub motor"
     },
     {
       "type": "fender",
@@ -185,12 +196,12 @@
       "description": "Aluminum alloy suspension fork with lock"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "assembly toolset"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],

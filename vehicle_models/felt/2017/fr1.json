@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2017/fr1",
   "manufacturer": "Felt",
   "model_group": "FR",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_biking",
+  "primary_activity": "road-biking",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2017/fr1.jpeg",
   "first_year": 2017,
@@ -58,7 +58,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "bottom_bracket": {
       "shell": "BB30"
     },
@@ -75,8 +75,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "11_rear"
+    "2-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -95,7 +95,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -268,12 +268,12 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "description": "ReflectiveFelt Bubble-Tech \"F Wing\""
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "FSA",
       "description": "FSA PressFit ceramic BB30 catridge bearings"
     },
@@ -286,23 +286,14 @@
       "description": "Front: SRAM RED, Rear: TRP 850-1 direct mount"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "SRAM",
       "description": "SRAM brake cable"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "SRAM",
       "description": "SRAM RED eTap"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM XG 1190, 11-28T"
     },
     {
       "type": "chain",
@@ -318,6 +309,15 @@
       "type_detail": "Chainwheel",
       "manufacturer": "SRAM",
       "description": "SRAM RED 52/36T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM XG 1190, 11-28T"
     },
     {
       "type": "crankset",
@@ -346,7 +346,7 @@
       "description": "Felt Race Road UHC Ultimate + TeXtreme carbon fiber monocoque construction, size specific ControlTaper carbon fiber steer tube with integrated compression device and carbon fiber crown race, crown, blades and dropouts"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Felt",
       "description": "Felt VelvetGel Tape with 3M Reflective Base"
@@ -380,12 +380,12 @@
       "description": "MAVIC Ksyrium Pro 24h, 11-speed"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Assembly Paste",
       "description": "Carbon assembly paste"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "SRAM eTap Charger",
       "manufacturer": "SRAM",
       "description": "SRAM eTap charger"
@@ -410,7 +410,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "6061 Forged Aluminum, Steel 5mm Bolt"
     },

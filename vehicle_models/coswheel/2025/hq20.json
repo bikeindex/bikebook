@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/coswheel/2025/hq20",
   "manufacturer": "Coswheel",
   "model": "HQ20",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
@@ -43,8 +43,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "6_rear"
+    "1-front",
+    "6-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -52,7 +52,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -63,7 +63,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
         "capacity": 922,
@@ -83,7 +83,7 @@
           "range_claimed": 108,
           "levels": 3,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -92,7 +92,7 @@
           "range_claimed": 61,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -156,24 +156,24 @@
       "description": "Shimano 6-Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 19.2Ah Battery (Lithium 18650 Cells)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V2A Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V Peak 1300W(Rated 750W) Brushless Rear Hub Motor 60N.m"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Easy Read LCD Display"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "48V 25+A"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "48V Peak 1300W(Rated 750W) Brushless Rear Hub Motor 60N.m"
     },
     {
       "type": "fork",
@@ -191,14 +191,14 @@
       "description": "Aluminum Alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "LED, 120 LUX"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],

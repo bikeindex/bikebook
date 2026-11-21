@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://bikebook.bikeindex.org/schemas/e_vehicle_classification/v1.0.0.json",
+  "$id": "https://bikebook.bikeindex.org/schemas/e_vehicle_classification/v2.0.0.json",
   "title": "Bikebook e-vehicle classification",
   "description": "schema_version is semantic: a major version removes, renames or retypes a field or removes an enum value, a minor one adds an optional field or an enum value, and a patch changes only descriptions. The published catalog's format is versioned apart from it, one integer raised whenever the layout of its files changes.",
   "type": "object",
@@ -11,7 +11,7 @@
     },
     "id": {
       "type": "string",
-      "pattern": "^evc/[a-z0-9_/]+$",
+      "pattern": "^evc/[a-z0-9/-]+$",
       "description": "Catalog path, prefixed evc/: jurisdiction/classification slug, or a group's bare slug"
     },
     "jurisdiction": {
@@ -33,7 +33,7 @@
       "type": "array",
       "items": {
         "type": "string",
-        "pattern": "^evc/[a-z0-9_/]+$"
+        "pattern": "^evc/[a-z0-9/-]+$"
       },
       "description": "The shared classifications whose definition this one fits, by their ids; a vehicle carries a group's id rather than each state's"
     },

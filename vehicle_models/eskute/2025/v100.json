@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/eskute/2025/v100",
   "manufacturer": "Eskute",
   "model_group": "V100",
@@ -7,13 +7,13 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/eskute/2025/v100.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/eskute/2025/v100_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/eskute/2025/v100-geometry.jpg",
   "description": "Meet the Eskute V100 16\" Mini Electric Bike — compact size, serious performance.\nWith chunky 16\"x4.0\" one-piece wheels, full suspension with a front fork + rear shock, and a powerful 500W–1500W motor delivering speeds up to 28 MPH, the V100 is built for responsive performance across a variety of riding conditions.\n\nPowered by a 48V 13Ah battery (upgradeable to 52V), paired with a 7-speed shifter, twist throttle, and versatile electric / pedal-assist / manual modes, the V100 gives riders flexible control for different riding needs.\n\nComplete with an NFC display, front & rear fenders, long saddle, and optional rear rack, the V100 combines comfort, control, and distinctive moped-inspired styling.\n\nBuilt for riders who want powerful performance, versatile handling, and more freedom to explore.",
   "first_year": 2025,
   "years": {
@@ -35,12 +35,6 @@
               "original_msrp": 139900
             },
             {
-              "sku": "V100-BK-DC",
-              "gtin": "662696833777",
-              "size": "One Size",
-              "original_msrp": 172000
-            },
-            {
               "sku": "V100P-BK",
               "gtin": "662696834323",
               "size": "One Size"
@@ -52,19 +46,13 @@
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/eskute/2025/v100_orange.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/eskute/2025/v100-orange.jpg",
           "variants": [
             {
               "sku": "V100-OR",
               "gtin": "760784767413",
               "size": "One Size",
               "original_msrp": 139900
-            },
-            {
-              "sku": "V100-OR-DC",
-              "gtin": "662696833784",
-              "size": "One Size",
-              "original_msrp": 172000
             },
             {
               "sku": "V100P-OR",
@@ -78,19 +66,13 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/eskute/2025/v100_blue.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/eskute/2025/v100-blue.jpg",
           "variants": [
             {
               "sku": "V100-BL",
               "gtin": "760784767390",
               "size": "One Size",
               "original_msrp": 139900
-            },
-            {
-              "sku": "V100-BL-DC",
-              "gtin": "662696833791",
-              "size": "One Size",
-              "original_msrp": 172000
             },
             {
               "sku": "V100P-BL",
@@ -104,19 +86,13 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/eskute/2025/v100_white.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/eskute/2025/v100-white.jpg",
           "variants": [
             {
               "sku": "V100-WT",
               "gtin": "760784767376",
               "size": "One Size",
               "original_msrp": 139900
-            },
-            {
-              "sku": "V100-WT-DC",
-              "gtin": "662696833807",
-              "size": "One Size",
-              "original_msrp": 172000
             },
             {
               "sku": "V100P-WT",
@@ -130,19 +106,13 @@
           "colors": [
             "pink"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/eskute/2025/v100_pink.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/eskute/2025/v100-pink.jpg",
           "variants": [
             {
               "sku": "V100-PK",
               "gtin": "740625619972",
               "size": "One Size",
               "original_msrp": 139900
-            },
-            {
-              "sku": "V100-PK-DC",
-              "gtin": "662696833814",
-              "size": "One Size",
-              "original_msrp": 172000
             }
           ]
         },
@@ -151,7 +121,7 @@
           "colors": [
             "purple"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/eskute/2025/v100_purple.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/eskute/2025/v100-purple.jpg",
           "variants": [
             {
               "sku": "V100P-PU",
@@ -192,12 +162,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -206,7 +176,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IP54",
       "battery": {
         "capacity": 624,
@@ -223,7 +193,7 @@
           "max_speed": 45,
           "range_claimed": 97,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -273,24 +243,24 @@
       "description": "Disc Brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 13Ah"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V/1.5A"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Peak 1500W"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "1 Toolkit"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Keys",
       "description": "2 Keys"
     },

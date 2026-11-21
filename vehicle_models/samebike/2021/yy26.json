@@ -1,15 +1,15 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/samebike/2021/yy26",
   "manufacturer": "samebike",
   "model": "YY26",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/samebike/2021/yy26.jpg",
   "description": "The SAMEBIKE YY26 is heavy-duty, versatile and designed for people that are more likely to go off-road or ride on complex terrains or the one who wants to get rid of the crazy traffic jam in the mornings. It receives perfect balance between trail and road use and allows for all types of riders with human power, full throttle or pedal assist power options to satisfy various riding needs and enjoy the fabulous riding experience with their family and friends.",
@@ -75,8 +75,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -94,7 +94,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -104,7 +104,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "water_rating": "IP54",
       "battery": {
@@ -123,7 +123,7 @@
           "range_claimed": 100,
           "max_slope": 16,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -132,7 +132,7 @@
           "range_claimed": 48,
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -140,7 +140,7 @@
           "availability": "app_update",
           "max_speed": 45,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -180,8 +180,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
-      "type_detail": "Lights",
+      "type": "bellnoisemaker",
       "description": "5W LED headlight, with a built-in electric horn, no brake/steering lights"
     },
     {
@@ -203,11 +202,11 @@
       "description": "FILEL mechanical caliper, with copper-basis semi-metallic brake pads"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "WUXING mechanical, aluminum alloy brake lever with brake cut-off"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -218,17 +217,17 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC chain, stainless steel with a titanium nitride coating"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
       ],
       "description": "14-28T 7-speed, SHIMANO cast iron freewheel"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC chain, stainless steel with a titanium nitride coating"
     },
     {
       "type": "crankset",
@@ -243,28 +242,28 @@
       "description": "SHIMANO Tourney, RD-TY300-SGS 6/7-speed derailleur"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "e-bike-wiring-harness",
+      "description": "Waterproof wiring harness, semi-internal cable routing, circular connectors"
+    },
+    {
+      "type": "ebike-battery",
       "description": "48V 15Ah Lithium-ion, ZHUONENG 18650 battery cells"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V 2A DC 2.1mm, impulse-output charger with full-charge cut-off"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "5 levels assist, For both pedal-assist and throttle modes"
-    },
-    {
-      "type": "e_vehicle_motor",
-      "description": "48V 750W DC, brushless geared hub motor, max torque > 60N·m"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "3\" landscape LCD display, Yolin YL90V-H smart ebike display"
     },
     {
-      "type": "e_vehicle_wiring_harness",
-      "description": "Waterproof wiring harness, semi-internal cable routing, circular connectors"
+      "type": "ebike-motor",
+      "description": "5 levels assist, For both pedal-assist and throttle modes"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "48V 750W DC, brushless geared hub motor, max torque > 60N·m"
     },
     {
       "type": "fender",
@@ -282,7 +281,7 @@
       "description": "24.4\" MTB handlebar, aluminum alloy with rubber ergonomic grips"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tubeless Valve Stems",
       "description": "48mm AV, Schrader valve stems"
     },
@@ -291,11 +290,11 @@
       "description": "Standard kickstand, aluminum alloy with plastic foot"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "5W LED headlight, with a built-in electric horn, no brake/steering lights"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Reflectors",
       "description": "Spoke tire reflectors, rear rack & pedal reflectors"
     },

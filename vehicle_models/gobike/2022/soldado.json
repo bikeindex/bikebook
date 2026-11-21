@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/gobike/2022/soldado",
   "manufacturer": "GOBike",
   "model": "SOLDADO",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/gobike/2022/soldado.webp",
-  "geometry_photo": "https://bikebook.bikeindex.org/gobike/2022/soldado_geometry.webp",
+  "geometry_photo": "https://bikebook.bikeindex.org/gobike/2022/soldado-geometry.webp",
   "description": "SOLDADO Electric Bike FeaturesIntroducing the GOBIKE SOLDADO. This dual-passenger e-bike is designed to carry one or two adult riders on and off roads. We’ve included a large 14.5Ah battery with the ability to add a secondary 17.4Ah battery which gives you massive range to SOLDIER on. The SOLDADO includes a 750w rear hub motor, 7-speed gearing assisted by the Shimano Altus derailleur, a front storage basket, rear storage rack, 20” x 4” Kenda off-road tires, front and rear fenders, front and rear suspension, and an oversized headlight. The SOLDADO has a rugged look and off road feel and comes in three unique military colors.The dual passenger seat and and straight bar design add strength and stability to your ride. LCD Display The backlit LCD display is your communication center. Here, you will find your speed, power assist (PAS) level, battery level, and odometer. This multifunctional display is weather resistant and includes a USB charging port Speed Shifter SOLDADO comes standard equipped with the Shimano Altus Derailleur, Shimano 6-speed gearing, and thumb throttle. Motor Power SOLDADO can carry one or two adult riders so power is a must. The 750W (900W Peak) motor provides high torque and power for on and off road adventures. Range If you are looking for range, the SOLDADO has it. Take an all-day adventure with the standard 14.5Ah primary battery and 17.4Ah optional second battery. With pedal assist, the SOLDADO can reach 100+ miles on a single charge. Accessories SOLDADO has front and rear fenders, front suspension, headlight, tail light, two-passenger seat, and rear cargo rack.",
   "first_year": 2022,
   "years": {
@@ -21,15 +21,48 @@
       "original_msrp_currency": "USD",
       "colorways": [
         {
-          "name": "Camo"
+          "name": "Camo",
+          "variants": [
+            {
+              "sku": "SOLDADO|Camo",
+              "size": "One Size"
+            },
+            {
+              "sku": "SOLDADO-MAX|Camo",
+              "size": "One Size",
+              "original_msrp": 269900
+            }
+          ]
         },
         {
-          "name": "Desert"
+          "name": "Desert",
+          "variants": [
+            {
+              "sku": "SOLDADO|Desert",
+              "size": "One Size"
+            },
+            {
+              "sku": "SOLDADO-MAX|Desert",
+              "size": "One Size",
+              "original_msrp": 269900
+            }
+          ]
         },
         {
           "name": "Olive",
           "colors": [
             "green"
+          ],
+          "variants": [
+            {
+              "sku": "SOLDADO|Olive",
+              "size": "One Size"
+            },
+            {
+              "sku": "SOLDADO-MAX|Olive",
+              "size": "One Size",
+              "original_msrp": 269900
+            }
           ]
         }
       ],
@@ -64,8 +97,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "6_rear"
+    "1-front",
+    "6-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -74,7 +107,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -84,7 +117,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 696,
         "voltage": 48,
@@ -99,7 +132,7 @@
           "max_speed": 40,
           "range_claimed": 89,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -160,52 +193,52 @@
       "description": "Shimano Altus"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Dual Battery Range without Pedal Assist: Up to 65 miles"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Dual Battery Range with Pedal Assist: Up to 120 miles"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Charging Type: Pulse"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Type: Lithium-Ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Primary Battery Capacity: 14.5AH"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Secondary Battery Capacity: 17.4AH"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Product Net Weight with Dual Battery: 80 lbs"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "LED with USB charger"
+    },
+    {
+      "type": "ebike-motor",
       "description": "48V"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "750W"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Rear Hub Motor"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Chain Driven"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "LED with USB charger"
     },
     {
       "type": "fender",
@@ -232,7 +265,7 @@
       ]
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/biria/2025/commute",
   "manufacturer": "Biria",
   "model": "Commute",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -23,7 +23,7 @@
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/biria/2025/commute_red.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/biria/2025/commute-red.jpg",
           "variants": [
             {
               "sku": "TK-RED",
@@ -36,7 +36,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/biria/2025/commute_blue.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/biria/2025/commute-blue.jpg",
           "variants": [
             {
               "sku": "TK-BLU",
@@ -62,7 +62,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/biria/2025/commute_grey.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/biria/2025/commute-grey.jpg"
         }
       ],
       "url": "https://biria.com/products/biria-commute",
@@ -96,12 +96,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -112,16 +112,19 @@
   "motors": [
     {
       "manufacturer": "Bafang",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "certifications": [
-        "UL 2271"
+        "UL 2849"
       ],
       "battery": {
         "capacity": 720,
         "voltage": 48,
         "chemistry": "li-ion",
         "cells": "LG 21700",
-        "charging_time": 360
+        "charging_time": 360,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "max_torque": 85,
@@ -132,7 +135,7 @@
           "max_speed": 45,
           "range_claimed": 121,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -172,11 +175,11 @@
       "description": "Tektro hydraulic Disc, with 180 mm Rotors"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Lithium 48 Volts, 720 Wh, LG 21700 Cell (UL-2271)"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "manufacturer": "Bafang",
       "description": "Bafang 750W (85Nm) Rear hub Brushless"
     },
@@ -197,7 +200,7 @@
       "description": "Kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front",
         "rear"

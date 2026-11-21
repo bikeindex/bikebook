@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/lankeleisi/2025/mg740plus",
   "manufacturer": "Lankeleisi",
   "model_group": "MG",
@@ -7,13 +7,13 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/lankeleisi/2025/mg740plus.png",
-  "geometry_photo": "https://bikebook.bikeindex.org/lankeleisi/2025/mg740plus_geometry.webp",
+  "geometry_photo": "https://bikebook.bikeindex.org/lankeleisi/2025/mg740plus-geometry.webp",
   "description": "2000W Dual Brushless Motor\n\nThe MG740Plus is equipped with dual 48V 1000W brushless motors—one on each wheel—producing up to 95Nm of torque. This setup delivers outstanding power and grip, allowing it to conquer steep hills and handle varied terrains with ease, all while ensuring a stable and responsive riding experience.\n\n48V 20Ah SAMSUNG Li-ion Battery\n\nThe Lankeleisi MG740Plus comes with a 48V 20Ah Samsung battery built with premium 18650 cells for exceptional durability and lasting performance. With its 960Wh capacity, it can reach up to 70 km in pure electric mode or 150 km with pedal assist. Its removable design makes charging simple and enables quick battery swaps for longer journeys.\n\nFull Suspension\n\nThe MG740Plus is equipped with a 100mm travel adjustable aluminum fork, allowing you to customize the suspension for optimal comfort on all kinds of terrain.\n\nLCD Color Display\n\nColour Backlight Display to keep track of speed, mileage, power and more.",
   "first_year": 2025,
   "years": {
@@ -74,8 +74,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -89,7 +89,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -99,7 +99,7 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IP54",
       "battery": {
         "capacity": 960,
@@ -115,7 +115,7 @@
           "availability": "stock",
           "range_claimed": 150,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -124,14 +124,14 @@
           "range_claimed": 70,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
     },
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IP54",
       "battery": {
         "capacity": 960,
@@ -147,7 +147,7 @@
           "availability": "stock",
           "range_claimed": 150,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -156,7 +156,7 @@
           "range_claimed": 70,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -203,20 +203,20 @@
       "description": "Shimano M310"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 20AH Samsung Lithium Battery, 18650cells"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 3A charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V 1000W front drive brushless motor and 1000w rear drive brushless moto, max torque 90Nm"
+      "type": "ebike-displayremote",
+      "description": "Color LCD with speed, trip, battery, assist level and more"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Color LCD with speed, trip, battery, assist level and more"
+      "type": "ebike-motor",
+      "description": "48V 1000W front drive brushless motor and 1000w rear drive brushless moto, max torque 90Nm"
     },
     {
       "type": "fork",
@@ -235,7 +235,7 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],

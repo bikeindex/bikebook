@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/espin/2021/aero",
   "manufacturer": "Espin",
   "model": "Aero",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -50,8 +50,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -60,7 +60,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -70,7 +70,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "battery": {
         "capacity": 245,
@@ -88,7 +88,7 @@
           "max_speed": 32,
           "range_claimed": 48,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -120,32 +120,32 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Lithium-ion 36V, 6.8Ah (244.8Wh) Samsung Cells"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "2 Amp Charger"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "manufacturer": "Espin",
+      "description": "ESPIN Fixed Backlit LED"
+    },
+    {
+      "type": "ebike-motor",
       "description": "SY"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Rear Mounted Geared Hub"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "manufacturer": "Espin",
-      "description": "ESPIN Fixed Backlit LED"
     },
     {
       "type": "fork",
       "description": "Aluminum front fork"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "Tool Box"
     },

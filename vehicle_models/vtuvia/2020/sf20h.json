@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/vtuvia/2020/sf20h",
   "manufacturer": "Vtuvia",
   "model": "SF20H",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -24,28 +24,56 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/vtuvia/2020/sf20h.png"
+          "stock_photo": "https://bikebook.bikeindex.org/vtuvia/2020/sf20h.png",
+          "variants": [
+            {
+              "sku": "SF20H-UL-White",
+              "gtin": "743449188976",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Black",
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/vtuvia/2020/sf20h_black.png"
+          "stock_photo": "https://bikebook.bikeindex.org/vtuvia/2020/sf20h-black.png",
+          "variants": [
+            {
+              "sku": "SF20H-UL-Black",
+              "gtin": "743449188983",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Red",
           "colors": [
             "red"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/vtuvia/2020/sf20h_red.png"
+          "stock_photo": "https://bikebook.bikeindex.org/vtuvia/2020/sf20h-red.png",
+          "variants": [
+            {
+              "sku": "SF20H-UL-Red",
+              "gtin": "743449189881",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Dark Green",
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/vtuvia/2020/sf20h_dark_green.png"
+          "stock_photo": "https://bikebook.bikeindex.org/vtuvia/2020/sf20h-dark-green.png",
+          "variants": [
+            {
+              "sku": "SF20H-UL-Green",
+              "gtin": "743449189225",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://vtuviaebike.com/products/sf20h-fat-tire-folding-electric-bike-ul-certified-ebike",
@@ -57,7 +85,7 @@
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
     "top_tube": "step_through",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "mounts": [
       {
         "type": "rack"
@@ -78,8 +106,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "rear": [
@@ -94,7 +122,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -105,17 +133,19 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "battery": {
         "capacity": 672,
         "voltage": 48,
         "chemistry": "li-ion",
-        "charging_time": 420
+        "charging_time": 420,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "peak_power": 1200,
@@ -133,7 +163,7 @@
           "range_claimed": 64,
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -178,7 +208,7 @@
       "description": "Dual LOGAN Hydraulic Disc Brakes"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -189,7 +219,7 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
@@ -205,20 +235,20 @@
       "description": "Shimano TY300D 7 Speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 14AH (672Wh), LG Lithium-Ion Battery, UL2271"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V/2A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48V 750W (PEAK 1200W) Rear Brushless Motor"
+      "type": "ebike-displayremote",
+      "description": "3.5\"Full Color,High Brightness,Adjustable Angle"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "3.5\"Full Color,High Brightness,Adjustable Angle"
+      "type": "ebike-motor",
+      "description": "48V 750W (PEAK 1200W) Rear Brushless Motor"
     },
     {
       "type": "fender",
@@ -233,7 +263,7 @@
       "description": "Included"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "48V 5W 130 Lux LED Headlight & Brake Light"
     },
     {

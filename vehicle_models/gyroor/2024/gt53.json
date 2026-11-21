@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/gyroor/2024/gt53",
   "manufacturer": "Gyroor",
   "model": "GT53",
   "model_configuration": "complete",
-  "type": "cargo_bike",
+  "type": "cargo",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
@@ -54,7 +54,7 @@
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -64,7 +64,8 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
+      "water_rating": "IP54",
       "battery": {
         "capacity": 1123
       },
@@ -77,7 +78,7 @@
           "max_speed": 50,
           "range_claimed": 169,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -86,7 +87,7 @@
           "max_speed": 50,
           "range_claimed": 80,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -107,11 +108,11 @@
       "description": "180MM disc brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "1123WH"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "led headlights, taillights"
     },
     {

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/philodo/2026/falcon",
   "manufacturer": "Philodo",
   "model_group": "Falcon",
@@ -7,10 +7,10 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
-  "primary_activity": "road_biking",
+  "primary_activity": "road-biking",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/philodo/2026/falcon.jpg",
   "description": "Falcon Camo e-bike for hunting: a 5000W powerful yet quiet motor with 210 Nm torque, up to 110 miles of range, full suspension, hydraulic brakes, and fat tires for comfortable, safe rides on any terrain with high load capacity.",
@@ -22,39 +22,86 @@
       "colorways": [
         {
           "name": "Step-Over Camo",
-          "stock_photo": "https://bikebook.bikeindex.org/philodo/2026/falcon.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/philodo/2026/falcon.jpg",
+          "variants": [
+            {
+              "sku": "Step-over Camo1",
+              "gtin": "6241189744734",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Step-Thru Camo",
-          "stock_photo": "https://bikebook.bikeindex.org/philodo/2026/falcon_step_thru_camo.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/philodo/2026/falcon-step-thru-camo.jpg",
+          "variants": [
+            {
+              "sku": "Step-thru Camo1",
+              "gtin": "6241189744970",
+              "size": "One Size"
+            },
+            {
+              "sku": "Step-thru Camo3",
+              "gtin": "6241189744420",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Step-Over Orange",
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/philodo/2026/falcon_step_over_orange.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/philodo/2026/falcon-step-over-orange.jpg",
+          "variants": [
+            {
+              "sku": "Step-over Orange3",
+              "gtin": "6241189744116",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Step-Over Black",
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/philodo/2026/falcon_step_over_black.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/philodo/2026/falcon-step-over-black.jpg",
+          "variants": [
+            {
+              "sku": "Step-over Black3",
+              "gtin": "6241189744598",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Step-Thru Orange",
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/philodo/2026/falcon_step_thru_orange.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/philodo/2026/falcon-step-thru-orange.jpg",
+          "variants": [
+            {
+              "sku": "Step-thru Orange3",
+              "gtin": "6241189744352",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Step-Thru Black",
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/philodo/2026/falcon_step_thru_black.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/philodo/2026/falcon-step-thru-black.jpg",
+          "variants": [
+            {
+              "sku": "Step-thru Black3",
+              "gtin": "6241189744666",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://philodobikes.com/products/philodo-falcon-camo-60v-dual-motor-electric-bike",
@@ -84,8 +131,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -94,7 +141,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -122,14 +169,14 @@
           "max_speed": 72,
           "range_claimed": 161,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -154,14 +201,14 @@
           "max_speed": 72,
           "range_claimed": 161,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -185,8 +232,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
-      "type_detail": "Front Light",
+      "type": "bellnoisemaker",
       "description": "Integrated LED headlight & horn 700 lumen"
     },
     {
@@ -206,7 +252,7 @@
       "description": "2‑Piston Hydraulic Disc"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum alloy, with brake sensor, cut off the power to the motor when braking"
     },
     {
@@ -214,27 +260,27 @@
       "description": "Prowheel, aluminum alloy, 52T"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "60 Volt 32Ah(1920Wh) Built‑with LG Cells, UL certified; battery weigh 16.6 lbs"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Lifetime: 1000 Cycles"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "input 100-240V AC, ouput 67.2V 2.5A DC, UL certified"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "3.7 inch multifunctional Display"
+    },
+    {
+      "type": "ebike-motor",
       "description": "2*2000W rated power, 5000W Peak output. Torque 2x105N.m"
     },
     {
-      "type": "e_vehicle_motor"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "3.7 inch multifunctional Display"
+      "type": "ebike-motor"
     },
     {
       "type": "fender",
@@ -249,7 +295,7 @@
       "description": "Aluminum alloy front fork with lock"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "assembly toolset"
     },
@@ -258,14 +304,14 @@
       "description": "kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "Integrated LED headlight & horn 700 lumen"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Taillight",
       "position": [
         "rear"
@@ -287,7 +333,7 @@
       "description": "rear rack"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "rear air shock",
       "position": [
         "rear"

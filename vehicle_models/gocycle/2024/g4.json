@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/gocycle/2024/g4",
   "manufacturer": "Gocycle",
   "model_group": "G4",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -39,7 +39,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/gocycle/2024/g4_matte_black.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/gocycle/2024/g4-matte-black.jpg",
           "variants": [
             {
               "sku": "KKL-6734-4879-01",
@@ -53,7 +53,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/gocycle/2024/g4_white.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/gocycle/2024/g4-white.jpg",
           "variants": [
             {
               "sku": "KKL-6741-4879-01",
@@ -71,7 +71,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061-T6 Aluminum",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "seatpost_diameter": 34.9
   },
   "suspension": {
@@ -90,8 +90,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "3_internal_rear"
+    "1-front",
+    "3-internal-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -100,7 +100,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -111,7 +111,7 @@
     {
       "drive_wheel": "front",
       "manufacturer": "Gocycle",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 300,
         "voltage": 36,
@@ -126,7 +126,7 @@
           "max_speed": 32,
           "range_claimed": 65,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -166,26 +166,26 @@
       "description": "Hydraulic disk, front and rear"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Quick removable lithium ion: 8.1Ah, 36V, approx 300 Wh"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Pedal Torque Sensing"
-    },
-    {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Gocycle",
-      "description": "Gocycle proprietary front hub motor, G4drive with traction control 500 watt US / 250 watt EU continuous"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Gocycle",
       "description": "Gocycle proprietary"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LED Fuel Gauge or with Smart Device and GocycleConnect® App"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "Pedal Torque Sensing"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Gocycle",
+      "description": "Gocycle proprietary front hub motor, G4drive with traction control 500 watt US / 250 watt EU continuous"
     },
     {
       "type": "fork",
@@ -197,7 +197,7 @@
       "description": "Gocycle proprietary, single-sided, Carbon Fibre, fixed"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Gocycle",
       "description": "Gocycle Sport Ergo"
@@ -212,7 +212,7 @@
       "description": "Gocycle Folding Standard"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],

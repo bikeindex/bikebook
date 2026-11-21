@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/propain/2023/barney",
   "manufacturer": "Propain",
   "model": "Barney",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -60,8 +60,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "weight_limits": [
     {
@@ -96,7 +96,19 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "axle-nuts",
+      "type_detail": "Rear wheel axle",
+      "position": [
+        "rear"
+      ],
+      "description": "115mm x 10mm",
+      "dimensions": {
+        "axle_diameter": 10,
+        "axle_spacing": 115
+      }
+    },
+    {
+      "type": "bottom-bracket",
       "type_detail": "Bottom bracket BSA",
       "description": "73mm"
     },
@@ -113,18 +125,6 @@
       "type": "headset",
       "type_detail": "Headset (S.H.I.S.)",
       "description": "external"
-    },
-    {
-      "type": "wheel",
-      "type_detail": "Rear wheel axle",
-      "position": [
-        "rear"
-      ],
-      "description": "115mm x 10mm",
-      "dimensions": {
-        "axle_diameter": 10,
-        "axle_spacing": 115
-      }
     }
   ]
 }

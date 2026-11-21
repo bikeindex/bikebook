@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/swft/2024/zip",
   "manufacturer": "SWFT",
   "model_group": "ZIP",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -19,6 +19,16 @@
     "2026": {
       "original_msrp": 149900,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "SWFT-ZIP-BLK",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://www.rideswft.com/products/zip-e-bike",
       "url_live": true
     },
@@ -56,8 +66,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "6_rear"
+    "1-front",
+    "6-rear"
   ],
   "gearing": {
     "front": [
@@ -73,7 +83,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -84,7 +94,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_speed": "spoke_magnet",
       "battery": {
@@ -102,14 +112,14 @@
           "range_claimed": 35,
           "levels": 3,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -138,7 +148,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Square Taper, Sealed"
     },
     {
@@ -150,7 +160,7 @@
       "description": "Mechanical Disc Brakes, 160 mm Rotors"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
@@ -171,20 +181,20 @@
       "description": "6 Speeds"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Lithium-ion 46.8V, 10Ah, (468Wh)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V / 2.0A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W (Sustained), 48V Brushless Rear Hub"
+      "type": "ebike-displayremote",
+      "description": "LCD Smart Easy Read Display with Backlight"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD Smart Easy Read Display with Backlight"
+      "type": "ebike-motor",
+      "description": "500W (Sustained), 48V Brushless Rear Hub"
     },
     {
       "type": "fork",
@@ -194,7 +204,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "description": "Ergonomic Comfort"
     },

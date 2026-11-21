@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ebgo/2026/duster",
   "manufacturer": "Ebgo",
   "model": "Duster",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "atb_gravel",
+  "primary_activity": "atb-gravel",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/ebgo/2026/duster.jpg",
   "description": "The Duster is designed to go further, on all terrains. With 125 km of range, a stable road geometry and versatile wide tires, it offers comfort and control no matter the journey. The result: a high-performance bike ready for adventure.",
@@ -70,8 +70,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "11_rear"
+    "1-front",
+    "11-rear"
   ],
   "gearing": {
     "rear": [
@@ -86,7 +86,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -97,14 +97,14 @@
   "motors": [
     {
       "sensor_torque": "bottom_bracket_spindle",
-      "certifications": [
-        "UL 2271"
-      ],
       "battery": {
         "capacity": 360,
         "voltage": 36,
         "chemistry": "li-ion",
-        "cells": "Samsung/LG 21700-5000 mah"
+        "cells": "Samsung/LG 21700-5000 mah",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 250,
       "max_torque": 42,
@@ -113,8 +113,9 @@
           "mode": "assist",
           "availability": "stock",
           "max_speed": 32,
+          "range_claimed": 125,
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         }
       ]
@@ -164,11 +165,11 @@
       "description": "GRX BR-RX410"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Disc Brake Levers ST-RX600-L, BR-RX400, ST-RX600-R, BR-RX400"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rear Disc",
       "position": [
         "rear"
@@ -180,7 +181,7 @@
       }
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Front Disc",
       "position": [
         "front"
@@ -190,13 +191,6 @@
       "dimensions": {
         "diameter": 160
       }
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "CS-M7000-11, SLX, 11-40T"
     },
     {
       "type": "chain",
@@ -210,6 +204,13 @@
       "description": "Prowheel Custom"
     },
     {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "CS-M7000-11, SLX, 11-40T"
+    },
+    {
       "type": "derailleur",
       "position": [
         "rear"
@@ -217,27 +218,27 @@
       "description": "GRX 11 RD-RX812"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V 10Ah Samsung/LG 21700-5000 mah Cells Battery UL2271 Certified"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "D POWER 36V 3A Fast Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "AKM 250W 42nm torque"
+      "type": "ebike-displayremote",
+      "description": "VeloFox DM02V"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "VeloFox DM02V"
+      "type": "ebike-motor",
+      "description": "AKM 250W 42nm torque"
     },
     {
       "type": "fork",
       "description": "Carbon Fork"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Tape"
     },
@@ -258,7 +259,7 @@
       "description": "Alloy 30.9"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Clamp",
       "description": "Standard"
     },

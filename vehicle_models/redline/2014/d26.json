@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/redline/2014/d26",
   "manufacturer": "Redline",
   "model": "D26",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -66,8 +66,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -82,7 +82,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -92,7 +92,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "68mm Mid BB"
     },
     {
@@ -104,16 +104,9 @@
       "description": "Avid DB5 hydrolic disc, 160mm rotor (rear brake only)"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "type_detail": "Shift And Brake Lever",
       "description": "Single Speed/Avid DB5 levers"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "13T"
     },
     {
       "type": "chain",
@@ -122,6 +115,13 @@
     },
     {
       "type": "chainrings",
+      "description": "13T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
       "description": "13T"
     },
     {
@@ -141,7 +141,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Redline",
       "description": "Redline Flight flangeless lock-on"
     },
@@ -169,7 +169,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "Alloy 29.8mm, bolt type",
       "dimensions": {
         "diameter": 29.8

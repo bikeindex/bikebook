@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/schwinn/2011/sprite",
   "manufacturer": "Schwinn",
   "model": "Sprite",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -63,7 +63,7 @@
     }
   ],
   "drivetrain": [
-    "1_front"
+    "1-front"
   ],
   "gearing": {
     "front": [
@@ -75,7 +75,7 @@
   },
   "brakes": [
     {
-      "type": "coaster_brake",
+      "type": "coaster-brake",
       "position": [
         "rear"
       ]
@@ -83,7 +83,11 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bashguardchain-guide",
+      "description": "Chain guard"
+    },
+    {
+      "type": "bottom-bracket",
       "description": "One piece 24 tpi"
     },
     {
@@ -97,10 +101,6 @@
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z-410"
-    },
-    {
-      "type": "chain_guide",
-      "description": "Chain guard"
     },
     {
       "type": "crankset",
@@ -117,7 +117,7 @@
       "description": "Schwinn N’Gauged Hi-Ten steel Uni-crown custom flat blade"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "manufacturer": "Schwinn",
       "description": "Schwinn Slim Line kraton rubber"
     },

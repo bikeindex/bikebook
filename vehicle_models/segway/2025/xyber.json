@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/segway/2025/xyber",
   "manufacturer": "Segway",
   "model": "Xyber",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -72,14 +72,14 @@
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
       "rotor_diameter": 220
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -103,14 +103,14 @@
           "max_speed": 69,
           "range_claimed": 180,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -142,11 +142,11 @@
       "description": "Hydraulic Disc Brake Front Four-piston, 220 mm Rotor Hydraulic Disc Brake Rear Two-piston, 180 mm Rotor"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Nominal Voltage: 48V; Nominal Energy: 1440Wh; Charger Voltage: 10A; Battery Management System: Yes; Battery IP Rating: IPX7"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Power: 1 Battery = 3000 Watts, 2 Batteries= 6000 Watts"
     },
     {
@@ -161,19 +161,19 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "1300 lumens, High&Low Beam"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Tail Light",
       "description": "Yes, with Brake Signal Highlight"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "position": [
         "rear"
       ],

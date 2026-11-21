@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/onewheel/2019/pint",
   "manufacturer": "OneWheel",
   "model_group": "Pint",
   "model": "Pint",
   "model_configuration": "complete",
-  "type": "epamd",
-  "type_detail": "one_wheel_board",
+  "type": "personal-mobility",
+  "type_detail": "one-wheel-board",
   "propulsion": [
     "throttle"
   ],
@@ -24,12 +24,24 @@
           "name": "Slate",
           "colors": [
             "silver"
+          ],
+          "variants": [
+            {
+              "sku": "OW1-00007-00",
+              "gtin": "810019790522"
+            }
           ]
         },
         {
           "name": "Sand",
           "colors": [
             "brown"
+          ],
+          "variants": [
+            {
+              "sku": "OW1-00007-01",
+              "gtin": "810019790539"
+            }
           ]
         }
       ],
@@ -39,6 +51,42 @@
     "2019": {
       "original_msrp": 95000,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Slate",
+          "colors": [
+            "silver"
+          ],
+          "variants": [
+            {
+              "sku": "OW1-00007-80"
+            }
+          ]
+        },
+        {
+          "name": "Sage",
+          "colors": [
+            "green"
+          ],
+          "variants": [
+            {
+              "sku": "OW1-00007-82",
+              "original_msrp": 105000
+            }
+          ]
+        },
+        {
+          "name": "Sand",
+          "colors": [
+            "brown"
+          ],
+          "variants": [
+            {
+              "sku": "OW1-00007-81"
+            }
+          ]
+        }
+      ],
       "url": "https://web.archive.org/web/20190315193116/https://onewheel.com/products/pint",
       "url_live": false
     }
@@ -57,7 +105,7 @@
   ],
   "brakes": [
     {
-      "type": "motor_brake",
+      "type": "motor-brake",
       "position": [
         "motor"
       ]
@@ -65,7 +113,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "chemistry": "li-ion",
         "charging_time": 120
@@ -102,19 +150,19 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "63v"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "120 min.* 50min.* with optional Pint Ultracharger; 120 mins* (FY630130 charger)"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "750W Hypercore® hub motor"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Lightbar",
       "description": "Lightbar"
     },

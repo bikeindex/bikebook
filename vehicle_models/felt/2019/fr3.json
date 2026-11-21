@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2019/fr3",
   "manufacturer": "Felt",
   "model_group": "FR",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_biking",
+  "primary_activity": "road-biking",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2019/fr3.jpg",
   "description": "With a lightweight frameset constructed from Felt’s UHC Advanced + TeXtreme® carbon fiber, the FR3 boasts all of the performance credentials as the flagship models in the FR Series. And with the functionality and dependability of a Shimano Ultegra drivetrain and DT Swiss, tubeless-ready wheels, the FR3 is a reliable te",
@@ -70,7 +70,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "bottom_bracket": {
       "shell": "BB386",
@@ -102,8 +102,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "11_rear"
+    "2-front",
+    "11-rear"
   ],
   "gearing": {
     "front": [
@@ -189,7 +189,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "Token",
       "description": "Token BB386 with 24mm bearings"
     },
@@ -212,18 +212,9 @@
       "description": "Shimano Ultegra R8010 direct mount caliper"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "Shimano Ultegra R8000"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel / Cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 11-speed, 11-28T"
     },
     {
       "type": "chain",
@@ -233,6 +224,15 @@
     {
       "type": "chain",
       "description": "chain plate protector"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel / Cassette",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Shimano",
+      "description": "Shimano 11-speed, 11-28T"
     },
     {
       "type": "crankset",
@@ -261,7 +261,7 @@
       "description": "Felt Race Road UHC Advanced + TeXtreme carbon fiber monocoque construction, size specific ControlTaper carbon fiber steerer tube, integrated crown race, crown, blades and dropouts"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bar Tape",
       "manufacturer": "Felt",
       "description": "Felt VelvetGel tape with 3M reflective base with reflective Felt Bubble-Tech F-Wing bar end plugs"
@@ -296,7 +296,7 @@
       "description": "DT Swiss 370, 11-speed, 130mm QR"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Assembly Paste",
       "description": "Carbon assembly paste"
     },
@@ -325,7 +325,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "manufacturer": "Felt",
       "description": "Felt single bolt, Ø30.6mm",
       "dimensions": {

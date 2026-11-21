@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/segway/2023/f2",
   "manufacturer": "Segway",
   "model_group": "F Series",
   "model": "F2",
   "model_configuration": "complete",
-  "type": "e_scooter",
+  "type": "e-scooter",
   "propulsion": [
     "throttle"
   ],
@@ -30,7 +30,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "stem_fold"
+    "folding": "stem-fold"
   },
   "wheels": [
     {
@@ -45,13 +45,13 @@
   ],
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front"
       ]
     },
     {
-      "type": "motor_brake",
+      "type": "motor-brake",
       "position": [
         "motor"
       ]
@@ -59,7 +59,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IPX5",
       "battery": {
         "capacity": 367,
@@ -111,15 +111,15 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Nominal Voltage: 36 V/td>; Max. Charging Voltage: 42 V; Charging Ambient Temperature: 32–113°F (0–45°C); Nominal Capacity: 10.2 Ah; Nominal Energy: 367 Wh; Battery Management System: Over-heating, short circuit, over-current, over-discharge and over-charge protection"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Output Power: 70 W; Input Voltage: 100-240V~50-60Hz; Max. Output Voltage: 42 V; Rated Output: 41 V 1.7 A"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Nominal Power: 350 W; Max. Power: 700 W"
     },
     {

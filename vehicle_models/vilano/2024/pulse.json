@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/vilano/2024/pulse",
   "manufacturer": "Vilano",
   "model": "Pulse",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -42,8 +42,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -51,7 +51,7 @@
   },
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "rated_power": 250,
       "operating_modes": [
         {
@@ -69,11 +69,11 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V Samsung Lithium-Ion Battery"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Rear Direct Drive 250 W Brushless Hub Motor"
     },
     {
@@ -85,7 +85,7 @@
       "description": "Front and rear fenders, rear rack included"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front",
         "rear"

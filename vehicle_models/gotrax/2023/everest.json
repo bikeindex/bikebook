@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/gotrax/2023/everest",
   "manufacturer": "GOTRAX",
   "model": "Everest",
   "model_configuration": "complete",
-  "type": "e_motorcycle",
+  "type": "e-motorcycle",
   "propulsion": [
     "throttle"
   ],
-  "primary_activity": "dirt_travel",
+  "primary_activity": "dirt-travel",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/gotrax/2023/everest.jpg",
   "description": "Our elite electric dirt bike is here. With pneumatic deep-tooth tires and spiral shock suspension, the Everest was built to handle anything and everything you can throw at it.",
@@ -80,7 +80,7 @@
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -99,6 +99,7 @@
         "charging_time": 240
       },
       "rated_power": 4000,
+      "peak_power": 8000,
       "operating_modes": [
         {
           "mode": "throttle",
@@ -106,7 +107,7 @@
           "max_speed": 85,
           "range_claimed": 80,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -145,19 +146,19 @@
       "description": "Manual Disc Brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Size: 72V 32aH Lithium-ion Battery (2304Wh)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "4000W|Peak - 8000W"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LCD"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "4000W|Peak - 8000W"
+    },
+    {
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"
@@ -165,7 +166,7 @@
       "description": "LED"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Spiral Shock Suspension",
       "position": [
         "rear"

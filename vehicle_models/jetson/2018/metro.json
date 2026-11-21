@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2018/metro",
   "manufacturer": "Jetson",
   "model": "Metro",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -24,21 +24,42 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jetson/2018/metro_white.png"
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2018/metro-white.png",
+          "variants": [
+            {
+              "sku": "JMET-WHT",
+              "gtin": "858410007658",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Black",
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jetson/2018/metro.png"
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2018/metro.png",
+          "variants": [
+            {
+              "sku": "JMET-BLK",
+              "gtin": "858410007542",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Coral",
           "colors": [
             "pink"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jetson/2018/metro_coral.png"
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2018/metro-coral.png",
+          "variants": [
+            {
+              "sku": "JMET-COR",
+              "gtin": "811991030842",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://ridejetson.com/products/metro-folding-electric-bike",
@@ -48,7 +69,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "suspension": {
     "rear": {}
@@ -64,7 +85,7 @@
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -73,7 +94,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 187,
         "voltage": 36,
@@ -90,7 +111,7 @@
           "max_slope": 20,
           "levels": 3,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -98,7 +119,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -139,26 +160,26 @@
       "description": "Front and rear disc brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 5.2Ah lithium-ion battery"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Battery: Yes"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "250 watt hub motor"
+      "type": "ebike-displayremote",
+      "description": "LCD display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD display"
+      "type": "ebike-motor",
+      "description": "250 watt hub motor"
     },
     {
       "type": "kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front LED headlight"
     },
     {
@@ -179,11 +200,6 @@
         "rear"
       ],
       "description": "Rubber inflatable tires"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "SKU",
-      "description": "JMET-WHT"
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/opus/2018/skadar",
   "manufacturer": "Opus",
   "model": "Skadar",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -51,8 +51,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -64,14 +64,14 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "rear"
       ],
       "caliper_mount": "Brake Bosses"
     },
     {
-      "type": "coaster_brake",
+      "type": "coaster-brake",
       "position": [
         "rear"
       ]
@@ -102,7 +102,11 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bashguardchain-guide",
+      "description": "Chainguard"
+    },
+    {
+      "type": "bottom-bracket",
       "description": "9 pc Steel"
     },
     {
@@ -113,15 +117,8 @@
       "description": "HJ V-Brake Rear And Coaster Brake"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "HJ Short Reach"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "18"
     },
     {
       "type": "chain",
@@ -129,12 +126,15 @@
       "description": "KMC Z410A"
     },
     {
-      "type": "chain_guide",
-      "description": "Chainguard"
-    },
-    {
       "type": "chainrings",
       "description": "28"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "18"
     },
     {
       "type": "crankset",
@@ -147,11 +147,11 @@
       "description": "Opus 6061 Aluminum"
     },
     {
-      "type": "frame_protection",
+      "type": "frame-protection",
       "description": "Stem Protector"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips tape",
       "manufacturer": "Opus",
       "description": "Opus Kraton"
@@ -215,7 +215,7 @@
       }
     },
     {
-      "type": "training_wheels",
+      "type": "training-wheels",
       "description": "Adjustable/RemovableTraining Wheels"
     }
   ]

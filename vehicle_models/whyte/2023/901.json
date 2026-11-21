@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/whyte/2023/901",
   "manufacturer": "Whyte",
   "model_group": "900 Series",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "mtb_enduro",
+  "primary_activity": "mtb-enduro",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/whyte/2023/901.jpg",
   "description": "Attack Every Trail\nOur most affordable enduro hardtail for gravity-focused riding, the 901 shares the same award-winning DNA of our premium enduro hardtails but with a selection of parts that punch well above their price tag to deliver you exceptional performance – no matter how rough or rowdy the trail gets – and great value for money.\n\nHighlights\n– Light yet tough 6061 T6 hydroformed, multi-butted Singe Chain Ring (1X) specific frame\n– 130mm RockShox Recon Gold RL suspension fork\n– Agile 27.5in wheels with high-volume Maxxis tyres\n– SRAM SX Eagle 1x12 transmission (32T chainring x 11-50 cassette)\n– TRP Slate Evo four-piston hydraulic disc brakes (180mm rotors front and rear)\n– KS Rage-i dropper post (with frame size-specific drop)\n\nWhy 901?\nFrom epic singletrack to enduro thrills, if you’re looking to ride everything fast – the roughest, most technical descents as well as flowing singletrack and challenging climbs and enduro liaisons – the latest generation 901 has been engineered ready.\n\nSharing the same award-winning 900 series frame as our premium 905 and 909 X enduro/trail hardtails, the 901 has been designed so you can tackle the most technical descents and challenging gravity trails with absolute composure and confidence. The fifth generation of our 900 series chassis translates perfect ‘Total Geometry’ poise through progressive geometry that balances confident but instantly reactive steering with all-day ride and climbing comfort, 130mm travel RockShox forks and Maxxis 27.5 x 2.8in tyres to suck up trouble without sucking out your speed.\n\nWe’ve specially tuned the 901’s wide rim and tyre combination to engineer a ride that feels less harsh when you’re riding hard to give you greater grip, compliance and control when pushing it to the raggedy edge: 27.5in x 2.8in tyres have a rolling diameter like some smaller 29in tyres but, due to the wider and larger diameter of them, when paired with a wide rim (35mm internal width) this allows us to take advantage of the tyre’s massive internal air volume so you can run lower tyre pressures and significantly increase the compliance of your ride – perfect for keeping things cool, calm and collected on square-edged hits, as well as on traction-lite and off-camber sections for impeccable control and outrageous fun on every ride.\n\nPlus, the 901 is available in a full XS to XL size range to fit every rider.\n\nFeatures & Equipment\nIt might be our most affordable 900 series bike but the 901 still gets SRAM Eagle 1x12 speed SX gearing for warp speed or vertical winching ratios. Colour-coded RockShox 35 Gold fork is as light, tough, and accurate as the 901 frame with 130mm of easily adjustable and smoothly reactive suspension. The triple compound Maxxis High Roller II front tyre and fast rolling Rekon rear tyre combination also put control and speed exactly where you need it to drive you forward and hold your lines. TRP Slate 4 pot brakes and size specific KS Rage-i dropper post with a size-specific drop (XS frame size = 125mm; S/M = 150mm; L/XL = 170mm) give you excess all areas control.\n\nUnique, fully sealed BBX63 internal cable and hose routing and seat post collar keeps controls silent, free of dirt and secure but easy to service – even through the worst conditions. Our 1X-specific SCR (Single Chain Ring) frame design also gives masses of mud room while keeping handling tight and responsive, while double-sealed hubs and DT Swiss spokes help minimise maintenance.",
@@ -106,8 +106,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "12_rear"
+    "1-front",
+    "12-rear"
   ],
   "gearing": {
     "front": [
@@ -125,7 +125,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -227,7 +227,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "SRAM",
       "description": "SRAM DUB, BSA, 73mm"
     },
@@ -250,22 +250,22 @@
       "description": "TRP Slate Evo, 4 Piston with Sintered Metal Pad, 180mm Disc, Internal Routing"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "TRP",
       "description": "TRP Slate Evo"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM PG-1210 Eagle, 11-50, 12 Speed"
     },
     {
       "type": "chain",
       "manufacturer": "SRAM",
       "description": "SRAM SX Eagle, 12 Speed"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM PG-1210 Eagle, 11-50, 12 Speed"
     },
     {
       "type": "crankset",
@@ -296,7 +296,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "manufacturer": "Whyte",
       "description": "Whyte Lock-on Enduro Grip"

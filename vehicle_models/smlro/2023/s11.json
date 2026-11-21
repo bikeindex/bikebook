@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/smlro/2023/s11",
   "manufacturer": "Smlro",
   "model": "S11",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -40,7 +40,7 @@
             "black",
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/smlro/2023/s11_black_green.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/smlro/2023/s11-black-green.jpg"
         },
         {
           "name": "Black Blue",
@@ -57,7 +57,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "mounts": [
       {
         "type": "fender"
@@ -82,12 +82,12 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "7_rear"
+    "3-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -99,7 +99,8 @@
       "battery": {
         "capacity": 480,
         "voltage": 48,
-        "chemistry": "li-ion"
+        "chemistry": "li-ion",
+        "charging_time": 480
       },
       "rated_power": 1000,
       "operating_modes": [
@@ -109,7 +110,7 @@
           "max_speed": 37,
           "range_claimed": 68,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -117,7 +118,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -138,7 +139,7 @@
       "description": "front and rear disc brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 10Ah"
     },
     {

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/cycrown/2025/roma",
   "manufacturer": "Cycrown",
   "model": "Roma",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "atb",
@@ -23,6 +23,18 @@
           "name": "Indigo Blue",
           "colors": [
             "blue"
+          ],
+          "variants": [
+            {
+              "sku": "5275922",
+              "gtin": "739017515183",
+              "size": "One Size"
+            },
+            {
+              "sku": "5275911",
+              "gtin": "17841917741194",
+              "size": "One Size"
+            }
           ]
         },
         {
@@ -30,18 +42,39 @@
           "colors": [
             "orange",
             "yellow"
+          ],
+          "variants": [
+            {
+              "sku": "5275929",
+              "gtin": "739017515190",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "Glacier White",
           "colors": [
             "white"
+          ],
+          "variants": [
+            {
+              "sku": "5275914",
+              "gtin": "739017515206",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "Carbon Black",
           "colors": [
             "black"
+          ],
+          "variants": [
+            {
+              "sku": "5275905",
+              "gtin": "17841917741200",
+              "size": "One Size"
+            }
           ]
         }
       ],
@@ -68,8 +101,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -78,7 +111,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -87,7 +120,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
@@ -106,7 +139,7 @@
           "max_speed": 45,
           "range_claimed": 145,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -157,16 +190,16 @@
       "description": "Hydraulic Disc Brakes w/ Cut-Off"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 20Ah Samsung Cells"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W (Peak 1500W)"
+      "type": "ebike-displayremote",
+      "description": "Full-Color TFT, IOS & Android Compatible"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Full-Color TFT, IOS & Android Compatible"
+      "type": "ebike-motor",
+      "description": "750W (Peak 1500W)"
     },
     {
       "type": "fork",
@@ -174,7 +207,7 @@
       "description": "Dual Crown Hydraulic Fork"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "LED Headlight & Taillight"
     },
     {
@@ -182,7 +215,7 @@
       "description": "9/16\" Alloy Platform"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Four-Link Full Suspension",
       "position": [
         "rear"

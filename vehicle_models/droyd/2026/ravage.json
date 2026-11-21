@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/droyd/2026/ravage",
   "manufacturer": "Droyd",
   "model": "Ravage",
   "model_configuration": "complete",
-  "type": "e_motorcycle",
+  "type": "e-motorcycle",
   "propulsion": [
     "throttle"
   ],
-  "primary_activity": "dirt_travel",
+  "primary_activity": "dirt-travel",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/droyd/2026/ravage.jpg",
   "description": "Unleash adventure with the Ravage Electric Trail Bike—built for riders who crave excitement on every ride. Powered by a high-performance 3000W motor, the Ravage reaches speeds of up to 35 mph while delivering an impressive 50 miles of range on a single charge, so the fun doesn't stop when the trail gets longer. Choose from three speed modes to match your skill level and riding style, whether you're cruising, exploring, or pushing the limits. Its fat all-terrain tires provide confidence-inspiring traction and stability across dirt, gravel, grass, and rugged paths, while the included wheelie bar adds an extra dose of style and capability. At the heart of it all is a superior LFP battery, engineered to be safer, more durable, and more reliable than traditional lithium-ion batteries—giving you the power to ride harder, farther, and with greater peace of mind. The Ravage isn't just an electric trail bike—it's your ticket to nonstop thrills and unforgettable adventures.",
@@ -22,12 +22,24 @@
           "name": "Black",
           "colors": [
             "black"
+          ],
+          "variants": [
+            {
+              "sku": "DZ03-BK",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "White",
           "colors": [
             "white"
+          ],
+          "variants": [
+            {
+              "sku": "DZ03-WH",
+              "size": "One Size"
+            }
           ]
         }
       ],
@@ -40,7 +52,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -63,7 +75,7 @@
           "max_speed": 56,
           "range_claimed": 80,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -106,19 +118,19 @@
       "description": "Chain Drive"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 30Ah Lithium-ion LFP"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Brushless 48V"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Battery Indicator: LED Display"
     },
     {
-      "type": "lights",
+      "type": "ebike-motor",
+      "description": "Brushless 48V"
+    },
+    {
+      "type": "light",
       "description": "LED Headlight & Brake Light"
     },
     {

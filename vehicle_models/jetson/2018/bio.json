@@ -1,10 +1,10 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2018/bio",
   "manufacturer": "Jetson",
   "model": "Bio",
   "model_configuration": "complete",
-  "type": "e_scooter",
+  "type": "e-scooter",
   "propulsion": [
     "throttle"
   ],
@@ -16,6 +16,17 @@
     "2026": {
       "original_msrp": 29999,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "JBIO-BKB",
+              "gtin": "811991030668",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://ridejetson.com/products/bio-folding-electric-scooter",
       "url_live": true
     },
@@ -23,7 +34,7 @@
   },
   "frame": {
     "material": "aluminum",
-    "folding": "stem_fold"
+    "folding": "stem-fold"
   },
   "wheels": [
     {
@@ -36,7 +47,7 @@
   ],
   "brakes": [
     {
-      "type": "motor_brake",
+      "type": "motor-brake",
       "position": [
         "motor"
       ]
@@ -44,7 +55,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 144,
         "voltage": 36,
@@ -102,19 +113,19 @@
       "description": "Rear foot e-brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 4.0Ah lithium-Ion"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Battery: No"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "250 watt hub motor"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "LED headlight, stem and rear wheel lights"
     },
     {
@@ -135,11 +146,6 @@
       "type": "unknown",
       "type_detail": "Deck Size",
       "description": "25.5\" x 6\""
-    },
-    {
-      "type": "unknown",
-      "type_detail": "SKU",
-      "description": "JBIO-BKB"
     },
     {
       "type": "wheel",

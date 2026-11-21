@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/postjoy/2026/gt16plus",
   "manufacturer": "PostJoy",
   "model": "GT16Plus",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -18,6 +18,16 @@
     "2026": {
       "original_msrp": 139999,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "GT16",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://postjoyebike.com/products/postjoy-gt16plus-electric-dirt-bike",
       "url_live": true
     }
@@ -40,12 +50,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -54,7 +64,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IPX6",
       "battery": {
         "capacity": 1800,
@@ -70,7 +80,7 @@
           "max_speed": 45,
           "range_claimed": 129,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -106,11 +116,11 @@
       "description": "Hydraulic brake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "60V 30Ah"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Peak 5500W"
     },
     {

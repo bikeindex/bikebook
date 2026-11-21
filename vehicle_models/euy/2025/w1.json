@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/euy/2025/w1",
   "manufacturer": "Euy",
   "model": "W1",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -38,7 +38,7 @@
           "colors": [
             "brown"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/euy/2025/w1_beige.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/euy/2025/w1-beige.jpg",
           "variants": [
             {
               "sku": "EUYW1BEIGE",
@@ -71,12 +71,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -87,10 +87,11 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "certifications": [
         "UL 2849"
       ],
+      "water_rating": "IP65",
       "battery": {
         "capacity": 2880,
         "voltage": 48,
@@ -98,6 +99,7 @@
         "weight": 13.61
       },
       "rated_power": 1000,
+      "peak_power": 1500,
       "max_torque": 96,
       "operating_modes": [
         {
@@ -107,7 +109,7 @@
           "range_claimed": 257,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -115,7 +117,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -159,11 +161,16 @@
       "description": "Hydraulic disc brakes with 180mm rotor"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Hydraulic grip-style brake lever"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC chain"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
@@ -172,39 +179,34 @@
       "description": "Shimano 7 speed gear shift"
     },
     {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC chain"
-    },
-    {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Samsung 48V 30Ah × 2"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "position": [
         "front"
       ],
       "description": "13.78\"*3.7\"*5.5\""
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "position": [
         "rear"
       ],
       "description": "16.14\"*5.9\"*3.9\""
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Fast charge"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "1000W Rear Hub Motor"
+      "type": "ebike-displayremote",
+      "description": "LCD display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD display"
+      "type": "ebike-motor",
+      "description": "1000W Rear Hub Motor"
     },
     {
       "type": "fender",
@@ -222,7 +224,7 @@
       "description": "BMX style handlebar"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],

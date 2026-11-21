@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/ebgo/2026/miles",
   "manufacturer": "Ebgo",
   "model": "Miles",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -53,7 +53,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/ebgo/2026/miles_atlantic_blue.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/ebgo/2026/miles-atlantic-blue.jpg",
           "variants": [
             {
               "sku": "26OAMILEBS",
@@ -82,7 +82,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/ebgo/2026/miles_lunar_grey.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/ebgo/2026/miles-lunar-grey.jpg",
           "variants": [
             {
               "sku": "26OAMILEGS",
@@ -126,8 +126,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "groupset": {
     "manufacturer": "SRAM",
@@ -136,7 +136,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -145,15 +145,16 @@
   ],
   "motors": [
     {
-      "certifications": [
-        "UL 2271"
-      ],
+      "manufacturer": "AIKEMA",
       "battery": {
         "capacity": 720,
         "voltage": 48,
         "chemistry": "li-ion",
         "weight": 4.08,
-        "charging_time": 300
+        "charging_time": 300,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 500,
       "operating_modes": [
@@ -161,9 +162,10 @@
           "mode": "assist",
           "availability": "stock",
           "max_speed": 32,
+          "range_claimed": 100,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         },
         {
@@ -171,7 +173,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         }
       ]
@@ -214,16 +216,16 @@
       "description": "Sram X4 8-speed derailleur"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V / 15Ah lithium battery, offering up to 100 km of range, certified to UL 2271 standards"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W brushless Aikema"
+      "type": "ebike-displayremote",
+      "description": "User-friendly and practical LCD screen"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "User-friendly and practical LCD screen"
+      "type": "ebike-motor",
+      "description": "500W brushless Aikema"
     },
     {
       "type": "fork",
@@ -233,7 +235,7 @@
       "description": "Aluminum Front Fork"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front",
         "rear"

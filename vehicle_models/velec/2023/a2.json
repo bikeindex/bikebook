@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/velec/2023/a2",
   "manufacturer": "Velec",
   "model_group": "A2",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -24,12 +24,34 @@
           "name": "Red",
           "colors": [
             "red"
+          ],
+          "variants": [
+            {
+              "sku": "VA224MR12",
+              "size": "One Size"
+            },
+            {
+              "sku": "VA224MR14",
+              "size": "One Size",
+              "original_msrp": 249900
+            }
           ]
         },
         {
           "name": "Silver",
           "colors": [
             "silver"
+          ],
+          "variants": [
+            {
+              "sku": "VA224MR13",
+              "size": "One Size"
+            },
+            {
+              "sku": "VA224MR15",
+              "size": "One Size",
+              "original_msrp": 249900
+            }
           ]
         }
       ],
@@ -56,8 +78,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -75,7 +97,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -87,17 +109,17 @@
     {
       "drive_wheel": "rear",
       "manufacturer": "Velec",
-      "kind": "hub_drive",
-      "certifications": [
-        "UL 2271"
-      ],
+      "kind": "hub-drive",
       "battery": {
         "capacity": 468,
         "capacity_options": [
           720
         ],
         "voltage": 36,
-        "chemistry": "li-ion"
+        "chemistry": "li-ion",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 500,
       "max_torque": 60,
@@ -108,7 +130,7 @@
           "range_claimed": 140,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         },
         {
@@ -116,7 +138,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/ca/power_assisted_bicycle"
+            "evc/ca/power-assisted-bicycle"
           ]
         }
       ]
@@ -133,6 +155,10 @@
   ],
   "components": [
     {
+      "type": "bashguardchain-guide",
+      "description": "chain guard"
+    },
+    {
       "type": "brake",
       "position": [
         "front",
@@ -142,25 +168,21 @@
       "description": "Tektro Hydraulic 180mm front and rear discs"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro with motor cut-offs"
     },
     {
-      "type": "cassette",
+      "type": "chainrings",
+      "description": "52T"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "Shimano 11-32T"
-    },
-    {
-      "type": "chain_guide",
-      "description": "chain guard"
-    },
-    {
-      "type": "chainrings",
-      "description": "52T"
     },
     {
       "type": "derailleur",
@@ -171,16 +193,16 @@
       "description": "Shimano Acera 8 speeds"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V 13Ah (468Wh) or 20Ah (720Wh), UL-2271 compliant."
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W Velec by AKM rear-hub (60 Nm)"
+      "type": "ebike-displayremote",
+      "description": "Grayscale central, on the handlebars (6cm x 10cm)"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Grayscale central, on the handlebars (6cm x 10cm)"
+      "type": "ebike-motor",
+      "description": "500W Velec by AKM rear-hub (60 Nm)"
     },
     {
       "type": "fender",
@@ -204,11 +226,11 @@
       "description": "Kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Front and rear powered by electrical system + Brake indicator"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "reflectors"
     },
     {

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/hikeep/2026/cd20",
   "manufacturer": "Hikeep",
   "model": "CD20",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -62,12 +62,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -77,7 +77,8 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
+      "water_rating": "IPX5",
       "battery": {
         "capacity": 1589,
         "voltage": 48
@@ -92,7 +93,7 @@
           "max_speed": 53,
           "range_claimed": 241,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -100,7 +101,7 @@
           "availability": "stock",
           "range_claimed": 97,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -137,16 +138,21 @@
       "description": "Dual Hydraulic Disc Brakes with Power Cut-Off"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery Configuration: Dual Removable Batteries: 48V 15.6Ah + 48V 17.5Ah (33.1Ah / 1588.8Wh total)"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "4.0\" Color LCD, NFC Keyless Unlock, Bluetooth App Integration"
+    },
+    {
+      "type": "ebike-motor",
       "description": "3000W Peak (1500W Sustained) Brushless Rear Hub Motor"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "4.0\" Color LCD, NFC Keyless Unlock, Bluetooth App Integration"
+      "type": "included-not-installed",
+      "type_detail": "Tools",
+      "description": "Toolkit to help you assemble the bike"
     },
     {
       "type": "tire",

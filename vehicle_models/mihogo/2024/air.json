@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/mihogo/2024/air",
   "manufacturer": "Mihogo",
   "model": "Air",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -36,7 +36,7 @@
           "colors": [
             "yellow"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/mihogo/2024/air_yellow.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/mihogo/2024/air-yellow.jpg",
           "variants": [
             {
               "sku": "air-yellow-double-dattery",
@@ -49,7 +49,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/mihogo/2024/air_blue.png"
+          "stock_photo": "https://bikebook.bikeindex.org/mihogo/2024/air-blue.png"
         }
       ],
       "url": "https://mihogo.com/products/mihogo-air-max",
@@ -58,7 +58,7 @@
     "2024": {}
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "material_detail": "Carbon T800"
   },
   "suspension": {
@@ -77,8 +77,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -92,7 +92,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -101,8 +101,9 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_torque": "bottom_bracket_spindle",
+      "water_rating": "IP67",
       "battery": {
         "capacity": 921,
         "chemistry": "li-ion"
@@ -169,22 +170,22 @@
       "description": "Four-piston hydraulic disc brake with power cut-off"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum alloy three-finger brake lever"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC 134links"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Rear Cogs",
       "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
       "description": "shimano 500-7speed"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC 134links"
     },
     {
       "type": "crankset",
@@ -200,16 +201,16 @@
       "description": "shimano M310"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "lithium-ion 460.8Wh+460.8Wh (Total 921 Wh), 48V20Ah"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W integrated wheel brushless geared motor"
+      "type": "ebike-displayremote",
+      "description": "IPS 2.4\" Smart Easy Read Display with Color screen Can be connected by mobile phone"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "IPS 2.4\" Smart Easy Read Display with Color screen Can be connected by mobile phone"
+      "type": "ebike-motor",
+      "description": "750W integrated wheel brushless geared motor"
     },
     {
       "type": "fork",
@@ -219,7 +220,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "brown leather (Length: about 130mm)",
       "dimensions": {

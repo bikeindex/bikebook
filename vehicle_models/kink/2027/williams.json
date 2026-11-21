@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/kink/2027/williams",
   "manufacturer": "Kink",
   "model_group": "Williams",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "bmx_freestyle",
+  "primary_activity": "bmx-freestyle",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/kink/2027/williams.jpg",
   "description": "The Kink Williams is the flagship model in our line and our only signature bike with Kink Pro team rider Nathan Williams. The Williams is a fully loaded bike that gets as close to Nathan’s personal ride as possible with a much friendlier price tag. Stacked with aftermarket parts and superior manufacturing and materials, the Williams is the best bike in our lineup and is ready to be ridden at a high level. This 2027 model includes the Williams signature forks with an adjustable 20mm/25mm offset in addition to his signature handlebars. The new Midnight Black colorway looks tough paired with Nathan’s signature corduroy seat.\n\nNote: Optional brake set comes included.",
@@ -55,8 +55,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -68,7 +68,7 @@
   },
   "brakes": [
     {
-      "type": "u_brake",
+      "type": "u-brake",
       "position": [
         "rear"
       ]
@@ -91,7 +91,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "Sealed Mid 19mm"
     },
     {
@@ -102,20 +102,12 @@
       "description": "Mission Cease V2 (Removable Mounts)"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "description": "Mission L4 Linear"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Mission Captive"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "DRIVER",
-      "position": [
-        "rear"
-      ],
-      "description": "9T"
     },
     {
       "type": "chain",
@@ -125,6 +117,14 @@
       "type": "chainrings",
       "type_detail": "SPROCKET",
       "description": "Cinema Beta 25T 6061-T6 Guard Sprocket"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "DRIVER",
+      "position": [
+        "rear"
+      ],
+      "description": "9T"
     },
     {
       "type": "crankset",
@@ -141,7 +141,7 @@
       "description": "Kink Williams 100% 4130 Chromoly 20mm/25mm Adjustable Offset TruTherm"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "manufacturer": "Kink",
       "description": "Kink Form, Thrust Barends"
@@ -195,7 +195,7 @@
       "description": "Kink Stealth 3D Forged"
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "SEAT CLAMP",
       "description": "Integrated"
     },

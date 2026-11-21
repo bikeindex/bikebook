@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/specialized/2026/chisel",
   "manufacturer": "Specialized",
   "model_group": "Chisel",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "mtb_cross_country",
+  "primary_activity": "mtb-cross-country",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/specialized/2026/chisel.png",
   "description": "The Lightest, Fastest Alloy Full Suspension Bike in the World. 18.4% lighter than the closest competitor and sharing geometry and kinematics from our World Cup ready Epic 8 mountain bike, the all-new Chisel delivers performance you can feel—whether you’re racing “between the tape” or ripping solo hot laps on local trails.\n\nSPEED METAL: Thanks to D’Aluisio Smartweld, the Chisel boasts the lightest aluminum XC frameset in its class. Each highly-manipulated frame tube features continuously-varied wall thicknesses and shaping that deliver stiffness where you need it - for efficiency - and ride-smoothing compliance where you want it - for comfort and optimal control.\n\nUNMATCHED CAPABILITY: With 110mm of Ride Dynamics tuned suspension, the high performance pedigree of Chisel can be traced directly to the Epic 8, our World Cup race machine. DNA from the Epic 8’s advanced suspension kinematics, Ride Dynamics tuned suspension, and progressive geometry honed on technical World Cup courses can all be found in the Chisel, making it more than capable of handling varied terrain with confidence and speed.\n\nINCREDIBLE EFFICIENCY: Chisel is the most efficient pedaling bike in its class, thanks to the utilization of geometry and kinematics that went into our World Cup racing Epic 8 platform. The steep seat tube positions the rider in the optimal pedaling position. Honed anti-squat reduces pedal-bob. Put it together and Chisel translates every watt applied to the pedals into maximum forward motion.\n\nSMOOTHER IS FASTER: We engineered a flex stay rear end for class-leading suspension performance, while eliminating the extra weight and maintenance associated with pivots required in a traditional design. More common on carbon bikes, extensive field and lab testing prove that Chisel has achieved the impossible—the efficiency, control, and light-weight of a flex stay design, in advanced alloy.\n\nHYDROFORMED ALLOY: Chisel shaves extra material and weight with a one-piece hydroformed seat tube that integrates the seat tube pivot, main pivot, and BB shell. On a more traditional bike, the seat tube is typically just a \"tube\" with pivots and BB shell welded on.",
@@ -139,8 +139,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "12_rear"
+    "1-front",
+    "12-rear"
   ],
   "gearing": {
     "front": [
@@ -158,14 +158,14 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front"
       ],
       "rotor_diameter": 180
     },
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
@@ -367,7 +367,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "SRAM",
       "description": "SRAM Powerspline"
     },
@@ -388,14 +388,6 @@
       "description": "SRAM DB6, 4-piston caliper, hydraulic disc, 160mm rotor"
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM NX Eagle, 12-speed, 11-50t"
-    },
-    {
       "type": "chain",
       "manufacturer": "SRAM",
       "description": "SRAM NX Eagle, 12-speed"
@@ -403,6 +395,14 @@
     {
       "type": "chainrings",
       "description": "32T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM NX Eagle, 12-speed, 11-50t"
     },
     {
       "type": "crankset",
@@ -429,7 +429,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Specialized",
       "description": "Specialized Trail Grips"
@@ -468,7 +468,7 @@
       }
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Shock",
       "position": [
         "rear"
@@ -501,7 +501,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "manufacturer": "Specialized",
       "description": "Specialized Alloy 34.9, Steel Bolt"
     },

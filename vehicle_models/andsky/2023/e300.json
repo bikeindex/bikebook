@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/andsky/2023/e300",
   "manufacturer": "Andsky",
   "model": "E300",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -24,14 +24,26 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/andsky/2023/e300.webp"
+          "stock_photo": "https://bikebook.bikeindex.org/andsky/2023/e300.webp",
+          "variants": [
+            {
+              "sku": "E300-Blue",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Gray",
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/andsky/2023/e300_gray.webp"
+          "stock_photo": "https://bikebook.bikeindex.org/andsky/2023/e300-gray.webp",
+          "variants": [
+            {
+              "sku": "N-E300-Grey",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://andskyebike.com/products/andsky-e-300-e-bike",
@@ -42,7 +54,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6061 Aluminum",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "seatpost_diameter": 27.2
   },
   "suspension": {
@@ -59,8 +71,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -74,7 +86,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -84,7 +96,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "certifications": [
         "UL 2849"
@@ -104,7 +116,7 @@
           "max_speed": 48,
           "range_claimed": 97,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -112,7 +124,7 @@
           "availability": "stock",
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -170,20 +182,20 @@
       "description": "7 Speed Shimano Rear Derailleur"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 13.4Ah UL safety certification"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 2.0A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Rated Power: 750W Peak Power: 1200W Torque: 70Nm"
+      "type": "ebike-displayremote",
+      "description": "LED Integrated"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LED Integrated"
+      "type": "ebike-motor",
+      "description": "Rated Power: 750W Peak Power: 1200W Torque: 70Nm"
     },
     {
       "type": "fork",

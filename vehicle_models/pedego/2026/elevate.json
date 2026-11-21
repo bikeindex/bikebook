@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/pedego/2026/elevate",
   "manufacturer": "Pedego",
   "model": "Elevate",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
-  "primary_activity": "mtb_trail_all_mountain",
+  "primary_activity": "mtb-trail-all-mountain",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/pedego/2026/elevate.jpg",
   "first_year": 2026,
@@ -86,8 +86,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "12_rear"
+    "1-front",
+    "12-rear"
   ],
   "gearing": {
     "front": [
@@ -105,7 +105,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -115,23 +115,24 @@
   ],
   "motors": [
     {
-      "id": "c/shimano/2020/ep800_du_ep800",
+      "id": "c/shimano/2020/ep800-du-ep800",
       "drive_wheel": "rear",
       "manufacturer": "Shimano",
       "model": "DU-EP800",
       "model_group": "EP800",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "spindle": "Shimano EP8",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
-      "certifications": [
-        "UL 2271"
-      ],
       "battery": {
         "capacity": 504,
         "voltage": 36,
         "chemistry": "li-ion",
-        "cells": "18650"
+        "cells": "18650",
+        "certifications": [
+          "UL 2271",
+          "UL 2580"
+        ]
       },
       "rated_power": 250,
       "max_torque": 85,
@@ -143,7 +144,7 @@
           "range_claimed": 68,
           "levels": 3,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -180,7 +181,12 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bashguardchain-guide",
+      "manufacturer": "Shimano",
+      "description": "SHIMANO SM-CDE800 CHAIN DEVICE"
+    },
+    {
+      "type": "bottom-bracket",
       "manufacturer": "Shimano",
       "description": "SHIMANO HOLLOWTECH II 24MM HOLLOW STEEL SPINDLE; INTEGRATED DUAL TORQUE SENSORS"
     },
@@ -195,12 +201,12 @@
       "description": "SHIMANO XT M8120 HYDRAULIC DISC BRAKE CALIPER; 4-PISTON CALIPER PROVIDES CONSISTENT BRAKING PERFORMANCE AND RELIABLE STOPPING POWER IN ALL CONDITIONS; MODEL NO: BR-8120"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Shimano",
       "description": "SHIMANO XT M8100 HYDRAULIC DISC BRAKE LEVER; SLEEK AND RESILIENT MASTER CYLINDER DESIGN; SERVOWAVE HIGH POWER BRAKE; MODEL NO: BL-M8100"
     },
     {
-      "type": "brake_pad",
+      "type": "brake-pad",
       "type_detail": "PADS",
       "position": [
         "front",
@@ -210,7 +216,7 @@
       "description": "SHIMANO N03A-RF RESIN BRAKE PADS; LOW NOISE WITH EXCELLENT POWER MODULATION"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "ROTORS",
       "position": [
         "front",
@@ -222,22 +228,17 @@
       }
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "SHIMANO XT M8100 12 SPEED HYPERGLIDE+ 10-51T; WIDE RANGE AND SMOOTH GEAR STEPS FOR 1x12; DESIGNED FOR AGGRESSIVE TRAIL RIDING; MODEL NO: CS-M8100-12"
-    },
-    {
       "type": "chain",
       "manufacturer": "Shimano",
       "description": "SHIMANO CN-M8100-12 SPEED"
     },
     {
-      "type": "chain_guide",
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
       "manufacturer": "Shimano",
-      "description": "SHIMANO SM-CDE800 CHAIN DEVICE"
+      "description": "SHIMANO XT M8100 12 SPEED HYPERGLIDE+ 10-51T; WIDE RANGE AND SMOOTH GEAR STEPS FOR 1x12; DESIGNED FOR AGGRESSIVE TRAIL RIDING; MODEL NO: CS-M8100-12"
     },
     {
       "type": "crankset",
@@ -256,22 +257,22 @@
       "description": "SHIMANO RD-M8100 12-SPEED; INTEGRATED CLUTCH FOR MAXIMUM CHAIN RETENTION; RIDER TUNED FOR SHARP AND SILKY SHIFTS; MODEL NO: RD-M8100-SGS"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "DARFON E4C0C 36 VOLT 14 AMP HOUR WITH PREMIUM LITHIUM ION 18650 CELLS."
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "DARFON 5.6 AMP SMART BATTERY CHARGER WITH CHARGE INDICATOR LIGHT."
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Shimano",
-      "description": "SHIMANO STEPS EP8 BRUSHLESS GEARED MID-DRIVE MOTOR; 250 WATT NOMINALPOWER RATING; 85NM MAX TORQUE OUTPUT; COMPACT DESIGN WITH NARROW 177MMQ-FACTOR."
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "Shimano",
       "description": "SHIMANO 36V CONTROLLER; INTEGRATED INTO DRIVE UNIT."
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Shimano",
+      "description": "SHIMANO STEPS EP8 BRUSHLESS GEARED MID-DRIVE MOTOR; 250 WATT NOMINALPOWER RATING; 85NM MAX TORQUE OUTPUT; COMPACT DESIGN WITH NARROW 177MMQ-FACTOR."
     },
     {
       "type": "fork",
@@ -284,7 +285,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "manufacturer": "SDG",
       "description": "SDG THRICE 33MM INTEGRATED LOCK-ON GRIPS"
@@ -313,7 +314,7 @@
       "description": "CRANK BROTHERS STAMP 1 LARGE PLATFORM PEDAL; 9/16” FULLY SEALED AXLE; NYLON COMPOSITE BODY WITH REPLACEABLE STEEL TRACTION PINS; 100% SERVICEABLE BEARING AND BUSHING SYSTEM"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "REAR SHOCK",
       "position": [
         "rear"

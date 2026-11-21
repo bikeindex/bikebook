@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/segway/2023/c2",
   "manufacturer": "Segway",
   "model_group": "C Series",
   "model": "C2",
   "model_configuration": "complete",
-  "type": "e_scooter",
+  "type": "e-scooter",
   "propulsion": [
     "throttle"
   ],
@@ -28,11 +28,11 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "stem_fold"
+    "folding": "stem-fold"
   },
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IPX4",
       "battery": {
         "capacity": 54,
@@ -84,15 +84,15 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Nominal Voltage: 21.6 V; Max. Charging Voltage: 25.2 V; Charging Temperature: 32–113°F (0°C–45°C); Nominal Capacity: 54 Wh; Nominal Energy: 2500 mAh; Battery Management System: Protection against overvoltage/undervoltage/short circuit/overcurrent/overheat"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Output Power: 24.2 W; Model: NBW25D201D0D; Input Voltage: 100-240V~50-60Hz; Max. Output Voltage: 25.2 V; Rated Output: 24.2 V 1 A"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "Nominal Power: 130 W; Max. Power: 160 W"
     },
     {

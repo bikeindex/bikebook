@@ -1,11 +1,11 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2020/eris",
   "manufacturer": "Jetson",
   "model_group": "Eris",
   "model": "Eris",
   "model_configuration": "complete",
-  "type": "e_scooter",
+  "type": "e-scooter",
   "propulsion": [
     "throttle"
   ],
@@ -24,21 +24,42 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jetson/2020/eris_white.png"
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2020/eris-white.png",
+          "variants": [
+            {
+              "sku": "JERIS-WHT",
+              "gtin": "811991031733",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Blue",
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jetson/2020/eris.png"
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2020/eris.png",
+          "variants": [
+            {
+              "sku": "JERIS-BLU",
+              "gtin": "811991031740",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Black",
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/jetson/2020/eris_black.png"
+          "stock_photo": "https://bikebook.bikeindex.org/jetson/2020/eris-black.png",
+          "variants": [
+            {
+              "sku": "JERIS-BLK",
+              "gtin": "811991034291",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://ridejetson.com/products/eris-electric-scooter",
@@ -52,18 +73,39 @@
           "name": "White",
           "colors": [
             "white"
+          ],
+          "variants": [
+            {
+              "sku": "JERIS-WHT",
+              "gtin": "811991031733",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "Black",
           "colors": [
             "black"
+          ],
+          "variants": [
+            {
+              "sku": "JERIS-BLK",
+              "gtin": "811991031726",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "Blue",
           "colors": [
             "blue"
+          ],
+          "variants": [
+            {
+              "sku": "JERIS-BLU",
+              "gtin": "811991031740",
+              "size": "One Size"
+            }
           ]
         }
       ],
@@ -73,7 +115,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "stem_fold"
+    "folding": "stem-fold"
   },
   "wheels": [
     {
@@ -140,22 +182,22 @@
       "description": "Handbrake"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 7.5Ah lithium-ion"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "250 Watt"
+      "type": "ebike-displayremote",
+      "description": "LCD Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD Display"
+      "type": "ebike-motor",
+      "description": "250 Watt"
     },
     {
       "type": "kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Headlight and rear light"
     },
     {
@@ -176,11 +218,6 @@
       "type": "unknown",
       "type_detail": "Deck Size",
       "description": "21.88\" x 5.70\""
-    },
-    {
-      "type": "unknown",
-      "type_detail": "SKU",
-      "description": "JERIS-WHT"
     },
     {
       "type": "wheel",

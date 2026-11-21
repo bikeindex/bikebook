@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/envo/2022/snowkart",
   "manufacturer": "Envo",
   "model": "SnowKart",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -52,7 +52,7 @@
           "availability": "stock",
           "max_speed": 20,
           "e_vehicle_classifications": [
-            "evc/pedal_moped"
+            "evc/pedal-moped"
           ]
         },
         {
@@ -60,7 +60,7 @@
           "availability": "stock",
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/pedal_moped"
+            "evc/pedal-moped"
           ]
         }
       ]
@@ -90,28 +90,28 @@
       "description": "Just stick the magnet sensors, no need to disassemble the brake levers."
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Li-Ion 48V 17.5Ah"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery energy: 840Wh"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W Rated (1500W Max.)"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Brushless Motor Controller"
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "LCD3 meter provides you with a variety of functions such as vehicle controls and vehicle status digitized displays to meet the trip demands."
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Rainproof Controller and tools bag"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "750W Rated (1500W Max.)"
     },
     {
       "type": "throttle",

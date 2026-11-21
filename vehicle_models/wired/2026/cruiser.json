@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/wired/2026/cruiser",
   "manufacturer": "Wired",
   "model": "Cruiser",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/wired/2026/cruiser.png",
-  "geometry_photo": "https://bikebook.bikeindex.org/wired/2026/cruiser_geometry.png",
+  "geometry_photo": "https://bikebook.bikeindex.org/wired/2026/cruiser-geometry.png",
   "description": "Introducing the WIRED Cruiser - the first step-thru frame ebike in our lineup with full dual suspension! UL2849 certified with UL2271 certified batteries for unmatched comfort, accessibility, and safety.\n\nThe Cruiser features an innovative dual 60V battery system (2100Wh total capacity) and a powerful 3000W peak geared hub motor that conquers any terrain with ease.\n\nStep-Thru Frame with Full Dual Suspension: Easy mounting with front and rear suspension for maximum comfort\n\n3000W Peak Power: Geared hub motor tackles any hill or trail\n\nPerfect For\n\nThe step-thru design makes the Cruiser ideal for riders of all ages and abilities who want easy mounting and dismounting without sacrificing performance or safety. Whether you're commuting, trail riding, or exploring, the full dual suspension system delivers a smooth, comfortable ride on any terrain with UL2849 and UL2271 certified safety.\n\nUnmatched Value & Safety\n\nYou will not find a better valued step-thru electric bike with full dual suspension, dual battery system, and UL2849/UL2271 certifications available on the market. The WIRED Cruiser delivers premium features and industry-leading safety at an exceptional price point.",
   "first_year": 2026,
   "years": {
@@ -25,7 +25,7 @@
           "colors": [
             "blue"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/cruiser_blue.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/cruiser-blue.png",
           "variants": [
             {
               "sku": "CB07-26",
@@ -38,7 +38,7 @@
           "colors": [
             "orange"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/cruiser_titian.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/cruiser-titian.png",
           "variants": [
             {
               "sku": "CT07-26",
@@ -51,7 +51,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/cruiser_white.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/cruiser-white.png",
           "variants": [
             {
               "sku": "CW09-26",
@@ -64,7 +64,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/cruiser_black.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/cruiser-black.png",
           "variants": [
             {
               "sku": "CBK07-26",
@@ -77,7 +77,7 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/cruiser_hunter.png",
+          "stock_photo": "https://bikebook.bikeindex.org/wired/2026/cruiser-hunter.png",
           "variants": [
             {
               "sku": "CHG06-26",
@@ -138,8 +138,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -157,7 +157,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -168,18 +168,20 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
-        "UL 2849",
-        "UL 2271"
+        "UL 2849"
       ],
       "battery": {
         "capacity": 2100,
         "voltage": 60,
         "chemistry": "li-ion",
-        "cells": "Samsung 21700"
+        "cells": "Samsung 21700",
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 1500,
       "peak_power": 3200,
@@ -191,7 +193,7 @@
           "max_speed": 32,
           "range_claimed": 145,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -199,7 +201,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -207,7 +209,7 @@
           "availability": "app_update",
           "max_speed": 56,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -247,7 +249,7 @@
       "description": "4-piston Gemma hydraulic brakes with large 203mm rotors offer confident stopping power at high speeds. Be confident at any speed."
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
@@ -263,16 +265,16 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "60V 20Ah front + 60V 15Ah rear batteries (total ~35Ah). Samsung 21700 lithium cells for reliable, long-life performance (2100Wh total)"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "60V 1500W Hentach brushless geared hub motor that peaks at 3200W. High-torque design (~153Nm) for strong acceleration and steep hill capability"
+      "type": "ebike-displayremote",
+      "description": "Full color customizable display screen. Select cadence/torque PAS, class mode, power output and more; USB phone charger conveniently located on power button cluster"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Full color customizable display screen. Select cadence/torque PAS, class mode, power output and more; USB phone charger conveniently located on power button cluster"
+      "type": "ebike-motor",
+      "description": "60V 1500W Hentach brushless geared hub motor that peaks at 3200W. High-torque design (~153Nm) for strong acceleration and steep hill capability"
     },
     {
       "type": "fork",
@@ -283,7 +285,7 @@
       }
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Rear shock",
       "position": [
         "rear"
@@ -316,5 +318,84 @@
       "type_detail": "Controller",
       "description": "Our exclusive Patriot System Controller produces an output of over 45 amps and 3200W"
     }
-  ]
+  ],
+  "market_variants": {
+    "AU": {
+      "markets": [
+        "AU"
+      ],
+      "years": {
+        "2026": {
+          "original_msrp": 369900,
+          "original_msrp_currency": "AUD",
+          "colorways": {
+            "Blue": {
+              "variants": [
+                {
+                  "sku": "CB07-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Titian": {
+              "variants": [
+                {
+                  "sku": "CT07-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "White": {
+              "variants": [
+                {
+                  "sku": "CW09-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Black": {
+              "variants": [
+                {
+                  "sku": "CBK07-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Hunter": {
+              "variants": [
+                {
+                  "sku": "CHG06-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            },
+            "Lime Green": {
+              "variants": [
+                {
+                  "sku": "CLG07-26-AU",
+                  "size": "One Size"
+                }
+              ]
+            }
+          },
+          "url": "https://wiredebikes.com/en-au/products/wired-cruiser-au"
+        }
+      },
+      "motors": {
+        "0": {
+          "operating_modes": {
+            "assist stock": {
+              "e_vehicle_classifications": null
+            },
+            "throttle stock": {
+              "e_vehicle_classifications": null
+            },
+            "assist app_update": {
+              "e_vehicle_classifications": null
+            }
+          }
+        }
+      }
+    }
+  }
 }

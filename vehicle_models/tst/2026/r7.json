@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/tst/2026/r7",
   "manufacturer": "TST",
   "model": "R7",
   "model_configuration": "complete",
-  "type": "cargo_bike",
-  "type_detail": "bench_seat",
+  "type": "cargo",
+  "type_detail": "bench-seat",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "cargo",
@@ -35,6 +35,14 @@
               "sku": "375-DFY53-N85R4G+H3560HBXR09230001",
               "size": "One Size",
               "original_msrp": 209900
+            },
+            {
+              "sku": "375-DFY53-N85R2G",
+              "size": "One Size"
+            },
+            {
+              "sku": "375-DFY53-N85R2G+H3560HBXR09230001",
+              "size": "One Size"
             }
           ]
         },
@@ -43,7 +51,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/tst/2026/r7_black.webp",
+          "stock_photo": "https://bikebook.bikeindex.org/tst/2026/r7-black.webp",
           "variants": [
             {
               "sku": "375-DFY53-N8024G",
@@ -53,6 +61,14 @@
               "sku": "375-DFY53-N8024G+H3560HBXR09230001",
               "size": "One Size",
               "original_msrp": 209900
+            },
+            {
+              "sku": "375-DFY53-N8022G+H3560HBXR09230001",
+              "size": "One Size"
+            },
+            {
+              "sku": "375-DFY53-N8023G",
+              "size": "One Size"
             }
           ]
         }
@@ -79,15 +95,15 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "electronic": false
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -97,7 +113,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 720,
         "voltage": 48,
@@ -114,14 +130,14 @@
           "range_claimed": 105,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -165,15 +181,15 @@
       "description": "180mm (Hydraulic Disc Brakes)"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 15Ah (Lithium Battery)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V/ 2A"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "1500W (Brushless Gear Motor)"
     },
     {
@@ -182,12 +198,12 @@
       "description": "Fender Set"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "1 Installation Tool"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Headlight",
       "position": [
         "front"

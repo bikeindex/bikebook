@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/zizzo/2025/campo",
   "manufacturer": "Zizzo",
   "model": "Campo",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -22,18 +22,36 @@
           "name": "Black",
           "colors": [
             "black"
+          ],
+          "variants": [
+            {
+              "sku": "16001",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "White",
           "colors": [
             "white"
+          ],
+          "variants": [
+            {
+              "sku": "16003",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "Yellow",
           "colors": [
             "yellow"
+          ],
+          "variants": [
+            {
+              "sku": "16002",
+              "size": "One Size"
+            }
           ]
         }
       ],
@@ -45,7 +63,7 @@
   "frame": {
     "material": "steel",
     "material_detail": "Hi-Tensile Steel",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "seatpost_clamp_diameter": 40
   },
   "wheels": [
@@ -68,8 +86,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -87,7 +105,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -117,7 +135,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "unsealed; caged bearing"
     },
     {
@@ -130,26 +148,26 @@
       "description": "Power 110mm V-Style brakes; black"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "type_detail": "BRAKE CABLES & HOUSING",
       "manufacturer": "Jagwire",
       "description": "Jagwire CGX-XL cables & housing"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum alloy levers"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "13-34T 7 speed freewheel"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z7 7 speed chain"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "13-34T 7 speed freewheel"
     },
     {
       "type": "crankset",
@@ -171,7 +189,7 @@
       "description": "Steel fork and steer tube"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "description": "Ergonomic PVC grip"
     },
@@ -221,7 +239,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "description": "40mm clip w/ screws; quick release",
       "dimensions": {
         "diameter": 40

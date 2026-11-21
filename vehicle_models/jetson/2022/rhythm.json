@@ -1,10 +1,10 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/jetson/2022/rhythm",
   "manufacturer": "Jetson",
   "model": "Rhythm",
   "model_configuration": "complete",
-  "type": "e_scooter",
+  "type": "e-scooter",
   "propulsion": [
     "throttle"
   ],
@@ -17,19 +17,49 @@
     "2026": {
       "original_msrp": 44999,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "variants": [
+            {
+              "sku": "JRHYTM-BLK",
+              "gtin": "811991038183",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://ridejetson.com/products/rhythm-folding-electric-scooter",
       "url_live": true
     },
     "2022": {
       "original_msrp": 44999,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black",
+          "colors": [
+            "black"
+          ],
+          "variants": [
+            {
+              "sku": "JRHYTM-BLK",
+              "gtin": "00811991038183",
+              "size": "One Size"
+            }
+          ]
+        }
+      ],
       "url": "https://web.archive.org/web/20221203151358/https://ridejetson.com/products/rhythm-folding-electric-scooter",
       "url_live": false
     }
   },
   "frame": {
     "material": "steel",
-    "folding": "stem_fold"
+    "folding": "stem-fold"
   },
   "wheels": [
     {
@@ -88,11 +118,11 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36V, 6Ah Lithium-Ion"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "250W"
     },
     {
@@ -108,11 +138,6 @@
         "rear"
       ],
       "description": "Solid"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "SKU",
-      "description": "JRHYTM-BLK"
     },
     {
       "type": "wheel",

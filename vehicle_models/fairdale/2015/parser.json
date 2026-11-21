@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fairdale/2015/parser",
   "manufacturer": "Fairdale",
   "model_group": "Parser",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "atb_cyclocross",
+  "primary_activity": "atb-cyclocross",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/fairdale/2015/parser.jpg",
   "description": "Our Parser model is sort of a cyclocross-inspired tough single-speed. Its double-butted chromoly frame, sealed integrated headset and tough Fairdale 2pc cranks mean this bike can handle almost anything.\n\nSealed cartridge bearing hubs with inbound axles will keep the Continental tires rolling. The rear hub has two removable Shimano compatible cogs so that you can set the bike up for whatever terrain you will be riding. The Parser is equipped with rack and fender mounts, as always.\n\nIf you want a reliable and durable bike this is the machine for you!",
@@ -57,8 +57,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -198,7 +198,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "BB",
       "description": "68mm Euro"
     },
@@ -212,17 +212,9 @@
       "description": "Promax CX Cantilever"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Fairdale",
       "description": "Fairdale Single-Speed Drop Lever"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "COG",
-      "position": [
-        "rear"
-      ],
-      "description": "14T and 16T (Shimano Compatible)"
     },
     {
       "type": "chain",
@@ -235,6 +227,14 @@
       "description": "42T"
     },
     {
+      "type": "cogcassettefreewheel",
+      "type_detail": "COG",
+      "position": [
+        "rear"
+      ],
+      "description": "14T and 16T (Shimano Compatible)"
+    },
+    {
       "type": "crankset",
       "type_detail": "CRANKS",
       "manufacturer": "Fairdale",
@@ -245,7 +245,7 @@
       "description": "100% Chromoly. One-Piece Machined Steerer Tube with Built-In Headset Race"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bar Tape",
       "description": "Handlebar Tape"
     },
@@ -299,7 +299,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "SEAT CLAMP",
       "manufacturer": "Fairdale",
       "description": "Fairdale, 30mm with Cable Stop Hanger",

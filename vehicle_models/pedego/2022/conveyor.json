@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/pedego/2022/conveyor",
   "manufacturer": "Pedego",
   "model": "Conveyor",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -46,9 +46,9 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_internal_rear",
-    "belt_drive"
+    "1-front",
+    "8-internal-rear",
+    "belt-drive"
   ],
   "gearing": {
     "front": [
@@ -65,7 +65,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -78,7 +78,7 @@
       "drive_wheel": "rear",
       "manufacturer": "QORE",
       "model": "DRIVE S ALUMINUM",
-      "kind": "mid_drive",
+      "kind": "mid-drive",
       "sensor_torque": "bottom_bracket_spindle",
       "battery": {
         "capacity": 468,
@@ -95,7 +95,7 @@
           "max_speed": 32,
           "levels": 3,
           "e_vehicle_classifications": [
-            "evc/us/class_1"
+            "evc/us/class-1"
           ]
         }
       ]
@@ -115,7 +115,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "QORE",
       "description": "BROSE ISIS SPLINE STEEL SPINDLE; INTEGRATED TORQUE SENSOR."
     },
@@ -130,12 +130,12 @@
       "description": "TEKTRO 2 PISTON HYDRAULIC DISC BRAKE CALIPER; FORGED ALUMINUM BODY; TEKTRO NON-CORROSIVE MINERAL OIL."
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "TEKTRO TWO-FINGER HYDRAULIC DISC BRAKE LEVER WITH ADJUSTABLE REACH; ONE PIECE BRACKET."
     },
     {
-      "type": "brake_pad",
+      "type": "brake-pad",
       "position": [
         "front",
         "rear"
@@ -144,7 +144,7 @@
       "description": "TEKTRO ORGANIC BRAKE PADS; LOW NOISE WITH EXCELLENT POWER MODULATION."
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -155,7 +155,7 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "REAR SPROCKET",
       "position": [
         "rear"
@@ -172,34 +172,34 @@
       }
     },
     {
-      "type": "drive_belt",
+      "type": "drive-belt",
       "type_detail": "BELT",
       "manufacturer": "Gates Carbon Drive",
       "description": "GATES CDX 125T BELT; POLYURETHANE / CARBON TENSILE CORDS."
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "36 VOLT 13 AMP HOUR WITH PREMIUM LITHIUM-ION 18650 CELLS."
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "manufacturer": "Pedego",
       "description": "PEDEGO 4 AMP SMART BATTERY CHARGER WITH INTERNAL FAN AND CHARGE INDICATOR LIGHT; RoPD CONNECTOR."
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "QORE",
-      "description": "BROSE DRIVE S ALUMINUM BRUSHLESS GEARED MID-DRIVE MOTOR; 250 WATT NOMINAL POWER RATING; 90NM MAX TORQUE OUTPUT; WHISPER-QUIET MOTOR OPERATION."
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "QORE",
       "description": "BROSE 36V CONTROLLER; INTEGRATED INTO DRIVE UNIT."
     },
     {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "manufacturer": "QORE",
       "description": "BROSE COMFORT CONTROL PANEL WITH COLOR LCD; 4 BUTTONS PLUS JOYSTICK TO ADJUST SUPPORT, TOGGLE INFO DISPLAYED, AND CONTROL HEADLIGHT / TAILLIGHT; INTEGRATED MICRO USB CHARGING PORT."
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "QORE",
+      "description": "BROSE DRIVE S ALUMINUM BRUSHLESS GEARED MID-DRIVE MOTOR; 250 WATT NOMINAL POWER RATING; 90NM MAX TORQUE OUTPUT; WHISPER-QUIET MOTOR OPERATION."
     },
     {
       "type": "fender",
@@ -215,7 +215,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "GRIPS",
       "manufacturer": "Pedego",
       "description": "PEDEGO DUAL-DENSITY KRATON RUBBER LOCK-ON GRIPS."
@@ -244,7 +244,7 @@
       "description": "BLACK URSUS KAISER 69; ALUMINUM ALLOY CENTER KICKSTAND; ADJUSTABLE LENGTH COMPOSITE FOOT."
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "FRONT: LED WITH ADJUSTABLE MOUNT 60 LUX (300 LUMENS); REAR: LED INTEGRATED WITH REAR FENDER; BOTH POWERED BY MAIN BATTERY AND CONTROLLED BY DISPLAY."
     },
     {

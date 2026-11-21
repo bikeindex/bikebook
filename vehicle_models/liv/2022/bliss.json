@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/liv/2022/bliss",
   "manufacturer": "Liv",
   "model_group": "Bliss",
@@ -11,7 +11,7 @@
   ],
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -146,8 +146,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "7_rear"
+    "3-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -167,7 +167,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -271,7 +271,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "description": "cartridge"
     },
     {
@@ -283,21 +283,21 @@
       "description": "MTB linear pull"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Tektro",
       "description": "Tektro 3 finger, Linear pull"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "Shunfeng Freewheel, 14x28"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC Z7"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "Shunfeng Freewheel, 14x28"
     },
     {
       "type": "crankset",
@@ -327,7 +327,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "Giant",
       "description": "Giant Sole-O"

@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/cyberbike/2025/nimbus",
   "manufacturer": "Cyberbike",
   "model": "Nimbus",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -60,8 +60,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -71,7 +71,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -82,7 +82,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
         "capacity": 576,
         "voltage": 48
@@ -95,14 +95,14 @@
           "max_speed": 45,
           "range_claimed": 97,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
           "mode": "throttle",
           "availability": "upgrade",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -132,20 +132,20 @@
       "description": "Hydraulic Disc, 180mm Rotors"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 12Ah (576Wh)"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "Smart Charger Included"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "500W Rear Hub, 48V, Optional Throttle"
+      "type": "ebike-displayremote",
+      "description": "Bluetooth LCD"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Bluetooth LCD"
+      "type": "ebike-motor",
+      "description": "500W Rear Hub, 48V, Optional Throttle"
     },
     {
       "type": "fender",

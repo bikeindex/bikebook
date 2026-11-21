@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2014/b14",
   "manufacturer": "Felt",
   "model_group": "B",
@@ -7,9 +7,9 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
-  "primary_activity": "road_triathlon",
+  "primary_activity": "road-triathlon",
   "handlebar_type": "forward",
   "stock_photo": "https://bikebook.bikeindex.org/felt/2014/b14.jpeg",
   "first_year": 2014,
@@ -57,7 +57,7 @@
     }
   },
   "frame": {
-    "material": "carbon",
+    "material": "composite",
     "cable_routing": "internal",
     "bottom_bracket": {
       "shell": "BB30",
@@ -82,8 +82,8 @@
     }
   ],
   "drivetrain": [
-    "2_front",
-    "10_rear"
+    "2-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -102,7 +102,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -261,7 +261,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "SRAM",
       "description": "SRAM BB30"
     },
@@ -275,22 +275,13 @@
       "description": "Felt Aero TT / Tri"
     },
     {
-      "type": "brake_cable",
+      "type": "brake-cable",
       "manufacturer": "Felt",
       "description": "Felt Slick brake & derailleur"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aero TT / Tri"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM, 11-28T"
     },
     {
       "type": "chain",
@@ -302,6 +293,15 @@
       "type_detail": "Chainwheel",
       "manufacturer": "SRAM",
       "description": "SRAM 52/36T"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM, 11-28T"
     },
     {
       "type": "crankset",
@@ -330,7 +330,7 @@
       "description": "Felt Aero TT / Tri UHC Performance carbon fiber blades & dropouts, 1.125\" aluminum steerer tube"
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grips",
       "description": "Devox VelvetGel Tape, Felt Tri Tip Grips & Dimpled Gel Pads"
     },
@@ -364,7 +364,7 @@
       "description": "Felt R3, sealed bearing, 28H, 10-speed"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Assembly Paste",
       "description": "Carbon assembly paste"
     },
@@ -388,13 +388,13 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "manufacturer": "Felt",
       "description": "Felt Aero Integrated DA/B"
     },
     {
-      "type": "shift_cable",
+      "type": "shift-cable",
       "manufacturer": "Felt",
       "description": "Felt Slick brake & derailleur"
     },

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/hikeep/2026/k6t",
   "manufacturer": "Hikeep",
   "model_group": "K6",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -40,8 +40,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -49,7 +49,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -59,9 +59,10 @@
   "motors": [
     {
       "drive_wheel": "front",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
-        "capacity": 749
+        "capacity": 749,
+        "charging_time": 360
       },
       "rated_power": 750,
       "peak_power": 1500,
@@ -73,16 +74,17 @@
           "max_speed": 45,
           "range_claimed": 129,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
     },
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "battery": {
-        "capacity": 749
+        "capacity": 749,
+        "charging_time": 360
       },
       "rated_power": 750,
       "peak_power": 1500,
@@ -94,7 +96,7 @@
           "max_speed": 45,
           "range_claimed": 129,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -129,16 +131,16 @@
       "description": "Shimano 7 speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "748.8Wh"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "3000W"
+      "type": "ebike-displayremote",
+      "description": "Smart LCD Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Smart LCD Display"
+      "type": "ebike-motor",
+      "description": "3000W"
     },
     {
       "type": "hub",
@@ -148,7 +150,7 @@
       "description": "Power ：2*750W (sustained), 3000W (peak)"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tool",
       "description": "Tool kit * 1"
     },
@@ -157,7 +159,7 @@
       "description": "Alloy"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "LED headlight and taillight"
     },
     {

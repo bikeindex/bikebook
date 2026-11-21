@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/euy/2022/f6",
   "manufacturer": "Euy",
   "model": "F6",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -42,7 +42,7 @@
           "colors": [
             "green"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/euy/2022/f6_green.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/euy/2022/f6-green.jpg",
           "variants": [
             {
               "sku": "EUYF620B-BG",
@@ -59,7 +59,7 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/euy/2022/f6_white.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/euy/2022/f6-white.jpg",
           "variants": [
             {
               "sku": "EUYF620B-5",
@@ -77,7 +77,7 @@
           "colors": [
             "brown"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/euy/2022/f6_khaki.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/euy/2022/f6-khaki.jpg",
           "variants": [
             {
               "sku": "F6F-KHAKI",
@@ -94,7 +94,7 @@
   },
   "frame": {
     "material": "steel",
-    "folding": "half_fold"
+    "folding": "half-fold"
   },
   "suspension": {
     "front": {
@@ -112,12 +112,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -127,10 +127,11 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "certifications": [
         "UL 2849"
       ],
+      "water_rating": "IPX4",
       "battery": {
         "capacity": 960,
         "voltage": 48,
@@ -139,6 +140,7 @@
         "charging_time": 420
       },
       "rated_power": 750,
+      "peak_power": 1000,
       "max_torque": 72,
       "operating_modes": [
         {
@@ -148,7 +150,7 @@
           "range_claimed": 100,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -203,11 +205,16 @@
       "description": "Mechanical disc brakes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Mechanical grip-style brake lever"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC chain"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
@@ -216,29 +223,24 @@
       "description": "Shimano 7 speed gear shift"
     },
     {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC chain"
-    },
-    {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 20Ah lithium battery"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Battery size: 19.48\"*3.14\"*4.17\""
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V/2A"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "750W rear hub motor"
+      "type": "ebike-displayremote",
+      "description": "LCD display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "LCD display"
+      "type": "ebike-motor",
+      "description": "750W rear hub motor"
     },
     {
       "type": "fender",
@@ -259,7 +261,7 @@
       }
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],

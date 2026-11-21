@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/felt/2011/tk4130",
   "manufacturer": "Felt",
   "model_group": "TK",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "drop_bar",
@@ -52,8 +52,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "1_rear"
+    "1-front",
+    "1-rear"
   ],
   "gearing": {
     "front": [
@@ -192,22 +192,14 @@
   ],
   "components": [
     {
-      "type": "aero_bars",
+      "type": "aero-barsextensionsbar-ends",
       "type_detail": "Bar Ends",
       "description": "FB bar end plugs, screw type"
     },
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "manufacturer": "FSA",
       "description": "FSA 68mm w/ Forged Chromoly Square Taper"
-    },
-    {
-      "type": "cassette",
-      "type_detail": "Freewheel",
-      "position": [
-        "rear"
-      ],
-      "description": "Track 15T x 1/2 pitch x 1/8 width fixed sprocket w/ lock ring"
     },
     {
       "type": "chain",
@@ -218,6 +210,14 @@
       "type": "chainrings",
       "type_detail": "Chainwheel",
       "description": "24t"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "type_detail": "Freewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "Track 15T x 1/2 pitch x 1/8 width fixed sprocket w/ lock ring"
     },
     {
       "type": "crankset",
@@ -233,7 +233,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Bar Tape",
       "manufacturer": "Felt",
       "description": "Felt TkRessostar Cotton Handlebar Tape"
@@ -294,7 +294,7 @@
       }
     },
     {
-      "type": "seatpost_clamp",
+      "type": "seatpost-clamp",
       "type_detail": "Seat Post Clamp",
       "description": "Ø30.0mm 6061-AL Forged Aluminum, Cr-Mo 5mm x 0.8mm Bolt, Stainless Steel Nut-Bar. 16 Grams",
       "dimensions": {

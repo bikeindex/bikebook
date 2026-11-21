@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/lankeleisi/2026/mx600pro",
   "manufacturer": "Lankeleisi",
   "model": "MX600PRO",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "commuting",
@@ -69,8 +69,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -88,7 +88,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -98,7 +98,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IP54",
       "battery": {
         "capacity": 960,
@@ -120,7 +120,7 @@
           "range_claimed": 70,
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -150,17 +150,17 @@
       "description": "DYISLANDDe-energized Hydraulic Disc Brakes"
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC 7s"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
       ],
       "description": "SUNSHINE 14-28T"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC 7s"
     },
     {
       "type": "crankset",
@@ -175,20 +175,20 @@
       "description": "Shimano TZ20-7"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 20AH Samsung Lithium Battery, 21700cells"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 3A charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "48v 500w rear drive brushless motor, max torque 45Nm"
+      "type": "ebike-displayremote",
+      "description": "Color LCD with speed, trip, battery, assist level and more"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Color LCD with speed, trip, battery, assist level and more"
+      "type": "ebike-motor",
+      "description": "48v 500w rear drive brushless motor, max torque 45Nm"
     },
     {
       "type": "fork",
@@ -200,7 +200,7 @@
       "description": "6061 aluminum alloy, 31.8"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],

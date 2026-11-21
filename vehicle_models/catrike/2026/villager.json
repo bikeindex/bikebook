@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/catrike/2026/villager",
   "manufacturer": "Catrike",
   "model_group": "Villager",
@@ -8,7 +8,7 @@
   "type": "recumbent",
   "type_detail": "tadpole",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "forward",
@@ -102,8 +102,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "10_rear"
+    "3-front",
+    "10-rear"
   ],
   "gearing": {
     "front": [
@@ -122,7 +122,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -162,7 +162,18 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bashguardchain-guide",
+      "type_detail": "Chain Guard",
+      "manufacturer": "FSA",
+      "description": "FSA Guard"
+    },
+    {
+      "type": "bashguardchain-guide",
+      "type_detail": "Idler",
+      "description": "TerraCycle Sport Power Idler 15T"
+    },
+    {
+      "type": "bottom-bracket",
       "manufacturer": "FSA",
       "description": "FSA Road MegaExo"
     },
@@ -176,17 +187,9 @@
       "description": "Avid BB7 Disc Brakes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "manufacturer": "Catrike",
       "description": "Catrike Locking Brake Levers"
-    },
-    {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "SRAM",
-      "description": "SRAM 11/36 10 Speed"
     },
     {
       "type": "chain",
@@ -198,19 +201,16 @@
       "description": "Low Friction PTFE Flared Chain Tube"
     },
     {
-      "type": "chain_guide",
-      "type_detail": "Chain Guard",
-      "manufacturer": "FSA",
-      "description": "FSA Guard"
-    },
-    {
-      "type": "chain_guide",
-      "type_detail": "Idler",
-      "description": "TerraCycle Sport Power Idler 15T"
-    },
-    {
       "type": "chainrings",
       "description": "30/39/52"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "SRAM",
+      "description": "SRAM 11/36 10 Speed"
     },
     {
       "type": "crankset",

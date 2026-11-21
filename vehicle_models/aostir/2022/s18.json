@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/aostir/2022/s18",
   "manufacturer": "Aostir",
   "model": "S18",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "mtb",
   "handlebar_type": "horizontal",
@@ -17,6 +17,21 @@
     "2024": {
       "original_msrp": 99900,
       "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "variants": [
+            {
+              "sku": "S18-US",
+              "gtin": "673143984065"
+            },
+            {
+              "sku": "S18-CAN",
+              "gtin": "673143984164",
+              "original_msrp": 109900
+            }
+          ]
+        }
+      ],
       "url": "https://web.archive.org/web/20240529011519/https://www.aostirmotor.com/products/all-terrain-electric-mountain-bike-s18",
       "url_live": false
     },
@@ -40,7 +55,7 @@
           "max_speed": 45,
           "range_claimed": 40,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -75,11 +90,11 @@
   ],
   "components": [
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 15Ah Strong Battery"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "720 Wh"
     },
     {

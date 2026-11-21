@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/espin/2022/nesta",
   "manufacturer": "Espin",
   "model": "Nesta",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -52,7 +52,7 @@
   "frame": {
     "material": "aluminum",
     "top_tube": "step_through",
-    "folding": "half_fold",
+    "folding": "half-fold",
     "mounts": [
       {
         "type": "rack"
@@ -77,8 +77,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "8_rear"
+    "1-front",
+    "8-rear"
   ],
   "gearing": {
     "front": [
@@ -94,7 +94,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -106,7 +106,7 @@
     {
       "drive_wheel": "rear",
       "manufacturer": "Espin",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "battery": {
         "capacity": 504,
@@ -125,7 +125,7 @@
           "max_speed": 40,
           "range_claimed": 64,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         },
         {
@@ -160,7 +160,7 @@
       "description": "Zoom hydraulic disc brake levers with integrated motor cutoff - 160mm disc brake motors"
     },
     {
-      "type": "cassette",
+      "type": "cogcassettefreewheel",
       "type_detail": "Gearing",
       "description": "S-Ride (8 Speed) 11-32T"
     },
@@ -173,26 +173,26 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "Removable Lithium-ion 48V, 10.4Ah (504Wh) Samsung 35e Cells"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "2 Amp Charger"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "manufacturer": "Espin",
+      "description": "ESPIN Color LCD"
+    },
+    {
+      "type": "ebike-motor",
       "manufacturer": "Espin",
       "description": "Espin"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "1000W (Peak) 750W (Sustained), 48V Brushless Rear Hub Motor"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "manufacturer": "Espin",
-      "description": "ESPIN Color LCD"
     },
     {
       "type": "fork",
@@ -209,7 +209,7 @@
       }
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "Tool Box"
     },

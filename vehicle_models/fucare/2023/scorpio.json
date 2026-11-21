@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/fucare/2023/scorpio",
   "manufacturer": "Fucare",
   "model_group": "Scorpio",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -25,14 +25,26 @@
           "colors": [
             "white"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/fucare/2023/scorpio.webp"
+          "stock_photo": "https://bikebook.bikeindex.org/fucare/2023/scorpio.webp",
+          "variants": [
+            {
+              "sku": "SCORPIO-WH",
+              "size": "One Size"
+            }
+          ]
         },
         {
           "name": "Graphite Gray",
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/fucare/2023/scorpio_graphite_gray.webp"
+          "stock_photo": "https://bikebook.bikeindex.org/fucare/2023/scorpio-graphite-gray.webp",
+          "variants": [
+            {
+              "sku": "SCORPIO-GY",
+              "size": "One Size"
+            }
+          ]
         }
       ],
       "url": "https://fucarebike.com/products/all-terrain-off-road-ebike",
@@ -59,8 +71,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -74,7 +86,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -86,17 +98,17 @@
     {
       "drive_wheel": "rear",
       "manufacturer": "Shengyi",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
-      "certifications": [
-        "UL 2271"
-      ],
       "battery": {
         "capacity": 960,
         "voltage": 48,
         "chemistry": "li-ion",
         "cells": "LG",
-        "weight": 4.55
+        "weight": 4.55,
+        "certifications": [
+          "UL 2271"
+        ]
       },
       "rated_power": 750,
       "max_torque": 80,
@@ -108,7 +120,7 @@
           "range_claimed": 145,
           "max_slope": 30,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -116,7 +128,7 @@
           "availability": "stock",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -168,21 +180,21 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V, 20Ah 960Wh Lithium-ion Battery with 21700 LG Cells"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "48V 3A Charger"
     },
     {
-      "type": "e_vehicle_motor",
-      "manufacturer": "Shengyi",
-      "description": "SHENGYI 750W Rear Hub Motor"
+      "type": "ebike-displayremote",
+      "description": "Yolin Integrated Smart Color LCD Display"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Yolin Integrated Smart Color LCD Display"
+      "type": "ebike-motor",
+      "manufacturer": "Shengyi",
+      "description": "SHENGYI 750W Rear Hub Motor"
     },
     {
       "type": "fender",
@@ -196,7 +208,7 @@
       "description": "Front Fork"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "Headlight and tailight (integrated brake light)"
     },
     {
@@ -207,7 +219,7 @@
       "description": "Included, 100lbs capacity"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "165mm Rear Shocks",
       "position": [
         "rear"

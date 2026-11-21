@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/samebike/2021/sm26",
   "manufacturer": "samebike",
   "model": "SM26",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "mtb",
@@ -25,7 +25,7 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/samebike/2021/sm26_black.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/samebike/2021/sm26-black.jpg",
           "variants": [
             {
               "sku": "126700000404",
@@ -68,8 +68,8 @@
     }
   ],
   "drivetrain": [
-    "3_front",
-    "7_rear"
+    "3-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -89,7 +89,7 @@
   },
   "brakes": [
     {
-      "type": "disc_mechanical",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -99,7 +99,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "water_rating": "IP54",
       "battery": {
@@ -118,7 +118,7 @@
           "range_claimed": 80,
           "max_slope": 14,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -127,7 +127,7 @@
           "range_claimed": 40,
           "throttle_type": "Thumb",
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         },
         {
@@ -135,7 +135,7 @@
           "availability": "app_update",
           "max_speed": 32,
           "e_vehicle_classifications": [
-            "evc/us/class_2"
+            "evc/us/class-2"
           ]
         }
       ]
@@ -157,8 +157,7 @@
   ],
   "components": [
     {
-      "type": "bell_noisemaker",
-      "type_detail": "Lights",
+      "type": "bellnoisemaker",
       "description": "5W LED headlight and tail light, with a built-in electric horn, no brake/steering lights"
     },
     {
@@ -180,11 +179,11 @@
       "description": "FILEL mechanical caliper, with copper-basis semi-metallic brake pads"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "WUXING mechanical, aluminum alloy brake lever with brake cut-off"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "position": [
         "front",
         "rear"
@@ -195,17 +194,17 @@
       }
     },
     {
-      "type": "cassette",
+      "type": "chain",
+      "manufacturer": "KMC",
+      "description": "KMC chain, stainless steel with a titanium nitride coating"
+    },
+    {
+      "type": "cogcassettefreewheel",
       "type_detail": "Freewheel",
       "position": [
         "rear"
       ],
       "description": "11-28T 3*7-speed, SHIMANO cast iron freewheel"
-    },
-    {
-      "type": "chain",
-      "manufacturer": "KMC",
-      "description": "KMC chain, stainless steel with a titanium nitride coating"
     },
     {
       "type": "crankset",
@@ -220,28 +219,28 @@
       "description": "SHIMANO Tourney, 3*7-speed derailleur"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "e-bike-wiring-harness",
+      "description": "Waterproof wiring harness, semi-internal cable routing, circular connectors"
+    },
+    {
+      "type": "ebike-battery",
       "description": "48V 12.5Ah Lithium-ion, ZHUONENG 18650 battery cells"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54.6V 2A DC 2.1mm, impulse-output charger with full-charge cut-off"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "5 levels assist, For both pedal-assist and throttle modes"
-    },
-    {
-      "type": "e_vehicle_motor",
-      "description": "Brushless 500W DC, geared hub motor, max torque 60N·m"
-    },
-    {
-      "type": "e_vehicle_remote",
+      "type": "ebike-displayremote",
       "description": "Liquid Crystal LCD Display with USB, Custom M6T smart ebike display"
     },
     {
-      "type": "e_vehicle_wiring_harness",
-      "description": "Waterproof wiring harness, semi-internal cable routing, circular connectors"
+      "type": "ebike-motor",
+      "description": "5 levels assist, For both pedal-assist and throttle modes"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "Brushless 500W DC, geared hub motor, max torque 60N·m"
     },
     {
       "type": "fender",
@@ -259,7 +258,7 @@
       "description": "25.4\" flat-rise handlebar, aluminum alloy with rubber ergonomic grips"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tubeless Valve Stems",
       "description": "48mm AV, Schrader valve stems"
     },
@@ -268,11 +267,11 @@
       "description": "Standard kickstand, aluminum alloy with plastic foot"
     },
     {
-      "type": "lights",
+      "type": "light",
       "description": "5W LED headlight and tail light, with a built-in electric horn, no brake/steering lights"
     },
     {
-      "type": "lights",
+      "type": "light",
       "type_detail": "Reflectors",
       "description": "Spoke tire reflectors, pedal reflectors"
     },

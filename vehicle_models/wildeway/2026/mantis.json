@@ -1,18 +1,18 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/wildeway/2026/mantis",
   "manufacturer": "Wildeway",
   "model": "Mantis",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist",
+    "pedal-assist",
     "throttle"
   ],
   "primary_activity": "atb",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/wildeway/2026/mantis.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/wildeway/2026/mantis_geometry.jpg",
+  "geometry_photo": "https://bikebook.bikeindex.org/wildeway/2026/mantis-geometry.jpg",
   "description": "The Wildeway Mantis electric off-road motorcycle is designed specifically for outdoor off-road riding. It features throttle-controlled speed and a reliable 60V 30Ah battery. The combination of 20\" x 4.0\" all-terrain tires, a spring-suspension front fork, and a high-strength rear suspension spring ensures a smooth, comfortable ride, even on rugged terrain. With five speed modes and a top speed of 40 mph (approx. 65 km/h), it adapts to various riding scenarios, while a full charge takes just 8–9 hours.",
   "first_year": 2026,
   "years": {
@@ -25,14 +25,14 @@
           "colors": [
             "black"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wildeway/2026/mantis_black.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/wildeway/2026/mantis-black.jpg"
         },
         {
           "name": "Gray",
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/wildeway/2026/mantis_gray.jpg"
+          "stock_photo": "https://bikebook.bikeindex.org/wildeway/2026/mantis-gray.jpg"
         },
         {
           "name": "Yellow",
@@ -67,8 +67,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "gearing": {
     "front": [
@@ -85,7 +85,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -96,7 +96,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "water_rating": "IPX65",
       "battery": {
@@ -116,7 +116,7 @@
           "range_claimed": 80,
           "levels": 5,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -125,7 +125,7 @@
           "range_claimed": 69,
           "throttle_type": "Twist",
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         },
         {
@@ -133,7 +133,7 @@
           "availability": "app_update",
           "max_speed": 64,
           "e_vehicle_classifications": [
-            "evc/off_highway_motorcycle"
+            "evc/off-highway-motorcycle"
           ]
         }
       ]
@@ -175,11 +175,11 @@
       "description": "Hydraulic Disc Brakes"
     },
     {
-      "type": "brake_lever",
+      "type": "brake-lever",
       "description": "Aluminum Alloy, with power cutoff"
     },
     {
-      "type": "brake_rotor",
+      "type": "brake-rotor",
       "type_detail": "Rotors",
       "position": [
         "front",
@@ -191,13 +191,6 @@
       }
     },
     {
-      "type": "cassette",
-      "position": [
-        "rear"
-      ],
-      "description": "7-speed, 14-28T"
-    },
-    {
       "type": "chain",
       "manufacturer": "KMC",
       "description": "KMC 7-speed"
@@ -205,6 +198,13 @@
     {
       "type": "chainrings",
       "description": "52T narrow-wide chainring"
+    },
+    {
+      "type": "cogcassettefreewheel",
+      "position": [
+        "rear"
+      ],
+      "description": "7-speed, 14-28T"
     },
     {
       "type": "crankset",
@@ -222,23 +222,23 @@
       "description": "SHIMANO, 7-speed"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "60V 30Ah (1800Wh) Long-Range Battery"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "60V 3.5A Fast Charger"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-displayremote",
+      "description": "LCD Color Display"
+    },
+    {
+      "type": "ebike-motor",
       "position": [
         "rear"
       ],
       "description": "60V, 4000W (peak), 100Nm"
-    },
-    {
-      "type": "e_vehicle_remote",
-      "description": "LCD Color Display"
     },
     {
       "type": "fender",
@@ -256,12 +256,12 @@
       "description": "80MM Front Fork"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Cable Binder",
       "description": "Cable Binder"
     },
     {
-      "type": "included_not_installed",
+      "type": "included-not-installed",
       "type_detail": "Tools",
       "description": "Toolkit"
     },
@@ -270,21 +270,21 @@
       "description": "Bike Kickstand"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front"
       ],
       "description": "600LM LED, Adjustable angle"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "rear"
       ],
       "description": "Braking Indicator and Turn signal"
     },
     {
-      "type": "lights",
+      "type": "light",
       "position": [
         "front",
         "rear"
@@ -296,7 +296,7 @@
       "description": "Left & Right Pedals"
     },
     {
-      "type": "rear_suspension",
+      "type": "rear-suspension",
       "type_detail": "Horst-link Rear Suspension",
       "position": [
         "rear"

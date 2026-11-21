@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/envo/2023/d50",
   "manufacturer": "Envo",
   "model_group": "D50",
@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "atb",
   "handlebar_type": "horizontal",
@@ -40,7 +40,7 @@
         },
         {
           "name": "Aquatic",
-          "stock_photo": "https://bikebook.bikeindex.org/envo/2023/d50_aquatic.png",
+          "stock_photo": "https://bikebook.bikeindex.org/envo/2023/d50-aquatic.png",
           "variants": [
             {
               "sku": "END50R14A20C",
@@ -59,7 +59,7 @@
           "colors": [
             "silver"
           ],
-          "stock_photo": "https://bikebook.bikeindex.org/envo/2023/d50_charcoal.jpg",
+          "stock_photo": "https://bikebook.bikeindex.org/envo/2023/d50-charcoal.jpg",
           "variants": [
             {
               "sku": "END50R14M30C",
@@ -102,8 +102,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "9_rear"
+    "1-front",
+    "9-rear"
   ],
   "gearing": {
     "front": [
@@ -118,7 +118,7 @@
   },
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -128,7 +128,7 @@
   "motors": [
     {
       "drive_wheel": "rear",
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "sensor_cadence": true,
       "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
@@ -149,7 +149,7 @@
           "max_speed": 45,
           "range_claimed": 150,
           "e_vehicle_classifications": [
-            "evc/pedal_moped"
+            "evc/pedal-moped"
           ]
         }
       ]
@@ -193,7 +193,7 @@
   ],
   "components": [
     {
-      "type": "bottom_bracket",
+      "type": "bottom-bracket",
       "type_detail": "BB Sets",
       "description": "68mm LDS torque sensor"
     },
@@ -220,20 +220,20 @@
       }
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V/15AH 5000 LGLithium battery, CAN"
     },
     {
-      "type": "e_vehicle_charger",
+      "type": "ebike-charger",
       "description": "54V 2A CC-CV 240/120V ULc"
     },
     {
-      "type": "e_vehicle_motor",
-      "description": "Brushless 48V/750W max/ Geared rear motor"
+      "type": "ebike-displayremote",
+      "description": "Color Display with Bluetooth App connectivity, CAN"
     },
     {
-      "type": "e_vehicle_remote",
-      "description": "Color Display with Bluetooth App connectivity, CAN"
+      "type": "ebike-motor",
+      "description": "Brushless 48V/750W max/ Geared rear motor"
     },
     {
       "type": "fender",
@@ -247,7 +247,7 @@
       }
     },
     {
-      "type": "grips_tape",
+      "type": "gripstape",
       "type_detail": "Grip",
       "description": "TPR Grip"
     },

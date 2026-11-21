@@ -1,12 +1,12 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/schwinn/2010/supreme",
   "manufacturer": "Schwinn",
   "model": "Supreme",
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "pedal"
+    "foot-pedal"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -40,8 +40,8 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "groupset": {
     "manufacturer": "Shimano",
@@ -49,7 +49,7 @@
   },
   "brakes": [
     {
-      "type": "linear_pull",
+      "type": "linear-pull",
       "position": [
         "front",
         "rear"
@@ -58,6 +58,10 @@
     }
   ],
   "components": [
+    {
+      "type": "bashguardchain-guide",
+      "description": "Feather-style chain guard"
+    },
     {
       "type": "brake",
       "position": [
@@ -73,10 +77,6 @@
       ],
       "manufacturer": "Promax",
       "description": "ProMax Alloy V-Brake w/ Linear Spring & 55mm Pad"
-    },
-    {
-      "type": "chain_guide",
-      "description": "Feather-style chain guard"
     },
     {
       "type": "fork",

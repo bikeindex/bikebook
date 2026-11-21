@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "id": "m/postjoy/2026/f29",
   "manufacturer": "PostJoy",
   "model": "F29",
   "model_configuration": "complete",
   "type": "bike",
-  "type_detail": "bench_seat",
+  "type_detail": "bench-seat",
   "propulsion": [
-    "pedal_assist"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -23,12 +23,25 @@
           "name": "Black",
           "colors": [
             "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/postjoy/2026/f29.jpg",
+          "variants": [
+            {
+              "sku": "F29-Black",
+              "size": "One Size"
+            }
           ]
         },
         {
           "name": "White",
           "colors": [
             "white"
+          ],
+          "variants": [
+            {
+              "sku": "F29-White",
+              "size": "One Size"
+            }
           ]
         }
       ],
@@ -53,12 +66,12 @@
     }
   ],
   "drivetrain": [
-    "1_front",
-    "7_rear"
+    "1-front",
+    "7-rear"
   ],
   "brakes": [
     {
-      "type": "disc_hydraulic",
+      "type": "disc-hydraulic",
       "position": [
         "front",
         "rear"
@@ -67,7 +80,7 @@
   ],
   "motors": [
     {
-      "kind": "hub_drive",
+      "kind": "hub-drive",
       "water_rating": "IPX6",
       "battery": {
         "capacity": 480,
@@ -82,7 +95,7 @@
           "max_speed": 40,
           "range_claimed": 72,
           "e_vehicle_classifications": [
-            "evc/us/class_3"
+            "evc/us/class-3"
           ]
         }
       ]
@@ -114,11 +127,11 @@
       "description": "Precision Disc Brakes"
     },
     {
-      "type": "e_vehicle_battery",
+      "type": "ebike-battery",
       "description": "48V 10Ah"
     },
     {
-      "type": "e_vehicle_motor",
+      "type": "ebike-motor",
       "description": "1500W Peak"
     },
     {
