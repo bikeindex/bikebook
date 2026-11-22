@@ -1333,7 +1333,7 @@
     },
     "market_variants": {
       "type": "object",
-      "description": "The models of this one's name and year sold in another market, keyed by the market, each as what differs from this one, its id this one's suffixed with - and the market lower-cased: objects merge key by key, false removes an object and null any other value, and a list may be written as an object of the items that differ, keyed by what identifies each",
+      "description": "The models of this one's name and year sold in another market, keyed by the market, each sharing its id and written as what differs from it: objects merge key by key, false removes an object and null any other value, and a list may be written as an object of the items that differ, keyed by what identifies each. A variant without a geometry_photo of its own shows this one's, unless it's a bike not suspended at both ends",
       "propertyNames": {
         "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v2.0.0.json#/$defs/market"
       },
