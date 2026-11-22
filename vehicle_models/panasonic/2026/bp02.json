@@ -1,0 +1,225 @@
+{
+  "schema_version": "2.0.0",
+  "id": "m/panasonic/2026/bp02",
+  "manufacturer": "Panasonic",
+  "model": "BP02",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal-assist"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "rearward",
+  "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/bp02.jpg",
+  "description": "ビームスとの共同開発。クルーズする電動アシスト自転車。\nパナソニック自転車公式サイト。ビームスとの共同開発で誕生したファッショナブルな電動アシスト自転車「BP02」の機能や特長をご紹介。乗ること自体を楽しめる「クルーズする電動アシスト自転車」。",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 17000000,
+      "original_msrp_currency": "JPY",
+      "colorways": [
+        {
+          "name": "Matte Cotton Pink",
+          "colors": [
+            "pink"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/bp02.jpg",
+          "variants": [
+            {
+              "sku": "BE-FZC633",
+              "size": "26\""
+            }
+          ]
+        },
+        {
+          "name": "Matte Stonewash Dark Grey",
+          "colors": [
+            "silver"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/bp02-matte-stonewash-dark-grey.jpg"
+        },
+        {
+          "name": "Matte Denim Blue",
+          "colors": [
+            "blue"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/bp02-matte-denim-blue.jpg"
+        }
+      ],
+      "url": "https://cycle.panasonic.com/products/bp02/",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "steel"
+  },
+  "wheels": [
+    {
+      "bsd": 559,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 51
+    }
+  ],
+  "drivetrain": [
+    "1-front",
+    "3-internal-rear"
+  ],
+  "brakes": [
+    {
+      "type": "caliper",
+      "position": [
+        "front"
+      ]
+    },
+    {
+      "type": "roller-brake",
+      "position": [
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/panasonic/karupower",
+      "drive_wheel": "rear",
+      "manufacturer": "Panasonic",
+      "model": "KaruPower",
+      "kind": "mid-drive",
+      "battery": {
+        "capacity": 303,
+        "voltage": 25.2,
+        "chemistry": "li-ion",
+        "weight": 2.1,
+        "charging_time": 240
+      },
+      "rated_power": 250,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 24,
+          "range_claimed": 46
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 86
+    },
+    {
+      "load": "gross",
+      "weight": 110.8
+    }
+  ],
+  "sizes": [
+    {
+      "name": "26\"",
+      "geometry": {
+        "wheelbase": 1180,
+        "seat_height_min": 790,
+        "seat_height_max": 955,
+        "dimensions": {
+          "length": 1860,
+          "width": 585
+        },
+        "total_weight": 24.8,
+        "rider_height_min": 1490,
+        "rider_height_max": 1840,
+        "extra_measurements": {
+          "handlebar_height_max": 1100,
+          "handlebar_height_min": 1070
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front"
+      ],
+      "description": "side-pull caliper brake"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "rear"
+      ],
+      "description": "roller brake"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "lithium-ion battery, 25.2V-12Ah (21cells), 303Wh, NKY578B02 (black)"
+    },
+    {
+      "type": "ebike-charger",
+      "description": "NKJ075Z"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Panasonic",
+      "description": "Panasonic KaruPower drive unit, brushless DC motor, 250W, crank-axle mid-drive, pedal-force proportional control"
+    },
+    {
+      "type": "handlebar",
+      "description": "swept-back"
+    },
+    {
+      "type": "hub",
+      "type_detail": "Gears",
+      "description": "3-speed internal hub shift"
+    },
+    {
+      "type": "kickstand",
+      "description": "single-leg kickstand"
+    },
+    {
+      "type": "light",
+      "type_detail": "Reflectors",
+      "description": "battery light / rear rack / front and rear wheels / pedals"
+    },
+    {
+      "type": "light",
+      "type_detail": "Headlight",
+      "position": [
+        "front"
+      ],
+      "description": "battery-powered headlight"
+    },
+    {
+      "type": "lock",
+      "description": "cable lock"
+    },
+    {
+      "type": "rack",
+      "position": [
+        "front"
+      ],
+      "description": "standard"
+    },
+    {
+      "type": "rack",
+      "position": [
+        "rear"
+      ],
+      "description": "standard (class 18)"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "26 x 2.0 HE",
+      "dimensions": {
+        "width": 50.8,
+        "diameter": 559
+      }
+    }
+  ]
+}

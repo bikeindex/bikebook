@@ -1,0 +1,209 @@
+{
+  "schema_version": "2.0.0",
+  "id": "m/panasonic/2026/partner-dx",
+  "manufacturer": "Panasonic",
+  "model_group": "Partner",
+  "model": "Partner DX",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal-assist"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "rearward",
+  "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/partner-dx.jpg",
+  "description": "ビジネスの現場で活躍する頑丈設計。\nパナソニック自転車公式サイト。ビジネスモデルの電動アシスト自転車「パートナー・DX」の機能や特長をご紹介。ビジネスの現場で大活躍の頑丈設計。ビジネスマンのご要望にお応えします。",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 21500000,
+      "original_msrp_currency": "JPY",
+      "colorways": [
+        {
+          "name": "Shiny Silver",
+          "colors": [
+            "silver"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/partner-dx.jpg",
+          "variants": [
+            {
+              "sku": "BE-FGD633",
+              "size": "26\""
+            }
+          ]
+        }
+      ],
+      "url": "https://cycle.panasonic.com/products/partner_dx/",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "steel"
+  },
+  "wheels": [
+    {
+      "bsd": 584,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 38
+    }
+  ],
+  "drivetrain": [
+    "1-front",
+    "3-internal-rear"
+  ],
+  "brakes": [
+    {
+      "type": "linear-pull",
+      "position": [
+        "front"
+      ],
+      "caliper_mount": "Brake Bosses"
+    },
+    {
+      "type": "roller-brake",
+      "position": [
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/panasonic/karupower",
+      "drive_wheel": "rear",
+      "manufacturer": "Panasonic",
+      "model": "KaruPower",
+      "kind": "mid-drive",
+      "battery": {
+        "capacity": 404,
+        "voltage": 25.2,
+        "chemistry": "li-ion",
+        "weight": 3.1,
+        "charging_time": 270
+      },
+      "rated_power": 250,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 24,
+          "range_claimed": 46
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 95
+    },
+    {
+      "load": "gross",
+      "weight": 130.4
+    }
+  ],
+  "sizes": [
+    {
+      "name": "26\"",
+      "geometry": {
+        "wheelbase": 1160,
+        "seat_height_min": 765,
+        "seat_height_max": 910,
+        "dimensions": {
+          "length": 1875,
+          "width": 590
+        },
+        "total_weight": 35.4,
+        "rider_height_min": 1450,
+        "extra_measurements": {
+          "handlebar_height_max": 1070,
+          "handlebar_height_min": 1010
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "basket",
+      "description": "large rod basket"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "front"
+      ],
+      "description": "V-brake"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "rear"
+      ],
+      "description": "roller brake"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "lithium-ion battery, 25.2V-16Ah (28cells), 404Wh, NKY580B02 (black)"
+    },
+    {
+      "type": "ebike-charger",
+      "description": "NKJ075Z"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Panasonic",
+      "description": "Panasonic KaruPower drive unit, brushless DC motor, 250W, crank-axle mid-drive, pedal-force proportional control - magnetostrictive sensor"
+    },
+    {
+      "type": "handlebar",
+      "description": "swept-back"
+    },
+    {
+      "type": "hub",
+      "type_detail": "Gears",
+      "description": "3-speed internal hub shift"
+    },
+    {
+      "type": "kickstand",
+      "description": "double-leg kickstand"
+    },
+    {
+      "type": "light",
+      "type_detail": "Reflectors",
+      "description": "battery light / seat stay / front and rear wheels / pedals"
+    },
+    {
+      "type": "light",
+      "type_detail": "Headlight",
+      "position": [
+        "front"
+      ],
+      "description": "battery-powered headlight"
+    },
+    {
+      "type": "lock",
+      "description": "rear wheel ring lock"
+    },
+    {
+      "type": "rack",
+      "position": [
+        "rear"
+      ],
+      "description": "standard (class S)"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "26 x 1 1/2 WO",
+      "dimensions": {
+        "width": 38.1,
+        "diameter": 584
+      }
+    }
+  ]
+}

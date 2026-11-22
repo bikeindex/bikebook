@@ -1,0 +1,219 @@
+{
+  "schema_version": "2.0.0",
+  "id": "m/panasonic/2026/ez",
+  "manufacturer": "Panasonic",
+  "model": "EZ",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal-assist"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "rearward",
+  "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/ez.jpg",
+  "description": "街中を颯爽と駆け抜けるBMXスタイル。\nパナソニック自転車公式サイト。ファッショナブルな電動アシスト自転車「EZ」の機能や特長をご紹介。街中を颯爽と駆け抜けるBMXスタイル。",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 15400000,
+      "original_msrp_currency": "JPY",
+      "colorways": [
+        {
+          "name": "Matte Night",
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/ez.jpg",
+          "variants": [
+            {
+              "sku": "BE-FZ033",
+              "size": "20\""
+            }
+          ]
+        },
+        {
+          "name": "Matte O.C Green",
+          "colors": [
+            "green"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/ez-matte-o-c-green.jpg"
+        },
+        {
+          "name": "Matte Nubuck Brown",
+          "colors": [
+            "brown"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/ez-matte-nubuck-brown.jpg"
+        },
+        {
+          "name": "Matte Denim Blue",
+          "colors": [
+            "blue"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/ez-matte-denim-blue.jpg"
+        }
+      ],
+      "url": "https://cycle.panasonic.com/products/ez/",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "steel"
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 54
+    }
+  ],
+  "drivetrain": [
+    "1-front",
+    "3-internal-rear"
+  ],
+  "brakes": [
+    {
+      "type": "linear-pull",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "caliper_mount": "Brake Bosses"
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/panasonic/karupower",
+      "drive_wheel": "rear",
+      "manufacturer": "Panasonic",
+      "model": "KaruPower",
+      "kind": "mid-drive",
+      "battery": {
+        "capacity": 202,
+        "voltage": 25.2,
+        "chemistry": "li-ion",
+        "weight": 1.7,
+        "charging_time": 180
+      },
+      "rated_power": 250,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 24,
+          "range_claimed": 31
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 78
+    },
+    {
+      "load": "gross",
+      "weight": 99.7
+    }
+  ],
+  "sizes": [
+    {
+      "name": "20\"",
+      "geometry": {
+        "wheelbase": 1095,
+        "seat_height_min": 780,
+        "seat_height_max": 940,
+        "dimensions": {
+          "length": 1620,
+          "width": 580
+        },
+        "total_weight": 21.7,
+        "rider_height_min": 1490,
+        "rider_height_max": 1810,
+        "extra_measurements": {
+          "handlebar_height_max": 1015,
+          "handlebar_height_min": 990
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "V-brake"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "lithium-ion battery, 25.2V-8Ah (14cells), 202Wh, NKY576B02 (black)"
+    },
+    {
+      "type": "ebike-charger",
+      "description": "NKJ075Z"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Panasonic",
+      "description": "Panasonic KaruPower drive unit, brushless DC motor, 250W, crank-axle mid-drive, pedal-force proportional control - magnetostrictive sensor"
+    },
+    {
+      "type": "handlebar",
+      "description": "swept-back"
+    },
+    {
+      "type": "hub",
+      "type_detail": "Gears",
+      "description": "3-speed internal hub shift"
+    },
+    {
+      "type": "kickstand",
+      "description": "single-leg kickstand"
+    },
+    {
+      "type": "light",
+      "type_detail": "Reflectors",
+      "description": "battery light / rear rack / front and rear wheels / pedals"
+    },
+    {
+      "type": "light",
+      "type_detail": "Headlight",
+      "position": [
+        "front"
+      ],
+      "description": "battery-powered headlight"
+    },
+    {
+      "type": "lock",
+      "description": "cable lock"
+    },
+    {
+      "type": "rack",
+      "position": [
+        "front"
+      ],
+      "description": "standard"
+    },
+    {
+      "type": "rack",
+      "position": [
+        "rear"
+      ],
+      "description": "standard (class 10)"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "20 x 2.125 HE",
+      "dimensions": {
+        "width": 53.98,
+        "diameter": 406
+      }
+    }
+  ]
+}

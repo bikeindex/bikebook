@@ -1,0 +1,218 @@
+{
+  "schema_version": "2.0.0",
+  "id": "m/panasonic/2026/prom",
+  "manufacturer": "Panasonic",
+  "model": "Prom",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal-assist"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "rearward",
+  "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/prom.jpg",
+  "description": "コンパクトで取り回しのしやすい軽量（18.1kg）の電動アシスト自転車。\nパナソニック自転車公式サイト。ファッショナブルな電動アシスト自転車「プロム」の機能や特長をご紹介。コンパクトで取り回しのしやすい軽量（18.1kg）の電動アシスト自転車。",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 15400000,
+      "original_msrp_currency": "JPY",
+      "colorways": [
+        {
+          "name": "Crystal White",
+          "colors": [
+            "white"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/prom.jpg",
+          "variants": [
+            {
+              "sku": "BE-FPR033",
+              "size": "20\""
+            }
+          ]
+        },
+        {
+          "name": "Matte Olive",
+          "colors": [
+            "green"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/prom-matte-olive.jpg"
+        },
+        {
+          "name": "Light Fawn Beige",
+          "colors": [
+            "brown"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/prom-light-fawn-beige.jpg"
+        },
+        {
+          "name": "Matte Pearl Vice Blue",
+          "colors": [
+            "blue"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/prom-matte-pearl-vice-blue.jpg"
+        }
+      ],
+      "url": "https://cycle.panasonic.com/products/prom/",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "aluminum"
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 38
+    }
+  ],
+  "drivetrain": [
+    "1-front",
+    "3-internal-rear"
+  ],
+  "brakes": [
+    {
+      "type": "caliper",
+      "position": [
+        "front"
+      ]
+    },
+    {
+      "type": "roller-brake",
+      "position": [
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/panasonic/karupower",
+      "drive_wheel": "rear",
+      "manufacturer": "Panasonic",
+      "model": "KaruPower",
+      "kind": "mid-drive",
+      "battery": {
+        "capacity": 303,
+        "voltage": 25.2,
+        "chemistry": "li-ion",
+        "weight": 2.1,
+        "charging_time": 240
+      },
+      "rated_power": 250,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 24,
+          "range_claimed": 45
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 85
+    },
+    {
+      "load": "gross",
+      "weight": 103.1
+    }
+  ],
+  "sizes": [
+    {
+      "name": "20\"",
+      "geometry": {
+        "wheelbase": 1050,
+        "seat_height_min": 745,
+        "seat_height_max": 900,
+        "dimensions": {
+          "length": 1560,
+          "width": 585
+        },
+        "total_weight": 18.1,
+        "rider_height_min": 1420,
+        "rider_height_max": 1730,
+        "extra_measurements": {
+          "handlebar_height_max": 990,
+          "handlebar_height_min": 970
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front"
+      ],
+      "description": "side-pull caliper brake"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "rear"
+      ],
+      "description": "roller brake"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "lithium-ion battery, 25.2V-12Ah (21cells), 303Wh, NKY578B02 (black)"
+    },
+    {
+      "type": "ebike-charger",
+      "description": "NKJ075Z"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Panasonic",
+      "description": "Panasonic KaruPower drive unit, brushless DC motor, 250W, crank-axle mid-drive, pedal-force proportional control - magnetostrictive sensor"
+    },
+    {
+      "type": "handlebar",
+      "description": "swept-back"
+    },
+    {
+      "type": "hub",
+      "type_detail": "Gears",
+      "description": "3-speed internal hub shift"
+    },
+    {
+      "type": "kickstand",
+      "description": "single-leg kickstand"
+    },
+    {
+      "type": "light",
+      "type_detail": "Reflectors",
+      "description": "battery light / rear fender / front and rear wheels / pedals"
+    },
+    {
+      "type": "light",
+      "type_detail": "Headlight",
+      "position": [
+        "front"
+      ],
+      "description": "battery-powered headlight"
+    },
+    {
+      "type": "lock",
+      "description": "cable lock"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "20 x 1.50 HE",
+      "dimensions": {
+        "width": 38.1,
+        "diameter": 406
+      }
+    }
+  ]
+}

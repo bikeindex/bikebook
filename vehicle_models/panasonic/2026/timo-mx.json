@@ -1,0 +1,215 @@
+{
+  "schema_version": "2.0.0",
+  "id": "m/panasonic/2026/timo-mx",
+  "manufacturer": "Panasonic",
+  "model_group": "Timo",
+  "model": "Timo MX",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal-assist"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/timo-mx.jpg",
+  "description": "身長139cmから乗れる、中学生にもオススメの通学モデル。\nパナソニック自転車公式サイト。通学モデルの電動アシスト自転車「ティモ・MX」の機能や特長をご紹介。身長139cmから乗れる、中学生にもオススメの通学モデル。",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 14900000,
+      "original_msrp_currency": "JPY",
+      "colorways": [
+        {
+          "name": "Onyx Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/timo-mx.jpg",
+          "variants": [
+            {
+              "sku": "BE-FTM633",
+              "size": "26\""
+            }
+          ]
+        },
+        {
+          "name": "Shiny Silver",
+          "colors": [
+            "silver"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/timo-mx-shiny-silver.jpg"
+        }
+      ],
+      "url": "https://cycle.panasonic.com/products/timo_mx/",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "steel"
+  },
+  "wheels": [
+    {
+      "bsd": 584,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 38
+    }
+  ],
+  "drivetrain": [
+    "1-front",
+    "3-internal-rear"
+  ],
+  "brakes": [
+    {
+      "type": "caliper",
+      "position": [
+        "front"
+      ]
+    },
+    {
+      "type": "roller-brake",
+      "position": [
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/panasonic/karupower",
+      "drive_wheel": "rear",
+      "manufacturer": "Panasonic",
+      "model": "KaruPower",
+      "kind": "mid-drive",
+      "battery": {
+        "capacity": 303,
+        "voltage": 25.2,
+        "chemistry": "li-ion",
+        "weight": 2.1,
+        "charging_time": 240
+      },
+      "rated_power": 250,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 24,
+          "range_claimed": 44
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 86
+    },
+    {
+      "load": "gross",
+      "weight": 113.3
+    }
+  ],
+  "sizes": [
+    {
+      "name": "26\"",
+      "geometry": {
+        "wheelbase": 1120,
+        "seat_height_min": 720,
+        "seat_height_max": 890,
+        "dimensions": {
+          "length": 1835,
+          "width": 585
+        },
+        "total_weight": 27.3,
+        "rider_height_min": 1390,
+        "extra_measurements": {
+          "handlebar_height_max": 1055,
+          "handlebar_height_min": 1010
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "basket",
+      "description": "standard"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "front"
+      ],
+      "description": "side-pull caliper brake"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "rear"
+      ],
+      "description": "roller brake"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "lithium-ion battery, 25.2V-12Ah (21cells), 303Wh, NKY578B02 (black)"
+    },
+    {
+      "type": "ebike-charger",
+      "description": "NKJ075Z"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Panasonic",
+      "description": "Panasonic KaruPower drive unit, brushless DC motor, 250W, crank-axle mid-drive, pedal-force proportional control - magnetostrictive sensor"
+    },
+    {
+      "type": "handlebar",
+      "description": "flat"
+    },
+    {
+      "type": "hub",
+      "type_detail": "Gears",
+      "description": "3-speed internal hub shift"
+    },
+    {
+      "type": "kickstand",
+      "description": "double-leg kickstand"
+    },
+    {
+      "type": "light",
+      "type_detail": "Reflectors",
+      "description": "battery light / rear fender / front and rear wheels / pedals"
+    },
+    {
+      "type": "light",
+      "type_detail": "Headlight",
+      "position": [
+        "front"
+      ],
+      "description": "battery-powered headlight"
+    },
+    {
+      "type": "lock",
+      "description": "rear wheel ring lock / cable lock"
+    },
+    {
+      "type": "rack",
+      "position": [
+        "rear"
+      ],
+      "description": "standard (class 18)"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "26 x 1 1/2 WO",
+      "dimensions": {
+        "width": 38.1,
+        "diameter": 584
+      }
+    }
+  ]
+}
