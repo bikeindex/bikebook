@@ -4,15 +4,15 @@ Compare bikes, e-bikes and e-Personal Mobility Devices (aka EPAMD). Check out th
 
 ## What?
 
-Bike Index decided to create an open source repository of all the bike (and e-bike, trike, EPAMD, etc, hereafter just referred to as "bike") data.
+Bike Index created an open source repository of all the bike (and e-bike, trike, EPAMD, etc, hereafter just referred to as "bike") data.
 
-Bikes are surprising complex and have a myriad of conflicting options. So we needed a data format - explore the current JSON Schema at [bikeindex.org/bikebook/schema_viewer](https://bikeindex.org/bikebook/schema_viewer):
+Bikes are surprising complex and have a myriad of conflicting options, so we needed a data format. Explore the current JSON Schema at [bikeindex.org/bikebook/schema_viewer](https://bikeindex.org/bikebook/schema_viewer):
 
 <img src="https://raw.githubusercontent.com/bikeindex/bikebook/readme_refs/schema_viewer-screenshot.png" alt="Schema viewer" width="50%">
 
 The schema viewer helps make sense of the structure by including comments and showing the number of matching bikes along with links to sample bike IDs.
 
-There are always things to improve in the data model - see [Issue #43](https://github.com/bikeindex/bikebook/issues/43) for some things we hope to work on (and please comment with things we're missing!)
+There are always things to improve in the data model - see [Issue #43](https://github.com/bikeindex/bikebook/issues/43) for some things we hope to work on (and please comment with things we're missing).
 
 ## But the files
 
@@ -22,7 +22,7 @@ The 2026 `Fuel+ MX 9.9 X0 AXS Gen 2` by Trek has this id: `m/trek/2026/fuel-plus
 
 Which is in this repository at [vehicle_models/trek/2026/fuel-plus-mx-9-9-x0-axs-gen-2.json](vehicle_models/trek/2026/fuel-plus-mx-9-9-x0-axs-gen-2.json)
 
-**The model IDs are at `<maker>/<year>/<model name>.json`** and the files are at that path in `vehicle_models/`
+**The model IDs are `<maker>/<year>/<model name>.json`** and the files are at that path in `vehicle_models/`
 
 You can convert `<maker>` and `<model>` to slugs with this JS:
 
@@ -36,7 +36,10 @@ slugify('Fuel+ MX 9.9 X0 AXS Gen 2') // 'fuel-plus-mx-9-9-x0-axs-gen-2'
 ```
 
 
-Full explanation:
+<details>
+<summary>Full slug explanation</summary>
+
+Slugifying does this:
 
 1. Drops parentheticals and turn `%20` into a space
 2. Decodes HTML entities like `&amp;`
@@ -44,6 +47,8 @@ Full explanation:
 4. Lowercases, then swaps accented letters for plain ones (ß → ss, æ → ae).
 5. Turns & into "and" and + into "plus".
 6. Joins the remaining runs of letters and digits with hyphens.
+
+Expanded, readable JS:
 
 ```js
 // I18n::Backend::Transliterator::HashTransliterator::DEFAULT_APPROXIMATIONS, lower-case entries only (the
@@ -83,23 +88,26 @@ export function slugify(string) {
 }
 ```
 
-The manifest lists all the files, the catalog is published by [bikebook_ci](https://github.com/bikeindex/bikebook_ci) (which also is where the tests are).
+</details>
 
 
----
+## Versioning
+
+schema version is semantic:
+
+- Major versions remove, rename or retype a field, remove an enum value or add a new required field
+- Minor ones add an optional field or an enum value
+- Patches changes only descriptions.
+
+## Catalog
+
+These files are all used to generate a manifest and catalog. The manifest lists all the files, the catalog is published by [bikebook_ci](https://github.com/bikeindex/bikebook_ci) (which also is where the tests are). This is what is used by the viewer to render the data.
+
+The published catalog's format is versioned apart from it, one integer raised whenever the layout of its files changes.
 
 ## Contributing
 
 Please submit any fixes that you have! See [CONTRIBUTING](CONTRIBUTING.md): contributors sign our [Contributor License Agreement](https://cla-assistant.io/bikeindex/bikebook) before their first pull request is merged.
-
-## Versioning
-
-schema_version is semantic:
-- Major versions remove, rename or retype a field or remove an enum value
-- Minor ones add an optional field or an enum value
-- Patches changes only descriptions.
-
-The published catalog's format is versioned apart from it, one integer raised whenever the layout of its files changes.
 
 ---
 
