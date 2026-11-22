@@ -6,7 +6,7 @@ Compare bikes, e-bikes and e-Personal Mobility Devices (aka EPAMD). Check out th
 
 Bike Index created an open source repository of all the bike (and e-bike, trike, EPAMD, etc, hereafter just referred to as "bike") data.
 
-Bikes are surprising complex and have a myriad of conflicting options, so we needed a data format. Explore the current JSON Schema at [bikeindex.org/bikebook/schema_viewer](https://bikeindex.org/bikebook/schema_viewer):
+Bikes are surprising complex and have a myriad of conflicting options, so we needed a data format. Explore the current JSON Schema at [bikeindex.org/bikebook_schemas](https://bikeindex.org/bikebook_schemas):
 
 <img src="https://raw.githubusercontent.com/bikeindex/bikebook/readme_refs/schema_viewer-screenshot.png" alt="Schema viewer" width="50%">
 
