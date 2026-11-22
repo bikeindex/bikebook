@@ -6,21 +6,13 @@ Compare bikes, e-bikes and e-Personal Mobility Devices (aka EPAMD). Check out th
 
 Bike Index decided to create an open source repository of all the bike (and e-bike, trike, EPAMD, etc, hereafter just referred to as "bike") data.
 
-Bikes are surprising complex and have a myriad of conflicting options. So we needed a data format - explore the current JSON Schema at [bikeindex.org/bikebook/schema_viewer](https://bikeindex.org/bikebook/schema_viewer), which looks something like this:
+Bikes are surprising complex and have a myriad of conflicting options. So we needed a data format - explore the current JSON Schema at [bikeindex.org/bikebook/schema_viewer](https://bikeindex.org/bikebook/schema_viewer):
 
+<img src="https://raw.githubusercontent.com/bikeindex/bikebook/readme_refs/schema_viewer-screenshot.png" alt="Schema viewer" width="50%">
 
+The schema viewer helps make sense of the structure by including comments and showing the number of matching bikes along with links to sample bike IDs.
 
-The schema viewer helps make sense of what things are captured by including comments and showing the number of matching bikes, and including sample bike IDs (which link to the [model viewer](https://bikeindex.org/bikebook)).
-
----
-
-Some things that missing or improvements to make in upcoming schema versions:
-
-- Better handling of markets
-- Better handling of tandems
-- Better handling of non-bike things
-- Capturing more measurements of components and interfaces, so it can be used as a reference for repair (e.g. replacement bearing sizes)
-
+There are always things to improve in the data model - see [Issue #43](https://github.com/bikeindex/bikebook/issues/43) for some things we hope to work on (and please comment with things we're missing!)
 
 ## But the files
 
@@ -38,8 +30,9 @@ You can convert `<maker>` and `<model>` to slugs with this JS:
 ```js
 const slugify = (s) => Array.from(String(s ?? "").replace(/\([^)]*\)/g, "").replaceAll("%20", " ").replace(/&(apos|amp|quot|gt|lt|#[0-9]+|#[xX][0-9A-Fa-f]+);/g, (m, e) => e[0] !== "#" ? { amp: "&", quot: '"', apos: "'", lt: "<", gt: ">" }[e] : ((n) => n < 0x10ffff ? String.fromCodePoint(n) : m)(/x/i.test(e[1]) ? parseInt(e.slice(2), 16) : parseInt(e.slice(1), 10))).replace(/['’‘`´]/g, "").toLowerCase(), (c) => c < "\x80" ? c : (" àa áa âa ãa äa åa æae çc èe ée êe ëe ìi íi îi ïi ðd ñn òo óo ôo õo öo øo ùu úu ûu üu ýy þth ßss ÿy āa ăa ąa ćc ĉc ċc čc ďd đd ēe ĕe ėe ęe ěe ĝg ğg ġg ģg ĥh ħh ĩi īi ĭi įi ıi ĳij ĵj ķk ĸk ĺl ļl ľl ŀl łl ńn ņn ňn ŉ'n ŋng ōo ŏo őo œoe ŕr ŗr řr śs ŝs şs šs ţt ťt ŧt ũu ūu ŭu ůu űu ųu ŵw ŷy źz żz žz ǫo ǭo ×x ".match(` ${c}(\\S+) `) ?? [, "?"])[1]).join("").replaceAll("&", " and ").replaceAll("+", " plus ").match(/[a-z0-9]+/g)?.join("-") ?? ""
 
-slugify('Fuel+ MX 9.9 X0 AXS Gen 2')
-// 'fuel-plus-mx-9-9-x0-axs-gen-2'
+// Then run it like this:
+
+slugify('Fuel+ MX 9.9 X0 AXS Gen 2') // 'fuel-plus-mx-9-9-x0-axs-gen-2'
 ```
 
 
