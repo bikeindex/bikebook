@@ -1,0 +1,104 @@
+{
+  "schema_version": "2.0.0",
+  "id": "m/cortina-cycles/2026/e-fello",
+  "manufacturer": "Cortina Cycles",
+  "model": "E-Fello",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal-assist"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "description": "The E-Fello is Cortina's ultimate e-bike for commuters and daily use. Its accessible design with a low step-through makes this bike suitable for a wide audience and for sharing the bike at home. Comfort and reliability are central: the battery is stylishly integrated into the slim down tube, and the powerful Bosch mid-drive motor ensures that you effortlessly transport yourself and your belongings. The rear carrier is equipped with MIK-HD, which can handle heavier loads, making it ideal for a child seat. Whether you’re making short city trips or covering longer distances, the E-Fello always offers a comfortable and stylish ride.",
+  "first_year": 2026,
+  "final_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 288900,
+      "original_msrp_currency": "EUR",
+      "url": "https://cortinabikes.com/e-fello",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "steel",
+    "top_tube": "step_through",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      }
+    ]
+  },
+  "suspension": {
+    "front": {}
+  },
+  "motors": [
+    {
+      "id": "c/bosch/2023/active-line-plus-bdu334y",
+      "drive_wheel": "rear",
+      "manufacturer": "Bosch",
+      "model": "BDU334Y",
+      "model_group": "Active Line Plus",
+      "kind": "mid-drive",
+      "certifications": [
+        "UL 2849"
+      ],
+      "battery": {
+        "capacity": 500,
+        "capacity_options": [
+          400,
+          625
+        ]
+      },
+      "rated_power": 250,
+      "peak_power": 600,
+      "max_torque": 50,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 25,
+          "range_claimed": 110,
+          "e_vehicle_classifications": [
+            "evc/eu/epac"
+          ]
+        }
+      ]
+    }
+  ],
+  "components": [
+    {
+      "type": "ebike-battery",
+      "description": "Battery location: Integrated"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "400 Wh or 500 Wh or 625 Wh"
+    },
+    {
+      "type": "rack",
+      "type_detail": "Rear carrier",
+      "position": [
+        "rear"
+      ],
+      "description": "MIK-HD carrier"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Schwalbe",
+      "description": "Schwalbe 55 mm",
+      "dimensions": {
+        "width": 55
+      }
+    }
+  ]
+}

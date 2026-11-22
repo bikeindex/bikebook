@@ -1,0 +1,211 @@
+{
+  "schema_version": "2.0.0",
+  "id": "m/panasonic/2026/mu",
+  "manufacturer": "Panasonic",
+  "model": "MU",
+  "model_configuration": "complete",
+  "type": "e-scooter",
+  "type_detail": "seated",
+  "propulsion": [
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/mu.jpg",
+  "description": "スロットルを回すだけで走る特定小型原動機付自転車。\nパナソニック自転車公式サイト。特定小型原動機付自転車「MU」の機能や特長をご紹介。自転車のような気軽さでバイクのようにスムーズにスロットルを回すだけで走れる20型モデル。",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 23400000,
+      "original_msrp_currency": "JPY",
+      "colorways": [
+        {
+          "name": "Pearl Gem White / Natural Black",
+          "colors": [
+            "white",
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/mu.jpg",
+          "variants": [
+            {
+              "sku": "BE-TMU011",
+              "size": "20\""
+            }
+          ]
+        },
+        {
+          "name": "Shine Light Green / Natural Black",
+          "colors": [
+            "green",
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/mu-shine-light-green-natural-black.jpg"
+        },
+        {
+          "name": "Matte Soil Beige / Matte Jet Black",
+          "colors": [
+            "brown",
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/mu-matte-soil-beige-matte-jet-black.jpg"
+        }
+      ],
+      "url": "https://cycle.panasonic.com/products/mu/",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "steel",
+    "top_tube": "step_through"
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 54
+    }
+  ],
+  "brakes": [
+    {
+      "type": "caliper",
+      "position": [
+        "front"
+      ]
+    },
+    {
+      "type": "roller-brake",
+      "position": [
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/panasonic/karupower",
+      "drive_wheel": "rear",
+      "manufacturer": "Panasonic",
+      "model": "KaruPower",
+      "kind": "mid-drive-dedicated",
+      "battery": {
+        "capacity": 404,
+        "voltage": 25.2,
+        "chemistry": "li-ion",
+        "weight": 2.5,
+        "charging_time": 300
+      },
+      "rated_power": 250,
+      "operating_modes": [
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 20,
+          "range_claimed": 47,
+          "throttle_type": "Twist"
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 75
+    },
+    {
+      "load": "gross",
+      "weight": 99
+    }
+  ],
+  "sizes": [
+    {
+      "name": "20\"",
+      "geometry": {
+        "wheelbase": 1040,
+        "seat_height_min": 730,
+        "seat_height_max": 885,
+        "dimensions": {
+          "length": 1610,
+          "width": 585,
+          "height": 1120
+        },
+        "total_weight": 24,
+        "rider_height_min": 1410,
+        "extra_measurements": {
+          "handlebar_height_max": 1040,
+          "handlebar_height_min": 880
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front"
+      ],
+      "description": "side-pull caliper brake"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "rear"
+      ],
+      "description": "roller brake"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "lithium-ion battery, 25.2V-16Ah (21cells), 404Wh, NKY594B02 (black)"
+    },
+    {
+      "type": "ebike-charger",
+      "description": "NKJ075Z"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Panasonic",
+      "description": "Panasonic KaruPower drive unit, brushless DC motor 250W"
+    },
+    {
+      "type": "handlebar",
+      "description": "flat"
+    },
+    {
+      "type": "kickstand",
+      "description": "double-leg kickstand"
+    },
+    {
+      "type": "light",
+      "type_detail": "Reflectors",
+      "description": "rear fender"
+    },
+    {
+      "type": "lock",
+      "description": "rear wheel ring lock"
+    },
+    {
+      "type": "rack",
+      "position": [
+        "rear"
+      ],
+      "description": "standard (class 10)"
+    },
+    {
+      "type": "throttle",
+      "description": "electronic twist-grip throttle"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "20 x 2.125 HE",
+      "dimensions": {
+        "width": 53.98,
+        "diameter": 406
+      }
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "schema_version": "2.0.0",
+  "id": "m/cortina-cycles/2026/e-common-integrated",
+  "manufacturer": "Cortina Cycles",
+  "model_group": "E-Common",
+  "model": "E-Common Integrated",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal-assist"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "description": "The Cortina E-Common Integrated is your ultimate luggage buddy. Whether you're running errands or enjoying a relaxed ride through the park, the versatile Cortina E-Common Integrated makes it all possible. No more worrying about what you can or can't carry. Easily click a solid bike crate or stylish basket onto the front and rear racks equipped with the MIK attachment system. Experience the convenience and freedom of an e-bike that fits everything you want to do in life. With its stylish look, smart support, and endless range of attachable accessories, this electric bike is a true all-rounder. Looking for a trendy and practical e-bike for the city? The Cortina E-Common Integrated is the perfect choice!",
+  "first_year": 2026,
+  "final_year": 2026,
+  "years": {
+    "2026": {
+      "url": "https://cortinabikes.com/e-common-integrated",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "steel",
+    "mounts": [
+      {
+        "type": "rack",
+        "position": [
+          "rear"
+        ],
+        "interface": "mik_hd"
+      },
+      {
+        "type": "rack",
+        "position": [
+          "front"
+        ],
+        "interface": "mik"
+      }
+    ]
+  },
+  "brakes": [
+    {
+      "type": "disc-hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "rear",
+      "manufacturer": "Bosch",
+      "kind": "mid-drive",
+      "battery": {
+        "capacity": 500
+      },
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "range_claimed": 145,
+          "e_vehicle_classifications": [
+            "evc/eu/epac"
+          ]
+        }
+      ]
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Hydraulic disc brakes"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "Battery location: Integrated"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "500 Wh"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Bosch",
+      "description": "Bosch mid-drive motor"
+    },
+    {
+      "type": "rack",
+      "type_detail": "Rear carrier",
+      "position": [
+        "rear"
+      ],
+      "description": "MIK-HD carrier"
+    },
+    {
+      "type": "rack",
+      "type_detail": "Front carrier",
+      "position": [
+        "front"
+      ],
+      "description": "MIK carrier"
+    }
+  ]
+}

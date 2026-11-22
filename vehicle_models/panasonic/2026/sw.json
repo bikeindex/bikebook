@@ -1,0 +1,218 @@
+{
+  "schema_version": "2.0.0",
+  "id": "m/panasonic/2026/sw",
+  "manufacturer": "Panasonic",
+  "model": "SW",
+  "model_configuration": "complete",
+  "type": "bike",
+  "propulsion": [
+    "pedal-assist"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/sw.jpg",
+  "description": "ライフステージに合わせてスタイルを切り替えるシンプル操作の電動アシスト自転車。\nパナソニック自転車公式サイト。ファッショナブルな電動アシスト自転車「SW」の紹介ページです。ライフステージに合わせてスタイルを切り替えるシンプル操作の電動アシスト自転車。",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 11300000,
+      "original_msrp_currency": "JPY",
+      "colorways": [
+        {
+          "name": "Matte Jet Black",
+          "colors": [
+            "black"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/sw.jpg",
+          "variants": [
+            {
+              "sku": "BE-FSW013",
+              "size": "20\""
+            }
+          ]
+        },
+        {
+          "name": "Bluish Green Metallic",
+          "colors": [
+            "green"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/sw-bluish-green-metallic.jpg"
+        },
+        {
+          "name": "Matte Cloudy Grey",
+          "colors": [
+            "silver"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/panasonic/2026/sw-matte-cloudy-grey.jpg"
+        }
+      ],
+      "url": "https://cycle.panasonic.com/products/sw/",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "steel",
+    "top_tube": "step_through"
+  },
+  "wheels": [
+    {
+      "bsd": 406,
+      "position": [
+        "front"
+      ],
+      "tire_width": 44
+    },
+    {
+      "bsd": 406,
+      "position": [
+        "rear"
+      ],
+      "tire_width": 54
+    }
+  ],
+  "drivetrain": [
+    "1-front",
+    "1-rear"
+  ],
+  "brakes": [
+    {
+      "type": "caliper",
+      "position": [
+        "front"
+      ]
+    },
+    {
+      "type": "roller-brake",
+      "position": [
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/panasonic/karupower",
+      "drive_wheel": "rear",
+      "manufacturer": "Panasonic",
+      "model": "KaruPower",
+      "kind": "mid-drive",
+      "battery": {
+        "capacity": 202,
+        "voltage": 25.2,
+        "chemistry": "li-ion",
+        "weight": 1.7,
+        "charging_time": 270
+      },
+      "rated_power": 250,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 24,
+          "range_claimed": 36
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 94
+    },
+    {
+      "load": "gross",
+      "weight": 114.8
+    }
+  ],
+  "sizes": [
+    {
+      "name": "20\"",
+      "geometry": {
+        "wheelbase": 1215,
+        "seat_height_min": 765,
+        "seat_height_max": 925,
+        "dimensions": {
+          "length": 1720,
+          "width": 590
+        },
+        "total_weight": 20.8,
+        "rider_height_min": 1450,
+        "extra_measurements": {
+          "handlebar_height_max": 1030,
+          "handlebar_height_min": 980
+        }
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front"
+      ],
+      "description": "side-pull caliper brake"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "rear"
+      ],
+      "description": "roller brake"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "lithium-ion battery, 25.2V-8Ah (14cells), 202Wh, NKY576B02 (black)"
+    },
+    {
+      "type": "ebike-charger",
+      "description": "NKJ074Z"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Panasonic",
+      "description": "Panasonic KaruPower drive unit, brushless DC motor, 250W, crank-axle mid-drive, pedal-force proportional control - magnetostrictive sensor"
+    },
+    {
+      "type": "handlebar",
+      "description": "flat"
+    },
+    {
+      "type": "kickstand",
+      "description": "side kickstand"
+    },
+    {
+      "type": "light",
+      "type_detail": "Reflectors",
+      "description": "battery light / rear fender / front and rear wheels / pedals"
+    },
+    {
+      "type": "light",
+      "type_detail": "Headlight",
+      "position": [
+        "front"
+      ],
+      "description": "battery-powered headlight"
+    },
+    {
+      "type": "lock",
+      "description": "cable lock"
+    },
+    {
+      "type": "rack",
+      "position": [
+        "front"
+      ],
+      "description": "standard"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "front: 20 x 1.75 HE / rear: 20 x 2.125 HE",
+      "dimensions": {
+        "diameter": 406
+      }
+    }
+  ]
+}
