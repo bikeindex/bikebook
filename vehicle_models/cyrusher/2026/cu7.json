@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.0.1",
   "id": "m/cyrusher/2026/cu7",
   "manufacturer": "Cyrusher",
   "model": "Cu7",
@@ -11,7 +11,6 @@
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
   "stock_photo": "https://bikebook.bikeindex.org/cyrusher/2026/cu7.jpg",
-  "geometry_photo": "https://bikebook.bikeindex.org/cyrusher/2026/cu7-geometry.jpg",
   "description": "GODOIT CU7 · Compact utility folding e-bike\n\nStable on the road.\nCompact when stored.\n\nWide 20×3.0 tires, front suspension and a steel folding frame give everyday rides a settled feel. When the trip is over, fold the frame and stem to reclaim space.",
   "first_year": 2026,
   "years": {
@@ -27,22 +26,13 @@
     "folding": "half-fold"
   },
   "suspension": {
-    "front": {
-      "travel": 152
-    },
-    "rear": {}
+    "front": {}
   },
   "wheels": [
     {
-      "bsd": 254,
+      "bsd": 406,
       "position": [
-        "front"
-      ],
-      "tire_width": 64
-    },
-    {
-      "bsd": 203,
-      "position": [
+        "front",
         "rear"
       ],
       "tire_width": 76
@@ -50,7 +40,7 @@
   ],
   "brakes": [
     {
-      "type": "disc-hydraulic",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -61,7 +51,6 @@
     {
       "drive_wheel": "rear",
       "kind": "hub-drive",
-      "water_rating": "IPX6",
       "battery": {
         "capacity": 480,
         "voltage": 48,
@@ -75,7 +64,6 @@
           "availability": "stock",
           "max_speed": 42,
           "range_claimed": 40,
-          "max_slope": 30,
           "e_vehicle_classifications": [
             "evc/us/class-3"
           ]
@@ -104,15 +92,12 @@
   "components": [
     {
       "type": "brake",
+      "type_detail": "Front + rear disc brakes",
       "position": [
         "front",
         "rear"
       ],
-      "description": "Hydraulic Heavy Duty Brake"
-    },
-    {
-      "type": "chain",
-      "description": "116 links (420 chain) Heavy Duty Chain"
+      "description": "Mechanical disc brakes provide familiar cable-actuated stopping control and straightforward servicing."
     },
     {
       "type": "ebike-battery",
@@ -136,56 +121,24 @@
     },
     {
       "type": "fork",
-      "type_detail": "Front Suspension",
+      "type_detail": "20×3.0 + front suspension",
       "position": [
         "front"
       ],
-      "description": "Hydraulic Suspension"
+      "description": "Wide tires and front suspension help soften cracks, seams and imperfect urban pavement."
     },
     {
-      "type": "rear-suspension",
+      "type": "hub",
+      "type_detail": "350W rear hub support",
       "position": [
         "rear"
       ],
-      "description": "Nitrogen Shock Absorber"
+      "description": "Rear-wheel assistance reduces effort through repeated starts and everyday cruising."
     },
     {
-      "type": "tire",
-      "position": [
-        "front"
-      ],
-      "description": "14\"x2.5\" Tire",
-      "dimensions": {
-        "width": 63.5,
-        "diameter": 254
-      }
-    },
-    {
-      "type": "tire",
-      "position": [
-        "rear"
-      ],
-      "description": "12\"x3.0\" Tire",
-      "dimensions": {
-        "width": 76.2,
-        "diameter": 203
-      }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Front Shocks Diameter",
-      "position": [
-        "front"
-      ],
-      "description": "40MM and 6 inch travel",
-      "dimensions": {
-        "travel": 152.4
-      }
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Hydraulic Suspension",
-      "description": "Hydraulic Suspension"
+      "type": "light",
+      "type_detail": "Lighting for everyday riding",
+      "description": "A 48V LED headlight supports visibility ahead while the rear light responds when braking."
     }
   ]
 }
