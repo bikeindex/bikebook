@@ -14,7 +14,7 @@ The schema viewer helps make sense of the structure by including comments and sh
 
 There are always things to improve in the data model - see [Issue #43](https://github.com/bikeindex/bikebook/issues/43) for some things we hope to work on (and please comment with things we're missing).
 
-## But the files
+## But the files!
 
 This repository is a flat file database. The data is stored in JSON files.
 
@@ -36,7 +36,7 @@ slugify('Fuel+ MX 9.9 X0 AXS Gen 2') // 'fuel-plus-mx-9-9-x0-axs-gen-2'
 
 
 <details>
-<summary>Full slug explanation and expanded code</summary>
+<summary>Full slugify explanation and expanded code</summary>
 
 Slugifying does this:
 
@@ -90,14 +90,6 @@ export function slugify(string) {
 </details>
 
 
-## Versioning
-
-schema version is semantic:
-
-- Major versions remove, rename or retype a field, remove an enum value or add a new required field
-- Minor ones add an optional field or an enum value
-- Patches changes only descriptions.
-
 ## Catalog
 
 These files are all used to generate a manifest and catalog. The manifest lists all the files, the catalog is published by [bikebook_ci](https://github.com/bikeindex/bikebook_ci) (which also is where the tests are). This is what is used by the viewer to render the data.
@@ -107,6 +99,15 @@ The published catalog's format is versioned apart from it, one integer raised wh
 ## Contributing
 
 Please submit any fixes that you have! See [CONTRIBUTING](CONTRIBUTING.md): contributors sign our [Contributor License Agreement](https://cla-assistant.io/bikeindex/bikebook) before their first pull request is merged.
+
+
+### Versioning
+
+schema version is semantic:
+
+- Major versions remove, rename or retype a field, remove an enum value or add a new required field.
+- Minor ones add an optional field or an enum value.
+- Patches changes only descriptions.
 
 ---
 
