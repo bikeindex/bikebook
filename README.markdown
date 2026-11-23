@@ -1,12 +1,16 @@
 # <img src="bikebook.svg" alt="Bike Book logo" height="32"> [Bike Book](https://bikeindex.org/bikebook)
 
-Compare bikes, e-bikes and e-Personal Mobility Devices (aka EPAMD). Check out the viewer at [bikeindex.org/bikebook](https://bikeindex.org/bikebook).
+Compare bikes, e-bikes and e-Personal Mobility Devices (aka EPAMD).
+
+Check out the viewer at [bikeindex.org/bikebook](https://bikeindex.org/bikebook).
 
 ## What?
 
-Bike Index created an open source repository of all the bike (and e-bike, trike, EPAMD, etc, hereafter just referred to as "bike") data.
+This repository has the specs and information about a large and ever growing list of bikes (and e-bikes, trikes, EPAMD, etc, hereafter just referred to as "bikes").
 
-Bikes are surprising complex and have a myriad of conflicting options, so we needed a data format. Explore the current JSON Schema at [bikeindex.org/bikebook_schemas](https://bikeindex.org/bikebook_schemas):
+Currently there are **46,536** bikes in the database.
+
+The bike data is stored as JSON, in a public JSON Schema. If you're curious about what data is stored, check out the schema viewer at [bikeindex.org/bikebook_schemas](https://bikeindex.org/bikebook_schemas)
 
 <img src="https://raw.githubusercontent.com/bikeindex/bikebook/readme_refs/schema_viewer-screenshot.png" alt="Schema viewer" width="50%">
 
@@ -36,7 +40,7 @@ slugify('Fuel+ MX 9.9 X0 AXS Gen 2') // 'fuel-plus-mx-9-9-x0-axs-gen-2'
 
 
 <details>
-<summary>Full slugify explanation and expanded code</summary>
+<summary>Full slugify explanation and commented code</summary>
 
 Slugifying does this:
 
@@ -92,13 +96,16 @@ export function slugify(string) {
 
 ## Catalog
 
-These files are all used to generate a manifest and catalog. The manifest lists all the files, the catalog is published by [bikebook_ci](https://github.com/bikeindex/bikebook_ci) (which also is where the tests are). This is what is used by the viewer to render the data.
+These files are all used to generate a manifest and catalog. The manifest lists all the files, the catalog is published by [bikebook_ci](https://github.com/bikeindex/bikebook_ci) (which also is where the tests for this repository are).
 
-The published catalog's format is versioned apart from it, one integer raised whenever the layout of its files changes.
+The manifest and index is are published to Cloudflare R2, which is then loaded by the Bike Index viewer. The data in this repository is what is actually rendered.
+
 
 ## Contributing
 
-Please submit any fixes that you have! See [CONTRIBUTING](CONTRIBUTING.md): contributors sign our [Contributor License Agreement](https://cla-assistant.io/bikeindex/bikebook) before their first pull request is merged.
+Please submit any fixes that you have!
+
+Read [CONTRIBUTING](CONTRIBUTING.md) and sign our [Contributor License Agreement](https://cla-assistant.io/bikeindex/bikebook).
 
 
 ### Versioning
