@@ -1,8 +1,7 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.0.1",
   "id": "m/juiced-bikes/2026/scrambler-core",
   "manufacturer": "Juiced Bikes",
-  "model_group": "Scrambler Core",
   "model": "Scrambler Core",
   "model_configuration": "complete",
   "type": "bike",
@@ -30,12 +29,23 @@
             {
               "sku": "501-02268-B001",
               "gtin": "810210184021",
-              "size": "One Size"
+              "size": "Core"
             },
             {
               "sku": "501-02268-B101",
               "gtin": "810210184045",
-              "size": "One Size",
+              "size": "Core",
+              "original_msrp": 171400
+            },
+            {
+              "sku": "501-02289-B001",
+              "gtin": "810210183833",
+              "size": "Core Midsize"
+            },
+            {
+              "sku": "501-02289-B101",
+              "gtin": "810210183857",
+              "size": "Core Midsize",
               "original_msrp": 171400
             }
           ]
@@ -46,7 +56,7 @@
             {
               "sku": "501-02268-R101",
               "gtin": "810210184274",
-              "size": "One Size",
+              "size": "Core",
               "original_msrp": 171400
             }
           ]
@@ -60,7 +70,7 @@
             {
               "sku": "501-02268-P101",
               "gtin": "810210184281",
-              "size": "One Size",
+              "size": "Core",
               "original_msrp": 171400
             }
           ]
@@ -76,7 +86,38 @@
             {
               "sku": "501-02268-W101",
               "gtin": "810210184083",
-              "size": "One Size",
+              "size": "Core",
+              "original_msrp": 171400
+            },
+            {
+              "sku": "501-02289-W101",
+              "gtin": "810210183932",
+              "size": "Core Midsize",
+              "original_msrp": 171400
+            }
+          ]
+        },
+        {
+          "name": "Berry Freeze",
+          "variants": [
+            {
+              "sku": "501-02289-S101",
+              "gtin": "810210183956",
+              "size": "Core Midsize",
+              "original_msrp": 171400
+            }
+          ]
+        },
+        {
+          "name": "Blood Orange",
+          "colors": [
+            "orange"
+          ],
+          "variants": [
+            {
+              "sku": "501-02289-R101",
+              "gtin": "810210183949",
+              "size": "Core Midsize",
               "original_msrp": 171400
             }
           ]
@@ -165,7 +206,7 @@
   ],
   "sizes": [
     {
-      "name": "One Size",
+      "name": "Core",
       "geometry": {
         "seat_height_min": 800,
         "seat_height_max": 800,
@@ -176,6 +217,12 @@
         },
         "total_weight": 33.1,
         "rider_height_min": 1575
+      }
+    },
+    {
+      "name": "Core Midsize",
+      "geometry": {
+        "rider_height_min": 1473
       }
     }
   ],

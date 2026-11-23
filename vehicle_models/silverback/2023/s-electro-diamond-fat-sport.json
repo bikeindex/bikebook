@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.0.0",
+  "schema_version": "2.0.1",
   "id": "m/silverback/2023/s-electro-diamond-fat-sport",
   "manufacturer": "Silverback",
   "model_group": "S-Electro Diamond",
@@ -53,6 +53,9 @@
   },
   "frame": {
     "material": "aluminum",
+    "bottom_bracket": {
+      "spindle": "Shimano E8000"
+    },
     "derailleur_hanger": "Hanger 03",
     "max_chainring": 38
   },
@@ -112,15 +115,20 @@
   ],
   "motors": [
     {
+      "id": "c/shimano/2018/e7000-du-e7000",
       "drive_wheel": "rear",
       "manufacturer": "Shimano",
-      "model": "EP7000",
+      "model": "DU-E7000",
+      "model_group": "E7000",
       "kind": "mid-drive",
+      "spindle": "Shimano E8000",
+      "sensor_cadence": true,
       "battery": {
         "capacity": 504,
         "voltage": 36,
         "chemistry": "li-ion"
       },
+      "rated_power": 250,
       "max_torque": 60,
       "operating_modes": [
         {
