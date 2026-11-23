@@ -32,7 +32,10 @@
     "2025": {}
   },
   "frame": {
-    "material": "aluminum"
+    "material": "aluminum",
+    "bottom_bracket": {
+      "spindle": "Shimano EP8"
+    }
   },
   "wheels": [
     {
@@ -72,22 +75,31 @@
   ],
   "motors": [
     {
+      "id": "c/shimano/2022/ep600-du-ep600",
       "drive_wheel": "rear",
       "manufacturer": "Shimano",
-      "model": "EP600 Cargo",
+      "model": "DU-EP600",
+      "model_group": "EP600",
       "kind": "mid-drive",
+      "spindle": "Shimano EP8",
+      "sensor_cadence": true,
+      "certifications": [
+        "UL 2849"
+      ],
       "battery": {
         "capacity": 720,
         "voltage": 36,
         "chemistry": "li-ion",
         "cells": "Samsung/LG"
       },
+      "rated_power": 250,
       "peak_power": 500,
       "max_torque": 85,
       "operating_modes": [
         {
           "mode": "assist",
           "availability": "stock",
+          "max_speed": 25,
           "range_claimed": 65,
           "e_vehicle_classifications": [
             "evc/eu/epac"
