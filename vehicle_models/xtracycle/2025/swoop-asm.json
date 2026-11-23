@@ -64,7 +64,10 @@
         "interface": "mik_hd"
       }
     ],
-    "cable_routing": "internal"
+    "cable_routing": "internal",
+    "bottom_bracket": {
+      "spindle": "Shimano EP8"
+    }
   },
   "suspension": {
     "front": {
@@ -124,10 +127,14 @@
   ],
   "motors": [
     {
+      "id": "c/shimano/2022/ep600-du-ep600",
       "drive_wheel": "rear",
       "manufacturer": "Shimano",
-      "model": "STEPS EP6 Cargo",
+      "model": "DU-EP600",
+      "model_group": "EP600",
       "kind": "mid-drive",
+      "spindle": "Shimano EP8",
+      "sensor_cadence": true,
       "certifications": [
         "UL 2849"
       ],
@@ -138,6 +145,8 @@
           "UL 2271"
         ]
       },
+      "rated_power": 250,
+      "max_torque": 85,
       "operating_modes": [
         {
           "mode": "assist",

@@ -84,6 +84,9 @@
         "type": "rack"
       }
     ],
+    "bottom_bracket": {
+      "spindle": "Shimano EP8"
+    },
     "headset": "IS42/28.6-26tpi | IS42/30",
     "seatpost_diameter": 31.6,
     "seatpost_clamp_diameter": 34
@@ -147,14 +150,23 @@
   ],
   "motors": [
     {
+      "id": "c/shimano/2022/ep801-du-ep801",
       "drive_wheel": "rear",
       "manufacturer": "Shimano",
-      "model": "Steps EP801 CRG",
+      "model": "DU-EP801",
+      "model_group": "EP801",
       "kind": "mid-drive",
+      "spindle": "Shimano EP8",
+      "sensor_cadence": true,
+      "certifications": [
+        "UL 2849"
+      ],
       "battery": {
         "capacity": 504,
         "chemistry": "li-ion"
       },
+      "rated_power": 250,
+      "max_torque": 85,
       "operating_modes": [
         {
           "mode": "assist",
