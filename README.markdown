@@ -1,12 +1,16 @@
 # <img src="bikebook.svg" alt="Bike Book logo" height="32"> [Bike Book](https://bikeindex.org/bikebook)
 
-Compare bikes, e-bikes and e-Personal Mobility Devices (aka EPAMD). Check out the viewer at [bikeindex.org/bikebook](https://bikeindex.org/bikebook).
+Compare bikes, e-bikes and e-Personal Mobility Devices (aka EPAMD).
+
+Check out the viewer at [bikeindex.org/bikebook](https://bikeindex.org/bikebook).
 
 ## What?
 
-Bike Index created an open source repository of all the bike (and e-bike, trike, EPAMD, etc, hereafter just referred to as "bike") data.
+This repository has the specs and information about a large and ever growing list of bikes (and e-bikes, trikes, EPAMD, etc, hereafter just referred to as "bikes").
 
-Bikes are surprising complex and have a myriad of conflicting options, so we needed a data format. Explore the current JSON Schema at [bikeindex.org/bikebook_schemas](https://bikeindex.org/bikebook_schemas):
+Currently there are **46,536** bikes in the database.
+
+The bike data is stored as JSON, in a public JSON Schema. If you're curious about what data is stored, check out the schema viewer at [bikeindex.org/bikebook_schemas](https://bikeindex.org/bikebook_schemas)
 
 <img src="https://raw.githubusercontent.com/bikeindex/bikebook/readme_refs/schema_viewer-screenshot.png" alt="Schema viewer" width="50%">
 
@@ -14,30 +18,29 @@ The schema viewer helps make sense of the structure by including comments and sh
 
 There are always things to improve in the data model - see [Issue #43](https://github.com/bikeindex/bikebook/issues/43) for some things we hope to work on (and please comment with things we're missing).
 
-## But the files
+## But the files!
 
 This repository is a flat file database. The data is stored in JSON files.
+
+**The model IDs are `${slugify(maker)}>/${year}/${slugify(model name)}.json`** and the files are at that path in `vehicle_models/`
 
 The 2026 `Fuel+ MX 9.9 X0 AXS Gen 2` by Trek has this id: `m/trek/2026/fuel-plus-mx-9-9-x0-axs-gen-2`
 
 Which is in this repository at [vehicle_models/trek/2026/fuel-plus-mx-9-9-x0-axs-gen-2.json](vehicle_models/trek/2026/fuel-plus-mx-9-9-x0-axs-gen-2.json)
 
-**The model IDs are `<maker>/<year>/<model name>.json`** and the files are at that path in `vehicle_models/`
 
-You can convert `<maker>` and `<model>` to slugs with this JS:
-
+Here is the slugify method:
 
 ```js
 const slugify = (s) => Array.from(String(s ?? "").replace(/\([^)]*\)/g, "").replaceAll("%20", " ").replace(/&(apos|amp|quot|gt|lt|#[0-9]+|#[xX][0-9A-Fa-f]+);/g, (m, e) => e[0] !== "#" ? { amp: "&", quot: '"', apos: "'", lt: "<", gt: ">" }[e] : ((n) => n < 0x10ffff ? String.fromCodePoint(n) : m)(/x/i.test(e[1]) ? parseInt(e.slice(2), 16) : parseInt(e.slice(1), 10))).replace(/['’‘`´]/g, "").toLowerCase(), (c) => c < "\x80" ? c : (" àa áa âa ãa äa åa æae çc èe ée êe ëe ìi íi îi ïi ðd ñn òo óo ôo õo öo øo ùu úu ûu üu ýy þth ßss ÿy āa ăa ąa ćc ĉc ċc čc ďd đd ēe ĕe ėe ęe ěe ĝg ğg ġg ģg ĥh ħh ĩi īi ĭi įi ıi ĳij ĵj ķk ĸk ĺl ļl ľl ŀl łl ńn ņn ňn ŉ'n ŋng ōo ŏo őo œoe ŕr ŗr řr śs ŝs şs šs ţt ťt ŧt ũu ūu ŭu ůu űu ųu ŵw ŷy źz żz žz ǫo ǭo ×x ".match(` ${c}(\\S+) `) ?? [, "?"])[1]).join("").replaceAll("&", " and ").replaceAll("+", " plus ").match(/[a-z0-9]+/g)?.join("-") ?? ""
 
 // Then run it like this:
-
 slugify('Fuel+ MX 9.9 X0 AXS Gen 2') // 'fuel-plus-mx-9-9-x0-axs-gen-2'
 ```
 
 
 <details>
-<summary>Full slug explanation</summary>
+<summary>Full slugify explanation and commented code</summary>
 
 Slugifying does this:
 
@@ -91,23 +94,27 @@ export function slugify(string) {
 </details>
 
 
-## Versioning
-
-schema version is semantic:
-
-- Major versions remove, rename or retype a field, remove an enum value or add a new required field
-- Minor ones add an optional field or an enum value
-- Patches changes only descriptions.
-
 ## Catalog
 
-These files are all used to generate a manifest and catalog. The manifest lists all the files, the catalog is published by [bikebook_ci](https://github.com/bikeindex/bikebook_ci) (which also is where the tests are). This is what is used by the viewer to render the data.
+These files are all used to generate a manifest and catalog. The manifest lists all the files, the catalog is published by [bikebook_ci](https://github.com/bikeindex/bikebook_ci) (which also is where the tests for this repository are).
 
-The published catalog's format is versioned apart from it, one integer raised whenever the layout of its files changes.
+The manifest and index is are published to Cloudflare R2, which is then loaded by the Bike Index viewer. The data in this repository is what is actually rendered.
+
 
 ## Contributing
 
-Please submit any fixes that you have! See [CONTRIBUTING](CONTRIBUTING.md): contributors sign our [Contributor License Agreement](https://cla-assistant.io/bikeindex/bikebook) before their first pull request is merged.
+Please submit any fixes that you have!
+
+Read [CONTRIBUTING](CONTRIBUTING.md) and sign our [Contributor License Agreement](https://cla-assistant.io/bikeindex/bikebook).
+
+
+### Versioning
+
+schema version is semantic:
+
+- Major versions remove, rename or retype a field, remove an enum value or add a new required field.
+- Minor ones add an optional field or an enum value.
+- Patches changes only descriptions.
 
 ---
 
