@@ -191,11 +191,14 @@
     }
   },
   "frame": {
-    "material": "steel"
+    "material": "steel",
+    "coil_compatible": true
   },
   "suspension": {
     "front": {},
-    "rear": {}
+    "rear": {
+      "spring": "coil"
+    }
   },
   "wheels": [
     {
@@ -362,6 +365,14 @@
     {
       "type": "pedals",
       "description": "Pedals"
+    },
+    {
+      "type": "rear-suspension",
+      "type_detail": "Dual Rear Spring Shocks",
+      "position": [
+        "rear"
+      ],
+      "description": "Dual Rear Spring Shocks"
     },
     {
       "type": "saddle",

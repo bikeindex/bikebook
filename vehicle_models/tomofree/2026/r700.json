@@ -26,11 +26,14 @@
   },
   "frame": {
     "material": "steel",
-    "material_detail": "High-Carbon Steel"
+    "material_detail": "High-Carbon Steel",
+    "coil_compatible": true
   },
   "suspension": {
     "front": {},
-    "rear": {}
+    "rear": {
+      "spring": "coil"
+    }
   },
   "wheels": [
     {
@@ -153,6 +156,14 @@
       "type": "light",
       "type_detail": "Light Modes",
       "description": "Headlight, Taillight, Rear Brake Light, Turn Singal Light"
+    },
+    {
+      "type": "rear-suspension",
+      "type_detail": "Smooth-Riding Rear Spring Suspension",
+      "position": [
+        "rear"
+      ],
+      "description": "Smooth-Riding Rear Spring Suspension"
     },
     {
       "type": "saddle",
