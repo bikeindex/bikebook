@@ -39,6 +39,7 @@
   },
   "frame": {
     "material": "aluminum",
+    "cable_routing": "stealth",
     "seatpost_diameter": 34.9,
     "seatpost_clamp_diameter": 38.5,
     "derailleur_hanger": "UDH",
@@ -49,6 +50,7 @@
       "travel": 160,
       "shock_length": 230,
       "shock_stroke": 60,
+      "shock_mount": "20x10mm / No bushing needed on yoke",
       "spring": "air"
     }
   },
@@ -67,13 +69,20 @@
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 148,
+      "axle_length": 180,
       "axle_thread_pitch": 1,
       "tire_width_max": 65
     }
   ],
   "drivetrain": [
-    "1-front"
+    "1-front",
+    "12-rear"
   ],
+  "gearing": {
+    "front": [
+      34
+    ]
+  },
   "brakes": [
     {
       "position": [
@@ -90,6 +99,9 @@
       "manufacturer": "DJI",
       "model": "Avinox M2S",
       "kind": "mid-drive",
+      "battery": {
+        "capacity": 600
+      },
       "rated_power": 250,
       "peak_power": 1300,
       "max_torque": 150,
@@ -179,18 +191,18 @@
   "components": [
     {
       "type": "bashguardchain-guide",
-      "description": "COMMENCAL"
+      "description": "COMMENCAL; 34t"
     },
     {
       "type": "crankset",
-      "description": "E13 Helix Race, 155 mm with crank boots & crank tool",
+      "description": "E13 Helix Race, 155 mm with crank boots & crank tool; Chainring : SRAM T-Type, 34t",
       "dimensions": {
         "length": 155
       }
     },
     {
       "type": "ebike-battery",
-      "description": "AVINOX fixed"
+      "description": "AVINOX fixed; 600 Wh on S, 800 Wh on M / L / XL; AVINOX 12A/508W Fast Battery charger"
     },
     {
       "type": "ebike-charger",
@@ -198,7 +210,19 @@
     },
     {
       "type": "ebike-displayremote",
-      "description": "AVINOX DP100 : Integrated and colored touchscreen providing a large range of information : speed, ride mode, battery range, charge level, fitness data, elevation gain, altitude and many more. It also features a USB-C port, GPS sensor, barometer, compass, 4G connection and even a theft alarm system."
+      "description": "AVINOX DP100 : Integrated and colored touchscreen providing a large range of information : speed, ride mode, battery range, charge level, fitness data, elevation gain, altitude and many more. It also features a USB-C port, GPS sensor, barometer, compass, 4G connection and even a theft alarm system.; Switch: AVINOX BC100, Wireless controller."
+    },
+    {
+      "type": "ebike-motor",
+      "description": "AVINOX M2S; 150 Nm peak torque with a 1,300 W boost mode, and 130 Nm / 1300 W in normal operation"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "To install an AXS drivetrain connected to the motor"
+    },
+    {
+      "type": "electronic-shifting-part",
+      "description": "The VIP frame kit does not include the AXS extension cable"
     },
     {
       "type": "frame-protection",
@@ -250,6 +274,40 @@
     {
       "type": "sensor",
       "description": "hub sensor (disc) & speed sensor (frame)."
+    },
+    {
+      "type": "unknown",
+      "description": "the cable must be purchased separately"
+    },
+    {
+      "type": "unknown",
+      "manufacturer": "SRAM",
+      "description": "SRAM XS Powercord HIGO Z405 780mm."
+    },
+    {
+      "type": "unknown",
+      "manufacturer": "SRAM",
+      "description": "SRAM Ref.: 00.3018.418.001"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended SAG",
+      "description": "29-32% / 17,5-19mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Piggy back shock compatible",
+      "description": "Yes"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended/max. fork height",
+      "description": "576mm / 586mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain line",
+      "description": "55"
     },
     {
       "type": "water-bottle-cage",

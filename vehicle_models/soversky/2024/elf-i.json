@@ -36,6 +36,14 @@
   "frame": {
     "material": "steel"
   },
+  "brakes": [
+    {
+      "type": "motor-brake",
+      "position": [
+        "motor"
+      ]
+    }
+  ],
   "motors": [
     {
       "kind": "hub-drive",
@@ -72,11 +80,17 @@
           "length": 500,
           "width": 230,
           "height": 120
-        }
+        },
+        "total_weight": 3.34
       }
     }
   ],
   "components": [
+    {
+      "type": "brake",
+      "type_detail": "Braking",
+      "description": "Electronic brake EBS"
+    },
     {
       "type": "ebike-battery",
       "description": "Battery Capacity: 2000mAh"
@@ -129,11 +143,6 @@
     },
     {
       "type": "unknown",
-      "type_detail": "Braking",
-      "description": "Electronic brake EBS"
-    },
-    {
-      "type": "unknown",
       "type_detail": "Board Material",
       "description": "8PLY Maple"
     },
@@ -161,11 +170,6 @@
       "type": "unknown",
       "type_detail": "Remote Control distance",
       "description": "8-10m"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "N.W.",
-      "description": "7 Lbs (3.34KG)"
     },
     {
       "type": "unknown",

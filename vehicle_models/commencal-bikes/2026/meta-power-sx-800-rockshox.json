@@ -34,6 +34,8 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6066 Aluminum",
+    "cable_routing": "stealth",
     "bottom_bracket": {
       "spindle": "ISIS"
     },
@@ -49,7 +51,9 @@
     "rear": {
       "travel": 180,
       "shock_length": 230,
-      "shock_stroke": 65
+      "shock_stroke": 65,
+      "shock_mount": "20x10mm / No bushing needed on yoke",
+      "spring": "air"
     }
   },
   "wheels": [
@@ -57,17 +61,22 @@
       "bsd": 622,
       "position": [
         "front"
-      ]
+      ],
+      "axle_diameter": 15,
+      "axle_spacing": 110
     },
     {
       "bsd": 584,
       "position": [
         "rear"
       ],
+      "tire_width": 64,
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 148,
+      "axle_length": 180,
       "axle_thread_pitch": 1,
+      "cassette_interface": "xd",
       "tire_width_max": 65
     }
   ],
@@ -75,6 +84,15 @@
     "1-front",
     "12-rear"
   ],
+  "gearing": {
+    "front": [
+      34
+    ],
+    "rear": [
+      10,
+      52
+    ]
+  },
   "groupset": {
     "manufacturer": "SRAM",
     "series": "Eagle 90",
@@ -85,13 +103,15 @@
       "type": "disc-hydraulic",
       "position": [
         "front"
-      ]
+      ],
+      "rotor_diameter": 203
     },
     {
       "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
+      "rotor_diameter": 203,
       "rotor_diameter_max": 223,
       "caliper_mount": "Disc Post Mount"
     }
@@ -143,6 +163,8 @@
         "bb_drop": 3,
         "fork_rake": 44,
         "fork_length_a2c": 598,
+        "handlebar_width": 760,
+        "dropper_travel": 125,
         "max_seatpost_insertion": 180
       }
     },
@@ -161,9 +183,11 @@
         "bb_drop": 3,
         "fork_rake": 44,
         "fork_length_a2c": 598,
+        "handlebar_width": 780,
+        "dropper_travel": 170,
         "max_seatpost_insertion": 220,
         "total_weight": 25.5,
-        "frame_weight": 5.9
+        "frame_weight": 5.86
       }
     },
     {
@@ -181,6 +205,8 @@
         "bb_drop": 3,
         "fork_rake": 44,
         "fork_length_a2c": 598,
+        "handlebar_width": 780,
+        "dropper_travel": 190,
         "max_seatpost_insertion": 240
       }
     },
@@ -199,6 +225,8 @@
         "bb_drop": 3,
         "fork_rake": 44,
         "fork_length_a2c": 598,
+        "handlebar_width": 800,
+        "dropper_travel": 190,
         "max_seatpost_insertion": 260
       }
     }
@@ -206,7 +234,7 @@
   "components": [
     {
       "type": "bashguardchain-guide",
-      "description": "RIDE ALPHA"
+      "description": "RIDE ALPHA; 32-34t"
     },
     {
       "type": "brake",
@@ -215,12 +243,15 @@
         "rear"
       ],
       "manufacturer": "TRP",
-      "description": "TRP DH-R EVO PRO, 4 pistons, resin pads"
+      "description": "TRP DH-R EVO PRO, 4 pistons, resin pads; Rear rotor: TRP RS05 203 mm - Front rotor: TRP RS05 220 mm; 6-bolt, 2.3 mm width",
+      "dimensions": {
+        "width": 2.3
+      }
     },
     {
       "type": "chain",
       "manufacturer": "SRAM",
-      "description": "SRAM GX T-Type"
+      "description": "SRAM GX T-Type; 12s, Flattop"
     },
     {
       "type": "cogcassettefreewheel",
@@ -228,11 +259,11 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM XS 1270 T-TYPE"
+      "description": "SRAM XS 1270 T-TYPE; 12s, 10-52t"
     },
     {
       "type": "crankset",
-      "description": "E13 Helix Core E*Spec, 155 mm crank arms, Bosch",
+      "description": "E13 Helix Core E*Spec, 155 mm crank arms, Bosch; Chainring: SRAM E-MTB T-Type, 34t for Bosch system, direct mount",
       "dimensions": {
         "length": 155
       }
@@ -249,17 +280,17 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM Eagle 90"
+      "description": "SRAM Eagle 90; 12s"
     },
     {
       "type": "ebike-battery",
       "manufacturer": "Bosch",
-      "description": "BOSCH Powertube 800"
+      "description": "BOSCH Powertube 800; Fully integrated main battery, 800 Wh; BOSCH 4A Battery Charger. Compact size & lightweight"
     },
     {
       "type": "ebike-displayremote",
       "manufacturer": "Bosch",
-      "description": "BOSCH Kiox 400C : Integrated and colored display providing a large range of information : speed, ride mode, battery range, charge level, fitness data, elevation gain, altitude and even navigation."
+      "description": "BOSCH Kiox 400C : Integrated and colored display providing a large range of information : speed, ride mode, battery range, charge level, fitness data, elevation gain, altitude and even navigation.; BOSCH System Controller, ON/OFF switch, assist mode level, battery charge level; Switch: BOSCH Mini Remote, mode switch, walk assist, light switch"
     },
     {
       "type": "fender",
@@ -268,9 +299,12 @@
     {
       "type": "fork",
       "manufacturer": "RockShox",
-      "description": "ROCKSHOX ZEB Ultimate, 180 mm",
+      "description": "ROCKSHOX ZEB Ultimate, 180 mm; 29\", Charger 3.1 damper, HSR, LSR, HSC, LSC, Boost (15 x 110 mm), 44 mm offset",
       "dimensions": {
-        "travel": 180
+        "travel": 180,
+        "offset": 44,
+        "axle_diameter": 15,
+        "axle_spacing": 110
       }
     },
     {
@@ -292,21 +326,24 @@
     {
       "type": "gripstape",
       "type_detail": "Grips",
-      "description": "RIDE ALPHA Mushroom"
+      "description": "RIDE ALPHA Mushroom; Soft compound, single clamp, black"
     },
     {
       "type": "handlebar",
-      "description": "RIDE ALPHA R20 760 on S - RIDE ALPHA R27 780 on M / L - RIDE ALPHA R27 800 on XL"
+      "description": "RIDE ALPHA R20 760 on S - RIDE ALPHA R27 780 on M / L - RIDE ALPHA R27 800 on XL; 31.8 mm, 760 mm width, 20 mm rise, Alloy 6061 on S - 31.8 mm, 780 mm width, 27 mm rise, Alloy 6061 on M / L - 31.8 mm, 800 mm width, 27 mm rise, Alloy 6061 on XL",
+      "dimensions": {
+        "diameter": 31.8
+      }
     },
     {
       "type": "headset",
       "manufacturer": "Acros",
-      "description": "ACROS ZS56 / ZS66"
+      "description": "ACROS ZS56 / ZS66; Alloy cups, stainless steel & sealed bearings"
     },
     {
       "type": "hub",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS 370"
+      "description": "DT SWISS 370; Rear: 28h, sealed bearings, 12 x 148 mm, SRAM XD - Front: 28h, sealed bearings, 15 x 110 mm"
     },
     {
       "type": "pedals",
@@ -321,7 +358,11 @@
         "rear"
       ],
       "manufacturer": "RockShox",
-      "description": "ROCKSHOX Super Deluxe Select"
+      "description": "ROCKSHOX Super Deluxe Select; 230 x 65 mm, Debonair +, 2-postion (open/firm) lever, Rebound",
+      "dimensions": {
+        "length": 230,
+        "travel": 65
+      }
     },
     {
       "type": "rear-suspension",
@@ -338,23 +379,32 @@
     {
       "type": "rim",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS H1900"
+      "description": "DT SWISS H1900; Rear: 27.5'', 28h, 30 mm inner width - Front: 29'', 28h, 30 mm inner width",
+      "dimensions": {
+        "inner_width": 30
+      }
     },
     {
       "type": "saddle",
       "manufacturer": "Fizik",
-      "description": "FIZIK Terra Aidon X5"
+      "description": "FIZIK Terra Aidon X5; 145 mm width, Kium Mobius rails",
+      "dimensions": {
+        "width": 145
+      }
     },
     {
       "type": "seatpost",
       "type_detail": "Seat post",
       "manufacturer": "KS",
-      "description": "KS Ragei"
+      "description": "KS Ragei; 34.9 mm, 125 mm on S, 170 mm on M and 190 mm on L/XL",
+      "dimensions": {
+        "diameter": 34.9
+      }
     },
     {
       "type": "shifter",
       "manufacturer": "SRAM",
-      "description": "SRAM Eagle 90"
+      "description": "SRAM Eagle 90; 12s"
     },
     {
       "type": "spokes",
@@ -363,7 +413,11 @@
     },
     {
       "type": "stem",
-      "description": "RIDE ALPHA 40"
+      "description": "RIDE ALPHA 40; 40 mm extension, 31.8 mm",
+      "dimensions": {
+        "length": 40,
+        "diameter": 31.8
+      }
     },
     {
       "type": "tire",
@@ -371,7 +425,30 @@
         "front",
         "rear"
       ],
-      "description": "Rear: MAXXIS Minion DHRII 27.5'' - Front: MAXXIS ASSEGAI 29''"
+      "description": "Rear: MAXXIS Minion DHRII 27.5'' - Front: MAXXIS ASSEGAI 29''; Rear: 27.5x2.50 WT, 3C MaxxTerra, Double Down, TR - Front: 29x2.50 WT, 3C MaxxGrip, New EXO+, TR",
+      "dimensions": {
+        "width": 63.5
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended SAG",
+      "description": "28-31% / 18-20mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Piggy back shock compatible",
+      "description": "Yes"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended/max. fork height",
+      "description": "588mm / 598mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain line",
+      "description": "55"
     },
     {
       "type": "water-bottle-cage",

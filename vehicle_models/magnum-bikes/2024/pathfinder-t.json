@@ -129,6 +129,7 @@
   "motors": [
     {
       "kind": "hub-drive",
+      "sensor_torque": "bottom_bracket_spindle",
       "certifications": [
         "UL 2849"
       ],
@@ -158,6 +159,7 @@
           "mode": "throttle",
           "availability": "stock",
           "max_speed": 32,
+          "throttle_type": "Twist",
           "e_vehicle_classifications": [
             "evc/us/class-2"
           ]
@@ -326,12 +328,6 @@
       "type": "unknown",
       "type_detail": "Assist Modes",
       "description": "Torque Sensor Pedal Assist, Twist Throttle, Walk Mode"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Gearing details",
-      "manufacturer": "Shimano",
-      "description": "Shimano 7-Speed"
     }
   ]
 }

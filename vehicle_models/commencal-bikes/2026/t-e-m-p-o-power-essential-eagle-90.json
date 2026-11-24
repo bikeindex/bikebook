@@ -35,6 +35,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6066 Aluminum",
+    "cable_routing": "stealth",
     "bottom_bracket": {
       "spindle": "ISIS"
     },
@@ -52,6 +53,7 @@
       "travel": 135,
       "shock_length": 210,
       "shock_stroke": 50,
+      "shock_mount": "20x10mm - 30x10mm",
       "spring": "air"
     }
   },
@@ -61,6 +63,7 @@
       "position": [
         "front"
       ],
+      "tire_width": 61,
       "tire_system": "tubeless_ready",
       "axle_diameter": 15,
       "axle_spacing": 110
@@ -70,10 +73,12 @@
       "position": [
         "rear"
       ],
+      "tire_width": 61,
       "tire_system": "tubeless_ready",
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 148,
+      "axle_length": 180,
       "axle_thread_pitch": 1,
       "tire_width_max": 65
     }
@@ -85,6 +90,10 @@
   "gearing": {
     "front": [
       34
+    ],
+    "rear": [
+      10,
+      52
     ]
   },
   "groupset": {
@@ -181,7 +190,7 @@
         "dropper_travel": 170,
         "max_seatpost_insertion": 265,
         "total_weight": 20.4,
-        "frame_weight": 3.8
+        "frame_weight": 3.84
       }
     },
     {
@@ -253,7 +262,7 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM XS 1270 T-Type"
+      "description": "SRAM XS 1270 T-Type; 12s, 10-52t"
     },
     {
       "type": "crankset",
@@ -335,7 +344,7 @@
     {
       "type": "hub",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS 370"
+      "description": "DT SWISS 370; Rear: 28h, 12 x 148 mm, sealed bearings, 18t, Shimano Hyperglide - Front: 28h, 15 x 110 mm, sealed bearings"
     },
     {
       "type": "pedals",
@@ -422,7 +431,30 @@
         "front",
         "rear"
       ],
-      "description": "Rear: MAXXIS DHRII - Front: MAXXIS Assegai"
+      "description": "Rear: MAXXIS DHRII - Front: MAXXIS Assegai; Rear: 29 x 2.40WT, 3C MaxxTerra, NEXO +, TR - Front: 29 x 2.50WT, 3C MaxxTerra, EXO, TR",
+      "dimensions": {
+        "diameter": 622
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended SAG",
+      "description": "25-27% / 14-16mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Piggy back shock compatible",
+      "description": "Yes"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended/max. fork height",
+      "description": "551mm / 561mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain line",
+      "description": "55"
     },
     {
       "type": "water-bottle-cage",

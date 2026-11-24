@@ -33,6 +33,14 @@
   "frame": {
     "material": "steel"
   },
+  "brakes": [
+    {
+      "type": "motor-brake",
+      "position": [
+        "motor"
+      ]
+    }
+  ],
   "motors": [
     {
       "water_rating": "IP54",
@@ -86,11 +94,16 @@
           "width": 320,
           "height": 170
         },
-        "total_weight": 15
+        "total_weight": 16
       }
     }
   ],
   "components": [
+    {
+      "type": "brake",
+      "type_detail": "Braking",
+      "description": "Electronic brake EBS"
+    },
     {
       "type": "ebike-battery",
       "description": "Battery Capacity: 22500mah"
@@ -202,11 +215,6 @@
     },
     {
       "type": "unknown",
-      "type_detail": "Braking",
-      "description": "Electronic brake EBS"
-    },
-    {
-      "type": "unknown",
       "type_detail": "Watts",
       "description": "2000w"
     },
@@ -259,11 +267,6 @@
       "type": "unknown",
       "type_detail": "Remote Control distance",
       "description": "8-10m"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "N.W.",
-      "description": "33Lbs (16KG)"
     },
     {
       "type": "unknown",

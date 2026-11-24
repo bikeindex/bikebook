@@ -44,6 +44,7 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6061 Aluminum",
     "bottom_bracket": {
       "shell": "BB92",
       "width": 92
@@ -57,12 +58,14 @@
   },
   "suspension": {
     "front": {
-      "travel": 145
+      "travel": 145,
+      "spring": "air"
     },
     "rear": {
       "travel": 145,
       "shock_length": 190,
-      "shock_stroke": 45
+      "shock_stroke": 45,
+      "shock_mount": "20x8mm / 30x8mm"
     }
   },
   "wheels": [
@@ -70,16 +73,21 @@
       "bsd": 507,
       "position": [
         "front"
-      ]
+      ],
+      "tire_width": 58,
+      "axle_diameter": 15,
+      "axle_spacing": 110
     },
     {
       "bsd": 507,
       "position": [
         "rear"
       ],
+      "tire_width": 58,
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 148,
+      "axle_length": 183,
       "axle_thread_pitch": 1,
       "tire_width_max": 63
     }
@@ -88,6 +96,15 @@
     "1-front",
     "10-rear"
   ],
+  "gearing": {
+    "front": [
+      30
+    ],
+    "rear": [
+      11,
+      48
+    ]
+  },
   "groupset": {
     "manufacturer": "MicroShift",
     "series": "Advent X",
@@ -98,35 +115,20 @@
       "type": "disc-hydraulic",
       "position": [
         "front"
-      ]
+      ],
+      "rotor_diameter": 180
     },
     {
       "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
+      "rotor_diameter": 180,
       "rotor_diameter_max": 200,
       "caliper_mount": "Disc Post Mount"
     }
   ],
   "sizes": [
-    {
-      "name": "20",
-      "geometry": {
-        "reach": 320,
-        "stack": 451,
-        "top_tube_effective": 434,
-        "seat_tube_ct": 260,
-        "head_angle": 65,
-        "seat_angle": 74,
-        "head_tube": 100,
-        "chainstay": 345,
-        "wheelbase": 927,
-        "bb_drop": -16,
-        "fork_rake": 40,
-        "fork_length_a2c": 430
-      }
-    },
     {
       "name": "24",
       "geometry": {
@@ -142,48 +144,15 @@
         "bb_drop": 6,
         "fork_rake": 40,
         "fork_length_a2c": 500,
+        "max_seatpost_insertion": 180,
         "frame_weight": 2.9
-      }
-    },
-    {
-      "name": "JR",
-      "geometry": {
-        "reach": 380,
-        "stack": 583,
-        "top_tube_effective": 509,
-        "seat_tube_ct": 350,
-        "head_angle": 64.5,
-        "seat_angle": 77.5,
-        "head_tube": 110,
-        "chainstay": 434,
-        "wheelbase": 1139,
-        "bb_drop": 0,
-        "fork_rake": 42,
-        "fork_length_a2c": 552
-      }
-    },
-    {
-      "name": "XS",
-      "geometry": {
-        "reach": 410,
-        "stack": 593,
-        "top_tube_effective": 542,
-        "seat_tube_ct": 360,
-        "head_angle": 64,
-        "seat_angle": 77.5,
-        "head_tube": 110,
-        "chainstay": 434,
-        "wheelbase": 1174,
-        "bb_drop": 12,
-        "fork_rake": 42,
-        "fork_length_a2c": 552
       }
     }
   ],
   "components": [
     {
       "type": "bottom-bracket",
-      "description": "PROWHEEL"
+      "description": "PROWHEEL; BB92 MTB"
     },
     {
       "type": "brake",
@@ -192,12 +161,12 @@
         "rear"
       ],
       "manufacturer": "Tektro",
-      "description": "TEKTRO HD-J2820, Hydraulic disc brake, 2 pistons, resin pads"
+      "description": "TEKTRO HD-J2820, Hydraulic disc brake, 2 pistons, resin pads; Rotors: TEKTRO TR180, 6-bolt, 180 mm, 1.8 mm thickness"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
-      "description": "KMC X10 EPT"
+      "description": "KMC X10 EPT; 10s"
     },
     {
       "type": "cogcassettefreewheel",
@@ -205,11 +174,11 @@
         "rear"
       ],
       "manufacturer": "MicroShift",
-      "description": "MICROSHIFT Advent X"
+      "description": "MICROSHIFT Advent X; 10s, 11-48t"
     },
     {
       "type": "crankset",
-      "description": "PROWHEEL, 140 mm crank arms",
+      "description": "PROWHEEL, 140 mm crank arms; Chainring: PROWHEEL, 30t",
       "dimensions": {
         "length": 140
       }
@@ -220,14 +189,17 @@
         "rear"
       ],
       "manufacturer": "MicroShift",
-      "description": "MICROSHIFT Advent X"
+      "description": "MICROSHIFT Advent X; 10s"
     },
     {
       "type": "fork",
       "manufacturer": "Manitou",
-      "description": "MANITOU JUNIT PRO 24, 145 mm",
+      "description": "MANITOU JUNIT PRO 24, 145 mm; Kids specific air cartridge, rebound, compression. Boost (15 x 110 mm), 40 mm Offset",
       "dimensions": {
-        "travel": 145
+        "travel": 145,
+        "offset": 40,
+        "axle_diameter": 15,
+        "axle_spacing": 110
       }
     },
     {
@@ -242,20 +214,25 @@
       "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "ODI",
-      "description": "ODI Elite Motion"
+      "description": "ODI Elite Motion; Soft pro compound, single clamp, black"
     },
     {
       "type": "handlebar",
-      "description": "RIDE ALPHA R15 640"
+      "description": "RIDE ALPHA R15 640; 31.8 mm, 640 mm width, 15 mm rise, Alloy 6061",
+      "dimensions": {
+        "width": 640,
+        "diameter": 31.8,
+        "rise": 15
+      }
     },
     {
       "type": "headset",
       "manufacturer": "Acros",
-      "description": "ACROS ZS44/ZS56"
+      "description": "ACROS ZS44/ZS56; Alloy cups, sealed bearings"
     },
     {
       "type": "hub",
-      "description": "Rear: FORMULA DHT-148S - Front: FORMULA DC-611"
+      "description": "Rear: FORMULA DHT-148S - Front: FORMULA DC-611; 28h, sealed bearings"
     },
     {
       "type": "pedals",
@@ -269,7 +246,11 @@
         "rear"
       ],
       "manufacturer": "RockShox",
-      "description": "ROCKSHOX Deluxe Select"
+      "description": "ROCKSHOX Deluxe Select; 190 x 45 mm, rebound, threshold adjustment, 1 token",
+      "dimensions": {
+        "length": 190,
+        "travel": 45
+      }
     },
     {
       "type": "rear-suspension",
@@ -285,31 +266,46 @@
     },
     {
       "type": "rim",
-      "description": "ALEXRIMS MD30"
+      "description": "ALEXRIMS MD30; 24'', 28h, 30 mm inner width",
+      "dimensions": {
+        "diameter": 507,
+        "inner_width": 30
+      }
     },
     {
       "type": "saddle",
       "manufacturer": "Selle Royal",
-      "description": "SELLE ROYAL Explora JR"
+      "description": "SELLE ROYAL Explora JR; 135 mm width, soft padding",
+      "dimensions": {
+        "width": 135
+      }
     },
     {
       "type": "seatpost",
       "type_detail": "Seat post",
-      "description": "RIDE ALPHA"
+      "description": "RIDE ALPHA; 31.6 mm, AL6061, 300 mm",
+      "dimensions": {
+        "length": 300,
+        "diameter": 31.6
+      }
     },
     {
       "type": "shifter",
       "manufacturer": "MicroShift",
-      "description": "MICROSHIFT Advent X"
+      "description": "MICROSHIFT Advent X; 10s"
     },
     {
       "type": "spokes",
       "type_detail": "Spokes/nipples",
-      "description": "SAPIM D-LIGHT"
+      "description": "SAPIM D-LIGHT; 2.0-1.65-2.0mm, double butted, stainless, with Nylok, black"
     },
     {
       "type": "stem",
-      "description": "RIDE ALPHA 40"
+      "description": "RIDE ALPHA 40; 40 mm extension, 31.8 mm",
+      "dimensions": {
+        "length": 40,
+        "diameter": 31.8
+      }
     },
     {
       "type": "tire",
@@ -317,7 +313,30 @@
         "front",
         "rear"
       ],
-      "description": "Rear: MAXXIS DHR II - Front: MAXXIS DHF"
+      "description": "Rear: MAXXIS DHR II - Front: MAXXIS DHF; Rear: 24\"x2.30\", Clincher - Front: 24\"x2.40\", Clincher",
+      "dimensions": {
+        "diameter": 507
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended SAG",
+      "description": "26-30% / 14-17mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Piggy back shock compatible",
+      "description": "Yes"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended/max. fork height",
+      "description": "500mm / 510mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain line",
+      "description": "52"
     }
   ]
 }

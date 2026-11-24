@@ -34,6 +34,8 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6066 Aluminum",
+    "cable_routing": "stealth",
     "seatpost_diameter": 34.9,
     "seatpost_clamp_diameter": 38.5,
     "derailleur_hanger": "UDH",
@@ -47,6 +49,7 @@
       "travel": 160,
       "shock_length": 230,
       "shock_stroke": 60,
+      "shock_mount": "20x10mm / No bushing needed on yoke",
       "spring": "air"
     }
   },
@@ -55,17 +58,22 @@
       "bsd": 622,
       "position": [
         "front"
-      ]
+      ],
+      "axle_diameter": 15,
+      "axle_spacing": 110
     },
     {
       "bsd": 584,
       "position": [
         "rear"
       ],
+      "tire_width": 64,
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 148,
+      "axle_length": 180,
       "axle_thread_pitch": 1,
+      "cassette_interface": "xd",
       "tire_width_max": 65
     }
   ],
@@ -73,6 +81,15 @@
     "1-front",
     "12-rear"
   ],
+  "gearing": {
+    "front": [
+      34
+    ],
+    "rear": [
+      10,
+      52
+    ]
+  },
   "groupset": {
     "manufacturer": "SRAM",
     "series": "GX",
@@ -83,13 +100,15 @@
       "type": "disc-hydraulic",
       "position": [
         "front"
-      ]
+      ],
+      "rotor_diameter": 203
     },
     {
       "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
+      "rotor_diameter": 203,
       "rotor_diameter_max": 223,
       "caliper_mount": "Disc Post Mount"
     }
@@ -101,6 +120,9 @@
       "manufacturer": "DJI",
       "model": "Avinox M2S",
       "kind": "mid-drive",
+      "battery": {
+        "capacity": 600
+      },
       "rated_power": 250,
       "peak_power": 1300,
       "max_torque": 150,
@@ -128,6 +150,7 @@
         "bb_drop": 0,
         "fork_rake": 44,
         "fork_length_a2c": 576,
+        "handlebar_width": 760,
         "max_seatpost_insertion": 180
       }
     },
@@ -146,6 +169,7 @@
         "bb_drop": 0,
         "fork_rake": 44,
         "fork_length_a2c": 576,
+        "handlebar_width": 780,
         "max_seatpost_insertion": 220,
         "total_weight": 24.1,
         "frame_weight": 4.8
@@ -166,6 +190,7 @@
         "bb_drop": 0,
         "fork_rake": 44,
         "fork_length_a2c": 576,
+        "handlebar_width": 780,
         "max_seatpost_insertion": 240
       }
     },
@@ -184,6 +209,7 @@
         "bb_drop": 0,
         "fork_rake": 44,
         "fork_length_a2c": 576,
+        "handlebar_width": 800,
         "max_seatpost_insertion": 260
       }
     }
@@ -191,7 +217,7 @@
   "components": [
     {
       "type": "bashguardchain-guide",
-      "description": "RIDE ALPHA"
+      "description": "RIDE ALPHA; 32-34t"
     },
     {
       "type": "brake",
@@ -200,12 +226,12 @@
         "rear"
       ],
       "manufacturer": "Shimano",
-      "description": "SHIMANO XT, 4 pistons"
+      "description": "SHIMANO XT, 4 pistons; Rotors: GALFER SHARK, 6-bolt, 203 mm"
     },
     {
       "type": "chain",
       "manufacturer": "SRAM",
-      "description": "SRAM GX EAGLE T-TYPE"
+      "description": "SRAM GX EAGLE T-TYPE; 12s, Flat Top"
     },
     {
       "type": "cogcassettefreewheel",
@@ -213,11 +239,11 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM X0 EAGLE T-TYPE"
+      "description": "SRAM X0 EAGLE T-TYPE; 12s, 10-52t"
     },
     {
       "type": "crankset",
-      "description": "E13 HELIX RACE, 155 mm crank arms, Bosch",
+      "description": "E13 HELIX RACE, 155 mm crank arms, Bosch; Chainring: SRAM CR T-TYPE, 34t, BCD 104",
       "dimensions": {
         "length": 155
       }
@@ -234,15 +260,19 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM GX EAGLE T-TYPE"
+      "description": "SRAM GX EAGLE T-TYPE; 12s"
     },
     {
       "type": "ebike-battery",
-      "description": "AVINOX"
+      "description": "AVINOX; 600 Wh on S, 800 Wh on M / L / XL, Fully integrated main battery; AVINOX 508w Fast Battery charger"
     },
     {
       "type": "ebike-displayremote",
-      "description": "AVINOX DP100 : Integrated and colored touchscreen providing a large range of information : speed, ride mode, battery range, charge level, fitness data, elevation gain, altitude and many more. It also features a USB-C port, GPS sensor, barometer, compass, 4G connection and even a theft alarm system."
+      "description": "AVINOX DP100 : Integrated and colored touchscreen providing a large range of information : speed, ride mode, battery range, charge level, fitness data, elevation gain, altitude and many more. It also features a USB-C port, GPS sensor, barometer, compass, 4G connection and even a theft alarm system.; AVINOX BD100, ON/OFF switch, assist mode level, battery charge level; Switch: AVINOX BC100, mode switch, walk assist, light switch"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "AVINOX M2S; 150 Nm peak torque with a 1,300 W boost mode, and 130 Nm / 1300 W in normal operation"
     },
     {
       "type": "fender",
@@ -251,9 +281,12 @@
     {
       "type": "fork",
       "manufacturer": "Fox",
-      "description": "FOX 36 Factory 160 mm",
+      "description": "FOX 36 Factory 160 mm; 29\", Grip X2 damper, HSR, LSR, HSC, LSC, Boost (15 x 110 mm), 44 mm offset",
       "dimensions": {
-        "travel": 160
+        "travel": 160,
+        "offset": 44,
+        "axle_diameter": 15,
+        "axle_spacing": 110
       }
     },
     {
@@ -276,21 +309,24 @@
       "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "ODI",
-      "description": "ODI LONGNECK V2.1"
+      "description": "ODI LONGNECK V2.1; Soft compound, single clamp, black"
     },
     {
       "type": "handlebar",
-      "description": "RIDE ALPHA R20 760 on S - RIDE ALPHA R27 780 on M / L - RIDE ALPHA R27 800 on XL"
+      "description": "RIDE ALPHA R20 760 on S - RIDE ALPHA R27 780 on M / L - RIDE ALPHA R27 800 on XL; 31.8 mm, 760 mm width, 20 mm rise, Alloy 6061 on S - 31.8 mm, 780 mm width, 27 mm rise, Alloy 6061 on M / L - 31.8 mm, 800 mm width, 27 mm rise, Alloy 6061 on XL",
+      "dimensions": {
+        "diameter": 31.8
+      }
     },
     {
       "type": "headset",
       "manufacturer": "Acros",
-      "description": "ACROS ZS56 / ZS66"
+      "description": "ACROS ZS56 / ZS66; Alloy cups, stainless steel & sealed bearings"
     },
     {
       "type": "hub",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS 350 Hybrid"
+      "description": "DT SWISS 350 Hybrid; Rear: 28h, sealed bearings, 12 x 148 mm, DEG DF, Sram XD - Front: 28h, sealed bearings, 15 x 110 mm"
     },
     {
       "type": "pedals",
@@ -305,7 +341,11 @@
         "rear"
       ],
       "manufacturer": "Fox",
-      "description": "FOX Float X Factory"
+      "description": "FOX Float X Factory; 230 x 60 mm, 2-postion (open/firm) lever, HSC, LSC, HSR, LSR, 0.4ci Spacers",
+      "dimensions": {
+        "length": 230,
+        "travel": 60
+      }
     },
     {
       "type": "rear-suspension",
@@ -322,33 +362,47 @@
     {
       "type": "rim",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS HX1700"
+      "description": "DT SWISS HX1700; Rear: 27.5'', 28h, 30 mm inner width - Front: 29'', 28h, 30 mm inner width",
+      "dimensions": {
+        "inner_width": 30
+      }
     },
     {
       "type": "saddle",
       "manufacturer": "WTB",
-      "description": "WTB SOLANO"
+      "description": "WTB SOLANO; 142 x 240 mm, Medium",
+      "dimensions": {
+        "length": 240,
+        "width": 142
+      }
     },
     {
       "type": "seatpost",
       "type_detail": "Seat post",
       "manufacturer": "One Up",
-      "description": "ONE UP V3"
+      "description": "ONE UP V3; 34.9 mm, 150 mm on S, 180 mm on M and 210 mm on L/XL",
+      "dimensions": {
+        "diameter": 34.9
+      }
     },
     {
       "type": "shifter",
       "manufacturer": "SRAM",
-      "description": "SRAM AXS POD"
+      "description": "SRAM AXS POD; 12s"
     },
     {
       "type": "spokes",
       "type_detail": "Spokes/nipples",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS Hybrid 1"
+      "description": "DT SWISS Hybrid 1; Straightpull, 2.34/2.0mm, double butted, stainless, with ProLock, blackCOMMENCAL META POWER SX AVINOX SIGNATURE PURE BLACK 2027"
     },
     {
       "type": "stem",
-      "description": "RIDE ALPHA 40"
+      "description": "RIDE ALPHA 40; 40 mm extension, 31.8 mm",
+      "dimensions": {
+        "length": 40,
+        "diameter": 31.8
+      }
     },
     {
       "type": "tire",
@@ -356,10 +410,30 @@
         "front",
         "rear"
       ],
-      "description": "Rear: MAXXIS MINION DHRII 27.5'' - Front: MAXXIS MINION DHRII 29'",
+      "description": "Rear: MAXXIS MINION DHRII 27.5'' - Front: MAXXIS MINION DHRII 29'; Rear: 27.5x2.50WT 3C MaxxTerra / EXO+ Casing / TR - Front: 29x2.50WT 3C MaxxTerra / EXO+ Casing / TR",
       "dimensions": {
-        "diameter": 584
+        "width": 63.5
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended SAG",
+      "description": "29-32% / 17,5-19mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Piggy back shock compatible",
+      "description": "Yes"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended/max. fork height",
+      "description": "576mm / 586mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain line",
+      "description": "55"
     },
     {
       "type": "water-bottle-cage",

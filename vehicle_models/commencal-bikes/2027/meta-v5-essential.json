@@ -52,6 +52,8 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6066 Aluminum",
+    "cable_routing": "stealth",
     "bottom_bracket": {
       "shell": "BB92",
       "width": 92
@@ -71,6 +73,7 @@
       "travel": 150,
       "shock_length": 210,
       "shock_stroke": 55,
+      "shock_mount": "20x10mm / No bushing needed on yoke",
       "spring": "air"
     }
   },
@@ -79,16 +82,23 @@
       "bsd": 622,
       "position": [
         "front"
-      ]
+      ],
+      "tire_width": 64,
+      "tire_system": "tubeless_ready",
+      "axle_diameter": 15,
+      "axle_spacing": 110
     },
     {
       "bsd": 622,
       "position": [
         "rear"
       ],
+      "tire_width": 64,
+      "tire_system": "tubeless_ready",
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 148,
+      "axle_length": 180,
       "axle_thread_pitch": 1,
       "tire_width_max": 65
     }
@@ -97,6 +107,15 @@
     "1-front",
     "12-rear"
   ],
+  "gearing": {
+    "front": [
+      32
+    ],
+    "rear": [
+      10,
+      52
+    ]
+  },
   "groupset": {
     "manufacturer": "SRAM",
     "series": "Eagle 90",
@@ -107,13 +126,15 @@
       "type": "disc-hydraulic",
       "position": [
         "front"
-      ]
+      ],
+      "rotor_diameter": 203
     },
     {
       "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
+      "rotor_diameter": 203,
       "rotor_diameter_max": 223,
       "caliper_mount": "Disc Post Mount"
     }
@@ -132,7 +153,10 @@
         "chainstay": 435,
         "wheelbase": 1214,
         "bb_drop": 20,
+        "fork_rake": 44,
         "fork_length_a2c": 571,
+        "handlebar_width": 760,
+        "dropper_travel": 150,
         "max_seatpost_insertion": 230
       },
       "geometry_settings": [
@@ -164,10 +188,13 @@
         "chainstay": 435,
         "wheelbase": 1236,
         "bb_drop": 20,
+        "fork_rake": 44,
         "fork_length_a2c": 571,
+        "handlebar_width": 780,
+        "dropper_travel": 170,
         "max_seatpost_insertion": 270,
         "total_weight": 17,
-        "frame_weight": 4.1
+        "frame_weight": 4.06
       },
       "geometry_settings": [
         {
@@ -198,7 +225,10 @@
         "chainstay": 440,
         "wheelbase": 1270,
         "bb_drop": 20,
+        "fork_rake": 44,
         "fork_length_a2c": 571,
+        "handlebar_width": 780,
+        "dropper_travel": 190,
         "max_seatpost_insertion": 290
       },
       "geometry_settings": [
@@ -230,7 +260,10 @@
         "chainstay": 440,
         "wheelbase": 1293,
         "bb_drop": 20,
+        "fork_rake": 44,
         "fork_length_a2c": 571,
+        "handlebar_width": 800,
+        "dropper_travel": 190,
         "max_seatpost_insertion": 310
       },
       "geometry_settings": [
@@ -252,12 +285,12 @@
   "components": [
     {
       "type": "bashguardchain-guide",
-      "description": "RIDE ALPHA"
+      "description": "RIDE ALPHA; 32t-34t"
     },
     {
       "type": "bottom-bracket",
       "manufacturer": "SRAM",
-      "description": "SRAM DUB92"
+      "description": "SRAM DUB92; MTB WIDE, Pressfit"
     },
     {
       "type": "brake",
@@ -266,12 +299,12 @@
         "rear"
       ],
       "manufacturer": "TRP",
-      "description": "TRP EVO Expert, 4 pistons"
+      "description": "TRP EVO Expert, 4 pistons; Rotors : TRP RS06E 203 mm, 6-bolts"
     },
     {
       "type": "chain",
       "manufacturer": "SRAM",
-      "description": "SRAM Eagle 70"
+      "description": "SRAM Eagle 70; 12s"
     },
     {
       "type": "cogcassettefreewheel",
@@ -279,12 +312,12 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM XS 1270"
+      "description": "SRAM XS 1270; 12s, 10-52t"
     },
     {
       "type": "crankset",
       "manufacturer": "SRAM",
-      "description": "SRAM Eagle 70, 170 mm crank arms",
+      "description": "SRAM Eagle 70, 170 mm crank arms; Chainring : SRAM Eagle 70, 32t",
       "dimensions": {
         "length": 170
       }
@@ -295,7 +328,7 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM Eagle 90"
+      "description": "SRAM Eagle 90; 12s"
     },
     {
       "type": "fender",
@@ -304,9 +337,12 @@
     {
       "type": "fork",
       "manufacturer": "Fox",
-      "description": "FOX 36 Performance, 160 mm travel",
+      "description": "FOX 36 Performance, 160 mm travel; 29\", Fit Grip damper, 3 positions, rebound, Boost (15 x 110 mm), 44 mm offset, 1 token",
       "dimensions": {
-        "travel": 160
+        "travel": 160,
+        "offset": 44,
+        "axle_diameter": 15,
+        "axle_spacing": 110
       }
     },
     {
@@ -328,21 +364,24 @@
     {
       "type": "gripstape",
       "type_detail": "Grips",
-      "description": "RIDE ALPHA Mushroom"
+      "description": "RIDE ALPHA Mushroom; Black clamp"
     },
     {
       "type": "handlebar",
-      "description": "RIDE ALPHA R20 760 on S - RIDE ALPHA R27 780 on M / L - RIDE ALPHA R35 800 on XL"
+      "description": "RIDE ALPHA R20 760 on S - RIDE ALPHA R27 780 on M / L - RIDE ALPHA R35 800 on XL; 31.8 mm, 760 mm width, 20 mm rise, Alloy 6061 on S - 31.8 mm, 780 mm width, 27 mm rise, Alloy 6061 on M / L - 31.8 mm, 800 mm width, 35 mm rise, Alloy 6061 on XL",
+      "dimensions": {
+        "diameter": 31.8
+      }
     },
     {
       "type": "headset",
       "manufacturer": "Acros",
-      "description": "ACROS ZS56/ZS56"
+      "description": "ACROS ZS56/ZS56; Alloy cups, sealed bearings"
     },
     {
       "type": "hub",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS 370"
+      "description": "DT SWISS 370; Rear : 32h, sealed bearings, 12 x 148 mm, Hyperglide - Front : 32h, sealed bearings, 15 x 110 mm"
     },
     {
       "type": "rear-suspension",
@@ -351,7 +390,11 @@
         "rear"
       ],
       "manufacturer": "Fox",
-      "description": "FOX Float X Performance 2027"
+      "description": "FOX Float X Performance 2027; 210 x 55 mm, 2-pos lever, rebound, LSC, 0,6ci spacers",
+      "dimensions": {
+        "length": 210,
+        "travel": 55
+      }
     },
     {
       "type": "rear-suspension",
@@ -366,35 +409,56 @@
       }
     },
     {
+      "type": "remote",
+      "manufacturer": "KS",
+      "description": "KS Ragei; 34.9 mm, travel: 150 mm on S, 170 mm on M and 190 mm on L/XL, I-SPEC EV, SouthPaw alloy remote"
+    },
+    {
       "type": "rim",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS E593"
+      "description": "DT SWISS E593; 29'', 32h, 28 mm inner width",
+      "dimensions": {
+        "diameter": 622,
+        "inner_width": 28
+      }
     },
     {
       "type": "saddle",
       "manufacturer": "WTB",
-      "description": "WTB Solano SL Crmo"
+      "description": "WTB Solano SL Crmo; Crmo rails, 142 x 240 mm",
+      "dimensions": {
+        "length": 240,
+        "width": 142
+      }
     },
     {
       "type": "seatpost",
       "type_detail": "Seat post",
       "manufacturer": "KS",
-      "description": "KS Ragei"
+      "description": "KS Ragei; 34.9 mm, travel: 150 mm on S, 170 mm on M and 190 mm on L/XL, I-SPEC EV, SouthPaw alloy remote",
+      "dimensions": {
+        "diameter": 34.9,
+        "travel": 150
+      }
     },
     {
       "type": "shifter",
       "manufacturer": "SRAM",
-      "description": "SRAM Eagle 90"
+      "description": "SRAM Eagle 90; 12s"
     },
     {
       "type": "spokes",
       "type_detail": "Spokes/nipples",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS Competition"
+      "description": "DT SWISS Competition; J-Bend, 2.0-1.8-2.0mm, double butted, stainless, with Nylok, black"
     },
     {
       "type": "stem",
-      "description": "RIDE ALPHA 40"
+      "description": "RIDE ALPHA 40; 40 mm extension, 31.8 mm",
+      "dimensions": {
+        "length": 40,
+        "diameter": 31.8
+      }
     },
     {
       "type": "tire",
@@ -402,7 +466,36 @@
         "front",
         "rear"
       ],
-      "description": "Rear : MAXXIS DHR II - Front : MAXXIS Assegai"
+      "description": "Rear : MAXXIS DHR II - Front : MAXXIS Assegai; Rear : 29''x2.5'' WT, 3C MaxxTerra, New EXO+, Tubeless Ready - Front : 29\"x2.5\" WT, 3C MaxxGrip, New EXO+, Tubeless Ready",
+      "dimensions": {
+        "width": 63.5,
+        "diameter": 622
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended SAG",
+      "description": "27-30% / 15-19mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Piggy back shock compatible",
+      "description": "Yes"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended/max. fork height",
+      "description": "571mm / 586mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain Line",
+      "description": "55"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "shock anchor adjustment",
+      "description": "2 positions"
     },
     {
       "type": "water-bottle-cage",

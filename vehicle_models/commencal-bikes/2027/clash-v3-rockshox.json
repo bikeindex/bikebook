@@ -34,6 +34,8 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6066 Aluminum",
+    "cable_routing": "stealth",
     "bottom_bracket": {
       "shell": "BSA",
       "width": 73,
@@ -53,7 +55,8 @@
     "rear": {
       "travel": 170,
       "shock_length": 230,
-      "shock_stroke": 65
+      "shock_stroke": 65,
+      "shock_mount": "20x8mm / 30x10mm"
     }
   },
   "wheels": [
@@ -61,16 +64,23 @@
       "bsd": 584,
       "position": [
         "front"
-      ]
+      ],
+      "tire_width": 64,
+      "tire_system": "tubeless_ready",
+      "axle_diameter": 15,
+      "axle_spacing": 110
     },
     {
       "bsd": 584,
       "position": [
         "rear"
       ],
+      "tire_width": 64,
+      "tire_system": "tubeless_ready",
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 148,
+      "axle_length": 180,
       "axle_thread_pitch": 1,
       "tire_width_max": 65
     }
@@ -79,6 +89,15 @@
     "1-front",
     "12-rear"
   ],
+  "gearing": {
+    "front": [
+      34
+    ],
+    "rear": [
+      10,
+      52
+    ]
+  },
   "groupset": {
     "manufacturer": "SRAM",
     "series": "Eagle 90",
@@ -89,13 +108,15 @@
       "type": "disc-hydraulic",
       "position": [
         "front"
-      ]
+      ],
+      "rotor_diameter": 200
     },
     {
       "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
+      "rotor_diameter": 200,
       "rotor_diameter_max": 223,
       "caliper_mount": "Disc Post Mount"
     }
@@ -116,6 +137,8 @@
         "bb_drop": 10,
         "fork_rake": 44,
         "fork_length_a2c": 577,
+        "handlebar_width": 760,
+        "dropper_travel": 150,
         "max_seatpost_insertion": 250
       }
     },
@@ -134,6 +157,8 @@
         "bb_drop": 10,
         "fork_rake": 44,
         "fork_length_a2c": 577,
+        "handlebar_width": 780,
+        "dropper_travel": 175,
         "max_seatpost_insertion": 280,
         "frame_weight": 4.9
       }
@@ -153,6 +178,8 @@
         "bb_drop": 10,
         "fork_rake": 44,
         "fork_length_a2c": 577,
+        "handlebar_width": 800,
+        "dropper_travel": 200,
         "max_seatpost_insertion": 300
       }
     }
@@ -165,7 +192,7 @@
     {
       "type": "bottom-bracket",
       "manufacturer": "SRAM",
-      "description": "SRAM DUB"
+      "description": "SRAM DUB; BSA 73 MTB wide"
     },
     {
       "type": "brake",
@@ -174,12 +201,12 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM Maven Base, 4 pistons, sintered pads"
+      "description": "SRAM Maven Base, 4 pistons, sintered pads; Rotors : SRAM Centerline 200 mm, 6-bolts"
     },
     {
       "type": "chain",
       "manufacturer": "SRAM",
-      "description": "SRAM GX T-type"
+      "description": "SRAM GX T-type; 12s"
     },
     {
       "type": "cogcassettefreewheel",
@@ -187,12 +214,12 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM XS 1270 T-type"
+      "description": "SRAM XS 1270 T-type; 12s, 10-52t"
     },
     {
       "type": "crankset",
       "manufacturer": "SRAM",
-      "description": "SRAM EAGLE 70, 165 mm",
+      "description": "SRAM EAGLE 70, 165 mm; Chainring : SRAM EAGLE 90, 34t T-type",
       "dimensions": {
         "length": 165
       }
@@ -203,14 +230,16 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM EAGLE 90"
+      "description": "SRAM EAGLE 90; 12s"
     },
     {
       "type": "fork",
       "manufacturer": "RockShox",
-      "description": "ROCKSHOX Zeb Ultimate, 180 mm",
+      "description": "ROCKSHOX Zeb Ultimate, 180 mm; 27.5'', Charger 3.2, HSC, LSC, HSR, LSR, Boost (15 x 110), 0 Token",
       "dimensions": {
-        "travel": 180
+        "travel": 180,
+        "axle_diameter": 15,
+        "axle_spacing": 110
       }
     },
     {
@@ -240,21 +269,24 @@
     {
       "type": "gripstape",
       "type_detail": "Grips",
-      "description": "RIDE ALPHA Mushroom"
+      "description": "RIDE ALPHA Mushroom; Single clamp, black"
     },
     {
       "type": "handlebar",
-      "description": "RIDE ALPHA R20 760 on S - RIDE ALPHA R27 780 on M - RIDE ALPHA R35 800 on L"
+      "description": "RIDE ALPHA R20 760 on S - RIDE ALPHA R27 780 on M - RIDE ALPHA R35 800 on L; 31.8 mm, 760 mm width, 20 mm rise, Alloy 6061 on S - 31.8 mm, 780 mm width, 27 mm rise, Alloy 6061 on M - 31.8 mm, 800 mm width, 35 mm rise, Alloy 6061 on L",
+      "dimensions": {
+        "diameter": 31.8
+      }
     },
     {
       "type": "headset",
       "manufacturer": "Acros",
-      "description": "ACROS ZS56 / ZS56"
+      "description": "ACROS ZS56 / ZS56; Alloy cups, sealed bearings"
     },
     {
       "type": "hub",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS 370 Classic LN"
+      "description": "DT SWISS 370 Classic LN; Rear : 32h, sealed bearings, 12 x 148 mm, Hyperglide - Front : 32h, sealed bearings, 15 x 110 mm"
     },
     {
       "type": "rear-suspension",
@@ -263,7 +295,11 @@
         "rear"
       ],
       "manufacturer": "RockShox",
-      "description": "ROCKSHOX Super Deluxe Select"
+      "description": "ROCKSHOX Super Deluxe Select; 230 x 65 mm, Pos adjustment, Rebound",
+      "dimensions": {
+        "length": 230,
+        "travel": 65
+      }
     },
     {
       "type": "rear-suspension",
@@ -280,32 +316,43 @@
     {
       "type": "rim",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS F1900 Classic"
+      "description": "DT SWISS F1900 Classic; 27.5'', 32h, 30 mm inner width",
+      "dimensions": {
+        "diameter": 584,
+        "inner_width": 30
+      }
     },
     {
       "type": "saddle",
-      "description": "BURGTEC The Cloud boost"
+      "description": "BURGTEC The Cloud boost; Alloy rails, Black"
     },
     {
       "type": "seatpost",
       "type_detail": "Seat post",
       "manufacturer": "KS",
-      "description": "KS Lev Integra"
+      "description": "KS Lev Integra; 34.9 mm, 150 mm on S, 175 mm on M, 200 mm on L",
+      "dimensions": {
+        "diameter": 34.9
+      }
     },
     {
       "type": "shifter",
       "manufacturer": "SRAM",
-      "description": "SRAM EAGLE 90"
+      "description": "SRAM EAGLE 90; 12s"
     },
     {
       "type": "spokes",
       "type_detail": "Spokes/nipples",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS Competition"
+      "description": "DT SWISS Competition; J-Bend, 2.0-1.8-2.0mm, double butted, stainless, with Nylok, black"
     },
     {
       "type": "stem",
-      "description": "RIDE ALPHA 40"
+      "description": "RIDE ALPHA 40; 40 mm extension, 31.8 mm",
+      "dimensions": {
+        "length": 40,
+        "diameter": 31.8
+      }
     },
     {
       "type": "tire",
@@ -313,7 +360,26 @@
         "front",
         "rear"
       ],
-      "description": "Rear : SCHWALBE Tacky Chan - Front : SCHWALBE Magic Mary"
+      "description": "Rear : SCHWALBE Tacky Chan - Front : SCHWALBE Magic Mary; Rear : 27.5x2.50, Gravity, Soft, Tubeless ready - Front : 27.5x2.50, Trail Pro, Soft, Tubeless ready",
+      "dimensions": {
+        "width": 63.5,
+        "diameter": 584
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended SAG",
+      "description": "Freeride : 24-26 % / 15,5-17mm; Jump : 20-22 % / 13-14,5mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Piggy back shock compatible",
+      "description": "Yes"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain line",
+      "description": "55"
     },
     {
       "type": "water-bottle-cage",

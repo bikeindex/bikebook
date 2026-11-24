@@ -68,6 +68,7 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6061 Aluminum",
     "bottom_bracket": {
       "shell": "BSA",
       "width": 68
@@ -82,23 +83,36 @@
       "bsd": 406,
       "position": [
         "front"
-      ]
+      ],
+      "tire_width": 66
     },
     {
       "bsd": 406,
       "position": [
         "rear"
       ],
+      "tire_width": 66,
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 142,
+      "axle_length": 174,
       "axle_thread_pitch": 1,
       "tire_width_max": 65
     }
   ],
   "drivetrain": [
-    "1-front"
+    "1-front",
+    "7-rear"
   ],
+  "gearing": {
+    "front": [
+      30
+    ],
+    "rear": [
+      11,
+      34
+    ]
+  },
   "groupset": {
     "manufacturer": "Shimano",
     "series": "Tourney",
@@ -109,53 +123,20 @@
       "type": "disc-mechanical",
       "position": [
         "front"
-      ]
+      ],
+      "rotor_diameter": 160
     },
     {
       "type": "disc-mechanical",
       "position": [
         "rear"
       ],
+      "rotor_diameter": 160,
       "rotor_diameter_max": 160,
       "caliper_mount": "Disc Post Mount"
     }
   ],
   "sizes": [
-    {
-      "name": "14",
-      "geometry": {
-        "reach": 247,
-        "stack": 311,
-        "top_tube_effective": 342,
-        "seat_tube_ct": 175,
-        "head_angle": 70,
-        "seat_angle": 73,
-        "head_tube": 95,
-        "chainstay": 240,
-        "wheelbase": 620,
-        "bb_drop": 0,
-        "fork_rake": 19,
-        "fork_length_a2c": 240
-      }
-    },
-    {
-      "name": "16",
-      "geometry": {
-        "reach": 272,
-        "stack": 349,
-        "top_tube_effective": 378,
-        "seat_tube_ct": 190,
-        "head_angle": 70,
-        "seat_angle": 73,
-        "head_tube": 105,
-        "chainstay": 280,
-        "wheelbase": 699,
-        "bb_drop": 0,
-        "fork_rake": 19,
-        "fork_length_a2c": 270,
-        "total_weight": 10.3
-      }
-    },
     {
       "name": "20",
       "geometry": {
@@ -170,24 +151,11 @@
         "wheelbase": 848,
         "bb_drop": 35,
         "fork_rake": 40,
-        "fork_length_a2c": 330
-      }
-    },
-    {
-      "name": "24",
-      "geometry": {
-        "reach": 350,
-        "stack": 429.6,
-        "top_tube_effective": 489,
-        "seat_tube_ct": 280,
-        "head_angle": 68,
-        "seat_angle": 73.5,
-        "head_tube": 95,
-        "chainstay": 380,
-        "wheelbase": 947,
-        "bb_drop": 40,
-        "fork_rake": 40,
-        "fork_length_a2c": 380
+        "fork_length_a2c": 330,
+        "max_seatpost_insertion": 210,
+        "seat_height_min": 593,
+        "seat_height_max": 713,
+        "total_weight": 10.3
       }
     }
   ],
@@ -198,7 +166,7 @@
     },
     {
       "type": "bottom-bracket",
-      "description": "NECO B-910"
+      "description": "NECO B-910; BSA 68 mm, ball retainer"
     },
     {
       "type": "brake",
@@ -207,23 +175,23 @@
         "rear"
       ],
       "manufacturer": "Tektro",
-      "description": "TEKTRO Aries. Mechanical disc brakes, with kids specific Tektro levers and Jagwire cables"
+      "description": "TEKTRO Aries. Mechanical disc brakes, with kids specific Tektro levers and Jagwire cables; Rotors: TEKTRO 160 mm, 6-bolt"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
-      "description": "KMC Z7"
+      "description": "KMC Z7; 7s"
     },
     {
       "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
-      "description": "S-RIDE CS-M200"
+      "description": "S-RIDE CS-M200; 7s, 11-34t, with spoke protector"
     },
     {
       "type": "crankset",
-      "description": "COMMENCAL Kids, 127 mm crank arms",
+      "description": "COMMENCAL Kids, 127 mm crank arms; Chainring: 30t. External chainguard",
       "dimensions": {
         "length": 127
       }
@@ -234,28 +202,36 @@
         "rear"
       ],
       "manufacturer": "Shimano",
-      "description": "SHIMANO Tourney"
+      "description": "SHIMANO Tourney; 7s"
     },
     {
       "type": "fork",
-      "description": "RMNS 20"
+      "description": "RMNS 20; 20\", Alloy 6061"
     },
     {
       "type": "gripstape",
       "type_detail": "Grips",
-      "description": "COMMENCAL"
+      "description": "COMMENCAL; 115 mm / 76 mm",
+      "dimensions": {
+        "length": 115
+      }
     },
     {
       "type": "handlebar",
-      "description": "RIDE ALPHA kids"
+      "description": "RIDE ALPHA kids; 31.8 mm, 600 mm width, 25 mm rise, Alloy 6061",
+      "dimensions": {
+        "width": 600,
+        "diameter": 31.8,
+        "rise": 25
+      }
     },
     {
       "type": "headset",
-      "description": "NECO H-125"
+      "description": "NECO H-125; Semi-integrated"
     },
     {
       "type": "hub",
-      "description": "COMMENCAL"
+      "description": "COMMENCAL; 24h, sealed bearings, disc ready"
     },
     {
       "type": "light",
@@ -267,38 +243,43 @@
     },
     {
       "type": "rim",
-      "description": "COMMENCAL 20''",
+      "description": "COMMENCAL 20''; 24h, 30 mm inner width, Alloy 6061",
       "dimensions": {
-        "diameter": 406
+        "diameter": 406,
+        "inner_width": 30
       }
     },
     {
       "type": "saddle",
-      "description": "COMMENCAL Kids"
+      "description": "COMMENCAL Kids; Soft padding"
     },
     {
       "type": "seatpost",
       "type_detail": "Seat post",
-      "description": "COMMENCAL"
+      "description": "COMMENCAL; 27.2 mm, Alloy",
+      "dimensions": {
+        "diameter": 27.2
+      }
     },
     {
       "type": "shifter",
       "manufacturer": "Shimano",
-      "description": "SHIMANO Tourney"
+      "description": "SHIMANO Tourney; 7s, Revo Shifter"
     },
     {
       "type": "spokes",
       "type_detail": "Spokes/nipples",
-      "description": "2.0 mm",
+      "description": "2.0 mm; ED black",
       "dimensions": {
         "diameter": 2
       }
     },
     {
       "type": "stem",
-      "description": "COMMENCAL Alloy, 40 mm",
+      "description": "COMMENCAL Alloy, 40 mm; 40 mm extension, 31.8 mm",
       "dimensions": {
-        "length": 40
+        "length": 40,
+        "diameter": 31.8
       }
     },
     {
@@ -308,7 +289,16 @@
         "rear"
       ],
       "manufacturer": "Vee Rubber",
-      "description": "VEE TIRE CO. CrownGem"
+      "description": "VEE TIRE CO. CrownGem; 20'' x 2.6'', MPC Compound, Custom \"Send It\" patch",
+      "dimensions": {
+        "width": 66.04,
+        "diameter": 406
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain line",
+      "description": "45"
     }
   ]
 }

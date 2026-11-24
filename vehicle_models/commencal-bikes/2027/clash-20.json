@@ -43,6 +43,7 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6061 Aluminum",
     "bottom_bracket": {
       "shell": "BB92",
       "width": 92
@@ -55,12 +56,14 @@
   },
   "suspension": {
     "front": {
-      "travel": 120
+      "travel": 120,
+      "spring": "air"
     },
     "rear": {
       "travel": 125,
       "shock_length": 170,
-      "shock_stroke": 35
+      "shock_stroke": 35,
+      "shock_mount": "20x8mm / 30x8mm"
     }
   },
   "wheels": [
@@ -68,16 +71,21 @@
       "bsd": 406,
       "position": [
         "front"
-      ]
+      ],
+      "tire_width": 61,
+      "axle_diameter": 15,
+      "axle_spacing": 110
     },
     {
       "bsd": 406,
       "position": [
         "rear"
       ],
+      "tire_width": 61,
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 148,
+      "axle_length": 180,
       "axle_thread_pitch": 1,
       "tire_width_max": 61
     }
@@ -86,6 +94,15 @@
     "1-front",
     "8-rear"
   ],
+  "gearing": {
+    "front": [
+      30
+    ],
+    "rear": [
+      11,
+      38
+    ]
+  },
   "groupset": {
     "manufacturer": "MicroShift",
     "series": "Acolyte",
@@ -96,13 +113,15 @@
       "type": "disc-hydraulic",
       "position": [
         "front"
-      ]
+      ],
+      "rotor_diameter": 180
     },
     {
       "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
+      "rotor_diameter": 180,
       "rotor_diameter_max": 200,
       "caliper_mount": "Disc Post Mount"
     }
@@ -122,67 +141,17 @@
         "wheelbase": 927,
         "bb_drop": -16,
         "fork_rake": 40,
-        "fork_length_a2c": 430
-      }
-    },
-    {
-      "name": "24",
-      "geometry": {
-        "reach": 350,
-        "stack": 534,
-        "top_tube_effective": 488,
-        "seat_tube_ct": 320,
-        "head_angle": 64.5,
-        "seat_angle": 75.5,
-        "head_tube": 100,
-        "chainstay": 390,
-        "wheelbase": 1036,
-        "bb_drop": 6,
-        "fork_rake": 40,
-        "fork_length_a2c": 500,
+        "fork_length_a2c": 430,
+        "max_seatpost_insertion": 150,
         "total_weight": 11.6,
         "frame_weight": 2.8
-      }
-    },
-    {
-      "name": "JR",
-      "geometry": {
-        "reach": 380,
-        "stack": 583,
-        "top_tube_effective": 509,
-        "seat_tube_ct": 350,
-        "head_angle": 64.5,
-        "seat_angle": 77.5,
-        "head_tube": 110,
-        "chainstay": 434,
-        "wheelbase": 1139,
-        "bb_drop": 0,
-        "fork_rake": 42,
-        "fork_length_a2c": 552
-      }
-    },
-    {
-      "name": "XS",
-      "geometry": {
-        "reach": 410,
-        "stack": 593,
-        "top_tube_effective": 542,
-        "seat_tube_ct": 360,
-        "head_angle": 64,
-        "seat_angle": 77.5,
-        "head_tube": 110,
-        "chainstay": 434,
-        "wheelbase": 1174,
-        "bb_drop": 12,
-        "fork_rake": 42,
-        "fork_length_a2c": 552
       }
     }
   ],
   "components": [
     {
       "type": "bottom-bracket",
-      "description": "PROWHEEL"
+      "description": "PROWHEEL; BB92 MTB, pressfit"
     },
     {
       "type": "brake",
@@ -191,12 +160,12 @@
         "rear"
       ],
       "manufacturer": "Tektro",
-      "description": "TEKTRO HD-J3120, Hydraulic disc brake, 2 pistons, resin pads"
+      "description": "TEKTRO HD-J3120, Hydraulic disc brake, 2 pistons, resin pads; ROTORS : TEKTRO TR-52 180, 6-bolt, 180 mm"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
-      "description": "KMC X8 EPT"
+      "description": "KMC X8 EPT; 8s"
     },
     {
       "type": "cogcassettefreewheel",
@@ -204,11 +173,11 @@
         "rear"
       ],
       "manufacturer": "MicroShift",
-      "description": "MICROSHIFT Acolyte 8s"
+      "description": "MICROSHIFT Acolyte 8s; 8s, 11-38t"
     },
     {
       "type": "crankset",
-      "description": "PROWHEEL, 127 mm crank arms",
+      "description": "PROWHEEL, 127 mm crank arms; Chainring : PROWHEEL, 30t",
       "dimensions": {
         "length": 127
       }
@@ -219,14 +188,17 @@
         "rear"
       ],
       "manufacturer": "MicroShift",
-      "description": "MICROSHIFT Acolyte"
+      "description": "MICROSHIFT Acolyte; 8s"
     },
     {
       "type": "fork",
       "manufacturer": "Manitou",
-      "description": "MANITOU JUNIT PRO 20, 120 mm",
+      "description": "MANITOU JUNIT PRO 20, 120 mm; Kids specific air cartridge, rebound, compression. Boost (15 x 110 mm), 40 mm Offset",
       "dimensions": {
-        "travel": 120
+        "travel": 120,
+        "offset": 40,
+        "axle_diameter": 15,
+        "axle_spacing": 110
       }
     },
     {
@@ -245,20 +217,25 @@
       "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "ODI",
-      "description": "ODI Elite Motion"
+      "description": "ODI Elite Motion; Single clamp, black"
     },
     {
       "type": "handlebar",
-      "description": "RIDE ALPHA R15 600"
+      "description": "RIDE ALPHA R15 600; 31.8 mm, 600 mm width, 15 mm rise",
+      "dimensions": {
+        "width": 600,
+        "diameter": 31.8,
+        "rise": 15
+      }
     },
     {
       "type": "headset",
       "manufacturer": "Acros",
-      "description": "ACROS ZS44/ZS56"
+      "description": "ACROS ZS44/ZS56; Alloy cups, sealed bearings"
     },
     {
       "type": "hub",
-      "description": "Rear : FORMULA DHT-142S - Front : FORMULA DC-611"
+      "description": "Rear : FORMULA DHT-142S - Front : FORMULA DC-611; Rear : 28h, sealed bearings, Hyperglide - Front : 28h, sealed bearings"
     },
     {
       "type": "pedals",
@@ -275,7 +252,11 @@
         "rear"
       ],
       "manufacturer": "RockShox",
-      "description": "ROCKSHOX Deluxe Select"
+      "description": "ROCKSHOX Deluxe Select; 170 x 35 mm, rebound, threshold adjustment, 1 token",
+      "dimensions": {
+        "length": 170,
+        "travel": 35
+      }
     },
     {
       "type": "rear-suspension",
@@ -292,33 +273,45 @@
     {
       "type": "rim",
       "manufacturer": "WTB",
-      "description": "WTB ST 20''",
+      "description": "WTB ST 20''; 20'', 28h, 30 mm inner width",
       "dimensions": {
-        "diameter": 406
+        "diameter": 406,
+        "inner_width": 30
       }
     },
     {
       "type": "saddle",
-      "description": "COMMENCAL Explora JR"
+      "description": "COMMENCAL Explora JR; 135 mm width, soft padding, steel rails",
+      "dimensions": {
+        "width": 135
+      }
     },
     {
       "type": "seatpost",
       "type_detail": "Seat post",
-      "description": "RIDE ALPHA"
+      "description": "RIDE ALPHA; 31.6 mm, AL6061, 250 mm",
+      "dimensions": {
+        "length": 250,
+        "diameter": 31.6
+      }
     },
     {
       "type": "shifter",
       "manufacturer": "MicroShift",
-      "description": "MICROSHIFT Acolyte"
+      "description": "MICROSHIFT Acolyte; 8s"
     },
     {
       "type": "spokes",
       "type_detail": "Spokes/nipples",
-      "description": "SAPIM D-LIGHT"
+      "description": "SAPIM D-LIGHT; Double butted, stainless, with Nylok, black"
     },
     {
       "type": "stem",
-      "description": "RIDE ALPHA 40"
+      "description": "RIDE ALPHA 40; 40 mm extension, 31.8 mm",
+      "dimensions": {
+        "length": 40,
+        "diameter": 31.8
+      }
     },
     {
       "type": "tire",
@@ -327,7 +320,26 @@
         "rear"
       ],
       "manufacturer": "Vee Rubber",
-      "description": "VEE TIRE Attack HPL"
+      "description": "VEE TIRE Attack HPL; 20\"x2.40\", GXE Core",
+      "dimensions": {
+        "width": 60.96,
+        "diameter": 406
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended SAG",
+      "description": "26-30% / 14-17mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended/max. fork height",
+      "description": "430mm / 440mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain line",
+      "description": "52"
     }
   ]
 }

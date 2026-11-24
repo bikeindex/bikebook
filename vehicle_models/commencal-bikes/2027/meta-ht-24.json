@@ -42,6 +42,7 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6061 Aluminum",
     "bottom_bracket": {
       "shell": "BSA",
       "width": 68
@@ -61,13 +62,17 @@
       "bsd": 507,
       "position": [
         "front"
-      ]
+      ],
+      "tire_width": 58,
+      "axle_diameter": 15,
+      "axle_spacing": 110
     },
     {
       "bsd": 507,
       "position": [
         "rear"
       ],
+      "tire_width": 58,
       "axle": "quick_release",
       "axle_diameter": 9,
       "axle_spacing": 135,
@@ -78,6 +83,15 @@
     "1-front",
     "10-rear"
   ],
+  "gearing": {
+    "front": [
+      28
+    ],
+    "rear": [
+      11,
+      48
+    ]
+  },
   "groupset": {
     "manufacturer": "MicroShift",
     "series": "Advent X",
@@ -88,35 +102,20 @@
       "type": "disc-hydraulic",
       "position": [
         "front"
-      ]
+      ],
+      "rotor_diameter": 180
     },
     {
       "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
+      "rotor_diameter": 160,
       "rotor_diameter_max": 180,
       "caliper_mount": "Disc IS"
     }
   ],
   "sizes": [
-    {
-      "name": "20",
-      "geometry": {
-        "reach": 310,
-        "stack": 462,
-        "top_tube_effective": 452,
-        "seat_tube_ct": 260,
-        "head_angle": 67.5,
-        "seat_angle": 73,
-        "head_tube": 105,
-        "chainstay": 350,
-        "wheelbase": 893,
-        "bb_drop": 5,
-        "fork_rake": 40,
-        "fork_length_a2c": 400
-      }
-    },
     {
       "name": "24",
       "geometry": {
@@ -132,48 +131,15 @@
         "bb_drop": 25,
         "fork_rake": 40,
         "fork_length_a2c": 470,
+        "max_seatpost_insertion": 225,
         "total_weight": 11.4
-      }
-    },
-    {
-      "name": "JR",
-      "geometry": {
-        "reach": 360,
-        "stack": 576,
-        "top_tube_effective": 536,
-        "seat_tube_ct": 340,
-        "head_angle": 65.5,
-        "seat_angle": 73,
-        "head_tube": 105,
-        "chainstay": 425,
-        "wheelbase": 1082,
-        "bb_drop": 25,
-        "fork_rake": 42,
-        "fork_length_a2c": 514
-      }
-    },
-    {
-      "name": "XS",
-      "geometry": {
-        "reach": 383,
-        "stack": 575,
-        "top_tube_effective": 543,
-        "seat_tube_ct": 360,
-        "head_angle": 64,
-        "seat_angle": 73,
-        "head_tube": 105,
-        "chainstay": 425,
-        "wheelbase": 1119,
-        "bb_drop": 20,
-        "fork_rake": 42,
-        "fork_length_a2c": 520
       }
     }
   ],
   "components": [
     {
       "type": "bottom-bracket",
-      "description": "PROWHEEL"
+      "description": "PROWHEEL; BSA 68, threaded"
     },
     {
       "type": "brake",
@@ -182,12 +148,12 @@
         "rear"
       ],
       "manufacturer": "Tektro",
-      "description": "TEKTRO HD-J3120, hydraulic disc brake, 2 pistons, resin pads"
+      "description": "TEKTRO HD-J3120, hydraulic disc brake, 2 pistons, resin pads; Rotors : TEKTRO TR-52 180/160 mm, 6-bolts"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
-      "description": "KMC X10 EPT"
+      "description": "KMC X10 EPT; 10s"
     },
     {
       "type": "cogcassettefreewheel",
@@ -195,11 +161,11 @@
         "rear"
       ],
       "manufacturer": "MicroShift",
-      "description": "MICROSHIFT Advent X"
+      "description": "MICROSHIFT Advent X; 10s, 11-48t"
     },
     {
       "type": "crankset",
-      "description": "PROWHEEL, 140 mm crank arms",
+      "description": "PROWHEEL, 140 mm crank arms; Chainring : PROWHEEL, 28t",
       "dimensions": {
         "length": 140
       }
@@ -210,15 +176,22 @@
         "rear"
       ],
       "manufacturer": "MicroShift",
-      "description": "MICROSHIFT Advent X"
+      "description": "MICROSHIFT Advent X; 10s"
     },
     {
       "type": "fork",
       "manufacturer": "X-Fusion",
-      "description": "X-FUSION ROAMIN, 120 mm travel",
+      "description": "X-FUSION ROAMIN, 120 mm travel; 24\", RC damper, 15 x 110 mm, 41 mm offset",
       "dimensions": {
-        "travel": 120
+        "travel": 120,
+        "offset": 41,
+        "axle_diameter": 15,
+        "axle_spacing": 110
       }
+    },
+    {
+      "type": "frame-protection",
+      "description": "chainstay portector"
     },
     {
       "type": "frame-protection",
@@ -228,20 +201,25 @@
       "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "ODI",
-      "description": "ODI Elite Motion"
+      "description": "ODI Elite Motion; Single clamp, black"
     },
     {
       "type": "handlebar",
-      "description": "RIDE ALPHA R15"
+      "description": "RIDE ALPHA R15; 31.8 mm, 640 mm width, 15 mm rise, Alloy 6061",
+      "dimensions": {
+        "width": 640,
+        "diameter": 31.8,
+        "rise": 15
+      }
     },
     {
       "type": "headset",
       "manufacturer": "Acros",
-      "description": "ACROS ZS44/ZS56"
+      "description": "ACROS ZS44/ZS56; Alloy cups, sealed bearings"
     },
     {
       "type": "hub",
-      "description": "Rear : FORMULA RX-26 - Front : FORMULA DC-611"
+      "description": "Rear : FORMULA RX-26 - Front : FORMULA DC-611; Rear : 28h, sealed bearings, 9 x 135 mm, Hyperglide - Front : 28h, sealed bearings, 15 x 110 mm"
     },
     {
       "type": "pedals",
@@ -254,33 +232,48 @@
     {
       "type": "rim",
       "manufacturer": "WTB",
-      "description": "WTB KOM Team 24\"",
+      "description": "WTB KOM Team 24\"; 24'', 28h, 30 mm inner width",
       "dimensions": {
-        "diameter": 507
+        "diameter": 507,
+        "inner_width": 30
       }
     },
     {
       "type": "saddle",
-      "description": "COMMENCAL Explora JR"
+      "description": "COMMENCAL Explora JR; 135 mm width, soft padding",
+      "dimensions": {
+        "width": 135
+      }
     },
     {
       "type": "seatpost",
       "type_detail": "Seat post",
-      "description": "RIDE ALPHA"
+      "description": "RIDE ALPHA; 31.6 mm, AL6061, 300 mm",
+      "dimensions": {
+        "length": 300,
+        "diameter": 31.6
+      }
     },
     {
       "type": "shifter",
       "manufacturer": "MicroShift",
-      "description": "MICROSHIFT Advent X"
+      "description": "MICROSHIFT Advent X; 10s"
     },
     {
       "type": "spokes",
       "type_detail": "Spokes/nipples",
-      "description": "SAPIM LEADER"
+      "description": "SAPIM LEADER; J-Bend, 2.0 mm, double butted inox, with Nylok, black",
+      "dimensions": {
+        "diameter": 2
+      }
     },
     {
       "type": "stem",
-      "description": "RIDE ALPHA 40 EXTERNAL"
+      "description": "RIDE ALPHA 40 EXTERNAL; 40 mm extension, 31.8 mm",
+      "dimensions": {
+        "length": 40,
+        "diameter": 31.8
+      }
     },
     {
       "type": "tire",
@@ -289,11 +282,21 @@
         "rear"
       ],
       "manufacturer": "Maxxis",
-      "description": "MAXXIS DHR II"
+      "description": "MAXXIS DHR II; 24\"x2.30\", Clincher",
+      "dimensions": {
+        "width": 58.42,
+        "diameter": 507
+      }
     },
     {
       "type": "unknown",
-      "description": "chainstay portector"
+      "type_detail": "Recommended/max. fork height",
+      "description": "470mm / 480mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain line",
+      "description": "52"
     }
   ]
 }

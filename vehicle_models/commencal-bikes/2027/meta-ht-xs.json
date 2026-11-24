@@ -42,6 +42,7 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6061 Aluminum",
     "bottom_bracket": {
       "shell": "BSA",
       "width": 68,
@@ -62,16 +63,23 @@
       "bsd": 584,
       "position": [
         "front"
-      ]
+      ],
+      "tire_width": 61,
+      "tire_system": "tubeless_ready",
+      "axle_diameter": 15,
+      "axle_spacing": 110
     },
     {
       "bsd": 559,
       "position": [
         "rear"
       ],
+      "tire_width": 61,
+      "tire_system": "tubeless_ready",
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 148,
+      "axle_length": 180,
       "axle_thread_pitch": 1.75,
       "axle_standard": "Maxle",
       "tire_width_max": 64
@@ -81,6 +89,15 @@
     "1-front",
     "12-rear"
   ],
+  "gearing": {
+    "front": [
+      32
+    ],
+    "rear": [
+      11,
+      50
+    ]
+  },
   "groupset": {
     "manufacturer": "SRAM",
     "series": "S100",
@@ -91,70 +108,20 @@
       "type": "disc-hydraulic",
       "position": [
         "front"
-      ]
+      ],
+      "rotor_diameter": 203
     },
     {
       "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
+      "rotor_diameter": 203,
       "rotor_diameter_max": 180,
       "caliper_mount": "Disc IS"
     }
   ],
   "sizes": [
-    {
-      "name": "20",
-      "geometry": {
-        "reach": 310,
-        "stack": 462,
-        "top_tube_effective": 452,
-        "seat_tube_ct": 260,
-        "head_angle": 67.5,
-        "seat_angle": 73,
-        "head_tube": 105,
-        "chainstay": 350,
-        "wheelbase": 893,
-        "bb_drop": 5,
-        "fork_rake": 40,
-        "fork_length_a2c": 400
-      }
-    },
-    {
-      "name": "24",
-      "geometry": {
-        "reach": 340,
-        "stack": 544,
-        "top_tube_effective": 506,
-        "seat_tube_ct": 300,
-        "head_angle": 67,
-        "seat_angle": 73,
-        "head_tube": 105,
-        "chainstay": 380,
-        "wheelbase": 983,
-        "bb_drop": 25,
-        "fork_rake": 40,
-        "fork_length_a2c": 470,
-        "total_weight": 13.3
-      }
-    },
-    {
-      "name": "JR",
-      "geometry": {
-        "reach": 360,
-        "stack": 576,
-        "top_tube_effective": 536,
-        "seat_tube_ct": 340,
-        "head_angle": 65.5,
-        "seat_angle": 73,
-        "head_tube": 105,
-        "chainstay": 425,
-        "wheelbase": 1082,
-        "bb_drop": 25,
-        "fork_rake": 42,
-        "fork_length_a2c": 514
-      }
-    },
     {
       "name": "XS",
       "geometry": {
@@ -169,7 +136,9 @@
         "wheelbase": 1119,
         "bb_drop": 20,
         "fork_rake": 42,
-        "fork_length_a2c": 520
+        "fork_length_a2c": 520,
+        "max_seatpost_insertion": 240,
+        "total_weight": 13.3
       }
     }
   ],
@@ -177,7 +146,7 @@
     {
       "type": "bottom-bracket",
       "manufacturer": "SRAM",
-      "description": "SRAM DUB"
+      "description": "SRAM DUB; BB92, pressfit"
     },
     {
       "type": "brake",
@@ -186,12 +155,12 @@
         "rear"
       ],
       "manufacturer": "TRP",
-      "description": "TRP Slate Evo, hydraulic disc brake, 4 pistons, resin pads"
+      "description": "TRP Slate Evo, hydraulic disc brake, 4 pistons, resin pads; Rotors : TRP RS01E, 6-bolts, 203 mm"
     },
     {
       "type": "chain",
       "manufacturer": "SRAM",
-      "description": "SRAM S100"
+      "description": "SRAM S100; 12s"
     },
     {
       "type": "cogcassettefreewheel",
@@ -199,12 +168,12 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM PG-1210"
+      "description": "SRAM PG-1210; 12s, 11-50t"
     },
     {
       "type": "crankset",
       "manufacturer": "SRAM",
-      "description": "SRAM S200, 160 mm crank arms",
+      "description": "SRAM S200, 160 mm crank arms; Chainring : SRAM S200, 32t",
       "dimensions": {
         "length": 160
       }
@@ -215,14 +184,17 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM S100"
+      "description": "SRAM S100; 12s"
     },
     {
       "type": "fork",
       "manufacturer": "Marzocchi",
-      "description": "MARZOCCHI Bomber Z2, 140 mm travel",
+      "description": "MARZOCCHI Bomber Z2, 140 mm travel; 27,5\", RAIL 2.0, Sweep-Adj, rebound, Boost (15 x 110 mm), 44 mm offset, 2 tokens",
       "dimensions": {
-        "travel": 140
+        "travel": 140,
+        "offset": 44,
+        "axle_diameter": 15,
+        "axle_spacing": 110
       }
     },
     {
@@ -237,20 +209,25 @@
       "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "ODI",
-      "description": "ODI Elite Motion"
+      "description": "ODI Elite Motion; Single clamp, black"
     },
     {
       "type": "handlebar",
-      "description": "RIDE ALPHA R20"
+      "description": "RIDE ALPHA R20; 31.8 mm, 740 mm width, 20 mm rise",
+      "dimensions": {
+        "width": 740,
+        "diameter": 31.8,
+        "rise": 20
+      }
     },
     {
       "type": "headset",
       "manufacturer": "Acros",
-      "description": "ACROS ZS44/ZS56"
+      "description": "ACROS ZS44/ZS56; Alloy cups, sealed bearings"
     },
     {
       "type": "hub",
-      "description": "Rear : FORMULA DHT-148S - Front : FORMULA DC-611"
+      "description": "Rear : FORMULA DHT-148S - Front : FORMULA DC-611; Rear : 32h, sealed bearings, 12 x 148 mm, Hyperglide - Front : 28h, sealed bearings, 15 x 110 mm"
     },
     {
       "type": "pedals",
@@ -263,32 +240,46 @@
     {
       "type": "rim",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS E593"
+      "description": "DT SWISS E593; Rear : 26\", 32h, 30 mm inner width - Front : 27,5'', 28h, 30 mm inner width",
+      "dimensions": {
+        "inner_width": 30
+      }
     },
     {
       "type": "saddle",
       "manufacturer": "WTB",
-      "description": "WTB Solano SL"
+      "description": "WTB Solano SL; Crmo rails, 142 x 240 mm",
+      "dimensions": {
+        "length": 240,
+        "width": 142
+      }
     },
     {
       "type": "seatpost",
       "type_detail": "Seat post",
       "manufacturer": "KS",
-      "description": "KS 900i"
+      "description": "KS 900i; 31.6 mm, 100 mm",
+      "dimensions": {
+        "diameter": 31.6
+      }
     },
     {
       "type": "shifter",
       "manufacturer": "SRAM",
-      "description": "SRAM S100"
+      "description": "SRAM S100; 12s"
     },
     {
       "type": "spokes",
       "type_detail": "Spokes/nipples",
-      "description": "SAPIM D-LIGHT"
+      "description": "SAPIM D-LIGHT; Double butted, stainless, with Nylok, black"
     },
     {
       "type": "stem",
-      "description": "RIDE ALPHA 40 EXTERNAL"
+      "description": "RIDE ALPHA 40 EXTERNAL; 40 mm extension, 31.8 mm",
+      "dimensions": {
+        "length": 40,
+        "diameter": 31.8
+      }
     },
     {
       "type": "tire",
@@ -297,7 +288,20 @@
         "rear"
       ],
       "manufacturer": "Maxxis",
-      "description": "MAXXIS DHR II"
+      "description": "MAXXIS DHR II; Rear : 26\"x2.40\", Dual compound, Exo, Tubeless ready - Front : 27,5\"x2.40\", 3C MaxxTerra, Exo, Tubeless ready",
+      "dimensions": {
+        "width": 60.96
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended/max. fork height",
+      "description": "520mm / 530mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain line",
+      "description": "52"
     }
   ]
 }

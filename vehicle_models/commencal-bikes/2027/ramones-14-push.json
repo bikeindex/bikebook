@@ -68,6 +68,7 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6061 Aluminum",
     "seatpost_diameter": 27.2,
     "seatpost_clamp_diameter": 31.8
   },
@@ -76,36 +77,22 @@
       "bsd": 254,
       "position": [
         "front"
-      ]
+      ],
+      "tire_width": 57
     },
     {
       "bsd": 254,
       "position": [
         "rear"
       ],
+      "tire_width": 57,
+      "axle": "bolt_on",
       "axle_spacing": 104,
+      "axle_length": 150,
       "tire_width_max": 58
     }
   ],
   "sizes": [
-    {
-      "name": "12",
-      "geometry": {
-        "reach": 216,
-        "stack": 309,
-        "top_tube_effective": 322.5,
-        "seat_tube_ct": 156,
-        "head_angle": 69,
-        "seat_angle": 71,
-        "head_tube": 85,
-        "chainstay": 245,
-        "wheelbase": 586,
-        "bb_drop": -45,
-        "fork_rake": 26,
-        "fork_length_a2c": 206,
-        "total_weight": 4.6
-      }
-    },
     {
       "name": "14",
       "geometry": {
@@ -120,7 +107,11 @@
         "wheelbase": 617,
         "bb_drop": -45,
         "fork_rake": 26,
-        "fork_length_a2c": 225
+        "fork_length_a2c": 225,
+        "max_seatpost_insertion": 120,
+        "seat_height_min": 350,
+        "seat_height_max": 420,
+        "total_weight": 4.58
       }
     }
   ],
@@ -131,45 +122,53 @@
     },
     {
       "type": "fork",
-      "description": "RMNS 14"
+      "description": "RMNS 14; 14\", alloy 6061"
     },
     {
       "type": "gripstape",
       "type_detail": "Grips",
-      "description": "COMMENCAL Kids"
+      "description": "COMMENCAL Kids; 19 mm grips (ID), kids hands specific"
     },
     {
       "type": "handlebar",
-      "description": "RIDE ALPHA Kids"
+      "description": "RIDE ALPHA Kids; 25.4 mm, 450 mm width, 20 mm rise, tapered (for 19 mm grips), Alloy 6061",
+      "dimensions": {
+        "width": 450,
+        "diameter": 25.4,
+        "rise": 20
+      }
     },
     {
       "type": "headset",
-      "description": "NECO H-148"
+      "description": "NECO H-148; Semi-integrated"
     },
     {
       "type": "hub",
-      "description": "COMMENCAL"
+      "description": "COMMENCAL; Rear: 12h, sealed bearings, disc ready - Front: 12h, sealed bearings"
     },
     {
       "type": "rim",
-      "description": "COMMENCAL 14''",
+      "description": "COMMENCAL 14''; 12h, Alloy 6063",
       "dimensions": {
         "diameter": 254
       }
     },
     {
       "type": "saddle",
-      "description": "COMMENCAL Kids"
+      "description": "COMMENCAL Kids; Soft padding, integrated handle"
     },
     {
       "type": "seatpost",
       "type_detail": "Seat post",
-      "description": "COMMENCAL"
+      "description": "COMMENCAL; 27.2 mm, integrated saddle, Alloy",
+      "dimensions": {
+        "diameter": 27.2
+      }
     },
     {
       "type": "spokes",
       "type_detail": "Spokes/nipples",
-      "description": "2.0 mm",
+      "description": "2.0 mm; ED black",
       "dimensions": {
         "diameter": 2
       }
@@ -181,16 +180,15 @@
         "rear"
       ],
       "manufacturer": "Vee Rubber",
-      "description": "VEE TIRE CO. CrownGem"
+      "description": "VEE TIRE CO. CrownGem; 14'' x 2.25'', MPC Compound, Custom \"Send It\" patch",
+      "dimensions": {
+        "width": 57.15,
+        "diameter": 254
+      }
     },
     {
       "type": "unknown",
       "description": "footrest protector"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Bicycle type",
-      "description": "Kids Push bike"
     }
   ]
 }

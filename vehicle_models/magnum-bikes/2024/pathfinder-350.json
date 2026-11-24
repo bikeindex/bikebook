@@ -120,6 +120,7 @@
   "motors": [
     {
       "kind": "hub-drive",
+      "sensor_cadence": true,
       "battery": {
         "capacity": 468,
         "voltage": 36,
@@ -143,6 +144,7 @@
           "mode": "throttle",
           "availability": "stock",
           "max_speed": 32,
+          "throttle_type": "Twist",
           "e_vehicle_classifications": [
             "evc/us/class-2"
           ]
@@ -172,7 +174,7 @@
           "length": 1620,
           "width": 610
         },
-        "total_weight": 26.8,
+        "total_weight": 26.75,
         "rider_height_min": 1473
       }
     }
@@ -316,12 +318,6 @@
       "type": "unknown",
       "type_detail": "Assist Modes",
       "description": "Cadence Sensing Pedal Assist, Twist Throttle, Walk Mode"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Gearing details",
-      "manufacturer": "Shimano",
-      "description": "Shimano 7-Speed"
     }
   ]
 }
