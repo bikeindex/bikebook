@@ -52,10 +52,13 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6066 Aluminum",
+    "cable_routing": "stealth",
     "bottom_bracket": {
       "shell": "press fit",
       "spindle": "DUB"
     },
+    "headset": "ZS56/28.6 | ZS56/30",
     "seatpost_diameter": 31.6,
     "seatpost_clamp_diameter": 34.9,
     "derailleur_hanger": "UDH",
@@ -63,11 +66,14 @@
     "max_chainring": 36
   },
   "suspension": {
-    "front": {},
+    "front": {
+      "spring": "air"
+    },
     "rear": {
       "travel": 220,
       "shock_length": 250,
       "shock_stroke": 75,
+      "shock_mount": "30x8mm / 30x8mm",
       "spring": "air"
     }
   },
@@ -76,17 +82,25 @@
       "bsd": 622,
       "position": [
         "front"
-      ]
+      ],
+      "tire_width": 64,
+      "tire_system": "tubeless_ready",
+      "axle_diameter": 20,
+      "axle_spacing": 110
     },
     {
       "bsd": 584,
       "position": [
         "rear"
       ],
+      "tire_width": 64,
+      "tire_system": "tubeless_ready",
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 157,
+      "axle_length": 186,
       "axle_thread_pitch": 1,
+      "cassette_interface": "xd",
       "tire_width_max": 65
     }
   ],
@@ -94,6 +108,15 @@
     "1-front",
     "7-rear"
   ],
+  "gearing": {
+    "front": [
+      34
+    ],
+    "rear": [
+      10,
+      24
+    ]
+  },
   "groupset": {
     "manufacturer": "SRAM",
     "series": "XX",
@@ -104,13 +127,15 @@
       "type": "disc-hydraulic",
       "position": [
         "front"
-      ]
+      ],
+      "rotor_diameter": 220
     },
     {
       "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
+      "rotor_diameter": 220,
       "rotor_diameter_max": 223,
       "caliper_mount": "Disc Post Mount"
     }
@@ -130,7 +155,8 @@
         "wheelbase": 1194,
         "bb_drop": 3.5,
         "fork_rake": 52,
-        "fork_length_a2c": 581
+        "fork_length_a2c": 581,
+        "max_seatpost_insertion": 130
       },
       "geometry_settings": [
         {
@@ -162,7 +188,8 @@
         "wheelbase": 1244,
         "bb_drop": 3,
         "fork_rake": 52,
-        "fork_length_a2c": 612
+        "fork_length_a2c": 612,
+        "max_seatpost_insertion": 130
       },
       "geometry_settings": [
         {
@@ -195,6 +222,7 @@
         "bb_drop": 3,
         "fork_rake": 52,
         "fork_length_a2c": 612,
+        "max_seatpost_insertion": 130,
         "total_weight": 18.8,
         "frame_weight": 5.8
       },
@@ -228,7 +256,8 @@
         "wheelbase": 1309,
         "bb_drop": 3,
         "fork_rake": 52,
-        "fork_length_a2c": 612
+        "fork_length_a2c": 612,
+        "max_seatpost_insertion": 130
       },
       "geometry_settings": [
         {
@@ -260,7 +289,8 @@
         "wheelbase": 1329,
         "bb_drop": 3,
         "fork_rake": 52,
-        "fork_length_a2c": 612
+        "fork_length_a2c": 612,
+        "max_seatpost_insertion": 130
       },
       "geometry_settings": [
         {
@@ -282,12 +312,12 @@
   "components": [
     {
       "type": "bashguardchain-guide",
-      "description": "E13 LG1+"
+      "description": "E13 LG1+; 32-34t"
     },
     {
       "type": "bottom-bracket",
       "manufacturer": "SRAM",
-      "description": "SRAM DUB"
+      "description": "SRAM DUB; BB107, pressfit"
     },
     {
       "type": "brake",
@@ -296,12 +326,12 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM Maven Ultimate, 4 pistons, sintered pads"
+      "description": "SRAM Maven Ultimate, 4 pistons, sintered pads; Rotors : SRAM HS2 220 mm, 6-bolts"
     },
     {
       "type": "chain",
       "manufacturer": "SRAM",
-      "description": "SRAM GX"
+      "description": "SRAM GX; 11s, Black"
     },
     {
       "type": "cogcassettefreewheel",
@@ -309,12 +339,12 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM XS 797 DH"
+      "description": "SRAM XS 797 DH; 7s, 10-24t"
     },
     {
       "type": "crankset",
       "manufacturer": "SRAM",
-      "description": "SRAM XX DH, 160 mm crank arms, DUB",
+      "description": "SRAM XX DH, 160 mm crank arms, DUB; Chainring : SRAM XX DH, 34t with Ochain",
       "dimensions": {
         "length": 160
       }
@@ -325,7 +355,7 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM XX DH"
+      "description": "SRAM XX DH; 7s, AXS"
     },
     {
       "type": "fender",
@@ -334,7 +364,10 @@
     {
       "type": "fork",
       "manufacturer": "RockShox",
-      "description": "ROCKSHOX BOXXER Ultimate"
+      "description": "ROCKSHOX BOXXER Ultimate; 29\", Charger 3.2 RC damper, Linear XL air spring, HSC, LSC, rebound, 48 mm offset, 0 Token",
+      "dimensions": {
+        "offset": 48
+      }
     },
     {
       "type": "frame-protection",
@@ -356,21 +389,29 @@
       "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "ODI",
-      "description": "ODI Longneck V2.1"
+      "description": "ODI Longneck V2.1; 132 mm, Black clamp",
+      "dimensions": {
+        "length": 132
+      }
     },
     {
       "type": "handlebar",
-      "description": "BURGTEC Ride Wide"
+      "description": "BURGTEC Ride Wide; 31.8 mm, 800 mm width, 30 mm rise, Alloy 6061",
+      "dimensions": {
+        "width": 800,
+        "diameter": 31.8,
+        "rise": 30
+      }
     },
     {
       "type": "headset",
       "manufacturer": "Cane Creek",
-      "description": "CANECREEK Hellbender 70"
+      "description": "CANECREEK Hellbender 70; ZS56/ZS56, alloy cups, sealed bearings"
     },
     {
       "type": "hub",
       "manufacturer": "Crank Brothers",
-      "description": "CRANKBROTHERS Ratchet"
+      "description": "CRANKBROTHERS Ratchet; Rear : 32h, sealed bearings, 12 x 157 mm, Sram XD - Front : 28h, sealed bearings, 20 x 110 mm"
     },
     {
       "type": "included-not-installed",
@@ -384,7 +425,11 @@
         "rear"
       ],
       "manufacturer": "RockShox",
-      "description": "ROCKSHOX VIVID Air Ultimate DH"
+      "description": "ROCKSHOX VIVID Air Ultimate DH; 250 x 75 mm, RC2 damper, HSC, LSC, rebound, Adjustable Bottom Out",
+      "dimensions": {
+        "length": 250,
+        "travel": 75
+      }
     },
     {
       "type": "rear-suspension",
@@ -401,31 +446,45 @@
     {
       "type": "rim",
       "manufacturer": "Crank Brothers",
-      "description": "CRANKBROTHERS DH ALLOY 2.0"
+      "description": "CRANKBROTHERS DH ALLOY 2.0; Rear : 27.5'', 32h, 30 mm inner width - Front : 29'', 32h, 30 mm inner width",
+      "dimensions": {
+        "inner_width": 30
+      }
     },
     {
       "type": "saddle",
       "manufacturer": "Fizik",
-      "description": "FIZIK Gravita Alpaca X5"
+      "description": "FIZIK Gravita Alpaca X5; 130 mm width, S-Alloy rails, Team edition",
+      "dimensions": {
+        "width": 130
+      }
     },
     {
       "type": "seatpost",
       "type_detail": "Seat post",
-      "description": "BURGTEC Xpress"
+      "description": "BURGTEC Xpress; 31.6 mm, 300 mm length",
+      "dimensions": {
+        "length": 300,
+        "diameter": 31.6
+      }
     },
     {
       "type": "shifter",
       "manufacturer": "SRAM",
-      "description": "SRAM AXS Pod controller"
+      "description": "SRAM AXS Pod controller; 7s"
     },
     {
       "type": "spokes",
       "type_detail": "Spokes/nipples",
-      "description": "PILLAR SR TB 2016"
+      "description": "PILLAR SR TB 2016; 2.0-1.8-2.0mm, double butted, stainless, with ProLock, black"
     },
     {
       "type": "stem",
-      "description": "BURGTEC Direct Mount"
+      "description": "BURGTEC Direct Mount; 45 mm extension, direct mount, 31.8 mm",
+      "dimensions": {
+        "length": 45,
+        "diameter": 31.8
+      }
     },
     {
       "type": "tire",
@@ -433,12 +492,45 @@
         "front",
         "rear"
       ],
-      "description": "Rear : SCHWALBE Tacky Chan - Front : SCHWALBE Magic Mary"
+      "description": "Rear : SCHWALBE Tacky Chan - Front : SCHWALBE Magic Mary; Rear : 27.5''x2.5'', Gravity Pro, Soft, Tubeless Ready - Front : 29''x2.5'', Gravity Pro, Ultra Soft, Tubeless Ready",
+      "dimensions": {
+        "width": 63.5
+      }
     },
     {
       "type": "unknown",
       "manufacturer": "ODI",
       "description": "ODI Race plate"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended SAG",
+      "description": "20-25% / 15-19mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Piggy back shock compatible",
+      "description": "Yes"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended/max. fork height",
+      "description": "612mm / 620mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain line",
+      "description": "56,5"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "shock anchor adjustment",
+      "description": "4 positions"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Rear triangle stiffness adjustment",
+      "description": "3 thicknesses"
     }
   ]
 }

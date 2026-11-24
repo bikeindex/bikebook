@@ -47,6 +47,7 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6061 Aluminum",
     "bottom_bracket": {
       "shell": "BSA",
       "width": 73
@@ -66,15 +67,21 @@
       "bsd": 559,
       "position": [
         "front"
-      ]
+      ],
+      "tire_width": 58,
+      "axle_diameter": 15,
+      "axle_spacing": 100
     },
     {
       "bsd": 559,
       "position": [
         "rear"
       ],
+      "tire_width": 58,
+      "axle": "bolt_on",
       "axle_diameter": 10,
       "axle_spacing": 135,
+      "axle_length": 180,
       "tire_width_max": 61
     }
   ],
@@ -82,18 +89,25 @@
     "1-front",
     "1-rear"
   ],
+  "gearing": {
+    "front": [
+      30
+    ]
+  },
   "brakes": [
     {
       "type": "disc-hydraulic",
       "position": [
         "front"
-      ]
+      ],
+      "rotor_diameter": 160
     },
     {
       "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
+      "rotor_diameter": 160,
       "rotor_diameter_max": 160,
       "caliper_mount": "Disc IS"
     }
@@ -112,7 +126,9 @@
         "chainstay": 365,
         "wheelbase": 972,
         "bb_drop": 8,
-        "fork_length_a2c": 460
+        "fork_rake": 37,
+        "fork_length_a2c": 460,
+        "max_seatpost_insertion": 230
       }
     },
     {
@@ -128,7 +144,9 @@
         "chainstay": 390,
         "wheelbase": 1037,
         "bb_drop": 25,
+        "fork_rake": 37,
         "fork_length_a2c": 470,
+        "max_seatpost_insertion": 230,
         "total_weight": 11.1,
         "frame_weight": 1.9
       }
@@ -146,7 +164,9 @@
         "chainstay": 390,
         "wheelbase": 1057,
         "bb_drop": 25,
-        "fork_length_a2c": 470
+        "fork_rake": 37,
+        "fork_length_a2c": 470,
+        "max_seatpost_insertion": 230
       }
     },
     {
@@ -162,14 +182,16 @@
         "chainstay": 390,
         "wheelbase": 1082,
         "bb_drop": 25,
-        "fork_length_a2c": 470
+        "fork_rake": 37,
+        "fork_length_a2c": 470,
+        "max_seatpost_insertion": 230
       }
     }
   ],
   "components": [
     {
       "type": "bottom-bracket",
-      "description": "Threaded Euro BB"
+      "description": "Threaded Euro BB; Alloy cups, 4 sealed bearings"
     },
     {
       "type": "brake",
@@ -178,7 +200,7 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM DB8, 4-pistons, hydraulic disc brake"
+      "description": "SRAM DB8, 4-pistons, hydraulic disc brake; Rotors : SRAM Centerline 160 mm, 6-bolt"
     },
     {
       "type": "brake",
@@ -190,11 +212,11 @@
     {
       "type": "chain",
       "manufacturer": "KMC",
-      "description": "KMC Z1-BUBU"
+      "description": "KMC Z1-BUBU; 1/2'' x 1/8''"
     },
     {
       "type": "crankset",
-      "description": "PROWHEEL 165 mm, steel Narrow wide, crank alloy black",
+      "description": "PROWHEEL 165 mm, steel Narrow wide, crank alloy black; Chainring : 30t, alloy 6061",
       "dimensions": {
         "length": 165
       }
@@ -202,53 +224,73 @@
     {
       "type": "fork",
       "manufacturer": "Marzocchi",
-      "description": "MARZOCCHI Bomber DJ, 100 mm",
+      "description": "MARZOCCHI Bomber DJ, 100 mm; 15 x 100 mm, 37 mm offset",
       "dimensions": {
-        "travel": 100
+        "travel": 100,
+        "offset": 37,
+        "axle_diameter": 15,
+        "axle_spacing": 100
       }
     },
     {
       "type": "gripstape",
       "type_detail": "Grips",
-      "description": "BURGTEC The Bartender Pro"
+      "description": "BURGTEC The Bartender Pro; Single clamp, super soft, black"
     },
     {
       "type": "handlebar",
-      "description": "BURGTEC Ride High"
+      "description": "BURGTEC Ride High; 35 mm, 800 mm width, 38 mm rise, Alloy 6061",
+      "dimensions": {
+        "width": 800,
+        "diameter": 35,
+        "rise": 38
+      }
     },
     {
       "type": "headset",
       "manufacturer": "Acros",
-      "description": "ACROS ZS44/ZS56"
+      "description": "ACROS ZS44/ZS56; Alloy cups, sealed bearings"
     },
     {
       "type": "hub",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS 370 LN"
+      "description": "DT SWISS 370 LN; Rear : 32h, sealed bearings, 10 x 135 mm, Hyperglide - Front : 32h, sealed bearings, 15 x 100 mm"
     },
     {
       "type": "rim",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS D1900"
+      "description": "DT SWISS D1900; 26'', 32h, 30 mm inner width",
+      "dimensions": {
+        "diameter": 559,
+        "inner_width": 30
+      }
     },
     {
       "type": "saddle",
-      "description": "BURGTEC The Cloud Boost"
+      "description": "BURGTEC The Cloud Boost; S-Alloy rails, Black/Yellow."
     },
     {
       "type": "seatpost",
       "type_detail": "Seat post",
-      "description": "RIDE ALPHA"
+      "description": "RIDE ALPHA; 31.6 mm, 250 mm length",
+      "dimensions": {
+        "length": 250,
+        "diameter": 31.6
+      }
     },
     {
       "type": "spokes",
       "type_detail": "Spokes/nipples",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS Competition"
+      "description": "DT SWISS Competition; J-Bend, 2.0-1.8-2.0mm, double butted, stainless, with Nylok, black"
     },
     {
       "type": "stem",
-      "description": "BURGTEC MK3"
+      "description": "BURGTEC MK3; 35 mm extension, 35 mm",
+      "dimensions": {
+        "length": 35,
+        "diameter": 35
+      }
     },
     {
       "type": "tire",
@@ -257,7 +299,21 @@
         "rear"
       ],
       "manufacturer": "Maxxis",
-      "description": "MAXXIS DTH"
+      "description": "MAXXIS DTH; 26\"x2.3\", Clincher",
+      "dimensions": {
+        "width": 58.42,
+        "diameter": 559
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended/max. fork height",
+      "description": "470mm / 485mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain line",
+      "description": "47,5"
     }
   ]
 }

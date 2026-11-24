@@ -74,20 +74,25 @@
         {
           "mode": "assist",
           "availability": "stock",
-          "max_speed": 45,
+          "max_speed": 32,
           "range_claimed": 161,
+          "max_slope": 15,
           "operating_temperature": {
             "min": -10,
             "max": 45
           },
           "e_vehicle_classifications": [
-            "evc/us/class-3"
+            "evc/us/class-2"
           ]
         },
         {
           "mode": "throttle",
           "availability": "stock",
-          "range_claimed": 113
+          "max_speed": 45,
+          "range_claimed": 113,
+          "e_vehicle_classifications": [
+            "evc/off-highway-motorcycle"
+          ]
         }
       ]
     }
@@ -163,16 +168,6 @@
     },
     {
       "type": "unknown",
-      "type_detail": "Uphill",
-      "description": "15°"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Rated voltage",
-      "description": "48 V"
-    },
-    {
-      "type": "unknown",
       "type_detail": "Charging voltage",
       "description": "Charging voltage: DC54.6V"
     },
@@ -180,11 +175,6 @@
       "type": "unknown",
       "type_detail": "BMS",
       "description": "Yes"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "Riding speed",
-      "description": "20 mph"
     }
   ]
 }

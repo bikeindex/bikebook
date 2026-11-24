@@ -7,7 +7,7 @@
   "model_configuration": "complete",
   "type": "bike",
   "propulsion": [
-    "foot-pedal"
+    "pedal-assist"
   ],
   "primary_activity": "commuting",
   "handlebar_type": "horizontal",
@@ -25,11 +25,13 @@
           "variants": [
             {
               "sku": "B-MST24-G-B17",
-              "gtin": "9506698165171"
+              "gtin": "9506698165171",
+              "size": "One Size"
             },
             {
               "sku": "B-MST24-G-B21",
               "gtin": "9505999438885",
+              "size": "One Size",
               "original_msrp": 509900
             }
           ]
@@ -42,16 +44,19 @@
           "variants": [
             {
               "sku": "B-MST24-B-B17",
-              "gtin": "9505874759883"
+              "gtin": "9505874759883",
+              "size": "One Size"
             },
             {
               "sku": "B-MST24-B-B19",
               "gtin": "9503169178654",
+              "size": "One Size",
               "original_msrp": 499900
             },
             {
               "sku": "B-MST24-B-B21",
               "gtin": "9502986183988",
+              "size": "One Size",
               "original_msrp": 509900
             }
           ]
@@ -64,11 +69,13 @@
           "variants": [
             {
               "sku": "B-MST24-T-B17",
-              "gtin": "9504827949999"
+              "gtin": "9504827949999",
+              "size": "One Size"
             },
             {
               "sku": "B-MST24-T-B21",
-              "gtin": "9506351116311"
+              "gtin": "9506351116311",
+              "size": "One Size"
             }
           ]
         },
@@ -80,11 +87,13 @@
           "variants": [
             {
               "sku": "B-MST24-W-B17",
-              "gtin": "9505489874452"
+              "gtin": "9505489874452",
+              "size": "One Size"
             },
             {
               "sku": "B-MST24-W-B21",
-              "gtin": "9508728477223"
+              "gtin": "9508728477223",
+              "size": "One Size"
             }
           ]
         },
@@ -96,11 +105,13 @@
           "variants": [
             {
               "sku": "B-MST24-CB-B17",
-              "gtin": "673926587537"
+              "gtin": "673926587537",
+              "size": "One Size"
             },
             {
               "sku": "B-MST24-CB-B21",
-              "gtin": "673926587513"
+              "gtin": "673926587513",
+              "size": "One Size"
             }
           ]
         },
@@ -109,11 +120,13 @@
           "variants": [
             {
               "sku": "B-MST24-K-B17",
-              "gtin": "673926584086"
+              "gtin": "673926584086",
+              "size": "One Size"
             },
             {
               "sku": "B-MST24-K-B21",
-              "gtin": "673926584062"
+              "gtin": "673926584062",
+              "size": "One Size"
             }
           ]
         }
@@ -125,7 +138,10 @@
   },
   "frame": {
     "material": "aluminum",
-    "top_tube": "step_through"
+    "top_tube": "step_through",
+    "bottom_bracket": {
+      "spindle": "ISIS"
+    }
   },
   "wheels": [
     {
@@ -133,7 +149,69 @@
       "position": [
         "front",
         "rear"
+      ],
+      "tire_width": 102
+    }
+  ],
+  "motors": [
+    {
+      "id": "c/bafang/m620-mm-g510-1000-c",
+      "drive_wheel": "rear",
+      "manufacturer": "Bafang",
+      "model": "MM G510.1000.C",
+      "model_group": "M620",
+      "kind": "mid-drive",
+      "spindle": "ISIS",
+      "sensor_cadence": true,
+      "sensor_torque": "bottom_bracket_spindle",
+      "certifications": [
+        "UL 2849",
+        "CE"
+      ],
+      "water_rating": "IPX5",
+      "rated_power": 1000,
+      "peak_power": 1440,
+      "max_torque": 160,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "max_speed": 32,
+          "e_vehicle_classifications": [
+            "evc/off-highway-motorcycle"
+          ]
+        }
       ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "payload",
+      "weight": 159
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size"
+    }
+  ],
+  "components": [
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Bafang",
+      "description": "Bafang M620 Ultra mid-drive motor delivering up to 160Nm of torque and 1,500W peak power"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Maxxis",
+      "description": "24” x 4\" Maxxis Minion fat tires for superior traction and control on loose terrain",
+      "dimensions": {
+        "width": 101.6,
+        "diameter": 507
+      }
     }
   ]
 }

@@ -34,6 +34,7 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6066 Aluminum",
     "bottom_bracket": {
       "shell": "BB92",
       "width": 92,
@@ -53,7 +54,8 @@
     "rear": {
       "travel": 125,
       "shock_length": 210,
-      "shock_stroke": 50
+      "shock_stroke": 50,
+      "shock_mount": "20x10mm / 30x10mm"
     }
   },
   "wheels": [
@@ -61,23 +63,41 @@
       "bsd": 622,
       "position": [
         "front"
-      ]
+      ],
+      "tire_width": 61,
+      "tire_system": "tubeless_ready",
+      "axle_diameter": 15,
+      "axle_spacing": 110
     },
     {
       "bsd": 622,
       "position": [
         "rear"
       ],
+      "tire_width": 61,
+      "tire_system": "tubeless_ready",
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 148,
+      "axle_length": 180,
       "axle_thread_pitch": 1,
+      "cassette_interface": "micro_spline",
       "tire_width_max": 64
     }
   ],
   "drivetrain": [
-    "1-front"
+    "1-front",
+    "12-rear"
   ],
+  "gearing": {
+    "front": [
+      32
+    ],
+    "rear": [
+      10,
+      51
+    ]
+  },
   "groupset": {
     "manufacturer": "Shimano",
     "series": "Deore XT",
@@ -88,13 +108,15 @@
       "type": "disc-hydraulic",
       "position": [
         "front"
-      ]
+      ],
+      "rotor_diameter": 203
     },
     {
       "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
+      "rotor_diameter": 180,
       "rotor_diameter_max": 200,
       "caliper_mount": "Disc Post Mount"
     }
@@ -115,6 +137,8 @@
         "bb_drop": 35,
         "fork_rake": 51,
         "fork_length_a2c": 551,
+        "handlebar_width": 760,
+        "dropper_travel": 150,
         "max_seatpost_insertion": 225
       }
     },
@@ -133,9 +157,11 @@
         "bb_drop": 35,
         "fork_rake": 51,
         "fork_length_a2c": 551,
+        "handlebar_width": 780,
+        "dropper_travel": 180,
         "max_seatpost_insertion": 265,
         "total_weight": 15,
-        "frame_weight": 3.4
+        "frame_weight": 3.44
       }
     },
     {
@@ -153,6 +179,8 @@
         "bb_drop": 35,
         "fork_rake": 51,
         "fork_length_a2c": 551,
+        "handlebar_width": 780,
+        "dropper_travel": 210,
         "max_seatpost_insertion": 285
       }
     },
@@ -171,6 +199,7 @@
         "bb_drop": 35,
         "fork_rake": 51,
         "fork_length_a2c": 551,
+        "handlebar_width": 800,
         "max_seatpost_insertion": 305
       }
     }
@@ -183,7 +212,7 @@
     {
       "type": "bottom-bracket",
       "manufacturer": "Shimano",
-      "description": "SHIMANO MT800"
+      "description": "SHIMANO MT800; BB92, Pressfit"
     },
     {
       "type": "brake",
@@ -192,12 +221,12 @@
         "rear"
       ],
       "manufacturer": "Shimano",
-      "description": "SHIMANO XT, 4 pistons"
+      "description": "SHIMANO XT, 4 pistons; Rotors : SHIMANO RT-MT905, 203 mm / 180 mm, 6-bolts"
     },
     {
       "type": "chain",
       "manufacturer": "Shimano",
-      "description": "SHIMANO XT"
+      "description": "SHIMANO XT; 12s"
     },
     {
       "type": "cogcassettefreewheel",
@@ -205,12 +234,12 @@
         "rear"
       ],
       "manufacturer": "Shimano",
-      "description": "SHIMANO XT"
+      "description": "SHIMANO XT; 12s, 10-51t"
     },
     {
       "type": "crankset",
       "manufacturer": "Shimano",
-      "description": "SHIMANO XT, 170 mm",
+      "description": "SHIMANO XT, 170 mm; Chainring : SHIMANO XT, 32t",
       "dimensions": {
         "length": 170
       }
@@ -221,14 +250,17 @@
         "rear"
       ],
       "manufacturer": "Shimano",
-      "description": "SHIMANO XT"
+      "description": "SHIMANO XT; 12s"
     },
     {
       "type": "fork",
       "manufacturer": "RockShox",
-      "description": "ROCKSHOX Lyrik Ultimate, 140 mm travel",
+      "description": "ROCKSHOX Lyrik Ultimate, 140 mm travel; 29'', Charger 3.2, HSC, LSC, HSR, LSR, Boost (15 x 110), 44 mm offset",
       "dimensions": {
-        "travel": 140
+        "travel": 140,
+        "offset": 44,
+        "axle_diameter": 15,
+        "axle_spacing": 110
       }
     },
     {
@@ -250,21 +282,24 @@
     {
       "type": "gripstape",
       "type_detail": "Grips",
-      "description": "RIDE ALPHA Mushroom"
+      "description": "RIDE ALPHA Mushroom; Single clamp, black"
     },
     {
       "type": "handlebar",
-      "description": "RIDE ALPHA R20 760 on S - RIDE ALPHA R27 780 on M/L - RIDE ALPHA R35 800 on XL"
+      "description": "RIDE ALPHA R20 760 on S - RIDE ALPHA R27 780 on M/L - RIDE ALPHA R35 800 on XL; 31.8 mm, 760 mm width, 20 mm rise, Alloy 6061 on S - 31.8 mm, 780 mm width, 27 mm rise, Alloy 6061 on M/L - 31.8 mm, 800 mm width, 35 mm rise, Alloy 6061 on XL",
+      "dimensions": {
+        "diameter": 31.8
+      }
     },
     {
       "type": "headset",
       "manufacturer": "Acros",
-      "description": "ACROS ZS56/ZS56"
+      "description": "ACROS ZS56/ZS56; Alloy cups, sealed bearings"
     },
     {
       "type": "hub",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS 350"
+      "description": "DT SWISS 350; Rear : 32h, sealed bearings, 12 x 148 mm, Microspline, DEG DF Technology - Front : 32h, sealed bearings, 15 x 110 mm"
     },
     {
       "type": "rear-suspension",
@@ -273,7 +308,11 @@
         "rear"
       ],
       "manufacturer": "RockShox",
-      "description": "ROCKSHOX Super Deluxe Select"
+      "description": "ROCKSHOX Super Deluxe Select; 210 x 50 mm, Pos adjustment, Rebound",
+      "dimensions": {
+        "length": 210,
+        "travel": 50
+      }
     },
     {
       "type": "rear-suspension",
@@ -290,33 +329,44 @@
     {
       "type": "rim",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS XM1700 Classic"
+      "description": "DT SWISS XM1700 Classic; 29\", 32h, 30 mm inner width",
+      "dimensions": {
+        "diameter": 622,
+        "inner_width": 30
+      }
     },
     {
       "type": "saddle",
       "manufacturer": "WTB",
-      "description": "WTB Solano SL Crmo"
+      "description": "WTB Solano SL Crmo; CRMO rails, Black"
     },
     {
       "type": "seatpost",
       "type_detail": "Seat post",
       "manufacturer": "One Up",
-      "description": "ONE UP Dropper V3"
+      "description": "ONE UP Dropper V3; 31.6 mm, 150 mm on S, 180 mm on M, 210 mm on L/XM",
+      "dimensions": {
+        "diameter": 31.6
+      }
     },
     {
       "type": "shifter",
       "manufacturer": "Shimano",
-      "description": "SHIMANO XT"
+      "description": "SHIMANO XT; 12s"
     },
     {
       "type": "spokes",
       "type_detail": "Spokes/nipples",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS Competition"
+      "description": "DT SWISS Competition; J-Bend, 2.0-1.8-2.0mm, double butted, stainless, with Nylok, black"
     },
     {
       "type": "stem",
-      "description": "RIDE ALPHA 40"
+      "description": "RIDE ALPHA 40; 40 mm extension, 31.8 mm",
+      "dimensions": {
+        "length": 40,
+        "diameter": 31.8
+      }
     },
     {
       "type": "tire",
@@ -324,7 +374,31 @@
         "front",
         "rear"
       ],
-      "description": "Rear : MAXXIS Dissector - Front : MAXXIS Minion DHR II"
+      "description": "Rear : MAXXIS Dissector - Front : MAXXIS Minion DHR II; Rear : 29''x2.4'', normal, EXO, Tubeless ready - Front : 29''x2.4'', EXO, MaxxGrip, Tubeless ready",
+      "dimensions": {
+        "width": 60.96,
+        "diameter": 622
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended SAG",
+      "description": "28-30% / 14-15mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Piggy back shock compatible",
+      "description": "Yes"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended/max. fork height",
+      "description": "551mm / 561mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain line",
+      "description": "55"
     },
     {
       "type": "water-bottle-cage",

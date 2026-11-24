@@ -34,6 +34,8 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6066 Aluminum",
+    "cable_routing": "stealth",
     "bottom_bracket": {
       "shell": "BSA",
       "width": 73,
@@ -54,6 +56,7 @@
       "travel": 170,
       "shock_length": 230,
       "shock_stroke": 65,
+      "shock_mount": "20x8mm / 30x10mm",
       "spring": "air"
     }
   },
@@ -62,23 +65,41 @@
       "bsd": 584,
       "position": [
         "front"
-      ]
+      ],
+      "tire_width": 64,
+      "tire_system": "tubeless_ready",
+      "axle_diameter": 15,
+      "axle_spacing": 110
     },
     {
       "bsd": 584,
       "position": [
         "rear"
       ],
+      "tire_width": 64,
+      "tire_system": "tubeless_ready",
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 148,
+      "axle_length": 180,
       "axle_thread_pitch": 1,
+      "cassette_interface": "micro_spline",
       "tire_width_max": 65
     }
   ],
   "drivetrain": [
-    "1-front"
+    "1-front",
+    "12-rear"
   ],
+  "gearing": {
+    "front": [
+      32
+    ],
+    "rear": [
+      10,
+      51
+    ]
+  },
   "groupset": {
     "manufacturer": "Shimano",
     "series": "Deore",
@@ -89,13 +110,15 @@
       "type": "disc-hydraulic",
       "position": [
         "front"
-      ]
+      ],
+      "rotor_diameter": 203
     },
     {
       "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
+      "rotor_diameter": 203,
       "rotor_diameter_max": 223,
       "caliper_mount": "Disc Post Mount"
     }
@@ -116,6 +139,7 @@
         "bb_drop": 10,
         "fork_rake": 44,
         "fork_length_a2c": 577,
+        "handlebar_width": 760,
         "max_seatpost_insertion": 250
       }
     },
@@ -134,6 +158,7 @@
         "bb_drop": 10,
         "fork_rake": 44,
         "fork_length_a2c": 577,
+        "handlebar_width": 780,
         "max_seatpost_insertion": 280,
         "total_weight": 17.5,
         "frame_weight": 4.9
@@ -154,6 +179,7 @@
         "bb_drop": 10,
         "fork_rake": 44,
         "fork_length_a2c": 577,
+        "handlebar_width": 800,
         "max_seatpost_insertion": 300
       }
     }
@@ -166,7 +192,7 @@
     {
       "type": "bottom-bracket",
       "manufacturer": "Shimano",
-      "description": "SHIMANO MT801"
+      "description": "SHIMANO MT801; BSA 73 MTB wide"
     },
     {
       "type": "brake",
@@ -175,12 +201,12 @@
         "rear"
       ],
       "manufacturer": "TRP",
-      "description": "TRP EVO Expert, 4 pistons"
+      "description": "TRP EVO Expert, 4 pistons; Rotors : TRP R203S06E, 203 mm, 6-bolts"
     },
     {
       "type": "chain",
       "manufacturer": "Shimano",
-      "description": "SHIMANO Deore"
+      "description": "SHIMANO Deore; M6100, 12s"
     },
     {
       "type": "cogcassettefreewheel",
@@ -188,12 +214,12 @@
         "rear"
       ],
       "manufacturer": "Shimano",
-      "description": "SHIMANO Deore"
+      "description": "SHIMANO Deore; M7200, 12s, 10-51t"
     },
     {
       "type": "crankset",
       "manufacturer": "Shimano",
-      "description": "SHIMANO Deore, M6200, 165 mm",
+      "description": "SHIMANO Deore, M6200, 165 mm; Chainring : SHIMANO Deore, 32t",
       "dimensions": {
         "length": 165
       }
@@ -204,14 +230,17 @@
         "rear"
       ],
       "manufacturer": "Shimano",
-      "description": "SHIMANO Deore"
+      "description": "SHIMANO Deore; M7200, 12s"
     },
     {
       "type": "fork",
       "manufacturer": "Fox",
-      "description": "FOX 38 Performance, 180 mm travel",
+      "description": "FOX 38 Performance, 180 mm travel; 27.5'', Grip damper, 3 positions, rebound, Boost (15 x 110 mm), 44 mm offset, 1 volume spacer",
       "dimensions": {
-        "travel": 180
+        "travel": 180,
+        "offset": 44,
+        "axle_diameter": 15,
+        "axle_spacing": 110
       }
     },
     {
@@ -241,21 +270,24 @@
     {
       "type": "gripstape",
       "type_detail": "Grips",
-      "description": "RIDE ALPHA Mushroom"
+      "description": "RIDE ALPHA Mushroom; Single clamp, black"
     },
     {
       "type": "handlebar",
-      "description": "RIDE ALPHA R20 760 on S, RIDE ALPHA R27 780 on M, RIDE ALPHA R35 800 on L"
+      "description": "RIDE ALPHA R20 760 on S, RIDE ALPHA R27 780 on M, RIDE ALPHA R35 800 on L; 31.8 mm, 760 mm width, 20 mm rise, Alloy 6061 on S, 31.8 mm, 780 mm width, 27 mm rise, Alloy 6061 on M, 31.8 mm, 800 mm width, 35 mm rise, Alloy 6061 on L",
+      "dimensions": {
+        "diameter": 31.8
+      }
     },
     {
       "type": "headset",
       "manufacturer": "Acros",
-      "description": "ACROS ZS56/ZS56"
+      "description": "ACROS ZS56/ZS56; Alloy cups, sealed bearings"
     },
     {
       "type": "hub",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS 370 Classic LN"
+      "description": "DT SWISS 370 Classic LN; Rear : 32h, sealed bearings, 12 x 148 mm, Microspline - Front : 32h, sealed bearings, 15 x 110 mm"
     },
     {
       "type": "rear-suspension",
@@ -264,7 +296,11 @@
         "rear"
       ],
       "manufacturer": "Fox",
-      "description": "FOX Float X Performance"
+      "description": "FOX Float X Performance; 230 x 65 mm, 2-pos lever, rebound, LSC, 0,0ci spacers",
+      "dimensions": {
+        "length": 230,
+        "travel": 65
+      }
     },
     {
       "type": "rear-suspension",
@@ -281,32 +317,43 @@
     {
       "type": "rim",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS E 593"
+      "description": "DT SWISS E 593; 27.5'', 32h, 30 mm inner width",
+      "dimensions": {
+        "diameter": 584,
+        "inner_width": 30
+      }
     },
     {
       "type": "saddle",
-      "description": "BURGTEC The Cloud boost"
+      "description": "BURGTEC The Cloud boost; Black"
     },
     {
       "type": "seatpost",
       "type_detail": "Seat post",
       "manufacturer": "KS",
-      "description": "KS 900i 2.0"
+      "description": "KS 900i 2.0; 150 mm on S, 180 mm on M, 210 mm on L"
     },
     {
       "type": "shifter",
       "manufacturer": "Shimano",
-      "description": "SHIMANO Deore"
+      "description": "SHIMANO Deore; M6200, 12s"
     },
     {
       "type": "spokes",
       "type_detail": "Spokes/nipples",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS Champion"
+      "description": "DT SWISS Champion; J-Bend, 2.0mm, stainless, with Nylok, black",
+      "dimensions": {
+        "diameter": 2
+      }
     },
     {
       "type": "stem",
-      "description": "RIDE ALPHA 40"
+      "description": "RIDE ALPHA 40; 40 mm extension, 31.8 mm",
+      "dimensions": {
+        "length": 40,
+        "diameter": 31.8
+      }
     },
     {
       "type": "tire",
@@ -314,7 +361,26 @@
         "front",
         "rear"
       ],
-      "description": "Rear : MAXXIS MINION DHRII - Front : MAXXIS ASSEGAI"
+      "description": "Rear : MAXXIS MINION DHRII - Front : MAXXIS ASSEGAI; Rear : 27.5x2.50, DoubleDown, MaxxTerra, Tubeless ready - Front : 27.5x2.50, EXO+, MaxxGrip, Tubeless ready",
+      "dimensions": {
+        "width": 63.5,
+        "diameter": 584
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended SAG",
+      "description": "Freeride : 24-26 % / 15,5-17mm; Jump : 20-22 % / 13-14,5mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Piggy back shock compatible",
+      "description": "Yes"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain line",
+      "description": "55"
     },
     {
       "type": "water-bottle-cage",

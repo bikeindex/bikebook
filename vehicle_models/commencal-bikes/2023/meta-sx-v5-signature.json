@@ -37,6 +37,7 @@
   "frame": {
     "material": "aluminum",
     "material_detail": "6066 Aluminum",
+    "cable_routing": "stealth",
     "bottom_bracket": {
       "shell": "BB92",
       "width": 92,
@@ -57,6 +58,7 @@
       "travel": 165,
       "shock_length": 230,
       "shock_stroke": 65,
+      "shock_mount": "20x10mm / No bushing needed on yoke",
       "spring": "air"
     }
   },
@@ -81,7 +83,9 @@
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 148,
+      "axle_length": 180,
       "axle_thread_pitch": 1,
+      "cassette_interface": "micro_spline",
       "tire_width_max": 65
     }
   ],
@@ -90,6 +94,9 @@
     "12-rear"
   ],
   "gearing": {
+    "front": [
+      32
+    ],
     "rear": [
       10,
       51
@@ -158,7 +165,7 @@
         "dropper_travel": 175,
         "max_seatpost_insertion": 270,
         "total_weight": 15.8,
-        "frame_weight": 4.1
+        "frame_weight": 4.08
       }
     },
     {
@@ -233,7 +240,7 @@
     {
       "type": "crankset",
       "manufacturer": "Shimano",
-      "description": "SHIMANO Deore XT, 170 mm crank arms, Boost",
+      "description": "SHIMANO Deore XT, 170 mm crank arms, Boost; Chainring: SHIMANO Deore XT, 32t, Dynamic Chain Engagement + Technology",
       "dimensions": {
         "length": 170
       }
@@ -294,12 +301,12 @@
     {
       "type": "headset",
       "manufacturer": "Acros",
-      "description": "ACROS ZS56 / ZS56"
+      "description": "ACROS ZS56 / ZS56; Alloy cups, sealed bearings"
     },
     {
       "type": "hub",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS 350"
+      "description": "DT SWISS 350; Rear: 28h, sealed bearings, 12 x 148 mm, MicroSpline, 54t ratchet, black - Front: 28h, sealed bearings, 15 x 110 mm, black"
     },
     {
       "type": "rear-suspension",
@@ -308,7 +315,11 @@
         "rear"
       ],
       "manufacturer": "Fox",
-      "description": "FOX Float X2 Factory"
+      "description": "FOX Float X2 Factory; 230 x 65 mm, HSC, HSR, LSR, 2-pos lever, 0.3 spacer",
+      "dimensions": {
+        "length": 230,
+        "travel": 65
+      }
     },
     {
       "type": "rear-suspension",
@@ -355,7 +366,7 @@
     {
       "type": "shifter",
       "manufacturer": "Shimano",
-      "description": "SHIMANO Deore XT"
+      "description": "SHIMANO Deore XT; 12s"
     },
     {
       "type": "spokes",
@@ -382,6 +393,26 @@
       "dimensions": {
         "width": 60.96
       }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended SAG",
+      "description": "27-30% / 18-20mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Piggy back shock compatible",
+      "description": "Yes"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended/max. fork height",
+      "description": "586mm / 598mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain Line",
+      "description": "55"
     }
   ]
 }

@@ -68,6 +68,7 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6061 Aluminum",
     "bottom_bracket": {
       "shell": "BSA",
       "width": 68
@@ -81,14 +82,18 @@
       "bsd": 305,
       "position": [
         "front"
-      ]
+      ],
+      "tire_width": 57
     },
     {
       "bsd": 305,
       "position": [
         "rear"
       ],
+      "tire_width": 57,
+      "axle": "bolt_on",
       "axle_spacing": 114,
+      "axle_length": 155,
       "cassette_interface": "freewheel",
       "tire_width_max": 58
     }
@@ -98,6 +103,9 @@
     "1-rear"
   ],
   "gearing": {
+    "front": [
+      28
+    ],
     "rear": [
       16
     ]
@@ -107,35 +115,20 @@
       "type": "disc-mechanical",
       "position": [
         "front"
-      ]
+      ],
+      "rotor_diameter": 140
     },
     {
       "type": "disc-mechanical",
       "position": [
         "rear"
       ],
+      "rotor_diameter": 140,
       "rotor_diameter_max": 160,
       "caliper_mount": "Disc IS"
     }
   ],
   "sizes": [
-    {
-      "name": "14",
-      "geometry": {
-        "reach": 247,
-        "stack": 311,
-        "top_tube_effective": 342,
-        "seat_tube_ct": 175,
-        "head_angle": 70,
-        "seat_angle": 73,
-        "head_tube": 95,
-        "chainstay": 240,
-        "wheelbase": 620,
-        "bb_drop": 0,
-        "fork_rake": 19,
-        "fork_length_a2c": 240
-      }
-    },
     {
       "name": "16",
       "geometry": {
@@ -151,41 +144,10 @@
         "bb_drop": 0,
         "fork_rake": 19,
         "fork_length_a2c": 270,
-        "total_weight": 7.2
-      }
-    },
-    {
-      "name": "20",
-      "geometry": {
-        "reach": 315,
-        "stack": 378,
-        "top_tube_effective": 444,
-        "seat_tube_ct": 240,
-        "head_angle": 68,
-        "seat_angle": 73,
-        "head_tube": 95,
-        "chainstay": 335,
-        "wheelbase": 848,
-        "bb_drop": 35,
-        "fork_rake": 40,
-        "fork_length_a2c": 330
-      }
-    },
-    {
-      "name": "24",
-      "geometry": {
-        "reach": 350,
-        "stack": 429.6,
-        "top_tube_effective": 489,
-        "seat_tube_ct": 280,
-        "head_angle": 68,
-        "seat_angle": 73.5,
-        "head_tube": 95,
-        "chainstay": 380,
-        "wheelbase": 947,
-        "bb_drop": 40,
-        "fork_rake": 40,
-        "fork_length_a2c": 380
+        "max_seatpost_insertion": 180,
+        "seat_height_min": 533,
+        "seat_height_max": 615,
+        "total_weight": 7.24
       }
     }
   ],
@@ -196,7 +158,7 @@
     },
     {
       "type": "bottom-bracket",
-      "description": "NECO B-910"
+      "description": "NECO B-910; BSA 68 mm, ball retainer"
     },
     {
       "type": "brake",
@@ -205,11 +167,11 @@
         "rear"
       ],
       "manufacturer": "Tektro",
-      "description": "TEKTRO Aries. Mechanical disc brakes, with kids specific Tektro levers and Jagwire cables"
+      "description": "TEKTRO Aries. Mechanical disc brakes, with kids specific Tektro levers and Jagwire cables; Rotors: TEKTRO 140 mm, 6-bolt"
     },
     {
       "type": "chain",
-      "description": "C-410 1/2'' x 1/8''"
+      "description": "C-410 1/2'' x 1/8''; Singlespeed, black"
     },
     {
       "type": "cogcassettefreewheel",
@@ -220,31 +182,36 @@
     },
     {
       "type": "crankset",
-      "description": "COMMENCAL Kids, 102 mm crank arms",
+      "description": "COMMENCAL Kids, 102 mm crank arms; Chainring: 28t. External chainguard",
       "dimensions": {
         "length": 102
       }
     },
     {
       "type": "fork",
-      "description": "RMNS 16"
+      "description": "RMNS 16; 16\", alloy 6061"
     },
     {
       "type": "gripstape",
       "type_detail": "Grips",
-      "description": "COMMENCAL Kids"
+      "description": "COMMENCAL Kids; 19 mm grips (ID), kids hands specific"
     },
     {
       "type": "handlebar",
-      "description": "RIDE ALPHA Kids"
+      "description": "RIDE ALPHA Kids; 25.4 mm, 500 mm width, 20 mm rise, tapered (for 19 mm grips), Alloy 6061",
+      "dimensions": {
+        "width": 500,
+        "diameter": 25.4,
+        "rise": 20
+      }
     },
     {
       "type": "headset",
-      "description": "NECO H-148"
+      "description": "NECO H-148; Semi-integrated"
     },
     {
       "type": "hub",
-      "description": "COMMENCAL"
+      "description": "COMMENCAL; 16h, loose balls, disc ready"
     },
     {
       "type": "light",
@@ -256,24 +223,27 @@
     },
     {
       "type": "rim",
-      "description": "COMMENCAL 16''",
+      "description": "COMMENCAL 16''; 16h, Alloy 6061-T6",
       "dimensions": {
         "diameter": 305
       }
     },
     {
       "type": "saddle",
-      "description": "COMMENCAL Kids"
+      "description": "COMMENCAL Kids; Soft padding"
     },
     {
       "type": "seatpost",
       "type_detail": "Seat post",
-      "description": "COMMENCAL"
+      "description": "COMMENCAL; 27.2 mm, Alloy",
+      "dimensions": {
+        "diameter": 27.2
+      }
     },
     {
       "type": "spokes",
       "type_detail": "Spokes/nipples",
-      "description": "2.0 mm",
+      "description": "2.0 mm; ED black",
       "dimensions": {
         "diameter": 2
       }
@@ -285,7 +255,11 @@
         "rear"
       ],
       "manufacturer": "Vee Rubber",
-      "description": "VEE TIRE CO. CrownGem"
+      "description": "VEE TIRE CO. CrownGem; 16'' x 2.25'', MPC Compound, Custom \"Send It\" patch",
+      "dimensions": {
+        "width": 57.15,
+        "diameter": 305
+      }
     }
   ]
 }

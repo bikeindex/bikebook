@@ -52,6 +52,7 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6066 Aluminum",
     "bottom_bracket": {
       "shell": "press fit",
       "spindle": "DUB"
@@ -71,6 +72,7 @@
       "travel": 220,
       "shock_length": 250,
       "shock_stroke": 75,
+      "shock_mount": "30x8mm / 30x8mm",
       "spring": "coil"
     }
   },
@@ -79,17 +81,25 @@
       "bsd": 622,
       "position": [
         "front"
-      ]
+      ],
+      "tire_width": 61,
+      "tire_system": "tubeless_ready",
+      "axle_diameter": 20,
+      "axle_spacing": 110
     },
     {
       "bsd": 584,
       "position": [
         "rear"
       ],
+      "tire_width": 61,
+      "tire_system": "tubeless_ready",
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 157,
+      "axle_length": 200,
       "axle_thread_pitch": 1,
+      "dropout": "flip_chip",
       "tire_width_max": 65
     }
   ],
@@ -97,6 +107,15 @@
     "1-front",
     "7-rear"
   ],
+  "gearing": {
+    "front": [
+      34
+    ],
+    "rear": [
+      11,
+      25
+    ]
+  },
   "groupset": {
     "manufacturer": "SRAM",
     "series": "GX",
@@ -107,13 +126,15 @@
       "type": "disc-hydraulic",
       "position": [
         "front"
-      ]
+      ],
+      "rotor_diameter": 220
     },
     {
       "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
+      "rotor_diameter": 220,
       "rotor_diameter_max": 223,
       "caliper_mount": "Disc Post Mount"
     }
@@ -133,7 +154,8 @@
         "wheelbase": 1194,
         "bb_drop": 3.5,
         "fork_rake": 52,
-        "fork_length_a2c": 581
+        "fork_length_a2c": 581,
+        "max_seatpost_insertion": 130
       },
       "geometry_settings": [
         {
@@ -165,7 +187,9 @@
         "wheelbase": 1244,
         "bb_drop": 3,
         "fork_rake": 52,
-        "fork_length_a2c": 612
+        "fork_length_a2c": 612,
+        "handlebar_width": 780,
+        "max_seatpost_insertion": 130
       },
       "geometry_settings": [
         {
@@ -198,6 +222,8 @@
         "bb_drop": 3,
         "fork_rake": 52,
         "fork_length_a2c": 612,
+        "handlebar_width": 780,
+        "max_seatpost_insertion": 130,
         "total_weight": 18.7,
         "frame_weight": 5.3
       },
@@ -231,7 +257,9 @@
         "wheelbase": 1309,
         "bb_drop": 3,
         "fork_rake": 52,
-        "fork_length_a2c": 612
+        "fork_length_a2c": 612,
+        "handlebar_width": 780,
+        "max_seatpost_insertion": 130
       },
       "geometry_settings": [
         {
@@ -263,7 +291,9 @@
         "wheelbase": 1329,
         "bb_drop": 3,
         "fork_rake": 52,
-        "fork_length_a2c": 612
+        "fork_length_a2c": 612,
+        "handlebar_width": 800,
+        "max_seatpost_insertion": 130
       },
       "geometry_settings": [
         {
@@ -285,12 +315,12 @@
   "components": [
     {
       "type": "bashguardchain-guide",
-      "description": "E13 LG1"
+      "description": "E13 LG1; 32-34t"
     },
     {
       "type": "bottom-bracket",
       "manufacturer": "SRAM",
-      "description": "SRAM DUB"
+      "description": "SRAM DUB; Pressfit"
     },
     {
       "type": "brake",
@@ -299,12 +329,15 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM Maven Bronze, 4 pistons, sintered pads"
+      "description": "SRAM Maven Bronze, 4 pistons, sintered pads; Rotors: SRAM HS2 220 mm, 6-bolts, 2.0 mm width",
+      "dimensions": {
+        "width": 2
+      }
     },
     {
       "type": "chain",
       "manufacturer": "SRAM",
-      "description": "SRAM PC-1130"
+      "description": "SRAM PC-1130; 11s"
     },
     {
       "type": "cogcassettefreewheel",
@@ -312,12 +345,12 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM PG-720 DH"
+      "description": "SRAM PG-720 DH; 7s, 11-25t"
     },
     {
       "type": "crankset",
       "manufacturer": "SRAM",
-      "description": "SRAM Descendant DH, 165 mm crank arms, DUB",
+      "description": "SRAM Descendant DH, 165 mm crank arms, DUB; Chainring: SRAM Descendant DH, 34t",
       "dimensions": {
         "length": 165
       }
@@ -328,7 +361,7 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM GX Eagle"
+      "description": "SRAM GX Eagle; 7s"
     },
     {
       "type": "fender",
@@ -338,9 +371,12 @@
     {
       "type": "fork",
       "manufacturer": "RockShox",
-      "description": "ROCKSHOX Boxxer Ultimate, 200 mm travel",
+      "description": "ROCKSHOX Boxxer Ultimate, 200 mm travel; 29'', Charger 3 damper, HSC, LSC, HSR, LSR, Boost (20 x 110 mm), 52 mm offset",
       "dimensions": {
-        "travel": 200
+        "travel": 200,
+        "offset": 52,
+        "axle_diameter": 20,
+        "axle_spacing": 110
       }
     },
     {
@@ -362,16 +398,22 @@
     {
       "type": "gripstape",
       "type_detail": "Grips",
-      "description": "RIDE ALPHA Mushroom"
+      "description": "RIDE ALPHA Mushroom; 132 mm, single clamp, black",
+      "dimensions": {
+        "length": 132
+      }
     },
     {
       "type": "handlebar",
-      "description": "RIDE ALPHA"
+      "description": "RIDE ALPHA; 31.8 mm, 780 mm on S/M/L, 800 mm on XL, rise 27",
+      "dimensions": {
+        "diameter": 31.8
+      }
     },
     {
       "type": "headset",
       "manufacturer": "Acros",
-      "description": "ACROS ZS56/ZS56"
+      "description": "ACROS ZS56/ZS56; Alloy cups, sealed bearings"
     },
     {
       "type": "hub",
@@ -384,7 +426,11 @@
         "rear"
       ],
       "manufacturer": "RockShox",
-      "description": "ROCKSHOX Vivid Coil Ultimate DH"
+      "description": "ROCKSHOX Vivid Coil Ultimate DH; 250 x 75 mm, HSC, LSC, LSR, rebound.; Spring rates: 400lbs on S, 450lbs on M, 500lbs on L, 550lbs on XL",
+      "dimensions": {
+        "length": 250,
+        "travel": 75
+      }
     },
     {
       "type": "rear-suspension",
@@ -401,22 +447,32 @@
     {
       "type": "rim",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS F1900 Classic"
+      "description": "DT SWISS F1900 Classic; Rear: 27.5'', 32h, 30 mm inner width, 12 x 157 mm - Front: 29'', 32h, 30 mm inner width, 20 x 110 mm",
+      "dimensions": {
+        "inner_width": 30
+      }
     },
     {
       "type": "saddle",
       "manufacturer": "Fizik",
-      "description": "FIZIK Gravita Alpaca X5"
+      "description": "FIZIK Gravita Alpaca X5; 130 mm width, S-Alloy rails, Team edition",
+      "dimensions": {
+        "width": 130
+      }
     },
     {
       "type": "seatpost",
       "type_detail": "Seat post",
-      "description": "RIDE ALPHA"
+      "description": "RIDE ALPHA; 31.6 mm, 250 mm",
+      "dimensions": {
+        "length": 250,
+        "diameter": 31.6
+      }
     },
     {
       "type": "shifter",
       "manufacturer": "SRAM",
-      "description": "SRAM GX DH"
+      "description": "SRAM GX DH; 7s"
     },
     {
       "type": "spokes",
@@ -425,7 +481,11 @@
     },
     {
       "type": "stem",
-      "description": "RIDE ALPHA DH"
+      "description": "RIDE ALPHA DH; 40 mm extension, 31.8 mm",
+      "dimensions": {
+        "length": 40,
+        "diameter": 31.8
+      }
     },
     {
       "type": "tire",
@@ -433,7 +493,40 @@
         "front",
         "rear"
       ],
-      "description": "Rear: SCHWALBE Tacky Chan - Front: SCHWALBE Magic Mary"
+      "description": "Rear: SCHWALBE Tacky Chan - Front: SCHWALBE Magic Mary; Rear: 27.5''x2.4'', Super DH, Addix Ultra Soft, Tubeless Easy - Front: 29''x2.4\", Super DH, Addix Ultra Soft, Tubeless Easy",
+      "dimensions": {
+        "width": 60.96
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended SAG",
+      "description": "20-25% / 15-19mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Piggy back shock compatible",
+      "description": "Yes"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended/max. fork height",
+      "description": "612mm / 620mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain line",
+      "description": "56,5"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "shock anchor adjustment",
+      "description": "4 positions"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Rear triangle stiffness adjustment",
+      "description": "3 thicknesses"
     }
   ]
 }

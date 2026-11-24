@@ -40,6 +40,7 @@
     "RU",
     "SG",
     "TH",
+    "TR",
     "TW",
     "UA",
     "US",
@@ -55,11 +56,47 @@
   "stock_photo": "https://bikebook.bikeindex.org/ridley/2026/noah-fast-force-axs.jpg",
   "description": "The Noah Fast is the third generation within our aero bike family. Icons such as Robbie McEwen, André Greipel, and Caleb Ewan won Tour stages on its predecessors. Built upon this legacy, the Noah Fast is 8.5 watts faster than its predecessor at a speed of 50 kilometers per hour. The Noah Fast represents minimal aerodynamic drag, a modern geometry that allows for aggressive positioning, a new aero cockpit, and a holistic approach focused on ultimate efficiency. It is the official bike of the Uno-X Mobility men’s and women’s teams.",
   "first_year": 2026,
+  "final_year": 2026,
   "years": {
     "2026": {
-      "original_msrp": 719900,
+      "original_msrp": 799900,
       "original_msrp_currency": "GBP",
       "colorways": [
+        {
+          "name": "Black/Empress Grey Metallic",
+          "colors": [
+            "black",
+            "silver"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/ridley/2026/noah-fast-force-axs-black-empress-grey-metallic.jpg",
+          "variants": [
+            {
+              "sku": "SBINF3RID225",
+              "gtin": "5400928269544",
+              "size": "XXS"
+            },
+            {
+              "sku": "SBINF3RID152",
+              "gtin": "5400928736466",
+              "size": "XXS"
+            }
+          ]
+        },
+        {
+          "name": "Candy Red Metallic/White",
+          "colors": [
+            "red",
+            "white"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/ridley/2026/noah-fast-force-axs-candy-red-metallic-white.jpg",
+          "variants": [
+            {
+              "sku": "SBINF3RID230",
+              "gtin": "5400928268523",
+              "size": "XXS"
+            }
+          ]
+        },
         {
           "name": "White/Petrol Blue Metallic",
           "colors": [
@@ -75,24 +112,9 @@
               "size": "M"
             }
           ]
-        },
-        {
-          "name": "Black/Empress Grey Metallic",
-          "colors": [
-            "black",
-            "silver"
-          ],
-          "stock_photo": "https://bikebook.bikeindex.org/ridley/2026/noah-fast-force-axs-black-empress-grey-metallic.jpg",
-          "variants": [
-            {
-              "sku": "SBINF3RID152",
-              "gtin": "5400928736466",
-              "size": "XXS"
-            }
-          ]
         }
       ],
-      "url": "https://www.ridley-bikes.com/en_GB/bikes/SBINF3RID152",
+      "url": "https://www.ridley-bikes.com/en_GB/bikes/SBINF3RID225",
       "url_live": true
     }
   },
@@ -111,7 +133,10 @@
         "front"
       ],
       "tire_width": 30,
-      "tire_system": "tubeless_ready",
+      "axle": "thru_axle",
+      "axle_diameter": 12,
+      "axle_spacing": 100,
+      "axle_thread_pitch": 1.5,
       "tire_width_max": 34
     },
     {
@@ -120,10 +145,8 @@
         "rear"
       ],
       "tire_width": 30,
-      "tire_system": "tubeless_ready",
       "axle_diameter": 12,
       "axle_spacing": 142,
-      "cassette_interface": "xdr",
       "tire_width_max": 34
     }
   ],
@@ -282,7 +305,7 @@
       "type": "crankset",
       "type_detail": "Crank",
       "manufacturer": "SRAM",
-      "description": "SRAM Force AXS incl spindle powermeter , 12s , 170 , 48-35"
+      "description": "SRAM Force AXS incl spindle powermeter , 12s , 165 , 48-35"
     },
     {
       "type": "derailleur",
@@ -302,17 +325,20 @@
     },
     {
       "type": "fork",
-      "description": "Noah Fast 7E8 45mm/NF326D2s"
+      "description": "Noah Fast 7E8 50mm/NF301Am"
     },
     {
       "type": "handlebar",
-      "manufacturer": "4ZA",
-      "description": "4ZA Nimbus Aero 7E8/SR115-SS75-W360/400/NIM002A V2"
+      "manufacturer": "Nimbus",
+      "description": "Nimbus Aero cockpit , Stem stack 75mm , Stem reach 85mm , Width 360mm (cc shifters) - 400mm (cc drops) , Drop 125mm , Reach 75mm",
+      "dimensions": {
+        "width": 360
+      }
     },
     {
       "type": "power-meter",
       "manufacturer": "SRAM",
-      "description": "SRAM Force AXS incl spindle powermeter , 12s , 170 , 48-35"
+      "description": "SRAM Force AXS incl spindle powermeter , 12s , 165 , 48-35"
     },
     {
       "type": "saddle",
@@ -333,17 +359,6 @@
       "description": "Sram Force AXS HRD Shift-Brake system"
     },
     {
-      "type": "tire",
-      "position": [
-        "front",
-        "rear"
-      ],
-      "description": "Corsa Pro 30x622 fold TLR para-blk-blk G2.0 OEM HP",
-      "dimensions": {
-        "diameter": 622
-      }
-    },
-    {
       "type": "unknown",
       "type_detail": "Frame Level",
       "description": "Elite Series"
@@ -351,17 +366,19 @@
     {
       "type": "unknown",
       "type_detail": "Paint Finish",
-      "description": "Glossy"
+      "description": "Matt"
     },
     {
       "type": "wheel",
       "position": [
         "front"
       ],
-      "description": "FORZA Skiron65 , DT Swiss 370 hub , Tubeless Ready, 65mm Deep , 21mm Internal Width",
+      "manufacturer": "DT Swiss",
+      "description": "DT Swiss ARC1400 Dicut , TA 12x100mm , Incl Continental AERO 111 tire , 65mm Deep , 22mmm Internal Width",
       "dimensions": {
         "height": 65,
-        "inner_width": 21
+        "axle_diameter": 12,
+        "axle_spacing": 100
       }
     },
     {
@@ -369,10 +386,11 @@
       "position": [
         "rear"
       ],
-      "description": "FORZA Skiron65 , DT Swiss 370 hub , XD-R , Tubeless Ready, 65mm Deep , 21mm Internal Width",
+      "manufacturer": "DT Swiss",
+      "description": "DT Swiss ARC1400 Dicut , Incl Continental GP5000S , 65mm Deep , 22mm Internal Width",
       "dimensions": {
         "height": 65,
-        "inner_width": 21
+        "inner_width": 22
       }
     }
   ]

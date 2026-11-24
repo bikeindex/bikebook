@@ -21,12 +21,36 @@
       "original_msrp_currency": "USD",
       "colorways": [
         {
+          "name": "Light Gray",
+          "colors": [
+            "silver"
+          ],
+          "stock_photo": "https://bikebook.bikeindex.org/asomtom/2023/mammoth-light-gray.png",
+          "variants": [
+            {
+              "sku": "SP-Mammoth-LightGray",
+              "gtin": "6949583405069",
+              "size": "One Size"
+            }
+          ]
+        },
+        {
           "name": "Orange",
           "colors": [
             "orange"
           ],
           "stock_photo": "https://bikebook.bikeindex.org/asomtom/2023/mammoth.jpg",
           "variants": [
+            {
+              "sku": "SP-Mammoth-Orange",
+              "gtin": "6949549832236",
+              "size": "One Size"
+            },
+            {
+              "sku": "Mammoth-CJ-Orange",
+              "gtin": "6949583404819",
+              "size": "One Size"
+            },
             {
               "sku": "SP-Mammoth-CJ-Orange",
               "gtin": "6949549832304",
@@ -43,16 +67,6 @@
               "gtin": "6949549832328",
               "size": "One Size",
               "original_msrp": 226800
-            },
-            {
-              "sku": "SP-Mammoth-Orange",
-              "gtin": "6949549832236",
-              "size": "One Size"
-            },
-            {
-              "sku": "Mammoth-CJ-Orange",
-              "gtin": "6949583404819",
-              "size": "One Size"
             }
           ]
         },
@@ -63,6 +77,11 @@
           ],
           "stock_photo": "https://bikebook.bikeindex.org/asomtom/2023/mammoth-gray.jpg",
           "variants": [
+            {
+              "sku": "Mammoth-CJ-Gray",
+              "gtin": "6949583404826",
+              "size": "One Size"
+            },
             {
               "sku": "SP-Mammoth-CJ-Gray",
               "gtin": "6949549832335",
@@ -79,25 +98,6 @@
               "gtin": "6949549832359",
               "size": "One Size",
               "original_msrp": 226800
-            },
-            {
-              "sku": "Mammoth-CJ-Gray",
-              "gtin": "6949583404826",
-              "size": "One Size"
-            }
-          ]
-        },
-        {
-          "name": "Light Gray",
-          "colors": [
-            "silver"
-          ],
-          "stock_photo": "https://bikebook.bikeindex.org/asomtom/2023/mammoth-light-gray.png",
-          "variants": [
-            {
-              "sku": "SP-Mammoth-LightGray",
-              "gtin": "6949583405069",
-              "size": "One Size"
             }
           ]
         }
@@ -125,10 +125,6 @@
     "1-front",
     "7-rear"
   ],
-  "groupset": {
-    "manufacturer": "Shimano",
-    "electronic": false
-  },
   "brakes": [
     {
       "type": "disc-hydraulic",
@@ -169,16 +165,16 @@
   "weight_limits": [
     {
       "load": "payload",
-      "weight": 227
+      "weight": 204
     }
   ],
   "sizes": [
     {
       "name": "One Size",
       "geometry": {
-        "wheelbase": 1280,
-        "seat_height_min": 760,
-        "seat_height_max": 960,
+        "wheelbase": 1290,
+        "seat_height_min": 790,
+        "seat_height_max": 930,
         "dimensions": {
           "length": 1800
         },
@@ -186,8 +182,8 @@
         "rider_height_min": 1575,
         "rider_height_max": 1905,
         "extra_measurements": {
-          "handlebar_height": 1120,
-          "reach_saddle_to_handlebar": 720.1
+          "handlebar_height": 1190,
+          "reach_saddle_to_handlebar": 650
         }
       }
     }
@@ -200,20 +196,6 @@
         "rear"
       ],
       "description": "Hydraulic Disc Brake"
-    },
-    {
-      "type": "crankset",
-      "type_detail": "plastic double-cover Crank",
-      "description": "plastic double-cover Crank"
-    },
-    {
-      "type": "derailleur",
-      "type_detail": "Shimano 7-speed rear derailleur",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 7-speed rear derailleur"
     },
     {
       "type": "ebike-battery",
@@ -232,21 +214,11 @@
       "description": "48V 750W"
     },
     {
-      "type": "fender",
-      "type_detail": "High-quality Fender",
-      "description": "High-quality Fender"
-    },
-    {
       "type": "fork",
       "position": [
         "front"
       ],
       "description": "Aluminum alloy shock"
-    },
-    {
-      "type": "gripstape",
-      "type_detail": "Bike Grips",
-      "description": "Bike Grips"
     },
     {
       "type": "light",
@@ -258,12 +230,6 @@
         "front"
       ],
       "description": "Front Rack"
-    },
-    {
-      "type": "shifter",
-      "type_detail": "Shimano 7-speed Shift Lever",
-      "manufacturer": "Shimano",
-      "description": "Shimano 7-speed Shift Lever"
     },
     {
       "type": "throttle",

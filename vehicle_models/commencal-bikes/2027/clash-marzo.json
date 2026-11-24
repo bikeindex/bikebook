@@ -52,6 +52,7 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6066 Aluminum",
     "bottom_bracket": {
       "shell": "BB92",
       "width": 92
@@ -69,7 +70,8 @@
     "rear": {
       "travel": 155,
       "shock_length": 230,
-      "shock_stroke": 65
+      "shock_stroke": 65,
+      "shock_mount": "20x8mm / 30x10mm"
     }
   },
   "wheels": [
@@ -77,24 +79,40 @@
       "bsd": 584,
       "position": [
         "front"
-      ]
+      ],
+      "tire_width": 64,
+      "axle_diameter": 15,
+      "axle_spacing": 110
     },
     {
       "bsd": 584,
       "position": [
         "rear"
       ],
+      "tire_width": 64,
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 148,
+      "axle_length": 180,
       "axle_thread_pitch": 1.75,
       "axle_standard": "Maxle",
+      "cassette_interface": "micro_spline",
       "tire_width_max": 65
     }
   ],
   "drivetrain": [
-    "1-front"
+    "1-front",
+    "12-rear"
   ],
+  "gearing": {
+    "front": [
+      32
+    ],
+    "rear": [
+      10,
+      51
+    ]
+  },
   "groupset": {
     "manufacturer": "Shimano",
     "series": "Deore",
@@ -105,13 +123,15 @@
       "type": "disc-hydraulic",
       "position": [
         "front"
-      ]
+      ],
+      "rotor_diameter": 200
     },
     {
       "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
+      "rotor_diameter": 200,
       "rotor_diameter_max": 223,
       "caliper_mount": "Disc Post Mount"
     }
@@ -132,6 +152,7 @@
         "bb_drop": 12,
         "fork_rake": 37,
         "fork_length_a2c": 572,
+        "seatpost_length": 400,
         "max_seatpost_insertion": 250
       }
     },
@@ -150,6 +171,9 @@
         "bb_drop": 12,
         "fork_rake": 37,
         "fork_length_a2c": 572,
+        "handlebar_width": 780,
+        "seatpost_length": 400,
+        "max_seatpost_insertion": 275,
         "total_weight": 15.5,
         "frame_weight": 4.1
       }
@@ -169,6 +193,8 @@
         "bb_drop": 12,
         "fork_rake": 37,
         "fork_length_a2c": 572,
+        "handlebar_width": 780,
+        "seatpost_length": 450,
         "max_seatpost_insertion": 275
       }
     },
@@ -187,6 +213,8 @@
         "bb_drop": 12,
         "fork_rake": 37,
         "fork_length_a2c": 572,
+        "handlebar_width": 800,
+        "seatpost_length": 450,
         "max_seatpost_insertion": 275
       }
     }
@@ -195,7 +223,7 @@
     {
       "type": "bottom-bracket",
       "manufacturer": "Shimano",
-      "description": "SHIMANO SM-BB-71"
+      "description": "SHIMANO SM-BB-71; Pressfit"
     },
     {
       "type": "brake",
@@ -204,12 +232,12 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM DB4, 4 pistons, resin pads"
+      "description": "SRAM DB4, 4 pistons, resin pads; Rotors: SRAM G2 200 mm, 6-bolt, 2.0 mm thickness"
     },
     {
       "type": "chain",
       "manufacturer": "Shimano",
-      "description": "SHIMANO Deore"
+      "description": "SHIMANO Deore; 12s"
     },
     {
       "type": "cogcassettefreewheel",
@@ -217,12 +245,12 @@
         "rear"
       ],
       "manufacturer": "Shimano",
-      "description": "SHIMANO Deore"
+      "description": "SHIMANO Deore; 12s, 10-51t"
     },
     {
       "type": "crankset",
       "manufacturer": "Shimano",
-      "description": "SHIMANO MT512, 165 mm crank arms",
+      "description": "SHIMANO MT512, 165 mm crank arms; Chainring: SHIMANO MT512, 32t",
       "dimensions": {
         "length": 165
       }
@@ -233,7 +261,7 @@
         "rear"
       ],
       "manufacturer": "Shimano",
-      "description": "SHIMANO Deore"
+      "description": "SHIMANO Deore; 12s"
     },
     {
       "type": "fender",
@@ -242,9 +270,12 @@
     {
       "type": "fork",
       "manufacturer": "Marzocchi",
-      "description": "MARZOCCHI Bomber Z1, 170 mm travel",
+      "description": "MARZOCCHI Bomber Z1, 170 mm travel; 27.5'', RAIL 2.0, Sweep-Adj, rebound, Boost (15 x 110 mm), 3 pos, 44 mm offset, 0 token",
       "dimensions": {
-        "travel": 170
+        "travel": 170,
+        "offset": 44,
+        "axle_diameter": 15,
+        "axle_spacing": 110
       }
     },
     {
@@ -266,20 +297,23 @@
     {
       "type": "gripstape",
       "type_detail": "Grips",
-      "description": "RIDE ALPHA Mushroom"
+      "description": "RIDE ALPHA Mushroom; Ultra-soft compound, single clamp, black"
     },
     {
       "type": "handlebar",
-      "description": "RIDE ALPHA R27"
+      "description": "RIDE ALPHA R27; 31.8 mm, 760 mm width, 20 mm rise, Alloy 6061 on S - 31.8 mm, 780 mm width, 27 mm rise, Alloy 6061 on S / M / L - 31.8 mm, 800 mm width, 27 mm rise, Alloy 6061 on XL",
+      "dimensions": {
+        "diameter": 31.8
+      }
     },
     {
       "type": "headset",
       "manufacturer": "Acros",
-      "description": "ACROS ZS44 / ZS56"
+      "description": "ACROS ZS44 / ZS56; Alloy cups, sealed bearings"
     },
     {
       "type": "hub",
-      "description": "Rear: FORMULA MSL-148A - Front: FORMULA DC-611"
+      "description": "Rear: FORMULA MSL-148A - Front: FORMULA DC-611; Rear: 32h, sealed bearings, 12 x 148 mm, Shimano Microspline - Front: 32h, sealed bearings, 15 x 110 mm"
     },
     {
       "type": "rear-suspension",
@@ -288,7 +322,11 @@
         "rear"
       ],
       "manufacturer": "RockShox",
-      "description": "ROCKSHOX Deluxe Select"
+      "description": "ROCKSHOX Deluxe Select; 230 x 65 mm, R damper, rebound",
+      "dimensions": {
+        "length": 230,
+        "travel": 65
+      }
     },
     {
       "type": "rear-suspension",
@@ -305,31 +343,45 @@
     {
       "type": "rim",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS E593"
+      "description": "DT SWISS E593; 27.5'', 32h, 30 mm inner width",
+      "dimensions": {
+        "diameter": 584,
+        "inner_width": 30
+      }
     },
     {
       "type": "saddle",
       "manufacturer": "Fizik",
-      "description": "FIZIK Terra Alpaca X5"
+      "description": "FIZIK Terra Alpaca X5; 145 mm width, S-alloy rails",
+      "dimensions": {
+        "width": 145
+      }
     },
     {
       "type": "seatpost",
       "type_detail": "Seat post",
-      "description": "RIDE ALPHA"
+      "description": "RIDE ALPHA; 34.9 mm, 400 mm on S/M, 450 mm on L/XL",
+      "dimensions": {
+        "diameter": 34.9
+      }
     },
     {
       "type": "shifter",
       "manufacturer": "Shimano",
-      "description": "SHIMANO Deore"
+      "description": "SHIMANO Deore; 12s"
     },
     {
       "type": "spokes",
       "type_detail": "Spokes/nipples",
-      "description": "SAPIM Race"
+      "description": "SAPIM Race; 2.0-1.8-2.0 mm, double butted, stainless, black"
     },
     {
       "type": "stem",
-      "description": "RIDE ALPHA 40"
+      "description": "RIDE ALPHA 40; 40 mm extension, 31.8 mm",
+      "dimensions": {
+        "length": 40,
+        "diameter": 31.8
+      }
     },
     {
       "type": "tire",
@@ -337,7 +389,36 @@
         "front",
         "rear"
       ],
-      "description": "Rear: MAXXIS Minion DHR II - Front: MAXXIS Assegai"
+      "description": "Rear: MAXXIS Minion DHR II - Front: MAXXIS Assegai; Rear: 27.5\" x 2.5\", 3C MaxxTerra, Nexo + - Front: 27.5\" x 2.5\", 3C MaxxGrip, Nexo +",
+      "dimensions": {
+        "width": 63.5,
+        "diameter": 584
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended SAG",
+      "description": "26-30% / 17-20mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Piggy back shock compatible",
+      "description": "Yes"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended/max. fork height",
+      "description": "572mm / 586mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain line",
+      "description": "55"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "shock anchor adjustment",
+      "description": "2 positions"
     }
   ]
 }

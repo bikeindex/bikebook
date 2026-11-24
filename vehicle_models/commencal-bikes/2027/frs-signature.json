@@ -52,6 +52,7 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6069 Aluminum",
     "bottom_bracket": {
       "shell": "press fit",
       "spindle": "24mm"
@@ -68,6 +69,7 @@
       "travel": 200,
       "shock_length": 250,
       "shock_stroke": 75,
+      "shock_mount": "20x8mm / 30x10mm",
       "spring": "air"
     }
   },
@@ -76,16 +78,23 @@
       "bsd": 584,
       "position": [
         "front"
-      ]
+      ],
+      "tire_width": 64,
+      "axle": "thru_axle",
+      "axle_diameter": 20,
+      "axle_spacing": 110,
+      "axle_thread_pitch": 1.5
     },
     {
       "bsd": 584,
       "position": [
         "rear"
       ],
+      "tire_width": 64,
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 150,
+      "axle_length": 180,
       "axle_thread_pitch": 1.75,
       "axle_standard": "Maxle",
       "tire_width_max": 65
@@ -95,6 +104,15 @@
     "1-front",
     "7-rear"
   ],
+  "gearing": {
+    "front": [
+      34
+    ],
+    "rear": [
+      11,
+      25
+    ]
+  },
   "groupset": {
     "manufacturer": "SRAM",
     "series": "GX",
@@ -105,13 +123,15 @@
       "type": "disc-hydraulic",
       "position": [
         "front"
-      ]
+      ],
+      "rotor_diameter": 200
     },
     {
       "type": "disc-hydraulic",
       "position": [
         "rear"
       ],
+      "rotor_diameter": 200,
       "rotor_diameter_max": 203,
       "caliper_mount": "Disc Post Mount"
     }
@@ -130,7 +150,9 @@
         "chainstay": 435,
         "wheelbase": 1223,
         "bb_drop": 7,
-        "fork_length_a2c": 581
+        "fork_rake": 52,
+        "fork_length_a2c": 581,
+        "max_seatpost_insertion": 125
       }
     },
     {
@@ -146,9 +168,11 @@
         "chainstay": 435,
         "wheelbase": 1248,
         "bb_drop": 7,
+        "fork_rake": 52,
         "fork_length_a2c": 581,
+        "max_seatpost_insertion": 125,
         "total_weight": 17.5,
-        "frame_weight": 4.2
+        "frame_weight": 4.22
       }
     },
     {
@@ -164,7 +188,9 @@
         "chainstay": 435,
         "wheelbase": 1273,
         "bb_drop": 7,
-        "fork_length_a2c": 581
+        "fork_rake": 52,
+        "fork_length_a2c": 581,
+        "max_seatpost_insertion": 125
       }
     },
     {
@@ -180,19 +206,21 @@
         "chainstay": 435,
         "wheelbase": 1293,
         "bb_drop": 7,
-        "fork_length_a2c": 581
+        "fork_rake": 52,
+        "fork_length_a2c": 581,
+        "max_seatpost_insertion": 125
       }
     }
   ],
   "components": [
     {
       "type": "bashguardchain-guide",
-      "description": "E13 Vario"
+      "description": "E13 Vario; 34-36t"
     },
     {
       "type": "bottom-bracket",
       "manufacturer": "Shimano",
-      "description": "SHIMANO MT800"
+      "description": "SHIMANO MT800; BB107, pressfit"
     },
     {
       "type": "brake",
@@ -201,12 +229,12 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM Maven Bronze, 4 pistons, sintered pads"
+      "description": "SRAM Maven Bronze, 4 pistons, sintered pads; Rotors : SRAM HS2 200 mm, 6-bolts"
     },
     {
       "type": "chain",
       "manufacturer": "KMC",
-      "description": "KMC X11EL"
+      "description": "KMC X11EL; 11s, Black"
     },
     {
       "type": "cogcassettefreewheel",
@@ -214,11 +242,11 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM PG-720 DH"
+      "description": "SRAM PG-720 DH; 7s, 11-25t"
     },
     {
       "type": "crankset",
-      "description": "E13 Helix Core GR, 160 mm crank arms",
+      "description": "E13 Helix Core GR, 160 mm crank arms; Chainring : E13 Helix Plus, 34t",
       "dimensions": {
         "length": 160
       }
@@ -229,12 +257,17 @@
         "rear"
       ],
       "manufacturer": "SRAM",
-      "description": "SRAM GX DH"
+      "description": "SRAM GX DH; 7s"
     },
     {
       "type": "fork",
       "manufacturer": "Fox",
-      "description": "FOX 40 Factory"
+      "description": "FOX 40 Factory; 27,5\", Grip X2, HSC, LSC, HSR, LSR, 20 x 110 mm thru-axle, 52 mm offset, 2 tokens",
+      "dimensions": {
+        "offset": 52,
+        "axle_diameter": 20,
+        "axle_spacing": 110
+      }
     },
     {
       "type": "fork",
@@ -260,21 +293,29 @@
       "type": "gripstape",
       "type_detail": "Grips",
       "manufacturer": "ODI",
-      "description": "ODI Longneck V2.1"
+      "description": "ODI Longneck V2.1; 132 mm,Single clamp, black",
+      "dimensions": {
+        "length": 132
+      }
     },
     {
       "type": "handlebar",
-      "description": "BURGTEC Ride Wide"
+      "description": "BURGTEC Ride Wide; 35 mm, 800 mm width, 38 mm rise, Alloy 7075",
+      "dimensions": {
+        "width": 800,
+        "diameter": 35,
+        "rise": 38
+      }
     },
     {
       "type": "headset",
       "manufacturer": "Acros",
-      "description": "ACROS ZS44 / ZS56"
+      "description": "ACROS ZS44 / ZS56; Alloy cups, sealed bearings"
     },
     {
       "type": "hub",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS 350"
+      "description": "DT SWISS 350; Rear : 32h, sealed bearings, 12 x 150 mm, 18t ratchet, Hyperglide Slim, DEG DF - Front : 32h, sealed bearings, 20 x 110 mm"
     },
     {
       "type": "rear-suspension",
@@ -283,7 +324,11 @@
         "rear"
       ],
       "manufacturer": "Fox",
-      "description": "FOX Float X2 Factory"
+      "description": "FOX Float X2 Factory; 250 x 75mm, HSC, LSC, HSR, LSR, spacers 6cc",
+      "dimensions": {
+        "length": 250,
+        "travel": 75
+      }
     },
     {
       "type": "rear-suspension",
@@ -299,31 +344,43 @@
     },
     {
       "type": "rim",
-      "description": "Rear : DT SWISS FR571 - Front : DT SWISS FR541"
+      "description": "Rear : DT SWISS FR571 - Front : DT SWISS FR541; Rear : 27.5'', 32h, 30 mm inner width - Front : 27.5'', 32h, 30 mm inner width",
+      "dimensions": {
+        "diameter": 584,
+        "inner_width": 30
+      }
     },
     {
       "type": "saddle",
-      "description": "BURGTEC The Cloud Boost"
+      "description": "BURGTEC The Cloud Boost; S-Alloy rails, Black"
     },
     {
       "type": "seatpost",
       "type_detail": "Seat post",
-      "description": "RIDE ALPHA"
+      "description": "RIDE ALPHA; 31.6 mm, 250 mm length",
+      "dimensions": {
+        "length": 250,
+        "diameter": 31.6
+      }
     },
     {
       "type": "shifter",
       "manufacturer": "SRAM",
-      "description": "SRAM GX DH"
+      "description": "SRAM GX DH; 7s"
     },
     {
       "type": "spokes",
       "type_detail": "Spokes/nipples",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS Competition"
+      "description": "DT SWISS Competition; J-Bend, 2.0-1.8-2.0mm, double butted, stainless, with ProLock, black"
     },
     {
       "type": "stem",
-      "description": "BURGTEC MK3"
+      "description": "BURGTEC MK3; 45 mm extension, direct mount, 35 mm",
+      "dimensions": {
+        "length": 45,
+        "diameter": 35
+      }
     },
     {
       "type": "tire",
@@ -331,7 +388,36 @@
         "front",
         "rear"
       ],
-      "description": "Rear : SCHWALBE Tacky Chan - Front : SCHWALBE Magic Mary"
+      "description": "Rear : SCHWALBE Tacky Chan - Front : SCHWALBE Magic Mary; Rear : 27.5\"x2.50, Gravity, Soft, TR - Front : 27.5\"x2.50, Gravity Pro, Ultra Soft, TR",
+      "dimensions": {
+        "width": 63.5,
+        "diameter": 584
+      }
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended SAG",
+      "description": "28-32% / 21-24mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Piggy back shock compatible",
+      "description": "Yes"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Recommended/max. fork height",
+      "description": "581mm / 595mm"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain line",
+      "description": "56,5"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "shock anchor adjustment",
+      "description": "2 positions"
     }
   ]
 }

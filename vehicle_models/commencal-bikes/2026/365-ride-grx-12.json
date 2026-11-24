@@ -55,6 +55,8 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6069 Aluminum",
+    "cable_routing": "stealth",
     "bottom_bracket": {
       "shell": "BB86",
       "width": 86.5,
@@ -74,6 +76,10 @@
       "sizes": [
         "XS"
       ],
+      "tire_width": 47,
+      "tire_system": "tubeless_ready",
+      "axle_diameter": 12,
+      "axle_spacing": 100,
       "tire_width_max": 47
     },
     {
@@ -84,11 +90,15 @@
       "sizes": [
         "XS"
       ],
+      "tire_width": 47,
+      "tire_system": "tubeless_ready",
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 142,
+      "axle_length": 175,
       "axle_thread_pitch": 1,
       "axle_standard": "Maxle",
+      "cassette_interface": "micro_spline",
       "tire_width_max": 47
     },
     {
@@ -102,6 +112,10 @@
         "L",
         "XL"
       ],
+      "tire_width": 45,
+      "tire_system": "tubeless_ready",
+      "axle_diameter": 12,
+      "axle_spacing": 100,
       "tire_width_max": 47
     },
     {
@@ -115,11 +129,15 @@
         "L",
         "XL"
       ],
+      "tire_width": 45,
+      "tire_system": "tubeless_ready",
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 142,
+      "axle_length": 175,
       "axle_thread_pitch": 1,
       "axle_standard": "Maxle",
+      "cassette_interface": "micro_spline",
       "tire_width_max": 47
     }
   ],
@@ -127,6 +145,15 @@
     "1-front",
     "12-rear"
   ],
+  "gearing": {
+    "front": [
+      40
+    ],
+    "rear": [
+      10,
+      51
+    ]
+  },
   "groupset": {
     "manufacturer": "Shimano",
     "series": "GRX 600",
@@ -138,6 +165,7 @@
       "position": [
         "front"
       ],
+      "rotor_diameter": 180,
       "caliper_mount": "Disc Flat Mount"
     },
     {
@@ -145,6 +173,7 @@
       "position": [
         "rear"
       ],
+      "rotor_diameter": 180,
       "rotor_diameter_max": 180,
       "caliper_mount": "Disc Flat Mount"
     }
@@ -166,6 +195,7 @@
         "bb_drop": 65,
         "fork_rake": 55,
         "fork_length_a2c": 410,
+        "handlebar_width": 420,
         "crank_length": 165,
         "max_seatpost_insertion": 240,
         "extra_measurements": {
@@ -189,6 +219,7 @@
         "bb_drop": 70,
         "fork_rake": 55,
         "fork_length_a2c": 410,
+        "handlebar_width": 420,
         "crank_length": 165,
         "max_seatpost_insertion": 260,
         "extra_measurements": {
@@ -212,6 +243,7 @@
         "bb_drop": 70,
         "fork_rake": 55,
         "fork_length_a2c": 410,
+        "handlebar_width": 460,
         "crank_length": 170,
         "max_seatpost_insertion": 280,
         "total_weight": 10.8,
@@ -237,6 +269,7 @@
         "bb_drop": 70,
         "fork_rake": 55,
         "fork_length_a2c": 410,
+        "handlebar_width": 480,
         "crank_length": 172.5,
         "max_seatpost_insertion": 300,
         "extra_measurements": {
@@ -260,6 +293,7 @@
         "bb_drop": 70,
         "fork_rake": 55,
         "fork_length_a2c": 410,
+        "handlebar_width": 480,
         "crank_length": 172.5,
         "max_seatpost_insertion": 314,
         "extra_measurements": {
@@ -272,7 +306,7 @@
     {
       "type": "bottom-bracket",
       "manufacturer": "Shimano",
-      "description": "SHIMANO BB-RS500"
+      "description": "SHIMANO BB-RS500; Pressfit"
     },
     {
       "type": "brake",
@@ -281,12 +315,12 @@
         "rear"
       ],
       "manufacturer": "Shimano",
-      "description": "SHIMANO GRX RX610, Flat Mount"
+      "description": "SHIMANO GRX RX610, Flat Mount; Rotors: SHIMANO SMRT86 180 mm, 180 mm, 6-bolt"
     },
     {
       "type": "chain",
       "manufacturer": "Shimano",
-      "description": "SHIMANO DEORE M6100"
+      "description": "SHIMANO DEORE M6100; 12s"
     },
     {
       "type": "cogcassettefreewheel",
@@ -294,12 +328,12 @@
         "rear"
       ],
       "manufacturer": "Shimano",
-      "description": "SHIMANO SLX"
+      "description": "SHIMANO SLX; 12s, 10-51t"
     },
     {
       "type": "crankset",
       "manufacturer": "Shimano",
-      "description": "SHIMANO GRX RX610, 165 mm on XS/S, 170 mm on M, 172.5 mm on L/XL"
+      "description": "SHIMANO GRX RX610, 165 mm on XS/S, 170 mm on M, 172.5 mm on L/XL; Chainring: SHIMANO GRX RX610, 40T"
     },
     {
       "type": "derailleur",
@@ -307,11 +341,11 @@
         "rear"
       ],
       "manufacturer": "Shimano",
-      "description": "SHIMANO GRX RX822"
+      "description": "SHIMANO GRX RX822; 12s"
     },
     {
       "type": "fork",
-      "description": "365"
+      "description": "365; Internal brake hose routing, Alloy 6066"
     },
     {
       "type": "frame-protection",
@@ -324,49 +358,72 @@
     {
       "type": "gripstape",
       "type_detail": "Grips",
-      "description": "SPANK Wing Gravel Dropbar Tape & Plug"
+      "description": "SPANK Wing Gravel Dropbar Tape & Plug; 220 mm, Black"
     },
     {
       "type": "handlebar",
-      "description": "SPANK Flare 25 Vibrocore Drop Bar"
+      "description": "SPANK Flare 25 Vibrocore Drop Bar; 31.8 mm, 420 mm width, 65 mm reach, 110 mm drop, 25° flare on XS, S- 31.8 mm, 460 mm width, 65 mm reach, 110 mm drop, 25° flare on M - 31.8 mm, 480 mm width, 65 mm reach, 110 mm drop, 25° flare on L, XL",
+      "dimensions": {
+        "diameter": 31.8
+      },
+      "angles": {
+        "flare": 25
+      }
     },
     {
       "type": "headset",
       "manufacturer": "Acros",
-      "description": "ACROS IS52/IS52"
+      "description": "ACROS IS52/IS52; Integrated cable routing"
     },
     {
       "type": "hub",
-      "description": "Rear: FORMULA RX-360M - Front: FORMULA RX-812"
+      "description": "Rear: FORMULA RX-360M - Front: FORMULA RX-812; Rear: 24h, sealed bearings, 12 x 142 mm, Microspline 12s - Front: 24h, sealed bearings, 12 x 100 mm",
+      "dimensions": {
+        "axle_diameter": 12
+      }
     },
     {
       "type": "rim",
       "manufacturer": "DT Swiss",
-      "description": "DT SWISS G540"
+      "description": "DT SWISS G540; 650b, 24h, 24 mm inner width, tubeless ready on XS; 700C, 24h, 24 mm inner width, tubeless ready on S / M / L / XL",
+      "dimensions": {
+        "inner_width": 24
+      }
     },
     {
       "type": "saddle",
       "manufacturer": "Fizik",
-      "description": "FIZIK Terra Alpaca X5"
+      "description": "FIZIK Terra Alpaca X5; 145 mm width, S-alloy rails",
+      "dimensions": {
+        "width": 145
+      }
     },
     {
       "type": "seatpost",
       "type_detail": "Seat post",
-      "description": "RIDE ALPHA"
+      "description": "RIDE ALPHA; 27.2 mm, 350 mm length",
+      "dimensions": {
+        "length": 350,
+        "diameter": 27.2
+      }
     },
     {
       "type": "shifter",
       "manufacturer": "Shimano",
-      "description": "SHIMANO GRX RX610"
+      "description": "SHIMANO GRX RX610; 12s"
     },
     {
       "type": "spokes",
       "type_detail": "Spokes/nipples",
-      "description": "SAPIM Race"
+      "description": "SAPIM Race; J-Bend, 2.0-1.8-2.0 mm, double butted, stainless, with Nylok, black"
     },
     {
       "type": "stem",
-      "description": "RIDE ALPHA Gravel 70"
+      "description": "RIDE ALPHA Gravel 70; 70 mm extension, 31.8 mm",
+      "dimensions": {
+        "length": 70,
+        "diameter": 31.8
+      }
     },
     {
       "type": "tire",
@@ -375,11 +432,16 @@
         "rear"
       ],
       "manufacturer": "Maxxis",
-      "description": "MAXXIS Rambler"
+      "description": "MAXXIS Rambler; 650 x 47b, HYPR-X, EXO, Tubeless Ready on XS - 700 x 45c, HYPR-X, EXO, Tubeless Ready on S / M / L / XL"
     },
     {
       "type": "unknown",
       "description": "FIDLOCK"
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Chain line",
+      "description": "47,5"
     }
   ]
 }
