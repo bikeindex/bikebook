@@ -8,7 +8,7 @@ Check out the viewer at [bikeindex.org/bikebook](https://bikeindex.org/bikebook)
 
 This repository has the specs and information about a large and ever growing list of bikes (and e-bikes, trikes, EPAMD, etc, hereafter just referred to as "bikes").
 
-Currently there are **52,191** bikes in the database.
+Currently there are **52,371** bikes in the database.
 
 The bike data is stored as JSON, in a public JSON Schema. If you're curious about what data is stored, check out the schema viewer at [bikeindex.org/bikebook_schemas](https://bikeindex.org/bikebook_schemas)
 
