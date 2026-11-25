@@ -1,0 +1,229 @@
+{
+  "schema_version": "2.1.0",
+  "id": "m/ezee/2023/torq-ti-gts",
+  "manufacturer": "Ezee",
+  "model_group": "Torq",
+  "model": "Torq TI GTS",
+  "model_configuration": "complete",
+  "markets": [
+    "US"
+  ],
+  "type": "bike",
+  "propulsion": [
+    "pedal-assist",
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "description": "Titanium",
+  "first_year": 2023,
+  "final_year": 2025,
+  "years": {
+    "2025": {
+      "url": "https://index.commoncrawl.org/CC-MAIN-2025-18/20250428100226/https://www.ezeebike.com/product/torq-ti-gts-lst/",
+      "url_live": false
+    },
+    "2023": {}
+  },
+  "frame": {
+    "material": "titanium"
+  },
+  "wheels": [
+    {
+      "bsd": 622,
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "drivetrain": [
+    "1-front",
+    "9-rear"
+  ],
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Alivio",
+    "description": "Shimano Alivio 9 speeds sprocket",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc-hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "drive_wheel": "front",
+      "manufacturer": "Ezee",
+      "kind": "hub-drive",
+      "battery": {
+        "capacity": 522,
+        "capacity_options": [
+          576
+        ],
+        "voltage": 36
+      },
+      "rated_power": 500,
+      "operating_modes": [
+        {
+          "mode": "assist",
+          "availability": "stock",
+          "max_speed": 32,
+          "levels": 5,
+          "e_vehicle_classifications": [
+            "evc/us/class-2"
+          ]
+        },
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "e_vehicle_classifications": [
+            "evc/us/class-2"
+          ]
+        }
+      ]
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size"
+    }
+  ],
+  "components": [
+    {
+      "type": "bellnoisemaker",
+      "description": "Brass bell"
+    },
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Magura",
+      "description": "Magura MT 4 hydraulic disc brakes with E-cut off"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "Li+ Battery 36V 14.5/16Ah/20Ah"
+    },
+    {
+      "type": "ebike-charger",
+      "description": "3 amps Smart Charger"
+    },
+    {
+      "type": "ebike-displayremote",
+      "description": "OLED colour display console – battery gauge and 5 power assist level selection"
+    },
+    {
+      "type": "ebike-motor",
+      "manufacturer": "Ezee",
+      "description": "eZee Front Motor – 500W, max speed 20 mph. Polished die cast Aluminum motor hub"
+    },
+    {
+      "type": "fender",
+      "description": "Polycarbonate Fenders"
+    },
+    {
+      "type": "fork",
+      "description": "Titanium Fork"
+    },
+    {
+      "type": "kickstand",
+      "description": "Al. alloy central kick stand"
+    },
+    {
+      "type": "light",
+      "type_detail": "Lighting",
+      "description": "Rear – Spanninga Micro FF, RL 980, Front – Roxim XE high power LED 400 Lumen"
+    },
+    {
+      "type": "rack",
+      "position": [
+        "rear"
+      ],
+      "description": "Al. alloy rear rack"
+    },
+    {
+      "type": "saddle",
+      "description": "Salle Royal."
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Controller",
+      "manufacturer": "Field",
+      "description": "Field Orientated Control (FOC) Max Amps: 20 Amps, Mosfet: IRFB4110, Die cast Aluminium casing, PU resin potted."
+    },
+    {
+      "type": "unknown",
+      "type_detail": "Optional",
+      "description": "suspension fork; with front wheel drive : Shimano Alfine8; 26 “Schwalbe (Rock Razor) 26×2.35"
+    },
+    {
+      "type": "wheel",
+      "description": "700C Alloy Rims, Schwalbe Marathon Plus Tour Tyres .",
+      "dimensions": {
+        "diameter": 622
+      }
+    }
+  ],
+  "market_variants": {
+    "AU": {
+      "markets": [
+        "AU"
+      ],
+      "motors": {
+        "0": {
+          "rated_power": 200,
+          "operating_modes": {
+            "assist stock": {
+              "max_speed": null,
+              "e_vehicle_classifications": null
+            },
+            "throttle stock": {
+              "e_vehicle_classifications": null
+            }
+          }
+        }
+      },
+      "components": {
+        "ebike-motor": {
+          "description": "eZee Front Motor – 200W. Polished die cast Aluminum motor hub"
+        }
+      }
+    },
+    "EU": {
+      "markets": [
+        "EU"
+      ],
+      "motors": {
+        "0": {
+          "rated_power": 250,
+          "operating_modes": {
+            "assist stock": {
+              "max_speed": 25,
+              "e_vehicle_classifications": [
+                "evc/l1e-a-powered-cycle"
+              ]
+            },
+            "throttle stock": {
+              "e_vehicle_classifications": [
+                "evc/l1e-a-powered-cycle"
+              ]
+            }
+          }
+        }
+      },
+      "components": {
+        "ebike-motor": {
+          "description": "eZee Front Motor – 250W, max speed 25 km/h. Polished die cast Aluminum motor hub"
+        }
+      }
+    }
+  }
+}
