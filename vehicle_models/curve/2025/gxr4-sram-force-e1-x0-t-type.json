@@ -87,7 +87,7 @@
   },
   "frame": {
     "material": "titanium",
-    "material_detail": "Grade 9 Aerospace-Grade Titanium",
+    "material_detail": "3Al-2.5V Grade 9 Aerospace-Grade Titanium",
     "mounts": [
       {
         "type": "rack",
@@ -112,10 +112,21 @@
     {
       "bsd": 622,
       "position": [
-        "front",
+        "front"
+      ],
+      "tire_width": 50,
+      "axle": "thru_axle",
+      "axle_diameter": 12,
+      "axle_thread_pitch": 1.5
+    },
+    {
+      "bsd": 622,
+      "position": [
         "rear"
       ],
-      "tire_width": 50
+      "tire_width": 50,
+      "axle": "thru_axle",
+      "axle_diameter": 12
     }
   ],
   "drivetrain": [
@@ -326,6 +337,14 @@
   ],
   "components": [
     {
+      "type": "axle-nuts",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "12 mm Front & Rear Axles"
+    },
+    {
       "type": "bottom-bracket",
       "description": "T47 DUB internal 85.5 mm"
     },
@@ -440,14 +459,6 @@
       "type": "unknown",
       "manufacturer": "Curve",
       "description": "Curve Cocky Headbadge"
-    },
-    {
-      "type": "unknown",
-      "position": [
-        "front",
-        "rear"
-      ],
-      "description": "12 mm Front & Rear Axles"
     },
     {
       "type": "unknown",

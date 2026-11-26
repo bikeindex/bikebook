@@ -27,7 +27,8 @@
   "frame": {
     "material": "aluminum",
     "seatpost_diameter": 31.6,
-    "seatpost_clamp_diameter": 34.9
+    "seatpost_clamp_diameter": 34.9,
+    "chainguide_mount": "ISCG05"
   },
   "suspension": {
     "rear": {
@@ -36,6 +37,18 @@
       "spring": "air"
     }
   },
+  "wheels": [
+    {
+      "position": [
+        "rear"
+      ],
+      "axle": "thru_axle",
+      "axle_diameter": 12,
+      "axle_spacing": 157,
+      "axle_thread_pitch": 1,
+      "axle_standard": "Syntace X-12"
+    }
+  ],
   "sizes": [
     {
       "name": "S",
@@ -105,6 +118,11 @@
   ],
   "components": [
     {
+      "type": "axle-nuts",
+      "manufacturer": "Syntace",
+      "description": "Syntace 157mm X12 Axle"
+    },
+    {
       "type": "rear-suspension",
       "type_detail": "shock",
       "position": [
@@ -135,11 +153,6 @@
       "dimensions": {
         "diameter": 34.9
       }
-    },
-    {
-      "type": "unknown",
-      "manufacturer": "Syntace",
-      "description": "Syntace 157mm X12 Axle"
     }
   ]
 }

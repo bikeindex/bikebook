@@ -99,7 +99,8 @@
     "cable_routing": "internal",
     "bottom_bracket": {
       "shell": "BSA"
-    }
+    },
+    "max_chainring": 44
   },
   "wheels": [
     {
@@ -107,8 +108,10 @@
       "position": [
         "rear"
       ],
+      "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 142,
+      "axle_standard": "Switch",
       "tire_width_max": 50
     },
     {
@@ -116,8 +119,11 @@
       "position": [
         "front"
       ],
+      "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 100,
+      "axle_thread_pitch": 1.5,
+      "axle_standard": "Switch",
       "tire_width_max": 50
     }
   ],
@@ -294,6 +300,11 @@
       "description": "100 X 12 front axle spacing"
     },
     {
+      "type": "axle-nuts",
+      "type_detail": "AXLE REMOVAL",
+      "description": "GW Switch Lever Thru-axles included"
+    },
+    {
       "type": "bottom-bracket",
       "description": "BSA threaded BB for real-world low-maintenance riding"
     },
@@ -304,7 +315,14 @@
     },
     {
       "type": "fork",
+      "manufacturer": "Kinesis",
       "description": "New Kinesis All Terrain fork with internal dynamo and brake routing"
+    },
+    {
+      "type": "headset",
+      "type_detail": "Kinesis headset with ACB bearings",
+      "manufacturer": "Kinesis",
+      "description": "Kinesis headset with ACB bearings"
     },
     {
       "type": "seatpost",
@@ -312,9 +330,9 @@
       "description": "Dropper post routing"
     },
     {
-      "type": "unknown",
-      "type_detail": "AXLE REMOVAL",
-      "description": "GW Switch Lever Thru-axles included"
+      "type": "seatpost-clamp",
+      "type_detail": "seat clamp",
+      "description": "seat clamp"
     },
     {
       "type": "unknown",
@@ -323,14 +341,8 @@
     },
     {
       "type": "unknown",
-      "type_detail": "SIZING & WEIGHTS",
-      "description": "(Centre/Top) 48cm = 1.69kg | 50cm = 1.72kg | 52cm = 1.75kg | 54cm = 1.79kg | 56cm = 1.83kg | 58cm = 1.87kg | 60cm = 1.91kg"
-    },
-    {
-      "type": "unknown",
-      "type_detail": "FRAMESET INCLUDES",
-      "manufacturer": "Kinesis",
-      "description": "Kinesis carbon fork, Kinesis headset with ACB bearings, seat clamp, front and rear axles and cable port hardware"
+      "type_detail": "cable port hardware",
+      "description": "cable port hardware"
     }
   ]
 }

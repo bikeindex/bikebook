@@ -68,7 +68,8 @@
       "spindle": "DUB"
     },
     "seatpost_diameter": 27.2,
-    "seatpost_clamp_diameter": 31.8
+    "seatpost_clamp_diameter": 31.8,
+    "derailleur_hanger": "SRAM UDH"
   },
   "wheels": [
     {
@@ -76,7 +77,10 @@
       "position": [
         "front"
       ],
-      "tire_width": 53
+      "tire_width": 53,
+      "axle": "thru_axle",
+      "axle_diameter": 12,
+      "axle_thread_pitch": 1.5
     },
     {
       "bsd": 622,
@@ -84,6 +88,8 @@
         "rear"
       ],
       "tire_width": 53,
+      "axle": "thru_axle",
+      "axle_diameter": 12,
       "dropout": "sliding"
     }
   ],
@@ -328,6 +334,14 @@
   ],
   "components": [
     {
+      "type": "axle-nuts",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "12 mm Front & Rear Axles"
+    },
+    {
       "type": "bottom-bracket",
       "manufacturer": "Curve",
       "description": "Curve T47 DUB int. 85.5"
@@ -443,14 +457,6 @@
       "type": "unknown",
       "manufacturer": "Curve",
       "description": "Curve Cocky Headbadge"
-    },
-    {
-      "type": "unknown",
-      "position": [
-        "front",
-        "rear"
-      ],
-      "description": "12 mm Front & Rear Axles"
     },
     {
       "type": "wheel",
