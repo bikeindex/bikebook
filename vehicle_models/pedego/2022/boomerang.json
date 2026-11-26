@@ -100,7 +100,8 @@
         ],
         "voltage": 48,
         "chemistry": "li-ion",
-        "cells": "18650"
+        "cells": "18650",
+        "weight": 3.99
       },
       "rated_power": 500,
       "max_torque": 45,
@@ -127,13 +128,19 @@
     {
       "name": "24” Low Step",
       "geometry": {
-        "rider_height_max": 1575
+        "rider_height_max": 1575,
+        "extra_measurements": {
+          "total_weight_without_battery_kg": 24.7
+        }
       }
     },
     {
       "name": "26” Low Step",
       "geometry": {
-        "rider_height_min": 1626
+        "rider_height_min": 1626,
+        "extra_measurements": {
+          "total_weight_without_battery_kg": 24.2
+        }
       }
     }
   ],
@@ -322,13 +329,8 @@
     },
     {
       "type": "unknown",
-      "type_detail": "Weight without battery",
-      "description": "STEP-THRU 24”: 54.4 LB; STEP-THRU 26”: 53.4 LB."
-    },
-    {
-      "type": "unknown",
       "type_detail": "Weight of battery",
-      "description": "48V/15Ah: 9.2 LB; 48V/10Ah: 8.8LB."
+      "description": "48V/15Ah: 9.2 LB"
     }
   ]
 }

@@ -100,7 +100,8 @@
         ],
         "voltage": 36,
         "chemistry": "li-ion",
-        "cells": "18650"
+        "cells": "18650",
+        "weight": 3.2
       },
       "rated_power": 350,
       "max_torque": 35,
@@ -128,19 +129,28 @@
       "name": "26” Step-Thru",
       "geometry": {
         "rider_height_min": 1575,
-        "rider_height_max": 1727
+        "rider_height_max": 1727,
+        "extra_measurements": {
+          "total_weight_without_battery_kg": 23.6
+        }
       }
     },
     {
       "name": "28” Step-Thru",
       "geometry": {
-        "rider_height_min": 1676
+        "rider_height_min": 1676,
+        "extra_measurements": {
+          "total_weight_without_battery_kg": 25
+        }
       }
     },
     {
       "name": "28” Classic",
       "geometry": {
-        "rider_height_min": 1778
+        "rider_height_min": 1778,
+        "extra_measurements": {
+          "total_weight_without_battery_kg": 25.3
+        }
       }
     }
   ],
@@ -330,13 +340,8 @@
     },
     {
       "type": "unknown",
-      "type_detail": "Weight without battery",
-      "description": "STEP-THRU 26”: 52 LB; STEP-THRU 28”: 55.2 LB; CLASSIC 28”: 55.8 LB."
-    },
-    {
-      "type": "unknown",
       "type_detail": "Weight of battery",
-      "description": "36V/15Ah: 7.6 LB; 36V/10Ah: 7 LB."
+      "description": "36V/15Ah: 7.6 LB"
     }
   ]
 }
