@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://bikebook.bikeindex.org/schemas/e_vehicle_classification/v2.1.0.json",
+  "$id": "https://bikebook.bikeindex.org/schemas/e_vehicle_classification/v2.2.0.json",
   "title": "Bikebook e-vehicle classification",
   "description": "schema_version is semantic: a major version removes, renames or retypes a field or removes an enum value, a minor one adds an optional field or an enum value, and a patch changes only descriptions. The published catalog's format is versioned apart from it, one integer raised whenever the layout of its files changes.",
   "type": "object",
@@ -19,7 +19,7 @@
         "string",
         "null"
       ],
-      "pattern": "^(AD|AE|AL|AR|AU|BA|BH|BM|BN|BO|BR|BT|CA|CH|CL|CN|CO|CR|DO|EC|EG|EU|GB|GE|GI|GT|HK|HN|ID|IL|IN|IS|JE|JP|KE|KG|KH|KR|KW|KZ|LA|LB|MC|MD|MK|MO|MU|MX|MY|NO|NZ|OM|PA|PE|PH|PY|QA|RS|RU|SA|SG|SV|TH|TR|TW|UA|US|UY|VE|VG|VN|ZA|ZM)(-[A-Z0-9]{1,3})?$",
+      "pattern": "^(AD|AE|AL|AR|AU|BA|BD|BH|BM|BN|BO|BR|BT|CA|CH|CL|CN|CO|CR|DO|EC|EG|EU|GB|GE|GH|GI|GT|HK|HN|ID|IL|IN|IS|JE|JP|KE|KG|KH|KR|KW|KZ|LA|LB|MA|MC|MD|MK|MO|MU|MX|MY|NO|NZ|OM|PA|PE|PH|PY|QA|RS|RU|SA|SG|SV|TH|TR|TW|UA|US|UY|VE|VG|VN|ZA|ZM)(-[A-Z0-9]{1,3})?$",
       "description": "ISO 3166-1 alpha-2 country code, or EU, suffixed with a state or province's ISO 3166-2 code, e.g. US-CA; a group, which classifications from any jurisdiction can name, has none"
     },
     "jurisdiction_name": {
@@ -133,7 +133,7 @@
               "string",
               "null"
             ],
-            "pattern": "^(AD|AE|AL|AR|AU|BA|BH|BM|BN|BO|BR|BT|CA|CH|CL|CN|CO|CR|DO|EC|EG|EU|GB|GE|GI|GT|HK|HN|ID|IL|IN|IS|JE|JP|KE|KG|KH|KR|KW|KZ|LA|LB|MC|MD|MK|MO|MU|MX|MY|NO|NZ|OM|PA|PE|PH|PY|QA|RS|RU|SA|SG|SV|TH|TR|TW|UA|US|UY|VE|VG|VN|ZA|ZM)(-[A-Z0-9]{1,3}(-(\\d{3}|\\d{5}))?)?(:[a-z_]+)?$",
+            "pattern": "^(AD|AE|AL|AR|AU|BA|BD|BH|BM|BN|BO|BR|BT|CA|CH|CL|CN|CO|CR|DO|EC|EG|EU|GB|GE|GH|GI|GT|HK|HN|ID|IL|IN|IS|JE|JP|KE|KG|KH|KR|KW|KZ|LA|LB|MA|MC|MD|MK|MO|MU|MX|MY|NO|NZ|OM|PA|PE|PH|PY|QA|RS|RU|SA|SG|SV|TH|TR|TW|UA|US|UY|VE|VG|VN|ZA|ZM)(-[A-Z0-9]{1,3}(-(\\d{3}|\\d{5}))?)?(:[a-z_]+)?$",
             "description": "The narrower place it applies: an area, with a US county's or Census place's FIPS code after its state (US-CA-081, US-NY-51000), and a :land_type (US:national_park); it holds in every area whose code starts with it, and a rule without one wherever its classification does"
           },
           "citation": {
