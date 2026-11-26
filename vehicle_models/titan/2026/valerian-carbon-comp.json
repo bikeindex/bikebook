@@ -14,11 +14,10 @@
   "stock_photo": "https://bikebook.bikeindex.org/titan/2026/valerian-carbon-comp.jpg",
   "description": "If you want to race. The Valerian road race bike is designed on a lightweight carbon fibre frame with disc brakes. The Valerian will get you to the front of the pack.",
   "first_year": 2026,
-  "final_year": 2026,
   "years": {
     "2026": {
-      "url": "https://index.commoncrawl.org/CC-MAIN-2025-26/20250619065536/https://titanracingbikes.com/bikes/valerian-carbon-comp-my26/",
-      "url_live": false
+      "url": "https://titanracingbikes.com/bikes/valerian-carbon-comp/",
+      "url_live": true
     }
   },
   "frame": {
@@ -45,7 +44,7 @@
       "position": [
         "front"
       ],
-      "tire_width": 25,
+      "tire_width": 28,
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_thread_pitch": 1.5,
@@ -56,7 +55,7 @@
       "position": [
         "rear"
       ],
-      "tire_width": 25,
+      "tire_width": 28,
       "axle": "thru_axle",
       "axle_diameter": 12,
       "axle_spacing": 142,
@@ -80,11 +79,26 @@
   "groupset": {
     "manufacturer": "Shimano",
     "series": "105",
-    "electronic": false
+    "electronic": true
   },
+  "brakes": [
+    {
+      "type": "disc-hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 160,
+      "caliper_mount": "Disc Flat Mount"
+    }
+  ],
   "sizes": [
     {
-      "name": "XS"
+      "name": "XS",
+      "geometry": {
+        "handlebar_width": 400,
+        "stem_length": 70
+      }
     },
     {
       "name": "S",
@@ -102,8 +116,9 @@
         "bb_height": 275,
         "fork_rake": 45,
         "fork_length_a2c": 365,
-        "handlebar_width": 420,
+        "handlebar_width": 400,
         "stem_length": 70,
+        "crank_length": 160,
         "rider_inseam_min": 740,
         "rider_inseam_max": 780
       }
@@ -124,8 +139,9 @@
         "bb_height": 275,
         "fork_rake": 45,
         "fork_length_a2c": 365,
-        "handlebar_width": 440,
+        "handlebar_width": 400,
         "stem_length": 80,
+        "crank_length": 172.5,
         "rider_inseam_min": 770,
         "rider_inseam_max": 810
       }
@@ -146,8 +162,9 @@
         "bb_height": 275,
         "fork_rake": 45,
         "fork_length_a2c": 365,
-        "handlebar_width": 440,
+        "handlebar_width": 420,
         "stem_length": 90,
+        "crank_length": 175,
         "rider_inseam_min": 800,
         "rider_inseam_max": 840
       }
@@ -163,13 +180,14 @@
         "seat_angle": 74,
         "head_tube": 185,
         "chainstay": 415,
-        "wheelbase": 1113,
+        "wheelbase": 1013,
         "bb_drop": 65,
         "bb_height": 275,
         "fork_rake": 45,
         "fork_length_a2c": 365,
         "handlebar_width": 440,
         "stem_length": 100,
+        "crank_length": 175,
         "rider_inseam_min": 830,
         "rider_inseam_max": 870
       }
@@ -179,7 +197,7 @@
     {
       "type": "bottom-bracket",
       "type_detail": "Bb set",
-      "description": "ATTACHED"
+      "description": "CH-52"
     },
     {
       "type": "brake",
@@ -188,7 +206,7 @@
         "rear"
       ],
       "manufacturer": "Shimano",
-      "description": "SHIMANO 105"
+      "description": "SHIMANO BR-R7170 DISC WITH 160MM ROTORS"
     },
     {
       "type": "brake-cable",
@@ -201,13 +219,7 @@
     {
       "type": "chain",
       "manufacturer": "Shimano",
-      "description": "SHIMANO 105 12 SPEED CN-M6100"
-    },
-    {
-      "type": "chainrings",
-      "type_detail": "Chainwheel",
-      "manufacturer": "Shimano",
-      "description": "SHIMANO 105 FC-7100 50-34T / SHIMANO 105 FC-7100 / 12 SPEED / 50-34T / S = 160MM / M = 172.5MM / L+XL=175M"
+      "description": "SHIMANO CN-7100"
     },
     {
       "type": "cogcassettefreewheel",
@@ -216,16 +228,28 @@
         "rear"
       ],
       "manufacturer": "Shimano",
-      "description": "SHIMANO 105 CS-R7100-12 11-34T"
+      "description": "SHIMANO CS-R7100-12 – 11-34T"
+    },
+    {
+      "type": "crankset",
+      "manufacturer": "Shimano",
+      "description": "SHIMANO FC-RS520 50-34T / SHIMANO FC-RS520 50-34T / 12 SPEED / S = 160MM / M = 172.5MM / L+XL=175MM"
     },
     {
       "type": "derailleur",
       "position": [
-        "front",
+        "front"
+      ],
+      "manufacturer": "Shimano",
+      "description": "SHIMANO 105 FD-R7150 Di2"
+    },
+    {
+      "type": "derailleur",
+      "position": [
         "rear"
       ],
       "manufacturer": "Shimano",
-      "description": "SHIMANO 105 MECHANICAL"
+      "description": "SHIMANO 105 RD-R7150 Di2"
     },
     {
       "type": "fork",
@@ -237,19 +261,17 @@
     {
       "type": "gripstape",
       "type_detail": "Grip",
-      "description": "PLAIN BLACK – NO LOGO"
+      "manufacturer": "Prologo",
+      "description": "PROLOGO – PLAINTOUCH BLACK TAPE"
     },
     {
       "type": "handlebar",
-      "description": "TR ROAD PRO H/BAR / PROMAX RA-204 H/BAR / 31.8mm / S = 420mm / M+L+XL = 440mm",
-      "dimensions": {
-        "diameter": 31.8
-      }
+      "description": "TR ROAD PRO H/BAR / PROMAX HB-3058-DB-IRC – XS + S + M = 400mm / L = 420mm / XL = 440mm"
     },
     {
       "type": "headset",
       "manufacturer": "Token",
-      "description": "TOKEN INTERGRATED"
+      "description": "TOKEN ICR"
     },
     {
       "type": "headset",
@@ -281,13 +303,11 @@
     },
     {
       "type": "rim",
-      "manufacturer": "DT Swiss",
-      "description": "DT SWISS R 470 DB / DT SWISS R 470 DB / 28 HOLE / 40MM"
+      "description": "PRIME AR 35 / 35MM / DISC BRAKE ONLY / 28 HOLE"
     },
     {
       "type": "saddle",
-      "manufacturer": "Prologo",
-      "description": "PROLOGO SCRATCH M5 STN HARD BLACK NYLON INJ MICROFIBER 2"
+      "description": "SR HAVAC 2101H"
     },
     {
       "type": "seatpost",
@@ -303,13 +323,13 @@
       "type": "shifter",
       "type_detail": "Shifter left",
       "manufacturer": "Shimano",
-      "description": "SHIMANO 105 MECHANICAL"
+      "description": "SHIMANO 105 ST-R7170 Di2"
     },
     {
       "type": "shifter",
       "type_detail": "Shifter right",
       "manufacturer": "Shimano",
-      "description": "SHIMANO 105 MECHANICAL"
+      "description": "SHIMANO 105 ST-R7170 Di2"
     },
     {
       "type": "spokes",
@@ -318,7 +338,7 @@
     {
       "type": "stem",
       "type_detail": "Handlebar stem",
-      "description": "TR ROAD PRO STEM / PROMAX RA-204 / S = 70MM / M = 80MM / L = 90MM / XL = 100MM"
+      "description": "TR ROAD PRO STEM / PROMAX RA-205 – XS = 70MM / S = 70CM / M = 80MM / L = 90MM / XL = 100CM"
     },
     {
       "type": "tire",
@@ -326,9 +346,9 @@
         "front",
         "rear"
       ],
-      "description": "VITTORIA RUBINO 700 X 25C / 700 X 25C / BLACK FOLDING / 150TPI G+ F/V",
+      "description": "VITTORIA RUBINO 700 X 28C / VITTORIA RUBINO V 28-622 FOLD G2.0 OEM HP 700 X 28C",
       "dimensions": {
-        "width": 25,
+        "width": 28,
         "diameter": 622
       }
     },
