@@ -95,6 +95,10 @@ export function slugify(string) {
 
 </details>
 
+The tests check the data files: every file pretty-printed with two spaces and a trailing newline, its keys in its schema's property order, valid against the `schema_version`.
+
+To
+
 
 ## Catalog
 
