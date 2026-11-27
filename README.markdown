@@ -12,7 +12,9 @@ Currently there are **58,620** bikes in the database.
 
 The bike data is stored as JSON, in a public JSON Schema. If you're curious about what data is stored, check out the schema viewer at [bikeindex.org/bikebook_schemas](https://bikeindex.org/bikebook_schemas)
 
-<img src="https://raw.githubusercontent.com/bikeindex/bikebook/readme_refs/schema_viewer-screenshot.png" alt="Schema viewer" width="50%">
+| [JSON Schema](schemas/vehicle_model.json) explore | [Trek Fuel+ schema display](https://bikeindex.org/bikebook_schemas/m/trek/2026/fuel-plus-mx-9-9-x0-axs-gen-2) |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/bikeindex/bikebook/readme_refs/schema_viewer-screenshot.png" alt="Schema viewer exploring the vehicle model schema"> | <img src="https://raw.githubusercontent.com/bikeindex/bikebook/readme_refs/schema_viewer-trek-screenshot.png" alt="Schema viewer displaying a Trek model's file"> |
 
 The schema viewer helps make sense of the structure by including comments and showing the number of matching bikes along with links to sample bike IDs.
 
@@ -104,6 +106,8 @@ The manifest and index is are published to Cloudflare R2, which is then loaded b
 ## Contributing
 
 Please submit any fixes that you have!
+
+Email [bikebook@bikeindex.org](mailto:bikebook@bikeindex.org) if you want help formatting the data.
 
 Read [CONTRIBUTING](CONTRIBUTING.md) and sign our [Contributor License Agreement](https://cla-assistant.io/bikeindex/bikebook).
 
