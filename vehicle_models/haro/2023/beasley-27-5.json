@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.1.0",
+  "schema_version": "2.2.0",
   "id": "m/haro/2023/beasley-27-5",
   "manufacturer": "Haro",
   "model_group": "Beasley",
@@ -29,22 +29,22 @@
             {
               "sku": "13226",
               "gtin": "691840132268",
-              "size": "S"
+              "size": "S / 15"
             },
             {
               "sku": "13227",
               "gtin": "691840132275",
-              "size": "M"
+              "size": "M / 17"
             },
             {
               "sku": "13228",
               "gtin": "691840132282",
-              "size": "L"
+              "size": "L / 19"
             },
             {
               "sku": "13229",
               "gtin": "691840132299",
-              "size": "XL"
+              "size": "XL / 21"
             }
           ]
         }
@@ -52,7 +52,26 @@
       "url": "https://harobikes.com/products/beasley-27-5",
       "url_live": true
     },
-    "2023": {}
+    "2023": {
+      "original_msrp": 79999,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Matte Charcoal",
+          "colors": [
+            "silver"
+          ]
+        },
+        {
+          "name": "Matte Jade",
+          "colors": [
+            "green"
+          ]
+        }
+      ],
+      "url": "https://archive.harobikes.com/mtb/2023-mtb/beasley-27-5-2023",
+      "url_live": true
+    }
   },
   "frame": {
     "material": "aluminum",
@@ -92,15 +111,22 @@
     {
       "type": "disc-mechanical",
       "position": [
-        "front",
-        "rear"
+        "front"
       ],
       "rotor_diameter": 160
+    },
+    {
+      "type": "disc-mechanical",
+      "position": [
+        "rear"
+      ],
+      "rotor_diameter": 160,
+      "caliper_mount": "Disc Post Mount"
     }
   ],
   "sizes": [
     {
-      "name": "S",
+      "name": "S / 15",
       "geometry": {
         "reach": 396,
         "stack": 566,
@@ -121,7 +147,7 @@
       }
     },
     {
-      "name": "M",
+      "name": "M / 17",
       "geometry": {
         "reach": 418,
         "stack": 592,
@@ -142,7 +168,7 @@
       }
     },
     {
-      "name": "L",
+      "name": "L / 19",
       "geometry": {
         "reach": 421,
         "stack": 616,
@@ -163,7 +189,7 @@
       }
     },
     {
-      "name": "XL",
+      "name": "XL / 21",
       "geometry": {
         "reach": 428,
         "stack": 640,
@@ -288,6 +314,10 @@
       "type": "shifter",
       "type_detail": "Derailleur Shifter",
       "description": "SL-M7180-R, Xpress Microshift shifters for 1 x 8, right side activation"
+    },
+    {
+      "type": "spokes",
+      "description": "Stainless BED"
     },
     {
       "type": "stem",

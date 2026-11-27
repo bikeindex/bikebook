@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.1.0",
+  "schema_version": "2.2.0",
   "id": "m/ibis/2022/ripley-frameset",
   "manufacturer": "Ibis",
   "model_group": "Ripley",
@@ -15,7 +15,7 @@
   "final_year": 2022,
   "years": {
     "2022": {
-      "original_msrp": 319900,
+      "original_msrp": 349900,
       "original_msrp_currency": "USD",
       "colorways": [
         {
@@ -28,7 +28,7 @@
           ]
         }
       ],
-      "url": "https://web.archive.org/web/20210612115043/https://www.ibiscycles.com/bikes/ripley",
+      "url": "https://web.archive.org/web/20220525200443/https://www.ibiscycles.com/bikes/ripley",
       "url_live": false
     }
   },
@@ -47,7 +47,8 @@
     "rear": {
       "travel": 120,
       "shock_length": 190,
-      "shock_stroke": 45
+      "shock_stroke": 45,
+      "spring": "air"
     }
   },
   "wheels": [
@@ -170,12 +171,21 @@
   ],
   "components": [
     {
-      "type": "bottom-bracket",
-      "description": "Threaded (73mm English threaded)"
-    },
-    {
       "type": "headset",
       "description": "ZS44 upper / ZS56 lower"
+    },
+    {
+      "type": "rear-suspension",
+      "type_detail": "Shock",
+      "position": [
+        "rear"
+      ],
+      "manufacturer": "Fox",
+      "description": "Fox Float Factory DPS with EVOL, 190x45",
+      "dimensions": {
+        "length": 190,
+        "travel": 45
+      }
     },
     {
       "type": "unknown",

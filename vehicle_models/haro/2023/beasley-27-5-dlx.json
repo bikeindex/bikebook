@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.1.0",
+  "schema_version": "2.2.0",
   "id": "m/haro/2023/beasley-27-5-dlx",
   "manufacturer": "Haro",
   "model_group": "Beasley",
@@ -26,22 +26,22 @@
             {
               "sku": "13231",
               "gtin": "691840132312",
-              "size": "S"
+              "size": "S / 15"
             },
             {
               "sku": "13232",
               "gtin": "691840132329",
-              "size": "M"
+              "size": "M / 17"
             },
             {
               "sku": "13233",
               "gtin": "691840132336",
-              "size": "L"
+              "size": "L / 19"
             },
             {
               "sku": "13234",
               "gtin": "691840132343",
-              "size": "XL"
+              "size": "XL / 21"
             }
           ]
         }
@@ -49,7 +49,12 @@
       "url": "https://harobikes.com/products/beasley-27-5-dlx",
       "url_live": true
     },
-    "2023": {}
+    "2023": {
+      "original_msrp": 89999,
+      "original_msrp_currency": "USD",
+      "url": "https://archive.harobikes.com/mtb/2023-mtb/beasley-27-5-dlx-2023",
+      "url_live": true
+    }
   },
   "frame": {
     "material": "aluminum",
@@ -81,7 +86,6 @@
     ]
   },
   "groupset": {
-    "manufacturer": "MicroShift",
     "series": "Advent X",
     "electronic": false
   },
@@ -89,15 +93,22 @@
     {
       "type": "disc-hydraulic",
       "position": [
-        "front",
-        "rear"
+        "front"
       ],
       "rotor_diameter": 160
+    },
+    {
+      "type": "disc-hydraulic",
+      "position": [
+        "rear"
+      ],
+      "rotor_diameter": 160,
+      "caliper_mount": "Disc Post Mount"
     }
   ],
   "sizes": [
     {
-      "name": "S",
+      "name": "S / 15",
       "geometry": {
         "reach": 396,
         "stack": 566,
@@ -118,7 +129,7 @@
       }
     },
     {
-      "name": "M",
+      "name": "M / 17",
       "geometry": {
         "reach": 418,
         "stack": 592,
@@ -139,7 +150,7 @@
       }
     },
     {
-      "name": "L",
+      "name": "L / 19",
       "geometry": {
         "reach": 421,
         "stack": 618,
@@ -160,7 +171,7 @@
       }
     },
     {
-      "name": "XL",
+      "name": "XL / 21",
       "geometry": {
         "reach": 428,
         "stack": 642,
@@ -295,6 +306,10 @@
       "type_detail": "Derailleur Shifter",
       "manufacturer": "Shimano",
       "description": "New Shimano Deore SL-M4100-R 10-spd"
+    },
+    {
+      "type": "spokes",
+      "description": "Stainless BED"
     },
     {
       "type": "stem",
