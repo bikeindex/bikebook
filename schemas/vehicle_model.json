@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://bikebook.bikeindex.org/schemas/vehicle_model/v2.1.0.json",
+  "$id": "https://bikebook.bikeindex.org/schemas/vehicle_model/v2.2.0.json",
   "title": "Bikebook vehicle model",
   "description": "schema_version is semantic: a major version removes, renames or retypes a field or removes an enum value, a minor one adds an optional field or an enum value, and a patch changes only descriptions. The published catalog's format is versioned apart from it, one integer raised whenever the layout of its files changes.",
   "type": "object",
@@ -10,7 +10,7 @@
       "format": "uri"
     },
     "schema_version": {
-      "const": "2.1.0"
+      "const": "2.2.0"
     },
     "id": {
       "type": "string",
@@ -1335,7 +1335,7 @@
       "type": "object",
       "description": "The models of this one's name and year sold in another market, keyed by the market, each sharing its id and written as what differs from it: objects merge key by key, false removes an object and null any other value, and a list may be written as an object of the items that differ, keyed by what identifies each. A variant doesn't have a separate geometry_photo, since it's the same vehicle",
       "propertyNames": {
-        "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v2.1.0.json#/$defs/market"
+        "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v2.2.0.json#/$defs/market"
       },
       "additionalProperties": {
         "type": "object",
@@ -6595,7 +6595,7 @@
       ]
     },
     "markets": {
-      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v2.1.0.json#/$defs/market"
+      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v2.2.0.json#/$defs/market"
     },
     "type": {
       "type": [
@@ -7797,10 +7797,10 @@
       "description": "Throttle only"
     },
     "motors.operating_modes.e_vehicle_classifications": {
-      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v2.1.0.json#/$defs/e_vehicle_classification"
+      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v2.2.0.json#/$defs/e_vehicle_classification"
     },
     "motors.operating_modes.markets": {
-      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v2.1.0.json#/$defs/market"
+      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v2.2.0.json#/$defs/market"
     },
     "cargo.length": {
       "type": [
@@ -8634,7 +8634,7 @@
       "x-unit": "mm"
     },
     "components.type": {
-      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v2.1.0.json#/$defs/component_type"
+      "$ref": "https://bikebook.bikeindex.org/schemas/vocabulary/v2.2.0.json#/$defs/component_type"
     },
     "components.position": {
       "type": "string",
