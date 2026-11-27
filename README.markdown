@@ -95,17 +95,7 @@ export function slugify(string) {
 
 </details>
 
-The tests check the data files: every file pretty-printed with two spaces and a trailing newline, its keys in its schema's property order, valid against the `schema_version`.
-
-To
-
-
-## Catalog
-
-These files are all used to generate a manifest and catalog. The manifest lists all the files, the catalog is published by [bikebook_ci](https://github.com/bikeindex/bikebook_ci) (which also is where the tests for this repository are).
-
-The manifest and index is are published to Cloudflare R2, which is then loaded by the Bike Index viewer. The data in this repository is what is actually rendered.
-
+The JSON data files are pretty-printed with two spaces and a trailing newline. See Contributing for info on how to format it.
 
 ## Contributing
 
@@ -114,6 +104,20 @@ Please submit any fixes that you have!
 If you aren't comfortable making the correction yourself, that is fine - [create an issue](https://github.com/bikeindex/bikebook/issues/new) describing the problem or message [bikebook@bikeindex.org](mailto:bikebook@bikeindex.org) for help submitting data.
 
 If you are making a PR, you will have sign our [Contributor License Agreement](https://cla-assistant.io/bikeindex/bikebook).
+
+### For developers
+
+This repository's tests are in [bikebook_ci](https://github.com/bikeindex/bikebook_ci)
+
+The tests check the JSON data file's format, verify the keys are in the schema's property order and validate against the `schema_version`.
+
+
+To fix the format of files, clone bikebook_ci and run the tests with `--fix`
+
+```bash
+git clone git@github.com:bikeindex/bikebook_ci.git # Clone the CI code into this repository, bikebook_ci/ is gitgnored
+bikebook_ci/cargo test --fix
+```
 
 
 ### Versioning
