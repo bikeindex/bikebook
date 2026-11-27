@@ -1,0 +1,139 @@
+{
+  "schema_version": "2.2.0",
+  "id": "m/yadea/2026/starto",
+  "manufacturer": "Yadea",
+  "model": "Starto",
+  "model_configuration": "complete",
+  "markets": [
+    "MU"
+  ],
+  "type": "e-scooter",
+  "propulsion": [
+    "throttle"
+  ],
+  "primary_activity": "commuting",
+  "handlebar_type": "horizontal",
+  "stock_photo": "https://bikebook.bikeindex.org/yadea/2026/starto-mu.png",
+  "description": "A folding electric kick scooter for the last mile. Solo on the pavement, or stowed in the boot for a beach day.",
+  "first_year": 2026,
+  "years": {
+    "2026": {
+      "original_msrp": 2490000,
+      "original_msrp_currency": "MUR",
+      "url": "https://www.yadea.mu/electric-kick-scooter/starto",
+      "url_live": true
+    }
+  },
+  "frame": {
+    "material": "steel",
+    "folding": "stem-fold"
+  },
+  "wheels": [
+    {
+      "bsd": 134,
+      "position": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "brakes": [
+    {
+      "type": "disc-hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ]
+    },
+    {
+      "type": "motor-brake",
+      "position": [
+        "motor"
+      ]
+    }
+  ],
+  "motors": [
+    {
+      "kind": "hub-drive",
+      "battery": {
+        "capacity": 275,
+        "voltage": 36,
+        "chemistry": "li-ion"
+      },
+      "rated_power": 350,
+      "peak_power": 750,
+      "operating_modes": [
+        {
+          "mode": "throttle",
+          "availability": "stock",
+          "max_speed": 25,
+          "range_claimed": 25,
+          "max_slope": 11
+        }
+      ]
+    }
+  ],
+  "weight_limits": [
+    {
+      "load": "rider",
+      "weight": 130
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "dimensions": {
+          "length": 1100,
+          "width": 480,
+          "height": 1150
+        },
+        "dimensions_folded": {
+          "length": 1100,
+          "width": 480,
+          "height": 480
+        },
+        "total_weight": 17.8
+      }
+    }
+  ],
+  "components": [
+    {
+      "type": "brake",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "Disc + E-Brake"
+    },
+    {
+      "type": "ebike-battery",
+      "description": "Lithium-ion, 36 V 7.65 Ah"
+    },
+    {
+      "type": "ebike-displayremote",
+      "description": "LED"
+    },
+    {
+      "type": "ebike-motor",
+      "description": "Hub motor"
+    },
+    {
+      "type": "light",
+      "type_detail": "Tail Light",
+      "position": [
+        "rear"
+      ],
+      "description": "Taillight"
+    },
+    {
+      "type": "tire",
+      "type_detail": "Tire Size",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "description": "8.5-inch"
+    }
+  ]
+}

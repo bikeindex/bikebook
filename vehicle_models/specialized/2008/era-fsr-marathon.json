@@ -33,7 +33,9 @@
   },
   "frame": {
     "material": "aluminum",
-    "seatpost_clamp_diameter": 34.9
+    "material_detail": "M5 Aluminum",
+    "seatpost_clamp_diameter": 34.9,
+    "derailleur_hanger": "replaceable derailleur hanger"
   },
   "suspension": {
     "front": {
@@ -84,6 +86,92 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "sizes": [
+    {
+      "name": "S",
+      "geometry": {
+        "top_tube_effective": 540,
+        "top_tube_ctc": 532,
+        "seat_tube_ct": 394,
+        "chainstay": 427,
+        "wheelbase": 1049,
+        "standover": 691,
+        "handlebar_width": 620,
+        "stem_length": 75,
+        "crank_length": 170,
+        "seatpost_length": 350,
+        "extra_measurements": {
+          "head_tube_height": 100
+        }
+      },
+      "geometry_settings": [
+        {
+          "name": "low",
+          "geometry": {
+            "head_angle": 70,
+            "seat_angle_actual": 74.2,
+            "bb_height": 331
+          }
+        }
+      ]
+    },
+    {
+      "name": "M",
+      "geometry": {
+        "top_tube_effective": 565,
+        "top_tube_ctc": 550,
+        "seat_tube_ct": 432,
+        "chainstay": 427,
+        "wheelbase": 1076,
+        "standover": 721,
+        "handlebar_width": 620,
+        "stem_length": 90,
+        "crank_length": 170,
+        "seatpost_length": 350,
+        "extra_measurements": {
+          "head_tube_height": 120
+        }
+      },
+      "geometry_settings": [
+        {
+          "name": "low",
+          "geometry": {
+            "head_angle": 70,
+            "seat_angle_actual": 74.2,
+            "bb_height": 331
+          }
+        }
+      ]
+    },
+    {
+      "name": "L",
+      "geometry": {
+        "top_tube_effective": 595,
+        "top_tube_ctc": 583,
+        "seat_tube_ct": 470,
+        "chainstay": 427,
+        "wheelbase": 1107,
+        "standover": 747,
+        "handlebar_width": 620,
+        "stem_length": 90,
+        "crank_length": 175,
+        "seatpost_length": 350,
+        "extra_measurements": {
+          "head_tube_height": 130
+        }
+      },
+      "geometry_settings": [
+        {
+          "name": "low",
+          "geometry": {
+            "head_angle": 70,
+            "seat_angle_actual": 74.2,
+            "bb_height": 331
+          }
+        }
+      ]
     }
   ],
   "components": [
@@ -154,6 +242,7 @@
     },
     {
       "type": "gripstape",
+      "type_detail": "Grips",
       "manufacturer": "Specialized",
       "description": "Specialized Womans MTB, dual density"
     },
@@ -318,98 +407,6 @@
           "url_live": true
         }
       },
-      "frame": {
-        "material_detail": "M5 Aluminum"
-      },
-      "gearing": {
-        "rear": null
-      },
-      "sizes": [
-        {
-          "name": "S",
-          "geometry": {
-            "top_tube_effective": 540,
-            "top_tube_ctc": 532,
-            "seat_tube_ct": 394,
-            "chainstay": 427,
-            "wheelbase": 1049,
-            "standover": 691,
-            "handlebar_width": 620,
-            "stem_length": 75,
-            "crank_length": 170,
-            "seatpost_length": 350,
-            "extra_measurements": {
-              "head_tube_height": 100
-            }
-          },
-          "geometry_settings": [
-            {
-              "name": "low",
-              "geometry": {
-                "head_angle": 70,
-                "seat_angle_actual": 74.2,
-                "bb_height": 331
-              }
-            }
-          ]
-        },
-        {
-          "name": "M",
-          "geometry": {
-            "top_tube_effective": 565,
-            "top_tube_ctc": 550,
-            "seat_tube_ct": 432,
-            "chainstay": 427,
-            "wheelbase": 1076,
-            "standover": 721,
-            "handlebar_width": 620,
-            "stem_length": 90,
-            "crank_length": 170,
-            "seatpost_length": 350,
-            "extra_measurements": {
-              "head_tube_height": 120
-            }
-          },
-          "geometry_settings": [
-            {
-              "name": "low",
-              "geometry": {
-                "head_angle": 70,
-                "seat_angle_actual": 74.2,
-                "bb_height": 331
-              }
-            }
-          ]
-        },
-        {
-          "name": "L",
-          "geometry": {
-            "top_tube_effective": 595,
-            "top_tube_ctc": 583,
-            "seat_tube_ct": 470,
-            "chainstay": 427,
-            "wheelbase": 1107,
-            "standover": 747,
-            "handlebar_width": 620,
-            "stem_length": 90,
-            "crank_length": 175,
-            "seatpost_length": 350,
-            "extra_measurements": {
-              "head_tube_height": 130
-            }
-          },
-          "geometry_settings": [
-            {
-              "name": "low",
-              "geometry": {
-                "head_angle": 70,
-                "seat_angle_actual": 74.2,
-                "bb_height": 331
-              }
-            }
-          ]
-        }
-      ],
       "components": [
         {
           "type": "bottom-bracket",

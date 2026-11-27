@@ -73,6 +73,7 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "6061 Aluminum",
     "mounts": [
       {
         "type": "fender"
@@ -81,6 +82,7 @@
         "type": "rack"
       }
     ],
+    "cable_routing": "internal",
     "seatpost_diameter": 30.4
   },
   "wheels": [
@@ -107,6 +109,10 @@
   "gearing": {
     "front": [
       40
+    ],
+    "rear": [
+      11,
+      36
     ]
   },
   "groupset": {
@@ -120,7 +126,8 @@
       "position": [
         "front",
         "rear"
-      ]
+      ],
+      "rotor_diameter": 180
     }
   ],
   "motors": [
@@ -128,6 +135,10 @@
       "drive_wheel": "front",
       "manufacturer": "Bafang",
       "kind": "hub-drive",
+      "battery": {
+        "capacity": 643,
+        "voltage": 48
+      },
       "rated_power": 250,
       "max_torque": 45,
       "operating_modes": [
@@ -377,27 +388,10 @@
         }
       },
       "frame": {
-        "material_detail": "6061 Aluminum",
-        "cable_routing": "internal",
         "seatpost_diameter": 30.9
-      },
-      "gearing": {
-        "rear": [
-          11,
-          36
-        ]
-      },
-      "brakes": {
-        "front+rear": {
-          "rotor_diameter": 180
-        }
       },
       "motors": {
         "0": {
-          "battery": {
-            "capacity": 643,
-            "voltage": 48
-          },
           "rated_power": 500,
           "peak_power": 760,
           "operating_modes": {
@@ -411,7 +405,6 @@
             },
             "assist stock": false
           },
-          "manufacturer": null,
           "max_torque": null
         }
       },

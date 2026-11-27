@@ -16,12 +16,6 @@
   "final_year": 2016,
   "years": {
     "2016": {
-      "colorways": [
-        {
-          "name": "Salsa Vaya 4130 CroMoly",
-          "stock_photo": "https://bikebook.bikeindex.org/salsa/2016/vaya-deore.jpg"
-        }
-      ],
       "url": "https://www.salsacycles.com/products/2016_vaya_deore",
       "url_live": true
     }
@@ -46,13 +40,11 @@
       "shell": "BSA",
       "width": 68
     },
+    "headset": "ZS44/28.6 | EC44/33",
     "seatpost_diameter": 27.2,
     "front_derailleur_mount": "Band clamp, (Ti: Ø34.9mm, Steel: Ø28.6mm)",
     "derailleur_hanger": "FS2310",
     "max_chainring": 53
-  },
-  "suspension": {
-    "rear": {}
   },
   "wheels": [
     {
@@ -60,6 +52,10 @@
       "position": [
         "front"
       ],
+      "tire_width": 42,
+      "axle": "quick_release",
+      "axle_diameter": 9,
+      "axle_spacing": 100,
       "tire_width_max": 50
     },
     {
@@ -67,6 +63,7 @@
       "position": [
         "rear"
       ],
+      "tire_width": 42,
       "axle": "quick_release",
       "axle_diameter": 10,
       "axle_spacing": 135,
@@ -75,20 +72,25 @@
   ],
   "drivetrain": [
     "2-front",
-    "10-rear"
+    "9-rear"
   ],
   "gearing": {
-    "rear": [
+    "front": [
       32,
       48
+    ],
+    "rear": [
+      11,
+      34
     ]
   },
   "groupset": {
+    "series": "Sora",
     "electronic": false
   },
   "brakes": [
     {
-      "type": "disc-hydraulic",
+      "type": "disc-mechanical",
       "position": [
         "front",
         "rear"
@@ -194,6 +196,7 @@
         "handlebar_width": 420,
         "stem_length": 80,
         "crank_length": 175,
+        "total_weight": 12.59,
         "rider_height_min": 1700,
         "rider_height_max": 1780,
         "extra_measurements": {
@@ -257,9 +260,11 @@
     {
       "type": "brake",
       "position": [
+        "front",
         "rear"
       ],
-      "description": "Zoom SP-218"
+      "manufacturer": "SRAM",
+      "description": "SRAM BB7R"
     },
     {
       "type": "brake-rotor",
@@ -276,21 +281,21 @@
     },
     {
       "type": "chain",
-      "manufacturer": "Cane Creek",
-      "description": "Cane Creek 10 ZS44/28.6 | 40.EC44/33"
+      "manufacturer": "KMC",
+      "description": "KMC X10"
     },
     {
       "type": "cogcassettefreewheel",
       "position": [
         "rear"
       ],
-      "manufacturer": "SRAM",
-      "description": "SRAM S600 48/32t"
+      "manufacturer": "Shimano",
+      "description": "Shimano 9-speed, 11-34t"
     },
     {
       "type": "crankset",
-      "manufacturer": "Salsa",
-      "description": "Salsa Guide"
+      "manufacturer": "SRAM",
+      "description": "SRAM S600 48/32t"
     },
     {
       "type": "derailleur",
@@ -298,8 +303,8 @@
       "position": [
         "front"
       ],
-      "manufacturer": "Shimano",
-      "description": "Shimano 9-speed, 11-34t"
+      "manufacturer": "SRAM",
+      "description": "SRAM X5, 2x10"
     },
     {
       "type": "derailleur",
@@ -307,82 +312,94 @@
       "position": [
         "rear"
       ],
-      "manufacturer": "KMC",
-      "description": "KMC X10"
+      "manufacturer": "Shimano",
+      "description": "Shimano Deore 9-speed"
     },
     {
       "type": "fork",
-      "manufacturer": "SRAM",
-      "description": "SRAM X5, 2x10"
+      "manufacturer": "Salsa",
+      "description": "Salsa Vaya 4130 CroMoly"
     },
     {
       "type": "gripstape",
-      "type_detail": "Grips",
-      "manufacturer": "SRAM",
-      "description": "SRAM BB7R"
+      "type_detail": "Bar Tape",
+      "manufacturer": "Salsa",
+      "description": "Salsa Gel Bar Tape"
     },
     {
       "type": "handlebar",
-      "manufacturer": "Shimano",
-      "description": "Shimano Sora"
+      "manufacturer": "Salsa",
+      "description": "Salsa Cowbell 3"
     },
     {
       "type": "headset",
-      "manufacturer": "Salsa",
-      "description": "Salsa Cowbell 3"
+      "manufacturer": "Cane Creek",
+      "description": "Cane Creek 10 ZS44/28.6 | 40.EC44/33"
     },
     {
       "type": "hub",
       "position": [
         "front"
       ],
-      "description": "Butted, black"
+      "manufacturer": "Salsa",
+      "description": "Salsa 9 x 100mm QR",
+      "dimensions": {
+        "axle_diameter": 9,
+        "axle_spacing": 100
+      }
     },
     {
       "type": "hub",
       "position": [
         "rear"
       ],
+      "manufacturer": "Salsa",
+      "description": "Salsa 10 x 135mm QR",
+      "dimensions": {
+        "axle_diameter": 10,
+        "axle_spacing": 135
+      }
+    },
+    {
+      "type": "rim",
       "manufacturer": "WTB",
       "description": "WTB SX17, 32h"
     },
     {
-      "type": "rear-suspension",
-      "type_detail": "Rear Shock",
-      "position": [
-        "rear"
-      ],
-      "manufacturer": "Shimano",
-      "description": "Shimano Deore 9-speed"
-    },
-    {
-      "type": "rim",
-      "description": "27 lb 12 oz for size 55cm"
-    },
-    {
       "type": "saddle",
-      "manufacturer": "Salsa",
-      "description": "Salsa 10 x 135mm QR"
+      "manufacturer": "WTB",
+      "description": "WTB Pure V Sport"
     },
     {
       "type": "seatpost",
-      "manufacturer": "Salsa",
-      "description": "Salsa 9 x 100mm QR"
+      "description": "Zoom SP-218"
     },
     {
       "type": "shifter",
-      "manufacturer": "SRAM",
-      "description": "SRAM BB7R"
+      "manufacturer": "Shimano",
+      "description": "Shimano Sora"
     },
     {
       "type": "spokes",
-      "manufacturer": "Surly",
-      "description": "Surly Knard, 700 x 42mm, wire bead, 27 tpi"
+      "description": "Butted, black"
     },
     {
       "type": "stem",
       "manufacturer": "Salsa",
-      "description": "Salsa Gel Bar Tape"
+      "description": "Salsa Guide"
+    },
+    {
+      "type": "tire",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "manufacturer": "Surly",
+      "description": "Surly Knard, 700 x 42mm, wire bead, 27 tpi",
+      "dimensions": {
+        "width": 42,
+        "diameter": 622
+      }
     }
   ]
 }

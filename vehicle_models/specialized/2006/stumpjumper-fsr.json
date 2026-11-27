@@ -36,12 +36,14 @@
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "M4 Manipulated Aluminum",
     "bottom_bracket": {
       "width": 68,
       "spindle": "GXP"
     },
     "seatpost_diameter": 30.9,
-    "seatpost_clamp_diameter": 34.9
+    "seatpost_clamp_diameter": 34.9,
+    "derailleur_hanger": "replaceable derailleur hanger"
   },
   "suspension": {
     "front": {
@@ -102,6 +104,44 @@
         "rear"
       ],
       "rotor_diameter": 160
+    }
+  ],
+  "sizes": [
+    {
+      "name": "One Size",
+      "geometry": {
+        "top_tube_effective": 551,
+        "top_tube_ctc": 529,
+        "seat_tube_ct": 432,
+        "head_tube": 100,
+        "chainstay": 424,
+        "wheelbase": 1046,
+        "standover": 723,
+        "handlebar_width": 640,
+        "stem_length": 75,
+        "crank_length": 170,
+        "seatpost_length": 350,
+        "extra_measurements": {
+          "bottom_bracket_height_low_long": 338,
+          "bottom_bracket_height_low_short": 326,
+          "head_tube_angle_low_long_degrees": 69,
+          "head_tube_angle_low_short_degrees": 71,
+          "seat_tube_angle_low_long_degrees": 72,
+          "seat_tube_angle_low_short_degrees": 74
+        }
+      },
+      "geometry_settings": [
+        {
+          "name": "low mid",
+          "geometry": {
+            "extra_measurements": {
+              "bottom_bracket_height": 332,
+              "head_tube_angle_degrees": 70,
+              "seat_tube_angle_degrees": 73
+            }
+          }
+        }
+      ]
     }
   ],
   "components": [
@@ -183,6 +223,7 @@
     },
     {
       "type": "gripstape",
+      "type_detail": "Grips",
       "manufacturer": "Specialized",
       "description": "Specialized MTB grip, black with grey ends"
     },
@@ -355,18 +396,6 @@
           "url_live": true
         }
       },
-      "frame": {
-        "material_detail": "M4 Manipulated Aluminum",
-        "seatpost_diameter": null
-      },
-      "wheels": {
-        "rear 559": {
-          "cassette_interface": null
-        }
-      },
-      "gearing": {
-        "rear": null
-      },
       "brakes": {
         "front": {
           "type": "disc-hydraulic",
@@ -384,44 +413,6 @@
         },
         "front+rear": false
       },
-      "sizes": [
-        {
-          "name": "One Size",
-          "geometry": {
-            "top_tube_effective": 551,
-            "top_tube_ctc": 529,
-            "seat_tube_ct": 432,
-            "head_tube": 100,
-            "chainstay": 424,
-            "wheelbase": 1046,
-            "standover": 723,
-            "handlebar_width": 640,
-            "stem_length": 75,
-            "crank_length": 170,
-            "seatpost_length": 350,
-            "extra_measurements": {
-              "bottom_bracket_height_low_long": 338,
-              "bottom_bracket_height_low_short": 326,
-              "head_tube_angle_low_long_degrees": 69,
-              "head_tube_angle_low_short_degrees": 71,
-              "seat_tube_angle_low_long_degrees": 72,
-              "seat_tube_angle_low_short_degrees": 74
-            }
-          },
-          "geometry_settings": [
-            {
-              "name": "low mid",
-              "geometry": {
-                "extra_measurements": {
-                  "bottom_bracket_height": 332,
-                  "head_tube_angle_degrees": 70,
-                  "seat_tube_angle_degrees": 73
-                }
-              }
-            }
-          ]
-        }
-      ],
       "components": [
         {
           "type": "bottom-bracket",
