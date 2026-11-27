@@ -107,9 +107,9 @@ The manifest and index is are published to Cloudflare R2, which is then loaded b
 
 Please submit any fixes that you have!
 
-Email [bikebook@bikeindex.org](mailto:bikebook@bikeindex.org) if you want help formatting the data.
+If you aren't comfortable making the correction yourself, that is fine - [create an issue](https://github.com/bikeindex/bikebook/issues/new) describing the problem or message [bikebook@bikeindex.org](mailto:bikebook@bikeindex.org) for help submitting data.
 
-Read [CONTRIBUTING](CONTRIBUTING.md) and sign our [Contributor License Agreement](https://cla-assistant.io/bikeindex/bikebook).
+If you are making a PR, you will have sign our [Contributor License Agreement](https://cla-assistant.io/bikeindex/bikebook).
 
 
 ### Versioning

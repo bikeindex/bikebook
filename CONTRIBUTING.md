@@ -10,4 +10,6 @@ The first time you open a pull request, the CLA Assistant bot comments on it wit
 
 ## Making a change
 
-CI checks every data file on each pull request. `AGENTS.md` describes how the files are laid out, what's checked and how to run the checks yourself.
+CI checks every data file on each pull request.
+
+`README.markdown` describes how the files are laid out and what is up.
