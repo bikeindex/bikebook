@@ -95,8 +95,6 @@ export function slugify(string) {
 
 </details>
 
-The JSON data files are pretty-printed with two spaces and a trailing newline. See Contributing for info on how to format it.
-
 ## Contributing
 
 Please submit any fixes that you have!
@@ -109,16 +107,17 @@ If you are making a PR, you will have sign our [Contributor License Agreement](h
 
 This repository's tests are in [bikebook_ci](https://github.com/bikeindex/bikebook_ci)
 
-The tests check the JSON data file's format, verify the keys are in the schema's property order and validate against the `schema_version`.
+The tests check the JSON data files' format (pretty-printed with two spaces), verify the keys are in the schema's property order and validate against the `schema_version`.
 
-
-To fix the format of files, clone bikebook_ci and run the tests with `--fix`
+To run the tests, install [Rust](https://rustup.rs) and clone bikebook_ci in this repository (`bikebook_ci` is gitignored). To fix the format of files, run the tests with `--fix`
 
 ```bash
-git clone git@github.com:bikeindex/bikebook_ci.git # Clone the CI code into this repository, bikebook_ci/ is gitgnored
-bikebook_ci/cargo test --fix
-```
+git clone https://github.com/bikeindex/bikebook_ci.git # Clone the CI code into this repository
+bikebook_ci/bin/test --fix # run against all the files
 
+# To format just a single file or directory, pass it in
+bikebook_ci/bin/test --fix vehicle_models/trek/2026/fuel-plus-mx-9-9-x0-axs-gen-2.json
+```
 
 ### Versioning
 
