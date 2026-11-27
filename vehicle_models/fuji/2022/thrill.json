@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.1.0",
+  "schema_version": "2.2.0",
   "id": "m/fuji/2022/thrill",
   "manufacturer": "Fuji",
   "model_group": "Thrill",
@@ -40,6 +40,48 @@
       "url": "https://fujibikes.bike/products/thrill",
       "url_live": true
     },
+    "2024": {
+      "original_msrp": 99999,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Matte Storm Gray",
+          "colors": [
+            "silver"
+          ],
+          "variants": [
+            {
+              "sku": "19221343540",
+              "gtin": "785749221069",
+              "size": "40CM"
+            }
+          ]
+        }
+      ],
+      "url": "https://index.commoncrawl.org/CC-MAIN-2024-51/20241207175127/https://www.fujibikes.com/products/thrill-22",
+      "url_live": false
+    },
+    "2023": {
+      "original_msrp": 99999,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Matte Storm Gray",
+          "colors": [
+            "silver"
+          ],
+          "variants": [
+            {
+              "sku": "19221343540",
+              "gtin": "785749221069",
+              "size": "40CM"
+            }
+          ]
+        }
+      ],
+      "url": "https://index.commoncrawl.org/CC-MAIN-2023-40/20230928114659/https://www.fujibikes.com/products/2022-thrill",
+      "url_live": false
+    },
     "2022": {}
   },
   "frame": {
@@ -68,7 +110,10 @@
       "position": [
         "rear"
       ],
-      "tire_width": 42
+      "tire_width": 42,
+      "axle": "thru_axle",
+      "axle_diameter": 12,
+      "axle_spacing": 142
     }
   ],
   "drivetrain": [
@@ -115,9 +160,13 @@
         "wheelbase": 1003,
         "bb_drop": 65,
         "fork_rake": 50,
+        "trail": 75,
         "handlebar_width": 640,
         "stem_length": 60,
-        "crank_length": 155
+        "crank_length": 155,
+        "extra_measurements": {
+          "seat_tube_effective": 350
+        }
       }
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.1.0",
+  "schema_version": "2.2.0",
   "id": "m/fuji/2022/e-jari",
   "manufacturer": "Fuji",
   "model": "E-Jari",
@@ -29,19 +29,19 @@
             {
               "sku": "19224171849",
               "gtin": "785749218144",
-              "size": "S(49CM)"
+              "size": "S (49cm)"
             },
             {
               "sku": "19224171853",
-              "size": "M(53CM)"
+              "size": "M (53cm)"
             },
             {
               "sku": "19224171856",
-              "size": "L(56CM)"
+              "size": "L (56cm)"
             },
             {
               "sku": "19224171859",
-              "size": "XL(59CM)"
+              "size": "XL (59cm)"
             }
           ]
         }
@@ -49,7 +49,95 @@
       "url": "https://fujibikes.bike/products/e-jari",
       "url_live": true
     },
-    "2022": {}
+    "2025": {
+      "original_msrp": 449999,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black/Red Gradient",
+          "colors": [
+            "black",
+            "red"
+          ],
+          "variants": [
+            {
+              "sku": "19224171849",
+              "gtin": "785749218144",
+              "size": "S (49cm)"
+            },
+            {
+              "sku": "19224171853",
+              "gtin": "785749218281",
+              "size": "M (53cm)"
+            },
+            {
+              "sku": "19224171856",
+              "gtin": "785749218427",
+              "size": "L (56cm)"
+            },
+            {
+              "sku": "19224171859",
+              "gtin": "785749218434",
+              "size": "XL (59cm)"
+            }
+          ]
+        }
+      ],
+      "url": "https://index.commoncrawl.org/CC-MAIN-2025-05/20250116210708/https://www.fujibikes.com/products/e-jari-22",
+      "url_live": false
+    },
+    "2023": {
+      "original_msrp": 449999,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black/Red Gradient",
+          "colors": [
+            "black",
+            "red"
+          ],
+          "variants": [
+            {
+              "sku": "19224171849",
+              "gtin": "785749218144",
+              "size": "S (49cm)"
+            },
+            {
+              "sku": "19224171853",
+              "gtin": "785749218281",
+              "size": "M (53cm)"
+            },
+            {
+              "sku": "19224171856",
+              "gtin": "785749218427",
+              "size": "L (56cm)"
+            },
+            {
+              "sku": "19224171859",
+              "gtin": "785749218434",
+              "size": "XL (59cm)"
+            }
+          ]
+        }
+      ],
+      "url": "https://index.commoncrawl.org/CC-MAIN-2023-23/20230605121914/https://www.fujibikes.com/products/2022-e-jari",
+      "url_live": false
+    },
+    "2022": {
+      "original_msrp": 499999,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Black / Red Gradient",
+          "colors": [
+            "black",
+            "red"
+          ]
+        }
+      ],
+      "url": "https://index.commoncrawl.org/CC-MAIN-2022-27/20220629225219/https://www.fujibikes.com/usa/bikes/electric/cross-terrain/e-jari/e-jari",
+      "url_live": false
+    }
   },
   "frame": {
     "material": "aluminum",
@@ -57,6 +145,14 @@
     "mounts": [
       {
         "type": "rack"
+      },
+      {
+        "type": "bottle",
+        "location": "downtube"
+      },
+      {
+        "type": "bottle",
+        "location": "seat_tube"
       }
     ],
     "cable_routing": "internal",
@@ -107,10 +203,17 @@
     {
       "type": "disc-hydraulic",
       "position": [
-        "front",
-        "rear"
+        "front"
       ],
       "rotor_diameter": 160
+    },
+    {
+      "type": "disc-hydraulic",
+      "position": [
+        "rear"
+      ],
+      "rotor_diameter": 160,
+      "caliper_mount": "Disc Flat Mount"
     }
   ],
   "motors": [
@@ -123,17 +226,23 @@
         "capacity": 250,
         "chemistry": "li-ion"
       },
+      "rated_power": 250,
+      "max_torque": 55,
       "operating_modes": [
         {
           "mode": "assist",
-          "availability": "stock"
+          "availability": "stock",
+          "max_speed": 25,
+          "e_vehicle_classifications": [
+            "evc/us/class-1"
+          ]
         }
       ]
     }
   ],
   "sizes": [
     {
-      "name": "S(49CM)",
+      "name": "S (49cm)",
       "geometry": {
         "reach": 376.7,
         "stack": 552.7,
@@ -141,6 +250,7 @@
         "seat_tube_ct": 490,
         "head_angle": 70.5,
         "seat_angle": 74.5,
+        "seat_angle_actual": 74.5,
         "head_tube": 125,
         "chainstay": 432,
         "wheelbase": 1023.8,
@@ -152,7 +262,7 @@
       }
     },
     {
-      "name": "M(53CM)",
+      "name": "M (53cm)",
       "geometry": {
         "reach": 384,
         "stack": 578.3,
@@ -160,6 +270,7 @@
         "seat_tube_ct": 530,
         "head_angle": 71,
         "seat_angle": 74,
+        "seat_angle_actual": 74,
         "head_tube": 150,
         "chainstay": 432,
         "wheelbase": 1035.2,
@@ -171,7 +282,7 @@
       }
     },
     {
-      "name": "L(56CM)",
+      "name": "L (56cm)",
       "geometry": {
         "reach": 390.4,
         "stack": 604,
@@ -179,6 +290,7 @@
         "seat_tube_ct": 560,
         "head_angle": 71.5,
         "seat_angle": 73,
+        "seat_angle_actual": 73,
         "head_tube": 175,
         "chainstay": 432,
         "wheelbase": 1044.9,
@@ -190,7 +302,7 @@
       }
     },
     {
-      "name": "XL(59CM)",
+      "name": "XL (59cm)",
       "geometry": {
         "reach": 397.5,
         "stack": 629.7,
@@ -198,6 +310,7 @@
         "seat_tube_ct": 590,
         "head_angle": 72,
         "seat_angle": 73,
+        "seat_angle_actual": 73,
         "head_tube": 200,
         "chainstay": 432,
         "wheelbase": 1055,

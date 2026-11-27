@@ -62,7 +62,11 @@
     "material": "aluminum",
     "material_detail": "SmartForm C2 Aluminum",
     "cable_routing": "internal",
-    "seatpost_diameter": 27.2
+    "bottom_bracket": {
+      "shell": "BB30"
+    },
+    "seatpost_diameter": 27.2,
+    "front_derailleur_mount": "Braze-on"
   },
   "wheels": [
     {
@@ -108,10 +112,17 @@
     {
       "type": "disc-mechanical",
       "position": [
-        "front",
-        "rear"
+        "front"
       ],
       "rotor_diameter": 160
+    },
+    {
+      "type": "disc-mechanical",
+      "position": [
+        "rear"
+      ],
+      "rotor_diameter": 160,
+      "caliper_mount": "Disc Flat Mount"
     }
   ],
   "sizes": [

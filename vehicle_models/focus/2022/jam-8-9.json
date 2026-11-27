@@ -56,6 +56,10 @@
   "frame": {
     "material": "composite",
     "cable_routing": "stealth",
+    "bottom_bracket": {
+      "shell": "BB92",
+      "width": 92
+    },
     "headset": "| ZS56/40",
     "seatpost_diameter": 31.6
   },
@@ -86,7 +90,10 @@
       "position": [
         "rear"
       ],
-      "tire_width": 61
+      "tire_width": 61,
+      "axle": "thru_axle",
+      "axle_diameter": 12,
+      "axle_spacing": 148
     }
   ],
   "drivetrain": [
@@ -107,10 +114,17 @@
     {
       "type": "disc-hydraulic",
       "position": [
-        "front",
-        "rear"
+        "front"
       ],
       "rotor_diameter": 200
+    },
+    {
+      "type": "disc-hydraulic",
+      "position": [
+        "rear"
+      ],
+      "rotor_diameter": 200,
+      "caliper_mount": "Disc Post Mount"
     }
   ],
   "weight_limits": [

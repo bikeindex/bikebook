@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.1.0",
+  "schema_version": "2.2.0",
   "id": "m/fuji/2013/altamira-cx-1-3",
   "manufacturer": "Fuji",
   "model_group": "Altamira",
@@ -17,6 +17,8 @@
   "final_year": 2013,
   "years": {
     "2013": {
+      "original_msrp": 297900,
+      "original_msrp_currency": "USD",
       "colorways": [
         {
           "name": "Carbon W/ Yellow - Matte",
@@ -26,18 +28,30 @@
           ]
         }
       ],
-      "url": "https://github.com/bikeindex/bikebook/blob/0898412f69d1c83f3aa448b68792d89c7dd9f77a/bike_data/fuji/2013/altamira_cx_1_3.json",
+      "url": "https://index.commoncrawl.org/CC-MAIN-2013-20/20130619015925/http://www.fujibikes.com/bike/details/altamira_cx_13",
       "url_live": false
     }
   },
   "frame": {
     "material": "composite",
+    "material_detail": "C5 High-Modulus Carbon",
+    "mounts": [
+      {
+        "type": "bottle",
+        "location": "downtube"
+      },
+      {
+        "type": "bottle",
+        "location": "seat_tube"
+      }
+    ],
     "bottom_bracket": {
       "shell": "BB86",
       "width": 86.5
     },
     "headset": "IS42/28.6 | IS52/40",
-    "seatpost_diameter": 31.6
+    "seatpost_diameter": 31.6,
+    "front_derailleur_mount": "Braze-on"
   },
   "wheels": [
     {
@@ -81,7 +95,154 @@
       "position": [
         "rear"
       ],
-      "rotor_diameter": 140
+      "rotor_diameter": 140,
+      "caliper_mount": "Disc Post Mount"
+    }
+  ],
+  "sizes": [
+    {
+      "name": "S (49cm)",
+      "geometry": {
+        "reach": 378,
+        "stack": 531,
+        "top_tube_effective": 520,
+        "seat_tube_ct": 490,
+        "head_angle": 71,
+        "seat_angle": 75,
+        "head_tube": 110,
+        "chainstay": 425,
+        "wheelbase": 1005,
+        "standover": 760,
+        "bb_drop": 67,
+        "fork_rake": 45,
+        "handlebar_width": 400,
+        "stem_length": 90,
+        "crank_length": 170,
+        "extra_measurements": {
+          "seat_post_diameter": 31.6,
+          "seat_tube_effective": 490
+        }
+      }
+    },
+    {
+      "name": "S/M (52cm)",
+      "geometry": {
+        "reach": 382,
+        "stack": 552,
+        "top_tube_effective": 535,
+        "seat_tube_ct": 520,
+        "head_angle": 71.5,
+        "seat_angle": 74.5,
+        "head_tube": 130,
+        "chainstay": 425,
+        "wheelbase": 1010,
+        "standover": 784,
+        "bb_drop": 67,
+        "fork_rake": 45,
+        "handlebar_width": 400,
+        "stem_length": 90,
+        "crank_length": 170,
+        "extra_measurements": {
+          "seat_post_diameter": 31.6,
+          "seat_tube_effective": 520
+        }
+      }
+    },
+    {
+      "name": "M (54cm)",
+      "geometry": {
+        "reach": 373,
+        "stack": 563,
+        "top_tube_effective": 545,
+        "seat_tube_ct": 540,
+        "head_angle": 72,
+        "seat_angle": 73,
+        "head_tube": 140,
+        "chainstay": 425,
+        "wheelbase": 1001,
+        "standover": 798,
+        "bb_drop": 67,
+        "fork_rake": 45,
+        "handlebar_width": 420,
+        "stem_length": 100,
+        "crank_length": 172.5,
+        "extra_measurements": {
+          "seat_post_diameter": 31.6,
+          "seat_tube_effective": 540
+        }
+      }
+    },
+    {
+      "name": "M/L (56cm)",
+      "geometry": {
+        "reach": 382,
+        "stack": 582,
+        "top_tube_effective": 560,
+        "seat_tube_ct": 560,
+        "head_angle": 72,
+        "seat_angle": 73,
+        "head_tube": 160,
+        "chainstay": 425,
+        "wheelbase": 1016,
+        "standover": 815,
+        "bb_drop": 67,
+        "fork_rake": 45,
+        "handlebar_width": 420,
+        "stem_length": 100,
+        "crank_length": 172.5,
+        "extra_measurements": {
+          "seat_post_diameter": 31.6,
+          "seat_tube_effective": 560
+        }
+      }
+    },
+    {
+      "name": "L (58cm)",
+      "geometry": {
+        "reach": 391,
+        "stack": 601,
+        "top_tube_effective": 575,
+        "seat_tube_ct": 580,
+        "head_angle": 72,
+        "seat_angle": 73,
+        "head_tube": 180,
+        "chainstay": 425,
+        "wheelbase": 1032,
+        "standover": 837,
+        "bb_drop": 67,
+        "fork_rake": 45,
+        "handlebar_width": 440,
+        "stem_length": 120,
+        "crank_length": 175,
+        "extra_measurements": {
+          "seat_post_diameter": 31.6,
+          "seat_tube_effective": 580
+        }
+      }
+    },
+    {
+      "name": "XL (61cm)",
+      "geometry": {
+        "reach": 401,
+        "stack": 620,
+        "top_tube_effective": 590,
+        "seat_tube_ct": 600,
+        "head_angle": 72,
+        "seat_angle": 73,
+        "head_tube": 200,
+        "chainstay": 425,
+        "wheelbase": 1047,
+        "standover": 856,
+        "bb_drop": 67,
+        "fork_rake": 45,
+        "handlebar_width": 440,
+        "stem_length": 120,
+        "crank_length": 175,
+        "extra_measurements": {
+          "seat_post_diameter": 31.6,
+          "seat_tube_effective": 610
+        }
+      }
     }
   ],
   "components": [

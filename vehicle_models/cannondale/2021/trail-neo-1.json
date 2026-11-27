@@ -191,10 +191,17 @@
     {
       "type": "disc-hydraulic",
       "position": [
-        "front",
-        "rear"
+        "front"
       ],
       "rotor_diameter": 180
+    },
+    {
+      "type": "disc-hydraulic",
+      "position": [
+        "rear"
+      ],
+      "rotor_diameter": 180,
+      "caliper_mount": "Disc Post Mount"
     }
   ],
   "motors": [
@@ -556,7 +563,10 @@
         "series": "Deore"
       },
       "brakes": {
-        "front+rear": {
+        "front": {
+          "rotor_diameter": 203
+        },
+        "rear": {
           "rotor_diameter": 203
         }
       },

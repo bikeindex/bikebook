@@ -24,6 +24,11 @@
   "frame": {
     "material": "composite",
     "cable_routing": "internal",
+    "bottom_bracket": {
+      "shell": "BB92",
+      "width": 92,
+      "spindle": "DUB"
+    },
     "seatpost_diameter": 31.6
   },
   "suspension": {
@@ -100,6 +105,9 @@
     "12-rear"
   ],
   "gearing": {
+    "front": [
+      32
+    ],
     "rear": [
       10,
       52
@@ -117,7 +125,8 @@
         "front",
         "rear"
       ],
-      "rotor_diameter": 180
+      "rotor_diameter": 180,
+      "caliper_mount": "Disc Post Mount"
     }
   ],
   "sizes": [
@@ -225,6 +234,15 @@
       "description": "SRAM CS XG 1275 EAGLE 10-52T"
     },
     {
+      "type": "crankset",
+      "type_detail": "Crank",
+      "manufacturer": "SRAM",
+      "description": "SRAM GX EAGLE, B148 DUB LUNAR, 32T ( AL/BK ) 175MM / SRAM BB DUB PF MTB 92",
+      "dimensions": {
+        "length": 175
+      }
+    },
+    {
       "type": "fork",
       "manufacturer": "RockShox",
       "description": "ROCKSHOX SID ULTIMATE, CHARGER RACE DAY, CROWN ADJUST, 29\" BOOST™, DEBONAIR, GLOSS POLAR FOIL, 44MM OFFSET, STEERER: ALLOY (1.5\" to 1-1/8\" tapered ) CROWN: Forged, hollow aluminum, STANCHION: 35mm tapered wall aluminum, BLADE: Magnesium, 180mm post disc mount, TRAVEL:120mm, BOOST 15X110 Maxle Ultimate W/Extl rebnd, 2 pos comp (open/lock). ( Fits Most 27.5 x3.0\" / 29x2.6\" TIRE )",
@@ -255,6 +273,7 @@
       "position": [
         "rear"
       ],
+      "manufacturer": "DT Swiss",
       "description": "R/HUB DT SWISS SPLINE® 240s with 36T Ratchet EXP System , BLACK db HUB 28H. CENTER LOCK,OL: 12x148MM, For SRAM 12-SPD XD-DRIVE, THRU Axle TW JTECH, ANODIZED BLACK, L:M12xP1.5x178mm",
       "dimensions": {
         "axle_diameter": 12,
@@ -291,9 +310,8 @@
     },
     {
       "type": "shifter",
-      "type_detail": "Crank/Bottom Bracket/ Derailleur / Shifter",
       "manufacturer": "SRAM",
-      "description": "SRAM GX EAGLE, B148 DUB LUNAR, 32T ( AL/BK ) 175MM / SRAM BB DUB PF MTB 92 / R/SHIF.LEVER SRAM SL GX Eagle TRIGGER ( 12S ) LUNAR, R/SHIF.LEVER CLAMP SRAM MATCH MAKER CLAMP / F/DERA.(FD) NIL / R/DERA SRAM GX EAGLE LUNAR ( 12S ) , Max tooth 52T"
+      "description": "R/SHIF.LEVER SRAM SL GX Eagle TRIGGER ( 12S ) LUNAR, R/SHIF.LEVER CLAMP SRAM MATCH MAKER CLAMP / F/DERA.(FD) NIL / R/DERA SRAM GX EAGLE LUNAR ( 12S ) , Max tooth 52T"
     },
     {
       "type": "stem",

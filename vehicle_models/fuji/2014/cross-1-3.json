@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.1.0",
+  "schema_version": "2.2.0",
   "id": "m/fuji/2014/cross-1-3",
   "manufacturer": "Fuji",
   "model_group": "Cross",
@@ -9,12 +9,12 @@
   "propulsion": [
     "foot-pedal"
   ],
-  "primary_activity": "road-biking",
+  "primary_activity": "atb-cyclocross",
   "handlebar_type": "drop_bar",
   "stock_photo": "https://bikebook.bikeindex.org/fuji/2014/cross-1-3.jpg",
   "description": "A6-SL custom-butted alloy w/ shaped top tube & integrated tapered head tube w/ 1 1/2\" lower, oversized 34.9mm round seat tube, PIIS BB86 shell, double water bottle mounts. Rear triangle: A6-SL custom-butted alloy, forged-road dropout w/ post mount disc mount and replaceable derailleur hanger",
   "first_year": 2014,
-  "final_year": 2014,
+  "final_year": 2015,
   "years": {
     "2014": {
       "original_msrp": 157900,
@@ -27,18 +27,30 @@
           ]
         }
       ],
-      "url": "https://github.com/bikeindex/bikebook/blob/0898412f69d1c83f3aa448b68792d89c7dd9f77a/bike_data/fuji/2014/cross_1_3.json",
+      "url": "https://index.commoncrawl.org/CC-MAIN-2014-15/20140424131307/http://www.fujibikes.com/bike/details/cross-13",
       "url_live": false
     }
   },
   "frame": {
     "material": "aluminum",
+    "material_detail": "A6-SL Custom-Butted Aluminum",
+    "mounts": [
+      {
+        "type": "bottle",
+        "location": "downtube"
+      },
+      {
+        "type": "bottle",
+        "location": "seat_tube"
+      }
+    ],
     "bottom_bracket": {
       "shell": "BB86",
       "width": 86.5
     },
     "headset": "IS42/28.6 | IS52/40",
-    "seatpost_diameter": 27.2
+    "seatpost_diameter": 27.2,
+    "front_derailleur_mount": "Braze-on"
   },
   "wheels": [
     {
@@ -82,7 +94,179 @@
       "position": [
         "rear"
       ],
-      "rotor_diameter": 140
+      "rotor_diameter": 140,
+      "caliper_mount": "Disc Post Mount"
+    }
+  ],
+  "sizes": [
+    {
+      "name": "XS/S (48cm)",
+      "geometry": {
+        "reach": 371,
+        "stack": 519,
+        "top_tube_effective": 510,
+        "seat_tube_ct": 480,
+        "head_angle": 71,
+        "seat_angle": 75,
+        "head_tube": 105,
+        "chainstay": 430,
+        "wheelbase": 1003,
+        "standover": 749,
+        "bb_drop": 69,
+        "fork_rake": 45,
+        "handlebar_width": 400,
+        "stem_length": 80,
+        "crank_length": 170,
+        "extra_measurements": {
+          "seat_post_diameter": 27.2,
+          "seat_tube_effective": 480
+        }
+      }
+    },
+    {
+      "name": "S (50cm)",
+      "geometry": {
+        "reach": 385,
+        "stack": 524,
+        "top_tube_effective": 525,
+        "seat_tube_ct": 500,
+        "head_angle": 71,
+        "seat_angle": 75,
+        "head_tube": 110,
+        "chainstay": 430,
+        "wheelbase": 1019,
+        "standover": 761,
+        "bb_drop": 69,
+        "fork_rake": 45,
+        "handlebar_width": 400,
+        "stem_length": 90,
+        "crank_length": 170,
+        "extra_measurements": {
+          "seat_post_diameter": 27.2,
+          "seat_tube_effective": 490
+        }
+      }
+    },
+    {
+      "name": "S/M (52cm)",
+      "geometry": {
+        "reach": 384,
+        "stack": 544,
+        "top_tube_effective": 535,
+        "seat_tube_ct": 520,
+        "head_angle": 71.5,
+        "seat_angle": 74.5,
+        "head_tube": 130,
+        "chainstay": 430,
+        "wheelbase": 1020,
+        "standover": 779,
+        "bb_drop": 69,
+        "fork_rake": 45,
+        "handlebar_width": 400,
+        "stem_length": 90,
+        "crank_length": 170,
+        "extra_measurements": {
+          "seat_post_diameter": 27.2,
+          "seat_tube_effective": 520
+        }
+      }
+    },
+    {
+      "name": "M (54cm)",
+      "geometry": {
+        "reach": 376,
+        "stack": 554,
+        "top_tube_effective": 545,
+        "seat_tube_ct": 540,
+        "head_angle": 72,
+        "seat_angle": 73,
+        "head_tube": 140,
+        "chainstay": 430,
+        "wheelbase": 1011,
+        "standover": 792,
+        "bb_drop": 67,
+        "fork_rake": 45,
+        "handlebar_width": 420,
+        "stem_length": 100,
+        "crank_length": 172.5,
+        "total_weight": 9.53,
+        "extra_measurements": {
+          "seat_post_diameter": 27.2,
+          "seat_tube_effective": 540
+        }
+      }
+    },
+    {
+      "name": "M/L (56cm)",
+      "geometry": {
+        "reach": 386,
+        "stack": 573,
+        "top_tube_effective": 560,
+        "seat_tube_ct": 560,
+        "head_angle": 72,
+        "seat_angle": 73,
+        "head_tube": 160,
+        "chainstay": 430,
+        "wheelbase": 1026,
+        "standover": 813,
+        "bb_drop": 67,
+        "fork_rake": 45,
+        "handlebar_width": 420,
+        "stem_length": 100,
+        "crank_length": 172.5,
+        "extra_measurements": {
+          "seat_post_diameter": 27.2,
+          "seat_tube_effective": 560
+        }
+      }
+    },
+    {
+      "name": "L (58cm)",
+      "geometry": {
+        "reach": 395,
+        "stack": 590,
+        "top_tube_effective": 575,
+        "seat_tube_ct": 580,
+        "head_angle": 72,
+        "seat_angle": 73,
+        "head_tube": 180,
+        "chainstay": 430,
+        "wheelbase": 1043,
+        "standover": 830,
+        "bb_drop": 65,
+        "fork_rake": 45,
+        "handlebar_width": 440,
+        "stem_length": 120,
+        "crank_length": 175,
+        "extra_measurements": {
+          "seat_post_diameter": 27.2,
+          "seat_tube_effective": 580
+        }
+      }
+    },
+    {
+      "name": "XL (60cm)",
+      "geometry": {
+        "reach": 404,
+        "stack": 609,
+        "top_tube_effective": 590,
+        "seat_tube_ct": 600,
+        "head_angle": 72,
+        "seat_angle": 73,
+        "head_tube": 200,
+        "chainstay": 430,
+        "wheelbase": 1058,
+        "standover": 850,
+        "bb_drop": 65,
+        "fork_rake": 45,
+        "handlebar_width": 440,
+        "stem_length": 120,
+        "crank_length": 175,
+        "extra_measurements": {
+          "seat_post_diameter": 27.2,
+          "seat_tube_effective": 610
+        }
+      }
     }
   ],
   "components": [

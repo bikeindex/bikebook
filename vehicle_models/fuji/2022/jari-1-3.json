@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.1.0",
+  "schema_version": "2.2.0",
   "id": "m/fuji/2022/jari-1-3",
   "manufacturer": "Fuji",
   "model_group": "Jari",
@@ -26,33 +26,119 @@
             {
               "sku": "19221202148",
               "gtin": "785749219745",
-              "size": "XS(48CM)"
+              "size": "XS (48cm)"
             },
             {
               "sku": "19221202152",
-              "size": "S(52CM)"
+              "size": "S (52cm)"
             },
             {
               "sku": "19221202154",
-              "size": "M(54CM)"
+              "size": "M (54cm)"
             },
             {
               "sku": "19221202155",
-              "size": "L(55.5CM)"
+              "size": "L (55.5cm)"
             },
             {
               "sku": "19221202157",
-              "size": "XL(57.5CM)"
+              "size": "XL (57.5cm)"
             },
             {
               "sku": "19221202160",
-              "size": "XXL(60CM)"
+              "size": "XXL (60cm)"
             }
           ]
         }
       ],
       "url": "https://fujibikes.bike/products/jari-1-3",
       "url_live": true
+    },
+    "2024": {
+      "original_msrp": 199999,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Matte Mahogany",
+          "variants": [
+            {
+              "sku": "19221202148",
+              "gtin": "785749219745",
+              "size": "XS (48cm)"
+            },
+            {
+              "sku": "19221202152",
+              "gtin": "785749219752",
+              "size": "S (52cm)"
+            },
+            {
+              "sku": "19221202154",
+              "gtin": "785749219769",
+              "size": "M (54cm)"
+            },
+            {
+              "sku": "19221202155",
+              "gtin": "785749219776",
+              "size": "L (55.5cm)"
+            },
+            {
+              "sku": "19221202157",
+              "gtin": "785749219783",
+              "size": "XL (57.5cm)"
+            },
+            {
+              "sku": "19221202160",
+              "gtin": "785749219790",
+              "size": "XXL (60cm)"
+            }
+          ]
+        }
+      ],
+      "url": "https://index.commoncrawl.org/CC-MAIN-2024-33/20240814231207/https://www.fujibikes.com/products/jari-13-22",
+      "url_live": false
+    },
+    "2023": {
+      "original_msrp": 199999,
+      "original_msrp_currency": "USD",
+      "colorways": [
+        {
+          "name": "Matte Mahogany",
+          "variants": [
+            {
+              "sku": "19221202148",
+              "gtin": "785749219745",
+              "size": "XS (48cm)"
+            },
+            {
+              "sku": "19221202152",
+              "gtin": "785749219752",
+              "size": "S (52cm)"
+            },
+            {
+              "sku": "19221202154",
+              "gtin": "785749219769",
+              "size": "M (54cm)"
+            },
+            {
+              "sku": "19221202155",
+              "gtin": "785749219776",
+              "size": "L (55.5cm)"
+            },
+            {
+              "sku": "19221202157",
+              "gtin": "785749219783",
+              "size": "XL (57.5cm)"
+            },
+            {
+              "sku": "19221202160",
+              "gtin": "785749219790",
+              "size": "XXL (60cm)"
+            }
+          ]
+        }
+      ],
+      "url": "https://index.commoncrawl.org/CC-MAIN-2023-14/20230329163721/https://www.fujibikes.com/products/2022-jari-1-3",
+      "url_live": false
     },
     "2022": {}
   },
@@ -84,7 +170,10 @@
         "rear"
       ],
       "tire_width": 40,
-      "tire_system": "tubeless_ready"
+      "tire_system": "tubeless_ready",
+      "axle": "thru_axle",
+      "axle_diameter": 12,
+      "axle_spacing": 142
     }
   ],
   "drivetrain": [
@@ -126,19 +215,24 @@
         "seat_tube_ct": 460,
         "head_angle": 69.5,
         "seat_angle": 74.5,
+        "seat_angle_actual": 74.5,
         "head_tube": 100,
         "chainstay": 430,
         "wheelbase": 1005,
         "standover": 738,
         "bb_drop": 69,
         "fork_rake": 48,
+        "trail": 73,
         "handlebar_width": 400,
         "stem_length": 80,
-        "crank_length": 165
+        "crank_length": 165,
+        "extra_measurements": {
+          "seat_tube_effective": 460
+        }
       }
     },
     {
-      "name": "XS(48CM)",
+      "name": "XS (48cm)",
       "geometry": {
         "reach": 364,
         "stack": 548,
@@ -146,19 +240,24 @@
         "seat_tube_ct": 480,
         "head_angle": 70.5,
         "seat_angle": 75,
+        "seat_angle_actual": 75,
         "head_tube": 120,
         "chainstay": 430,
         "wheelbase": 1007,
         "standover": 767,
         "bb_drop": 72,
         "fork_rake": 48,
+        "trail": 73,
         "handlebar_width": 420,
         "stem_length": 80,
-        "crank_length": 170
+        "crank_length": 170,
+        "extra_measurements": {
+          "seat_tube_effective": 480
+        }
       }
     },
     {
-      "name": "S(52CM)",
+      "name": "S (52cm)",
       "geometry": {
         "reach": 367,
         "stack": 560,
@@ -166,19 +265,24 @@
         "seat_tube_ct": 520,
         "head_angle": 70.5,
         "seat_angle": 74,
+        "seat_angle_actual": 74,
         "head_tube": 140,
         "chainstay": 430,
         "wheelbase": 1018,
         "standover": 790,
         "bb_drop": 72,
         "fork_rake": 48,
+        "trail": 70,
         "handlebar_width": 440,
         "stem_length": 80,
-        "crank_length": 170
+        "crank_length": 170,
+        "extra_measurements": {
+          "seat_tube_effective": 520
+        }
       }
     },
     {
-      "name": "M(54CM)",
+      "name": "M (54cm)",
       "geometry": {
         "reach": 372,
         "stack": 581,
@@ -186,20 +290,25 @@
         "seat_tube_ct": 540,
         "head_angle": 71,
         "seat_angle": 73,
+        "seat_angle_actual": 73,
         "head_tube": 155,
         "chainstay": 430,
         "wheelbase": 1023,
         "standover": 804,
         "bb_drop": 70,
         "fork_rake": 48,
+        "trail": 67,
         "handlebar_width": 440,
         "stem_length": 90,
         "crank_length": 172.5,
-        "total_weight": 10.51
+        "total_weight": 10.51,
+        "extra_measurements": {
+          "seat_tube_effective": 540
+        }
       }
     },
     {
-      "name": "L(55.5CM)",
+      "name": "L (55.5cm)",
       "geometry": {
         "reach": 382,
         "stack": 592,
@@ -207,19 +316,24 @@
         "seat_tube_ct": 555,
         "head_angle": 71.5,
         "seat_angle": 73,
+        "seat_angle_actual": 73,
         "head_tube": 170,
         "chainstay": 430,
         "wheelbase": 1034,
         "standover": 824,
         "bb_drop": 70,
         "fork_rake": 48,
+        "trail": 64,
         "handlebar_width": 460,
         "stem_length": 90,
-        "crank_length": 172.5
+        "crank_length": 172.5,
+        "extra_measurements": {
+          "seat_tube_effective": 555
+        }
       }
     },
     {
-      "name": "XL(57.5CM)",
+      "name": "XL (57.5cm)",
       "geometry": {
         "reach": 392,
         "stack": 616,
@@ -227,19 +341,24 @@
         "seat_tube_ct": 575,
         "head_angle": 71.5,
         "seat_angle": 73,
+        "seat_angle_actual": 73,
         "head_tube": 190,
         "chainstay": 430,
         "wheelbase": 1049,
         "standover": 841,
         "bb_drop": 70,
         "fork_rake": 48,
+        "trail": 64,
         "handlebar_width": 460,
         "stem_length": 110,
-        "crank_length": 175
+        "crank_length": 175,
+        "extra_measurements": {
+          "seat_tube_effective": 575
+        }
       }
     },
     {
-      "name": "XXL(60CM)",
+      "name": "XXL (60cm)",
       "geometry": {
         "reach": 406,
         "stack": 635,
@@ -247,15 +366,20 @@
         "seat_tube_ct": 600,
         "head_angle": 71.5,
         "seat_angle": 73,
+        "seat_angle_actual": 73,
         "head_tube": 210,
         "chainstay": 430,
         "wheelbase": 1069,
         "standover": 865,
         "bb_drop": 70,
         "fork_rake": 48,
+        "trail": 64,
         "handlebar_width": 460,
         "stem_length": 110,
-        "crank_length": 175
+        "crank_length": 175,
+        "extra_measurements": {
+          "seat_tube_effective": 600
+        }
       }
     }
   ],
