@@ -45,9 +45,46 @@
     "material": "steel"
   },
   "suspension": {
-    "front": {},
-    "rear": {}
+    "front": {
+      "travel": 120,
+      "spring": "air"
+    },
+    "rear": {
+      "shock_length": 200,
+      "shock_stroke": 53,
+      "spring": "air"
+    }
   },
+  "wheels": [
+    {
+      "bsd": 584,
+      "position": [
+        "front",
+        "rear"
+      ],
+      "tire_width": 57
+    }
+  ],
+  "drivetrain": [
+    "1-front",
+    "9-rear"
+  ],
+  "groupset": {
+    "manufacturer": "Shimano",
+    "series": "Cues",
+    "description": "Shimano Cues U4000",
+    "electronic": false
+  },
+  "brakes": [
+    {
+      "type": "disc-hydraulic",
+      "position": [
+        "front",
+        "rear"
+      ],
+      "rotor_diameter": 203
+    }
+  ],
   "motors": [
     {
       "battery": {
@@ -72,7 +109,10 @@
       "name": "Small"
     },
     {
-      "name": "Medium"
+      "name": "Medium",
+      "geometry": {
+        "total_weight": 30.8
+      }
     },
     {
       "name": "Large"
@@ -129,47 +169,6 @@
         "material": "aluminum",
         "material_detail": "6061 Aluminum"
       },
-      "suspension": {
-        "front": {
-          "travel": 120,
-          "spring": "air"
-        },
-        "rear": {
-          "shock_length": 200,
-          "shock_stroke": 53,
-          "spring": "air"
-        }
-      },
-      "wheels": [
-        {
-          "bsd": 584,
-          "position": [
-            "front",
-            "rear"
-          ],
-          "tire_width": 57
-        }
-      ],
-      "drivetrain": [
-        "1-front",
-        "9-rear"
-      ],
-      "groupset": {
-        "manufacturer": "Shimano",
-        "series": "Cues",
-        "description": "Shimano Cues U4000",
-        "electronic": false
-      },
-      "brakes": [
-        {
-          "type": "disc-hydraulic",
-          "position": [
-            "front",
-            "rear"
-          ],
-          "rotor_diameter": 203
-        }
-      ],
       "motors": {
         "0": {
           "rated_power": 500,
@@ -190,13 +189,6 @@
                 "evc/ca/power-assisted-bicycle"
               ]
             }
-          }
-        }
-      },
-      "sizes": {
-        "Medium": {
-          "geometry": {
-            "total_weight": 30.8
           }
         }
       },

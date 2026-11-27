@@ -80,6 +80,7 @@
   ],
   "groupset": {
     "manufacturer": "Shimano",
+    "description": "Shimano 7-Speed",
     "electronic": false
   },
   "brakes": [
@@ -96,10 +97,12 @@
     {
       "kind": "hub-drive",
       "sensor_cadence": true,
+      "water_rating": "IP65",
       "battery": {
         "capacity": 624,
         "voltage": 48,
         "chemistry": "li-ion",
+        "weight": 3.95,
         "charging_time": 360
       },
       "rated_power": 500,
@@ -134,7 +137,24 @@
     {
       "name": "One Size",
       "geometry": {
-        "total_weight": 28
+        "handlebar_width": 600,
+        "seat_height_min": 800,
+        "seat_height_max": 1000,
+        "dimensions": {
+          "length": 1650
+        },
+        "dimensions_folded": {
+          "length": 950,
+          "height": 750
+        },
+        "total_weight": 28,
+        "rider_height_min": 1580,
+        "rider_height_max": 1850,
+        "extra_measurements": {
+          "handlebar_height": 1200,
+          "handlebar_height_max": 1350,
+          "rear_seat_height": 650
+        }
       }
     }
   ],
@@ -310,15 +330,6 @@
           "url": "https://www.varunebike.com/products/varun-s20-1"
         }
       },
-      "frame": {
-        "material_detail": null
-      },
-      "suspension": {
-        "rear": false
-      },
-      "groupset": {
-        "description": "Shimano 7-Speed"
-      },
       "brakes": {
         "front+rear": {
           "type": "disc-hydraulic",
@@ -330,11 +341,8 @@
           "certifications": [
             "EN 15194"
           ],
-          "water_rating": "IP65",
           "battery": {
-            "weight": 3.95,
-            "charging_time": 300,
-            "chemistry": null
+            "charging_time": 300
           },
           "rated_power": 250,
           "max_torque": 55,
@@ -349,32 +357,13 @@
             },
             "throttle stock": false
           },
-          "kind": null,
-          "sensor_cadence": null,
           "peak_power": null
         }
       },
       "sizes": {
         "One Size": {
           "geometry": {
-            "handlebar_width": 600,
-            "seat_height_min": 800,
-            "seat_height_max": 1000,
-            "dimensions": {
-              "length": 1650
-            },
-            "dimensions_folded": {
-              "length": 950,
-              "height": 750
-            },
-            "total_weight": 29,
-            "rider_height_min": 1580,
-            "rider_height_max": 1850,
-            "extra_measurements": {
-              "handlebar_height": 1200,
-              "handlebar_height_max": 1350,
-              "rear_seat_height": 650
-            }
+            "total_weight": 29
           }
         }
       },
