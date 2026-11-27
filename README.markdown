@@ -109,7 +109,7 @@ This repository's tests are in [bikebook_ci](https://github.com/bikeindex/bikebo
 
 The tests check the JSON data files' format (pretty-printed with two spaces), verify the keys are in the schema's property order and validate against the `schema_version`.
 
-To run the tests, install [Rust](https://rustup.rs) and clone bikebook_ci in this repository (`bikebook_ci` is gitignored). To fix the format of files, run the tests with `--fix`
+To run the tests, install [Rust](https://rustup.rs) and clone bikebook_ci in this repository (`./bikebook_ci` is gitignored). To fix the format of files, run the tests with `--fix`
 
 ```bash
 git clone https://github.com/bikeindex/bikebook_ci.git # Clone the CI code into this repository
