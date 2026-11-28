@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.1.0",
+  "schema_version": "2.2.0",
   "id": "m/specialized/2026/sirrus-x-2-0-step-through",
   "manufacturer": "Specialized",
   "model_group": "Sirrus",
@@ -113,14 +113,7 @@
     {
       "type": "disc-hydraulic",
       "position": [
-        "front"
-      ],
-      "rotor_diameter": 160,
-      "caliper_mount": "Disc Flat Mount"
-    },
-    {
-      "type": "disc-hydraulic",
-      "position": [
+        "front",
         "rear"
       ],
       "rotor_diameter": 160,
@@ -422,9 +415,23 @@
         ]
       },
       "brakes": {
+        "front": {
+          "type": "disc-hydraulic",
+          "position": [
+            "front"
+          ],
+          "rotor_diameter": 160,
+          "caliper_mount": "Disc Flat Mount"
+        },
         "rear": {
-          "rotor_diameter": 140
-        }
+          "type": "disc-hydraulic",
+          "position": [
+            "rear"
+          ],
+          "rotor_diameter": 140,
+          "caliper_mount": "Disc Flat Mount"
+        },
+        "front+rear": false
       },
       "sizes": {
         "XS": {
