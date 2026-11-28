@@ -12,7 +12,9 @@ Currently there are **58,620** bikes in the database.
 
 The bike data is stored as JSON, in a public JSON Schema. If you're curious about what data is stored, check out the schema viewer at [bikeindex.org/bikebook_schemas](https://bikeindex.org/bikebook_schemas)
 
-<img src="https://raw.githubusercontent.com/bikeindex/bikebook/readme_refs/schema_viewer-screenshot.png" alt="Schema viewer" width="50%">
+| [JSON Schema](schemas/vehicle_model.json) explore | [Trek Fuel+ schema display](https://bikeindex.org/bikebook_schemas/m/trek/2026/fuel-plus-mx-9-9-x0-axs-gen-2) |
+| --- | --- |
+| <img src="https://raw.githubusercontent.com/bikeindex/bikebook/readme_refs/schema_viewer-screenshot.png" alt="Schema viewer exploring the vehicle model schema"> | <img src="https://raw.githubusercontent.com/bikeindex/bikebook/readme_refs/schema_viewer-trek-screenshot.png" alt="Schema viewer displaying a Trek model's file"> |
 
 The schema viewer helps make sense of the structure by including comments and showing the number of matching bikes along with links to sample bike IDs.
 
@@ -22,7 +24,7 @@ There are always things to improve in the data model - see [Issue #43](https://g
 
 This repository is a flat file database. The data is stored in JSON files.
 
-**The model IDs are `${slugify(maker)}>/${year}/${slugify(model name)}.json`** and the files are at that path in `vehicle_models/`
+**The model IDs are `${slugify(maker)}/${year}/${slugify(model name)}.json`** and the files are at that path in `vehicle_models/`
 
 The 2026 `Fuel+ MX 9.9 X0 AXS Gen 2` by Trek has this id: `m/trek/2026/fuel-plus-mx-9-9-x0-axs-gen-2`
 
@@ -93,28 +95,53 @@ export function slugify(string) {
 
 </details>
 
-
-## Catalog
-
-These files are all used to generate a manifest and catalog. The manifest lists all the files, the catalog is published by [bikebook_ci](https://github.com/bikeindex/bikebook_ci) (which also is where the tests for this repository are).
-
-The manifest and index is are published to Cloudflare R2, which is then loaded by the Bike Index viewer. The data in this repository is what is actually rendered.
-
-
 ## Contributing
 
 Please submit any fixes that you have!
 
-Read [CONTRIBUTING](CONTRIBUTING.md) and sign our [Contributor License Agreement](https://cla-assistant.io/bikeindex/bikebook).
+If you aren't comfortable making the correction yourself, that is fine - [create an issue](https://github.com/bikeindex/bikebook/issues/new) describing the problem or email [bikebook@bikeindex.org](mailto:bikebook@bikeindex.org) for help submitting data.
+
+If you are making a PR, you will have to sign our [Contributor License Agreement](https://cla-assistant.io/bikeindex/bikebook).
+
+## For developers
+
+This repository's tests are in [bikebook_ci](https://github.com/bikeindex/bikebook_ci)
+
+The tests check the JSON data files' format (pretty-printed with two spaces), verify the keys are in the schema's property order and validate against the `schema_version`.
+
+To run the tests, install [Rust](https://rustup.rs) and clone bikebook_ci in this repository (`./bikebook_ci` is gitignored). To fix the format of files, run the tests with `--fix`
+
+```bash
+git clone https://github.com/bikeindex/bikebook_ci.git # Clone the CI code into this repository
+bikebook_ci/bin/test --fix # Fix every file's formatting
+
+# To format just a single file or directory, pass it in
+bikebook_ci/bin/test --fix vehicle_models/trek/2026/fuel-plus-mx-9-9-x0-axs-gen-2.json
+```
+
+<details>
+<summary>Additional developer info: versioning, publishing, other files</summary>
+
+### Other files
+
+In addition to vehicle_models, `components/` holds e-bike motors (like `c/bafang/m560-mm-g5300-750-c-750w)`) and `e_vehicle_classifications/` holds the e-vehicle classification rules (like `evc/us/class-1`).
+
+### Catalog
+
+These files are all used to generate a manifest and catalog. The manifest lists all the files, the catalog is published by bikebook_ci.
+
+The manifest and index is are published as static files, which are then loaded by the Bike Index viewer. The data in this repository is what is actually rendered.
 
 
 ### Versioning
 
-schema version is semantic:
+Schema version is semantic:
 
 - Major versions remove, rename or retype a field, remove an enum value or add a new required field.
 - Minor ones add an optional field or an enum value.
-- Patches changes only descriptions.
+- Patches change only descriptions.
+
+</details>
 
 ---
 
